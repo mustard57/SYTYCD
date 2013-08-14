@@ -1,0 +1,46 @@
+<message message-id="5bf3e10d0705210744s119d1c5cpc20ab1036e9f98ff@mail.gmail.com" list="org.freebsd.freebsd-drivers" id="24aepbnfcwjekb7s" type="general" date="2007-05-21T14:44:55" year="2007-01-01" year-month="2007-05-01" year-month-day="2007-05-21" thread-id="rjvigw67ytxpzq5g"><headers><envelope-from-line>From die.gestalt@gmail.com  Mon May 21 14:44:52 2007</envelope-from-line><from personal="Die Gestalt" address="die.gestalt@gmail.com">Die Gestalt &lt;die.gestalt@gmail.com&gt;</from><subject normal="Generic int 13h driver">Generic int 13h driver</subject><date>Mon May 21 14:44:55 2007</date><in-reply-to>&lt;86veetgnk4.fsf@dwp.des.no&gt;</in-reply-to><references>&lt;5bf3e10d0705150724q3f0fd25fq89094bd02d8f9d29@mail.gmail.com&gt;
+	&lt;86veetgnk4.fsf@dwp.des.no&gt;</references><message-id>5bf3e10d0705210744s119d1c5cpc20ab1036e9f98ff@mail.gmail.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>5bf3e10d0705210744s119d1c5cpc20ab1036e9f98ff@mail.gmail.com</normalized-message-id><normalized-in-reply-to>86veetgnk4.fsf@dwp.des.no</normalized-in-reply-to><normalized-reference>5bf3e10d0705150724q3f0fd25fq89094bd02d8f9d29@mail.gmail.com</normalized-reference><normalized-reference>86veetgnk4.fsf@dwp.des.no</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On 5/16/07, Dag-Erling Sm?rgrav &lt;<email>des@des.no</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">
+"Die Gestalt" &lt;<email>die.gestalt@gmail.com</email>&gt; writes:
+</quotepara><quote depth="2"><quotepara depth="2">As the subject implies I'm currently doing the most unholy thing ever.
+I'm
+writing a driver that accesses hard disks through BIOS int13h. The
+reasons
+why I'm doing this are many, but mainly I will be in a situation where I
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">will not be able to update my kernel and where I want to support as much
+devices as possible. I know this will be slow and I know this will only
+work
+on the i386 platform, I accept that.
+</quotepara></quote><quotepara depth="1">
+It won't work nearly as universally as you intend; for some devices
+(particularly USB devices), the BIOS tries to enter protected mode when
+servicing requests.
+</quotepara></quote><para depth="0">
+I know there will be some limitations unfortunately.
+
+</para><quote depth="1"><quotepara depth="1">So far so good, I have a skeleton which is able to query the drive
+</quotepara><quote depth="2"><quotepara depth="2">parameters and some basic stuff. But when I want to read, this doesn't
+work,
+except in QEmu (<url>http://www.qemu.org</url>). I've tried on a VMWare and a real
+machine, what I get is a stall for maybe 10 s (sometimes not) and the
+operations returns saying it's successful but my buffer is actually left
+</quotepara></quote><quotefooter type="noise" hash="15041569595570159527" depth="1">
+</quotefooter><quote depth="2"><quotepara depth="2">untouched. I get no kernel message.
+</quotepara></quote><quotepara depth="1">
+Have you verified that the buffer you write from or read into is mapped
+correctly in virtual 8086 mode, and that you pass the correct address to
+the BIOS?
+</quotepara></quote><para depth="0">
+I think so. It works when I request a buffer to be filled with information.
+For instance function 48h of the int 13h correctly fills my buffer.
+
+</para><para depth="0">To pass the address I use vm86_addpage to update a vm86context and then I
+pass this context to vm86_datacall.
+
+</para><para depth="0">I think this might be a DMA problem. When the BIOS writes to the buffer, it
+does it via DMA, and I get typical DMA problems. However I've tried to use a
+buffer allocated via buf_dmamem_alloc() to no success.
+
+</para><para depth="0">Thanks for your answer.
+</para></body></message>

@@ -1,0 +1,47 @@
+<message message-id="3AFA47D7.A658DFFD@i-clue.de" list="org.freebsd.freebsd-doc" id="24atz2nv27piv5ie" type="general" date="2001-05-10T09:48:39+02:00" year="2001-01-01" year-month="2001-05-01" year-month-day="2001-05-10" thread-id="au6ztlq4vachoz33"><headers><envelope-from-line>From owner-freebsd-doc  Thu May 10  0:46:56 2001</envelope-from-line><from personal="Christoph Sold" address="so@server.i-clue.de">Christoph Sold &lt;so@server.i-clue.de&gt;</from><to personal="alo1@gmx.de" address="alo1@gmx.de">alo1@gmx.de</to><cc personal="freebsd-doc@FreeBSD.ORG" address="freebsd-doc@FreeBSD.ORG">freebsd-doc@FreeBSD.ORG</cc><subject normal="Networking Problems">Re: Networking Problems</subject><delivered-to>freebsd-doc@freebsd.org</delivered-to><received>from gekko.i-clue.de (server.ms-agentur.de [62.153.134.194])
+	by hub.freebsd.org (Postfix) with ESMTP
+	id 0F0FB37B422; Thu, 10 May 2001 00:46:49 -0700 (PDT)
+	(envelope-from so@server.i-clue.de)</received><received>from i-clue.de (automatix.i-clue.de [192.168.0.112])
+	by gekko.i-clue.de (8.9.3/8.9.3/SuSE Linux 8.9.3-0.1) with ESMTP id JAA16948;
+	Thu, 10 May 2001 09:53:53 +0200</received><message-id>3AFA47D7.A658DFFD@i-clue.de</message-id><date>Thu, 10 May 2001 09:48:39 +0200</date><reply-to>questions@FreeBSD.ORG</reply-to><x-mailer>Mozilla 4.75 [de] (WinNT; U)</x-mailer><x-accept-language>de</x-accept-language><mime-version>1.0</mime-version><references>&lt;3AF807AF.F4F2187A@gmx.de&gt;</references><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>owner-freebsd-doc@FreeBSD.ORG</sender><precedence>bulk</precedence><x-loop>FreeBSD.org</x-loop></headers><normalized-references><normalized-message-id>3AFA47D7.A658DFFD@i-clue.de</normalized-message-id><normalized-reference>3AF807AF.F4F2187A@gmx.de</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">[redirected to FreeBSD-Questions from FreeBSD-Doc, headers changed]
+
+</para><para depth="0">Andre Lorenz schrieb:
+</para><quote depth="1"><quotepara depth="1">
+i've installed freeBSD 4 on my computer;
+inside is a realteck 8129 networkadapter
+
+</quotepara><quotepara depth="1">how to integrade this networkadapter;
+</quotepara></quote><para depth="0">
+Andre,
+
+</para><para depth="0">please note FreeBSD-Doc hosts discussions about the FreeBSD
+documentation. For support, ask at FreeBSD-Questions instead.
+
+</para><para depth="0">To configure a RealTek network card, there are two ways. You need to
+know the IP adress of your network interface as well as netmask and
+default gateway. (Alternatively, you may configure via DHCP.)
+
+</para><para depth="0">1) Sysinstalll:
+
+</para><para depth="0">As root,
+# /stand/sysinstall
+Configure - Networking - Interfaces
+
+</para><para depth="0">A list with network interfaces pops up. Choose "rl0" -- the driver for
+Realtek boards.
+
+</para><para depth="0">The following questions walk you through installation. 
+
+</para><para depth="0">IPv6: no
+DHCP: (if available, yes, the board is setup afterwards)
+
+</para><para depth="0">Finally, a dialog pops up, listing all the values you need to fill in.
+Contact your entwork administrator if some value baffles you.
+
+</para><footer type="signature" hash="9466661891810853200" depth="0">HTH
+-Christoph Sold
+
+</footer><para depth="0">To Unsubscribe: send mail to <email>majordomo@FreeBSD.org</email>
+with "unsubscribe freebsd-doc" in the body of the message
+
+</para></body></message>

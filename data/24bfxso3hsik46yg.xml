@@ -1,0 +1,16 @@
+<message message-id="200010231636.QAA05930@bluemchen.i.sourceforge.net" list="org.kde.kde-commits" id="24bfxso3hsik46yg" type="checkins" date="2000-10-23T16:36:26Z" year="2000-01-01" year-month="2000-10-01" year-month-day="2000-10-23" thread-id="24bfxso3hsik46yg"><headers><envelope-from-line>From kde-cvs-admin@max.tat.physik.uni-tuebingen.de  Mon Oct 23 17:13:58 2000</envelope-from-line><from personal="CVS by claudiu" address="kde-cvs@kde.org">CVS by claudiu &lt;kde-cvs@kde.org&gt;</from><to personal="kde-cvs@max.tat.physik.uni-tuebingen.de" address="kde-cvs@max.tat.physik.uni-tuebingen.de">kde-cvs@max.tat.physik.uni-tuebingen.de</to><subject normal="kde-i18n/ro/messages/kdesdk">kde-i18n/ro/messages/kdesdk</subject><return-path>kde-cvs-admin@max.tat.physik.uni-tuebingen.de</return-path><received>from master.kde.org (max.tat.physik.uni-tuebingen.de [134.2.170.93])
+	by mailer.progressive-comp.com with id RAA30962
+	for &lt;kde-cvs@progressive-comp.com&gt;; Mon, 23 Oct 2000 17:13:57 -0400</received><received>(qmail 25833 invoked by uid 0); 23 Oct 2000 21:14:02 -0000</received><resent-date>23 Oct 2000 21:14:02 -0000</resent-date><resent-message-id>&lt;20001023211402.25832.qmail@master.kde.org&gt;</resent-message-id><resent-cc>recipient list not shown: ;</resent-cc><delivered-to>kde-cvs@max.tat.physik.uni-tuebingen.de</delivered-to><received>(qmail 14269 invoked from network); 23 Oct 2000 16:36:27 -0000</received><received>from unknown (HELO bluemchen.i.sourceforge.net) (198.186.203.33)
+  by max.tat.physik.uni-tuebingen.de with SMTP; 23 Oct 2000 16:36:27 -0000</received><received>(from kde@localhost)
+	by bluemchen.i.sourceforge.net (8.9.3/8.9.3) id QAA05930;
+	Mon, 23 Oct 2000 16:36:26 GMT</received><date>Mon, 23 Oct 2000 16:36:26 GMT</date><message-id>200010231636.QAA05930@bluemchen.i.sourceforge.net</message-id><sender>kde-cvs-admin@max.tat.physik.uni-tuebingen.de</sender><resent-sender>kde-cvs-admin@max.tat.physik.uni-tuebingen.de</resent-sender><resent-from>kde-cvs@max.tat.physik.uni-tuebingen.de</resent-from><x-mailing-list>&lt;kde-cvs@master.kde.org&gt;</x-mailing-list><errors-to>kde-cvs-admin@max.tat.physik.uni-tuebingen.de</errors-to><x-beenthere>kde-cvs@master.kde.org</x-beenthere><x-mailman-version>2.0beta4</x-mailman-version><precedence>bulk</precedence><reply-to>kde-cvs@max.tat.physik.uni-tuebingen.de</reply-to><list-id>commit mailing list &lt;kde-cvs.master.kde.org&gt;</list-id></headers><normalized-references><normalized-message-id>200010231636.QAA05930@bluemchen.i.sourceforge.net</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">
+kde-i18n/ro/messages/kdesdk kbabel.po,1.72,1.73
+Author: claudiu
+Mon Oct 23 16:36:25 UTC 2000
+
+</para><para depth="0">Modified Files:
+	kbabel.po 
+Log Message:
+Am corectat greselile din toata sectiunea kdegames
+
+</para></body></message>

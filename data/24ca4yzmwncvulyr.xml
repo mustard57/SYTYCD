@@ -1,0 +1,34 @@
+<message message-id="20080726171359.GA25742@saltmine.radix.net" list="org.freebsd.freebsd-questions" id="24ca4yzmwncvulyr" type="general" date="2008-07-26T17:14:12" year="2008-01-01" year-month="2008-07-01" year-month-day="2008-07-26" thread-id="qwjst25plyjhhqob"><headers><envelope-from-line>From dickey@radix.net  Sat Jul 26 17:14:01 2008</envelope-from-line><from personal="Thomas Dickey" address="dickey@radix.net">Thomas Dickey &lt;dickey@radix.net&gt;</from><subject normal="Switch to alternate screen buffer">Switch to alternate screen buffer</subject><date>Sat Jul 26 17:14:12 2008</date><in-reply-to>&lt;20080726130357.GB10056@marge.bs.l&gt;</in-reply-to><references>&lt;20080724133631.GA31077@marge.bs.l&gt;
+	&lt;20080724165727.O3416@wojtek.tensor.gdynia.pl&gt;
+	&lt;20080726130357.GB10056@marge.bs.l&gt;</references><message-id>20080726171359.GA25742@saltmine.radix.net</message-id><content-type>multipart/mixed; 
+	boundary="----=_Part_21566_28188943.1217313929338"</content-type><mime-version>1.0</mime-version></headers><attachments><signature type="application/pgp-signature" file="attachment.pgp" size="228" uri="/24ca4yzmwncvulyr/attach00/attachment.pgp"/></attachments><normalized-references><normalized-message-id>20080726171359.GA25742@saltmine.radix.net</normalized-message-id><normalized-in-reply-to>20080726130357.GB10056@marge.bs.l</normalized-in-reply-to><normalized-reference>20080724133631.GA31077@marge.bs.l</normalized-reference><normalized-reference>20080724165727.O3416@wojtek.tensor.gdynia.pl</normalized-reference><normalized-reference>20080726130357.GB10056@marge.bs.l</normalized-reference></normalized-references><body><para depth="0">On Sat, Jul 26, 2008 at 03:03:57PM +0200, Bertram Scharpf wrote:
+</para><quote depth="1"><quotepara depth="1">Hi,
+
+</quotepara><quotepara depth="1">Am Donnerstag, 24. Jul 2008, 16:57:40 +0200 schrieb Wojciech Puchar:
+</quotepara><quote depth="2"><quote depth="3"><quotepara depth="3">I know from some old Linux installations that Less and Vim are able to
+switch to an alternate screen buffer. They use the escape sequences
+"\e[?1047h" and "\e[?1047l" to switch back respectively.
+
+</quotepara><quotepara depth="3">How can I activate this in FreeBSD?
+</quotepara></quote><quotepara depth="2">
+no idea but do
+
+</quotepara><quotepara depth="2">someprg 2&gt;&amp;1|vim -
+</quotepara></quote><quotepara depth="1">
+No. I will not waive. This is not Microsoft here.
+
+</quotepara><quotepara depth="1">Edit /usr/share/misc/termcap. Change the following entry:
+
+</quotepara><quotepara depth="1">  xterm|xterm-color|X11 terminal emulator:\
+          :ti=\E[?47h:te=\E[?47l:tc=xterm-xfree86:
+</quotepara></quote><para depth="0">
+47 by itself won't clear the alternate buffer (probably not what is intended).
+For more information
+
+</para><para depth="0">	<url>http://invisible-island.net/xterm/xterm.faq.html#xterm_tite</url>
+
+</para><footer type="signature" hash="14670904456510195465" depth="0">-- 
+Thomas E. Dickey
+<url>http://invisible-island.net</url>
+<url>ftp://invisible-island.net</url>
+</footer></body></message>

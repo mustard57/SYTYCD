@@ -1,0 +1,67 @@
+<message message-id="ELEMLGDGDBLINAJEIOCLOEIDNCAA.wsisk@cisco.com" list="net.nether.puck.cisco-voip" id="24cvashvad6yhwb2" type="general" date="2003-11-06T08:55:04" year="2003-01-01" year-month="2003-11-01" year-month-day="2003-11-06" thread-id="eunineciwkqjkykv"><headers><envelope-from-line>From wsisk@cisco.com  Thu Nov  6 08:54:45 2003</envelope-from-line><from personal="Wes Sisk" address="wsisk@cisco.com">Wes Sisk &lt;wsisk@cisco.com&gt;</from><subject normal="[cisco-voip] Help Desk">[cisco-voip] Help Desk</subject><date>Thu Nov  6 08:55:04 2003</date><in-reply-to>&lt;A85EF8C2C10DA6499807D44B7FDFEB4F016812CC@venus.wesd.org&gt;</in-reply-to><message-id>ELEMLGDGDBLINAJEIOCLOEIDNCAA.wsisk@cisco.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>ELEMLGDGDBLINAJEIOCLOEIDNCAA.wsisk@cisco.com</normalized-message-id><normalized-in-reply-to>A85EF8C2C10DA6499807D44B7FDFEB4F016812CC@venus.wesd.org</normalized-in-reply-to></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Yes,  We work with lots of folks in help desk environments.  Frequent
+configs we see, please examine which might work for you:
+
+</para><para depth="0">1. Attendant Console - ac client is installed on PC adjacent with phone,
+user "logs in" and "goes online" to receive calls from the pilot point.
+requires use of PC software, no queuing mechanism(immediate distribution),
+can be installed co-resident with CCM.
+
+</para><para depth="0">2. CRA/CRS - can use either ipphone service or PC software to allow
+user to login and go online/offline. allows queueing mechanism, reporting,
+it's a full ICD suite.  can be installed co-resident with CCM so no add'l
+hardware req'd.
+
+</para><para depth="0">3. Extension Mobility - have users login to phones.  you could configure
+CFNA/CFB to roll between lines or you could setup an Attendant Console
+huntgroup that uses "route to DN" NOTE:route to user/line in AC is not
+supported with EM.
+no queuing, no add'l hardware
+
+</para><para depth="0">4. Shared lines - give all the phones L1/L2 as private line and make lines
+3-6 shared and cfb/cfna through them for your help desk.  Live with 4 calls
+for now, upgrade to CM4.0 late this year/early next and get up to 16 calls
+per line so the limitation is lifted.
+no queuing, no add'l hardware, waiting in the wings for CM4.0
+
+</para><para depth="0">/Wes
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: <email>cisco-voip-bounces@puck.nether.net</email>
+[mailto:<email>cisco-voip-bounces@puck.nether.net</email>]On Behalf Of Voll, Scott
+Sent: Wednesday, November 05, 2003 5:40 PM
+To: <email>cisco-voip@puck.nether.net</email>
+Subject: [cisco-voip] Help Desk
+
+</quotepara><quotepara depth="1">Does anyone use IP Telephony in a Help Desk environment?
+
+</quotepara><quotepara depth="1">I'm trying to find the best way to set up my staff.  I have about 10
+staff and two different help desk numbers.  2 to 5 people log in on each
+helpdesk number daily (different people daily); One primary and one
+secondary.  I know I need to do a Hunt group, but how should I set it
+up?  Here are some Ideas I came up with:
+
+</quotepara><quotepara depth="1">* Primary &amp; Secondary EM Login (problem the Tech looses their extension
+and people can't call him direct)
+* Set up two or three EM Logins for each person, one profile with no
+helpdesk (default), one with extension and primary, one with extension
+and secondary, etc. etc. (seems to be the best option, but time
+consuming to make 3 or 4 profiles per person)
+* Have a Helpdesk phone and a secondary helpdesk phone and move it to
+the tech's desk each day. (Extra hardware, ports and phones)
+* All techs have a shared helpdesk line as there second line (bad
+option, only one helpdesk call at a time)
+
+</quotepara><quotepara depth="1">What is everyone else doing??  Is there a better option that I didn't
+come up with?
+
+</quotepara><quotepara depth="1">Thanks in advance
+
+</quotepara><quotepara depth="1">Scott Voll
+Network Analyst, CCNA
+Willamette ESD
+
+</quotepara><quotefooter type="list-management" hash="3736878002121161852" depth="1">_______________________________________________
+cisco-voip mailing list
+<email>cisco-voip@puck.nether.net</email>
+<url>https://puck.nether.net/mailman/listinfo/cisco-voip</url>
+</quotefooter></quote></body></message>

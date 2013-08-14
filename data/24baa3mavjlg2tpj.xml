@@ -1,0 +1,57 @@
+<message message-id="007701c760ec$6ab1e420$230d0d0a@amer.cisco.com" list="org.ietf.geopriv" id="24baa3mavjlg2tpj" type="general" date="2007-03-07T14:11:31-05:00" year="2007-01-01" year-month="2007-03-01" year-month-day="2007-03-07" thread-id="xkdtnyrt6oeluskw"><headers><envelope-from-line>From geopriv-bounces@ietf.org Wed Mar 07 14:11:56 2007</envelope-from-line><from personal="Marc Linsner" address="mlinsner@cisco.com">Marc Linsner &lt;mlinsner@cisco.com&gt;</from><to personal="'Andrew Newton'" address="andy@hxr.us">'Andrew Newton' &lt;andy@hxr.us&gt;</to><cc personal="geopriv@ietf.org" address="geopriv@ietf.org">geopriv@ietf.org</cc><subject normal="[Geopriv]WGLCondraft-ietf-geopriv-l7-lcp-ps-00(PIDF-LOdigitalsignatures)">RE: [Geopriv]WGLCondraft-ietf-geopriv-l7-lcp-ps-00(PIDF-LOdigitalsignatures)</subject><return-path>geopriv-bounces@ietf.org</return-path><received>from [127.0.0.1] (helo=stiedprmman1.va.neustar.com)
+	by megatron.ietf.org with esmtp (Exim 4.43)
+	id 1HP1Y9-0001Mw-QQ; Wed, 07 Mar 2007 14:11:45 -0500</received><received>from [10.91.34.44] (helo=ietf-mx.ietf.org)
+	by megatron.ietf.org with esmtp (Exim 4.43) id 1HP1Y8-0001Ml-Pz
+	for geopriv@ietf.org; Wed, 07 Mar 2007 14:11:44 -0500</received><received>from rtp-iport-2.cisco.com ([64.102.122.149])
+	by ietf-mx.ietf.org with esmtp (Exim 4.43) id 1HP1Y3-0002WY-H1
+	for geopriv@ietf.org; Wed, 07 Mar 2007 14:11:44 -0500</received><received>from rtp-dkim-1.cisco.com ([64.102.121.158])
+	by rtp-iport-2.cisco.com with ESMTP; 07 Mar 2007 14:11:39 -0500</received><x-ironport-av>i="4.14,261,1170651600"; 
+	d="scan'208"; a="115165091:sNHT43554532"</x-ironport-av><received>from rtp-core-2.cisco.com (rtp-core-2.cisco.com [64.102.124.13])
+	by rtp-dkim-1.cisco.com (8.12.11/8.12.11) with ESMTP id l27JBdNW029150; 
+	Wed, 7 Mar 2007 14:11:39 -0500</received><received>from xbh-rtp-211.amer.cisco.com (xbh-rtp-211.cisco.com
+	[64.102.31.102])
+	by rtp-core-2.cisco.com (8.12.10/8.12.6) with ESMTP id l27JBOa3029362; 
+	Wed, 7 Mar 2007 19:11:38 GMT</received><received>from xfe-rtp-202.amer.cisco.com ([64.102.31.21]) by
+	xbh-rtp-211.amer.cisco.com with Microsoft SMTPSVC(6.0.3790.1830); 
+	Wed, 7 Mar 2007 14:11:34 -0500</received><received>from mlinsnerwxp ([10.82.170.66]) by xfe-rtp-202.amer.cisco.com with
+	Microsoft SMTPSVC(6.0.3790.1830); Wed, 7 Mar 2007 14:11:33 -0500</received><date>Wed, 7 Mar 2007 14:11:31 -0500</date><message-id>007701c760ec$6ab1e420$230d0d0a@amer.cisco.com</message-id><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-mailer>Microsoft Office Outlook 11</x-mailer><in-reply-to>&lt;6CC7A6A1-5A93-41E6-81AF-6372380BC481@hxr.us&gt;</in-reply-to><x-mimeole>Produced By Microsoft MimeOLE V6.00.2900.3028</x-mimeole><thread-index>Acdg6wyzTaXbbJSjQlKGeQRmPUEqNAAAS1lg</thread-index><x-originalarrivaltime>07 Mar 2007 19:11:33.0783 (UTC)
+	FILETIME=[6BA45A70:01C760EC]</x-originalarrivaltime><dkim-signature>v=0.5; a=rsa-sha256; q=dns/txt; l=688; t=1173294699;
+	x=1174158699; c=relaxed/simple; s=rtpdkim1001;
+	h=Content-Type:From:Subject:Content-Transfer-Encoding:MIME-Version;
+	d=cisco.com; i=mlinsner@cisco.com;
+	z=From:=20=22Marc=20Linsner=22=20&lt;mlinsner@cisco.com&gt;
+	|Subject:=20RE=3A=20[Geopriv]WGLCondraft-ietf-geopriv-l7-lcp-ps-00(PIDF-L
+	Odigitalsignatures) |Sender:=20
+	|To:=20=22'Andrew=20Newton'=22=20&lt;andy@hxr.us&gt;,
+	=20=22'Brian=20Rosen'=22=2 0&lt;br@brianrosen.net&gt;;
+	bh=cMKEGzSU54jQbbtEKXmkORUtsa9zdfx+pc+LWKkG6KQ=;
+	b=Adwj3kiF08pKjlZ0z87ifVLydoCgq2k5/ijk+r/DzK9sCKCm6PTfxZabtOUufLWq+IlzBc7v
+	g6pWlGH/LF1lwmLkQDXSJbECzo1Z6nG1A8OzFCAuvrXPNJNXyVlq0hcB;</dkim-signature><authentication-results>rtp-dkim-1; header.From=mlinsner@cisco.com; dkim=pass (
+	sig from cisco.com/rtpdkim1001 verified; ); </authentication-results><x-spam-score>0.0 (/)</x-spam-score><x-scan-signature>7d33c50f3756db14428398e2bdedd581</x-scan-signature><x-beenthere>geopriv@ietf.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>Geographic Location/Privacy &lt;geopriv.ietf.org&gt;</list-id><list-unsubscribe>&lt;https://www1.ietf.org/mailman/listinfo/geopriv&gt;,
+	&lt;mailto:geopriv-request@ietf.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:geopriv@ietf.org&gt;</list-post><list-help>&lt;mailto:geopriv-request@ietf.org?subject=help&gt;</list-help><list-subscribe>&lt;https://www1.ietf.org/mailman/listinfo/geopriv&gt;,
+	&lt;mailto:geopriv-request@ietf.org?subject=subscribe&gt;</list-subscribe><errors-to>geopriv-bounces@ietf.org</errors-to><status>O</status><x-status/><x-keywords/><x-uid>3698</x-uid></headers><normalized-references><normalized-message-id>007701c760ec$6ab1e420$230d0d0a@amer.cisco.com</normalized-message-id><normalized-thread-index>Acdg6wyzTaXbbJSjQlKGeQRmPUEqNA</normalized-thread-index><normalized-in-reply-to>6CC7A6A1-5A93-41E6-81AF-6372380BC481@hxr.us</normalized-in-reply-to></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;us-ascii&quot;"><para depth="0">
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">Yes, it works.  I don't think it's any better or worse than signing 
+the location value, but the operations required 
+(dereference at every
+step) is a
+pain.  It's functional.  Consider that the TLS operation needs the 
+very same cert that you would use to sign, the crypto 
+operations are 
+roughly similar, and the security is pretty much the same.
+</quotepara></quote><quotepara depth="1">
+No.  You missed one crucial and important operation: data  
+canonicalization.  Signing the data requires it, using TLS 
+does not.   
+And replay attacks can be thwarted.  Plus, it isn't patent encumbered.
+</quotepara></quote><para depth="0">
+And all machinery is in-place, from a geopriv perspective.
+
+</para><para depth="0">-Marc-
+
+</para><footer type="list-management" depth="0">_______________________________________________
+Geopriv mailing list
+<email>Geopriv@ietf.org</email>
+<url>https://www1.ietf.org/mailman/listinfo/geopriv</url>
+
+</footer></body></message>

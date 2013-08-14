@@ -1,0 +1,37 @@
+<message message-id="f472e9a004090218515b58dfff@mail.gmail.com" list="org.apache.maven.users" id="24b5peo27ntlg7ex" type="users" date="2004-09-03T09:51:20+08:00" year="2004-01-01" year-month="2004-09-01" year-month-day="2004-09-02" thread-id="24b5peo27ntlg7ex"><headers><envelope-from-line>From users-return-18372-apmail-maven-users-archive=maven.apache.org@maven.apache.org Fri Sep 03 01:51:32 2004</envelope-from-line><from personal="Eric Chow" address="eric138@gmail.com">Eric Chow &lt;eric138@gmail.com&gt;</from><to personal="users@maven.apache.org" address="users@maven.apache.org">users@maven.apache.org</to><subject normal="Cannot specify strutsconfigxml version ????">Cannot specify strutsconfigxml version ????</subject><return-path>users-return-18372-apmail-maven-users-archive=maven.apache.org@maven.apache.org</return-path><delivered-to>apmail-maven-users-archive@www.apache.org</delivered-to><received>(qmail 71734 invoked from network); 3 Sep 2004 01:51:31 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur-2.apache.org with SMTP; 3 Sep 2004 01:51:31 -0000</received><received>(qmail 79888 invoked by uid 500); 3 Sep 2004 01:51:24 -0000</received><delivered-to>apmail-maven-users-archive@maven.apache.org</delivered-to><received>(qmail 79849 invoked by uid 500); 3 Sep 2004 01:51:23 -0000</received><mailing-list>contact users-help@maven.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:users-unsubscribe@maven.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:users-subscribe@maven.apache.org&gt;</list-subscribe><list-help>&lt;mailto:users-help@maven.apache.org&gt;</list-help><list-post>&lt;mailto:users@maven.apache.org&gt;</list-post><list-id>"Maven Users List" &lt;users.maven.apache.org&gt;</list-id><reply-to>"Maven Users List" &lt;users@maven.apache.org&gt;</reply-to><delivered-to>mailing list users@maven.apache.org</delivered-to><received>(qmail 79836 invoked by uid 99); 3 Sep 2004 01:51:23 -0000</received><x-asf-spam-status>No, hits=0.6 required=10.0
+	tests=FROM_ENDS_IN_NUMS,RCVD_BY_IP,SPF_HELO_PASS,SPF_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (hermes.apache.org: domain of eric138@gmail.com designates 64.233.170.204 as permitted sender)</received-spf><received>from [64.233.170.204] (HELO mproxy.gmail.com) (64.233.170.204)
+  by apache.org (qpsmtpd/0.28) with ESMTP; Thu, 02 Sep 2004 18:51:22 -0700</received><received>by mproxy.gmail.com with SMTP id 80so275830rnk
+        for &lt;users@maven.apache.org&gt;; Thu, 02 Sep 2004 18:51:20 -0700 (PDT)</received><received>by 10.38.179.74 with SMTP id b74mr703047rnf;
+        Thu, 02 Sep 2004 18:51:20 -0700 (PDT)</received><received>by 10.38.179.32 with HTTP; Thu, 2 Sep 2004 18:51:20 -0700 (PDT)</received><message-id>f472e9a004090218515b58dfff@mail.gmail.com</message-id><date>Fri, 3 Sep 2004 09:51:20 +0800</date><reply-to>Eric Chow &lt;eric138@gmail.com&gt;</reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=US-ASCII</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>f472e9a004090218515b58dfff@mail.gmail.com</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><greeting depth="0">Hello,
+</greeting><para depth="0">
+I tried to specify "maven.xdoclet.webdoclet.strutsconfigxml.0.Version=1.2"
+in build.properties. But it seems no effective. After the
+struts-conf.xml be generated. The DOCTYPE is always like the
+following:
+
+</para><para depth="0">&lt;!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD
+Struts Configuration 1.0//EN"
+"<url>http://jakarta.apache.org/struts/dtds/struts-config_1_0.dtd</url>"&gt;
+
+</para><para depth="0">Maven 1.0 + XDoclet Plugin 1.2.1
+
+</para><para depth="0">In fact, I tried to set the version to 1.1, it is the same result as
+above. Is it a bug or something else ???
+
+</para><para depth="0">I define the properties as following:
+maven.xdoclet.webdoclet.strutsconfigxml.0=true
+maven.xdoclet.webdoclet.strutsconfigxml.0.Version=1.2
+maven.xdoclet.webdoclet.strutsconfigxml.0.validateXML=false
+<br/>maven.xdoclet.webdoclet.strutsconfigxml.0.destDir=${maven.build.dir}/${pom.artifactId}/WEB-INF/conf 
+maven.xdoclet.webdoclet.strutsconfigxml.0.mergeDir=${maven.src.dir}/merges
+
+</para><para depth="0">Anything I missed ??
+
+</para><para depth="0">Eric
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>users-help@maven.apache.org</email>
+
+</footer></body></message>

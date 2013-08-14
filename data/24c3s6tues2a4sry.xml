@@ -1,0 +1,137 @@
+<message message-id="20080721071304.134740@gmx.net" list="org.apache.cocoon.users" id="24c3s6tues2a4sry" type="users" date="2008-07-21T09:13:04+02:00" year="2008-01-01" year-month="2008-07-01" year-month-day="2008-07-21" thread-id="aqanuon6yllciy5r"><headers><envelope-from-line>Mon Jul 21 00:13:37 2008</envelope-from-line><from personal="Patrick Heiden" address="patrickheiden@gmx.de">Patrick Heiden &lt;patrickheiden@gmx.de&gt;</from><to personal="users@cocoon.apache.org" address="users@cocoon.apache.org">users@cocoon.apache.org</to><subject normal="C2.2 - Cannot remove jar files from classpath using Maven">Re: C2.2 - Cannot remove jar files from classpath using Maven</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 20
+          for &lt;gale.harmon.yates@a.markmail.org&gt;;
+          Mon, 21 Jul 2008 00:13:37 -0700 (PDT)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 5333B2908001
+	for &lt;gale.harmon.yates@a.markmail.org&gt;; Mon, 21 Jul 2008 00:13:37 -0700 (PDT)</received><received>(qmail 61527 invoked by uid 500); 21 Jul 2008 07:13:35 -0000</received><mailing-list>contact users-help@cocoon.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:users-help@cocoon.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:users-unsubscribe@cocoon.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:users@cocoon.apache.org&gt;</list-post><reply-to>users@cocoon.apache.org</reply-to><list-id>&lt;users.cocoon.apache.org&gt;</list-id><delivered-to>mailing list users@cocoon.apache.org</delivered-to><received>(qmail 61516 invoked by uid 99); 21 Jul 2008 07:13:35 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 21 Jul 2008 00:13:35 -0700</received><x-asf-spam-status>No, hits=-0.0 required=10.0
+	tests=SPF_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (athena.apache.org: domain of patrickheiden@gmx.de designates 213.165.64.20 as permitted sender)</received-spf><received>from [213.165.64.20] (HELO mail.gmx.net) (213.165.64.20)
+    by apache.org (qpsmtpd/0.29) with SMTP; Mon, 21 Jul 2008 07:12:40 +0000</received><received>(qmail 21090 invoked by uid 0); 21 Jul 2008 07:13:04 -0000</received><received>from 91.40.203.143 by www058.gmx.net with HTTP;
+ Mon, 21 Jul 2008 09:13:03 +0200 (CEST)</received><content-type>text/plain; charset="iso-8859-1"</content-type><date>Mon, 21 Jul 2008 09:13:04 +0200</date><in-reply-to>&lt;48837C79.40001@searchevent.co.uk&gt;</in-reply-to><message-id>20080721071304.134740@gmx.net</message-id><mime-version>1.0</mime-version><references>&lt;48833BBC.90107@searchevent.co.uk&gt; &lt;4883536F.5030103@apache.org&gt;
+ &lt;48837C79.40001@searchevent.co.uk&gt;</references><x-authenticated>#29485201</x-authenticated><x-flags>0001</x-flags><x-mailer>WWW-Mail 6100 (Global Message Exchange)</x-mailer><x-priority>3</x-priority><x-provags-id>V01U2FsdGVkX19lK3oUKk5lX3F0nNi6uEkWJrv/xEP9ff9eS/abAN
+ QYJ21uP+rDQEeWrUZ2JZ+pORPHepmYV7GODg== </x-provags-id><x-gmx-uid>ZF7hCcxAfW47NquytmRotfdudmllcsVI</x-gmx-uid><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>20080721071304.134740@gmx.net</normalized-message-id><normalized-in-reply-to>48837C79.40001@searchevent.co.uk</normalized-in-reply-to><normalized-reference>48833BBC.90107@searchevent.co.uk</normalized-reference><normalized-reference>4883536F.5030103@apache.org</normalized-reference><normalized-reference>48837C79.40001@searchevent.co.uk</normalized-reference></normalized-references><body type="text/plain; charset=&quot;iso-8859-1&quot;"><para depth="0">Hi David!
+
+</para><para depth="0">Just for getting it clear - is 'myblock' some block, or are you listing<br/>dependencies for the whole web-application, since there could be a dep on<br/>commons-logging wich is not mentioned out of 'myblock'
+
+</para><para depth="0">Best regards,
+Patrick
+
+</para><quote depth="1"><quotepara depth="1">-------- Original-Nachricht --------
+</quotepara><quote depth="2"><quotepara depth="2">Datum: Sun, 20 Jul 2008 18:57:13 +0100
+Von: David Legg &lt;<email>david.legg@searchevent.co.uk</email>&gt;
+An: <email>users@cocoon.apache.org</email>
+Betreff: Re: C2.2 - Cannot remove jar files from classpath using Maven
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">Thanks again Reinhard,
+
+</quotepara><quotepara depth="2">I ran 'mvn dependency:tree' from the 'myblock' folder and got the 
+following: -
+
+</quotepara><quotepara depth="2">[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'dependency'.
+[INFO] 
+</quotepara><quotepara depth="2">------------------------------------------------------------------------
+[INFO] Building myblock
+[INFO]    task-segment: [dependency:tree]
+[INFO] 
+</quotepara><quotepara depth="2">------------------------------------------------------------------------
+[INFO] [dependency:tree]
+[INFO] com.mycompany:myblock:jar:1.0.0
+[INFO] +- org.apache.cocoon:cocoon-core:jar:2.2.0:compile
+[INFO] |  +-
+org.apache.cocoon:cocoon-spring-configurator:jar:1.0.2:compile
+[INFO] |  |  +- org.springframework:spring-core:jar:2.5.1:compile
+[INFO] |  |  +- org.springframework:spring-context:jar:2.5.1:compile
+[INFO] |  |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  |  +- org.springframework:spring-beans:jar:2.5.1:compile
+[INFO] |  |  +- org.springframework:spring-aop:jar:2.5.1:compile
+[INFO] |  |  \- org.springframework:spring-web:jar:2.5.1:compile
+[INFO] |  +- org.apache.cocoon:cocoon-configuration-api:jar:1.0.2:compile
+[INFO] |  +-
+org.apache.cocoon:cocoon-pipeline-components:jar:1.0.0:compile
+[INFO] |  |  +- org.apache.cocoon:cocoon-pipeline-impl:jar:1.0.0:compile
+[INFO] |  |  |  +- org.apache.cocoon:cocoon-pipeline-api:jar:1.0.0:compile
+[INFO] |  |  |  |  \- 
+org.apache.excalibur.components:excalibur-xmlutil:jar:2.2.1:compile
+[INFO] |  |  |  +- 
+org.apache.excalibur.containerkit:excalibur-instrument-api:jar:2.2.1:compile
+[INFO] |  |  |  \- jakarta-regexp:jakarta-regexp:jar:1.4:compile
+[INFO] |  |  +- org.apache.cocoon:cocoon-util:jar:1.0.0:compile
+[INFO] |  |  \- org.apache.cocoon:cocoon-xml-api:jar:1.0.0:compile
+[INFO] |  +- org.apache.cocoon:cocoon-sitemap-impl:jar:1.0.0:compile
+[INFO] |  |  +- org.apache.cocoon:cocoon-sitemap-api:jar:1.0.0:compile
+[INFO] |  |  +- commons-collections:commons-collections:jar:3.2:compile
+[INFO] |  |  \- commons-jxpath:commons-jxpath:jar:1.2:compile
+[INFO] |  |     \- junit:junit:jar:3.8:compile
+[INFO] |  +- org.apache.cocoon:cocoon-sitemap-components:jar:1.0.0:compile
+[INFO] |  +- org.apache.cocoon:cocoon-xml-resolver:jar:1.0.0:compile
+[INFO] |  |  \- org.apache.cocoon:cocoon-xml-impl:jar:1.0.0:compile
+[INFO] |  +- org.apache.cocoon:cocoon-thread-api:jar:1.0.0:compile
+[INFO] |  |  \- concurrent:concurrent:jar:1.3.4:compile
+[INFO] |  +- org.apache.cocoon:cocoon-xml-util:jar:1.0.0:compile
+[INFO] |  +- 
+org.apache.excalibur.components:excalibur-pool-api:jar:2.2.1:compile
+[INFO] |  |  \- 
+org.apache.avalon.framework:avalon-framework-api:jar:4.3.1:compile
+[INFO] |  +- 
+org.apache.excalibur.containerkit:excalibur-logger:jar:2.2.1:compile
+[INFO] |  +- 
+org.apache.excalibur.components:excalibur-store:jar:2.2.1:compile
+[INFO] |  +- 
+org.apache.avalon.framework:avalon-framework-impl:jar:4.3.1:compile
+[INFO] |  +- commons-io:commons-io:jar:1.3.1:compile
+[INFO] |  +- commons-jexl:commons-jexl:jar:1.0:compile
+[INFO] |  +- xalan:xalan:jar:2.7.0:compile
+[INFO] |  +- xerces:xercesImpl:jar:2.8.1:compile
+[INFO] |  +- xml-apis:xml-apis:jar:1.3.02:compile
+[INFO] |  +- xml-resolver:xml-resolver:jar:1.2:compile
+[INFO] |  +- org.apache.cocoon:cocoon-store-impl:jar:1.0.0:runtime
+[INFO] |  |  \- net.sf.ehcache:ehcache:jar:1.2.4:runtime
+[INFO] |  \- org.apache.cocoon:cocoon-thread-impl:jar:1.0.0:runtime
+[INFO] +- 
+org.apache.cocoon:cocoon-servlet-service-components:jar:1.0.0:compile
+[INFO] |  +-
+org.apache.cocoon:cocoon-servlet-service-impl:jar:1.0.0:compile
+[INFO] |  |  \- 
+org.apache.excalibur.components:excalibur-sourceresolve:jar:2.2.3:compile
+[INFO] |  \- org.apache.cocoon:cocoon-linkrewriter-impl:jar:1.0.0:compile
+[INFO] +- org.apache.cocoon:cocoon-template-impl:jar:1.1.0:compile
+[INFO] |  +- 
+org.apache.cocoon:cocoon-expression-language-api:jar:1.0.0:compile
+[INFO] |  \- 
+org.apache.cocoon:cocoon-expression-language-impl:jar:1.0.0:compile
+[INFO] |     \- commons-lang:commons-lang:jar:2.3:compile
+[INFO] +- org.apache.cocoon:cocoon-flowscript-impl:jar:1.0.0:compile
+[INFO] |  \- rhino:js:jar:1.6R7:compile
+[INFO] \- javax.servlet:servlet-api:jar:2.4:provided
+
+</quotepara><quotepara depth="2">Interestingly, there is no mention of commons-logging after I added the 
+exclusions to the pom file.  But why does it bother to copy the 
+commons-logging jar to the WEB-INF/lib folder if it knows nothing 
+depends on it?
+
+</quotepara><quotepara depth="2">David Legg
+
+</quotepara><quotepara depth="2">Reinhard Pötz wrote:
+</quotepara><quote depth="3"><quote depth="4"><quotepara depth="4">I suppose I could start fiddling with plugin exclusions but this is 
+getting silly.  Do I really have to work this hard to try to make 
+sure a jar file isn't included in the classpath?
+</quotepara></quote><quotepara depth="3">
+Use the Maven dependency plugin (the 'tree' goal) to find out what 
+dependencies have a dependency on the libraries that you want to 
+remove. Then you have to remove them from ALL occurrences by adding 
+&lt;exclusions&gt; sections.
+</quotepara></quote><quotepara depth="2">
+</quotepara><quotefooter type="list-management" hash="18233284357897203948" depth="2">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@cocoon.apache.org</email>
+For additional commands, e-mail: <email>users-help@cocoon.apache.org</email>
+</quotefooter></quote><quotepara depth="1">
+</quotepara><quotefooter type="signature" hash="17363346968699364099" depth="1">-- 
+Psssst! Schon vom neuen GMX MultiMessenger gehört?
+Der kann`s mit allen: <url>http://www.gmx.net/de/go/multimessenger</url>
+
+</quotefooter><quotefooter type="list-management" hash="11729431654690325114" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@cocoon.apache.org</email>
+For additional commands, e-mail: <email>users-help@cocoon.apache.org</email>
+
+</quotefooter></quote></body></message>

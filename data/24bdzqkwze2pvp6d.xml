@@ -1,0 +1,40 @@
+<message message-id="201106101832.p5AIWQWO053651@repoman.freebsd.org" list="org.freebsd.cvs-ports" id="24bdzqkwze2pvp6d" type="checkins" date="2011-06-10T10:32:17.025867-08:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-10" thread-id="24bdzqkwze2pvp6d"><headers><envelope-from-line>Fri Jun 10 10:32:40 2011</envelope-from-line><from personal="Juergen Lock" address="nox@FreeBSD.org">Juergen Lock &lt;nox@FreeBSD.org&gt;</from><to personal="ports-committers@FreeBSD.org" address="ports-committers@FreeBSD.org">ports-committers@FreeBSD.org</to><subject normal="cvs commit: ports/www/vdradmin-am Makefile distinfo ports/www/vdradmin-am/files vdradmind.in">cvs commit: ports/www/vdradmin-am Makefile distinfo ports/www/vdradmin-am/files vdradmind.in</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 704
+          for &lt;gerald.hunt.rosa@a.markmail.org&gt;;
+          Fri, 10 Jun 2011 10:32:39 -0800 (GMT-08:00)</received><received>from mx2.freebsd.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id BF3EF2908183
+	for &lt;gerald.hunt.rosa@a.markmail.org&gt;; Fri, 10 Jun 2011 11:32:16 -0700 (PDT)</received><received>from hub.freebsd.org (hub.freebsd.org [IPv6:2001:4f8:fff6::36])
+	by mx2.freebsd.org (Postfix) with ESMTP id 8C4D61629D6;
+	Fri, 10 Jun 2011 18:32:34 +0000 (UTC)</received><received>from hub.freebsd.org (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with ESMTP id B0861106573E;
+	Fri, 10 Jun 2011 18:32:32 +0000 (UTC)
+	(envelope-from owner-cvs-ports@freebsd.org)</received><delivered-to>cvs-ports@FreeBSD.org</delivered-to><received>from mx1.freebsd.org (mx1.freebsd.org [IPv6:2001:4f8:fff6::34])
+	by hub.freebsd.org (Postfix) with ESMTP id 83C47106566B;
+	Fri, 10 Jun 2011 18:32:26 +0000 (UTC) (envelope-from nox@FreeBSD.org)</received><received>from repoman.freebsd.org (repoman.freebsd.org
+	[IPv6:2001:4f8:fff6::29])
+	by mx1.freebsd.org (Postfix) with ESMTP id 5C7AD8FC12;
+	Fri, 10 Jun 2011 18:32:26 +0000 (UTC)</received><received>from repoman.freebsd.org (localhost [127.0.0.1])
+	by repoman.freebsd.org (8.14.4/8.14.4) with ESMTP id p5AIWQSS053652;
+	Fri, 10 Jun 2011 18:32:26 GMT (envelope-from nox@repoman.freebsd.org)</received><received>(from nox@localhost)
+	by repoman.freebsd.org (8.14.4/8.14.4/Submit) id p5AIWQWO053651;
+	Fri, 10 Jun 2011 18:32:26 GMT (envelope-from nox)</received><message-id>201106101832.p5AIWQWO053651@repoman.freebsd.org</message-id><date>Fri, 10 Jun 2011 18:32:26 +0000 (UTC)</date><x-freebsd-cvs-branch>HEAD</x-freebsd-cvs-branch><x-beenthere>cvs-ports@freebsd.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>CVS commit messages for the ports tree &lt;cvs-ports.freebsd.org&gt;</list-id><list-unsubscribe>&lt;http://lists.freebsd.org/mailman/listinfo/cvs-ports&gt;,
+	&lt;mailto:cvs-ports-request@freebsd.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.freebsd.org/pipermail/cvs-ports&gt;</list-archive><list-post>&lt;mailto:cvs-ports@freebsd.org&gt;</list-post><list-help>&lt;mailto:cvs-ports-request@freebsd.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.freebsd.org/mailman/listinfo/cvs-ports&gt;,
+	&lt;mailto:cvs-ports-request@freebsd.org?subject=subscribe&gt;</list-subscribe><sender>owner-cvs-ports@freebsd.org</sender><errors-to>owner-cvs-ports@freebsd.org</errors-to></headers><normalized-references><normalized-message-id>201106101832.p5AIWQWO053651@repoman.freebsd.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">nox         2011-06-10 18:32:26 UTC
+
+</para><para depth="0">  FreeBSD ports repository
+
+</para><para depth="0">  Modified files:
+    www/vdradmin-am      Makefile distinfo 
+    www/vdradmin-am/files vdradmind.in 
+  Log:
+  Update to 3.6.8 .
+
+</para><para depth="0">  Revision  Changes    Path
+  1.2       +1 -2      ports/www/vdradmin-am/Makefile
+  1.2       +2 -2      ports/www/vdradmin-am/distinfo
+  1.2       +2 -1      ports/www/vdradmin-am/files/vdradmind.in
+</para><footer type="list-management" depth="0">_______________________________________________
+<email>cvs-ports@freebsd.org</email> mailing list
+<url>http://lists.freebsd.org/mailman/listinfo/cvs-ports</url>
+To unsubscribe, send any mail to "<email>cvs-ports-unsubscribe@freebsd.org</email>"
+</footer></body></message>

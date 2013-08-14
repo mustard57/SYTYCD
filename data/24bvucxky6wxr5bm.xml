@@ -1,0 +1,132 @@
+<message message-id="200805221241.m4MCfiYv012725@openlaszlo.org" list="org.openlaszlo.laszlo-checkins" id="24bvucxky6wxr5bm" type="checkins" date="2008-05-22T05:41:44-07:00" year="2008-01-01" year-month="2008-05-01" year-month-day="2008-05-22" thread-id="24bvucxky6wxr5bm"><headers><envelope-from-line>From dda@openlaszlo.org  Thu May 22 05:41:44 2008</envelope-from-line><from personal="dda@openlaszlo.org" address="dda@openlaszlo.org">"dda@openlaszlo.org" &lt;dda@openlaszlo.org&gt;</from><subject normal="[Laszlo-checkins] r9273 - in openlaszlo/trunk/WEB-INF/lps: lfc/services server/src/org/openlaszlo/sc">[Laszlo-checkins] r9273 - in openlaszlo/trunk/WEB-INF/lps: lfc/services server/src/org/openlaszlo/sc</subject><date>Thu, 22 May 2008 05:41:44 -0700</date><message-id>200805221241.m4MCfiYv012725@openlaszlo.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>200805221241.m4MCfiYv012725@openlaszlo.org</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Author: dda
+Date: 2008-05-22 05:41:34 -0700 (Thu, 22 May 2008)
+New Revision: 9273
+
+</para><para depth="0">Modified:
+   openlaszlo/trunk/WEB-INF/lps/lfc/services/LzUtils.lzs
+   openlaszlo/trunk/WEB-INF/lps/server/src/org/openlaszlo/sc/ParseTreePrinter.java
+Log:
+Change 20080522-dda-h by dda at lester.local on 2008-05-22 08:03:36 EDT
+    in /Users/dda/laszlo/src/svn/openlaszlo/trunk-c
+    for <url>http://svn.openlaszlo.org/openlaszlo/trunk</url>
+
+</para><para depth="0">Summary: Protection for Javascript 'return' snafus in unparser
+
+</para><para depth="0">New Features:
+
+</para><para depth="0">Bugs Fixed: LPP-5761
+
+</para><para depth="0">Technical Reviewer: ptw (pending)
+QA Reviewer: (pending)
+Doc Reviewer: (pending)
+
+</para><para depth="0">Documentation:
+
+</para><para depth="0">Release Notes:
+
+</para><para depth="0">Details:
+   The argument for return is checked - if it contains a newline and is not<br/>already
+   parenthesized, parentheses are added.
+
+</para><para depth="0">   Note: this change is made and tested against r9252 -- before r9267, which<br/>would
+   fix the reported problem in a different way.  This fix should guarantee that
+   problems with breaking lines in 'return' statements will not trouble us<br/>again.
+
+</para><para depth="0">Tests:
+   Tested againg r9252 (see Details above):
+
+</para><para depth="0">   The original LzUtils.lzs compiles.
+
+</para><para depth="0">   swf9 hello + (smoketest,weather,lzpix) * (swf8,dhtml)
+
+</para><para depth="0">Modified: openlaszlo/trunk/WEB-INF/lps/lfc/services/LzUtils.lzs
+===================================================================
+--- openlaszlo/trunk/WEB-INF/lps/lfc/services/LzUtils.lzs	2008-05-22 12:40:08<br/>UTC (rev 9272)
++++ openlaszlo/trunk/WEB-INF/lps/lfc/services/LzUtils.lzs	2008-05-22 12:41:34<br/>UTC (rev 9273)
+@@ -58,11 +58,10 @@
+                 scope.__callbacks[sc] = sc;
+             }
+             lz.Utils.__scopes[sc] = scope;
+-            var val = function  () {
++            return function  () {
+                 var s = lz.Utils.__scopes[sc];
+                 if (s) return s[name].apply(s, args);
+             };
+-            return val;
+
+</para><para depth="0">         }
+         public  function removecallback(scope) {
+
+</para><para depth="0">Modified:<br/>openlaszlo/trunk/WEB-INF/lps/server/src/org/openlaszlo/sc/ParseTreePrinter.java
+===================================================================
+---<br/>openlaszlo/trunk/WEB-INF/lps/server/src/org/openlaszlo/sc/ParseTreePrinter.java<br/>2008-05-22 12:40:08 UTC (rev 9272)
++++<br/>openlaszlo/trunk/WEB-INF/lps/server/src/org/openlaszlo/sc/ParseTreePrinter.java<br/>2008-05-22 12:41:34 UTC (rev 9273)
+@@ -110,19 +110,27 @@
+     where.println(visit(node));
+   }
+
+</para><para depth="0">-  public String delimit(String phrase, boolean force) {
++  public String delimit(String phrase, boolean force, boolean parenMultiline) {
+     // Strip the phrase of annotations so we can look at the first char
+     String plain = unannotate(phrase);
+     if (plain.length() &gt; 0) {
+-      return ((('(' != plain.charAt(0)) &amp;&amp; force)?" ":SPACE) + phrase;
++      boolean hasParen = '(' == plain.charAt(0);
++      phrase = ((!hasParen &amp;&amp; force)?" ":SPACE) + phrase;
++      if (!hasParen &amp;&amp; parenMultiline &amp;&amp; plain.indexOf('\n') &gt;= 0) {
++        phrase = "(" + phrase + ")";
++      }
+     }
+     return phrase;
+   }
+
+</para><para depth="0">   public String delimit(String phrase) {
+-    return delimit(phrase, true);
++    return delimit(phrase, true, false);
+   }
+-  
++
++  public String delimitWithParen(String phrase) {
++    return delimit(phrase, true, true);
++  }
++
+   public String elideSemi(String phrase) {
+     // Strip the phrase of annotations so we can look at the ending
+     if (unannotate(phrase).endsWith(SEMI)) {
+@@ -441,7 +449,7 @@
+     int thisPrec = prec(((ASTOperator)node.get(1)).getOperator(), false);
+     assert children.length == 3;
+     children[2] = maybeAddParens(thisPrec, node.get(2), children[2], true);
+-    return children[0] + SPACE + children[1] + delimit(children [2], false);
++    return children[0] + SPACE + children[1] + delimit(children [2], false,<br/>false);
+   }
+   public String visitCallExpression(SimpleNode node, String[] children) {
+     int thisPrec = prec(Ops.LPAREN, true);
+@@ -517,7 +525,7 @@
+     return children[0] + "[" + children[1] + "]";
+   }
+   public String visitReturnStatement(SimpleNode node, String[] children) {
+-    return "return" + delimit(children[0]);
++    return "return" + delimitWithParen(children[0]);
+   }
+   public String visitThisReference(SimpleNode node, String[] children) {
+     return "this";
+@@ -665,7 +673,7 @@
+     int thisPrec = prec(isAnd ? Ops.SC_AND : Ops.SC_OR, false);
+     children[0] = maybeAddParens(thisPrec, node.get(0), children[0], true);
+     for (int i = 1; i &lt; children.length; i++) {
+-      children[i] = delimit(maybeAddParens(thisPrec, node.get(i), children[i]),<br/>false);
++      children[i] = delimit(maybeAddParens(thisPrec, node.get(i), children[i]),<br/>false, false);
+     }
+     return join(isAnd ? (SPACE + "&amp;&amp;") : (SPACE + "||"), children);
+   }
+@@ -710,7 +718,7 @@
+       sb.append(space);
+       sb.append(op);
+       // Disambiguate `a + ++b`, `a++ + b` etc.
+-      sb.append(delimit(child, required || opChar ==<br/>unannotate(child).charAt(0)));
++      sb.append(delimit(child, required || opChar ==<br/>unannotate(child).charAt(0), false));
+     }
+     return(sb.toString());
+   }
+</para></body></message>

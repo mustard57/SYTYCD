@@ -1,0 +1,48 @@
+<message message-id="alpine.DEB.1.10.0912170312270.21511@localhost.localdomain" list="org.gnome.mc" id="24chi5cm6np45zet" type="general" date="2009-12-17T03:14:36-05:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-17" thread-id="byzgwgj3oonjtxfu"><headers><envelope-from-line>Thu Dec 17 00:15:21 2009</envelope-from-line><from personal="Joe(theWordy)Philbrook" address="jtwdyp@ttlc.net">"Joe(theWordy)Philbrook" &lt;jtwdyp@ttlc.net&gt;</from><to personal="Mc@gnome.org" address="Mc@gnome.org">Mc@gnome.org</to><subject normal="alternative key-binding to &quot;C-Shift-Enter&quot; for use in xterms?">Re: alternative key-binding to "C-Shift-Enter" for use in xterms?</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 968
+          for &lt;fritz.diaz.acosta@a.markmail.org&gt;;
+          Thu, 17 Dec 2009 00:15:20 -0800 (GMT-08:00)</received><received>from menubar.gnome.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 0E1992908182
+	for &lt;fritz.diaz.acosta@a.markmail.org&gt;; Thu, 17 Dec 2009 00:14:57 -0800 (PST)</received><received>from menubar.gnome.org (localhost.localdomain [127.0.0.1])
+	by menubar.gnome.org (Postfix) with ESMTP id D3185750430;
+	Thu, 17 Dec 2009 08:15:19 +0000 (GMT)</received><x-original-to>mc@gnome.org</x-original-to><delivered-to>mc@gnome.org</delivered-to><received>from localhost (localhost.localdomain [127.0.0.1])
+	by menubar.gnome.org (Postfix) with ESMTP id 131C8750430
+	for &lt;mc@gnome.org&gt;; Thu, 17 Dec 2009 08:15:18 +0000 (GMT)</received><x-virus-scanned>by amavisd-new at gnome.org</x-virus-scanned><x-spam-flag>NO</x-spam-flag><x-spam-score>-2.599</x-spam-score><x-spam-level/><x-spam-status>No, score=-2.599 tagged_above=-999 required=2
+	tests=[BAYES_00=-2.599] autolearn=ham</x-spam-status><received>from menubar.gnome.org ([127.0.0.1])
+	by localhost (menubar.gnome.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id adYzaC9dENMq for &lt;mc@gnome.org&gt;;
+	Thu, 17 Dec 2009 08:15:11 +0000 (GMT)</received><received>from QMTA11.westchester.pa.mail.comcast.net
+	(qmta11.westchester.pa.mail.comcast.net [76.96.59.211])
+	by menubar.gnome.org (Postfix) with ESMTP id 26491750398
+	for &lt;mc@gnome.org&gt;; Thu, 17 Dec 2009 08:15:02 +0000 (GMT)</received><received>from OMTA01.westchester.pa.mail.comcast.net ([76.96.62.11])
+	by QMTA11.westchester.pa.mail.comcast.net with comcast
+	id J8F21d0020EZKEL5B8F2Kj; Thu, 17 Dec 2009 08:15:02 +0000</received><received>from [192.168.0.105] ([24.63.252.133])
+	by OMTA01.westchester.pa.mail.comcast.net with comcast
+	id J8Eq1d0022tSwvs3M8F2WX; Thu, 17 Dec 2009 08:15:02 +0000</received><date>Thu, 17 Dec 2009 03:14:36 -0500 (EST)</date><in-reply-to>&lt;20091216090704.3af3e7f2.halfcountplus@intergate.com&gt;</in-reply-to><message-id>alpine.DEB.1.10.0912170312270.21511@localhost.localdomain</message-id><references>&lt;20091216090704.3af3e7f2.halfcountplus@intergate.com&gt;</references><user-agent>Alpine 1.10 (DEB 962 2008-03-14)</user-agent><mime-version>1.0</mime-version><x-beenthere>mc@gnome.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><reply-to>jtwdyp@comcast.net</reply-to><list-id>List for GNU Midnight Commander users &lt;mc.gnome.org&gt;</list-id><list-unsubscribe>&lt;http://mail.gnome.org/mailman/options/mc&gt;,
+	&lt;mailto:mc-request@gnome.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.gnome.org/archives/mc/&gt;</list-archive><list-post>&lt;mailto:mc@gnome.org&gt;</list-post><list-help>&lt;mailto:mc-request@gnome.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.gnome.org/mailman/listinfo/mc&gt;,
+	&lt;mailto:mc-request@gnome.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>mc-bounces@gnome.org</sender><errors-to>mc-bounces@gnome.org</errors-to></headers><normalized-references><normalized-message-id>alpine.DEB.1.10.0912170312270.21511@localhost.localdomain</normalized-message-id><normalized-in-reply-to>20091216090704.3af3e7f2.halfcountplus@intergate.com</normalized-in-reply-to><normalized-reference>20091216090704.3af3e7f2.halfcountplus@intergate.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">
+It would appear that on Dec 16, MK did say:
+
+</para><quote depth="1"><quotepara depth="1">xterm lacks configurability in this sense, but you should be able to
+</quotepara></quote><para depth="0">set console to allow anything, even if it means rearranging some key
+combos taken by it or KDE (since mc keys are not configurable).
+
+</para><para depth="0">I've looked for such key combos in konsole's "settings-&gt;config shortcuts"
+as well as in the kde's and/or enlightenment's "global" keybindings
+and never found anything these keystrokes were used for...
+
+</para><quote depth="1"><quotepara depth="1">Anyway, I just use ctrl-x p (not ctlr-x ctrl-p) to get the fullpath for the<br/>current panel directory and then alt-enter for the filename.
+</quotepara></quote><para depth="0">
+Now that is useful... I think I can teach my fingers to do that. Don't
+know why I didn't know about the "ctrl-x p" sequence. It's much better than
+than my X=`pwd`/{alt+Enter} kludge... Thank you.
+
+</para><footer type="signature" depth="0" hash="8942306625753453661">-- 
+|   ---   ___
+|   &lt;0&gt;   &lt;-&gt;	   Joe (theWordy) Philbrook
+|	^		J(tWdy)P
+|    ~\___/~	     &lt;&lt;<email>jtwdyp@ttlc.net</email>&gt;&gt;
+</footer><footer type="list-management" depth="0">_______________________________________________
+Mc mailing list
+<url>http://mail.gnome.org/mailman/listinfo/mc</url>
+</footer></body></message>

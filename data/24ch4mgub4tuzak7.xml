@@ -1,0 +1,53 @@
+<message message-id="200912140226.nBE2QXRo007031@repoman.freebsd.org" list="org.freebsd.cvs-ports" id="24ch4mgub4tuzak7" type="checkins" date="2009-12-13T18:26:18.721881-08:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-13" thread-id="24ch4mgub4tuzak7"><headers><envelope-from-line>Sun Dec 13 18:26:41 2009</envelope-from-line><from personal="Alexander Logvinov" address="avl@FreeBSD.org">Alexander Logvinov &lt;avl@FreeBSD.org&gt;</from><to personal="ports-committers@FreeBSD.org" address="ports-committers@FreeBSD.org">ports-committers@FreeBSD.org</to><subject normal="cvs commit: ports MOVED ports/net Makefile ports/net/grdc-applet Makefile distinfo pkg-descr pkg-plist ports/net/remmina-applet Makefile distinfo pkg-descr pkg-plist">cvs commit: ports MOVED ports/net Makefile ports/net/grdc-applet Makefile distinfo pkg-descr pkg-plist ports/net/remmina-applet Makefile distinfo pkg-descr pkg-plist</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 284
+          for &lt;gerald.hunt.rosa@a.markmail.org&gt;;
+          Sun, 13 Dec 2009 18:26:41 -0800 (GMT-08:00)</received><received>from mx2.freebsd.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 651A43B300C1
+	for &lt;gerald.hunt.rosa@a.markmail.org&gt;; Sun, 13 Dec 2009 18:26:18 -0800 (PST)</received><received>from hub.freebsd.org (hub.freebsd.org [IPv6:2001:4f8:fff6::36])
+	by mx2.freebsd.org (Postfix) with ESMTP id A37C5153645;
+	Mon, 14 Dec 2009 02:26:40 +0000 (UTC)</received><received>from hub.freebsd.org (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with ESMTP id C4072106572B;
+	Mon, 14 Dec 2009 02:26:38 +0000 (UTC)
+	(envelope-from owner-cvs-ports@freebsd.org)</received><delivered-to>cvs-ports@FreeBSD.org</delivered-to><received>from mx1.freebsd.org (mx1.freebsd.org [IPv6:2001:4f8:fff6::34])
+	by hub.freebsd.org (Postfix) with ESMTP id 4BF54106566B;
+	Mon, 14 Dec 2009 02:26:33 +0000 (UTC) (envelope-from avl@FreeBSD.org)</received><received>from repoman.freebsd.org (repoman.freebsd.org
+	[IPv6:2001:4f8:fff6::29])
+	by mx1.freebsd.org (Postfix) with ESMTP id 3A32F8FC12;
+	Mon, 14 Dec 2009 02:26:33 +0000 (UTC)</received><received>from repoman.freebsd.org (localhost [127.0.0.1])
+	by repoman.freebsd.org (8.14.3/8.14.3) with ESMTP id nBE2QXQM007032;
+	Mon, 14 Dec 2009 02:26:33 GMT (envelope-from avl@repoman.freebsd.org)</received><received>(from avl@localhost)
+	by repoman.freebsd.org (8.14.3/8.14.3/Submit) id nBE2QXRo007031;
+	Mon, 14 Dec 2009 02:26:33 GMT (envelope-from avl)</received><message-id>200912140226.nBE2QXRo007031@repoman.freebsd.org</message-id><date>Mon, 14 Dec 2009 02:26:33 +0000 (UTC)</date><x-freebsd-cvs-branch>HEAD</x-freebsd-cvs-branch><x-beenthere>cvs-ports@freebsd.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>CVS commit messages for the ports tree &lt;cvs-ports.freebsd.org&gt;</list-id><list-unsubscribe>&lt;http://lists.freebsd.org/mailman/listinfo/cvs-ports&gt;,
+	&lt;mailto:cvs-ports-request@freebsd.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.freebsd.org/pipermail/cvs-ports&gt;</list-archive><list-post>&lt;mailto:cvs-ports@freebsd.org&gt;</list-post><list-help>&lt;mailto:cvs-ports-request@freebsd.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.freebsd.org/mailman/listinfo/cvs-ports&gt;,
+	&lt;mailto:cvs-ports-request@freebsd.org?subject=subscribe&gt;</list-subscribe><sender>owner-cvs-ports@freebsd.org</sender><errors-to>owner-cvs-ports@freebsd.org</errors-to></headers><normalized-references><normalized-message-id>200912140226.nBE2QXRo007031@repoman.freebsd.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">avl         2009-12-14 02:26:33 UTC
+
+</para><para depth="0">  FreeBSD ports repository
+
+</para><para depth="0">  Modified files:
+    .                    MOVED 
+    net                  Makefile 
+    net/remmina-applet   Makefile distinfo pkg-descr pkg-plist 
+  Removed files:
+    net/grdc-applet      Makefile distinfo pkg-descr pkg-plist 
+  Log:
+  - Update remmina-applet to 0.7.0
+  - Connect remmina-applet to the build
+  - Disconnect grdc-applet
+  - Remove grdc-applet, project was renamed
+
+</para><para depth="0">  Revision  Changes    Path
+  1.2051    +2 -1      ports/MOVED
+  1.2161    +1 -1      ports/net/Makefile
+  1.6       +0 -34     ports/net/grdc-applet/Makefile (dead)
+  1.4       +0 -3      ports/net/grdc-applet/distinfo (dead)
+  1.3       +0 -10     ports/net/grdc-applet/pkg-descr (dead)
+  1.3       +0 -8      ports/net/grdc-applet/pkg-plist (dead)
+  1.7       +26 -15    ports/net/remmina-applet/Makefile
+  1.5       +3 -3      ports/net/remmina-applet/distinfo
+  1.4       +7 -4      ports/net/remmina-applet/pkg-descr
+  1.4       +12 -6     ports/net/remmina-applet/pkg-plist
+</para><footer type="list-management" depth="0">_______________________________________________
+<email>cvs-ports@freebsd.org</email> mailing list
+<url>http://lists.freebsd.org/mailman/listinfo/cvs-ports</url>
+To unsubscribe, send any mail to "<email>cvs-ports-unsubscribe@freebsd.org</email>"
+</footer></body></message>

@@ -1,0 +1,24 @@
+<message message-id="20101111140850.27450.qmail@dev.java.net" list="net.java.dev.jxta-jxse.issues" id="24cykq5j7mynuq4x" no-archive="yes" type="bugs" date="2010-11-11T06:08:28.04353-08:00" year="2010-01-01" year-month="2010-11-01" year-month-day="2010-11-11" thread-id="tcqpxk2hxkei4jvf"><headers><envelope-from-line>Thu Nov 11 06:08:51 2010</envelope-from-line><from personal="issues@jxta-jxse.dev.java.net" address="issues@jxta-jxse.dev.java.net">issues@jxta-jxse.dev.java.net</from><to personal="issues@jxta-jxse.dev.java.net" address="issues@jxta-jxse.dev.java.net">issues@jxta-jxse.dev.java.net</to><subject normal="[Issue 105]  Advertisement signing and verification">[Issue 105]  Advertisement signing and verification</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 48
+          for &lt;jackie.beard.casey@a.markmail.org&gt;;
+          Thu, 11 Nov 2010 06:08:50 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id A6D113B30272
+	for &lt;jackie.beard.casey@a.markmail.org&gt;; Thu, 11 Nov 2010 06:08:27 -0800 (PST)</received><received>(qmail 27471 invoked by uid 5000); 11 Nov 2010 14:08:50 -0000</received><mailing-list>contact issues-help@jxta-jxse.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:issues-help@jxta-jxse.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@jxta-jxse.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:issues@jxta-jxse.dev.java.net&gt;</list-post><reply-to>issues@jxta-jxse.dev.java.net</reply-to><delivered-to>mailing list issues@jxta-jxse.dev.java.net</delivered-to><received>(qmail 27452 invoked by uid 5000); 11 Nov 2010 14:08:50 -0000</received><date>11 Nov 2010 14:08:50 -0000</date><message-id>20101111140850.27450.qmail@dev.java.net</message-id><in-reply-to>&lt;iz105@jxta-jxse.dev.java.net&gt;</in-reply-to><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20101111140850.27450.qmail@dev.java.net</normalized-message-id><normalized-in-reply-to>iz105@jxta-jxse.dev.java.net</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>https://jxta-jxse.dev.java.net/issues/show_bug.cgi?id=105</url>
+
+</para><para depth="0">User adamman71 changed the following:
+
+</para><para depth="0">                What    |Old value                 |New value
+================================================================================
+                  Status|NEW                       |RESOLVED
+</para><para depth="0">--------------------------------------------------------------------------------
+              Resolution|                          |FIXED
+</para><footer type="noise" depth="0">--------------------------------------------------------------------------------
+
+</footer><para depth="0">------- Additional comments from <email>adamman71@dev.java.net</email> Thu Nov 11 14:08:49<br/>+0000 2010 -------
+Code committed, next episode in issue 417 (if any).
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>issues-unsubscribe@jxta-jxse.dev.java.net</email>
+For additional commands, e-mail: <email>issues-help@jxta-jxse.dev.java.net</email>
+
+</footer></body></message>

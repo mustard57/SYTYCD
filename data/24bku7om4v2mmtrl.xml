@@ -1,0 +1,58 @@
+<message message-id="20091208143653.6131.qmail@dev.java.net" list="net.java.dev.maven2-repository.commits" id="24bku7om4v2mmtrl" no-archive="yes" type="checkins" date="2009-12-08T06:36:31.384507-08:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-08" thread-id="24bku7om4v2mmtrl"><headers><envelope-from-line>Tue Dec 08 06:36:54 2009</envelope-from-line><from personal="kohsuke@dev.java.net" address="kohsuke@dev.java.net">kohsuke@dev.java.net</from><to personal="commits@maven2-repository.dev.java.net" address="commits@maven2-repository.dev.java.net">commits@maven2-repository.dev.java.net</to><subject normal="svn commit: r1416855 - trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples">svn commit: r1416855 - trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 709
+          for &lt;cindy.hensley.frank@a.markmail.org&gt;;
+          Tue, 8 Dec 2009 06:36:54 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id F25C32908182
+	for &lt;cindy.hensley.frank@a.markmail.org&gt;; Tue,  8 Dec 2009 06:36:30 -0800 (PST)</received><received>(qmail 6151 invoked by uid 5000); 8 Dec 2009 14:36:53 -0000</received><mailing-list>contact commits-help@maven2-repository.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:commits-help@maven2-repository.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@maven2-repository.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:commits@maven2-repository.dev.java.net&gt;</list-post><reply-to>commits@maven2-repository.dev.java.net</reply-to><delivered-to>mailing list commits@maven2-repository.dev.java.net</delivered-to><received>(qmail 6139 invoked by uid 5000); 8 Dec 2009 14:36:53 -0000</received><date>8 Dec 2009 14:36:53 -0000</date><message-id>20091208143653.6131.qmail@dev.java.net</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20091208143653.6131.qmail@dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: kohsuke
+Date: 2009-12-08 14:36:51+0000
+New Revision: 1416855
+
+</para><para depth="0">Modified:
+   trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml
+   trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.md5
+   trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.sha1
+
+</para><para depth="0">Log:
+Upload by wagon-svn
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml?view=diff&amp;rev=1416855&amp;p1=trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml&amp;p2=trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml&amp;r1=1416854&amp;r2=1416855</url>
+==============================================================================
+---<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml<br/>(original)
++++<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml<br/>2009-12-08 14:36:51+0000
+@@ -13,6 +13,6 @@
+       &lt;version&gt;0.4&lt;/version&gt;
+       &lt;version&gt;0.4.1&lt;/version&gt;
+     &lt;/versions&gt;
+-    &lt;lastUpdated&gt;20091208135116&lt;/lastUpdated&gt;
++    &lt;lastUpdated&gt;20091208143614&lt;/lastUpdated&gt;
+   &lt;/versioning&gt;
+ &lt;/metadata&gt;
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.md5
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.md5?view=diff&amp;rev=1416855&amp;p1=trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.md5&amp;p2=trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.md5&amp;r1=1416854&amp;r2=1416855</url>
+==============================================================================
+---<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.md5<br/>(original)
++++<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.md5<br/>2009-12-08 14:36:51+0000
+@@ -1 +1 @@
+-65aba0bdd9d4542525c75062b226711c
+\ No newline at end of file
++adc3a68c459f1dbad57c25b03265cbe1
+\ No newline at end of file
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.sha1
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.sha1?view=diff&amp;rev=1416855&amp;p1=trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.sha1&amp;p2=trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.sha1&amp;r1=1416854&amp;r2=1416855</url>
+==============================================================================
+---<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.sha1<br/>(original)
++++<br/>trunk/repository/org/atmosphere/samples/atmosphere-bayeux-samples/maven-metadata.xml.sha1<br/>2009-12-08 14:36:51+0000
+@@ -1 +1 @@
+-af61ade930a085f7590023667286fe90e416d573
+\ No newline at end of file
++7d572b5471642f490a27c7c0fc746a542cf49cc9
+\ No newline at end of file
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>commits-unsubscribe@maven2-repository.dev.java.net</email>
+For additional commands, e-mail: <email>commits-help@maven2-repository.dev.java.net</email>
+
+</footer></body></message>

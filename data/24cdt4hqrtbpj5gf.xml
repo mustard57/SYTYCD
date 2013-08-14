@@ -1,0 +1,24 @@
+<message message-id="4AD4D4DA.2080705@Sun.com" list="net.java.dev.glassfish.admin" id="24cdt4hqrtbpj5gf" no-archive="yes" type="development" date="2009-10-13T11:28:06.34155-08:00" year="2009-01-01" year-month="2009-10-01" year-month-day="2009-10-13" thread-id="dbtpgellfk4tziuz"><headers><envelope-from-line>Tue Oct 13 11:28:29 2009</envelope-from-line><from personal="Anissa Lam" address="Anissa.Lam@Sun.COM">Anissa Lam &lt;Anissa.Lam@Sun.COM&gt;</from><to personal="admin@glassfish.dev.java.net" address="admin@glassfish.dev.java.net">admin@glassfish.dev.java.net</to><subject normal="Admin Console iteam at 2pm today">Admin Console iteam at 2pm today</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 192
+          for &lt;aileen.french.fowler@a.markmail.org&gt;;
+          Tue, 13 Oct 2009 11:28:29 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id D79343B300B4
+	for &lt;aileen.french.fowler@a.markmail.org&gt;; Tue, 13 Oct 2009 12:28:05 -0700 (PDT)</received><received>(qmail 4156 invoked by uid 5000); 13 Oct 2009 19:28:28 -0000</received><mailing-list>contact admin-help@glassfish.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:admin-help@glassfish.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:admin-unsubscribe@glassfish.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:admin@glassfish.dev.java.net&gt;</list-post><reply-to>admin@glassfish.dev.java.net</reply-to><delivered-to>mailing list admin@glassfish.dev.java.net</delivered-to><received>(qmail 4135 invoked from network); 13 Oct 2009 19:28:27 -0000</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AgIBAGNx1ErAEiuFkWdsb2JhbACTSodAAQEBAQkLCgcTBTyuWAmPB4I7EYFhBIpW</x-ironport-anti-spam-result><x-ironport-av>E=Sophos;i="4.44,552,1249282800"; 
+   d="scan'208";a="31480870"</x-ironport-av><x-ironport>SCANNED</x-ironport><mime-version>1.0</mime-version><content-transfer-encoding>7BIT</content-transfer-encoding><content-type>text/plain; CHARSET=US-ASCII; format=flowed</content-type><date>Tue, 13 Oct 2009 12:28:26 -0700</date><sender>Anissa.Lam@Sun.COM</sender><message-id>4AD4D4DA.2080705@Sun.com</message-id><user-agent>Thunderbird 2.0.0.19 (Macintosh/20081209)</user-agent></headers><normalized-references><normalized-message-id>4AD4D4DA.2080705@Sun.com</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">
+We will have the iteam meeting today at usual time.  
+Will talk about the new OLH progress and discuss open bugs.
+
+</para><para depth="0">Date:   Every Tues  at 2-3 PM PST
+
+</para><para depth="0">(866)545-5227 (US Toll-Free)
+(215)446-3648 (International-Caller Paid)
+Access Code: 3535518#
+
+</para><para depth="0">thanks
+Anissa
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>admin-unsubscribe@glassfish.dev.java.net</email>
+For additional commands, e-mail: <email>admin-help@glassfish.dev.java.net</email>
+
+</footer></body></message>

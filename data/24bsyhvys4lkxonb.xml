@@ -1,0 +1,35 @@
+<message message-id="bug-5917-70-hokBmg60qd@http.bugs.koha-community.org/bugzilla3/" list="org.koha.lists.koha-bugs" id="24bsyhvys4lkxonb" type="bugs" date="2011-04-21T08:49:25.048216-08:00" year="2011-01-01" year-month="2011-04-01" year-month-day="2011-04-21" thread-id="rtfmpfgctxrbrbuj"><headers><envelope-from-line>Thu Apr 21 08:49:48 2011</envelope-from-line><from personal="bugzilla-daemon@bugs.koha-community.org" address="bugzilla-daemon@bugs.koha-community.org">bugzilla-daemon@bugs.koha-community.org</from><to personal="koha-bugs@lists.koha-community.org" address="koha-bugs@lists.koha-community.org">koha-bugs@lists.koha-community.org</to><subject normal="[Koha-bugs] [Bug 5917] Switch Koha to use Template::Toolkit">[Koha-bugs] [Bug 5917] Switch Koha to use Template::Toolkit</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 954
+          for &lt;blake.goff.watson@a.markmail.org&gt;;
+          Thu, 21 Apr 2011 08:49:47 -0800 (GMT-08:00)</received><received>from eliot.biblibre.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 9C9E83B30272
+	for &lt;blake.goff.watson@a.markmail.org&gt;; Thu, 21 Apr 2011 09:49:24 -0700 (PDT)</received><received>from eliot.biblibre.com (localhost.localdomain [127.0.0.1])
+	by eliot.biblibre.com (Postfix) with ESMTP id 0212F46EA4;
+	Thu, 21 Apr 2011 18:49:47 +0200 (CEST)</received><x-original-to>koha-bugs@lists.koha-community.org</x-original-to><delivered-to>koha-bugs_lists.koha-community.org@eliot.biblibre.com</delivered-to><received>from li105-217.members.linode.com (bugs.koha-community.org
+	[72.14.190.217])
+	by eliot.biblibre.com (Postfix) with ESMTP id 96EBF46803
+	for &lt;koha-bugs@lists.koha-community.org&gt;;
+	Thu, 21 Apr 2011 18:49:45 +0200 (CEST)</received><received>by li105-217.members.linode.com (Postfix, from userid 33)
+	id 1AB2B2C2FE; Thu, 21 Apr 2011 16:49:45 +0000 (UTC)</received><date>Thu, 21 Apr 2011 16:49:44 +0000</date><x-bugzilla-reason>QAcontact</x-bugzilla-reason><x-bugzilla-type>changed</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>Koha</x-bugzilla-product><x-bugzilla-component>Architecture, internals, and plumbing</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-severity>enhancement</x-bugzilla-severity><x-bugzilla-who>oleonard@myacpl.org</x-bugzilla-who><x-bugzilla-status>NEW</x-bugzilla-status><x-bugzilla-priority>PATCH-Sent</x-bugzilla-priority><x-bugzilla-assigned-to>gmcharlt@gmail.com</x-bugzilla-assigned-to><x-bugzilla-target-milestone>---</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Depends on</x-bugzilla-changed-fields><message-id>bug-5917-70-hokBmg60qd@http.bugs.koha-community.org/bugzilla3/</message-id><in-reply-to>&lt;bug-5917-70@http.bugs.koha-community.org/bugzilla3/&gt;</in-reply-to><references>&lt;bug-5917-70@http.bugs.koha-community.org/bugzilla3/&gt;</references><x-bugzilla-url>http://bugs.koha-community.org/bugzilla3/</x-bugzilla-url><auto-submitted>auto-generated</auto-submitted><mime-version>1.0</mime-version><x-beenthere>koha-bugs@lists.koha-community.org</x-beenthere><x-mailman-version>2.1.11</x-mailman-version><precedence>list</precedence><list-id>"Activity from the Koha bugs database \(bugs.koha.org\)"
+	&lt;koha-bugs.lists.koha-community.org&gt;</list-id><list-unsubscribe>&lt;http://lists.koha-community.org/cgi-bin/mailman/options/koha-bugs&gt;,
+	&lt;mailto:koha-bugs-request@lists.koha-community.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;/pipermail/koha-bugs&gt;</list-archive><list-post>&lt;mailto:koha-bugs@lists.koha-community.org&gt;</list-post><list-help>&lt;mailto:koha-bugs-request@lists.koha-community.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.koha-community.org/cgi-bin/mailman/listinfo/koha-bugs&gt;,
+	&lt;mailto:koha-bugs-request@lists.koha-community.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>koha-bugs-bounces@lists.koha-community.org</sender><errors-to>koha-bugs-bounces@lists.koha-community.org</errors-to></headers><normalized-references><normalized-message-id>bug-5917-70-hokBmg60qd@http.bugs.koha-community.org/bugzilla3/</normalized-message-id><normalized-in-reply-to>bug-5917-70@http.bugs.koha-community.org/bugzilla3/</normalized-in-reply-to><normalized-reference>bug-5917-70@http.bugs.koha-community.org/bugzilla3/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0"><url>http://bugs.koha-community.org/bugzilla3/show_bug.cgi?id=5917</url>
+
+</para><para depth="0">Owen Leonard &lt;<email>oleonard@myacpl.org</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+         Depends on|                            |6239
+
+</para><footer type="signature" depth="0" hash="9425106913717847330">-- 
+Configure bugmail:<br/><url>http://bugs.koha-community.org/bugzilla3/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the QA Contact for the bug.
+</footer><footer type="list-management" depth="0">_______________________________________________
+Koha-bugs mailing list
+<email>Koha-bugs@lists.koha-community.org</email>
+<url>http://lists.koha-community.org/cgi-bin/mailman/listinfo/koha-bugs</url>
+website : <url>http://www.koha-community.org/</url>
+git : <url>http://git.koha-community.org/</url>
+bugs : <url>http://bugs.koha-community.org/</url>
+</footer></body></message>

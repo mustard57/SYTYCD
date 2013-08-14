@@ -1,0 +1,334 @@
+<message message-id="116BCE6A-AF42-49AC-96D3-721D4FB5332D@gmail.com" list="net.java.dev.soujava.j2me-list" id="24byro2prxzw6rje" no-archive="yes" type="development" date="2011-07-10T04:45:13.406958-08:00" year="2011-01-01" year-month="2011-07-01" year-month-day="2011-07-10" thread-id="32fyjjgcly4n4w4q"><headers><envelope-from-line>Sun Jul 10 04:45:36 2011</envelope-from-line><from personal="Fábio Calegari" address="frcalegari@gmail.com">"Fábio Calegari" &lt;frcalegari@gmail.com&gt;</from><to personal="j2me-list@soujava.java.net" address="j2me-list@soujava.java.net">"j2me-list@soujava.java.net" &lt;j2me-list@soujava.java.net&gt;</to><subject normal="[j2me-list] Re: joga pedra na Geni! (aka iphone vs symbian)">[j2me-list] Re: joga pedra na Geni! (aka iphone vs symbian)</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 974
+          for &lt;jamie.jefferson.brewer@a.markmail.org&gt;;
+          Sun, 10 Jul 2011 04:45:36 -0800 (GMT-08:00)</received><received>from mailout01.kenai.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id E9A892908097
+	for &lt;jamie.jefferson.brewer@a.markmail.org&gt;; Sun, 10 Jul 2011 05:45:12 -0700 (PDT)</received><received>from mail01.java.net (jnxmlm02z1.network.org [192.9.171.232])
+	by mailout01.kenai.com (Postfix) with ESMTP id E0D352C7004;
+	Sun, 10 Jul 2011 12:45:35 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail01.java.net (Postfix) with ESMTP id 998213301A5;
+	Sun, 10 Jul 2011 12:45:35 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail01.java.net ([127.0.0.1])
+	by localhost (jnxmlm02z1.network.org [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id AvyAVyy7Qc5o; Sun, 10 Jul 2011 12:45:31 +0000 (GMT)</received><received>by mail01.java.net (Postfix, from userid 60005)
+	id 5A354330139; Sun, 10 Jul 2011 12:45:31 +0000 (GMT)</received><received>from mailin01.kenai.com (mailin01.network.org [192.9.171.171])
+	by mail01.java.net (Postfix) with ESMTP id E6D94330135
+	for &lt;j2me-list@soujava.java.net&gt;; Sun, 10 Jul 2011 12:45:27 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mailin01.kenai.com (Postfix) with ESMTP id DDAF13816B3
+	for &lt;j2me-list@soujava.java.net&gt;; Sun, 10 Jul 2011 12:45:27 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mailin01.kenai.com ([127.0.0.1])
+	by localhost (mailin01.network.org [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id n2hTbOgWOVgi for &lt;j2me-list@soujava.java.net&gt;;
+	Sun, 10 Jul 2011 12:45:24 +0000 (GMT)</received><received>from mail-yw0-f49.google.com (mail-yw0-f49.google.com [209.85.213.49])
+	by mailin01.kenai.com (Postfix) with ESMTP id 295D638169F
+	for &lt;j2me-list@soujava.java.net&gt;; Sun, 10 Jul 2011 12:45:23 +0000 (GMT)</received><received>by ywf9 with SMTP id 9so1420798ywf.36
+        for &lt;j2me-list@soujava.java.net&gt;; Sun, 10 Jul 2011 05:45:23 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=subject:references:from:content-type:x-mailer:in-reply-to
+         :message-id:date:to:content-transfer-encoding:mime-version;
+        bh=fbkqGx6VUDpVW1JjS+wFWPqC01kHwyXaoCNkjqZGVeY=;
+        b=vgoI+xMFR5SZPdcYw6nT1kvGMpBNo/xZzGskpLVE/AAMoWBacLmf13o/aa1wLXGSaw
+         7/m3JQVFPOUPd2/GBbm1NRRRAPUw+Rr2TRcdeU4w7Vv9SlDnqUMmHqqt/TDR1aFzws0K
+         b5AKUbtDLdXa1IIsWiSO4elcQP8US/tsOdRbI=</dkim-signature><received>by 10.236.177.100 with SMTP id c64mr4030918yhm.527.1310301922638;
+        Sun, 10 Jul 2011 05:45:22 -0700 (PDT)</received><received>from [192.168.1.103] (189-55-116-175-nd.cpe.vivax.com.br [189.55.116.175])
+        by mx.google.com with ESMTPS id o47sm8386874yhn.72.2011.07.10.05.45.18
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Sun, 10 Jul 2011 05:45:20 -0700 (PDT)</received><references>&lt;ccd64ec00809030719i466efe7p29a12ece2bb55f08@mail.gmail.com&gt; &lt;615362e60809030847y6ab9597ds4db41ddc41883b69@mail.gmail.com&gt; &lt;3122dc820809030849q15d48845q934eac8129a8eeb@mail.gmail.com&gt; &lt;1f3361e30809111626t3b869759gceb8829d43bdfe83@mail.gmail.com&gt; &lt;615362e60809111733n66c1776bpfbde9e80a77f2ceb@mail.gmail.com&gt; &lt;1f3361e30809171259v285184fdk53292fc726909080@mail.gmail.com&gt; &lt;CAF3+Tqfg0RBPqFmV7RRPosbXdjx7Z076aNPpj+qEw_gJfh=nrQ@mail.gmail.com&gt; &lt;CABnnCAjN_BKmTnLkrb+m_4Zq-x_A8AD=sVdCqXXR2W0PY0fXbg@mail.gmail.com&gt; &lt;CAJokZs6drwUM4Zm4AK75TrmgO0b0eSsed+MO1CQ9iqbNStwwow@mail.gmail.com&gt; &lt;CAEoDXnP26jY7_Nwencm0YMp2BoAWFn+yML7DjyvmT8+pLhX0+A@mail.gmail.com&gt; &lt;CAF3+TqcyQ0N_MaTgeqwPerVeD5k7o3e0+mUHo7N0otXoP6Mkug@mail.gmail.com&gt; &lt;CAEbSbvLSC=wK=ei=U_SYsNCUDrqSZB74GYvMCh9N7DBAyVOnag@mail.gmail.com&gt; &lt;CAEbSbvL9N=nvm-iPSpyidFMp3kfyQpzQcSmVc_AZd_KxZHrQzA@mail.gmail.com&gt; &lt;CAKAvQr_zQaW2DgKJ4i2eveMrM93H7efyMWJ++mMSGYHwoOGcxQ@mail.gmail.com&gt; &lt;CAEbSbvL7eXX4Owo+ouRmw4YCOVJL9o+hgEO3Kp=PuQxyERSwdQ@mai
+ l.gmail.com&gt; &lt;CAKAvQr-FFSnhMqA3p_ib1oPvTRJKn_yyHaqhkRFfxutzXjT6cA@mail.gmail.com&gt;</references><content-type>multipart/alternative;
+	boundary=Apple-Mail-1--865236512</content-type><x-mailer>iPad Mail (8J3)</x-mailer><in-reply-to>&lt;CAKAvQr-FFSnhMqA3p_ib1oPvTRJKn_yyHaqhkRFfxutzXjT6cA@mail.gmail.com&gt;</in-reply-to><message-id>116BCE6A-AF42-49AC-96D3-721D4FB5332D@gmail.com</message-id><date>Sun, 10 Jul 2011 09:45:24 -0300</date><content-transfer-encoding>7bit</content-transfer-encoding><mime-version>1.0 (iPad Mail 8J3)</mime-version><reply-to>j2me-list@soujava.java.net</reply-to><x-loop>j2me-list@soujava.java.net</x-loop><x-sequence>48</x-sequence><errors-to>j2me-list-owner@soujava.java.net</errors-to><precedence>list</precedence><x-no-archive>yes</x-no-archive><list-id>&lt;j2me-list.soujava.java.net&gt;</list-id><list-help>&lt;mailto:sympa@soujava.java.net?subject=help&gt;</list-help><list-subscribe>&lt;mailto:sympa@soujava.java.net?subject=subscribe%20j2me-list&gt;</list-subscribe><list-unsubscribe>&lt;mailto:sympa@soujava.java.net?subject=unsubscribe%20j2me-list&gt;</list-unsubscribe><list-post>&lt;mailto:j2me-list@soujava.java.net&gt;</list-post><list-owner>&lt;mailto:j2me-list-request@soujava.java.net&gt;</list-owner></headers><normalized-references><normalized-message-id>116BCE6A-AF42-49AC-96D3-721D4FB5332D@gmail.com</normalized-message-id><normalized-in-reply-to>CAKAvQr-FFSnhMqA3p_ib1oPvTRJKn_yyHaqhkRFfxutzXjT6cA@mail.gmail.com</normalized-in-reply-to><normalized-reference>ccd64ec00809030719i466efe7p29a12ece2bb55f08@mail.gmail.com</normalized-reference><normalized-reference>615362e60809030847y6ab9597ds4db41ddc41883b69@mail.gmail.com</normalized-reference><normalized-reference>3122dc820809030849q15d48845q934eac8129a8eeb@mail.gmail.com</normalized-reference><normalized-reference>1f3361e30809111626t3b869759gceb8829d43bdfe83@mail.gmail.com</normalized-reference><normalized-reference>615362e60809111733n66c1776bpfbde9e80a77f2ceb@mail.gmail.com</normalized-reference><normalized-reference>1f3361e30809171259v285184fdk53292fc726909080@mail.gmail.com</normalized-reference><normalized-reference>CAF3+Tqfg0RBPqFmV7RRPosbXdjx7Z076aNPpj+qEw_gJfh=nrQ@mail.gmail.com</normalized-reference><normalized-reference>CABnnCAjN_BKmTnLkrb+m_4Zq-x_A8AD=sVdCqXXR2W0PY0fXbg@mail.gmail.com</normalized-reference><normalized-reference>CAJokZs6drwUM4Zm4AK75TrmgO0b0eSsed+MO1CQ9iqbNStwwow@mail.gmail.com</normalized-reference><normalized-reference>CAEoDXnP26jY7_Nwencm0YMp2BoAWFn+yML7DjyvmT8+pLhX0+A@mail.gmail.com</normalized-reference><normalized-reference>CAF3+TqcyQ0N_MaTgeqwPerVeD5k7o3e0+mUHo7N0otXoP6Mkug@mail.gmail.com</normalized-reference><normalized-reference>CAEbSbvLSC=wK=ei=U_SYsNCUDrqSZB74GYvMCh9N7DBAyVOnag@mail.gmail.com</normalized-reference><normalized-reference>CAEbSbvL9N=nvm-iPSpyidFMp3kfyQpzQcSmVc_AZd_KxZHrQzA@mail.gmail.com</normalized-reference><normalized-reference>CAKAvQr_zQaW2DgKJ4i2eveMrM93H7efyMWJ++mMSGYHwoOGcxQ@mail.gmail.com</normalized-reference><normalized-reference>&lt;CAEbSbvL7eXX4Owo+ouRmw4YCOVJL9o+hgEO3Kp=PuQxyERSwdQ@mai</normalized-reference><normalized-reference>l.gmail.com&gt;</normalized-reference><normalized-reference>CAKAvQr-FFSnhMqA3p_ib1oPvTRJKn_yyHaqhkRFfxutzXjT6cA@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative;&#13;&#10;&#9;boundary=apple-mail-1--865236512" type="text/plain;&#13;&#10;&#9;charset=utf-8"><para depth="0">Marlon, muito legal estas novidades no JME, obrigado por enviar.
+
+</para><para depth="0">Abs!
+
+</para><para depth="0">Fábio Calegari
+
+</para><para depth="0">Sent from my iPad
+
+</para><para depth="0">On 09/07/2011, at 21:24, Marlon Luz &lt;<email>marlon.luz@gmail.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">olá pessoal,
+
+</quotepara><quotepara depth="1">  segue em anexo o ppt da palestra q eu apresentei hj no TDC.
+
+</quotepara><quotepara depth="1">Att,
+Marlon Luz
+
+</quotepara><quotepara depth="1">2011/7/8 Juarez Junior &lt;<email>juarez.barbosa@gmail.com</email>&gt;
+Oi Marlon,
+
+</quotepara><quotepara depth="1">Apenas esclarecendo:
+
+</quotepara><quotepara depth="1">a) Bem, eu não disse que o Java Runtime não continua nos S60, mas eu tenho aqui<br/>slides e material recebido via FN Champion que mostram claramente que o Java ME<br/>não ia mais existir no S60. Mudaram de idéia...eu posso te passar se quiser em<br/>PVT, como vc é do INdT acredito não ter problema com o NDA, e também o doc já<br/>está antigo anyway (eu recebi em Monaco no Summit, em 2009).
+
+</quotepara><quotepara depth="1">b) Eu em momento algum disse que o Series 40 morreu. Eu disse que a Nokia esteve<br/>por um tempo dando mais importância para o Web Runtime, Symbian e Meego. E o<br/>Java ME ficou de lado um tempão...eu acompanhei bastante, veja por exemplo que<br/>não saia uma JSR nova pra Java ME (seja em Symbian ou Series 4) já há um bom<br/>tempo. 
+
+</quotepara><quotepara depth="1">Entretanto, concordo e entendo que a situação mudou recentemente, o Series 40<br/>está sendo valorizado agora...
+
+</quotepara><quotepara depth="1">Fiquei muito interessado na sua apresentação, pena eu não poder participar esse<br/>ano.
+
+</quotepara><quotepara depth="1">Abraço,
+
+</quotepara><quotepara depth="1">Juarez
+
+</quotepara><quotepara depth="1">2011/7/8 Marlon Luz &lt;<email>marlon.luz@gmail.com</email>&gt;
+apenas corrigindo alguns pontos
+
+</quotepara><quotepara depth="1">a) A Nokia não disse que o JavaME estaria fora do Roadmap dos S60. Ela disse que<br/>não daria mais manutenção e abriu o fonte para a comunidade fazer manutenção,<br/>ela continua colocando o JavaME dentro dos S60
+b) O S40 não foi ressuscitado, ele nunca morreu. A maioria da lista aqui tem<br/>smartphones pq pertencemos a classe média, mas muita gente esquece que a maioria<br/>da populacao ganha salario de R$ 1000 mensais(pelo menos no Brasil) e compram<br/>celular de 300 a 500 reais que eh justamente o mercado do S40. A Nokia tem<br/>oferecido uma excelente plataforma para esse publico com o S40 inclusive agora<br/>com modelos de 2 chips simultâneos. A maioria das empresas também não foca nesse<br/>mercado, pensam só em smartphones, até a imprensa mostra gráficos só de<br/>smartphones, mas enfim. A classe média que consome smartphones eh a minoria<br/>mundial, a maioria mundial consome S40 e os com menor capacidade de compra ainda<br/>tem o S30 a qual tenho trabalho nos ultimos 6 meses :-) ! 
+c) posso disponibilizar os slides posteriormente aqui.
+
+</quotepara><quotepara depth="1">[]s
+Marlon Luz
+
+</quotepara><quotepara depth="1">2011/7/7 Juarez Junior &lt;<email>juarez.barbosa@gmail.com</email>&gt;
+Oi pessoal,
+
+</quotepara><quotepara depth="1">Muito interessante a thread, só agora consegui ler as msgs.
+
+</quotepara><quotepara depth="1">Eu sinceramente acho que o Java ME já era e me mata ver a Oracle falar ainda de<br/>CLDC e CDC, concordo muito com o que o Marlon falou, acho que seria melhor a<br/>Oracle pensar num JRE full e que realmente entregasse PODER para a estratégia de<br/>runtime dela. O Android tá poderosão e bombando cada vez mais, inclusive a<br/>próxima versão tá show demais.
+
+</quotepara><quotepara depth="1">De qualquer forma, por muito tempo ainda teremos projetos legais com Java ME e<br/>muita gente ganhando dinheiro com a tecnologia mas não adianta negar, o tempo do<br/>Java ME está passando.
+
+</quotepara><quotepara depth="1">No final, na verdade o que ferrou o Java ME foi a morosidade do JCP um jogo de<br/>interesse de fabricantes e operadoras que literalmente boicotaram diversas APIs<br/>como MTA e SIP, por razões óbvias.
+
+</quotepara><quotepara depth="1"> A Oracle está chutando cachorro morto, literalmente. Eu fico imaginando o cara<br/>na Oracle que trabalha com esses SDKs e RIs e vendo um mundo de Androids, iOS e<br/>tudo mais, deve ser no mínimo estranho...
+
+</quotepara><quotepara depth="1">De qualquer forma, particularmente sou muito grato ao Java ME pois me colocou<br/>literamente no mundo mobile um bom tempo atrás e tudo que temos hoje o Java ME<br/>foi o grande precursor e viabilizador, inclusive com killer apps até hoje. E<br/>todos nós já ganhamos grana suficiente com Java ME. Então por favor não vamos<br/>falar mal do Java ME pessoa, rs, rs, a plataform já deu bons frutos.
+
+</quotepara><quotepara depth="1">No caso da Nokia agora de novo com Java ME, competição de millions e etc,<br/>pessoal tanto da Nokia quanto da Symbian Foundation que conheço reportaram em<br/>2009 que no roadmap do S60 nem tinha mais o runtime Java...e o Series 40 foi<br/>ressuscitado agora porque a situação da Nokia é tão dramática que ficou claro<br/>que a plataforma que eles desprezaram pode pelo menos vender volumes para um<br/>possível suspiro. Isso é consenso entre muita gente que conheço no mundo da<br/>mobilidade.
+
+</quotepara><quotepara depth="1">Por fim, eu concordo também com parte do que o Nelson falou mas não penso mais<br/>em smartphone, netbook, tablet ou qualquer outra coisa, veja o evolução como um<br/>smart device (seja lá o que for) com um OS que evoluirá, mas não é dizer que o<br/>OS desktop vai para o smart porque o desktop vai acabar e o smart também,<br/>teremos um só dispositivo que atenderá todas as necessidades. Vejamos o o que<br/>ocorrerá! :-)
+
+</quotepara><quotepara depth="1">Só faço uma ressalva final, não estou falando mal da Oracle, Nokia, Symbian,<br/>Nokia ou Android, apenas evidenciando fatos!
+
+</quotepara><quotepara depth="1">Abraços e boa noite pessoal!
+
+</quotepara><quotepara depth="1">Juarez Junior
+
+</quotepara><quotepara depth="1">OBS: desculpem a msg pela metade anteriormente. :-D
+
+</quotepara><quotepara depth="1">2011/7/7 Juarez Junior &lt;<email>juarez.barbosa@gmail.com</email>&gt;
+Oi pessoal,
+
+</quotepara><quotepara depth="1">Muito interessante a thread, só agora consegui ler as msgs.
+
+</quotepara><quotepara depth="1">Eu sinceramente acho que o Java ME já era e me mata ver a Oracle falar ainda de<br/>CLDC e CDC, concordo muito com o q
+
+</quotepara><quotepara depth="1">2011/7/7 Bruno Herrera &lt;<email>bruherrera@gmail.com</email>&gt;
+ouvi algo como Motorola Atrix? Esse conceito de "web top" eh mto<br/>interessante...inclusive ganhou premio de inovação na CES2011. A asus tbm lancou<br/>algo como um phonepad. 
+
+</quotepara><quotepara depth="1">Essa historia de j2me (CLimitedDC) eu escuto a mais ou menos 8 anos... e isso<br/>fazia sentido a 8 anos atras... hj em dia me parece nao fazer mais por todos<br/>argumentos jah apresentado (inclusive era o mesmo argumento a 3 anos atras qndo<br/>essas dicussoes começaram). O mais engraçado que mesmo com todos os números de<br/>mercado e tendências apresentas nesses 3 anos, ainda existem pessoas que<br/>acreditam que j2me tem seu mercado.... eu nao acredito. E logo alguem vai querer<br/>dizer que o MIDP3.0 isso e aquilo..
+
+</quotepara><quotepara depth="1">Se fosse um dev mobile, que estivesse comecando hj certamente nao começaria por<br/>J2ME... eh mais ou menos como comecar a programar em PC hj em dia utilizando<br/>pascal.... 
+
+</quotepara><quotepara depth="1">E obviamente nao quero saber as tendências do j2me.. pois seria como passar<br/>utilizar delphi...  ;)
+
+</quotepara><quotepara depth="1">daqui 10 anos ainda vai ter gnt dizendo que J2me tem seu mercado....a sim a<br/>serie s40 ainda vai existir... talvez vire Ms40 (MS = Microsoft)
+
+</quotepara><quotepara depth="1">2011/7/7 Nelson Pereira Junior &lt;<email>npereirajr@gmail.com</email>&gt;
+iOS também tende a sumir em breve (ou o OSX). Ouvi que a Apple terá apenas o<br/>iOS. Windows Phone também tende a sumir. Os smartphones rodarão os mesmos OS dos<br/>PCs. Quando exibido na tela pequena do smartphone, o OS se exibirá com um<br/>tema/features de smartphone. Você chega no trabalho e conecta ele no monitor,<br/>com teclado e mouse bluetooth, e ele se exibe no monitor como um OS de PC de<br/>trabalho. Chega em casa, conecta ele na TV para assistir o lançamento do filme<br/>em bluray via streaming pelo 4G.
+
+</quotepara><quotepara depth="1">Hardware para isso já temos. Temos smartphones com processadores multicore, mais<br/>rápido que notebooks vendidos pelo mesmo preço. SDCard mais rápido que Sata II.<br/>Só falta o OS se adaptar. E nessa briga futura a MS tende a sair na frente,<br/>infelizmente, pois domina o mercado de OS para PCs.
+
+</quotepara><quotepara depth="1">E preparem-se para a fragmentação :)
+
+</quotepara><quotepara depth="1">Nelson
+
+</quotepara><quotepara depth="1">2011/7/7 Fernando Franzini &lt;<email>fernandofranzini@gmail.com</email>&gt;
+Isso foi previsto desde 2000....JME foi uma plataforma para comportar uma gama<br/>dispositivos com um determinado perfil de capacidades...ficou no mercado<br/>praticamente 10 anos e esta cada dia mais desaparecendo por que os dispositivos<br/>fabricados hoje estão saindo com capacidades bem acima....a mesma historia vai<br/>se repetir com o Android.....tb.....
+
+</quotepara><quotepara depth="1">2011/7/7 Herval Freire &lt;<email>hervalfreire@gmail.com</email>&gt;
+"mas eu te disse..."
+
+</quotepara><quotepara depth="1">2011/7/7 Bruno Herrera &lt;<email>bruherrera@gmail.com</email>&gt;:
+</quotepara><quote depth="2"><quotepara depth="2">quase 3 anos dpois... algum ainda lembra de j2me?
+<url>http://www.businessinsider.com/chart-of-the-day-smartphone-platforms-2011-7</url>
+[]s
+
+</quotepara><quotepara depth="2">2008/9/17 Bruno Herrera &lt;<email>bruherrera@gmail.com</email>&gt;
+</quotepara><quote depth="3"><quotepara depth="3">
+Iphone no Brasil....
+
+</quotepara><quotepara depth="3"><url>http://portalexame.abril.uol.com.br/revista/exame/edicoes/0927/consumo/m0167875.html</url>
+
+</quotepara><quotepara depth="3">2008/9/11 Luis Henrique Albinati Junior &lt;<email>luis.albinati@gmail.com</email>&gt;
+</quotepara><quote depth="4"><quotepara depth="4">
+Discordo um pouquinho quanto ao topico: "fragmentacao" sobre a
+perspectiva alem do mundo iPhone. By the way, esse é meu tema para
+amanha no JJ. Quem estiver por la, va ser bom discutir essa casca de
+ferida do mundo mobile.
+Abs!
+
+</quotepara><quotepara depth="4">On 9/11/08, Bruno Herrera &lt;<email>bruherrera@gmail.com</email>&gt; wrote:
+</quotepara><quote depth="5"><quotepara depth="5">Herval parece q vc nao aprendeu.... nao se pode mais mandar email sobre
+iphone nesta lista.
+E se fizer tem q colocar [OFF TOPIC]
+
+</quotepara><quotepara depth="5">talvez as curvas tenha ver com esse link...
+<url>http://sethgodin.typepad.com/seths_blog/2005/06/the_four_curves.html</url>  a
+do
+iphone parece mto com a C a curva do sucesso...
+
+</quotepara><quotepara depth="5">"Curve C is the most likely curve of success, not A. Curve C is the
+remarkable product that takes a while to find its footing. Then, the
+idea
+starts moving through communities and slowly builds, until, yes, this
+product is remarkable and you've got a hit."
+
+</quotepara><quotepara depth="5">Mas vamos esperar mais um pouquinho, so um pouquinho...  talvez o
+pessoal do
+tech cruch seja tao ou mais Apple fanboy q o Herval...
+falando ainda sobre ciclo de vida do produto, qm sabe o Symbian nao
+estaje
+no ramp down.... let's wait...
+
+</quotepara><quotepara depth="5">eu nao joguei pedra nao... toh contigo e nao abro... :D
+
+</quotepara><quotepara depth="5">BTW o iphone pode resolver, o tao reclamado pelo usarios da lista,
+problema
+da fragmentacao.... nao mas isso jah seria utopia...  ;)
+
+</quotepara><quotepara depth="5">...
+...
+...
+...flames....
+
+</quotepara><quotepara depth="5">2008/9/3 Neto Marin &lt;<email>netomarin@gmail.com</email>&gt;
+
+</quotepara><quote depth="6"><quotepara depth="6">Eu tava procurando esses número... iPhone está no começo da viagem e
+ainda
+está no trecho de pista dupla, tudo fluindo livre e bonito!!! ;-)
+heheheheheh
+
+</quotepara><quotepara depth="6">[]s
+Neto
+
+</quotepara><quotepara depth="6">2008/9/4 Luis Henrique Albinati Junior &lt;<email>luis.albinati@gmail.com</email>&gt;
+
+</quotepara><quotepara depth="6">Não quero gerar flames, mas isso é só o resultado de base
+trimestral... o
+</quotepara><quote depth="7"><quotepara depth="7">que não deixa de ser impressionante sob o ponto de vista que a Apple
+tem
+somente um modelo de telefone.
+
+</quotepara><quotepara depth="7">A questão é: mesmo que por um certo período a Apple passe o Symbian
+em
+matéria de OS/trimestre; isso só representaria uma frente agressiva
+de
+vendas do iPhone (vide a data do lançamento do iPhone 3G e a curva).
+Se
+essa
+diferença se mantivesse por sei lá quanto tempo, daí poderíamos
+condenar
+o
+Symbian...
+
+</quotepara><quotepara depth="7">Olhando como um todo:
+"225.9 million cumulative Symbian OS™ units shipped across 249
+different
+phone models since the formation of Symbian"
+(www.symbian.com)
+
+</quotepara><quotepara depth="7">Enquanto o iPhone ta no comecinho...
+Só mais uma coisa, esqueci o nome daquele gráfico que analisa a curva
+de
+lançamento de uma tecnologia/produto; mas se não me engano primeiro
+vem o
+periodo de euforia, dps desilusão, conformação, etc...
+
+</quotepara><quotepara depth="7">By the way, Java ja quebrou a barreira dos 2 bilhoes de devices...
+
+</quotepara><quotefooter type="signature" depth="7" hash="4310915146882495798">-- Luis
+
+</quotefooter><quotepara depth="7">2008/9/3 Herval Freire &lt;<email>hervalfreire@gmail.com</email>&gt;
+
+</quotepara><quote depth="8"><quotepara depth="8"><url>http://www.techcrunch.com/2008/09/03/can-the-iphone-beat-symbian-os/</url>
+
+</quotepara><quotepara depth="8">(nao vou falar uma palavra alem das minhas ja repetidas 'mas eu te
+disse'...)
+
+</quotepara></quote></quote><quotefooter type="signature" depth="6" hash="17259782242602969152">--
+Antonio Marin Neto
+Sun Certified Programmer for Java 2 Platform 1.4
+
+</quotefooter><quotepara depth="6">GSM Mobile: +55 19 8166 6720
+Blog: <url>http://weblogs.java.net/blog/netomarin/</url>
+GTalk: <email>netomarin@gmail.com</email>
+Skype: netomarin
+
+</quotepara></quote><quotefooter type="signature" depth="5" hash="1390199980863102971">--
+Bruno Meirelles Herrera
+MsC. Eng. de Produção e Sistemas / Production and Systems Eng.
+Eng. de Computação / Computer Eng.
+
+</quotefooter><quotepara depth="5">SCJP -Sun Certified Programmer for Java 2 Platform 1.4
+SCJA - Sun Certified Associate for Java Platform
+
+</quotepara><quotefooter type="signature" depth="5" hash="826473947014829699">&lt;a href="<url>http://www.linkedin.com/in/bherrera</url>" &gt;&lt;img src="
+<url>http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.gif</url>"
+width="80" height="15" border="0" alt="View Bruno Herrera's profile on
+LinkedIn"&gt;&lt;/a&gt;
+
+</quotefooter></quote><quotefooter type="signature" depth="4" hash="11773065034149982114">--
+Sent from Gmail for mobile | mobile.google.com
+
+</quotefooter><quotefooter type="list-management" depth="4">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>j2me-list-unsubscribe@soujava.dev.java.net</email>
+For additional commands, e-mail: <email>j2me-list-help@soujava.dev.java.net</email>
+
+</quotefooter></quote><quotepara depth="3">--
+Bruno Meirelles Herrera
+MsC. Eng. de Produção e Sistemas / Production and Systems Eng.
+Eng. de Computação / Computer Eng.
+
+</quotepara><quotepara depth="3">SCJP -Sun Certified Programmer for Java 2 Platform 1.4
+SCJA - Sun Certified Associate for Java Platform
+
+</quotepara><quotepara depth="3">&lt;a href="<url>http://www.linkedin.com/in/bherrera</url>" &gt;&lt;img
+src="<url>http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.gif</url>"
+width="80" height="15" border="0" alt="View Bruno Herrera's profile on
+LinkedIn"&gt;&lt;/a&gt;
+</quotepara></quote><quotefooter type="noise" depth="2">
+</quotefooter></quote><quotepara depth="1">--
+[]s
+Herval Freire
+<url>http://about.me/herval</url>
+
+</quotepara><quotepara depth="1">-- 
+Atenciosamente,
+
+</quotepara><quotepara depth="1">Fernando Franzini 
+Java Blog
+
+</quotepara><quotepara depth="1">-- 
+Bruno Meirelles Herrera
+MsC. Eng. de Produção e Sistemas / Production and Systems Eng.
+Eng. de Computação / Computer Eng.
+CSM
+
+</quotepara><quotepara depth="1">-- 
+
+</quotepara><quotepara depth="1">Juarez Junior
+
+</quotepara><quotepara depth="1">E-mail / MSN / Google Talk: <email>juarez.barbosa@gmail.com</email>
+Mobile: + 55 31 9208 5948
+Twitter: twitter.com/juarezjunior
+Facebook: facebook.com/juarez.junior
+
+</quotepara><quotepara depth="1">-- 
+
+</quotepara><quotepara depth="1">Juarez Junior
+
+</quotepara><quotepara depth="1">E-mail / MSN / Google Talk: <email>juarez.barbosa@gmail.com</email>
+Mobile: + 55 31 9208 5948
+Twitter: twitter.com/juarezjunior
+Facebook: facebook.com/juarez.junior
+
+</quotepara><quotepara depth="1">-- 
+
+</quotepara><quotepara depth="1">Juarez Junior
+
+</quotepara><quotepara depth="1">E-mail / MSN / Google Talk: <email>juarez.barbosa@gmail.com</email>
+Mobile: + 55 31 9208 5948
+Twitter: twitter.com/juarezjunior
+Facebook: facebook.com/juarez.junior
+
+</quotepara><quotepara depth="1">&lt;JavaME no mundo real.pptx&gt;
+</quotepara></quote></body></message>

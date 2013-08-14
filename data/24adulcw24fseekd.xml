@@ -1,0 +1,50 @@
+<message message-id="20090603032021.GA8721@tarshish" list="org.kernel.vger.linux-kernel" id="24adulcw24fseekd" type="development" date="2009-06-03T06:20:22+03:00" year="2009-01-01" year-month="2009-06-01" year-month-day="2009-06-02" thread-id="mrpyx3ntq7heqmyg"><headers><envelope-from-line>Tue Jun 02 21:35:25 2009</envelope-from-line><from personal="Baruch Siach" address="baruch@tkos.co.il">Baruch Siach &lt;baruch@tkos.co.il&gt;</from><to personal="Andrew Morton" address="akpm@linux-foundation.org">Andrew Morton &lt;akpm@linux-foundation.org&gt;</to><cc personal="linux-kernel@vger.kernel.org" address="linux-kernel@vger.kernel.org">linux-kernel@vger.kernel.org</cc><subject normal="[PATCH v3] gpio: driver for PrimeCell PL061 GPIO controller">Re: [PATCH v3] gpio: driver for PrimeCell PL061 GPIO controller</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 522
+          for &lt;archive.user.1834@a.markmail.org&gt;;
+          Tue, 2 Jun 2009 19:21:55 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 56CA12908226
+	for &lt;archive.user.1834@a.markmail.org&gt;; Tue,  2 Jun 2009 20:21:31 -0700 (PDT)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1753806AbZFCDVi (ORCPT
+	&lt;rfc822;archive.user.1834@a.markmail.org&gt;);
+	Tue, 2 Jun 2009 23:21:38 -0400</received><received>(majordomo@vger.kernel.org) by vger.kernel.org id S1753229AbZFCDV3
+	(ORCPT &lt;rfc822;linux-kernel-outgoing&gt;);
+	Tue, 2 Jun 2009 23:21:29 -0400</received><received>from tango.tkos.co.il ([62.219.50.35]:50120 "EHLO tango.tkos.co.il"
+	rhost-flags-OK-OK-OK-OK) by vger.kernel.org with ESMTP
+	id S1752892AbZFCDV2 (ORCPT &lt;rfc822;linux-kernel@vger.kernel.org&gt;);
+	Tue, 2 Jun 2009 23:21:28 -0400</received><received>from tarshish (212.199.107.118.static.012.net.il [212.199.107.118])
+	(authenticated bits=0)
+	by tango.tkos.co.il (8.12.11.20060308/8.12.11) with ESMTP id n533KssV017559;
+	Wed, 3 Jun 2009 06:20:59 +0300</received><date>Wed, 3 Jun 2009 06:20:22 +0300</date><message-id>20090603032021.GA8721@tarshish</message-id><references>&lt;1243975690-12073-1-git-send-email-baruch@tkos.co.il&gt; &lt;20090602160902.046ccffa.akpm@linux-foundation.org&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><in-reply-to>&lt;20090602160902.046ccffa.akpm@linux-foundation.org&gt;</in-reply-to><user-agent>Mutt/1.5.18 (2008-05-17)</user-agent><x-virus-scanned>ClamAV version 0.93.1, clamav-milter version 0.93.1 on tango.tkos.co.il</x-virus-scanned><x-virus-status>Clean</x-virus-status><x-spam-level>-2.312 () BAYES_00</x-spam-level><x-scanned-by>MIMEDefang 2.62 on 62.219.50.35</x-scanned-by><sender>linux-kernel-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;linux-kernel.vger.kernel.org&gt;</list-id><x-mailing-list>linux-kernel@vger.kernel.org</x-mailing-list></headers><normalized-references><normalized-message-id>20090603032021.GA8721@tarshish</normalized-message-id><normalized-in-reply-to>20090602160902.046ccffa.akpm@linux-foundation.org</normalized-in-reply-to><normalized-reference>1243975690-12073-1-git-send-email-baruch@tkos.co.il</normalized-reference><normalized-reference>20090602160902.046ccffa.akpm@linux-foundation.org</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><greeting depth="0">Hi Andrew,
+</greeting><para depth="0">
+On Tue, Jun 02, 2009 at 04:09:02PM -0700, Andrew Morton wrote:
+</para><quote depth="1"><quotepara depth="1">On Tue,  2 Jun 2009 23:48:10 +0300
+Baruch Siach &lt;<email>baruch@tkos.co.il</email>&gt; wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">This is a driver for the ARM PrimeCell PL061 GPIO AMBA peripheral. The driver
+is implemented using the gpiolib framework.
+</quotepara></quote><quotepara depth="1">
+x86_64 allmodconfig:
+
+</quotepara><quotepara depth="1">drivers/gpio/pl061.c: In function 'pl061_probe':
+drivers/gpio/pl061.c:254: error: 'SZ_4K' undeclared (first use in this function)
+drivers/gpio/pl061.c:254: error: (Each undeclared identifier is reported only<br/>once
+drivers/gpio/pl061.c:254: error: for each function it appears in.)
+drivers/gpio/pl061.c:306: error: implicit declaration of function<br/>'set_irq_flags'
+drivers/gpio/pl061.c:306: error: 'IRQF_VALID' undeclared (first use in this<br/>function)
+
+</quotepara><quotepara depth="1">I'll put a depends-on-ARM in there...
+</quotepara></quote><para depth="0">
+I guess a depends-on-ARM_AMBA would be better.
+
+</para><para depth="0">baruch
+
+</para><footer type="signature" depth="0" hash="5846533369420710260">-- 
+                                                     ~. .~   Tk Open Systems
+=}------------------------------------------------ooO--U--Ooo------------{=
+   - <email>baruch@tkos.co.il</email> - tel: +972.2.679.5364, <url>http://www.tkos.co.il</url> -
+</footer><footer type="list-management" depth="0">--
+To unsubscribe from this list: send the line "unsubscribe linux-kernel" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+Please read the FAQ at  <url>http://www.tux.org/lkml/</url>
+</footer></body></message>

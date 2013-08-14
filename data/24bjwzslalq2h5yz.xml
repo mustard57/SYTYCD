@@ -1,0 +1,17 @@
+<message message-id="20030914155905.GA25924@tavaiah" list="org.wikimedia.lists.wikitech-l" id="24bjwzslalq2h5yz" type="general" date="2003-09-14T17:59:05+02:00" year="2003-01-01" year-month="2003-09-01" year-month-day="2003-09-14" thread-id="bp75blxs7aq2nmjd"><headers><envelope-from-line>From taw@users.sourceforge.net  Sun Sep 14 15:59:05 2003</envelope-from-line><from personal="Tomasz Wegrzanowski" address="taw@users.sourceforge.net">Tomasz Wegrzanowski &lt;taw@users.sourceforge.net&gt;</from><subject normal="[Wikitech-l] map software">[Wikitech-l] map software</subject><date>Sun, 14 Sep 2003 17:59:05 +0200</date><message-id>20030914155905.GA25924@tavaiah</message-id><content-type>multipart/mixed; 
+	boundary="----=_Part_1996_28562961.1222720545903"</content-type><mime-version>1.0</mime-version></headers><attachments><attachment type="application/octet-stream" file="tarball-200309141549.tar.bz2" size="55198" uri="/24bjwzslalq2h5yz/attach00/tarball-200309141549.tar.bz2" extension="bz2"/></attachments><normalized-references><normalized-message-id>20030914155905.GA25924@tavaiah</normalized-message-id></normalized-references><body><para depth="0">Because both ImageMagick and libart are buggy, this version uses
+a hybrid soltution where all polygons are painted using libart,
+and everything else using ImageMagick. Yuck.
+
+</para><para depth="0">libart is available from Ruby/Gnome2
+
+</para><para depth="0"><url>http://taw.pl.eu.org/~taw/earth.mng</url> (800kB) or
+<url>http://taw.pl.eu.org/~taw/earth.gif</url> (2MB) show animation of rotating Earth.
+Of course equal-area projection is particularly badly suited for that,
+but it looks cool anyway ;)
+
+</para><para depth="0">The following things are cached:
+* bluemarble
+* libart generated polygons
+* rivers
+</para></body></message>

@@ -1,0 +1,81 @@
+<message message-id="20091005014612.E9FA911C00E5@cvs1.fedora.phx.redhat.com" list="com.redhat.fedora-extras-commits" id="24c43api25us32md" type="checkins" date="2009-10-04T17:45:57.119492-08:00" year="2009-01-01" year-month="2009-10-01" year-month-day="2009-10-04" thread-id="24c43api25us32md"><headers><envelope-from-line>Sun Oct 04 17:46:20 2009</envelope-from-line><from personal="Braden McDaniel" address="braden@fedoraproject.org">Braden McDaniel &lt;braden@fedoraproject.org&gt;</from><to personal="cvsextras@fedoraproject.org" address="cvsextras@fedoraproject.org">cvsextras@fedoraproject.org</to><subject normal="rpms/openvrml/devel openvrml.spec,1.76,1.77">rpms/openvrml/devel openvrml.spec,1.76,1.77</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 327
+          for &lt;thomas.herring.ewing@a.markmail.org&gt;;
+          Sun, 4 Oct 2009 17:46:19 -0800 (GMT-08:00)</received><received>from hormel.redhat.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id A3E0A290820D
+	for &lt;thomas.herring.ewing@a.markmail.org&gt;; Sun,  4 Oct 2009 18:45:56 -0700 (PDT)</received><received>from listman.util.phx.redhat.com (listman.util.phx.redhat.com [10.8.4.110])
+	by hormel.redhat.com (Postfix) with ESMTP id 9245A619460;
+	Sun,  4 Oct 2009 21:46:18 -0400 (EDT)</received><received>from int-mx04.intmail.prod.int.phx2.redhat.com
+	(nat-pool.util.phx.redhat.com [10.8.5.200])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	n951kGVE009488
+	for &lt;fedora-extras-commits@listman.util.phx.redhat.com&gt;;
+	Sun, 4 Oct 2009 21:46:16 -0400</received><received>from mx2.util.phx.redhat.com (mx2.util.phx.redhat.com [10.8.4.102])
+	by int-mx04.intmail.prod.int.phx2.redhat.com (8.13.8/8.13.8) with
+	ESMTP id n951kGF9026391
+	for &lt;fedora-extras-commits@int-mx.corp.redhat.com&gt;;
+	Sun, 4 Oct 2009 21:46:16 -0400</received><received>from bastion2.fedora.phx.redhat.com (nat-pool.util.phx.redhat.com
+	[10.8.5.200])
+	by mx2.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id n951kGkG017014
+	for &lt;fedora-extras-commits@redhat.com&gt;; Sun, 4 Oct 2009 21:46:16 -0400</received><received>by bastion2.fedora.phx.redhat.com (Postfix)
+	id 90A3310F84D; Mon,  5 Oct 2009 01:46:16 +0000 (UTC)</received><delivered-to>cvsextras@fedoraproject.org</delivered-to><received>by bastion2.fedora.phx.redhat.com (Postfix, from userid 503)
+	id 8DBF810F88E; Mon,  5 Oct 2009 01:46:16 +0000 (UTC)</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on
+	bastion2.fedora.phx.redhat.com</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.8 required=5.0 tests=ALL_TRUSTED,BAYES_50
+	autolearn=no version=3.2.5</x-spam-status><received>from cvs1.fedora.phx.redhat.com (cvs1.fedora.phx.redhat.com
+	[10.8.34.217])
+	by bastion2.fedora.phx.redhat.com (Postfix) with ESMTP id 0BF0610F871; 
+	Mon,  5 Oct 2009 01:46:13 +0000 (UTC)</received><received>from cvs1.fedora.phx.redhat.com (localhost.localdomain [127.0.0.1])
+	by cvs1.fedora.phx.redhat.com (Postfix) with ESMTP id E9FA911C00E5; 
+	Mon,  5 Oct 2009 01:46:12 +0000 (UTC)</received><x-cvsroot>/cvs/pkgs</x-cvsroot><x-cvs-module>rpms</x-cvs-module><x-cvs-directory>rpms/openvrml/devel</x-cvs-directory><x-cvs-user>braden</x-cvs-user><x-cvs-server>cvs1.fedora.phx.redhat.com</x-cvs-server><precedence>first-class</precedence><content-transfer-encoding>7bit</content-transfer-encoding><mime-version>1.0</mime-version><content-type>text/plain; charset="utf-8"</content-type><message-id>20091005014612.E9FA911C00E5@cvs1.fedora.phx.redhat.com</message-id><date>Mon,  5 Oct 2009 01:46:12 +0000 (UTC)</date><x-scanned-by>MIMEDefang 2.67 on 10.5.11.17</x-scanned-by><x-loop>fedora-extras-commits@redhat.com</x-loop><x-topics>Package Commits
+	All cvs commits</x-topics><x-beenthere>fedora-extras-commits@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><reply-to>fedora-devel-list@redhat.com</reply-to><list-id>Fedora Extras CVS commits &lt;fedora-extras-commits.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-extras-commits&gt;,
+	&lt;mailto:fedora-extras-commits-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-extras-commits&gt;</list-archive><list-post>&lt;mailto:fedora-extras-commits@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-extras-commits-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-extras-commits&gt;,
+	&lt;mailto:fedora-extras-commits-request@redhat.com?subject=subscribe&gt;</list-subscribe><sender>fedora-extras-commits-bounces@redhat.com</sender><errors-to>fedora-extras-commits-bounces@redhat.com</errors-to></headers><normalized-references><normalized-message-id>20091005014612.E9FA911C00E5@cvs1.fedora.phx.redhat.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: braden
+
+</para><para depth="0">Update of /cvs/pkgs/rpms/openvrml/devel
+In directory cvs1.fedora.phx.redhat.com:/tmp/cvs-serv13134/devel
+
+</para><para depth="0">Modified Files:
+	openvrml.spec 
+Log Message:
+Actually remove Java and JavaScript backends from the main package.
+
+</para><para depth="0">Index: openvrml.spec
+===================================================================
+RCS file: /cvs/pkgs/rpms/openvrml/devel/openvrml.spec,v
+retrieving revision 1.76
+retrieving revision 1.77
+diff -u -p -r1.76 -r1.77
+--- openvrml.spec	2 Oct 2009 04:34:57 -0000	1.76
++++ openvrml.spec	5 Oct 2009 01:46:12 -0000	1.77
+@@ -1,7 +1,7 @@
+ # -*- rpm-spec -*-
+ Name:           openvrml
+ Version:        0.18.3
+-Release:        6%{?dist}
++Release:        7%{?dist}
+ Summary:        VRML/X3D runtime library
+ License:        LGPLv3+
+ Group:          System Environment/Libraries
+@@ -146,7 +146,6 @@ CXXFLAGS="%optflags -fvisibility=hidden 
+ %dir %{_libdir}/openvrml/node
+ %{_libdir}/openvrml/node/*.so
+ %dir %{_libdir}/openvrml/script
+-%{_libdir}/openvrml/script/*.so
+
+</para><para depth="0"> %files devel
+ %doc AUTHORS COPYING.LESSER ChangeLog NEWS README THANKS
+@@ -207,6 +206,9 @@ CXXFLAGS="%optflags -fvisibility=hidden 
+ %{_javadocdir}/%{name}-%{version}
+
+</para><footer type="signature" depth="0" hash="7821416331386729036"> %changelog
++* Sun Oct 4 2009  Braden McDaniel  &lt;<email>braden@endoframe.com</email>&gt; - 0.18.3-7
++- Actually remove Java and JavaScript backends from the main package.
++
+ * Fri Oct 2 2009  Braden McDaniel  &lt;<email>braden@endoframe.com</email>&gt; - 0.18.3-6
+ - Separate the Java and JavaScript scripting backends into subpackages.
+
+</footer><footer type="list-management" depth="0">-- 
+fedora-extras-commits mailing list
+<email>fedora-extras-commits@redhat.com</email>
+<url>https://www.redhat.com/mailman/listinfo/fedora-extras-commits</url>
+</footer></body></message>

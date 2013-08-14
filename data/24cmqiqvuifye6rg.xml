@@ -1,0 +1,52 @@
+<message message-id="mailman.4319.1137101249.24926.mailscanner@lists.mailscanner.info" list="info.mailscanner.lists.mailscanner" id="24cmqiqvuifye6rg" type="general" date="2004-11-04T15:35:02" year="2004-01-01" year-month="2004-11-01" year-month-day="2004-11-04" thread-id="24cmqiqvuifye6rg"><headers><envelope-from-line>From mailscanner@ecs.soton.ac.uk  Thu Nov  4 15:35:02 2004</envelope-from-line><from personal="Julian Field" address="mailscanner@ecs.soton.ac.uk">Julian Field &lt;mailscanner@ecs.soton.ac.uk&gt;</from><subject normal="4.35.11-1 sig not found">4.35.11-1 sig not found</subject><date>Thu Jan 12 21:27:29 2006</date><message-id>mailman.4319.1137101249.24926.mailscanner@lists.mailscanner.info</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>mailman.4319.1137101249.24926.mailscanner@lists.mailscanner.info</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">[ The following text is in the "ISO-8859-1" character set. ]
+    [ Your display is set for the "US-ASCII" character set.  ]
+    [ Some characters may be displayed incorrectly. ]
+
+</para><para depth="0">You beat me to it, they are all there now.
+
+</para><para depth="0"><email>shrek-m@gmx.de</email> wrote:
+
+</para><quote depth="1"><quotepara depth="1">hi,
+
+</quotepara><quotepara depth="1"><url>http://www.sng.ecs.soton.ac.uk/mailscanner/files/4/rpm/MailScanner-4.35.11-1.rpm.tar.gz</url>
+
+</quotepara><quotepara depth="1">is ok
+
+</quotepara><quotepara depth="1"><url>http://www.sng.ecs.soton.ac.uk/mailscanner/files/4/rpm/MailScanner-4.35.11-1.rpm.tar.gz.sig</url>
+
+</quotepara><quotepara depth="1">&lt;snip&gt;
+
+</quotepara><quotepara depth="1"> Not Found
+
+</quotepara><quotepara depth="1">The requested URL
+/mailscanner/files/4/rpm/MailScanner-4.35.11-1.rpm.tar.gz.sig was not
+found on this server.
+
+</quotepara><quotepara depth="1">------------------------------------------------------------------------
+Apache/2.0.46 (Red Hat) Server at www.sng.ecs.soton.ac.uk Port 80
+&lt;/snip&gt;
+
+</quotepara><quotefooter type="signature" depth="1" hash="12603175588564484334">--
+shrek-m
+
+</quotefooter><quotefooter type="list-management" depth="1">------------------------ MailScanner list ------------------------
+To unsubscribe, email <email>jiscmail@jiscmail.ac.uk</email> with the words:
+'leave mailscanner' in the body of the email.
+Before posting, read the MAQ (<url>http://www.mailscanner.biz/maq/</url>) and
+the archives (<url>http://www.jiscmail.ac.uk/lists/mailscanner.html</url>).
+
+</quotefooter></quote><footer type="signature" depth="0" hash="16636902191366472672">--
+Julian Field
+www.MailScanner.info
+Buy the MailScanner book at www.MailScanner.info/store
+Professional Support Services at www.MailScanner.biz
+MailScanner thanks transtec Computers for their support
+
+</footer><para depth="0">PGP footprint: EE81 D763 3DB0 0BFD E1DC 7222 11F6 5947 1415 B654
+
+</para><footer type="list-management" depth="0">------------------------ MailScanner list ------------------------
+To unsubscribe, email <email>jiscmail@jiscmail.ac.uk</email> with the words:
+'leave mailscanner' in the body of the email.
+Before posting, read the MAQ (<url>http://www.mailscanner.biz/maq/</url>) and
+the archives (<url>http://www.jiscmail.ac.uk/lists/mailscanner.html</url>).
+</footer></body></message>

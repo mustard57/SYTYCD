@@ -1,0 +1,27 @@
+<message message-id="900439158.1901242647814140.JavaMail.Twebapp@sf-app1" list="org.opensolaris.opensolaris-discuss" id="24bxpwgvlz7fc73b" type="general" date="2009-05-18T04:56:23-07:00" year="2009-01-01" year-month="2009-05-01" year-month-day="2009-05-18" thread-id="pr67czkfsrmyb77g"><headers><envelope-from-line>Mon May 18 03:57:13 2009</envelope-from-line><from personal="Mike DeMarco" address="mikejd42@yahoo.com">Mike DeMarco &lt;mikejd42@yahoo.com&gt;</from><to personal="opensolaris-discuss@opensolaris.org" address="opensolaris-discuss@opensolaris.org">opensolaris-discuss@opensolaris.org</to><subject normal="[osol-discuss] AM3 support">Re: [osol-discuss] AM3 support</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 746
+          for &lt;robby.gill.bates@a.markmail.org&gt;;
+          Mon, 18 May 2009 03:57:13 -0800 (GMT-08:00)</received><received>from mail.opensolaris.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id E71FD3B300B8
+	for &lt;robby.gill.bates@a.markmail.org&gt;; Mon, 18 May 2009 04:56:49 -0700 (PDT)</received><received>by mail.opensolaris.org (Postfix, from userid 505)
+	id 0C427122F22; Mon, 18 May 2009 04:57:11 -0700 (PDT)</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on
+	oss-mail1.opensolaris.org</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-0.2 required=5.0 tests=AWL,BAYES_00,
+	FORGED_YAHOO_RCVD autolearn=no version=3.2.5</x-spam-status><received>from oss-mail1.opensolaris.org (localhost [127.0.0.1])
+	by mail.opensolaris.org (Postfix) with ESMTP id A851E122F00;
+	Mon, 18 May 2009 04:57:02 -0700 (PDT)</received><x-original-to>opensolaris-discuss@opensolaris.org</x-original-to><delivered-to>opensolaris-discuss@opensolaris.org</delivered-to><received>by mail.opensolaris.org (Postfix, from userid 505)
+	id DA047122EF8; Mon, 18 May 2009 04:57:01 -0700 (PDT)</received><received>from sf-app1.opensolaris.org (sf-app1 [72.5.123.78])
+	by mail.opensolaris.org (Postfix) with ESMTP id 362B7122EF4
+	for &lt;opensolaris-discuss@opensolaris.org&gt;;
+	Mon, 18 May 2009 04:56:54 -0700 (PDT)</received><received>from sf-app1 (localhost [127.0.0.1])
+	by sf-app1.opensolaris.org (8.14.2+Sun/8.14.2) with ESMTP id
+	n4IBus80017137 for &lt;opensolaris-discuss@opensolaris.org&gt;;
+	Mon, 18 May 2009 04:56:54 -0700 (PDT)</received><message-id>900439158.1901242647814140.JavaMail.Twebapp@sf-app1</message-id><date>Mon, 18 May 2009 04:56:23 PDT</date><in-reply-to>&lt;980040345.5471236688736312.JavaMail.Twebapp@sf-app1&gt;</in-reply-to><mime-version>1.0</mime-version><x-beenthere>opensolaris-discuss@opensolaris.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><list-id>General OpenSolaris Discussion List
+	&lt;opensolaris-discuss.opensolaris.org&gt;</list-id><list-unsubscribe>&lt;http://mail.opensolaris.org/mailman/options/opensolaris-discuss&gt;,
+	&lt;mailto:opensolaris-discuss-request@opensolaris.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.opensolaris.org/pipermail/opensolaris-discuss&gt;</list-archive><list-post>&lt;mailto:opensolaris-discuss@opensolaris.org&gt;</list-post><list-help>&lt;mailto:opensolaris-discuss-request@opensolaris.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.opensolaris.org/mailman/listinfo/opensolaris-discuss&gt;,
+	&lt;mailto:opensolaris-discuss-request@opensolaris.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>opensolaris-discuss-bounces@opensolaris.org</sender><errors-to>opensolaris-discuss-bounces@opensolaris.org</errors-to></headers><normalized-references><normalized-message-id>900439158.1901242647814140.JavaMail.Twebapp@sf-app1</normalized-message-id><normalized-in-reply-to>980040345.5471236688736312.JavaMail.Twebapp@sf-app1</normalized-in-reply-to></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">I went ahead and bought the ECS 790 AM3 motherboard. Everything on it works with<br/>build 113 except the buggy rge driver which starts working but fizzles out.<br/>Cheap fix is to buy a cheap nic card.
+</para><footer type="signature" depth="0" hash="15548713192606020520">-- 
+This message posted from opensolaris.org
+</footer><footer type="list-management" depth="0">_______________________________________________
+opensolaris-discuss mailing list
+<email>opensolaris-discuss@opensolaris.org</email>
+</footer></body></message>

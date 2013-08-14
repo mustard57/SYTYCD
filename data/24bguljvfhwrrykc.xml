@@ -1,0 +1,273 @@
+<message message-id="type=project&amp;nid=35025&amp;cid=51153&amp;host=@drupal.org" list="org.drupal.documentation" id="24bguljvfhwrrykc" type="general" date="2005-10-25T02:06:00" year="2005-01-01" year-month="2005-10-01" year-month-day="2005-10-25" thread-id="iyrctal46pfo56lb"><headers><envelope-from-line>From drupal-docs@drupal.org  Tue Oct 25 02:06:00 2005</envelope-from-line><from personal="cel4145" address="drupal-docs@drupal.org">cel4145 &lt;drupal-docs@drupal.org&gt;</from><subject normal="[drupal-docs] [task] Tips for posting to the Drupal forums">[drupal-docs] [task] Tips for posting to the Drupal forums</subject><date>Tue Nov  8 21:28:58 2005</date><in-reply-to>&lt;type=project&amp;nid=35025&amp;host=@drupal.org&gt;</in-reply-to><references>&lt;type=project&amp;nid=35025&amp;host=@drupal.org&gt;
+	&lt;type=project&amp;nid=35025&amp;cid=51149&amp;host=@drupal.org&gt;
+	&lt;type=project&amp;nid=35025&amp;revcount=1&amp;host=@drupal.org&gt;</references><message-id>type=project&amp;nid=35025&amp;cid=51153&amp;host=@drupal.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>type=project&amp;nid=35025&amp;cid=51153&amp;host=@drupal.org</normalized-message-id><normalized-in-reply-to>type=project&amp;nid=35025&amp;host=@drupal.org</normalized-in-reply-to><normalized-reference>type=project&amp;nid=35025&amp;host=@drupal.org</normalized-reference><normalized-reference>type=project&amp;nid=35025&amp;cid=51149&amp;host=@drupal.org</normalized-reference><normalized-reference>type=project&amp;nid=35025&amp;revcount=1&amp;host=@drupal.org</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Issue status update for 
+<url>http://drupal.org/node/35025</url>
+Post a follow up: 
+<url>http://drupal.org/project/comments/add/35025</url>
+
+</para><para depth="0"> Project:      Documentation
+ Version:      &lt;none&gt;
+ Component:    Misc
+ Category:     tasks
+ Priority:     normal
+ Assigned to:  cel4145
+ Reported by:  cel4145
+ Updated by:   cel4145
+ Status:       active
+
+</para><para depth="0">"What about including something related to searching the issues /
+feature / support requests of contributed modules, and how to do that
+properly? I think also including info on how to use blockquote, code,
+and ?php would also be helpful." 
+
+</para><para depth="0">My original goal for this document was that is something someone would
+use once they had decided to post in the forums. So it should link from
+other pages where that information has already been suggested, such as
+here:
+
+</para><para depth="0"><url>http://drupal.org/support</url>
+
+</para><para depth="0">The other information on encoding would turn this into more of an
+instructional document, rather than a general guide for how to
+communicate effectively. Perhaps that would work well as a sub-page?
+I'd definitely say add one if you want? Perhaps another subpage that
+provides detailed information on searching the forums (as well as how
+to use Google to do so).
+
+</para><para depth="0">cel4145
+
+</para><para depth="0">Previous comments:
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 01:37:03 +0000 : cel4145
+
+</para><para depth="0">Attachment: <url>http://drupal.org/files/issues/drupal</url> -forum-tips.html (2.7 KB)
+
+</para><para depth="0">Attached is a set of tips for posting to the Drupal forums,
+documentation that could be included in the About Drupal handbook. 
+
+</para><para depth="0">Please give your feedback on whether 
+
+</para><para depth="0">* these are necessary (do we need this type of document?)
+* any other items that I might include in this list
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 01:45:08 +0000 : cel4145
+
+</para><para depth="0">Attachment: <url>http://drupal.org/files/issues/drupal-forum-tips.html</url> (2.71 KB)
+
+</para><para depth="0">sorry. the file name was broken on the last attachment.
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 01:45:18 +0000 : nevets
+
+</para><para depth="0">It could be very useful, the one thing I would add is a note about
+people enabling their contact tab, people often ask questions that are
+better answered off line but do not have the contact enabled.
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 01:52:53 +0000 : cel4145
+
+</para><para depth="0">Attachment: <url>http://drupal.org/files/issues/drupal-forum-tips2.html</url> (2.99 KB)
+
+</para><para depth="0">good advice. see if what i added does what you want.
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 02:04:41 +0000 : webchick
+
+</para><para depth="0">Attachment: <url>http://drupal.org/files/issues/drupal-forums-tips3.html</url> (2.99 KB)
+
+</para><para depth="0">Looks good. I like that it stresses the point about Drupal being a
+volunteer community and that people can get involved themselves, as
+well as the point about Drupal being an international community and
+that sometimes users can come across as abrasive or rude because of a
+language barrier.
+
+</para><para depth="0">I've attached a new version that just fixes a couple minor spelling
+things.
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 04:58:22 +0000 : cel4145
+
+</para><para depth="0">Thanks! 
+
+</para><para depth="0">I went ahead and posted it into the handbook: Tips for posting to the
+Drupal forums [1]. Any other feedback and I can update it there.
+
+</para><para depth="0">Should I add a link in the forum posting instructions that appear on
+node/add/forum?
+[1] <url>http://drupal.org/forum-posting</url>
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 07:50:06 +0000 : B?r Kessels
+
+</para><para depth="0">I think you should remove the centre paragraph of the /node/add/forum
+and replace it with the 6 bullets. That, and a link to the handbookis a
+very good thing IMO. People hardly read a lot of text, but do read
+bullets. If they are interested they will read further, i think.
+
+</para><para depth="0">Ber
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 16:13:23 +0000 : cel4145
+
+</para><para depth="0">I understand what you mean. But I'd be hesitant to include all that text
+in node/add/forum because of usability concerns. Though I wonder if it
+would work to just include the following bullets with a note and link
+to the full text version:
+
+</para><para depth="0">* Context-sensitive forum post titles.
+* Detailed specifics.
+* Ignore flames and rude tones.
+* You get more bees with honey than with vinegar.
+* With volunteer support, not everyone gets a response.
+* Enable your contact tab. 
+
+</para><para depth="0">These could also be revised so that they become clearer when separate
+from the larger explanations yet still remain short. Perhaps,
+
+</para><para depth="0">* Use context-sensitive forum post titles.
+* Include detailed specifics.
+* Ignore flames and rude tones.
+* Be polite.
+* With volunteer support, not everyone gets a response.
+* Enable your contact tab.
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 17:35:27 +0000 : webchick
+
+</para><para depth="0">I would maybe do:
+
+</para><para depth="0">* Please [search] (link to search) and check the [handbook] (link to
+handbook) before posting.
+* Please use descriptive titles -- this allows people to better assist
+you.
+* Include detailed specifics -- Drupal version number, specific error
+messages, steps you've tried, and so on.
+* Ignore flames and rude tones -- remember that English is not
+everyone's first language.
+* Be polite -- you are more likely to get a helpful response.
+* Remember that with volunteer support, not everyone gets a response --
+please do what you can to help out!
+* Enable your contact tab -- this allows people to contact you outside
+of the forums if required.
+
+</para><para depth="0">This is still not *too* wordy, but expands on the points more than just
+the bullets themselves. I also changed "context-sensitive" to
+"descriptive" titles, because the former is a bit unclear, imo. And I
+added a bullet point for the search and handbook, per Boris's comment.
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 20:33:40 +0000 : sepeck
+
+</para><para depth="0">It needs to be top level in the handbook.  (maybe use blink tags or
+highlight it red or something)
+Some suggestions, a new section starting. 
+
+</para><para depth="0">* Drupal.org README
+* New comers guide -Start here
+
+</para><para depth="0">We need an introduction to the community.  I have started an attempt at
+one [2], but as I got into it, I realized I was writing an introduction
+to the handbook (not a bad thing, just got distracted and  missed my
+target).  
+
+</para><para depth="0">Perhaps something along the lines of...
+
+</para><para depth="0">"
+Welcome to the community.  The drupal.org community is comprised of a
+diverse group of people; from developers to neophytes, contributors to
+non-contributers.  Using Drupal as a foundation, you can build a
+powerful flexible website.  As with all powerful tools, what you get
+out of it depends on what you put into it and your current skills. 
+With a base Drupal install you can build a fairly powerful site without
+knowing php.  If you need something beyond what is provided with the
+base install and currently available contributed modules, you will need
+to be familier with services [3].  If you are familier, then you will
+need to be willing to spend the time learning Drupal's Developers Guide
+[4].  As with all communities, 
+
+</para><para depth="0">Here are some methods to use Drupal.org effectively.
+
+</para><para depth="0">[sub page] Tips to posting to the forums
+[sub page] How to use the handbook
+[sub page]
+
+</para><para depth="0">"
+[2] <url>http://scratch.blkmtn.org/index.php?q=Drupal.org-readme</url>
+[3] www.php.net&gt;php and databases (primarily MySQL) , willing to learn
+or pay someone for their api and
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 21:00:33 +0000 : sepeck
+
+</para><para depth="0">Let's try it without a missing quote in a an href tag.
+
+</para><para depth="0">"
+Welcome to the community.  The drupal.org community is comprised of a
+diverse group of people; from developers to neophytes, contributors to
+non-contributers.  Using Drupal as a foundation, you can build a
+powerful flexible website.  As with all powerful tools, what you get
+out of it depends on what you put into it and your current skills. 
+With a base Drupal install you can build a fairly powerful site without
+knowing php.  If you need something beyond what is provided with the
+base install and currently available contributed modules, you will need
+to be familier with php [5] and databases (primarily MySQL) , willing to
+learn or pay someone for their services [6].  If you are familier with
+devloping, then you will need to be willing to spend the time learning
+Drupal's Developers Guide [7].  As with all communities, we have our
+disagreements on various approaches and viewpoints that we try and keep
+civil as well as our helpful support people and occasional troll.
+
+</para><para depth="0">Here are some methods to use Drupal.org effectively.
+
+</para><para depth="0">[sub page] Tips to posting to the forums
+[sub page] How to use the handbook
+[sub page]
+
+</para><para depth="0">"
+[5] <url>http://drupal.org/www.php.net</url>
+[6] <url>http://drupal.org/services</url>
+[7] drupaldocs.org&gt;api and
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Mon, 24 Oct 2005 21:54:36 +0000 : cel4145
+
+</para><para depth="0">" I realized I was writing an introduction to the handbook (not a bad
+thing, just got distracted and missed my target)."
+
+</para><para depth="0">No, I imagine you were right. IMHO, the whole About book needs to be
+reorganized and revised. It just doesn't work well as a text that leads
+new people through where they need to go (I have trouble finding stuff
+in it), and, as I think we have seen lately with the anti-Drupal
+sentiments in the forums, it needs additional information that helps
+people to make better decisions about Drupal and understand what Drupal
+is all about.  This is something I had hoped to take on in about two or
+three months.
+
+</para><para depth="0">In the meantime, I'm all in favor of you doing what you think you need
+to do as long as some others agree. It may be better to start a new
+issue since many may now be ignoring this one.
+
+</para><para depth="0">------------------------------------------------------------------------
+
+</para><para depth="0">Tue, 25 Oct 2005 01:32:02 +0000 : ryooki
+
+</para><para depth="0">I would change the italics to bold as the italics seem to disappear in
+the text, but I guess that's just personal preference.  What about
+including something related to searching the issues / feature / support
+requests of contributed modules, and how to do that properly?  I think
+also including info on how to use blockquote, code, and ?php would also
+be helpful.
+</para></body></message>

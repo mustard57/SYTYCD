@@ -1,0 +1,55 @@
+<message message-id="115851FBB53E2D499CD10741D3D8A19401887FC9@msxmbxnsprd04.acct.upmchs.net" list="org.netcoolusers.users" id="24b7u4k6gcexlb74" type="users" date="2007-11-07T16:52:40-05:00" year="2007-01-01" year-month="2007-11-01" year-month-day="2007-11-07" thread-id="7j3ui2xfejh5kbrj"><headers><envelope-from-line>From paniwalaia@upmc.edu  Wed Nov  7 16:52:55 2007</envelope-from-line><from personal="Paniwala, Imran" address="paniwalaia@upmc.edu">"Paniwala, Imran" &lt;paniwalaia@upmc.edu&gt;</from><to personal="users@netcoolusers.org" address="users@netcoolusers.org">users@netcoolusers.org</to><subject normal="[INUG-Users] Netcool Probe Failover Issue">[INUG-Users] Netcool Probe Failover Issue</subject><return-path>paniwalaia@upmc.edu</return-path><x-original-to>users@netcoolusers.org</x-original-to><received>from localhost (localhost.localdomain [127.0.0.1])
+	by mx1.domainmail.org (Postfix) with ESMTP id 588BB254324
+	for &lt;users@netcoolusers.org&gt;; Wed,  7 Nov 2007 16:52:55 -0500 (EST)</received><received>from 1upmc-msx-pp3.isdip.upmc.edu (1upmc-msx-pp3.upmc.edu
+	[128.147.16.134])
+	by mx1.domainmail.org (Postfix) with ESMTP id CCC3A254096
+	for &lt;users@netcoolusers.org&gt;; Wed,  7 Nov 2007 16:52:49 -0500 (EST)</received><received>from 1upmc-msximc2.isdip.upmc.edu (1upmc-msximc2.isdip.upmc.edu
+	[128.147.18.40])
+	by 1upmc-msx-pp3.isdip.upmc.edu (8.13.8/8.13.8) with ESMTP id
+	lA7Lqe5d002425
+	for &lt;users@netcoolusers.org&gt;; Wed, 7 Nov 2007 16:52:41 -0500</received><received>from MSXMBXNSPRD04.acct.upmchs.net ([10.25.32.161]) by
+	1upmc-msximc2.isdip.upmc.edu with Microsoft SMTPSVC(5.0.2195.6713); 
+	Wed, 7 Nov 2007 16:52:40 -0500</received><x-mimeole>Produced By Microsoft Exchange V6.5</x-mimeole><content-class>urn:content-classes:message</content-class><mime-version>1.0</mime-version><content-type>multipart/alternative;
+	boundary="----_=_NextPart_001_01C82188.84E5657A"</content-type><date>Wed, 7 Nov 2007 16:52:40 -0500</date><message-id>115851FBB53E2D499CD10741D3D8A19401887FC9@msxmbxnsprd04.acct.upmchs.net</message-id><in-reply-to>&lt;fd52a5934632.4632fd52a593@nadlanu.com&gt;</in-reply-to><x-ms-has-attach/><x-ms-tnef-correlator/><thread-topic>Netcool Probe Failover Issue</thread-topic><thread-index>Acghh+6UhcRsEFInQq2BlFp64HUYuAAAAXqQ</thread-index><x-originalarrivaltime>07 Nov 2007 21:52:40.0862 (UTC)
+	FILETIME=[84E04BE0:01C82188]</x-originalarrivaltime><x-virus-scanned>by amavisd-new (mx1.domainmail.org)</x-virus-scanned><x-beenthere>users@netcoolusers.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>users@netcoolusers.org</reply-to><list-id>Netcool/CIC Discussions &lt;users.netcoolusers.org&gt;</list-id><list-unsubscribe>&lt;https://lists.netcoolusers.org/mailman/listinfo/users&gt;,
+	&lt;mailto:users-request@netcoolusers.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.netcoolusers.org/archives/users&gt;</list-archive><list-post>&lt;mailto:users@netcoolusers.org&gt;</list-post><list-help>&lt;mailto:users-request@netcoolusers.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.netcoolusers.org/mailman/listinfo/users&gt;,
+	&lt;mailto:users-request@netcoolusers.org?subject=subscribe&gt;</list-subscribe><x-list-received-date>Wed, 07 Nov 2007 21:52:55 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>115851FBB53E2D499CD10741D3D8A19401887FC9@msxmbxnsprd04.acct.upmchs.net</normalized-message-id><normalized-thread-index>Acghh+6UhcRsEFInQq2BlFp64HUYuA</normalized-thread-index><normalized-in-reply-to>fd52a5934632.4632fd52a593@nadlanu.com</normalized-in-reply-to></normalized-references><body multipart="multipart/alternative;&#13;&#10;&#9;boundary=&quot;----_=_nextpart_001_01c82188.84e5657a&quot;" type="text/plain;&#13;&#10;&#9;charset=&quot;US-ASCII&quot;"><para depth="0">All,
+
+</para><para depth="0">Has anyone noticed the following issue when the setup the Probe server
+in a failover configuration?
+
+</para><para depth="0">We have certain source tools such as ITM, ITCAM, MOM which can forward
+events only to 1 probe server. This is a major issue for us, as we
+currently use The Failover configuration. 
+
+</para><para depth="0">Below is an example of what we run into our production system:
+
+</para><para depth="0">SNMP traps are send to Primary Probe server(Box 1) and the Failover
+Probe server(Box 2)
+
+</para><para depth="0">ITM, ITCAM and MOM events are forwarded only to the Primary Probe server
+(Box 1)
+
+</para><para depth="0">All works fine when Box 1 is up and running, but if Box 1 ever goes down
+we loose all the events that are send from ITM, ITCAM and MOM until Box
+1 is restarted. Also the whole purpose of us using the failover Probe
+server was so that we don't loose any events when the primary probe
+server goes down. 
+
+</para><para depth="0">So is there a way for us to tackle this from Netcool Omnibus?
+
+</para><para depth="0">Thank you very much for any details that anyone can provide
+
+</para><para depth="0">Imran Paniwala
+
+</para><para depth="0">Systems Analyst / Event Management SME
+
+</para><para depth="0">UPMC Tools Team
+
+</para><para depth="0">University Of Pittsburgh Medical Center
+
+</para><para depth="0">(412) 647-7892
+
+</para><footer type="signature" hash="11978987097631401571" depth="0"><email>paniwalaia@upmc.edu</email>
+
+</footer></body></message>

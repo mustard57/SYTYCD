@@ -1,0 +1,16 @@
+<message message-id="20080313080110.14277.qmail@netbeans.org" list="org.netbeans.ruby.issues" id="24bluckaljkzwqvf" type="bugs" date="2008-03-13T08:01:10Z" year="2008-01-01" year-month="2008-03-01" year-month-day="2008-03-13" thread-id="24bluckaljkzwqvf"><headers><envelope-from-line>From issues@ruby.netbeans.org Thu Mar 13 04:57:24 2008</envelope-from-line><from personal="jskrivanek@netbeans.org" address="jskrivanek@netbeans.org">jskrivanek@netbeans.org</from><to personal="issues@ruby.netbeans.org" address="issues@ruby.netbeans.org">issues@ruby.netbeans.org</to><subject normal="[Issue 129970] NullPointerException at org.netbeans.napi.gsfret.source.Source$1.finished">[Issue 129970]  NullPointerException at org.netbeans.napi.gsfret.source.Source$1.finished</subject><return-path>root@netbeans.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact issues-help@ruby.netbeans.org; run by ezmlm</mailing-list><delivered-to>mailing list issues@ruby.netbeans.org</delivered-to><received>(qmail 14278 invoked by uid 5000); 13 Mar 2008 08:01:10 -0000</received><date>13 Mar 2008 08:01:10 -0000</date><message-id>20080313080110.14277.qmail@netbeans.org</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20080313080110.14277.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=129970</url>
+
+</para><para depth="0">User jskrivanek changed the following:
+
+</para><para depth="0">                What    |Old value                 |New value
+================================================================================
+               Component|ruby                      |php
+</para><para depth="0">--------------------------------------------------------------------------------
+              QA contact|issues@ruby               |issues@php
+</para><para depth="0">--------------------------------------------------------------------------------
+            Subcomponent|gsf                       |editor
+</para><footer type="noise" depth="0">--------------------------------------------------------------------------------
+
+</footer></body></message>

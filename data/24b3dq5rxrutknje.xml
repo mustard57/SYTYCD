@@ -1,0 +1,29 @@
+<message message-id="1186669175.673802.301310@d55g2000hsg.googlegroups.com" list="com.googlegroups.adwords-help-advanced" id="24b3dq5rxrutknje" type="users" date="2007-08-09T07:19:35-07:00" year="2007-01-01" year-month="2007-08-01" year-month-day="2007-08-09" thread-id="24b3dq5rxrutknje"><headers><envelope-from-line>Mon Aug 18 09:11:37 2008</envelope-from-line><from personal="NHdaveq">NHdaveq &lt;ignore@markmail.org&gt;</from><to personal="AdWords Help - Beyond the Basics">AdWords Help - Beyond the Basics &lt;ignore@markmail.org&gt;</to><subject normal="real data does not match Google Reports">real data does not match Google Reports</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 970
+          for &lt;alfred.hatfield.cline@a.markmail.org&gt;;
+          Mon, 18 Aug 2008 09:11:37 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id D992B290805A
+	for &lt;alfred.hatfield.cline@a.markmail.org&gt;; Mon, 18 Aug 2008 09:11:36 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (8.13.8/8.13.8) with ESMTP id m7IGBa4V015776
+	for &lt;alfred.hatfield.cline@a.markmail.org&gt;; Mon, 18 Aug 2008 09:11:36 -0700</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id m7IGBaDi015774
+	for alfred.hatfield.cline@a.markmail.org; Mon, 18 Aug 2008 09:11:36 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.adwords-help-advanced</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>f38b44aa746cd06d</x-markmail-googlegroups-mid><received>by 10.114.57.1 with SMTP id f1mr324750waa.1186669176866;
+        Thu, 09 Aug 2007 07:19:36 -0700 (PDT)</received><received>by d55g2000hsg.googlegroups.com with HTTP;
+	Thu, 09 Aug 2007 14:19:35 +0000 (UTC)</received><x-ip>71.161.94.155</x-ip><date>Thu, 09 Aug 2007 07:19:35 -0700</date><message-id>1186669175.673802.301310@d55g2000hsg.googlegroups.com</message-id><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322),gzip(gfe),gzip(gfe)</x-http-useragent><mime-version>1.0</mime-version><content-type>text/plain; charset="iso-8859-1"</content-type></headers><normalized-references><normalized-message-id>1186669175.673802.301310@d55g2000hsg.googlegroups.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;iso-8859-1&quot;"><para depth="0">I've been reviewing weekely reports
+I have 1 campaign, 8 adgroups and approx 100 keywords.  By increasing
+my bids per keyword, I've been able to see via  Google Keyword reports
+that my individual keyword positions have increased to 90% of all of
+the words are showing up between 1 and 4 position.  My CTR is not that
+great.  My daily budget is $25.  Usually, by 10:00 am in the morning
+we're at ~$16.00  with $9 left in the budget.  It's at this time that
+I start testing searches by hand to see where we are showing up.
+Frankly, my ads for any of the keywords show up... no matter how many
+times I search on a keyword that supposedly shows up on the average in
+1st position.
+
+</para><para depth="0">Am I being mislead by the reports or am I making a basic error
+somewhere in my execution of a campaign?
+
+</para><para depth="0">Thanks,
+Dave
+</para></body></message>

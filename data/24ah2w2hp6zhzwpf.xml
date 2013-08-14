@@ -1,0 +1,43 @@
+<message message-id="20060619164936.19038.qmail@openoffice.org" list="org.openoffice.allcvs" id="24ah2w2hp6zhzwpf" no-archive="yes" type="checkins" date="2006-06-19T16:49:36Z" year="2006-01-01" year-month="2006-06-01" year-month-day="2006-06-19" thread-id="knc6mubjwl6uu5wr"><headers><envelope-from-line>From allcvs-return-744887-tigrisq-archive=mail-www=allcvs=openoffice.org=openoffice.org@openoffice.org Mon Jun 19 16:49:37 2006</envelope-from-line><from personal="hr@openoffice.org" address="hr@openoffice.org">hr@openoffice.org</from><to personal="cvs@graphics.openoffice.org" address="cvs@graphics.openoffice.org">cvs@graphics.openoffice.org</to><subject normal="[graphics-cvs] CVS update: /graphics/svx/source/svrtf/">[graphics-cvs] CVS update: /graphics/svx/source/svrtf/</subject><return-path>allcvs-return-744887-tigrisq-archive=mail-www=allcvs=openoffice.org=openoffice.org@openoffice.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-www=allcvs=openoffice.org@openoffice.org</delivered-to><received>(qmail 19083 invoked by uid 5302); 19 Jun 2006 16:49:37 -0000</received><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:allcvs-help@openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:allcvs-unsubscribe@openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:allcvs@openoffice.org&gt;</list-post><reply-to>allcvs@openoffice.org</reply-to><delivered-to>mailing list allcvs@openoffice.org</delivered-to><received>(qmail 19052 invoked by uid 5302); 19 Jun 2006 16:49:36 -0000</received><mailing-list>contact cvs-help@graphics.openoffice.org; run by ezmlm</mailing-list><x-no-archive>yes</x-no-archive><reply-to>dev@graphics.openoffice.org</reply-to><delivered-to>mailing list cvs@graphics.openoffice.org</delivered-to><date>19 Jun 2006 16:49:36 -0000</date><message-id>20060619164936.19038.qmail@openoffice.org</message-id></headers><normalized-references><normalized-message-id>20060619164936.19038.qmail@openoffice.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">User: hr      
+Date: 06/06/19 09:49:36
+
+</para><para depth="0">Modified:
+ /graphics/svx/source/svrtf/
+  svxrtf.cxx
+
+</para><para depth="0">Log:
+ INTEGRATION: CWS warnings01 (1.24.222); FILE MERGED
+ 2006/04/20 14:50:02 cl 1.24.222.1: warning free code changes
+
+</para><para depth="0">File Changes:
+
+</para><para depth="0">Directory: /graphics/svx/source/svrtf/
+======================================
+
+</para><para depth="0">File [changed]: svxrtf.cxx
+Url:<br/><url>http://graphics.openoffice.org/source/browse/graphics/svx/source/svrtf/svxrtf.cxx?r1=1.24&amp;r2=1.25</url>
+Delta lines:  +0 -2
+</para><para depth="0">-------------------
+--- svxrtf.cxx	9 Sep 2005 00:44:15 -0000	1.24
++++ svxrtf.cxx	19 Jun 2006 16:49:34 -0000	1.25
+@@ -35,8 +35,6 @@
+
+</para><para depth="0"> /* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
+
+</para><para depth="0">-#pragma hdrstop
+-
+ #define ITEMID_FONT		0
+ #define ITEMID_COLOR	0
+ #define ITEMID_SCRIPTSPACE 0
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>cvs-unsubscribe@graphics.openoffice.org</email>
+For additional commands, e-mail: <email>cvs-help@graphics.openoffice.org</email>
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>allcvs-unsubscribe@openoffice.org</email>
+For additional commands, e-mail: <email>allcvs-help@openoffice.org</email>
+
+</footer></body></message>

@@ -1,0 +1,21 @@
+<message message-id="20031211205747.14362.qmail@ktown.kde.org" list="org.kde.konq-bugs" id="24bsa37nv6jbrwfu" type="bugs" date="2003-12-11T20:57:47Z" year="2003-01-01" year-month="2003-12-01" year-month-day="2003-12-11" thread-id="24bsa37nv6jbrwfu"><headers><envelope-from-line>From konq-bugs-bounces-+konq-bugs=progressive-comp.com@mail.kde.org Thu Dec 11 15:57:58 2003</envelope-from-line><from personal="Stephan Binner" address="binner@kde.org">Stephan Binner &lt;binner@kde.org&gt;</from><to personal="konq-bugs@kde.org" address="konq-bugs@kde.org">konq-bugs@kde.org</to><subject normal="[Bug 70001] Window resizing error by Siteexpert-generated javascript content">[Bug 70001] Window resizing error by Siteexpert-generated javascript content </subject><return-path>konq-bugs-bounces-+konq-bugs=progressive-comp.com@mail.kde.org</return-path><received>from ktown.kde.org (kde.informatik.uni-kl.de [131.246.103.200])
+	by mailer.progressive-comp.com with SMTP id hBBKvv5q029600
+	for &lt;konq-bugs@progressive-comp.com&gt;; Thu, 11 Dec 2003 15:57:58 -0500</received><received>(qmail 14426 invoked from network); 11 Dec 2003 20:57:57 -0000</received><received>from localhost (HELO ktown.kde.org) (127.0.0.1)
+  by localhost with SMTP; 11 Dec 2003 20:57:57 -0000</received><received>(qmail 14377 invoked by uid 1055); 11 Dec 2003 20:57:47 -0000</received><delivered-to>kde.org-konq-bugs@kde.org</delivered-to><received>(qmail 14363 invoked by uid 30); 11 Dec 2003 20:57:47 -0000</received><date>11 Dec 2003 20:57:47 -0000</date><message-id>20031211205747.14362.qmail@ktown.kde.org</message-id><x-bugzilla-url>http://bugs.kde.org/ </x-bugzilla-url><x-bugzilla-reason>AssignedTo     </x-bugzilla-reason><x-beenthere>konq-bugs@mail.kde.org</x-beenthere><x-mailman-version>2.1.3</x-mailman-version><precedence>list</precedence><reply-to>70001@bugs.kde.org</reply-to><list-id>Konqueror, kio, khtml and kjs bugs &lt;konq-bugs.mail.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/konq-bugs&gt;,
+	&lt;mailto:konq-bugs-request@mail.kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.kde.org/pipermail/konq-bugs&gt;</list-archive><list-post>&lt;mailto:konq-bugs@mail.kde.org&gt;</list-post><list-help>&lt;mailto:konq-bugs-request@mail.kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/konq-bugs&gt;,
+	&lt;mailto:konq-bugs-request@mail.kde.org?subject=subscribe&gt;</list-subscribe><sender>konq-bugs-bounces-+konq-bugs=progressive-comp.com@mail.kde.org</sender><errors-to>konq-bugs-bounces-+konq-bugs=progressive-comp.com@mail.kde.org</errors-to></headers><normalized-references><normalized-message-id>20031211205747.14362.qmail@ktown.kde.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+</para><para depth="0"><url>http://bugs.kde.org/show_bug.cgi?id=70001</url>     
+<email>binner@kde.org</email> changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+             Status|UNCONFIRMED                 |NEW
+      everconfirmed|0                           |1
+</para><footer type="list-management" depth="0">_______________________________________________
+Konq-bugs mailing list
+<email>Konq-bugs@mail.kde.org</email>
+<url>https://mail.kde.org/mailman/listinfo/konq-bugs</url>
+
+</footer></body></message>

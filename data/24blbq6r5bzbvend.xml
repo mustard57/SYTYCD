@@ -1,0 +1,60 @@
+<message message-id="AANLkTi=8-AuRcCQLrU_nJVs=uqYVMaZRP4-eyN3CXQOQ@mail.gmail.com" list="com.googlegroups.puppet-dev" id="24blbq6r5bzbvend" type="development" date="2010-10-12T16:42:28-07:00" year="2010-01-01" year-month="2010-10-01" year-month-day="2010-10-12" thread-id="iws73ukigqzw7dbp"><headers><envelope-from-line>Tue Oct 12 15:43:12 2010</envelope-from-line><from personal="Markus Roberts" address="markus@puppetlabs.com">Markus Roberts &lt;markus@puppetlabs.com&gt;</from><to personal="puppet-dev@googlegroups.com" address="puppet-dev@googlegroups.com">puppet-dev@googlegroups.com</to><subject normal="[Puppet-dev] [PATCH/puppet 1/1] Fix for #4963 -- Use correct commands for password expiry on solaris">Re: [Puppet-dev] [PATCH/puppet 1/1] Fix for #4963 -- Use correct commands for password expiry on solaris</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 105
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Tue, 12 Oct 2010 15:43:12 -0800 (GMT-08:00)</received><received>from mail-qy0-f188.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id A7EE93B303A2
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 12 Oct 2010 16:42:48 -0700 (PDT)</received><received>by qyk2 with SMTP id 2sf5406013qyk.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 12 Oct 2010 16:43:11 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:x-beenthere:received:received:received
+         :received:received-spf:received:mime-version:received:received
+         :in-reply-to:references:date:message-id:subject:from:to
+         :x-original-sender:x-original-authentication-results:reply-to
+         :precedence:mailing-list:list-id:list-post:list-help:list-archive
+         :sender:list-subscribe:list-unsubscribe:content-type;
+        bh=vnm20R8cDsBsEbBcI5cXXmEIv3s7Z9A7P8ZeLua36N0=;
+        b=g+3iK7Tm2JpQMIvIBuTyrUxg146IyEfGhNTiSRwwp9NAMqNnvcfG1RV5ysu06WCVto
+         wn5Z6V5iKjFl+NmGIU+QZMk1cBWZ0zqHeMWWbW+x2TExtCKEyuZFKE30mdJ+yMXsLahQ
+         wM/iuX3QF5OgCQ0nwSGH+tjt9gxHDvuux2KAg=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:received-spf:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:x-original-sender
+         :x-original-authentication-results:reply-to:precedence:mailing-list
+         :list-id:list-post:list-help:list-archive:sender:list-subscribe
+         :list-unsubscribe:content-type;
+        b=si2H/LkBbnwTORE4Fi4isPLxrAH4psiHCkOw3MRmjLnwOPD9vzMqUkuhCR1GMpCEP+
+         FOJ1vrQTrAlXZREuX5qxwWZc8t6Y06w28V/nrTulVpjpak9NP9CJ/cLp/kkJ3eE4VrOz
+         CAXfceFiKNojSG7JjfR/c4meX3Mj9R4kjOuy8=</domainkey-signature><received>by 10.224.216.200 with SMTP id hj8mr441315qab.57.1286926949427;
+        Tue, 12 Oct 2010 16:42:29 -0700 (PDT)</received><x-beenthere>puppet-dev@googlegroups.com</x-beenthere><received>by 10.224.58.228 with SMTP id i36ls78968qah.4.p; Tue, 12 Oct 2010
+ 16:42:28 -0700 (PDT)</received><received>by 10.224.204.136 with SMTP id fm8mr1742819qab.0.1286926948684;
+        Tue, 12 Oct 2010 16:42:28 -0700 (PDT)</received><received>by 10.224.204.136 with SMTP id fm8mr1742818qab.0.1286926948673;
+        Tue, 12 Oct 2010 16:42:28 -0700 (PDT)</received><received>from mail-vw0-f47.google.com (mail-vw0-f47.google.com [209.85.212.47])
+        by gmr-mx.google.com with ESMTP id m13si1811771qcu.15.2010.10.12.16.42.28;
+        Tue, 12 Oct 2010 16:42:28 -0700 (PDT)</received><received-spf>pass (google.com: domain of markus@puppetlabs.com designates 209.85.212.47 as permitted sender) client-ip=209.85.212.47;</received-spf><received>by mail-vw0-f47.google.com with SMTP id 3so1716234vws.20
+        for &lt;puppet-dev@googlegroups.com&gt;; Tue, 12 Oct 2010 16:42:28 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.220.189.201 with SMTP id df9mr1684461vcb.131.1286926948411;
+ Tue, 12 Oct 2010 16:42:28 -0700 (PDT)</received><received>by 10.220.96.19 with HTTP; Tue, 12 Oct 2010 16:42:28 -0700 (PDT)</received><in-reply-to>&lt;AANLkTimsFjNKkpfdkY4oNGHt_3Lpy-UgxZGY+r3LPivm@mail.gmail.com&gt;</in-reply-to><references>&lt;1286858527-2147-1-git-send-email-Markus@reality.com&gt;
+	&lt;AANLkTi=LxNaXMy09EGiFgw8xGNQL88batrKiOrJ6ASFc@mail.gmail.com&gt;
+	&lt;AANLkTinxRf8W0sHGQ9LrgPvx4GYR4yiZeWJbsEc=X4zD@mail.gmail.com&gt;
+	&lt;AANLkTik0GnkxF6sSsAZvcVPibXQ1D3ncd-76mOK0ZHRy@mail.gmail.com&gt;
+	&lt;AANLkTinkS8JQVgtjPQQZn7szTst_thsZA=dB8fHmuxS-@mail.gmail.com&gt;
+	&lt;5EF1A6C6-EE85-4530-BF1E-310A748583CA@puppetlabs.com&gt;
+	&lt;AANLkTimsFjNKkpfdkY4oNGHt_3Lpy-UgxZGY+r3LPivm@mail.gmail.com&gt;</references><date>Tue, 12 Oct 2010 16:42:28 -0700</date><message-id>AANLkTi=8-AuRcCQLrU_nJVs=uqYVMaZRP4-eyN3CXQOQ@mail.gmail.com</message-id><x-original-sender>markus@puppetlabs.com</x-original-sender><x-original-authentication-results>gmr-mx.google.com; spf=pass (google.com:
+ domain of markus@puppetlabs.com designates 209.85.212.47 as permitted sender) smtp.mail=markus@puppetlabs.com</x-original-authentication-results><reply-to>puppet-dev@googlegroups.com</reply-to><precedence>list</precedence><mailing-list>list puppet-dev@googlegroups.com; contact puppet-dev+owners@googlegroups.com</mailing-list><list-id>&lt;puppet-dev.googlegroups.com&gt;</list-id><list-post>&lt;http://groups.google.com/group/puppet-dev/post?hl=en_US&gt;, &lt;mailto:puppet-dev@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:puppet-dev+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/puppet-dev?hl=en_US&gt;</list-archive><sender>puppet-dev@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/puppet-dev/subscribe?hl=en_US&gt;,
+ &lt;mailto:puppet-dev+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/puppet-dev/subscribe?hl=en_US&gt;,
+ &lt;mailto:puppet-dev+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>multipart/alternative; boundary=90e6ba4fc36c9ca92404927407ad</content-type></headers><normalized-references><normalized-message-id>AANLkTi=8-AuRcCQLrU_nJVs=uqYVMaZRP4-eyN3CXQOQ@mail.gmail.com</normalized-message-id><normalized-in-reply-to>AANLkTimsFjNKkpfdkY4oNGHt_3Lpy-UgxZGY+r3LPivm@mail.gmail.com</normalized-in-reply-to><normalized-reference>1286858527-2147-1-git-send-email-Markus@reality.com</normalized-reference><normalized-reference>AANLkTi=LxNaXMy09EGiFgw8xGNQL88batrKiOrJ6ASFc@mail.gmail.com</normalized-reference><normalized-reference>AANLkTinxRf8W0sHGQ9LrgPvx4GYR4yiZeWJbsEc=X4zD@mail.gmail.com</normalized-reference><normalized-reference>AANLkTik0GnkxF6sSsAZvcVPibXQ1D3ncd-76mOK0ZHRy@mail.gmail.com</normalized-reference><normalized-reference>AANLkTinkS8JQVgtjPQQZn7szTst_thsZA=dB8fHmuxS-@mail.gmail.com</normalized-reference><normalized-reference>5EF1A6C6-EE85-4530-BF1E-310A748583CA@puppetlabs.com</normalized-reference><normalized-reference>AANLkTimsFjNKkpfdkY4oNGHt_3Lpy-UgxZGY+r3LPivm@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=90e6ba4fc36c9ca92404927407ad" type="text/plain; charset=ISO-8859-1"><para depth="0">Nick has convinced me that going back to the old form (with the new args) is
+going to give us the best / cleanest coverage of what we can actually test.
+
+</para><para depth="0">-- M
+</para><para depth="0">-----------------------------------------------------------
+The power of accurate observation is
+commonly called cynicism by those
+who have not got it.  ~George Bernard Shaw
+</para><footer type="noise" depth="0">------------------------------------------------------------
+
+</footer><footer type="list-management" depth="0">-- 
+You received this message because you are subscribed to the Google Groups<br/>"Puppet Developers" group.
+To post to this group, send email to <email>puppet-dev@googlegroups.com</email>.
+To unsubscribe from this group, send email to<br/>puppet-dev+<email>unsubscribe@googlegroups.com</email>.
+For more options, visit this group at<br/><url>http://groups.google.com/group/puppet-dev?hl=en</url>.
+
+</footer></body></message>

@@ -1,0 +1,28 @@
+<message message-id="4D5BF56F.1000504@q-leap.com" list="org.kernel.vger.linux-kernel" id="24anzbs2ob3o37vq" type="development" date="2011-02-16T08:03:43.662644-08:00" year="2011-01-01" year-month="2011-02-01" year-month-day="2011-02-16" thread-id="vijy24mj6sgofn66"><headers><envelope-from-line>Wed Feb 16 08:04:06 2011</envelope-from-line><from personal="Peter Kruse" address="pk@q-leap.com">Peter Kruse &lt;pk@q-leap.com&gt;</from><to personal="Christoph Lameter" address="cl@linux.com">Christoph Lameter &lt;cl@linux.com&gt;</to><cc personal="eric.dumazet@gmail.com" address="eric.dumazet@gmail.com">eric.dumazet@gmail.com</cc><subject normal="I have a blaze of 353 page allocation failures, all alike">Re: I have a blaze of 353 page allocation failures, all alike</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 777
+          for &lt;archive.user.1834@a.markmail.org&gt;;
+          Wed, 16 Feb 2011 08:04:06 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 4BACE3B300C1
+	for &lt;archive.user.1834@a.markmail.org&gt;; Wed, 16 Feb 2011 08:03:43 -0800 (PST)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1752583Ab1BPQEE (ORCPT
+	&lt;rfc822;archive.user.1834@a.markmail.org&gt;);
+	Wed, 16 Feb 2011 11:04:04 -0500</received><received>from ns2.q-leap.de ([88.79.172.217]:59625 "EHLO mail.q-leap.de"
+	rhost-flags-OK-OK-OK-OK) by vger.kernel.org with ESMTP
+	id S1750739Ab1BPQEC (ORCPT &lt;rfc822;linux-kernel@vger.kernel.org&gt;);
+	Wed, 16 Feb 2011 11:04:02 -0500</received><received>by mail.q-leap.de (Postfix, from userid 5001)
+	id E350F1F02; Wed, 16 Feb 2011 17:03:59 +0100 (CET)</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on jay-e</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-4.4 required=5.0 tests=ALL_TRUSTED,BAYES_00
+	autolearn=no version=3.2.5</x-spam-status><received>from [192.168.55.81] (arnulf [192.168.55.81])
+	by mail.q-leap.de (Postfix) with ESMTP id 9DED81D17;
+	Wed, 16 Feb 2011 17:03:59 +0100 (CET)</received><message-id>4D5BF56F.1000504@q-leap.com</message-id><date>Wed, 16 Feb 2011 17:03:59 +0100</date><user-agent>Mozilla-Thunderbird 2.0.0.24 (X11/20100328)</user-agent><mime-version>1.0</mime-version><references>&lt;4D53FE43.8030106@q-leap.com&gt; &lt;alpine.DEB.2.00.1102141046170.26158@router.home&gt; &lt;4D5A2EDB.8060603@q-leap.com&gt; &lt;alpine.DEB.2.00.1102151040560.10511@router.home&gt; &lt;4D5BC16A.2090205@q-leap.com&gt; &lt;alpine.DEB.2.00.1102160956250.27814@router.home&gt;</references><in-reply-to>&lt;alpine.DEB.2.00.1102160956250.27814@router.home&gt;</in-reply-to><content-type>multipart/mixed;
+ boundary="------------090400070606030308050905"</content-type><sender>linux-kernel-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;linux-kernel.vger.kernel.org&gt;</list-id><x-mailing-list>linux-kernel@vger.kernel.org</x-mailing-list></headers><attachments><attachment type="application/x-gzip" file="kern.log.2.gz" size="17454" uri="/24anzbs2ob3o37vq/attach00/kern.log.2.gz" extension="gz"/></attachments><normalized-references><normalized-message-id>4D5BF56F.1000504@q-leap.com</normalized-message-id><normalized-in-reply-to>alpine.DEB.2.00.1102160956250.27814@router.home</normalized-in-reply-to><normalized-reference>4D53FE43.8030106@q-leap.com</normalized-reference><normalized-reference>alpine.DEB.2.00.1102141046170.26158@router.home</normalized-reference><normalized-reference>4D5A2EDB.8060603@q-leap.com</normalized-reference><normalized-reference>alpine.DEB.2.00.1102151040560.10511@router.home</normalized-reference><normalized-reference>4D5BC16A.2090205@q-leap.com</normalized-reference><normalized-reference>alpine.DEB.2.00.1102160956250.27814@router.home</normalized-reference></normalized-references><body><greeting depth="0">Hi Christoph,
+</greeting><para depth="0">
+Christoph Lameter wrote:
+</para><quote depth="1"><quotepara depth="1">
+We still do not have the messages from bootup. I can only see the OOM
+messages itself not how the kernel booted up.
+</quotepara></quote><para depth="0">
+I see, the boot messages of the boot after those failures is included,
+I thought that would be ok.. anyways, included the boot messages.
+
+</para><para depth="0">Peter
+</para></body></message>

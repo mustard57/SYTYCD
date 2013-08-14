@@ -1,0 +1,144 @@
+<message message-id="IOEDIPEMMDFKEFGKEOLDKEPNCPAA.d.perry@netcase.co.uk" list="org.apache.db.ojb-user" id="24bckoahjdjc6lvd" type="users" date="2004-06-03T10:38:19+01:00" year="2004-01-01" year-month="2004-06-01" year-month-day="2004-06-03" thread-id="cucb3hm3gboeobj5"><headers><envelope-from-line>From ojb-user-return-17046-apmail-db-ojb-user-archive=db.apache.org@db.apache.org Thu Jun 03 09:42:13 2004</envelope-from-line><from personal="Daniel Perry" address="d.perry@netcase.co.uk">Daniel Perry &lt;d.perry@netcase.co.uk&gt;</from><to personal="OJB Users List" address="ojb-user@db.apache.org">OJB Users List &lt;ojb-user@db.apache.org&gt;</to><subject normal="Mapping question">RE: Mapping question</subject><return-path>ojb-user-return-17046-apmail-db-ojb-user-archive=db.apache.org@db.apache.org</return-path><delivered-to>apmail-db-ojb-user-archive@www.apache.org</delivered-to><received>(qmail 64680 invoked from network); 3 Jun 2004 09:42:13 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur-2.apache.org with SMTP; 3 Jun 2004 09:42:13 -0000</received><received>(qmail 35887 invoked by uid 500); 3 Jun 2004 09:42:29 -0000</received><delivered-to>apmail-db-ojb-user-archive@db.apache.org</delivered-to><received>(qmail 35855 invoked by uid 500); 3 Jun 2004 09:42:29 -0000</received><mailing-list>contact ojb-user-help@db.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:ojb-user-unsubscribe@db.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:ojb-user-subscribe@db.apache.org&gt;</list-subscribe><list-help>&lt;mailto:ojb-user-help@db.apache.org&gt;</list-help><list-post>&lt;mailto:ojb-user@db.apache.org&gt;</list-post><list-id>"OJB Users List" &lt;ojb-user.db.apache.org&gt;</list-id><reply-to>"OJB Users List" &lt;ojb-user@db.apache.org&gt;</reply-to><delivered-to>mailing list ojb-user@db.apache.org</delivered-to><received>(qmail 35841 invoked by uid 99); 3 Jun 2004 09:42:29 -0000</received><received>from [195.54.226.6] (HELO atlas.net.uk) (195.54.226.6)
+  by apache.org (qpsmtpd/0.27.1) with ESMTP; Thu, 03 Jun 2004 02:42:28 -0700</received><received>from [195.54.230.138] (HELO zaphod)
+  by atlas.net.uk (CommuniGate Pro SMTP 4.0.6)
+  with SMTP id 46932257 for ojb-user@db.apache.org; Thu, 03 Jun 2004 10:41:35 +0100</received><date>Thu, 3 Jun 2004 10:38:19 +0100</date><message-id>IOEDIPEMMDFKEFGKEOLDKEPNCPAA.d.perry@netcase.co.uk</message-id><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3 (Normal)</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook IMO, Build 9.0.2416 (9.0.2911.0)</x-mailer><in-reply-to>&lt;c9l0ag$ftc$1@sea.gmane.org&gt;</in-reply-to><x-mimeole>Produced By Microsoft MimeOLE V6.00.2800.1409</x-mimeole><importance>Normal</importance><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>IOEDIPEMMDFKEFGKEOLDKEPNCPAA.d.perry@netcase.co.uk</normalized-message-id><normalized-in-reply-to>c9l0ag$ftc$1@sea.gmane.org</normalized-in-reply-to></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;us-ascii&quot;"><para depth="0">I'm not sure how OJB does it, but that would either mean a lot of queries,
+or an awful lot of outer joins!
+
+</para><para depth="0">I wouldn't of thought there was a way to tell OJB to pick tables based on
+their foreign id. Generally you use references to exact types, or supertypes
+that are extended by a few classes.
+
+</para><para depth="0">I think the correct way to deal with this is by using extents.  I say this
+because in the java class that references another object, you will have to
+use the same approach.
+
+</para><para depth="0">Lets say you have a classes A,B,C,D, etc
+
+</para><para depth="0">If in A it has a reference to myFriend: as you don't know the type of
+myFriend (could be A, B, C, D, etc), you can only refer to something that
+all these classes extend (or implement).
+
+</para><para depth="0">So,
+
+</para><para depth="0">class A extends BaseClass {
+	BaseClass myFriend;
+}
+
+</para><para depth="0">and all the classes muse extend BaseClass.
+
+</para><para depth="0">I'm not sure what it is you're trying to map, but I've never come across a
+case where you always need to refer to any class.
+
+</para><para depth="0">You could use extents like this, and use this where you need to reference
+*any* object, but you could still reference a type directly where you know
+what it will be.
+
+</para><para depth="0">So if you know that myFriendFKID will always be a B:
+
+</para><para depth="0">class A extends BaseClass {
+	B myFriend;
+}
+
+</para><para depth="0">You can just use a reference descriptor in the repository referencing the
+type B, not the BaseClass extent.
+
+</para><para depth="0">Hope this clarifies things,
+
+</para><para depth="0">Daniel.
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: news [mailto:<email>news@sea.gmane.org</email>]On Behalf Of Sebastian
+Sent: 02 June 2004 17:47
+To: <email>ojb-user@db.apache.org</email>
+Subject: Re: Mapping question
+
+</quotepara><quotepara depth="1">Hi Daniel,
+
+</quotepara><quotepara depth="1">I had a look at the extents now. I think this will basically work. The
+problem I see is, that the database has 110 tables and all are using a
+globally generated OID. In my basic class I would have to list all other
+classes as extents of this one.
+
+</quotepara><quotepara depth="1">What does this mean for the performance of OJB? will OJB now query all
+110 tables to find the right object?
+
+</quotepara><quotepara depth="1">Since I know quite easily based on the first 3 letters of the OID what
+type it is, can I somehow tell that OJB as a hint to search the
+right table?
+
+</quotepara><quotepara depth="1">Sebastian
+
+</quotepara><quotepara depth="1">Daniel Perry wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">What about using an extent and having both types extend it.  It
+would pick
+the right class based on whichever table has an item with that
+primary key.
+
+</quotepara><quotepara depth="2">Daniel.
+
+</quotepara><quote depth="3"><quotepara depth="3">-----Original Message-----
+From: news [mailto:<email>news@sea.gmane.org</email>]On Behalf Of Sebastian
+Sent: 02 June 2004 17:07
+To: <email>ojb-user@db.apache.org</email>
+Subject: Re: Mapping question
+
+</quotepara><quotepara depth="3">To simplify my question:
+
+</quotepara><quotepara depth="3">I have a table containing a foreign key column and the foreign key of a
+row points to different tables based on the first three letters of the
+foreign key. E.g. when it starts with "art" then it points to a record
+in the article table. When it starts with "cat" then it points to a
+category table.
+
+</quotepara><quotepara depth="3">This means OJB should based on the first three letters of the foreign
+key know what kind of object to reference.
+
+</quotepara><quotepara depth="3">What kind of custom mapper or converter or whatever do I have to write.
+
+</quotepara><quotepara depth="3">Thanks,
+Sebastian
+
+</quotepara><quotepara depth="3">Sebastian wrote:
+
+</quotepara><quote depth="4"><quotepara depth="4">Hi,
+I'm trying to map some tables with OJBs but don't know how to express
+their relation. Maybe someone can give me a hint.
+
+</quotepara><quotepara depth="4">I have three tables:
+articles with OID as primary key
+categories with OID as primary key
+custom_fields with OID as primary key, OID_FK as foreign key
+
+</quotepara><quotepara depth="4">OID is generated uniquely over all tables in a format: "first 3 letters
+of the table name" plus a "incrementing value". E.g.
+cat01,art02,art03,cus04.
+
+</quotepara><quotepara depth="4">An article as well as a category can have a custom field that is stored
+in the custom_fields table, the OID_FK is the OID of the
+</quotepara></quote><quotepara depth="3">
+related article
+
+</quotepara><quote depth="4"><quotepara depth="4">or category. The first three letters of OID indicate the "object type"
+article or category.
+
+</quotepara><quotepara depth="4">How do I have to configure the repository.xml so that always the right
+</quotepara></quote></quote></quote></quote><para depth="0">
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quote depth="4"><quotepara depth="4">object (a category or an article) is referenced by an
+</quotepara></quote><quotepara depth="3">
+customField object?
+
+</quotepara><quote depth="4"><quotepara depth="4">Thanks in advance,
+Sebastian
+</quotepara></quote></quote></quote><quotefooter type="list-management" hash="4878731637615642356" depth="1">
+---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>ojb-user-unsubscribe@db.apache.org</email>
+For additional commands, e-mail: <email>ojb-user-help@db.apache.org</email>
+
+</quotefooter></quote><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>ojb-user-unsubscribe@db.apache.org</email>
+For additional commands, e-mail: <email>ojb-user-help@db.apache.org</email>
+
+</footer></body></message>

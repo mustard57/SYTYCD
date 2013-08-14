@@ -1,0 +1,140 @@
+<message message-id="20081014065843.23686.52391.stgit@bob.kio" list="org.kernel.vger.linux-kernel" id="24cml2nyydnu7jgj" type="development" date="2008-10-14T01:17:52-06:00" year="2008-01-01" year-month="2008-10-01" year-month-day="2008-10-14" thread-id="24cml2nyydnu7jgj"><headers><envelope-from-line>Mon Oct 13 23:19:14 2008</envelope-from-line><from personal="Alex Chiang" address="achiang@hp.com">Alex Chiang &lt;achiang@hp.com&gt;</from><to personal="jbarnes@virtuousgeek.org" address="jbarnes@virtuousgeek.org">jbarnes@virtuousgeek.org</to><subject normal="[PATCH v6 00/17] PCI: let the core manage slot names">[PATCH v6 00/17] PCI: let the core manage slot names</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 59
+          for &lt;archive.user.1834@a.markmail.org&gt;;
+          Mon, 13 Oct 2008 23:19:14 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 6F1ED3B300C5
+	for &lt;archive.user.1834@a.markmail.org&gt;; Tue, 14 Oct 2008 00:18:51 -0700 (PDT)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1757503AbYJNHSv (ORCPT
+	&lt;rfc822;archive.user.1834@a.markmail.org&gt;);
+	Tue, 14 Oct 2008 03:18:51 -0400</received><received>(majordomo@vger.kernel.org) by vger.kernel.org id S1755076AbYJNHSV
+	(ORCPT &lt;rfc822;linux-kernel-outgoing&gt;);
+	Tue, 14 Oct 2008 03:18:21 -0400</received><received>from g1t0029.austin.hp.com ([15.216.28.36]:36799 "EHLO
+	g1t0029.austin.hp.com" rhost-flags-OK-OK-OK-OK) by vger.kernel.org
+	with ESMTP id S1756681AbYJNHST (ORCPT
+	&lt;rfc822;linux-kernel@vger.kernel.org&gt;);
+	Tue, 14 Oct 2008 03:18:19 -0400</received><received>from smtp2.fc.hp.com (smtp2.fc.hp.com [15.11.136.114])
+	by g1t0029.austin.hp.com (Postfix) with ESMTP id A626138B8F;
+	Tue, 14 Oct 2008 07:17:52 +0000 (UTC)</received><received>from localhost.localdomain (lart.fc.hp.com [15.11.146.31])
+	by smtp2.fc.hp.com (Postfix) with ESMTP id EE3332832DC;
+	Tue, 14 Oct 2008 07:05:20 +0000 (UTC)</received><received>from bob.kio (localhost [127.0.0.1])
+	by localhost.localdomain (Postfix) with ESMTP id 5E7CF2613E;
+	Tue, 14 Oct 2008 01:17:52 -0600 (MDT)</received><date>Tue, 14 Oct 2008 01:17:52 -0600</date><message-id>20081014065843.23686.52391.stgit@bob.kio</message-id><user-agent>StGIT/0.14.3.215.gff3d</user-agent><mime-version>1.0</mime-version><content-type>text/plain; charset="utf-8"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>linux-kernel-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;linux-kernel.vger.kernel.org&gt;</list-id><x-mailing-list>linux-kernel@vger.kernel.org</x-mailing-list></headers><normalized-references><normalized-message-id>20081014065843.23686.52391.stgit@bob.kio</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">This is v6 of the series that implements a series of changes
+that allows the PCI core to manage slot names, rather than
+individual hotplug drivers.
+
+</para><para depth="0">This version fixes the problem that Kenji-san pointed out of
+multiple hotplug drivers trying to claim the same slot and rename
+them as well. It implements his suggestion that pci_create_slot
+take a struct hotplug_slot * param.
+
+</para><para depth="0">Note that pci_create_slot doesn't actually _do_ anything with the
+'hotplug' arg, it merely uses it as a signal that renaming might
+be required. Arguably, the same thing could have been accomplished
+with the 'rename' param from v5, but I think passing 'hotplug' makes
+it more explicit that only hotplug drivers should be setting it (and
+that only they are allowed to rename detected slots for legacy reasons).
+
+</para><para depth="0">Note again, that pci_hp_register is still the one managing the
+-&gt;hotplug callback. pci_create_slot does _not_ set the callback.
+
+</para><para depth="0">I don't particularly like the fact that pci_create_slot has to peek
+and see if the -&gt;hotplug callback is set, but I'm slowly coming to
+the conclusion that this code is just going to be a little ugly
+because of all these conflicting requirements.
+
+</para><para depth="0">I've tested by loading pci_slot, fakephp (dup_slots=1), and acpiphp;
+and verifying that:
+
+</para><para depth="0">	- duplicate slot names are avoided
+	- hotplug drivers can override detection driver names
+	- multiple hotplug drivers cannot claim the same slot
+
+</para><para depth="0">no matter what order or combination you load or unload the drivers.
+
+</para><para depth="0">Kenji-san, please take a look and let me know what you think. This
+series is based off of Jesse's latest linux-next branch (99f82734).
+
+</para><para depth="0">Thanks!
+
+</para><para depth="0">/ac
+
+</para><para depth="0">v5 -&gt; v6:
+	- change 'rename' param to a 'hotplug' param
+	- add Kenji-san's pci_hp_mutex cleanup to patch series
+	- pci_create_slot now returns -EBUSY to pci_hp_register
+
+</para><para depth="0">v4 -&gt; v5:
+        - add 'rename' param to pci_create_slot
+        - make use of 'rename' param in pci_create_slot
+        - remove v4 serialization
+        - remove crap false name collsion code from v2 and v3
+        - rpaphp uses kstrdup (Thanks to Pekka Enberg for suggestion)
+
+</para><para depth="0">v3 -&gt; v4:
+        - Do not access hotplug_slot_name() before name initialization
+        - Serialize pci_hp_register/deregister
+
+</para><para depth="0">v2 -&gt; v3:
+        - incorporate Willy's code review comments
+        - fix possible memory leak, pointed out by Rolf Eike Beer
+        - make false name collision detection work for empty slots
+        - add 'dup_slots' module_param to fakephp to help debug all this ;)
+
+</para><para depth="0">v1 -&gt; v2:
+        - fix possible false name collisions
+
+</para><para depth="0">---
+
+</para><para depth="0">Alex Chiang (16):
+      PCI Hotplug: fakephp: add duplicate slot name debugging
+      PCI: Hotplug core: remove 'name'
+      PCI: shcphp: remove 'name' parameter
+      PCI: SGI Hotplug: stop managing bss_hotplug_slot-&gt;name
+      PCI: rpaphp: kmalloc/kfree slot-&gt;name directly
+      PCI: pciehp: remove 'name' parameter
+      PCI: ibmphp: stop managing hotplug_slot-&gt;name
+      PCI: fakephp: remove 'name' parameter
+      PCI: cpqphp: stop managing hotplug_slot-&gt;name
+      PCI: cpci_hotplug: stop managing hotplug_slot-&gt;name
+      PCI: acpiphp: remove 'name' parameter
+      PCI, PCI Hotplug: introduce slot_name helpers
+      PCI: prevent duplicate slot names
+      PCI: update pci_create_slot() to take a 'hotplug' param
+      PCI: rename pci_update_slot_number to pci_renumber_slot
+      PCI Hotplug core: add 'name' param pci_hp_register interface
+
+</para><para depth="0">Kenji Kaneshige (1):
+      PCI Hotplug: serialize pci_hp_register and pci_hp_deregister
+
+</para><para depth="0"> drivers/acpi/pci_slot.c                 |    2 
+ drivers/pci/hotplug/acpiphp.h           |    9 +-
+ drivers/pci/hotplug/acpiphp_core.c      |   32 +++---
+ drivers/pci/hotplug/cpci_hotplug.h      |    6 +
+ drivers/pci/hotplug/cpci_hotplug_core.c |   75 ++++++---------
+ drivers/pci/hotplug/cpci_hotplug_pci.c  |    4 -
+ drivers/pci/hotplug/cpqphp.h            |   13 +--
+ drivers/pci/hotplug/cpqphp_core.c       |   43 ++++----
+ drivers/pci/hotplug/fakephp.c           |   26 +++--
+ drivers/pci/hotplug/ibmphp.h            |    5 -
+ drivers/pci/hotplug/ibmphp_ebda.c       |   19 +---
+ drivers/pci/hotplug/pci_hotplug_core.c  |   64 ++++--------
+ drivers/pci/hotplug/pciehp.h            |    9 +-
+ drivers/pci/hotplug/pciehp_core.c       |   49 +++------
+ drivers/pci/hotplug/pciehp_ctrl.c       |   53 ++++++----
+ drivers/pci/hotplug/pciehp_hpc.c        |    1 
+ drivers/pci/hotplug/rpaphp_slot.c       |   10 +-
+ drivers/pci/hotplug/sgi_hotplug.c       |   18 +--
+ drivers/pci/hotplug/shpchp.h            |    9 +-
+ drivers/pci/hotplug/shpchp_core.c       |   52 ++++------
+ drivers/pci/hotplug/shpchp_ctrl.c       |   48 +++++----
+ drivers/pci/slot.c                      |  160 +++++++++++++++++++++++--------
+ include/linux/pci.h                     |   10 ++
+ include/linux/pci_hotplug.h             |   11 +-
+ 24 files changed, 382 insertions(+), 346 deletions(-)
+
+</para><footer type="list-management" depth="0">--
+To unsubscribe from this list: send the line "unsubscribe linux-kernel" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+Please read the FAQ at  <url>http://www.tux.org/lkml/</url>
+</footer></body></message>

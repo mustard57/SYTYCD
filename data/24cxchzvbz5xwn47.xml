@@ -1,0 +1,86 @@
+<message message-id="1290186684.3189.5.camel@note-311a" list="org.kernel.vger.linux-kernel" id="24cxchzvbz5xwn47" type="development" date="2010-11-19T09:11:14.675313-08:00" year="2010-01-01" year-month="2010-11-01" year-month-day="2010-11-19" thread-id="zmx3p3uybygyncwt"><headers><envelope-from-line>Fri Nov 19 09:11:37 2010</envelope-from-line><from personal="Gilberto Nunes" address="gilberto.nunes@selbetti.com.br">Gilberto Nunes &lt;gilberto.nunes@selbetti.com.br&gt;</from><to personal="Jordi Pujol" address="jordipujolp@gmail.com">Jordi Pujol &lt;jordipujolp@gmail.com&gt;</to><cc personal="Gene Heskett" address="gene.heskett@gmail.com">Gene Heskett &lt;gene.heskett@gmail.com&gt;</cc><subject normal="Galbraith patch">Re: Galbraith patch</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 879
+          for &lt;archive.user.1834@a.markmail.org&gt;;
+          Fri, 19 Nov 2010 09:11:37 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 5A26D3B30394
+	for &lt;archive.user.1834@a.markmail.org&gt;; Fri, 19 Nov 2010 09:11:14 -0800 (PST)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1755306Ab0KSRLf (ORCPT
+	&lt;rfc822;archive.user.1834@a.markmail.org&gt;);
+	Fri, 19 Nov 2010 12:11:35 -0500</received><received>from mail.selbetti.com.br ([201.67.157.50]:42731 "EHLO
+	mail.selbetti.com.br" rhost-flags-OK-OK-OK-OK) by vger.kernel.org
+	with ESMTP id S1754194Ab0KSRLe (ORCPT
+	&lt;rfc822;linux-kernel@vger.kernel.org&gt;);
+	Fri, 19 Nov 2010 12:11:34 -0500</received><received>from localhost (mail.selbetti.local [192.168.200.251])
+	by mail.selbetti.com.br (Postfix) with ESMTP id ADE2310C981F;
+	Fri, 19 Nov 2010 14:08:30 -0300 (BRT)</received><x-virus-scanned>by amavisd-new at selbetti.com.br</x-virus-scanned><received>from mail.selbetti.com.br ([127.0.0.1])
+	by localhost (trellis.selbetti.local [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id QiIbLtpcAw9k; Fri, 19 Nov 2010 14:08:26 -0300 (BRT)</received><received>from [192.168.200.108] (unknown [192.168.200.108])
+	(Authenticated sender: gilberto.nunes@mail.selbetti.com.br)
+	by mail.selbetti.com.br (Postfix) with ESMTP id 88AFE10C8CE9;
+	Fri, 19 Nov 2010 14:08:26 -0300 (BRT)</received><reply-to>gilberto.nunes@selbetti.com.br</reply-to><in-reply-to>&lt;201011191749.14781.jordipujolp@gmail.com&gt;</in-reply-to><references>&lt;201011191509.49586.jordipujolp@gmail.com&gt;
+	 &lt;201011191005.12189.gene.heskett@gmail.com&gt;
+	 &lt;201011191749.14781.jordipujolp@gmail.com&gt;</references><content-type>text/plain; charset="UTF-8"</content-type><organization>Selbetti =?ISO-8859-1?Q?Gest=E3o?= de Documentos</organization><date>Fri, 19 Nov 2010 15:11:24 -0200</date><message-id>1290186684.3189.5.camel@note-311a</message-id><mime-version>1.0</mime-version><x-mailer>Evolution 2.30.3 </x-mailer><sender>linux-kernel-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;linux-kernel.vger.kernel.org&gt;</list-id><x-mailing-list>linux-kernel@vger.kernel.org</x-mailing-list><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>1290186684.3189.5.camel@note-311a</normalized-message-id><normalized-in-reply-to>201011191749.14781.jordipujolp@gmail.com</normalized-in-reply-to><normalized-reference>201011191509.49586.jordipujolp@gmail.com</normalized-reference><normalized-reference>201011191005.12189.gene.heskett@gmail.com</normalized-reference><normalized-reference>201011191749.14781.jordipujolp@gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">HI...
+
+</para><para depth="0">I have compile a kernel 2.6.36 with autogroup but I don't see
+any /proc/sys/kernel/sched_autogroup_enabled
+
+</para><para depth="0">Also, I tried with noautogroup and autogroup on kernel line boot, but it
+doesn't work...
+
+</para><para depth="0">Maybe I do samething wrong...
+
+</para><para depth="0">Em Sex, 2010-11-19 às 17:49 +0100, Jordi Pujol escreveu:
+</para><quote depth="1"><quotepara depth="1">A Divendres 19 Novembre 2010 16:05:12, Gene Heskett va escriure:
+</quotepara><quote depth="2"><quotepara depth="2">Thanks Jordi, but my last attempted build, using only the last 2 patches 
+that Mike posted on a fresh unpack of 2.6.36, couldn't get past stage 2 of 
+the modules build, it kept squawking about all the IR control stuff that
+is  not even configured to be built.
+
+</quotepara><quotepara depth="2">I wonder how long it will take to get work this into mainline?
+
+</quotepara><quotepara depth="2">Along the same line, how does this compare to CK's bfs patch?
+</quotepara></quote><quotepara depth="1">
+the autogroup-sched patch works well, right now writing this message from a 
+computer that runs that kernel.
+
+</quotepara><quotepara depth="1">this patch is much simpler than CK2, so I suppose that the implementation 
+should be more easy,
+I am trying both and observe, from my user's point of view, that they give a 
+similar result.
+
+</quotepara><quotepara depth="1">Gene, if that may help to do your own kernel implementation, the Debian kernel 
+sources I've used are available at:
+<url>http://livenet.selfip.com/ftp/debian/linux-2.6/</url>
+
+</quotepara><quotepara depth="1">2.6.36 + CK2, in the subdirectory
+   linux-2.6.36-0.jpp.10-lnet/
+2.6.36 + autogroup_sched, in the subdirectory
+   linux-2.6.36-0.jpp.11-lnet/
+
+</quotepara><quotefooter type="signature" depth="1" hash="12337527128512241253">Jordi Pujol
+
+</quotefooter><quotepara depth="1">Live never ending Tale
+GNU/Linux Live forever!
+<url>http://livenet.selfip.com</url>
+</quotepara><quotefooter type="list-management" depth="1">--
+To unsubscribe from this list: send the line "unsubscribe linux-kernel" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+Please read the FAQ at  <url>http://www.tux.org/lkml/</url>
+</quotefooter></quote><footer type="noise" depth="0">
+</footer><footer type="noise" depth="0">-- 
+</footer><footer type="signature" depth="0" hash="10480828827328663505">--
+Gilberto Nunes
+Departamento de TI
+Selbetti Gestão de Documentos
+Fone: (47) 3441-6004
+Celular (47) 8861-6672
+
+</footer><footer type="noise" depth="0">&lt;&gt;&lt;
+
+</footer><footer type="list-management" depth="0">--
+To unsubscribe from this list: send the line "unsubscribe linux-kernel" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+Please read the FAQ at  <url>http://www.tux.org/lkml/</url>
+</footer></body></message>

@@ -1,0 +1,1245 @@
+<message message-id="20101108112443.09D1A2388C2D@eris.apache.org" list="org.apache.incubator.isis-commits" id="24c3df2bwkzzn4od" type="checkins" date="2010-11-08T11:23:54Z" year="2010-01-01" year-month="2010-11-01" year-month-day="2010-11-08" thread-id="24c3df2bwkzzn4od"><headers><envelope-from-line>Mon Nov 08 03:26:20 2010</envelope-from-line><from personal="danhaywood@apache.org" address="danhaywood@apache.org">danhaywood@apache.org</from><to personal="isis-commits@incubator.apache.org" address="isis-commits@incubator.apache.org">isis-commits@incubator.apache.org</to><subject normal="svn commit: r1032543 [24/26] - in /incubator/isis/trunk: alternatives/bytecode/javassist/src/main/java/org/apache/isis/bytecode/javassist/persistence/objectfactory/internal/ alternatives/bytecode/javassist/src/main/java/org/apache/isis/bytecode/javassi...">svn commit: r1032543 [24/26] - in /incubator/isis/trunk: alternatives/bytecode/javassist/src/main/java/org/apache/isis/bytecode/javassist/persistence/objectfactory/internal/ alternatives/bytecode/javassist/src/main/java/org/apache/isis/bytecode/javassi...</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 326
+          for &lt;lee.chambers.porter@a.markmail.org&gt;;
+          Mon, 8 Nov 2010 03:26:20 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id B250B29081A7
+	for &lt;lee.chambers.porter@a.markmail.org&gt;; Mon,  8 Nov 2010 03:25:56 -0800 (PST)</received><received>(qmail 9120 invoked by uid 500); 8 Nov 2010 11:26:19 -0000</received><mailing-list>contact isis-commits-help@incubator.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:isis-commits-help@incubator.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:isis-commits-unsubscribe@incubator.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:isis-commits@incubator.apache.org&gt;</list-post><list-id>&lt;isis-commits.incubator.apache.org&gt;</list-id><reply-to>isis-dev@incubator.apache.org</reply-to><delivered-to>mailing list isis-commits@incubator.apache.org</delivered-to><received>(qmail 9113 invoked by uid 99); 8 Nov 2010 11:26:19 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 08 Nov 2010 11:26:19 +0000</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.4] (HELO eris.apache.org) (140.211.11.4)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 08 Nov 2010 11:26:14 +0000</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id 09D1A2388C2D; Mon,  8 Nov 2010 11:24:38 +0000 (UTC)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Mon, 08 Nov 2010 11:23:54 -0000</date><x-mailer>svnmailer-1.0.8</x-mailer><message-id>20101108112443.09D1A2388C2D@eris.apache.org</message-id></headers><normalized-references><normalized-message-id>20101108112443.09D1A2388C2D@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionRealTarget.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionRealTarget.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionRealTarget.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionRealTarget.java<br/>Mon Nov  8 11:23:08 2010
+@@ -4,9 +4,9 @@ import java.text.MessageFormat;
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionReturnType.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionReturnType.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionReturnType.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionReturnType.java<br/>Mon Nov  8 11:23:08 2010
+@@ -4,9 +4,9 @@ import java.text.MessageFormat;
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionType.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionType.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionType.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/actions/TableColumnNakedObjectActionType.java<br/>Mon Nov  8 11:23:08 2010
+@@ -2,9 +2,9 @@ package org.apache.isis.viewer.restful.v
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationAccess.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationAccess.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationAccess.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationAccess.java<br/>Mon Nov  8 11:23:08 2010
+@@ -4,9 +4,9 @@ import java.text.MessageFormat;
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.OneToManyAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.OneToManyAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectAssociation;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationAddTo.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationAddTo.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationAddTo.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationAddTo.java<br/>Mon Nov  8 11:23:08 2010
+@@ -2,9 +2,9 @@ package org.apache.isis.viewer.restful.v
+
+</para><para depth="0"> import java.text.MessageFormat;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.OneToManyAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.OneToManyAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectAssociationModifyAbstract;
+ import org.apache.isis.viewer.restful.viewer.util.StringUtil;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationInvalidReason.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationInvalidReason.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationInvalidReason.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationInvalidReason.java<br/>Mon Nov  8 11:23:08 2010
+@@ -1,9 +1,9 @@
+ package org.apache.isis.viewer.restful.viewer.resources.objects.collections;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.OneToManyAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.OneToManyAssociation;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectMemberInvalidReason;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationName.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationName.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationName.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationName.java<br/>Mon Nov  8 11:23:08 2010
+@@ -4,10 +4,10 @@ import java.text.MessageFormat;
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.OneToManyAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.OneToManyAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectMemberName;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationRemoveFrom.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationRemoveFrom.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationRemoveFrom.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/collections/TableColumnOneToManyAssociationRemoveFrom.java<br/>Mon Nov  8 11:23:08 2010
+@@ -2,9 +2,9 @@ package org.apache.isis.viewer.restful.v
+
+</para><para depth="0"> import java.text.MessageFormat;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.OneToManyAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.OneToManyAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectAssociationModifyAbstract;
+ import org.apache.isis.viewer.restful.viewer.util.StringUtil;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationAccess.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationAccess.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationAccess.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationAccess.java<br/>Mon Nov  8 11:23:08 2010
+@@ -4,12 +4,12 @@ import java.text.MessageFormat;
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.oid.Oid;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.oid.Oid;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectAssociation;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationClear.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationClear.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationClear.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationClear.java<br/>Mon Nov  8 11:23:08 2010
+@@ -2,9 +2,9 @@ package org.apache.isis.viewer.restful.v
+
+</para><para depth="0"> import java.text.MessageFormat;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.OneToOneAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectAssociationModifyAbstract;
+ import org.apache.isis.viewer.restful.viewer.util.StringUtil;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationInvalidReason.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationInvalidReason.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationInvalidReason.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationInvalidReason.java<br/>Mon Nov  8 11:23:08 2010
+@@ -1,9 +1,9 @@
+ package org.apache.isis.viewer.restful.viewer.resources.objects.properties;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.OneToOneAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.OneToOneAssociation;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectMemberInvalidReason;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationModify.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationModify.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationModify.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationModify.java<br/>Mon Nov  8 11:23:08 2010
+@@ -2,9 +2,9 @@ package org.apache.isis.viewer.restful.v
+
+</para><para depth="0"> import java.text.MessageFormat;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.feature.OneToOneAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectAssociationModifyAbstract;
+ import org.apache.isis.viewer.restful.viewer.util.StringUtil;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationName.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationName.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationName.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationName.java<br/>Mon Nov  8 11:23:08 2010
+@@ -4,10 +4,10 @@ import java.text.MessageFormat;
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.OneToOneAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectMemberName;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationParseable.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationParseable.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationParseable.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/objects/properties/TableColumnOneToOneAssociationParseable.java<br/>Mon Nov  8 11:23:08 2010
+@@ -2,10 +2,10 @@ package org.apache.isis.viewer.restful.v
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+-import org.apache.isis.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import<br/>org.apache.isis.viewer.restful.viewer.resources.objects.TableColumnNakedObjectAssociation;
+ import org.apache.isis.viewer.restful.viewer.xom.ResourceContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/services/ServicesResourceImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/services/ServicesResourceImpl.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/services/ServicesResourceImpl.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/services/ServicesResourceImpl.java<br/>Mon Nov  8 11:23:08 2010
+@@ -7,7 +7,7 @@ import javax.ws.rs.Path;
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
+ import org.apache.isis.viewer.restful.applib.resources.ServicesResource;
+ import org.apache.isis.viewer.restful.viewer.html.HtmlClass;
+ import org.apache.isis.viewer.restful.viewer.html.XhtmlTemplate;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/specs/SpecsResourceImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/specs/SpecsResourceImpl.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/specs/SpecsResourceImpl.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/resources/specs/SpecsResourceImpl.java<br/>Mon Nov  8 11:23:08 2010
+@@ -13,12 +13,12 @@ import javax.ws.rs.WebApplicationExcepti
+ import nu.xom.Element;
+
+</para><para depth="0"> import org.apache.isis.applib.Identifier;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionType;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+-import org.apache.isis.metamodel.spec.feature.OneToManyAssociation;
+-import org.apache.isis.metamodel.spec.feature.OneToOneAssociation;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionType;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.spec.feature.OneToManyAssociation;
++import org.apache.isis.core.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.metamodel.specloader.SpecificationLoader;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.viewer.restful.applib.resources.SpecsResource;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/util/ActionUtils.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/util/ActionUtils.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/util/ActionUtils.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/util/ActionUtils.java<br/>Mon Nov  8 11:23:08 2010
+@@ -3,9 +3,9 @@ package org.apache.isis.viewer.restful.v
+ import java.util.ArrayList;
+ import java.util.List;
+
+</para><para depth="0">+import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionType;
+ import org.apache.isis.metamodel.runtimecontext.spec.feature.ObjectActionSet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionType;
+
+</para><para depth="0"> public final class ActionUtils {
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/util/OidUtils.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/util/OidUtils.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/util/OidUtils.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/util/OidUtils.java<br/>Mon Nov  8 11:23:08 2010
+@@ -1,8 +1,8 @@
+ package org.apache.isis.viewer.restful.viewer.util;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.oid.Oid;
+-import org.apache.isis.metamodel.adapter.oid.stringable.OidStringifier;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.oid.Oid;
++import org.apache.isis.core.metamodel.adapter.oid.stringable.OidStringifier;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.persistence.PersistenceSession;
+ import org.apache.isis.runtime.persistence.adaptermanager.AdapterManager;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/xom/TableColumnAbstract.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/xom/TableColumnAbstract.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/xom/TableColumnAbstract.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/restful/viewer/src/main/java/org/apache/isis/viewer/restful/viewer/xom/TableColumnAbstract.java<br/>Mon Nov  8 11:23:08 2010
+@@ -2,8 +2,8 @@ package org.apache.isis.viewer.restful.v
+
+</para><para depth="0"> import nu.xom.Element;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.oid.stringable.OidStringifier;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.oid.stringable.OidStringifier;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.persistence.PersistenceSession;
+ import org.apache.isis.runtime.persistence.oidgenerator.OidGenerator;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/AbstractObjectProcessor.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/AbstractObjectProcessor.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/AbstractObjectProcessor.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/AbstractObjectProcessor.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,8 +20,8 @@
+
+</para><para depth="0"> package org.apache.isis.webapp;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/Dispatcher.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/Dispatcher.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/Dispatcher.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/Dispatcher.java<br/>Mon Nov  8 11:23:08 2010
+@@ -39,12 +39,12 @@ import org.dom4j.Element;
+ import org.dom4j.io.SAXReader;
+ import org.apache.isis.core.commons.exceptions.IsisException;
+ import org.apache.isis.core.commons.factory.InstanceFactory;
+-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
+ import org.apache.isis.metamodel.facets.Facet;
+ import org.apache.isis.metamodel.facets.actcoll.typeof.TypeOfFacet;
+ import org.apache.isis.metamodel.facets.collections.modify.CollectionFacet;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.action.ActionAction;
+ import org.apache.isis.webapp.context.RequestContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/UserManager.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/UserManager.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/UserManager.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/UserManager.java<br/>Mon Nov  8 11:23:08 2010
+@@ -21,7 +21,7 @@
+ package org.apache.isis.webapp;
+
+</para><para depth="0"> import org.apache.log4j.Logger;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
+ import org.apache.isis.runtime.authentication.AuthenticationManager;
+ import org.apache.isis.runtime.authentication.AuthenticationRequestPassword;
+ import org.apache.isis.runtime.context.IsisContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/UserlessSession.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/UserlessSession.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/UserlessSession.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/UserlessSession.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,8 +22,8 @@ package org.apache.isis.webapp;
+
+</para><para depth="0"> import java.io.IOException;
+
+</para><para depth="0">-import org.apache.isis.metamodel.authentication.AuthenticationSessionAbstract;
+-import org.apache.isis.metamodel.encoding.DataInputExtended;
++import<br/>org.apache.isis.core.metamodel.authentication.AuthenticationSessionAbstract;
++import org.apache.isis.core.metamodel.encoding.DataInputExtended;
+
+</para><para depth="0"> public class UserlessSession extends AuthenticationSessionAbstract {
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/action/ActionAction.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/action/ActionAction.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/action/ActionAction.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/action/ActionAction.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,14 +22,14 @@ package org.apache.isis.webapp.action;
+
+</para><para depth="0"> import java.io.IOException;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.TextEntryParseException;
+-import org.apache.isis.metamodel.consent.Consent;
+-import org.apache.isis.metamodel.consent.Veto;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.TextEntryParseException;
++import org.apache.isis.core.metamodel.consent.Consent;
++import org.apache.isis.core.metamodel.consent.Veto;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionParameter;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionParameter;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.persistence.ConcurrencyException;
+ import org.apache.isis.webapp.Action;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/DefaultOidObjectMapping.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/DefaultOidObjectMapping.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/DefaultOidObjectMapping.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/DefaultOidObjectMapping.java<br/>Mon Nov  8 11:23:08 2010
+@@ -31,12 +31,12 @@ import java.util.Map;
+
+</para><para depth="0"> import org.apache.log4j.Logger;
+ import org.apache.isis.core.commons.exceptions.IsisException;
+-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.oid.AggregatedOid;
+-import org.apache.isis.metamodel.adapter.oid.Oid;
+-import org.apache.isis.metamodel.encoding.DataOutputExtended;
+-import org.apache.isis.metamodel.encoding.DataOutputStreamExtended;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.oid.AggregatedOid;
++import org.apache.isis.core.metamodel.adapter.oid.Oid;
++import org.apache.isis.core.metamodel.encoding.DataOutputExtended;
++import org.apache.isis.core.metamodel.encoding.DataOutputStreamExtended;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.persistence.oidgenerator.simple.SerialOid;
+ import org.apache.isis.webapp.ScimpiException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/DefaultVersionMapping.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/DefaultVersionMapping.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/DefaultVersionMapping.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/DefaultVersionMapping.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,8 +20,8 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.context;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.version.SerialNumberVersion;
+-import org.apache.isis.metamodel.adapter.version.Version;
++import org.apache.isis.core.metamodel.adapter.version.SerialNumberVersion;
++import org.apache.isis.core.metamodel.adapter.version.Version;
+
+</para><para depth="0"> public class DefaultVersionMapping implements VersionMapping {
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/HibernateOidObjectMapping.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/HibernateOidObjectMapping.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/HibernateOidObjectMapping.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/HibernateOidObjectMapping.java<br/>Mon Nov  8 11:23:08 2010
+@@ -27,10 +27,10 @@ import java.util.HashSet;
+ import java.util.Iterator;
+ import java.util.Map;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.oid.Oid;
+-import org.apache.isis.metamodel.encoding.DataOutputExtended;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.oid.Oid;
++import org.apache.isis.core.metamodel.encoding.DataOutputExtended;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.context.RequestContext.Scope;
+ import org.apache.isis.webapp.debug.DebugView;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/IndirectObjectMapping.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/IndirectObjectMapping.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/IndirectObjectMapping.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/IndirectObjectMapping.java<br/>Mon Nov  8 11:23:08 2010
+@@ -26,7 +26,7 @@ import java.util.LinkedHashMap;
+ import java.util.Map;
+ import java.util.TreeSet;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
+ import org.apache.isis.webapp.context.RequestContext.Scope;
+ import org.apache.isis.webapp.debug.DebugView;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/Mapping.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/Mapping.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/Mapping.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/Mapping.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,9 +22,9 @@ package org.apache.isis.webapp.context;
+
+</para><para depth="0"> import org.apache.isis.core.commons.debug.DebugString;
+ import org.apache.isis.core.commons.ensure.Assert;
+-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.oid.Oid;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.oid.Oid;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.memento.Memento;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/ObjectMapping.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/ObjectMapping.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/ObjectMapping.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/ObjectMapping.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,7 +20,7 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.context;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
+ import org.apache.isis.webapp.context.RequestContext.Scope;
+ import org.apache.isis.webapp.debug.DebugView;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/RequestContext.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/RequestContext.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/RequestContext.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/RequestContext.java<br/>Mon Nov  8 11:23:08 2010
+@@ -31,10 +31,10 @@ import java.util.TreeSet;
+
+</para><para depth="0"> import org.apache.log4j.Logger;
+ import org.apache.isis.core.commons.factory.InstanceFactory;
+-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.version.Version;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.version.Version;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.Dispatcher;
+ import org.apache.isis.webapp.ScimpiException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/SerialOidObjectMapping.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/SerialOidObjectMapping.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/SerialOidObjectMapping.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/SerialOidObjectMapping.java<br/>Mon Nov  8 11:23:08 2010
+@@ -25,8 +25,8 @@ import java.util.HashSet;
+ import java.util.Iterator;
+ import java.util.Map;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.persistence.oidgenerator.simple.SerialOid;
+ import org.apache.isis.webapp.context.RequestContext.Scope;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/VersionMapping.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/VersionMapping.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/VersionMapping.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/context/VersionMapping.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,7 +20,7 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.context;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.version.Version;
++import org.apache.isis.core.metamodel.adapter.version.Version;
+
+</para><para depth="0"> public interface VersionMapping {
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/debug/DebugAction.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/debug/DebugAction.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/debug/DebugAction.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/debug/DebugAction.java<br/>Mon Nov  8 11:23:08 2010
+@@ -26,15 +26,15 @@ import java.util.Arrays;
+ import org.apache.isis.core.commons.debug.DebugInfo;
+ import org.apache.isis.core.commons.debug.DebugString;
+ import org.apache.isis.core.commons.filters.AbstractFilter;
+-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionParameter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionType;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.spec.feature.ObjectMember;
+ import org.apache.isis.metamodel.facets.Facet;
+ import org.apache.isis.metamodel.facets.FacetHolder;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionParameter;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionType;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+-import org.apache.isis.metamodel.spec.feature.ObjectMember;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.util.Dump;
+ import org.apache.isis.webapp.Action;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/EditAction.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/EditAction.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/EditAction.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/EditAction.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,16 +22,16 @@ package org.apache.isis.webapp.edit;
+
+</para><para depth="0"> import java.io.IOException;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.adapter.TextEntryParseException;
+-import org.apache.isis.metamodel.adapter.version.Version;
+-import org.apache.isis.metamodel.consent.Consent;
+-import org.apache.isis.metamodel.consent.Veto;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.TextEntryParseException;
++import org.apache.isis.core.metamodel.adapter.version.Version;
++import org.apache.isis.core.metamodel.consent.Consent;
++import org.apache.isis.core.metamodel.consent.Veto;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociationFilters;
++import org.apache.isis.core.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociationFilters;
+-import org.apache.isis.metamodel.spec.feature.OneToOneAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.Action;
+ import org.apache.isis.webapp.Dispatcher;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/FieldEditState.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/FieldEditState.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/FieldEditState.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/FieldEditState.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,7 +20,7 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.edit;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
+
+</para><para depth="0"> public class FieldEditState {
+     private final String entry;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/RemoveAction.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/RemoveAction.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/RemoveAction.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/edit/RemoveAction.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,9 +22,9 @@ package org.apache.isis.webapp.edit;
+
+</para><para depth="0"> import java.io.IOException;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+-import org.apache.isis.metamodel.spec.feature.OneToManyAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.spec.feature.OneToManyAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.Action;
+ import org.apache.isis.webapp.ForbiddenException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/logon/LogonAction.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/logon/LogonAction.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/logon/LogonAction.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/logon/LogonAction.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,7 +22,7 @@ package org.apache.isis.webapp.logon;
+
+</para><para depth="0"> import java.io.IOException;
+
+</para><para depth="0">-import org.apache.isis.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
+ import org.apache.isis.runtime.authentication.AuthenticationRequestPassword;
+ import org.apache.isis.webapp.Action;
+ import org.apache.isis.webapp.Dispatcher;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/logon/LogoutAction.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/logon/LogoutAction.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/logon/LogoutAction.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/logon/LogoutAction.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,7 +22,7 @@ package org.apache.isis.webapp.logon;
+
+</para><para depth="0"> import java.io.IOException;
+
+</para><para depth="0">-import org.apache.isis.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.Action;
+ import org.apache.isis.webapp.UserManager;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/util/MethodsUtils.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/util/MethodsUtils.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/util/MethodsUtils.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/util/MethodsUtils.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,11 +22,11 @@ package org.apache.isis.webapp.util;
+
+</para><para depth="0"> import java.util.List;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.authentication.AuthenticationSession;
+-import org.apache.isis.metamodel.consent.Consent;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionType;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.authentication.AuthenticationSession;
++import org.apache.isis.core.metamodel.consent.Consent;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionType;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.persistence.PersistenceSession;
+ import org.apache.isis.runtime.persistence.adaptermanager.AdapterManager;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionButton.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionButton.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionButton.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionButton.java<br/>Mon Nov  8 11:23:08 2010
+@@ -21,12 +21,12 @@
+ package org.apache.isis.webapp.view.action;
+
+</para><para depth="0"> import org.apache.log4j.Logger;
+-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.consent.Consent;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.consent.Consent;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionParameter;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionParameter;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.context.RequestContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionContent.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionContent.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionContent.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionContent.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,11 +20,11 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.action;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionParameter;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionParameter;
+ import org.apache.isis.webapp.BlockContent;
+ import org.apache.isis.webapp.ScimpiException;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionForm.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionForm.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionForm.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionForm.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,10 +20,10 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.action;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionParameter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionParameter;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.action.ActionAction;
+ import org.apache.isis.webapp.context.RequestContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionLink.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionLink.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionLink.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/ActionLink.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,8 +22,8 @@ package org.apache.isis.webapp.view.acti
+
+</para><para depth="0"> import java.net.URLEncoder;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.context.RequestContext;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/Methods.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/Methods.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/Methods.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/Methods.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,10 +20,10 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.action;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionType;
+ import org.apache.isis.metamodel.runtimecontext.spec.feature.ObjectActionSet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionType;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.Dispatcher;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/RunAction.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/RunAction.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/RunAction.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/RunAction.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,9 +20,9 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.action;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionParameter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionParameter;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ScimpiException;
+ import org.apache.isis.webapp.context.RequestContext;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/Services.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/Services.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/Services.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/action/Services.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,7 +22,7 @@ package org.apache.isis.webapp.view.acti
+
+</para><para depth="0"> import java.util.List;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.persistence.PersistenceSession;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/collection/Collection.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/collection/Collection.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/collection/Collection.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/collection/Collection.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,9 +22,9 @@ package org.apache.isis.webapp.view.coll
+
+</para><para depth="0"> import java.util.Iterator;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.metamodel.facets.collections.modify.CollectionFacet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ScimpiException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Debug.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Debug.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Debug.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Debug.java<br/>Mon Nov  8 11:23:08 2010
+@@ -24,8 +24,8 @@ import java.util.Arrays;
+
+</para><para depth="0"> import org.apache.isis.core.commons.debug.DebugInfo;
+ import org.apache.isis.core.commons.debug.DebugString;
+-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.runtime.util.Dump;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Members.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Members.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Members.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Members.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,12 +20,12 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.debug;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAction;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionParameter;
+-import org.apache.isis.metamodel.spec.feature.ObjectActionType;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAction;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionParameter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectActionType;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ForbiddenException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Specification.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Specification.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Specification.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/debug/Specification.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,9 +20,9 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.debug;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.context.RequestContext;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/AbstractFormView.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/AbstractFormView.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/AbstractFormView.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/AbstractFormView.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,10 +20,10 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociationFilters;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociationFilters;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractObjectProcessor;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/AbstractTableView.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/AbstractTableView.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/AbstractTableView.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/AbstractTableView.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,11 +22,11 @@ package org.apache.isis.webapp.view.disp
+
+</para><para depth="0"> import java.util.Iterator;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociationFilters;
+ import org.apache.isis.metamodel.facets.actcoll.typeof.TypeOfFacet;
+ import org.apache.isis.metamodel.facets.collections.modify.CollectionFacet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociationFilters;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ScimpiException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/FieldLabel.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/FieldLabel.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/FieldLabel.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/FieldLabel.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,8 +20,8 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ForbiddenException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/FieldValue.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/FieldValue.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/FieldValue.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/FieldValue.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,11 +20,11 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.ObjectSpecification;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+ import org.apache.isis.metamodel.facets.value.BooleanValueFacet;
+-import org.apache.isis.metamodel.spec.ObjectSpecification;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ForbiddenException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/GetField.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/GetField.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/GetField.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/GetField.java<br/>Mon Nov  8 11:23:08 2010
+@@ -25,9 +25,9 @@ import java.text.Format;
+ import java.text.SimpleDateFormat;
+ import java.util.Date;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.metamodel.facets.value.DateValueFacet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ForbiddenException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/IncludeObject.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/IncludeObject.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/IncludeObject.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/IncludeObject.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,8 +20,8 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ForbiddenException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/ListView.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/ListView.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/ListView.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/ListView.java<br/>Mon Nov  8 11:23:08 2010
+@@ -22,9 +22,9 @@ package org.apache.isis.webapp.view.disp
+
+</para><para depth="0"> import java.util.Iterator;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.metamodel.facets.collections.modify.CollectionFacet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.webapp.AbstractObjectProcessor;
+ import org.apache.isis.webapp.context.RequestContext;
+ import org.apache.isis.webapp.context.RequestContext.Scope;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/LongFormView.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/LongFormView.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/LongFormView.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/LongFormView.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,10 +20,10 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociationFilters;
+ import org.apache.isis.metamodel.facets.actcoll.typeof.TypeOfFacet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociationFilters;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.processor.Request;
+ import org.apache.isis.webapp.view.field.LinkedObject;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/SelectedObject.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/SelectedObject.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/SelectedObject.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/SelectedObject.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,7 +20,7 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.context.RequestContext.Scope;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/ShortFormView.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/ShortFormView.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/ShortFormView.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/ShortFormView.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,8 +20,8 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.webapp.processor.Request;
+ import org.apache.isis.webapp.view.field.LinkedObject;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableBuilder.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableBuilder.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableBuilder.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableBuilder.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,8 +20,8 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.webapp.context.RequestContext;
+ import org.apache.isis.webapp.context.RequestContext.Scope;
+ import org.apache.isis.webapp.processor.PageWriter;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableCell.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableCell.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableCell.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableCell.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,8 +20,8 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.runtime.context.IsisContext;
+ import org.apache.isis.webapp.AbstractElementProcessor;
+ import org.apache.isis.webapp.ForbiddenException;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableContentWriter.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableContentWriter.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableContentWriter.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableContentWriter.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,7 +20,7 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
+ import org.apache.isis.webapp.context.RequestContext;
+ import org.apache.isis.webapp.processor.PageWriter;
+ import org.apache.isis.webapp.processor.Request;
+
+</para><para depth="0">Modified:<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableView.java
+URL:<br/><url>http://svn.apache.org/viewvc/incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableView.java?rev=1032543&amp;r1=1032542&amp;r2=1032543&amp;view=diff</url>
+==============================================================================
+---<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableView.java<br/>(original)
++++<br/>incubator/isis/trunk/viewer/scimpi/dispatcher/src/main/java/org/apache/isis/webapp/view/display/TableView.java<br/>Mon Nov  8 11:23:08 2010
+@@ -20,9 +20,9 @@
+
+</para><para depth="0"> package org.apache.isis.webapp.view.display;
+
+</para><para depth="0">-import org.apache.isis.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.adapter.ObjectAdapter;
++import org.apache.isis.core.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.metamodel.facets.object.parseable.ParseableFacet;
+-import org.apache.isis.metamodel.spec.feature.ObjectAssociation;
+ import org.apache.isis.webapp.Dispatcher;
+ import org.apache.isis.webapp.context.RequestContext;
+ import org.apache.isis.webapp.context.RequestContext.Scope;
+
+</para></body></message>

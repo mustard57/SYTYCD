@@ -1,0 +1,81 @@
+<message message-id="bn0o4n$7o8$1@sea.gmane.org" list="org.apache.lenya.user" id="24b6dxkzb72am6xn" no-archive="yes" type="users" date="2003-10-20T15:34:10+02:00" year="2003-01-01" year-month="2003-10-01" year-month-day="2003-10-20" thread-id="kdin5uw3cawy3t36"><headers><envelope-from-line>From lenya-user-return-718-apmail-cocoon-lenya-user-archive=cocoon.apache.org@cocoon.apache.org Mon Oct 20 13:32:13 2003</envelope-from-line><from personal="Andreas Hartmann" address="andreas@apache.org">Andreas Hartmann &lt;andreas@apache.org&gt;</from><to personal="lenya-user@cocoon.apache.org" address="lenya-user@cocoon.apache.org">lenya-user@cocoon.apache.org</to><subject normal="Is Lenya an extensible framework?">Re: Is Lenya an extensible framework?</subject><return-path>lenya-user-return-718-apmail-cocoon-lenya-user-archive=cocoon.apache.org@cocoon.apache.org</return-path><delivered-to>apmail-cocoon-lenya-user-archive@www.apache.org</delivered-to><received>(qmail 25325 invoked from network); 20 Oct 2003 13:32:13 -0000</received><received>from daedalus.apache.org (HELO mail.apache.org) (208.185.179.12)
+  by minotaur-2.apache.org with SMTP; 20 Oct 2003 13:32:13 -0000</received><received>(qmail 74728 invoked by uid 500); 20 Oct 2003 13:32:08 -0000</received><delivered-to>apmail-cocoon-lenya-user-archive@cocoon.apache.org</delivered-to><received>(qmail 74707 invoked by uid 500); 20 Oct 2003 13:32:08 -0000</received><mailing-list>contact lenya-user-help@cocoon.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-post>&lt;mailto:lenya-user@cocoon.apache.org&gt;</list-post><list-help>&lt;mailto:lenya-user-help@cocoon.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:lenya-user-unsubscribe@cocoon.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:lenya-user-subscribe@cocoon.apache.org&gt;</list-subscribe><reply-to>"Lenya Users List" &lt;lenya-user@cocoon.apache.org&gt;</reply-to><delivered-to>mailing list lenya-user@cocoon.apache.org</delivered-to><received>(qmail 74686 invoked from network); 20 Oct 2003 13:32:07 -0000</received><x-injected-via-gmane>http://gmane.org/</x-injected-via-gmane><date>Mon, 20 Oct 2003 15:34:10 +0200</date><lines>78</lines><message-id>bn0o4n$7o8$1@sea.gmane.org</message-id><references>&lt;NEBBJEIKCLDNJFNHMONDOEFIDAAA.dbols@osirion.be&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><user-agent>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.5) Gecko/20030916</user-agent><x-accept-language>en-us, en</x-accept-language><in-reply-to>&lt;NEBBJEIKCLDNJFNHMONDOEFIDAAA.dbols@osirion.be&gt;</in-reply-to><sender>news &lt;news@sea.gmane.org&gt;</sender><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>bn0o4n$7o8$1@sea.gmane.org</normalized-message-id><normalized-in-reply-to>NEBBJEIKCLDNJFNHMONDOEFIDAAA.dbols@osirion.be</normalized-in-reply-to><normalized-reference>NEBBJEIKCLDNJFNHMONDOEFIDAAA.dbols@osirion.be</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><greeting depth="0">Hi Danny,
+</greeting><para depth="0">
+Danny Bols wrote:
+
+</para><quote depth="1"><quotepara depth="1">Hi all,
+
+</quotepara><quotepara depth="1">the current (default) implementation of Lenya's repository and navigation
+framework doesn't suite our needs. No problem we thought, since Lenay is a
+framework we can build our own implementations of it. Reading the API we
+were happy to see the interfaces for Document, DocumentBuilder,
+DocumentIdToPathMapper etc. But diving deeper into the core code we were
+astonished to see that there was no way of making our own implementations!
+Isn't Lenya extensible after all?
+</quotepara></quote><para depth="0">
+I'm very glad you're addressing this topic
+(is this correct English? :) ), because it's bothering me for
+quite a long time now. Of course, when the interfaces in
+org.apache.lenya.publication were designed, we had in mind to
+allow specific implementations. But it was a somehow half-baken
+approach as we didn't provide the corresponding configuration
+options (except for the DocumentIdToPathMapper in publication.xconf).
+
+</para><quote depth="1"><quotepara depth="1">A few examples:
+- The default implementations of the Document and DocumentBuilder are hard
+coded in the core java components of Lenya!
+</quotepara></quote><para depth="0">
+Yes, and it is bad and has to be changed ASAP.
+
+</para><quote depth="1"><quotepara depth="1">- The source for the navigation framework (sitetree.xml) is hard coded in
+the core sitemaps of Lenya and we see no possibility to extend the schema
+for it!
+</quotepara></quote><para depth="0">
+We (especially Michael) are bothered about the whole sitetree concept.
+I (the navigation framework was mainly designed by me) don't see
+it as "the way to go" when designing components, but rather as
+a utility when building sitetree-based publications.
+
+</para><para depth="0">If we find a more general representation of the information
+structure (this is worth another thread), we can discuss if it
+is possible to find a suitable navigation framework implementation.
+
+</para><quote depth="1"><quotepara depth="1">- The Default implementations of the DocumentBuilder and Document lean
+strong upon the fact that each document has an entry in the sitetree.xml!
+</quotepara></quote><para depth="0">
+Yes, a frequently critizised fact (e.g., Michael isn't pleased with
+it at all).
+
+</para><quote depth="1"><quotepara depth="1">The document.exist() method doesn't even look in the filesystem for a
+document but will only check if there is an entry sitetree!
+</quotepara></quote><para depth="0">
+This is for performance reasons.
+
+</para><para depth="0">I thought the
+</para><quote depth="1"><quotepara depth="1">sitetree was about building menu's, tabs and breadcrumbs or is it becoming
+an new kind of index-file for the repository?
+</quotepara></quote><para depth="0">
+At the moment, it's both.
+
+</para><quote depth="1"><quotepara depth="1">I hope you can correct me and tell me that my conclusions aren't right?
+I would be pleased to hear what the vision/ideas/plans are about the
+extensibility of Lenya?
+How about considering using the Avalon principals and implementing an Avalon
+container? (I know Cocoon is currently trying to replace ECM by Fortress)
+</quotepara></quote><para depth="0">
+IMHO everyone of us should make familiar with the Avalon concepts.
+We're using Avalon components for access control and in some other
+areas, and I had very pleasing experiences with the framework.
+
+</para><para depth="0">So, from me a +1 in diving deeper into Avalon and applying its
+concepts to the publication framework.
+
+</para><para depth="0">Again, thanks a lot for raising these issues!
+
+</para><para depth="0">-- Andreas
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>lenya-user-unsubscribe@cocoon.apache.org</email>
+For additional commands, e-mail: <email>lenya-user-help@cocoon.apache.org</email>
+
+</footer></body></message>

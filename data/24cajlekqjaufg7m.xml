@@ -1,0 +1,16 @@
+<message message-id="199802171911.UAA13432@zeus.mu-luebeck.de" list="org.kde.kde-commits" id="24cajlekqjaufg7m" type="checkins" date="1998-02-17T20:11:45+01:00" year="1998-01-01" year-month="1998-02-01" year-month-day="1998-02-17" thread-id="4uvs5pj5nqssiqpb"><headers><envelope-from-line>From kde-cvs-request@fiwi02.wiwi.uni-tuebingen.de  Tue Feb 17 14:40:55 1998</envelope-from-line><from personal="CVS by kulow" address="cvs@informatik.mu-luebeck.de">CVS by kulow &lt;cvs@informatik.mu-luebeck.de&gt;</from><to personal="kde-cvs@fiwi02.wiwi.uni-tuebingen.de" address="kde-cvs@fiwi02.wiwi.uni-tuebingen.de">kde-cvs@fiwi02.wiwi.uni-tuebingen.de</to><subject normal="www">www</subject><return-path>kde-cvs-request@fiwi02.wiwi.uni-tuebingen.de</return-path><received>from fiwi02.wiwi.uni-tuebingen.de (fiwi02.wiwi.uni-tuebingen.de [134.2.40.152])
+	by www.progressive-comp.com with ESMTP id OAA16037
+	for &lt;kde-cvs@progressive-comp.com&gt;; Tue, 17 Feb 1998 14:40:54 -0500</received><received>by fiwi02.wiwi.uni-tuebingen.de id &lt;308303-13471&gt;; Tue, 17 Feb 1998 21:29:58 +0100</received><date>Tue, 17 Feb 1998 20:11:45 +0100</date><message-id>199802171911.UAA13432@zeus.mu-luebeck.de</message-id><old-return-path>&lt;kde@zeus.informatik.mu-luebeck.de&gt;</old-return-path><x-orcpt>rfc822;kde-cvs@fiwi02.wiwi.uni-tuebingen.de</x-orcpt><resent-message-id>&lt;"oOiesB.A.VeB.5Mf60"@fiwi02&gt;</resent-message-id><resent-from>kde-cvs@fiwi02.wiwi.uni-tuebingen.de</resent-from><reply-to>kde-cvs@fiwi02.wiwi.uni-tuebingen.de</reply-to><x-mailing-list>&lt;kde-cvs@fiwi02.wiwi.uni-tuebingen.de&gt; archive/latest/10821</x-mailing-list><x-loop>kde-cvs@fiwi02.wiwi.uni-tuebingen.de</x-loop><precedence>list</precedence><resent-sender>kde-cvs-request@fiwi02.wiwi.uni-tuebingen.de</resent-sender><resent-date>Tue, 17 Feb 1998 21:29:58 +0100</resent-date></headers><normalized-references><normalized-message-id>199802171911.UAA13432@zeus.mu-luebeck.de</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">
+www i18n.dat,1.43,1.44 i18n.html,1.169,1.170
+Author: kulow
+CVSROOT: /home/kde
+Tue Feb 17 20:11:44 MET 1998
+Update of /home/kde/www
+In directory zeus:/tmp/cvs-serv13422/www
+
+</para><para depth="0">Modified Files:
+	i18n.dat i18n.html 
+Log Message:
+updates
+
+</para></body></message>

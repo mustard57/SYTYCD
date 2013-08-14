@@ -1,0 +1,179 @@
+<message message-id="20081120191033.E77926C03E8@vsvn.xpertnet.biz" list="org.xwiki.notifications" id="24bkktsebmcm6li4" type="checkins" date="2008-11-20T11:10:28.349276-08:00" year="2008-01-01" year-month="2008-11-01" year-month-day="2008-11-20" thread-id="24bkktsebmcm6li4"><headers><envelope-from-line>Thu Nov 20 11:10:51 2008</envelope-from-line><from personal="tmortagne (SVN)" address="platform-notifications@xwiki.org">"tmortagne (SVN)" &lt;platform-notifications@xwiki.org&gt;</from><to personal="platform-notifications@xwiki.org" address="platform-notifications@xwiki.org">platform-notifications@xwiki.org</to><subject normal="[xwiki-notifications] r14350 - in platform/skins/tags: . xwiki-skin-toucan-1.12">[xwiki-notifications] r14350 - in platform/skins/tags: . xwiki-skin-toucan-1.12</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 107
+          for &lt;allison.thomas.warner@a.markmail.org&gt;;
+          Thu, 20 Nov 2008 11:10:51 -0800 (GMT-08:00)</received><received>from borabora.xpertnet.biz (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 73AA72908004
+	for &lt;allison.thomas.warner@a.markmail.org&gt;; Thu, 20 Nov 2008 11:10:27 -0800 (PST)</received><received>from localhost (localhost.localdomain [127.0.0.1])
+	by borabora.xpertnet.biz (Postfix) with ESMTP id EE93B660108;
+	Thu, 20 Nov 2008 20:10:48 +0100 (CET)</received><x-virus-scanned>Debian amavisd-new at xpertnet.biz</x-virus-scanned><received>from borabora.xpertnet.biz ([127.0.0.1])
+	by localhost (borabora.xpertnet.biz [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id aeAr5gn3cLe4; Thu, 20 Nov 2008 20:10:45 +0100 (CET)</received><received>from borabora.xpertnet.biz (localhost.localdomain [127.0.0.1])
+	by borabora.xpertnet.biz (Postfix) with ESMTP id 0192D660102;
+	Thu, 20 Nov 2008 20:10:44 +0100 (CET)</received><x-original-to>notifications@borabora.xpertnet.biz</x-original-to><delivered-to>notifications@borabora.xpertnet.biz</delivered-to><received>from localhost (localhost.localdomain [127.0.0.1])
+	by borabora.xpertnet.biz (Postfix) with ESMTP id 77995660107
+	for &lt;notifications@borabora.xpertnet.biz&gt;;
+	Thu, 20 Nov 2008 20:10:38 +0100 (CET)</received><x-virus-scanned>Debian amavisd-new at xpertnet.biz</x-virus-scanned><received>from borabora.xpertnet.biz ([127.0.0.1])
+	by localhost (borabora.xpertnet.biz [127.0.0.1]) (amavisd-new,
+	port 10024)
+	with LMTP id X8PY-SFcTW30 for &lt;notifications@borabora.xpertnet.biz&gt;;
+	Thu, 20 Nov 2008 20:10:37 +0100 (CET)</received><received>from vsvn.xpertnet.biz (vsvn.xpertnet.biz [192.168.1.119])
+	by borabora.xpertnet.biz (Postfix) with ESMTP id 8A443660102
+	for &lt;platform-notifications@xwiki.org&gt;;
+	Thu, 20 Nov 2008 20:10:33 +0100 (CET)</received><received>from localhost.localdomain (localhost [127.0.0.1])
+	by vsvn.xpertnet.biz (Postfix) with ESMTP id E77926C03E8
+	for &lt;platform-notifications@xwiki.org&gt;;
+	Thu, 20 Nov 2008 20:10:33 +0100 (CET)</received><message-id>20081120191033.E77926C03E8@vsvn.xpertnet.biz</message-id><date>Thu, 20 Nov 2008 20:10:33 +0100 (CET)</date><x-beenthere>notifications@xwiki.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>XWiki Notifications &lt;notifications@xwiki.org&gt;</reply-to><list-id>XWiki Notifications &lt;notifications.xwiki.org&gt;</list-id><list-unsubscribe>&lt;http://lists.xwiki.org/mailman/listinfo/notifications&gt;,
+	&lt;mailto:notifications-request@xwiki.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.xwiki.org/pipermail/notifications&gt;</list-archive><list-post>&lt;mailto:notifications@xwiki.org&gt;</list-post><list-help>&lt;mailto:notifications-request@xwiki.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.xwiki.org/mailman/listinfo/notifications&gt;,
+	&lt;mailto:notifications-request@xwiki.org?subject=subscribe&gt;</list-subscribe><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>notifications-bounces@xwiki.org</sender><errors-to>notifications-bounces@xwiki.org</errors-to></headers><normalized-references><normalized-message-id>20081120191033.E77926C03E8@vsvn.xpertnet.biz</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">Author: tmortagne
+Date: 2008-11-20 20:10:33 +0100 (Thu, 20 Nov 2008)
+New Revision: 14350
+
+</para><para depth="0">Added:
+   platform/skins/tags/xwiki-skin-toucan-1.12/
+   platform/skins/tags/xwiki-skin-toucan-1.12/pom.xml
+Removed:
+   platform/skins/tags/xwiki-skin-toucan-1.12/pom.xml
+Log:
+[maven-release-plugin]  copy for tag xwiki-skin-toucan-1.12
+
+</para><para depth="0">Copied: platform/skins/tags/xwiki-skin-toucan-1.12 (from rev 14323,<br/>platform/skins/trunk/toucan)
+
+</para><para depth="0">Deleted: platform/skins/tags/xwiki-skin-toucan-1.12/pom.xml
+===================================================================
+--- platform/skins/trunk/toucan/pom.xml	2008-11-20 09:58:42 UTC (rev 14323)
++++ platform/skins/tags/xwiki-skin-toucan-1.12/pom.xml	2008-11-20 19:10:33 UTC<br/>(rev 14350)
+@@ -1,58 +0,0 @@
+-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+-
+-&lt;!--
+- *
+- * See the NOTICE file distributed with this work for additional
+- * information regarding copyright ownership.
+- *
+- * This is free software; you can redistribute it and/or modify it
+- * under the terms of the GNU Lesser General Public License as
+- * published by the Free Software Foundation; either version 2.1 of
+- * the License, or (at your option) any later version.
+- *
+- * This software is distributed in the hope that it will be useful,
+- * but WITHOUT ANY WARRANTY; without even the implied warranty of
+- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+- * Lesser General Public License for more details.
+- *
+- * You should have received a copy of the GNU Lesser General Public
+- * License along with this software; if not, write to the Free
+- * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+- * 02110-1301 USA, or see the FSF site: <url>http://www.fsf.org.</url>
+- *
+---&gt;
+-
+-&lt;project xmlns="<url>http://maven.apache.org/POM/4.0.0</url>"<br/>xmlns:xsi="<url>http://www.w3.org/2001/XMLSchema-instance</url>"<br/>xsi:schemaLocation="<url>http://maven.apache.org/POM/4.0.0</url><br/><url>http://maven.apache.org/maven-v4_0_0.xsd</url>"&gt;
+-  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+-  &lt;parent&gt;
+-    &lt;groupId&gt;com.xpn.xwiki.platform.skins&lt;/groupId&gt;
+-    &lt;artifactId&gt;xwiki-skins&lt;/artifactId&gt;
+-    &lt;version&gt;10-SNAPSHOT&lt;/version&gt;
+-  &lt;/parent&gt;
+-  &lt;artifactId&gt;xwiki-skin-toucan&lt;/artifactId&gt;
+-  &lt;name&gt;XWiki Platform - Skins - Toucan&lt;/name&gt;
+-  &lt;version&gt;1.12-SNAPSHOT&lt;/version&gt;
+-  &lt;packaging&gt;pom&lt;/packaging&gt;
+-  &lt;description&gt;
+-    Toucan Skin. It is based on Albatross and requires that Albatross be set as<br/>the base skin
+-    in xwiki.cfg to work.
+-  &lt;/description&gt;
+-  &lt;dependencies&gt;
+-    &lt;!-- Toucan skin requires the Albatross Skin v1.1 or greater at runtime --&gt;
+-    &lt;dependency&gt;
+-      &lt;groupId&gt;com.xpn.xwiki.platform.skins&lt;/groupId&gt;
+-      &lt;artifactId&gt;xwiki-skin-albatross&lt;/artifactId&gt;
+-      &lt;version&gt;1.13-SNAPSHOT&lt;/version&gt;
+-      &lt;scope&gt;runtime&lt;/scope&gt;
+-      &lt;type&gt;zip&lt;/type&gt;
+-    &lt;/dependency&gt;
+-  &lt;/dependencies&gt;
+-  &lt;build&gt;
+-    &lt;plugins&gt;
+-      &lt;plugin&gt;
+-        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+-        &lt;artifactId&gt;maven-assembly-plugin&lt;/artifactId&gt;
+-      &lt;/plugin&gt;
+-    &lt;/plugins&gt;
+-  &lt;/build&gt;
+-&lt;/project&gt;
+
+</para><para depth="0">Copied: platform/skins/tags/xwiki-skin-toucan-1.12/pom.xml (from rev 14349,<br/>platform/skins/trunk/toucan/pom.xml)
+===================================================================
+--- platform/skins/tags/xwiki-skin-toucan-1.12/pom.xml<br/>(rev 0)
++++ platform/skins/tags/xwiki-skin-toucan-1.12/pom.xml	2008-11-20 19:10:33 UTC<br/>(rev 14350)
+@@ -0,0 +1,64 @@
++&lt;?xml version="1.0" encoding="UTF-8"?&gt;
++
++&lt;!--
++ *
++ * See the NOTICE file distributed with this work for additional
++ * information regarding copyright ownership.
++ *
++ * This is free software; you can redistribute it and/or modify it
++ * under the terms of the GNU Lesser General Public License as
++ * published by the Free Software Foundation; either version 2.1 of
++ * the License, or (at your option) any later version.
++ *
++ * This software is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
++ * Lesser General Public License for more details.
++ *
++ * You should have received a copy of the GNU Lesser General Public
++ * License along with this software; if not, write to the Free
++ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
++ * 02110-1301 USA, or see the FSF site: <url>http://www.fsf.org.</url>
++ *
++--&gt;
++
++&lt;project xmlns="<url>http://maven.apache.org/POM/4.0.0</url>"<br/>xmlns:xsi="<url>http://www.w3.org/2001/XMLSchema-instance</url>"<br/>xsi:schemaLocation="<url>http://maven.apache.org/POM/4.0.0</url><br/><url>http://maven.apache.org/maven-v4_0_0.xsd</url>"&gt;
++  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
++  &lt;parent&gt;
++    &lt;groupId&gt;com.xpn.xwiki.platform.skins&lt;/groupId&gt;
++    &lt;artifactId&gt;xwiki-skins&lt;/artifactId&gt;
++    &lt;version&gt;9&lt;/version&gt;
++  &lt;/parent&gt;
++  &lt;artifactId&gt;xwiki-skin-toucan&lt;/artifactId&gt;
++  &lt;name&gt;XWiki Platform - Skins - Toucan&lt;/name&gt;
++  &lt;version&gt;1.12&lt;/version&gt;
++  &lt;packaging&gt;pom&lt;/packaging&gt;
++  &lt;description&gt;
++    Toucan Skin. It is based on Albatross and requires that Albatross be set as<br/>the base skin
++    in xwiki.cfg to work.
++  &lt;/description&gt;
++  &lt;dependencies&gt;
++    &lt;!-- Toucan skin requires the Albatross Skin v1.1 or greater at runtime --&gt;
++    &lt;dependency&gt;
++      &lt;groupId&gt;com.xpn.xwiki.platform.skins&lt;/groupId&gt;
++      &lt;artifactId&gt;xwiki-skin-albatross&lt;/artifactId&gt;
++      &lt;version&gt;1.13&lt;/version&gt;
++      &lt;scope&gt;runtime&lt;/scope&gt;
++      &lt;type&gt;zip&lt;/type&gt;
++    &lt;/dependency&gt;
++  &lt;/dependencies&gt;
++  &lt;build&gt;
++    &lt;plugins&gt;
++      &lt;plugin&gt;
++        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
++        &lt;artifactId&gt;maven-assembly-plugin&lt;/artifactId&gt;
++      &lt;/plugin&gt;
++    &lt;/plugins&gt;
++  &lt;/build&gt;
++
++  &lt;scm&gt;
++<br/>&lt;connection&gt;scm:svn:<url>http://svn.xwiki.org/svnroot/xwiki/platform/skins/tags/xwiki-skin-toucan-1.12</url>&lt;/connection&gt;
++<br/>&lt;developerConnection&gt;scm:svn:<url>https://svn.xwiki.org/svnroot/xwiki/platform/skins/tags/xwiki-skin-toucan-1.12</url>&lt;/developerConnection&gt;
++<br/>&lt;url&gt;<url>http://svn.xwiki.org/svnroot/xwiki/platform/skins/tags/xwiki-skin-toucan-1.12</url>&lt;/url&gt;
++  &lt;/scm&gt;
++&lt;/project&gt;
+
+</para><footer type="list-management" depth="0">_______________________________________________
+notifications mailing list
+<email>notifications@xwiki.org</email>
+<url>http://lists.xwiki.org/mailman/listinfo/notifications</url>
+</footer></body></message>

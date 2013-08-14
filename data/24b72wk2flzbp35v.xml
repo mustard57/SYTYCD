@@ -1,0 +1,2505 @@
+<message message-id="20050411144115.56578.qmail@minotaur.apache.org" list="org.apache.forrest.svn" id="24b72wk2flzbp35v" type="checkins" date="2005-04-11T14:41:15Z" year="2005-01-01" year-month="2005-04-01" year-month-day="2005-04-11" thread-id="24b72wk2flzbp35v"><headers><envelope-from-line>From svn-return-1886-apmail-forrest-svn-archive=forrest.apache.org@forrest.apache.org Mon Apr 11 14:41:27 2005</envelope-from-line><from personal="crossley@apache.org" address="crossley@apache.org">crossley@apache.org</from><to personal="svn@forrest.apache.org" address="svn@forrest.apache.org">svn@forrest.apache.org</to><subject normal="svn commit: r160890 [3/4] - in forrest/site/0.7: abs-linkmap abs-menulinks contrib.html docs.html flyer.html forrest-issues.html guidelines.html index.html license.html linkmap.html live-sites.html mail-lists.html proposal-asf-forrestbot.html proposal-asf-publish.html who.html">svn commit: r160890 [3/4] - in forrest/site/0.7: abs-linkmap abs-menulinks
+ contrib.html docs.html flyer.html forrest-issues.html guidelines.html
+ index.html license.html linkmap.html live-sites.html mail-lists.html
+ proposal-asf-forrestbot.html proposal-asf-publish.html who.html</subject><return-path>svn-return-1886-apmail-forrest-svn-archive=forrest.apache.org@forrest.apache.org</return-path><delivered-to>apmail-forrest-svn-archive@www.apache.org</delivered-to><received>(qmail 56894 invoked from network); 11 Apr 2005 14:41:27 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur.apache.org with SMTP; 11 Apr 2005 14:41:27 -0000</received><received>(qmail 2480 invoked by uid 500); 11 Apr 2005 14:41:23 -0000</received><delivered-to>apmail-forrest-svn-archive@forrest.apache.org</delivered-to><received>(qmail 2347 invoked by uid 500); 11 Apr 2005 14:41:22 -0000</received><mailing-list>contact svn-help@forrest.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:svn-help@forrest.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:svn-unsubscribe@forrest.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:svn@forrest.apache.org&gt;</list-post><reply-to>"Forrest Developers List" &lt;dev@forrest.apache.org&gt;</reply-to><delivered-to>mailing list svn@forrest.apache.org</delivered-to><received>(qmail 2203 invoked by uid 99); 11 Apr 2005 14:41:21 -0000</received><x-asf-spam-status>No, hits=-9.3 required=10.0
+	tests=ALL_TRUSTED,NO_REAL_NAME,WEIRD_PORT</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from minotaur.apache.org (HELO minotaur.apache.org) (209.237.227.194)
+  by apache.org (qpsmtpd/0.28) with SMTP; Mon, 11 Apr 2005 07:41:16 -0700</received><received>(qmail 56581 invoked by uid 65534); 11 Apr 2005 14:41:15 -0000</received><message-id>20050411144115.56578.qmail@minotaur.apache.org</message-id><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>quoted-printable</content-transfer-encoding><x-mailer>svnmailer-1.0.0-dev</x-mailer><date>Mon, 11 Apr 2005 14:41:15 -0000</date><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>20050411144115.56578.qmail@minotaur.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Added: forrest/site/0.7/license.html
+URL: <br/><url>http://svn.apache.org/viewcvs/forrest/site/0.7/license.html?view=auto&amp;rev=160890</url> 
+==============================================================================
+--- forrest/site/0.7/license.html (added)
++++ forrest/site/0.7/license.html Mon Apr 11 07:41:12 2005
+@@ -0,0 +1,413 @@
++&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" <br/>"<url>http://www.w3.org/TR/html4/loose.dtd</url>"&gt; 
++&lt;html&gt;
++&lt;head&gt;
++&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
++&lt;meta content="Apache Forrest" name="Generator"&gt;
++&lt;meta name="Forrest-version" content="0.7-dev"&gt;
++&lt;meta name="Forrest-skin-name" content="pelt"&gt;
++&lt;meta-data&gt;&lt;/meta-data&gt;
++&lt;title&gt;Apache License (v0.7)&lt;/title&gt;
++&lt;link type="text/css" href="skin/basic.css" rel="stylesheet"&gt;
++&lt;link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet"&gt;
++&lt;link media="print" type="text/css" href="skin/print.css" rel="stylesheet"&gt;
++&lt;link type="text/css" href="skin/profile.css" rel="stylesheet"&gt;
++&lt;script src="skin/getBlank.js" language="javascript" <br/>type="text/javascript"&gt;&lt;/script&gt;&lt;script src="skin/getMenu.js" <br/>language="javascript" type="text/javascript"&gt;&lt;/script&gt;&lt;script <br/>src="skin/fontsize.js" language="javascript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;link rel="shortcut icon" href="favicon.ico"&gt;
++&lt;/head&gt;
++&lt;body onload="init()"&gt;
++&lt;script type="text/javascript"&gt;ndeSetTextSize();&lt;/script&gt;
++&lt;div id="top"&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;apache&lt;/a&gt; &amp;gt; &lt;a <br/>href="<url>http://forrest.apache.org/</url>"&gt;forrest&lt;/a&gt;&lt;script src="skin/breadcrumbs.js" <br/>language="JavaScript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |header
++    +--&gt;
++&lt;div class="header"&gt;
++&lt;!--+
++    |start group logo
++    +--&gt;
++&lt;div class="grouplogo"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Apache" <br/>src="images/apache-forrest.png" title="The Apache Software Foundation"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end group logo
++    +--&gt;
++&lt;!--+
++    |start Project Logo
++    +--&gt;
++&lt;div class="projectlogo"&gt;
++&lt;a href="<url>http://forrest.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Forrest" <br/>src="images/project-logo.gif" title="Apache Forrest"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end Project Logo
++    +--&gt;
++&lt;!--+
++    |start Search
++    +--&gt;
++&lt;div class="searchbox"&gt;
++&lt;form action="<url>http://www.google.com/search</url>" method="get" class="roundtopsmall"&gt;
++&lt;input value="forrest.apache.org" name="sitesearch" type="hidden"&gt;&lt;input <br/>onFocus="getBlank (this, 'Search the site with google:');" value="Search the <br/>site with google:" size="25" name="q" id="query" type="text"&gt;&amp;nbsp; 
++                    &lt;input name="Search" value="Search" type="submit"&gt;
++&lt;/form&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end search
++    +--&gt;
++&lt;!--+
++    |start Tabs
++    +--&gt;
++&lt;ul id="tabs"&gt;
++&lt;li class="current"&gt;
++&lt;a class="base-selected" href="index.html"&gt;Welcome&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="contrib.html"&gt;Project&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/index.html"&gt;0.7 Docs&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/howto/index.html"&gt;0.7 How-To&lt;/a&gt;
++&lt;/li&gt;
++&lt;/ul&gt;
++&lt;!--+
++    |end Tabs
++    +--&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="main"&gt;
++&lt;div id="publishedStrip"&gt;
++&lt;!--+
++    |start Subtabs
++    +--&gt;
++&lt;div id="level2tabs"&gt;&lt;/div&gt;
++&lt;!--+
++    |end Endtabs
++    +--&gt;
++&lt;script type="text/javascript" language="JavaScript"&gt;&lt;!--
++              document.write("Published: " + document.lastModified);
++              //  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++             
++             &amp;nbsp;
++           &lt;/div&gt;
++&lt;!--+
++    |start Menu, mainarea
++    +--&gt;
++&lt;!--+
++    |start Menu
++    +--&gt;
++&lt;div id="menu"&gt;
++&lt;div onclick="SwitchMenu('menu_selected_1.1', 'skin/')" <br/>id="menu_selected_1.1Title" class="menutitle" style="background-image: <br/>url('skin/images/chapter_open.gif');"&gt;About&lt;/div&gt; 
++&lt;div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: <br/>block;"&gt; 
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="index.html"&gt;Index&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menupage"&gt;
++&lt;div class="menupagetitle"&gt;License&lt;/div&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://forrest.apache.org/mirrors.cgi</url>"&gt;Download&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="who.html"&gt;Who we are&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="flyer.html"&gt;Flyer&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="live-sites.html"&gt;Example sites&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2', 'skin/')" id="menu_1.2Title" <br/>class="menutitle"&gt;Related projects&lt;/div&gt; 
++&lt;div id="menu_1.2" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://gump.apache.org/</url>"&gt;Apache Gump&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://cocoon.apache.org/</url>"&gt;Apache Cocoon&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://lenya.apache.org/</url>"&gt;Apache Lenya&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://xml.apache.org/</url>"&gt;Apache XML&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://www.apache.org/~vgritsenko/stats/</url>"&gt;Statistics&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="credit"&gt;
++&lt;hr&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++&lt;div id="roundbottom"&gt;
++&lt;img style="display: none" class="corner" height="15" width="15" alt="" <br/>src="skin/images/rc-b-l-15-1body-2menu-3menu.png"&gt;&lt;/div&gt; 
++&lt;!--+
++  |alternative credits
++  +--&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end Menu
++    +--&gt;
++&lt;!--+
++    |start content
++    +--&gt;
++&lt;div id="content"&gt;
++&lt;div title="Portable Document Format" class="pdflink"&gt;
++&lt;a class="dida" href="license.pdf"&gt;&lt;img alt="PDF -icon" <br/>src="skin/images/pdfdoc.gif" class="skin"&gt;&lt;br&gt; 
++        PDF&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="trail"&gt;
++	        Font size: 
++ &amp;nbsp;&lt;input value="Reset" class="resetfont" title="Reset text" <br/>onclick="ndeSetTextSize('reset'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="-a" class="smallerfont" title="Shrink text" <br/>onclick="ndeSetTextSize('decr'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="+a" class="biggerfont" title="Enlarge text" <br/>onclick="ndeSetTextSize('incr'); return false;" type="button"&gt; 
++&lt;/div&gt;
++&lt;h1&gt;Apache License&lt;/h1&gt;
++&lt;div id="motd-area"&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++  
++&lt;p&gt;
++    The Forrest distribution is licensed according to the liberal
++    Apache License. See the files in the top-level of the Forrest
++    distribution called LICENSE.txt (copy shown below) and NOTICE.txt
++    and see licenses for accompanying products in the "lib" directories.
++  &lt;/p&gt;
++
++&lt;pre class="code"&gt;
++                                 Apache License
++                           Version 2.0, January 2004
++                        <url>http://www.apache.org/licenses/</url>
++
++   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
++
++   1. Definitions.
++
++      "License" shall mean the terms and conditions for use, reproduction,
++      and distribution as defined by Sections 1 through 9 of this document.
++
++      "Licensor" shall mean the copyright owner or entity authorized by
++      the copyright owner that is granting the License.
++
++      "Legal Entity" shall mean the union of the acting entity and all
++      other entities that control, are controlled by, or are under common
++      control with that entity. For the purposes of this definition,
++      "control" means (i) the power, direct or indirect, to cause the
++      direction or management of such entity, whether by contract or
++      otherwise, or (ii) ownership of fifty percent (50%) or more of the
++      outstanding shares, or (iii) beneficial ownership of such entity.
++
++      "You" (or "Your") shall mean an individual or Legal Entity
++      exercising permissions granted by this License.
++
++      "Source" form shall mean the preferred form for making modifications,
++      including but not limited to software source code, documentation
++      source, and configuration files.
++
++      "Object" form shall mean any form resulting from mechanical
++      transformation or translation of a Source form, including but
++      not limited to compiled object code, generated documentation,
++      and conversions to other media types.
++
++      "Work" shall mean the work of authorship, whether in Source or
++      Object form, made available under the License, as indicated by a
++      copyright notice that is included in or attached to the work
++      (an example is provided in the Appendix below).
++
++      "Derivative Works" shall mean any work, whether in Source or Object
++      form, that is based on (or derived from) the Work and for which the
++      editorial revisions, annotations, elaborations, or other modifications
++      represent, as a whole, an original work of authorship. For the purposes
++      of this License, Derivative Works shall not include works that remain
++      separable from, or merely link (or bind by name) to the interfaces of,
++      the Work and Derivative Works thereof.
++
++      "Contribution" shall mean any work of authorship, including
++      the original version of the Work and any modifications or additions
++      to that Work or Derivative Works thereof, that is intentionally
++      submitted to Licensor for inclusion in the Work by the copyright owner
++      or by an individual or Legal Entity authorized to submit on behalf of
++      the copyright owner. For the purposes of this definition, "submitted"
++      means any form of electronic, verbal, or written communication sent
++      to the Licensor or its representatives, including but not limited to
++      communication on electronic mailing lists, source code control systems,
++      and issue tracking systems that are managed by, or on behalf of, the
++      Licensor for the purpose of discussing and improving the Work, but
++      excluding communication that is conspicuously marked or otherwise
++      designated in writing by the copyright owner as "Not a Contribution."
++
++      "Contributor" shall mean Licensor and any individual or Legal Entity
++      on behalf of whom a Contribution has been received by Licensor and
++      subsequently incorporated within the Work.
++
++   2. Grant of Copyright License. Subject to the terms and conditions of
++      this License, each Contributor hereby grants to You a perpetual,
++      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
++      copyright license to reproduce, prepare Derivative Works of,
++      publicly display, publicly perform, sublicense, and distribute the
++      Work and such Derivative Works in Source or Object form.
++
++   3. Grant of Patent License. Subject to the terms and conditions of
++      this License, each Contributor hereby grants to You a perpetual,
++      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
++      (except as stated in this section) patent license to make, have made,
++      use, offer to sell, sell, import, and otherwise transfer the Work,
++      where such license applies only to those patent claims licensable
++      by such Contributor that are necessarily infringed by their
++      Contribution(s) alone or by combination of their Contribution(s)
++      with the Work to which such Contribution(s) was submitted. If You
++      institute patent litigation against any entity (including a
++      cross-claim or counterclaim in a lawsuit) alleging that the Work
++      or a Contribution incorporated within the Work constitutes direct
++      or contributory patent infringement, then any patent licenses
++      granted to You under this License for that Work shall terminate
++      as of the date such litigation is filed.
++
++   4. Redistribution. You may reproduce and distribute copies of the
++      Work or Derivative Works thereof in any medium, with or without
++      modifications, and in Source or Object form, provided that You
++      meet the following conditions:
++
++      (a) You must give any other recipients of the Work or
++          Derivative Works a copy of this License; and
++
++      (b) You must cause any modified files to carry prominent notices
++          stating that You changed the files; and
++
++      (c) You must retain, in the Source form of any Derivative Works
++          that You distribute, all copyright, patent, trademark, and
++          attribution notices from the Source form of the Work,
++          excluding those notices that do not pertain to any part of
++          the Derivative Works; and
++
++      (d) If the Work includes a "NOTICE" text file as part of its
++          distribution, then any Derivative Works that You distribute must
++          include a readable copy of the attribution notices contained
++          within such NOTICE file, excluding those notices that do not
++          pertain to any part of the Derivative Works, in at least one
++          of the following places: within a NOTICE text file distributed
++          as part of the Derivative Works; within the Source form or
++          documentation, if provided along with the Derivative Works; or,
++          within a display generated by the Derivative Works, if and
++          wherever such third-party notices normally appear. The contents
++          of the NOTICE file are for informational purposes only and
++          do not modify the License. You may add Your own attribution
++          notices within Derivative Works that You distribute, alongside
++          or as an addendum to the NOTICE text from the Work, provided
++          that such additional attribution notices cannot be construed
++          as modifying the License.
++
++      You may add Your own copyright statement to Your modifications and
++      may provide additional or different license terms and conditions
++      for use, reproduction, or distribution of Your modifications, or
++      for any such Derivative Works as a whole, provided Your use,
++      reproduction, and distribution of the Work otherwise complies with
++      the conditions stated in this License.
++
++   5. Submission of Contributions. Unless You explicitly state otherwise,
++      any Contribution intentionally submitted for inclusion in the Work
++      by You to the Licensor shall be under the terms and conditions of
++      this License, without any additional terms or conditions.
++      Notwithstanding the above, nothing herein shall supersede or modify
++      the terms of any separate license agreement you may have executed
++      with Licensor regarding such Contributions.
++
++   6. Trademarks. This License does not grant permission to use the trade
++      names, trademarks, service marks, or product names of the Licensor,
++      except as required for reasonable and customary use in describing the
++      origin of the Work and reproducing the content of the NOTICE file.
++
++   7. Disclaimer of Warranty. Unless required by applicable law or
++      agreed to in writing, Licensor provides the Work (and each
++      Contributor provides its Contributions) on an "AS IS" BASIS,
++      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
++      implied, including, without limitation, any warranties or conditions
++      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
++      PARTICULAR PURPOSE. You are solely responsible for determining the
++      appropriateness of using or redistributing the Work and assume any
++      risks associated with Your exercise of permissions under this License.
++
++   8. Limitation of Liability. In no event and under no legal theory,
++      whether in tort (including negligence), contract, or otherwise,
++      unless required by applicable law (such as deliberate and grossly
++      negligent acts) or agreed to in writing, shall any Contributor be
++      liable to You for damages, including any direct, indirect, special,
++      incidental, or consequential damages of any character arising as a
++      result of this License or out of the use or inability to use the
++      Work (including but not limited to damages for loss of goodwill,
++      work stoppage, computer failure or malfunction, or any and all
++      other commercial damages or losses), even if such Contributor
++      has been advised of the possibility of such damages.
++
++   9. Accepting Warranty or Additional Liability. While redistributing
++      the Work or Derivative Works thereof, You may choose to offer,
++      and charge a fee for, acceptance of support, warranty, indemnity,
++      or other liability obligations and/or rights consistent with this
++      License. However, in accepting such obligations, You may act only
++      on Your own behalf and on Your sole responsibility, not on behalf
++      of any other Contributor, and only if You agree to indemnify,
++      defend, and hold each Contributor harmless for any liability
++      incurred by, or claims asserted against, such Contributor by reason
++      of your accepting any such warranty or additional liability.
++
++   END OF TERMS AND CONDITIONS
++
++   APPENDIX: How to apply the Apache License to your work.
++
++      To apply the Apache License to your work, attach the following
++      boilerplate notice, with the fields enclosed by brackets "[]"
++      replaced with your own identifying information. (Don't include
++      the brackets!)  The text should be enclosed in the appropriate
++      comment syntax for the file format. We also recommend that a
++      file or class name and description of purpose be included on the
++      same "printed page" as the copyright notice for easier
++      identification within third-party archives.
++
++   Copyright [yyyy] [name of copyright owner]
++
++   Licensed under the Apache License, Version 2.0 (the "License");
++   you may not use this file except in compliance with the License.
++   You may obtain a copy of the License at
++
++       <url>http://www.apache.org/licenses/LICENSE-2.0</url>
++
++   Unless required by applicable law or agreed to in writing, software
++   distributed under the License is distributed on an "AS IS" BASIS,
++   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++   See the License for the specific language governing permissions and
++   limitations under the License.
++&lt;/pre&gt;
++
++&lt;/div&gt;
++&lt;!--+
++    |end content
++    +--&gt;
++&lt;div class="clearboth"&gt;&amp;nbsp;&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="footer"&gt;
++&lt;!--+
++    |start bottomstrip
++    +--&gt;
++&lt;div class="lastmodified"&gt;
++&lt;script type="text/javascript"&gt;&lt;!--
++document.write("Last Published: " + document.lastModified);
++//  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;div class="copyright"&gt;
++ Copyright &amp;copy; 2002-2005 The Apache Software Foundation.&lt;/div&gt;
++&lt;!--+
++    |end bottomstrip
++    +--&gt;
++&lt;/div&gt;
++&lt;/body&gt;
++&lt;/html&gt;
+
+</para><para depth="0">Propchange: forrest/site/0.7/license.html
+------------------------------------------------------------------------------
+    svn:eol-style = native
+
+</para><para depth="0">Added: forrest/site/0.7/linkmap.html
+URL: <br/><url>http://svn.apache.org/viewcvs/forrest/site/0.7/linkmap.html?view=auto&amp;rev=160890</url> 
+==============================================================================
+--- forrest/site/0.7/linkmap.html (added)
++++ forrest/site/0.7/linkmap.html Mon Apr 11 07:41:12 2005
+@@ -0,0 +1,984 @@
++&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" <br/>"<url>http://www.w3.org/TR/html4/loose.dtd</url>"&gt; 
++&lt;html&gt;
++&lt;head&gt;
++&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
++&lt;meta content="Apache Forrest" name="Generator"&gt;
++&lt;meta name="Forrest-version" content="0.7-dev"&gt;
++&lt;meta name="Forrest-skin-name" content="pelt"&gt;
++&lt;meta-data&gt;&lt;/meta-data&gt;
++&lt;title&gt;Site Linkmap (v0.7)&lt;/title&gt;
++&lt;link type="text/css" href="skin/basic.css" rel="stylesheet"&gt;
++&lt;link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet"&gt;
++&lt;link media="print" type="text/css" href="skin/print.css" rel="stylesheet"&gt;
++&lt;link type="text/css" href="skin/profile.css" rel="stylesheet"&gt;
++&lt;script src="skin/getBlank.js" language="javascript" <br/>type="text/javascript"&gt;&lt;/script&gt;&lt;script src="skin/getMenu.js" <br/>language="javascript" type="text/javascript"&gt;&lt;/script&gt;&lt;script <br/>src="skin/fontsize.js" language="javascript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;link rel="shortcut icon" href="favicon.ico"&gt;
++&lt;/head&gt;
++&lt;body onload="init()"&gt;
++&lt;script type="text/javascript"&gt;ndeSetTextSize();&lt;/script&gt;
++&lt;div id="top"&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;apache&lt;/a&gt; &amp;gt; &lt;a <br/>href="<url>http://forrest.apache.org/</url>"&gt;forrest&lt;/a&gt;&lt;script src="skin/breadcrumbs.js" <br/>language="JavaScript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |header
++    +--&gt;
++&lt;div class="header"&gt;
++&lt;!--+
++    |start group logo
++    +--&gt;
++&lt;div class="grouplogo"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Apache" <br/>src="images/apache-forrest.png" title="The Apache Software Foundation"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end group logo
++    +--&gt;
++&lt;!--+
++    |start Project Logo
++    +--&gt;
++&lt;div class="projectlogo"&gt;
++&lt;a href="<url>http://forrest.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Forrest" <br/>src="images/project-logo.gif" title="Apache Forrest"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end Project Logo
++    +--&gt;
++&lt;!--+
++    |start Search
++    +--&gt;
++&lt;div class="searchbox"&gt;
++&lt;form action="<url>http://www.google.com/search</url>" method="get" class="roundtopsmall"&gt;
++&lt;input value="forrest.apache.org" name="sitesearch" type="hidden"&gt;&lt;input <br/>onFocus="getBlank (this, 'Search the site with google:');" value="Search the <br/>site with google:" size="25" name="q" id="query" type="text"&gt;&amp;nbsp; 
++                    &lt;input name="Search" value="Search" type="submit"&gt;
++&lt;/form&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end search
++    +--&gt;
++&lt;!--+
++    |start Tabs
++    +--&gt;
++&lt;ul id="tabs"&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="index.html"&gt;Welcome&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="contrib.html"&gt;Project&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/index.html"&gt;0.7 Docs&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/howto/index.html"&gt;0.7 How-To&lt;/a&gt;
++&lt;/li&gt;
++&lt;/ul&gt;
++&lt;!--+
++    |end Tabs
++    +--&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="main"&gt;
++&lt;div id="publishedStrip"&gt;
++&lt;!--+
++    |start Subtabs
++    +--&gt;
++&lt;div id="level2tabs"&gt;&lt;/div&gt;
++&lt;!--+
++    |end Endtabs
++    +--&gt;
++&lt;script type="text/javascript" language="JavaScript"&gt;&lt;!--
++              document.write("Published: " + document.lastModified);
++              //  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++             
++             &amp;nbsp;
++           &lt;/div&gt;
++&lt;!--+
++    |start Menu, mainarea
++    +--&gt;
++&lt;!--+
++    |start Menu
++    +--&gt;
++&lt;div id="menu"&gt;
++&lt;div onclick="SwitchMenu('menu_1.1', 'skin/')" id="menu_1.1Title" <br/>class="menutitle"&gt;About&lt;/div&gt; 
++&lt;div id="menu_1.1" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="index.html"&gt;Index&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="license.html"&gt;License&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://forrest.apache.org/mirrors.cgi</url>"&gt;Download&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="who.html"&gt;Who we are&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="flyer.html"&gt;Flyer&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="live-sites.html"&gt;Example sites&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2', 'skin/')" id="menu_1.2Title" <br/>class="menutitle"&gt;Documentation&lt;/div&gt; 
++&lt;div id="menu_1.2" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/index.html"&gt;Overview&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/faq.html"&gt;FAQs&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/changes.html"&gt;Changes&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/todo.html"&gt;Todo&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/your-project.html"&gt;Using Forrest&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/validation.html"&gt;XML Validation&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/linking.html"&gt;Menus and Linking&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/searching.html"&gt;Searching&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/skins.html"&gt;Default Skins&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/skin-package.html"&gt;Skin Packages&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/plugins/usingPlugins.html"&gt;Plugins&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/views.html"&gt;Views-dev&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/forrest-contract.html"&gt;Our Contract&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/compliance.html"&gt;Standards Compliance&lt;/a&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.15', 'skin/')" id="menu_1.2.15Title" <br/>class="menutitle"&gt;Advanced Topics&lt;/div&gt; 
++&lt;div id="menu_1.2.15" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/build.html"&gt;Building Forrest&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/catalog.html"&gt;Using DTD Catalogs&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/sitemap-ref.html"&gt;Sitemap Reference&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/project-sitemap.html"&gt;Project sitemap&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/plugins/pluginInfrastructure.html"&gt;Plugin <br/>Infrastructure&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/cap.html"&gt;Sourcetype Action&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.16', 'skin/')" id="menu_1.2.16Title" <br/>class="menutitle"&gt;Other versions&lt;/div&gt; 
++&lt;div id="menu_1.2.16" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs.html"&gt;Overview&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://forrest.apache.org/docs/../0.8/</url>"&gt;0.8-dev&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/index.html"&gt;0.7 (current)&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://forrest.apache.org/docs/../0.6/</url>"&gt;0.6&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.17', 'skin/')" id="menu_1.2.17Title" <br/>class="menutitle"&gt;Upgrading&lt;/div&gt; 
++&lt;div id="menu_1.2.17" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/upgrading_07.html"&gt;Upgrading to 0.7&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/upgrading_06.html"&gt;Upgrading to 0.6&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.18', 'skin/')" id="menu_1.2.18Title" <br/>class="menutitle"&gt;SubProjects&lt;/div&gt; 
++&lt;div id="menu_1.2.18" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/forrestbar.html"&gt;ForrestBar&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/forrestbot.html"&gt;Forrestbot&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/forrestbot-web-interface.html"&gt;Forrestbot Webapp&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.19', 'skin/')" id="menu_1.2.19Title" <br/>class="menutitle"&gt;Reference docs&lt;/div&gt; 
++&lt;div id="menu_1.2.19" class="menuitemgroup"&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.19.1', 'skin/')" id="menu_1.2.19.1Title" <br/>class="menutitle"&gt;DTD documentation&lt;/div&gt; 
++&lt;div id="menu_1.2.19.1" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/dtd-docs.html"&gt;Overview&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/document-v20.dtdx.html"&gt;document-v20&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto-v20.dtdx.html"&gt;howto-v20&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/faq-v20.dtdx.html"&gt;faq-v20&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/document-v13.dtdx.html"&gt;document-v13&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto-v13.dtdx.html"&gt;howto-v13&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/faq-v13.dtdx.html"&gt;faq-v13&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.19.2', 'skin/')" id="menu_1.2.19.2Title" <br/>class="menutitle"&gt;Doc samples&lt;/div&gt; 
++&lt;div id="menu_1.2.19.2" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/document-v13.html"&gt;document-v13&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/document-v20.html"&gt;document-v20&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.20', 'skin/')" id="menu_1.2.20Title" <br/>class="menutitle"&gt;Older Docs&lt;/div&gt; 
++&lt;div id="menu_1.2.20" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/primer.html"&gt;Forrest Primer&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/libre-intro.html"&gt;Libre&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/dreams.html"&gt;Dream list&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2.21', 'skin/')" id="menu_1.2.21Title" <br/>class="menutitle"&gt;How-To&lt;/div&gt; 
++&lt;div id="menu_1.2.21" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/index.html"&gt;Overview&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/howto-howto.html"&gt;Write a How-to&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/howto-asf-mirror.html"&gt;Download mirror&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/howto-pdf-tab.html"&gt;Create tab PDF&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/howto-editcss.html"&gt;Edit CSS (WYSIWYG)&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/howto-corner-images.html"&gt;CSS corner SVG&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/howto-forrest-from-maven.html"&gt;Maven <br/>Integration&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/howto-buildPlugin.html"&gt;Build a Plugin&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="docs/howto/howto-custom-html-source.html"&gt;Custom html <br/>source&lt;/a&gt; 
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.3', 'skin/')" id="menu_1.3Title" <br/>class="menutitle"&gt;Getting Involved&lt;/div&gt; 
++&lt;div id="menu_1.3" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="contrib.html"&gt;Contributing&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://svn.apache.org/viewcvs.cgi/forrest/trunk/</url>"&gt;Browse <br/>SVN&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="mail-lists.html"&gt;Mail lists&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" <br/>href="<url>http://issues.cocoondev.org/secure/BrowseProject.jspa?id=10000</url>"&gt;Bugs and <br/>Issues&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="forrest-issues.html"&gt;Open Issues&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://brutus.apache.org/gump/public/forrest/</url>"&gt;Gump <br/>Integration&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="guidelines.html"&gt;Project guidelines&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.4', 'skin/')" id="menu_1.4Title" <br/>class="menutitle"&gt;Proposals&lt;/div&gt; 
++&lt;div id="menu_1.4" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="proposal-asf-publish.html"&gt;ASF Publishing&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="proposal-asf-forrestbot.html"&gt;ASF Forrestbot&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.5', 'skin/')" id="menu_1.5Title" <br/>class="menutitle"&gt;Related projects&lt;/div&gt; 
++&lt;div id="menu_1.5" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://gump.apache.org/</url>"&gt;Apache Gump&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://cocoon.apache.org/</url>"&gt;Apache Cocoon&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://lenya.apache.org/</url>"&gt;Apache Lenya&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://xml.apache.org/</url>"&gt;Apache XML&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://www.apache.org/~vgritsenko/stats/</url>"&gt;Statistics&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="credit"&gt;
++&lt;hr&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++&lt;div id="roundbottom"&gt;
++&lt;img style="display: none" class="corner" height="15" width="15" alt="" <br/>src="skin/images/rc-b-l-15-1body-2menu-3menu.png"&gt;&lt;/div&gt; 
++&lt;!--+
++  |alternative credits
++  +--&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end Menu
++    +--&gt;
++&lt;!--+
++    |start content
++    +--&gt;
++&lt;div id="content"&gt;
++&lt;div title="Portable Document Format" class="pdflink"&gt;
++&lt;a class="dida" href="linkmap.pdf"&gt;&lt;img alt="PDF -icon" <br/>src="skin/images/pdfdoc.gif" class="skin"&gt;&lt;br&gt; 
++        PDF&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="trail"&gt;
++	        Font size: 
++ &amp;nbsp;&lt;input value="Reset" class="resetfont" title="Reset text" <br/>onclick="ndeSetTextSize('reset'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="-a" class="smallerfont" title="Shrink text" <br/>onclick="ndeSetTextSize('decr'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="+a" class="biggerfont" title="Enlarge text" <br/>onclick="ndeSetTextSize('incr'); return false;" type="button"&gt; 
++&lt;/div&gt;
++&lt;h1&gt;Site Linkmap&lt;/h1&gt;
++&lt;div id="motd-area"&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++&lt;div id="minitoc-area"&gt;
++&lt;ul class="minitoc"&gt;
++&lt;li&gt;
++&lt;a href="#Table+of+Contents"&gt;Table of Contents&lt;/a&gt;
++&lt;/li&gt;
++&lt;/ul&gt;
++&lt;/div&gt;
++&lt;a name="N10007"&gt;&lt;/a&gt;&lt;a name="Table+of+Contents"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;Table of Contents&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;li&gt;
++&lt;a <br/>href=""&gt;Forrest&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;site&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++
++  
++&lt;li&gt;
++&lt;a <br/>href=""&gt;About&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;about&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="index.html"&gt;Index&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;index&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="license.html"&gt;License&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;license&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="<url>http://forrest.apache.org/mirrors.cgi</url>"&gt;Download&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;download&lt;/em&gt; 
++&lt;/li&gt;
++    
++    
++&lt;li&gt;
++&lt;a href="who.html"&gt;Who we <br/>are&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;who&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="flyer.html"&gt;Flyer&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;flyer&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="live-sites.html"&gt;Example <br/>sites&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;live-sites&lt;/em&gt; 
++&lt;/li&gt;
++  
++&lt;/ul&gt;
++
++  
++&lt;li&gt;
++&lt;a <br/>href="docs/"&gt;Documentation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;documentation&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="docs/index.html"&gt;Overview&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;index&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="docs/faq.html"&gt;FAQs&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;faq&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++      
++      
++      
++    
++&lt;/ul&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="docs/changes.html"&gt;Changes&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;changes&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="docs/todo.html"&gt;Todo&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;todo&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="docs/your-project.html"&gt;Using <br/>Forrest&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;your-project&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++      
++      
++      
++      
++      
++    
++&lt;/ul&gt;
++    
++&lt;li&gt;
++&lt;a href="docs/validation.html"&gt;XML <br/>Validation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;validation&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="docs/linking.html"&gt;Menus and <br/>Linking&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;linking&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++    
++&lt;/ul&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="docs/searching.html"&gt;Searching&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;searching&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="docs/skins.html"&gt;Default <br/>Skins&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;skins&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="docs/skin-package.html"&gt;Skin <br/>Packages&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;skin-package&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="docs/plugins/usingPlugins.html"&gt;Plugins&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;plugins&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="docs/views.html"&gt;Views-dev&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;views&lt;/em&gt; 
++&lt;/li&gt;
++    
++    
++&lt;li&gt;
++&lt;a href="docs/forrest-contract.html"&gt;Our <br/>Contract&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;forrest-contract&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="docs/compliance.html"&gt;Standards <br/>Compliance&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;compliance&lt;/em&gt; 
++&lt;/li&gt;
++
++    
++&lt;li&gt;
++&lt;a href=""&gt;Advanced <br/>Topics&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;developers&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/build.html"&gt;Building <br/>Forrest&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;build&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/catalog.html"&gt;Using DTD <br/>Catalogs&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;catalog&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/sitemap-ref.html"&gt;Sitemap <br/>Reference&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;sitemap-ref&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++        
++        
++        
++        
++      
++&lt;/ul&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/project-sitemap.html"&gt;Project <br/>sitemap&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;project-sitemap&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/plugins/pluginInfrastructure.html"&gt;Plugin <br/>Infrastructure&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;pluginInfrastructure&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/cap.html"&gt;Sourcetype <br/>Action&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;cap&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;/ul&gt;
++
++    
++&lt;li&gt;
++&lt;a href=""&gt;Other <br/>versions&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;versions&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++&lt;li&gt;
++&lt;a <br/>href="docs/../docs.html"&gt;Overview&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;overview&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a <br/>href="<url>http://forrest.apache.org/docs/../0.8/</url>"&gt;0.8-dev&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;v0.8&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/index.html"&gt;0.7 <br/>(current)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;v0.7&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a <br/>href="<url>http://forrest.apache.org/docs/../0.6/</url>"&gt;0.6&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;v0.6&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;/ul&gt;
++    
++    
++&lt;li&gt;
++&lt;a <br/>href=""&gt;Upgrading&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;upgrading&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/upgrading_07.html"&gt;Upgrading to <br/>0.7&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;upgrading_07&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/upgrading_06.html"&gt;Upgrading to <br/>0.6&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;upgrading_06&lt;/em&gt; 
++&lt;/li&gt;
++      
++    
++&lt;/ul&gt;
++
++    
++&lt;li&gt;
++&lt;a <br/>href=""&gt;SubProjects&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;subprojects&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++&lt;li&gt;
++&lt;a <br/>href="docs/forrestbar.html"&gt;ForrestBar&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;forrestbar&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a <br/>href="docs/forrestbot.html"&gt;Forrestbot&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;forrestbot&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/forrestbot-web-interface.html"&gt;Forrestbot <br/>Webapp&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;forrestbot-web-interface&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;/ul&gt;
++    
++    
++&lt;li&gt;
++&lt;a href=""&gt;Reference <br/>docs&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;samples&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++&lt;li&gt;
++&lt;a href=""&gt;DTD <br/>documentation&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;dtd-docs-container&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/dtd-docs.html"&gt;Overview&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;dtd-docs&lt;/em&gt; 
++&lt;/li&gt;
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/document-v20.dtdx.html"&gt;document-v20&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;document-v20-dtd&lt;/em&gt; 
++&lt;/li&gt;
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/howto-v20.dtdx.html"&gt;howto-v20&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;howto-v20-dtd&lt;/em&gt; 
++&lt;/li&gt;
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/faq-v20.dtdx.html"&gt;faq-v20&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;faq-v20-dtd&lt;/em&gt; 
++&lt;/li&gt;
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/document-v13.dtdx.html"&gt;document-v13&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;document-v13-dtd&lt;/em&gt; 
++&lt;/li&gt;
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/howto-v13.dtdx.html"&gt;howto-v13&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;howto-v13-dtd&lt;/em&gt; 
++&lt;/li&gt;
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/faq-v13.dtdx.html"&gt;faq-v13&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;faq-v13-dtd&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;/ul&gt;
++      
++&lt;li&gt;
++&lt;a href=""&gt;Doc <br/>samples&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;samples-container&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++        
++        
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/document-v13.html"&gt;document-v13&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;document-v13&lt;/em&gt; 
++&lt;/li&gt;
++        
++&lt;li&gt;
++&lt;a <br/>href="docs/document-v20.html"&gt;document-v20&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;document-v20&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;/ul&gt;
++    
++&lt;/ul&gt;
++
++    
++&lt;li&gt;
++&lt;a href=""&gt;Older <br/>Docs&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;older_documentation&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/primer.html"&gt;Forrest <br/>Primer&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;primer&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++        
++      
++&lt;/ul&gt;
++      
++&lt;li&gt;
++&lt;a <br/>href="docs/libre-intro.html"&gt;Libre&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;libre-intro&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/dreams.html"&gt;Dream <br/>list&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;dreams&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;/ul&gt;
++
++    
++&lt;li&gt;
++&lt;a <br/>href="docs/howto/"&gt;How-To&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;howto&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++&lt;li&gt;
++&lt;a <br/>href="docs/howto/index.html"&gt;Overview&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;overview&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/howto/howto-howto.html"&gt;Write a <br/>How-to&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;write-howto&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/howto/howto-asf-mirror.html"&gt;Download <br/>mirror&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;asf-mirror&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/howto/howto-pdf-tab.html"&gt;Create tab <br/>PDF&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;pdf-tab&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/howto/howto-editcss.html"&gt;Edit CSS <br/>(WYSIWYG)&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;editcss&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/howto/howto-corner-images.html"&gt;CSS corner <br/>SVG&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;corner-css&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/howto/howto-forrest-from-maven.html"&gt;Maven <br/>Integration&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;maven&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/howto/howto-buildPlugin.html"&gt;Build a <br/>Plugin&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;buildPlugin&lt;/em&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="docs/howto/howto-custom-html-source.html"&gt;Custom html <br/>source&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;custom-html-source&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;/ul&gt;
++  
++&lt;/ul&gt;
++
++  
++&lt;li&gt;
++&lt;a href=""&gt;Getting <br/>Involved&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;getting-involved&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="contrib.html"&gt;Contributing&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;contrib&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++    
++&lt;/ul&gt;
++    
++&lt;li&gt;
++&lt;a href="<url>http://svn.apache.org/viewcvs.cgi/forrest/trunk/</url>"&gt;Browse <br/>SVN&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;SVN&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="mail-lists.html"&gt;Mail <br/>lists&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;mail-lists&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++      
++      
++      
++    
++&lt;/ul&gt;
++    
++&lt;li&gt;
++&lt;a href="<url>http://issues.cocoondev.org/secure/BrowseProject.jspa?id=10000</url>"&gt;Bugs <br/>and <br/>Issues&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;bugs&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="forrest-issues.html"&gt;Open <br/>Issues&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;forrest-issues&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="<url>http://brutus.apache.org/gump/public/forrest/</url>"&gt;Gump <br/>Integration&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;gump-forrest&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="guidelines.html"&gt;Project <br/>guidelines&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;guidelines&lt;/em&gt; 
++&lt;/li&gt;
++  
++&lt;/ul&gt;
++
++  
++&lt;li&gt;
++&lt;a <br/>href=""&gt;Proposals&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;proposals&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++    
++&lt;li&gt;
++&lt;a href="proposal-asf-publish.html"&gt;ASF <br/>Publishing&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;asf-publishing&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="proposal-asf-forrestbot.html"&gt;ASF <br/>Forrestbot&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;asf-forrestbot&lt;/em&gt; 
++&lt;/li&gt;
++  
++&lt;/ul&gt;
++
++  
++&lt;li&gt;
++&lt;a href=""&gt;Related <br/>projects&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;references&lt;/em&gt; 
++&lt;/li&gt;
++&lt;ul&gt;
++    
++&lt;li&gt;
++&lt;a href="<url>http://gump.apache.org/</url>"&gt;Apache <br/>Gump&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;gump&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="<url>http://cocoon.apache.org/</url>"&gt;Apache <br/>Cocoon&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;cocoon&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="<url>http://lenya.apache.org/</url>"&gt;Apache <br/>Lenya&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;lenya&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a href="<url>http://xml.apache.org/</url>"&gt;Apache <br/>XML&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;xml&lt;/em&gt; 
++&lt;/li&gt;
++    
++&lt;li&gt;
++&lt;a <br/>href="<url>http://www.apache.org/~vgritsenko/stats/</url>"&gt;Statistics&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;_________________________&amp;nbsp;&amp;nbsp;&lt;em&gt;apache-stats&lt;/em&gt; 
++&lt;/li&gt;
++  
++&lt;/ul&gt;
++
++  
++
++  
++&lt;ul&gt;
++    
++&lt;ul&gt;
++      
++      
++    
++&lt;/ul&gt;
++    
++&lt;ul&gt;
++      
++      
++      
++      
++      
++      
++      
++      
++    
++&lt;/ul&gt;
++    
++&lt;ul&gt;
++      
++      
++      
++&lt;ul&gt;
++        
++        
++        
++      
++&lt;/ul&gt;
++      
++      
++&lt;ul&gt;
++        
++      
++&lt;/ul&gt;
++      
++&lt;ul&gt;
++         
++         
++         
++         
++         
++         
++&lt;ul&gt;
++           
++&lt;ul&gt;
++             
++           
++&lt;/ul&gt;
++         
++&lt;/ul&gt;
++         
++         
++&lt;ul&gt;
++           
++         
++&lt;/ul&gt;
++         
++         
++         
++         
++         
++&lt;ul&gt;
++           
++           
++           
++           
++         
++&lt;/ul&gt;
++      
++&lt;/ul&gt;
++    
++&lt;/ul&gt;
++
++    
++&lt;ul&gt;
++      
++      
++      
++&lt;ul&gt;
++        
++      
++&lt;/ul&gt;
++    
++&lt;/ul&gt;
++    
++&lt;ul&gt;
++      
++    
++&lt;/ul&gt;
++    
++    
++    
++    
++
++    
++    
++    
++
++    
++
++    
++&lt;ul&gt;
++      
++      
++      
++      
++    
++&lt;/ul&gt;
++  
++&lt;/ul&gt;
++
++
++&lt;/ul&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end content
++    +--&gt;
++&lt;div class="clearboth"&gt;&amp;nbsp;&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="footer"&gt;
++&lt;!--+
++    |start bottomstrip
++    +--&gt;
++&lt;div class="lastmodified"&gt;
++&lt;script type="text/javascript"&gt;&lt;!--
++document.write("Last Published: " + document.lastModified);
++//  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;div class="copyright"&gt;
++ Copyright &amp;copy; 2002-2005 The Apache Software Foundation.&lt;/div&gt;
++&lt;!--+
++    |end bottomstrip
++    +--&gt;
++&lt;/div&gt;
++&lt;/body&gt;
++&lt;/html&gt;
+
+</para><para depth="0">Propchange: forrest/site/0.7/linkmap.html
+------------------------------------------------------------------------------
+    svn:eol-style = native
+
+</para><para depth="0">Added: forrest/site/0.7/live-sites.html
+URL: <br/><url>http://svn.apache.org/viewcvs/forrest/site/0.7/live-sites.html?view=auto&amp;rev=160890</url> 
+==============================================================================
+--- forrest/site/0.7/live-sites.html (added)
++++ forrest/site/0.7/live-sites.html Mon Apr 11 07:41:12 2005
+@@ -0,0 +1,387 @@
++&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" <br/>"<url>http://www.w3.org/TR/html4/loose.dtd</url>"&gt; 
++&lt;html&gt;
++&lt;head&gt;
++&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
++&lt;meta content="Apache Forrest" name="Generator"&gt;
++&lt;meta name="Forrest-version" content="0.7-dev"&gt;
++&lt;meta name="Forrest-skin-name" content="pelt"&gt;
++&lt;meta-data&gt;&lt;/meta-data&gt;
++&lt;title&gt;Examples Built-With-Forrest (v0.7)&lt;/title&gt;
++&lt;link type="text/css" href="skin/basic.css" rel="stylesheet"&gt;
++&lt;link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet"&gt;
++&lt;link media="print" type="text/css" href="skin/print.css" rel="stylesheet"&gt;
++&lt;link type="text/css" href="skin/profile.css" rel="stylesheet"&gt;
++&lt;script src="skin/getBlank.js" language="javascript" <br/>type="text/javascript"&gt;&lt;/script&gt;&lt;script src="skin/getMenu.js" <br/>language="javascript" type="text/javascript"&gt;&lt;/script&gt;&lt;script <br/>src="skin/fontsize.js" language="javascript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;link rel="shortcut icon" href="favicon.ico"&gt;
++&lt;/head&gt;
++&lt;body onload="init()"&gt;
++&lt;script type="text/javascript"&gt;ndeSetTextSize();&lt;/script&gt;
++&lt;div id="top"&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;apache&lt;/a&gt; &amp;gt; &lt;a <br/>href="<url>http://forrest.apache.org/</url>"&gt;forrest&lt;/a&gt;&lt;script src="skin/breadcrumbs.js" <br/>language="JavaScript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |header
++    +--&gt;
++&lt;div class="header"&gt;
++&lt;!--+
++    |start group logo
++    +--&gt;
++&lt;div class="grouplogo"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Apache" <br/>src="images/apache-forrest.png" title="The Apache Software Foundation"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end group logo
++    +--&gt;
++&lt;!--+
++    |start Project Logo
++    +--&gt;
++&lt;div class="projectlogo"&gt;
++&lt;a href="<url>http://forrest.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Forrest" <br/>src="images/project-logo.gif" title="Apache Forrest"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end Project Logo
++    +--&gt;
++&lt;!--+
++    |start Search
++    +--&gt;
++&lt;div class="searchbox"&gt;
++&lt;form action="<url>http://www.google.com/search</url>" method="get" class="roundtopsmall"&gt;
++&lt;input value="forrest.apache.org" name="sitesearch" type="hidden"&gt;&lt;input <br/>onFocus="getBlank (this, 'Search the site with google:');" value="Search the <br/>site with google:" size="25" name="q" id="query" type="text"&gt;&amp;nbsp; 
++                    &lt;input name="Search" value="Search" type="submit"&gt;
++&lt;/form&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end search
++    +--&gt;
++&lt;!--+
++    |start Tabs
++    +--&gt;
++&lt;ul id="tabs"&gt;
++&lt;li class="current"&gt;
++&lt;a class="base-selected" href="index.html"&gt;Welcome&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="contrib.html"&gt;Project&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/index.html"&gt;0.7 Docs&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/howto/index.html"&gt;0.7 How-To&lt;/a&gt;
++&lt;/li&gt;
++&lt;/ul&gt;
++&lt;!--+
++    |end Tabs
++    +--&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="main"&gt;
++&lt;div id="publishedStrip"&gt;
++&lt;!--+
++    |start Subtabs
++    +--&gt;
++&lt;div id="level2tabs"&gt;&lt;/div&gt;
++&lt;!--+
++    |end Endtabs
++    +--&gt;
++&lt;script type="text/javascript" language="JavaScript"&gt;&lt;!--
++              document.write("Published: " + document.lastModified);
++              //  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++             
++             &amp;nbsp;
++           &lt;/div&gt;
++&lt;!--+
++    |start Menu, mainarea
++    +--&gt;
++&lt;!--+
++    |start Menu
++    +--&gt;
++&lt;div id="menu"&gt;
++&lt;div onclick="SwitchMenu('menu_selected_1.1', 'skin/')" <br/>id="menu_selected_1.1Title" class="menutitle" style="background-image: <br/>url('skin/images/chapter_open.gif');"&gt;About&lt;/div&gt; 
++&lt;div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: <br/>block;"&gt; 
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="index.html"&gt;Index&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="license.html"&gt;License&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://forrest.apache.org/mirrors.cgi</url>"&gt;Download&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="who.html"&gt;Who we are&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="flyer.html"&gt;Flyer&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menupage"&gt;
++&lt;div class="menupagetitle"&gt;Example sites&lt;/div&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2', 'skin/')" id="menu_1.2Title" <br/>class="menutitle"&gt;Related projects&lt;/div&gt; 
++&lt;div id="menu_1.2" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://gump.apache.org/</url>"&gt;Apache Gump&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://cocoon.apache.org/</url>"&gt;Apache Cocoon&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://lenya.apache.org/</url>"&gt;Apache Lenya&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://xml.apache.org/</url>"&gt;Apache XML&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://www.apache.org/~vgritsenko/stats/</url>"&gt;Statistics&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="credit"&gt;
++&lt;hr&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++&lt;div id="roundbottom"&gt;
++&lt;img style="display: none" class="corner" height="15" width="15" alt="" <br/>src="skin/images/rc-b-l-15-1body-2menu-3menu.png"&gt;&lt;/div&gt; 
++&lt;!--+
++  |alternative credits
++  +--&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end Menu
++    +--&gt;
++&lt;!--+
++    |start content
++    +--&gt;
++&lt;div id="content"&gt;
++&lt;div title="Portable Document Format" class="pdflink"&gt;
++&lt;a class="dida" href="live-sites.pdf"&gt;&lt;img alt="PDF -icon" <br/>src="skin/images/pdfdoc.gif" class="skin"&gt;&lt;br&gt; 
++        PDF&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="trail"&gt;
++	        Font size: 
++ &amp;nbsp;&lt;input value="Reset" class="resetfont" title="Reset text" <br/>onclick="ndeSetTextSize('reset'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="-a" class="smallerfont" title="Shrink text" <br/>onclick="ndeSetTextSize('decr'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="+a" class="biggerfont" title="Enlarge text" <br/>onclick="ndeSetTextSize('incr'); return false;" type="button"&gt; 
++&lt;/div&gt;
++&lt;h1&gt;Examples Built-With-Forrest&lt;/h1&gt;
++&lt;div id="motd-area"&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt; 
++    
++&lt;p&gt;These are some of the sites that were created using Apache Forrest
++     technology.&lt;/p&gt;
++    
++&lt;ul&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://xml.apache.org/</url>"&gt;Apache XML Project (xml.apache.org)&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://forrest.apache.org/</url>"&gt;Apache Forrest&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://cocoon.apache.org/</url>"&gt;Apache Cocoon&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://lenya.apache.org/</url>"&gt;Apache Lenya&lt;/a&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.adriatico.be/</url>"&gt;Adriatico&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://outerthought.net/</url>"&gt;Outerthought.net&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.xmlbelux.be/</url>"&gt;The BeLux XML User's Group&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://aft.sourceforge.net/</url>"&gt;Anteater&lt;/a&gt; - Ant-based functional <br/>testing&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://chaperon.sourceforge.net</url>"&gt;Chaperon&lt;/a&gt; - text parser&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.iasandcb.pe.kr/3g/</url>"&gt;IAS&amp;amp;CB&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;Some &lt;a href="<url>http://www.apache.org/~coar/people.html</url>"&gt;Apache
++        Committer&lt;/a&gt; personal pages&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://incubator.apache.org/</url>"&gt;Apache Incubator&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://xml.apache.org/fop/</url>"&gt;Apache FOP&lt;/a&gt;
++        (Formatting Objects Processor)&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.dream-models.com/</url>"&gt;Dream Models&lt;/a&gt;
++        - gather information about electric radio controlled helicopters&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.lancecom.com/</url>"&gt;Lance Communications&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://people.apache.org/~vgritsenko/stats/</url>"&gt;Apache Stats (Vadim's <br/>Home Page)&lt;/a&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://krysalis.sf.net/</url>"&gt;Krysalis Community Project&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.moerser-blechblaesertage.de/</url>"&gt;Moerser <br/>Blechbl&amp;auml;sertage&lt;/a&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.indexgeo.net/zalarm/</url>"&gt;Z-alarm - Ensure
++        information server integrity&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.ci-devices.com/</url>"&gt;Computer Integrations. Inc.&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://avalon.apache.org/</url>"&gt;Apache Avalon Project&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://jakarta.apache.org/poi/</url>"&gt;Apache Jakarta POI&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://terra-intl.com/</url>"&gt;Terra-International, Inc. (Japanese)&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://jakarta.terra-intl.com/poi/</url>"&gt;Apache Jakarta POI (Japanese <br/>Translation)&lt;/a&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://xfp.sourceforge.net/</url>"&gt;XFP&lt;/a&gt; - eXtensible Filtering <br/>Pipelines&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.atlassian.com/software/jira/docs/latest</url>"&gt;JIRA bugtracker <br/>documentation&lt;/a&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.phpopentracker.de/</url>"&gt;phpOpenTracker&lt;/a&gt; - A framework <br/>solution for the analysis of website traffic and visitor analysis&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://ws.apache.org/</url>"&gt;Apache Web Services Project&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://ws.apache.org/wsif/</url>"&gt;Apache WSIF Project&lt;/a&gt; - Web Services <br/>Invocation Framework&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://xml.apache.org/xmlbeans/</url>"&gt;Apache XMLBeans&lt;/a&gt; - An XML-Java <br/>binding tool&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://druid.sourceforge.net/</url>"&gt;Druid: The Database Manager&lt;/a&gt; - GUI <br/>tool to create databases (GPL)&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://ws.apache.org/axis/</url>"&gt;Apache Axis&lt;/a&gt; - an implementation of the<br/>SOAP ("Simple Object Access Protocol")&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://ws.apache.org/soap/</url>"&gt;Apache SOAP&lt;/a&gt; - an implementation of the<br/>SOAP submission&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a <br/>href="<url>http://community.in-corp.com/postnuke/html/community.in-corp.com/tng/</url>"&gt;Triathlon <br/>Northern Gauteng&lt;/a&gt; 
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.kanaputs.org/</url>"&gt;Kanaputs&lt;/a&gt; - an interpreter for Java&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://cese.sourceforge.net/</url>"&gt;Cell Electrophysiology Simulation <br/>Environment (CESE)&lt;/a&gt; 
++        - a framework for computational electrophysiological simulations&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://jakarta.apache.org/tapestry/</url>"&gt;Apache Jakarta Tapestry&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://gump.apache.org/</url>"&gt;Apache Gump&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.agssa.net/</url>"&gt;AG Software&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://jakarta.apache.org/hivemind/</url>"&gt;HiveMind&lt;/a&gt; - a services and <br/>configuration microkernel&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.core.gen.tr/</url>"&gt;Core Computer Security Group&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://jdbc.postgresql.org/</url>"&gt;PostgreSQL JDBC Driver&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.sbbi.net/</url>"&gt;SuperBonBon Industries&lt;/a&gt;
++&lt;/li&gt;
++      
++&lt;li&gt;
++&lt;a href="<url>http://learnlinux.tsf.org.za/</url>"&gt;Learn Linux&lt;/a&gt; - developing Free/Open <br/>Source GNU/Linux Training Materials&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://computerdictionary.tsf.org.za</url>"&gt;Computer Dictionary Project&lt;/a&gt; <br/>- develop a DocBook XML computer nomenclature glossary database&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://cyriaque.dupoirieux.free.fr/</url>"&gt;Dupoirieux&lt;/a&gt; family website (in<br/>French and English)&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://myfaces.apache.org/</url>"&gt;Apache MyFaces&lt;/a&gt; - open source <br/>JavaServer(tm) Faces implementation - MVC web application framework&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://www.softoutfit.com/</url>"&gt;Ca&amp;ntilde;ones Software Outfitter&lt;/a&gt;
++&lt;/li&gt;
++&lt;!--  &lt;li&gt;&lt;link href=""&gt;&lt;/link&gt;&lt;/li&gt; --&gt;
++    
++&lt;/ul&gt;
++  
++&lt;/div&gt;
++&lt;!--+
++    |end content
++    +--&gt;
++&lt;div class="clearboth"&gt;&amp;nbsp;&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="footer"&gt;
++&lt;!--+
++    |start bottomstrip
++    +--&gt;
++&lt;div class="lastmodified"&gt;
++&lt;script type="text/javascript"&gt;&lt;!--
++document.write("Last Published: " + document.lastModified);
++//  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;div class="copyright"&gt;
++ Copyright &amp;copy; 2002-2005 The Apache Software Foundation.&lt;/div&gt;
++&lt;!--+
++    |end bottomstrip
++    +--&gt;
++&lt;/div&gt;
++&lt;/body&gt;
++&lt;/html&gt;
+
+</para><para depth="0">Propchange: forrest/site/0.7/live-sites.html
+------------------------------------------------------------------------------
+    svn:eol-style = native
+
+</para><para depth="0">Added: forrest/site/0.7/mail-lists.html
+URL: <br/><url>http://svn.apache.org/viewcvs/forrest/site/0.7/mail-lists.html?view=auto&amp;rev=160890</url> 
+==============================================================================
+--- forrest/site/0.7/mail-lists.html (added)
++++ forrest/site/0.7/mail-lists.html Mon Apr 11 07:41:12 2005
+@@ -0,0 +1,374 @@
++&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" <br/>"<url>http://www.w3.org/TR/html4/loose.dtd</url>"&gt; 
++&lt;html&gt;
++&lt;head&gt;
++&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
++&lt;meta content="Apache Forrest" name="Generator"&gt;
++&lt;meta name="Forrest-version" content="0.7-dev"&gt;
++&lt;meta name="Forrest-skin-name" content="pelt"&gt;
++&lt;meta-data&gt;&lt;/meta-data&gt;
++&lt;title&gt;Mailing Lists (v0.7)&lt;/title&gt;
++&lt;link type="text/css" href="skin/basic.css" rel="stylesheet"&gt;
++&lt;link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet"&gt;
++&lt;link media="print" type="text/css" href="skin/print.css" rel="stylesheet"&gt;
++&lt;link type="text/css" href="skin/profile.css" rel="stylesheet"&gt;
++&lt;script src="skin/getBlank.js" language="javascript" <br/>type="text/javascript"&gt;&lt;/script&gt;&lt;script src="skin/getMenu.js" <br/>language="javascript" type="text/javascript"&gt;&lt;/script&gt;&lt;script <br/>src="skin/fontsize.js" language="javascript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;link rel="shortcut icon" href="favicon.ico"&gt;
++&lt;/head&gt;
++&lt;body onload="init()"&gt;
++&lt;script type="text/javascript"&gt;ndeSetTextSize();&lt;/script&gt;
++&lt;div id="top"&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;apache&lt;/a&gt; &amp;gt; &lt;a <br/>href="<url>http://forrest.apache.org/</url>"&gt;forrest&lt;/a&gt;&lt;script src="skin/breadcrumbs.js" <br/>language="JavaScript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |header
++    +--&gt;
++&lt;div class="header"&gt;
++&lt;!--+
++    |start group logo
++    +--&gt;
++&lt;div class="grouplogo"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Apache" <br/>src="images/apache-forrest.png" title="The Apache Software Foundation"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end group logo
++    +--&gt;
++&lt;!--+
++    |start Project Logo
++    +--&gt;
++&lt;div class="projectlogo"&gt;
++&lt;a href="<url>http://forrest.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Forrest" <br/>src="images/project-logo.gif" title="Apache Forrest"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end Project Logo
++    +--&gt;
++&lt;!--+
++    |start Search
++    +--&gt;
++&lt;div class="searchbox"&gt;
++&lt;form action="<url>http://www.google.com/search</url>" method="get" class="roundtopsmall"&gt;
++&lt;input value="forrest.apache.org" name="sitesearch" type="hidden"&gt;&lt;input <br/>onFocus="getBlank (this, 'Search the site with google:');" value="Search the <br/>site with google:" size="25" name="q" id="query" type="text"&gt;&amp;nbsp; 
++                    &lt;input name="Search" value="Search" type="submit"&gt;
++&lt;/form&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end search
++    +--&gt;
++&lt;!--+
++    |start Tabs
++    +--&gt;
++&lt;ul id="tabs"&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="index.html"&gt;Welcome&lt;/a&gt;
++&lt;/li&gt;
++&lt;li class="current"&gt;
++&lt;a class="base-selected" href="contrib.html"&gt;Project&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/index.html"&gt;0.7 Docs&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/howto/index.html"&gt;0.7 How-To&lt;/a&gt;
++&lt;/li&gt;
++&lt;/ul&gt;
++&lt;!--+
++    |end Tabs
++    +--&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="main"&gt;
++&lt;div id="publishedStrip"&gt;
++&lt;!--+
++    |start Subtabs
++    +--&gt;
++&lt;div id="level2tabs"&gt;&lt;/div&gt;
++&lt;!--+
++    |end Endtabs
++    +--&gt;
++&lt;script type="text/javascript" language="JavaScript"&gt;&lt;!--
++              document.write("Published: " + document.lastModified);
++              //  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++             
++             &amp;nbsp;
++           &lt;/div&gt;
++&lt;!--+
++    |start Menu, mainarea
++    +--&gt;
++&lt;!--+
++    |start Menu
++    +--&gt;
++&lt;div id="menu"&gt;
++&lt;div onclick="SwitchMenu('menu_selected_1.1', 'skin/')" <br/>id="menu_selected_1.1Title" class="menutitle" style="background-image: <br/>url('skin/images/chapter_open.gif');"&gt;Getting Involved&lt;/div&gt; 
++&lt;div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: <br/>block;"&gt; 
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="contrib.html"&gt;Contributing&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://svn.apache.org/viewcvs.cgi/forrest/trunk/</url>"&gt;Browse <br/>SVN&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menupage"&gt;
++&lt;div class="menupagetitle"&gt;Mail lists&lt;/div&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" <br/>href="<url>http://issues.cocoondev.org/secure/BrowseProject.jspa?id=10000</url>"&gt;Bugs and <br/>Issues&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="forrest-issues.html"&gt;Open Issues&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://brutus.apache.org/gump/public/forrest/</url>"&gt;Gump <br/>Integration&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="guidelines.html"&gt;Project guidelines&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_1.2', 'skin/')" id="menu_1.2Title" <br/>class="menutitle"&gt;Proposals&lt;/div&gt; 
++&lt;div id="menu_1.2" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="proposal-asf-publish.html"&gt;ASF Publishing&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="proposal-asf-forrestbot.html"&gt;ASF Forrestbot&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="credit"&gt;
++&lt;hr&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++&lt;div id="roundbottom"&gt;
++&lt;img style="display: none" class="corner" height="15" width="15" alt="" <br/>src="skin/images/rc-b-l-15-1body-2menu-3menu.png"&gt;&lt;/div&gt; 
++&lt;!--+
++  |alternative credits
++  +--&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end Menu
++    +--&gt;
++&lt;!--+
++    |start content
++    +--&gt;
++&lt;div id="content"&gt;
++&lt;div title="Portable Document Format" class="pdflink"&gt;
++&lt;a class="dida" href="mail-lists.pdf"&gt;&lt;img alt="PDF -icon" <br/>src="skin/images/pdfdoc.gif" class="skin"&gt;&lt;br&gt; 
++        PDF&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="trail"&gt;
++	        Font size: 
++ &amp;nbsp;&lt;input value="Reset" class="resetfont" title="Reset text" <br/>onclick="ndeSetTextSize('reset'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="-a" class="smallerfont" title="Shrink text" <br/>onclick="ndeSetTextSize('decr'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="+a" class="biggerfont" title="Enlarge text" <br/>onclick="ndeSetTextSize('incr'); return false;" type="button"&gt; 
++&lt;/div&gt;
++&lt;h1&gt;Mailing Lists&lt;/h1&gt;
++&lt;div id="motd-area"&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++&lt;div id="minitoc-area"&gt;
++&lt;ul class="minitoc"&gt;
++&lt;li&gt;
++&lt;a href="#Important+Notices"&gt;Important Notices&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a href="#Lists"&gt;Lists&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a href="#Mailing+list+in+mbox-format"&gt;Mailing list in mbox-format&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a href="#Related+Mailing+Lists"&gt;Related Mailing Lists&lt;/a&gt;
++&lt;/li&gt;
++&lt;/ul&gt;
++&lt;/div&gt;
++    
++&lt;a name="N1000D"&gt;&lt;/a&gt;&lt;a name="Important+Notices"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;Important Notices&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;p&gt;Before posting a question or problem to any mailing list, please first
++        look at the following resources:&lt;/p&gt;
++&lt;ul&gt; 
++        
++&lt;li&gt;
++&lt;a href="<url>http://forrest.apache.org/docs/faq.html</url>"&gt;Forrest FAQs&lt;/a&gt;
++&lt;/li&gt; 
++        
++&lt;li&gt;
++&lt;a href="index.html"&gt;Forrest documentation&lt;/a&gt;
++&lt;/li&gt; 
++        
++&lt;li&gt;
++&lt;a href="<url>http://cocoon.apache.org/link/</url>"&gt;Cocoon Links&lt;/a&gt;
++          for pointers to general XML and XSL and Java related resources.
++ Please do not ask such questions here unless they are related to Forrest.&lt;/li&gt;
++        
++&lt;li&gt;Mailing list archives - a veritable goldmine of Forrest-specific <br/>information.&lt;/li&gt; 
++        
++&lt;li&gt;Contribution &lt;a href="contrib.html#tips"&gt;notes and tips&lt;/a&gt;.&lt;/li&gt;
++      
++&lt;/ul&gt;
++&lt;p&gt;If you are posting about a problem that you are having, it will aid in
++        finding a speedy resolution if you provide full configuration details,
++ including the version number of Forrest, your operating system, JDK version, <br/>and 
++        servlet engine, and full details of any errors encountered including
++        full error messages and stack traces.&lt;/p&gt;
++&lt;div class="frame note"&gt;
++&lt;div class="label"&gt;Note&lt;/div&gt;
++&lt;div class="content"&gt;
++ Please use our Jira &lt;a <br/>href="<url>http://issues.cocoondev.org/secure/BrowseProject.jspa?id=10000</url>"&gt;issue <br/>tracker&lt;/a&gt; 
++      to submit attachments, rather than the mailing list. Create a new
++      issue, if necessary.
++      &lt;/div&gt;
++&lt;/div&gt;
++&lt;/div&gt; 
++
++    
++&lt;a name="N1003E"&gt;&lt;/a&gt;&lt;a name="Lists"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;Lists&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;table class="ForrestTable" cellspacing="1" cellpadding="4"&gt;
++      
++&lt;tr&gt;
++        
++&lt;th colspan="1" rowspan="1"&gt;Name&lt;/th&gt;
++        &lt;th colspan="1" rowspan="1"&gt;Archives&lt;/th&gt;
++        &lt;th colspan="1" rowspan="1"&gt;Purpose&lt;/th&gt;
++        &lt;th colspan="1" rowspan="1"&gt;Notes&lt;/th&gt;
++        &lt;th colspan="1" rowspan="1"&gt;Subscription Management&lt;/th&gt;
++      
++&lt;/tr&gt;
++      
++&lt;tr&gt;
++        
++&lt;td colspan="1" rowspan="1"&gt;&lt;a <br/>name="forrest-user"&gt;&lt;/a&gt;&lt;strong&gt;user@forrest&lt;/strong&gt;&lt;/td&gt; 
++ &lt;td colspan="1" rowspan="1"&gt;&lt;a <br/>href="<url>http://mail-archives.apache.org/eyebrowse/SummarizeList?listId=260</url>"&gt;Eyebrowse 
++          at mail-archives.apache.org&lt;/a&gt;
++          
++&lt;br&gt;
++&lt;br&gt;
++          
++&lt;a <br/>href="<url>http://www.mail-archive.com/user@forrest.apache.org/</url>"&gt;mail-archive.com&lt;/a&gt; 
++        &lt;/td&gt;
++ &lt;td colspan="1" rowspan="1"&gt;Any general issue related to the day-to-day use of<br/>Forrest.&lt;/td&gt; 
++ &lt;td colspan="1" rowspan="1"&gt;This is a subscriber-only list (in an effort to <br/>stop spam), so you must join before you can post.&lt;/td&gt; 
++        &lt;td colspan="1" rowspan="1"&gt;
++          user-subscribe&amp;lt;at&amp;gt;forrest.apache.org&lt;br&gt;
++          user-unsubscribe&amp;lt;at&amp;gt;forrest.apache.org&lt;br&gt;
++          user-help&amp;lt;at&amp;gt;forrest.apache.org
++        &lt;/td&gt;
++      
++&lt;/tr&gt;
++      
++&lt;tr&gt;
++        
++&lt;td colspan="1" rowspan="1"&gt;&lt;a <br/>name="forrest-dev"&gt;&lt;/a&gt;&lt;strong&gt;dev@forrest&lt;/strong&gt;&lt;/td&gt; 
++        &lt;td colspan="1" rowspan="1"&gt;
++ &lt;a href="<url>http://marc.theaimsgroup.com/?l=forrest-dev</url>"&gt; MARC: Mailing list <br/>ARChives at AIMS&lt;/a&gt; 
++          
++&lt;br&gt;
++&lt;br&gt;
++          
++&lt;a <br/>href="<url>http://mail-archives.apache.org/eyebrowse/SummarizeList?listId=259</url>"&gt;Eyebrowse <br/>at mail-archives.apache.org&lt;/a&gt; 
++          
++&lt;br&gt;
++&lt;br&gt;
++          
++&lt;a <br/>href="<url>http://www.mail-archive.com/dev@forrest.apache.org/</url>"&gt;mail-archive.com&lt;/a&gt; 
++        &lt;/td&gt;
++ &lt;td colspan="1" rowspan="1"&gt;Any issue related to development and <br/>enhancement.&lt;/td&gt; 
++ &lt;td colspan="1" rowspan="1"&gt;This is a subscriber-only list (in an effort to <br/>stop spam), so you must join before you can post. 
++              &lt;br&gt;Read-only NNTP access to forrest-dev is available through the
++ &lt;a <br/>href="news://news.gmane.org:119/gmane.text.xml.forrest.devel"&gt;gmane.text.xml.forrest.devel <br/>newsgroup&lt;/a&gt; 
++        &lt;/td&gt;
++        &lt;td colspan="1" rowspan="1"&gt;
++          dev-subscribe&amp;lt;at&amp;gt;forrest.apache.org&lt;br&gt;
++          dev-unsubscribe&amp;lt;at&amp;gt;forrest.apache.org&lt;br&gt;
++          dev-help&amp;lt;at&amp;gt;forrest.apache.org
++        &lt;/td&gt;
++      
++&lt;/tr&gt;
++      
++&lt;tr&gt;
++        
++&lt;td colspan="1" rowspan="1"&gt;&lt;a <br/>name="forrest-svn"&gt;&lt;/a&gt;&lt;strong&gt;svn@forrest&lt;/strong&gt;&lt;/td&gt; 
++ &lt;td colspan="1" rowspan="1"&gt;&lt;a <br/>href="<url>http://mail-archives.apache.org/eyebrowse/SummarizeList?listId=258</url>"&gt;Eyebrowse 
++        at mail-archives.apache.org&lt;/a&gt;
++          
++&lt;br&gt;
++&lt;br&gt;
++          
++&lt;a <br/>href="<url>http://www.mail-archive.com/svn@forrest.apache.org/</url>"&gt;mail-archive.com&lt;/a&gt; 
++        &lt;/td&gt;
++ &lt;td colspan="1" rowspan="1"&gt;Receive notifications on changes in the Forrest <br/>codebase in the SVN repository.&lt;/td&gt; 
++        &lt;td colspan="1" rowspan="1"&gt;Replies go to dev@forrest&lt;/td&gt;
++        &lt;td colspan="1" rowspan="1"&gt;
++          svn-subscribe&amp;lt;at&amp;gt;forrest.apache.org&lt;br&gt;
++          svn-unsubscribe&amp;lt;at&amp;gt;forrest.apache.org&lt;br&gt;
++          svn-help&amp;lt;at&amp;gt;forrest.apache.org
++        &lt;/td&gt;
++      
++&lt;/tr&gt;
++    
++&lt;/table&gt;
++&lt;/div&gt;
++    
++&lt;a name="N100F9"&gt;&lt;/a&gt;&lt;a name="Mailing+list+in+mbox-format"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;Mailing list in mbox-format&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;ul&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://forrest.apache.org/mail/dev/</url>"&gt;Dev List&lt;/a&gt;- Since February <br/>2002&lt;/li&gt; 
++      
++&lt;li&gt;
++&lt;a href="<url>http://forrest.apache.org/mail/user/</url>"&gt;User&lt;/a&gt;- Since May 2004&lt;/li&gt; 
++      
++&lt;/ul&gt;
++&lt;/div&gt; 
++    
++&lt;a name="N1010F"&gt;&lt;/a&gt;&lt;a name="Related+Mailing+Lists"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;Related Mailing Lists&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;ul&gt; 
++
++&lt;li&gt;
++&lt;a href="<url>http://xml.apache.org/mail.html</url>"&gt;XML Apache Projects&lt;/a&gt;
++- list of mailing lists for all xml.apache.org projects
++&lt;/li&gt; 
++
++&lt;li&gt;Especially
++&lt;a href="<url>http://cocoon.apache.org/mail-lists.html</url>"&gt;Apache Cocoon&lt;/a&gt;
++
++&lt;/li&gt; 
++      
++&lt;/ul&gt;
++&lt;/div&gt; 
++  
++&lt;/div&gt;
++&lt;!--+
++    |end content
++    +--&gt;
++&lt;div class="clearboth"&gt;&amp;nbsp;&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="footer"&gt;
++&lt;!--+
++    |start bottomstrip
++    +--&gt;
++&lt;div class="lastmodified"&gt;
++&lt;script type="text/javascript"&gt;&lt;!--
++document.write("Last Published: " + document.lastModified);
++//  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;div class="copyright"&gt;
++ Copyright &amp;copy; 2002-2005 The Apache Software Foundation.&lt;/div&gt;
++&lt;!--+
++    |end bottomstrip
++    +--&gt;
++&lt;/div&gt;
++&lt;/body&gt;
++&lt;/html&gt;
+
+</para><para depth="0">Propchange: forrest/site/0.7/mail-lists.html
+------------------------------------------------------------------------------
+    svn:eol-style = native
+
+</para><para depth="0">Added: forrest/site/0.7/proposal-asf-forrestbot.html
+URL: <br/><url>http://svn.apache.org/viewcvs/forrest/site/0.7/proposal-asf-forrestbot.html?view=auto&amp;rev=160890</url> 
+==============================================================================
+--- forrest/site/0.7/proposal-asf-forrestbot.html (added)
++++ forrest/site/0.7/proposal-asf-forrestbot.html Mon Apr 11 07:41:12 2005
+@@ -0,0 +1,285 @@
++&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" <br/>"<url>http://www.w3.org/TR/html4/loose.dtd</url>"&gt; 
++&lt;html&gt;
++&lt;head&gt;
++&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
++&lt;meta content="Apache Forrest" name="Generator"&gt;
++&lt;meta name="Forrest-version" content="0.7-dev"&gt;
++&lt;meta name="Forrest-skin-name" content="pelt"&gt;
++&lt;meta-data&gt;&lt;/meta-data&gt;
++&lt;title&gt;Draft: Proposal for ASF-wide Forrestbot (v0.7)&lt;/title&gt;
++&lt;link type="text/css" href="skin/basic.css" rel="stylesheet"&gt;
++&lt;link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet"&gt;
++&lt;link media="print" type="text/css" href="skin/print.css" rel="stylesheet"&gt;
++&lt;link type="text/css" href="skin/profile.css" rel="stylesheet"&gt;
++&lt;script src="skin/getBlank.js" language="javascript" <br/>type="text/javascript"&gt;&lt;/script&gt;&lt;script src="skin/getMenu.js" <br/>language="javascript" type="text/javascript"&gt;&lt;/script&gt;&lt;script <br/>src="skin/fontsize.js" language="javascript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;link rel="shortcut icon" href="favicon.ico"&gt;
++&lt;/head&gt;
++&lt;body onload="init()"&gt;
++&lt;script type="text/javascript"&gt;ndeSetTextSize();&lt;/script&gt;
++&lt;div id="top"&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;apache&lt;/a&gt; &amp;gt; &lt;a <br/>href="<url>http://forrest.apache.org/</url>"&gt;forrest&lt;/a&gt;&lt;script src="skin/breadcrumbs.js" <br/>language="JavaScript" type="text/javascript"&gt;&lt;/script&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |header
++    +--&gt;
++&lt;div class="header"&gt;
++&lt;!--+
++    |start group logo
++    +--&gt;
++&lt;div class="grouplogo"&gt;
++&lt;a href="<url>http://www.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Apache" <br/>src="images/apache-forrest.png" title="The Apache Software Foundation"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end group logo
++    +--&gt;
++&lt;!--+
++    |start Project Logo
++    +--&gt;
++&lt;div class="projectlogo"&gt;
++&lt;a href="<url>http://forrest.apache.org/</url>"&gt;&lt;img class="logoImage" alt="Forrest" <br/>src="images/project-logo.gif" title="Apache Forrest"&gt;&lt;/a&gt; 
++&lt;/div&gt;
++&lt;!--+
++    |end Project Logo
++    +--&gt;
++&lt;!--+
++    |start Search
++    +--&gt;
++&lt;div class="searchbox"&gt;
++&lt;form action="<url>http://www.google.com/search</url>" method="get" class="roundtopsmall"&gt;
++&lt;input value="forrest.apache.org" name="sitesearch" type="hidden"&gt;&lt;input <br/>onFocus="getBlank (this, 'Search the site with google:');" value="Search the <br/>site with google:" size="25" name="q" id="query" type="text"&gt;&amp;nbsp; 
++                    &lt;input name="Search" value="Search" type="submit"&gt;
++&lt;/form&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end search
++    +--&gt;
++&lt;!--+
++    |start Tabs
++    +--&gt;
++&lt;ul id="tabs"&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="index.html"&gt;Welcome&lt;/a&gt;
++&lt;/li&gt;
++&lt;li class="current"&gt;
++&lt;a class="base-selected" href="contrib.html"&gt;Project&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/index.html"&gt;0.7 Docs&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a class="base-not-selected" href="docs/howto/index.html"&gt;0.7 How-To&lt;/a&gt;
++&lt;/li&gt;
++&lt;/ul&gt;
++&lt;!--+
++    |end Tabs
++    +--&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="main"&gt;
++&lt;div id="publishedStrip"&gt;
++&lt;!--+
++    |start Subtabs
++    +--&gt;
++&lt;div id="level2tabs"&gt;&lt;/div&gt;
++&lt;!--+
++    |end Endtabs
++    +--&gt;
++&lt;script type="text/javascript" language="JavaScript"&gt;&lt;!--
++              document.write("Published: " + document.lastModified);
++              //  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;!--+
++    |breadtrail
++    +--&gt;
++&lt;div class="breadtrail"&gt;
++             
++             &amp;nbsp;
++           &lt;/div&gt;
++&lt;!--+
++    |start Menu, mainarea
++    +--&gt;
++&lt;!--+
++    |start Menu
++    +--&gt;
++&lt;div id="menu"&gt;
++&lt;div onclick="SwitchMenu('menu_1.1', 'skin/')" id="menu_1.1Title" <br/>class="menutitle"&gt;Getting Involved&lt;/div&gt; 
++&lt;div id="menu_1.1" class="menuitemgroup"&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="contrib.html"&gt;Contributing&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://svn.apache.org/viewcvs.cgi/forrest/trunk/</url>"&gt;Browse <br/>SVN&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="mail-lists.html"&gt;Mail lists&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" <br/>href="<url>http://issues.cocoondev.org/secure/BrowseProject.jspa?id=10000</url>"&gt;Bugs and <br/>Issues&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="forrest-issues.html"&gt;Open Issues&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="<url>http://brutus.apache.org/gump/public/forrest/</url>"&gt;Gump <br/>Integration&lt;/a&gt; 
++&lt;/div&gt;
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="guidelines.html"&gt;Project guidelines&lt;/a&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div onclick="SwitchMenu('menu_selected_1.2', 'skin/')" <br/>id="menu_selected_1.2Title" class="menutitle" style="background-image: <br/>url('skin/images/chapter_open.gif');"&gt;Proposals&lt;/div&gt; 
++&lt;div id="menu_selected_1.2" class="selectedmenuitemgroup" style="display: <br/>block;"&gt; 
++&lt;div class="menuitem"&gt;
++&lt;a title="" href="proposal-asf-publish.html"&gt;ASF Publishing&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="menupage"&gt;
++&lt;div class="menupagetitle"&gt;ASF Forrestbot&lt;/div&gt;
++&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="credit"&gt;
++&lt;hr&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++&lt;div id="roundbottom"&gt;
++&lt;img style="display: none" class="corner" height="15" width="15" alt="" <br/>src="skin/images/rc-b-l-15-1body-2menu-3menu.png"&gt;&lt;/div&gt; 
++&lt;!--+
++  |alternative credits
++  +--&gt;
++&lt;/div&gt;
++&lt;!--+
++    |end Menu
++    +--&gt;
++&lt;!--+
++    |start content
++    +--&gt;
++&lt;div id="content"&gt;
++&lt;div title="Portable Document Format" class="pdflink"&gt;
++&lt;a class="dida" href="proposal-asf-forrestbot.pdf"&gt;&lt;img alt="PDF -icon" <br/>src="skin/images/pdfdoc.gif" class="skin"&gt;&lt;br&gt; 
++        PDF&lt;/a&gt;
++&lt;/div&gt;
++&lt;div class="trail"&gt;
++	        Font size: 
++ &amp;nbsp;&lt;input value="Reset" class="resetfont" title="Reset text" <br/>onclick="ndeSetTextSize('reset'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="-a" class="smallerfont" title="Shrink text" <br/>onclick="ndeSetTextSize('decr'); return false;" type="button"&gt; 
++ &amp;nbsp;&lt;input value="+a" class="biggerfont" title="Enlarge text" <br/>onclick="ndeSetTextSize('incr'); return false;" type="button"&gt; 
++&lt;/div&gt;
++&lt;h1&gt;Draft: Proposal for ASF-wide Forrestbot&lt;/h1&gt;
++&lt;div id="motd-area"&gt;
++    This is documentation for current release v0.7
++   (&lt;a href="<url>http://forrest.apache.org/docs.html</url>"&gt;More&lt;/a&gt; ...)&lt;/div&gt;
++&lt;div id="minitoc-area"&gt;
++&lt;ul class="minitoc"&gt;
++&lt;li&gt;
++&lt;a href="#overview"&gt;Overview&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a href="#forrestbot"&gt;About Forrestbot&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a href="#requirements"&gt;Requirements&lt;/a&gt;
++&lt;/li&gt;
++&lt;li&gt;
++&lt;a href="#demo"&gt;Demonstration&lt;/a&gt;
++&lt;/li&gt;
++&lt;/ul&gt;
++&lt;/div&gt;
++    
++&lt;div class="frame warning"&gt;
++&lt;div class="label"&gt;Warning&lt;/div&gt;
++&lt;div class="content"&gt;This is a draft proposal document. It is not yet the
++     consensus of ASF nor the Infrastructure committee.
++    &lt;/div&gt;
++&lt;/div&gt;
++
++    
++&lt;a name="N10010"&gt;&lt;/a&gt;&lt;a name="overview"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;Overview&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;p&gt;All ASF projects need to be able to concentrate on their projects
++        and the content of their websites, rather than get tangled up in
++        arcane website publication procedures.
++      &lt;/p&gt;
++&lt;p&gt;A proposal is currently being discussed for
++        &lt;a href="proposal-asf-publish.html"&gt;ASF-wide documentation staging
++        and publishing&lt;/a&gt;.
++      &lt;/p&gt;
++&lt;p&gt;The context of this Forrestbot proposal is at
++        Item C through to Item G of that infrastructure, the "staging server".
++        This does not preclude other mechanisms - some projects might choose
++        to use Forrestbot.
++      &lt;/p&gt;
++&lt;/div&gt;
++
++    
++&lt;a name="N10024"&gt;&lt;/a&gt;&lt;a name="forrestbot"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;About Forrestbot&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;p&gt;The Forrestbot enables the automated building and deployment of
++        websites. It will retrieve the source from SVN or CVS, build the
++        website, and then deploy it. Notifications can be sent. It keeps a
++        log of the build process.
++        See more &lt;a href="docs/forrestbot.html"&gt;detailed explanation&lt;/a&gt;.
++      &lt;/p&gt;
++&lt;p&gt;There is also a "web interface" component to Forrestbot to enable
++        the project committers to easily trigger their website build, view
++        the result, and deploy it to the staging server.
++ See more &lt;a href="docs/forrestbot-web-interface.html"&gt;detailed <br/>explanation&lt;/a&gt;. 
++      &lt;/p&gt;
++&lt;/div&gt;
++
++    
++&lt;a name="N10039"&gt;&lt;/a&gt;&lt;a name="requirements"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;Requirements&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;p&gt;The staging server (e.g. stage.apache.org) would be a virtual server.
++ A stable version of "forrest" and "forrestbot" would be installed there. 
++        Each project that uses forrestbot would have a forrestbot configuration
++        file. This defines the SVN or CVS repository to get the source from,
++        where to deploy the built site, and various other parameters.
++      &lt;/p&gt;
++&lt;p&gt;The Forrestbot web interface requires a servlet container (e.g.
++        &lt;a href="<url>http://jakarta.apache.org/tomcat/</url>"&gt;Apache Tomcat&lt;/a&gt;) and
++        an &lt;a href="<url>http://httpd.apache.org/</url>"&gt;Apache HTTP Server&lt;/a&gt; would be
++        used to view the staging sites.
++      &lt;/p&gt;
++&lt;/div&gt;
++
++    
++&lt;a name="N1004E"&gt;&lt;/a&gt;&lt;a name="demo"&gt;&lt;/a&gt;
++&lt;h2 class="underlined_10"&gt;Demonstration&lt;/h2&gt;
++&lt;div class="section"&gt;
++&lt;p&gt;There is a
++ &lt;a href="<url>http://brutus.apache.org:36366/forrestbot-webapp/</url>"&gt;demonstration 
++        forrestbot&lt;/a&gt; on brutus.
++        The web interface is temporarily disabled, but the sites are still
++        built via cron. See
++        &lt;a href="<url>http://brutus.apache.org/docs/</url>"&gt;staging demo&lt;/a&gt;.
++      &lt;/p&gt;
++&lt;/div&gt;
++  
++&lt;/div&gt;
++&lt;!--+
++    |end content
++    +--&gt;
++&lt;div class="clearboth"&gt;&amp;nbsp;&lt;/div&gt;
++&lt;/div&gt;
++&lt;div id="footer"&gt;
++&lt;!--+
++    |start bottomstrip
++    +--&gt;
++&lt;div class="lastmodified"&gt;
++&lt;script type="text/javascript"&gt;&lt;!--
++document.write("Last Published: " + document.lastModified);
++//  --&gt;&lt;/script&gt;
++&lt;/div&gt;
++&lt;div class="copyright"&gt;
++ Copyright &amp;copy; 2002-2005 The Apache Software Foundation.&lt;/div&gt;
++&lt;!--+
++    |end bottomstrip
++    +--&gt;
++&lt;/div&gt;
++&lt;/body&gt;
++&lt;/html&gt;
+
+</para><para depth="0">Propchange: forrest/site/0.7/proposal-asf-forrestbot.html
+------------------------------------------------------------------------------
+    svn:eol-style = native
+
+</para></body></message>

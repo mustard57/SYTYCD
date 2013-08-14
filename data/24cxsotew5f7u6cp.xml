@@ -1,0 +1,41 @@
+<message message-id="69eebcf1-e5ab-4dea-bbb0-79fed7c710d4@n2g2000prj.googlegroups.com" list="com.googlegroups.away3d-dev" id="24cxsotew5f7u6cp" type="development" date="2011-04-14T07:03:37.224495-08:00" year="2011-01-01" year-month="2011-04-01" year-month-day="2011-04-14" thread-id="24cxsotew5f7u6cp"><headers><envelope-from-line>Thu Apr 14 07:04:00 2011</envelope-from-line><from personal="Choons" address="chadkimrey@gmail.com">Choons &lt;chadkimrey@gmail.com&gt;</from><to personal="Away3D.dev" address="away3d-dev@googlegroups.com">"Away3D.dev" &lt;away3d-dev@googlegroups.com&gt;</to><subject normal="[away3d] Broomstick Procedural 3D Content">[away3d] Broomstick Procedural 3D Content</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 40
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Thu, 14 Apr 2011 07:04:00 -0800 (GMT-08:00)</received><received>from mail-pv0-f188.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id DE8E83B3020D
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Thu, 14 Apr 2011 08:03:36 -0700 (PDT)</received><received>by pvc30 with SMTP id 30sf536990pvc.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Thu, 14 Apr 2011 08:03:59 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:x-beenthere:mime-version:date:x-ip:user-agent
+         :x-http-useragent:message-id:subject:from:to:x-original-sender
+         :reply-to:precedence:mailing-list:list-id:x-google-group-id
+         :list-post:list-help:list-archive:sender:list-unsubscribe
+         :content-type;
+        bh=bDuLSLzoBh+MlQoFtDb6OmcxPszVANNZlG6kovU6k2M=;
+        b=3lmC1iC6eGA8/AqgE0acCC/QKzX7nNKENQSQxFXofkfh+Ysb3hfoPsCsHljU92ZRIY
+         42OG9mz6C++HAqUiD9SlkWyDcsS5Lu5ABlRDw2pbIodI5+6Psee1sILGGSR4d/XWKfhX
+         TgFKuEHS/fDRB0436XWB61PmkBN/FQla03flc=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:mime-version:date:x-ip:user-agent:x-http-useragent
+         :message-id:subject:from:to:x-original-sender:reply-to:precedence
+         :mailing-list:list-id:x-google-group-id:list-post:list-help
+         :list-archive:sender:list-unsubscribe:content-type;
+        b=yrXq2rm5RZX0swenRZAM74VK4g+Vg1ixE7Kstp8dWtMdbobnOa2iS2xokFCZMXbjfN
+         +8/oxO3C8ZnxDevsxdBYFsTvlU60PJFozBEFlnDxJ80ztMNis45+c945tZ8m5GE2XESy
+         Dj3NDNVC425w0l0cZhj8sYvyH/xg57Za9fnLk=</domainkey-signature><received>by 10.142.166.14 with SMTP id o14mr87924wfe.41.1302793431722;
+        Thu, 14 Apr 2011 08:03:51 -0700 (PDT)</received><x-beenthere>away3d-dev@googlegroups.com</x-beenthere><received>by 10.143.38.11 with SMTP id q11ls669738wfj.2.p; Thu, 14 Apr 2011
+ 08:03:48 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.142.150.19 with SMTP id x19mr90784wfd.5.1302793428089; Thu, 14
+ Apr 2011 08:03:48 -0700 (PDT)</received><received>by n2g2000prj.googlegroups.com with HTTP; Thu, 14 Apr 2011 08:03:48
+ -0700 (PDT)</received><date>Thu, 14 Apr 2011 08:03:48 -0700 (PDT)</date><x-ip>74.192.144.151</x-ip><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US)
+ AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16,gzip(gfe)</x-http-useragent><message-id>69eebcf1-e5ab-4dea-bbb0-79fed7c710d4@n2g2000prj.googlegroups.com</message-id><x-original-sender>chadkimrey@gmail.com</x-original-sender><reply-to>away3d-dev@googlegroups.com</reply-to><precedence>list</precedence><mailing-list>list away3d-dev@googlegroups.com; contact away3d-dev+owners@googlegroups.com</mailing-list><list-id>&lt;away3d-dev.googlegroups.com&gt;</list-id><x-google-group-id>630027991500</x-google-group-id><list-post>&lt;http://groups.google.com/group/away3d-dev/post?hl=en_US&gt;, &lt;mailto:away3d-dev@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:away3d-dev+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/away3d-dev?hl=en_US&gt;</list-archive><sender>away3d-dev@googlegroups.com</sender><list-unsubscribe>&lt;http://groups.google.com/group/away3d-dev/subscribe?hl=en_US&gt;,
+ &lt;mailto:away3d-dev+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>text/plain; charset=ISO-8859-1</content-type></headers><normalized-references><normalized-message-id>69eebcf1-e5ab-4dea-bbb0-79fed7c710d4@n2g2000prj.googlegroups.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Hi Group- I'm trying to figure out Broomstick using example code for
+3.6 but it is so different I am having a hard time getting started. I
+want to generate my own mesh geometry procedurally, but methods like
+createVertex, createFace, and regularPolygon no longer seem to exist
+in Broomstick.
+
+</para><para depth="0">For instance a simple pyramid shape with a square base- 5 vertices, 6
+triangles. What is the approach in Broomstick to make it without the
+methods in 3.6 I mentioned above?
+
+</para></body></message>

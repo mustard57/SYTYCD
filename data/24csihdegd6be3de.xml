@@ -1,0 +1,30 @@
+<message message-id="CACCE9tgt9d0oPT=VpXF6tzHcTxJx6LDJ5i6BuQ4LhmABVK_7nw@mail.gmail.com" list="org.osgeo.lists.grass-user" id="24csihdegd6be3de" type="users" date="2011-07-19T00:26:15.410689-08:00" year="2011-01-01" year-month="2011-07-01" year-month-day="2011-07-19" thread-id="24csihdegd6be3de"><headers><envelope-from-line>Tue Jul 19 00:26:38 2011</envelope-from-line><from personal="Helena Herrera" address="helenaherrera1980@gmail.com">Helena Herrera &lt;helenaherrera1980@gmail.com&gt;</from><to personal="grass-user@lists.osgeo.org" address="grass-user@lists.osgeo.org">grass-user@lists.osgeo.org</to><subject normal="[GRASS-user] Question about target parameter in r.in.gdal">[GRASS-user] Question about target parameter in r.in.gdal</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 12
+          for &lt;opal.perez.roberson@a.markmail.org&gt;;
+          Tue, 19 Jul 2011 00:26:38 -0800 (GMT-08:00)</received><received>from lists.osgeo.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id EC02F29081C7
+	for &lt;opal.perez.roberson@a.markmail.org&gt;; Tue, 19 Jul 2011 01:26:14 -0700 (PDT)</received><received>from osgeo1.osgeo.org (localhost.localdomain [127.0.0.1])
+	by lists.osgeo.org (Postfix) with ESMTP id 03487E01F72;
+	Tue, 19 Jul 2011 04:27:26 -0400 (EDT)</received><x-original-to>grass-user@lists.osgeo.org</x-original-to><delivered-to>grass-user@lists.osgeo.org</delivered-to><received>from mail-qy0-f178.google.com (mail-qy0-f178.google.com
+	[209.85.216.178])
+	by lists.osgeo.org (Postfix) with ESMTP id E44E0E01D95
+	for &lt;grass-user@lists.osgeo.org&gt;; Tue, 19 Jul 2011 04:27:23 -0400 (EDT)</received><received>by qyk27 with SMTP id 27so2779529qyk.16
+	for &lt;grass-user@lists.osgeo.org&gt;; Tue, 19 Jul 2011 01:26:33 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=mime-version:date:message-id:subject:from:to:content-type;
+	bh=NOVa2ToX6utK2ZPYFJguSlPgOGlYnh7f/DUxTthQoBE=;
+	b=ZEDZ6jTBKhlkXRV7jcKtjugneJs6SVJQl3G1y7aBfs5+xMu8tAu31cNfqrKVwB1J3O
+	tX8IE2OFxN1cgjA8h/DdYmRdjYzYN2oq4AtAplLfrOoxuYMTjhwVK4QOrQBfOx0l86XY
+	wRSsftE7ITjGOdDJYzffC3h3uYy098qnk8Uxs=</dkim-signature><mime-version>1.0</mime-version><received>by 10.229.3.83 with SMTP id 19mr5448135qcm.297.1311063993736; Tue,
+	19 Jul 2011 01:26:33 -0700 (PDT)</received><received>by 10.229.100.8 with HTTP; Tue, 19 Jul 2011 01:26:33 -0700 (PDT)</received><date>Tue, 19 Jul 2011 09:26:33 +0100</date><message-id>CACCE9tgt9d0oPT=VpXF6tzHcTxJx6LDJ5i6BuQ4LhmABVK_7nw@mail.gmail.com</message-id><x-beenthere>grass-user@lists.osgeo.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>GRASS user list &lt;grass-user.lists.osgeo.org&gt;</list-id><list-unsubscribe>&lt;http://lists.osgeo.org/mailman/listinfo/grass-user&gt;,
+	&lt;mailto:grass-user-request@lists.osgeo.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.osgeo.org/pipermail/grass-user&gt;</list-archive><list-post>&lt;mailto:grass-user@lists.osgeo.org&gt;</list-post><list-help>&lt;mailto:grass-user-request@lists.osgeo.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.osgeo.org/mailman/listinfo/grass-user&gt;,
+	&lt;mailto:grass-user-request@lists.osgeo.org?subject=subscribe&gt;</list-subscribe><content-type>multipart/mixed; boundary="===============2101357832=="</content-type><sender>grass-user-bounces@lists.osgeo.org</sender><errors-to>grass-user-bounces@lists.osgeo.org</errors-to></headers><normalized-references><normalized-message-id>CACCE9tgt9d0oPT=VpXF6tzHcTxJx6LDJ5i6BuQ4LhmABVK_7nw@mail.gmail.com</normalized-message-id></normalized-references><body><para depth="0">Greetings
+
+</para><para depth="0">I've read r.in.gdal's help and for me it's not clear what is the purpose of
+"target" parameter? What shall I place in target parameter?
+Thanks
+Helena
+</para><footer type="list-management" depth="0">_______________________________________________
+grass-user mailing list
+<email>grass-user@lists.osgeo.org</email>
+<url>http://lists.osgeo.org/mailman/listinfo/grass-user</url>
+</footer></body></message>

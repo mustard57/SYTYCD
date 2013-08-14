@@ -1,0 +1,25 @@
+<message message-id="47203482.5030208@gmail.com" list="org.openoffice.it.localizzazione" id="24cssw2z2w6qt4fk" type="general" date="2007-10-25T08:15:30+02:00" year="2007-01-01" year-month="2007-10-01" year-month-day="2007-10-24" thread-id="m4dgcwt5lihmvcsd"><headers><envelope-from-line>From localizzazione@it.openoffice.org Wed Oct 24 23:24:55 2007</envelope-from-line><from personal="Fabio" address="ffrittoli@gmail.com">Fabio &lt;ffrittoli@gmail.com&gt;</from><to personal="localizzazione@it.openoffice.org" address="localizzazione@it.openoffice.org">localizzazione@it.openoffice.org</to><subject normal="[localizzazione] traduzione GUI con Pootle">Re: [localizzazione] traduzione GUI con Pootle</subject><return-path>ffrittoli@gmail.com</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level>*</x-spam-level><x-spam-status>No, score=1.9 required=5.0 tests=BAYES_50,RCVD_ILLEGAL_IP
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact localizzazione-help@it.openoffice.org; run by ezmlm</mailing-list><delivered-to>mailing list localizzazione@it.openoffice.org</delivered-to><received>(qmail 1741 invoked from network); 25 Oct 2007 06:15:29 -0000</received><received>from cylon2.sjc.collab.net (204.16.104.18)
+  by s006.sjc.collab.net with SMTP; 25 Oct 2007 06:15:29 -0000</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AgAAAMvQH0dVEl9Ikmdsb2JhbACOGz8CAQEHAgYTFg</x-ironport-anti-spam-result><x-ironport-av>E=Sophos;i="4.21,328,1188802800"; 
+   d="scan'208";a="71598536"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from aa012msr.fastwebnet.it ([85.18.95.72])
+  by cylon2.sjc.collab.net with ESMTP; 24 Oct 2007 23:15:29 -0700</received><received>from [192.168.100.100] (2.255.152.233) by aa012msr.fastwebnet.it (7.3.118.6)
+        id 470A5B050142F2EB for localizzazione@it.openoffice.org; Thu, 25 Oct 2007 08:15:27 +0200</received><message-id>47203482.5030208@gmail.com</message-id><date>Thu, 25 Oct 2007 08:15:30 +0200</date><user-agent>Thunderbird 2.0.0.6 (Windows/20070728)</user-agent><mime-version>1.0</mime-version><references>&lt;867861.75370.qm@web25505.mail.ukl.yahoo.com&gt;, &lt;200710172305.19947.paolopoz12@yahoo.it&gt;, &lt;471782C1.3000305@gmail.com&gt; &lt;471909F0.23171.2AFC093@valter.mura.tiscali.it&gt;</references><in-reply-to>&lt;471909F0.23171.2AFC093@valter.mura.tiscali.it&gt;</in-reply-to><content-type>text/plain; charset=UTF-8; format=flowed</content-type><content-transfer-encoding>8bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>47203482.5030208@gmail.com</normalized-message-id><normalized-in-reply-to>471909F0.23171.2AFC093@valter.mura.tiscali.it</normalized-in-reply-to><normalized-reference>&lt;867861.75370.qm@web25505.mail.ukl.yahoo.com&gt;,</normalized-reference><normalized-reference>&lt;200710172305.19947.paolopoz12@yahoo.it&gt;,</normalized-reference><normalized-reference>471782C1.3000305@gmail.com</normalized-reference><normalized-reference>471909F0.23171.2AFC093@valter.mura.tiscali.it</normalized-reference></normalized-references><body type="text/plain; charset=utf-8; format=flowed"><quote depth="1"><quotepara depth="1">Che errori dà OmegaT? Non è che devi impostare il famigerato -Xmx512M?
+</quotepara></quote><para depth="0">
+Sto riprovando a usare OmegaT per la traduzione dei file della guida, 
+dato che ne ho uno da 1,5mb da tradurre, il che mi farebbe stare su 
+pootle per giorni interi...
+
+</para><para depth="0">Ho provato ad inserire l'opzione nel file batch di avvio, in qs modo:
+jre\bin\javaw -jar OmegaT.jar -Xmx512M %*
+
+</para><para depth="0">Tuttavia il programma si blocca ugualmente. Allora ho provato a inserire 
+la stringa prima di omegat.jar e sembra che stavolta vada. Ma perché in 
+passato il problema non si era mai manifestato? Forse perché i file da 
+tradurre erano più piccoli?
+
+</para><para depth="0">Grazie
+
+</para><footer type="signature" depth="0" hash="10144370530229450540">Fabio
+
+</footer></body></message>

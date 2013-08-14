@@ -1,0 +1,44 @@
+<message message-id="422BAAEE.8020308@ocf.berkeley.edu" list="org.python.python-dev" id="24bzbgzj65wtpevj" type="development" date="2005-03-07T02:14:30" year="2005-01-01" year-month="2005-03-01" year-month-day="2005-03-07" thread-id="4udk7w27gsi3y66u"><headers><envelope-from-line>From bac@OCF.Berkeley.EDU  Mon Mar  7 02:14:22 2005</envelope-from-line><from personal="Brett C." address="bac@OCF.Berkeley.EDU">"Brett C." &lt;bac@OCF.Berkeley.EDU&gt;</from><subject normal="[Python-Dev] Failing tests: marshal, warnings">[Python-Dev] Failing tests: marshal, warnings</subject><date>Mon Mar  7 02:14:30 2005</date><in-reply-to>&lt;20050307005623.GD9397@cthulhu.gerg.ca&gt;</in-reply-to><references>&lt;20050306231126.GA13378@cthulhu.gerg.ca&gt;	&lt;20050307002850.GC9397@cthulhu.gerg.ca&gt;
+	&lt;20050307005623.GD9397@cthulhu.gerg.ca&gt;</references><message-id>422BAAEE.8020308@ocf.berkeley.edu</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>422BAAEE.8020308@ocf.berkeley.edu</normalized-message-id><normalized-in-reply-to>20050307005623.GD9397@cthulhu.gerg.ca</normalized-in-reply-to><normalized-reference>20050306231126.GA13378@cthulhu.gerg.ca</normalized-reference><normalized-reference>20050307002850.GC9397@cthulhu.gerg.ca</normalized-reference><normalized-reference>20050307005623.GD9397@cthulhu.gerg.ca</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Greg Ward wrote:
+[SNIP]
+</para><quote depth="1"><quotepara depth="1">A-ha!  I get it.  There are two mistakes in test_descr.py:test_init():
+lack of "finally" clause, and failure to make a copy of
+warnings.filters.  This patch fixes both:
+
+</quotepara><quotepara depth="1">"""
+--- Lib/test/test_descr.py      4 Mar 2005 04:47:04 -0000       1.202.2.2
++++ Lib/test/test_descr.py      7 Mar 2005 00:54:00 -0000
+@@ -3973,15 +3973,18 @@
+         def __init__(self):
+             return 10
+
+</quotepara><quotepara depth="1">-    oldfilters = warnings.filters
+-    warnings.filterwarnings("error", category=RuntimeWarning)
++    oldfilters = warnings.filters[:]
+     try:
+-        Foo()
+-    except RuntimeWarning:
+         pass
+-    else:
+-        raise TestFailed, "did not test __init__() for None return"
+-    warnings.filters = oldfilters
++        warnings.filterwarnings("error", category=RuntimeWarning)
++        try:
++            Foo()
++        except RuntimeWarning:
++            pass
++        else:
++            raise TestFailed, "did not test __init__() for None return"
++    finally:
++        warnings.filters = oldfilters
+
+</quotepara><quotepara depth="1"> def test_main():
+"""
+
+</quotepara><quotepara depth="1">I'll check this in and merge to the trunk once I see all tests passing.
+
+</quotepara></quote><para depth="0">Well, I just checked in the list copy fix, so you only have to worry about 
+adding the 'finally' clause to the 'try' statement.
+
+</para><para depth="0">-Brett
+</para></body></message>

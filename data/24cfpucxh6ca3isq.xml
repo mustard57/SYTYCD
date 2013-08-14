@@ -1,0 +1,86 @@
+<message message-id="21504.929407866@sss.pgh.pa.us" list="org.postgresql.pgsql-hackers" id="24cfpucxh6ca3isq" type="development" date="1999-06-14T20:51:06-04:00" year="1999-01-01" year-month="1999-06-01" year-month-day="1999-06-14" thread-id="2hzffypvxub3ulhu"><headers><envelope-from-line>From scrappy@postgreSQL.org  Mon Jun 14 20:53:25 1999</envelope-from-line><from personal="Tom Lane" address="tgl@sss.pgh.pa.us">Tom Lane &lt;tgl@sss.pgh.pa.us&gt;</from><to personal="Bruce Momjian" address="maillist@candle.pha.pa.us">Bruce Momjian &lt;maillist@candle.pha.pa.us&gt;</to><cc personal="Roman.Hodek@informatik.uni-erlangen.de" address="Roman.Hodek@informatik.uni-erlangen.de">Roman.Hodek@informatik.uni-erlangen.de</cc><subject normal="Cleaning up function interface (was Re: Patch for m68k architecture)">Cleaning up function interface (was Re: Patch for m68k architecture)</subject><received>from sss.sss.pgh.pa.us (sss.pgh.pa.us [206.210.65.6])
+	by hub.org (8.9.3/8.9.3) with ESMTP id UAA03932
+	for &lt;pgsql-hackers@postgreSQL.org&gt;; Mon, 14 Jun 1999 20:53:24 -0400 (EDT)
+	(envelope-from tgl@sss.pgh.pa.us)</received><received>from sss.sss.pgh.pa.us (localhost [127.0.0.1])
+	by sss.sss.pgh.pa.us (8.9.1/8.9.1) with ESMTP id UAA21506;
+	Mon, 14 Jun 1999 20:51:07 -0400 (EDT)</received><in-reply-to>Your message of Mon, 14 Jun 1999 17:53:25 -0400 (EDT) 
+             &lt;199906142153.RAA16276@candle.pha.pa.us&gt; </in-reply-to><date>Mon, 14 Jun 1999 20:51:06 -0400</date><message-id>21504.929407866@sss.pgh.pa.us</message-id></headers><normalized-references><normalized-message-id>21504.929407866@sss.pgh.pa.us</normalized-message-id><normalized-in-reply-to>YourmessageofMon,14Jun199917:53:25-0400(EDT)&lt;199906142153.RAA16276@candle.pha.pa.us&gt;</normalized-in-reply-to></normalized-references><body type="text/plain"><para depth="0">Bruce Momjian &lt;<email>maillist@candle.pha.pa.us</email>&gt; writes:
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">ANSI C says results are undefined if you call a function via pointer
+and the pointer is declared to return another type than the function
+actually returns. So m68k compilers conform to the standard here.
+</quotepara></quote></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Yes, we admit that we break the standard with fmgr_ptr, because we
+return a variety of values depending on what function they call.  It
+appears the egcs optimization on the powerpc or alpha cause a problem
+when optimization is -O2, but not -O.  We may see more platforms with
+problems as optimizers get smarter.
+</quotepara></quote><para depth="0">
+Seeing as how we also know that the function-call interface ought to be
+redesigned to handle NULLs better, maybe we should just bite the bullet
+and fix all of these problems at once by adopting a new standard
+interface for everything that can be called via fmgr.  It'd uglify the
+code, no doubt, but I think we are starting to see an accumulation of
+problems that justify doing something.
+
+</para><para depth="0">Here is a straw-man proposal:
+
+</para><para depth="0">        Datum function (bool  *resultnull,
+                        Datum *args,
+                        bool  *argnull,
+                        int    nargs)
+
+</para><para depth="0">args[i] is the i'th parameter, or undefined (perhaps always 0?)
+when argnull[i] is true.  The function is responsible for setting
+*resultnull, and returns a Datum value if *resultnull is false.
+Most standard functions could ignore nargs since they'd know what it
+should be, but we ought to pass it for flexibility.
+
+</para><para depth="0">A useful addition to this scheme would be for fmgr to preset *resultnull
+to the OR of the input argnull[] array just before calling the function.
+In the typical case where the function is "strict" (ie, result is NULL
+if any input is NULL), this would save the function from having to look
+at argnull[] at all; it'd just check *resultnull and immediately return
+if true.
+
+</para><para depth="0">As an example, int4 addition goes from
+
+</para><para depth="0">int32
+int4pl(int32 arg1, int32 arg2)
+{
+    return arg1 + arg2;
+}
+
+</para><para depth="0">to
+
+</para><para depth="0">Datum
+int4pl (bool *resultnull, Datum *args, bool *argnull, int nargs)
+{
+    if (*resultnull)
+        return (Datum) 0;        /* value doesn't really matter ... */
+    /* we can ignore argnull and nargs */
+
+</para><para depth="0">    return Int32GetDatum(DatumGetInt32(args[0]) + DatumGetInt32(args[1]));
+}
+
+</para><para depth="0">This is, of course, much uglier than the existing code, but we might be
+able to improve matters with some well-chosen macros for the boilerplate
+parts.  What we actually end up writing might look something like
+
+</para><para depth="0">Datum
+int4pl (PG_FUNCTION_ARGS)
+{
+    PG_STRICT_FUNCTION(			/* encapsulates null check */
+        PG_ARG0_INT32;
+        PG_ARG1_INT32;
+
+</para><para depth="0">	PG_RESULT_INT32( arg0 + arg1 );
+    );
+}
+
+</para><para depth="0">where the macros expand to things like "int32 arg0 = DatumGetInt32(args[0])"
+and "return Int32GetDatum( x )".  It'd be worth a little thought to
+try to set up a group of macros like that, I think.
+
+</para><footer type="signature" hash="10356605740757837166" depth="0">			regards, tom lane
+
+</footer></body></message>

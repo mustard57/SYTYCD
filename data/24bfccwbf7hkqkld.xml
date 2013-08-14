@@ -1,0 +1,39 @@
+<message message-id="008301c4c9fb$eb75b2b0$6401a8c0@alexh" list="edu.merit.nanog" id="24bfccwbf7hkqkld" type="general" date="2004-11-13T19:42:09-08:00" year="2004-01-01" year-month="2004-11-01" year-month-day="2004-11-13" thread-id="gzkzmm2bljxty3f6"><headers><envelope-from-line>From owner-nanog@merit.edu  Sat Nov 13 22:43:12 2004</envelope-from-line><from personal="Alexei Roudnev" address="alex@relcom.net">Alexei Roudnev &lt;alex@relcom.net&gt;</from><to personal="John Curran" address="jcurran@istaff.org">John Curran &lt;jcurran@istaff.org&gt;</to><cc personal="NANOG" address="nanog@merit.edu">NANOG &lt;nanog@merit.edu&gt;</cc><subject normal="How to Blocking VoIP ( H.323) ?">Re: How to Blocking  VoIP ( H.323) ?</subject><received>from trapdoor.merit.edu (trapdoor.merit.edu [198.108.1.26])
+	by nic.merit.edu (8.9.3/8.9.1) with ESMTP id WAA28734
+	for &lt;hyper_nanog@nic.merit.edu&gt;; Sat, 13 Nov 2004 22:43:12 -0500 (EST)</received><received>by trapdoor.merit.edu (Postfix)
+	id 374929124E; Sat, 13 Nov 2004 22:42:18 -0500 (EST)</received><delivered-to>nanog-outgoing@trapdoor.merit.edu</delivered-to><received>by trapdoor.merit.edu (Postfix, from userid 56)
+	id 0AE6D9124F; Sat, 13 Nov 2004 22:42:17 -0500 (EST)</received><delivered-to>nanog@trapdoor.merit.edu</delivered-to><received>from segue.merit.edu (segue.merit.edu [198.108.1.41])
+	by trapdoor.merit.edu (Postfix) with ESMTP id F3BD29124E
+	for &lt;nanog@trapdoor.merit.edu&gt;; Sat, 13 Nov 2004 22:42:15 -0500 (EST)</received><received>by segue.merit.edu (Postfix)
+	id DA784588CF; Sat, 13 Nov 2004 22:42:15 -0500 (EST)</received><delivered-to>nanog@merit.edu</delivered-to><received>from pop-a065c10.pas.sa.earthlink.net (pop-a065c10.pas.sa.earthlink.net [207.217.121.184])
+	by segue.merit.edu (Postfix) with ESMTP id 355F9588C7
+	for &lt;nanog@merit.edu&gt;; Sat, 13 Nov 2004 22:42:11 -0500 (EST)</received><received>from h-69-3-236-145.snfccasy.dynamic.covad.net ([69.3.236.145] helo=alexh)
+	by pop-a065c10.pas.sa.earthlink.net with smtp (Exim 3.33 #1)
+	id 1CTBHF-0000Ob-00; Sat, 13 Nov 2004 19:42:09 -0800</received><message-id>008301c4c9fb$eb75b2b0$6401a8c0@alexh</message-id><references>&lt;BDB8FAA9.814D%ilazar@burtongroup.com&gt; &lt;Pine.GSO.4.58.0411111657000.28357@sharpie.argfrp.us.uu.net&gt; &lt;017c01c4c815$30f53060$6401a8c0@alexh&gt; &lt;Pine.GSO.4.58a.0411110756001.3055@uhunix2&gt; &lt;035401c4c8df$82365ec0$6401a8c0@alexh&gt; &lt;p06020404bdbc65a27584@[192.168.1.103]&gt;</references><date>Sat, 13 Nov 2004 19:42:09 -0800</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 6.00.2800.1437</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V6.00.2800.1441</x-mimeole><sender>owner-nanog@merit.edu</sender><precedence>bulk</precedence><errors-to>owner-nanog-outgoing@merit.edu</errors-to><x-loop>nanog</x-loop></headers><normalized-references><normalized-message-id>008301c4c9fb$eb75b2b0$6401a8c0@alexh</normalized-message-id><normalized-reference>BDB8FAA9.814D%ilazar@burtongroup.com</normalized-reference><normalized-reference>Pine.GSO.4.58.0411111657000.28357@sharpie.argfrp.us.uu.net</normalized-reference><normalized-reference>017c01c4c815$30f53060$6401a8c0@alexh</normalized-reference><normalized-reference>Pine.GSO.4.58a.0411110756001.3055@uhunix2</normalized-reference><normalized-reference>035401c4c8df$82365ec0$6401a8c0@alexh</normalized-reference><normalized-reference>p06020404bdbc65a27584@[192.168.1.103]</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><para depth="0">
+Below, please:
+
+</para><para depth="0">  s/such/VoIP filtering/
+
+</para><para depth="0">and it will be true. It do not depends of alghoritm you are using.
+
+</para><para depth="0">Moreover, if you deploy such service, someone else can deploy VoIP which
+uses https tunnel to it, and you will not have any chances than to block
+total https traffic.
+
+</para><para depth="0">It (such thing) can be more  practical in corporate network (on gateway) or,
+yep, in case if third force (gov.) requires it and you really want to comply
+(not to show a compliance).
+
+</para><para depth="0">But I just dropped an idea, not the whole solution.
+
+</para><quote depth="1"><quotepara depth="1">However, attempting to deploy such in the presence of any
+competitive market would likely result in widespread customer
+migration.  A government or assured monopoly could deploy
+it, though, and then charge a premium for those who want it
+removed (i.e. "premium data service") which conveniently
+happens to match their current voice tariffs...
+
+</quotepara><quotepara depth="1">/John
+</quotepara></quote><para depth="0">
+</para></body></message>

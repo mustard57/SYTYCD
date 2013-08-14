@@ -1,0 +1,32 @@
+<message message-id="20000518200228.A1931@bubba.earthlink.net" list="com.redhat.redhat-install-list" id="24cams5ev7ggw2yt" type="development" date="2000-05-18T20:02:28-05:00" year="2000-01-01" year-month="2000-05-01" year-month-day="2000-05-18" thread-id="xuetogmksf4t74oo"><headers><envelope-from-line>From mail@mail.redhat.com Thu May 18 21:02:30 2000</envelope-from-line><from personal="Bob McClure Jr" address="robertmcclure@earthlink.net">Bob McClure Jr &lt;robertmcclure@earthlink.net&gt;</from><to personal="redhat-install-list@redhat.com" address="redhat-install-list@redhat.com">redhat-install-list@redhat.com</to><subject normal="SSH">Re: SSH</subject><received>(qmail 20301 invoked from network); 19 May 2000 01:02:31 -0000</received><received>from mail.redhat.com (199.183.24.239)
+  by lists.redhat.com with SMTP; 19 May 2000 01:02:31 -0000</received><received>from bubba.earthlink.net (root@dialup-209.244.93.118.Dallas1.Level3.net [209.244.93.118])
+	by mail.redhat.com (8.8.7/8.8.7) with ESMTP id VAA16260
+	for &lt;redhat-install-list@redhat.com&gt;; Thu, 18 May 2000 21:02:30 -0400</received><received>(from bob@localhost)
+	by bubba.earthlink.net (8.9.3/8.9.3) id UAA02028
+	for redhat-install-list@redhat.com; Thu, 18 May 2000 20:02:28 -0500</received><date>Thu, 18 May 2000 20:02:28 -0500</date><message-id>20000518200228.A1931@bubba.earthlink.net</message-id><references>&lt;391E8190.637F5913@netvigator.com&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><x-mailer>Mutt 1.0pre3us</x-mailer><in-reply-to>&lt;391E8190.637F5913@netvigator.com&gt;</in-reply-to></headers><normalized-references><normalized-message-id>20000518200228.A1931@bubba.earthlink.net</normalized-message-id><normalized-in-reply-to>391E8190.637F5913@netvigator.com</normalized-in-reply-to><normalized-reference>391E8190.637F5913@netvigator.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">RedHat comes with OpenSSH.
+ - You will need to install openssl* first, and then you can install
+openssh*.
+ - Use whatever tool is customary to get sshd running full-time on each
+machine.
+ - On each machine, as yourself, run "ssh-keygen".
+ - Add the identity.pub on machine A to the ~/.ssh/authorized_keys on
+machine B, and vice-versa.
+
+</para><para depth="0">"man ssh" for more details.
+
+</para><para depth="0">On Sun, May 14, 2000 at 06:36:00PM +0800, Mark Lo wrote:
+</para><quote depth="1"><quotepara depth="1">Hi,
+
+</quotepara><quotepara depth="1">    Where can I find a ssh program for secure remote login.  Does it
+ship with Redhat, if yes..how to enable the ssh functions.
+
+</quotepara><quotepara depth="1">Thanks
+
+</quotepara><quotefooter type="signature" depth="1" hash="15062036704596344796">Mark
+</quotefooter></quote><para depth="0">
+Cheers,
+</para><footer type="virus-scan" depth="0">-- 
+Bob McClure, Jr.            | This is Linux Country.
+Bobcat Open Systems, Inc.   | Email viruses?  Hmm.
+<email>robertmcclure@earthlink.net</email> | I've not had a problem with them.
+</footer></body></message>

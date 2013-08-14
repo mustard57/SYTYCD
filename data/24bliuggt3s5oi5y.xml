@@ -1,0 +1,30 @@
+<message message-id="200504161244.54008.krinklyfig@spymac.com" list="org.freebsd.freebsd-questions" id="24bliuggt3s5oi5y" type="general" date="2005-04-16T12:45:00" year="2005-01-01" year-month="2005-04-01" year-month-day="2005-04-16" thread-id="iu2my7c4ho7x6qqt"><headers><envelope-from-line>From krinklyfig@spymac.com  Sat Apr 16 12:44:57 2005</envelope-from-line><from personal="Joshua Tinnin" address="krinklyfig@spymac.com">Joshua Tinnin &lt;krinklyfig@spymac.com&gt;</from><subject normal="lost root passwd">lost root passwd</subject><date>Sat Apr 16 12:45:00 2005</date><in-reply-to>&lt;6.2.0.14.0.20050416152842.01f460a8@mail.face2interface.com&gt;</in-reply-to><references>&lt;6.2.0.14.0.20050225125247.02e6d948@mail.face2interface.com&gt;
+	&lt;200504161202.47888.krinklyfig@spymac.com&gt;
+	&lt;6.2.0.14.0.20050416152842.01f460a8@mail.face2interface.com&gt;</references><message-id>200504161244.54008.krinklyfig@spymac.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>200504161244.54008.krinklyfig@spymac.com</normalized-message-id><normalized-in-reply-to>6.2.0.14.0.20050416152842.01f460a8@mail.face2interface.com</normalized-in-reply-to><normalized-reference>6.2.0.14.0.20050225125247.02e6d948@mail.face2interface.com</normalized-reference><normalized-reference>200504161202.47888.krinklyfig@spymac.com</normalized-reference><normalized-reference>6.2.0.14.0.20050416152842.01f460a8@mail.face2interface.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On Sat 16 Apr 05 12:31, Marty Landman &lt;<email>MLandman@face2interface.com</email>&gt; 
+wrote:
+</para><quote depth="1"><quotepara depth="1">At 03:02 PM 4/16/2005, Joshua Tinnin wrote:
+</quotepara><quote depth="2"><quote depth="3"><quotepara depth="3">Joshua, when I do the 'mount -u /' get back
+
+</quotepara><quotepara depth="3">WARNING: R/W mount of / denied. Filesystem is not clean - run
+fsck mount: /dev/ad-s1a: Operation not permitted
+</quotepara></quote><quotepara depth="2">
+Make sure to run that command before you mount any other fs, like
+right after you fsck -p  - i.e.:
+
+</quotepara><quotepara depth="2">(in order)
+
+</quotepara><quotepara depth="2"># fsck -p
+# mount -u /
+# mount -a -t ufs
+</quotepara></quote><quotepara depth="1">
+That did it. Thanks, you are a scholar and a gentleman.
+</quotepara></quote><para depth="0">
+Hey, on a good day ... ;)
+
+</para><para depth="0">Anyway, no problem. Make sure to remember that when you do something 
+like rebuild and install world (along with adjkerntz -i, which you 
+don't need for what you did) - once you do it enough times, you can 
+practically do it with your eyes closed.
+
+</para><para depth="0">- jt
+</para></body></message>

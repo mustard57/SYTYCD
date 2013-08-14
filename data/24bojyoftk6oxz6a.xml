@@ -1,0 +1,20 @@
+<message message-id="20061011011728.GY72517@nasby.net" list="org.postgresql.pgsql-hackers" id="24bojyoftk6oxz6a" type="development" date="2006-10-10T20:17:28-05:00" year="2006-01-01" year-month="2006-10-01" year-month-day="2006-10-10" thread-id="7nk2ptoxmvcqgqzy"><headers><envelope-from-line>From pgsql-hackers-owner@postgresql.org  Tue Oct 10 22:17:35 2006</envelope-from-line><from personal="Jim C. Nasby" address="jim@nasby.net">"Jim C. Nasby" &lt;jim@nasby.net&gt;</from><to personal="pgsql-hackers@postgresql.org" address="pgsql-hackers@postgresql.org">pgsql-hackers@postgresql.org</to><subject normal="Change view ownership">Change view ownership</subject><received>from localhost (wm.hub.org [200.46.204.128])
+	by postgresql.org (Postfix) with ESMTP id 175AD9FB3AA
+	for &lt;pgsql-hackers-postgresql.org@postgresql.org&gt;; Tue, 10 Oct 2006 22:17:35 -0300 (ADT)</received><received>from postgresql.org ([200.46.204.71])
+ by localhost (mx1.hub.org [200.46.204.128]) (amavisd-new, port 10024)
+ with ESMTP id 86506-05 for &lt;pgsql-hackers-postgresql.org@postgresql.org&gt;;
+ Wed, 11 Oct 2006 01:17:31 +0000 (UTC)</received><x-greylist>from auto-whitelisted by SQLgrey-</x-greylist><received>from noel.decibel.org (noel.decibel.org [67.100.216.10])
+	by postgresql.org (Postfix) with ESMTP id 3B01E9FB3A7
+	for &lt;pgsql-hackers@postgresql.org&gt;; Tue, 10 Oct 2006 22:17:29 -0300 (ADT)</received><received>by noel.decibel.org (Postfix, from userid 1001)
+	id B7F8D56427; Tue, 10 Oct 2006 20:17:28 -0500 (CDT)</received><received>(hashcash-sendmail, from uid 1001);
+	Tue, 10 Oct 2006 20:17:28 -0500</received><date>Tue, 10 Oct 2006 20:17:28 -0500</date><message-id>20061011011728.GY72517@nasby.net</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><x-operating-system>FreeBSD 6.0-RELEASE-p4 amd64</x-operating-system><x-distributed>Join the Effort!  http://www.distributed.net</x-distributed><user-agent>Mutt/1.5.11</user-agent><x-hashcash>1:20:061011:pgsql-hackers@postgresql.org::X7GYta/3AI/EQTCf:000000000
+	0000000000000000000000000Bcb</x-hashcash><x-virus-scanned>Maia Mailguard 1.0.1</x-virus-scanned><x-spam-status>No, hits=0 tagged_above=0 required=5 tests=</x-spam-status><x-spam-level/><x-archive-number>200610/553</x-archive-number><x-sequence-number>92450</x-sequence-number></headers><normalized-references><normalized-message-id>20061011011728.GY72517@nasby.net</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><footer type="signature" hash="11395350264345383017" depth="0">IIRC there was an intention to allow ownership reassignment of all
+objects in the database. Somehow views got missed (probably because they
+don't currently have an ALTER command). If there isn't a lot of code
+involved in making this happen, I'd argue it should go in as a bug fix.
+If not, can we add it to the TODO for 8.3?
+-- 
+Jim Nasby                                            <email>jim@nasby.net</email>
+EnterpriseDB      <url>http://enterprisedb.com</url>      512.569.9461 (cell)
+
+</footer></body></message>

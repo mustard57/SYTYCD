@@ -1,0 +1,29 @@
+<message message-id="pan.2006.05.17.13.43.19.607416@PSDT.com" list="org.perl.beginners" id="24csfzpx4lu3b7dc" type="users" date="2006-05-17T06:43:20-07:00" year="2006-01-01" year-month="2006-05-01" year-month-day="2006-05-17" thread-id="2tbdaymafxv54xli"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Peter Scott" address="Peter@PSDT.com">Peter Scott &lt;Peter@PSDT.com&gt;</from><to personal="beginners@perl.org" address="beginners@perl.org">beginners@perl.org</to><subject normal="reading a line at a time inefficient?">Re: reading a line at a time inefficient?</subject><newsgroups>perl.beginners</newsgroups><path>nntp.perl.org</path><xref>nntp.perl.org perl.beginners:83670</xref><return-path>Peter@PSDT.com</return-path><mailing-list>contact beginners-help@perl.org; run by ezmlm</mailing-list><delivered-to>mailing list beginners@perl.org</delivered-to><received>(qmail 24471 invoked from network); 17 May 2006 13:43:39 -0000</received><received>from x1a.develooper.com (HELO x1.develooper.com) (216.52.237.111)
+  by lists.develooper.com with SMTP; 17 May 2006 13:43:39 -0000</received><received>(qmail 1867 invoked by uid 225); 17 May 2006 13:43:39 -0000</received><delivered-to>beginners@perl.org</delivered-to><received>(qmail 1854 invoked by alias); 17 May 2006 13:43:38 -0000</received><x-spam-status>No, hits=-4.4 required=8.0
+	tests=ALL_TRUSTED,BAYES_00</x-spam-status><x-spam-check-by>la.mx.develooper.com</x-spam-check-by><received-spf>neutral (x1.develooper.com: local policy)</received-spf><received>from x6.develooper.com (HELO lists.develooper.com) (63.251.223.186)
+    by la.mx.develooper.com (qpsmtpd/0.28) with SMTP; Wed, 17 May 2006 06:43:25 -0700</received><received>(qmail 24184 invoked by uid 515); 17 May 2006 13:43:20 -0000</received><organization>Pacific Systems Design Technologies</organization><date>Wed, 17 May 2006 06:43:20 -0700</date><message-id>pan.2006.05.17.13.43.19.607416@PSDT.com</message-id><references>&lt;C08F4956.13055%lists@harrisfam.net&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-posted-by>24.108.69.34</x-posted-by></headers><normalized-references><normalized-message-id>pan.2006.05.17.13.43.19.607416@PSDT.com</normalized-message-id><normalized-reference>C08F4956.13055%lists@harrisfam.net</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On Tue, 16 May 2006 09:18:14 -0700, Bryan Harris wrote: 
+</para><quote depth="1"><quotepara depth="1">If I'm reading in many-megabyte files, is it considered to be more efficient
+to read it into an array, then loop over the array?  Or is reading a line at
+a time okay?
+</quotepara></quote><para depth="0">
+Focus on *your* efficiency first, not the computer's.  If you're doing
+line-oriented processing, read it a line at a time.  If you're doing
+pattern matching that spans line boundaries, you'll probably want to read
+the whole thing in.
+
+</para><quote depth="1"><quotepara depth="1">I realize the second will use more memory, but what's a few megabytes in
+today's computers?  I'm more worried about the OS having to go back to the
+disk a couple hundred-thousand times -- seems like it'd be hard on the disk.
+</quotepara></quote><para depth="0">
+Don't worry about the implementation - smart people have done that for you
+in optimizing the underlying code already.  If you don't benchmark
+different ways of doing something then your guesses as to which is more
+efficient than another are unreliable.  And don't bother benchmarking
+until you find out that performance improvement is necessary.
+
+</para><footer type="signature" hash="3148819235908293665" depth="0">-- 
+Peter Scott
+<url>http://www.perlmedic.com/</url>
+<url>http://www.perldebugged.com/</url>
+
+</footer></body></message>

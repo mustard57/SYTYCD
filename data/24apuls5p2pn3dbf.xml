@@ -1,0 +1,55 @@
+<message message-id="411496700805052357q2ea9b909na352ec45ea706d88@mail.gmail.com" list="com.googlegroups.cake-php" id="24apuls5p2pn3dbf" type="general" date="2008-05-05T23:57:01-07:00" year="2008-01-01" year-month="2008-05-01" year-month-day="2008-05-05" thread-id="wbabfyilln657olj"><headers><envelope-from-line>Mon Sep 22 15:34:00 2008</envelope-from-line><from personal="." address="lun...@gmail.com">"." &lt;lun...@gmail.com&gt;</from><to personal="Cake PHP" address="cake-php@googlegroups.com">Cake PHP &lt;cake-php@googlegroups.com&gt;</to><subject normal="$_FILES question">Re: $_FILES question</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 704
+          for &lt;steve.riddle.terrell@a.markmail.org&gt;;
+          Mon, 22 Sep 2008 15:34:00 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id E712A2908053
+	for &lt;steve.riddle.terrell@a.markmail.org&gt;; Mon, 22 Sep 2008 15:33:59 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (8.13.8/8.13.8) with ESMTP id m8MMXxO4016246
+	for &lt;steve.riddle.terrell@a.markmail.org&gt;; Mon, 22 Sep 2008 15:33:59 -0700</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id m8MMXxg8016242
+	for steve.riddle.terrell@a.markmail.org; Mon, 22 Sep 2008 15:33:59 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.cake-php</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>b1b8373f432d85be</x-markmail-googlegroups-mid><received>by 10.90.103.13 with SMTP id a13mr70583agc.8.1210057022622;
+        Mon, 05 May 2008 23:57:02 -0700 (PDT)</received><received>from an-out-0708.google.com (an-out-0708.google.com [209.85.132.244])
+        by mx.google.com with ESMTP id 22si303299yxr.2.2008.05.05.23.57.01;
+        Mon, 05 May 2008 23:57:02 -0700 (PDT)</received><received-spf>pass (google.com: domain of lun...@gmail.com designates 209.85.132.244 as permitted sender) client-ip=209.85.132.244;</received-spf><authentication-results>mx.google.com; spf=pass (google.com: domain of lun...@gmail.com designates 209.85.132.244 as permitted sender) smtp.mail=lun...@gmail.com; dkim=pass (test mode) header...@gmail.com</authentication-results><received>by an-out-0708.google.com with SMTP id d31so709278and.92
+        for &lt;cake-php@googlegroups.com&gt;; Mon, 05 May 2008 23:57:01 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:references;
+        bh=UirUGtGszYa4PCzjKDkkLsbk+tdzN3qGGvjPL4/VzlA=;
+        b=WyAIZBW1kH+vDB5zdl+OwL8GNY+Vl187FAk370suGg/bqWuQtG3tj8EuVcOkMRziBLhdEWxM4XoqbB7k196rBdveBG78RdiUHC6TWol546H3BfmFBsBXWxmyaVrffK93QaauK7A4ofjph8FJe6LrEgdxXVRCTdwLb/3yTLOXaWU=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:references;
+        b=Z5VMNkjXxQKcxtDwN2tOF4cfIgCeOL1NF5OALJjyZgZXeAo9N3NA4kwuo77a4ur85lkSm02JHA9EZQoGJ6T7Wa3SmWHdHqPRVP2S2maMpCtHOvcF6MOvVWIub5RlVCcfMpLEJkqdkNd1KUqJYiU4uEmBfJYf46qzglexTxq9vM0=</domainkey-signature><received>by 10.100.151.5 with SMTP id y5mr356279and.85.1210057021346;
+        Mon, 05 May 2008 23:57:01 -0700 (PDT)</received><received>by 10.100.122.20 with HTTP; Mon, 5 May 2008 23:57:01 -0700 (PDT)</received><message-id>411496700805052357q2ea9b909na352ec45ea706d88@mail.gmail.com</message-id><date>Mon, 5 May 2008 23:57:01 -0700</date><in-reply-to>&lt;411496700805052325g1f326e50s911791335b02e...@mail.gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>multipart/alternative; 
+	boundary="----=_Part_28977_30911063.1210057021327"</content-type><references>&lt;411496700805052325g1f326e50s911791335b02e...@mail.gmail.com&gt;</references></headers><normalized-references><normalized-message-id>411496700805052357q2ea9b909na352ec45ea706d88@mail.gmail.com</normalized-message-id><normalized-in-reply-to>411496700805052325g1f326e50s911791335b02e...@mail.gmail.com</normalized-in-reply-to><normalized-reference>411496700805052325g1f326e50s911791335b02e...@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_28977_30911063.1210057021327&quot;" type="text/plain; charset=ISO-8859-1"><para depth="0">nevermind. forgot to put enctype...
+
+</para><footer type="signature" depth="0" hash="13915591972537597242">On Mon, May 5, 2008 at 11:25 PM, . &lt;<email>lun...@gmail.com</email>&gt; wrote:
+
+</footer><quote depth="1"><quotepara depth="1">Newbie cake 1.2 and $_FILES question:
+
+</quotepara><quotepara depth="1"> &lt;input type="file" name="Filedata" /&gt;
+
+</quotepara><quotepara depth="1"> function blah()
+ {
+ echo debug($this-&gt;params['form']);
+
+</quotepara><quotepara depth="1">echo debug($_FILES);
+
+</quotepara><quotepara depth="1"> }
+
+</quotepara><quotepara depth="1">the first debug outputs
+Array
+(
+    [Filedata] =&gt; C:\...\blah.jpg
+)
+The second debug statement outputs
+Array
+{
+
+</quotepara><quotepara depth="1">}
+
+</quotepara><quotepara depth="1">Why? I thought $_FILES should display all the file properties (tmp_name,
+name, size, etc)?
+
+</quotepara><quotepara depth="1">thanks
+
+</quotepara></quote></body></message>

@@ -1,0 +1,99 @@
+<message message-id="3B08F71F.61EBA443@networks.groupvu.com" list="org.apache.portals.jetspeed-dev" id="24brbezkv6xqwfcz" type="development" date="2001-05-21T13:08:15+02:00" year="2001-01-01" year-month="2001-05-01" year-month-day="2001-05-21" thread-id="a7wnwn32bxel3fem"><headers><envelope-from-line>From jetspeed-dev-return-768-apmail-jakarta-jetspeed-dev-archive=jakarta.apache.org@jakarta.apache.org Mon May 21 11:08:41 2001</envelope-from-line><from personal="Raphaël Luta" address="raphael.luta@networks.groupvu.com">=?iso-8859-1?Q?Rapha=EBl?= Luta &lt;raphael.luta@networks.groupvu.com&gt;</from><to personal="jetspeed-dev@jakarta.apache.org" address="jetspeed-dev@jakarta.apache.org">jetspeed-dev@jakarta.apache.org</to><cc personal="Johnny Cass" address="johnny.cass@epiuse.com">Johnny Cass &lt;johnny.cass@epiuse.com&gt;</cc><subject normal="TODO updated">Re: TODO updated</subject><return-path>jetspeed-dev-return-768-apmail-jakarta-jetspeed-dev-archive=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-jetspeed-dev-archive@jakarta.apache.org</delivered-to><received>(qmail 68392 invoked by uid 500); 21 May 2001 11:08:13 -0000</received><mailing-list>contact jetspeed-dev-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;mailto:jetspeed-dev@jakarta.apache.org&gt;</list-post><list-help>&lt;mailto:jetspeed-dev-help@jakarta.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:jetspeed-dev-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:jetspeed-dev-subscribe@jakarta.apache.org&gt;</list-subscribe><reply-to>jetspeed-dev@jakarta.apache.org</reply-to><delivered-to>mailing list jetspeed-dev@jakarta.apache.org</delivered-to><received>(qmail 68367 invoked from network); 21 May 2001 11:08:03 -0000</received><message-id>3B08F71F.61EBA443@networks.groupvu.com</message-id><date>Mon, 21 May 2001 13:08:15 +0200</date><organization>Vivendi Universal Networks</organization><x-mailer>Mozilla 4.77 [en] (Windows NT 5.0; U)</x-mailer><x-accept-language>fr,en</x-accept-language><mime-version>1.0</mime-version><references>&lt;3B06428C.A88E420F@networks.groupvu.com&gt; &lt;3B08EF70.1012A981@epiuse.co.za&gt;</references><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-spam-rating>h31.sny.collab.net 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>3B08F71F.61EBA443@networks.groupvu.com</normalized-message-id><normalized-reference>3B06428C.A88E420F@networks.groupvu.com</normalized-reference><normalized-reference>3B08EF70.1012A981@epiuse.co.za</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">[redirected to <email>jetspeed-dev@jakarta.apache.org</email>, no need to be shy... ;) ]
+
+</para><para depth="0">Johnny Cass wrote:
+</para><quote depth="1"><quotepara depth="1">
+<email>raphael.luta@networks.groupvu.com</email> wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+If you have other TODO items to add, feel free to notify me (or update the list
+directly...)
+
+</quotepara></quote><quotepara depth="1">If there are no other takers, I've started configuring the Jetspeed
+build scripts so that we can use Cactus for unit testing. If you'll bear
+with me, I'll need some help making some of the decisions:
+
+</quotepara></quote><para depth="0">OK, I'll put you as the owner of Cactus integration.
+
+</para><quote depth="1"><quotepara depth="1">1.) Where should the cactus configuration and jar files be located? I
+was thinking of a 'cactus' sub directory in the build directory. This
+way, we can keep the testing stuff separate from the project. It will
+include the two cactus libraries, junit.jar , web.xml,
+cactus.properties, and the configuration directories / files for the
+various servlet engines (for now servlet 2.2 only).
+
+</quotepara><quotepara depth="1">+-jakarta-jetspeed
+         |
+         +-build
+             |
+             +-cactus (cactus.properties)
+                 |
+                 +-lib (commons-cactus-ant.jar, commons-cactus.jar,
+junit.jar)
+                 |
+                 +-web (redirector.jsp, web.xml)
+                 |
+                 +-orion14
+                 |
+                 .
+                 .
+                 |
+                 +-weblogic51
+
+</quotepara><quotepara depth="1">2.) In which directory should the test classes be placed? I was thinking
+maybe a new 'test' directory under 'src'. If we keep the test classes in
+a separate directory, we can create separate jars / wars for
+distributions containing the tests and those that should not. Both trees
+will be compiled with the same target.
+
+</quotepara><quotepara depth="1">+-jakarta-jetspeed
+         |
+         +-src
+            |
+            +-java (containing project classes org.apache.jetspeed...)
+            |
+            +-test (containing test classes org.apache.jetspeed...)
+
+</quotepara></quote><para depth="0">To be quite frank, I've no real idea of the ideal layout. I think that 
+whatever works for other projects using Cactus should work for us.
+
+</para><para depth="0">Maybe someone else has a better idea.
+
+</para><quote depth="1"><quotepara depth="1">3.) Can someone elaborate on the TODO: 'Update the build system to make
+easier compilation of modules'. I am already making a lot of changes to
+the build system to use Cactus. If somebody can explain to me how module
+compilation is supposed to work I will include these changes as well.
+
+</quotepara></quote><para depth="0">Right now, the portlet that are found in /modules need to be compiled
+independently of the main engine. So if you want to include them, you
+need to build the main webapp, deploy, build a portlet under modules, deploy,
+etc...
+
+</para><para depth="0">What I'd like to have is:
+
+</para><para depth="0">build webapp --with-module=PollPortlet --with-module=MyOwnPortlet
+
+</para><para depth="0">or
+
+</para><para depth="0">build webapp -modules modules.tmpl
+and modules.tmpl containing the necesary information for building the webapp
+with these additionnal modules...
+
+</para><para depth="0">I've not investigated if Ant was able to do in a straightforward way...
+
+</para><quote depth="1"><quotepara depth="1">4.) Finally, if the turbine folk are going forward with removing the
+build scripts, should we do the same? I'll do this as well.
+
+</quotepara></quote><para depth="0">I'm +0 on this: on one hand, it makes it easier for the developpers because
+you don't need to have 30 ant.jar and build scripts lying around and you can
+take advantage of things like GUMP; on the other hand, you add a new dependency
+and a new setup step on the casual user that just wants to build the product
+for testing purpose...
+
+</para><footer type="signature" hash="572885041654545869" depth="0">--
+Raphael Luta - <email>raphael.luta@networks.groupvu.com</email>
+Vivendi Universal Networks - Paris
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>jetspeed-dev-unsubscribe@jakarta.apache.org</email>
+For additional commands, e-mail: <email>jetspeed-dev-help@jakarta.apache.org</email>
+
+</footer></body></message>

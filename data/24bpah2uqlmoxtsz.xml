@@ -1,0 +1,37 @@
+<message message-id="26928870.1187731950983.JavaMail.jira@brutus" list="org.apache.hadoop.core-dev" id="24bpah2uqlmoxtsz" type="bugs" date="2007-08-21T14:32:30-07:00" year="2007-01-01" year-month="2007-08-01" year-month-day="2007-08-21" thread-id="fw3ozuejj5esavmg"><headers><envelope-from-line>From hadoop-dev-return-16867-apmail-lucene-hadoop-dev-archive=lucene.apache.org@lucene.apache.org Tue Aug 21 21:32:53 2007</envelope-from-line><from personal="Tsz Wo (Nicholas), SZE (JIRA)" address="jira@apache.org">"Tsz Wo (Nicholas), SZE (JIRA)" &lt;jira@apache.org&gt;</from><to personal="hadoop-dev@lucene.apache.org" address="hadoop-dev@lucene.apache.org">hadoop-dev@lucene.apache.org</to><subject normal="[jira] Updated: (HADOOP-1701) Provide a simple authentication service and a user management service">[jira] Updated: (HADOOP-1701) Provide a simple authentication
+ service and a user management service</subject><return-path>hadoop-dev-return-16867-apmail-lucene-hadoop-dev-archive=lucene.apache.org@lucene.apache.org</return-path><delivered-to>apmail-lucene-hadoop-dev-archive@locus.apache.org</delivered-to><received>(qmail 52391 invoked from network); 21 Aug 2007 21:32:52 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (140.211.11.2)
+  by minotaur.apache.org with SMTP; 21 Aug 2007 21:32:52 -0000</received><received>(qmail 66764 invoked by uid 500); 21 Aug 2007 21:32:48 -0000</received><delivered-to>apmail-lucene-hadoop-dev-archive@lucene.apache.org</delivered-to><received>(qmail 66726 invoked by uid 500); 21 Aug 2007 21:32:48 -0000</received><mailing-list>contact hadoop-dev-help@lucene.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:hadoop-dev-help@lucene.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:hadoop-dev-unsubscribe@lucene.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:hadoop-dev@lucene.apache.org&gt;</list-post><list-id>&lt;hadoop-dev.lucene.apache.org&gt;</list-id><reply-to>hadoop-dev@lucene.apache.org</reply-to><delivered-to>mailing list hadoop-dev@lucene.apache.org</delivered-to><received>(qmail 66717 invoked by uid 99); 21 Aug 2007 21:32:48 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 21 Aug 2007 14:32:48 -0700</received><x-asf-spam-status>No, hits=-100.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.4] (HELO brutus.apache.org) (140.211.11.4)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 21 Aug 2007 21:32:51 +0000</received><received>from brutus (localhost [127.0.0.1])
+	by brutus.apache.org (Postfix) with ESMTP id F0D1471420F
+	for &lt;hadoop-dev@lucene.apache.org&gt;; Tue, 21 Aug 2007 14:32:30 -0700 (PDT)</received><message-id>26928870.1187731950983.JavaMail.jira@brutus</message-id><date>Tue, 21 Aug 2007 14:32:30 -0700 (PDT)</date><in-reply-to>&lt;17285634.1186690662754.JavaMail.jira@brutus&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>26928870.1187731950983.JavaMail.jira@brutus</normalized-message-id><normalized-in-reply-to>17285634.1186690662754.JavaMail.jira@brutus</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+[ <br/><url>https://issues.apache.org/jira/browse/HADOOP-1701?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url> <br/>] 
+
+</para><para depth="0">Tsz Wo (Nicholas), SZE updated HADOOP-1701:
+-------------------------------------------
+
+</para><para depth="0">    Attachment:     (was: users.txt)
+
+</para><quote depth="1"><quotepara depth="1">Provide a simple authentication service and a user management service
+---------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: HADOOP-1701
+                URL: <url>https://issues.apache.org/jira/browse/HADOOP-1701</url>
+            Project: Hadoop
+         Issue Type: New Feature
+           Reporter: Tsz Wo (Nicholas), SZE
+           Assignee: Tsz Wo (Nicholas), SZE
+
+</quotepara><quotepara depth="1">In HADOOP-1298, we want to add user information and permission to the file <br/>system. It requires an authentication service and a user management service. We <br/>should provide a framework and a simple implementation in issue and extend it <br/>later. As discussed in HADOOP-1298, the framework should be extensible and <br/>pluggable. 
+- Extensible: possible to extend the framework to the other parts (e.g. <br/>map-reduce) of Hadoop. 
+- Pluggable: can easily switch security implementations. Below is a diagram <br/>borrowed from Java. 
+<br/>!<url>http://java.sun.com/javase/6/docs/technotes/guides/security/overview/images/3.jpg!</url> 
+- Implement a Hadoop authentication center (HAC). In the first step, the <br/>mechanism of HAC is very simple, it keeps track a list of usernames (we only <br/>support users, will work on other principals later) in HAC and verify username <br/>in user login (yeah, no password). HAC can run inside NameNode or run as a stand<br/>alone server. We will probably use Kerberos to provide more sophisticated <br/>authentication service. 
+</quotepara></quote><footer type="signature" hash="7143682674318774400" depth="0">
+-- 
+This message is automatically generated by JIRA.
+-
+You can reply to this email to add a comment to the issue online.
+
+</footer></body></message>

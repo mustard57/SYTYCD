@@ -1,0 +1,57 @@
+<message message-id="48E2B301.4070907@gmail.com" list="org.wikimedia.lists.foundation-l" id="24admz3xnhtk5l2j" type="general" date="2008-10-01T02:15:13+03:00" year="2008-01-01" year-month="2008-09-01" year-month-day="2008-09-30" thread-id="owdvbxca7ccvmvy4"><headers><envelope-from-line>Tue Sep 30 15:15:16 2008</envelope-from-line><from personal="Jussi-Ville Heiskanen" address="cimonavaro@gmail.com">Jussi-Ville Heiskanen &lt;cimonavaro@gmail.com&gt;</from><to personal="Wikimedia Foundation Mailing List" address="foundation-l@lists.wikimedia.org">Wikimedia Foundation Mailing List &lt;foundation-l@lists.wikimedia.org&gt;</to><subject normal="[Foundation-l] Freedom, standards, and file formats">Re: [Foundation-l] Freedom, standards, and file formats</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 684
+          for &lt;lois.jacobson.brock@a.markmail.org&gt;;
+          Tue, 30 Sep 2008 15:15:16 -0800 (GMT-08:00)</received><received>from lists.wikimedia.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 951052908002
+	for &lt;lois.jacobson.brock@a.markmail.org&gt;; Tue, 30 Sep 2008 16:14:52 -0700 (PDT)</received><received>from localhost ([127.0.0.1]:40609 helo=lily.knams.wikimedia.org)
+	by lily.knams.wikimedia.org with esmtp (Exim 4.63)
+	(envelope-from &lt;foundation-l-bounces@lists.wikimedia.org&gt;)
+	id 1KkoQy-00054w-N5; Tue, 30 Sep 2008 23:15:13 +0000</received><received>from fg-out-1718.google.com ([72.14.220.158]:25762)
+	by lily.knams.wikimedia.org with esmtp (Exim 4.63)
+	(envelope-from &lt;cimonavaro@gmail.com&gt;) id 1KkoQu-00053a-NG
+	for foundation-l@lists.wikimedia.org; Tue, 30 Sep 2008 23:15:09 +0000</received><received>by fg-out-1718.google.com with SMTP id e21so192946fga.6
+	for &lt;foundation-l@lists.wikimedia.org&gt;;
+	Tue, 30 Sep 2008 16:15:08 -0700 (PDT)</received><received>by 10.86.95.20 with SMTP id s20mr6301144fgb.65.1222816508329;
+	Tue, 30 Sep 2008 16:15:08 -0700 (PDT)</received><received>from ?82.181.254.50? (cs181254050.pp.htv.fi [82.181.254.50])
+	by mx.google.com with ESMTPS id e20sm1978567fga.1.2008.09.30.16.15.06
+	(version=TLSv1/SSLv3 cipher=RC4-MD5);
+	Tue, 30 Sep 2008 16:15:07 -0700 (PDT)</received><message-id>48E2B301.4070907@gmail.com</message-id><date>Wed, 01 Oct 2008 02:15:13 +0300</date><user-agent>Thunderbird 2.0.0.17 (X11/20080925)</user-agent><mime-version>1.0</mime-version><references>&lt;48DE9EAE.8090102@verizon.net&gt;	&lt;e692861c0809271542l23773b4yf7b0976df6dc3396@mail.gmail.com&gt;
+	&lt;b80736c80809291852tdf5c108he8d6c056c9b62ce7@mail.gmail.com&gt;</references><in-reply-to>&lt;b80736c80809291852tdf5c108he8d6c056c9b62ce7@mail.gmail.com&gt;</in-reply-to><x-beenthere>foundation-l@lists.wikimedia.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>Wikimedia Foundation Mailing List &lt;foundation-l@lists.wikimedia.org&gt;</reply-to><list-id>Wikimedia Foundation Mailing List &lt;foundation-l.lists.wikimedia.org&gt;</list-id><list-unsubscribe>&lt;https://lists.wikimedia.org/mailman/listinfo/foundation-l&gt;, 
+	&lt;mailto:foundation-l-request@lists.wikimedia.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.wikimedia.org/pipermail/foundation-l&gt;</list-archive><list-post>&lt;mailto:foundation-l@lists.wikimedia.org&gt;</list-post><list-help>&lt;mailto:foundation-l-request@lists.wikimedia.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.wikimedia.org/mailman/listinfo/foundation-l&gt;,
+	&lt;mailto:foundation-l-request@lists.wikimedia.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>foundation-l-bounces@lists.wikimedia.org</sender><errors-to>foundation-l-bounces@lists.wikimedia.org</errors-to></headers><normalized-references><normalized-message-id>48E2B301.4070907@gmail.com</normalized-message-id><normalized-in-reply-to>b80736c80809291852tdf5c108he8d6c056c9b62ce7@mail.gmail.com</normalized-in-reply-to><normalized-reference>48DE9EAE.8090102@verizon.net</normalized-reference><normalized-reference>e692861c0809271542l23773b4yf7b0976df6dc3396@mail.gmail.com</normalized-reference><normalized-reference>b80736c80809291852tdf5c108he8d6c056c9b62ce7@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">Erik Moeller wrote:
+</para><quote depth="1"><quotepara depth="1">
+I don't think there's any question that we are committed to making
+sure that every piece of user-facing content, including interactivity,
+can be accessed using 100% open source software. That's an important
+consensus. The primary issue is the question of parallel distribution,
+which is one on which reasonable people can disagree. We should
+collect as much data as possible to help the Board reach a decision on
+that question.
+
+</quotepara></quote><para depth="0">Simply because your first statement is in fact totally inaccurate, it is 
+clearly a very useful clarification, coming as it does, from someone in 
+your position.
+
+</para><para depth="0">:-)
+
+</para><para depth="0">Nevertheless, the statement is not in any shape or form relevant to the 
+discussion about document formats. (For those joining the discussion 
+late, software and document formats are quite separate things, only very 
+tangentially and rarely significantly meeting - I think the brouhaha 
+about Lempel-Ziv buried that question for a while)
+
+</para><para depth="0">I don't think suggesting that nailing down that we are committed to 
+software being 100% open source, but "flexible" on formats, is a useful 
+contribution to the discussion on that front, but more akin to a red 
+herring. I think I have said this before. And I think I will continue to 
+repeat this whenever given the chance, "ceterum censeo".
+
+</para><para depth="0">Yours,
+
+</para><footer type="signature" depth="0" hash="2530749367516062956">Jussi-Ville Heiskanen
+
+</footer><footer type="list-management" depth="0">_______________________________________________
+foundation-l mailing list
+<email>foundation-l@lists.wikimedia.org</email>
+Unsubscribe: <url>https://lists.wikimedia.org/mailman/listinfo/foundation-l</url>
+</footer></body></message>

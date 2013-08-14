@@ -1,0 +1,81 @@
+<message message-id="OF52F699CB.28190A8E-ON85257276.004E0C0D-85257276.004E344B@us.ibm.com" list="org.oasis-open.lists.uima" id="24csjyjryn2e5exz" type="general" date="2007-02-02T14:14:08Z" year="2007-01-01" year-month="2007-02-01" year-month-day="2007-02-02" thread-id="cv2rk26x5xvernfb"><headers><envelope-from-line>From alally@us.ibm.com 2 Feb 2007 14:14:08 -0000</envelope-from-line><from personal="Adam Lally" address="alally@us.ibm.com">Adam Lally &lt;alally@us.ibm.com&gt;</from><to personal="David Ferrucci" address="ferrucci@us.ibm.com">David Ferrucci &lt;ferrucci@us.ibm.com&gt;</to><subject normal="[uima] Building Sub-Groups -- Your Input Required">Re: [uima] Building Sub-Groups -- Your Input Required</subject><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-0.6 required=5.0 tests=BAYES_00,HTML_MESSAGE,
+	HTML_MIME_NO_HTML_TAG,MIME_HTML_ONLY,NO_RECEIVED,NO_RELAYS autolearn=disabled
+	version=3.2.4</x-spam-status><date>2 Feb 2007 14:14:08 -0000</date><in-reply-to>&lt;OF448343D1.322141B6-ON85257272.00524FE4-85257272.0053F830@us.ibm.com&gt;</in-reply-to><message-id>OF52F699CB.28190A8E-ON85257276.004E0C0D-85257276.004E344B@us.ibm.com</message-id><mime-version>1.0</mime-version><content-type>text/html; charset=utf8</content-type></headers><normalized-references><normalized-message-id>OF52F699CB.28190A8E-ON85257276.004E0C0D-85257276.004E344B@us.ibm.com</normalized-message-id><normalized-in-reply-to>OF448343D1.322141B6-ON85257272.00524FE4-85257272.0053F830@us.ibm.com</normalized-in-reply-to></normalized-references><body html2text="elinks" type="text/html; charset=utf8"><para depth="0"> My preferences are to participate in the following subgroups:
+ 4. Behavioral Meta-Data Specification
+ 6. Abstract Interfaces
+ 7. WSDL Service Descriptions
+ 10. Java Bindings
+
+</para><para depth="0"> Regards,
+   -Adam
+ _____________________________
+ Adam Lally
+ Advisory Software Engineer
+ UIMA Framework Lead Developer
+ IBM T.J. Watson Research Center
+ Hawthorne, NY, 10532
+ Tel: 914-784-7706,  T/L: 863-7706
+ <email>alally@us.ibm.com</email>
+
+</para><para depth="0"> David Ferrucci/Watson/IBM@IBMUS      To <email>uima@lists.oasis-open.org</email>
+                                      cc <email>j.tsujii@manchester.ac.uk</email>,
+ 01/29/2007 10:17 AM                     <email>Sophia.ananiadou@manchester.ac.uk</email>,
+                                         <email>carl.madson@sri.com</email>,
+                                         <email>kano@is.s.u-tokyo.ac.jp</email>,
+                                         <email>nltngan@is.s.u-tokyo.ac.jp</email>
+                                 Subject [uima] Building Sub-Groups -- Your
+                                         Input Required
+
+</para><para depth="0"> Hi,
+ On the last call we decided to form small maybe 2-3 person subgroups to "own"
+ different elements of the specification going forward.
+ The idea is that each sub-group would do a deep-dive on a proposed element of
+ the specification in the IBM paper (e.g., CAS, Type-System, Abstract
+ interfaces etc.).
+ The initial task would be to critique the section, identify issues and make
+ recommendations on how to take it forward to a final form. The TC as a whole
+ would vote on the sub-groups' recommendations and action plans. The sub-groups
+ would then take on the task to implement the agreed-upon action plan.
+ Sub-groups will have leads whose responsibility it will be to share evolving
+ comments/questions/issues as part of an email discussion with the whole TC.
+ This is a critical component of the plan since the biweekly meeting will NOT
+ suffice if everyone had to come up to speed on  recommendations during the
+ calls.
+ Please read the following sections in the paper (if you have not already) and
+ send me your preferences for leading and/or joining 2 or more of the following
+ areas. I think it is important to have non-IBM participation on all of these.
+ Please also note that some of these sections are more straightforward than
+ others and I imagine will take less time/effort.
+ 1. CAS Specification
+ 2. Type-system Language
+ 3. Type-System Base Model
+ 4. Behavioral Meta-Data Specification (challenging issues here)
+ 5. Processing Element Meta-data specification
+ 6. Abstract Interfaces
+ 7. WSDL Service Descriptions
+ 8. Aggregate Analytic Descriptor Specification
+ 9. SOAP Bindings
+ 10. Java Bindings (proposed as an appendix by TC but not in original paper)
+
+</para><para depth="0"> (PLEASE RESPOND BY MONDAY OF NEXT WEEK -- Thanks.)
+ Discussion Topics (or what may be considered open issues) are discussed in
+ section 7 of the paper. These may turn into core specifications, or may more
+ likely lead to recommendations rather than core specifications. This section
+ has a number of sub-sections.They will require different treatment, any
+ thoughts?
+ We can decide on an approach for these at the next call.
+
+</para><para depth="0"> Thanks,
+        Dave
+ ------------------------------------------------------------------------
+ David A. Ferrucci, PhD
+ Senior Manager, Semantic Analysis &amp; Integration
+ Chief Architect,  UIMA
+ IBM T.J. Watson Research Center
+ 19 Skyline Drive, Hawthorne, NY 10532
+ Tel: 914-784-7847, 8/863-7847
+ <email>ferrucci@us.ibm.com</email>
+ ------------------------------------------------------------------------
+ <url>http://www.ibm.com/research/uima</url>
+</para></body></message>

@@ -1,0 +1,94 @@
+<message message-id="7965A9DCF12CC14984420BCC37B1608F25AC0B99E4@Elzar.grant.co.uk" list="org.postgresql.pgsql-admin" id="24bim4bjkpoheru2" type="general" date="2010-04-16T08:00:05+01:00" year="2010-01-01" year-month="2010-04-01" year-month-day="2010-04-15" thread-id="ksjxoyy73vnos65h"><headers><envelope-from-line>Thu Apr 15 23:00:43 2010</envelope-from-line><from personal="Renato Oliveira" address="renato.oliveira@grant.co.uk">Renato Oliveira &lt;renato.oliveira@grant.co.uk&gt;</from><to personal="Kevin Grittner" address="Kevin.Grittner@wicourts.gov">Kevin Grittner &lt;Kevin.Grittner@wicourts.gov&gt;</to><subject normal="[ADMIN] archived WALL files question">Re: [ADMIN] archived WALL files question</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 239
+          for &lt;marvin.galloway.strickland@a.markmail.org&gt;;
+          Thu, 15 Apr 2010 23:00:43 -0800 (GMT-08:00)</received><received>from mx2.hub.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id BACD5290833A
+	for &lt;marvin.galloway.strickland@a.markmail.org&gt;; Fri, 16 Apr 2010 00:00:19 -0700 (PDT)</received><received>from postgresql.org (mail.postgresql.org [200.46.204.86])
+	by mx2.hub.org (Postfix) with ESMTP id A1DE81E82DB1;
+	Fri, 16 Apr 2010 04:00:41 -0300 (ADT)</received><received>from maia.hub.org (unknown [200.46.204.183])
+	by mail.postgresql.org (Postfix) with ESMTP id E8A6A6323EB
+	for &lt;pgsql-admin-postgresql.org@mail.postgresql.org&gt;; Fri, 16 Apr 2010 04:00:23 -0300 (ADT)</received><received>from mail.postgresql.org ([200.46.204.86])
+ by maia.hub.org (mx1.hub.org [200.46.204.183]) (amavisd-maia, port 10024)
+ with ESMTP id 92268-05 for &lt;pgsql-admin-postgresql.org@mail.postgresql.org&gt;;
+ Fri, 16 Apr 2010 07:00:13 +0000 (UTC)</received><x-greylist>from auto-whitelisted by SQLgrey-1.7.6</x-greylist><received>from grant.co.uk (mail.grant.co.uk [62.3.197.20])
+	by mail.postgresql.org (Postfix) with ESMTP id DF41C632393
+	for &lt;pgsql-admin@postgresql.org&gt;; Fri, 16 Apr 2010 04:00:12 -0300 (ADT)</received><received>from elzar.grant.co.uk [192.168.8.10] by mail.grant.co.uk - Websense Email Security (6.1.0); Fri, 16 Apr 2010 08:00:09 +0100</received><received>from Elzar.grant.co.uk ([192.168.8.10]) by Elzar.grant.co.uk ([192.168.8.10]) with mapi; Fri, 16 Apr 2010 08:00:08 +0100</received><content-class>urn:content-classes:message</content-class><date>Fri, 16 Apr 2010 08:00:05 +0100</date><thread-topic>[ADMIN] archived WALL files question</thread-topic><thread-index>AcrctPu8kBAkO08TTzek3L2xaRu+7wAfUlCw</thread-index><message-id>7965A9DCF12CC14984420BCC37B1608F25AC0B99E4@Elzar.grant.co.uk</message-id><references>&lt;7965A9DCF12CC14984420BCC37B1608F25AC0B99AD@Elzar.grant.co.uk&gt;
+ &lt;4BC6F21D0200002500030956@gw.wicourts.gov&gt;</references><in-reply-to>&lt;4BC6F21D0200002500030956@gw.wicourts.gov&gt;</in-reply-to><accept-language>en-US, en-GB</accept-language><content-language>en-US</content-language><x-ms-has-attach/><x-ms-tnef-correlator/><acceptlanguage>en-US, en-GB</acceptlanguage><content-type>text/plain; charset="Windows-1252"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><mime-version>1.0</mime-version><x-sef-processed>6_1_0_100__2010_04_16_08_00_09</x-sef-processed><x-virus-scanned>Maia Mailguard 1.0.1</x-virus-scanned><x-spam-status>No, hits=-1.91 tagged_above=-10 required=5 tests=BAYES_00=-1.9,
+ T_RP_MATCHES_RCVD=-0.01</x-spam-status><x-spam-level/><x-mailing-list>pgsql-admin</x-mailing-list><list-archive>&lt;http://archives.postgresql.org/pgsql-admin&gt;</list-archive><list-help>&lt;mailto:majordomo@postgresql.org?body=help&gt;</list-help><list-id>&lt;pgsql-admin.postgresql.org&gt;</list-id><list-owner>&lt;mailto:pgsql-admin-owner@postgresql.org&gt;</list-owner><list-post>&lt;mailto:pgsql-admin@postgresql.org&gt;</list-post><list-subscribe>&lt;mailto:majordomo@postgresql.org?body=sub%20pgsql-admin&gt;</list-subscribe><list-unsubscribe>&lt;mailto:majordomo@postgresql.org?body=unsub%20pgsql-admin&gt;</list-unsubscribe><precedence>bulk</precedence><sender>pgsql-admin-owner@postgresql.org</sender></headers><normalized-references><normalized-message-id>7965A9DCF12CC14984420BCC37B1608F25AC0B99E4@Elzar.grant.co.uk</normalized-message-id><normalized-thread-index>AcrctPu8kBAkO08TTzek3L2xaRu+7w</normalized-thread-index><normalized-in-reply-to>4BC6F21D0200002500030956@gw.wicourts.gov</normalized-in-reply-to><normalized-reference>7965A9DCF12CC14984420BCC37B1608F25AC0B99AD@Elzar.grant.co.uk</normalized-reference><normalized-reference>4BC6F21D0200002500030956@gw.wicourts.gov</normalized-reference></normalized-references><body type="text/plain; charset=&quot;windows-1252&quot;"><para depth="0">I am sorry Kevin, I really appreciate your experience and your knowledge, and<br/>that's why I am asking; I thought the base backup was only necessary once. For<br/>example once you have done your first base backup, that is it, all you need is<br/>to replay the logs and backup the logs.
+
+</para><para depth="0">What would be the reason(s) for you to do weekly base backups?
+
+</para><para depth="0">Thank you very much
+
+</para><para depth="0">Best regards
+
+</para><para depth="0">Renato
+
+</para><para depth="0">Renato Oliveira
+Systems Administrator
+e-mail: <email>renato.oliveira@grant.co.uk</email>
+
+</para><para depth="0">Tel: +44 (0)1763 260811
+Fax: +44 (0)1763 262410
+<url>http://www.grant.co.uk/</url>
+
+</para><para depth="0">Grant Instruments (Cambridge) Ltd
+
+</para><para depth="0">Company registered in England, registration number 658133
+
+</para><para depth="0">Registered office address:
+29 Station Road,
+Shepreth,
+CAMBS SG8 6GB
+UK
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+
+</quotepara><quotepara depth="1">From: Kevin Grittner [mailto:<email>Kevin.Grittner@wicourts.gov</email>]
+Sent: 15 April 2010 17:02
+To: Renato Oliveira; <email>pgsql-admin@postgresql.org</email>
+Subject: Re: [ADMIN] archived WALL files question
+
+</quotepara><quotepara depth="1">Renato Oliveira &lt;<email>renato.oliveira@grant.co.uk</email>&gt; wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">I was reading again the documentation... "The archive command
+should generally de designed to refuse to overwrite any
+pre-existing archive file."  This means it will keep writing logs
+to the folder specified forever, and without an intervention, the
+media will run out of space.
+</quotepara></quote><quotepara depth="1">
+Overwriting an existing file wouldn't help with that, since the
+filenames keep changing.  It might, for example, prevent
+accidentally wiping out the WAL files from one database cluster with
+WAL files from another by copying the postgresql.conf file and
+neglecting to change the archive script.
+
+</quotepara><quote depth="2"><quotepara depth="2">What do you guys do with regards to this situation, for example:
+How to you clean up the old archived logs?
+</quotepara></quote><quotepara depth="1">
+We keep two weekly base backups and all the WAL files needed to
+recover from the earlier of the two to present.  We also keep an
+archival copy of the first base backup of each month with just the
+WAL files needed to start it.  We delete WAL files when no longer
+needed to support this retention policy.  It's all pretty automatic
+based on bash scripts run from cron jobs.
+
+</quotepara><quotepara depth="1">Of course, you'll want to tailor your strategy to your business
+needs.
+
+</quotepara><quotefooter type="signature" depth="1" hash="6081598166385296299">-Kevin
+
+</quotefooter><quote depth="2"><quotepara depth="2">-----Original Message-----
+
+</quotepara><quotepara depth="2">P Please consider the environment before printing this email
+CONFIDENTIALITY: The information in this e-mail and any attachments is<br/>confidential. It is intended only for the named recipients(s). If you are not<br/>the named recipient please notify the sender immediately and do not disclose the<br/>contents to another person or take copies.
+
+</quotepara><quotepara depth="2">VIRUSES: The contents of this e-mail or attachment(s) may contain viruses which<br/>could damage your own computer system. Whilst Grant Instruments (Cambridge) Ltd<br/>has taken every reasonable precaution to minimise this risk, we cannot accept<br/>liability for any damage which you sustain as a result of software viruses. You<br/>should therefore carry out your own virus checks before opening the<br/>attachment(s).
+
+</quotepara><quotepara depth="2">OpenXML: For information about the OpenXML file format in use within Grant<br/>Instruments please visit our <url>http://www.grant.co.uk/Support/openxml.html</url>
+
+</quotepara><quotefooter type="list-management" depth="2">-- 
+Sent via pgsql-admin mailing list (<email>pgsql-admin@postgresql.org</email>)
+To make changes to your subscription:
+<url>http://www.postgresql.org/mailpref/pgsql-admin</url>
+</quotefooter></quote></quote></body></message>

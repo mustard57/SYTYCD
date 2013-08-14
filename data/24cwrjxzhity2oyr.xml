@@ -1,0 +1,89 @@
+<message message-id="e0f7673f1001200857r17103fe6kc514ae1fed66ce26@mail.gmail.com" list="org.perl.perl-ldap" id="24cwrjxzhity2oyr" type="general" date="2010-01-20T08:57:17.628559-08:00" year="2010-01-01" year-month="2010-01-01" year-month-day="2010-01-20" thread-id="avddzuqrnxk6mtyn"><headers><envelope-from-line>Wed Jan 20 08:57:40 2010</envelope-from-line><from personal="Phil Lembo" address="phil.lembo@gmail.com">Phil Lembo &lt;phil.lembo@gmail.com&gt;</from><to personal="perl-ldap@perl.org" address="perl-ldap@perl.org">perl-ldap@perl.org</to><subject normal="perl-ad-manager">Re: perl-ad-manager</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 83
+          for &lt;eloise.powell.fox@a.markmail.org&gt;;
+          Wed, 20 Jan 2010 08:57:40 -0800 (GMT-08:00)</received><received>from lists-nntp.develooper.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 35AA07AD0121
+	for &lt;eloise.powell.fox@a.markmail.org&gt;; Wed, 20 Jan 2010 08:57:17 -0800 (PST)</received><received>(qmail 12797 invoked by uid 514); 20 Jan 2010 16:57:39 -0000</received><mailing-list>contact perl-ldap-help@perl.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;mailto:perl-ldap@perl.org&gt;</list-post><list-help>&lt;mailto:perl-ldap-help@perl.org&gt;</list-help><list-unsubscribe>&lt;mailto:perl-ldap-unsubscribe@perl.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:perl-ldap-subscribe@perl.org&gt;</list-subscribe><list-id>&lt;perl-ldap.perl.org&gt;</list-id><delivered-to>mailing list perl-ldap@perl.org</delivered-to><received>(qmail 12787 invoked from network); 20 Jan 2010 16:57:39 -0000</received><delivered-to>perl-ldap@perl.org</delivered-to><x-spam-status>No, hits=-0.1 required=8.0
+	tests=DKIM_SIGNED,DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,RCVD_IN_DNSWL_NONE,SPF_PASS</x-spam-status><x-spam-check-by>la.mx.develooper.com</x-spam-check-by><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:in-reply-to:references
+         :date:message-id:subject:from:to:content-type;
+        bh=UYGi2KApw6k98JGt69dhVbN1MSxXfGq0vlPfKsFZE7I=;
+        b=uL+RGXVv0Bx/sJbwrObkVFjTXDQrd2RvSWS9Rd/pRMR8gElYVDdoT2WuOEv+j0L/Jr
+         kkOBtgyqBFJu6cTHp9wCpJRzGKawfbGkwcHiEsLgjcvDGf5NoZbXaqAk3WthLPqF+O3A
+         n8V2kCQpFY0GA1dQBCGCQNIUw1v7HblCaOlaI=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        b=nkMlNpNTMH+zmjtCpHSZoP+dYH0itwxKsy3UnnvQzeRmmw8g/3dn9Nk+wg5PWfFNh9
+         Nl0zN2r6HbIETHesROXh1IfBXDOg90w7zAsPTnExRZrGhueA8nPcVnHRH4iz15jjEPFn
+         +9md9HSANwEBVh7UnzcnvhZwTHpz6OdZ5wAOI=</domainkey-signature><mime-version>1.0</mime-version><in-reply-to>&lt;07A371D457B501478C1DB3C3DE8372D705568091@GSBHEX2V.gsb.uchicago.edu&gt;</in-reply-to><references>&lt;07A371D457B501478C1DB3C3DE8372D7055678CB@GSBHEX2V.gsb.uchicago.edu&gt;
+	 &lt;8a706dbc1001191245r70e98868ufaeb4d15076f6a9f@mail.gmail.com&gt;
+	 &lt;7C139116-5366-4372-A31B-BA75BEDBEC16@illinois.edu&gt;
+	 &lt;07A371D457B501478C1DB3C3DE8372D705568091@GSBHEX2V.gsb.uchicago.edu&gt;</references><date>Wed, 20 Jan 2010 11:57:30 -0500</date><message-id>e0f7673f1001200857r17103fe6kc514ae1fed66ce26@mail.gmail.com</message-id><content-type>multipart/alternative; boundary=001636256f10663f80047d9b7b6c</content-type><x-virus-checked>Checked</x-virus-checked></headers><normalized-references><normalized-message-id>e0f7673f1001200857r17103fe6kc514ae1fed66ce26@mail.gmail.com</normalized-message-id><normalized-in-reply-to>07A371D457B501478C1DB3C3DE8372D705568091@GSBHEX2V.gsb.uchicago.edu</normalized-in-reply-to><normalized-reference>07A371D457B501478C1DB3C3DE8372D7055678CB@GSBHEX2V.gsb.uchicago.edu</normalized-reference><normalized-reference>8a706dbc1001191245r70e98868ufaeb4d15076f6a9f@mail.gmail.com</normalized-reference><normalized-reference>7C139116-5366-4372-A31B-BA75BEDBEC16@illinois.edu</normalized-reference><normalized-reference>07A371D457B501478C1DB3C3DE8372D705568091@GSBHEX2V.gsb.uchicago.edu</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=001636256f10663f80047d9b7b6c" type="text/plain; charset=UTF-8"><para depth="0">I'll try giving some time to this as well. In our environment we've got a
+mish-mosh of scripts I wrote over the last 10 years that are sorely in need
+of refactoring, reordering and, in some cases, retirement. It will be good
+to see how others have handled the same issues I've run across (dealing with
+nicknames and weird character sets has been my own personal hell for years).
+My stuff has also been way too specific to the eccentricities of how things
+developed in our company.
+
+</para><footer type="signature" depth="0" hash="6721614192742353947">Phil Lembo
+
+</footer><para depth="0">On Wed, Jan 20, 2010 at 10:15 AM, Young, Darren &lt;
+<email>Darren.Young@chicagobooth.edu</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">Well, the first thing I'm going to work on is the project goals document
+and a features roadmap.
+
+</quotepara><quote depth="2"><quotepara depth="2">-----Original Message-----
+From: John Arends [mailto:<email>jarends@illinois.edu</email>]
+Sent: Tuesday, January 19, 2010 7:26 PM
+To: Justin Alcorn
+Cc: Young, Darren; <email>perl-ldap@perl.org</email>
+Subject: Re: perl-ad-manager
+
+</quotepara><quotepara depth="2">I've hacked stuff like this together, so I also agree this would be
+useful.
+
+</quotepara><quotepara depth="2">I'm not a huge perl whiz, but I'd be happy to help with testing, etc.
+
+</quotepara><quotepara depth="2">On Jan 19, 2010, at 2:45 PM, Justin Alcorn wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">I do much the same thing with a series of roll-your-own systems
+running on
+Linux.   I'd love to help out.
+
+</quotepara><quotepara depth="3">On Tue, Jan 19, 2010 at 11:35 AM, Young, Darren &lt;
+<email>Darren.Young@chicagobooth.edu</email>&gt; wrote:
+
+</quotepara><quote depth="4"><quotepara depth="4">I'm in the process of creating an all Perl/LDAP based AD management
+set
+of libraries and scripts and am looking for any assistance in
+development and/or testing it. Our overall goal has been to have a
+toolset that can be used from UNIX/Linux to manage AD based
+objects.
+Things like provisioning, deprovisioning, password changes/resets,
+Exchange mailbox and email address management.
+
+</quotepara><quotepara depth="4">The set I'll be publishing will be based on our internal account
+management toolkit that we've been developing and running in
+production
+for the past 7 or so years.
+
+</quotepara><quotepara depth="4">If you're interested, it's hosted at Google code here:
+<url>http://code.google.com/p/perl-ad-manager/</url>
+
+</quotepara><quotepara depth="4">Any help with design, development or testing would be greatly
+appreciated.
+
+</quotepara><quotepara depth="4">Darren Young
+Systems &amp; Security Architect
+Computing Services
+University of Chicago
+Booth School of Business
+5807 South Woodlawn Avenue
+Chicago, IL 60637
+Voice 773.702.0331 | Fax 773.702.0233
+
+</quotepara></quote></quote></quote></quote></body></message>

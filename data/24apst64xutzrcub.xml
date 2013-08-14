@@ -1,0 +1,41 @@
+<message message-id="E1I8HKb-0004ys-4A@lily.knams.wikimedia.org" list="org.wikimedia.lists.mediawiki-cvs" id="24apst64xutzrcub" type="checkins" date="2007-07-10T15:08:49Z" year="2007-01-01" year-month="2007-07-01" year-month-day="2007-07-10" thread-id="24apst64xutzrcub"><headers><envelope-from-line>From robchurch@svn.wikimedia.org  Tue Jul 10 15:08:49 2007</envelope-from-line><from personal="robchurch@svn.wikimedia.org" address="robchurch at svn.wikimedia.org">"robchurch@svn.wikimedia.org" &lt;robchurch at svn.wikimedia.org&gt;</from><subject normal="[MediaWiki-CVS] SVN: [23967] trunk/phase3/includes/User.php">[MediaWiki-CVS] SVN:  [23967] trunk/phase3/includes/User.php</subject><date>Tue, 10 Jul 2007 15:08:49 +0000</date><message-id>E1I8HKb-0004ys-4A@lily.knams.wikimedia.org</message-id><content-type>text/plain; charset=us-ascii</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>E1I8HKb-0004ys-4A@lily.knams.wikimedia.org</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Revision: 23967
+Author:   robchurch
+Date:     2007-07-10 15:08:48 +0000 (Tue, 10 Jul 2007)
+
+</para><para depth="0">Log Message:
+</para><para depth="0">-----------
+Ditch redundant trim-and-length check
+
+</para><para depth="0">Modified Paths:
+</para><para depth="0">--------------
+    trunk/phase3/includes/User.php
+
+</para><para depth="0">Modified: trunk/phase3/includes/User.php
+===================================================================
+--- trunk/phase3/includes/User.php	2007-07-10 15:02:09 UTC (rev 23966)
++++ trunk/phase3/includes/User.php	2007-07-10 15:08:48 UTC (rev 23967)
+@@ -497,7 +497,7 @@
+ 	}
+
+</para><para depth="0"> 	/**
+-	 * Does the string match roughly an email address ?
++	 * Does a string look like an email address?
+ 	 *
+ 	 * There used to be a regular expression here, it got removed because it
+ 	 * rejected valid addresses. Actually just check if there is '@' somewhere
+@@ -506,12 +506,10 @@
+ 	 * @todo Check for RFC 2822 compilance (bug 959)
+ 	 *
+ 	 * @param string $addr email address
+-	 * @static
+ 	 * @return bool
+ 	 */
+-	static function isValidEmailAddr ( $addr ) {
+-		return ( trim( $addr ) != '' ) &amp;&amp;
+-			(false !== strpos( $addr, '@' ) );
++	public static function isValidEmailAddr( $addr ) {
++		return strpos( $addr, '@' ) !== false;
+ 	}
+
+</para><footer type="noise" depth="0"> 	/**
+</footer></body></message>

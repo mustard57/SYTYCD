@@ -1,0 +1,45 @@
+<message message-id="9812240656.AA01093@kannix.cubiculum.com" list="com.omnigroup.macosx-talk" id="24bff3s2dqiy54bf" type="general" date="1998-12-24T01:56:02-05:00" year="1998-01-01" year-month="1998-12-01" year-month-day="1998-12-23" thread-id="7lhn6xhohtlx3me4"><headers><envelope-from-line>From uucp@cubiculum.com  Thu Dec 24 01:37:08 1998</envelope-from-line><from personal="Ronald C.F. Antony" address="rcfa@cubiculum.com">"Ronald C.F. Antony" &lt;rcfa@cubiculum.com&gt;</from><to personal="sanguish@digifix.com" address="sanguish@digifix.com">sanguish@digifix.com</to><cc personal="Multiple recipients of list" address="macosx-talk@omnigroup.com">Multiple recipients of list &lt;macosx-talk@omnigroup.com&gt;</cc><subject normal="What is Rhapsody? Struggling for an assignment........">Re: What is Rhapsody? Struggling for an assignment........</subject><return-path>uucp@cubiculum.com</return-path><received>from cubiculum.com (tunix.cubiculum.com [198.175.236.2])
+	by ignem.omnigroup.com (8.8.5/8.8.5) with SMTP id BAA02611
+	for &lt;macosx-talk@omnigroup.com&gt;; Thu, 24 Dec 1998 01:37:00 -0800 (PST)</received><received>by cubiculum.com (NX5.67f2/NX3.0M)
+	id AA06008; Thu, 24 Dec 98 04:36:35 -0500</received><received>by kannix.cubiculum.com (NX5.67g/NeXT-2.0)
+	id AA01093; Thu, 24 Dec 98 01:56:08 -0500</received><message-id>9812240656.AA01093@kannix.cubiculum.com</message-id><content-type>text/plain</content-type><mime-version>1.0 (NeXT Mail 4.2mach v148)</mime-version><x-image-url>http://images.cubiculum.com:8080/rcfa.mail.tiff</x-image-url><x-face>B6DESMpZ'&lt;"P]D0{Aaq$#h/PfN=wI.C{,&amp;&lt;2_;#|.("xO+oeVic@&lt;V)"&lt;@)LNEH!K`UV3k
+	t/ISu`j'S[wrB%F+$l3ikPu:PiOhP-ONv9/^!B@R1(w`&lt;U~w2)l`V#fbRSJ(L_2FJ_\oT8
+	^'BQ_tJ8|xKF47(&gt;@=zI2zD#NR~S#l*OV}[</x-face><in-reply-to>&lt;199812240517.AAA08730@digifix.com&gt;</in-reply-to><x-nextstep-mailer>Mail 4.2mach [m68k] (Enhance X)</x-nextstep-mailer><received>by NeXT.Mailer (1.148)</received><date>Thu, 24 Dec 1998 01:56:02 -0500</date><reply-to>"Ronald C.F. Antony" &lt;rcfa@cubiculum.com&gt;</reply-to><references>&lt;199812240517.AAA08730@digifix.com&gt;</references><x-direct-marketers>Add me to your do-not-solicit list, NO SPAM HERE!</x-direct-marketers></headers><normalized-references><normalized-message-id>9812240656.AA01093@kannix.cubiculum.com</normalized-message-id><normalized-in-reply-to>199812240517.AAA08730@digifix.com</normalized-in-reply-to><normalized-reference>199812240517.AAA08730@digifix.com</normalized-reference></normalized-references><body type="text/plain"><quote depth="1"><quote depth="2"><quotepara depth="2">Storage/Filesystem: not known with absolute certainty.  NeXT had VFS
+(virtual file system), so Rhapsody should, too.
+This lets it run on top of
+other file systems.
+</quotepara></quote><quotepara depth="1">
+I don't think this is accurate.  We did have a plug-in architecture
+for additional file systems.. but we never had this..
+</quotepara></quote><para depth="0">
+Actually, we did, it was just never quite well documented.
+See:
+	/NextDeveloper/Headers/bsd/sys/vfs_stat.h
+	/NextDeveloper/Headers/bsd/sys/vfs.h
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">NTFS has been there in the past.
+</quotepara></quote><quotepara depth="1">
+Nope.  DOS was...  but not NTFS..
+</quotepara></quote><para depth="0">
+NTFS wasn't supported by NeXT/Apple, however, there was a free
+implementation based on a user-level NFS interface, that used some
+Linux code (I think) to support at least read-only NTFS access
+(maybe it was even read/write, I never tested or installed the
+software, for lack of need/want).
+
+</para><quote depth="1"><quotepara depth="1">No STREAMS compatibility is planned for Rhapsody.. I don't think
+Apple has every claimed there would be.
+</quotepara></quote><para depth="0">
+They didn't, but maybe they expose the private Streams to sockets
+conversion layer they must have somewhere to make BlueBox work
+properly.
+
+</para><para depth="0">Greetings, and happy holidays to all...
+
+</para><footer type="signature" depth="0" hash="14046641880018524621">Ronald
+==============================================================================
+"The reasonable man adapts himself to the world; the unreasonable one persists
+in trying to adapt the world to himself. Therefore all progress depends on the
+unreasonable man."  G.B. Shaw   |   <email>rcfa@cubiculum.com</email>   |   NeXT-mail welcome
+
+</footer></body></message>

@@ -1,0 +1,17 @@
+<message message-id="1187705811.30269.5.camel@localhost.localdomain" list="org.freebsd.freebsd-net" id="24cqglmuunnyexue" type="general" date="2007-08-21T07:17:07" year="2007-01-01" year-month="2007-08-01" year-month-day="2007-08-21" thread-id="yjjft57knqnhmngw"><headers><envelope-from-line>From jacek@ipv6.jacek.it.pl  Tue Aug 21 07:17:01 2007</envelope-from-line><from personal="Jacek Zapala" address="jacek@ipv6.jacek.it.pl">Jacek Zapala &lt;jacek@ipv6.jacek.it.pl&gt;</from><subject normal="kern/115413: [ipv6] ipv6 pmtu not working">kern/115413: [ipv6] ipv6 pmtu not working</subject><date>Tue Aug 21 07:17:07 2007</date><in-reply-to>&lt;20070821135048.GA32421@insomnia.benzedrine.cx&gt;</in-reply-to><references>&lt;200708211010.l7LAA6V7082258@freefall.freebsd.org&gt;
+	&lt;20070821121118.GF27160@insomnia.benzedrine.cx&gt;
+	&lt;1187703472.22531.4.camel@localhost.localdomain&gt;
+	&lt;20070821135048.GA32421@insomnia.benzedrine.cx&gt;</references><message-id>1187705811.30269.5.camel@localhost.localdomain</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>1187705811.30269.5.camel@localhost.localdomain</normalized-message-id><normalized-in-reply-to>20070821135048.GA32421@insomnia.benzedrine.cx</normalized-in-reply-to><normalized-reference>200708211010.l7LAA6V7082258@freefall.freebsd.org</normalized-reference><normalized-reference>20070821121118.GF27160@insomnia.benzedrine.cx</normalized-reference><normalized-reference>1187703472.22531.4.camel@localhost.localdomain</normalized-reference><normalized-reference>20070821135048.GA32421@insomnia.benzedrine.cx</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On Tue, 2007-08-21 at 15:50 +0200, Daniel Hartmeier wrote:
+</para><quote depth="1"><quotepara depth="1">Since you're using TCP window scaling, could you try disabling that
+(sysctl net.inet.tcp.rfc1323=0 on either peer), and see if it affects
+things? Just to make sure that's not a part of the problem. 
+</quotepara></quote><para depth="0">
+Good guess!
+I have disabled this on sending side (FreeBSD) and it started to work!
+
+</para><para depth="0">Btw, how can I examine the route mtu cache? In older FreeBSD 
+netstat -ranW showed cloned routes and their mtus, but this is no longer
+the case with FreeBSD 6.2.
+
+</para><para depth="0">	Jacek
+</para></body></message>

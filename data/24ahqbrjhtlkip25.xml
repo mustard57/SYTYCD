@@ -1,0 +1,134 @@
+<message message-id="bug-207525-5021@http.bugs.kde.org/" list="org.kde.konq-bugs" id="24ahqbrjhtlkip25" type="bugs" date="2009-09-16T02:17:55+02:00" year="2009-01-01" year-month="2009-09-01" year-month-day="2009-09-15" thread-id="24ahqbrjhtlkip25"><headers><envelope-from-line>Tue Sep 15 16:18:43 2009</envelope-from-line><from personal="zuargo" address="zuargo@gmail.com">zuargo &lt;zuargo@gmail.com&gt;</from><to personal="konq-bugs@kde.org" address="konq-bugs@kde.org">konq-bugs@kde.org</to><subject normal="[Bug 207525] New: Konqueror crashed when I loaded another web page">[Bug 207525] New: Konqueror crashed when I loaded another web page</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 534
+          for &lt;autumn.mcknight.bowers@a.markmail.org&gt;;
+          Tue, 15 Sep 2009 16:18:43 -0800 (GMT-08:00)</received><received>from ktown.kde.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id BE6823B300C3
+	for &lt;autumn.mcknight.bowers@a.markmail.org&gt;; Tue, 15 Sep 2009 17:18:19 -0700 (PDT)</received><received>(qmail 30910 invoked by uid 72); 16 Sep 2009 00:18:41 -0000</received><received>(qmail 30881 invoked by uid 1055); 16 Sep 2009 00:18:36 -0000</received><delivered-to>kde.org-konq-bugs@kde.org</delivered-to><received>(qmail 30879 invoked from network); 16 Sep 2009 00:18:36 -0000</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on ktown.kde.org</x-spam-checker-version><received>from unknown (HELO immanuel.kde.org) (138.246.255.177)
+	by ktown.kde.org with SMTP; 16 Sep 2009 00:18:34 -0000</received><received>by immanuel.kde.org (Postfix, from userid 30)
+	id 7A60B2083F; Wed, 16 Sep 2009 02:17:55 +0200 (CEST)</received><x-bugzilla-url>http://bugs.kde.org/ </x-bugzilla-url><x-bugzilla-reason>AssignedTo</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>konqueror</x-bugzilla-product><x-bugzilla-component>general</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-severity>crash</x-bugzilla-severity><x-bugzilla-who>zuargo@gmail.com</x-bugzilla-who><x-bugzilla-status>UNCONFIRMED</x-bugzilla-status><x-bugzilla-priority>NOR</x-bugzilla-priority><x-bugzilla-assigned-to>konq-bugs@kde.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>---</x-bugzilla-target-milestone><x-bugzilla-changed-fields/><message-id>bug-207525-5021@http.bugs.kde.org/</message-id><auto-submitted>auto-generated</auto-submitted><mime-version>1.0</mime-version><date>Wed, 16 Sep 2009 02:17:55 +0200 (CEST)</date><x-beenthere>konq-bugs@mail.kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>bug-control@bugs.kde.org</reply-to><list-id>"Konqueror, kio, khtml and kjs bugs" &lt;konq-bugs.mail.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/konq-bugs&gt;,
+	&lt;mailto:konq-bugs-request@mail.kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:konq-bugs@mail.kde.org&gt;</list-post><list-help>&lt;mailto:konq-bugs-request@mail.kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/konq-bugs&gt;,
+	&lt;mailto:konq-bugs-request@mail.kde.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>bug-207525-5021@http.bugs.kde.org/</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0"><url>https://bugs.kde.org/show_bug.cgi?id=207525</url>
+
+</para><para depth="0">           Summary: Konqueror crashed when I loaded another web page
+           Product: konqueror
+           Version: unspecified
+          Platform: Unlisted Binaries
+        OS/Version: Linux
+            Status: UNCONFIRMED
+          Severity: crash
+          Priority: NOR
+         Component: general
+        AssignedTo: <email>konq-bugs@kde.org</email>
+        ReportedBy: <email>zuargo@gmail.com</email>
+
+</para><para depth="0">Application that crashed: konqueror
+Version of the application: 4.3.1 (KDE 4.3.1)
+KDE Version: 4.3.1 (KDE 4.3.1)
+Qt Version: 4.5.2
+Operating System: Linux 2.6.30-ARCH i686
+
+</para><para depth="0">What I was doing when the application crashed:
+Really I don't know what exactly caused this issue... I guess this happened,
+becouse the web page that I loaded, has many flash animations (spam), the web
+page is: <url>http://www.comunidadconce.cl</url>
+
+</para><para depth="0">but as I say really I don't know what caused this, sorry
+
+</para><para depth="0"> -- Backtrace:
+Application: Konqueror (kdeinit4), signal: Segmentation fault
+[Current thread is 0 (LWP 2244)]
+
+</para><para depth="0">Thread 2 (Thread 0xad4bbb70 (LWP 2477)):
+#0  0xb7ee5424 in __kernel_vsyscall ()
+#1  0xb7c87ec2 in pthread_cond_timedwait@@GLIBC_2.3.2 () from
+/lib/libpthread.so.0
+#2  0xb7ce5fcf in QWaitCondition::wait (this=0x882f028, mutex=0x882f024,
+time=30000) at thread/qwaitcondition_unix.cpp:85
+#3  0xb7cdb81e in QThreadPoolThread::run (this=0x882f170) at
+concurrent/qthreadpool.cpp:140
+#4  0xb7ce5032 in QThreadPrivate::start (arg=0x882f170) at
+thread/qthread_unix.cpp:188
+#5  0xb7c8365c in start_thread () from /lib/libpthread.so.0
+#6  0xb671e1fe in clone () from /lib/libc.so.6
+
+</para><para depth="0">Thread 1 (Thread 0xb5d16700 (LWP 2244)):
+[KCrash Handler]
+#6  0xaff5ca37 in DOM::DocumentImpl::view () from /usr/lib/libkhtml.so.5
+#7  0xb01a0c44 in KJS::XMLHttpRequest::slotFinished () from
+/usr/lib/libkhtml.so.5
+#8  0xb01a2252 in KJS::XMLHttpRequestQObject::qt_metacall () from
+/usr/lib/libkhtml.so.5
+#9  0xb7de99ac in QMetaObject::activate (sender=0xa03e5d8,
+from_signal_index=&lt;value optimized out&gt;, to_signal_index=7, argv=0x0) at
+kernel/qobject.cpp:3112
+#10 0xb7dea5e2 in QMetaObject::activate (sender=0xa03e5d8, m=0xb7c75e88,
+local_signal_index=3, argv=0xbf932888) at kernel/qobject.cpp:3186
+#11 0xb7addab3 in KJob::result () from /usr/lib/libkdecore.so.5
+#12 0xb7addf39 in KJob::emitResult () from /usr/lib/libkdecore.so.5
+#13 0xb76c02e0 in KIO::SimpleJob::slotFinished () from /usr/lib/libkio.so.5
+#14 0xb76c07fa in KIO::TransferJob::slotFinished () from /usr/lib/libkio.so.5
+#15 0xb76be523 in KIO::TransferJob::qt_metacall () from /usr/lib/libkio.so.5
+#16 0xb7de99ac in QMetaObject::activate (sender=0xb7a8da8,
+from_signal_index=&lt;value optimized out&gt;, to_signal_index=8, argv=0x0) at
+kernel/qobject.cpp:3112
+#17 0xb7dea5e2 in QMetaObject::activate (sender=0xb7a8da8, m=0xb78a0b64,
+local_signal_index=4, argv=0x0) at kernel/qobject.cpp:3186
+#18 0xb7789727 in KIO::SlaveInterface::finished () from /usr/lib/libkio.so.5
+#19 0xb778d61d in KIO::SlaveInterface::dispatch () from /usr/lib/libkio.so.5
+#20 0xb7789be3 in KIO::SlaveInterface::dispatch () from /usr/lib/libkio.so.5
+#21 0xb777bcda in KIO::Slave::gotInput () from /usr/lib/libkio.so.5
+#22 0xb777e0d3 in KIO::Slave::qt_metacall () from /usr/lib/libkio.so.5
+#23 0xb7de99ac in QMetaObject::activate (sender=0xaf23668,
+from_signal_index=&lt;value optimized out&gt;, to_signal_index=4, argv=0x0) at
+kernel/qobject.cpp:3112
+#24 0xb7dea5e2 in QMetaObject::activate (sender=0xaf23668, m=0xb789d4a0,
+local_signal_index=0, argv=0x0) at kernel/qobject.cpp:3186
+#25 0xb7686cc7 in KIO::Connection::readyRead () from /usr/lib/libkio.so.5
+#26 0xb7688a7e in KIO::ConnectionPrivate::dequeue () from /usr/lib/libkio.so.5
+#27 0xb7688bae in KIO::Connection::qt_metacall () from /usr/lib/libkio.so.5
+#28 0xb7de269b in QMetaCallEvent::placeMetaCall (this=0xa980880,
+object=0xaf23668) at kernel/qobject.cpp:477
+#29 0xb7de3d9e in QObject::event (this=0xaf23668, e=0xa980880) at
+kernel/qobject.cpp:1110
+#30 0xb69a9964 in QApplicationPrivate::notify_helper (this=0x83e9f80,
+receiver=0xaf23668, e=0xa980880) at kernel/qapplication.cpp:4056
+#31 0xb69b104c in QApplication::notify (this=0xbf933704, receiver=0xaf23668,
+e=0xa980880) at kernel/qapplication.cpp:3603
+#32 0xb73ed46a in KApplication::notify () from /usr/lib/libkdeui.so.5
+#33 0xb7dd3fcb in QCoreApplication::notifyInternal (this=0xbf933704,
+receiver=0xaf23668, event=0xa980880) at kernel/qcoreapplication.cpp:610
+#34 0xb7dd4bb2 in QCoreApplicationPrivate::sendPostedEvents (receiver=0x0,
+event_type=0, data=0x83438f8) at
+../../include/QtCore/../../src/corelib/kernel/qcoreapplication.h:213
+#35 0xb7dd4d7d in QCoreApplication::sendPostedEvents (receiver=0x0,
+event_type=0) at kernel/qcoreapplication.cpp:1140
+#36 0xb7dfea9f in postEventSourceDispatch (s=0x83ec310) at
+../../include/QtCore/../../src/corelib/kernel/qcoreapplication.h:218
+#37 0xb65b3d98 in g_main_context_dispatch () from /usr/lib/libglib-2.0.so.0
+#38 0xb65b73e0 in g_main_context_iterate () from /usr/lib/libglib-2.0.so.0
+#39 0xb65b7513 in g_main_context_iteration () from /usr/lib/libglib-2.0.so.0
+#40 0xb7dfe6cc in QEventDispatcherGlib::processEvents (this=0x8343330, flags={i
+= 36}) at kernel/qeventdispatcher_glib.cpp:327
+#41 0xb6a47695 in QGuiEventDispatcherGlib::processEvents (this=0x8343330,
+flags={i = 36}) at kernel/qguieventdispatcher_glib.cpp:202
+#42 0xb7dd2579 in QEventLoop::processEvents (this=0xbf9335c4, flags=) at
+kernel/qeventloop.cpp:149
+#43 0xb7dd29ca in QEventLoop::exec (this=0xbf9335c4, flags={i = 0}) at
+kernel/qeventloop.cpp:201
+#44 0xb7dd4e3f in QCoreApplication::exec () at kernel/qcoreapplication.cpp:888
+#45 0xb69a97e7 in QApplication::exec () at kernel/qapplication.cpp:3525
+#46 0xb37fedff in kdemain (argc=2, argv=0x8343310) at
+/home/jofko/kdemod/core/kdebase/src/kdebase-4.3.1/apps/konqueror/src/konqmain.cpp:271
+#47 0x0804de42 in _start ()
+
+</para><para depth="0">Reported using DrKonqi
+
+</para><footer type="signature" depth="0" hash="15460749630049231923">-- 
+Configure bugmail: <url>https://bugs.kde.org/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the assignee for the bug.
+</footer><footer type="list-management" depth="0">_______________________________________________
+Konq-bugs mailing list
+<email>Konq-bugs@mail.kde.org</email>
+<url>https://mail.kde.org/mailman/listinfo/konq-bugs</url>
+</footer></body></message>

@@ -1,0 +1,92 @@
+<message message-id="45B0924A.5020601@hippo.nl" list="org.hippocms.lists.hippocms-dev" id="24bs45de4mbgzdmf" type="development" date="2007-01-19T10:41:30+01:00" year="2007-01-01" year-month="2007-01-01" year-month-day="2007-01-19" thread-id="zofffqm4ysydvitz"><headers><envelope-from-line>From b.vanderschans@hippo.nl  Fri Jan 19 10:46:46 2007</envelope-from-line><from personal="Bart van der Schans" address="schans@hippo.nl">Bart van der Schans &lt;schans@hippo.nl&gt;</from><to personal="Hippo CMS development public mailinglist" address="hippocms-dev@lists.hippocms.org">Hippo CMS development public mailinglist &lt;hippocms-dev@lists.hippocms.org&gt;</to><subject normal="[HippoCMS-dev] RE: [HippoCMS-svn]&#9;[4615]hippo-cms/trunk/editor/src/site/workbench/standard-configuration/Framework/component.xml:RemoteCallAjax seems to cause some instability problems inFireFox (CMS-633), so it's reverted back to the 'old' RPC calls">Re: [HippoCMS-dev] RE: [HippoCMS-svn]	[4615]hippo-cms/trunk/editor/src/site/workbench/standard-configuration/Framework/component.xml:RemoteCallAjax seems to cause some instability problems inFireFox (CMS-633), so it's reverted back to the 'old' RPC calls</subject><return-path>b.vanderschans@hippo.nl</return-path><x-original-to>hippocms-dev@lists.hippocms.org</x-original-to><delivered-to>hippocms-dev@lists.hippocms.org</delivered-to><received>from smtp.is.nl (smtp.is.nl [213.133.33.40])
+	by hippo15.castaserver.com (Postfix) with SMTP id A11E38F966
+	for &lt;hippocms-dev@lists.hippocms.org&gt;;
+	Fri, 19 Jan 2007 10:46:46 +0100 (CET)</received><received>from [213.133.51.241] (HELO hai01.hippo.local)
+	by smtp.is.nl (CommuniGate Pro SMTP 5.0.10)
+	with ESMTP id 8829643 for hippocms-dev@lists.hippocms.org;
+	Fri, 19 Jan 2007 10:46:47 +0100</received><received>from [10.10.100.212] ([10.10.100.212]) by hai01.hippo.local with
+	Microsoft SMTPSVC(5.0.2195.6713); Fri, 19 Jan 2007 10:41:30 +0100</received><message-id>45B0924A.5020601@hippo.nl</message-id><date>Fri, 19 Jan 2007 10:41:30 +0100</date><user-agent>Thunderbird 1.5.0.9 (Windows/20061207)</user-agent><mime-version>1.0</mime-version><references>&lt;A955EA1F8FE31749AEC8C998082F6C7C011DF678@hai01.hippo.local&gt;</references><in-reply-to>&lt;A955EA1F8FE31749AEC8C998082F6C7C011DF678@hai01.hippo.local&gt;</in-reply-to><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-originalarrivaltime>19 Jan 2007 09:41:30.0654 (UTC)
+	FILETIME=[FF92CBE0:01C73BAD]</x-originalarrivaltime><x-beenthere>hippocms-dev@lists.hippocms.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><reply-to>Hippo CMS development public mailinglist
+	&lt;hippocms-dev@lists.hippocms.org&gt;</reply-to><list-id>Hippo CMS development public mailinglist
+	&lt;hippocms-dev.lists.hippocms.org&gt;</list-id><list-unsubscribe>&lt;http://lists.hippo.nl/mailman/listinfo/hippocms-dev&gt;,
+	&lt;mailto:hippocms-dev-request@lists.hippocms.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.hippo.nl/pipermail/hippocms-dev&gt;</list-archive><list-help>&lt;mailto:hippocms-dev-request@lists.hippocms.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.hippo.nl/mailman/listinfo/hippocms-dev&gt;,
+	&lt;mailto:hippocms-dev-request@lists.hippocms.org?subject=subscribe&gt;</list-subscribe><x-list-received-date>Fri, 19 Jan 2007 09:46:47 -0000</x-list-received-date><status>O</status><content-length>2664</content-length><lines>85</lines></headers><normalized-references><normalized-message-id>45B0924A.5020601@hippo.nl</normalized-message-id><normalized-in-reply-to>A955EA1F8FE31749AEC8C998082F6C7C011DF678@hai01.hippo.local</normalized-in-reply-to><normalized-reference>A955EA1F8FE31749AEC8C998082F6C7C011DF678@hai01.hippo.local</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Jeroen Reijn wrote:
+</para><quote depth="1"><quotepara depth="1">Hi all,
+
+</quotepara><quotepara depth="1">the XMLHttpRequest based RemoteCallAjax configuration somehow caused some<br/>instability problems in FireFox, therefor I've reverted the code.
+I will look into it as soon as possible.
+</quotepara></quote><para depth="0">I think you mean you've reverted the default setting. The code is still
+there and can easily be turned on.
+
+</para><para depth="0">(For example If you would like to debug it ;-)
+
+</para><para depth="0">Regards,
+Bart
+
+</para><quote depth="1"><quotepara depth="1">Kind regards,
+
+</quotepara><quotepara depth="1">Jeroen Reijn
+
+</quotepara><quote depth="2"><quotepara depth="2">-----Original Message-----
+From: <email>hippocms-svn-bounces@lists.hippocms.org</email>
+[mailto:<email>hippocms-svn-bounces@lists.hippocms.org</email>]On Behalf Of
+<email>svn-logs@hippocms.org</email>
+Sent: Friday, January 19, 2007 10:32 AM
+To: <email>hippocms-svn@lists.hippocms.org</email>
+Subject: [HippoCMS-svn]
+[4615]hippo-cms/trunk/editor/src/site/workbench/standard-configuration/F
+ramework/component.xml:RemoteCallAjax seems to cause some instability
+problems inFireFox (CMS-633), so it's reverted back to the 'old' RPC
+calls 
+
+</quotepara><quotepara depth="2">Revision: 4615
+Author:   jreijn
+Date:     2007-01-19 10:31:48 +0100 (Fri, 19 Jan 2007)
+
+</quotepara><quotepara depth="2">Log Message:
+</quotepara><quotepara depth="2">-----------
+RemoteCallAjax seems to cause some instability problems in FireFox (CMS-633), so<br/>it's reverted back to the 'old' RPC calls 
+
+</quotepara><quotepara depth="2">Modified Paths:
+</quotepara><quotepara depth="2">--------------
+    hippo-cms/trunk/editor/src/site/workbench/standard-configuration/Framework/component.xml
+Modified:<br/>hippo-cms/trunk/editor/src/site/workbench/standard-configuration/Framework/component.xml
+===================================================================
+---<br/>hippo-cms/trunk/editor/src/site/workbench/standard-configuration/Framework/component.xml<br/>2007-01-19 08:33:45 UTC (rev 4614)
++++<br/>hippo-cms/trunk/editor/src/site/workbench/standard-configuration/Framework/component.xml<br/>2007-01-19 09:31:48 UTC (rev 4615)
+@@ -26,10 +26,10 @@
+   &gt;
+   &lt;remoteCall
+     id="rc"
+-    className="RemoteCallAjax"
++    className="RemoteCall"
+     container="top"
+     maxPoolSize="20"
+-    wrapper="/workbench/remoteCallAjax"
++    wrapper="/workbench/remoteCall"
+     /&gt;
+   &lt;eventManager
+     id="eventmanager"
+
+</quotepara><quotepara depth="2">_______________________________________________
+Hippocms-svn mailing list
+<email>Hippocms-svn@lists.hippocms.org</email>
+<url>http://lists.hippo.nl/mailman/listinfo/hippocms-svn</url>
+
+</quotepara><quotepara depth="2">------------------------------------------------------------------------
+
+</quotepara><quotepara depth="2">********************************************
+Hippocms-dev: Hippo CMS development public mailinglist
+</quotepara></quote><quotepara depth="1">
+</quotepara><quotepara depth="1">-- 
+
+</quotepara><quotepara depth="1">Hippo
+Oosteinde 11
+1017WT Amsterdam
+The Netherlands
+Tel  +31 (0)20 5224466
+</quotepara><quotefooter type="signature" hash="3312790388191378390" depth="1">-------------------------------------------------------------
+<email>schans@hippo.nl</email> / <url>http://www.hippo.nl</url>
+</quotefooter><quotepara depth="1">--------------------------------------------------------------
+
+</quotepara></quote></body></message>

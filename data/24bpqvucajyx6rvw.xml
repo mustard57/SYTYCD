@@ -1,0 +1,46 @@
+<message message-id="20030204120544.13699.qmail@icarus.apache.org" list="org.apache.gump.general" id="24bpqvucajyx6rvw" type="checkins" date="2003-02-04T12:05:44Z" year="2003-01-01" year-month="2003-02-01" year-month-day="2003-02-04" thread-id="wznvsnok6otpsyvv"><headers><envelope-from-line>From bodewig@apache.org  Tue Feb  4 12:05:44 2003</envelope-from-line><from personal="bodewig@apache.org" address="bodewig@apache.org">bodewig@apache.org</from><to personal="jakarta-gump-cvs@apache.org" address="jakarta-gump-cvs@apache.org">jakarta-gump-cvs@apache.org</to><subject normal="cvs commit: jakarta-gump/project jakarta-ant.xml">cvs commit: jakarta-gump/project jakarta-ant.xml</subject><return-path>bodewig@apache.org</return-path><mailing-list>contact gump-help@jakarta.apache.org; run by ezmlm</mailing-list><delivered-to>mailing list gump@jakarta.apache.org</delivered-to><received>(qmail 91793 invoked by uid 500); 4 Feb 2003 12:05:44 -0000</received><received>(qmail 91790 invoked from network); 4 Feb 2003 12:05:44 -0000</received><received>from icarus.apache.org (208.185.179.13)
+  by daedalus.apache.org with SMTP; 4 Feb 2003 12:05:44 -0000</received><received>(qmail 13700 invoked by uid 1146); 4 Feb 2003 12:05:44 -0000</received><date>4 Feb 2003 12:05:44 -0000</date><message-id>20030204120544.13699.qmail@icarus.apache.org</message-id><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>20030204120544.13699.qmail@icarus.apache.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">bodewig     2003/02/04 04:05:44
+
+</para><para depth="0">  Modified:    project  jakarta-ant.xml
+  Log:
+  Also build jdepend task
+
+</para><para depth="0">  Revision  Changes    Path
+  1.93      +9 -7      jakarta-gump/project/jakarta-ant.xml
+
+</para><para depth="0">  Index: jakarta-ant.xml
+  ===================================================================
+  RCS file: /home/cvs/jakarta-gump/project/jakarta-ant.xml,v
+  retrieving revision 1.92
+  retrieving revision 1.93
+  diff -u -r1.92 -r1.93
+  --- jakarta-ant.xml	3 Feb 2003 13:27:52 -0000	1.92
+  +++ jakarta-ant.xml	4 Feb 2003 12:05:44 -0000	1.93
+  @@ -40,16 +40,18 @@
+       &lt;/ant&gt;
+
+</para><para depth="0">       &lt;depend project="jakarta-ant" inherit="all"/&gt;
+  -    &lt;option project="jakarta-bsf"/&gt;
+  -    &lt;option project="jakarta-regexp"/&gt;
+  -    &lt;option project="jakarta-oro"/&gt;
+  -    &lt;option project="jakarta-log4j"/&gt;
+  +
+  +    &lt;option project="antlr"/&gt;
+  +    &lt;option project="commons-logging" /&gt;
+       &lt;option project="jaf"/&gt;
+  -    &lt;option project="javamail"/&gt;
+       &lt;option project="jakarta-bcel"/&gt;
+  -    &lt;option project="antlr"/&gt;
+  +    &lt;option project="jakarta-bsf"/&gt;
+  +    &lt;option project="jakarta-log4j"/&gt;
+  +    &lt;option project="jakarta-oro"/&gt;
+  +    &lt;option project="jakarta-regexp"/&gt;
+       &lt;option project="jakarta-servletapi-4" /&gt;
+  -    &lt;option project="commons-logging" /&gt;
+  +    &lt;option project="javamail"/&gt;
+  +    &lt;option project="jdepend"/&gt;
+       &lt;option project="xml-commons-resolver" /&gt;
+
+</para><para depth="0">       &lt;home nested="build"/&gt;
+
+</para></body></message>

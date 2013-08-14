@@ -1,0 +1,52 @@
+<message message-id="770fbced-8677-48c2-bbbe-0d56472ab135@c13g2000prc.googlegroups.com" list="com.googlegroups.professional-php" id="24cugmuypm2nktbn" type="general" date="2010-12-01T20:07:38-08:00" year="2010-01-01" year-month="2010-12-01" year-month-day="2010-12-01" thread-id="24cugmuypm2nktbn"><headers><envelope-from-line>Mon Dec 06 12:38:02 2010</envelope-from-line><from personal="Raj" address="rajkumar.w93@gmail.com">Raj &lt;rajkumar.w93@gmail.com&gt;</from><to personal="Professional PHP Developers" address="professional-php@googlegroups.com">Professional PHP Developers &lt;professional-php@googlegroups.com&gt;</to><subject normal="[Pro. PHP Dev.] Using or not using PHP framework">[Pro. PHP Dev.] Using or not using PHP framework</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 769
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Mon, 6 Dec 2010 12:38:02 -0800 (GMT-08:00)</received><received>from mail-vw0-f60.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 721343B300DE
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Mon,  6 Dec 2010 12:37:39 -0800 (PST)</received><received>by mail-vw0-f60.google.com with SMTP id 16sf3640948vws.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Mon, 06 Dec 2010 12:38:02 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:x-beenthere:received:received
+         :mime-version:received:received:date:x-ip:user-agent
+         :x-http-useragent:message-id:subject:from:to:x-original-sender
+         :reply-to:precedence:mailing-list:list-id:list-post:list-help
+         :list-archive:sender:list-subscribe:list-unsubscribe:content-type;
+        bh=VVhhLpO3DPZeKNt37H9ATWdfyjMEb0krGMl6aS/xw+M=;
+        b=yULthhHgTPxKIKYeKTeS08KE0I8sq05vu1KTK1Pp1A4OFYDs3wd832akHGwKQoKhRS
+         pgMSnZMSamK10sTNp1n67PDTRkZOa3LIcR2nEow75SCGAkyHGmtx80feXk4+NJaLmX18
+         zfkAsGhCYmMhnQn3ShcKf9dhCLgcOQL9Hhs1g=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:mime-version:date:x-ip:user-agent:x-http-useragent
+         :message-id:subject:from:to:x-original-sender:reply-to:precedence
+         :mailing-list:list-id:list-post:list-help:list-archive:sender
+         :list-subscribe:list-unsubscribe:content-type;
+        b=qAwvn+ml8B5XQTYYNYNzH3BK8PsCAWnhiChamg6anv6dcm4XFVYyZmeX33DvhAXTLW
+         9VMwGBy8iDRlUGCX4t9fhlOpy5O57SEG9B5G59XWQYktj3LIiC/GIUHjvlmRaUJed1My
+         JeqPpVbtrzpVFRRRhGFR+mbdwmLFSyZppP5Pk=</domainkey-signature><received>by 10.220.202.134 with SMTP id fe6mr64559vcb.3.1291667868848;
+        Mon, 06 Dec 2010 12:37:48 -0800 (PST)</received><x-beenthere>professional-php@googlegroups.com</x-beenthere><received>by 10.220.89.74 with SMTP id d10ls129835vcm.5.p; Mon, 06 Dec 2010
+ 12:37:43 -0800 (PST)</received><received>by 10.151.105.7 with SMTP id h7mr35842ybm.6.1291667863630;
+        Mon, 06 Dec 2010 12:37:43 -0800 (PST)</received><mime-version>1.0</mime-version><received>by 10.143.86.1 with SMTP id o1mr415069wfl.57.1291262858665; Wed, 01
+ Dec 2010 20:07:38 -0800 (PST)</received><received>by c13g2000prc.googlegroups.com with HTTP; Wed, 1 Dec 2010 20:07:38
+ -0800 (PST)</received><date>Wed, 1 Dec 2010 20:07:38 -0800 (PST)</date><x-ip>117.205.113.18</x-ip><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.15)
+ Gecko/20101026 Firefox/3.5.15,gzip(gfe)</x-http-useragent><message-id>770fbced-8677-48c2-bbbe-0d56472ab135@c13g2000prc.googlegroups.com</message-id><x-original-sender>rajkumar.w93@gmail.com</x-original-sender><reply-to>professional-php@googlegroups.com</reply-to><precedence>list</precedence><mailing-list>list professional-php@googlegroups.com; contact professional-php+owners@googlegroups.com</mailing-list><list-id>&lt;professional-php.googlegroups.com&gt;</list-id><list-post>&lt;http://groups.google.com/group/professional-php/post?hl=en&gt;, &lt;mailto:professional-php@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en&gt;, &lt;mailto:professional-php+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/professional-php?hl=en&gt;</list-archive><sender>professional-php@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/professional-php/subscribe?hl=en&gt;,
+ &lt;mailto:professional-php+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/professional-php/subscribe?hl=en&gt;,
+ &lt;mailto:professional-php+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>text/plain; charset=ISO-8859-1</content-type></headers><normalized-references><normalized-message-id>770fbced-8677-48c2-bbbe-0d56472ab135@c13g2000prc.googlegroups.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">What changes will my web application finally have if I use a cakephp
+framework rather than not using it?
+Can I later on change my application without the framework? Does the
+file types &amp; formats of my application application remain the same
+whther or not I chose to use framework?
+
+</para><para depth="0">I think the file type does gets changed..normally its .php but with
+cakephp its something else
+
+</para><para depth="0">-- 
+This group is managed and maintained by the development staff at 360 PSG. An<br/>enterprise application development company utilizing open-source technologies<br/>for todays small-to-medium size businesses.
+
+</para><para depth="0">For information or project assistance please visit :
+<url>http://www.360psg.com</url>
+
+</para><para depth="0">You received this message because you are subscribed to the Google Groups<br/>"Professional PHP Developers" group.
+To post to this group, send email to <email>Professional-PHP@googlegroups.com</email>
+To unsubscribe from this group, send email to<br/><email>Professional-PHP-unsubscribe@googlegroups.com</email>
+For more options, visit this group at<br/><url>http://groups.google.com/group/Professional-PHP</url>
+</para></body></message>

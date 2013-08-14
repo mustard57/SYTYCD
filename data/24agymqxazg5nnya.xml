@@ -1,0 +1,48 @@
+<message message-id="200903111355.51196.m.kruisselbrink@student.tue.nl" list="org.kde.koffice-devel" id="24agymqxazg5nnya" type="development" date="2009-03-11T13:55:50+01:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-11" thread-id="zhjzjeooltsltnvd"><headers><envelope-from-line>Wed Mar 11 04:56:50 2009</envelope-from-line><from personal="Marijn Kruisselbrink" address="m.kruisselbrink@student.tue.nl">Marijn Kruisselbrink &lt;m.kruisselbrink@student.tue.nl&gt;</from><to personal="For developer's discussion about KOffice" address="koffice-devel@kde.org">For developer's discussion about KOffice &lt;koffice-devel@kde.org&gt;</to><subject normal="build request - tell if wv2 not found">Re: build request - tell if wv2 not found</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 237
+          for &lt;eldon.osborn.conley@a.markmail.org&gt;;
+          Wed, 11 Mar 2009 04:56:50 -0800 (GMT-08:00)</received><received>from ktown.kde.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id DF9992908063
+	for &lt;eldon.osborn.conley@a.markmail.org&gt;; Wed, 11 Mar 2009 05:56:26 -0700 (PDT)</received><received>(qmail 10850 invoked by uid 72); 11 Mar 2009 12:56:44 -0000</received><received>(qmail 10748 invoked from network); 11 Mar 2009 12:56:27 -0000</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on ktown.kde.org</x-spam-checker-version><received>from unknown (HELO viefep13-int.chello.at) (62.179.121.33)
+	by ktown.kde.org with SMTP; 11 Mar 2009 12:56:17 -0000</received><received>from edge04.upc.biz ([192.168.13.239]) by viefep13-int.chello.at
+	(InterMail vM.7.09.01.00 201-2219-108-20080618) with ESMTP
+	id &lt;20090311125551.VDBW17216.viefep13-int.chello.at@edge04.upc.biz&gt;
+	for &lt;koffice-devel@kde.org&gt;; Wed, 11 Mar 2009 13:55:51 +0100</received><received>from thinkpad.local ([213.46.128.64]) by edge04.upc.biz with edge
+	id Rovp1b01f1PVv7104ovrKL; Wed, 11 Mar 2009 13:55:51 +0100</received><x-sourceip>213.46.128.64</x-sourceip><date>Wed, 11 Mar 2009 13:55:50 +0100</date><user-agent>KMail/1.9.10</user-agent><references>&lt;gp7d1s$sb6$1@ger.gmane.org&gt; &lt;200903110949.32076.zander@kde.org&gt;
+	&lt;Pine.LNX.4.64.0903111000520.27871@calcifer.valdyas.org&gt;</references><in-reply-to>&lt;Pine.LNX.4.64.0903111000520.27871@calcifer.valdyas.org&gt;</in-reply-to><mime-version>1.0</mime-version><content-disposition>inline</content-disposition><message-id>200903111355.51196.m.kruisselbrink@student.tue.nl</message-id><x-beenthere>koffice-devel@kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>For developer's discussion about KOffice &lt;koffice-devel@kde.org&gt;</reply-to><list-id>For developer's discussion about KOffice &lt;koffice-devel.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/koffice-devel&gt;,
+	&lt;mailto:koffice-devel-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:koffice-devel@kde.org&gt;</list-post><list-help>&lt;mailto:koffice-devel-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/koffice-devel&gt;,
+	&lt;mailto:koffice-devel-request@kde.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="utf-8"</content-type><content-transfer-encoding>base64</content-transfer-encoding></headers><normalized-references><normalized-message-id>200903111355.51196.m.kruisselbrink@student.tue.nl</normalized-message-id><normalized-in-reply-to>Pine.LNX.4.64.0903111000520.27871@calcifer.valdyas.org</normalized-in-reply-to><normalized-reference>gp7d1s$sb6$1@ger.gmane.org</normalized-reference><normalized-reference>200903110949.32076.zander@kde.org</normalized-reference><normalized-reference>Pine.LNX.4.64.0903111000520.27871@calcifer.valdyas.org</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">On Wednesday 11 March 2009 10:02:40 Boudewijn Rempt wrote:
+</para><quote depth="1"><quotepara depth="1">On Wed, 11 Mar 2009, Thomas Zander wrote:
+</quotepara><quote depth="2"><quotepara depth="2">On Wednesday 11. March 2009 09:28:23 Cyrille Berger wrote:
+</quotepara><quote depth="3"><quotepara depth="3">Use macro_log_feature:
+
+</quotepara><quotepara depth="3"># MACRO_LOG_FEATURE(VAR FEATURE DESCRIPTION URL [REQUIRED [MIN_VERSION
+[COMMENTS]]])
+#   Logs the information so that it can be displayed at the end
+#   of the configure run
+#   VAR : TRUE or FALSE, indicating whether the feature is supported
+#   FEATURE: name of the feature, e.g. "libjpeg"
+#   DESCRIPTION: description what this feature provides
+#   URL: home page
+#   REQUIRED: TRUE or FALSE, indicating whether the featue is required
+#   MIN_VERSION: minimum version number. empty string if unneeded
+#   COMMENTS: More info you may want to provide.  empty string if
+unnecessary
+</quotepara></quote><quotepara depth="2">
+Ok, where did you get that info from?
+I am very much interested in a manual that lists all available cmake
+commands and I think we should advertise that url much more.
+</quotepara></quote><quotepara depth="1">
+cmake itself contains a manual with all its commands -- although I find the
+website (<url>http://cmake.org/cmake/help/cmake2.6docs.html</url>) more convenient.
+But this isn't a command, it's a macro, and that's, afaik, a matter
+of use the source luke -- it's in kdelibs/cmake/modules.
+</quotepara></quote><para depth="0">There are also docs for the kde cmake modules at 
+<url>http://api.kde.org/cmake/modules.html</url> 
+
+</para><para depth="0">Marijn
+</para><footer type="list-management" depth="0">_______________________________________________
+koffice-devel mailing list
+<email>koffice-devel@kde.org</email>
+<url>https://mail.kde.org/mailman/listinfo/koffice-devel</url>
+</footer></body></message>

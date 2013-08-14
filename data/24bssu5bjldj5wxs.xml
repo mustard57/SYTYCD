@@ -1,0 +1,62 @@
+<message message-id="200506252137.18704.aweiss@informatik.hu-berlin.de" list="org.apache.xerces.c-dev" id="24bssu5bjldj5wxs" type="development" date="2005-06-25T21:37:18+02:00" year="2005-01-01" year-month="2005-06-01" year-month-day="2005-06-25" thread-id="aawzjqn6sdkcndmy"><headers><envelope-from-line>From c-dev-return-23556-apmail-xerces-c-dev-archive=xerces.apache.org@xerces.apache.org Sat Jun 25 19:30:24 2005</envelope-from-line><from personal="Axel Weiß" address="aweiss@informatik.hu-berlin.de">Axel =?utf-8?q?Wei=C3=9F?= &lt;aweiss@informatik.hu-berlin.de&gt;</from><to personal="c-dev@xerces.apache.org" address="c-dev@xerces.apache.org">c-dev@xerces.apache.org</to><subject normal="Removing XML header">Re: Removing XML header</subject><return-path>c-dev-return-23556-apmail-xerces-c-dev-archive=xerces.apache.org@xerces.apache.org</return-path><delivered-to>apmail-xerces-c-dev-archive@www.apache.org</delivered-to><received>(qmail 50258 invoked from network); 25 Jun 2005 19:30:23 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur.apache.org with SMTP; 25 Jun 2005 19:30:23 -0000</received><received>(qmail 78299 invoked by uid 500); 25 Jun 2005 19:30:22 -0000</received><delivered-to>apmail-xerces-c-dev-archive@xerces.apache.org</delivered-to><received>(qmail 78263 invoked by uid 500); 25 Jun 2005 19:30:21 -0000</received><mailing-list>contact c-dev-help@xerces.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:c-dev-help@xerces.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:c-dev-unsubscribe@xerces.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:c-dev@xerces.apache.org&gt;</list-post><list-id>&lt;c-dev.xerces.apache.org&gt;</list-id><reply-to>c-dev@xerces.apache.org</reply-to><delivered-to>mailing list c-dev@xerces.apache.org</delivered-to><received>(qmail 78250 invoked by uid 99); 25 Jun 2005 19:30:21 -0000</received><received>from asf.osuosl.org (HELO asf.osuosl.org) (140.211.166.49)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sat, 25 Jun 2005 12:30:21 -0700</received><x-asf-spam-status>No, hits=0.1 required=10.0
+	tests=FORGED_RCVD_HELO</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (asf.osuosl.org: local policy)</received-spf><received>from [141.20.20.51] (HELO sigma.informatik.hu-berlin.de) (141.20.20.51)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sat, 25 Jun 2005 12:30:21 -0700</received><received>from rantanplan.local (p54BCACDF.dip0.t-ipconnect.de [84.188.172.223])
+	(authenticated bits=0)
+	by sigma.informatik.hu-berlin.de (8.12.10/8.12.9/INF-2.0-MA-SOLARIS-2.8) with ESMTP id j5PJUB6J029316
+	(version=TLSv1/SSLv3 cipher=RC4-MD5 bits=128 verify=NO)
+	for &lt;c-dev@xerces.apache.org&gt;; Sat, 25 Jun 2005 21:30:16 +0200 (MEST)</received><organization>=?iso-8859-1?q?Humboldt-Universit=E4t_zu?= Berlin</organization><date>Sat, 25 Jun 2005 21:37:18 +0200</date><user-agent>KMail/1.8</user-agent><references>&lt;000001c579b2$cd2523b0$17a26080@wipro17&gt;</references><in-reply-to>&lt;000001c579b2$cd2523b0$17a26080@wipro17&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain;
+  charset="utf-8"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><content-disposition>inline</content-disposition><message-id>200506252137.18704.aweiss@informatik.hu-berlin.de</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked><x-spam-rating>minotaur.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>200506252137.18704.aweiss@informatik.hu-berlin.de</normalized-message-id><normalized-in-reply-to>000001c579b2$cd2523b0$17a26080@wipro17</normalized-in-reply-to><normalized-reference>000001c579b2$cd2523b0$17a26080@wipro17</normalized-reference></normalized-references><body type="text/plain;&#13;&#10; charset=&quot;utf-8&quot;"><para depth="0">Praveen Maruvekere wrote:
+</para><quote depth="1"><quotepara depth="1">I have the following code to display my XML DOM document.
+
+</quotepara><quotepara depth="1">I need to fix following things in this
+
+</quotepara><quotepara depth="1">1. I always get an XML header by default , is there an option to
+suppress this ?
+</quotepara></quote><para depth="0">
+Hi Praveen,
+
+</para><para depth="0">the domwriter always produces xml output that will be parsed again by a 
+dom parser without error. Since the xml header is mandatory by standard, 
+it is always written out.
+
+</para><quote depth="1"><quotepara depth="1">2. If I delete and add new nodes it displays a blank line and
+indentation of the XML gets corrupted.  Could any of you please throw
+some light on this?
+</quotepara></quote><para depth="0">
+Indention iteself consists of xml nodes (text nodes). If you manipulate 
+the dom tree and don't take care of the so called, ignorable 
+whitespaces, you surely will damage the previous indention.
+
+</para><para depth="0">You can switch on the 'pretty printing' feature (instead of switching it 
+off), in order to have indented xml output. Maybe you want to try my 
+alternative way of pretty pinting (see the mailing list archives, msg-id 
+&lt;<email>200503301757.34859.aweiss@informatik.hu-berlin.de</email>&gt;).
+
+</para><quote depth="1"><quotepara depth="1">Thanks for the help
+
+</quotepara><quotepara depth="1">XMLCh tempStr[100];
+XMLString::transcode("LS", tempStr, 99);
+</quotepara></quote><para depth="0">
+NB: this transcode method will become deprecated, soon. You'd better use
+XMLCh tempStr[3] = {chLatin_L, chLatin_S, chNull};
+
+</para><para depth="0">Cheers,
+			Axel
+
+</para><footer type="signature" hash="15797976694115414730" depth="0">-- 
+Humboldt-Universität zu Berlin
+Institut für Informatik
+Signalverarbeitung und Mustererkennung
+Dipl.-Inf. Axel Weiß
+Rudower Chaussee 25
+12489 Berlin-Adlershof
++49-30-2093-3050
+** www.freesp.de **
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>c-dev-unsubscribe@xerces.apache.org</email>
+For additional commands, e-mail: <email>c-dev-help@xerces.apache.org</email>
+
+</footer></body></message>

@@ -1,0 +1,16 @@
+<message message-id="20050520170208.41663.qmail@web81509.mail.yahoo.com" list="org.wikimedia.lists.mediawiki-l" id="24agexwyncgoarz5" type="general" date="2005-05-20T10:02:08-07:00" year="2005-01-01" year-month="2005-05-01" year-month-day="2005-05-20" thread-id="gxr33mczxf6d2kfw"><headers><envelope-from-line>From chanamy1@sbcglobal.net  Fri May 20 17:02:08 2005</envelope-from-line><from personal="A Chan" address="chanamy1@sbcglobal.net">A Chan &lt;chanamy1@sbcglobal.net&gt;</from><subject normal="[Mediawiki-l] Image name gets capitalized after upload">[Mediawiki-l] Image name gets capitalized after upload</subject><date>Fri, 20 May 2005 10:02:08 -0700 (PDT)</date><message-id>20050520170208.41663.qmail@web81509.mail.yahoo.com</message-id><content-type>text/plain; charset=us-ascii</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>20050520170208.41663.qmail@web81509.mail.yahoo.com</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><greeting depth="0">Hello,
+</greeting><para depth="0">
+I'm running an older wiki using MediaWiki 1.1. 
+
+</para><para depth="0">I've uploaded a media file with a lower case name,
+e.g., "myfile".  But when viewing the image page, the
+file name is capitalized to "Myfile".  Is there anyway
+to preserve the case of the uploaded file?  
+
+</para><para depth="0">I am expecting readers to click on a media link
+[[Media:...]] to save the file locally, and I'd really
+like to preserve the lower case filename when do so.
+
+</para><para depth="0">Thanks very much!
+-Amy
+</para></body></message>

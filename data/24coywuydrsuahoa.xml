@@ -1,0 +1,50 @@
+<message message-id="20000411163827.99008.qmail@locus.apache.org" list="org.apache.perl.modperl-cvs" id="24coywuydrsuahoa" type="checkins" date="2000-04-11T16:38:27Z" year="2000-01-01" year-month="2000-04-01" year-month-day="2000-04-11" thread-id="mkzyy4jd5sk4pyz2"><headers><envelope-from-line>From cholet@locus.apache.org  Tue Apr 11 16:38:27 2000</envelope-from-line><from personal="cholet@locus.apache.org" address="cholet@locus.apache.org">cholet@locus.apache.org</from><to personal="modperl-cvs@apache.org" address="modperl-cvs@apache.org">modperl-cvs@apache.org</to><subject normal="cvs commit: modperl/src/modules/perl Connection.xs">cvs commit: modperl/src/modules/perl Connection.xs</subject><return-path>cholet@locus.apache.org</return-path><mailing-list>contact modperl-cvs-help@apache.org; run by ezmlm</mailing-list><delivered-to>mailing list modperl-cvs@apache.org</delivered-to><received>(qmail 99009 invoked by uid 1074); 11 Apr 2000 16:38:27 -0000</received><date>11 Apr 2000 16:38:27 -0000</date><message-id>20000411163827.99008.qmail@locus.apache.org</message-id></headers><normalized-references><normalized-message-id>20000411163827.99008.qmail@locus.apache.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">cholet      00/04/11 09:38:27
+
+</para><para depth="0">  Modified:    .        Changes
+               src/modules/perl Connection.xs
+  Log:
+  $c-&gt;remote_ip($ip) now also sets conn-&gt;remote_addr to make
+  IP-based access control work correctly
+
+</para><para depth="0">  Revision  Changes    Path
+  1.464     +4 -0      modperl/Changes
+
+</para><para depth="0">  Index: Changes
+  ===================================================================
+  RCS file: /home/cvs/modperl/Changes,v
+  retrieving revision 1.463
+  retrieving revision 1.464
+  diff -u -r1.463 -r1.464
+  --- Changes	2000/04/10 14:16:11	1.463
+  +++ Changes	2000/04/11 16:38:26	1.464
+  @@ -10,6 +10,10 @@
+
+</para><para depth="0">   =item 1.22_01-dev
+
+</para><para depth="0">  +$c-&gt;remote_ip($ip) now also sets conn-&gt;remote_addr to make
+  +IP-based access control work correctly
+  +[Eric Cholet &lt;<email>cholet@logilune.com</email>&gt;]
+  +
+   Apache::URI::port wasn't setting the port correctly, thanks
+   to Zeqing Xia for the spot [Eric Cholet &lt;<email>cholet@logilune.com</email>&gt;]
+
+</para><para depth="0">  1.9       +1 -0      modperl/src/modules/perl/Connection.xs
+
+</para><para depth="0">  Index: Connection.xs
+  ===================================================================
+  RCS file: /home/cvs/modperl/src/modules/perl/Connection.xs,v
+  retrieving revision 1.8
+  retrieving revision 1.9
+  diff -u -r1.8 -r1.9
+  --- Connection.xs	2000/03/24 19:00:24	1.8
+  +++ Connection.xs	2000/04/11 16:38:27	1.9
+  @@ -106,6 +106,7 @@
+   #else
+           conn-&gt;remote_ip = pstrdup(conn-&gt;pool, (char *)SvPV(ST(1),na));
+   #endif
+  +        conn-&gt;remote_addr.sin_addr.s_addr = inet_addr(conn-&gt;remote_ip);
+       }
+
+</para><para depth="0">       OUTPUT:
+
+</para></body></message>

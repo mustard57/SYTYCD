@@ -1,0 +1,26 @@
+<message message-id="20090401051032.4986.qmail@netbeans.org" list="org.netbeans.installer.issues" id="24b57mob3vp46p3q" no-archive="yes" type="bugs" date="2009-03-31T21:10:10.860198-08:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-31" thread-id="togsbb7efp6qo5uo"><headers><envelope-from-line>Tue Mar 31 21:10:33 2009</envelope-from-line><from personal="vkraemer@netbeans.org" address="vkraemer@netbeans.org">vkraemer@netbeans.org</from><to personal="issues@installer.netbeans.org" address="issues@installer.netbeans.org">issues@installer.netbeans.org</to><subject normal="[Issue 161634] Vista:Should not install GlassFish Server to &quot;C:\Program Files&quot; directory">[Issue 161634]  Vista:Should not install GlassFish Server to "C:\Program Files" directory</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 762
+          for &lt;mercedes.stark.rosales@a.markmail.org&gt;;
+          Tue, 31 Mar 2009 21:10:33 -0800 (GMT-08:00)</received><received>from netbeans.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 78BC13B3020D
+	for &lt;mercedes.stark.rosales@a.markmail.org&gt;; Tue, 31 Mar 2009 22:10:10 -0700 (PDT)</received><received>(qmail 5026 invoked by uid 5000); 1 Apr 2009 05:10:33 -0000</received><mailing-list>contact issues-help@installer.netbeans.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:issues-help@installer.netbeans.org&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@installer.netbeans.org&gt;</list-unsubscribe><list-post>&lt;mailto:issues@installer.netbeans.org&gt;</list-post><reply-to>issues@installer.netbeans.org</reply-to><delivered-to>mailing list issues@installer.netbeans.org</delivered-to><received>(qmail 4988 invoked by uid 5000); 1 Apr 2009 05:10:32 -0000</received><date>1 Apr 2009 05:10:32 -0000</date><message-id>20090401051032.4986.qmail@netbeans.org</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20090401051032.4986.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=161634</url>
+
+</para><para depth="0">User vkraemer changed the following:
+
+</para><para depth="0">                What    |Old value                 |New value
+================================================================================
+             Assigned to|issues@installer          |vkraemer
+</para><para depth="0">--------------------------------------------------------------------------------
+               Component|installer                 |serverplugins
+</para><para depth="0">--------------------------------------------------------------------------------
+              QA contact|issues@installer          |issues@serverplugins
+</para><para depth="0">--------------------------------------------------------------------------------
+            Subcomponent|code                      |glassfish_v3
+</para><para depth="0">--------------------------------------------------------------------------------
+        Target milestone|TBD                       |6.7
+</para><footer type="noise" depth="0">--------------------------------------------------------------------------------
+
+</footer><footer type="signature" depth="0" hash="10011274153662425187">------- Additional comments from <email>vkraemer@netbeans.org</email> Wed Apr  1 05:10:31 +0000<br/>2009 -------
+this may be a plugin issue... the plugin does the registration... and should<br/>have created a personal domain
+automatically.  I will take a look.
+</footer></body></message>

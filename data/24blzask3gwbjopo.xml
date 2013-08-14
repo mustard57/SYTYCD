@@ -1,0 +1,154 @@
+<message message-id="200707181720.l6IHKBbC020283@cvs-int.fedora.redhat.com" list="com.redhat.fedora-extras-commits" id="24blzask3gwbjopo" type="checkins" date="2007-07-18T13:20:11-04:00" year="2007-01-01" year-month="2007-07-01" year-month-day="2007-07-18" thread-id="24blzask3gwbjopo"><headers><envelope-from-line>From accounts@fedoraproject.org Wed Jul 18 13:20:19 2007</envelope-from-line><from personal="Aristeu Sergio Rozanski Filho (arozansk)" address="fedora-extras-commits@redhat.com">"Aristeu Sergio Rozanski Filho (arozansk)" &lt;fedora-extras-commits@redhat.com&gt;</from><to personal="fedora-extras-commits@redhat.com" address="fedora-extras-commits@redhat.com">fedora-extras-commits@redhat.com</to><subject normal="rpms/edac-utils/devel edac-utils.spec, 1.1, 1.2 edac_init-fix_messages.patch, 1.1, 1.2">rpms/edac-utils/devel edac-utils.spec, 1.1, 1.2 edac_init-fix_messages.patch, 1.1, 1.2</subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	l6IHKJjs014961
+	for &lt;fedora-extras-commits@listman.util.phx.redhat.com&gt;;
+	Wed, 18 Jul 2007 13:20:19 -0400</received><received>from mx1.util.phx.redhat.com (mx1.util.phx.redhat.com [10.8.4.92])
+	by int-mx1.corp.redhat.com (8.13.1/8.13.1) with ESMTP id l6IHKIiQ001060
+	for &lt;fedora-extras-commits@int-mx1.corp.redhat.com&gt;;
+	Wed, 18 Jul 2007 13:20:18 -0400</received><received>from bastion.fedora.phx.redhat.com (bastion.fedora.phx.redhat.com
+	[10.8.34.50])
+	by mx1.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id l6IHKCW1015238
+	for &lt;fedora-extras-commits@redhat.com&gt;; Wed, 18 Jul 2007 13:20:12 -0400</received><received>from bastion.fedora.phx.redhat.com (localhost.localdomain
+	[127.0.0.1])
+	by bastion.fedora.phx.redhat.com (8.13.8/8.13.8) with ESMTP id
+	l6IHKCXU003059
+	for &lt;fedora-extras-commits@redhat.com&gt;; Wed, 18 Jul 2007 10:20:12 -0700</received><received>(from accounts@localhost)
+	by bastion.fedora.phx.redhat.com (8.13.8/8.13.8/Submit) id
+	l6IHKCYR003058
+	for fedora-extras-commits@redhat.com; Wed, 18 Jul 2007 10:20:12 -0700</received><received>from cvs-int.fedora.redhat.com (cvs-int.fedora.phx.redhat.com
+	[10.8.34.51])
+	by bastion.fedora.phx.redhat.com (8.13.8/8.13.8) with ESMTP id
+	l6IHKCv8003047; Wed, 18 Jul 2007 10:20:12 -0700</received><received>from cvs-int.fedora.phx.redhat.com (localhost.localdomain
+	[127.0.0.1])
+	by cvs-int.fedora.redhat.com (8.13.1/8.13.1) with ESMTP id
+	l6IHKBbC020283; Wed, 18 Jul 2007 13:20:11 -0400</received><date>Wed, 18 Jul 2007 13:20:11 -0400</date><message-id>200707181720.l6IHKBbC020283@cvs-int.fedora.redhat.com</message-id><x-cvsroot>/cvs/pkgs</x-cvsroot><old-from>Aristeu Sergio Rozanski Filho &lt;arozansk@fedoraproject.org&gt;</old-from><x-cvs-module>rpms</x-cvs-module><x-cvs-directory>rpms/edac-utils/devel</x-cvs-directory><x-cvs-user>arozansk</x-cvs-user><x-cvs-server>cvs-int.fedora.redhat.com</x-cvs-server><precedence>first-class</precedence><x-loop>fedora-extras-commits@redhat.com</x-loop><x-beenthere>fedora-extras-commits@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><reply-to>fedora-devel-list@redhat.com</reply-to><list-id>Fedora Extras CVS commits &lt;fedora-extras-commits.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-extras-commits&gt;,
+	&lt;mailto:fedora-extras-commits-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-extras-commits&gt;</list-archive><list-post>&lt;mailto:fedora-extras-commits@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-extras-commits-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-extras-commits&gt;,
+	&lt;mailto:fedora-extras-commits-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Wed, 18 Jul 2007 17:20:19 -0000</x-list-received-date><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>200707181720.l6IHKBbC020283@cvs-int.fedora.redhat.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Author: arozansk
+
+</para><para depth="0">Update of /cvs/pkgs/rpms/edac-utils/devel
+In directory cvs-int.fedora.redhat.com:/tmp/cvs-serv20183
+
+</para><para depth="0">Modified Files:
+	edac-utils.spec edac_init-fix_messages.patch 
+Log Message:
+* updating to last RHEL-5 version
+
+</para><para depth="0">Index: edac-utils.spec
+===================================================================
+RCS file: /cvs/pkgs/rpms/edac-utils/devel/edac-utils.spec,v
+retrieving revision 1.1
+retrieving revision 1.2
+diff -u -r1.1 -r1.2
+--- edac-utils.spec	22 Jun 2007 22:22:36 -0000	1.1
++++ edac-utils.spec	18 Jul 2007 17:19:37 -0000	1.2
+@@ -1,6 +1,6 @@
+ Name:		edac-utils
+ Version:	0.9
+-Release:	3%{?dist}
++Release:	6%{?dist}
+ Summary:	Userspace helper for kernel EDAC drivers
+
+</para><para depth="0"> Group:		System Environment/Base
+@@ -9,6 +9,7 @@
+ Source0:<br/><url>http://dl.sourceforge.net/sourceforge/edac-utils/%</url>{name}-%{version}.tar.bz2
+ Patch0:		edac_ctl-remove_driver_loading.patch
+ Patch1:		edac_init-fix_messages.patch
++Patch2:		edac_ctl-fix_model_parsing.patch
+
+</para><para depth="0"> BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
+ Requires:	hwdata, dmidecode, sysfsutils
+@@ -36,6 +37,7 @@
+ %setup -q
+ %patch0 -p1
+ %patch1 -p1
++%patch2 -p1
+
+</para><para depth="0"> %build
+ %configure --disable-static
+@@ -81,6 +83,17 @@
+ %{_includedir}/edac.h
+
+</para><para depth="0"> %changelog
++* Tue Jul 17 2007 Aristeu Rozanski &lt;<email>arozansk@redhat.com</email>&gt; 0.9-6
++- building FC7 package
++
++* Thu Jul 09 2007 Aristeu Rozanski &lt;<email>arozansk@redhat.com</email>&gt; 0.9-5
++- Fixed start/stop message, missing echo
++- Fixed status command to use edac-util
++
++* Thu Jun 15 2007 Aristeu Rozanski &lt;<email>arozansk@redhat.com</email>&gt; 0.9-4
++- Removed debug code left by mistake on initrd file
++- Fixed model comparing in edac-ctl script
++
+ * Wed Jun 13 2007 Aristeu Rozanski &lt;<email>arozansk@redhat.com</email>&gt; 0.9-3
+ - Adding COPYING to documents
+ - Fixing Requires to use a single equal sign, instead of two
+
+</para><para depth="0">edac_init-fix_messages.patch:
+
+</para><para depth="0">Index: edac_init-fix_messages.patch
+===================================================================
+RCS file: /cvs/pkgs/rpms/edac-utils/devel/edac_init-fix_messages.patch,v
+retrieving revision 1.1
+retrieving revision 1.2
+diff -u -r1.1 -r1.2
+--- edac_init-fix_messages.patch	22 Jun 2007 22:22:36 -0000	1.1
++++ edac_init-fix_messages.patch	18 Jul 2007 17:19:37 -0000	1.2
+@@ -2,7 +2,7 @@
+ ===================================================================
+ --- edac-utils-0.9.orig/src/etc/edac.init
+ +++ edac-utils-0.9/src/etc/edac.init
+-@@ -7,48 +7,57 @@
++@@ -7,21 +7,31 @@
+  # Written by Mark Grondona &lt;<email>mgrondona@llnl.gov</email>&gt;
+  # UCRL-CODE-230739.
+  ###############################################################################
+@@ -31,14 +31,13 @@
+ +SERVICE="edac"
+  PATH=/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin
+  EDAC=/usr/sbin/edac-ctl
+++EDAC_UTIL=/usr/bin/edac-util
+ +LOGGER="logger -t $SERVICE -p info"
+ +SUBSYS=/var/lock/subsys/edac
+
+</para><para depth="0">  ###############################################################################
+-+set &gt;/tmp/lala
+
+</para><para depth="0">- service_start ()
+- {
++@@ -30,25 +40,26 @@ service_start ()
+  # Start the service.  Required by LSB.
+  #
+    echo -n "Starting ${SERVICE}: "
+@@ -59,6 +58,7 @@
+ +  else
+ +	daemon false;
+ +  fi
+++  echo;
+  }
+
+</para><para depth="0">  ###############################################################################
+@@ -72,10 +72,20 @@
+    rc=$?
+ -  [ $rc -eq 0 ] &amp;&amp; echo success || echo failure
+ +  rm -f $SUBSYS;
+++  echo;
+  }
+
+</para><para depth="0">  ###############################################################################
+-@@ -75,9 +84,15 @@ case "$1" in
++@@ -57,7 +68,7 @@ service_status ()
++ {
++ # Print the current status of the service.  Required by LSB.
++ #
++-  $EDAC --status
+++  $EDAC_UTIL --status
++   rc=0
++ }
++ 
++@@ -75,9 +86,15 @@ case "$1" in
+    status)
+      service_status
+      ;;
+</para></body></message>

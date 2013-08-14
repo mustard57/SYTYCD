@@ -1,0 +1,55 @@
+<message message-id="20080418142946.13311.qmail@netbeans.org" list="org.netbeans.javafx.issues" id="24adwmzmgsgzr3hl" type="bugs" date="2008-04-18T14:29:46Z" year="2008-01-01" year-month="2008-04-01" year-month-day="2008-04-18" thread-id="24adwmzmgsgzr3hl"><headers><envelope-from-line>From issues@javafx.netbeans.org Fri Apr 18 09:51:34 2008</envelope-from-line><from personal="lfitzgerald@netbeans.org" address="lfitzgerald@netbeans.org">lfitzgerald@netbeans.org</from><to personal="issues@javafx.netbeans.org" address="issues@javafx.netbeans.org">issues@javafx.netbeans.org</to><subject normal="[Issue 133208] New - SmokeParticleSystem: TimeLine compile error">[Issue 133208] New - SmokeParticleSystem: TimeLine compile error</subject><return-path>root@netbeans.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact issues-help@javafx.netbeans.org; run by ezmlm</mailing-list><delivered-to>mailing list issues@javafx.netbeans.org</delivered-to><received>(qmail 13312 invoked by uid 5000); 18 Apr 2008 14:29:46 -0000</received><date>18 Apr 2008 14:29:46 -0000</date><message-id>20080418142946.13311.qmail@netbeans.org</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20080418142946.13311.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=133208</url>
+                 Issue #|133208
+                 Summary|SmokeParticleSystem: TimeLine compile error
+                 product|
+               Component|javafx
+                 Version|6.1
+                Platform|All
+                     URL|
+              OS/Version|Windows XP
+                  Status|NEW
+       Status whiteboard|
+                Keywords|
+              Resolution|
+              Issue type|DEFECT
+                Priority|P3
+            Subcomponent|samples
+             Assigned to|misk
+             Reported by|lfitzgerald
+
+</para><para depth="0">------- Additional comments from <email>lfitzgerald@netbeans.org</email> Fri Apr 18 14:29:43<br/>+0000 2008 -------
+Product Version: NetBeans IDE 6.1 RC2 (Build 200804170002)
+Java: 1.6.0_03; Java HotSpot(TM) Client VM 1.6.0_03-b05
+System: Windows Vista version 6.0 running on x86; Cp1252; en_US (nb)
+plugin: CB 92 2008-04-18_14-24-29.zip
+Samples: Trunk 2008-04-18_02-01-55.zip
+Platform: 200 (Apr 16, 2008 9:49:22 AM) javafx_sdk-1_0-pre1-windows-i586.zip
+
+</para><para depth="0">Steps:
+1. create Smoke Particle System project
+2. Modify platform to point to javafx sdk
+3. Run project
+
+</para><para depth="0">I get this compilation error
+init:
+deps-jar:
+Compiling 1 source file to C:\Users\Lark\Documents\NetBeansProjects\Smoke<br/>Particle System\build\classes
+C:\Users\Lark\Documents\NetBeansProjects\Smoke Particle<br/>System\src\particles\SmokeParticleSystem.fx:51: cannot find 
+symbol
+symbol  : variable TimeLine
+location: class particles.SmokeParticleSystem.CustomCanvas
+            repeatCount: TimeLine.INDEFINITE
+1 error
+C:\Users\Lark\Documents\NetBeansProjects\Smoke Particle<br/>System\nbproject\build-impl.xml:363: JavaFX compile failed; 
+see the compiler error output for details.
+BUILD FAILED (total time: 1 second)
+
+</para><para depth="0">Changing the line from:
+            repeatCount: TimeLine.INDEFINITE
+To:
+            repeatCount: timeline.INDEFINITE
+Resolves the build errors and I can run the project.
+
+</para></body></message>

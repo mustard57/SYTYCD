@@ -1,0 +1,62 @@
+<message message-id="1058364291.22533.872.camel@localhost.localdomain" list="org.gnome.evolution-list" id="24cjwuofqfp4mfzr" type="general" date="2003-07-16T09:04:51-05:00" year="2003-01-01" year-month="2003-07-01" year-month-day="2003-07-16" thread-id="fkwa2xifsku43vka"><headers><envelope-from-line>From mwelch@cadtrain.com  Wed Jul 16 10:04:55 2003</envelope-from-line><from personal="Matthew Welch" address="mwelch@cadtrain.com">Matthew Welch &lt;mwelch@cadtrain.com&gt;</from><to personal="evolution@lists.ximian.com" address="evolution@lists.ximian.com">evolution@lists.ximian.com</to><subject normal="[Evolution] Unusual Text Editing Behavior">Re: [Evolution] Unusual Text Editing Behavior</subject><return-path>mwelch@cadtrain.com</return-path><x-spam-checker-version>SpamAssassin 3.1.9 (2007-02-13) on oreilly.markmail.ws</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.4 required=6.0 tests=AWL,BAYES_00
+	autolearn=unavailable version=3.1.9</x-spam-status><received>by listsmx.ximian.com (Postfix, from userid 38)
+	id 5868812436C; Wed, 16 Jul 2003 10:04:55 -0400 (EDT)</received><received>from hrafnwarband.org (cadtraina203.august.net [66.228.34.203])
+	by listsmx.ximian.com (Postfix) with SMTP id B651212434A
+	for &lt;evolution@lists.ximian.com&gt;; Wed, 16 Jul 2003 10:04:52 -0400 (EDT)</received><received>(qmail 16311 invoked from network); 16 Jul 2003 14:04:58 -0000</received><received>from unknown (HELO www.cadtrain-tx.com) (192.168.0.106)
+  by hrafnwarband.org with SMTP; 16 Jul 2003 14:04:58 -0000</received><reply-to>mwelch@cadtrain.com</reply-to><in-reply-to>&lt;1058314495.3803.13.camel@localhost.localdomain&gt;</in-reply-to><references>&lt;1058300554.22533.24.camel@localhost.localdomain&gt;
+	 &lt;1058314495.3803.13.camel@localhost.localdomain&gt;</references><content-type>text/plain</content-type><organization>CADTRAIN</organization><message-id>1058364291.22533.872.camel@localhost.localdomain</message-id><mime-version>1.0</mime-version><x-mailer>Ximian Evolution 1.4.3 </x-mailer><date>16 Jul 2003 09:04:51 -0500</date><content-transfer-encoding>7bit</content-transfer-encoding><sender>evolution-admin@lists.ximian.com</sender><errors-to>evolution-admin@lists.ximian.com</errors-to><x-beenthere>evolution@lists.ximian.com</x-beenthere><x-mailman-version>2.0.13</x-mailman-version><precedence>bulk</precedence><list-help>&lt;mailto:evolution-request@lists.ximian.com?subject=help&gt;</list-help><list-post>&lt;mailto:evolution@lists.ximian.com&gt;</list-post><list-subscribe>&lt;http://lists.ximian.com/mailman/listinfo/evolution&gt;,
+	&lt;mailto:evolution-request@lists.ximian.com?subject=subscribe&gt;</list-subscribe><list-id>Evolution users mailing list. &lt;evolution.lists.ximian.com&gt;</list-id><list-unsubscribe>&lt;http://lists.ximian.com/mailman/listinfo/evolution&gt;,
+	&lt;mailto:evolution-request@lists.ximian.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.ximian.com/archives/public/evolution/&gt;</list-archive></headers><normalized-references><normalized-message-id>1058364291.22533.872.camel@localhost.localdomain</normalized-message-id><normalized-in-reply-to>1058314495.3803.13.camel@localhost.localdomain</normalized-in-reply-to><normalized-reference>1058300554.22533.24.camel@localhost.localdomain</normalized-reference><normalized-reference>1058314495.3803.13.camel@localhost.localdomain</normalized-reference></normalized-references><body type="text/plain"><para depth="0">Wonderful! I expected it must be something like that. Thanks for the
+response.
+
+</para><para depth="0">Matt Welch
+
+</para><para depth="0">On Tue, 2003-07-15 at 19:14, Larry Ewing wrote:
+</para><quote depth="1"><quotepara depth="1">I'm pretty sure that what you are seeing is just a bug that has been
+found and fixed in gtkhtml in CVS and will be included in the next
+evolution release.
+
+</quotepara><quotepara depth="1">--Larry
+
+</quotepara><quotepara depth="1">On Tue, 2003-07-15 at 15:22, Matthew Welch wrote:
+</quotepara><quote depth="2"><quotepara depth="2">This is something that has been bothering me almost to the point of my
+considering dropping Evolution as my email client, despite the fact that
+I need it to access an Exchange server.
+
+</quotepara><quotepara depth="2">Evolution's email component is certainly intended to have advanced text
+editing functionality, but there's one aspect of the text editor that is
+such a rookie mistake when it comes to text editing that I have to
+assume that I must have something misconfigured in my own environment.
+This oddity is the blinking cursor. If you take a look at at any given
+text editing environment (command line, word processor, etc.), you'll
+notice that the cursor, when not moving, blinks. However when it's
+moving, the blinking stops. The obvious reason for this is that if the
+cursor is blinking while it's moving, then for that half second or so
+when the cursor is not visible, you have no idea where it is. That's ok,
+when the cursor isn't moving because you know still know where the
+cursor will return, but it's BEYOND MADDENING when trying to move your
+cursor around text for the purpose of editing. I'm constantly over or
+under shooting where I'm trying to place the cursor.
+
+</quotepara><quotepara depth="2">I happen to be a pretty poor typist so I have to diligently proofread
+every email I send in the business environment. That means that I use
+ctrl-left and ctrl-right a ton to move the cursor around my text. The
+cursor disappearing while I'm doing this has just about driven me over
+the edge into insanity. 
+
+</quotepara><quotepara depth="2">Please, PLEASE, someone tell me I have a setting wrong somewhere and
+that I can change to fix this. Other this this issue, I absolutely love
+Evolution but I'm almost at my tolerance limit.
+
+</quotepara><quotefooter type="signature" hash="76508057659161046" depth="2">Thanks!
+Matt Welch
+
+</quotefooter><quotefooter type="list-management" hash="4730952904361114001" depth="2">_______________________________________________
+evolution maillist  -  <email>evolution@lists.ximian.com</email>
+<url>http://lists.ximian.com/mailman/listinfo/evolution</url>
+</quotefooter></quote><quotepara depth="1">
+</quotepara><quotefooter type="list-management" hash="4730952904361114001" depth="1">_______________________________________________
+evolution maillist  -  <email>evolution@lists.ximian.com</email>
+<url>http://lists.ximian.com/mailman/listinfo/evolution</url>
+</quotefooter></quote><para depth="0">
+</para></body></message>

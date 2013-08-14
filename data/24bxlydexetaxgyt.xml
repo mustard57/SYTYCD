@@ -1,0 +1,48 @@
+<message message-id="87mz8vqsv8.fsf@debian2.lan" list="org.tigris.subversion.dev" id="24bxlydexetaxgyt" type="checkins" date="2006-09-20T01:33:31+01:00" year="2006-01-01" year-month="2006-09-01" year-month-day="2006-09-19" thread-id="6r3yaxihvds2vi7t"><headers><envelope-from-line>From dev@subversion.tigris.org Tue Sep 19 18:08:08 2006</envelope-from-line><from personal="Philip Martin" address="philip@codematters.co.uk">Philip Martin &lt;philip@codematters.co.uk&gt;</from><to personal="dev@subversion.tigris.org" address="dev@subversion.tigris.org">dev@subversion.tigris.org</to><subject normal="svn commit: r21546 - trunk/subversion/tests/libsvn_repos">Re: svn commit: r21546 - trunk/subversion/tests/libsvn_repos</subject><return-path>philip@codematters.co.uk</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.6 required=5.0 tests=BAYES_00 autolearn=disabled
+	version=3.2.4</x-spam-status><mailing-list>contact dev-help@subversion.tigris.org; run by ezmlm</mailing-list><delivered-to>mailing list dev@subversion.tigris.org</delivered-to><received>(qmail 28062 invoked from network); 20 Sep 2006 00:33:36 -0000</received><received>from cylon2.sjc.collab.net (204.16.104.18)
+  by sc51.sjc.collab.net with SMTP; 20 Sep 2006 00:33:36 -0000</received><received>from mtaout01-winn.ispmail.ntl.com ([81.103.221.47])
+  by cylon2.sjc.collab.net with ESMTP; 19 Sep 2006 17:33:35 -0700</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AQAAAFEpEEWLdAICBwIMBwYd</x-ironport-anti-spam-result><x-ironport-av>i="4.09,187,1157353200"; 
+   d="scan'208"; a="27440155:sNHT15165605"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from aamtaout04-winn.ispmail.ntl.com ([81.103.221.35])
+          by mtaout01-winn.ispmail.ntl.com with ESMTP
+          id &lt;20060920003333.JLIP15018.mtaout01-winn.ispmail.ntl.com@aamtaout04-winn.ispmail.ntl.com&gt;
+          for &lt;dev@subversion.tigris.org&gt;; Wed, 20 Sep 2006 01:33:33 +0100</received><received>from debian2 ([86.17.231.6]) by aamtaout04-winn.ispmail.ntl.com
+          with ESMTP
+          id &lt;20060920003333.SRRI15733.aamtaout04-winn.ispmail.ntl.com@debian2&gt;
+          for &lt;dev@subversion.tigris.org&gt;; Wed, 20 Sep 2006 01:33:33 +0100</received><received>from pm by debian2 with local (Exim 4.50)
+	id 1GPq1r-0007Cx-MH
+	for dev@subversion.tigris.org; Wed, 20 Sep 2006 01:33:31 +0100</received><references>&lt;20060918233839.E5E2834C195@svn.collab.net&gt;
+	&lt;jank63zzd34.fsf@morbius.corp.google.com&gt; &lt;87u033qxdh.fsf@debian2.lan&gt;
+	&lt;jan1wq7zabb.fsf@morbius.corp.google.com&gt;</references><date>Wed, 20 Sep 2006 01:33:31 +0100</date><in-reply-to>&lt;jan1wq7zabb.fsf@morbius.corp.google.com&gt; (Karl Fogel's message
+ of "Tue, 19 Sep 2006 16:49:28 -0700")</in-reply-to><message-id>87mz8vqsv8.fsf@debian2.lan</message-id><user-agent>Gnus/5.1007 (Gnus v5.10.7) Emacs/21.4 (gnu/linux)</user-agent><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type></headers><normalized-references><normalized-message-id>87mz8vqsv8.fsf@debian2.lan</normalized-message-id><normalized-in-reply-to>&lt;jan1wq7zabb.fsf@morbius.corp.google.com&gt;(KarlFogel'smessageof"Tue,19Sep200616:49:28-0700")</normalized-in-reply-to><normalized-reference>20060918233839.E5E2834C195@svn.collab.net</normalized-reference><normalized-reference>jank63zzd34.fsf@morbius.corp.google.com</normalized-reference><normalized-reference>87u033qxdh.fsf@debian2.lan</normalized-reference><normalized-reference>jan1wq7zabb.fsf@morbius.corp.google.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Karl Fogel &lt;<email>kfogel@google.com</email>&gt; writes:
+
+</para><quote depth="1"><quotepara depth="1">Philip Martin &lt;<email>philip@codematters.co.uk</email>&gt; writes:
+</quotepara><quote depth="2"><quotepara depth="2">Karl Fogel &lt;<email>kfogel@google.com</email>&gt; writes:
+</quotepara><quote depth="3"><quotepara depth="3">How exactly does this prevent a core dump?  Since 'subpool' is just a
+child of 'pool', I can't see a safety issue with allocating in the
+latter instead of the former.  A scalability issue, sure, but safety?
+</quotepara></quote><quotepara depth="2">
+See this thread
+
+</quotepara><quotepara depth="2"><url>http://svn.haxx.se/dev/archive-2006-03/1242.shtml</url>
+</quotepara></quote><quotepara depth="1">
+Thanks.  I edited the log message (sorry for the double propedit, I
+found your later message in the thread that explained it better).
+</quotepara></quote><para depth="0">
+I think the use of pool rather than subpool in the original code was
+unintentional, although few people encountered the problem because
+--enable-dso is not widely tested.  I didn't commit the patch
+immediately since I wasn't sure whether it was simply hiding an editor
+bug, but yesterday I was going though some old patches in my working
+copy and decided that unbreaking the test suite was reason enough to
+commit it.  However, I realise now I didn't reproduce the failure with
+--enable-dso using a recent trunk build, I just ran regression tests
+with the patch applied.  I suspect that the new DSO pool handling has
+made the patch redundant and that had I tried to reproduce the problem
+I would not have been able to do so.  The patch doesn't hurt but I
+suspect it no longer really fixes a core dump.
+
+</para><footer type="signature" depth="0" hash="12967105669141435042">-- 
+Philip Martin
+
+</footer></body></message>

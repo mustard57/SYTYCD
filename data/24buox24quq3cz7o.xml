@@ -1,0 +1,26 @@
+<message message-id="FA3097D151B9C44FC567882C7F6E0AF5@markmail.org" list="org.haskell.haskell" id="24buox24quq3cz7o" type="general" date="2001-02-08T22:59:44+11:00" year="2001-01-01" year-month="2001-02-01" year-month-day="2001-02-08" thread-id="3ciklajbwby2txq3"><headers><envelope-from-line>From fjh@cs.mu.oz.au  Thu Feb  8 11:59:44 2001</envelope-from-line><from personal="Fergus Henderson fjh@cs.mu.oz.au" address="Fergus Henderson fjh@cs.mu.oz.au">Fergus Henderson fjh@cs.mu.oz.au</from><subject normal="names, modules, types">names, modules, types</subject><date>Thu, 8 Feb 2001 22:59:44 +1100</date><content-type>text/html; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>FA3097D151B9C44FC567882C7F6E0AF5@markmail.org</normalized-message-id></normalized-references><body html2text="elinks" type="text/html; charset=iso-8859-1"><para depth="0">On 07-Feb-2001, Marcin 'Qrczak' Kowalczyk &lt;[1]<email>qrczak@knm.org.pl</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">So why is fmap separate now? Probably because having too much
+overloading causes ambiguities.
+</quotepara></quote><para depth="0">
+Perhaps.  But I think there may be other reasons too.
+
+</para><para depth="0">Having fmap separate is useful for beginners and for teaching,
+because you can describe `map' without having to talk about type classes.
+Also, it is possible that the error messages that you get when you
+make a mistake using `fmap' might be harder to understand.
+
+</para><para depth="0">The reasoning here is similar to the reasons that Haskell 98 has list
+comprehensions rather than monad comprehensions.
+
+</para><para depth="0">--
+Fergus Henderson &lt;[2]<email>fjh@cs.mu.oz.au</email>&gt;  |  "I have always known that the pursuit
+                                    |  of excellence is a lethal habit"
+WWW: &lt;[3]<url>http://www.cs.mu.oz.au/~fjh</url>&gt;  |     -- the last words of T. S. Garp.
+
+</para><para depth="0">References
+
+</para><para depth="0">   Visible links
+   1. mailto:<email>qrczak@knm.org.pl</email>
+   2. mailto:<email>fjh@cs.mu.oz.au</email>
+   3. <url>http://www.cs.mu.oz.au/~fjh</url>
+</para></body></message>

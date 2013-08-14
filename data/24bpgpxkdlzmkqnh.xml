@@ -1,0 +1,51 @@
+<message message-id="200512161833.jBGIXxZr003358@laptop11.inf.utfsm.cl" list="com.redhat.fedora-test-list" id="24bpgpxkdlzmkqnh" type="development" date="2005-12-16T15:33:59-03:00" year="2005-01-01" year-month="2005-12-01" year-month-day="2005-12-16" thread-id="zinxhshb2umhxm76"><headers><envelope-from-line>From vonbrand@laptop11.inf.utfsm.cl Fri Dec 16 13:34:09 2005</envelope-from-line><from personal="Horst von Brand" address="vonbrand@inf.utfsm.cl">Horst von Brand &lt;vonbrand@inf.utfsm.cl&gt;</from><to personal="For testers of Fedora Core development releases" address="fedora-test-list@redhat.com">For testers of Fedora Core development releases &lt;fedora-test-list@redhat.com&gt;</to><subject normal="Package updating">Re: Package updating </subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	jBGIY8EC009178 for &lt;fedora-test-list@listman.util.phx.redhat.com&gt;;
+	Fri, 16 Dec 2005 13:34:09 -0500</received><received>from mx1.redhat.com (mx1.redhat.com [172.16.48.31])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with ESMTP id jBGIY8109165
+	for &lt;fedora-test-list@redhat.com&gt;; Fri, 16 Dec 2005 13:34:08 -0500</received><received>from inti.inf.utfsm.cl (inti.inf.utfsm.cl [200.1.21.155])
+	by mx1.redhat.com (8.12.11/8.12.11) with ESMTP id jBGIY5IJ022142
+	for &lt;fedora-test-list@redhat.com&gt;; Fri, 16 Dec 2005 13:34:06 -0500</received><received>from laptop11.inf.utfsm.cl (laptop11.inf.utfsm.cl [200.1.19.198])
+	by inti.inf.utfsm.cl (8.13.1/8.13.1) with ESMTP id jBGIXxY0005678
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for &lt;fedora-test-list@redhat.com&gt;; Fri, 16 Dec 2005 15:33:59 -0300</received><received>from laptop11.inf.utfsm.cl (localhost.localdomain [127.0.0.1])
+	by laptop11.inf.utfsm.cl (8.13.5/8.13.5) with ESMTP id jBGIXxZr003358
+	for &lt;fedora-test-list@redhat.com&gt;; Fri, 16 Dec 2005 15:33:59 -0300</received><message-id>200512161833.jBGIXxZr003358@laptop11.inf.utfsm.cl</message-id><in-reply-to>Your message of "Thu, 15 Dec 2005 17:53:24 CDT."
+	&lt;1134687204.26513.10.camel@cutter&gt; </in-reply-to><x-mailer>MH-E 7.4.2; nmh 1.1; XEmacs 21.4 (patch 18)</x-mailer><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><content-id>&lt;3356.1134758039.1@laptop11.inf.utfsm.cl&gt;</content-id><date>Fri, 16 Dec 2005 15:33:59 -0300</date><x-greylist>Sender IP whitelisted, not delayed by milter-greylist-2.0b5
+	(inti.inf.utfsm.cl [200.1.21.155]);
+	Fri, 16 Dec 2005 15:33:59 -0300 (CLST)</x-greylist><x-virus-scanned>ClamAV version 0.87, clamav-milter version 0.87 on localhost</x-virus-scanned><x-virus-status>Clean</x-virus-status><x-redhat-spam-score>0 </x-redhat-spam-score><x-loop>fedora-test-list@redhat.com</x-loop><x-beenthere>fedora-test-list@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>For testers of Fedora Core development releases
+	&lt;fedora-test-list@redhat.com&gt;</reply-to><list-id>For testers of Fedora Core development releases
+	&lt;fedora-test-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-test-list&gt;, 
+	&lt;mailto:fedora-test-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-test-list&gt;</list-archive><list-post>&lt;mailto:fedora-test-list@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-test-list-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-test-list&gt;,
+	&lt;mailto:fedora-test-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Fri, 16 Dec 2005 18:34:09 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>200512161833.jBGIXxZr003358@laptop11.inf.utfsm.cl</normalized-message-id><normalized-in-reply-to>Yourmessageof"Thu,15Dec200517:53:24CDT."&lt;1134687204.26513.10.camel@cutter&gt;</normalized-in-reply-to></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">seth vidal &lt;<email>skvidal@phy.duke.edu</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">On Thu, 2005-12-15 at 15:49 -0700, Don Springall wrote:
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">I would still like a reply from redhat. Is there a way to formulate a
+broken deps list that is complete ? If not then maybe someone should
+revisit this dependency hell we have descended into. I fail to see how
+this is any better than the .dll hell some unnamed OS suffers from.
+</quotepara></quote></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">The reason why it is better is that this is a TEST RELEASE.
+</quotepara></quote><para depth="0">
+So?
+
+</para><quote depth="1"><quotepara depth="1">Things are expected to be broken.
+</quotepara></quote><para depth="0">
+Right. But give people the tools (even if hard to use/inconvenient) to find
+out exactly how/where. I.e., how to find out what can't be installed
+because it is being blocked, and exactly how it is blocked. As things
+stand, I just run "yum -y update", parse the output to find out what it
+would like to install, and then go over the resulting list trying to
+"yum -y upgrade" one by one. There has to be a better way...
+
+</para><para depth="0">A list of /everything/ that depends on a package/feature (directly or
+indirectly), and another one of all the stuff required would go a long
+way... they would probably be humongous, but with standard text filters they
+could be handled.
+</para><footer type="signature" depth="0" hash="17310962440248069859">-- 
+Dr. Horst H. von Brand                   User #22616 counter.li.org
+Departamento de Informatica                     Fono: +56 32 654431
+Universidad Tecnica Federico Santa Maria              +56 32 654239
+Casilla 110-V, Valparaiso, Chile                Fax:  +56 32 797513
+</footer></body></message>

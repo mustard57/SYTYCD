@@ -1,0 +1,243 @@
+<message message-id="1ff86f510812010947p7df19438kc19c279bcffe4b83@mail.gmail.com" list="org.perl.perl5-porters" id="24chpiyp2m7mz7ks" type="development" date="2008-12-01T09:47:24.623309-08:00" year="2008-01-01" year-month="2008-12-01" year-month-day="2008-12-01" thread-id="24chpiyp2m7mz7ks"><headers><envelope-from-line>Mon Dec 01 09:47:47 2008</envelope-from-line><from personal="Jerry D. Hedden" address="jdhedden@cpan.org">"Jerry D. Hedden" &lt;jdhedden@cpan.org&gt;</from><to personal="pp" address="perl5-porters@perl.org">pp &lt;perl5-porters@perl.org&gt;</to><subject normal="[PATCH] Eliminate setenv_getix()">[PATCH] Eliminate setenv_getix()</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 718
+          for &lt;melinda.copeland.bennett@a.markmail.org&gt;;
+          Mon, 1 Dec 2008 09:47:47 -0800 (GMT-08:00)</received><received>from lists.develooper.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id BF64B3B30252
+	for &lt;melinda.copeland.bennett@a.markmail.org&gt;; Mon,  1 Dec 2008 09:47:23 -0800 (PST)</received><received>(qmail 29781 invoked by uid 514); 1 Dec 2008 17:47:44 -0000</received><mailing-list>contact perl5-porters-help@perl.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:perl5-porters-help@perl.org&gt;</list-help><list-unsubscribe>&lt;mailto:perl5-porters-unsubscribe@perl.org&gt;</list-unsubscribe><list-post>&lt;mailto:perl5-porters@perl.org&gt;</list-post><x-list-archive>&lt;http://nntp.perl.org/group/perl.perl5.porters/142243&gt;</x-list-archive><list-id>&lt;perl5-porters.perl.org&gt;</list-id><delivered-to>mailing list perl5-porters@perl.org</delivered-to><received>(qmail 29769 invoked from network); 1 Dec 2008 17:47:43 -0000</received><delivered-to>perl5-porters@perl.org</delivered-to><x-spam-status>No, hits=0.0 required=8.0
+	tests=DK_SIGNED,SPF_PASS</x-spam-status><x-spam-check-by>la.mx.develooper.com</x-spam-check-by><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:sender
+         :to:subject:mime-version:content-type:x-google-sender-auth;
+        bh=WBUFMrywpwSTkoeZqqy6g4CSyMdQortA6zejL9t4sGE=;
+        b=hkKyV/7c4S/eavnPnYCC0qru4YHQSnPRJ84zb19pGYYQsNu7sDnrQThqXXS8e4b0vo
+         u2QP4npq52wyMqHMg3BOBZxRDdzIwF1cz1/+zOyLNZ9ZGMQJPc7nbmQdk0KkDlTXC8sb
+         YmT6rGKcWzxfG22h5OnzVwVnlVjW90Qie4j3M=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:sender:to:subject:mime-version:content-type
+         :x-google-sender-auth;
+        b=tYn6r4+9Jw6FpxyVTlJj/waP3EHMnXXQHLQAUeODoiRw/tPH1DoOuaZMvTGLQ+ONSg
+         XTiUVEDElPcU7t5p/BdjuKZRh/Guoetn4XGySTZmaXXP8BneTmWsT5Hwyvav3gBEukG4
+         fOa5zmyB9X42jzSFRakjnCTEhJuxN2CUKWOO0=</domainkey-signature><message-id>1ff86f510812010947p7df19438kc19c279bcffe4b83@mail.gmail.com</message-id><date>Mon, 1 Dec 2008 12:47:35 -0500</date><sender>jdhedden@gmail.com</sender><mime-version>1.0</mime-version><content-type>multipart/mixed; 
+	boundary="----=_Part_83989_29503022.1228153655713"</content-type><x-google-sender-auth>25c5c0aca5c67eeb</x-google-sender-auth></headers><attachments><attachment type="text/plain" file="patch.txt" size="4186" uri="/24chpiyp2m7mz7ks/attach00/patch.txt" extension="txt"><page page="1"><attachpara>--- perl-current/embed.fnc
++++ perl-current/embed.fnc
+@@ -951,9 +951,6 @@
+ p	|OP*	|scope		|NULLOK OP* o
+ Ap	|char*	|screaminstr	|NN SV *bigstr|NN SV *littlestr|I32 start_shift \
+ 				|I32 end_shift|NN I32 *old_posp|I32 last
+-#if !defined(VMS) &amp;&amp; defined(PERL_IN_UTIL_C)
+-s	|I32	|setenv_getix	|NN const char* nam
+-#endif
+ Apd	|void	|setdefout	|NULLOK GV* gv
+ Ap	|HEK*	|share_hek	|NN const char* str|I32 len|U32 hash
+ #if defined(HAS_SIGACTION) &amp;&amp; defined(SA_SIGINFO)
+
+--- perl-current/embed.h
++++ perl-current/embed.h
+@@ -839,11 +839,6 @@
+ #define scope			Perl_scope
+ #endif
+ #define screaminstr		Perl_screaminstr
+-#if !defined(VMS) &amp;&amp; defined(PERL_IN_UTIL_C)
+-#ifdef PERL_CORE
+-#define setenv_getix		S_setenv_getix
+-#endif
+-#endif
+ #define setdefout		Perl_setdefout
+ #define share_hek		Perl_share_hek
+ #if defined(HAS_SIGACTION) &amp;&amp; defined(SA_SIGINFO)
+@@ -3195,11 +3190,6 @@
+ #define scope(a)		Perl_scope(aTHX_ a)
+ #endif
+ #define screaminstr(a,b,c,d,e,f)	Perl_screaminstr(aTHX_ a,b,c,d,e,f)
+-#if !defined(VMS) &amp;&amp; defined(PERL_IN_UTIL_C)
+-#ifdef PERL_CORE
+-#define setenv_getix(a)		S_setenv_getix(aTHX_ a)
+-#endif
+-#endif
+ #define setdefout(a)		Perl_setdefout(aTHX_ a)
+ #define share_hek(a,b,c)	Perl_share_hek(aTHX_ a,b,c)
+ #if defined(HAS_SIGACTION) &amp;&amp; defined(SA_SIGINFO)
+
+--- perl-current/proto.h
++++ perl-current/proto.h
+@@ -2962,13 +2962,6 @@
+ #define PERL_ARGS_ASSERT_SCREAMINSTR	\
+ 	assert(bigstr); assert(littlestr); assert(old_posp)
+ 
+-#if !defined(VMS) &amp;&amp; defined(PERL_IN_UTIL_C)
+-STATIC I32	S_setenv_getix(pTHX_ const char* nam)
+-			__attribute__nonnull__(pTHX_1);
+-#define PERL_ARGS_ASSERT_SETENV_GETIX	\
+-	assert(nam)
+-
+-#endif
+ PERL_CALLCONV void	Perl_setdefout(pTHX_ GV* gv);
+ PERL_CALLCONV HEK*	Perl_share_hek(pTHX_ const char* str, I32 len, U32 hash)
+ 			__attribute__nonnull__(pTHX_1);
+
+--- perl-current/util.c
++++ perl-current/util.c
+@@ -1667,9 +1667,16 @@
+ #ifndef PERL_USE_SAFE_PUTENV
+     if (!PL_use_safe_putenv) {
+     /* most putenv()s leak, so we manipulate environ directly */
+-    register I32 i=setenv_getix(nam);          /* where does it go? */
++    register I32 i;
++    register const I32 len = strlen(nam);
+     int nlen, vlen;
+ 
++    /* where does it go? */
++    for (i = 0; environ[i]; i++) {
++        if (strnEQ(environ[i],nam,len) &amp;&amp; environ[i][len] == '=')
++            break;
++    }
++
+     if (environ == PL_origenviron) {   /* need we copy environment? */
+        I32 j;
+        I32 max;
+@@ -1773,30 +1780,6 @@
+ 
+ #endif /* WIN32 || NETWARE */
+ 
+-#ifndef PERL_MICRO
+-static I32
+-S_setenv_getix(pTHX_ const char *nam)
+-{
+-    register I32 i;
+-    register const I32 len = strlen(nam);
+-
+-    PERL_ARGS_ASSERT_SETENV_GETIX;
+-    PERL_UNUSED_CONTEXT;
+-
+-    for (i = 0; environ[i]; i++) {
+-	if (
+-#ifdef WIN32
+-	    strnicmp(environ[i],nam,len) == 0
+-#else
+-	    strnEQ(environ[i],nam,len)
+-#endif
+-	    &amp;&amp; environ[i][len] == '=')
+-	    break;			/* strnEQ must come first to avoid */
+-    }					/* potential SEGV's */
+-    return i;
+-}
+-#endif /* !PERL_MICRO */
+-
+ #endif /* !VMS &amp;&amp; !EPOC*/
+ 
+ #ifdef UNLINK_ALL_VERSIONS
+</attachpara></page></attachment></attachments><normalized-references><normalized-message-id>1ff86f510812010947p7df19438kc19c279bcffe4b83@mail.gmail.com</normalized-message-id></normalized-references><body><para depth="0">Change 34940 made *_setenv_getix static.  However, when built
+under Cygwin, the following build warning is produced:
+   util.c:1779: warning: 'S_setenv_getix' defined but not used
+
+</para><para depth="0">Since it's only used in one place, the easiest way to fix
+the above is to eliminate it.  That attached patch does that.
+</para><para depth="0">--- perl-current/embed.fnc
++++ perl-current/embed.fnc
+@@ -951,9 +951,6 @@
+ p	|OP*	|scope		|NULLOK OP* o
+ Ap	|char*	|screaminstr	|NN SV *bigstr|NN SV *littlestr|I32 start_shift \
+ 				|I32 end_shift|NN I32 *old_posp|I32 last
+-#if !defined(VMS) &amp;&amp; defined(PERL_IN_UTIL_C)
+-s	|I32	|setenv_getix	|NN const char* nam
+-#endif
+ Apd	|void	|setdefout	|NULLOK GV* gv
+ Ap	|HEK*	|share_hek	|NN const char* str|I32 len|U32 hash
+ #if defined(HAS_SIGACTION) &amp;&amp; defined(SA_SIGINFO)
+
+</para><para depth="0">--- perl-current/embed.h
++++ perl-current/embed.h
+@@ -839,11 +839,6 @@
+ #define scope			Perl_scope
+ #endif
+ #define screaminstr		Perl_screaminstr
+-#if !defined(VMS) &amp;&amp; defined(PERL_IN_UTIL_C)
+-#ifdef PERL_CORE
+-#define setenv_getix		S_setenv_getix
+-#endif
+-#endif
+ #define setdefout		Perl_setdefout
+ #define share_hek		Perl_share_hek
+ #if defined(HAS_SIGACTION) &amp;&amp; defined(SA_SIGINFO)
+@@ -3195,11 +3190,6 @@
+ #define scope(a)		Perl_scope(aTHX_ a)
+ #endif
+ #define screaminstr(a,b,c,d,e,f)	Perl_screaminstr(aTHX_ a,b,c,d,e,f)
+-#if !defined(VMS) &amp;&amp; defined(PERL_IN_UTIL_C)
+-#ifdef PERL_CORE
+-#define setenv_getix(a)		S_setenv_getix(aTHX_ a)
+-#endif
+-#endif
+ #define setdefout(a)		Perl_setdefout(aTHX_ a)
+ #define share_hek(a,b,c)	Perl_share_hek(aTHX_ a,b,c)
+ #if defined(HAS_SIGACTION) &amp;&amp; defined(SA_SIGINFO)
+
+</para><para depth="0">--- perl-current/proto.h
++++ perl-current/proto.h
+@@ -2962,13 +2962,6 @@
+ #define PERL_ARGS_ASSERT_SCREAMINSTR	\
+ 	assert(bigstr); assert(littlestr); assert(old_posp)
+
+</para><para depth="0">-#if !defined(VMS) &amp;&amp; defined(PERL_IN_UTIL_C)
+-STATIC I32	S_setenv_getix(pTHX_ const char* nam)
+-			__attribute__nonnull__(pTHX_1);
+-#define PERL_ARGS_ASSERT_SETENV_GETIX	\
+-	assert(nam)
+-
+-#endif
+ PERL_CALLCONV void	Perl_setdefout(pTHX_ GV* gv);
+ PERL_CALLCONV HEK*	Perl_share_hek(pTHX_ const char* str, I32 len, U32 hash)
+ 			__attribute__nonnull__(pTHX_1);
+
+</para><para depth="0">--- perl-current/util.c
++++ perl-current/util.c
+@@ -1667,9 +1667,16 @@
+ #ifndef PERL_USE_SAFE_PUTENV
+     if (!PL_use_safe_putenv) {
+     /* most putenv()s leak, so we manipulate environ directly */
+-    register I32 i=setenv_getix(nam);          /* where does it go? */
++    register I32 i;
++    register const I32 len = strlen(nam);
+     int nlen, vlen;
+
+</para><para depth="0">+    /* where does it go? */
++    for (i = 0; environ[i]; i++) {
++        if (strnEQ(environ[i],nam,len) &amp;&amp; environ[i][len] == '=')
++            break;
++    }
++
+     if (environ == PL_origenviron) {   /* need we copy environment? */
+        I32 j;
+        I32 max;
+@@ -1773,30 +1780,6 @@
+
+</para><para depth="0"> #endif /* WIN32 || NETWARE */
+
+</para><para depth="0">-#ifndef PERL_MICRO
+-static I32
+-S_setenv_getix(pTHX_ const char *nam)
+-{
+-    register I32 i;
+-    register const I32 len = strlen(nam);
+-
+-    PERL_ARGS_ASSERT_SETENV_GETIX;
+-    PERL_UNUSED_CONTEXT;
+-
+-    for (i = 0; environ[i]; i++) {
+-	if (
+-#ifdef WIN32
+-	    strnicmp(environ[i],nam,len) == 0
+-#else
+-	    strnEQ(environ[i],nam,len)
+-#endif
+-	    &amp;&amp; environ[i][len] == '=')
+-	    break;			/* strnEQ must come first to avoid */
+-    }					/* potential SEGV's */
+-    return i;
+-}
+-#endif /* !PERL_MICRO */
+-
+ #endif /* !VMS &amp;&amp; !EPOC*/
+
+</para><para depth="0"> #ifdef UNLINK_ALL_VERSIONS
+</para></body></message>

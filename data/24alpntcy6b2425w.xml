@@ -1,0 +1,89 @@
+<message message-id="iz338@xhtmlrenderer.dev.java.net" list="net.java.dev.xhtmlrenderer.issues" id="24alpntcy6b2425w" no-archive="yes" type="bugs" date="2010-10-14T16:17:55Z" year="2010-01-01" year-month="2010-10-01" year-month-day="2010-10-14" thread-id="24alpntcy6b2425w"><headers><envelope-from-line>Thu Oct 14 08:19:21 2010</envelope-from-line><from personal="aneesh2004@dev.java.net" address="aneesh2004@dev.java.net">aneesh2004@dev.java.net</from><to personal="issues@xhtmlrenderer.dev.java.net" address="issues@xhtmlrenderer.dev.java.net">issues@xhtmlrenderer.dev.java.net</to><subject normal="[Issue 338] New - &quot;position:fixed&quot; as a style is missing support">[Issue 338] New - "position:fixed" as a style is missing support</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 993
+          for &lt;mickey.buchanan.lott@a.markmail.org&gt;;
+          Thu, 14 Oct 2010 08:19:20 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 60FB029081FF
+	for &lt;mickey.buchanan.lott@a.markmail.org&gt;; Thu, 14 Oct 2010 09:18:57 -0700 (PDT)</received><received>(qmail 26858 invoked by uid 5000); 14 Oct 2010 16:17:55 -0000</received><mailing-list>contact issues-help@xhtmlrenderer.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:issues-help@xhtmlrenderer.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@xhtmlrenderer.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:issues@xhtmlrenderer.dev.java.net&gt;</list-post><reply-to>issues@xhtmlrenderer.dev.java.net</reply-to><delivered-to>mailing list issues@xhtmlrenderer.dev.java.net</delivered-to><received>(qmail 26833 invoked by uid 5000); 14 Oct 2010 16:17:55 -0000</received><date>14 Oct 2010 16:17:55 -0000</date><message-id>iz338@xhtmlrenderer.dev.java.net</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>iz338@xhtmlrenderer.dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>https://xhtmlrenderer.dev.java.net/issues/show_bug.cgi?id=338</url>
+                 Issue #|338
+                 Summary|"position:fixed" as a style is missing support
+               Component|xhtmlrenderer
+                 Version|current
+                Platform|All
+              OS/Version|All
+                     URL|
+                  Status|NEW
+       Status whiteboard|
+                Keywords|
+              Resolution|
+              Issue type|DEFECT
+                Priority|P3
+            Subcomponent|compliance css21
+             Assigned to|peterbrant
+             Reported by|aneesh2004
+
+</para><para depth="0">------- Additional comments from <email>aneesh2004@dev.java.net</email> Thu Oct 14 16:17:54<br/>+0000 2010 -------
+I have some xhtml with a body and a single div inside the body. The div has a 
+style that uses. "position"fixed". The xhtml is
+*************
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "resources/dtds/xhtml1-
+strict.dtd"&gt;
+&lt;html xmlns='<url>http://www.w3.org/1999/xhtml</url>'&gt;
+	&lt;head&gt;
+		&lt;title&gt;&lt;/title&gt;
+		&lt;meta charset='utf-8' /&gt;
+	&lt;/head&gt;
+	&lt;body style='background-color:#000000;'&gt;
+		&lt;div style='position:fixed; top:0pt; 
+left:0pt;width:720.0pt;height:540.0pt;'&gt;
+			&lt;div
+
+</para><para depth="0">style='top:30.0pt;left:54.0pt;width:612.0pt;height:90.0pt;position:fixed;z-
+index:10;top:30.0pt;left:54.0pt;width:612.0pt;height:90.0pt;position:fixed;z-
+index:10;text-align:center;padding-top:3.6250393pt;padding-
+bottom:3.6250393pt;padding-left:7.25pt;padding-right:7.25pt;'&gt;
+				&lt;div style='text-align:center;line-
+height:100%;'&gt;
+					&lt;span&gt;
+						&lt;span
+							style='font-
+family:Arial;color:#ffff00;font-size:44pt;line-height:100%;'&gt;Keep It 
+Simple&lt;/span&gt;
+					&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+</para><para depth="0">		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+*************
+
+</para><para depth="0">When I try to load this xhtml document and create an image using from it
+
+</para><para depth="0">*******
+BufferedImage buff = new BufferedImage(width, height,
+				BufferedImage.TYPE_INT_RGB);
+Graphics2D g = (Graphics2D) buff.getGraphics();
+g.setBackground(Color.white);
+g.clearRect(0, 0, width, height);
+Graphics2DRenderer g2r = new Graphics2DRenderer();
+g2r.getSharedContext().setDPI(dpi);
+g2r.setDocument(s1, this.baseUrl);
+g2r.layout(g, new Dimension(width, height));
+g2r.render(g);
+g.dispose();
+*****
+When I save this image, I see that the image has a white background and has 
+nothing but a black box towards the top. I have tried this on other documents 
+that use "position:fixed" and they have the same output.
+
+</para><para depth="0">When I replace "position:fixed" with  "position:absolute" and rerun my tests, 
+the image is exactly the way the original xhtml shows up in browsers. So looks 
+like positon:absolute is handled perfectly and position:fixed is missing 
+support.
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>issues-unsubscribe@xhtmlrenderer.dev.java.net</email>
+For additional commands, e-mail: <email>issues-help@xhtmlrenderer.dev.java.net</email>
+
+</footer></body></message>

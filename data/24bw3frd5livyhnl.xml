@@ -1,0 +1,339 @@
+<message message-id="20070118140249.GA22737@fawkes.sourcemage.org" list="org.ibiblio.lists.sm-commit" id="24bw3frd5livyhnl" type="checkins" date="2007-01-18T08:02:49-06:00" year="2007-01-01" year-month="2007-01-01" year-month-day="2007-01-18" thread-id="24bw3frd5livyhnl"><headers><envelope-from-line>From scm@mail.sourcemage.org  Thu Jan 18 09:02:49 2007</envelope-from-line><from personal="Jaka Kranjc" address="scm@mail.sourcemage.org">Jaka Kranjc &lt;scm@mail.sourcemage.org&gt;</from><subject normal="[SM-Commit] GIT changes to master quill by Jaka Kranjc (d8a5941d9d97683da595ac7968d77178b172a452)">[SM-Commit] GIT changes to master quill by Jaka Kranjc (d8a5941d9d97683da595ac7968d77178b172a452)</subject><date>Thu, 18 Jan 2007 08:02:49 -0600</date><message-id>20070118140249.GA22737@fawkes.sourcemage.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>20070118140249.GA22737@fawkes.sourcemage.org</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">GIT changes to master quill by Jaka Kranjc &lt;lynxlynxlynx at sourcemage.org&gt;:
+
+</para><para depth="0"> usr/bin/quill                   |  108 ++++++++++++++++++++++++----------------
+ var/lib/quill/ChangeLog         |   13 ++++
+ var/lib/quill/modules/libcore   |   11 +++-
+ var/lib/quill/modules/libupdate |   39 +++++++++++++-
+ 4 files changed, 124 insertions(+), 47 deletions(-)
+
+</para><para depth="0">New commits:
+commit d8a5941d9d97683da595ac7968d77178b172a452
+Author: Jaka Kranjc &lt;lynxlynxlynx at sourcemage.org&gt;
+Commit: Jaka Kranjc &lt;lynxlynxlynx at sourcemage.org&gt;
+
+</para><para depth="0">    	* quill: made the update stop if no versions were updated
+    	  moved some more code to libupdate
+    	  ask to remove signatures if they don't seem to be needed anymore
+    	  uniq the found versions, we modify all anyway
+    	  updated the menu and moved some code around
+    	  added parse_spell_source_file_info after perlcpan too
+    	  added --purge to wipe temporary files and/or spells
+    	* libupdate: copy_to_git clears the target first to avoid copying deleted *
+    	  improved update_patchlevel matching
+    	* libcore: removed an extra tab in quill_help, added --purge and examples
+    	* version: 0.1.12
+
+</para><para depth="0">diff --git a/usr/bin/quill b/usr/bin/quill
+index eb21496..b6d99bd 100755
+--- a/usr/bin/quill
++++ b/usr/bin/quill
+@@ -40,6 +40,13 @@ function message() { echo -e "$@"; }
+
+</para><para depth="0"> QUILL_MODE="apprentice"
+ HISTORY_DATE="$(date +%Y-%m-%d)"
++
++QUILL_HOME_DIR=~/.sourcemage/quill
++QUILL_QUILLRC=${QUILL_HOME_DIR}/quillrc
++QUILL_OLD_QUILLRC=~/.quillrc
++QUILL_SPELL_DIR=~/.sourcemage/spells
++QUILL_TMP_DIR=~/.sourcemage/tmp
++
+ #---
+ ## Not really a function it's supposed to parse the command line parameters
+ #---
+@@ -58,6 +65,26 @@ while  [  -n  "$1"  ];  do
+                   quill_help 101
+                   export QUILL_CPAN_MODE="on"; export QUILL_TARGET="$2"
+                   shift 2 ;;
++   --purge|-p)
++                  message -n "Purging ... "
++                  if [[ $2 == "tmp" ]]
++                  then
++                    [[ -d $QUILL_TMP_DIR ]] &amp;&amp; rm -rf $QUILL_TMP_DIR/*
++                  elif [[ $2 == "spells" ]]
++                  then
++                    [[ -d $QUILL_SPELL_DIR ]] &amp;&amp; rm -rf $QUILL_SPELL_DIR/*
++                  else
++                    [[ -d $QUILL_TMP_DIR ]] &amp;&amp; [[ -d $QUILL_SPELL_DIR ]] &amp;&amp; rm<br/>-rf $QUILL_SPELL_DIR/* $QUILL_TMP_DIR/*
++                  fi
++
++                 rc=$?
++                  if [[ $rc == 0 ]]
++                  then
++                    message "done."
++                  else
++                    message "${PROBLEM_COLOR}failed!$DEFAULT_COLOR"
++                  fi
++                  exit $rc ;;
+      --update|-u) export QUILL_UPDATE="on" QUILL_TARGET="$2"; shift 2 ;;
+  --apprentice|-a) export QUILL_MODE="apprentice"; shift 1 ;;
+        --mage|-m) export QUILL_MODE="mage"; shift 1 ;;
+@@ -80,12 +107,6 @@ do
+   . $i
+ done
+
+</para><para depth="0">-QUILL_HOME_DIR=~/.sourcemage/quill
+-QUILL_QUILLRC=${QUILL_HOME_DIR}/quillrc
+-QUILL_OLD_QUILLRC=~/.quillrc
+-QUILL_SPELL_DIR=~/.sourcemage/spells
+-QUILL_TMP_DIR=~/.sourcemage/tmp
+-
+ quill_rc
+ # we should do some quillrc sanity checking someday
+ [[ ! -d $QUILL_SPELL_DIR ]] &amp;&amp;
+@@ -118,6 +139,9 @@ fi
+ if [[ "$QUILL_CPAN_MODE" == "on" ]]
+ then
+   quill_cpan_core $QUILL_TARGET
++
++  # creates SPELL_VERSION and SPELL_SRC_FILE (to be SOURCE)
++  parse_spell_source_file_info
+ fi
+
+</para><para depth="0"> if [[ "$QUILL_UPDATE" == "on" ]]
+@@ -134,27 +158,32 @@ then
+              'Convert to gpg signing' \
+              'Add a SCM version' \
+              'Copy it under QUILL_GIT_DIR' \
++             'Copy it back to the grimoire' \
+              'Try it out' \
+              'Quit' )
++    echo
+     query_list "What do you want to do?" ANSWER "${actions[6]}" "${actions[@]}"
+
+</para><para depth="0">     [[ $ANSWER == "Quit" ]] &amp;&amp; exit 0
+
+</para><para depth="0">-    #copy spell over and move there
+-    codex_get_spell_paths $(codex_find_spell_by_name $SPELL_NAME)
+-    rm -fr $QUILL_SPELL_DIR/$SPELL_NAME
+-    cp -r $SECTION_DIRECTORY/$SPELL_NAME $QUILL_SPELL_DIR
+-    cd $QUILL_SPELL_DIR/$SPELL_NAME
+-    cp DETAILS DETAILS.orig
+-
++    if [[ $ANSWER != ${actions[4]} || $ANSWER == ${actions[5]} || $ANSWER ==<br/>${actions[6]} ]]
++    then
++      #copy spell over and move there
++      codex_get_spell_paths $(codex_find_spell_by_name $SPELL_NAME)
++      rm -fr $QUILL_SPELL_DIR/$SPELL_NAME
++      cp -r $SECTION_DIRECTORY/$SPELL_NAME $QUILL_SPELL_DIR
++      cd $QUILL_SPELL_DIR/$SPELL_NAME
++      cp DETAILS DETAILS.orig
++    fi
+     case "$ANSWER" in
+       "${actions[0]}") #"Update the spell to a newer version"
+
+</para><para depth="0">         #fetch current versions, ignoring SCM ones
+         versions=( $(sed -n 's/\s*\&lt;VERSION=//p' DETAILS |
+-                   grep -Eiv '\$[(]date *+|cvs|svn|tla|git|scm') )
++                   grep -Eiv '\$[(]date *+|cvs|svn|tla|git|scm' | sort | uniq)<br/>)
+         message "Current relevant version(s): ${versions[@]}"
+
+</para><para depth="0">+        update_counter="${#versions[@]}"
+         #suggest the new one from fm and/or ask for input
+         for version in "${versions[@]}"
+         do
+@@ -193,7 +222,7 @@ then
+                   rc=0
+                 fi
+               else
+-                wget -S "${su%/*}/" 2&gt;&amp;1 | grep -q "${su##*/}"
++                wget -O - -S "${su%/*}/" 2&gt;&amp;1 | grep -q "${su##*/}"
+                 rc=$?
+               fi
+               #echo
+@@ -296,9 +325,12 @@ echo "+$current_check++"
+               sed -i<br/>"s/^\(\s*\)SOURCE${i}_[^=]*=['\"]*${current_check}['\"]*\s*$/\1SOURCE${i}_HASH=sha512:$hash/"<br/>DETAILS
+
+</para><para depth="0">               # remove sigs, trying not to touch any that are still needed
+-              if ! grep -q "VERSION=$version";
++              if ! grep -q "VERSION=$version *$" DETAILS;
+               then
+-                [[ -e *$version*.sig ]] &amp;&amp; rm *$version*.sig
++                # compgen has a plain wierd output
++                files=$(compgen -G "*$version*.sig" | tr '\n' ' ')
++                files="$files $(compgen -G "*$version*.asc" | tr '\n' ' ')"
++                [[ $files != " " ]] &amp;&amp; rm -i $files
+               fi
+
+</para><para depth="0">               [[ ! $i ]] &amp;&amp; i=1
+@@ -309,11 +341,17 @@ echo "+$current_check++"
+             #update HISTORY
+             add_history_entries "DETAILS: updated ${if_var:-spell} to<br/>$SPELL_VERSION"
+             echo
++          else
++            let update_counter-=1
+           fi
+         done
+
+</para><para depth="0">+        if [[ $update_counter == 0 ]];
++        then # there were no updates
++          continue
++        fi
++
+         echo
+-        sleep 1
+         rm DETAILS.orig
+         if query "Do you want to review the update or add custom<br/>modifications?" y
+         then
+@@ -321,9 +359,6 @@ echo "+$current_check++"
+         fi
+         echo
+
+</para><para depth="0">-        message "Copying the spell back ..."
+-        quill_final_put_in_grimoire $GRIMOIRE $SECTION no
+-
+         echo
+         message "Done with updating the spell!"
+         echo
+@@ -344,31 +379,18 @@ echo "+$current_check++"
+ #copy the spell back to the grimoire?
+         echo ++"$ANSWER"++ ;;
+       "${actions[4]}") #"Copy it to $QUILL_GIT_DIR"
+-
+-        if [[ -z $QUILL_GIT_DIR ]]
+-        then
+-          message "$PROBLEM_COLOR\$QUILL_GIT_DIR is empty, run quill -r to set<br/>it!$DEFAULT_COLOR"
+-          echo
+-          continue
+-        fi
+-
+-        # find where under $QUILL_GIT_DIR the spell actually is
+-        # perhaps the section path is /home/navaden/sorcery/git/gnome1-libs
+-        SECTION2=$(find "$QUILL_GIT_DIR" -name $SPELL_NAME -type d -printf %h)
+-        if [[ -z $SECTION2 ]]
++        copy_to_git
++      ;;
++      "${actions[5]}") #"Copy it back to the grimoire"
++        codex_get_spell_paths $(codex_find_spell_by_name $SPELL_NAME)
++        if [[ ! -e $QUILL_SPELL_DIR/$SPELL_NAME ]]
+         then
+-          message "${PROBLEM_COLOR}Couldn't find the spell, \$QUILL_GIT_DIR is<br/>probably bad!$DEFAULT_COLOR"
+-          echo
+-          continue
++          message "There is nothing to copy back!"
++        else
++          quill_final_put_in_grimoire $GRIMOIRE $SECTION no
+         fi
+-        GRIMOIRE2="${SECTION2%/*}"
+-        # we need just the name
+-        SECTION2="${SECTION2##*/}"
+-
+-        quill_final_put_in_grimoire "$GRIMOIRE2" "$SECTION2" no
+-        echo
+       ;;
+-      "${actions[5]}") #"Try it out"
++      "${actions[6]}") #"Try it out"
+         cast -c $SPELL_NAME
+       ;;
+     esac
+diff --git a/var/lib/quill/ChangeLog b/var/lib/quill/ChangeLog
+index 9159614..95589ba 100644
+--- a/var/lib/quill/ChangeLog
++++ b/var/lib/quill/ChangeLog
+@@ -1,3 +1,16 @@
++2007-01-18 Jaka Kranjc &lt;lynxlynxlynx at sourcemage.org&gt;
++	* quill: made the update stop if no versions were updated
++	  moved some more code to libupdate
++	  ask to remove signatures if they don't seem to be needed anymore
++	  uniq the found versions, we modify all anyway
++	  updated the menu and moved some code around
++	  added parse_spell_source_file_info after perlcpan too
++	  added --purge to wipe temporary files and/or spells
++	* libupdate: copy_to_git clears the target first to avoid copying deleted *
++	  improved update_patchlevel matching
++	* libcore: removed an extra tab in quill_help, added --purge and examples
++	* version: 0.1.12
++
+ 2007-01-17 Jaka Kranjc &lt;lynxlynxlynx at sourcemage.org&gt;
+ 	* quill: further improvements in the update code, notably git copy support
+ 	  workaround sorcery bug #13412 - only summon when necesary
+diff --git a/var/lib/quill/modules/libcore b/var/lib/quill/modules/libcore
+index 344fe34..24fef82 100644
+--- a/var/lib/quill/modules/libcore
++++ b/var/lib/quill/modules/libcore
+@@ -275,7 +275,7 @@ USAGE: quill [OPTIONS]
+
+</para><para depth="0"> OPTIONS:
+   --fmxml, -f &lt;SPELL&gt;		get spell data from Freshmeat if possible
+-  --perlcpan, -c &lt;SPELL&gt;		get spell data from Perl-CPAN if possible
++  --perlcpan, -c &lt;SPELL&gt;	get spell data from Perl-CPAN if possible
+   --update, -u &lt;SPELL&gt;		update exsisting spell
+   --apprentice, -a		apprentice mode	(default)
+   --mage, -m			mage mode (advanced)
+@@ -283,6 +283,15 @@ OPTIONS:
+   --help, -h			display this help
+   --version, -v			display version
+   --reconfigure, -r		reconfigure settings
++  --purge, -p [spells|tmp]	purge internal quill files, defaults to both dirs
++
++EXAMPLES:
++  Create a spell; try to get some information from Freshmeat and ask about some
++  additional spell files:
++    quill -f wormux -m
++
++  Update a spell; try to get some information from Perl-CPAN:
++    quill -c wormux -u wormux
+ "
+   exit ${1:-0}
+ }
+diff --git a/var/lib/quill/modules/libupdate b/var/lib/quill/modules/libupdate
+index d5923fd..7a88581 100644
+--- a/var/lib/quill/modules/libupdate
++++ b/var/lib/quill/modules/libupdate
+@@ -50,19 +50,52 @@ function update_patchlevel_sub()
+   local current_value=$2 action=$3 new_value
+   new_value=$(( current_value+=1 ))
+
+</para><para depth="0">-  if (( $(grep -c "^[^#]*$1=$current_value" DETAILS) &gt; 1 ))
++  if (( $(grep -c "^[^#]*$1=['\"]*${current_value}['\"]*" DETAILS) &gt; 1 ))
+   then
+     message "Two or more $1 variables with the same value found."
+     message "All will be changed - revert the bad ones manually."
+   fi
+   if [[ $action != remove ]]
+   then
+-    sed -i "/^[^#]*$1=$current_value/ s,=.*$,=$new_value," DETAILS
++    sed -i "/^[^#]*$1=['\"]*${current_value}['\"]*/ s,=.*$,=$new_value,"<br/>DETAILS
+   else #PATCHLEVEL removal on version updates
+-    sed -i "/^[^#]*$1=$current_value/d" DETAILS
++    sed -i "/^[^#]*$1=['\"]*${current_value}['\"]*/d" DETAILS
+   fi
+ }
+
+</para><para depth="0">+
++#---
++## @Synopsis Copies the spell to $QUILL_GIT_DIR
++#---
++function copy_to_git()
++{
++  if [[ -z $QUILL_GIT_DIR ]]
++  then
++    message "$PROBLEM_COLOR\$QUILL_GIT_DIR is empty, run quill -r to set<br/>it!$DEFAULT_COLOR"
++    echo
++    continue
++  fi
++
++  # find where under $QUILL_GIT_DIR the spell actually is
++  # perhaps the section path is /home/navaden/sorcery/git/gnome1-libs
++  SECTION2=$(find "$QUILL_GIT_DIR" -name $SPELL_NAME -type d -printf %h)
++  if [[ -z $SECTION2 ]]
++  then
++    message "${PROBLEM_COLOR}Couldn't find the spell, \$QUILL_GIT_DIR is<br/>probably bad!$DEFAULT_COLOR"
++    echo
++    continue
++  fi
++  GRIMOIRE2="${SECTION2%/*}"
++  # we need just the name
++  SECTION2="${SECTION2##*/}"
++
++  # we wipe it first, so we can handle any files that we deleted before
++  rm -r "$GRIMOIRE2/$SECTION2/$SPELL_NAME"/*
++
++  quill_final_put_in_grimoire "$GRIMOIRE2" "$SECTION2" no
++  echo
++}
++
+ #---
+ ##
+ ## This software is free software; you can redistribute it and/or modify
+</para></body></message>

@@ -1,0 +1,58 @@
+<message message-id="20101202153843.461942924C@pkgs01.phx2.fedoraproject.org" list="com.redhat.fedora-extras-commits" id="24aguhj3breoa7j3" type="checkins" date="2010-12-02T07:38:41.254352-08:00" year="2010-01-01" year-month="2010-12-01" year-month-day="2010-12-02" thread-id="24aguhj3breoa7j3"><headers><envelope-from-line>Thu Dec 02 07:39:04 2010</envelope-from-line><from personal="Adam Jackson" address="ajax@fedoraproject.org">Adam Jackson &lt;ajax@fedoraproject.org&gt;</from><to personal="xorg-x11-drv-ivtv-owner@fedoraproject.org" address="xorg-x11-drv-ivtv-owner@fedoraproject.org">xorg-x11-drv-ivtv-owner@fedoraproject.org</to><subject normal="[xorg-x11-drv-ivtv] abi bump">[xorg-x11-drv-ivtv] abi bump</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 457
+          for &lt;thomas.herring.ewing@a.markmail.org&gt;;
+          Thu, 2 Dec 2010 07:39:04 -0800 (GMT-08:00)</received><received>from bastion.fedoraproject.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id E6A6A3B300C3
+	for &lt;thomas.herring.ewing@a.markmail.org&gt;; Thu,  2 Dec 2010 07:38:40 -0800 (PST)</received><received>from lists.fedoraproject.org (collab1.vpn.fedoraproject.org [192.168.1.21])
+	by bastion02.phx2.fedoraproject.org (Postfix) with ESMTP id BACA2110A79;
+	Thu,  2 Dec 2010 15:39:03 +0000 (UTC)</received><received>from collab1.fedoraproject.org (localhost.localdomain [127.0.0.1])
+	by lists.fedoraproject.org (Postfix) with ESMTP id 6F51D326770;
+	Thu,  2 Dec 2010 15:39:03 +0000 (UTC)</received><x-original-to>scm-commits@lists.fedoraproject.org</x-original-to><delivered-to>scm-commits@lists.fedoraproject.org</delivered-to><received>from smtp-mm3.fedoraproject.org (smtp-mm3.fedoraproject.org
+	[152.46.7.226])
+	by lists.fedoraproject.org (Postfix) with ESMTP id 023DE32676B
+	for &lt;scm-commits@lists.fedoraproject.org&gt;;
+	Thu,  2 Dec 2010 15:39:02 +0000 (UTC)</received><received>from bastion.fedoraproject.org (bastion02.fedoraproject.org
+	[209.132.181.3])
+	by smtp-mm3.fedoraproject.org (Postfix) with ESMTP id 60D8637D3A
+	for &lt;scm-commits@lists.fedoraproject.org&gt;;
+	Thu,  2 Dec 2010 15:39:01 +0000 (UTC)</received><received>from pkgs01.phx2.fedoraproject.org (pkgs.fedoraproject.org
+	[10.5.125.44])
+	by bastion02.phx2.fedoraproject.org (Postfix) with ESMTP id 065591105CA;
+	Thu,  2 Dec 2010 15:39:01 +0000 (UTC)</received><received>by pkgs01.phx2.fedoraproject.org (Postfix, from userid 100433)
+	id 461942924C; Thu,  2 Dec 2010 15:38:43 +0000 (UTC)</received><mime-version>1.0</mime-version><keywords>xorg-x11-drv-ivtv</keywords><x-project>xorg-x11-drv-ivtv</x-project><x-git-refname>refs/heads/master</x-git-refname><x-git-oldrev>410d26d6030a62eff1bc19462c8d2db158ec815b</x-git-oldrev><x-git-newrev>a43f7da8a509810d2936d077042bdffd6e30af8c</x-git-newrev><message-id>20101202153843.461942924C@pkgs01.phx2.fedoraproject.org</message-id><date>Thu,  2 Dec 2010 15:38:43 +0000 (UTC)</date><x-beenthere>scm-commits@lists.fedoraproject.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>devel@lists.fedoraproject.org</reply-to><list-id>Fedora SCM commits &lt;scm-commits.lists.fedoraproject.org&gt;</list-id><list-unsubscribe>&lt;https://admin.fedoraproject.org/mailman/listinfo/scm-commits&gt;, 
+	&lt;mailto:scm-commits-request@lists.fedoraproject.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.fedoraproject.org/pipermail/scm-commits&gt;</list-archive><list-post>&lt;mailto:scm-commits@lists.fedoraproject.org&gt;</list-post><list-help>&lt;mailto:scm-commits-request@lists.fedoraproject.org?subject=help&gt;</list-help><list-subscribe>&lt;https://admin.fedoraproject.org/mailman/listinfo/scm-commits&gt;, 
+	&lt;mailto:scm-commits-request@lists.fedoraproject.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>scm-commits-bounces@lists.fedoraproject.org</sender><errors-to>scm-commits-bounces@lists.fedoraproject.org</errors-to></headers><normalized-references><normalized-message-id>20101202153843.461942924C@pkgs01.phx2.fedoraproject.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">commit a43f7da8a509810d2936d077042bdffd6e30af8c
+Author: Adam Jackson &lt;<email>ajax@redhat.com</email>&gt;
+Date:   Thu Dec 2 10:38:55 2010 -0500
+
+</para><para depth="0">    abi bump
+
+</para><para depth="0"> xorg-x11-drv-ivtv.spec |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+</para><footer type="signature" depth="0" hash="4226772850558509845">---
+diff --git a/xorg-x11-drv-ivtv.spec b/xorg-x11-drv-ivtv.spec
+index 7e543ee..9b2886a 100644
+--- a/xorg-x11-drv-ivtv.spec
++++ b/xorg-x11-drv-ivtv.spec
+@@ -1,6 +1,6 @@
+ Name:           xorg-x11-drv-ivtv
+ Version:        1.1.1
+-Release:        3%{?dist}
++Release:        4%{?dist}
+ Summary:        Xorg X11 ivtv video driver
+
+</footer><para depth="0"> Group:          User Interface/X Hardware Support
+@@ -46,6 +46,9 @@ rm -rf $RPM_BUILD_ROOT
+
+</para><footer type="signature" depth="0" hash="8237794337766831017"> %changelog
++* Thu Dec 02 2010 Adam Jackson &lt;<email>ajax@redhat.com</email>&gt; 1.1.1-4
++- Really rebuild for new Xorg
++
+ * Sun Nov 28 2010 Nicolas Chauvet &lt;<email>kwizart@gmail.com</email>&gt; - 1.1.1-3
+ - Rebuild for new Xorg
+
+</footer><footer type="list-management" depth="0">-- 
+scm-commits mailing list
+<email>scm-commits@lists.fedoraproject.org</email>
+<url>https://admin.fedoraproject.org/mailman/listinfo/scm-commits</url>
+</footer></body></message>

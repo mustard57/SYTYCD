@@ -1,0 +1,31 @@
+<message message-id="200702031223.45812.tr@erdfunkstelle.de" list="org.kde.kde-i18n-de" id="24cynvvjjnsn36m7" type="general" date="2007-02-03T12:23:42+01:00" year="2007-01-01" year-month="2007-02-01" year-month-day="2007-02-03" thread-id="f5wnad2juejxziyx"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Thomas Reitelbach" address="tr-NufeadKf8TqJNFgKcjvpmA@public.gmane.org">Thomas Reitelbach &lt;tr-NufeadKf8TqJNFgKcjvpmA@public.gmane.org&gt;</from><to personal="german translators" address="kde-i18n-de-RoXCvvDuEio@public.gmane.org">german translators &lt;kde-i18n-de-RoXCvvDuEio@public.gmane.org&gt;</to><subject normal="Komma vor &quot;usw.&quot;">Re: Komma vor "usw."</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.kde.internationalization.german</newsgroups><date>Sat, 3 Feb 2007 12:23:42 +0100</date><lines>39</lines><approved>news@gmane.org</approved><message-id>200702031223.45812.tr@erdfunkstelle.de</message-id><references>&lt;200702030757.00064.schwarzerf@gmail.com&gt;
+	&lt;200702031218.56064.lucardus@onlinehome.de&gt;</references><reply-to>german translators &lt;kde-i18n-de-RoXCvvDuEio@public.gmane.org&gt;</reply-to><nntp-posting-host>lo.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>multipart/signed; boundary="nextPart2037214.0UaG3D4Edd";
+	protocol="application/pgp-signature"; micalg=pgp-sha1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>sea.gmane.org 1170501867 16994 80.91.229.12 (3 Feb 2007 11:24:27 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Sat, 3 Feb 2007 11:24:27 +0000 (UTC)</nntp-posting-date><original-x-from>kde-i18n-de-bounces-+gckig-kde-i18n-de=m.gmane.org-RoXCvvDuEio@public.gmane.org Sat Feb 03 12:24:21 2007</original-x-from><return-path>kde-i18n-de-bounces-+gckig-kde-i18n-de=m.gmane.org-RoXCvvDuEio@public.gmane.org</return-path><envelope-to>gckig-kde-i18n-de-Uylq5CNFT+jYtjvyW6yDsg@public.gmane.org</envelope-to><original-received>from ktown.kde.org ([131.246.120.250])
+	by lo.gmane.org with smtp (Exim 4.50)
+	id 1HDJ0H-0002YH-3C
+	for gckig-kde-i18n-de-Uylq5CNFT+jYtjvyW6yDsg@public.gmane.org; Sat, 03 Feb 2007 12:24:21 +0100</original-received><original-received>(qmail 20632 invoked by uid 72); 3 Feb 2007 11:24:20 -0000</original-received><original-received>(qmail 20606 invoked from network); 3 Feb 2007 11:24:17 -0000</original-received><x-spam-checker-version>SpamAssassin 3.1.7 (2006-10-05) on ktown.kde.org</x-spam-checker-version><original-received>from unknown (HELO amosnet.atplus.de) (195.227.112.21)
+	by ktown.kde.org with SMTP; 3 Feb 2007 11:24:13 -0000</original-received><original-received>(qmail 10792 invoked from network); 3 Feb 2007 12:24:10 +0100</original-received><original-received>from xdsl-84-44-176-11.netcologne.de (84.44.176.11)
+	by amosnet.atplus.de with (DHE-RSA-AES256-SHA encrypted) SMTP;
+	3 Feb 2007 12:24:10 +0100</original-received><user-agent>KMail/1.9.5</user-agent><in-reply-to>&lt;200702031218.56064.lucardus-53koH/AXb86i2/dY4+mD5w@public.gmane.org&gt;</in-reply-to><x-face>",~mL9^L@M&lt;; WZZlc?qhE'g0WI7ntL9+^&gt;nf1HcUD|gR; p7Qwv8t1?&amp;/Z/n9#o;
+	lLQ&gt;=?utf-8?q?z-Z=0A=092wz07Ddy-G=3B=3D?="O)]H^sROJdhadge~f?m$W0N!u[[B\UCoo4Q;
+	5p_f!@$vXirQ}!~7nw]G</x-face><x-beenthere>kde-i18n-de-RoXCvvDuEio@public.gmane.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>german translators &lt;kde-i18n-de.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-i18n-de&gt;,
+	&lt;mailto:kde-i18n-de-request-RoXCvvDuEio@public.gmane.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.kde.org/pipermail/kde-i18n-de&gt;</list-archive><list-post>&lt;mailto:kde-i18n-de-RoXCvvDuEio@public.gmane.org&gt;</list-post><list-help>&lt;mailto:kde-i18n-de-request-RoXCvvDuEio@public.gmane.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-i18n-de&gt;,
+	&lt;mailto:kde-i18n-de-request-RoXCvvDuEio@public.gmane.org?subject=subscribe&gt;</list-subscribe><xref>news.gmane.org gmane.comp.kde.internationalization.german:3845</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.kde.internationalization.german/3845&gt;</archived-at></headers><normalized-references><normalized-message-id>200702031223.45812.tr@erdfunkstelle.de</normalized-message-id><normalized-in-reply-to>200702031218.56064.lucardus-53koH/AXb86i2/dY4+mD5w@public.gmane.org</normalized-in-reply-to><normalized-reference>200702030757.00064.schwarzerf@gmail.com</normalized-reference><normalized-reference>200702031218.56064.lucardus@onlinehome.de</normalized-reference></normalized-references><body><para depth="0">On Samstag, 3. Februar 2007, Stephan Johach wrote:
+</para><quote depth="1"><quotepara depth="1">Hallo Frederik!
+
+</quotepara><quotepara depth="1">Am Samstag 03 Februar 2007, 07:56:52 schrieb Frederik Schwarzer:
+</quotepara><quote depth="2"><quotepara depth="2">Hat jemand etwas dagegen, dass ich mir diese Vorkommen genauer anschaue
+und ggf. korrigiere?
+</quotepara></quote><quotepara depth="1">
+Ich nicht, jedenfalls, was Doku anbelangt.
+</quotepara></quote><para depth="0">
+Ich auch nicht. Der Duden Newsletter ist immer eine gute Quelle für solche 
+Aktionen :-)
+
+</para><para depth="0">Grüße,
+Thomas
+
+</para><footer type="signature" hash="2586873236423186230" depth="0">-- 
+There are 10 kind of people. Those who understand binary, and those 
+who don't.
+</footer></body></message>

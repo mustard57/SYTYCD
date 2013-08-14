@@ -1,0 +1,50 @@
+<message message-id="20091104225839.10083.qmail@dev.java.net" list="net.java.dev.opensso.cvs" id="24avsheimtvfupxe" no-archive="yes" type="checkins" date="2009-11-04T14:58:17.61541-08:00" year="2009-01-01" year-month="2009-11-01" year-month-day="2009-11-04" thread-id="24avsheimtvfupxe"><headers><envelope-from-line>Wed Nov 04 14:58:40 2009</envelope-from-line><from personal="manish_rustagi@dev.java.net" address="manish_rustagi@dev.java.net">manish_rustagi@dev.java.net</from><to personal="cvs@opensso.dev.java.net" address="cvs@opensso.dev.java.net">cvs@opensso.dev.java.net</to><subject normal="CVS update: /opensso/products/amserver/source/com/sun/identity/authentication/spi/AMLoginModule.java">CVS update: /opensso/products/amserver/source/com/sun/identity/authentication/spi/AMLoginModule.java</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 822
+          for &lt;victoria.castillo.finch@a.markmail.org&gt;;
+          Wed, 4 Nov 2009 14:58:40 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 1EAA82908252
+	for &lt;victoria.castillo.finch@a.markmail.org&gt;; Wed,  4 Nov 2009 14:58:17 -0800 (PST)</received><received>(qmail 10098 invoked by uid 5000); 4 Nov 2009 22:58:39 -0000</received><mailing-list>contact cvs-help@opensso.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:cvs-help@opensso.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:cvs-unsubscribe@opensso.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:cvs@opensso.dev.java.net&gt;</list-post><reply-to>cvs@opensso.dev.java.net</reply-to><delivered-to>mailing list cvs@opensso.dev.java.net</delivered-to><received>(qmail 10084 invoked by uid 5000); 4 Nov 2009 22:58:39 -0000</received><date>4 Nov 2009 22:58:39 -0000</date><message-id>20091104225839.10083.qmail@dev.java.net</message-id><content-type>text/plain; charset=ISO-8859-1</content-type></headers><normalized-references><normalized-message-id>20091104225839.10083.qmail@dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">User: manish_rustagi
+Date: 2009-11-04 22:58:39+0000
+Modified:
+   opensso/products/amserver/source/com/sun/identity/authentication/spi/AMLoginModule.java
+
+</para><para depth="0">Log:
+ Issue number:4422(Invalid password event should log login id)
+ Obtained from: 
+ Submitted by:manish_rustagi  
+ Reviewed by:qingwen   
+
+</para><para depth="0">File Changes:
+
+</para><para depth="0">Directory:<br/>/opensso/products/amserver/source/com/sun/identity/authentication/spi/
+=================================================================================
+
+</para><para depth="0">File [changed]: AMLoginModule.java
+Url:<br/><url>https://opensso.dev.java.net/source/browse/opensso/products/amserver/source/com/sun/identity/authentication/spi/AMLoginModule.java?r1=1.20&amp;r2=1.21</url>
+Delta lines:  +2 -1
+</para><para depth="0">-------------------
+--- AMLoginModule.java	2009-03-06 22:13:12+0000	1.20
++++ AMLoginModule.java	2009-11-04 22:58:37+0000	1.21
+@@ -22,7 +22,7 @@
+  * your own identifying information:
+  * "Portions Copyrighted [year] [name of copyright owner]"
+  *
+- * $Id: AMLoginModule.java,v 1.20 2009/03/06 22:13:12 hengming Exp $
++ * $Id: AMLoginModule.java,v 1.21 2009/11/04 22:58:37 manish_rustagi Exp $
+  *
+  */
+
+</para><para depth="0">@@ -868,6 +868,7 @@
+             currentState = ISAuthConstants.LOGIN_IGNORE;
+             setFailureModuleName(moduleName);
+             if (e instanceof InvalidPasswordException){
++                setFailureID(((InvalidPasswordException)e).getTokenId());
+                 throw new InvalidPasswordException(e);
+             } else {
+                 throw new AuthLoginException(e);
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>cvs-unsubscribe@opensso.dev.java.net</email>
+For additional commands, e-mail: <email>cvs-help@opensso.dev.java.net</email>
+
+</footer></body></message>

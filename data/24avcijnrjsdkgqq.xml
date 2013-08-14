@@ -1,0 +1,48 @@
+<message message-id="ABCEB6143676B4AA8AD55537B3E77BE3@markmail.org" list="org.evolt.lists.thelist" id="24avcijnrjsdkgqq" type="general" date="2001-08-13T16:10:14" year="2001-01-01" year-month="2001-08-01" year-month-day="2001-08-13" thread-id="73hy5uu4zinjig7z"><headers><envelope-from-line>From frodo_tx@yahoo.com Mon Aug 13 16:10:14 2001</envelope-from-line><from personal="Chuck Sumpter frodo_tx@yahoo.com" address="Chuck Sumpter frodo_tx@yahoo.com">Chuck Sumpter frodo_tx@yahoo.com</from><subject normal="[thelist] Perl: when to close sendmail">[thelist] Perl: when to close sendmail</subject><date>Mon Aug 13 16:10:14 2001</date><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>ABCEB6143676B4AA8AD55537B3E77BE3@markmail.org</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">-- Tony Grimes &lt;<email>algrimes@acs.ucalgary.ca</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">Hi,
+     I'm writing a Perl script that will email multiple email
+subscriptions to Smartlist using sendmail. I'm planning on putting the
+sendmail code in a subroutine, but I'm wondering if I should open/close
+sendmail from within the subroutine. For example, here is what the code
+might look like (I haven't actually written the script yet):
+============&gt; code went here, trimmed to please list overlord
+Will there be any problems if I open and close sendmail each time a
+message is sent? Does it increase chances of a sendmail crash, or put
+too much stress on the server? Is there a better way to do this? Any help
+would be much appreciated. 
+</quotepara></quote><para depth="0">
+Tony, 
+
+</para><para depth="0">Here is a snipet of code that I had in a perl script to send e-mails out to 
+users asking for some action on their part.   I was processing an extract from
+a DB and deciding who to send emails' to.  I never did an open/close, just
+populated some vars with the "stuff" to send and then did this within the while
+loop that ground through the file...
+
+</para><para depth="0">&lt;CODE&gt;
+%mail = ( To  =&gt; $user_addr,    
+  	  From	=&gt; $admin_addr,  
+	  Subject =&gt; $subject,
+  	  Message	=&gt; "@msg_to_user"
+	);
+
+</para><para depth="0">        sendmail(%mail) or die $Mail::Sendmail::error;
+
+</para><para depth="0">	++$email_sent;
+&lt;/CODE&gt;
+
+</para><para depth="0">I generated 5k plus messages with no problems....however it is a big server on
+an intranet.  Maybe someone else has a better idea.  That's the good thing
+about Perl, 1000 ways to do most things :)
+
+</para><para depth="0">HTH, 
+
+</para><para depth="0">Chuck 
+
+</para><para depth="0">oops, almost forgot "use Mail::Sendmail;" up front...  :\
+
+</para><footer type="free-hosting" depth="0">__________________________________________________
+Do You Yahoo!?
+Send instant messages &amp; get email alerts with Yahoo! Messenger.
+<url>http://im.yahoo.com/</url>
+</footer></body></message>

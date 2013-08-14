@@ -1,0 +1,139 @@
+<message message-id="4448D476.3050401@sciviews.org" list="org.r-project.r-sig-wiki" id="24bukxmnbvznncct" type="general" date="2006-04-21T14:47:50+02:00" year="2006-01-01" year-month="2006-04-01" year-month-day="2006-04-21" thread-id="6ln6pjviwf5uk7ad"><headers><envelope-from-line>From phgrosjean@sciviews.org  Fri Apr 21 14:47:50 2006</envelope-from-line><from personal="Philippe Grosjean" address="phgrosjean@sciviews.org">Philippe Grosjean &lt;phgrosjean@sciviews.org&gt;</from><subject normal="[R-wiki] Gelman's comments about R tips vs Wiki">[R-wiki] Gelman's comments about R tips vs Wiki</subject><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.0 required=5.0 tests=BAYES_00,MISSING_HEADERS,
+	NO_RECEIVED,NO_RELAYS autolearn=disabled version=3.2.4</x-spam-status><date>Fri, 21 Apr 2006 14:47:50 +0200</date><in-reply-to>&lt;4446EF80.3090506@stat.columbia.edu&gt;</in-reply-to><references>&lt;4446D3D1.6010001@ufl.edu&gt; &lt;4446EF80.3090506@stat.columbia.edu&gt;</references><message-id>4448D476.3050401@sciviews.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>4448D476.3050401@sciviews.org</normalized-message-id><normalized-in-reply-to>4446EF80.3090506@stat.columbia.edu</normalized-in-reply-to><normalized-reference>4446D3D1.6010001@ufl.edu</normalized-reference><normalized-reference>4446EF80.3090506@stat.columbia.edu</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+Hi,
+Although I am ready to consider your point of view, I think I don't 
+understand it very well.
+
+</para><para depth="0">1) Rtips is, by definition, a collection of short R code snippets. They 
+are, of course, collected together in a logical way (i.e., sections with 
+tips dealing with similar topics). Now, *why the hell would you like to 
+have a linear presentation of these tips???* (is this what you mean by: 
+"the nonlinearity of hyperlinks just adds confusion." ?) The best way to 
+access these tips is by looking at keywords (the search box) and reading 
+the tips related to your particular problem. So, why would you need a 
+linear reading from tip A to tip Z? Who do read Rtips linearly from the 
+first one to the last one? They are not made to be read like a book,... 
+just because they are different and they serve a different purpose.
+
+</para><para depth="0">2) People critisize the fact that you have "disturing" items in the Wiki 
+pages, that is mainly the top and bottom light blue toolbars with 
+buttons like "Edit this page", "Old revisions", etc. These make part of 
+a Wiki system, which allows you to edit and add material to these pages 
+yourself. This is the main difference between a plain Web site and a 
+Wiki site. Another difference is that, being the result of the work of 
+several authors, a Wiki site tend often to be less organized than a Web 
+site. We made a huge effort to get R Wiki well-organized, but always 
+remember the differences between a Wiki site and a Web site.
+
+</para><para depth="0">3) The "one big page" model is not just hard for the server (indeed, all 
+pages are cached by the Wiki engine), but they are harder to maintain in 
+the Wiki approach: remember that all versions of Wiki pages are kept on 
+the server, with revision history, etc. This mechanism is very efficient 
+with lots of small pages (which is what a Wiki is designed for), but 
+much less for one big page like: <url>http://pj.freefaculty.org/R/Rtips.html</url>. 
+Everytime you change something in one tip, the version of the whole big 
+page is archived. Also, when you track changes (revision history, RSS 
+feed), you have warnings that "RTips was changed", no mather *which* tip 
+was actually changed. So both RSS feed and revision history summary 
+become rather inefficient when you tend to write large pages with many 
+different topics in them. A Wiki is really designed to work with many 
+pages, each dealing with a single particular topic. Now, you can flow 
+linearly from one tip to the next one, if you like, by adding a "next 
+tip" link at the end of each page.
+
+</para><para depth="0">4) I certainly hope that duplications (Web site versus same info in the 
+Wiki) will be resolved. RTips has much to gain to be in a Wiki. One big 
+reason is its maintenance. R is evolving quickly, and it is a huge work 
+for authors/maintainers of R code AND R documents to keep them updated. 
+Usually, R documentation (outside of the official R doc, I mean) is not 
+updated regularly and is thus rapidly inconsitent with the current 
+version of R. On the Wiki, any reader that founds a problem, an 
+incompatibility, etc. can fix it. This brings a lot of help to the 
+initial author(s) that did already a big job, but do not necessarily 
+have the time to reread and retest all R code in their document for 
+every new version of R (every 6 months).
+
+</para><para depth="0">So, yes, I hope that RTips on the Wiki will evolve with the output of 
+other people and will become even more complete and up-to-date than it 
+is in the original Web version. I would be in favor of complete close of 
+the Web site version, with a redirection to the Wiki, but that is up to 
+the Rtips author, of course. The fact is that the Wiki version would 
+differ from the more static Web version (incompatibilites with new R 
+versions and bug fixed, new tips added, etc.). So, why to point readers 
+to an old, outdated version of a document? Point your readers to the 
+latest version, that is, the Wiki one (well, once all RTips will be 
+wikified)!
+
+</para><para depth="0">So, now, for people that do not like the presentation of the Wiki pages, 
+I would suggest to build a web page with both a "linear" table of 
+content (for instance in a frame at left and numbered tips as in the 
+original RTips page), that points te the HTML version of Wiki pages (at 
+right). To get HTML version of a Wiki page, you add '&amp;do=export_xhtml' 
+at the end of the URL. For instance, one RTip like:
+
+</para><para depth="0"><url>http://wiki.r-project.org/rwiki/doku.php?id=tips:data-frames:recode_column</url>
+
+</para><para depth="0">can be accessed as if it was a plain Web page using this URL:
+
+</para><para depth="0"><url>http://wiki.r-project.org/rwiki/doku.php?id=tips:data-frames:recode_column&amp;do=export_xhtml</url>
+
+</para><para depth="0">Best,
+
+</para><footer type="signature" depth="0" hash="4378974934664194689">Philippe Grosjean
+
+</footer><para depth="0">Andrew Gelman wrote:
+</para><quote depth="1"><quotepara depth="1">dear ben,
+
+</quotepara><quotepara depth="1">as the author of two 600-page books i can appreciate the difficulties of 
+trying to be inclusive!  it's a paradox of the faq that as it becomes 
+more inclusive, it becomes harder to use.  thanks in any case for 
+organizing this!
+
+</quotepara><quotepara depth="1">yours
+andrew
+
+</quotepara><quotepara depth="1">Ben Bolker wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2"> Andrew Gelman posted a link to "Rtips" on his web site.  Gregor
+(Gorjanc???) pointed out that they were being moved to the Wiki,
+and Andrew said he preferred the simpler page [see below].  This 
+disturbs me ... I'd hate to maintain two different versions, and
+I'm uncomfortable with the idea that we're putting the information
+in a format where it is *less* accessible (at least to some readers). 
+Is there any way we can tweak the design of the Wiki so more people like
+Andrew will find it useful?
+  Revisiting the discussion from a couple of days ago, where
+Phillipe said that the "one big page" model was going to be too
+hard on the server -- is there any way to make it easier?  Can
+pages be cached?  Or should we all donate money toward upgrading?
+(I do wonder a bit how well the server will manage if this
+all takes off and it starts getting thousands of hits a day ...)
+
+</quotepara><quotepara depth="2"> [in the mean time I have added an explicit link to R tips in the Wiki]
+
+</quotepara><quotepara depth="2"> cheers
+    Ben
+
+</quotepara><quotepara depth="2">-------------------------
+Comments
+
+</quotepara><quotepara depth="2">Hello!
+
+</quotepara><quotepara depth="2">These pages are now being moved to R wiki.
+
+</quotepara><quotepara depth="2">Posted by: Gregor at April 17, 2006 11:53 PM
+
+</quotepara><quotepara depth="2">Gregor,
+
+</quotepara><quotepara depth="2">I find the R Wiki a bit overwhelming and actually prefer Johnson's 
+simpler page. For me, there's a point at which the nonlinearity of 
+hyperlinks just adds confusion. Perhaps this is one reason I still 
+write books.
+
+</quotepara><quotepara depth="2">I hope Johnson continues to maintain his webpage, or else I hope the 
+Wiki people put in a prominent link to the old version.
+
+</quotepara><quotepara depth="2">Posted by: Andrew [TypeKey Profile Page] at April 18, 2006 06:17 AM
+</quotepara></quote><quotefooter type="noise" depth="1">
+</quotefooter></quote></body></message>

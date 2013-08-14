@@ -1,0 +1,119 @@
+<message message-id="AANLkTinzt7D+Ks7+Z6Cb30kXYD8zDaThOrQnugwfHD_O@mail.gmail.com" list="org.r-project.r-help" id="24coltp4b7e23ppu" type="users" date="2011-01-06T15:32:42.912288-08:00" year="2011-01-01" year-month="2011-01-01" year-month-day="2011-01-06" thread-id="3jd7r5tbixqlfkiq"><headers><envelope-from-line>Thu Jan 06 15:33:05 2011</envelope-from-line><from personal="Shige Song" address="shigesong@gmail.com">Shige Song &lt;shigesong@gmail.com&gt;</from><to personal="Michael Lawrence" address="lawrence.michael@gene.com">Michael Lawrence &lt;lawrence.michael@gene.com&gt;</to><cc personal="r-help Help" address="r-help@r-project.org">r-help Help &lt;r-help@r-project.org&gt;</cc><subject normal="[R] RGtk2 compilation problem">Re: [R] RGtk2 compilation problem</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 488
+          for &lt;forest.reynolds.hoffman@a.markmail.org&gt;;
+          Thu, 6 Jan 2011 15:33:05 -0800 (GMT-08:00)</received><received>from hypatia.math.ethz.ch (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 45F6B3B300B8
+	for &lt;forest.reynolds.hoffman@a.markmail.org&gt;; Thu,  6 Jan 2011 15:32:42 -0800 (PST)</received><received>from hypatia.math.ethz.ch (hypatia [129.132.145.15])
+	by hypatia.math.ethz.ch (8.14.1/8.14.1) with ESMTP id p06NWtFC012388;
+	Fri, 7 Jan 2011 00:33:03 +0100</received><x-spam-checker-version>SpamAssassin 3.3.1 (2010-03-16) on hypatia.math.ethz.ch</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-4.2 required=5.0 tests=AWL, BAYES_00, DKIM_SIGNED,
+	DKIM_VALID, DKIM_VALID_AU, FREEMAIL_FROM,
+	RCVD_IN_DNSWL_MED autolearn=ham version=3.3.1</x-spam-status><received>from phil2.ethz.ch (phil2.ethz.ch [129.132.202.240])
+	by hypatia.math.ethz.ch (8.14.1/8.14.1) with ESMTP id p06NWpxX012345
+	for &lt;r-help@r-project.org&gt;; Fri, 7 Jan 2011 00:32:51 +0100</received><received>from mail-fx0-f41.google.com ([209.85.161.41])
+	by phil2.ethz.ch with esmtp (Exim 4.69)
+	(envelope-from &lt;shigesong@gmail.com&gt;) id 1PazK5-0002U6-8Z
+	for r-help@r-project.org; Fri, 07 Jan 2011 00:32:51 +0100</received><received>by fxm12 with SMTP id 12so9857117fxm.28
+	for &lt;r-help@r-project.org&gt;; Thu, 06 Jan 2011 15:32:49 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:mime-version:received:received:in-reply-to
+	:references:date:message-id:subject:from:to:cc:content-type
+	:content-transfer-encoding;
+	bh=ugQfYc5QvRREgNX5xBjAsbCajYz+IBBD44yzNqw5a8I=;
+	b=CEyBeN6urNhqPafS1eNcvTywiP+FZf1QqjNTJmwspihS6dlTC2l/fXIkzbB9k9/GG5
+	nkp58tnvZnWeJHAF3u0LKpt1IuW3NKFk8S1Dvjr2T2bEklqksXOhFeNfNWSLKU09c2jI
+	3rOto8yocGQM9OYEO9azr0OVjAzoM0gsly1w4=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+	:cc:content-type:content-transfer-encoding;
+	b=p4YF2wHmU7uPG4JFwqBmiwhUlhfhvMEnIEZs9tZLaMFWIshmlnAQ24NSFke+VtyCYb
+	NXpYzO3+buDJd1xkE/zrrHMk/vnMFFGq81jQ6kdpeSI8T1hU0HuOpzKd+7BWfXDk3XGO
+	9xowyk2Bho8W/yGDDm/AuZCcD7xL87TfCvsAE=</domainkey-signature><mime-version>1.0</mime-version><received>by 10.223.103.3 with SMTP id i3mr607262fao.137.1294356769238; Thu,
+	06 Jan 2011 15:32:49 -0800 (PST)</received><received>by 10.223.78.135 with HTTP; Thu, 6 Jan 2011 15:32:49 -0800 (PST)</received><in-reply-to>&lt;AANLkTi=D27CdQUNKHQmVZ1am_d_gRP5acH1DyTRebrgg@mail.gmail.com&gt;</in-reply-to><references>&lt;AANLkTimYhB5ixTEejJftzuuXpEvpJAoOzF2T6vyk3zxy@mail.gmail.com&gt;
+	&lt;AANLkTinOnCw8P8=U+SYyLWiegQC_ccB6xpNKCYk8Kv3Z@mail.gmail.com&gt;
+	&lt;AANLkTikWCx=qGtoXfgT0mySheb+k03uQvOQYOAdmcu4X@mail.gmail.com&gt;
+	&lt;alpine.LFD.2.00.1101061645180.654@gannet.stats.ox.ac.uk&gt;
+	&lt;AANLkTi=D27CdQUNKHQmVZ1am_d_gRP5acH1DyTRebrgg@mail.gmail.com&gt;</references><date>Thu, 6 Jan 2011 18:32:49 -0500</date><message-id>AANLkTinzt7D+Ks7+Z6Cb30kXYD8zDaThOrQnugwfHD_O@mail.gmail.com</message-id><x-tag-only>YES</x-tag-only><x-filter-node>phil2.ethz.ch</x-filter-node><x-usf-spam-level/><x-usf-spam-status>hits=-0.8 tests=DKIM_SIGNED, DKIM_VALID, DKIM_VALID_AU,
+	FREEMAIL_FROM, RCVD_IN_DNSWL_LOW, RFC_ABUSE_POST, SPF_PASS</x-usf-spam-status><x-usf-spam-flag>NO</x-usf-spam-flag><x-virus-scanned>by amavisd-new at stat.math.ethz.ch</x-virus-scanned><x-beenthere>r-help@r-project.org</x-beenthere><x-mailman-version>2.1.13</x-mailman-version><precedence>list</precedence><list-id>"Main R Mailing List: Primary help" &lt;r-help.r-project.org&gt;</list-id><list-unsubscribe>&lt;https://stat.ethz.ch/mailman/options/r-help&gt;,
+	&lt;mailto:r-help-request@r-project.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://stat.ethz.ch/pipermail/r-help&gt;</list-archive><list-post>&lt;mailto:r-help@r-project.org&gt;</list-post><list-help>&lt;mailto:r-help-request@r-project.org?subject=help&gt;</list-help><list-subscribe>&lt;https://stat.ethz.ch/mailman/listinfo/r-help&gt;,
+	&lt;mailto:r-help-request@r-project.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="utf-8"</content-type><content-transfer-encoding>base64</content-transfer-encoding><sender>r-help-bounces@r-project.org</sender><errors-to>r-help-bounces@r-project.org</errors-to></headers><normalized-references><normalized-message-id>AANLkTinzt7D+Ks7+Z6Cb30kXYD8zDaThOrQnugwfHD_O@mail.gmail.com</normalized-message-id><normalized-in-reply-to>AANLkTi=D27CdQUNKHQmVZ1am_d_gRP5acH1DyTRebrgg@mail.gmail.com</normalized-in-reply-to><normalized-reference>AANLkTimYhB5ixTEejJftzuuXpEvpJAoOzF2T6vyk3zxy@mail.gmail.com</normalized-reference><normalized-reference>AANLkTinOnCw8P8=U+SYyLWiegQC_ccB6xpNKCYk8Kv3Z@mail.gmail.com</normalized-reference><normalized-reference>AANLkTikWCx=qGtoXfgT0mySheb+k03uQvOQYOAdmcu4X@mail.gmail.com</normalized-reference><normalized-reference>alpine.LFD.2.00.1101061645180.654@gannet.stats.ox.ac.uk</normalized-reference><normalized-reference>AANLkTi=D27CdQUNKHQmVZ1am_d_gRP5acH1DyTRebrgg@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Yes, the new version works fine. Many thanks.
+
+</para><para depth="0">Best,
+Shige
+
+</para><para depth="0">On Thu, Jan 6, 2011 at 6:25 PM, Michael Lawrence
+&lt;<email>lawrence.michael@gene.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">
+On Thu, Jan 6, 2011 at 8:53 AM, Prof Brian Ripley &lt;<email>ripley@stats.ox.ac.uk</email>&gt;
+wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+You need RGtk2 2.20.7 which is now on CRAN.  Others have seen this, but it
+has taken a while to track down the exact cause.
+
+</quotepara><quotepara depth="2">The diagnosis was that ML used a recent GNU tar which created a tarball
+with hard links that R's untar was not prepared to deal with. We consider
+that is a bug in GNU tar, but untar() has been updated in R-patched to cope.
+
+</quotepara></quote><quotepara depth="1">After a lot of back and forth with the GNU tar guys, it turns out they do
+not consider this to be a bug. I had to refresh my knowledge of hard linking
+to understand. A hard link is from a file name to the actual inode in the
+file system. Typically every file has a single hard link (the name of the
+file). The -h option used to resolve a symbolic link differently, based on
+whether the hard link count of the target was 1 or &gt;=2. This was practically
+useful in my mind, because symlinks to any files without any explicitly
+added hard links would become a regular file in the archive. They have now
+dropped this distinction, calling it an inconsistency (apparently other
+implementations of tar have never made such a distinction). So symlinks now
+become hard links in the archive (as long as the target is in the archive).
+We may need to keep the fix in untar() to handle this. Either way, RGtk2
+2.20.7 should work now.
+
+</quotepara><quotefooter type="signature" depth="1" hash="13694528629137518969">Thanks,
+Michael
+
+</quotefooter><quote depth="2"><quotepara depth="2">If you have such a tarball, try setting the environment variable
+R_INSTALL_TAR to 'tar' (or whatever GNU tar is called on your system) when
+installing the tarball.
+
+</quotepara><quotepara depth="2">For those packaging source packages: in the unusual event that your
+package sources contains symbolic (or even hard) links, don't use GNU tar
+1.24 or 1.25.
+
+</quotepara><quotepara depth="2">On Thu, 6 Jan 2011, Shige Song wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">Look forward to it.
+
+</quotepara><quotepara depth="3">Thanks.
+
+</quotepara><quotepara depth="3">Shige
+
+</quotepara><quotepara depth="3">On Sat, Jan 1, 2011 at 8:45 AM, Michael Lawrence
+&lt;<email>lawrence.michael@gene.com</email>&gt; wrote:
+</quotepara><quote depth="4"><quotepara depth="4">
+Please watch for 2.20.5 and let me know if it helps. Not really sure
+what is
+going on here, but someone else has reported the same issue.
+
+</quotepara><quotefooter type="signature" depth="4" hash="13694528629137518969">Thanks,
+Michael
+
+</quotefooter><quotepara depth="4">On Wed, Dec 29, 2010 at 6:44 AM, Shige Song &lt;<email>shigesong@gmail.com</email>&gt; wrote:
+</quotepara><quote depth="5"><quotepara depth="5">
+Dear All,
+
+</quotepara><quotepara depth="5">I am trying to compile&amp;install the package "RGtk2" on my Ubuntu 10.04
+box. I did not have problem with earlier versions, but with the new
+version, I got the following error message :
+</quotepara></quote></quote></quote><quotefooter type="noise" depth="2">
+...
+
+</quotefooter><quotefooter type="signature" depth="2" hash="7794906131831009418">--
+Brian D. Ripley,                  <email>ripley@stats.ox.ac.uk</email>
+Professor of Applied Statistics,  <url>http://www.stats.ox.ac.uk/~ripley/</url>
+University of Oxford,             Tel:  +44 1865 272861 (self)
+1 South Parks Road,                     +44 1865 272866 (PA)
+Oxford OX1 3TG, UK                Fax:  +44 1865 272595
+</quotefooter></quote><quotefooter type="noise" depth="1">
+</quotefooter></quote><footer type="list-management" depth="0">______________________________________________
+<email>R-help@r-project.org</email> mailing list
+<url>https://stat.ethz.ch/mailman/listinfo/r-help</url>
+PLEASE do read the posting guide <url>http://www.R-project.org/posting-guide.html</url>
+and provide commented, minimal, self-contained, reproducible code.
+</footer></body></message>

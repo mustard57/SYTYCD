@@ -1,0 +1,30 @@
+<message message-id="45401D9B.4050507@chello.at" list="com.googlegroups.jquery-en" id="24akajqpawv64zdp" type="general" date="2006-10-26T04:29:47+02:00" year="2006-01-01" year-month="2006-10-01" year-month-day="2006-10-25" thread-id="g2zjya7nqvb3uzka"><headers><envelope-from-line>From Truppe_Steven_&lt;steven.tru...@chello.at&gt; Sat Sep 13 01:37:31 2008</envelope-from-line><from personal="Truppe Steven" address="steven.tru...@chello.at">Truppe Steven &lt;steven.tru...@chello.at&gt;</from><to personal="undisclosed-recipients:;" address="undisclosed-recipients:;">undisclosed-recipients:;</to><subject normal="[jQuery] again on question on selectors">[jQuery] again on question on selectors</subject><delivered-to>com.googlegroups.jquery-en@localhost</delivered-to><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 846
+          for &lt;rhoda.lane.joseph@a.markmail.org&gt;;
+          Sat, 13 Sep 2008 01:37:30 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 9054C290800C
+	for &lt;rhoda.lane.joseph@a.markmail.org&gt;; Sat, 13 Sep 2008 01:37:30 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (8.13.8/8.13.8) with ESMTP id m8D8bUfA025834
+	for &lt;rhoda.lane.joseph@a.markmail.org&gt;; Sat, 13 Sep 2008 01:37:30 -0700</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id m8D8bU5W025833
+	for rhoda.lane.joseph@a.markmail.org; Sat, 13 Sep 2008 01:37:30 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.jquery-en</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>eb71c75342d58646</x-markmail-googlegroups-mid><received>by 10.35.82.4 with SMTP id j4mr1775234pyl.1174426180589;
+        Tue, 20 Mar 2007 14:29:40 -0700 (PDT)</received><received>from phytar-ath-cx.local (c-24-61-47-171.hsd1.ma.comcast.net [24.61.47.171])
+        by mx.google.com with ESMTP id a28si672235pye.2007.03.20.14.29.40;
+        Tue, 20 Mar 2007 14:29:40 -0700 (PDT)</received><received-spf>neutral (google.com: 24.61.47.171 is neither permitted nor denied by best guess record for domain of r...@phytar-ath-cx.local)</received-spf><received>by phytar-ath-cx.local (Postfix, from userid 0)
+	id C6140314B93; Tue, 20 Mar 2007 17:29:34 -0400 (EDT)</received><date>Thu, 26 Oct 2006 04:29:47 +0200</date><in-reply-to>&lt;4540034B.8010809@t-online.de&gt;</in-reply-to><references>&lt;453FE8BB.4010306@chello.at&gt; &lt;7002439.post@talk.nabble.com&gt;
+ &lt;453FFD31.4040502@chello.at&gt; &lt;4540034B.8010809@t-online.de&gt;</references><message-id>45401D9B.4050507@chello.at</message-id><x-archive-with-date>Thu, 26 Oct 2006 04:29:47 +0200</x-archive-with-date><x-mailing-list>discuss@jquery.com</x-mailing-list></headers><normalized-references><normalized-message-id>45401D9B.4050507@chello.at</normalized-message-id><normalized-in-reply-to>4540034B.8010809@t-online.de</normalized-in-reply-to><normalized-reference>453FE8BB.4010306@chello.at</normalized-reference><normalized-reference>7002439.post@talk.nabble.com</normalized-reference><normalized-reference>453FFD31.4040502@chello.at</normalized-reference><normalized-reference>4540034B.8010809@t-online.de</normalized-reference></normalized-references><body type="text/plain"><para depth="0">Olaf Bosch schrieb:
+</para><quote depth="1"><quotepara depth="1">Oh great, this is the answer of my Post "Function from jquery_auto"
+
+</quotepara><quotepara depth="1">Thank you, this works for me also:
+
+</quotepara><quotepara depth="1">  $(document).ready(function(){
+      $("select.autosubmit").parent().find("input[@type=submit]").remove();
+      $("select.autosubmit").change(function(){ this.form.submit(); });
+  });
+
+</quotepara></quote><para depth="0">It's nice to hear that i helped someone here. Thanks for the post.
+
+</para><footer type="signature" depth="0" hash="5721442903568672378">best regards,
+Truppe Steven
+
+</footer></body></message>

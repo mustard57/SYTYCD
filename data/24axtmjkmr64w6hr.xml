@@ -1,0 +1,54 @@
+<message message-id="4E026768.1070306@lwfinger.net" list="org.kernel.vger.linux-wireless" id="24axtmjkmr64w6hr" type="development" date="2011-06-22T14:06:15.674164-08:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-22" thread-id="ggamuxr72vbtsbc2"><headers><envelope-from-line>Wed Jun 22 14:06:38 2011</envelope-from-line><from personal="Larry Finger" address="Larry.Finger@lwfinger.net">Larry Finger &lt;Larry.Finger@lwfinger.net&gt;</from><to personal="Michael Büsch" address="m@bues.ch">"Michael Büsch" &lt;m@bues.ch&gt;</to><cc personal="Hauke Mehrtens" address="hauke@hauke-m.de">Hauke Mehrtens &lt;hauke@hauke-m.de&gt;</cc><subject normal="[PATCH v2] ssb: fix ssb clock rate according to broadcom source">Re: [PATCH v2] ssb: fix ssb clock rate according to broadcom source</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 177
+          for &lt;archive.user.28595@a.markmail.org&gt;;
+          Wed, 22 Jun 2011 14:06:38 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 4C2BD290819C
+	for &lt;archive.user.28595@a.markmail.org&gt;; Wed, 22 Jun 2011 15:06:15 -0700 (PDT)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1758847Ab1FVWGh (ORCPT
+	&lt;rfc822;archive.user.28595@a.markmail.org&gt;);
+	Wed, 22 Jun 2011 18:06:37 -0400</received><received>from mail-iy0-f174.google.com ([209.85.210.174]:60955 "EHLO
+	mail-iy0-f174.google.com" rhost-flags-OK-OK-OK-OK) by vger.kernel.org
+	with ESMTP id S1758471Ab1FVWGg (ORCPT
+	&lt;rfc822;linux-wireless@vger.kernel.org&gt;);
+	Wed, 22 Jun 2011 18:06:36 -0400</received><received>by iyb12 with SMTP id 12so1045157iyb.19
+        for &lt;linux-wireless@vger.kernel.org&gt;; Wed, 22 Jun 2011 15:06:35 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:sender:message-id:date:from:user-agent
+         :mime-version:to:cc:subject:references:in-reply-to:content-type
+         :content-transfer-encoding;
+        bh=PUQmEwkCMo25x4ToIkD5o9dhb3mxBvmSWgXp3qqAOPA=;
+        b=dwL21ehfPmp058wuB6XYVjk4ie1IZTWSa8cw7epoC2mIP4I41dCn6Tpt+SW/ps3J5W
+         aKEcM/ZTtUMPV9SvsdEKTg+trbnJOxkn5Cx2x+IVqth9gQKrSIDNVl7Zhc79JONYwbfx
+         8J0+h8wjvDV+PpJQ7Pr9NvynlRZXdmM/Li4sM=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=sender:message-id:date:from:user-agent:mime-version:to:cc:subject
+         :references:in-reply-to:content-type:content-transfer-encoding;
+        b=VxH4tcTZDRU9BCNUybQdaKlZkkCni1dzdxus8gTswdAWjCoYModXXUSECfODtK+7IU
+         jr3lxfQ5Htm8tgzRCfpqp7/4ChXbwHkv4bsh5lZD6Myx/rcrZ6gsfk//Gxuv8OEp/aqw
+         PaxbgeCD1LtvFxiqKvwIucMyiMZijM3Xch8yA=</domainkey-signature><received>by 10.231.67.138 with SMTP id r10mr974749ibi.180.1308780395897;
+        Wed, 22 Jun 2011 15:06:35 -0700 (PDT)</received><received>from larrylap.lan (cpe-65-28-92-85.kc.res.rr.com [65.28.92.85])
+        by mx.google.com with ESMTPS id s2sm541451ibe.1.2011.06.22.15.06.33
+        (version=SSLv3 cipher=OTHER);
+        Wed, 22 Jun 2011 15:06:34 -0700 (PDT)</received><message-id>4E026768.1070306@lwfinger.net</message-id><date>Wed, 22 Jun 2011 17:06:32 -0500</date><user-agent>Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.17) Gecko/20110414 SUSE/3.1.10 Thunderbird/3.1.10</user-agent><mime-version>1.0</mime-version><references>&lt;1308681113-4706-1-git-send-email-hauke@hauke-m.de&gt;	&lt;1308682400-25953-1-git-send-email-hauke@hauke-m.de&gt;	&lt;4E010EE6.9060605@lwfinger.net&gt; &lt;20110622070212.076777c0@Nokia-N900&gt;</references><in-reply-to>&lt;20110622070212.076777c0@Nokia-N900&gt;</in-reply-to><content-type>text/plain; charset=ISO-8859-1; format=flowed</content-type><sender>linux-wireless-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;linux-wireless.vger.kernel.org&gt;</list-id><x-mailing-list>linux-wireless@vger.kernel.org</x-mailing-list><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>4E026768.1070306@lwfinger.net</normalized-message-id><normalized-in-reply-to>20110622070212.076777c0@Nokia-N900</normalized-in-reply-to><normalized-reference>1308681113-4706-1-git-send-email-hauke@hauke-m.de</normalized-reference><normalized-reference>1308682400-25953-1-git-send-email-hauke@hauke-m.de</normalized-reference><normalized-reference>4E010EE6.9060605@lwfinger.net</normalized-reference><normalized-reference>20110622070212.076777c0@Nokia-N900</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1; format=flowed"><para depth="0">On 06/22/2011 02:02 AM, Michael Büsch wrote:
+</para><quote depth="1"><quotepara depth="1">On Tue, 21 Jun 2011 16:36:38 -0500
+Larry Finger&lt;<email>Larry.Finger@lwfinger.net</email>&gt;  wrote:
+</quotepara><quote depth="2"><quotepara depth="2">This patch sent me looking to find the public source for this routine. After
+finding it in the source section of Broadcom-wl, I noticed there is some
+additional code that is not implemented in the ssb version. Should this
+additional material be implemented, or is it not applicable?
+</quotepara></quote><quotepara depth="1">
+could you quote that function here? That would be way easier to get what were<br/>talking about.
+</quotepara></quote><para depth="0">
+The file in question is found from the Broadcom wl driver. When you untar it 
+into directory "broadcom", the file is broadcom/src/shared/siutils.c.
+
+</para><para depth="0">My initial conclusion that the clock_rate routine from the above file and 
+drivers/ssb/main.c were different was wrong. When I checked them again, they do 
+exactly the same thing after this patch is applied. Sorry for the noise.
+
+</para><para depth="0">Larry
+</para><footer type="list-management" depth="0">--
+To unsubscribe from this list: send the line "unsubscribe linux-wireless" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+</footer></body></message>

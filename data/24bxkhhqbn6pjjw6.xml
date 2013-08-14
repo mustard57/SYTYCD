@@ -1,0 +1,108 @@
+<message message-id="843311f70805291330t4e61033cvd29a46f378bed473@mail.gmail.com" list="org.apache.maven.users" id="24bxkhhqbn6pjjw6" type="users" date="2008-05-29T13:30:04-07:00" year="2008-01-01" year-month="2008-05-01" year-month-day="2008-05-29" thread-id="smyxan2ds6zf7bvw"><headers><envelope-from-line>Thu May 29 13:30:41 2008</envelope-from-line><from personal="Paul Davis" address="pauledavis@gmail.com">Paul Davis &lt;pauledavis@gmail.com&gt;</from><to personal="Maven Users List" address="users@maven.apache.org">Maven Users List &lt;users@maven.apache.org&gt;</to><subject normal="[m2] Cargo, Tomcat on CentOS/Linux?">Re: [m2] Cargo, Tomcat on CentOS/Linux?</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 209
+          for &lt;carissa.cook.mcdowell@a.markmail.org&gt;;
+          Thu, 29 May 2008 13:30:41 -0700 (PDT)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 2D30A2908059
+	for &lt;carissa.cook.mcdowell@a.markmail.org&gt;; Thu, 29 May 2008 13:30:41 -0700 (PDT)</received><received>(qmail 38533 invoked by uid 500); 29 May 2008 20:30:40 -0000</received><mailing-list>contact users-help@maven.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:users-unsubscribe@maven.apache.org&gt;</list-unsubscribe><list-help>&lt;mailto:users-help@maven.apache.org&gt;</list-help><list-post>&lt;mailto:users@maven.apache.org&gt;</list-post><list-id>"Maven Users List" &lt;users.maven.apache.org&gt;</list-id><reply-to>"Maven Users List" &lt;users@maven.apache.org&gt;</reply-to><delivered-to>mailing list users@maven.apache.org</delivered-to><received>(qmail 38522 invoked by uid 99); 29 May 2008 20:30:39 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 29 May 2008 13:30:39 -0700</received><x-asf-spam-status>No, hits=2.0 required=10.0
+	tests=HTML_MESSAGE,SPF_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (athena.apache.org: domain of pauledavis@gmail.com designates 216.239.58.189 as permitted sender)</received-spf><received>from [216.239.58.189] (HELO gv-out-0910.google.com) (216.239.58.189)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 29 May 2008 20:29:50 +0000</received><received>by gv-out-0910.google.com with SMTP id y18so1106384gvf.14
+        for &lt;users@maven.apache.org&gt;; Thu, 29 May 2008 13:30:05 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:references;
+        bh=93wo0sOsgkOLMqJfffsXcGn0H2zqTIgybgdzx4DOnEQ=;
+        b=iMVQ5sOgurFrBKinNasHyvCyelqy8oevU0NGRYKR3loAJmLD7KWESHKbdVjoUDS/gQWf9EaJKKLlFP/KDiVtEnPt45Kgcc5KSL5IV9ZdJUA/vN+jktRrrkk1WMUGRirW2tbj5uA2qTWYZfxvcLltouMc3YuGK7Bx0/c5o49S7Zo=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:references;
+        b=gK1jNrvhQ8nyqp+B/NdTQf4pBs+4CSoPIexUr50GrfJw8N8yqZzcxL6+oaywHzfyHvHZ6HJLO3/OAcM+ZPY0NIC7ZJlC/rCpUKmF32mpR8Usm0XEjIW/VE4tJQMdQsq2kKC8ofGPt92V6j4tPBrgDC9oN1VrhzAnwYJxWA1+/rU=</domainkey-signature><received>by 10.125.116.5 with SMTP id t5mr214040mkm.104.1212093004383;
+        Thu, 29 May 2008 13:30:04 -0700 (PDT)</received><received>by 10.125.110.3 with HTTP; Thu, 29 May 2008 13:30:04 -0700 (PDT)</received><message-id>843311f70805291330t4e61033cvd29a46f378bed473@mail.gmail.com</message-id><date>Thu, 29 May 2008 13:30:04 -0700</date><in-reply-to>&lt;4c30ee7d0805291304m4c7f0cfdlb3058eb03038864f@mail.gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>multipart/alternative; 
+	boundary="----=_Part_2314_4277168.1212093004332"</content-type><references>&lt;4c30ee7d0805291025j617f1399jce2dc9e67812878e@mail.gmail.com&gt;
+	 &lt;835d522e0805291115u155bb516ub253daa68e8475a6@mail.gmail.com&gt;
+	 &lt;4c30ee7d0805291134r2a108a0cn3ac5f788a58c52a0@mail.gmail.com&gt;
+	 &lt;843311f70805291155y64483c6evdd6831efbff9afc3@mail.gmail.com&gt;
+	 &lt;4c30ee7d0805291304m4c7f0cfdlb3058eb03038864f@mail.gmail.com&gt;</references><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>843311f70805291330t4e61033cvd29a46f378bed473@mail.gmail.com</normalized-message-id><normalized-in-reply-to>4c30ee7d0805291304m4c7f0cfdlb3058eb03038864f@mail.gmail.com</normalized-in-reply-to><normalized-reference>4c30ee7d0805291025j617f1399jce2dc9e67812878e@mail.gmail.com</normalized-reference><normalized-reference>835d522e0805291115u155bb516ub253daa68e8475a6@mail.gmail.com</normalized-reference><normalized-reference>4c30ee7d0805291134r2a108a0cn3ac5f788a58c52a0@mail.gmail.com</normalized-reference><normalized-reference>843311f70805291155y64483c6evdd6831efbff9afc3@mail.gmail.com</normalized-reference><normalized-reference>4c30ee7d0805291304m4c7f0cfdlb3058eb03038864f@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_2314_4277168.1212093004332&quot;" type="text/plain; charset=UTF-8"><para depth="0">I'm using file:// in my settings.xml and http:// in for the default in the
+pom.xml
+
+</para><para depth="0">On Thu, May 29, 2008 at 1:04 PM, Mick Knutson &lt;<email>mickknutson@gmail.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">What is the setting for your settings.xml? http:// or file://
+
+</quotepara><quotepara depth="1">On Thu, May 29, 2008 at 11:55 AM, Paul Davis &lt;<email>pauledavis@gmail.com</email>&gt; wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">I use it on Linux and noticed intermittent timeouts (I use continuum for
+continuous integration).
+The solution was to store the tomcat zip file locally.
+I use a variable for the tomcat location (defaults to the remote
+location).
+Then in my settings.xml, I have a profile that sets the variable to the
+local location.
+
+</quotepara><quotepara depth="2">This allows anyone to use tomcat (because of the default) and anyone, in
+the
+know, or my build system, to pull it off the local file system.
+
+</quotepara><quotepara depth="2">This has eliminated timeouts for me
+
+</quotepara><quotepara depth="2">On Thu, May 29, 2008 at 11:34 AM, Mick Knutson &lt;<email>mickknutson@gmail.com</email>&gt;
+wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">do you use the zip for both, or the tar.gz?
+
+</quotepara><quotepara depth="3">On Thu, May 29, 2008 at 11:15 AM, Geoffrey Wiseman &lt;
+<email>geoffrey.wiseman@gmail.com</email>&gt; wrote:
+
+</quotepara><quote depth="4"><quotepara depth="4">On Thu, May 29, 2008 at 1:25 PM, Mick Knutson &lt;<email>mickknutson@gmail.com</email>
+</quotepara></quote></quote><quotepara depth="2">
+</quotepara><quote depth="3"><quote depth="4"><quotepara depth="4">wrote:
+
+</quotepara><quote depth="5"><quotepara depth="5">Just wondering if anyone is using tomcat/cargo on Linux. I have the
+following CFG on windows, but am now getting time-outs on Linux.
+Just
+
+</quotepara></quote><quotepara depth="4">We're using Tomcat 5.5 / Cargo / M2 on Windows and Linux.  We do
+occasionally get a build failure on the build server (Linux) due to
+failure
+deploying the artifact before the timeout, but for the most part,
+</quotepara></quote></quote></quote><quotepara depth="1">it's
+</quotepara><quote depth="2"><quote depth="3"><quotepara depth="3">been
+</quotepara><quote depth="4"><quotepara depth="4">fairly problem-free for us.
+
+</quotepara><quotepara depth="4"> - Geoffrey
+</quotepara><quotefooter type="signature" hash="14305273961906928012" depth="4">--
+Geoffrey Wiseman
+
+</quotefooter></quote><quotefooter type="signature" hash="1418453011810562207" depth="3">--
+</quotefooter><quotefooter type="signature" hash="6820180928677313885" depth="3">---
+Thank You…
+
+</quotefooter><quotefooter type="signature" hash="1151540493498479920" depth="3">Mick Knutson
+BASE Logic, inc.
+
+</quotefooter><quotepara depth="3">Website: <url>http://baselogic.com</url>
+Blog: <url>http://baselogic.com/blog</url>
+BLiNC Magazine: <url>http://blincmagazine.com</url>
+Linked IN: <url>http://linkedin.com/in/mickknutson</url>
+DJ Mick: <url>http://djmick.com</url>
+MySpace: <url>http://myspace.com/mickknutson</url>
+Tahoe: <url>http://tahoe.baselogic.com</url>
+
+</quotepara></quote></quote><quotefooter type="signature" hash="1418453011810562207" depth="1">--
+</quotefooter><quotefooter type="signature" hash="6820180928677313885" depth="1">---
+Thank You…
+
+</quotefooter><quotefooter type="signature" hash="1151540493498479920" depth="1">Mick Knutson
+BASE Logic, inc.
+
+</quotefooter><quotepara depth="1">Website: <url>http://baselogic.com</url>
+Blog: <url>http://baselogic.com/blog</url>
+BLiNC Magazine: <url>http://blincmagazine.com</url>
+Linked IN: <url>http://linkedin.com/in/mickknutson</url>
+DJ Mick: <url>http://djmick.com</url>
+MySpace: <url>http://myspace.com/mickknutson</url>
+Tahoe: <url>http://tahoe.baselogic.com</url>
+
+</quotepara></quote><footer type="signature" hash="6494682376251015162" depth="0">-- 
+Paul E. Davis
+<email>pauledavis@gmail.com</email>
+253-861-7769
+</footer></body></message>

@@ -1,0 +1,59 @@
+<message message-id="001f01cbc6d7$b4e55db0$1eb01910$@com" list="org.koha.lists.koha-devel" id="24cedkexngfh4kde" type="development" date="2011-02-07T06:59:50.35263-08:00" year="2011-01-01" year-month="2011-02-01" year-month-day="2011-02-07" thread-id="24cedkexngfh4kde"><headers><envelope-from-line>Mon Feb 07 07:00:13 2011</envelope-from-line><from personal="Nelson Fredsell" address="nfredsell@gmail.com">Nelson Fredsell &lt;nfredsell@gmail.com&gt;</from><to personal="Koha mailing list" address="koha-devel@lists.koha-community.org">Koha mailing list &lt;koha-devel@lists.koha-community.org&gt;</to><subject normal="[Koha-devel] Install hurdle, OpenSUSE on virtualbox">[Koha-devel] Install hurdle, OpenSUSE on virtualbox</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 319
+          for &lt;felecia.cooke.cortez@a.markmail.org&gt;;
+          Mon, 7 Feb 2011 07:00:13 -0800 (GMT-08:00)</received><received>from eliot.biblibre.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 9F78A29081A7
+	for &lt;felecia.cooke.cortez@a.markmail.org&gt;; Mon,  7 Feb 2011 06:59:49 -0800 (PST)</received><received>from eliot.biblibre.com (localhost.localdomain [127.0.0.1])
+	by eliot.biblibre.com (Postfix) with ESMTP id 7C09D46706;
+	Mon,  7 Feb 2011 16:00:11 +0100 (CET)</received><x-original-to>koha-devel@lists.koha-community.org</x-original-to><delivered-to>koha-devel_lists.koha-community.org@eliot.biblibre.com</delivered-to><received>from mail-gx0-f172.google.com (mail-gx0-f172.google.com
+	[209.85.161.172]) (using TLSv1 with cipher RC4-MD5 (128/128 bits))
+	(No client certificate requested)
+	by eliot.biblibre.com (Postfix) with ESMTPS id 7F5EC46640
+	for &lt;koha-devel@lists.koha-community.org&gt;;
+	Mon,  7 Feb 2011 16:00:09 +0100 (CET)</received><received>by gxk27 with SMTP id 27so1863619gxk.17
+	for &lt;koha-devel@lists.koha-community.org&gt;;
+	Mon, 07 Feb 2011 07:00:08 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:from:to:subject:date:message-id:mime-version
+	:content-type:content-transfer-encoding:x-mailer:thread-index
+	:content-language;
+	bh=t/bcbyTbIClV74g0guxhmJWc5eRoJweMJsDxmHmWsVw=;
+	b=MRCQ5Fu5oFon1hrhMLUKoPK77qIaOYt74Nw9+ESVHMktuavxvcrzgj7dhX1WU16Lso
+	snhXv1aw0HTn+bOGVDmFZsKMapDuiflUlu/ivFDjISkX71tszLX8el8pKnr1KlCcGzF/
+	WXEK/dyfCOzBVZI/MCKmYsgHKhLZT2G9e7ku8=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=from:to:subject:date:message-id:mime-version:content-type
+	:content-transfer-encoding:x-mailer:thread-index:content-language;
+	b=MSEviwlyNt3P2gMIJ4oHh6lwDfF+tYDqWxCkVWDLDL7mCX95i5K7L2DtVVMnPC9g6/
+	vwbRMNCFcEx1TLf6L/2ix0n7Ho/AVqszmpZ8xk5/2LyoGdkRcu2lTQy+lSeIMuJA3jou
+	o4RGoONz42NEFRpHnDqbweR9JrmL57kIdAewU=</domainkey-signature><received>by 10.90.104.8 with SMTP id b8mr505174agc.178.1297090806875;
+	Mon, 07 Feb 2011 07:00:06 -0800 (PST)</received><received>from NelsonPC (c-76-20-248-187.hsd1.ga.comcast.net [76.20.248.187])
+	by mx.google.com with ESMTPS id c28sm5717616ana.1.2011.02.07.07.00.05
+	(version=TLSv1/SSLv3 cipher=RC4-MD5);
+	Mon, 07 Feb 2011 07:00:06 -0800 (PST)</received><date>Mon, 7 Feb 2011 10:00:04 -0500</date><message-id>001f01cbc6d7$b4e55db0$1eb01910$@com</message-id><mime-version>1.0</mime-version><x-mailer>Microsoft Office Outlook 12.0</x-mailer><thread-index>AcvG168g3QVNRkhDTDeHTZQOlL2BoA==</thread-index><content-language>en-us</content-language><x-beenthere>koha-devel@lists.koha-community.org</x-beenthere><x-mailman-version>2.1.11</x-mailman-version><precedence>list</precedence><list-id>Koha development &lt;koha-devel.lists.koha-community.org&gt;</list-id><list-unsubscribe>&lt;http://lists.koha-community.org/cgi-bin/mailman/options/koha-devel&gt;,
+	&lt;mailto:koha-devel-request@lists.koha-community.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;/pipermail/koha-devel&gt;</list-archive><list-post>&lt;mailto:koha-devel@lists.koha-community.org&gt;</list-post><list-help>&lt;mailto:koha-devel-request@lists.koha-community.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.koha-community.org/cgi-bin/mailman/listinfo/koha-devel&gt;,
+	&lt;mailto:koha-devel-request@lists.koha-community.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>koha-devel-bounces@lists.koha-community.org</sender><errors-to>koha-devel-bounces@lists.koha-community.org</errors-to></headers><normalized-references><normalized-message-id>001f01cbc6d7$b4e55db0$1eb01910$@com</normalized-message-id><normalized-thread-index>AcvG168g3QVNRkhDTDeHTZQOlL2BoA</normalized-thread-index></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">Dear all,
+
+</para><para depth="0">I've been repeatedly working through install steps at
+<url>http://wiki.koha-community.org/wiki/Koha_3.0.0_on_openSUSE_11.3</url>, and keep
+getting stuck.  Currently, my Windows 7 laptop can't see the apache LAMP
+server on the OpenSUSE 11.3 virtualbox.  With ifconfig I can see eth0 inet
+addr 192.168.1.16 Bcast 192.168.1.255 Mask 255.255.255.0.  When I ping from
+the Windows side, I get request timed out.  As indicated in the steps, I
+have a minimum install with no gui.  Using yast to configure network.
+
+</para><para depth="0">As an added step I changed from NAT to Bridged adapter in the VirtualBox
+config, but this didn't help.
+
+</para><para depth="0">Any suggestions would be much appreciated.  My current goal w/ Koha is to
+"simply" install the software, including Zebra.
+
+</para><para depth="0">Nelson
+(nfred - irc)
+
+</para><footer type="list-management" depth="0">_______________________________________________
+Koha-devel mailing list
+<email>Koha-devel@lists.koha-community.org</email>
+<url>http://lists.koha-community.org/cgi-bin/mailman/listinfo/koha-devel</url>
+website : <url>http://www.koha-community.org/</url>
+git : <url>http://git.koha-community.org/</url>
+bugs : <url>http://bugs.koha-community.org/</url>
+</footer></body></message>

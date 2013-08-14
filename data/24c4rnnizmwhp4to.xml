@@ -1,0 +1,89 @@
+<message message-id="4A7738E5.5000701@nerd.com" list="com.redhat.fedora-list" id="24c4rnnizmwhp4to" type="general" date="2009-08-03T11:22:12.705446-08:00" year="2009-01-01" year-month="2009-08-01" year-month-day="2009-08-03" thread-id="v3w6yt4ef6v5lxws"><headers><envelope-from-line>Mon Aug 03 11:22:35 2009</envelope-from-line><from personal="Rick Stevens" address="ricks@nerd.com">Rick Stevens &lt;ricks@nerd.com&gt;</from><to personal="Community assistance, encouragement,&#13;&#10;&#9;and advice for using Fedora." address="fedora-list@redhat.com">"Community assistance, encouragement,
+	and advice for using Fedora." &lt;fedora-list@redhat.com&gt;</to><subject normal="conflicted file in update this morning?">Re: conflicted file in update this morning?</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 846
+          for &lt;trinidad.chen.johns@a.markmail.org&gt;;
+          Mon, 3 Aug 2009 11:22:35 -0800 (GMT-08:00)</received><received>from hormel.redhat.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 4233F29082A6
+	for &lt;trinidad.chen.johns@a.markmail.org&gt;; Mon,  3 Aug 2009 12:22:12 -0700 (PDT)</received><received>from listman.util.phx.redhat.com (listman.util.phx.redhat.com [10.8.4.110])
+	by hormel.redhat.com (Postfix) with ESMTP id 31CA361B06C;
+	Mon,  3 Aug 2009 15:22:34 -0400 (EDT)</received><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	n73JMWaY009470 for &lt;fedora-list@listman.util.phx.redhat.com&gt;;
+	Mon, 3 Aug 2009 15:22:32 -0400</received><received>from mx1.redhat.com (mx1.redhat.com [172.16.48.31])
+	by int-mx1.corp.redhat.com (8.13.1/8.13.1) with ESMTP id n73JMVJn012098
+	for &lt;fedora-list@redhat.com&gt;; Mon, 3 Aug 2009 15:22:31 -0400</received><received>from rv-out-0506.google.com (rv-out-0506.google.com [209.85.198.238])
+	by mx1.redhat.com (8.13.8/8.13.8) with ESMTP id n73JMG5U032746
+	for &lt;fedora-list@redhat.com&gt;; Mon, 3 Aug 2009 15:22:16 -0400</received><received>by rv-out-0506.google.com with SMTP id l9so722704rvb.3
+	for &lt;fedora-list@redhat.com&gt;; Mon, 03 Aug 2009 12:22:15 -0700 (PDT)</received><received>by 10.141.22.1 with SMTP id z1mr4060151rvi.135.1249327335734;
+	Mon, 03 Aug 2009 12:22:15 -0700 (PDT)</received><received>from prophead.hci.com ([12.200.106.34])
+	by mx.google.com with ESMTPS id g22sm405342rvb.6.2009.08.03.12.22.14
+	(version=TLSv1/SSLv3 cipher=RC4-MD5);
+	Mon, 03 Aug 2009 12:22:14 -0700 (PDT)</received><message-id>4A7738E5.5000701@nerd.com</message-id><date>Mon, 03 Aug 2009 12:22:13 -0700</date><user-agent>Thunderbird 2.0.0.21 (X11/20090320)</user-agent><mime-version>1.0</mime-version><references>&lt;ec0de77f0908030904s75e4c348i51dd03c5fcc8c200@mail.gmail.com&gt;	&lt;20090803122010.30529caf@tomh&gt;	&lt;ec0de77f0908030944n5715d051vf588b9ca8acc8eef@mail.gmail.com&gt;	&lt;4A771495.20900@gmail.com&gt;	&lt;ec0de77f0908031030je526787g5365326bd6c8ef91@mail.gmail.com&gt;	&lt;20090803113239.74521257@ohm.scrye.com&gt;
+	&lt;ec0de77f0908031110n6be687g5263d279f3e8521f@mail.gmail.com&gt;</references><in-reply-to>&lt;ec0de77f0908031110n6be687g5263d279f3e8521f@mail.gmail.com&gt;</in-reply-to><content-type>text/plain; charset=windows-1252; format=flowed</content-type><x-redhat-spam-score>-1.198 </x-redhat-spam-score><x-scanned-by>MIMEDefang 2.58 on 172.16.52.254</x-scanned-by><x-scanned-by>MIMEDefang 2.63 on 172.16.48.31</x-scanned-by><x-loop>fedora-list@redhat.com</x-loop><x-beenthere>fedora-list@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>"Community assistance, encouragement,
+	and advice for using Fedora." &lt;fedora-list@redhat.com&gt;</reply-to><list-id>"Community assistance, encouragement,
+	and advice for using Fedora." &lt;fedora-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-list&gt;,
+	&lt;mailto:fedora-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-list&gt;</list-archive><list-post>&lt;mailto:fedora-list@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-list-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-list&gt;,
+	&lt;mailto:fedora-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><sender>fedora-list-bounces@redhat.com</sender><errors-to>fedora-list-bounces@redhat.com</errors-to><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>4A7738E5.5000701@nerd.com</normalized-message-id><normalized-in-reply-to>ec0de77f0908031110n6be687g5263d279f3e8521f@mail.gmail.com</normalized-in-reply-to><normalized-reference>ec0de77f0908030904s75e4c348i51dd03c5fcc8c200@mail.gmail.com</normalized-reference><normalized-reference>20090803122010.30529caf@tomh</normalized-reference><normalized-reference>ec0de77f0908030944n5715d051vf588b9ca8acc8eef@mail.gmail.com</normalized-reference><normalized-reference>4A771495.20900@gmail.com</normalized-reference><normalized-reference>ec0de77f0908031030je526787g5365326bd6c8ef91@mail.gmail.com</normalized-reference><normalized-reference>20090803113239.74521257@ohm.scrye.com</normalized-reference><normalized-reference>ec0de77f0908031110n6be687g5263d279f3e8521f@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=windows-1252; format=flowed"><para depth="0">Alan Evans wrote:
+</para><quote depth="1"><quotepara depth="1">On Mon, Aug 3, 2009 at 10:32 AM, Kevin Fenzi wrote:
+</quotepara><quote depth="2"><quotepara depth="2">On Mon, 3 Aug 2009 10:30:43 -0700 Alan Evans wrote:
+</quotepara><quote depth="3"><quotepara depth="3">That can't be it. Today's updates were all already installed packages.
+Where should users go to find out? It's in none of the docs that I can
+find.
+</quotepara></quote><quotepara depth="2">man yum.conf
+
+</quotepara><quotepara depth="2">search down for 'color'. It lists the options and what the defaults
+are.
+</quotepara></quote><quotepara depth="1">
+Why of course it is! Silly me; what was I thinking? [/sarcasm]
+
+</quotepara><quotepara depth="1">Seriously, thanks for that. Although it only deepens the mystery for
+me. According to that page, bold means that the currently installed
+packages are older than the packages that are available in updates. In
+other words, completely normal updates. Normal, non-bold, means that
+the package is to be reinstalled because the available package is the
+same version as the installed package. In such a case, I'm curious why
+yum thinks it needs to be updated at all.
+</quotepara></quote><para depth="0">
+It's not.  Read the man page again.  I quote:
+
+</para><para depth="0">        color_list_installed_reinstall
+               The colorization/highlighting for pacakges in list/info
+	      installed which is the same version as the latest
+	      available package with the same name and arch.  Default is
+	      ‘normal’.   See color_list_installed_older for possible
+	      values.
+
+</para><para depth="0">(and yes, "pacakages" is verbatim from the man page).  I read that
+(disregarding the typo and mixing of singles and plurals) as "items
+shown in normal text are already installed and current."  Perhaps I'm
+wrong.
+
+</para><quote depth="1"><quotepara depth="1">Nevertheless, I've never noticed bold before in yum's to-be-updated
+list, and I've been using yum a long time. Perhaps it just escaped my
+eagle eye. But in this case, the installed version (libX11-1.2.1) is
+certainly not the same as the version that was updated to
+(libX11-1.2.2), so I find that the man page for yum.conf is incorrect.
+(As well as unintuitive to find.)
+</quotepara></quote><para depth="0">
+With the exception of the English nits I picked above, it appears
+correct to me.  I think your reading of the man page was a bit skewed.
+
+</para><quote depth="1"><quotepara depth="1">Ah well, I got the update done, so I guess I shouldn't care. It's just
+that I'm naturally bugged by things that don't make sense to me. But
+it's all in the past now.
+</quotepara></quote><para depth="0">
+It bugs me, too, but in this case I think it's unwarranted.
+</para><footer type="free-hosting" depth="0">----------------------------------------------------------------------
+- Rick Stevens, Systems Engineer                      <email>ricks@nerd.com</email> -
+- AIM/Skype: therps2        ICQ: 22643734            Yahoo: origrps2 -
+-                                                                    -
+-           What is a "free" gift?  Aren't all gifts free?           -
+</footer><footer type="noise" depth="0">----------------------------------------------------------------------
+
+</footer><footer type="list-management" depth="0">-- 
+fedora-list mailing list
+<email>fedora-list@redhat.com</email>
+To unsubscribe: <url>https://www.redhat.com/mailman/listinfo/fedora-list</url>
+Guidelines: <url>http://fedoraproject.org/wiki/Communicate/MailingListGuidelines</url>
+</footer></body></message>

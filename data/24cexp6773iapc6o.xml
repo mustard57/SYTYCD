@@ -1,0 +1,37 @@
+<message message-id="AANLkTikhhPRW9oNoIf-5NN7jSvqHmIitNAG8dolyUxKi@mail.gmail.com" list="org.apache.geronimo.dev" id="24cexp6773iapc6o" type="development" date="2010-05-15T15:16:15+08:00" year="2010-01-01" year-month="2010-05-01" year-month-day="2010-05-15" thread-id="hnx2iwxyrqnby37e"><headers><envelope-from-line>Fri May 14 23:16:46 2010</envelope-from-line><from personal="Forrest Xia" address="forrestxm@gmail.com">Forrest Xia &lt;forrestxm@gmail.com&gt;</from><to personal="dev@geronimo.apache.org" address="dev@geronimo.apache.org">dev@geronimo.apache.org</to><subject normal="Need access to some of apache wiki for Geronimo">Re: Need access to some of apache wiki for Geronimo</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 488
+          for &lt;eldon.reese.lancaster@a.markmail.org&gt;;
+          Fri, 14 May 2010 23:16:46 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id C25DB290823D
+	for &lt;eldon.reese.lancaster@a.markmail.org&gt;; Sat, 15 May 2010 00:16:22 -0700 (PDT)</received><received>(qmail 81989 invoked by uid 500); 15 May 2010 07:16:45 -0000</received><mailing-list>contact dev-help@geronimo.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@geronimo.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@geronimo.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@geronimo.apache.org&gt;</list-post><reply-to>dev@geronimo.apache.org</reply-to><list-id>&lt;dev.geronimo.apache.org&gt;</list-id><delivered-to>mailing list dev@geronimo.apache.org</delivered-to><received>(qmail 81980 invoked by uid 99); 15 May 2010 07:16:44 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sat, 15 May 2010 07:16:44 +0000</received><x-asf-spam-status>No, hits=2.2 required=10.0
+	tests=FREEMAIL_FROM,HTML_MESSAGE,RCVD_IN_DNSWL_NONE,SPF_PASS,T_TO_NO_BRKTS_FREEMAIL</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (nike.apache.org: domain of forrestxm@gmail.com designates 74.125.83.182 as permitted sender)</received-spf><received>from [74.125.83.182] (HELO mail-pv0-f182.google.com) (74.125.83.182)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sat, 15 May 2010 07:16:36 +0000</received><received>by pvh11 with SMTP id 11so1519705pvh.13
+        for &lt;dev@geronimo.apache.org&gt;; Sat, 15 May 2010 00:16:15 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:received:in-reply-to
+         :references:date:message-id:subject:from:to:content-type;
+        bh=7c7mmtC093dJQoofaCCHkV1uehR/Vpi+op2cdLH9u4U=;
+        b=sDwSHOLEXUnb9ozRghOiFo6jS7LUBJK/CChBMNz1/8EAsATaBew2/XGTfdbz4jCuWq
+         XJ24NMext5aHVP51lJrdqptUl0o3tegEbXbkEBk1T3/iknALVZRnpka1WuXqJvmt3Bfn
+         hIRhTx+5qNGmkwjkXZ0H/Lmz9eE11KhUBhvSQ=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        b=Am6FYmEPN10t1Djm6K83pI1L/PXZCiApcBW2ahKyTRqrV6VTWhf0fiQiRkl/AfLZ0X
+         aqWk8DmqAMa5OYRHoLt6qXbIq709t52pE5tbxkESljeS3cP6Jfc/Ub8COaZnNg8b/A4w
+         Sw0SJGhW9leX7acYQ8uITIXRFlhJjEfHynIpw=</domainkey-signature><mime-version>1.0</mime-version><received>by 10.142.210.19 with SMTP id i19mr1378542wfg.301.1273907775328; 
+	Sat, 15 May 2010 00:16:15 -0700 (PDT)</received><received>by 10.143.13.11 with HTTP; Sat, 15 May 2010 00:16:15 -0700 (PDT)</received><in-reply-to>&lt;AANLkTildiG3SYEgc33VkQx2ICqhTMi6mfFfmEcAB5RGX@mail.gmail.com&gt;</in-reply-to><references>&lt;AANLkTildiG3SYEgc33VkQx2ICqhTMi6mfFfmEcAB5RGX@mail.gmail.com&gt;</references><date>Sat, 15 May 2010 15:16:15 +0800</date><message-id>AANLkTikhhPRW9oNoIf-5NN7jSvqHmIitNAG8dolyUxKi@mail.gmail.com</message-id><content-type>multipart/alternative; boundary=000e0cd23b9a6cd12c04869cc428</content-type><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>AANLkTikhhPRW9oNoIf-5NN7jSvqHmIitNAG8dolyUxKi@mail.gmail.com</normalized-message-id><normalized-in-reply-to>AANLkTildiG3SYEgc33VkQx2ICqhTMi6mfFfmEcAB5RGX@mail.gmail.com</normalized-in-reply-to><normalized-reference>AANLkTildiG3SYEgc33VkQx2ICqhTMi6mfFfmEcAB5RGX@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=000e0cd23b9a6cd12c04869cc428" type="text/plain; charset=ISO-8859-1"><footer type="signature" depth="0" hash="11079420537294277970">My ID is <email>forrestxm@gmail.com</email>, and my committer id is xiaming
+
+</footer><para depth="0">Thanks,
+Forrest
+
+</para><footer type="signature" depth="0" hash="11658364300334273439">On Sat, May 15, 2010 at 3:14 PM, Forrest Xia &lt;<email>forrestxm@gmail.com</email>&gt; wrote:
+
+</footer><quote depth="1"><quotepara depth="1">Hi,
+
+</quotepara><quotepara depth="1">Does anyone have the right to add me to these wiki with editor privilege?
+
+</quotepara><quotepara depth="1"><url>https://cwiki.apache.org/confluence/display/GMOxPMGT</url>
+
+</quotepara></quote></body></message>

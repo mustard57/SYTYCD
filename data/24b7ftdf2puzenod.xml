@@ -1,0 +1,44 @@
+<message message-id="20091221142410.6178262EE3@mail02.netbeans.org" list="org.netbeans.wasp.issues" id="24b7ftdf2puzenod" no-archive="yes" type="bugs" date="2009-12-21T06:24:04.644153-08:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-21" thread-id="24b7ftdf2puzenod"><headers><envelope-from-line>Mon Dec 21 06:24:27 2009</envelope-from-line><from personal="quality@netbeans.org" address="quality@netbeans.org">quality@netbeans.org</from><to personal="issues@obsolete.netbeans.org" address="issues@obsolete.netbeans.org">issues@obsolete.netbeans.org</to><subject normal="[Bug 56813] Star Team VCS generates errors for Project with Existing Sources.">[Bug 56813] Star Team VCS generates errors for Project with Existing Sources.</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 546;
+          Mon, 21 Dec 2009 06:24:25 -0800 (GMT-08:00)</received><received>from mailout02.kenai.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 5DA9929081A6;
+	Mon, 21 Dec 2009 06:24:02 -0800 (PST)</received><received>from mail02.netbeans.org (nbxmlm01z1.network.org [10.25.120.154])
+	by mailout02.kenai.com (Postfix) with ESMTP id 0EEEE1D109;
+	Mon, 21 Dec 2009 14:24:26 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail02.netbeans.org (Postfix) with ESMTP id A96BE62F45;
+	Mon, 21 Dec 2009 14:24:24 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail02.netbeans.org ([127.0.0.1]) by localhost (nbxmlm01z1
+	network.org [127.0.0.1]) (amavisd-new, port 10025) with ESMTP
+	id fBWXiHTj11qI; Mon, 21 Dec 2009 14:24:24 +0000 (GMT)</received><received>by mail02.netbeans.org (Postfix, from userid 60005)
+	id 9408962F3E; Mon, 21 Dec 2009 14:24:24 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail02.netbeans.org (Postfix) with ESMTP id 26CF362F24
+	for &lt;issues@obsolete.netbeans.org&gt;; Mon, 21 Dec 2009 14:24:21 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail02.netbeans.org ([127.0.0.1]) by localhost (nbxmlm01z1
+	network.org [127.0.0.1]) (amavisd-new, port 10025) with ESMTP
+	id 5qdChOoikvCQ for &lt;issues@obsolete.netbeans.org&gt;;
+	Mon, 21 Dec 2009 14:24:10 +0000 (GMT)</received><received>by mail02.netbeans.org (Postfix, from userid 80)
+	id 6178262EE3; Mon, 21 Dec 2009 14:24:10 +0000 (GMT)</received><x-bugzilla-reason>QAcontact</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>obsolete</x-bugzilla-product><x-bugzilla-component>vcsgeneric</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-who>quality@netbeans.org</x-bugzilla-who><x-bugzilla-status>RESOLVED</x-bugzilla-status><x-bugzilla-priority>P2</x-bugzilla-priority><x-bugzilla-assigned-to>mentlicher@netbeans.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>TBD</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Status Resolution Status Whiteboard</x-bugzilla-changed-fields><in-reply-to>&lt;bug-56813-476@http.netbeans.org/bugzilla/&gt;</in-reply-to><references>&lt;bug-56813-476@http.netbeans.org/bugzilla/&gt;</references><auto-submitted>auto-generated</auto-submitted><content-type>text/plain; charset="UTF-8"</content-type><mime-version>1.0</mime-version><message-id>20091221142410.6178262EE3@mail02.netbeans.org</message-id><date>Mon, 21 Dec 2009 14:24:10 +0000 (GMT)</date><reply-to>issues@obsolete.netbeans.org</reply-to><x-loop>issues@obsolete.netbeans.org</x-loop><x-sequence>289</x-sequence><errors-to>issues-owner@obsolete.netbeans.org</errors-to><precedence>list</precedence><x-no-archive>yes</x-no-archive><list-id>&lt;issues.obsolete.netbeans.org&gt;</list-id><list-help>&lt;mailto:sympa@obsolete.netbeans.org?subject=help&gt;</list-help><list-subscribe>&lt;mailto:sympa@obsolete.netbeans.org?subject=subscribe%20issues&gt;</list-subscribe><list-unsubscribe>&lt;mailto:sympa@obsolete.netbeans.org?subject=unsubscribe%20issues&gt;</list-unsubscribe><list-post>&lt;mailto:issues@obsolete.netbeans.org&gt;</list-post><list-owner>&lt;mailto:issues-request@obsolete.netbeans.org&gt;</list-owner></headers><normalized-references><normalized-message-id>20091221142410.6178262EE3@mail02.netbeans.org</normalized-message-id><normalized-in-reply-to>bug-56813-476@http.netbeans.org/bugzilla/</normalized-in-reply-to><normalized-reference>bug-56813-476@http.netbeans.org/bugzilla/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0"><url>https://netbeans.org/bugzilla/show_bug.cgi?id=56813</url>
+
+</para><para depth="0">Quality Engineering &lt;<email>quality@netbeans.org</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+             Status|NEW                         |RESOLVED
+         Resolution|                            |WONTFIX
+  Status Whiteboard|                            |CLEAN
+
+</para><para depth="0">--- Comment #5 from Quality Engineering &lt;<email>quality@netbeans.org</email>&gt;  2009-12-21<br/>07:24:10 ---
+This bug was reported against NetBeans IDE 6.0 or an older release, or against
+a non-maintained module. NetBeans team does not have enough resources to get to
+this issue, therefore we are closing the issue as a WONTFIX. If you are
+interested in providing a patch for this bug, please see our NetFIX guidelines
+for how to proceed. 
+
+</para><para depth="0">We apologize for any inconvenience.
+
+</para><para depth="0">Thank you.
+The NetBeans Team
+
+</para><footer type="signature" depth="0" hash="6537153224747930002">-- 
+Configure bugmail: <url>https://netbeans.org/bugzilla/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the QA contact for the bug.
+</footer></body></message>

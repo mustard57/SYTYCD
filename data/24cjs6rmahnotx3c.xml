@@ -1,0 +1,28 @@
+<message message-id="2534640.post@talk.nabble.com" list="net.java.dev.appfuse.users" id="24cjs6rmahnotx3c" type="users" date="2006-01-23T05:34:52-08:00" year="2006-01-01" year-month="2006-01-01" year-month-day="2006-01-23" thread-id="jrqbv5zm3ppswn7g"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="wakim (sent by Nabble.com)" address="lists@nabble.com">"wakim (sent by Nabble.com)" &lt;lists@nabble.com&gt;</from><to personal="users@appfuse.dev.java.net" address="users@appfuse.dev.java.net">users@appfuse.dev.java.net</to><subject normal="[appfuse-user] Problems with JSF Extensions">Re: [appfuse-user] Problems with JSF Extensions</subject><return-path>lists@nabble.com</return-path><mailing-list>contact users-help@appfuse.dev.java.net; run by ezmlm</mailing-list><delivered-to>mailing list users@appfuse.dev.java.net</delivered-to><received>(qmail 948 invoked from network); 23 Jan 2006 13:34:54 -0000</received><received>from cylon1.sjc.collab.net (204.16.104.10)
+  by s006.sfo.collab.net with SMTP; 23 Jan 2006 13:34:54 -0000</received><received>from www.nabble.com (HELO talk.nabble.com) ([72.21.53.35])
+  by cylon1.sjc.collab.net with ESMTP; 23 Jan 2006 05:34:54 -0800</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AB4FABVp1EODOIQJIA</x-ironport-anti-spam-result><x-ironport-av>i="4.01,211,1136188800"; 
+   d="scan'208"; a="5153557:sNHT22342229"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from localhost ([127.0.0.1] helo=talk.nabble.com)
+	by talk.nabble.com with esmtp (Exim 4.50)
+	id 1F11qO-0000JZ-RO
+	for users@appfuse.dev.java.net; Mon, 23 Jan 2006 05:34:52 -0800</received><message-id>2534640.post@talk.nabble.com</message-id><date>Mon, 23 Jan 2006 05:34:52 -0800 (PST)</date><in-reply-to>&lt;2379544.post@talk.nabble.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>multipart/alternative; 
+	boundary="----=_Part_2078_19937586.1138023292843"</content-type><x-nabble-sender>Nabble Forums &lt;lists@nabble.com&gt;</x-nabble-sender><x-nabble-from>wakim &lt;wakim5000e@yahoo.de&gt;</x-nabble-from><references>&lt;2379544.post@talk.nabble.com&gt;</references></headers><normalized-references><normalized-message-id>2534640.post@talk.nabble.com</normalized-message-id><normalized-in-reply-to>2379544.post@talk.nabble.com</normalized-in-reply-to><normalized-reference>2379544.post@talk.nabble.com</normalized-reference></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_2078_19937586.1138023292843&quot;" type="text/plain; charset=us-ascii"><para depth="0">
+Hi Ricardo, I tried out with *.html and /faces/* but still no luck. 
+Meanwhile I start a complete new appfuse application (1.9) and only add a 
+to keep it simple as possible. In the web.xml I add only one filtermapping. The <br/>*.html mapping was there: 
+
+</para><para depth="0">        extensionsFilter 
+        *.html 
+
+</para><para depth="0">        extensionsFilter 
+        /faces/* 
+
+</para><para depth="0">Thats all. the Dialog Box of the inputDate appears and is working. The <br/>Javascript gimmic with the Calandar Popup does not. Can you (or somebody else) <br/>please send me your web.xml? And maybe a JSF example that is working? 
+
+</para><para depth="0">Best regards
+
+</para><para depth="0">Kai
+
+</para><footer type="signature" hash="1308063453158201320" depth="0">--
+View this message in context: <br/><url>http://www.nabble.com/Problems-with-JSF-Extensions-t917567c2369.html#a2534640</url> 
+Sent from the AppFuse - User forum at Nabble.com.
+</footer></body></message>

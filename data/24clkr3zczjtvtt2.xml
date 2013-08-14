@@ -1,0 +1,52 @@
+<message message-id="20080823212958.BFF3C9AC021@socket.gnome.org" list="org.gnome.svn-commits-list" id="24clkr3zczjtvtt2" type="checkins" date="2008-08-23T21:29:58Z" year="2008-01-01" year-month="2008-08-01" year-month-day="2008-08-23" thread-id="24clkr3zczjtvtt2"><headers><envelope-from-line>Sat Aug 23 14:30:10 2008</envelope-from-line><from personal="walters@svn.gnome.org" address="walters@svn.gnome.org">walters@svn.gnome.org</from><to personal="svn-commits-list@gnome.org" address="svn-commits-list@gnome.org">svn-commits-list@gnome.org</to><subject normal="gobject-introspection r474 - trunk/girepository">gobject-introspection r474 - trunk/girepository</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 399
+          for &lt;jefferson.lang.bennett@a.markmail.org&gt;;
+          Sat, 23 Aug 2008 14:30:10 -0700 (PDT)</received><received>from menubar.gnome.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id E4BB53B3022C
+	for &lt;jefferson.lang.bennett@a.markmail.org&gt;; Sat, 23 Aug 2008 14:30:09 -0700 (PDT)</received><received>from menubar.gnome.org (localhost.localdomain [127.0.0.1])
+	by menubar.gnome.org (Postfix) with ESMTP id BF057750136;
+	Sat, 23 Aug 2008 21:30:09 +0000 (GMT)</received><x-original-to>svn-commits-list@gnome.org</x-original-to><delivered-to>svn-commits-list@gnome.org</delivered-to><received>from localhost (localhost.localdomain [127.0.0.1])
+	by menubar.gnome.org (Postfix) with ESMTP id BFC8675007E
+	for &lt;svn-commits-list@gnome.org&gt;; Sat, 23 Aug 2008 21:30:07 +0000 (GMT)</received><x-virus-scanned>by amavisd-new at gnome.org</x-virus-scanned><x-spam-flag>NO</x-spam-flag><x-spam-score>-2.599</x-spam-score><x-spam-level/><x-spam-status>No, score=-2.599 tagged_above=-999 required=2
+	tests=[BAYES_00=-2.599]</x-spam-status><x-amavis-os-fingerprint>Linux 2.6 (newer, 3) (up: 1837 hrs), (distance 18,
+	link: ethernet/modem), [91.189.93.3]</x-amavis-os-fingerprint><received>from menubar.gnome.org ([127.0.0.1])
+	by localhost (menubar.gnome.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id GeNC+-34+18x for &lt;svn-commits-list@gnome.org&gt;;
+	Sat, 23 Aug 2008 21:30:00 +0000 (GMT)</received><received>from socket.gnome.org (cobalt.canonical.com [91.189.93.3])
+	by menubar.gnome.org (Postfix) with ESMTP id 746127500C7
+	for &lt;svn-commits-list@gnome.org&gt;; Sat, 23 Aug 2008 21:30:00 +0000 (GMT)</received><received>by socket.gnome.org (Postfix, from userid 5077)
+	id BFF3C9AC021; Sat, 23 Aug 2008 21:29:58 +0000 (UTC)</received><mime-version>1.0</mime-version><keywords>gobject-introspection</keywords><message-id>20080823212958.BFF3C9AC021@socket.gnome.org</message-id><date>Sat, 23 Aug 2008 21:29:58 +0000 (UTC)</date><x-topics>gobject-introspection</x-topics><x-beenthere>svn-commits-list@gnome.org</x-beenthere><x-mailman-version>2.1.10</x-mailman-version><precedence>list</precedence><list-id>SVN commits &lt;svn-commits-list.gnome.org&gt;</list-id><list-unsubscribe>&lt;http://mail.gnome.org/mailman/options/svn-commits-list&gt;,
+	&lt;mailto:svn-commits-list-request@gnome.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;/archives/svn-commits-list&gt;</list-archive><list-post>&lt;mailto:svn-commits-list@gnome.org&gt;</list-post><list-help>&lt;mailto:svn-commits-list-request@gnome.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.gnome.org/mailman/listinfo/svn-commits-list&gt;,
+	&lt;mailto:svn-commits-list-request@gnome.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>svn-commits-list-bounces@gnome.org</sender><errors-to>svn-commits-list-bounces@gnome.org</errors-to></headers><normalized-references><normalized-message-id>20080823212958.BFF3C9AC021@socket.gnome.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">Author: walters
+Date: Sat Aug 23 21:29:58 2008
+New Revision: 474
+URL: <url>http://svn.gnome.org/viewvc/gobject-introspection?rev=474&amp;view=rev</url>
+
+</para><para depth="0">Log:
+Remove duplicate start_boxed.
+
+</para><para depth="0">Modified:
+   trunk/girepository/girparser.c
+
+</para><para depth="0">Modified: trunk/girepository/girparser.c
+==============================================================================
+--- trunk/girepository/girparser.c	(original)
++++ trunk/girepository/girparser.c	Sat Aug 23 21:29:58 2008
+@@ -1917,10 +1917,6 @@
+ 			     attribute_names, attribute_values,
+ 			     ctx, error))
+ 	goto out;
+-      else if (start_glib_boxed (context, element_name,
+-				 attribute_names, attribute_values,
+-				 ctx, error))
+-	goto out;
+       break;
+
+</para><para depth="0">     case 'i':
+</para><footer type="list-management" depth="0">_______________________________________________
+SVN-commits-list mailing list (read only)
+<url>http://mail.gnome.org/mailman/listinfo/svn-commits-list</url>
+
+</footer><para depth="0">Want to limit the commits to a few modules? Go to above URL, log in to edit your<br/>options and select the modules ('topics') you want.
+Module maintainer? It is possible to set the reply-to to your development<br/>mailing list. Email <email>svnmaster@gnome.org</email> if interested.
+</para></body></message>

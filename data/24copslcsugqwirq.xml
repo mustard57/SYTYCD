@@ -1,0 +1,412 @@
+<message message-id="BANLkTinW_dpvvrzUmnmMDpZGnoGk_QcqPQ@mail.gmail.com" list="com.googlegroups.android-platform" id="24copslcsugqwirq" type="general" date="2011-04-26T13:08:06Z" year="2011-01-01" year-month="2011-04-01" year-month-day="2011-04-26" thread-id="ecod6p4cs53qw2on"><headers><envelope-from-line>Tue Apr 26 07:08:32 2011</envelope-from-line><from personal="Dianne Hackborn" address="&quot;hack...&quot;@android.com">Dianne Hackborn &lt;"hack..."@android.com&gt;</from><to personal="android-platform@googlegroups.com" address="android-platform@googlegroups.com">android-platform@googlegroups.com</to><subject normal="Problem in Orientation change">Re: Problem in Orientation change</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 525
+          for &lt;antony.beasley.velazquez@a.markmail.org&gt;;
+          Tue, 26 Apr 2011 07:08:32 -0800 (GMT-08:00)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 6729929081A7
+	for &lt;antony.beasley.velazquez@a.markmail.org&gt;; Tue, 26 Apr 2011 08:08:09 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (Postfix) with ESMTP id 01F4A63B0154
+	for &lt;antony.beasley.velazquez@a.markmail.org&gt;; Tue, 26 Apr 2011 08:08:09 -0700 (PDT)</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id p3QF88Eo017499
+	for antony.beasley.velazquez@a.markmail.org; Tue, 26 Apr 2011 08:08:08 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.android-platform</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>f7835a695973402e</x-markmail-googlegroups-mid><received>by 10.101.148.5 with SMTP id a5mr30303ano.9.1303823333258;
+        Tue, 26 Apr 2011 06:08:53 -0700 (PDT)</received><x-beenthere>android-platform@googlegroups.com</x-beenthere><received>by 10.101.190.24 with SMTP id s24ls865115anp.3.gmail; Tue, 26 Apr
+ 2011 06:08:28 -0700 (PDT)</received><received>by 10.101.75.4 with SMTP id c4mr259262anl.20.1303823308344;
+        Tue, 26 Apr 2011 06:08:28 -0700 (PDT)</received><received>by 10.101.75.4 with SMTP id c4mr259261anl.20.1303823308300;
+        Tue, 26 Apr 2011 06:08:28 -0700 (PDT)</received><received>from mail-gw0-f42.google.com (mail-gw0-f42.google.com [74.125.83.42])
+        by gmr-mx.google.com with ESMTPS id u35si108629yba.4.2011.04.26.06.08.27
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Tue, 26 Apr 2011 06:08:27 -0700 (PDT)</received><received-spf>neutral (google.com: 74.125.83.42 is neither permitted nor denied by best guess record for domain of hack...@android.com) client-ip=74.125.83.42;</received-spf><authentication-results>gmr-mx.google.com; spf=neutral (google.com: 74.125.83.42 is neither permitted nor denied by best guess record for domain of hack...@android.com) smtp.mail=hack...@android.com</authentication-results><received>by gwb17 with SMTP id 17so406145gwb.1
+        for &lt;android-platform@googlegroups.com&gt;; Tue, 26 Apr 2011 06:08:27 -0700 (PDT)</received><received>by 10.236.109.52 with SMTP id r40mr883206yhg.197.1303823306882; Tue,
+ 26 Apr 2011 06:08:26 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.236.108.173 with HTTP; Tue, 26 Apr 2011 06:08:06 -0700 (PDT)</received><in-reply-to>&lt;BANLkTinhb_oZUDuo_+puEaD=cXUwckbjqg@mail.gmail.com&gt;</in-reply-to><references>&lt;c9c75003-ca15-4849-aec2-c93007f9734a@q12g2000prb.googlegroups.com&gt;
+ &lt;BANLkTi=VO3oKvOEVgdCU+mMwgaAkxOuydw@mail.gmail.com&gt; &lt;BANLkTinhb_oZUDuo_+puEaD=cXUwckbjqg@mail.gmail.com&gt;</references><date>Tue, 26 Apr 2011 13:08:06 +0000</date><message-id>BANLkTinW_dpvvrzUmnmMDpZGnoGk_QcqPQ@mail.gmail.com</message-id><content-type>multipart/alternative; boundary=002354867bdc0e808904a1d20576</content-type></headers><normalized-references><normalized-message-id>BANLkTinW_dpvvrzUmnmMDpZGnoGk_QcqPQ@mail.gmail.com</normalized-message-id><normalized-in-reply-to>BANLkTinhb_oZUDuo_+puEaD=cXUwckbjqg@mail.gmail.com</normalized-in-reply-to><normalized-reference>c9c75003-ca15-4849-aec2-c93007f9734a@q12g2000prb.googlegroups.com</normalized-reference><normalized-reference>BANLkTi=VO3oKvOEVgdCU+mMwgaAkxOuydw@mail.gmail.com</normalized-reference><normalized-reference>BANLkTinhb_oZUDuo_+puEaD=cXUwckbjqg@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=002354867bdc0e808904a1d20576" type="text/plain; charset=ISO-8859-1"><para depth="0">Here:
+
+</para><para depth="0">04-26 12:55:00.570 W/SurfaceFlinger(  156): timeout expired
+mFreezeDisplay=0, mFreezeCount=1
+
+</para><para depth="0">Some window isn't getting displayed, or there is a bug in the window manager
+or surface flinger that is incorrectly keeping the screen frozen.
+
+</para><para depth="0">On Tue, Apr 26, 2011 at 3:22 AM, Suresh Chandra Pal &lt;
+<email>sureshchandra...@gmail.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">Hi Dianne,
+
+</quotepara><quotepara depth="1">I have added logs at some places in Gallery and BluetoothOppBtErrorActivity
+related classes.
+Following logs are from the first launch of Bluetooth Dialog till the
+orientation changes.
+
+</quotepara><quotepara depth="1">04-26 12:54:49.707 D/StatusBarManagerService(  156): manageDisableList
+what=0x0 pkg=com.cooliris.media
+
+</quotepara><quotepara depth="1">04-26 12:54:49.710 D/WakeLock( 2014):  onpause mCheckDecodeWakeLock :
+result = false
+
+</quotepara><quotepara depth="1">04-26 12:54:49.710 D/Gallery ( 2014): &lt;SURESH&gt; onPause() - finished
+
+</quotepara><quotepara depth="1">04-26 12:54:49.710 W/ActivityManager(  156): Trying to launch
+com.android.bluetooth/com.broadcom.bt.app.opp.OppLauncherActivity
+
+</quotepara><quotepara depth="1">04-26 12:54:49.734 I/ActivityManager(  156): Starting: Intent {
+flg=0x10000000 cmp=com.android.bluetooth/.opp.BluetoothOppBtErrorActivity
+(has extras) } from pid 2171
+
+</quotepara><quotepara depth="1">04-26 12:54:49.738 W/ActivityManager(  156): Trying to launch
+com.android.bluetooth/.opp.BluetoothOppBtErrorActivity
+
+</quotepara><quotepara depth="1">04-26 12:54:49.746 D/BluetoothOppBtErrorActivity( 2171): &lt;SURESH&gt;
+createView()
+
+</quotepara><quotepara depth="1">04-26 12:54:49.792 D/AlertActivity( 2171): &lt;SURESH&gt; setupAlert()
+
+</quotepara><quotepara depth="1">04-26 12:54:50.027 D/AlertActivity( 2171): &lt;SURESH&gt; setupAlert() - finished
+
+</quotepara><quotepara depth="1">04-26 12:54:50.027 D/BluetoothOppBtErrorActivity( 2171): &lt;SURESH&gt;
+onCreate() - exiting
+
+</quotepara><quotepara depth="1">04-26 12:54:50.277 I/ActivityManager(  156): Displayed
+com.android.bluetooth/.opp.BluetoothOppBtErrorActivity: +540ms (total
++566ms)
+
+</quotepara><quotepara depth="1">04-26 12:54:51.921 D/PowerManagerService(  156): onSensorChanged: light
+value: 6
+
+</quotepara><quotepara depth="1">04-26 12:54:52.628 W/PowerManagerService(  156): Timer 0x7-&gt;0x3|0x0
+
+</quotepara><quotepara depth="1">04-26 12:54:52.628 I/PowerManagerService(  156): Ulight 7-&gt;3|0
+
+</quotepara><quotepara depth="1">04-26 12:54:53.921 D/PowerManagerService(  156): lightSensorChangedLocked 6
+
+</quotepara><quotepara depth="1">04-26 12:54:53.921 D/PowerManagerService(  156): lcdValue 32
+
+</quotepara><quotepara depth="1">04-26 12:54:53.921 D/PowerManagerService(  156): buttonValue 0
+
+</quotepara><quotepara depth="1">04-26 12:54:53.921 D/PowerManagerService(  156): keyboardValue 0
+
+</quotepara><quotepara depth="1">04-26 12:54:53.945 D/LightsService(  156): BKL : 110
+
+</quotepara><quotepara depth="1">04-26 12:54:53.968 D/LightsService(  156): BKL : 104
+
+</quotepara><quotepara depth="1">04-26 12:54:53.988 D/LightsService(  156): BKL : 99
+
+</quotepara><quotepara depth="1">04-26 12:54:54.011 D/LightsService(  156): BKL : 93
+
+</quotepara><quotepara depth="1">04-26 12:54:54.035 D/LightsService(  156): BKL : 88
+
+</quotepara><quotepara depth="1">04-26 12:54:54.054 D/LightsService(  156): BKL : 82
+
+</quotepara><quotepara depth="1">04-26 12:54:54.078 D/LightsService(  156): BKL : 76
+
+</quotepara><quotepara depth="1">04-26 12:54:54.101 D/LightsService(  156): BKL : 71
+
+</quotepara><quotepara depth="1">04-26 12:54:54.125 D/LightsService(  156): BKL : 65
+
+</quotepara><quotepara depth="1">04-26 12:54:54.148 D/LightsService(  156): BKL : 60
+
+</quotepara><quotepara depth="1">04-26 12:54:54.171 D/LightsService(  156): BKL : 54
+
+</quotepara><quotepara depth="1">04-26 12:54:54.195 D/LightsService(  156): BKL : 48
+
+</quotepara><quotepara depth="1">04-26 12:54:54.218 D/LightsService(  156): BKL : 43
+
+</quotepara><quotepara depth="1">04-26 12:54:54.242 D/LightsService(  156): BKL : 37
+
+</quotepara><quotepara depth="1">04-26 12:54:54.257 D/LightsService(  156): BKL : 32
+
+</quotepara><quotepara depth="1">04-26 12:54:54.257 I/PowerManagerService(  156): Light Animator Finished
+curIntValue=32
+
+</quotepara><quotepara depth="1">04-26 12:54:55.511 I/WindowOrientationListener(  156): orientation 68.63006
+gives new rotation = 1
+
+</quotepara><quotepara depth="1">04-26 12:54:55.511 I/TvOut-Observer(  156): setTvoutOrientation rotation =
+ 1
+
+</quotepara><quotepara depth="1">04-26 12:54:55.511 E/TvOut-Observer(  156): SetOrientation
+
+</quotepara><quotepara depth="1">04-26 12:54:55.511 I/TvOut-Client(  156): SetOrientation +
+
+</quotepara><quotepara depth="1">04-26 12:54:55.511 I/TvOut-Client(  156): SetOrientation -
+
+</quotepara><quotepara depth="1">04-26 12:54:55.511 I/WindowManager(  156): Setting rotation to 1,
+animFlags=0
+
+</quotepara><quotepara depth="1">04-26 12:54:55.511 I/ActivityManager(  156): Config changed: { scale=1.0
+imsi=450/1 loc=en_US touch=3 keys=1/1/2 nav=1/1 orien=2 layout=34 uiMode=17
+seq=13 FlipFont=0}
+
+</quotepara><quotepara depth="1">04-26 12:54:55.558 D/BluetoothOppBtErrorActivity( 2171): &lt;SURESH&gt;
+createView()
+
+</quotepara><quotepara depth="1">04-26 12:54:55.675 D/dalvikvm( 2171): GC_EXTERNAL_ALLOC freed 477K, 56%
+free 2566K/5703K, external 2024K/2108K, paused 115ms
+
+</quotepara><quotepara depth="1">04-26 12:54:55.742 D/AlertActivity( 2171): &lt;SURESH&gt; setupAlert()
+
+</quotepara><quotepara depth="1">04-26 12:54:55.750 D/dalvikvm(  447): GC_EXTERNAL_ALLOC freed 135K, 58%
+free 2748K/6471K, external 6890K/6903K, paused 104ms
+
+</quotepara><quotepara depth="1">04-26 12:54:55.769 D/AlertActivity( 2171): &lt;SURESH&gt; setupAlert() - finished
+
+</quotepara><quotepara depth="1">04-26 12:54:55.769 D/BluetoothOppBtErrorActivity( 2171): &lt;SURESH&gt;
+onCreate() - exiting
+
+</quotepara><quotepara depth="1">04-26 12:54:55.843 V/Mms/HVGALayoutParameters( 2215):
+HVGALayoutParameters.&lt;init&gt;(11).
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 D/Gallery ( 2014): &lt;SURESH&gt; onConfigurationChanged(1) -
+mGridLayer ==&gt; com.cooliris.media.GridLayer@405defb0
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 D/Activity( 2014): &lt;SURESH&gt; onConfigurationChanged() -
+mWindow ==&gt; com.android.internal.policy.impl.PhoneWindow@405e2dd0
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 D/Gallery ( 2014): &lt;SURESH&gt; onConfigurationChanged(2) -
+mGridLayer ==&gt; com.cooliris.media.GridLayer@405defb0
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 D/Gallery ( 2014): &lt;SURESH&gt; onConfigurationChanged(3) -
+mGridLayer ==&gt; com.cooliris.media.GridLayer@405defb0
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 D/MenuBar ( 2014): &lt;SURESH&gt; noFadeoutClose()
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 D/MenuBar ( 2014): &lt;SURESH&gt; noFadeoutClose() finished
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 D/Gallery ( 2014): &lt;SURESH&gt; onConfigurationChanged(4) -
+mGridLayer ==&gt; com.cooliris.media.GridLayer@405defb0
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 W/GLSurfaceView( 2014): &lt;SURESH&gt; requestRender()
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 W/GLSurfaceView( 2014): &lt;SURESH&gt; requestRender(1)
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 W/GLSurfaceView( 2014): &lt;SURESH&gt; requestRender(1) -
+finished
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 W/GLSurfaceView( 2014): &lt;SURESH&gt; requestRender() -
+finished
+
+</quotepara><quotepara depth="1">04-26 12:54:56.156 I/Gallery ( 2014): onConfigurationChanged
+
+</quotepara><quotepara depth="1">04-26 12:54:56.421 I/ActivityManager(  156): Process
+com.google.android.apps.maps (pid 2101) has died.
+
+</quotepara><quotepara depth="1">04-26 12:54:56.621 D/BatteryService(  156): update start
+
+</quotepara><quotepara depth="1">04-26 12:54:56.621 D/BatteryService(  156): updateBattery level:72
+scale:100 status:2 health:2 present:true voltage: 4021 temperature: 320
+technology: Li-ion AC powered:false USB powered:true icon:17302213
+
+</quotepara><quotepara depth="1">04-26 12:54:56.628 I/StatusBarPolicy(  457): BAT. S:2 H:2
+
+</quotepara><quotepara depth="1">04-26 12:54:56.933 I/ActivityManager(  156): Process
+com.google.android.googlequicksearchbox (pid 1605) has died.
+
+</quotepara><quotepara depth="1">04-26 12:54:58.261 D/dalvikvm(  156): GC_EXPLICIT freed 1668K, 46% free
+6348K/11655K, external 4923K/6046K, paused 94ms
+
+</quotepara><quotepara depth="1">04-26 12:55:00.570 W/SurfaceFlinger(  156): timeout expired
+mFreezeDisplay=0, mFreezeCount=1
+
+</quotepara><quotepara depth="1">04-26 12:55:04.023 I/WindowOrientationListener(  156): orientation
+23.465698 gives new rotation = 0
+
+</quotepara><quotepara depth="1">04-26 12:55:04.027 I/WindowManager(  156): Setting rotation to 0,
+animFlags=0
+
+</quotepara><quotepara depth="1">04-26 12:55:04.031 I/TvOut-Observer(  156): setTvoutOrientation rotation =
+ 0
+
+</quotepara><quotepara depth="1">04-26 12:55:04.031 E/TvOut-Observer(  156): SetOrientation
+
+</quotepara><quotepara depth="1">04-26 12:55:04.031 I/TvOut-Client(  156): SetOrientation +
+
+</quotepara><quotepara depth="1">04-26 12:55:04.031 I/TvOut-Client(  156): SetOrientation -
+
+</quotepara><quotepara depth="1">04-26 12:55:04.035 I/ActivityManager(  156): Config changed: { scale=1.0
+imsi=450/1 loc=en_US touch=3 keys=1/1/2 nav=1/1 orien=1 layout=34 uiMode=17
+seq=14 FlipFont=0}
+
+</quotepara><quotepara depth="1">04-26 12:55:04.070 V/Mms/HVGALayoutParameters( 2215):
+HVGALayoutParameters.&lt;init&gt;(11).
+
+</quotepara><quotepara depth="1">04-26 12:55:04.152 D/BluetoothOppBtErrorActivity( 2171): &lt;SURESH&gt;
+createView()
+
+</quotepara><quotepara depth="1">04-26 12:55:04.210 D/AlertActivity( 2171): &lt;SURESH&gt; setupAlert()
+
+</quotepara><quotepara depth="1">04-26 12:55:04.250 D/AlertActivity( 2171): &lt;SURESH&gt; setupAlert() - finished
+
+</quotepara><quotepara depth="1">04-26 12:55:04.250 D/BluetoothOppBtErrorActivity( 2171): &lt;SURESH&gt;
+onCreate() - exiting
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 D/Gallery ( 2014): &lt;SURESH&gt; onConfigurationChanged(1) -
+mGridLayer ==&gt; com.cooliris.media.GridLayer@405defb0
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 D/Activity( 2014): &lt;SURESH&gt; onConfigurationChanged() -
+mWindow ==&gt; com.android.internal.policy.impl.PhoneWindow@405e2dd0
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 D/Gallery ( 2014): &lt;SURESH&gt; onConfigurationChanged(2) -
+mGridLayer ==&gt; com.cooliris.media.GridLayer@405defb0
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 D/Gallery ( 2014): &lt;SURESH&gt; onConfigurationChanged(3) -
+mGridLayer ==&gt; com.cooliris.media.GridLayer@405defb0
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 D/MenuBar ( 2014): &lt;SURESH&gt; noFadeoutClose()
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 D/MenuBar ( 2014): &lt;SURESH&gt; noFadeoutClose() finished
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 D/Gallery ( 2014): &lt;SURESH&gt; onConfigurationChanged(4) -
+mGridLayer ==&gt; com.cooliris.media.GridLayer@405defb0
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 W/GLSurfaceView( 2014): &lt;SURESH&gt; requestRender()
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 W/GLSurfaceView( 2014): &lt;SURESH&gt; requestRender(1)
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 W/GLSurfaceView( 2014): &lt;SURESH&gt; requestRender(1) -
+finished
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 W/GLSurfaceView( 2014): &lt;SURESH&gt; requestRender() -
+finished
+
+</quotepara><quotepara depth="1">04-26 12:55:04.289 I/Gallery ( 2014): onConfigurationChanged
+
+</quotepara><quotepara depth="1">04-26 12:55:05.921 D/PowerManagerService(  156): onSensorChanged: light
+value: 5000
+
+</quotepara><quotepara depth="1">04-26 12:55:06.371 D/dalvikvm(  156): GC_EXPLICIT freed 110K, 47% free
+6268K/11655K, external 4842K/6046K, paused 81ms
+
+</quotepara><quotepara depth="1">04-26 12:55:06.667 D/BatteryService(  156): update start
+
+</quotepara><quotepara depth="1">04-26 12:55:06.675 D/BatteryService(  156): updateBattery level:73
+scale:100 status:2 health:2 present:true voltage: 4075 temperature: 330
+technology: Li-ion AC powered:false USB powered:true icon:17302213
+
+</quotepara><quotepara depth="1">04-26 12:55:06.695 I/StatusBarPolicy(  457): BAT. S:2 H:2
+
+</quotepara><quotepara depth="1">Please let me know in case of anymore information is required.
+
+</quotepara><quotepara depth="1">On Tue, Apr 26, 2011 at 8:42 AM, Dianne Hackborn &lt;<email>hack...@android.com</email>&gt;wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">What do you see in the log?
+
+</quotepara><quotepara depth="2">On Mon, Apr 25, 2011 at 7:56 AM, Suresh Pal &lt;<email>sureshchandra...@gmail.com</email>&gt;wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">I have an issue in orientation change in the Gallery application.
+Following are the steps for this issue:
+
+</quotepara><quotepara depth="3">1. Turn Flight mode on.
+2. Gallery &gt; select an image ( such that its in full screen) &gt; menu &gt;
+share &gt; bluetooth
+   It will launch the Flight mode enable popup.
+3. Now change the orientation.
+4. If you will observe it will take a lot of time in changing
+orientation for the popup.
+
+</quotepara><quotepara depth="3">Note:
+1. If you will change orientation of gallery app when the popup is not
+there, it will not take that much time.
+2. If you will change orientation of same popup in other applications
+like contact etc - it will not take that much time.
+
+</quotepara><quotepara depth="3">Here some more points -
+1. The Bluetooh popup is getting created in a
+BluetoothOppBtErrorActivity.java class. This class is not overriding
+onConfigurationChanged.
+2. Gallery application's Gallery.java class overrides
+onConfigurationChanged method as follows:
+
+</quotepara><quotepara depth="3">       super.onConfigurationChanged(newConfig);
+       if (mGridLayer != null) {
+           mGridLayer.markDirty(30);
+
+</quotepara><quotepara depth="3">           if (mGridLayer.getHud().mSelectionMenuBottom != null)
+
+</quotepara><quotepara depth="3">mGridLayer.getHud().mSelectionMenuBottom.noFadeoutClose();
+       }
+       if (mRenderView != null) {
+           mRenderView.requestRender();
+       }
+
+</quotepara><quotepara depth="3">I have absolute no idea, why the orientation change in gallery app is
+taking time.
+In my understanding, nothing wrong is there in the code.
+Please help me if someone have any idea.
+Also I have few questions :
+If there are say two activities A and B. Where A is front activity and
+does not override onConfigurationChanged method and but B overrides
+this method. then If I'll change the orientation :
+1. Will the Android system immediately restart the Activity A and with
+the orientation changed?
+2. If above is false then will the android system wait for the
+Activity B finish its onConfigurationChanged method. and then
+orientation for both activity are changed.
+
+</quotepara><quotepara depth="3">Please let me know in case of any other information is required from
+my side.
+
+</quotepara><quotefooter type="list-management" depth="3">--
+You received this message because you are subscribed to the Google Groups
+"android-platform" group.
+To post to this group, send email to <email>android-platform@googlegroups.com</email>.
+To unsubscribe from this group, send email to
+android-platform+<email>unsubscribe@googlegroups.com</email>.
+For more options, visit this group at
+<url>http://groups.google.com/group/android-platform?hl=en</url>.
+
+</quotefooter></quote><quotepara depth="2">--
+Dianne Hackborn
+Android framework engineer
+<email>hack...@android.com</email>
+
+</quotepara><quotepara depth="2">Note: please don't send private questions to me, as I don't have time to
+provide private support, and so won't reply to such e-mails.  All such
+questions should be posted on public forums, where I and others can see and
+answer them.
+
+</quotepara><quotepara depth="2"> --
+You received this message because you are subscribed to the Google Groups
+"android-platform" group.
+To post to this group, send email to <email>android-platform@googlegroups.com</email>.
+To unsubscribe from this group, send email to
+android-platform+<email>unsubscribe@googlegroups.com</email>.
+For more options, visit this group at
+<url>http://groups.google.com/group/android-platform?hl=en</url>.
+
+</quotepara></quote><quotepara depth="1">--
+
+</quotepara><quotepara depth="1">Best Wishes,
+
+</quotepara><quotepara depth="1">Suresh Pal
+
+</quotepara><quotepara depth="1">*Skype:               *suresh.pal
+
+</quotepara><quotepara depth="1">*Gtalk:*                sapient.suresh
+
+</quotepara><quotepara depth="1">*Facebook:*
+<url>http://www.facebook.com/people/Suresh-Chandra-Pal/676583036</url>
+
+</quotepara><quotepara depth="1">*LinkedIn: *         <url>http://www.linkedin.com/in/sapientsuresh</url>
+
+</quotepara><quotepara depth="1">*Blogs:  *              <url>http://www.sapientsuresh.blogspot.com</url>
+
+</quotepara><quotepara depth="1">*Twitter: *            <url>http://twitter.com/sapientsuresh</url>
+
+</quotepara><quotepara depth="1">*Google Profile:  *<url>http://www.google.com/profiles/sapient.suresh</url>
+
+</quotepara><quotepara depth="1"> --
+You received this message because you are subscribed to the Google Groups
+"android-platform" group.
+To post to this group, send email to <email>android-platform@googlegroups.com</email>.
+To unsubscribe from this group, send email to
+android-platform+<email>unsubscribe@googlegroups.com</email>.
+For more options, visit this group at
+<url>http://groups.google.com/group/android-platform?hl=en</url>.
+
+</quotepara></quote><footer type="signature" depth="0" hash="1885496641692675053">-- 
+Dianne Hackborn
+Android framework engineer
+<email>hack...@android.com</email>
+
+</footer><para depth="0">Note: please don't send private questions to me, as I don't have time to
+provide private support, and so won't reply to such e-mails.  All such
+questions should be posted on public forums, where I and others can see and
+answer them.
+</para></body></message>

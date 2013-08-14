@@ -1,0 +1,24 @@
+<message message-id="12963.1200011400@sss.pgh.pa.us" list="org.postgresql.pgsql-admin" id="24byyvu4m5pb2syd" type="general" date="2008-01-10T19:30:00-05:00" year="2008-01-01" year-month="2008-01-01" year-month-day="2008-01-10" thread-id="4omqiaji734u6yoo"><headers><envelope-from-line>From pgsql-admin-owner@postgresql.org  Thu Jan 10 20:30:14 2008</envelope-from-line><from personal="Tom Lane" address="tgl@sss.pgh.pa.us">Tom Lane &lt;tgl@sss.pgh.pa.us&gt;</from><to personal="Joshua D. Drake" address="jd@commandprompt.com">"Joshua D. Drake" &lt;jd@commandprompt.com&gt;</to><cc personal="Andy Shellam" address="andy.shellam-lists@mailnetwork.co.uk">Andy Shellam &lt;andy.shellam-lists@mailnetwork.co.uk&gt;</cc><subject normal="8.3 RC1 - Logging and filenames">Re: 8.3 RC1 - Logging and filenames </subject><received>from localhost (unknown [200.46.204.191])
+	by postgresql.org (Postfix) with ESMTP id 3AF4B2E2EE1
+	for &lt;pgsql-admin-postgresql.org@postgresql.org&gt;; Thu, 10 Jan 2008 20:30:12 -0400 (AST)</received><received>from postgresql.org ([200.46.204.71])
+ by localhost (mx1.hub.org [200.46.204.191]) (amavisd-maia, port 10024)
+ with ESMTP id 73945-09 for &lt;pgsql-admin-postgresql.org@postgresql.org&gt;;
+ Thu, 10 Jan 2008 20:30:02 -0400 (AST)</received><received>from sss.pgh.pa.us (sss.pgh.pa.us [66.207.139.130])
+	by postgresql.org (Postfix) with ESMTP id 158252E109C
+	for &lt;pgsql-admin@postgresql.org&gt;; Thu, 10 Jan 2008 20:30:02 -0400 (AST)</received><received>from sss2.sss.pgh.pa.us (tgl@localhost [127.0.0.1])
+	by sss.pgh.pa.us (8.14.1/8.14.1) with ESMTP id m0B0U0Qd012964;
+	Thu, 10 Jan 2008 19:30:00 -0500 (EST)</received><in-reply-to>&lt;20080110162258.4b0d4991@commandprompt.com&gt; </in-reply-to><references>&lt;33671a790801101445j7f3c8644wf41c1e6fced8bedc@mail.gmail.com&gt; &lt;12716.1200010137@sss.pgh.pa.us&gt; &lt;20080110162258.4b0d4991@commandprompt.com&gt;</references><comments>In-reply-to "Joshua D. Drake" &lt;jd@commandprompt.com&gt;
+	message dated "Thu, 10 Jan 2008 16:22:58 -0800"</comments><date>Thu, 10 Jan 2008 19:30:00 -0500</date><message-id>12963.1200011400@sss.pgh.pa.us</message-id><x-virus-scanned>Maia Mailguard 1.0.1</x-virus-scanned><x-archive-number>200801/116</x-archive-number><x-sequence-number>27890</x-sequence-number></headers><normalized-references><normalized-message-id>12963.1200011400@sss.pgh.pa.us</normalized-message-id><normalized-in-reply-to>20080110162258.4b0d4991@commandprompt.com</normalized-in-reply-to><normalized-reference>33671a790801101445j7f3c8644wf41c1e6fced8bedc@mail.gmail.com</normalized-reference><normalized-reference>12716.1200010137@sss.pgh.pa.us</normalized-reference><normalized-reference>20080110162258.4b0d4991@commandprompt.com</normalized-reference></normalized-references><body type="text/plain"><para depth="0">"Joshua D. Drake" &lt;<email>jd@commandprompt.com</email>&gt; writes:
+</para><quote depth="1"><quotepara depth="1">Tom Lane &lt;<email>tgl@sss.pgh.pa.us</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">You don't really have any choice about the matter --- Postgres will
+not use a single fixed filename because that would be guaranteed to
+lose log entries across a rotation.
+</quotepara></quote></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Unless he is using syslog?
+</quotepara></quote><para depth="0">
+True, if you really dislike the way that the built-in log collector
+works, syslog is probably your best alternative.
+
+</para><footer type="signature" hash="10356605740757837166" depth="0">			regards, tom lane
+
+</footer></body></message>

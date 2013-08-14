@@ -1,0 +1,45 @@
+<message message-id="ptOdnfCi4K4IV1_UnZ2dnUVZ_rPinZ2d@mozilla.org" list="org.mozilla.lists.support-seamonkey" id="24btttmkcqypgbnr" type="users" date="2009-03-19T17:43:32-05:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-19" thread-id="24btttmkcqypgbnr"><headers><envelope-from-line>Thu Mar 19 14:45:31 2009</envelope-from-line><from personal="HeavyDuty" address="HeavyDuty@nospamdomain.com">HeavyDuty &lt;HeavyDuty@nospamdomain.com&gt;</from><to personal="support-seamonkey@lists.mozilla.org" address="support-seamonkey@lists.mozilla.org">support-seamonkey@lists.mozilla.org</to><subject normal="About NSCopy and NSMail">About NSCopy and NSMail</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 144
+          for &lt;al.weaver.kirk@a.markmail.org&gt;;
+          Thu, 19 Mar 2009 14:45:31 -0800 (GMT-08:00)</received><received>from lists.mozilla.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 941C12908005
+	for &lt;al.weaver.kirk@a.markmail.org&gt;; Thu, 19 Mar 2009 15:45:08 -0700 (PDT)</received><x-virus-scanned>amavisd-new at mozilla.org</x-virus-scanned><received>from notorious.mozilla.org (localhost.localdomain [127.0.0.1])
+	by lists.mozilla.org (Postfix) with ESMTP id 76084582D2
+	for &lt;al.weaver.kirk@a.markmail.org&gt;; Thu, 19 Mar 2009 15:45:31 -0700 (PDT)</received><path>Xl.tags.giganews.com!border1.nntp.dca.giganews.com!nntp.giganews.com!local01.nntp.dca.giganews.com!nntp.mozilla.org!news.mozilla.org.POSTED!not-for-mail</path><nntp-posting-date>Thu, 19 Mar 2009 17:43:32 -0500</nntp-posting-date><date>Thu, 19 Mar 2009 17:43:32 -0500</date><user-agent>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US;
+	rv:1.8.1.19) Gecko/20081204 SeaMonkey/1.1.14</user-agent><mime-version>1.0</mime-version><newsgroups>mozilla.support.seamonkey</newsgroups><x-antivirus>avast! (VPS 090319-0, 03/19/2009), Outbound message</x-antivirus><x-antivirus-status>Clean</x-antivirus-status><message-id>ptOdnfCi4K4IV1_UnZ2dnUVZ_rPinZ2d@mozilla.org</message-id><lines>28</lines><x-usenet-provider>http://www.giganews.com</x-usenet-provider><nntp-posting-host>64.199.63.18</nntp-posting-host><x-authenticatedusername>NoAuthUser</x-authenticatedusername><x-trace>sv3-4sMKdlYXvhDi3pnjkct8izY6chuQGeTDkUaaC9uqwN9QC+vppvw4/q5SUcdOYyQ3Cnsoete9u80MRMh!DQwbF1Hv13pFwk8J+MivqOeDoAYmnMPIOXac6oW0RZSfzHlto/vEsMQVUvJ9bYVwJRQGZ+9pJ6VU!kreS30uRA94=</x-trace><x-complaints-to>abuse@mozilla.org</x-complaints-to><x-dmca-complaints-to>abuse@mozilla.org</x-dmca-complaints-to><x-abuse-and-dmca-info>Please be sure to forward a copy of ALL headers</x-abuse-and-dmca-info><x-abuse-and-dmca-info>Otherwise we will be unable to process your complaint
+	properly</x-abuse-and-dmca-info><x-postfilter>1.3.39</x-postfilter><bytes>2638</bytes><xref>number1.nntp.dca.giganews.com mozilla.support.seamonkey:37868</xref><x-beenthere>support-seamonkey@lists.mozilla.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><list-id>Support for the SeaMonkey Application Suite
+	&lt;support-seamonkey.lists.mozilla.org&gt;</list-id><list-unsubscribe>&lt;https://lists.mozilla.org/options/support-seamonkey&gt;,
+	&lt;mailto:support-seamonkey-request@lists.mozilla.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:support-seamonkey@lists.mozilla.org&gt;</list-post><list-help>&lt;mailto:support-seamonkey-request@lists.mozilla.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.mozilla.org/listinfo/support-seamonkey&gt;,
+	&lt;mailto:support-seamonkey-request@lists.mozilla.org?subject=subscribe&gt;</list-subscribe><content-transfer-encoding>7bit</content-transfer-encoding><content-type>text/plain; charset="us-ascii"; Format="flowed"</content-type><sender>support-seamonkey-bounces+al.weaver.kirk=a.markmail.org@lists.mozilla.org</sender><errors-to>support-seamonkey-bounces+al.weaver.kirk=a.markmail.org@lists.mozilla.org</errors-to></headers><normalized-references><normalized-message-id>ptOdnfCi4K4IV1_UnZ2dnUVZ_rPinZ2d@mozilla.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;; format=&quot;flowed&quot;"><para depth="0">Win XP Pro SP3 SM 1.1.14
+
+</para><para depth="0">Today I got a send error stating that my message could not 
+be copied to the sent box. When looking at local 
+settings\temp I observed iterations of NSCopy.tmp and 
+NSCopy1.tmp. Both with 0 bits/bytes.
+
+</para><para depth="0">I also have had a lot of trouble sending out multiple 
+recipient e-mails with attachment because NSMail*.tmp either 
+gets scrambled or will not be automatically deleted and 
+therefore SM refuses to let me send. The message is "....can 
+not attach files...." The files mentioned are a combination 
+of jpgs embedded in a html composed e-mail and an 
+attachment, usually a pdf I an trying to send. After that, 
+the jpgs sometimes disappear from the e-mail compose page 
+itself, leaving an empty insert window. I always have to 
+cancel the send.
+I am guessing that means wherever (elsewhere) SM assembles 
+the e-mail is also messed up.  The e-mail also cannot be 
+saved as a draft or template. Sometimes I have to close out 
+of SM mail client altogether before I can manually delete 
+these tmp files. Once the .tmps are gone, I can start over 
+again/continue.
+
+</para><para depth="0">I do not think it is something to work around (except save 
+files first as drafts or templates--which I do), but I think 
+it is a bug. Have these NS^.tmp issues been addressed 
+someplace? Will Seamonkey 2x handle smtp mail differently?
+</para><footer type="list-management" depth="0">_______________________________________________
+support-seamonkey mailing list
+<email>support-seamonkey@lists.mozilla.org</email>
+<url>https://lists.mozilla.org/listinfo/support-seamonkey</url>
+</footer></body></message>

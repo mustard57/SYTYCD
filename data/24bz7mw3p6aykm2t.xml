@@ -1,0 +1,43 @@
+<message message-id="32295407.5971270943681054.JavaMail.jira@thor" list="org.apache.commons.issues" id="24bz7mw3p6aykm2t" type="bugs" date="2010-04-10T19:54:41-04:00" year="2010-01-01" year-month="2010-04-01" year-month-day="2010-04-10" thread-id="zzy62auxoiksike7"><headers><envelope-from-line>Sat Apr 10 16:00:53 2010</envelope-from-line><from personal="Sebb (JIRA)" address="jira@apache.org">"Sebb (JIRA)" &lt;jira@apache.org&gt;</from><to personal="issues@commons.apache.org" address="issues@commons.apache.org">issues@commons.apache.org</to><subject normal="[jira] Commented: (POOL-155) ObjectPool.invalidateObject(object) should throw an Exception if object is null">[jira] Commented: (POOL-155) ObjectPool.invalidateObject(object) should throw an Exception if object is null</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 713
+          for &lt;orval.downs.valentine@a.markmail.org&gt;;
+          Sat, 10 Apr 2010 16:00:53 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 1E2A53B300B8
+	for &lt;orval.downs.valentine@a.markmail.org&gt;; Sat, 10 Apr 2010 17:00:30 -0700 (PDT)</received><received>(qmail 13795 invoked by uid 500); 11 Apr 2010 00:00:52 -0000</received><mailing-list>contact issues-help@commons.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:issues-help@commons.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@commons.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:issues@commons.apache.org&gt;</list-post><list-id>&lt;issues.commons.apache.org&gt;</list-id><reply-to>issues@commons.apache.org</reply-to><delivered-to>mailing list issues@commons.apache.org</delivered-to><received>(qmail 13787 invoked by uid 99); 11 Apr 2010 00:00:52 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sun, 11 Apr 2010 00:00:52 +0000</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.22] (HELO thor.apache.org) (140.211.11.22)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sun, 11 Apr 2010 00:00:50 +0000</received><received>from thor (localhost [127.0.0.1])
+	by thor.apache.org (8.13.8+Sun/8.13.8) with ESMTP id o3ANsfpr006802
+	for &lt;issues@commons.apache.org&gt;; Sat, 10 Apr 2010 19:54:41 -0400 (EDT)</received><message-id>32295407.5971270943681054.JavaMail.jira@thor</message-id><date>Sat, 10 Apr 2010 19:54:41 -0400 (EDT)</date><in-reply-to>&lt;1413793048.262391263556194429.JavaMail.jira@brutus.apache.org&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-jira-fingerprint>30527f35849b9dde25b450d4833f0394</x-jira-fingerprint><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>32295407.5971270943681054.JavaMail.jira@thor</normalized-message-id><normalized-in-reply-to>1413793048.262391263556194429.JavaMail.jira@brutus.apache.org</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+    [<br/><url>https://issues.apache.org/jira/browse/POOL-155?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&amp;focusedCommentId=12855657#action_12855657</url><br/>] 
+
+</para><para depth="0">Sebb commented on POOL-155:
+</para><footer type="noise" depth="0">---------------------------
+
+</footer><para depth="0">I just meant that if the pool was told that factories could never return null,<br/>then it could legitimately reject null as a returned object.
+
+</para><quote depth="1"><quotepara depth="1">ObjectPool.invalidateObject(object) should throw an Exception if object is null
+</quotepara><quotepara depth="1">-------------------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: POOL-155
+                URL: <url>https://issues.apache.org/jira/browse/POOL-155</url>
+            Project: Commons Pool
+         Issue Type: Improvement
+   Affects Versions: 1.0, 1.0.1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.5.1, 1.5.2, 1.5.3,<br/>1.5.4
+           Reporter: Sebb
+            Fix For: 1.5.5
+
+</quotepara><quotepara depth="1">ObjectPool.invalidateObject(object) should throw an Exception if object is null,<br/>otherwise the numActive count can get out of synch.
+It's easy to do this by mistake, see:
+<url>http://markmail.org/thread/ya22ihmghejbfzme</url>
+Also, the documentation for ObjectPool needs to be updated to clarify that<br/>invalidateObject should only be called if the object failed, not the borrow.
+[I'll do this shortly]
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="8049360119079121563">-- 
+This message is automatically generated by JIRA.
+-
+If you think it was sent incorrectly contact one of the administrators:<br/><url>https://issues.apache.org/jira/secure/Administrators.jspa</url>
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer></body></message>

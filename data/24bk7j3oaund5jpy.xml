@@ -1,0 +1,66 @@
+<message message-id="Pine.LNX.4.62.0504202018570.18797@calcutta.sghosh.org" list="net.clamav.lists.clamav-users" id="24bk7j3oaund5jpy" type="users" date="2005-04-20T20:20:22-04:00" year="2005-01-01" year-month="2005-04-01" year-month-day="2005-04-20" thread-id="24bk7j3oaund5jpy"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Subhendu Ghosh" address="sghosh@sghosh.org">Subhendu Ghosh &lt;sghosh@sghosh.org&gt;</from><subject normal="milter in error state">Re: milter in error state</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.security.virus.clamav.user</newsgroups><date>Wed, 20 Apr 2005 20:20:22 -0400 (EDT)</date><lines>53</lines><approved>news@gmane.org</approved><message-id>Pine.LNX.4.62.0504202018570.18797@calcutta.sghosh.org</message-id><references>&lt;021201c54570$913a54e0$c9010180@psv&gt;&lt;Pine.LNX.4.62.0504201911460.18797@calcutta.sghosh.org&gt;&lt;005901c54600$6b37f1e0$c9010180@psv&gt;
+	&lt;Pine.LNX.4.62.0504201934000.18797@calcutta.sghosh.org&gt;
+	&lt;010501c54602$f62f48a0$c9010180@psv&gt;</references><reply-to>ClamAV users ML &lt;clamav-users@lists.clamav.net&gt;</reply-to><nntp-posting-host>main.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII; format=flowed</content-type><x-trace>sea.gmane.org 1114042587 25869 80.91.229.2 (21 Apr 2005 00:16:27 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Thu, 21 Apr 2005 00:16:27 +0000 (UTC)</nntp-posting-date><original-x-from>clamav-users-bounces@lists.clamav.net Thu Apr 21 02:16:24 2005</original-x-from><return-path>clamav-users-bounces@lists.clamav.net</return-path><original-received>from aj.catt.com ([64.18.103.6])
+	by ciao.gmane.org with esmtp (Exim 4.43)
+	id 1DOPMk-0002m1-9q
+	for gcsvcu-users-867@gmane.org; Thu, 21 Apr 2005 02:16:22 +0200</original-received><original-received>from aj.catt.com (localhost [127.0.0.1])
+	by aj.catt.com (Postfix) with ESMTP id CAC621563A1;
+	Wed, 20 Apr 2005 20:19:50 -0400 (EDT)</original-received><original-received>from rwcrmhc13.comcast.net (rwcrmhc13.comcast.net [204.127.198.39])
+	by aj.catt.com (Postfix) with ESMTP id 0BB1C10B249
+	for &lt;clamav-users@lists.clamav.net&gt;;
+	Wed, 20 Apr 2005 20:19:42 -0400 (EDT)</original-received><original-received>from calcutta.sghosh.org ([68.36.174.126])
+	by comcast.net (rwcrmhc13) with ESMTP
+	id &lt;2005042100202501500f21jve&gt;; Thu, 21 Apr 2005 00:20:25 +0000</original-received><original-received>from localhost (sghosh@localhost)
+	by calcutta.sghosh.org (8.11.6/) with ESMTP id j3L0KMe00357
+	for &lt;clamav-users@lists.clamav.net&gt;; Wed, 20 Apr 2005 20:20:24 -0400</original-received><original-to>ClamAV users ML &lt;clamav-users@lists.clamav.net&gt;</original-to><in-reply-to>&lt;010501c54602$f62f48a0$c9010180@psv&gt;</in-reply-to><x-beenthere>clamav-users@lists.clamav.net</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>ClamAV users ML &lt;clamav-users.lists.clamav.net&gt;</list-id><list-unsubscribe>&lt;http://lists.clamav.net/cgi-bin/mailman/listinfo/clamav-users&gt;,
+	&lt;mailto:clamav-users-request@lists.clamav.net?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:clamav-users@lists.clamav.net&gt;</list-post><list-help>&lt;mailto:clamav-users-request@lists.clamav.net?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.clamav.net/cgi-bin/mailman/listinfo/clamav-users&gt;,
+	&lt;mailto:clamav-users-request@lists.clamav.net?subject=subscribe&gt;</list-subscribe><original-sender>clamav-users-bounces@lists.clamav.net</original-sender><errors-to>clamav-users-bounces@lists.clamav.net</errors-to><xref>news.gmane.org gmane.comp.security.virus.clamav.user:17722</xref><x-report-spam>http://spam.gmane.org/gmane.comp.security.virus.clamav.user:17722</x-report-spam></headers><normalized-references><normalized-message-id>Pine.LNX.4.62.0504202018570.18797@calcutta.sghosh.org</normalized-message-id><normalized-in-reply-to>010501c54602$f62f48a0$c9010180@psv</normalized-in-reply-to><normalized-reference>021201c54570$913a54e0$c9010180@psv&gt;&lt;Pine.LNX.4.62.0504201911460.18797@calcutta.sghosh.org&gt;&lt;005901c54600$6b37f1e0$c9010180@psv</normalized-reference><normalized-reference>Pine.LNX.4.62.0504201934000.18797@calcutta.sghosh.org</normalized-reference><normalized-reference>010501c54602$f62f48a0$c9010180@psv</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">
+does the path to the socket match between sendmail and clamav-milter ?
+permissions on socket?
+
+</para><para depth="0">On Thu, 21 Apr 2005, Pete Sherwin S. Villanueva wrote:
+
+</para><quote depth="1"><quotepara depth="1">The INPUT_MAIL_FILTER is in one line.....i comment out this line
+define(`confINPUT_MAIL_FILTERS', `clmilter')
+but still error occured.
+
+</quotepara><quote depth="2"><quotefooter type="list-management" hash="524550236064921500" depth="2">----- Original Message -----
+From: "Subhendu Ghosh" &lt;<email>sghosh@sghosh.org</email>&gt;
+To: "ClamAV users ML" &lt;<email>clamav-users@lists.clamav.net</email>&gt;
+Sent: Thursday, April 21, 2005 7:38 AM
+Subject: Re: [Clamav-users] milter in error state
+
+</quotefooter><quote depth="3"><quotepara depth="3">On Thu, 21 Apr 2005, Pete Sherwin S. Villanueva wrote:
+
+</quotepara><quote depth="4"><quotepara depth="4">i did add this line to my sendmail.mc and recompile it.
+
+</quotepara><quotepara depth="4">INPUT_MAIL_FILTER(`clmilter',`S=local:/var/run/clmilter.sock, F=,
+T=S:4m;R:4m')dnl
+define(`confINPUT_MAIL_FILTERS', `clmilter')
+</quotepara></quote><quotepara depth="3">
+The INPUT_MAIL_FILTER should be one line (assuming email wrap)
+
+</quotepara><quotepara depth="3">Delete the "define(.." entry
+It effectively remove the defininition from the line above.  not what you
+want.
+(ref: <url>http://www.sendmail.org/m4/adding_mailfilters.html</url>)
+
+</quotepara><quotepara depth="3">recompile sendmail.mc and restart sendmail.
+
+</quotepara><quotepara depth="3">The clamav-milter docs need to be updated.
+
+</quotepara><quotefooter type="signature" hash="10444976109700792639" depth="3">--
+
+</quotefooter><quotepara depth="3">-sg
+</quotepara><quotefooter type="list-management" hash="7314017611164295222" depth="3">_______________________________________________
+<url>http://lurker.clamav.net/list/clamav-users.html</url>
+</quotefooter></quote><quotepara depth="2">
+</quotepara><quotefooter type="list-management" hash="17543273508892690880" depth="2">_______________________________________________
+<url>http://lurker.clamav.net/list/clamav-users.html</url>
+
+</quotefooter></quote><quotefooter type="signature" hash="5981062797280963161" depth="1">-- 
+
+</quotefooter><quotefooter type="list-management" hash="17543273508892690880" depth="1">_______________________________________________
+<url>http://lurker.clamav.net/list/clamav-users.html</url>
+
+</quotefooter></quote></body></message>

@@ -1,0 +1,40 @@
+<message message-id="4AA6B4F3.100@justinshore.com" list="edu.merit.nanog" id="24blqssqhve663tc" type="general" date="2009-09-08T14:48:03-05:00" year="2009-01-01" year-month="2009-09-01" year-month-day="2009-09-08" thread-id="lslsdsfihal7ouz6"><headers><envelope-from-line>Tue Sep 08 11:49:41 2009</envelope-from-line><from personal="Justin Shore" address="justin@justinshore.com">Justin Shore &lt;justin@justinshore.com&gt;</from><to personal="Jason Bertoch" address="jason@i6ix.com">Jason Bertoch &lt;jason@i6ix.com&gt;</to><cc personal="nanog@nanog.org" address="nanog@nanog.org">nanog@nanog.org</cc><subject normal="Repeated Blacklisting / IP reputation">Re: Repeated Blacklisting / IP reputation</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 386
+          for &lt;nanog3132008@a.markmail.org&gt;;
+          Tue, 8 Sep 2009 11:49:40 -0800 (GMT-08:00)</received><received>from s0.nanog.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id A2B89290827E
+	for &lt;nanog3132008@a.markmail.org&gt;; Tue,  8 Sep 2009 12:49:17 -0700 (PDT)</received><received>from localhost ([::1] helo=s0.nanog.org)
+	by s0.nanog.org with esmtp (Exim 4.68 (FreeBSD))
+	(envelope-from &lt;nanog-bounces@nanog.org&gt;)
+	id 1Ml6gT-0000Le-Ng; Tue, 08 Sep 2009 19:48:57 +0000</received><received>from perseus.hoah.net ([64.71.97.21])
+	by s0.nanog.org with esmtp (Exim 4.68 (FreeBSD))
+	(envelope-from &lt;justin@justinshore.com&gt;) id 1Ml6gJ-000095-4r
+	for nanog@nanog.org; Tue, 08 Sep 2009 19:48:47 +0000</received><received>from [10.0.10.43] ([64.71.96.126]) (authenticated bits=0)
+	by perseus.hoah.net (8.13.8/8.13.8) with ESMTP id n88JqhUK006843
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO);
+	Tue, 8 Sep 2009 14:52:48 -0500</received><message-id>4AA6B4F3.100@justinshore.com</message-id><date>Tue, 08 Sep 2009 14:48:03 -0500</date><user-agent>Thunderbird 2.0.0.23 (Windows/20090812)</user-agent><mime-version>1.0</mime-version><references>&lt;148476.263921252421878121.JavaMail.root@zimbra&gt;	&lt;4AA67551.3050402@gmail.com&gt;	&lt;CF5DAECD-A155-47AC-9759-913FCF77FAD8@arin.net&gt;	&lt;bb0e440a0909081053o7b68fd52odb54e93e23424e8d@mail.gmail.com&gt;
+	&lt;4AA69B9F.1000500@i6ix.com&gt;</references><in-reply-to>&lt;4AA69B9F.1000500@i6ix.com&gt;</in-reply-to><content-type>text/plain; charset=UTF-8; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-spam-score>undef - spam scanning disabled</x-spam-score><x-canitpro-stream>outgoing (inherits from default)</x-canitpro-stream><x-canit-stats-id>Bayes signature not available</x-canit-stats-id><x-scanned-by>CanIt (www . roaringpenguin . com) on 64.71.97.21</x-scanned-by><x-beenthere>nanog@nanog.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>North American Network Operators Group &lt;nanog.nanog.org&gt;</list-id><list-unsubscribe>&lt;http://mailman.nanog.org/mailman/listinfo/nanog&gt;,
+	&lt;mailto:nanog-request@nanog.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mailman.nanog.org/mailman/nanog&gt;</list-archive><list-post>&lt;mailto:nanog@nanog.org&gt;</list-post><list-help>&lt;mailto:nanog-request@nanog.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mailman.nanog.org/mailman/listinfo/nanog&gt;,
+	&lt;mailto:nanog-request@nanog.org?subject=subscribe&gt;</list-subscribe><errors-to>nanog-bounces+nanog3132008=a.markmail.org@nanog.org</errors-to></headers><normalized-references><normalized-message-id>4AA6B4F3.100@justinshore.com</normalized-message-id><normalized-in-reply-to>4AA69B9F.1000500@i6ix.com</normalized-in-reply-to><normalized-reference>148476.263921252421878121.JavaMail.root@zimbra</normalized-reference><normalized-reference>4AA67551.3050402@gmail.com</normalized-reference><normalized-reference>CF5DAECD-A155-47AC-9759-913FCF77FAD8@arin.net</normalized-reference><normalized-reference>bb0e440a0909081053o7b68fd52odb54e93e23424e8d@mail.gmail.com</normalized-reference><normalized-reference>4AA69B9F.1000500@i6ix.com</normalized-reference></normalized-references><body type="text/plain; charset=utf-8; format=flowed"><para depth="0">Jason Bertoch wrote:
+</para><quote depth="1"><quotepara depth="1">Suresh Ramasubramanian wrote:
+</quotepara><quote depth="2"><quotepara depth="2">That said most of the larger players already attend MAAWG - that
+leaves rural ISPs, small universities, corporate mailservers etc etc
+that dont have full time postmasters, and where you're more likely to
+run into this issue.
+
+</quotepara></quote><quotepara depth="1">I've found the opposite to hold true more often.  Smaller organizations 
+can use public blacklists for free, due to their low volume, and so have 
+little incentive to run their own local blacklist.  I've typically seen 
+the larger organizations run their own blacklists and are much more 
+difficult to contact for removal.
+</quotepara></quote><para depth="0">
+Take for example GoDaddy's hosted email service.  They are using a 
+local, outdated copy of SORBS that has one of my personal servers listed 
+in it.  It was an open proxy for about week nearly 3 years ago and still 
+they have it listed.  The upside is that I've demonstrated GoDaddy's 
+email incompetence to potential customers and gotten them to switch to 
+our own mail services.  Their loss, my gain.
+
+</para><para depth="0">Justin
+
+</para></body></message>

@@ -1,0 +1,50 @@
+<message message-id="ac3eb2511002030904k134311a5rdb8c5040f51888c8@mail.gmail.com" list="org.kernel.vger.linux-hotplug" id="24br5ov2ka5c4n7j" type="development" date="2010-02-03T09:04:21.693545-08:00" year="2010-01-01" year-month="2010-02-01" year-month-day="2010-02-03" thread-id="cfh32ewgw3rnljvj"><headers><envelope-from-line>Wed Feb 03 09:04:44 2010</envelope-from-line><from personal="Kay Sievers" address="kay.sievers@vrfy.org">Kay Sievers &lt;kay.sievers@vrfy.org&gt;</from><to personal="Lukáš Karas" address="lukas.karas@centrum.cz">"Lukáš Karas" &lt;lukas.karas@centrum.cz&gt;</to><cc personal="linux-hotplug@vger.kernel.org" address="linux-hotplug@vger.kernel.org">linux-hotplug@vger.kernel.org</cc><subject normal="new udev rule proposal for m5602 camera">Re: new udev rule proposal for m5602 camera</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 307
+          for &lt;archive.user.71310@a.markmail.org&gt;;
+          Wed, 3 Feb 2010 09:04:44 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 539E92908507
+	for &lt;archive.user.71310@a.markmail.org&gt;; Wed,  3 Feb 2010 09:04:21 -0800 (PST)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S932549Ab0BCREn (ORCPT
+	&lt;rfc822;archive.user.71310@a.markmail.org&gt;);
+	Wed, 3 Feb 2010 12:04:43 -0500</received><received>from mail-bw0-f219.google.com ([209.85.218.219]:40695 "EHLO
+	mail-bw0-f219.google.com" rhost-flags-OK-OK-OK-OK) by vger.kernel.org
+	with ESMTP id S932561Ab0BCREn convert rfc822-to-8bit (ORCPT
+	&lt;rfc822;linux-hotplug@vger.kernel.org&gt;);
+	Wed, 3 Feb 2010 12:04:43 -0500</received><received>by bwz19 with SMTP id 19so230073bwz.28
+        for &lt;linux-hotplug@vger.kernel.org&gt;; Wed, 03 Feb 2010 09:04:41 -0800 (PST)</received><mime-version>1.0</mime-version><received>by 10.204.9.153 with SMTP id l25mr716181bkl.208.1265216681722; Wed, 
+	03 Feb 2010 09:04:41 -0800 (PST)</received><in-reply-to>&lt;201002031714.23685.lukas.karas@centrum.cz&gt;</in-reply-to><references>&lt;201002031714.23685.lukas.karas@centrum.cz&gt;</references><date>Wed, 3 Feb 2010 18:04:25 +0100</date><message-id>ac3eb2511002030904k134311a5rdb8c5040f51888c8@mail.gmail.com</message-id><content-type>text/plain; charset=UTF-8</content-type><sender>linux-hotplug-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;linux-hotplug.vger.kernel.org&gt;</list-id><x-mailing-list>linux-hotplug@vger.kernel.org</x-mailing-list><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>ac3eb2511002030904k134311a5rdb8c5040f51888c8@mail.gmail.com</normalized-message-id><normalized-in-reply-to>201002031714.23685.lukas.karas@centrum.cz</normalized-in-reply-to><normalized-reference>201002031714.23685.lukas.karas@centrum.cz</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">2010/2/3 Lukáš Karas &lt;<email>lukas.karas@centrum.cz</email>&gt;:
+</para><quote depth="1"><quotepara depth="1">new kernel (&gt;2.6.33-rc1) failed suspend to ram with my build in camera
+(0402:5602). For more information see bug
+<url>http://bugzilla.kernel.org/show_bug.cgi?id=15189</url>
+
+</quotepara><quotepara depth="1">Solution is simple udev rule, that disable wakeup from this ugly hardware:
+
+</quotepara><quotepara depth="1">## m5602 camera defends to successful suspend
+ATTR{idVendor}=="0402", ATTR{idProduct}=="5602", ATTR{power/wakeup}="disabled"
+</quotepara></quote><para depth="0">
+So far, quirk handling is maintained inside the kernel drivers. Up
+until now, udev does not carry any entries like this for any
+subsystem. If that should change, it would need commitment from the
+video4linux maintainers to maintain the udev rules entries instead of
+the in-kernel quirks.
+
+</para><para depth="0">We can not just add entries like this to the udev repository, because
+nobody will care about and maintain them when things change, and only
+the v4l developers have knowledge about what is needed here for which
+kernel driver release, or the current state of the video4linux
+subsystem.
+
+</para><para depth="0">I guess, if quirk handling in general, is supposed to live in
+userspace instead of the kernel, this informations needs to be shipped
+with the kernel itself and somehow exported to udev rules when needed,
+otherwise we will end up with a huge pile of random rules, nobody
+really knows what they are good for, or if they are still needed.
+
+</para><para depth="0">Thanks for the mail, and sorry, that there is no immediate solution to
+your problem,
+Kay
+</para><footer type="list-management" depth="0">--
+To unsubscribe from this list: send the line "unsubscribe linux-hotplug" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+</footer></body></message>

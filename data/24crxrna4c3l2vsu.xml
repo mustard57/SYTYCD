@@ -1,0 +1,49 @@
+<message message-id="20100330080159.7570.qmail@dev.java.net" list="net.java.dev.maven2-repository.commits" id="24crxrna4c3l2vsu" no-archive="yes" type="checkins" date="2010-03-30T00:01:37.31796-08:00" year="2010-01-01" year-month="2010-03-01" year-month-day="2010-03-30" thread-id="24crxrna4c3l2vsu"><headers><envelope-from-line>Tue Mar 30 00:02:00 2010</envelope-from-line><from personal="jfarcand@dev.java.net" address="jfarcand@dev.java.net">jfarcand@dev.java.net</from><to personal="commits@maven2-repository.dev.java.net" address="commits@maven2-repository.dev.java.net">commits@maven2-repository.dev.java.net</to><subject normal="svn commit: r2098169 - trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6">svn commit: r2098169 - trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 283
+          for &lt;cindy.hensley.frank@a.markmail.org&gt;;
+          Tue, 30 Mar 2010 00:02:00 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id E484C2908426
+	for &lt;cindy.hensley.frank@a.markmail.org&gt;; Tue, 30 Mar 2010 01:01:36 -0700 (PDT)</received><received>(qmail 7595 invoked by uid 5000); 30 Mar 2010 08:01:59 -0000</received><mailing-list>contact commits-help@maven2-repository.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:commits-help@maven2-repository.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@maven2-repository.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:commits@maven2-repository.dev.java.net&gt;</list-post><reply-to>commits@maven2-repository.dev.java.net</reply-to><delivered-to>mailing list commits@maven2-repository.dev.java.net</delivered-to><received>(qmail 7575 invoked by uid 5000); 30 Mar 2010 08:01:59 -0000</received><date>30 Mar 2010 08:01:59 -0000</date><message-id>20100330080159.7570.qmail@dev.java.net</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20100330080159.7570.qmail@dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: jfarcand
+Date: 2010-03-30 08:01:57+0000
+New Revision: 2098169
+
+</para><para depth="0">Modified:
+   trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar
+   trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.md5
+   trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.sha1
+
+</para><para depth="0">Log:
+Upload by wagon-svn
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar?view=diff&amp;rev=2098169&amp;p1=trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar&amp;p2=trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar&amp;r1=2098168&amp;r2=2098169</url>
+==============================================================================
+Binary files<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar<br/>(original) and<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar<br/>2010-03-30 08:01:57+0000 differ
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.md5
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.md5?view=diff&amp;rev=2098169&amp;p1=trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.md5&amp;p2=trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.md5&amp;r1=2098168&amp;r2=2098169</url>
+==============================================================================
+---<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.md5<br/>(original)
++++<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.md5<br/>2010-03-30 08:01:57+0000
+@@ -1 +1 @@
+-f7519ab036ebed6c5fbd468843f382da
+\ No newline at end of file
++007531460a18243bf196ca535d37693a
+\ No newline at end of file
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.sha1
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.sha1?view=diff&amp;rev=2098169&amp;p1=trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.sha1&amp;p2=trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.sha1&amp;r1=2098168&amp;r2=2098169</url>
+==============================================================================
+---<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.sha1<br/>(original)
++++<br/>trunk/repository/org/atmosphere/atmosphere-compat-tomcat/0.5.6/atmosphere-compat-tomcat-0.5.6.jar.sha1<br/>2010-03-30 08:01:57+0000
+@@ -1 +1 @@
+-22cf895c0afaa3c678b64f64b4b91792ae7c74cc
+\ No newline at end of file
++c56b4a4383366fdf9694bce87a9642b7ba3e30b0
+\ No newline at end of file
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>commits-unsubscribe@maven2-repository.dev.java.net</email>
+For additional commands, e-mail: <email>commits-help@maven2-repository.dev.java.net</email>
+
+</footer></body></message>

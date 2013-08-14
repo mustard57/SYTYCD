@@ -1,0 +1,28 @@
+<message message-id="195578546.20070213133459@softsearch.ru" list="ru.sysoev.nginx-ru" id="24c7klglouk5nws4" type="general" date="2007-02-13T13:34:59+03:00" year="2007-01-01" year-month="2007-02-01" year-month-day="2007-02-13" thread-id="cepodml5nz642ksm"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Михаил Монашёв" address="postmaster-DJ0pKBEDOxO1FSmAMCgkTA@public.gmane.org">=?koi8-r?B?7cnIwcnMIO3PzsHbo9c=?= &lt;postmaster-DJ0pKBEDOxO1FSmAMCgkTA@public.gmane.org&gt;</from><to personal="Serg Senko" address="nginx-ru-nofU2znGi42HXe+LvDLADg@public.gmane.org">Serg Senko &lt;nginx-ru-nofU2znGi42HXe+LvDLADg@public.gmane.org&gt;</to><subject normal="Re[2]: Высокий LA и низкая загруженность CPU">Re[2]: Высокий LA и низкая загруженность CPU</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.web.nginx.russian</newsgroups><date>Tue, 13 Feb 2007 13:34:59 +0300</date><organization>SoftSearch.ru</organization><lines>19</lines><approved>news@gmane.org</approved><message-id>195578546.20070213133459@softsearch.ru</message-id><references>&lt;14210022186.20070203154802@softsearch.ru&gt;
+ &lt;b35c31660702120722k2b897c6cjcba74419ca1e04a6@mail.gmail.com&gt;</references><reply-to>nginx-ru-nofU2znGi42HXe+LvDLADg@public.gmane.org</reply-to><nntp-posting-host>lo.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain; charset=koi8-r</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-trace>sea.gmane.org 1171363488 24586 80.91.229.12 (13 Feb 2007 10:44:48 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Tue, 13 Feb 2007 10:44:48 +0000 (UTC)</nntp-posting-date><original-x-from>owner-nginx-ru-wivfeu+yiMArJhMb3jXtxA@public.gmane.org Tue Feb 13 11:44:40 2007</original-x-from><return-path>owner-nginx-ru-wivfeu+yiMArJhMb3jXtxA@public.gmane.org</return-path><envelope-to>gcwnr-nginx-ru@m.gmane.org</envelope-to><original-received>from vbob.cust.ramtel.ru ([81.19.69.70] helo=ontico.ru)
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1HGv9M-0007lS-7w
+	for gcwnr-nginx-ru@m.gmane.org; Tue, 13 Feb 2007 11:44:40 +0100</original-received><original-received>from majordom by ontico.ru with local (Exim 4.30; FreeBSD)
+	id 1HGv18-0001U0-Gn
+	for nginx-ru-outgoing-nofU2znGi42HXe+LvDLADg@public.gmane.org; Tue, 13 Feb 2007 13:36:10 +0300</original-received><original-received>from [217.16.27.103] (helo=mx.softsearch.ru)
+	by ontico.ru with esmtp (Exim 4.30; FreeBSD)
+	id 1HGv18-0001TL-DQ
+	for nginx-ru-nofU2znGi42HXe+LvDLADg@public.gmane.org; Tue, 13 Feb 2007 13:36:10 +0300</original-received><original-received>from [81.200.123.211] (account postmaster-DJ0pKBEDOxO1FSmAMCgkTA@public.gmane.org [81.200.123.211] verified)
+  by mx.softsearch.ru (CommuniGate Pro SMTP 5.0.9)
+  with ESMTPA id 9670709 for nginx-ru-nofU2znGi42HXe+LvDLADg@public.gmane.org; Tue, 13 Feb 2007 13:35:10 +0300</original-received><x-priority>3 (Normal)</x-priority><in-reply-to>&lt;b35c31660702120722k2b897c6cjcba74419ca1e04a6-JsoAwUIsXosN+BqQ9rBEUg@public.gmane.org&gt;</in-reply-to><original-sender>owner-nginx-ru-wivfeu+yiMArJhMb3jXtxA@public.gmane.org</original-sender><precedence>bulk</precedence><x-beenthere>nginx-ru-nofU2znGi42HXe+LvDLADg@public.gmane.org</x-beenthere><xref>news.gmane.org gmane.comp.web.nginx.russian:9351</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.web.nginx.russian/9351&gt;</archived-at></headers><normalized-references><normalized-message-id>195578546.20070213133459@softsearch.ru</normalized-message-id><normalized-in-reply-to>b35c31660702120722k2b897c6cjcba74419ca1e04a6-JsoAwUIsXosN+BqQ9rBEUg@public.gmane.org</normalized-in-reply-to><normalized-reference>14210022186.20070203154802@softsearch.ru</normalized-reference><normalized-reference>b35c31660702120722k2b897c6cjcba74419ca1e04a6@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=koi8-r"><para depth="0">Здравствуйте Serg,
+
+</para><para depth="0">SS&gt; А ты не с NFS работаешь ?
+
+</para><para depth="0">Нет.
+
+</para><footer type="noise" depth="0">--
+
+</footer><footer type="signature" depth="0" hash="14036716273507125971">С уважением,
+Михаил Монашёв, SoftSearch.ru
+Member of Independent Software Developers Forum (ISDEF)
+mailto:<email>postmaster-DJ0pKBEDOxO1FSmAMCgkTA@public.gmane.org</email>
+ICQ# 166233339
+<url>http://softsearch.ru/</url>
+Без бэкапа по жизни.
+
+</footer></body></message>

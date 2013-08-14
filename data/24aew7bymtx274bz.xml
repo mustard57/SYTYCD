@@ -1,0 +1,55 @@
+<message message-id="02e301c07fcb$e28bb830$8361d4c2@pavelk" list="net.php.lists.php-windows" id="24aew7bymtx274bz" type="general" date="2001-01-16T15:52:02+01:00" year="2001-01-01" year-month="2001-01-01" year-month-day="2001-01-16" thread-id="syhfwr3jkx5mshd6"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Pavel Kalian" address="pkalian@ssw.cz">Pavel Kalian &lt;pkalian@ssw.cz&gt;</from><to personal="Robert Trembath" address="robert@ishoptech.com">Robert Trembath &lt;robert@ishoptech.com&gt;</to><subject normal="[PHP-WIN] Error with Sessions please help">Re: [PHP-WIN] Error with Sessions please help</subject><newsgroups>php.windows</newsgroups><path>news.php.net</path><xref>news.php.net php.windows:5046</xref><return-path>pkalian@ssw.cz</return-path><mailing-list>contact php-windows-help@lists.php.net; run by ezmlm</mailing-list><delivered-to>mailing list php-windows@lists.php.net</delivered-to><received>(qmail 12327 invoked from network); 16 Jan 2001 14:50:21 -0000</received><received>from unknown (HELO herman.ssw.cz) (194.212.96.2)
+  by va.php.net with SMTP; 16 Jan 2001 14:50:21 -0000</received><received>from oskar.prosek.ssw.cz (int-smtp-relay.prosek.ssw.cz [194.212.97.71])
+	by herman.ssw.cz (8.9.3/8.9.3/Debian/GNU) with ESMTP id PAA17102;
+	Tue, 16 Jan 2001 15:52:01 +0100</received><received>from pavelk (pavelk.prosek.ssw.cz [194.212.97.131]) by oskar.prosek.ssw.cz with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2232.9)
+	id CXHTBVQL; Tue, 16 Jan 2001 15:52:01 +0100</received><message-id>02e301c07fcb$e28bb830$8361d4c2@pavelk</message-id><references>&lt;000e01c07fc9$cc63cae0$0100a8c0@ishoptech.com&gt;</references><date>Tue, 16 Jan 2001 15:52:02 +0100</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 5.50.4133.2400</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V5.50.4133.2400</x-mimeole></headers><normalized-references><normalized-message-id>02e301c07fcb$e28bb830$8361d4c2@pavelk</normalized-message-id><normalized-reference>000e01c07fc9$cc63cae0$0100a8c0@ishoptech.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><para depth="0">Robert,
+modify your session.save_path directive in PHP.INI to point to an existing
+directory, for example c:\winnt\temp
+
+</para><para depth="0">Pavel
+
+</para><quote depth="1"><quotefooter type="list-management" hash="15187171070545383873" depth="1">----- Original Message -----
+From: "Robert Trembath" &lt;<email>robert@ishoptech.com</email>&gt;
+To: "PHP List" &lt;<email>php-windows@lists.php.net</email>&gt;
+Sent: Tuesday, January 16, 2001 3:37 PM
+Subject: [PHP-WIN] Error with Sessions please help
+
+</quotefooter><quote depth="2"><quotepara depth="2">I have been using PHP4.04 on W2K with little or no problems using php.exe
+instead of isapi. But when I try to initiate a session with
+
+</quotepara><quotepara depth="2">&lt;?php
+session_start();
+?&gt;
+
+</quotepara><quotepara depth="2">I get:
+
+</quotepara><quotepara depth="2">Warning: open(/tmp\sess_0baf96e5228010461d9116db56bb349b, O_RDWR) failed:
+m
+(2) in c:\inetpub\wwwroot\DBTest.php on line 2
+Successfully connected to MySQL
+Successfully selected "Portal"
+
+</quotepara><quotepara depth="2">There are currently 2 users in the database.
+
+</quotepara><quotepara depth="2">      User Name User Type Last Login City
+      Robert Trembath Shopper 6/30/2000 1:37:40 PM Houston
+      Robert Trembath Realtor 6/30/2000 9:11:20 AM Houston
+
+</quotepara><quotepara depth="2">Warning: open(/tmp\sess_0baf96e5228010461d9116db56bb349b, O_RDWR) failed:
+m
+(2) in Unknown on line 0
+
+</quotepara><quotepara depth="2">Warning: Failed to write session data (files). Please verify that the
+current setting of session.save_path is correct (/tmp) in Unknown on line
+0
+
+</quotepara><quotepara depth="2">Thanks, Robert
+
+</quotepara><quotefooter type="list-management" hash="11057039543596006927" depth="2">--
+PHP Windows Mailing List (<url>http://www.php.net/</url>)
+To unsubscribe, e-mail: <email>php-windows-unsubscribe@lists.php.net</email>
+For additional commands, e-mail: <email>php-windows-help@lists.php.net</email>
+To contact the list administrators, e-mail: <email>php-list-admin@lists.php.net</email>
+
+</quotefooter></quote></quote></body></message>

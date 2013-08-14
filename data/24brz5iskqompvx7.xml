@@ -1,0 +1,72 @@
+<message message-id="003a01cb4467$b5b79a20$2126ce60$@net" list="org.tigris.tortoisesvn.users" id="24brz5iskqompvx7" type="users" date="2010-08-25T07:10:33.531211-08:00" year="2010-01-01" year-month="2010-08-01" year-month-day="2010-08-25" thread-id="5zxojjdfwcwcttzq"><headers><envelope-from-line>Wed Aug 25 07:10:56 2010</envelope-from-line><from personal="Phil Sayers" address="Phil@cds-am.net">Phil Sayers &lt;Phil@cds-am.net&gt;</from><to personal="users@tortoisesvn.tigris.org" address="users@tortoisesvn.tigris.org">users@tortoisesvn.tigris.org</to><subject normal="SVN checkout slow on windows compare to linux">RE: Re: SVN checkout slow on windows compare to linux</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 433
+          for &lt;charity.holland.sheppard@a.markmail.org&gt;;
+          Wed, 25 Aug 2010 07:10:56 -0800 (GMT-08:00)</received><received>from sc157-tigr.sjc.collab.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 39BB63B30272
+	for &lt;charity.holland.sheppard@a.markmail.org&gt;; Wed, 25 Aug 2010 08:10:33 -0700 (PDT)</received><received>from sc157-tigr.sjc.collab.net (localhost [127.0.0.1])
+	by sc157-tigr.sjc.collab.net (Postfix) with ESMTP id EBEF55400CA;
+	Wed, 25 Aug 2010 08:10:55 -0700 (PDT)</received><received>from localhost ([127.0.0.1])          by Mail Reader Service (JAMES SMTP Server 2.3.0) with SMTP ID 71          for &lt;users@tortoisesvn.tigris.org.mrs&gt;;          Wed, 25 Aug 2010 08:10:54 -0700 (PDT)</received><received>from cylon1.sjc.collab.net (bigip-int.sjc.collab.net [204.16.104.212])	by sc157-tigr.sjc.collab.net (Postfix) with ESMTP id A65DA5400CA	for &lt;users@tortoisesvn.tigris.org&gt;; Wed, 25 Aug 2010 08:10:54 -0700 (PDT)</received><received>from oneal.swishmail.com ([208.72.57.18])  by cylon1.sjc.collab.net with ESMTP/TLS/DHE-RSA-AES256-SHA; 25 Aug 2010 08:10:54 -0700</received><received>(qmail 41922 invoked by uid 89); 25 Aug 2010 15:10:53 -0000</received><received>by simscan 1.4.0 ppid: 41909, pid: 41918, t: 0.0794s         scanners: attach: 1.4.0 clamav: 0.96/m:52/d:11671</received><received>from unknown (HELO Phil960) (phil@cds-am.net@67.130.41.170)  by oneal.swishmail.com with ESMTPA; 25 Aug 2010 15:10:52 -0000</received><date>Wed, 25 Aug 2010 11:10:52 -0400</date><reply-to>users &lt;users@tortoisesvn.tigris.org&gt;</reply-to><message-id>003a01cb4467$b5b79a20$2126ce60$@net</message-id><in-reply-to>&lt;1999726171.12499.1282747636377.JavaMail.httpd@localhost&gt;</in-reply-to><references>&lt;AANLkTi=q_UPhTJ+L0irxUjcazBE3ztbjJpj79CJe8TOk@mail.gmail.com&gt; &lt;1999726171.12499.1282747636377.JavaMail.httpd@localhost&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding><content-language>en-us</content-language><thread-index>ActEZbKpR+bEIrlLSZqtzoK3SK0MPgAATkPA</thread-index><x-mailer>Microsoft Office Outlook 12.0</x-mailer><x-ironport>SCANNED</x-ironport><x-ironport-av>E=Sophos;i="4.56,268,1280732400";   d="scan'208";a="7873364"</x-ironport-av><x-ironport-anti-spam-result>AgABAOrOdEzQSDkSm2dsb2JhbACUQYwDFQEBAQEBCAkKCREivCSFNwSFVoNsg0Q</x-ironport-anti-spam-result><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><list-id>&lt;users.tortoisesvn.tigris.org&gt;</list-id><precedence>bulk</precedence></headers><normalized-references><normalized-message-id>003a01cb4467$b5b79a20$2126ce60$@net</normalized-message-id><normalized-thread-index>ActEZbKpR+bEIrlLSZqtzoK3SK0MPg</normalized-thread-index><normalized-in-reply-to>1999726171.12499.1282747636377.JavaMail.httpd@localhost</normalized-in-reply-to><normalized-reference>AANLkTi=q_UPhTJ+L0irxUjcazBE3ztbjJpj79CJe8TOk@mail.gmail.com</normalized-reference><normalized-reference>1999726171.12499.1282747636377.JavaMail.httpd@localhost</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">What are the specs of the linux box compared to the win box?
+
+</para><para depth="0">Have you tried the svn client?  Not a 3rd party one like tortoise or slik,
+the one that comes from collabnet.
+
+</para><para depth="0">Use the same version of the svn client from the same publisher on both win &amp;
+linux.. then we are comparing apples to apples.
+
+</para><para depth="0">Between both win/linux.. any write cache enabled for the disks?
+
+</para><para depth="0">Is the O/S on the same physical disk on both win &amp; linux?
+Same disk setup?  Raid1/raid0/non raid... identical raid controllers on both
+systems.
+What else is installed on Win that may not be on the linux box?   Antivirus?
+DiskKeeper?
+
+</para><para depth="0">To point the blame specifically at tsvn on windows you must show that
+everything else is either [a]identical or [b]very close to identical.
+
+</para><para depth="0">FYI.
+Your access method is http over the public internet.
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Lenney [mailto:<email>ly6@rice.edu</email>] 
+Sent: Wednesday, August 25, 2010 10:47 AM
+To: <email>users@tortoisesvn.tigris.org</email>
+Subject: RE: Re: SVN checkout slow on windows compare to linux
+
+</quotepara><quotepara depth="1">Thanks for your reply.  
+
+</quotepara><quotepara depth="1">I'm the system specs are Core 2 Duo T7200, 2.0GB mem, 1gb network. 7200PRM
+HD.
+
+</quotepara><quotepara depth="1">I don't know what you mean by what access method?  I'm on wired and I'm
+accessing the repository by right clicking on a directory and choose repo
+browser.  Then I find the folder and check it out.
+
+</quotepara><quotepara depth="1">I've also tried to use a command line based svn client like slik, but the
+results aren't much better.
+
+</quotepara><quotepara depth="1">A redhat workstation can download the repository in 8secs while my computer
+does the same job in 30secs.
+
+</quotepara><quotepara depth="1">Here is the link to the repository:
+
+</quotepara><quotepara depth="1"><url>http://svn.apache.org/repos/asf/spamassassin/trunk</url>
+
+</quotepara><quotepara depth="1">Maybe you can try it and post your times.
+
+</quotepara><quotepara depth="1">THank you,
+
+</quotepara><quotepara depth="1">Lenney
+
+</quotepara><quotepara depth="1">------------------------------------------------------
+<url>http://tortoisesvn.tigris.org/ds/viewMessage.do?dsForumId=4061&amp;dsMessageId=2</url>
+651236
+
+</quotepara><quotepara depth="1">To unsubscribe from this discussion, e-mail:
+[<email>users-unsubscribe@tortoisesvn.tigris.org</email>].
+
+</quotepara><quotepara depth="1">------------------------------------------------------
+<url>http://tortoisesvn.tigris.org/ds/viewMessage.do?dsForumId=4061&amp;dsMessageId=2651245</url>
+
+</quotepara><quotepara depth="1">To unsubscribe from this discussion, e-mail:<br/>[<email>users-unsubscribe@tortoisesvn.tigris.org</email>].
+</quotepara></quote></body></message>

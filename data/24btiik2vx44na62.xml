@@ -1,0 +1,16 @@
+<message message-id="8838bf100703150937p1764be80xe10c9af4dca8d16f@mail.gmail.com" list="org.python.pythondotnet" id="24btiik2vx44na62" type="general" date="2007-03-15T16:37:32Z" year="2007-01-01" year-month="2007-03-01" year-month-day="2007-03-15" thread-id="24btiik2vx44na62"><headers><envelope-from-line>From andyrsmith@googlemail.com  Thu Mar 15 17:37:32 2007</envelope-from-line><from personal="Andy Smith" address="andyrsmith@googlemail.com">Andy Smith &lt;andyrsmith@googlemail.com&gt;</from><subject normal="[Python.NET] app.config file equivalent location?">[Python.NET] app.config file equivalent location?</subject><date>Thu, 15 Mar 2007 16:37:32 +0000</date><message-id>8838bf100703150937p1764be80xe10c9af4dca8d16f@mail.gmail.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>8838bf100703150937p1764be80xe10c9af4dca8d16f@mail.gmail.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">I'm trying to use some third party assemblies that pull their config out of
+the application config file.
+
+</para><para depth="0">In VS.NET land this would be taken care of by the app.config which would
+create an appropriate appname.exe.config file in the bin directory for the
+build.
+
+</para><para depth="0">In trying to mirror this behaviour I've naively tried adding
+c:/Python23/python.exe.config in the python build directory since strictly
+this is the exe that's being run. It's very dubious and doesn't seem to
+work. Is there a way to programatically tweak this?
+
+</para><para depth="0">Cheers,
+
+</para><para depth="0">A.
+</para></body></message>

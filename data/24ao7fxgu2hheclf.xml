@@ -1,0 +1,49 @@
+<message message-id="20100813075027.9499E10057@kemper.freedesktop.org" list="org.freedesktop.lists.mesa-commit" id="24ao7fxgu2hheclf" type="checkins" date="2010-08-12T23:50:07.44423-08:00" year="2010-01-01" year-month="2010-08-01" year-month-day="2010-08-13" thread-id="24ao7fxgu2hheclf"><headers><envelope-from-line>Thu Aug 12 23:50:30 2010</envelope-from-line><from personal="Vinson Lee" address="vlee@kemper.freedesktop.org">Vinson Lee &lt;vlee@kemper.freedesktop.org&gt;</from><to personal="mesa-commit@lists.freedesktop.org" address="mesa-commit@lists.freedesktop.org">mesa-commit@lists.freedesktop.org</to><subject normal="Mesa (master): swrast: Clean up header file inclusion in ss_vb.h.">Mesa (master): swrast: Clean up header file inclusion in ss_vb.h.</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 693
+          for &lt;sandy.wilkerson.mcdonald@a.markmail.org&gt;;
+          Thu, 12 Aug 2010 23:50:30 -0800 (GMT-08:00)</received><received>from gabe.freedesktop.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 2197929081DF
+	for &lt;sandy.wilkerson.mcdonald@a.markmail.org&gt;; Fri, 13 Aug 2010 00:50:07 -0700 (PDT)</received><received>from gabe.freedesktop.org (localhost [127.0.0.1])
+	by gabe.freedesktop.org (Postfix) with ESMTP id E93489E89F
+	for &lt;sandy.wilkerson.mcdonald@a.markmail.org&gt;; Fri, 13 Aug 2010 00:50:29 -0700 (PDT)</received><x-original-to>mesa-commit@lists.freedesktop.org</x-original-to><delivered-to>mesa-commit@lists.freedesktop.org</delivered-to><received>from kemper.freedesktop.org (kemper.freedesktop.org
+	[131.252.210.178])
+	by gabe.freedesktop.org (Postfix) with ESMTP id B283A9E811
+	for &lt;mesa-commit@lists.freedesktop.org&gt;;
+	Fri, 13 Aug 2010 00:50:27 -0700 (PDT)</received><received>by kemper.freedesktop.org (Postfix, from userid 3222)
+	id 9499E10057; Fri, 13 Aug 2010 00:50:27 -0700 (PDT)</received><message-id>20100813075027.9499E10057@kemper.freedesktop.org</message-id><date>Fri, 13 Aug 2010 00:50:27 -0700 (PDT)</date><x-beenthere>mesa-commit@lists.freedesktop.org</x-beenthere><x-mailman-version>2.1.11</x-mailman-version><precedence>list</precedence><list-id>Commits to the Mesa git repository &lt;mesa-commit.lists.freedesktop.org&gt;</list-id><list-unsubscribe>&lt;http://lists.freedesktop.org/mailman/options/mesa-commit&gt;, 
+	&lt;mailto:mesa-commit-request@lists.freedesktop.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.freedesktop.org/archives/mesa-commit&gt;</list-archive><list-post>&lt;mailto:mesa-commit@lists.freedesktop.org&gt;</list-post><list-help>&lt;mailto:mesa-commit-request@lists.freedesktop.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.freedesktop.org/mailman/listinfo/mesa-commit&gt;,
+	&lt;mailto:mesa-commit-request@lists.freedesktop.org?subject=subscribe&gt;</list-subscribe><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>mesa-commit-bounces+sandy.wilkerson.mcdonald=a.markmail.org@lists.freedesktop.org</sender><errors-to>mesa-commit-bounces+sandy.wilkerson.mcdonald=a.markmail.org@lists.freedesktop.org</errors-to></headers><normalized-references><normalized-message-id>20100813075027.9499E10057@kemper.freedesktop.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">Module: Mesa
+Branch: master
+Commit: 5dbd3fe3d4f3f6eb4f601ae8a3c77720ca83e790
+URL:<br/><url>http://cgit.freedesktop.org/mesa/mesa/commit/?id=5dbd3fe3d4f3f6eb4f601ae8a3c77720ca83e790</url>
+
+</para><para depth="0">Author: Vinson Lee &lt;<email>vlee@vmware.com</email>&gt;
+Date:   Fri Aug 13 00:48:34 2010 -0700
+
+</para><para depth="0">swrast: Clean up header file inclusion in ss_vb.h.
+
+</para><para depth="0">Remove unnecessary header swrast_setup.h.
+
+</para><para depth="0">---
+
+</para><para depth="0"> src/mesa/swrast_setup/ss_vb.h |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+</para><para depth="0">diff --git a/src/mesa/swrast_setup/ss_vb.h b/src/mesa/swrast_setup/ss_vb.h
+index 2ad1f56..944a3b7 100644
+--- a/src/mesa/swrast_setup/ss_vb.h
++++ b/src/mesa/swrast_setup/ss_vb.h
+@@ -30,7 +30,6 @@
+ #define SS_VB_H
+
+</para><para depth="0"> #include "main/mtypes.h"
+-#include "swrast_setup.h"
+
+</para><para depth="0"> void _swsetup_vb_init( GLcontext *ctx );
+ void _swsetup_choose_rastersetup_func( GLcontext *ctx );
+
+</para><footer type="list-management" depth="0">_______________________________________________
+mesa-commit mailing list
+<email>mesa-commit@lists.freedesktop.org</email>
+<url>http://lists.freedesktop.org/mailman/listinfo/mesa-commit</url>
+</footer></body></message>

@@ -1,0 +1,895 @@
+<message message-id="20081231061543.BEFD92388995@eris.apache.org" list="org.apache.xerces.commits" id="24beq6mw5nln5kpm" type="checkins" date="2008-12-31T06:15:43Z" year="2008-01-01" year-month="2008-12-01" year-month-day="2008-12-30" thread-id="24beq6mw5nln5kpm"><headers><envelope-from-line>Tue Dec 30 22:16:09 2008</envelope-from-line><from personal="mrglavas@apache.org" address="mrglavas@apache.org">mrglavas@apache.org</from><to personal="commits@xerces.apache.org" address="commits@xerces.apache.org">commits@xerces.apache.org</to><subject normal="svn commit: r730318 - in /xerces/java/branches/stax-dev/src/org/apache/xerces/stax: ./ events/">svn commit: r730318 - in /xerces/java/branches/stax-dev/src/org/apache/xerces/stax: ./ events/</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 155
+          for &lt;gerardo.maynard.hurst@a.markmail.org&gt;;
+          Tue, 30 Dec 2008 22:16:09 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 2A1E82908005
+	for &lt;gerardo.maynard.hurst@a.markmail.org&gt;; Tue, 30 Dec 2008 22:15:46 -0800 (PST)</received><received>(qmail 20533 invoked by uid 500); 31 Dec 2008 06:16:08 -0000</received><mailing-list>contact commits-help@xerces.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:commits-help@xerces.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@xerces.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:commits@xerces.apache.org&gt;</list-post><list-id>&lt;commits.xerces.apache.org&gt;</list-id><delivered-to>mailing list commits@xerces.apache.org</delivered-to><received>(qmail 20524 invoked by uid 99); 31 Dec 2008 06:16:08 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 30 Dec 2008 22:16:08 -0800</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.4] (HELO eris.apache.org) (140.211.11.4)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 31 Dec 2008 06:16:05 +0000</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id BEFD92388995; Tue, 30 Dec 2008 22:15:43 -0800 (PST)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Wed, 31 Dec 2008 06:15:43 -0000</date><x-mailer>svnmailer-1.0.8</x-mailer><message-id>20081231061543.BEFD92388995@eris.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20081231061543.BEFD92388995@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: mrglavas
+Date: Tue Dec 30 22:15:42 2008
+New Revision: 730318
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?rev=730318&amp;view=rev</url>
+Log:
+Lots of work on the StAX events, including an implementation of XMLEventFactory.
+
+</para><para depth="0">Added:
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/ElementImpl.java<br/>(with props)
+Modified:
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/DefaultEventAllocator.java
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/XMLEventFactoryImpl.java
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/CharactersImpl.java
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/DTDImpl.java
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndDocumentImpl.java
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndElementImpl.java
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EntityReferenceImpl.java
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/StartElementImpl.java
+    xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/XMLEventImpl.java
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/DefaultEventAllocator.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/DefaultEventAllocator.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/DefaultEventAllocator.java<br/>(original)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/DefaultEventAllocator.java<br/>Tue Dec 30 22:15:42 2008
+@@ -73,9 +73,9 @@
+                 //in turn at index 0. 
+                 return makeAttribute(0, reader);
+             case XMLStreamConstants.CDATA:
+-                 return new CharactersImpl(reader.getText(), false, true,<br/>false, location);
++                 return new CharactersImpl(reader.getText(),<br/>XMLStreamConstants.CDATA, location);
+             case XMLStreamConstants.CHARACTERS:
+-                return new CharactersImpl(reader.getText(), false, false,<br/>false, location);
++                return new CharactersImpl(reader.getText(),<br/>XMLStreamConstants.CHARACTERS, location);
+             case XMLStreamConstants.COMMENT:
+                 return new CommentImpl(reader.getText(), location);
+             case XMLStreamConstants.DTD:
+@@ -97,7 +97,7 @@
+                 return new ProcessingInstructionImpl(reader.getPITarget(),<br/>reader.getPIData(), location);
+             case XMLStreamConstants.SPACE:
+                 //TODO: Ignorable Whitespace
+-                return new CharactersImpl(reader.getText(), true, false, false,<br/>location);
++                return new CharactersImpl(reader.getText(),<br/>XMLStreamConstants.SPACE, location);
+             case XMLStreamConstants.START_DOCUMENT:
+                 return new StartDocumentImpl(reader.getEncoding(),<br/>reader.getCharacterEncodingScheme() != null, reader.isStandalone(),<br/>reader.standaloneSet(), reader.getVersion(), location);
+             case XMLStreamConstants.START_ELEMENT:
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/XMLEventFactoryImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/XMLEventFactoryImpl.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/XMLEventFactoryImpl.java<br/>(original)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/XMLEventFactoryImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -19,10 +19,12 @@
+
+</para><para depth="0"> import java.util.Iterator;
+
+</para><para depth="0">+import javax.xml.XMLConstants;
+ import javax.xml.namespace.NamespaceContext;
+ import javax.xml.namespace.QName;
+ import javax.xml.stream.Location;
+ import javax.xml.stream.XMLEventFactory;
++import javax.xml.stream.XMLStreamConstants;
+ import javax.xml.stream.events.Attribute;
+ import javax.xml.stream.events.Characters;
+ import javax.xml.stream.events.Comment;
+@@ -36,127 +38,165 @@
+ import javax.xml.stream.events.StartDocument;
+ import javax.xml.stream.events.StartElement;
+
+</para><para depth="0">+import org.apache.xerces.stax.events.AttributeImpl;
++import org.apache.xerces.stax.events.CharactersImpl;
++import org.apache.xerces.stax.events.CommentImpl;
++import org.apache.xerces.stax.events.DTDImpl;
++import org.apache.xerces.stax.events.EndDocumentImpl;
++import org.apache.xerces.stax.events.EndElementImpl;
++import org.apache.xerces.stax.events.EntityReferenceImpl;
++import org.apache.xerces.stax.events.NamespaceImpl;
++import org.apache.xerces.stax.events.ProcessingInstructionImpl;
++import org.apache.xerces.stax.events.StartDocumentImpl;
++import org.apache.xerces.stax.events.StartElementImpl;
++
+ /**
+- * @xerces.internal
+- * 
+  * &lt;p&gt;Implementation of XMLEventFactory.&lt;/p&gt;
+  * 
++ * @xerces.internal
++ * 
+  * @version $Id$
+  */
+ public final class XMLEventFactoryImpl extends XMLEventFactory {
++    
++    private Location fLocation;
+
+</para><para depth="0">     public XMLEventFactoryImpl() {}
+
+</para><para depth="0">-    public void setLocation(Location location) {}
++    public void setLocation(Location location) {
++        fLocation = location;
++    }
+
+</para><para depth="0">     public Attribute createAttribute(String prefix, String namespaceURI,
+             String localName, String value) {
+-        return null;
++        return createAttribute(new QName(namespaceURI, localName, prefix),<br/>value);
+     }
+
+</para><para depth="0">     public Attribute createAttribute(String localName, String value) {
+-        return null;
++        return createAttribute(new QName(localName), value);
+     }
+
+</para><para depth="0">     public Attribute createAttribute(QName name, String value) {
+-        return null;
++        return new AttributeImpl(name, value, "CDATA", true, fLocation);
+     }
+
+</para><para depth="0">     public Namespace createNamespace(String namespaceURI) {
+-        return null;
++        return createNamespace(XMLConstants.DEFAULT_NS_PREFIX, namespaceURI);
+     }
+
+</para><para depth="0">     public Namespace createNamespace(String prefix, String namespaceUri) {
+-        return null;
++        return new NamespaceImpl(prefix, namespaceUri, fLocation);
+     }
+
+</para><para depth="0">     public StartElement createStartElement(QName name, Iterator attributes,
+             Iterator namespaces) {
+-        return null;
++        return createStartElement(name, attributes, namespaces, null);
+     }
+
+</para><para depth="0">     public StartElement createStartElement(String prefix, String namespaceUri,
+             String localName) {
+-        return null;
++        return createStartElement(new QName(namespaceUri, localName, prefix),<br/>null, null);
+     }
+
+</para><para depth="0">     public StartElement createStartElement(String prefix, String namespaceUri,
+             String localName, Iterator attributes, Iterator namespaces) {
+-        return null;
++        return createStartElement(new QName(namespaceUri, localName, prefix),<br/>attributes, namespaces);
+     }
+
+</para><para depth="0">     public StartElement createStartElement(String prefix, String namespaceUri,
+             String localName, Iterator attributes, Iterator namespaces,
+             NamespaceContext context) {
+-        return null;
++        return createStartElement(new QName(namespaceUri, localName, prefix),<br/>attributes, namespaces, context);
++    }
++    
++    private StartElement createStartElement(QName name, Iterator attributes,
++            Iterator namespaces, NamespaceContext context) {
++        StartElementImpl start = new StartElementImpl(name, context,<br/>fLocation);
++        if (attributes != null) {
++            while (attributes.hasNext()) {
++                start.addAttribute((Attribute) attributes.next());
++            }
++        }
++        if (namespaces != null) {
++            while (namespaces.hasNext()) {
++                start.addNamespace((Namespace) namespaces.next());
++            }
++        }
++        return start;
+     }
+
+</para><para depth="0">     public EndElement createEndElement(QName name, Iterator namespaces) {
+-        return null;
++        EndElementImpl end = new EndElementImpl(name, fLocation);
++        if (namespaces != null) {
++            while (namespaces.hasNext()) {
++                end.addNamespace((Namespace) namespaces.next());
++            }
++        }
++        return end;
+     }
+
+</para><para depth="0">     public EndElement createEndElement(String prefix, String namespaceUri,
+             String localName) {
+-        return null;
++        return createEndElement(new QName(namespaceUri, localName, prefix),<br/>null);
+     }
+
+</para><para depth="0">     public EndElement createEndElement(String prefix, String namespaceUri,
+             String localName, Iterator namespaces) {
+-        return null;
++        return createEndElement(new QName(namespaceUri, localName, prefix),<br/>namespaces);
+     }
+
+</para><para depth="0">     public Characters createCharacters(String content) {
+-        return null;
++        return new CharactersImpl(content, XMLStreamConstants.CHARACTERS,<br/>fLocation);
+     }
+
+</para><para depth="0">     public Characters createCData(String content) {
+-        return null;
++        return new CharactersImpl(content, XMLStreamConstants.CDATA,<br/>fLocation);
+     }
+
+</para><para depth="0">     public Characters createSpace(String content) {
+-        return null;
++        return createCharacters(content);
+     }
+
+</para><para depth="0">     public Characters createIgnorableSpace(String content) {
+-        return null;
++        return new CharactersImpl(content, XMLStreamConstants.SPACE,<br/>fLocation);
+     }
+
+</para><para depth="0">     public StartDocument createStartDocument() {
+-        return null;
++        return createStartDocument(null, null);
+     }
+
+</para><para depth="0">     public StartDocument createStartDocument(String encoding, String version,
+             boolean standalone) {
+-        return null;
++        return new StartDocumentImpl(encoding, encoding != null, standalone,<br/>true, version, fLocation);
+     }
+
+</para><para depth="0">     public StartDocument createStartDocument(String encoding, String version) {
+-        return null;
++        return new StartDocumentImpl(encoding, encoding != null, false, false,<br/>version, fLocation);
+     }
+
+</para><para depth="0">     public StartDocument createStartDocument(String encoding) {
+-        return null;
++        return createStartDocument(encoding, null);
+     }
+
+</para><para depth="0">     public EndDocument createEndDocument() {
+-        return null;
++        return new EndDocumentImpl(fLocation);
+     }
+
+</para><para depth="0">     public EntityReference createEntityReference(String name,
+             EntityDeclaration declaration) {
+-        return null;
++        return new EntityReferenceImpl(name, declaration, fLocation);
+     }
+
+</para><para depth="0">     public Comment createComment(String text) {
+-        return null;
++        return new CommentImpl(text, fLocation);
+     }
+
+</para><para depth="0">     public ProcessingInstruction createProcessingInstruction(String target,
+             String data) {
+-        return null;
++        return new ProcessingInstructionImpl(target, data, fLocation);
+     }
+
+</para><para depth="0">     public DTD createDTD(String dtd) {
+-        return null;
++        return new DTDImpl(dtd, fLocation);
+     }
+ }
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/CharactersImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/CharactersImpl.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/CharactersImpl.java<br/>(original)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/CharactersImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -20,6 +20,8 @@
+ import javax.xml.stream.Location;
+ import javax.xml.stream.events.Characters;
+
+</para><para depth="0">+import org.apache.xerces.util.XMLChar;
++
+ /**
+  * @xerces.internal
+  * 
+@@ -30,9 +32,6 @@
+ public final class CharactersImpl extends XMLEventImpl implements Characters {
+
+</para><para depth="0">     private final String fData;
+-    private final boolean fIsWS;
+-    private final boolean fIsCData;
+-    private final boolean fIsIgnorableWS;
+
+</para><para depth="0">     /**
+      * Standard constructor.
+@@ -40,12 +39,9 @@
+      * @param location
+      * @param schemaType
+      */
+-    public CharactersImpl(final String data, final boolean isWS, final boolean<br/>isCData, final boolean isIgnorableWS, final Location location) {
+-        super(CHARACTERS, location);
++    public CharactersImpl(final String data, final int eventType, final<br/>Location location) {
++        super(eventType, location);
+         fData = data;
+-        fIsWS = isWS;
+-        fIsCData = isCData;
+-        fIsIgnorableWS = isIgnorableWS;
+     }
+
+</para><para depth="0">     /**
+@@ -59,22 +55,30 @@
+      * @see javax.xml.stream.events.Characters#isWhiteSpace()
+      */
+     public boolean isWhiteSpace() {
+-        return fIsWS;
++        final int length = fData != null ? fData.length() : 0;
++        if (length == 0) {
++            return false;
++        }
++        for (int i = 0; i &lt; length; ++i) {
++            if (!XMLChar.isSpace(fData.charAt(i))) {
++                return false;
++            }
++        }
++        return true; 
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.Characters#isCData()
+      */
+     public boolean isCData() {
+-        return fIsCData;
++        return CDATA == getEventType();
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.Characters#isIgnorableWhiteSpace()
+      */
+     public boolean isIgnorableWhiteSpace() {
+-        return fIsIgnorableWS;
++        return SPACE == getEventType();
+     }
+-
+
+</para><para depth="0"> }
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/DTDImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/DTDImpl.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+--- xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/DTDImpl.java<br/>(original)
++++ xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/DTDImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -17,10 +17,10 @@
+
+</para><para depth="0"> package org.apache.xerces.stax.events;
+
+</para><para depth="0">+import java.util.Collections;
+ import java.util.List;
+
+</para><para depth="0"> import javax.xml.stream.Location;
+-import javax.xml.stream.XMLStreamConstants;
+ import javax.xml.stream.events.DTD;
+
+</para><para depth="0"> /**
+@@ -32,29 +32,27 @@
+  */
+ public final class DTDImpl extends XMLEventImpl implements DTD {
+
+</para><para depth="0">-    private final String fDtd;
++    private final String fDTD;
+
+</para><para depth="0">     /**
+      * Constructor.
+      */
+     public DTDImpl(final String dtd, final Location location) {
+-        super(XMLStreamConstants.DTD, location);
+-        fDtd = dtd;
++        super(DTD, location);
++        fDTD = dtd;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.DTD#getDocumentTypeDeclaration()
+      */
+     public String getDocumentTypeDeclaration() {
+-        // TODO Auto-generated method stub
+-        return null;
++        return fDTD;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.DTD#getProcessedDTD()
+      */
+     public Object getProcessedDTD() {
+-        // TODO Auto-generated method stub
+         return null;
+     }
+
+</para><para depth="0">@@ -62,16 +60,13 @@
+      * @see javax.xml.stream.events.DTD#getNotations()
+      */
+     public List getNotations() {
+-        // TODO Auto-generated method stub
+-        return null;
++        return Collections.EMPTY_LIST;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.DTD#getEntities()
+      */
+     public List getEntities() {
+-        // TODO Auto-generated method stub
+-        return null;
++        return Collections.EMPTY_LIST;
+     }
+-
+ }
+
+</para><para depth="0">Added:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/ElementImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/ElementImpl.java?rev=730318&amp;view=auto</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/ElementImpl.java<br/>(added)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/ElementImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -0,0 +1,109 @@
++/*
++ * Licensed to the Apache Software Foundation (ASF) under one or more
++ * contributor license agreements.  See the NOTICE file distributed with
++ * this work for additional information regarding copyright ownership.
++ * The ASF licenses this file to You under the Apache License, Version 2.0
++ * (the "License"); you may not use this file except in compliance with
++ * the License.  You may obtain a copy of the License at
++ * 
++ *      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
++ * 
++ * Unless required by applicable law or agreed to in writing, software
++ * distributed under the License is distributed on an "AS IS" BASIS,
++ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++ * See the License for the specific language governing permissions and
++ * limitations under the License.
++ */
++
++package org.apache.xerces.stax.events;
++
++import java.util.ArrayList;
++import java.util.Iterator;
++import java.util.List;
++
++import javax.xml.namespace.QName;
++import javax.xml.stream.Location;
++import javax.xml.stream.events.Namespace;
++
++/**
++ * @xerces.internal
++ * 
++ * @author Lucian Holland
++ * @author Michael Glavassevich, IBM
++ * 
++ * @version $Id$
++ */
++public abstract class ElementImpl extends XMLEventImpl {
++    
++    /**
++     * The qualified name of the element that is being closed.
++     */
++    private final QName fName;
++    
++    /**
++     * Namespaces declared in the current scope.
++     */
++    private final List fNamespaces = new ArrayList();
++    
++    /**
++     * Constructor.
++     */
++    ElementImpl(final QName name, final boolean isStartElement, final Location<br/>location) {
++        super(isStartElement ? START_ELEMENT : END_ELEMENT, location);
++        fName = name;
++    }
++    
++    /**
++     * @see javax.xml.stream.events.StartElement#getName()
++     * @see javax.xml.stream.events.EndElement#getName()
++     */
++    public final QName getName() {
++        return fName;
++    }
++    
++    /**
++     * @see javax.xml.stream.events.StartElement#getNamespaces()
++     * @see javax.xml.stream.events.EndElement#getNamespaces()
++     */
++    public final Iterator getNamespaces() {
++        return createImmutableIterator(fNamespaces.iterator());
++    }
++    
++    public final void addNamespace(final Namespace namespace) {
++        fNamespaces.add(namespace);
++    }
++    
++    static Iterator createImmutableIterator(Iterator iter) {
++        return new NoRemoveIterator(iter);
++    }
++    
++    private static final class NoRemoveIterator implements Iterator {
++        
++        private final Iterator fWrapped;
++        
++        public NoRemoveIterator(Iterator wrapped) {
++            fWrapped = wrapped;
++        }
++        
++        /**
++         * @see java.util.Iterator#hasNext()
++         */
++        public boolean hasNext() {
++            return fWrapped.hasNext();
++        }
++
++        /**
++         * @see java.util.Iterator#next()
++         */
++        public Object next() {
++            return fWrapped.next();
++        }
++
++        /**
++         * @see java.util.Iterator#remove()
++         */
++        public void remove() {
++            throw new UnsupportedOperationException("Attributes iterator is<br/>read-only.");
++        }
++    }
++}
+
+</para><para depth="0">Propchange:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/ElementImpl.java
+</para><para depth="0">------------------------------------------------------------------------------
+    svn:eol-style = native
+
+</para><para depth="0">Propchange:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/ElementImpl.java
+</para><para depth="0">------------------------------------------------------------------------------
+    svn:keywords = Author Date Id Revision
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndDocumentImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndDocumentImpl.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndDocumentImpl.java<br/>(original)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndDocumentImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -18,7 +18,6 @@
+ package org.apache.xerces.stax.events;
+
+</para><para depth="0"> import javax.xml.stream.Location;
+-import javax.xml.stream.XMLStreamConstants;
+ import javax.xml.stream.events.EndDocument;
+
+</para><para depth="0"> /**
+@@ -35,7 +34,7 @@
+      * @param location Location object for this event. 
+      */
+     public EndDocumentImpl(Location location) {
+-        super(XMLStreamConstants.END_DOCUMENT, location);
++        super(END_DOCUMENT, location);
+     }
+
+</para><para depth="0"> }
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndElementImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndElementImpl.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndElementImpl.java<br/>(original)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EndElementImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -17,11 +17,8 @@
+
+</para><para depth="0"> package org.apache.xerces.stax.events;
+
+</para><para depth="0">-import java.util.Iterator;
+-
+ import javax.xml.namespace.QName;
+ import javax.xml.stream.Location;
+-import javax.xml.stream.XMLStreamConstants;
+ import javax.xml.stream.events.EndElement;
+
+</para><para depth="0"> /**
+@@ -31,34 +28,13 @@
+  *
+  * @version $Id$
+  */
+-public final class EndElementImpl extends XMLEventImpl implements EndElement {
+-
+-    /**
+-     * The qualified name of the element that is being closed.
+-     */
+-    private final QName fName;
++public final class EndElementImpl extends ElementImpl implements EndElement {
+
+</para><para depth="0">     /**
+      * @param location The location object for this event.
+      */
+     public EndElementImpl(final QName name, final Location location) {
+-        super(XMLStreamConstants.END_ELEMENT, location);
+-        fName = name;
+-    }
+-
+-    /**
+-     * @see javax.xml.stream.events.EndElement#getName()
+-     */
+-    public QName getName() {
+-        return fName;
+-    }
+-
+-    /**
+-     * @see javax.xml.stream.events.EndElement#getNamespaces()
+-     */
+-    public Iterator getNamespaces() {
+-        // TODO Auto-generated method stub
+-        return null;
++        super(name, false, location);
+     }
+
+</para><para depth="0"> }
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EntityReferenceImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EntityReferenceImpl.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EntityReferenceImpl.java<br/>(original)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/EntityReferenceImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -30,19 +30,36 @@
+  */
+ public final class EntityReferenceImpl extends XMLEventImpl implements
+         EntityReference {
++    
++    /**
++     * The name of the entity.
++     */
++    private final String fName;
+
+</para><para depth="0">     /**
+      * The entity declaration for this entity reference.
+      */
+     private final EntityDeclaration fDecl;
+-
++    
+     /**
+      * Constructor.
++     * @param decl
+      * @param location
+      */
+     public EntityReferenceImpl(final EntityDeclaration decl, final Location<br/>location) {
++        this(decl != null ? decl.getName() : null, decl, location);
++    }
++    
++    /**
++     * Constructor.
++     * @param name
++     * @param decl
++     * @param location
++     */
++    public EntityReferenceImpl(final String name, final EntityDeclaration decl,<br/>final Location location) {
+         super(ENTITY_REFERENCE, location);
+-        fDecl = decl;;
++        fName = name;
++        fDecl = decl;
+     }
+
+</para><para depth="0">     /**
+@@ -56,9 +73,7 @@
+      * @see javax.xml.stream.events.EntityReference#getName()
+      */
+     public String getName() {
+-        //TODO: Is this actually correct? Not sure how an entity ref can have a<br/>different
+-        //name to the entity decl, but needs checking just in case.
+-        return fDecl.getName();
++        return fName;
+     }
+
+</para><para depth="0"> }
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/StartElementImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/StartElementImpl.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/StartElementImpl.java<br/>(original)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/StartElementImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -17,10 +17,8 @@
+
+</para><para depth="0"> package org.apache.xerces.stax.events;
+
+</para><para depth="0">-import java.util.ArrayList;
+ import java.util.Comparator;
+ import java.util.Iterator;
+-import java.util.List;
+ import java.util.Map;
+ import java.util.TreeMap;
+
+</para><para depth="0">@@ -28,7 +26,6 @@
+ import javax.xml.namespace.QName;
+ import javax.xml.stream.Location;
+ import javax.xml.stream.events.Attribute;
+-import javax.xml.stream.events.Namespace;
+ import javax.xml.stream.events.StartElement;
+
+</para><para depth="0"> /**
+@@ -38,7 +35,7 @@
+  *
+  * @version $Id$
+  */
+-public final class StartElementImpl extends XMLEventImpl implements<br/>StartElement {
++public final class StartElementImpl extends ElementImpl implements StartElement<br/>{
+
+</para><para depth="0">     private final Map fAttributes = new TreeMap(new Comparator(){
+         public int compare(Object o1, Object o2) {
+@@ -49,8 +46,6 @@
+             QName name2 = (QName)o2;
+             return name1.toString().compareTo(name2.toString());
+         }});
+-    private final List fNamespaces = new ArrayList();
+-    private final QName fName;
+     private final NamespaceContext fNamespaceContext;
+
+</para><para depth="0">     /**
+@@ -58,30 +53,15 @@
+      * @param schemaType
+      */
+     public StartElementImpl(final QName name, final NamespaceContext<br/>namespaceContext, final Location location) {
+-        super(START_ELEMENT, location);
+-        fName = name;
++        super(name, true, location);
+         fNamespaceContext = namespaceContext;
+     }
+
+</para><para depth="0">     /**
+-     * @see javax.xml.stream.events.StartElement#getName()
+-     */
+-    public QName getName() {
+-        return fName;
+-    }
+-
+-    /**
+      * @see javax.xml.stream.events.StartElement#getAttributes()
+      */
+     public Iterator getAttributes() {
+-        return new NoRemoveIterator(fAttributes.values().iterator());
+-    }
+-
+-    /**
+-     * @see javax.xml.stream.events.StartElement#getNamespaces()
+-     */
+-    public Iterator getNamespaces() {
+-        return new NoRemoveIterator(fNamespaces.iterator());
++        return createImmutableIterator(fAttributes.values().iterator());
+     }
+
+</para><para depth="0">     /**
+@@ -108,41 +88,5 @@
+     public void addAttribute(final Attribute attribute) {
+         fAttributes.put(attribute.getName(), attribute);
+     }
+-    
+-    public void addNamespace(final Namespace namespace) {
+-        fNamespaces.add(namespace);
+-    }
+-    
+-    
+-    private final class NoRemoveIterator implements Iterator {
+-        
+-        private final Iterator fWrapped;
+-        
+-        public NoRemoveIterator(Iterator wrapped) {
+-            fWrapped = wrapped;
+-        }
+-        
+-        /**
+-         * @see java.util.Iterator#hasNext()
+-         */
+-        public boolean hasNext() {
+-            return fWrapped.hasNext();
+-        }
+-
+-        /**
+-         * @see java.util.Iterator#next()
+-         */
+-        public Object next() {
+-            return fWrapped.next();
+-        }
+-
+-        /**
+-         * @see java.util.Iterator#remove()
+-         */
+-        public void remove() {
+-            throw new UnsupportedOperationException("Attributes iterator is<br/>read-only.");
+-        }
+-        
+-    }
+
+</para><para depth="0"> }
+
+</para><para depth="0">Modified:<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/XMLEventImpl.java
+URL:<br/><url>http://svn.apache.org/viewvc/xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/XMLEventImpl.java?rev=730318&amp;r1=730317&amp;r2=730318&amp;view=diff</url>
+==============================================================================
+---<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/XMLEventImpl.java<br/>(original)
++++<br/>xerces/java/branches/stax-dev/src/org/apache/xerces/stax/events/XMLEventImpl.java<br/>Tue Dec 30 22:15:42 2008
+@@ -21,7 +21,6 @@
+
+</para><para depth="0"> import javax.xml.namespace.QName;
+ import javax.xml.stream.Location;
+-import javax.xml.stream.XMLStreamConstants;
+ import javax.xml.stream.XMLStreamException;
+ import javax.xml.stream.events.Characters;
+ import javax.xml.stream.events.EndElement;
+@@ -51,7 +50,7 @@
+     /**
+      * Constructor.
+      */
+-    public XMLEventImpl(final int eventType, final Location location) {
++    XMLEventImpl(final int eventType, final Location location) {
+         fEventType = eventType;
+         fLocation = location;
+     }
+@@ -74,63 +73,65 @@
+      * @see javax.xml.stream.events.XMLEvent#isStartElement()
+      */
+     public final boolean isStartElement() {
+-        return XMLStreamConstants.START_ELEMENT == fEventType;
++        return START_ELEMENT == fEventType;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.XMLEvent#isAttribute()
+      */
+     public final boolean isAttribute() {
+-        return XMLStreamConstants.ATTRIBUTE == fEventType;
++        return ATTRIBUTE == fEventType;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.XMLEvent#isNamespace()
+      */
+     public final boolean isNamespace() {
+-        return XMLStreamConstants.NAMESPACE == fEventType;
++        return NAMESPACE == fEventType;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.XMLEvent#isEndElement()
+      */
+     public final boolean isEndElement() {
+-        return XMLStreamConstants.END_ELEMENT == fEventType;
++        return END_ELEMENT == fEventType;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.XMLEvent#isEntityReference()
+      */
+     public final boolean isEntityReference() {
+-        return XMLStreamConstants.ENTITY_REFERENCE == fEventType;
++        return ENTITY_REFERENCE == fEventType;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.XMLEvent#isProcessingInstruction()
+      */
+     public final boolean isProcessingInstruction() {
+-        return XMLStreamConstants.PROCESSING_INSTRUCTION == fEventType;
++        return PROCESSING_INSTRUCTION == fEventType;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.XMLEvent#isCharacters()
+      */
+     public final boolean isCharacters() {
+-        return XMLStreamConstants.CHARACTERS == fEventType;
++        return CHARACTERS == fEventType ||
++            CDATA == fEventType ||
++            SPACE == fEventType;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.XMLEvent#isStartDocument()
+      */
+     public final boolean isStartDocument() {
+-        return XMLStreamConstants.START_DOCUMENT == fEventType;
++        return START_DOCUMENT == fEventType;
+     }
+
+</para><para depth="0">     /**
+      * @see javax.xml.stream.events.XMLEvent#isEndDocument()
+      */
+     public final boolean isEndDocument() {
+-        return XMLStreamConstants.END_DOCUMENT == fEventType;
++        return END_DOCUMENT == fEventType;
+     }
+
+</para><footer type="noise" depth="0">     /**
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>commits-unsubscribe@xerces.apache.org</email>
+For additional commands, e-mail: <email>commits-help@xerces.apache.org</email>
+
+</footer></body></message>

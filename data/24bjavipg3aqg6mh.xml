@@ -1,0 +1,67 @@
+<message message-id="Pine.BSF.4.21.0007100511160.1668-100000@wysoft.tzo.com" list="org.freebsd.freebsd-stable" id="24bjavipg3aqg6mh" type="general" date="2000-07-10T05:16:17-07:00" year="2000-01-01" year-month="2000-07-01" year-month-day="2000-07-10" thread-id="fffmovpaa3z57jdh"><headers><envelope-from-line>From owner-freebsd-stable  Mon Jul 10  6:55:39 2000</envelope-from-line><from personal="Jeff Wyman" address="wysoft@wysoft.tzo.com">Jeff Wyman &lt;wysoft@wysoft.tzo.com&gt;</from><to personal="Daniel C. Sobral" address="dcs@newsguy.com">"Daniel C. Sobral" &lt;dcs@newsguy.com&gt;</to><cc personal="Stephen Montgomery-Smith" address="stephen@math.missouri.edu">Stephen Montgomery-Smith &lt;stephen@math.missouri.edu&gt;</cc><subject normal="HEADS UP! Always use the 'make buildkernel' target to make yerkernels">Re: HEADS UP! Always use the 'make buildkernel' target to make  yerkernels</subject><delivered-to>freebsd-stable@freebsd.org</delivered-to><received>from wysoft.tzo.com (c481444-a.bremtn1.wa.home.com [24.12.235.202])
+	by hub.freebsd.org (Postfix) with ESMTP
+	id 6E4CE37BBFC; Mon, 10 Jul 2000 06:55:25 -0700 (PDT)
+	(envelope-from wysoft@wysoft.tzo.com)</received><received>from localhost (wysoft@localhost)
+	by wysoft.tzo.com (8.10.1/8.10.1) with ESMTP id e6ACGHj01705;
+	Mon, 10 Jul 2000 05:16:17 -0700 (PDT)</received><date>Mon, 10 Jul 2000 05:16:17 -0700 (PDT)</date><in-reply-to>&lt;3969CF3A.29207364@newsguy.com&gt;</in-reply-to><message-id>Pine.BSF.4.21.0007100511160.1668-100000@wysoft.tzo.com</message-id><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII</content-type><sender>owner-freebsd-stable@FreeBSD.ORG</sender><precedence>bulk</precedence><x-loop>FreeBSD.ORG</x-loop></headers><normalized-references><normalized-message-id>Pine.BSF.4.21.0007100511160.1668-100000@wysoft.tzo.com</normalized-message-id><normalized-in-reply-to>3969CF3A.29207364@newsguy.com</normalized-in-reply-to></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">
+With all this effort of editing files, is it really too much to move the
+built kernel file and change file/schg flags? Maybe a "make 
+activekernel=XXX YYY" could make the appropriate changes to kernel XXX and
+move it to /YYY as the active boot kernel. Just a quick thought.
+
+</para><para depth="0">On Mon, 10 Jul 2000, Daniel C. Sobral wrote:
+
+</para><quote depth="1"><quotepara depth="1">Stephen Montgomery-Smith wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+Kris Kennaway wrote:
+</quotepara><quote depth="3"><quotepara depth="3">
+Summary of Officially Sanctioned Update Procedure:
+
+</quotepara><quotepara depth="3">make buildworld
+make buildkernel
+make installkernel
+shutdown (drop into single-user mode)
+make installworld
+mergemaster
+reboot
+
+</quotepara></quote><quotepara depth="2">The problem I have with make installkernel is the following:
+if my kernel is called XXX, then the name of the new kernel is
+/XXX, not /kernel.
+
+</quotepara><quotepara depth="2">So one would have to add the instructions:
+
+</quotepara><quotepara depth="2">cd /
+chflags noschg XXX
+mv XXX kernel
+chflags schg XXX
+
+</quotepara><quotepara depth="2">This seems quite a bit of extra instructions.  Is this what is intended?
+</quotepara></quote><quotepara depth="1">
+You can edit /boot/loader.conf and add a line like this:
+
+</quotepara><quotepara depth="1">kernel="XXX"
+
+</quotepara><quotepara depth="1">This way, XXX will be loaded instead of "kernel".
+
+</quotepara><quotefooter type="signature" hash="15879363611351064028" depth="1">-- 
+Daniel C. Sobral			(8-DCS)
+<email>dcs@newsguy.com</email>
+<email>dcs@freebsd.org</email>
+<email>capo@the.great.underground.bsdconpiracy.org</email>
+
+</quotefooter><quotepara depth="1">		&lt;jkh&gt; _DES: The Book of Bruce has only one sentence in it, and it says
+"the actual directives of my cult are left as an exercise for the
+reader. Good luck."
+		&lt;EE&gt; jkh: does it really include the 'good luck' part?
+		&lt;jkh&gt; EE: OK, I made that part up.
+		&lt;jkh&gt; EE: I figured it should sound a bit more cheery than how Bruce
+initially dictated it to me.
+
+</quotepara><quotefooter type="signature" hash="7539699788183325375" depth="1">To Unsubscribe: send mail to <email>majordomo@FreeBSD.org</email>
+with "unsubscribe freebsd-stable" in the body of the message
+
+</quotefooter></quote><para depth="0">To Unsubscribe: send mail to <email>majordomo@FreeBSD.org</email>
+with "unsubscribe freebsd-stable" in the body of the message
+
+</para></body></message>

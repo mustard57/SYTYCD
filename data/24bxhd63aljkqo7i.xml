@@ -1,0 +1,59 @@
+<message message-id="20090325042509.5FFFE1088BB@kuku" list="com.googlegroups.puppet-commit" id="24bxhd63aljkqo7i" type="checkins" date="2009-03-24T20:24:51.429806-08:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-24" thread-id="24bxhd63aljkqo7i"><headers><envelope-from-line>Tue Mar 24 20:25:14 2009</envelope-from-line><from personal="git version control" address="git@reductivelabs.com">git version control &lt;git@reductivelabs.com&gt;</from><to personal="puppet-commit@googlegroups.com" address="puppet-commit@googlegroups.com">puppet-commit@googlegroups.com</to><subject normal="[Puppet-commit] [SCM] Facter - collect system facts branch, ticket/1.5.x/1761, created. 658ae4bff3baff4fac5d20785816f1e51e62b740">[Puppet-commit] [SCM] Facter - collect system facts branch, ticket/1.5.x/1761, created. 658ae4bff3baff4fac5d20785816f1e51e62b740</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 726
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Tue, 24 Mar 2009 20:25:14 -0800 (GMT-08:00)</received><received>from yx-out-2122.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id F2CA0290806A
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 24 Mar 2009 21:24:50 -0700 (PDT)</received><received>by yx-out-2122.google.com with SMTP id 22so1188459yxm.75
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 24 Mar 2009 21:25:13 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :received:received:received-spf:authentication-results:received:to
+         :subject:x-git-refname:x-git-reftype:x-git-oldrev:x-git-newrev
+         :message-id:date:from:reply-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        bh=zF2r0CwEJswNQlk0O9FiRn4H0xV2JECtlH0umck6g+o=;
+        b=QE26yzYt3p5XeSu6Vmsvri1ACd+CG+GV9K10XhHdp8ElpQXJ37JlBGGaqx4FADtQvw
+         nvCab/zoSJt3gOEReoW3Q1jItM9ILXULhHsliLoZrPalO3+/qbLkTnueK1mCCLQtA4gL
+         hfg0fwI72Fbk7Wk28GxbhL/Hxr8Dwsf6rMWhI=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:received-spf:authentication-results:to
+         :subject:x-git-refname:x-git-reftype:x-git-oldrev:x-git-newrev
+         :message-id:date:from:reply-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        b=vhQ2eYD2FGEvsv73rYzWstv+Ih9IwfaasgenoatSwZSzcDP02w/vXiCvsESc7vz0YD
+         d+ZhmABwZ/M3ovrXL5H4YN2K3+cKC6dQO2wMQGoyraaw46d8GXpD1Obgde5pimAW5c0f
+         ZONpjSUtSn50bB6znUZrHvYFrOsqumB+8Cuns=</domainkey-signature><received>by 10.150.212.16 with SMTP id k16mr1454330ybg.14.1237955110646;
+        Tue, 24 Mar 2009 21:25:10 -0700 (PDT)</received><received>by 10.176.150.42 with SMTP id x42gr583yqd.0;
+	Tue, 24 Mar 2009 21:25:10 -0700 (PDT)</received><x-sender>git@reductivelabs.com</x-sender><x-apparently-to>puppet-commit@googlegroups.com</x-apparently-to><received>by 10.90.70.15 with SMTP id s15mr6568334aga.2.1237955109789; Tue, 24 Mar 2009 21:25:09 -0700 (PDT)</received><received>from kuku (kuku.reductivelabs.net [208.78.100.132]) by gmr-mx.google.com with ESMTP id 39si651177yxd.0.2009.03.24.21.25.09; Tue, 24 Mar 2009 21:25:09 -0700 (PDT)</received><received-spf>softfail (google.com: domain of transitioning git@reductivelabs.com does not designate 208.78.100.132 as permitted sender) client-ip=208.78.100.132;</received-spf><authentication-results>gmr-mx.google.com; spf=softfail (google.com: domain of transitioning git@reductivelabs.com does not designate 208.78.100.132 as permitted sender) smtp.mail=git@reductivelabs.com</authentication-results><received>by kuku (Postfix, from userid 1004) id 5FFFE1088BB; Wed, 25 Mar 2009 04:25:09 +0000 (UTC)</received><x-git-refname>refs/heads/ticket/1.5.x/1761</x-git-refname><x-git-reftype>branch</x-git-reftype><x-git-oldrev>0000000000000000000000000000000000000000</x-git-oldrev><x-git-newrev>658ae4bff3baff4fac5d20785816f1e51e62b740</x-git-newrev><message-id>20090325042509.5FFFE1088BB@kuku</message-id><date>Wed, 25 Mar 2009 04:25:09 +0000 (UTC)</date><reply-to>puppet-commit@googlegroups.com</reply-to><sender>puppet-commit@googlegroups.com</sender><precedence>bulk</precedence><x-google-loop>groups</x-google-loop><mailing-list>list puppet-commit@googlegroups.com;
+	contact puppet-commit+owner@googlegroups.com</mailing-list><list-id>&lt;puppet-commit.googlegroups.com&gt;</list-id><list-post>&lt;mailto:puppet-commit@googlegroups.com&gt;</list-post><list-help>&lt;mailto:puppet-commit+help@googlegroups.com&gt;</list-help><list-unsubscribe>&lt;http://googlegroups.com/group/puppet-commit/subscribe&gt;,
+	&lt;mailto:puppet-commit+unsubscribe@googlegroups.com&gt;</list-unsubscribe><x-beenthere-env>puppet-commit@googlegroups.com</x-beenthere-env><x-beenthere>puppet-commit@googlegroups.com</x-beenthere></headers><normalized-references><normalized-message-id>20090325042509.5FFFE1088BB@kuku</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">
+This is an automated email from the git hooks/post-receive script. It was
+generated because a ref change was pushed to the repository containing
+the project "Facter - collect system facts".
+
+</para><para depth="0">The branch, ticket/1.5.x/1761 has been created
+        at  658ae4bff3baff4fac5d20785816f1e51e62b740 (commit)
+
+</para><para depth="0">- Log -----------------------------------------------------------------
+commit 658ae4bff3baff4fac5d20785816f1e51e62b740
+Author: Joel W. Shea &lt;<email>jwshea@gmail.com</email>&gt;
+Date:   Thu Feb 5 16:52:17 2009 +1100
+
+</para><para depth="0">    This commit refs #1555, #1898 and fixes #1761
+
+</para><footer type="noise" depth="0">-----------------------------------------------------------------------
+
+</footer><para depth="0">hooks/post-receive
+</para><footer type="signature" depth="0" hash="14503523168242741315">--
+Facter - collect system facts
+
+</footer><footer type="list-management" depth="0">--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups<br/>"Puppet Commit" group.
+To post to this group, send email to <email>puppet-commit@googlegroups.com</email>
+To unsubscribe from this group, send email to<br/>puppet-commit+<email>unsubscribe@googlegroups.com</email>
+For more options, visit this group at<br/><url>http://groups.google.com/group/puppet-commit?hl=en</url>
+-~----------~----~----~----~------~----~------~--~---
+
+</footer></body></message>

@@ -1,0 +1,53 @@
+<message message-id="2082015269.1243005765542.JavaMail.jira@brutus" list="org.apache.ofbiz.dev" id="24bhkbfhpy45f6si" type="bugs" date="2009-05-22T08:22:45-07:00" year="2009-01-01" year-month="2009-05-01" year-month-day="2009-05-22" thread-id="tt6ceak377so7ndb"><headers><envelope-from-line>Fri May 22 07:23:08 2009</envelope-from-line><from personal="Chatree Srichart (JIRA)" address="jira@apache.org">"Chatree Srichart (JIRA)" &lt;jira@apache.org&gt;</from><to personal="dev@ofbiz.apache.org" address="dev@ofbiz.apache.org">dev@ofbiz.apache.org</to><subject normal="[jira] Updated: (OFBIZ-2510) How I use convertUomProduct for catalog, order, inventory and manufacturing.">[jira] Updated: (OFBIZ-2510) How I use convertUomProduct for catalog, order, inventory and manufacturing.</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 549
+          for &lt;javier.gray.riggs@a.markmail.org&gt;;
+          Fri, 22 May 2009 07:23:08 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 332543B300B8
+	for &lt;javier.gray.riggs@a.markmail.org&gt;; Fri, 22 May 2009 08:22:45 -0700 (PDT)</received><received>(qmail 33504 invoked by uid 500); 22 May 2009 15:23:07 -0000</received><mailing-list>contact dev-help@ofbiz.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@ofbiz.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@ofbiz.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@ofbiz.apache.org&gt;</list-post><list-id>&lt;dev.ofbiz.apache.org&gt;</list-id><reply-to>dev@ofbiz.apache.org</reply-to><delivered-to>mailing list dev@ofbiz.apache.org</delivered-to><received>(qmail 33494 invoked by uid 99); 22 May 2009 15:23:07 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 22 May 2009 15:23:07 +0000</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.140] (HELO brutus.apache.org) (140.211.11.140)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 22 May 2009 15:23:05 +0000</received><received>from brutus (localhost [127.0.0.1])
+	by brutus.apache.org (Postfix) with ESMTP id 84C9C29A0012
+	for &lt;dev@ofbiz.apache.org&gt;; Fri, 22 May 2009 08:22:45 -0700 (PDT)</received><message-id>2082015269.1243005765542.JavaMail.jira@brutus</message-id><date>Fri, 22 May 2009 08:22:45 -0700 (PDT)</date><in-reply-to>&lt;1931517671.1243005645745.JavaMail.jira@brutus&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-jira-fingerprint>30527f35849b9dde25b450d4833f0394</x-jira-fingerprint><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>2082015269.1243005765542.JavaMail.jira@brutus</normalized-message-id><normalized-in-reply-to>1931517671.1243005645745.JavaMail.jira@brutus</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+     [<br/><url>https://issues.apache.org/jira/browse/OFBIZ-2510?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url><br/>]
+
+</para><para depth="0">Chatree Srichart updated OFBIZ-2510:
+</para><para depth="0">------------------------------------
+
+</para><para depth="0">    Description: 
+How I use convertUomProduct for order, inventory and manufacturing.
+I would like to convert product's quantity uom for order, inventory and<br/>maufacturing.
+Please give example for use them to me.
+
+</para><para depth="0">Thank, Chatree
+
+</para><para depth="0">  was:
+How I use convertUomProduct for order, inventory and manufacturing.
+I would like to convert product's quantity uom for order, inventory and<br/>maufacturing.
+Can you give example for use them to me.
+
+</para><para depth="0">Thank, Chatree
+
+</para><quote depth="1"><quotepara depth="1">How I use convertUomProduct for catalog, order, inventory and manufacturing.
+</quotepara><quotepara depth="1">----------------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: OFBIZ-2510
+                URL: <url>https://issues.apache.org/jira/browse/OFBIZ-2510</url>
+            Project: OFBiz
+         Issue Type: Question
+         Components: product
+        Environment: Ubuntu
+           Reporter: Chatree Srichart
+           Priority: Critical
+
+</quotepara><quotepara depth="1">How I use convertUomProduct for order, inventory and manufacturing.
+I would like to convert product's quantity uom for order, inventory and<br/>maufacturing.
+Please give example for use them to me.
+Thank, Chatree
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="12364841950400781264">-- 
+This message is automatically generated by JIRA.
+-
+You can reply to this email to add a comment to the issue online.
+
+</footer></body></message>

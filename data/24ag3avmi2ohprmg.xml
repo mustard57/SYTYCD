@@ -1,0 +1,72 @@
+<message message-id="20071101080400.30918.qmail@minotaur.apache.org" list="org.apache.cayenne.commits" id="24ag3avmi2ohprmg" type="checkins" date="2007-11-01T08:04:00Z" year="2007-01-01" year-month="2007-11-01" year-month-day="2007-11-01" thread-id="24ag3avmi2ohprmg"><headers><envelope-from-line>Thu Nov 01 01:04:29 2007</envelope-from-line><from personal="dblevins@apache.org" address="dblevins@apache.org">dblevins@apache.org</from><to personal="cayenne-commits@incubator.apache.org" address="cayenne-commits@incubator.apache.org">cayenne-commits@incubator.apache.org</to><subject normal="Open Issues by Votes: 2007-11-01">Open Issues by Votes: 2007-11-01</subject><received>from hermes.apache.org ([140.211.11.2])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 203
+          for &lt;luke.shields.kemp@a.markmail.org&gt;;
+          Thu, 1 Nov 2007 01:04:29 -0700 (PDT)</received><received>(qmail 35491 invoked by uid 500); 1 Nov 2007 08:04:17 -0000</received><mailing-list>contact commits-help@cayenne.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:commits-help@cayenne.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@cayenne.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:commits@cayenne.apache.org&gt;</list-post><list-id>&lt;commits.cayenne.apache.org&gt;</list-id><reply-to>dev@cayenne.apache.org</reply-to><delivered-to>mailing list commits@cayenne.apache.org</delivered-to><received>(qmail 35482 invoked by uid 500); 1 Nov 2007 08:04:16 -0000</received><delivered-to>apmail-incubator-cayenne-commits@incubator.apache.org</delivered-to><received>(qmail 35479 invoked by uid 99); 1 Nov 2007 08:04:16 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 01 Nov 2007 01:04:16 -0700</received><x-asf-spam-status>No, hits=-100.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.9] (HELO minotaur.apache.org) (140.211.11.9)
+    by apache.org (qpsmtpd/0.29) with SMTP; Thu, 01 Nov 2007 08:04:28 +0000</received><received>(qmail 32247 invoked by uid 1723); 1 Nov 2007 08:04:08 -0000</received><date>1 Nov 2007 08:04:00 -0000</date><message-id>20071101080400.30918.qmail@minotaur.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20071101080400.30918.qmail@minotaur.apache.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">
+Cayenne - Thursday, November 1, 2007
+
+</para><para depth="0">  60 issues
+
+</para><para depth="0">  2 - <url>http://issues.apache.org/cayenne/browse/CAY-762</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-892</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-132</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-154</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-808</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-316</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-578</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-155</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-402</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-204</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-400</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-825</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-217</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-795</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-337</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-481</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-366</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-431</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-880</url>
+  2 - <url>http://issues.apache.org/cayenne/browse/CAY-225</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-760</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-895</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-893</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-210</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-881</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-552</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-432</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-314</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-253</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-329</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-905</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-884</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-584</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-811</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-536</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-738</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-527</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-550</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-889</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-554</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-894</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-794</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-523</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-477</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-891</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-419</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-574</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-577</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-806</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-888</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-886</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-228</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-910</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-282</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-906</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-911</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-907</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-457</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-209</url>
+  1 - <url>http://issues.apache.org/cayenne/browse/CAY-850</url>
+</para></body></message>

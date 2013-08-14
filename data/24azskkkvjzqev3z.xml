@@ -1,0 +1,91 @@
+<message message-id="A44596FE-D290-40E1-9038-A0F9FE1DCFD7@sppdg.mayo.edu" list="org.codehaus.grails.user" id="24azskkkvjzqev3z" type="users" date="2010-02-04T11:38:32-06:00" year="2010-01-01" year-month="2010-02-01" year-month-day="2010-02-04" thread-id="sexwz4572nq5llz5"><headers><envelope-from-line>Thu Feb 04 09:39:08 2010</envelope-from-line><from personal="Epps, Aaron" address="Epps.Aaron@mayo.edu">"Epps, Aaron" &lt;Epps.Aaron@mayo.edu&gt;</from><to personal="user@grails.codehaus.org" address="user@grails.codehaus.org">user@grails.codehaus.org</to><subject normal="[grails-user] GrailsUI DataTable Questions">Re: [grails-user] GrailsUI DataTable Questions</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 425
+          for &lt;katharine.henson.hurley@a.markmail.org&gt;;
+          Thu, 4 Feb 2010 09:39:08 -0800 (GMT-08:00)</received><received>from mail.codehaus.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 3F08C290A13D
+	for &lt;katharine.henson.hurley@a.markmail.org&gt;; Thu,  4 Feb 2010 09:38:45 -0800 (PST)</received><received>(qmail 23293 invoked by uid 89); 4 Feb 2010 17:38:30 -0000</received><mailing-list>contact user-help@grails.codehaus.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;http://xircles.codehaus.org/manage_email&gt;</list-post><list-help>&lt;http://xircles.codehaus.org/manage_email&gt;</list-help><list-unsubscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-unsubscribe><list-subscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-subscribe><list-id>&lt;user.grails.codehaus.org&gt;</list-id><reply-to>user@grails.codehaus.org</reply-to><delivered-to>mailing list user@grails.codehaus.org</delivered-to><received>(qmail 23257 invoked by uid 89); 4 Feb 2010 17:38:29 -0000</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>ApoEAD+VakuBsNQ1/2dsb2JhbADKcoUKiFOETAQ</x-ironport-anti-spam-result><content-type>text/plain; charset=us-ascii</content-type><mime-version>1.0 (Apple Message framework v1077)</mime-version><in-reply-to>&lt;33ef863b1002040916l505138fbk266ebdf6826c7a13@mail.gmail.com&gt;</in-reply-to><date>Thu, 4 Feb 2010 11:38:32 -0600</date><content-transfer-encoding>quoted-printable</content-transfer-encoding><message-id>A44596FE-D290-40E1-9038-A0F9FE1DCFD7@sppdg.mayo.edu</message-id><references>&lt;E558020A-24D0-4A31-B929-D3C075F6B6AB@sppdg.mayo.edu&gt; &lt;33ef863b1002040916l505138fbk266ebdf6826c7a13@mail.gmail.com&gt;</references><x-mailer>Apple Mail (2.1077)</x-mailer><x-originalarrivaltime>04 Feb 2010 17:40:16.0686 (UTC) FILETIME=[1CF96CE0:01CAA5C1]</x-originalarrivaltime></headers><normalized-references><normalized-message-id>A44596FE-D290-40E1-9038-A0F9FE1DCFD7@sppdg.mayo.edu</normalized-message-id><normalized-in-reply-to>33ef863b1002040916l505138fbk266ebdf6826c7a13@mail.gmail.com</normalized-in-reply-to><normalized-reference>E558020A-24D0-4A31-B929-D3C075F6B6AB@sppdg.mayo.edu</normalized-reference><normalized-reference>33ef863b1002040916l505138fbk266ebdf6826c7a13@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Also, in the following dataTable tag:
+
+</para><para depth="0">&lt;gui:dataTable
+          controller="milestone" action="dataTableJSON"
+          columnDefs="[
+          [key:'primaryTeam', label:'Primary Team', sortable: true, resizeable:<br/>true],
+          [key:'summary', label:'Summary', sortable: true, resizeable: true],
+          [key:'description', label:'Description', sortable: true, resizeable:<br/>true],
+          [key:'sDateOriginal', label:'Original Start Date', sortable: true,<br/>resizeable: true],
+          [key:'eDateOriginal', label:'Original End Date', sortable: true,<br/>resizeable: true],
+          [key:'sDateActual', label:'Actual Start Date', sortable: true,<br/>resizeable: true],
+          [key:'eDateNew', label:'New End Date', sortable: true, resizeable:<br/>true],
+          [key:'priority', label:'Priority', sortable: true, resizeable: true],
+          [key:'status', label:'Status', sortable: true, resizeable: true],
+          [key:'contactPerson', label:'Contact Person', sortable: true,<br/>resizeable: true],
+          [key:'notes', label:'Notes', sortable: true, resizeable: true]
+          ]"
+          sortedBy="primaryTeam"
+          draggableColumns="true"
+          rowsPerPage="100"
+          rowClickNavigation="true"
+          paginatorConfig="[template:'']"
+          /&gt;
+
+</para><para depth="0">How do I specify the direction of sortedBy?
+
+</para><para depth="0">On Feb 4, 2010, at 11:16 AM, Matthew Taylor wrote:
+
+</para><quote depth="1"><quotepara depth="1">On Thu, Feb 4, 2010 at 6:51 AM, Epps, Aaron &lt;<email>Epps.Aaron@mayo.edu</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">I've been working on using the &lt;gui:dataTable&gt; and have a few questions:
+
+</quotepara><quotepara depth="2">How do I remove the paginator? I simply want the table to list all records
+and have no paginators either at the top or bottom of the table.
+</quotepara></quote><quotepara depth="1">
+Try this:
+
+</quotepara><quotepara depth="1">paginatorConfig="[template:'']"
+
+</quotepara><quotepara depth="1">This is giving the dataTable a completely empty Paginator template.
+
+</quotepara><quote depth="2"><quotepara depth="2">I've setup my controller to create JSON data for the table, and this all
+works fine except when the field returns a null value. For example, in the
+code below the fields description, contactPerson and notes all contain null
+values and when dataTable renders those columns they show up as
+"[object Object]" instead of just an empty string. So, if a column contains
+a null value, how do I get dataTable to display "" instead of "[object
+Object]"?
+</quotepara></quote><quotepara depth="1">
+Funny thing about JavaScript, but the type of null is an Object, so
+that is why it gets rendered as [object Object] in JSON. In your
+server logic, you'll have to check for null and created the JSON data
+structure with an empty string if the object is null instead of using
+the Groovy null. It would be nice if the Grails JSON translator did
+this for you.
+
+</quotepara><quote depth="2"><quotepara depth="2">Is there a way to access the toString method for a associated object? For
+example, the primaryTeam field is of type "Team" and so points to a
+domain that I've created. Rather than using it.primaryTeam.fullName is there
+a way to get it.primaryTeam.toString()? That way, I could use the same
+formatting throughout the application by just calling the toString method of
+the Team class.
+</quotepara></quote><quotepara depth="1">
+This doesn't work?
+
+</quotepara><quotepara depth="1">primaryTeam: it.primaryTeam.toString(),
+
+</quotepara><quote depth="2"><quotepara depth="2">Thanks for all the help so far, this is a really great mailing list!
+Controller:
+</quotepara></quote><quotepara depth="1">
+You're welcome,
+
+</quotepara><quotefooter type="signature" depth="1" hash="4193470824858803628">matthew taylor
+yahoo! front-end engineer
+<email>rhyolight@gmail.com</email>
+
+</quotefooter><quotefooter type="list-management" depth="1">---------------------------------------------------------------------
+To unsubscribe from this list, please visit:
+
+</quotefooter><quotefooter type="list-management" depth="1">   <url>http://xircles.codehaus.org/manage_email</url>
+
+</quotefooter></quote><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe from this list, please visit:
+
+</footer><footer type="list-management" depth="0">    <url>http://xircles.codehaus.org/manage_email</url>
+
+</footer></body></message>

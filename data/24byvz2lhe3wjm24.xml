@@ -1,0 +1,54 @@
+<message message-id="E95E13A106653040AE99502057C82AA10E113E@EXP1.ad.local" list="com.redhat.nahant-list" id="24byvz2lhe3wjm24" type="general" date="2007-05-12T08:56:10-04:00" year="2007-01-01" year-month="2007-05-01" year-month-day="2007-05-12" thread-id="olctobwu4oabzt4c"><headers><envelope-from-line>From don.vanco@agilysys.com Sat May 12 08:58:13 2007</envelope-from-line><from personal="Vanco, Don" address="don.vanco@agilysys.com">"Vanco, Don" &lt;don.vanco@agilysys.com&gt;</from><to personal="Red Hat Enterprise Linux 4 (Nahant) Discussion List" address="nahant-list@redhat.com">"Red Hat Enterprise Linux 4 (Nahant) Discussion List" &lt;nahant-list@redhat.com&gt;</to><subject normal="Hello">RE: Hello</subject><received>from int-mx2.corp.redhat.com (nat-pool.util.phx.redhat.com
+	[10.8.5.200])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	l4CCwCfl004199 for &lt;nahant-list@listman.util.phx.redhat.com&gt;;
+	Sat, 12 May 2007 08:58:13 -0400</received><received>from mx2.redhat.com (mx2.redhat.com [10.255.15.25])
+	by int-mx2.corp.redhat.com (8.13.1/8.13.1) with ESMTP id l4CCwCjL009224
+	for &lt;nahant-list@redhat.com&gt;; Sat, 12 May 2007 08:58:12 -0400</received><received>from mail64.messagelabs.com (mail64.messagelabs.com [216.82.249.227])
+	by mx2.redhat.com (8.13.1/8.13.1) with SMTP id l4CCw8OO000471
+	for &lt;nahant-list@redhat.com&gt;; Sat, 12 May 2007 08:58:09 -0400</received><x-viruschecked>Checked</x-viruschecked><x-env-sender>don.vanco@agilysys.com</x-env-sender><x-msg-ref>server-15.tower-64.messagelabs.com!1178974682!82378441!1</x-msg-ref><x-starscan-version>5.5.10.7.1; banners=-,-,-</x-starscan-version><x-originating-ip>[208.49.13.234]</x-originating-ip><received>(qmail 9097 invoked from network); 12 May 2007 12:58:02 -0000</received><received>from unknown (HELO MS2.ad.local) (208.49.13.234)
+	by server-15.tower-64.messagelabs.com with SMTP;
+	12 May 2007 12:58:02 -0000</received><received>From EXP1.ad.local ([172.25.25.25]) by MS2.ad.local (WebShield SMTP
+	v4.5 MR1a P0803.401); 
+	id 1178974681799; Sat, 12 May 2007 08:58:01 -0400</received><x-mimeole>Produced By Microsoft Exchange V6.5</x-mimeole><content-class>urn:content-classes:message</content-class><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><date>Sat, 12 May 2007 08:56:10 -0400</date><message-id>E95E13A106653040AE99502057C82AA10E113E@EXP1.ad.local</message-id><x-ms-has-attach/><x-ms-tnef-correlator/><thread-topic>Hello</thread-topic><thread-index>AceUkgNt9q+HOP0IQb69ATUk4xtvdQAAubUk</thread-index><references>&lt;b221cb580705120457p112f5848p6d5191705fc7be4d@mail.gmail.com&gt;&lt;E95E13A106653040AE99502057C82AA10E113D@EXP1.ad.local&gt;
+	&lt;b221cb580705120535x26e98ba8o992735cb0e409ffa@mail.gmail.com&gt;</references><x-redhat-spam-score>0 </x-redhat-spam-score><content-transfer-encoding>8bit</content-transfer-encoding><x-mime-autoconverted>from quoted-printable to 8bit by
+	listman.util.phx.redhat.com id l4CCwCfl004199</x-mime-autoconverted><x-loop>nahant-list@redhat.com</x-loop><x-beenthere>nahant-list@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>"Red Hat Enterprise Linux 4 \(Nahant\) Discussion List"
+	&lt;nahant-list@redhat.com&gt;</reply-to><list-id>"Red Hat Enterprise Linux 4 \(Nahant\) Discussion List"
+	&lt;nahant-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/nahant-list&gt;,
+	&lt;mailto:nahant-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/nahant-list&gt;</list-archive><list-post>&lt;mailto:nahant-list@redhat.com&gt;</list-post><list-help>&lt;mailto:nahant-list-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/nahant-list&gt;,
+	&lt;mailto:nahant-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Sat, 12 May 2007 12:58:13 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>E95E13A106653040AE99502057C82AA10E113E@EXP1.ad.local</normalized-message-id><normalized-thread-index>AceUkgNt9q+HOP0IQb69ATUk4xtvdQ</normalized-thread-index><normalized-reference>b221cb580705120457p112f5848p6d5191705fc7be4d@mail.gmail.com&gt;&lt;E95E13A106653040AE99502057C82AA10E113D@EXP1.ad.local</normalized-reference><normalized-reference>b221cb580705120535x26e98ba8o992735cb0e409ffa@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">You might also try a post in the Linux forums to see if anyone else has<br/>attempted this:
+<url>http://forums1.itrc.hp.com/service/forums/categoryhome.do?categoryId=15</url>
+...AFAIK it's a Winputer....
+
+</para><para depth="0">Have you tried to just PXE it and see what happens?
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: <email>nahant-list-bounces@redhat.com</email> on behalf of mohammed saif
+Sent: Sat 5/12/2007 8:35 AM
+To: Red Hat Enterprise Linux 4 (Nahant) Discussion List
+Subject: Re: Hello
+
+</quotepara><quotepara depth="1">thnx for help
+i searched there but i didnt find anything, i hope if someone has an idea
+about how to do that
+
+</quotepara><quotepara depth="1">regards
+mohamad
+
+</quotepara><quotepara depth="1">On 5/12/07, Vanco, Don &lt;<email>don.vanco@agilysys.com</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+Take a look at HP.com and search against "T30 linux" - dunno that you'll
+find anything for 4.4 if it's not officially supported.....
+
+</quotepara><quote depth="3"><quotepara depth="3">-----Original Message-----
+From: <email>nahant-list-bounces@redhat.com</email> on behalf of mohammed saif
+Sent: Sat 5/12/2007 7:57 AM
+To: Red Hat Enterprise Linux 4 (Nahant) Discussion List
+Subject: Hello
+
+</quotepara><quotepara depth="3">Hi,
+plz any idea about how to install rhel 4.4 on HP thin client T30,
+thanx
+Mohammad
+
+</quotepara></quote></quote></quote></body></message>

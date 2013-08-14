@@ -1,0 +1,23 @@
+<message message-id="1147073796.5261.75.camel@localhost.localdomain" list="com.ubuntu.lists.ubuntu-users" id="24bm63rfh6p5vkex" type="users" date="2006-05-08T14:36:35+07:00" year="2006-01-01" year-month="2006-05-01" year-month-day="2006-05-08" thread-id="t2adcf7blbsqtt6q"><headers><envelope-from-line>From custom@freenet.de Mon May 08 08:36:50 2006</envelope-from-line><from personal="Chanchao" address="custom@freenet.de">Chanchao &lt;custom@freenet.de&gt;</from><to personal="ubuntu-users" address="ubuntu-users@lists.ubuntu.com">ubuntu-users &lt;ubuntu-users@lists.ubuntu.com&gt;</to><subject normal="Synaptic 'rollback' function?">Synaptic 'rollback' function?</subject><received>from mout2.freenet.de ([194.97.50.155])
+	by esperanza.ubuntu.com with esmtp (Exim 4.52) id 1Fd0IT-00021E-Rp
+	for ubuntu-users@lists.ubuntu.com; Mon, 08 May 2006 08:36:49 +0100</received><received>from [194.97.50.135] (helo=mx2.freenet.de)
+	by mout2.freenet.de with esmtpa (Exim 4.61)
+	(envelope-from &lt;custom@freenet.de&gt;) id 1Fd0IT-0000gY-NF
+	for ubuntu-users@lists.ubuntu.com; Mon, 08 May 2006 09:36:49 +0200</received><received>from mrtg.siamtobacco.com ([202.8.78.33] helo=[172.16.10.180])
+	by mx2.freenet.de with esmtpa (ID custom@freenet.de) (Exim 4.61-RC1 #1)
+	id 1Fd0IR-0006gA-Rg
+	for ubuntu-users@lists.ubuntu.com; Mon, 08 May 2006 09:36:49 +0200</received><content-type>text/plain</content-type><date>Mon, 08 May 2006 14:36:35 +0700</date><message-id>1147073796.5261.75.camel@localhost.localdomain</message-id><mime-version>1.0</mime-version><x-mailer>Evolution 2.6.1 </x-mailer><content-transfer-encoding>7bit</content-transfer-encoding><x-beenthere>ubuntu-users@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><reply-to>Ubuntu Help and User Discussions &lt;ubuntu-users@lists.ubuntu.com&gt;</reply-to><list-id>Ubuntu Help and User Discussions &lt;ubuntu-users.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-users&gt;,
+	&lt;mailto:ubuntu-users-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://lists.ubuntu.com/archives/ubuntu-users&gt;</list-archive><list-post>&lt;mailto:ubuntu-users@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-users-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-users&gt;,
+	&lt;mailto:ubuntu-users-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Mon, 08 May 2006 07:36:50 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>1147073796.5261.75.camel@localhost.localdomain</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">I just installed a KDE application on Ubuntu. Of course it required a
+big pile of KDE libraries and other packages. 
+
+</para><para depth="0">Suppose I want to uninstall that application, is there an easy way of
+getting rid of all those packages it depended upon?
+
+</para><para depth="0">Or in other words, would it be possible to set/save the current state of
+all installed packages, and then roll back to that savepoint?
+
+</para><footer type="signature" depth="0" hash="11725235363820374614">Cheers,
+Chanchao
+
+</footer></body></message>

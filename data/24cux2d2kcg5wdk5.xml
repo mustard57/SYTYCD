@@ -1,0 +1,828 @@
+<message message-id="200807031726.m63HQKbo002943@cvs-int.fedora.redhat.com" list="com.redhat.fedora-extras-commits" id="24cux2d2kcg5wdk5" type="checkins" date="2008-07-03T17:26:20Z" year="2008-01-01" year-month="2008-07-01" year-month-day="2008-07-03" thread-id="24cux2d2kcg5wdk5"><headers><envelope-from-line>From fedoramail@fedoraproject.org Thu Jul  3 13:26:30 2008</envelope-from-line><from personal="Daniel J Walsh (dwalsh)" address="fedora-extras-commits@redhat.com">"Daniel J Walsh (dwalsh)" &lt;fedora-extras-commits@redhat.com&gt;</from><to personal="fedora-extras-commits@redhat.com" address="fedora-extras-commits@redhat.com">fedora-extras-commits@redhat.com</to><subject normal="rpms/policycoreutils/devel policycoreutils-gui.patch, 1.69, 1.70 policycoreutils-rhat.patch, 1.373, 1.374 policycoreutils.spec, 1.536, 1.537">rpms/policycoreutils/devel policycoreutils-gui.patch, 1.69, 1.70 policycoreutils-rhat.patch, 1.373, 1.374 policycoreutils.spec, 1.536, 1.537</subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	m63HQTb2000901
+	for &lt;fedora-extras-commits@listman.util.phx.redhat.com&gt;;
+	Thu, 3 Jul 2008 13:26:29 -0400</received><received>from mx1.util.phx.redhat.com (mx1.util.phx.redhat.com [10.8.4.92])
+	by int-mx1.corp.redhat.com (8.13.1/8.13.1) with ESMTP id m63HQSjc019944
+	for &lt;fedora-extras-commits@int-mx1.corp.redhat.com&gt;;
+	Thu, 3 Jul 2008 13:26:28 -0400</received><received>from bastion.fedora.phx.redhat.com (bastion.fedora.phx.redhat.com
+	[10.8.34.50])
+	by mx1.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id m63HQMNB001811
+	for &lt;fedora-extras-commits@redhat.com&gt;; Thu, 3 Jul 2008 13:26:22 -0400</received><received>from bastion.fedora.phx.redhat.com (localhost.localdomain
+	[127.0.0.1])
+	by bastion.fedora.phx.redhat.com (8.13.8/8.13.8) with ESMTP id
+	m63HQMkO015555
+	for &lt;fedora-extras-commits@redhat.com&gt;; Thu, 3 Jul 2008 17:26:22 GMT</received><received>(from fedoramail@localhost)
+	by bastion.fedora.phx.redhat.com (8.13.8/8.13.8/Submit) id
+	m63HQLCF015554
+	for fedora-extras-commits@redhat.com; Thu, 3 Jul 2008 17:26:22 GMT</received><received>from cvs-int.fedora.redhat.com (cvs.fedoraproject.org [10.8.34.51])
+	by bastion.fedora.phx.redhat.com (8.13.8/8.13.8) with ESMTP id
+	m63HQLa4015543; Thu, 3 Jul 2008 17:26:21 GMT</received><received>from cvs-int.fedora.phx.redhat.com (localhost.localdomain
+	[127.0.0.1])
+	by cvs-int.fedora.redhat.com (8.13.1/8.13.1) with ESMTP id
+	m63HQKbo002943; Thu, 3 Jul 2008 17:26:20 GMT</received><date>Thu, 3 Jul 2008 17:26:20 GMT</date><message-id>200807031726.m63HQKbo002943@cvs-int.fedora.redhat.com</message-id><x-cvsroot>/cvs/extras</x-cvsroot><old-from>Daniel J Walsh &lt;dwalsh@fedoraproject.org&gt;</old-from><x-cvs-module>rpms</x-cvs-module><x-cvs-directory>rpms/policycoreutils/devel</x-cvs-directory><x-cvs-user>dwalsh</x-cvs-user><x-cvs-server>cvs-int.fedora.redhat.com</x-cvs-server><precedence>first-class</precedence><x-scanned-by>MIMEDefang 2.58 on 172.16.52.254</x-scanned-by><x-loop>fedora-extras-commits@redhat.com</x-loop><x-topics>Package Commits</x-topics><x-beenthere>fedora-extras-commits@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><reply-to>fedora-devel-list@redhat.com</reply-to><list-id>Fedora Extras CVS commits &lt;fedora-extras-commits.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-extras-commits&gt;,
+	&lt;mailto:fedora-extras-commits-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-extras-commits&gt;</list-archive><list-post>&lt;mailto:fedora-extras-commits@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-extras-commits-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-extras-commits&gt;,
+	&lt;mailto:fedora-extras-commits-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Thu, 03 Jul 2008 17:26:30 -0000</x-list-received-date><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>200807031726.m63HQKbo002943@cvs-int.fedora.redhat.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Author: dwalsh
+
+</para><para depth="0">Update of /cvs/extras/rpms/policycoreutils/devel
+In directory cvs-int.fedora.redhat.com:/tmp/cvs-serv2875
+
+</para><para depth="0">Modified Files:
+	policycoreutils-gui.patch policycoreutils-rhat.patch 
+	policycoreutils.spec 
+Log Message:
+* Wed Jul 2 2008 Dan Walsh &lt;<email>dwalsh@redhat.com</email>&gt; 2.0.52-2
+- Add lockdown wizard
+- Allow semanage booleans to take an input file an process lots of booleans at<br/>once.
+
+</para><para depth="0">policycoreutils-gui.patch:
+
+</para><para depth="0">View full diff with command:
+/usr/bin/cvs -f diff  -kk -u -N -r 1.69 -r 1.70 policycoreutils-gui.patch
+Index: policycoreutils-gui.patch
+===================================================================
+RCS file: /cvs/extras/rpms/policycoreutils/devel/policycoreutils-gui.patch,v
+retrieving revision 1.69
+retrieving revision 1.70
+diff -u -r1.69 -r1.70
+--- policycoreutils-gui.patch	2 Jul 2008 02:04:52 -0000	1.69
++++ policycoreutils-gui.patch	3 Jul 2008 17:25:34 -0000	1.70
+@@ -1,7 +1,47 @@
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/booleansPage.py<br/>policycoreutils-2.0.50/gui/booleansPage.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/Makefile<br/>policycoreutils-2.0.52/gui/Makefile
++--- nsapolicycoreutils/gui/Makefile	1969-12-31 19:00:00.000000000 -0500
+++++ policycoreutils-2.0.52/gui/Makefile	2008-07-03 13:15:10.000000000 -0400
++@@ -0,0 +1,36 @@
+++# Installation directories.
+++PREFIX ?= ${DESTDIR}/usr
+++SHAREDIR ?= $(PREFIX)/share/system-config-selinux
+++
+++TARGETS= \
+++booleansPage.py \
+++fcontextPage.py \
+++loginsPage.py \
+++mappingsPage.py \
+++modulesPage.py \
+++polgen.py \
+++polgen.glade \
+++portsPage.py \
+++lockdown.glade \
+++semanagePage.py \
+++statusPage.py \
+++system-config-selinux.glade \
+++translationsPage.py \
+++usersPage.py \
+++selinux.tbl
+++
+++all: $(TARGETS) system-config-selinux.py polgengui.py templates lockdown.py 
+++
+++install: all
+++	-mkdir -p $(SHAREDIR)/templates
+++	install -m 755 system-config-selinux.py $(SHAREDIR)
+++	install -m 755 polgengui.py $(SHAREDIR)
+++	install -m 755 lockdown.py $(SHAREDIR)
+++	install -m 644 $(TARGETS) $(SHAREDIR)
+++	install -m 644 templates/*.py $(SHAREDIR)/templates/
+++
+++clean:
+++
+++indent:
+++
+++relabel:
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/booleansPage.py<br/>policycoreutils-2.0.52/gui/booleansPage.py
+ --- nsapolicycoreutils/gui/booleansPage.py	1969-12-31 19:00:00.000000000 -0500
+-+++ policycoreutils-2.0.50/gui/booleansPage.py	2008-07-01 14:59:58.000000000<br/>-0400
+-@@ -0,0 +1,230 @@
+++++ policycoreutils-2.0.52/gui/booleansPage.py	2008-07-03 13:08:37.000000000<br/>-0400
++@@ -0,0 +1,237 @@
+ +#
+ +# booleansPage.py - GUI for Booleans page in system-config-securitylevel
+ +#
+@@ -84,6 +124,7 @@
+ +class booleansPage:
+ +    def __init__(self, xml, doDebug=None):
+ +        self.xml = xml
+++        xml.signal_connect("on_lockdown_clicked", self.on_lockdown_clicked)
+ +        self.window = self.xml.get_widget("mainWindow").get_root_window()
+ +        self.local = False
+ +        self.types=[]
+@@ -220,6 +261,12 @@
+ +        commands.getstatusoutput(setsebool)
+ +        self.ready()
+ +
+++    def on_lockdown_clicked(self, button):
+++        try:
+++            os.spawnl(os.P_NOWAIT,<br/>"/usr/share/system-config-selinux/lockdown.py")
+++        except ValueError, e:
+++            self.error(e.args[0])
+++
+ +    def on_local_clicked(self, button):
+ +        self.local = not self.local
+ +        self.revertButton.set_sensitive(self.local)
+@@ -232,9 +279,9 @@
+ +        self.load(self.filter)
+ +        return True
+ +        
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/fcontextPage.py<br/>policycoreutils-2.0.50/gui/fcontextPage.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/fcontextPage.py<br/>policycoreutils-2.0.52/gui/fcontextPage.py
+ --- nsapolicycoreutils/gui/fcontextPage.py	1969-12-31 19:00:00.000000000 -0500
+-+++ policycoreutils-2.0.50/gui/fcontextPage.py	2008-07-01 14:59:58.000000000<br/>-0400
+++++ policycoreutils-2.0.52/gui/fcontextPage.py	2008-07-02 13:43:21.000000000<br/>-0400
+ @@ -0,0 +1,217 @@
+ +## fcontextPage.py - show selinux mappings
+ +## Copyright (C) 2006 Red Hat, Inc.
+@@ -453,10 +500,10 @@
+ +        self.store.set_value(iter, SPEC_COL, fspec)
+ +        self.store.set_value(iter, FTYPE_COL, ftype)
+ +        self.store.set_value(iter, TYPE_COL, "%s:%s" % (type, mls))
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/lockdown.glade<br/>policycoreutils-2.0.50/gui/lockdown.glade
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/lockdown.glade<br/>policycoreutils-2.0.52/gui/lockdown.glade
+ --- nsapolicycoreutils/gui/lockdown.glade	1969-12-31 19:00:00.000000000 -0500
+-+++ policycoreutils-2.0.50/gui/lockdown.glade	2008-07-01 14:59:58.000000000<br/>-0400
+-@@ -0,0 +1,2065 @@
+++++ policycoreutils-2.0.52/gui/lockdown.glade	2008-07-03 12:38:35.000000000<br/>-0400
++@@ -0,0 +1,771 @@
+ +&lt;?xml version="1.0" standalone="no"?&gt; &lt;!--*- mode: xml -*--&gt;
+ +&lt;!DOCTYPE glade-interface SYSTEM "<url>http://glade.gnome.org/glade-2.0.dtd</url>"&gt;
+ +
+@@ -529,7 +576,7 @@
+ +			  &lt;accelerator key="f" modifiers="GDK_CONTROL_MASK" signal="activate"/&gt;
+ +
+ +			  &lt;child internal-child="image"&gt;
+-+			    &lt;widget class="GtkImage" id="image17"&gt;
+++			    &lt;widget class="GtkImage" id="image46"&gt;
+ +			      &lt;property name="visible"&gt;True&lt;/property&gt;
+ +			      &lt;property name="stock"&gt;gtk-media-next&lt;/property&gt;
+ +			      &lt;property name="icon_size"&gt;1&lt;/property&gt;
+@@ -551,7 +598,7 @@
+ +			  &lt;accelerator key="p" modifiers="GDK_CONTROL_MASK" signal="activate"/&gt;
+ +
+ +			  &lt;child internal-child="image"&gt;
+-+			    &lt;widget class="GtkImage" id="image18"&gt;
+++			    &lt;widget class="GtkImage" id="image47"&gt;
+ +			      &lt;property name="visible"&gt;True&lt;/property&gt;
+ +			      &lt;property name="stock"&gt;gtk-media-previous&lt;/property&gt;
+ +			      &lt;property name="icon_size"&gt;1&lt;/property&gt;
+@@ -565,17 +612,45 @@
+ +		      &lt;/child&gt;
+ +
+ +		      &lt;child&gt;
+-+			&lt;widget class="GtkImageMenuItem" id="cancel"&gt;
+++			&lt;widget class="GtkSeparatorMenuItem" id="separator1"&gt;
+++			  &lt;property name="visible"&gt;True&lt;/property&gt;
+++			&lt;/widget&gt;
+++		      &lt;/child&gt;
+++
+++		      &lt;child&gt;
+++			&lt;widget class="GtkImageMenuItem" id="save_as2"&gt;
+ +			  &lt;property name="visible"&gt;True&lt;/property&gt;
+-+			  &lt;property name="label" translatable="yes"&gt;Cancel&lt;/property&gt;
+++			  &lt;property name="label" translatable="yes"&gt;Save As&lt;/property&gt;
+ +			  &lt;property name="use_underline"&gt;True&lt;/property&gt;
+-+			  &lt;signal name="activate" handler="on_cancel_clicked"<br/>last_modification_time="Thu, 24 Apr 2008 10:18:41 GMT"/&gt;
+-+			  &lt;accelerator key="c" modifiers="GDK_CONTROL_MASK" signal="activate"/&gt;
+++			  &lt;signal name="activate" handler="on_save_clicked"<br/>last_modification_time="Thu, 03 Jul 2008 13:30:05 GMT"/&gt;
+++			  &lt;accelerator key="s" modifiers="GDK_CONTROL_MASK" signal="activate"/&gt;
+++
+++			  &lt;child internal-child="image"&gt;
+++			    &lt;widget class="GtkImage" id="image48"&gt;
+++			      &lt;property name="visible"&gt;True&lt;/property&gt;
+++			      &lt;property name="stock"&gt;gtk-save-as&lt;/property&gt;
+++			      &lt;property name="icon_size"&gt;1&lt;/property&gt;
+++			      &lt;property name="xalign"&gt;0.5&lt;/property&gt;
+++			      &lt;property name="yalign"&gt;0.5&lt;/property&gt;
+++			      &lt;property name="xpad"&gt;0&lt;/property&gt;
+++			      &lt;property name="ypad"&gt;0&lt;/property&gt;
+++			    &lt;/widget&gt;
+++			  &lt;/child&gt;
+++			&lt;/widget&gt;
+++		      &lt;/child&gt;
+++
+++		      &lt;child&gt;
+++			&lt;widget class="GtkImageMenuItem" id="apply1"&gt;
+++			  &lt;property name="visible"&gt;True&lt;/property&gt;
+++			  &lt;property name="label" translatable="yes"&gt;Apply&lt;/property&gt;
+++			  &lt;property name="use_underline"&gt;True&lt;/property&gt;
+++			  &lt;signal name="activate" handler="on_apply_clicked"<br/>last_modification_time="Thu, 03 Jul 2008 13:25:23 GMT"/&gt;
+++			  &lt;accelerator key="a" modifiers="GDK_CONTROL_MASK" signal="activate"/&gt;
+ +
+ +			  &lt;child internal-child="image"&gt;
+-+			    &lt;widget class="GtkImage" id="image19"&gt;
+++			    &lt;widget class="GtkImage" id="image49"&gt;
+ +			      &lt;property name="visible"&gt;True&lt;/property&gt;
+-+			      &lt;property name="stock"&gt;gtk-cancel&lt;/property&gt;
+++			      &lt;property name="stock"&gt;gtk-apply&lt;/property&gt;
+ +			      &lt;property name="icon_size"&gt;1&lt;/property&gt;
+ +			      &lt;property name="xalign"&gt;0.5&lt;/property&gt;
+ +			      &lt;property name="yalign"&gt;0.5&lt;/property&gt;
+@@ -585,6 +660,14 @@
+ +			  &lt;/child&gt;
+ +			&lt;/widget&gt;
+ +		      &lt;/child&gt;
+++
+++		      &lt;child&gt;
+++			&lt;widget class="GtkImageMenuItem" id="cancel"&gt;
+++			  &lt;property name="visible"&gt;True&lt;/property&gt;
+++			  &lt;property name="stock_item"&gt;GNOMEUIINFO_MENU_EXIT_ITEM&lt;/property&gt;
+++			  &lt;signal name="activate" handler="on_cancel_clicked"<br/>last_modification_time="Thu, 24 Apr 2008 10:18:41 GMT"/&gt;
+++			&lt;/widget&gt;
+++		      &lt;/child&gt;
+ +		    &lt;/widget&gt;
+ +		  &lt;/child&gt;
+ +		&lt;/widget&gt;
+@@ -706,346 +789,315 @@
+ +	  &lt;/child&gt;
+ +
+ +	  &lt;child&gt;
+-+	    &lt;widget class="GtkNotebook" id="notebook"&gt;
+-+	      &lt;property name="visible"&gt;True&lt;/property&gt;
+-+	      &lt;property name="show_tabs"&gt;False&lt;/property&gt;
+-+	      &lt;property name="show_border"&gt;True&lt;/property&gt;
+-+	      &lt;property name="tab_pos"&gt;GTK_POS_TOP&lt;/property&gt;
+[...7593 lines suppressed...]
+++# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+++#
+++
++diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/boolean.py<br/>policycoreutils-2.0.52/gui/templates/boolean.py
+ --- nsapolicycoreutils/gui/templates/boolean.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/boolean.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/boolean.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,40 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -14592,9 +11314,9 @@
+ +')
+ +"""
+ +
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/etc_rw.py<br/>policycoreutils-2.0.50/gui/templates/etc_rw.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/etc_rw.py<br/>policycoreutils-2.0.52/gui/templates/etc_rw.py
+ --- nsapolicycoreutils/gui/templates/etc_rw.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/etc_rw.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/etc_rw.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,129 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -14725,9 +11447,9 @@
+ +fc_dir="""\
+ +FILENAME(/.*)?			gen_context(system_u:object_r:TEMPLATETYPE_etc_rw_t,s0)
+ +"""
+-diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/executable.py<br/>policycoreutils-2.0.50/gui/templates/executable.py
++diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/executable.py<br/>policycoreutils-2.0.52/gui/templates/executable.py
+ --- nsapolicycoreutils/gui/templates/executable.py	1969-12-31<br/>19:00:00.000000000 -0500
+-+++ policycoreutils-2.0.50/gui/templates/executable.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/executable.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,327 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -15056,31 +11778,9 @@
+ +EXECUTABLE	--	gen_context(system_u:object_r:TEMPLATETYPE_script_exec_t,s0)
+ +"""
+ +
+-diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/__init__.py<br/>policycoreutils-2.0.50/gui/templates/__init__.py
+---- nsapolicycoreutils/gui/templates/__init__.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/__init__.py	2008-07-01<br/>14:59:58.000000000 -0400
+-@@ -0,0 +1,18 @@
+-+#
+-+# Copyright (C) 2007 Red Hat, Inc.
+-+#
+-+# This program is free software; you can redistribute it and/or modify
+-+# it under the terms of the GNU General Public License as published by
+-+# the Free Software Foundation; either version 2 of the License, or
+-+# (at your option) any later version.
+-+#
+-+# This program is distributed in the hope that it will be useful,
+-+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+-+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-+# GNU General Public License for more details.
+-+#
+-+# You should have received a copy of the GNU General Public License
+-+# along with this program; if not, write to the Free Software
+-+# Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+-+#
+-+
+-diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/network.py<br/>policycoreutils-2.0.50/gui/templates/network.py
++diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/network.py<br/>policycoreutils-2.0.52/gui/templates/network.py
+ --- nsapolicycoreutils/gui/templates/network.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/network.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/network.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,80 @@
+ +te_port_types="""
+ +type TEMPLATETYPE_port_t;
+@@ -15162,9 +11862,9 @@
+ +corenet_udp_bind_all_unreserved_ports(TEMPLATETYPE_t)
+ +"""
+ +
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/rw.py<br/>policycoreutils-2.0.50/gui/templates/rw.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/rw.py<br/>policycoreutils-2.0.52/gui/templates/rw.py
+ --- nsapolicycoreutils/gui/templates/rw.py	1969-12-31 19:00:00.000000000 -0500
+-+++ policycoreutils-2.0.50/gui/templates/rw.py	2008-07-01 14:59:58.000000000<br/>-0400
+++++ policycoreutils-2.0.52/gui/templates/rw.py	2008-07-02 13:43:21.000000000<br/>-0400
+ @@ -0,0 +1,128 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -15294,9 +11994,9 @@
+ +fc_dir="""
+ +FILENAME(/.*)?			gen_context(system_u:object_r:TEMPLATETYPE_rw_t,s0)
+ +"""
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/script.py<br/>policycoreutils-2.0.50/gui/templates/script.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/script.py<br/>policycoreutils-2.0.52/gui/templates/script.py
+ --- nsapolicycoreutils/gui/templates/script.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/script.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/script.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,105 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -15403,9 +12103,9 @@
+ +# Adding roles to SELinux user USER
+ +/usr/sbin/semanage user -m -R +TEMPLATETYPE_r USER
+ +"""
+-diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/semodule.py<br/>policycoreutils-2.0.50/gui/templates/semodule.py
++diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/semodule.py<br/>policycoreutils-2.0.52/gui/templates/semodule.py
+ --- nsapolicycoreutils/gui/templates/semodule.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/semodule.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/semodule.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,41 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -15448,9 +12148,9 @@
+ +semanage ports -a -t TEMPLATETYPE_port_t -p udp PORTNUM
+ +"""
+ +
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/tmp.py<br/>policycoreutils-2.0.50/gui/templates/tmp.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/tmp.py<br/>policycoreutils-2.0.52/gui/templates/tmp.py
+ --- nsapolicycoreutils/gui/templates/tmp.py	1969-12-31 19:00:00.000000000 -0500
+-+++ policycoreutils-2.0.50/gui/templates/tmp.py	2008-07-01 14:59:58.000000000<br/>-0400
+++++ policycoreutils-2.0.52/gui/templates/tmp.py	2008-07-02 13:43:21.000000000<br/>-0400
+ @@ -0,0 +1,97 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -15549,9 +12249,9 @@
+ +	TEMPLATETYPE_manage_tmp($1)
+ +"""
+ +
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/user.py<br/>policycoreutils-2.0.50/gui/templates/user.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/templates/user.py<br/>policycoreutils-2.0.52/gui/templates/user.py
+ --- nsapolicycoreutils/gui/templates/user.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/user.py	2008-07-01 14:59:58.000000000<br/>-0400
+++++ policycoreutils-2.0.52/gui/templates/user.py	2008-07-02 13:43:21.000000000<br/>-0400
+ @@ -0,0 +1,182 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -15735,9 +12435,9 @@
+ +te_newrole_rules="""
+ +seutil_run_newrole(TEMPLATETYPE_t,TEMPLATETYPE_r,{ TEMPLATETYPE_devpts_t<br/>TEMPLATETYPE_tty_device_t })
+ +"""
+-diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/var_lib.py<br/>policycoreutils-2.0.50/gui/templates/var_lib.py
++diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/var_lib.py<br/>policycoreutils-2.0.52/gui/templates/var_lib.py
+ --- nsapolicycoreutils/gui/templates/var_lib.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/var_lib.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/var_lib.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,158 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -15897,9 +12597,9 @@
+ +fc_dir="""\
+ +FILENAME(/.*)?			gen_context(system_u:object_r:TEMPLATETYPE_var_lib_t,s0)
+ +"""
+-diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/var_log.py<br/>policycoreutils-2.0.50/gui/templates/var_log.py
++diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/var_log.py<br/>policycoreutils-2.0.52/gui/templates/var_log.py
+ --- nsapolicycoreutils/gui/templates/var_log.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/var_log.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/var_log.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,110 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -16011,9 +12711,9 @@
+ +fc_dir="""\
+ +FILENAME(/.*)?			gen_context(system_u:object_r:TEMPLATETYPE_log_t,s0)
+ +"""
+-diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/var_run.py<br/>policycoreutils-2.0.50/gui/templates/var_run.py
++diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/var_run.py<br/>policycoreutils-2.0.52/gui/templates/var_run.py
+ --- nsapolicycoreutils/gui/templates/var_run.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/var_run.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/var_run.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,118 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -16133,9 +12833,9 @@
+ +FILENAME(/.*)?			gen_context(system_u:object_r:TEMPLATETYPE_var_run_t,s0)
+ +"""
+ +
+-diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/var_spool.py<br/>policycoreutils-2.0.50/gui/templates/var_spool.py
++diff --exclude-from=exclude -N -u -r<br/>nsapolicycoreutils/gui/templates/var_spool.py<br/>policycoreutils-2.0.52/gui/templates/var_spool.py
+ --- nsapolicycoreutils/gui/templates/var_spool.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/templates/var_spool.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/templates/var_spool.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,129 @@
+ +# Copyright (C) 2007 Red Hat 
+ +# see file 'COPYING' for use and warranty information
+@@ -16266,9 +12966,9 @@
+ +fc_dir="""\
+ +FILENAME(/.*)?			gen_context(system_u:object_r:TEMPLATETYPE_spool_t,s0)
+ +"""
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/translationsPage.py<br/>policycoreutils-2.0.50/gui/translationsPage.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/translationsPage.py<br/>policycoreutils-2.0.52/gui/translationsPage.py
+ --- nsapolicycoreutils/gui/translationsPage.py	1969-12-31 19:00:00.000000000<br/>-0500
+-+++ policycoreutils-2.0.50/gui/translationsPage.py	2008-07-01<br/>14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/translationsPage.py	2008-07-02<br/>13:43:21.000000000 -0400
+ @@ -0,0 +1,118 @@
+ +## translationsPage.py - show selinux translations
+ +## Copyright (C) 2006 Red Hat, Inc.
+@@ -16388,9 +13088,9 @@
+ +        store, iter = self.view.get_selection().get_selected()
+ +        self.store.set_value(iter, 0, level)
+ +        self.store.set_value(iter, 1, translation)
+-diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/usersPage.py<br/>policycoreutils-2.0.50/gui/usersPage.py
++diff --exclude-from=exclude -N -u -r nsapolicycoreutils/gui/usersPage.py<br/>policycoreutils-2.0.52/gui/usersPage.py
+ --- nsapolicycoreutils/gui/usersPage.py	1969-12-31 19:00:00.000000000 -0500
+-+++ policycoreutils-2.0.50/gui/usersPage.py	2008-07-01 14:59:58.000000000 -0400
+++++ policycoreutils-2.0.52/gui/usersPage.py	2008-07-02 13:43:21.000000000 -0400
+ @@ -0,0 +1,150 @@
+ +## usersPage.py - show selinux mappings
+ +## Copyright (C) 2006,2007,2008 Red Hat, Inc.
+
+</para><para depth="0">policycoreutils-rhat.patch:
+
+</para><para depth="0">Index: policycoreutils-rhat.patch
+===================================================================
+RCS file: /cvs/extras/rpms/policycoreutils/devel/policycoreutils-rhat.patch,v
+retrieving revision 1.373
+retrieving revision 1.374
+diff -u -r1.373 -r1.374
+--- policycoreutils-rhat.patch	2 Jul 2008 21:22:58 -0000	1.373
++++ policycoreutils-rhat.patch	3 Jul 2008 17:25:34 -0000	1.374
+@@ -7,6 +7,12 @@
+
+</para><para depth="0">  INOTIFYH = $(shell ls /usr/include/sys/inotify.h 2&gt;/dev/null)
+
+</para><para depth="0">+diff --exclude-from=exclude --exclude=sepolgen-1.0.12 --exclude=gui<br/>--exclude=po -N -u -r nsapolicycoreutils/VERSION policycoreutils-2.0.52/VERSION
++--- nsapolicycoreutils/VERSION	2008-07-02 17:19:15.000000000 -0400
+++++ policycoreutils-2.0.52/VERSION	2008-07-02 13:42:54.000000000 -0400
++@@ -1 +1 @@
++-2.0.52
+++2.0.51
+ diff --exclude-from=exclude --exclude=sepolgen-1.0.12 --exclude=gui<br/>--exclude=po -N -u -r nsapolicycoreutils/restorecond/restorecond.c<br/>policycoreutils-2.0.52/restorecond/restorecond.c
+ --- nsapolicycoreutils/restorecond/restorecond.c	2008-06-12 23:25:21.000000000<br/>-0400
+ +++ policycoreutils-2.0.52/restorecond/restorecond.c	2008-07-02<br/>13:43:21.000000000 -0400
+@@ -38,34 +44,194 @@
+  	close(fd);
+ diff --exclude-from=exclude --exclude=sepolgen-1.0.12 --exclude=gui<br/>--exclude=po -N -u -r nsapolicycoreutils/semanage/semanage<br/>policycoreutils-2.0.52/semanage/semanage
+ --- nsapolicycoreutils/semanage/semanage	2008-07-02 17:19:15.000000000 -0400
+-+++ policycoreutils-2.0.52/semanage/semanage	2008-07-02 13:43:21.000000000<br/>-0400
+-@@ -297,9 +297,10 @@
+- 			if object == "user":
+++++ policycoreutils-2.0.52/semanage/semanage	2008-07-03 13:06:55.000000000<br/>-0400
++@@ -51,7 +51,7 @@
++ semanage interface -{a|d|m} [-tr] interface_spec
++ semanage fcontext -{a|d|m} [-frst] file_spec
++ semanage translation -{a|d|m} [-T] level
++-semanage boolean -{d|m} boolean
+++semanage boolean -{d|m} [-F]  boolean | boolean_file
++ semanage permissive -{d|a} type
++ 
++ Primary Options:
++@@ -79,6 +79,7 @@
++ 		-l (symbolic link) 
++ 		-p (named pipe) 
++ 
+++        -F, --file       Treat target as an input file for command, change<br/>multiple settings
++ 	-p, --proto      Port protocol (tcp or udp)
++ 	-P, --prefix     Prefix for home directory labeling
++ 	-L, --level      Default SELinux Level (MLS/MCS Systems only)
++@@ -114,7 +115,7 @@
++ 		valid_option["translation"] = []
++ 		valid_option["translation"] += valid_everyone + [ '-T', '--trans' ] 
++ 		valid_option["boolean"] = []
++-		valid_option["boolean"] += valid_everyone + [ '--on', "--off", "-1", "-0" ] 
+++		valid_option["boolean"] += valid_everyone + [ '--on', "--off", "-1", "-0",<br/>"-F", "--file"] 
++ 		valid_option["permissive"] = []
++ 		valid_option["permissive"] += [ '-a', '--add', '-d', '--delete', '-l',<br/>'--list', '-h', '--help', '-n', '--noheading', '-D', '--deleteall' ]
++ 		return valid_option
++@@ -136,13 +137,14 @@
++ 		seuser = ""
++ 		prefix = ""
++ 		heading=1
++-                value=0
++-		add = 0
++-		modify = 0
++-		delete = 0
++-		deleteall = 0
++-		list = 0
++-		locallist = 0
+++                value = ""
+++		add = False
+++		modify = False
+++		delete = False
+++		deleteall = False
+++		list = False
+++		locallist = False
+++                use_file = False
++                 store = ""
++ 		if len(sys.argv) &lt; 3:
++ 			usage(_("Requires 2 or more arguments"))
++@@ -155,11 +157,12 @@
++ 		args = sys.argv[2:]
++ 
++ 		gopts, cmds = getopt.getopt(args,
++-					    '01adf:lhmnp:s:CDR:L:r:t:T:P:S:',
+++					    '01adf:lhmnp:s:FCDR:L:r:t:T:P:S:',
++ 					    ['add',
++ 					     'delete',
++ 					     'deleteall',
++ 					     'ftype=',
+++					     'file',
++ 					     'help',
++ 					     'list', 
++ 					     'modify',
++@@ -185,18 +188,22 @@
++ 			if o == "-a" or o == "--add":
++ 				if modify or delete:
++ 					usage()
++-				add = 1
+++				add = True
++ 				
++ 			if o == "-d"  or o == "--delete":
++ 				if modify or add:
++ 					usage()
++-				delete = 1
+++				delete = True
++ 			if o == "-D"  or o == "--deleteall":
++ 				if modify:
++                                        usage()
++-				deleteall = 1
+++				deleteall = True
++ 			if o == "-f"  or o == "--ftype":
++ 				ftype=a
+++
+++			if o == "-F"  or o == "--file":
+++				use_file = True
+++
++ 			if o == "-h" or o == "--help":
++ 				usage()
++ 
++@@ -204,12 +211,12 @@
++ 				heading=0
++ 
++ 			if o == "-C" or o == "--locallist":
++-				locallist=1
+++				locallist = True
++ 
++ 			if o == "-m"or o == "--modify":
++ 				if delete or add:
++ 					usage()
++-				modify = 1
+++				modify = True
++ 				
++ 			if o == "-S" or o == '--store':
++ 				store = a
++@@ -220,7 +227,7 @@
++ 				serange = a
++ 
++ 			if o == "-l" or o == "--list":
++-				list = 1
+++				list = True
++ 
++ 			if o == "-L" or o == '--level':
++ 				if is_mls_enabled == 0:
++@@ -246,9 +253,9 @@
++ 				setrans = a
++ 
++                         if o == "--on" or o == "-1":
++-                               value = 1
+++                               value = True
++                         if o == "-off" or o == "-0":
++-                               value = 0
+++                               value = False
++ 
++ 		if object == "login":
++ 			OBJECT = seobject.loginRecords(store)
++@@ -275,7 +282,10 @@
++ 			OBJECT = seobject.permissiveRecords(store)
++ 		
++ 		if list:
++-			OBJECT.list(heading, locallist)
+++                        if object == "boolean":
+++                               OBJECT.list(heading, locallist, use_file)
+++                        else:
+++                               OBJECT.list(heading, locallist)
++ 			sys.exit(0);
++ 			
++ 		if deleteall:
++@@ -298,8 +308,6 @@
+  				rlist = roles.split()
+  				if len(rlist) == 0:
+--					raise ValueError(_("You must specify a role"))
++ 					raise ValueError(_("You must specify a role"))
+ -				if prefix == "":
+ -					raise ValueError(_("You must specify a prefix"))
+-+                                       raise ValueError(_("You must specify a<br/>role"))
+-+ 				if prefix == "":
+-+                                       prefix = "user"
+-+
+  				OBJECT.add(target, rlist, selevel, serange, prefix)
+
+</para><para depth="0">  			if object == "port":
++@@ -317,7 +325,12 @@
++ 			
++ 		if modify:
++ 			if object == "boolean":
++-				OBJECT.modify(target, value)
+++                                if use_file:
+++                                       OBJECT.modify(target, use_file =<br/>use_file)
+++                                else:
+++                                       if value == "":
+++                                              raise ValueError(_("boolean<br/>requires value"))
+++                                       OBJECT.modify(target, value)
++ 
++ 			if object == "login":
++ 				OBJECT.modify(target, seuser, serange)
+ diff --exclude-from=exclude --exclude=sepolgen-1.0.12 --exclude=gui<br/>--exclude=po -N -u -r nsapolicycoreutils/semanage/semanage.8<br/>policycoreutils-2.0.52/semanage/semanage.8
+ --- nsapolicycoreutils/semanage/semanage.8	2008-07-02 17:19:15.000000000 -0400
+-+++ policycoreutils-2.0.52/semanage/semanage.8	2008-07-02 13:43:21.000000000<br/>-0400
+-@@ -3,7 +3,7 @@
+++++ policycoreutils-2.0.52/semanage/semanage.8	2008-07-03 13:14:31.000000000<br/>-0400
++@@ -3,9 +3,9 @@
+  semanage \- SELinux Policy Management tool
+
+</para><para depth="0">  .SH "SYNOPSIS"
+ -.B semanage {boolean|login|user|port|interface|fcontext|translation}<br/>\-{l|lC|D} [\-n] 
+ +.B semanage {boolean|login|user|port|interface|fcontext|translation} \-{l|D}<br/>[\-n] [\-S store] 
+  .br
+- .B semanage boolean \-{d|m} [\-\-on|\-\-off|\-1|\-0] boolean
++-.B semanage boolean \-{d|m} [\-\-on|\-\-off|\-1|\-0] boolean
+++.B semanage boolean \-{d|m} [\-\-on|\-\-off|\-1|\-0] -F boolean | boolean_file
++ .br
++ .B semanage login \-{a|d|m} [\-sr] login_name
+  .br
+-@@ -87,6 +87,9 @@
++@@ -54,6 +54,11 @@
++ File Type.   This is used with fcontext.
++ Requires a file type as shown in the mode field by ls, e.g. use -d to match<br/>only directories or -- to match only regular files.
++ .TP
+++.I                \-F, \-\-file
+++Set multiple records from the input file.  When used with the \-l \-\-list, it<br/>will output the current settings to stdout in the proper format.
+++
+++Currently booleans only.
+++.TP
++ .I                \-h, \-\-help       
++ display this message
++ .TP
++@@ -87,6 +92,9 @@
+  .I                \-s, \-\-seuser     
+  SELinux user name
+  .TP
+@@ -75,3 +241,124 @@
+  .I                \-t, \-\-type       
+  SELinux Type for the object
+  .TP
++diff --exclude-from=exclude --exclude=sepolgen-1.0.12 --exclude=gui<br/>--exclude=po -N -u -r nsapolicycoreutils/semanage/seobject.py<br/>policycoreutils-2.0.52/semanage/seobject.py
++--- nsapolicycoreutils/semanage/seobject.py	2008-07-02 17:19:15.000000000 -0400
+++++ policycoreutils-2.0.52/semanage/seobject.py	2008-07-03 13:07:45.000000000<br/>-0400
++@@ -567,7 +562,7 @@
++ 	def __init__(self, store = ""):
++ 		semanageRecords.__init__(self, store)
++ 
++-	def add(self, name, roles, selevel, serange, prefix):
+++	def add(self, name, roles, selevel, serange, prefix = "user"):
++ 		if is_mls_enabled == 1:
++ 			if serange == "":
++ 				serange = "s0"
++@@ -1448,53 +1443,58 @@
++ 	def __init__(self, store = ""):
++ 		semanageRecords.__init__(self, store)
++ 
++-	def modify(self, name, value = ""):
++-		if value == "":
++-			raise ValueError(_("Requires value"))
++-
++-		(rc,k) = semanage_bool_key_create(self.sh, name)
++-		if rc &lt; 0:
++-			raise ValueError(_("Could not create a key for %s") % name)
++-
++-		(rc,exists) = semanage_bool_exists(self.sh, k)
++-		if rc &lt; 0:
++-			raise ValueError(_("Could not check if boolean %s is defined") % name)
++-		if not exists:
++-			raise ValueError(_("Boolean %s is not defined") % name)	
++-
++-		(rc,b) = semanage_bool_query(self.sh, k)
++-		if rc &lt; 0:
++-			raise ValueError(_("Could not query file context %s") % name)
+++	def __mod(self, name, value):
+++                (rc,k) = semanage_bool_key_create(self.sh, name)
+++                if rc &lt; 0:
+++                       raise ValueError(_("Could not create a key for %s") %<br/>name)
+++                (rc,exists) = semanage_bool_exists(self.sh, k)
+++                if rc &lt; 0:
+++                       raise ValueError(_("Could not check if boolean %s is<br/>defined") % name)
+++                if not exists:
+++                       raise ValueError(_("Boolean %s is not defined") % name)
+++                
+++                (rc,b) = semanage_bool_query(self.sh, k)
+++                if rc &lt; 0:
+++                       raise ValueError(_("Could not query file context %s") %<br/>name)
++ 
++-		if value != "":
++-			nvalue = int(value)
++-			semanage_bool_set_value(b, nvalue)
+++                if value != "":
+++                       nvalue = int(value)
+++                       semanage_bool_set_value(b, nvalue)
++                 else:
++                        raise ValueError(_("You must specify a value"))
+++                
+++                rc = semanage_bool_set_active(self.sh, k, b)
+++                if rc &lt; 0:
+++                       raise ValueError(_("Could not set active value of<br/>boolean %s") % name)
+++                rc = semanage_bool_modify_local(self.sh, k, b)
+++                if rc &lt; 0:
+++                       raise ValueError(_("Could not modify boolean %s") %<br/>name)
+++		semanage_bool_key_free(k)
+++		semanage_bool_free(b)
++ 
+++	def modify(self, name, value=False, use_file=False):
+++                
++ 		rc = semanage_begin_transaction(self.sh)
++ 		if rc &lt; 0:
++ 			raise ValueError(_("Could not start semanage transaction"))
++-
++-		rc = semanage_bool_set_active(self.sh, k, b)
++-		if rc &lt; 0:
++-			raise ValueError(_("Could not set active value of boolean %s") % name)
++-		rc = semanage_bool_modify_local(self.sh, k, b)
++-		if rc &lt; 0:
++-			raise ValueError(_("Could not modify boolean %s") % name)
+++                if use_file:
+++                       fd = open(name)
+++                       for b in fd.read().split():
+++                              bool, val = b.split("=")
+++                              self.__mod(bool, val)
+++                       fd.close()
+++                else:
+++                       self.__mod(name, value)
++ 
++ 		rc = semanage_commit(self.sh)
++ 		if rc &lt; 0:
++ 			raise ValueError(_("Could not modify boolean %s") % name)
++ 		
++-		semanage_bool_key_free(k)
++-		semanage_bool_free(b)
++-
++ 	def delete(self, name):
++-		(rc,k) = semanage_bool_key_create(self.sh, name)
++-		if rc &lt; 0:
++-			raise ValueError(_("Could not create a key for %s") % name)
++ 
+++                (rc,k) = semanage_bool_key_create(self.sh, name)
+++                if rc &lt; 0:
+++                      raise ValueError(_("Could not create a key for %s") %<br/>name)
++ 		(rc,exists) = semanage_bool_exists(self.sh, k)
++ 		if rc &lt; 0:
++ 			raise ValueError(_("Could not check if boolean %s is defined") % name)
++@@ -1571,8 +1571,15 @@
++                else:
++                       return _("unknown")
++ 
++-	def list(self, heading = 1, locallist = 0):
+++	def list(self, heading = True, locallist = False, use_file = False):
++                 on_off = (_("off"),_("on")) 
+++		if use_file:
+++                       ddict = self.get_all(locallist)
+++                       keys = ddict.keys()
+++                       for k in keys:
+++                              if ddict[k]:
+++                                     print "%s=%s" %  (k, ddict[k][2])
+++                       return
++ 		if heading:
++ 			print "%-40s %s\n" % (_("SELinux boolean"), _("Description"))
++ 		ddict = self.get_all(locallist)
+
+</para><para depth="0">Index: policycoreutils.spec
+===================================================================
+RCS file: /cvs/extras/rpms/policycoreutils/devel/policycoreutils.spec,v
+retrieving revision 1.536
+retrieving revision 1.537
+diff -u -r1.536 -r1.537
+--- policycoreutils.spec	2 Jul 2008 21:22:59 -0000	1.536
++++ policycoreutils.spec	3 Jul 2008 17:25:34 -0000	1.537
+@@ -6,7 +6,7 @@
+ Summary: SELinux policy core utilities
+ Name:	 policycoreutils
+ Version: 2.0.52
+-Release: 1%{?dist}
++Release: 2%{?dist}
+ License: GPLv2+
+ Group:	 System Environment/Base
+ Source:	 <url>http://www.nsa.gov/selinux/archives/policycoreutils-%</url>{version}.tgz
+@@ -192,6 +192,10 @@
+ fi
+
+</para><para depth="0"> %changelog
++* Wed Jul 2 2008 Dan Walsh &lt;<email>dwalsh@redhat.com</email>&gt; 2.0.52-2
++- Add lockdown wizard
++- Allow semanage booleans to take an input file an process lots of booleans at<br/>once.
++
+ * Wed Jul 2 2008 Dan Walsh &lt;<email>dwalsh@redhat.com</email>&gt; 2.0.52-1
+ - Default prefix to "user"
+</para></body></message>

@@ -1,0 +1,35 @@
+<message message-id="4297481C.70701@apache.org" list="org.apache.lenya.dev" id="24an5x4gho576du6" type="development" date="2005-05-27T12:17:32-04:00" year="2005-01-01" year-month="2005-05-01" year-month-day="2005-05-27" thread-id="rdsx2a5exxb4sjrp"><headers><envelope-from-line>From dev-return-11215-apmail-lenya-dev-archive=lenya.apache.org@lenya.apache.org Fri May 27 16:18:13 2005</envelope-from-line><from personal="Gregor J. Rothfuss" address="gregor@apache.org">"Gregor J. Rothfuss" &lt;gregor@apache.org&gt;</from><to personal="dev@lenya.apache.org" address="dev@lenya.apache.org">dev@lenya.apache.org</to><subject normal="[1.4] Destiny of DocumentTypeResolver and URIParameterizer">Re: [1.4] Destiny of DocumentTypeResolver and URIParameterizer</subject><return-path>dev-return-11215-apmail-lenya-dev-archive=lenya.apache.org@lenya.apache.org</return-path><delivered-to>apmail-lenya-dev-archive@www.apache.org</delivered-to><received>(qmail 51643 invoked from network); 27 May 2005 16:18:12 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur.apache.org with SMTP; 27 May 2005 16:18:12 -0000</received><received>(qmail 8953 invoked by uid 500); 27 May 2005 16:18:10 -0000</received><delivered-to>apmail-lenya-dev-archive@lenya.apache.org</delivered-to><received>(qmail 8892 invoked by uid 500); 27 May 2005 16:18:09 -0000</received><mailing-list>contact dev-help@lenya.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@lenya.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@lenya.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@lenya.apache.org&gt;</list-post><list-id>&lt;dev.lenya.apache.org&gt;</list-id><reply-to>dev@lenya.apache.org</reply-to><delivered-to>mailing list dev@lenya.apache.org</delivered-to><received>(qmail 8448 invoked by uid 99); 27 May 2005 16:18:05 -0000</received><x-asf-spam-status>No, hits=-0.0 required=10.0
+	tests=SPF_HELO_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>neutral (hermes.apache.org: local policy)</received-spf><received>from espresso.abstrakt.ch (HELO espresso.abstrakt.ch) (195.226.6.20)
+  by apache.org (qpsmtpd/0.28) with ESMTP; Fri, 27 May 2005 09:18:02 -0700</received><received>from localhost (localhost [127.0.0.1])
+	by espresso.abstrakt.ch (Postfix) with ESMTP id 455EF47418B
+	for &lt;dev@lenya.apache.org&gt;; Fri, 27 May 2005 18:23:14 +0200 (CEST)</received><received>from espresso.abstrakt.ch ([127.0.0.1])
+	by localhost (espresso [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id 30316-01-5 for &lt;dev@lenya.apache.org&gt;;
+	Fri, 27 May 2005 18:23:09 +0200 (CEST)</received><received>from [216.115.178.48] (unknown [216.115.178.48])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by espresso.abstrakt.ch (Postfix) with ESMTP id C389A474168
+	for &lt;dev@lenya.apache.org&gt;; Fri, 27 May 2005 18:23:08 +0200 (CEST)</received><message-id>4297481C.70701@apache.org</message-id><date>Fri, 27 May 2005 12:17:32 -0400</date><user-agent>Mozilla Thunderbird 1.0.2 (Windows/20050317)</user-agent><x-accept-language>en-us, en</x-accept-language><mime-version>1.0</mime-version><references>&lt;d720dt$rmh$1@sea.gmane.org&gt; &lt;429670DC.60109@apache.org&gt; &lt;d76j7b$vin$1@sea.gmane.org&gt;</references><in-reply-to>&lt;d76j7b$vin$1@sea.gmane.org&gt;</in-reply-to><content-type>text/plain; charset=ISO-8859-1; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-scanned>by amavisd-new-20030616-p10 (Debian) at abstrakt.ch</x-virus-scanned><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>4297481C.70701@apache.org</normalized-message-id><normalized-in-reply-to>d76j7b$vin$1@sea.gmane.org</normalized-in-reply-to><normalized-reference>d720dt$rmh$1@sea.gmane.org</normalized-reference><normalized-reference>429670DC.60109@apache.org</normalized-reference><normalized-reference>d76j7b$vin$1@sea.gmane.org</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1; format=flowed"><para depth="0">Andreas Hartmann wrote:
+
+</para><quote depth="1"><quotepara depth="1">IMO there are no technical advantages. The only one I can imagine
+is that content can be imported without setting up the meta data,
+which is not recommended :)
+</quotepara></quote><para depth="0">
+ah, one of those "flexibility" features :) no thanks.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">we should rather provide a good import facility
+</quotepara></quote><quotepara depth="1">
+I agree.
+
+</quotepara><quotepara depth="1">Shall we start a vote? IMO we should not leave
+orphaned code in the codebase without a good reason.
+</quotepara></quote><para depth="0">
+absolutely. we had too many orphaned classes in 1.2, and people had a 
+hard time understanding what best practice was.
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@lenya.apache.org</email>
+For additional commands, e-mail: <email>dev-help@lenya.apache.org</email>
+
+</footer></body></message>

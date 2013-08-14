@@ -1,0 +1,32 @@
+<message message-id="000501c2d08b$6984fd30$ce8227a0@rufus" list="org.tigris.viewvc.users" id="24br3gbiwqmbekye" type="users" date="2003-02-09T17:34:27-05:00" year="2003-01-01" year-month="2003-02-01" year-month-day="2003-02-09" thread-id="24br3gbiwqmbekye"><headers><envelope-from-line>From viewcvs-admin@nebula.lyra.org  Sun Feb  9 14:34:22 2003</envelope-from-line><from personal="Russell Yanofsky" address="rey4@columbia.edu">Russell Yanofsky &lt;rey4@columbia.edu&gt;</from><to personal="bo.berglund@telia.com" address="bo.berglund@telia.com">bo.berglund@telia.com</to><cc personal="viewcvs@lyra.org" address="viewcvs@lyra.org">viewcvs@lyra.org</cc><subject normal="[ViewCVS] Differences between the 1.0-dev-r2 and HEAD on Sourceforge???">RE: [ViewCVS] Differences between the 1.0-dev-r2 and HEAD on Sourceforge???</subject><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=0.0 required=5.0 tests=BAYES_50 autolearn=disabled
+	version=3.2.4</x-spam-status><received>from dewberry.cc.columbia.edu (dewberry.cc.columbia.edu [128.59.59.68])
+	by nebula.lyra.org (8.9.3/8.9.3) with ESMTP id OAA31687
+	for &lt;viewcvs@lyra.org&gt;; Sun, 9 Feb 2003 14:34:21 -0800</received><received>from rufus (dyn-bway-130-206.dyn.columbia.edu [160.39.130.206])
+	(user=rey4 mech=LOGIN bits=0)
+	by dewberry.cc.columbia.edu (8.12.3/8.12.3) with ESMTP id h19MU21g000145
+	(version=TLSv1/SSLv3 cipher=RC4-MD5 bits=128 verify=NOT);
+	Sun, 9 Feb 2003 17:30:05 -0500 (EST)</received><date>Sun, 9 Feb 2003 17:34:27 -0500</date><message-id>000501c2d08b$6984fd30$ce8227a0@rufus</message-id><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3 (Normal)</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook, Build 10.0.2616</x-mailer><importance>Normal</importance><in-reply-to>&lt;000401c2d08a$cc3f4d00$ce8227a0@rufus&gt;</in-reply-to><x-mimeole>Produced By Microsoft MimeOLE V6.00.2800.1106</x-mimeole><sender>viewcvs-admin@lyra.org</sender><errors-to>viewcvs-admin@lyra.org</errors-to><x-beenthere>viewcvs@lyra.org</x-beenthere><x-mailman-version>2.0.6</x-mailman-version><precedence>bulk</precedence><list-help>&lt;mailto:viewcvs-request@lyra.org?subject=help&gt;</list-help><list-post>&lt;mailto:viewcvs@lyra.org&gt;</list-post><list-subscribe>&lt;http://mailman.lyra.org/mailman/listinfo/viewcvs&gt;,
+	&lt;mailto:viewcvs-request@lyra.org?subject=subscribe&gt;</list-subscribe><list-id>ViewCVS User Discussion List &lt;viewcvs.lyra.org&gt;</list-id><list-unsubscribe>&lt;http://mailman.lyra.org/mailman/listinfo/viewcvs&gt;,
+	&lt;mailto:viewcvs-request@lyra.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mailman.lyra.org/pipermail/viewcvs/&gt;</list-archive></headers><normalized-references><normalized-message-id>000501c2d08b$6984fd30$ce8227a0@rufus</normalized-message-id><normalized-in-reply-to>000401c2d08a$cc3f4d00$ce8227a0@rufus</normalized-in-reply-to></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;us-ascii&quot;"><para depth="0">Correction to my previous post. You should try removing lines 2052-2062
+which are:
+
+</para><para depth="0">-- snip --
+  line = fp.readline()
+  if not line:
+    raise debug.ViewcvsException('Missing output from co.&lt;br&gt;'
+          'fname="%s". url="%s"' % (filename, where))
+
+</para><para depth="0">  match = _re_co_filename.match(line)
+  if not match:
+    raise debug.ViewcvsException('First line of co output is not the
+filename.&lt;br&gt;'
+          'Line was: %s&lt;br&gt;'
+          'fname="%s". url="%s"' % (line, filename, where))
+  filename = match.group(1)
+-- snip --
+
+</para><para depth="0">- Russ
+
+</para></body></message>

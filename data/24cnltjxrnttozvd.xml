@@ -1,0 +1,39 @@
+<message message-id="alpine.LNX.2.00.1107290840380.22733@www.connectedis.com.au" list="org.samba.lists.samba-technical" id="24cnltjxrnttozvd" type="general" date="2011-07-29T08:41:37+10:00" year="2011-01-01" year-month="2011-07-01" year-month-day="2011-07-28" thread-id="4s2ybnxuqul5ohj7"><headers><envelope-from-line>Sat Jul 30 05:22:23 2011</envelope-from-line><from personal="Dr Robert Mattson" address="robert@mattson.com.au">Dr Robert Mattson &lt;robert@mattson.com.au&gt;</from><to personal="Dominic Dougherty" address="dominic.dougherty@protegrity.com">Dominic Dougherty &lt;dominic.dougherty@protegrity.com&gt;</to><cc personal="samba-technical@lists.samba.org" address="samba-technical@lists.samba.org">"samba-technical@lists.samba.org" &lt;samba-technical@lists.samba.org&gt;</cc><subject normal="encryption on network">Re: encryption on network</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 75
+          for &lt;duane.harrington.stanton@a.markmail.org&gt;;
+          Sat, 30 Jul 2011 05:22:23 -0800 (GMT-08:00)</received><received>from lists.samba.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id A78D8290818F
+	for &lt;duane.harrington.stanton@a.markmail.org&gt;; Sat, 30 Jul 2011 06:22:00 -0700 (PDT)</received><received>from fn.samba.org (localhost [127.0.0.1])
+	by lists.samba.org (Postfix) with ESMTP id B5591AC093;
+	Sat, 30 Jul 2011 07:22:22 -0600 (MDT)</received><x-spam-checker-version>SpamAssassin 3.3.1 (2010-03-16) on fn.samba.org</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.9 required=3.8 tests=BAYES_00 autolearn=ham
+	version=3.3.1</x-spam-status><x-original-to>samba-technical@lists.samba.org</x-original-to><delivered-to>samba-technical@lists.samba.org</delivered-to><x-greylist>delayed 613 seconds by postgrey-1.32 at fn.samba.org;
+	Thu, 28 Jul 2011 16:51:56 MDT</x-greylist><received>from www.connectedis.com.au (ppp154-145.static.internode.on.net
+	[150.101.154.145])
+	by lists.samba.org (Postfix) with ESMTP id 058D6AC231
+	for &lt;samba-technical@lists.samba.org&gt;;
+	Thu, 28 Jul 2011 16:51:55 -0600 (MDT)</received><received>by www.connectedis.com.au (Postfix, from userid 1000)
+	id ADE1A10499C; Fri, 29 Jul 2011 08:41:37 +1000 (EST)</received><received>from localhost (localhost [127.0.0.1])
+	by www.connectedis.com.au (Postfix) with ESMTP id 9D699104308;
+	Fri, 29 Jul 2011 08:41:37 +1000 (EST)</received><date>Fri, 29 Jul 2011 08:41:37 +1000 (EST)</date><x-x-sender>robert@www.connectedis.com.au</x-x-sender><in-reply-to>&lt;06B0D589A4AC0243AD95D4DA4978081A182DE84D@mbx024-e1-nj-6.exch024.domain.local&gt;</in-reply-to><message-id>alpine.LNX.2.00.1107290840380.22733@www.connectedis.com.au</message-id><references>&lt;06B0D589A4AC0243AD95D4DA4978081A182DE84D@mbx024-e1-nj-6.exch024.domain.local&gt;</references><user-agent>Alpine 2.00 (LNX 1167 2008-08-23)</user-agent><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII; format=flowed</content-type><x-mailman-approved-at>Sat, 30 Jul 2011 07:22:21 -0600</x-mailman-approved-at><x-beenthere>samba-technical@lists.samba.org</x-beenthere><x-mailman-version>2.1.13</x-mailman-version><precedence>list</precedence><list-id>"Discussions on Samba internals. For general questions please
+	subscribe to the list samba@samba.org"
+	&lt;samba-technical.lists.samba.org&gt;</list-id><list-unsubscribe>&lt;https://lists.samba.org/mailman/options/samba-technical&gt;,
+	&lt;mailto:samba-technical-request@lists.samba.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.samba.org/pipermail/samba-technical&gt;</list-archive><list-post>&lt;mailto:samba-technical@lists.samba.org&gt;</list-post><list-help>&lt;mailto:samba-technical-request@lists.samba.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.samba.org/mailman/listinfo/samba-technical&gt;,
+	&lt;mailto:samba-technical-request@lists.samba.org?subject=subscribe&gt;</list-subscribe><sender>samba-technical-bounces@lists.samba.org</sender><errors-to>samba-technical-bounces@lists.samba.org</errors-to></headers><normalized-references><normalized-message-id>alpine.LNX.2.00.1107290840380.22733@www.connectedis.com.au</normalized-message-id><normalized-in-reply-to>06B0D589A4AC0243AD95D4DA4978081A182DE84D@mbx024-e1-nj-6.exch024.domain.local</normalized-in-reply-to><normalized-reference>06B0D589A4AC0243AD95D4DA4978081A182DE84D@mbx024-e1-nj-6.exch024.domain.local</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><greeting depth="0">Hi Dominic,
+</greeting><para depth="0">
+You're best option here is to install Wireshark (wireshark.org), transfer 
+a plain text file while capturing network packets and see what happens!
+
+</para><para depth="0">Rob
+
+</para><para depth="0">On Thu, 28 Jul 2011, Dominic Dougherty wrote:
+
+</para><quote depth="1"><quotepara depth="1">Hi Guys,
+
+</quotepara><quotepara depth="1">Samba is used by one of our customers.  AIX servers and Windows xp server<br/>connect to this samba share.  This samba server is a AD member. Accesses to<br/>shares are restricted via domain groups.
+So, this is my question.
+
+</quotepara><quotepara depth="1">Is the network traffic encrypted, if not, what are my options to encrypt network<br/>traffic.
+
+</quotepara><quotepara depth="1">Dominic Dougherty
+
+</quotepara></quote></body></message>

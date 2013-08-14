@@ -1,0 +1,46 @@
+<message message-id="1988808309E4D51195440008C716B67A01F0758C@ban05xbindge.jfwtc.ge.com" list="org.apache.xmlgraphics.batik-users" id="24c5lir6mygy3hl2" type="users" date="2002-07-12T12:59:39+05:30" year="2002-01-01" year-month="2002-07-01" year-month-day="2002-07-12" thread-id="24c5lir6mygy3hl2"><headers><envelope-from-line>From batik-users-return-1908-apmail-xml-batik-users-archive=xml.apache.org@xml.apache.org Fri Jul 12 07:30:36 2002</envelope-from-line><from personal="K, Balamurugan (CORP, GEITC)" address="Balamurugan.K@geind.ge.com">"K, Balamurugan (CORP, GEITC)" &lt;Balamurugan.K@geind.ge.com&gt;</from><to personal="Batik Users" address="batik-users@xml.apache.org">Batik Users &lt;batik-users@xml.apache.org&gt;</to><subject normal="To dynamicaly update colour on SVG file">RE: To dynamicaly update colour on SVG file</subject><return-path>batik-users-return-1908-apmail-xml-batik-users-archive=xml.apache.org@xml.apache.org</return-path><delivered-to>apmail-xml-batik-users-archive@xml.apache.org</delivered-to><received>(qmail 37899 invoked by uid 500); 12 Jul 2002 07:30:36 -0000</received><mailing-list>contact batik-users-help@xml.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:batik-users-help@xml.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:batik-users-unsubscribe@xml.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:batik-users@xml.apache.org&gt;</list-post><reply-to>"Batik Users" &lt;batik-users@xml.apache.org&gt;</reply-to><delivered-to>mailing list batik-users@xml.apache.org</delivered-to><received>(qmail 37888 invoked from network); 12 Jul 2002 07:30:35 -0000</received><message-id>1988808309E4D51195440008C716B67A01F0758C@ban05xbindge.jfwtc.ge.com</message-id><date>Fri, 12 Jul 2002 12:59:39 +0530</date><mime-version>1.0</mime-version><x-mailer>Internet Mail Service (5.5.2653.19)</x-mailer><content-type>text/plain;
+	charset="iso-8859-1"</content-type><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>1988808309E4D51195440008C716B67A01F0758C@ban05xbindge.jfwtc.ge.com</normalized-message-id></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><greeting depth="0">Hi arvind,
+</greeting><para depth="0">	    If you have access to the SVGDocument object you can set the new
+color in the dom and re-render it. OR there is something as dynamic property
+you can make use of it.
+
+</para><para depth="0">Bala
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Arvind Sareen [mailto:<email>arvind_sareen@hotmail.com</email>]
+Sent: Friday, July 12, 2002 12:34 PM
+To: <email>batik-users@xml.apache.org</email>
+Subject: To dynamicaly update colour on SVG file
+
+</quotepara><quotepara depth="1">Hi
+
+</quotepara><quotepara depth="1">I need to dynamically update the colour of the line displayed in the SVG 
+file(i.e. once an SVG file is displayed , I need to change the colour of the
+
+</quotepara><quotepara depth="1">line depending upon the user input)
+Can anybody provide a workaround or solution to the above problem.
+
+</quotepara><quotepara depth="1">Arvind
+
+</quotepara><quotefooter type="free-hosting" hash="6665332821147374689" depth="1">_________________________________________________________________
+Join the world's largest e-mail service with MSN Hotmail. 
+<url>http://www.hotmail.com</url>
+
+</quotefooter><quotefooter type="list-management" hash="10134099120946471370" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>batik-users-unsubscribe@xml.apache.org</email>
+For additional commands, e-mail: <email>batik-users-help@xml.apache.org</email>
+
+</quotefooter><quotefooter type="legalese" hash="8744972282659663010" depth="1">"THIS E-MAIL MESSAGE ALONG WITH ANY ATTACHMENTS IS INTENDED ONLY FOR THE
+ADDRESSEE and may contain confidential and privileged information.
+If the reader of this message is not the intended recipient,
+you are notified that any dissemination, distribution or copy of this 
+communication is strictly Prohibited. 
+If you have received this message by error, please notify us 
+immediately, return the original mail to the sender and delete the 
+message from your system."
+
+</quotefooter><quotefooter type="list-management" hash="10134099120946471370" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>batik-users-unsubscribe@xml.apache.org</email>
+For additional commands, e-mail: <email>batik-users-help@xml.apache.org</email>
+
+</quotefooter></quote></body></message>

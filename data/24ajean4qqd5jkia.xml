@@ -1,0 +1,28 @@
+<message message-id="333f68e70702140620tad82e16taba38ddb547a8837@mail.gmail.com" list="com.googlegroups.google-maps-api" id="24ajean4qqd5jkia" type="development" date="2007-02-14T09:20:57-05:00" year="2007-01-01" year-month="2007-02-01" year-month-day="2007-02-14" thread-id="jhbt67moxtxmhleu"><headers><envelope-from-line>From - google-maps-api.googlegroups.com Jan 1 1990 </envelope-from-line><from personal="Tony" address="tonyw...@gmail.com">Tony &lt;tonyw...@gmail.com&gt;</from><to personal="Google-Maps-API@googlegroups.com" address="Google-Maps-API@googlegroups.com">Google-Maps-API@googlegroups.com</to><subject normal="[newbie] Text Labels">Re: [newbie] Text Labels</subject><received>by 10.35.51.13 with SMTP id d13mr26327080pyk.1171462858698;
+        Wed, 14 Feb 2007 06:20:58 -0800 (PST)</received><return-path>tonyw...@gmail.com</return-path><received>from nf-out-0910.google.com (nf-out-0910.google.com [64.233.182.187])
+        by mx.google.com with ESMTP id x46si2064523pyg.2007.02.14.06.20.58;
+        Wed, 14 Feb 2007 06:20:58 -0800 (PST)</received><received-spf>pass (google.com: domain of tonyw...@gmail.com designates 64.233.182.187 as permitted sender)</received-spf><domainkey-status>good (test mode)</domainkey-status><received>by nf-out-0910.google.com with SMTP id o60so644514nfa
+        for &lt;Google-Maps-API@googlegroups.com&gt;; Wed, 14 Feb 2007 06:20:57 -0800 (PST)</received><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=beta;
+        h=received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=BqmALUXdWL2jPRnl6vxz7ZHMx9saXs8/N8Tk2kLKL9+qWYnVIji1nwkFTWA1/8y//+dgwk219MOvz1e/TJS3Ti20l2YT30rtwGqaTdIVLu3KPV5Qwe4FpeFr2Chonx6eAQp+55+yeVLdHVPemqw4+j7npkUn//XBmtRbtMWQbew=</domainkey-signature><received>by 10.82.148.7 with SMTP id v7mr766831bud.1171462857359;
+        Wed, 14 Feb 2007 06:20:57 -0800 (PST)</received><received>by 10.82.187.14 with HTTP; Wed, 14 Feb 2007 06:20:57 -0800 (PST)</received><message-id>333f68e70702140620tad82e16taba38ddb547a8837@mail.gmail.com</message-id><date>Wed, 14 Feb 2007 09:20:57 -0500</date><in-reply-to>&lt;4l09W0A80i0FFwqY@econym.demon.co.uk&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><references>&lt;333f68e70702131240t27298de9m97949044921a0280@mail.gmail.com&gt;
+	 &lt;4l09W0A80i0FFwqY@econym.demon.co.uk&gt;</references></headers><normalized-references><normalized-message-id>333f68e70702140620tad82e16taba38ddb547a8837@mail.gmail.com</normalized-message-id><normalized-in-reply-to>4l09W0A80i0FFwqY@econym.demon.co.uk</normalized-in-reply-to><normalized-reference>333f68e70702131240t27298de9m97949044921a0280@mail.gmail.com</normalized-reference><normalized-reference>4l09W0A80i0FFwqY@econym.demon.co.uk</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">thanks mike!
+
+</para><para depth="0">tony
+
+</para><para depth="0">On 2/13/07, Mike Williams &lt;<email>nos...@econym.demon.co.uk</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">
+<url>http://www.econym.demon.co.uk/googlemaps/elabel.htm</url>
+
+</quotepara><quotefooter type="signature" hash="17130191409314262022" depth="1">--
+The Blackpool Community Church Javascript Team
+<url>http://www.econym.demon.co.uk/googlemaps/</url>
+
+</quotefooter></quote><footer type="signature" hash="6380974823262238396" depth="0">-- 
+'Never have anything in your life that you can't walk out on in thirty
+seconds flat, if you spot the heat coming around the corner'
+
+</footer><para depth="0">robert deniro - heat (1995)
+
+</para></body></message>

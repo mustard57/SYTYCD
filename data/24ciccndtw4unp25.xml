@@ -1,0 +1,36 @@
+<message message-id="1259007755.24474.121.camel@cray.cotef.org" list="org.perl.qpsmtpd" id="24ciccndtw4unp25" type="general" date="2009-11-23T12:22:21.717267-08:00" year="2009-01-01" year-month="2009-11-01" year-month-day="2009-11-23" thread-id="gdhiki6bdtrfhsdk"><headers><envelope-from-line>Mon Nov 23 12:22:44 2009</envelope-from-line><from personal="Guy Hulbert" address="gwhulbert@eol.ca">Guy Hulbert &lt;gwhulbert@eol.ca&gt;</from><to personal="Ask Bjørn Hansen" address="ask@develooper.com">"Ask Bjørn Hansen" &lt;ask@develooper.com&gt;</to><cc personal="Matt Sergeant" address="matt@sergeant.org">Matt Sergeant &lt;matt@sergeant.org&gt;</cc><subject normal="AnyEvent mode?">Re: AnyEvent mode?</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 595
+          for &lt;margo.stein.miranda@a.markmail.org&gt;;
+          Mon, 23 Nov 2009 12:22:44 -0800 (GMT-08:00)</received><received>from lists.develooper.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 2FC382908063
+	for &lt;margo.stein.miranda@a.markmail.org&gt;; Mon, 23 Nov 2009 12:22:21 -0800 (PST)</received><received>(qmail 15687 invoked by uid 514); 23 Nov 2009 20:22:42 -0000</received><mailing-list>contact qpsmtpd-help@perl.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;mailto:qpsmtpd@perl.org&gt;</list-post><list-help>&lt;mailto:qpsmtpd-help@perl.org&gt;</list-help><list-unsubscribe>&lt;mailto:qpsmtpd-unsubscribe@perl.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:qpsmtpd-subscribe@perl.org&gt;</list-subscribe><list-id>&lt;qpsmtpd.perl.org&gt;</list-id><delivered-to>mailing list qpsmtpd@perl.org</delivered-to><received>(qmail 15678 invoked from network); 23 Nov 2009 20:22:42 -0000</received><delivered-to>qpsmtpd@perl.org</delivered-to><x-spam-status>No, hits=0.0 required=8.0
+	tests=UNPARSEABLE_RELAY</x-spam-status><x-spam-check-by>la.mx.develooper.com</x-spam-check-by><x-yahoo-smtp>ZAwoeAKswBBJAcVw0SR9vRkU9Wu8Lz0wPPW_UzQxZpYe</x-yahoo-smtp><x-ymail-osg>5Y1pU8oVM1mIdkeQ9YL6_lVWg6dZx_MVJH45arCCl9RwPkzEs9KLqr6ATNGyjF5ijQ--</x-ymail-osg><x-yahoo-newman-property>ymail-3</x-yahoo-newman-property><in-reply-to>&lt;D29B40A9-CB38-44C0-B0BC-8AA4B7E4F481@develooper.com&gt;</in-reply-to><references>&lt;alpine.DEB.2.01.0911231939070.27271@bodger&gt;
+	 &lt;C3307308-FEEC-460F-B5B4-D0956E34EA22@develooper.com&gt;
+	 &lt;1259006934.24474.110.camel@cray.cotef.org&gt;
+	 &lt;D29B40A9-CB38-44C0-B0BC-8AA4B7E4F481@develooper.com&gt;</references><content-type>text/plain; charset=utf-8</content-type><date>Mon, 23 Nov 2009 15:22:35 -0500</date><message-id>1259007755.24474.121.camel@cray.cotef.org</message-id><mime-version>1.0</mime-version><x-mailer>Evolution 2.6.3 </x-mailer><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>1259007755.24474.121.camel@cray.cotef.org</normalized-message-id><normalized-in-reply-to>D29B40A9-CB38-44C0-B0BC-8AA4B7E4F481@develooper.com</normalized-in-reply-to><normalized-reference>alpine.DEB.2.01.0911231939070.27271@bodger</normalized-reference><normalized-reference>C3307308-FEEC-460F-B5B4-D0956E34EA22@develooper.com</normalized-reference><normalized-reference>1259006934.24474.110.camel@cray.cotef.org</normalized-reference><normalized-reference>D29B40A9-CB38-44C0-B0BC-8AA4B7E4F481@develooper.com</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">On Mon, 2009-23-11 at 12:17 -0800, Ask Bjørn Hansen wrote:
+</para><quote depth="1"><quotepara depth="1">On Nov 23, 2009, at 12:08, Guy Hulbert wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">google: perl anyevent
+
+</quotepara><quotepara depth="2">yields: <url>http://search.cpan.org/dist/AnyEvent/</url>
+
+</quotepara><quotepara depth="2">is there a better starting point ?
+</quotepara></quote><quotepara depth="1">
+I'm not exactly sure what your question is, but 
+</quotepara></quote><para depth="0">
+I'm not sure either but this:
+
+</para><para depth="0"><url>http://search.cpan.org/dist/AnyEvent/lib/AnyEvent/Intro.pod</url>
+
+</para><para depth="0">is a better answer ;-).
+
+</para><quote depth="1"><quotepara depth="1">	<url>http://search.cpan.org/search?query=anyevent</url>
+
+</quotepara><quotepara depth="1">shows a sample of available event implementations and other modules.
+</quotepara></quote><footer type="noise" depth="0">
+</footer><quote depth="1"><quotepara depth="1"> - ask
+
+</quotepara></quote><footer type="signature" depth="0" hash="3476267889234196108">-- 
+--gh
+
+</footer></body></message>

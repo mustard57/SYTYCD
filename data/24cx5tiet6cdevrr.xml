@@ -1,0 +1,41 @@
+<message message-id="200503211035.00398.faure@kde.org" list="org.kde.kde-commits" id="24cx5tiet6cdevrr" type="checkins" date="2005-03-21T10:35:00+01:00" year="2005-01-01" year-month="2005-03-01" year-month-day="2005-03-21" thread-id="vfa4wck6dudqnbga"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="David Faure" address="faure@kde.org">David Faure &lt;faure@kde.org&gt;</from><subject normal="koffice">Re: koffice</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.kde.cvs</newsgroups><date>Mon, 21 Mar 2005 10:35:00 +0100</date><organization>KDE</organization><lines>33</lines><approved>news@gmane.org</approved><message-id>200503211035.00398.faure@kde.org</message-id><references>&lt;20050320103502.7EB8D16F7D@office.kde.org&gt;
+	&lt;200503211012.45644.faure@kde.org&gt;
+	&lt;200503211019.04505.montel@kde.org&gt;</references><reply-to>kde-cvs@kde.org</reply-to><nntp-posting-host>main.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain;
+  charset="utf-8"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>sea.gmane.org 1111397616 1961 80.91.229.2 (21 Mar 2005 09:33:36 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Mon, 21 Mar 2005 09:33:36 +0000 (UTC)</nntp-posting-date><original-x-from>kde-cvs-bounces-+gckc-kde-cvs=m.gmane.org@kde.org Mon Mar 21 10:33:36 2005</original-x-from><original-received>from ktown.kde.org ([131.246.103.200])
+	by ciao.gmane.org with smtp (Exim 4.43)
+	id 1DDJHm-0004kT-PG
+	for gckc-kde-cvs@gmane.org; Mon, 21 Mar 2005 10:33:23 +0100</original-received><original-received>(qmail 4695 invoked by uid 72); 21 Mar 2005 09:35:10 -0000</original-received><original-received>(qmail 4668 invoked by uid 1055); 21 Mar 2005 09:35:06 -0000</original-received><delivered-to>kde.org-kde-cvs@kde.org</delivered-to><original-received>(qmail 4658 invoked from network); 21 Mar 2005 09:35:03 -0000</original-received><original-received>from ktown.kde.org (HELO localhost) (131.246.103.200)
+	by ktown.kde.org with SMTP; 21 Mar 2005 09:35:01 -0000</original-received><original-to>kde-cvs@kde.org</original-to><user-agent>KMail/1.7 (proko2 branch)</user-agent><in-reply-to>&lt;200503211019.04505.montel@kde.org&gt;</in-reply-to><content-disposition>inline</content-disposition><x-spam-checker-version>SpamAssassin 3.0.2 (2004-11-16) on ktown.kde.org</x-spam-checker-version><x-beenthere>kde-cvs@kde.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>Notifications of KDE CVS commits &lt;kde-cvs.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-cvs&gt;,
+	&lt;mailto:kde-cvs-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-cvs@kde.org&gt;</list-post><list-help>&lt;mailto:kde-cvs-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-cvs&gt;,
+	&lt;mailto:kde-cvs-request@kde.org?subject=subscribe&gt;</list-subscribe><x-mailscanner-to>gckc-kde-cvs@gmane.org</x-mailscanner-to><xref>news.gmane.org gmane.comp.kde.cvs:280860</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.kde.cvs/280860&gt;</archived-at></headers><normalized-references><normalized-message-id>200503211035.00398.faure@kde.org</normalized-message-id><normalized-in-reply-to>200503211019.04505.montel@kde.org</normalized-in-reply-to><normalized-reference>20050320103502.7EB8D16F7D@office.kde.org</normalized-reference><normalized-reference>200503211012.45644.faure@kde.org</normalized-reference><normalized-reference>200503211019.04505.montel@kde.org</normalized-reference></normalized-references><body type="text/plain;&#13;&#10; charset=&quot;utf-8&quot;"><para depth="0">On Monday 21 March 2005 10:19, Laurent Montel wrote:
+</para><quote depth="1"><quotepara depth="1">On Monday 21 March 2005 10:12, David Faure wrote:
+</quotepara><quote depth="2"><quotepara depth="2">On Sunday 20 March 2005 11:35, Laurent Montel wrote:
+</quotepara><quote depth="3"><quotepara depth="3">CVS commit by mlaurent:
+
+</quotepara><quotepara depth="3">Load missing attribute "fo:direction"
+
+</quotepara><quotepara depth="3">  M +4 -0      filters/kspread/opencalc/opencalcimport.cc   1.62
+  M +4 -2      filters/kspread/opencalc/opencalcstyleexport.h   1.8
+  M +4 -1      kspread/kspread_format.cc   1.167
+
+</quotepara><quotepara depth="3">--- koffice/kspread/kspread_format.cc  #1.166:1.167
+@@ -1194,5 +1194,8 @@ bool KSpreadFormat::loadOasisStyleProper
+             setAngle( -a );
+     }
+-
++    if ( styleStack.hasAttributeNS( KoXmlNS::fo, "direction" ) )
++    {
++        setVerticalText( true );
+</quotepara></quote><quotepara depth="2">
+Shouldn't you test the *value* of the attribute?
+</quotepara></quote><quotepara depth="1">
+It's right.
+But in kspread we support just an attribute.
+</quotepara></quote><para depth="0">
+Well you surely support two values (vertical or horizontal).
+
+</para><footer type="signature" hash="10970287074929382674" depth="0">-- 
+David Faure, <email>faure@kde.org</email>, sponsored by Trolltech to work on KDE,
+Konqueror (<url>http://www.konqueror.org</url>), and KOffice (<url>http://www.koffice.org</url>).
+
+</footer></body></message>

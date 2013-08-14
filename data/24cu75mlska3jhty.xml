@@ -1,0 +1,38 @@
+<message message-id="45F5842D.9060905@univ-st-etienne.fr" list="org.squid-cache.squid-users" id="24cu75mlska3jhty" type="users" date="2007-03-12T17:47:41+01:00" year="2007-01-01" year-month="2007-03-01" year-month-day="2007-03-12" thread-id="tctwo7brhddwkyiv"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="Jeremy Lardon" address="jeremy.lardon@univ-st-etienne.fr">Jeremy Lardon &lt;jeremy.lardon@univ-st-etienne.fr&gt;</from><to personal="shane@battlestarwiki.org" address="shane@battlestarwiki.org">shane@battlestarwiki.org</to><cc personal="squid-users@squid-cache.org" address="squid-users@squid-cache.org">squid-users@squid-cache.org</cc><subject normal="[squid-users] Disable &quot;Subdomain&quot; from being put through the Accelerator">Re: [squid-users] Disable "Subdomain" from being put through the Accelerator</subject><return-path>jeremy.lardon@univ-st-etienne.fr</return-path><mailing-list>contact squid-users-help@squid-cache.org; run by ezmlm</mailing-list><delivered-to>mailing list squid-users@squid-cache.org</delivered-to><received>(qmail 97122 invoked by uid 26); 12 Mar 2007 16:47:50 -0000</received><received>from aix.univ-st-etienne.fr (aix.univ-st-etienne.fr [161.3.1.7])
+	by squid-cache.org (8.13.8/8.13.6) with ESMTP id l2CGlnXH097116
+	for &lt;squid-users@squid-cache.org&gt;; Mon, 12 Mar 2007 09:47:50 -0700 (MST)
+	(envelope-from jeremy.lardon@univ-st-etienne.fr)</received><received>from localhost (localhost.localdomain [127.0.0.1])
+	by aix.univ-st-etienne.fr (Postfix) with ESMTP id CA227278256;
+	Mon, 12 Mar 2007 17:47:42 +0100 (CET)</received><received>from aix.univ-st-etienne.fr ([127.0.0.1])
+	by localhost (aix [127.0.0.1]) (amavisd-new, port 10024) with ESMTP
+	id 12968-01; Mon, 12 Mar 2007 17:47:42 +0100 (CET)</received><received>from lizeron.univ-st-etienne.fr (lizeron.univ-st-etienne.fr [161.3.1.4])
+	by aix.univ-st-etienne.fr (Postfix) with ESMTP id A98FC27820D;
+	Mon, 12 Mar 2007 17:47:42 +0100 (CET)</received><received>from localhost (localhost.localdomain [127.0.0.1])
+	by lizeron.univ-st-etienne.fr (Postfix) with ESMTP id 99A394B976;
+	Mon, 12 Mar 2007 17:47:42 +0100 (CET)</received><received>from lizeron.univ-st-etienne.fr ([127.0.0.1])
+	by localhost (lizeron [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 30603-05; Mon, 12 Mar 2007 17:47:42 +0100 (CET)</received><received>from [161.3.50.184] (istapr84.univ-st-etienne.fr [161.3.50.184])
+	by lizeron.univ-st-etienne.fr (Postfix) with ESMTP id 81D204B96E;
+	Mon, 12 Mar 2007 17:47:42 +0100 (CET)</received><message-id>45F5842D.9060905@univ-st-etienne.fr</message-id><date>Mon, 12 Mar 2007 17:47:41 +0100</date><user-agent>Thunderbird 1.5.0.10 (X11/20070221)</user-agent><mime-version>1.0</mime-version><references>&lt;45F57E95.3080608@battlestarwiki.org&gt;</references><in-reply-to>&lt;45F57E95.3080608@battlestarwiki.org&gt;</in-reply-to><content-type>text/plain; charset=ISO-8859-1; format=flowed</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-virus-scanned>by amavisd-new-20030616-p10 (Debian) at univ-st-etienne.fr</x-virus-scanned><x-virus-scanned>by amavisd-new-20030616-p10 (Debian) at univ-st-etienne.fr</x-virus-scanned></headers><normalized-references><normalized-message-id>45F5842D.9060905@univ-st-etienne.fr</normalized-message-id><normalized-in-reply-to>45F57E95.3080608@battlestarwiki.org</normalized-in-reply-to><normalized-reference>45F57E95.3080608@battlestarwiki.org</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1; format=flowed"><para depth="0">Shane A. Froebel a écrit :
+</para><quote depth="1"><quotepara depth="1">By default, we have *.battlestarwiki.org gone through squid. However, 
+we like to remove blog.battlestarwiki.org from being stored in squid. 
+How can this be done...
+
+</quotepara><quotepara depth="1">--- Shane
+
+</quotepara></quote><para depth="0">Seems you can use "cache deny" command in the squid.conf
+
+</para><para depth="0">something like :
+----
+acl blog url_regex blog.battlestarwiki.org
+cache deny blog
+----
+
+</para><para depth="0">Hope this help.
+
+</para><footer type="signature" hash="6188941944410277017" depth="0">-- 
+Jérémy Lardon
+Laboratoire DIOM, équipe SATIn - Doctorant
+04 77 48 50 34
+
+</footer></body></message>

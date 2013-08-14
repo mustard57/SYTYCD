@@ -1,0 +1,18 @@
+<message message-id="Pine.LNX.4.32.0102190458510.16820-100000@devserv.devel.redhat.com" list="com.redhat.tux-list" id="24apbkd2aailujy4" type="general" date="2001-02-19T04:59:08-05:00" year="2001-01-01" year-month="2001-02-01" year-month-day="2001-02-19" thread-id="24apbkd2aailujy4"><headers><envelope-from-line>From mail@redhat.com  Mon Feb 19 04:59:14 2001</envelope-from-line><from personal="Ingo Molnar" address="mingo@redhat.com">Ingo Molnar &lt;mingo@redhat.com&gt;</from><to personal="tux-list@redhat.com" address="tux-list@redhat.com">tux-list@redhat.com</to><subject normal="tux handling 404 errors">RE: tux handling 404 errors</subject><return-path>mail@redhat.com</return-path><delivered-to>tux-list@listman.redhat.com</delivered-to><received>from lacrosse.corp.redhat.com (lacrosse.corp.redhat.com [207.175.42.154])
+	by listman.redhat.com (Postfix) with ESMTP id 04FDE2F544
+	for &lt;tux-list@listman.redhat.com&gt;; Mon, 19 Feb 2001 04:59:14 -0500 (EST)</received><received>(from mail@localhost)
+	by lacrosse.corp.redhat.com (8.9.3/8.9.3) id EAA15929
+	for tux-list@listman.redhat.com; Mon, 19 Feb 2001 04:59:09 -0500</received><received>from devserv.devel.redhat.com (devserv.devel.redhat.com [207.175.42.156])
+	by lacrosse.corp.redhat.com (8.9.3/8.9.3) with ESMTP id EAA15923
+	for &lt;tux-list@redhat.com&gt;; Mon, 19 Feb 2001 04:59:09 -0500</received><received>from localhost (mingo@localhost)
+	by devserv.devel.redhat.com (8.11.0/8.11.0) with ESMTP id f1J9x8I16999
+	for &lt;tux-list@redhat.com&gt;; Mon, 19 Feb 2001 04:59:09 -0500</received><x-authentication-warning>devserv.devel.redhat.com: mingo owned process doing -bs</x-authentication-warning><date>Mon, 19 Feb 2001 04:59:08 -0500 (EST)</date><x-x-sender>&lt;mingo@devserv.devel.redhat.com&gt;</x-x-sender><in-reply-to>&lt;KAEJIGGCAEDBGMEOIPDHOEDECGAA.phb@sema.fr&gt;</in-reply-to><message-id>Pine.LNX.4.32.0102190458510.16820-100000@devserv.devel.redhat.com</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><x-loop>tux-list@redhat.com</x-loop><sender>tux-list-admin@redhat.com</sender><errors-to>tux-list-admin@redhat.com</errors-to><x-beenthere>tux-list@redhat.com</x-beenthere><x-mailman-version>2.0beta4</x-mailman-version><precedence>bulk</precedence><reply-to>tux-list@redhat.com</reply-to><list-id>TUX discussion list &lt;tux-list.redhat.com&gt;</list-id></headers><normalized-references><normalized-message-id>Pine.LNX.4.32.0102190458510.16820-100000@devserv.devel.redhat.com</normalized-message-id><normalized-in-reply-to>KAEJIGGCAEDBGMEOIPDHOEDECGAA.phb@sema.fr</normalized-in-reply-to></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On Mon, 19 Feb 2001, Philippe Brand wrote:
+
+</para><quote depth="1"><quotepara depth="1">Trying to compile O4 version on a fresh 2.4.1 kernel:
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">proto_http.c:651: structure has no member named `bytes_expected'
+</quotepara></quote><para depth="0">
+please check out -O5.
+
+</para><para depth="0">	Ingo
+</para></body></message>

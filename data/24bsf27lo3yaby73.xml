@@ -1,0 +1,54 @@
+<message message-id="3691A6DD-F936-4C05-AE16-530FCDF959FE@openlaszlo.org" list="org.openlaszlo.laszlo-dev" id="24bsf27lo3yaby73" type="development" date="2006-12-07T18:01:29-05:00" year="2006-01-01" year-month="2006-12-01" year-month-day="2006-12-07" thread-id="24bsf27lo3yaby73"><headers><envelope-from-line>From ptw@openlaszlo.org  Thu Dec  7 15:01:29 2006</envelope-from-line><from personal="P T Withington" address="ptw@openlaszlo.org">P T Withington &lt;ptw@openlaszlo.org&gt;</from><subject normal="[Laszlo-dev] For Review: Change 20061207-maxcarlson-p Summary: Add more event safety checking">[Laszlo-dev] For Review: Change 20061207-maxcarlson-p Summary: Add more event safety checking</subject><date>Thu, 7 Dec 2006 18:01:29 -0500</date><in-reply-to>&lt;BA432637-6E68-42EB-8867-46299AEBC189@openlaszlo.org&gt;</in-reply-to><references>&lt;BA432637-6E68-42EB-8867-46299AEBC189@openlaszlo.org&gt;</references><message-id>3691A6DD-F936-4C05-AE16-530FCDF959FE@openlaszlo.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>3691A6DD-F936-4C05-AE16-530FCDF959FE@openlaszlo.org</normalized-message-id><normalized-in-reply-to>BA432637-6E68-42EB-8867-46299AEBC189@openlaszlo.org</normalized-in-reply-to><normalized-reference>BA432637-6E68-42EB-8867-46299AEBC189@openlaszlo.org</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">I think we need to understand this more.  Can you put in a Debug.warn  
+for the failing case so we can figure out how we are getting a  
+delegate with a null method?
+
+</para><para depth="0">This is perhaps an eval-order issue, perhaps state is taking away the  
+method that is supposed to be getting called or something, but I  
+think we need to understand what is going on here...
+
+</para><para depth="0">On 2006-12-07, at 17:41 EST, Max Carlson wrote:
+
+</para><quote depth="1"><quotepara depth="1">Change 20061207-maxcarlson-p by maxcarlson at max-carlsons- 
+computer.local on 2006-12-07 14:29:28 PST
+    in /Users/maxcarlson/openlaszlo/legals
+
+</quotepara><quotepara depth="1">Summary: Add more event safety checking
+
+</quotepara><quotepara depth="1">New Features:
+
+</quotepara><quotepara depth="1">Bugs Fixed:
+
+</quotepara><quotepara depth="1">Technical Reviewer: hminsky
+QA Reviewer: ptw
+Doc Reviewer: (pending)
+
+</quotepara><quotepara depth="1">Documentation:
+
+</quotepara><quotepara depth="1">Release Notes:
+
+</quotepara><quotepara depth="1">Details: This doesn't feel like the right fix because the stack  
+trace shows there's no onapply method to call in line 145 of  
+LzState.lzs:
+    //@event onapply: Sent when the state is applied.
+        this.onapply.sendEvent( this );
+
+</quotepara><quotepara depth="1">This doesn't make sense because there's a dummy event declared above:
+class LzState extends LzNode {
+
+</quotepara><quotepara depth="1">  /*override*/ static var tagname = 'state';
+
+</quotepara><quotepara depth="1">  DeclareEvent(prototype, 'onapply' );
+
+</quotepara><quotepara depth="1">But, it's always good to have more safety checking.  We do need to  
+make sure this isn't caused by the recent changes to the event  
+system failing.
+
+</quotepara><quotepara depth="1">Tests: <url>http://localhost:8080/legals/demos/weather/weather.lzx?</url> 
+lzr=dhtml runs again.
+
+</quotepara><quotepara depth="1">Files:
+M      WEB-INF/lps/lfc/events/LaszloEvents.lzs
+
+</quotepara><quotepara depth="1">Changeset: <url>http://svn.openlaszlo.org/openlaszlo/patches/20061207-</url> 
+maxcarlson-p.tar
+</quotepara></quote></body></message>

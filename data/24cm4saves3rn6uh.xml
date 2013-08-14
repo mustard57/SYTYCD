@@ -1,0 +1,20 @@
+<message message-id="051101c201f2$8744c660$6400a8c0@JMG" list="org.xml.lists.xml-dev" id="24cm4saves3rn6uh" type="development" date="2002-05-22T17:41:08-07:00" year="2002-01-01" year-month="2002-05-01" year-month-day="2002-05-22" thread-id="slav6puyhe2eb3ef"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="Jeff Greif" address="jgreif@alumni.princeton.edu">Jeff Greif &lt;jgreif@alumni.princeton.edu&gt;</from><to personal="Murali Mani" address="mani@CS.UCLA.EDU">Murali Mani &lt;mani@CS.UCLA.EDU&gt;</to><subject normal="[xml-dev] Two quick questions regarding restriction in XML Schema">Re: [xml-dev] Two quick questions regarding restriction in XML Schema</subject><x-mozilla-status>0010</x-mozilla-status><x-mozilla-status2>00000000</x-mozilla-status2><return-path>jgreif@alumni.princeton.edu</return-path><mailing-list>contact xml-dev-help@lists.xml.org; run by ezmlm</mailing-list><delivered-to>mailing list xml-dev@lists.xml.org</delivered-to><received>(qmail 15951 invoked by uid 0); 23 May 2002 00:51:28 -0000</received><received>from unknown (HELO c007.snv.cp.net) (209.228.33.239)
+  by mail.oasis-open.org with SMTP; 23 May 2002 00:51:28 -0000</received><received>(cpmta 9665 invoked from network); 22 May 2002 17:41:08 -0700</received><received>from 24.130.22.83 (HELO JMG)
+  by smtp.alumni.princeton.edu (209.228.33.239) with SMTP; 22 May 2002 17:41:08 -0700</received><x-sent>23 May 2002 00:41:08 GMT</x-sent><message-id>051101c201f2$8744c660$6400a8c0@JMG</message-id><references>&lt;Pine.SOL.4.33.0205221257490.9486-100000@panther.cs.ucla.edu&gt;</references><date>Wed, 22 May 2002 17:41:08 -0700</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 6.00.2600.0000</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V6.00.2600.0000</x-mimeole></headers><normalized-references><normalized-message-id>051101c201f2$8744c660$6400a8c0@JMG</normalized-message-id><normalized-reference>Pine.SOL.4.33.0205221257490.9486-100000@panther.cs.ucla.edu</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><para depth="0">There is some danger in using 'accidental' subtype relationships that arise
+from similar but unrelated hedge types.
+
+</para><para depth="0">We could have:
+   president isa manager isa employee isa person
+  vice-president isa manager isa employee isa person
+
+</para><para depth="0">and hedge types:
+company-bowling-team -&gt; (employee+)
+5-year-plan-strategists -&gt; (president, vice-president*)
+
+</para><para depth="0">Yes, the president and vice-presidents could form a bowling team,
+but it's unlikely that the author of these types had that in mind.
+
+</para><para depth="0">Jeff
+
+</para></body></message>

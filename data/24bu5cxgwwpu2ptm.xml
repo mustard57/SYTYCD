@@ -1,0 +1,62 @@
+<message message-id="BAY126-W246594732894D9BD39AB2FBF8E0@phx.gbl" list="com.ubuntu.lists.ubuntu-pt" id="24bu5cxgwwpu2ptm" type="general" date="2009-03-27T14:53:41Z" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-27" thread-id="iequvpcsahmo5en4"><headers><envelope-from-line>From msantos3659@hotmail.com Fri Mar 27 14:53:42 2009</envelope-from-line><from personal="Mario N. dos Santos" address="msantos3659@hotmail.com">"Mario N. dos Santos" &lt;msantos3659@hotmail.com&gt;</from><to personal="Lista de Discussão sobre o Ubuntu" address="ubuntu-pt@lists.ubuntu.com">"Lista de Discussão sobre o Ubuntu" &lt;ubuntu-pt@lists.ubuntu.com&gt;</to><subject normal="[Ubuntu-PT 6171] Re: Erro no Cups - impressora USB">[Ubuntu-PT 6171] Re: Erro no Cups - impressora USB</subject><received>from bay0-omc1-s10.bay0.hotmail.com ([65.54.246.82])
+	by chlorine.canonical.com with esmtp (Exim 4.60)
+	(envelope-from &lt;msantos3659@hotmail.com&gt;) id 1LnDRG-0000ap-Hm
+	for ubuntu-pt@lists.ubuntu.com; Fri, 27 Mar 2009 14:53:42 +0000</received><received>from BAY126-W24 ([65.55.131.59]) by bay0-omc1-s10.bay0.hotmail.com
+	with Microsoft SMTPSVC(6.0.3790.3959); 
+	Fri, 27 Mar 2009 07:53:42 -0700</received><message-id>BAY126-W246594732894D9BD39AB2FBF8E0@phx.gbl</message-id><x-originating-ip>[84.72.169.71]</x-originating-ip><date>Fri, 27 Mar 2009 14:53:41 +0000</date><importance>Normal</importance><in-reply-to>&lt;49CCE21A.2010004@intraneia.com&gt;</in-reply-to><references>&lt;a65fa54e0903250946k6695a26cnce5e995098f5c932@mail.gmail.com&gt;
+	&lt;49CCE21A.2010004@intraneia.com&gt;</references><mime-version>1.0</mime-version><x-originalarrivaltime>27 Mar 2009 14:53:42.0134 (UTC)
+	FILETIME=[D20C5160:01C9AEEB]</x-originalarrivaltime><content-type>text/plain; charset="iso-8859-1"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><x-content-filtered-by>Mailman/MimeDel 2.1.8</x-content-filtered-by><x-beenthere>ubuntu-pt@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><precedence>list</precedence><reply-to>=?iso-8859-1?q?Lista_de_Discuss=E3o_sobre_o_Ubuntu?=
+	&lt;ubuntu-pt@lists.ubuntu.com&gt;</reply-to><list-id>=?iso-8859-1?q?Lista_de_Discuss=E3o_sobre_o_Ubuntu?=
+	&lt;ubuntu-pt.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-pt&gt;,
+	&lt;mailto:ubuntu-pt-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://lists.ubuntu.com/archives/ubuntu-pt&gt;</list-archive><list-post>&lt;mailto:ubuntu-pt@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-pt-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-pt&gt;,
+	&lt;mailto:ubuntu-pt-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Fri, 27 Mar 2009 14:53:42 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>BAY126-W246594732894D9BD39AB2FBF8E0@phx.gbl</normalized-message-id><normalized-in-reply-to>49CCE21A.2010004@intraneia.com</normalized-in-reply-to><normalized-reference>a65fa54e0903250946k6695a26cnce5e995098f5c932@mail.gmail.com</normalized-reference><normalized-reference>49CCE21A.2010004@intraneia.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;iso-8859-1&quot;"><para depth="0">
+Bom ajudar nao posso
+
+</para><para depth="0">Bmas tambem tive uma epson connectadavia USB e nunca trabalhou
+ fui obrigado a trocar de impressora
+
+</para><quote depth="1"><quotepara depth="1">Date: Fri, 27 Mar 2009 14:26:34 +0000
+From: <email>joao.neves@intraneia.com</email>
+To: <email>ubuntu-pt@lists.ubuntu.com</email>
+Subject: [Ubuntu-PT 6168] Re: Erro no Cups - impressora USB
+
+</quotepara><quotepara depth="1">Fábio de Sousa escreveu:
+</quotepara><quote depth="2"><quotepara depth="2">Uma boa tarde a todos!
+
+</quotepara><quotepara depth="2">Alguém poderia me dizer como resolver este erro:
+
+</quotepara><quotepara depth="2">backend /usr/lib/cups/backend/epson does not exist
+
+</quotepara><quotepara depth="2">ele está sendo retornado pelo CUPs quando vou criar uma fila de impressão
+para uma impressora Epson lx 300 que está conectada na porta usb.
+
+</quotepara><quotepara depth="2">Um abraço a todos!
+Fabioc
+
+</quotepara></quote><quotepara depth="1">Fizeste alguma actualização a esse computador? Esse ficheiro não existe 
+no 8.10. Suspeito que seja uma configuração antiga. Experimenta refazer 
+a configuração da impressora (apagar a impressora e configurar de novo) 
+e diz o resultado.
+
+</quotepara><quotepara depth="1">Cumprimentos,
+João Miguel Neves
+
+</quotepara><quotepara depth="1">-- 
+Intraneia
+<url>http://www.intraneia.com/</url>
+
+</quotepara><quotepara depth="1">Suporte a Software Livre
+Tradução/Localização de software e sítios web
+Desenvolvimento de software
+
+</quotepara><quotepara depth="1">Ao seu serviço...
+
+</quotepara><quotefooter type="list-management" depth="1">-- 
+ubuntu-pt mailing list
+<email>ubuntu-pt@lists.ubuntu.com</email>
+<url>https://lists.ubuntu.com/mailman/listinfo/ubuntu-pt</url>
+</quotefooter></quote><footer type="noise" depth="0">
+</footer><para depth="0">_________________________________________________________________
+Cansado de espaço para só 50 fotos? Conheça o Spaces, o site de relacionamentos<br/>com até 6,000 fotos!
+<url>http://www.amigosdomessenger.com.br</url>
+</para></body></message>

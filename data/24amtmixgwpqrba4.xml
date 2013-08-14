@@ -1,0 +1,45 @@
+<message message-id="25074556.1196461123126.JavaMail.jira@brutus" list="org.apache.hadoop.pig-dev" id="24amtmixgwpqrba4" type="bugs" date="2007-11-30T14:18:43-08:00" year="2007-01-01" year-month="2007-11-01" year-month-day="2007-11-30" thread-id="k33veex5g6oc3zar"><headers><envelope-from-line>Fri Nov 30 14:19:07 2007</envelope-from-line><from personal="Christopher Olston (JIRA)" address="jira@apache.org">"Christopher Olston (JIRA)" &lt;jira@apache.org&gt;</from><to personal="pig-dev@incubator.apache.org" address="pig-dev@incubator.apache.org">pig-dev@incubator.apache.org</to><subject normal="[jira] Updated: (PIG-38) abstract PigScript parser">[jira] Updated: (PIG-38) abstract PigScript parser</subject><received>from hermes.apache.org ([140.211.11.2])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 974
+          for &lt;federico.holman.fleming@a.markmail.org&gt;;
+          Fri, 30 Nov 2007 14:19:07 -0800 (PST)</received><received>(qmail 50304 invoked by uid 500); 30 Nov 2007 22:18:54 -0000</received><mailing-list>contact pig-dev-help@incubator.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:pig-dev-help@incubator.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:pig-dev-unsubscribe@incubator.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:pig-dev@incubator.apache.org&gt;</list-post><list-id>&lt;pig-dev.incubator.apache.org&gt;</list-id><reply-to>pig-dev@incubator.apache.org</reply-to><delivered-to>mailing list pig-dev@incubator.apache.org</delivered-to><received>(qmail 50295 invoked by uid 99); 30 Nov 2007 22:18:54 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 30 Nov 2007 14:18:54 -0800</received><x-asf-spam-status>No, hits=-100.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.4] (HELO brutus.apache.org) (140.211.11.4)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 30 Nov 2007 22:19:04 +0000</received><received>from brutus (localhost [127.0.0.1])
+	by brutus.apache.org (Postfix) with ESMTP id 24537714211
+	for &lt;pig-dev@incubator.apache.org&gt;; Fri, 30 Nov 2007 14:18:43 -0800 (PST)</received><message-id>25074556.1196461123126.JavaMail.jira@brutus</message-id><date>Fri, 30 Nov 2007 14:18:43 -0800 (PST)</date><in-reply-to>&lt;25044901.1196293542994.JavaMail.jira@brutus&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>25074556.1196461123126.JavaMail.jira@brutus</normalized-message-id><normalized-in-reply-to>25044901.1196293542994.JavaMail.jira@brutus</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+[ <br/><url>https://issues.apache.org/jira/browse/PIG-38?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url> <br/>] 
+
+</para><para depth="0">Christopher Olston updated PIG-38:
+----------------------------------
+
+</para><para depth="0">    Attachment: pigScriptParser.patch
+
+</para><para depth="0">patch: abstract pig script parser
+
+</para><para depth="0">I created an abstract class PigScriptParser, which is identical to the current <br/>GruntParser except no actions are taken. 
+
+</para><para depth="0">Then added a GruntParser that extends PigScriptParser, and has concrete <br/>implementations of actions (e.g., what to do when a "store" command is <br/>encountered). 
+
+</para><quote depth="1"><quotepara depth="1">abstract PigScript parser
+-------------------------
+
+</quotepara><quotepara depth="1">                Key: PIG-38
+                URL: <url>https://issues.apache.org/jira/browse/PIG-38</url>
+            Project: Pig
+         Issue Type: Improvement
+         Components: grunt
+        Environment: grunt and pigpen
+           Reporter: Christopher Olston
+        Attachments: pigScriptParser.patch
+
+</quotepara><quotepara depth="1">I am developing Pig Pen, an Eclipse plugin for Pig. Pig Pen needs to parse .pig <br/>scripts. The parsing is the same as for grunt, but the actions I take are <br/>different (e.g., Pig Pen will ignore "store" commands for the purpose of <br/>editing). 
+What I'd like to do is create an abstract class PigScriptParser, which is <br/>identical to the current GruntParser except no actions are taken. Then I'll add <br/>a GruntParser that extends PigScriptParser, and has concrete implementations of <br/>actions (e.g., what to do when a "store" command is encountered). 
+I'll also add a PigPenParser that also extends PigScriptParser.
+This should not affect the behavior of GruntParser at all -- it just separates <br/>the parsing from the actuating. 
+</quotepara></quote><footer type="signature" hash="7143682674318774400" depth="0">
+-- 
+This message is automatically generated by JIRA.
+-
+You can reply to this email to add a comment to the issue online.
+
+</footer></body></message>

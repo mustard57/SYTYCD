@@ -1,0 +1,40 @@
+<message message-id="200308140840.46446.aj@siegel-tech.net" list="org.freebsd.freebsd-questions" id="24bjq4ohv32y7rth" type="general" date="2003-08-14T07:41:42" year="2003-01-01" year-month="2003-08-01" year-month-day="2003-08-14" thread-id="ziugvp47x36lxel2"><headers><envelope-from-line>From aj@siegel-tech.net  Thu Aug 14 07:41:31 2003</envelope-from-line><from personal="Aaron Siegel" address="aj@siegel-tech.net">Aaron Siegel &lt;aj@siegel-tech.net&gt;</from><subject normal="quickquestion">quickquestion</subject><date>Thu Aug 14 07:41:42 2003</date><in-reply-to>&lt;DBEIKNMKGOBGNDHAAKGNAEGDDGAC.dave@hawk-systems.com&gt;</in-reply-to><references>&lt;DBEIKNMKGOBGNDHAAKGNAEGDDGAC.dave@hawk-systems.com&gt;</references><message-id>200308140840.46446.aj@siegel-tech.net</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>200308140840.46446.aj@siegel-tech.net</normalized-message-id><normalized-in-reply-to>DBEIKNMKGOBGNDHAAKGNAEGDDGAC.dave@hawk-systems.com</normalized-in-reply-to><normalized-reference>DBEIKNMKGOBGNDHAAKGNAEGDDGAC.dave@hawk-systems.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><quote depth="1"><quotefooter type="noise" hash="15041569595570159527" depth="1">
+</quotefooter><quote depth="2"><quotepara depth="2">On a larger scale can i am tired of constantly changing dirs to run
+apps. can i adjust an environment variable to run programs from any
+dir i am in, instead searching through everything. I installed a lot
+of port software but can't seem to be able to run or find any of it.
+</quotepara></quote><quotepara depth="1">
+thats usually what /usr/local/bin and sbin are for (at least in my usage)
+since they are in your path, simply symlink your port after installing it
+into that directory.
+</quotepara></quote><para depth="0">
+I would not recommend Dave's solution. Freebsd stores it executable files in 
+three locations in the file system.  
+
+</para><para depth="0">/bin /sbin  --- this is the location of system executables
+
+</para><para depth="0">/usr/sbin /usr/bin --- these are for application included in the FreeBSD 
+distribution
+
+</para><para depth="0">/usr/X11R6/bin  /usr/X11R6 --- these are for applications related to X  this 
+includes gnome and most window managers
+
+</para><para depth="0">/usr/local/bin /usr/local/sbin --- these are for all other third party 
+applications
+
+</para><para depth="0">All of these directories should be included in your PATH environment variable. 
+To check the value of your PATH variable enter the following command:
+
+</para><para depth="0">	$ echo $PATH
+
+</para><para depth="0">You can add values to the PATH variable by:
+
+</para><para depth="0">	for bash, ksh, sh 
+	export PATH=$PATH:/usr/X11R6
+
+</para><para depth="0">	for csh tcsh
+	setenv PATH $PATH:/usr/X11R6
+
+</para><para depth="0">These variables are set in your  ~/.profile files. I believe all you will need 
+to add to your PATH variable is /usr/X11R6/bin:/usr/X11R6/sbin.
+</para></body></message>

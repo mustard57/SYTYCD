@@ -1,0 +1,857 @@
+<message message-id="BOEJJFBJBNPOFOBEMFLFKEDKCBAA.snalgonda@mypublisher.com" list="org.apache.struts.user" id="24alop5hsvlsw23v" type="users" date="2004-08-10T17:11:11-04:00" year="2004-01-01" year-month="2004-08-01" year-month-day="2004-08-10" thread-id="czmfyvw5v4qafhpq"><headers><envelope-from-line>From user-return-118891-apmail-struts-user-archive=struts.apache.org@struts.apache.org Tue Aug 10 21:15:22 2004</envelope-from-line><from personal="Shilpa Nalgonda" address="snalgonda@mypublisher.com">Shilpa Nalgonda &lt;snalgonda@mypublisher.com&gt;</from><to personal="Struts Users Mailing List" address="user@struts.apache.org">Struts Users Mailing List &lt;user@struts.apache.org&gt;</to><subject normal="java.net.ConnectException: Connection refused">RE: java.net.ConnectException: Connection refused</subject><return-path>user-return-118891-apmail-struts-user-archive=struts.apache.org@struts.apache.org</return-path><delivered-to>apmail-struts-user-archive@www.apache.org</delivered-to><received>(qmail 89293 invoked from network); 10 Aug 2004 21:15:21 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur-2.apache.org with SMTP; 10 Aug 2004 21:15:21 -0000</received><received>(qmail 96078 invoked by uid 500); 10 Aug 2004 21:14:55 -0000</received><delivered-to>apmail-struts-user-archive@struts.apache.org</delivered-to><received>(qmail 95978 invoked by uid 500); 10 Aug 2004 21:14:54 -0000</received><mailing-list>contact user-help@struts.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:user-unsubscribe@struts.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:user-subscribe@struts.apache.org&gt;</list-subscribe><list-help>&lt;mailto:user-help@struts.apache.org&gt;</list-help><list-post>&lt;mailto:user@struts.apache.org&gt;</list-post><list-id>"Struts Users Mailing List" &lt;user.struts.apache.org&gt;</list-id><reply-to>"Struts Users Mailing List" &lt;user@struts.apache.org&gt;</reply-to><delivered-to>mailing list user@struts.apache.org</delivered-to><received>(qmail 95965 invoked by uid 99); 10 Aug 2004 21:14:54 -0000</received><x-asf-spam-status>No, hits=0.0 required=10.0
+	tests=</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [209.10.25.250] (HELO mail.mypublisher.com) (209.10.25.250)
+  by apache.org (qpsmtpd/0.27.1) with ESMTP; Tue, 10 Aug 2004 14:14:50 -0700</received><received>from snalgonda ([209.73.202.194]) by mail.mypublisher.com with Microsoft SMTPSVC(5.0.2195.5329);
+	 Tue, 10 Aug 2004 17:21:28 -0400</received><date>Tue, 10 Aug 2004 17:11:11 -0400</date><message-id>BOEJJFBJBNPOFOBEMFLFKEDKCBAA.snalgonda@mypublisher.com</message-id><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3 (Normal)</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V6.00.2800.1106</x-mimeole><in-reply-to>&lt;AF306EA783C4F74C9954C396CD313E977E426D@sssc-mail-2.internal.sssc.com&gt;</in-reply-to><importance>Normal</importance><x-originalarrivaltime>10 Aug 2004 21:21:28.0703 (UTC) FILETIME=[FFE380F0:01C47F1F]</x-originalarrivaltime><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>BOEJJFBJBNPOFOBEMFLFKEDKCBAA.snalgonda@mypublisher.com</normalized-message-id><normalized-in-reply-to>AF306EA783C4F74C9954C396CD313E977E426D@sssc-mail-2.internal.sssc.com</normalized-in-reply-to></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><para depth="0">All the below 4 are working on my Linux box.... but still i have the same
+problem
+networking on the linux box is up and running?
+mysql is up and running?
+netstat --listen shows the 3306 port for mysql open and listening?
+Can you get the mysql admin tools to connect from commandline?
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Jim Barrows [mailto:<email>jbarrows@sssc.com</email>]
+Sent: Tuesday, August 10, 2004 4:39 PM
+To: Struts Users Mailing List
+Subject: RE: java.net.ConnectException: Connection refused
+
+</quotepara><quote depth="2"><quotepara depth="2">-----Original Message-----
+From: Shilpa Nalgonda [mailto:<email>snalgonda@mypublisher.com</email>]
+Sent: Tuesday, August 10, 2004 1:29 PM
+To: Struts Users Mailing List
+Subject: RE: java.net.ConnectException: Connection refused
+
+</quotepara><quotepara depth="2">No there is no firewall on Linux box.
+</quotepara></quote><quotepara depth="1">
+Okay I'm going to down a mental list you've probably already checked, and
+I'm assuming a moderate level of linux understanding.....
+
+</quotepara><quotepara depth="1">networking on the linux box is up and running?
+mysql is up and running?
+netstat --listen shows the 3306 port for mysql open and listening?
+Can you get the mysql admin tools to connect from commandline?
+
+</quotepara><quotepara depth="1">If all of these are yes, I'll have to wait until I get home to post my
+config... unless anyone can post theirs....
+
+</quotepara><quote depth="2"><quotepara depth="2">-----Original Message-----
+From: Jim Barrows [mailto:<email>jbarrows@sssc.com</email>]
+Sent: Tuesday, August 10, 2004 4:24 PM
+To: Struts Users Mailing List
+Subject: RE: java.net.ConnectException: Connection refused
+
+</quotepara><quote depth="3"><quotepara depth="3">-----Original Message-----
+From: Shilpa Nalgonda [mailto:<email>snalgonda@mypublisher.com</email>]
+Sent: Tuesday, August 10, 2004 1:13 PM
+To: Struts Users Mailing List
+Subject: RE: java.net.ConnectException: Connection refused
+
+</quotepara><quotepara depth="3">Hi Jim,
+I have tried all different options for the jdbc url, but
+everything leads to
+same error,
+ :java.net.ConnectException: Connection refused -- i tried to
+get connection
+from
+DriverManager.getConnection() instead from datasource and
+even that doen't
+work.
+I was able to use the same configuration on my desktop, so
+its something to
+do with the linux environment.
+I am not able to figure it out, can you send me guildelines
+on how u were
+able to make it work, whenever u got time.
+i am using mysql4.0, Tomcat 4.0, and struts1.1.
+</quotepara></quote><quotepara depth="2">
+Does your linux box have a firewall?  If so, is it blocking the port?
+
+</quotepara><quote depth="3"><quotepara depth="3">-----Original Message-----
+From: Jim Barrows [mailto:<email>jbarrows@sssc.com</email>]
+Sent: Tuesday, August 10, 2004 1:17 PM
+To: Struts Users Mailing List
+Subject: RE: java.net.ConnectException: Connection refused
+
+</quotepara><quote depth="4"><quotepara depth="4">-----Original Message-----
+From: Shilpa Nalgonda [mailto:<email>snalgonda@mypublisher.com</email>]
+Sent: Tuesday, August 10, 2004 10:10 AM
+To: Struts Users Mailing List
+Subject: RE: java.net.ConnectException: Connection refused
+
+</quotepara><quotepara depth="4">This is a well known problem regarding MySQL and Linux.  One
+of two has a
+screwy implementation of resolving host names.  WHich one
+depends on who you
+talk to.
+
+</quotepara><quotepara depth="4">Known solutions include using 127.0.0.1.  You will also have
+issues with
+authenticating to the server if you limit mysql logins by server.
+
+</quotepara><quotepara depth="4">I have tried 127.0.0.1, but even this does not work gives
+same error, can
+you think of any other solution...
+</quotepara></quote><quotepara depth="3">
+Unfortunately I'm not at home, which is where my MySQL
+implementation is, so
+I can't show you what I'm doing for another 7-8 hours :(
+
+</quotepara><quotepara depth="3">On the other hand the MySQL folk have some great
+documentation and help
+forums that could probably help you more, if no one else has
+any solutions
+for you here.
+
+</quotepara><quote depth="4"><quotepara depth="4">Also changed driver class name to com.mysql.jdbc.Driver,
+didn't work
+
+</quotepara><quotepara depth="4"> &lt;parameter&gt;
+</quotepara><quote depth="5"><quotepara depth="5"> &lt;name&gt;url&lt;/name&gt;
+&lt;value&gt;jdbc:mysql://127.0.0.1:3306/prototypedb?autoReconnect=t
+rue&lt;/value&gt;
+ &lt;/parameter&gt;
+&lt;!-- Class name for mm.mysql JDBC driver --&gt;
+    	&lt;parameter&gt;
+       	  &lt;name&gt;driverClassName&lt;/name&gt;
+       	  &lt;value&gt;org.gjt.mm.mysql.Driver&lt;/value&gt;
+    	&lt;/parameter&gt;
+</quotepara></quote><quotepara depth="4">
+</quotepara><quote depth="5"><quotepara depth="5">-----Original Message-----
+From: Jim Barrows [mailto:<email>jbarrows@sssc.com</email>]
+Sent: Tuesday, August 10, 2004 12:26 PM
+To: Struts Users Mailing List
+Subject: RE: java.net.ConnectException: Connection refused
+
+</quotepara><quote depth="6"><quotepara depth="6">-----Original Message-----
+From: Shilpa Nalgonda [mailto:<email>snalgonda@mypublisher.com</email>]
+Sent: Tuesday, August 10, 2004 9:17 AM
+Cc: Struts Users Mailing List
+Subject: RE: java.net.ConnectException: Connection refused
+
+</quotepara><quotepara depth="6">I am using Tomcat4.0, struts1.1, mysql 4.0.18 , on Linux
+environment.  And i
+am unable
+to connect to mysql db.  Below is the url
+i am using in server.xml file. and also i have the jdbc
+driver under
+WEB-INF/lib -
+mysql-connector-java-3.0.14-production-bin.jar...I was
+successfully able to deploy the same application on Windows,
+using the same
+server.xml file. please help.
+</quotepara></quote><quotepara depth="5">
+This is a well known problem regarding MySQL and Linux.  One
+of two has a
+screwy implementation of resolving host names.  WHich one
+depends on who you
+talk to.
+
+</quotepara><quotepara depth="5">Known solutions include using 127.0.0.1.  You will also have
+issues with
+authenticating to the server if you limit mysql logins by server.
+
+</quotepara><quote depth="6"><quotepara depth="6">&lt;parameter&gt;
+ &lt;name&gt;factory&lt;/name&gt;
+
+</quotepara></quote><quotepara depth="5">&lt;value&gt;org.apache.commons.dbcp.BasicDataSourceFactory&lt;/value&gt;
+</quotepara><quote depth="6"><quotepara depth="6"> &lt;/parameter&gt;
+&lt;parameter&gt;
+ &lt;name&gt;url&lt;/name&gt;
+&lt;value&gt;jdbc:mysql://localhost:3306/prototypedb?autoReconnect=t
+rue&lt;/value&gt;
+ &lt;/parameter&gt;
+&lt;!-- Class name for mm.mysql JDBC driver --&gt;
+    	&lt;parameter&gt;
+       	  &lt;name&gt;driverClassName&lt;/name&gt;
+       	  &lt;value&gt;org.gjt.mm.mysql.Driver&lt;/value&gt;
+    	&lt;/parameter&gt;
+
+</quotepara><quotepara depth="6">org.apache.commons.dbcp.SQLNestedException: Cannot create
+PoolableConnectionFactory, cause:
+java.sql.SQLException: Server connection failure during
+transaction. Due to
+underlying exception: 'java.net.ConnectException:
+Connection refused'.
+
+</quotepara><quotepara depth="6">** BEGIN NESTED EXCEPTION **
+
+</quotepara><quotepara depth="6">java.net.ConnectException
+MESSAGE: Connection refused
+
+</quotepara><quotepara depth="6">STACKTRACE:
+
+</quotepara><quotepara depth="6">java.net.ConnectException: Connection refused
+        at java.net.PlainSocketImpl.socketConnect(Native Method)
+        at
+java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:305)
+        at
+
+</quotepara></quote></quote><quotepara depth="4">java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:171)
+</quotepara><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+java.net.PlainSocketImpl.connect(PlainSocketImpl.java:158)
+        at java.net.Socket.connect(Socket.java:452)
+        at java.net.Socket.connect(Socket.java:402)
+        at java.net.Socket.&lt;init&gt;(Socket.java:309)
+        at java.net.Socket.&lt;init&gt;(Socket.java:124)
+        at
+com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFac
+tory.java:121)
+        at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:220)
+        at
+com.mysql.jdbc.Connection.createNewIO(Connection.java:1884)
+        at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:440)
+        at
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriv
+er.java:400)
+        at
+org.apache.commons.dbcp.DriverConnectionFactory.createConnecti
+on(DriverConne
+ctionFactory.java:82)
+        at
+org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(P
+oolableConnect
+ionFactory.java:300)
+        at
+org.apache.commons.dbcp.BasicDataSource.validateConnectionFact
+ory(BasicDataS
+ource.java:838)
+        at
+org.apache.commons.dbcp.BasicDataSource.createDataSource(Basic
+DataSource.jav
+a:821)
+        at
+org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDat
+aSource.java:5
+18)
+        at
+com.ecommerce.DAO.DAOFactory.getConnection(Unknown Source)
+        at com.ecommerce.DAO.UserDAO.&lt;init&gt;(Unknown Source)
+        at
+com.ecommerce.action.PlaceOrderAction.execute(Unknown Source)
+        at
+org.apache.struts.action.RequestProcessor.processActionPerform
+(RequestProces
+sor.java:484)
+        at
+org.apache.struts.action.RequestProcessor.process(RequestProce
+ssor.java:274)
+        at
+org.apache.struts.action.ActionServlet.process(ActionServlet.j
+ava:1482)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+        at
+javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+        at
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilt
+er(Application
+FilterChain.java:247)
+        at
+org.apache.catalina.core.ApplicationFilterChain.doFilter(Appli
+cationFilterCh
+ain.java:193)
+        at
+org.apache.catalina.core.StandardWrapperValve.invoke(StandardW
+rapperValve.ja
+va:243)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardContextValve.invoke(StandardC
+ontextValve.ja
+va:190)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.valves.CertificatesValve.invoke(Certificat
+esValve.java:2
+46)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardContext.invoke(StandardContex
+t.java:2347)
+Attempted reconnect 3 times. Giving up.
+        at
+com.mysql.jdbc.Connection.createNewIO(Connection.java:1952)
+        at com.mysql.jdbc.Connection.&lt;init&gt;(Connection.java:440)
+        at
+com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriv
+er.java:400)
+        at
+org.apache.commons.dbcp.DriverConnectionFactory.createConnecti
+on(DriverConne
+ctionFactory.java:82)
+        at
+org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(P
+oolableConnect
+ionFactory.java:300)
+        at
+org.apache.commons.dbcp.BasicDataSource.validateConnectionFact
+ory(BasicDataS
+ource.java:838)
+        at
+org.apache.commons.dbcp.BasicDataSource.createDataSource(Basic
+DataSource.jav
+a:821)
+        at
+org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDat
+aSource.java:5
+18)
+        at
+com.ecommerce.DAO.DAOFactory.getConnection(Unknown Source)
+        at com.ecommerce.DAO.UserDAO.&lt;init&gt;(Unknown Source)
+        at
+com.ecommerce.action.PlaceOrderAction.execute(Unknown Source)
+        at
+org.apache.struts.action.RequestProcessor.processActionPerform
+(RequestProces
+sor.java:484)
+        at
+org.apache.struts.action.RequestProcessor.process(RequestProce
+ssor.java:274)
+        at
+org.apache.struts.action.ActionServlet.process(ActionServlet.j
+ava:1482)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+        at
+javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+        at
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilt
+er(Application
+FilterChain.java:247)
+        at
+org.apache.catalina.core.ApplicationFilterChain.doFilter(Appli
+cationFilterCh
+ain.java:193)
+        at
+org.apache.catalina.core.StandardWrapperValve.invoke(StandardW
+rapperValve.ja
+va:243)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardContextValve.invoke(StandardC
+ontextValve.ja
+va:190)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.valves.CertificatesValve.invoke(Certificat
+esValve.java:2
+46)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardContext.invoke(StandardContex
+t.java:2347)
+        at
+org.apache.catalina.core.StandardHostValve.invoke(StandardHost
+Valve.java:180
+)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDi
+spatcherValve.
+java:170)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReport
+Valve.java:170
+)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValv
+e.java:468)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardEngineValve.invoke(StandardEn
+gineValve.java
+:174)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.connector.http.HttpProcessor.process(HttpP
+rocessor.java:
+1027)
+        at
+org.apache.catalina.connector.http.HttpProcessor.run(HttpProce
+ssor.java:1125
+)
+        at java.lang.Thread.run(Thread.java:534)
+com.ecommerce.ecomexception.DAOException: Could not retrieve
+Connection
+Object.
+        at
+com.ecommerce.DAO.DAOFactory.getConnection(Unknown Source)
+        at com.ecommerce.DAO.UserDAO.&lt;init&gt;(Unknown Source)
+        at
+com.ecommerce.action.PlaceOrderAction.execute(Unknown Source)
+        at
+org.apache.struts.action.RequestProcessor.processActionPerform
+(RequestProces
+sor.java:484)
+        at
+org.apache.struts.action.RequestProcessor.process(RequestProce
+ssor.java:274)
+        at
+org.apache.struts.action.ActionServlet.process(ActionServlet.j
+ava:1482)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+        at
+javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+        at
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilt
+er(Application
+FilterChain.java:247)
+        at
+org.apache.catalina.core.ApplicationFilterChain.doFilter(Appli
+cationFilterCh
+ain.java:193)
+        at
+org.apache.catalina.core.StandardWrapperValve.invoke(StandardW
+rapperValve.ja
+va:243)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardContextValve.invoke(StandardC
+ontextValve.ja
+va:190)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.valves.CertificatesValve.invoke(Certificat
+esValve.java:2
+46)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardContext.invoke(StandardContex
+t.java:2347)
+        at
+org.apache.catalina.core.StandardHostValve.invoke(StandardHost
+Valve.java:180
+)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDi
+spatcherValve.
+java:170)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReport
+Valve.java:170
+)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValv
+e.java:468)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardEngineValve.invoke(StandardEn
+gineValve.java
+:174)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.connector.http.HttpProcessor.process(HttpP
+rocessor.java:
+1027)
+        at
+org.apache.catalina.connector.http.HttpProcessor.run(HttpProce
+ssor.java:1125
+)
+        at java.lang.Thread.run(Thread.java:534)
+Aug 10, 2004 3:25:10 AM
+com.ecommerce.action.PlaceOrderAction execute
+SEVERE: Payment.populate
+java.lang.NullPointerException
+        at
+com.ecommerce.DAO.UserDAO.insertNewUser(Unknown Source)
+        at
+com.ecommerce.action.PlaceOrderAction.execute(Unknown Source)
+        at
+org.apache.struts.action.RequestProcessor.processActionPerform
+(RequestProces
+sor.java:484)
+        at
+org.apache.struts.action.RequestProcessor.process(RequestProce
+ssor.java:274)
+        at
+org.apache.struts.action.ActionServlet.process(ActionServlet.j
+ava:1482)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+        at
+javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+        at
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilt
+er(Application
+FilterChain.java:247)
+        at
+org.apache.catalina.core.ApplicationFilterChain.doFilter(Appli
+cationFilterCh
+ain.java:193)
+        at
+org.apache.catalina.core.StandardWrapperValve.invoke(StandardW
+rapperValve.ja
+va:243)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardContextValve.invoke(StandardC
+ontextValve.ja
+va:190)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.valves.CertificatesValve.invoke(Certificat
+esValve.java:2
+46)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardContext.invoke(StandardContex
+t.java:2347)
+        at
+org.apache.catalina.core.StandardHostValve.invoke(StandardHost
+Valve.java:180
+)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.valves.ErrorDispatcherValve.invoke(ErrorDi
+spatcherValve.
+java:170)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReport
+Valve.java:170
+)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValv
+e.java:468)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+64)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.core.StandardEngineValve.invoke(StandardEn
+gineValve.java
+:174)
+        at
+org.apache.catalina.core.StandardPipeline.invokeNext(StandardP
+ipeline.java:5
+66)
+        at
+org.apache.catalina.core.StandardPipeline.invoke(StandardPipel
+ine.java:472)
+        at
+
+</quotepara></quote></quote></quote><quotepara depth="3">org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:943)
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">        at
+org.apache.catalina.connector.http.HttpProcessor.process(HttpP
+rocessor.java:
+1027)
+        at
+org.apache.catalina.connector.http.HttpProcessor.run(HttpProce
+ssor.java:1125
+)
+        at java.lang.Thread.run(Thread.java:534)
+Aug 10, 2004 3:25:10 AM
+org.apache.struts.action.RequestProcessor
+processException
+WARNING: Unhandled Exception thrown: class
+javax.servlet.ServletException
+
+</quotepara><quotepara depth="6">Below is the configuration which i want to add in server.xml
+
+</quotepara><quotepara depth="6">    &lt;!-- JNDI datasource setup to connect to MYSQL database--&gt;
+     	&lt;Context path="/prototype" docBase="prototype"
+        	debug="5" reloadable="true" crossContext="true"
+useNaming="true"&gt;
+
+</quotepara><quotepara depth="6">  	&lt;Logger
+className="org.apache.catalina.logger.FileLogger"
+             prefix="localhost_PrototypeDBTest_log."
+suffix=".txt"
+             timestamp="true"/&gt;
+       &lt;Resource name="jdbc/prototypedb"
+               auth="Container"
+               type="javax.sql.DataSource"/&gt;
+
+</quotepara><quotepara depth="6">  	&lt;ResourceParams name="jdbc/prototypedb"&gt;
+    	&lt;parameter&gt;
+      	  &lt;name&gt;factory&lt;/name&gt;
+
+</quotepara><quotepara depth="6">&lt;value&gt;org.apache.commons.dbcp.BasicDataSourceFactory&lt;/value&gt;
+    	&lt;/parameter&gt;
+
+</quotepara><quotepara depth="6">    	&lt;!-- Maximum number of dB connections in pool.
+Make sure you
+         configure your mysqld max_connections large enough
+to handle
+         all of your db connections. Set to 0 for no limit.
+         --&gt;
+    	&lt;parameter&gt;
+          &lt;name&gt;maxActive&lt;/name&gt;
+          &lt;value&gt;20&lt;/value&gt;
+        &lt;/parameter&gt;
+
+</quotepara><quotepara depth="6">    	&lt;!-- Maximum number of idle dB connections to
+retain in pool.
+         Set to 0 for no limit.
+         --&gt;
+        &lt;parameter&gt;
+         &lt;name&gt;maxIdle&lt;/name&gt;
+         &lt;value&gt;10&lt;/value&gt;
+        &lt;/parameter&gt;
+
+</quotepara><quotepara depth="6">   	 &lt;!-- Maximum time to wait for a dB connection to
+become available
+         in ms, in this example 10 seconds. An Exception is
+thrown if
+         this timeout is exceeded.  Set to -1 to wait
+indefinitely.
+         --&gt;
+    	&lt;parameter&gt;
+         &lt;name&gt;maxWait&lt;/name&gt;
+         &lt;value&gt;10000&lt;/value&gt;
+        &lt;/parameter&gt;
+
+</quotepara><quotepara depth="6">    	&lt;!-- MySQL dB username and password for dB
+connections  --&gt;
+    	&lt;parameter&gt;
+     	  &lt;name&gt;username&lt;/name&gt;
+     	  &lt;value&gt;antonio&lt;/value&gt;
+    	&lt;/parameter&gt;
+    	&lt;parameter&gt;
+     	  &lt;name&gt;password&lt;/name&gt;
+     	  &lt;value&gt;play&lt;/value&gt;
+    	&lt;/parameter&gt;
+
+</quotepara><quotepara depth="6">    	&lt;!-- Class name for mm.mysql JDBC driver --&gt;
+    	&lt;parameter&gt;
+       	  &lt;name&gt;driverClassName&lt;/name&gt;
+       	  &lt;value&gt;org.gjt.mm.mysql.Driver&lt;/value&gt;
+    	&lt;/parameter&gt;
+
+</quotepara><quotepara depth="6">    	&lt;!-- The JDBC connection url for connecting to
+your MySQL dB.
+         The autoReconnect=true argument to the url makes
+sure that the
+         mm.mysql JDBC Driver will automatically reconnect if
+mysqld closed
+the
+         connection.  mysqld by default closes idle
+connections after 8
+hours.
+         --&gt;
+    	&lt;parameter&gt;
+      	&lt;name&gt;url&lt;/name&gt;
+
+</quotepara><quotepara depth="6">&lt;value&gt;jdbc:mysql://localhost:3306/prototypedb?autoReconnect=t
+rue&lt;/value&gt;
+   	&lt;/parameter&gt;
+&lt;/ResourceParams&gt;
+&lt;/Context&gt;
+-
+
+</quotepara></quote></quote></quote><quotepara depth="3">---------------------------------------------------------------------
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">To unsubscribe, e-mail:
+<email>tomcat-user-unsubscribe@jakarta.apache.org</email>
+For additional commands, e-mail:
+<email>tomcat-user-help@jakarta.apache.org</email>
+
+</quotepara></quote></quote></quote><quotepara depth="3">---------------------------------------------------------------------
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotepara></quote></quote></quote><quotepara depth="3">---------------------------------------------------------------------
+</quotepara><quote depth="4"><quote depth="5"><quotepara depth="5">To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotepara></quote></quote><quotepara depth="3">---------------------------------------------------------------------
+</quotepara><quote depth="4"><quote depth="5"><quotepara depth="5">To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotepara></quote></quote><quotepara depth="3">---------------------------------------------------------------------
+</quotepara><quote depth="4"><quotepara depth="4">To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotepara></quote><quotepara depth="3">---------------------------------------------------------------------
+</quotepara><quote depth="4"><quotepara depth="4">To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotepara></quote><quotefooter type="list-management" hash="16962548758869233296" depth="3">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotefooter><quotefooter type="list-management" hash="16962548758869233296" depth="3">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotefooter></quote><quotefooter type="list-management" hash="16962548758869233296" depth="2">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotefooter><quotefooter type="list-management" hash="16962548758869233296" depth="2">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>user-unsubscribe@struts.apache.org</email>
+For additional commands, e-mail: <email>user-help@struts.apache.org</email>
+
+</quotefooter></quote></quote></body></message>

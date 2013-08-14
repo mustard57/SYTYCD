@@ -1,0 +1,87 @@
+<message message-id="42a8e2e00804210157g1917bfc6hd6fcfd8a6a025372@mail.gmail.com" list="org.w3.www-validator" id="24cm6ykpqnnk7r3m" type="development" date="2008-04-21T10:57:56+02:00" year="2008-01-01" year-month="2008-04-01" year-month-day="2008-04-21" thread-id="xfe2ry72ism3er3b"><headers><envelope-from-line>Mon Apr 21 01:59:25 2008</envelope-from-line><from personal="Alexandre Alapetite" address="alexandre@alapetite.net">Alexandre Alapetite &lt;alexandre@alapetite.net&gt;</from><to personal="Etienne Miret" address="elimerl@gmail.com">Etienne Miret &lt;elimerl@gmail.com&gt;</to><cc personal="www-validator@w3.org" address="www-validator@w3.org">www-validator@w3.org</cc><subject normal="please add Accept header to http request containing application/xhtml+xml">Re: please add Accept header to http request containing application/xhtml+xml</subject><received>from frink.w3.org ([128.30.52.56])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 123
+          for &lt;robby.vasquez.finley@a.markmail.org&gt;;
+          Mon, 21 Apr 2008 01:59:24 -0700 (PDT)</received><received>from lists by frink.w3.org with local (Exim 4.63)
+	(envelope-from &lt;www-validator-request@listhub.w3.org&gt;)
+	id 1JnrrA-0004B5-SJ
+	for www-validator-dist@listhub.w3.org; Mon, 21 Apr 2008 08:58:36 +0000</received><received>from lisa.w3.org ([128.30.52.41])
+	by frink.w3.org with esmtp (Exim 4.63)
+	(envelope-from &lt;alexandre.alapetite@gmail.com&gt;)
+	id 1Jnrr5-00049l-AH
+	for www-validator@listhub.w3.org; Mon, 21 Apr 2008 08:58:31 +0000</received><received>from ug-out-1314.google.com ([66.249.92.172])
+	by lisa.w3.org with esmtp (Exim 4.63)
+	(envelope-from &lt;alexandre.alapetite@gmail.com&gt;)
+	id 1Jnrr0-0001CP-00
+	for www-validator@w3.org; Mon, 21 Apr 2008 08:58:31 +0000</received><received>by ug-out-1314.google.com with SMTP id z34so767326ugc.35
+        for &lt;www-validator@w3.org&gt;; Mon, 21 Apr 2008 01:57:57 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:sender:to:subject:cc:mime-version:content-type:content-transfer-encoding:content-disposition:x-google-sender-auth;
+        bh=XyFd6RD9gUCpTl/ET5CXYGljBe5heo4cUbQd85crFqY=;
+        b=UWHFKt6XAWGSTwMyYO9cQ35U47Ml7YEI/VtrbfR//GEwc06iOVGxnBtiMdURKT6WyVE8CbCfXavT8Q2bdYcHGLMH27Vt7vzHcZYdIGebsUP3zCi1yLqqv/1yOkTazZw6nEv7YA6iGAqQE4h1+ENIKIIN0S1Yu2BRJSGW0349K4c=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:sender:to:subject:cc:mime-version:content-type:content-transfer-encoding:content-disposition:x-google-sender-auth;
+        b=W6lf1SSuzPpy68L5OvHz9GSH2CUZBYTERd6OMe0/ekpFVGnb8EPepuNTs/7kUajqUVFxKAEGrBDN09WmUHWJe3u7Vf0TpMyFS0y6WILu1jssx3/7mHqHqBhZ+EKMymnzpQAiDgtT3kIKDfO5Wify/okYJHOAlLEPfBIXTfQkbBE=</domainkey-signature><received>by 10.66.219.11 with SMTP id r11mr5091321ugg.31.1208768277364;
+        Mon, 21 Apr 2008 01:57:57 -0700 (PDT)</received><received>by 10.66.218.16 with HTTP; Mon, 21 Apr 2008 01:57:56 -0700 (PDT)</received><message-id>42a8e2e00804210157g1917bfc6hd6fcfd8a6a025372@mail.gmail.com</message-id><date>Mon, 21 Apr 2008 10:57:56 +0200</date><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><content-disposition>inline</content-disposition><x-google-sender-auth>51ebf8b2a3fc28de</x-google-sender-auth><received-spf>pass</received-spf><x-spf-guess>pass</x-spf-guess><x-w3c-hub-spam-status>No, score=-2.6</x-w3c-hub-spam-status><x-w3c-hub-spam-report>BAYES_00=-2.599, SPF_PASS=-0.001</x-w3c-hub-spam-report><x-w3c-scan-sig>lisa.w3.org 1Jnrr0-0001CP-00 bcb3dd13f0dc48ac608ab77ab205bd1c</x-w3c-scan-sig><x-original-to>www-validator@w3.org</x-original-to><archived-at>&lt;http://www.w3.org/mid/42a8e2e00804210157g1917bfc6hd6fcfd8a6a025372@mail.gmail.com&gt;</archived-at><resent-from>www-validator@w3.org</resent-from><x-mailing-list>&lt;www-validator@w3.org&gt; archive/latest/14478</x-mailing-list><x-loop>www-validator@w3.org</x-loop><sender>www-validator-request@w3.org</sender><resent-sender>www-validator-request@w3.org</resent-sender><precedence>list</precedence><list-id>&lt;www-validator.w3.org&gt;</list-id><list-help>&lt;http://www.w3.org/Mail/&gt;</list-help><list-unsubscribe>&lt;mailto:www-validator-request@w3.org?subject=unsubscribe&gt;</list-unsubscribe><resent-message-id>&lt;E1JnrrA-0004B5-SJ@frink.w3.org&gt;</resent-message-id><resent-date>Mon, 21 Apr 2008 08:58:36 +0000</resent-date></headers><normalized-references><normalized-message-id>42a8e2e00804210157g1917bfc6hd6fcfd8a6a025372@mail.gmail.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+Actually, just for the record, when a client does not send an Accept
+header at all, it has the same meaning as "Accept: */*".
+
+</para><para depth="0">Furthermore, if a resource is coded for application/xhtml+xml, is
+should be sent as such when the Accept header is empty.
+
+</para><para depth="0">Although far the full content negotiation specification, here is the
+Apache rule I use when I cannot use a proper content negotiation with
+a type-map (.var):
+
+</para><para depth="0">&lt;IfModule mod_rewrite.c&gt;
+	RewriteEngine On
+	RewriteCond %{HTTP_ACCEPT} ^$ [OR]
+	RewriteCond %{HTTP_ACCEPT}
+\bapplication/xhtml\+xml\b(?!(?&gt;[^,]*?\bq=)0(?:\.0{1,3})?(?:\Z|[\s,;]))
+[NC]
+	RewriteRule \.html$ - [type=application/xhtml+xml;charset=UTF-8]
+&lt;/IfModule&gt;
+
+</para><para depth="0">- It will serve application/xhtml+xml when the Accept header is empty
+(compatible with the current version of the W3C Validator, no
+warning).
+
+</para><para depth="0">- When there is an Accept header, it will only serve
+application/xhtml+xml when "application/xhtml+xml" is listed and with
+a "q" higher than 0 (compatible with Internet Explorer, and of course
+Opera, Firefox, Safari, etc., but not fully correct as it does not
+check other q-values).
+
+</para><para depth="0">A little remark: when you use this rule in combination with a content
+negotiation using a type-map (.var) for e.g. language negotiation, you
+should add text/html AND application/xhtml+xml  in the .var file for
+it to work as expected:
+
+</para><para depth="0">URI: index.fr.html
+Content-language: fr
+Content-type: text/html;qs=0.5
+
+</para><para depth="0">URI: index.fr.html
+Content-language: fr
+Content-type: application/xhtml+xml
+
+</para><para depth="0">URI: index.en.html
+Content-language: en
+Content-type: text/html;qs=0.5
+
+</para><para depth="0">URI: index.en.html
+Content-language: en
+Content-type: application/xhtml+xml
+
+</para><para depth="0">URI: index.en.html
+Content-type: text/html;qs=0.5
+
+</para><para depth="0">URI: index.en.html
+Content-type: application/xhtml+xml
+
+</para><footer type="signature" hash="14090170253920182859" depth="0">You can test it live on <url>http://alexandre.alapetite.net/</url>
+
+</footer><footer type="signature" hash="4377933112854087682" depth="0">Cordially,
+Alexandre Alapetite
+<url>http://alexandre.alapetite.net/cv/</url>
+
+</footer></body></message>

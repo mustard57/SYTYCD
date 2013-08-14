@@ -1,0 +1,48 @@
+<message message-id="009101c1a729$f4614e40$3200a8c0@pc" list="net.php.lists.php-es" id="24bh7332ojmafs4b" type="general" date="2002-01-27T12:58:36+01:00" year="2002-01-01" year-month="2002-01-01" year-month-day="2002-01-27" thread-id="5pz6bdfpfhbhbrw4"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Daniel BI" address="bignat@terra.es">Daniel BI &lt;bignat@terra.es&gt;</from><to personal="lista@phpes.com" address="lista@phpes.com">lista@phpes.com</to><subject normal="[PHP-ES] Comunicacion con PHP">Re: [PHP-ES] Comunicacion con PHP</subject><newsgroups>php.general.es</newsgroups><path>news.php.net</path><xref>news.php.net php.general.es:18459</xref><return-path>bignat@terra.es</return-path><mailing-list>contacte lista-help@phpes.com; run by ezmlm</mailing-list><delivered-to>mailing list lista@phpes.com</delivered-to><received>(qmail 15711 invoked from network); 27 Jan 2002 11:49:23 -0000</received><received>from mailhost.teleline.es (HELO tsmtp9.mail.isp) (195.235.113.141)
+  by 64.245.34.133 with SMTP; 27 Jan 2002 11:49:23 -0000</received><received>from pc ([213.98.56.49]) by tsmtp9.mail.isp (Netscape
+          Messaging Server 4.15 tsmtp9 Jul 26 2001 13:10:38) with SMTP id
+          GQLIIU01.8H1 for &lt;lista@phpes.com&gt;; Sun, 27 Jan 2002 12:56:54 +0100 </received><message-id>009101c1a729$f4614e40$3200a8c0@pc</message-id><references>&lt;004001c1a46c$522eb320$4ef10dc8@vik&gt; &lt;014f01c1a5ac$cdbf2a60$3200a8c0@pc&gt; &lt;007801c1a4ea$eb7991c0$fef60dc8@vik&gt; &lt;018d01c1a5b8$5f5ed320$3200a8c0@pc&gt; &lt;000001c1a5c3$f621caa0$dff60dc8@vik&gt;</references><date>Sun, 27 Jan 2002 12:58:36 +0100</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 5.50.4522.1200</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V5.50.4522.1200</x-mimeole></headers><normalized-references><normalized-message-id>009101c1a729$f4614e40$3200a8c0@pc</normalized-message-id><normalized-reference>004001c1a46c$522eb320$4ef10dc8@vik</normalized-reference><normalized-reference>014f01c1a5ac$cdbf2a60$3200a8c0@pc</normalized-reference><normalized-reference>007801c1a4ea$eb7991c0$fef60dc8@vik</normalized-reference><normalized-reference>018d01c1a5b8$5f5ed320$3200a8c0@pc</normalized-reference><normalized-reference>000001c1a5c3$f621caa0$dff60dc8@vik</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><quote depth="1"><quote depth="2"><quotepara depth="2">bueno.. me parecia interesante lo que querias hacer y por eso
+me he tomado el tiempo para decirtelo, dado que me mate
+bastantes celulas nerviosas para conseguir toso eso correctamente
+en principio..
+lo siento por no saber que lo querias todo bajo Windows, queria ser util..
+por lo menos espero que sea util para otros listeros..
+</quotepara></quote><quotepara depth="1">== Claro que fuiste MUY útil. La solución que necesito implementar la debo
+hacer bajo Linux, sólo que estoy haciendo el desarrollo de la otra parte
+(consultas y eso) desde Güindows (pero iran montadas en el server Linux)....
+</quotepara></quote><para depth="0">
+ah.. si?!.. me alegro :)
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">si, claro que se puede compilar bajo Windows, pero en eso no te puedo
+ayudar
+yo... sera muy parecido, pero como yo no utilizo y no recomiendo a nadie
+que haga algo serio en internet bajo windows, no lo se hacer..
+</quotepara></quote><quotepara depth="1">== Dani, ni siquiera en ASP?
+</quotepara></quote><para depth="0">
+no, yo no recomiendo asp. yo recomiendo php bajo linux. no tengo nada en
+contra de asp. lo que pasa es que no tengo confianza en windows como sistema
+operativo. no es muy estable.
+en el principio, para ensayar, yo usaba los archivos precompilados de php
+bajo windows. eso si que es bueno, para ensayar. aproposito, para tener ssl, te
+recomiendo que bajes apache + mod_ssl de la pagina de mod_ssl (en la parte de
+contribuciones) ya compilado (habia una version un poco mas antigua de apache,
+no se ahora cual, que funcionaba bien). yo intente solo con el modulo y tenia
+problemas. Luego, instalate el php como modulo de apache (mod_php4.dll),
+no como cgi. lo encuentras en la version mas grande
+(donde dice que pone API, ASAPI etc..). De esta manera podras usar la funcion
+'headear()' que es importante en unos proyectos mas serios. asi tendras casi
+todas
+las funciones importantes como en la version bajo linux.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">PD. Que vas a ensayar? lo de linux? te haras a ti mismo un gran favor!
+</quotepara></quote><quotepara depth="1">== Seguro que si... a aprender mucho linux se dijo no?... ;-)
+
+</quotepara><quote depth="2"><quotepara depth="2">suerte :)
+</quotepara></quote><quotepara depth="1">== Muchísimas Gracias. Si tengo algún problemilla (ojalá que no) te molesto.
+</quotepara></quote><para depth="0">
+vale, si voy a tener tiempo en ese momento.. con mucho gusto.
+
+</para><footer type="signature" hash="9871400580921859817" depth="0">Daniel BI
+
+</footer></body></message>

@@ -1,0 +1,14 @@
+<message message-id="200412091153.LAA21732@penguin.nag.co.uk" list="com.mulberrytech.lists.xsl-list" id="24blwpcgeltmvdis" type="general" date="2004-12-09T11:53:48Z" year="2004-01-01" year-month="2004-12-01" year-month-day="2004-12-09" thread-id="24blwpcgeltmvdis"><headers><envelope-from-line>From davidc@nag.co.uk 9 Dec 2004 11:53:48 -0000</envelope-from-line><from personal="David Carlisle" address="davidc@nag.co.uk">David Carlisle &lt;davidc@nag.co.uk&gt;</from><subject normal="[xsl] Problem applying XSL to XML that uses a schema">Re: [xsl] Problem applying XSL to XML that uses a schema</subject><date>9 Dec 2004 11:53:48 -0000</date><in-reply-to>&lt;E1CcMlI-0004N6-00@ukmail1.eechost.net&gt;</in-reply-to><message-id>200412091153.LAA21732@penguin.nag.co.uk</message-id><mime-version>1.0</mime-version><content-type>text/plain</content-type></headers><normalized-references><normalized-message-id>200412091153.LAA21732@penguin.nag.co.uk</normalized-message-id><normalized-in-reply-to>E1CcMlI-0004N6-00@ukmail1.eechost.net</normalized-in-reply-to></normalized-references><body type="text/plain"><quote depth="1"><quotepara depth="1">I'm currently seeing (b) as the biggest benefit - it comes as quite a
+surprise after years of XSLT 1.0 coding to get compile-time error messages
+when you spell an attribute name incorrectly.
+</quotepara></quote><para depth="0">
+maybe I need a schema aware mailer....
+
+</para><para depth="0">________________________________________________________________________
+This e-mail has been scanned for all viruses by Star. The
+service is powered by MessageLabs. For more information on a proactive
+anti-virus service working around the clock, around the globe, visit:
+<url>http://www.star.net.uk</url>
+</para><para depth="0">________________________________________________________________________
+
+</para></body></message>

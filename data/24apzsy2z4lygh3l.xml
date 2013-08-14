@@ -1,0 +1,12 @@
+<message message-id="200607191830.k6JIUYkE074486@repoman.freebsd.org" list="org.freebsd.cvs-src" id="24apzsy2z4lygh3l" type="checkins" date="2006-07-19T18:30:36" year="2006-01-01" year-month="2006-07-01" year-month-day="2006-07-19" thread-id="24apzsy2z4lygh3l"><headers><envelope-from-line>From jhb@FreeBSD.org  Wed Jul 19 18:30:34 2006</envelope-from-line><from personal="John Baldwin" address="jhb@FreeBSD.org">John Baldwin &lt;jhb@FreeBSD.org&gt;</from><subject normal="cvs commit: src/sys/kern vfs_syscalls.c">cvs commit: src/sys/kern vfs_syscalls.c</subject><date>Wed Jul 19 18:30:36 2006</date><message-id>200607191830.k6JIUYkE074486@repoman.freebsd.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>200607191830.k6JIUYkE074486@repoman.freebsd.org</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">jhb         2006-07-19 18:30:33 UTC
+
+</para><para depth="0">  FreeBSD src repository
+
+</para><para depth="0">  Modified files:
+    sys/kern             vfs_syscalls.c 
+  Log:
+  Call change_dir() instead of duplicating the code in fchdir().
+
+</para><para depth="0">  Revision  Changes    Path
+  1.418     +1 -8      src/sys/kern/vfs_syscalls.c
+</para></body></message>

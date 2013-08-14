@@ -1,0 +1,18 @@
+<message message-id="H00019f008f3f41b@MHS" list="com.googlegroups.vim_use" id="24crehtq7zzk4ezl" type="general" date="2002-09-27T08:18:31-04:00" year="2002-01-01" year-month="2002-09-01" year-month-day="2002-09-27" thread-id="s76hbt6ltjmmcbl3"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="christopher.j.meisenzahl@citicorp.com" address="christopher.j.meisenzahl@citicorp.com">christopher.j.meisenzahl@citicorp.com</from><subject normal="Spell Checking for VIM?">Spell Checking for VIM?</subject><path>main.gmane.org!not-for-mail</path><newsgroups>gmane.editors.vim</newsgroups><date>Fri, 27 Sep 2002 08:18:31 -0400</date><lines>14</lines><approved>news@gmane.org</approved><message-id>H00019f008f3f41b@MHS</message-id><nntp-posting-host>localhost.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain; charset=US-ASCII</content-type><x-trace>main.gmane.org 1033129128 12323 127.0.0.1 (27 Sep 2002 12:18:48 GMT)</x-trace><x-complaints-to>usenet@main.gmane.org</x-complaints-to><nntp-posting-date>Fri, 27 Sep 2002 12:18:48 +0000 (UTC)</nntp-posting-date><return-path>vim-return-28182-vim=quimby.gnus.org@vim.org</return-path><original-received>from quimby.gnus.org ([80.91.224.244])
+	by main.gmane.org with esmtp (Exim 3.35 #1 (Debian))
+	id 17uu51-0003Cb-00
+	for &lt;vim@main.gmane.org&gt;; Fri, 27 Sep 2002 14:18:47 +0200</original-received><original-received>from foobar.math.fu-berlin.de ([160.45.45.151])
+	by quimby.gnus.org with smtp (Exim 3.12 #1 (Debian))
+	id 17uunE-0002Xq-00
+	for &lt;vim@quimby.gnus.org&gt;; Fri, 27 Sep 2002 15:04:28 +0200</original-received><original-received>(qmail 17032 invoked by uid 200); 27 Sep 2002 12:19:49 -0000</original-received><mailing-list>contact vim-help@vim.org; run by ezmlm</mailing-list><precedence>bulk</precedence><delivered-to>mailing list vim@vim.org</delivered-to><original-received>(qmail 17024 invoked from network); 27 Sep 2002 12:19:48 -0000</original-received><x-openmail-hops>1</x-openmail-hops><original-to>vim@vim.org</original-to><content-disposition>inline</content-disposition><xref>main.gmane.org gmane.editors.vim:7261</xref><x-report-spam>http://spam.gmane.org/gmane.editors.vim:7261</x-report-spam></headers><normalized-references><normalized-message-id>H00019f008f3f41b@MHS</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Is there any kind of plugin for VIM that performs spell checking? Has anyone 
+accomplished this a better way?
+
+</para><para depth="0">Thanks very much!
+
+</para><footer type="signature" depth="0" hash="12260730165510625408">Christopher J. Meisenzahl CPS, CSTE
+Senior Software Testing Consultant
+Spherion
+<email>christopher.j.meisenzahl@citicorp.com</email>
+(585)-248-7749
+
+</footer></body></message>

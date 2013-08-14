@@ -1,0 +1,58 @@
+<message message-id="3CDAD9A8-B720-11D7-ABBA-0030654D3CAE@wetware.com" list="org.perl.beginners-cgi" id="24bl3pbnm5637r3j" type="users" date="2003-07-15T16:58:31-07:00" year="2003-01-01" year-month="2003-07-01" year-month-day="2003-07-15" thread-id="24bl3pbnm5637r3j"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="drieux" address="drieux@wetware.com">drieux &lt;drieux@wetware.com&gt;</from><to personal="Sally Librilla" address="sallyglibrilla@hotmail.com">Sally Librilla &lt;sallyglibrilla@hotmail.com&gt;</to><cc personal="cgi cgi-list" address="beginners-cgi@perl.org">cgi cgi-list &lt;beginners-cgi@perl.org&gt;</cc><subject normal="sending mail to a group using perl">Re: sending mail to a group using perl</subject><newsgroups>perl.beginners.cgi</newsgroups><path>nntp.perl.org</path><xref>nntp.perl.org perl.beginners.cgi:9393</xref><return-path>drieux@wetware.com</return-path><mailing-list>contact beginners-cgi-help@perl.org; run by ezmlm</mailing-list><delivered-to>mailing list beginners-cgi@perl.org</delivered-to><received>(qmail 18899 invoked by uid 76); 15 Jul 2003 23:58:39 -0000</received><received>from qmailr@one.develooper.com (HELO ran-out.mx.develooper.com) (64.81.84.115) by onion.perl.org (qpsmtpd/0.26) with SMTP; Tue, 15 Jul 2003 16:58:39 -0700</received><received>(qmail 16998 invoked by uid 225); 15 Jul 2003 23:58:37 -0000</received><delivered-to>beginners-cgi@perl.org</delivered-to><received>(qmail 16993 invoked by uid 507); 15 Jul 2003 23:58:37 -0000</received><received-spf>unknown</received-spf><received>from wetware.wetware.com (HELO wetware.com) (199.108.16.1) by one.develooper.com (qpsmtpd/0.27-dev) with SMTP; Tue, 15 Jul 2003 16:58:35 -0700</received><received>from jeeves ([199.108.16.11] helo=wetware.com)	by wetware.com with esmtp (Exim 4.20)	id 19cZgm-0002WP-QQ; Tue, 15 Jul 2003 16:58:32 -0700</received><date>Tue, 15 Jul 2003 16:58:31 -0700</date><content-type>text/plain; charset=US-ASCII; format=flowed</content-type><mime-version>1.0 (Apple Message framework v552)</mime-version><in-reply-to>&lt;Law14-F54BI6Wfrd6e100010cf5@hotmail.com&gt;</in-reply-to><message-id>3CDAD9A8-B720-11D7-ABBA-0030654D3CAE@wetware.com</message-id><content-transfer-encoding>7bit</content-transfer-encoding><x-mailer>Apple Mail (2.552)</x-mailer><x-smtpd>qpsmtpd/0.27-dev, http://develooper.com/code/qpsmtpd/</x-smtpd><x-spam-check-by>one.develooper.com</x-spam-check-by><x-spam-status>No, hits=-2.0 required=7.0 tests=CARRIAGE_RETURNS,IN_REP_TO,QUOTED_EMAIL_TEXT,SPAM_PHRASE_03_05,USER_AGENT_APPLEMAIL version=2.44</x-spam-status><x-smtpd>qpsmtpd/0.26, http://develooper.com/code/qpsmtpd/</x-smtpd><references>&lt;Law14-F54BI6Wfrd6e100010cf5@hotmail.com&gt;</references></headers><normalized-references><normalized-message-id>3CDAD9A8-B720-11D7-ABBA-0030654D3CAE@wetware.com</normalized-message-id><normalized-in-reply-to>Law14-F54BI6Wfrd6e100010cf5@hotmail.com</normalized-in-reply-to><normalized-reference>Law14-F54BI6Wfrd6e100010cf5@hotmail.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">
+On Monday, Jul 14, 2003, at 18:18 US/Pacific, Sally Librilla wrote:
+
+</para><quote depth="1"><quotepara depth="1">Its for global group.
+
+</quotepara><quote depth="2"><quotepara depth="2">Is this a global group or one you've set up for your personal use?
+
+</quotepara><quotepara depth="2">At 05:37 AM 7/8/2003 +0000, Sally Librilla wrote:
+</quotepara><quote depth="3"><quotepara depth="3">Hi,
+
+</quotepara><quotepara depth="3">I'm send email using the Mail::SendMail module. I understand how the 
+send To field works for multiple works however, I can't get it to 
+work to send mail to a group existing in my Lotus Notes mailbox. 
+Does anyone knows how i can make it work?
+</quotepara></quote></quote></quote><para depth="0">[..]
+
+</para><para depth="0">so that we are on the same page,
+we have 'mailing groups' - such as
+
+</para><para depth="0">	<email>beginners-cgi@perl.org</email>
+
+</para><para depth="0">that fan out the email to everyone who is on the list,
+is there some special way that 'lotus notes' hides that
+type of 'group address'??? that requires you to be IN
+a Lotus Notes application to gain access to it?
+
+</para><para depth="0">A part of the question is how is the 'group' in
+Lotus Notes hiding the actual RFC822 compliant
+headers... Or put the other way around, can you
+send regular email, outside of lotus notes, that
+can get to the 'group list'???
+
+</para><para depth="0">If there is nothing that is bridging between the
+standard SMTP mailing system and the Lotus Notes
+side of the process, then you have serious problems
+in front of you. Since If I remember correctly, what
+lotus is doing is advertising an entry into the
+Lotus Domino server, and then doing some database
+manipulations - at which point basically it winds
+up 'expanding it all' and sending an individual 'note'
+to everyone in the group - and also to email clients,
+if an entry is to an actual RFC822 compliant email address...
+
+</para><para depth="0">We went through weirdness like that with a corporation
+that believed in Lotus Notes....
+
+</para><para depth="0">HTH.
+
+</para><para depth="0">Personally I would go with Mail::Mailer - which
+has a bunch of simpler ways to deal with 'sending mail'
+that are independent of the actual sendmail application.
+
+</para><footer type="signature" hash="7226132577754891334" depth="0">ciao
+drieux
+
+</footer><footer type="signature" hash="8887441627735582500" depth="0">---
+
+</footer></body></message>

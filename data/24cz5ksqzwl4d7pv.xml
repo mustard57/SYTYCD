@@ -1,0 +1,107 @@
+<message message-id="20090831201205.GA16810@dcent.unixwiz.lan" list="net.sourceforge.lists.net-snmp-coders" id="24cz5ksqzwl4d7pv" type="development" date="2009-08-31T13:12:05-07:00" year="2009-01-01" year-month="2009-08-01" year-month-day="2009-08-31" thread-id="zrur65aqdsv3pbzc"><headers><envelope-from-line>Mon Aug 31 12:12:28 2009</envelope-from-line><from personal="Steve Friedl" address="steve@unixwiz.net">Steve Friedl &lt;steve@unixwiz.net&gt;</from><to personal="Gang Shu" address="gxs213@case.edu">Gang Shu &lt;gxs213@case.edu&gt;</to><cc personal="net-snmp-coders@lists.sourceforge.net" address="net-snmp-coders@lists.sourceforge.net">net-snmp-coders@lists.sourceforge.net</cc><subject normal="Bugs discovered by a research group at CWRU">Re: Bugs discovered by a research group at CWRU</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 268
+          for &lt;thaddeus.dominguez.davenport@a.markmail.org&gt;;
+          Mon, 31 Aug 2009 12:12:28 -0800 (GMT-08:00)</received><received>from lists.sourceforge.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 017E829081AF
+	for &lt;thaddeus.dominguez.davenport@a.markmail.org&gt;; Mon, 31 Aug 2009 13:12:05 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=sfs-ml-1.v29.ch3.sourceforge.com)
+	by 235xhf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;net-snmp-coders-bounces@lists.sourceforge.net&gt;)
+	id 1MiDEc-0001em-VX; Mon, 31 Aug 2009 20:12:14 +0000</received><received>from sfi-mx-3.v28.ch3.sourceforge.com ([172.29.28.123]
+	helo=mx.sourceforge.net)
+	by 235xhf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;steve@unixwiz.net&gt;) id 1MiDEa-0001eU-IA
+	for net-snmp-coders@lists.sourceforge.net;
+	Mon, 31 Aug 2009 20:12:12 +0000</received><received-spf>pass (3b2kzd1.ch3.sourceforge.com: domain of unixwiz.net
+	designates 99.25.142.34 as permitted sender)
+	client-ip=99.25.142.34; envelope-from=steve@unixwiz.net;
+	helo=dcent.unixwiz.net; </received-spf><received>from dcent.unixwiz.net ([99.25.142.34])
+	by 3b2kzd1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	id 1MiDEZ-0001dG-Eo for net-snmp-coders@lists.sourceforge.net;
+	Mon, 31 Aug 2009 20:12:12 +0000</received><received>by dcent.unixwiz.net (Postfix, from userid 500)
+	id 961D013B019F; Mon, 31 Aug 2009 13:12:05 -0700 (PDT)</received><date>Mon, 31 Aug 2009 13:12:05 -0700</date><message-id>20090831201205.GA16810@dcent.unixwiz.lan</message-id><references>&lt;e983cf860908281253k44f9ff0an336bfe67102f89b@mail.gmail.com&gt;
+	&lt;c64ae3380908281319m79951acay618942e1b01bc33@mail.gmail.com&gt;
+	&lt;002801ca2a62$ff1861b0$fd492510$@edu&gt;
+	&lt;c64ae3380908311112l4e5e3f4ajf7da755a02ff2a4c@mail.gmail.com&gt;
+	&lt;002d01ca2a75$872b42e0$9581c8a0$@edu&gt;</references><mime-version>1.0</mime-version><content-disposition>inline</content-disposition><in-reply-to>&lt;002d01ca2a75$872b42e0$9581c8a0$@edu&gt;</in-reply-to><user-agent>Mutt/1.4.2.2i</user-agent><x-spam-score>0.1 (/)</x-spam-score><x-spam-report>Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	1.4 NO_DNS_FOR_FROM DNS: Envelope sender has no MX or A DNS records
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	0.2 AWL AWL: From: address is in the auto white-list</x-spam-report><x-headers-end>1MiDEZ-0001dG-Eo</x-headers-end><x-beenthere>net-snmp-coders@lists.sourceforge.net</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>A list for net-snmp developers to converse over
+	&lt;net-snmp-coders.lists.sourceforge.net&gt;</list-id><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/net-snmp-coders&gt;, 
+	&lt;mailto:net-snmp-coders-request@lists.sourceforge.net?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://sourceforge.net/mailarchive/forum.php?forum_name=net-snmp-coders&gt;</list-archive><list-post>&lt;mailto:net-snmp-coders@lists.sourceforge.net&gt;</list-post><list-help>&lt;mailto:net-snmp-coders-request@lists.sourceforge.net?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/net-snmp-coders&gt;, 
+	&lt;mailto:net-snmp-coders-request@lists.sourceforge.net?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><errors-to>net-snmp-coders-bounces@lists.sourceforge.net</errors-to></headers><normalized-references><normalized-message-id>20090831201205.GA16810@dcent.unixwiz.lan</normalized-message-id><normalized-in-reply-to>002d01ca2a75$872b42e0$9581c8a0$@edu</normalized-in-reply-to><normalized-reference>e983cf860908281253k44f9ff0an336bfe67102f89b@mail.gmail.com</normalized-reference><normalized-reference>c64ae3380908281319m79951acay618942e1b01bc33@mail.gmail.com</normalized-reference><normalized-reference>002801ca2a62$ff1861b0$fd492510$@edu</normalized-reference><normalized-reference>c64ae3380908311112l4e5e3f4ajf7da755a02ff2a4c@mail.gmail.com</normalized-reference><normalized-reference>002d01ca2a75$872b42e0$9581c8a0$@edu</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">On Mon, Aug 31, 2009 at 03:59:17PM -0400, Gang Shu wrote:
+</para><quote depth="1"><quotepara depth="1">Hi Dave,
+Thanks a lot for your kind reply. However, I am still confused about the
+function 'shutdown_notification_log()', since there is no explicitly
+resource release statement in it.
+Could you please give me more details? Thanks!
+</quotepara></quote><para depth="0">
+There is an explicit resource release statement:
+
+</para><para depth="0">	exit(0);
+
+</para><para depth="0">I believe the idea is that when it's known that the program is about
+to exit soon anyway, there's no concerted effort to release all the
+memory because the OS will clean it up soon anyway.
+
+</para><para depth="0">Steve
+
+</para><quote depth="1"><quotepara depth="1">void shutdown_notification_log(void)
+{
+    max_logged = 0;
+    check_log_size(0, NULL);
+}
+
+</quotepara><quotepara depth="1">Best,
+Gang
+
+</quotepara><quote depth="2"><quotepara depth="2">-----Original Message-----
+From: <email>dave.shield@googlemail.com</email> [mailto:<email>dave.shield@googlemail.com</email>] On
+Behalf Of Dave Shield
+Sent: Monday, August 31, 2009 2:13 PM
+To: Gang Shu
+Cc: <email>net-snmp-coders@lists.sourceforge.net</email>
+Subject: Re: Bugs discovered by a research group at CWRU
+
+</quotepara><quotepara depth="2">2009/8/31 Gang Shu &lt;<email>gxs213@case.edu</email>&gt;:
+</quotepara><quote depth="3"><quotepara depth="3">Could you please tell us where the global variables "nlmLogTable"
+and "table_set" have been freed?
+</quotepara></quote><quotepara depth="2">
+This data structure will be freed when the agent shuts down.
+
+</quotepara><quotepara depth="2">I strongly suspect it's not explicitly released - most of the MIB module
+handlers don't bother to clean up fully, since they will typically only
+be unloaded as part of the agent shutting down (when it will release
+all allocated memory anyway).
+
+</quotepara><quotepara depth="2">   The natural place to handle this resource release would probably be
+in the 'shutdown_notification_log()' routine.
+
+</quotepara><quotefooter type="signature" depth="2" hash="11438157847676393707">Dave
+
+</quotefooter><quotefooter type="signature" depth="2" hash="18068482618618181578">------------------------------------------------------------------------------
+Let Crystal Reports handle the reporting - Free Crystal Reports 2008 30-Day 
+trial. Simplify your report design, integration and deployment - and focus on 
+what you do best, core application coding. Discover what's new with 
+Crystal Reports now.  <url>http://p.sf.net/sfu/bobj-july</url>
+</quotefooter><quotefooter type="list-management" depth="2">_______________________________________________
+Net-snmp-coders mailing list
+<email>Net-snmp-coders@lists.sourceforge.net</email>
+<url>https://lists.sourceforge.net/lists/listinfo/net-snmp-coders</url>
+</quotefooter></quote><quotefooter type="noise" depth="1">
+</quotefooter><quotefooter type="signature" depth="1" hash="3111973781737423305">-- 
+Stephen J Friedl  | Security Consultant |  UNIX Wizard  | 714 694-0494
+<email>steve@unixwiz.net</email> | Orange County, CA   | Microsoft MVP |  unixwiz.net
+
+</quotefooter><quotefooter type="signature" depth="1" hash="18068482618618181578">------------------------------------------------------------------------------
+Let Crystal Reports handle the reporting - Free Crystal Reports 2008 30-Day 
+trial. Simplify your report design, integration and deployment - and focus on 
+what you do best, core application coding. Discover what's new with 
+Crystal Reports now.  <url>http://p.sf.net/sfu/bobj-july</url>
+</quotefooter><quotefooter type="list-management" depth="1">_______________________________________________
+Net-snmp-coders mailing list
+<email>Net-snmp-coders@lists.sourceforge.net</email>
+<url>https://lists.sourceforge.net/lists/listinfo/net-snmp-coders</url>
+</quotefooter></quote></body></message>

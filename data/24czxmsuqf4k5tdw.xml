@@ -1,0 +1,26 @@
+<message message-id="e7dd79a40801141947s4e5e09ccwefe4d7a2fbe6857f@mail.gmail.com" list="org.apache.lucene.java-user" id="24czxmsuqf4k5tdw" type="users" date="2008-01-15T11:47:00+08:00" year="2008-01-01" year-month="2008-01-01" year-month-day="2008-01-14" thread-id="24czxmsuqf4k5tdw"><headers><envelope-from-line>Mon Jan 14 19:47:37 2008</envelope-from-line><from personal="coolgeng coolgeng" address="coolgeng410@gmail.com">coolgeng coolgeng &lt;coolgeng410@gmail.com&gt;</from><to personal="java-user@lucene.apache.org" address="java-user@lucene.apache.org">java-user@lucene.apache.org</to><subject normal="How?">How?</subject><received>from hermes.apache.org ([140.211.11.2])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 666
+          for &lt;erma.barker.martin@a.markmail.org&gt;;
+          Mon, 14 Jan 2008 19:47:37 -0800 (PST)</received><received>(qmail 69180 invoked by uid 500); 15 Jan 2008 03:47:20 -0000</received><mailing-list>contact java-user-help@lucene.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:java-user-help@lucene.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:java-user-unsubscribe@lucene.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:java-user@lucene.apache.org&gt;</list-post><list-id>&lt;java-user.lucene.apache.org&gt;</list-id><reply-to>java-user@lucene.apache.org</reply-to><delivered-to>mailing list java-user@lucene.apache.org</delivered-to><received>(qmail 69168 invoked by uid 99); 15 Jan 2008 03:47:20 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 14 Jan 2008 19:47:20 -0800</received><x-asf-spam-status>No, hits=2.0 required=10.0
+	tests=HTML_MESSAGE,SPF_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (athena.apache.org: domain of coolgeng410@gmail.com designates 209.85.132.241 as permitted sender)</received-spf><received>from [209.85.132.241] (HELO an-out-0708.google.com) (209.85.132.241)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 15 Jan 2008 03:46:55 +0000</received><received>by an-out-0708.google.com with SMTP id c5so550749anc.49
+        for &lt;java-user@lucene.apache.org&gt;; Mon, 14 Jan 2008 19:47:00 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type;
+        bh=3D2oGetcwQX8245hzVlJpLgfzqqaQwec3Fwvl+q4jOM=;
+        b=V2QooCaM+Yaw7gl8z/VPDY/O2pkY6xMWa3JG+RdxM4VJexK28l1ZGcjY6zhXwenDeozqI92DEnbxVIxdDKP+2TM1S/g5/+vupOi78Bqu9OMAW+vGpAlbpkys1y6E3zsSyc+dOdGN0h0YBABZ/KF0x2+OXG1TTgFOfR3fVeg+TAs=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type;
+        b=pJCA6/TouzqhOvEaECB5uTkGIFARWwYtgLWGAJ7+EksxEHnwAkLZxpYpTHg8VQmpR2qjAK1VBDLmVC0b3eUrYVyJQCsIu2uQkuV2YUovnCuQ5BcrIAu3vkX7eGPIinhI0K+wV2htnPBb79nwky/rbnlhE40xWsFCgOXt5G7Lb0I=</domainkey-signature><received>by 10.100.248.9 with SMTP id v9mr15767751anh.19.1200368820341;
+        Mon, 14 Jan 2008 19:47:00 -0800 (PST)</received><received>by 10.100.44.7 with HTTP; Mon, 14 Jan 2008 19:47:00 -0800 (PST)</received><message-id>e7dd79a40801141947s4e5e09ccwefe4d7a2fbe6857f@mail.gmail.com</message-id><date>Tue, 15 Jan 2008 11:47:00 +0800</date><mime-version>1.0</mime-version><content-type>multipart/alternative; 
+	boundary="----=_Part_4628_29771376.1200368820337"</content-type><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>e7dd79a40801141947s4e5e09ccwefe4d7a2fbe6857f@mail.gmail.com</normalized-message-id></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_4628_29771376.1200368820337&quot;" type="text/plain; charset=ISO-8859-1"><greeting depth="0">Hi guys,
+</greeting><para depth="0">     Some problems confuse me. When I would like to index some data from a
+table in database. While I create the index on this table, the  searching
+job keeps going . How can I work out it?
+By the way, the number of data is around 1 hundred million.
+
+</para><footer type="signature" hash="2221854941745625324" depth="0">-- 
+Best Regards
+Cooper Geng
+</footer></body></message>

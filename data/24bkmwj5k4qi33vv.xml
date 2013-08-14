@@ -1,0 +1,42 @@
+<message message-id="1070339422.2058.78.camel@localhost.localdomain" list="org.tigris.scarab.dev" id="24bkmwj5k4qi33vv" no-archive="yes" type="development" date="2003-12-01T20:30:22-08:00" year="2003-01-01" year-month="2003-12-01" year-month-day="2003-12-01" thread-id="gutojcn6igship6b"><headers><envelope-from-line>From dev-return-6348-tigrisq-archive=mail-scarab=dev=tigris.org=tigris.org@scarab.tigris.org Tue Dec 02 04:30:30 2003</envelope-from-line><from personal="John McNally" address="jmcnally@collab.net">John McNally &lt;jmcnally@collab.net&gt;</from><to personal="dev@scarab.tigris.org" address="dev@scarab.tigris.org">dev@scarab.tigris.org</to><subject normal="Self-hosting issue tracker e-mails not being sent to issues list">Re: Self-hosting issue tracker e-mails not being sent to issues list</subject><return-path>dev-return-6348-tigrisq-archive=mail-scarab=dev=tigris.org=tigris.org@scarab.tigris.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-scarab=dev=tigris.org@tigris.org</delivered-to><received>(qmail 15422 invoked by uid 5302); 2 Dec 2003 04:30:30 -0000</received><mailing-list>contact dev-help@scarab.tigris.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:dev-help@scarab.tigris.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@scarab.tigris.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@scarab.tigris.org&gt;</list-post><reply-to>dev@scarab.tigris.org</reply-to><delivered-to>mailing list dev@scarab.tigris.org</delivered-to><received>(qmail 15413 invoked from network); 2 Dec 2003 04:30:29 -0000</received><in-reply-to>&lt;3FCBB239.5040304@cacoethes.co.uk&gt;</in-reply-to><references>&lt;3FCBB239.5040304@cacoethes.co.uk&gt;</references><content-type>text/plain</content-type><organization/><message-id>1070339422.2058.78.camel@localhost.localdomain</message-id><mime-version>1.0</mime-version><x-mailer>Ximian Evolution 1.2.2 (1.2.2-4) </x-mailer><date>01 Dec 2003 20:30:22 -0800</date><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>1070339422.2058.78.camel@localhost.localdomain</normalized-message-id><normalized-in-reply-to>3FCBB239.5040304@cacoethes.co.uk</normalized-in-reply-to><normalized-reference>3FCBB239.5040304@cacoethes.co.uk</normalized-reference></normalized-references><body type="text/plain"><para depth="0">That is because I am the only moderator and I was on vacation.  I did
+ask a couple people to take over or help with moderation, but have no
+response (I just asked a few hours ago, so I'm not giving up), but if
+there are others that would like to help with this, speak up.
+
+</para><para depth="0">The scarab issues are a problem because they are sent from the specific
+user, but they often are not subscribed to the list.  I have added some
+that seem active so that they are allowed posters, but whenever a new
+user creates an issue it needs moderation.
+
+</para><para depth="0">We started moderating the issues list because it did start receiving
+spam though it has not been much.  I would not classify it as enough to
+warrant the moderation difficulty, but others might unsubscribe
+immediately after getting some porn or other potentially offensive
+material, so I have left it moderated.
+
+</para><footer type="signature" depth="0" hash="899530605038526724">john mcnally
+
+</footer><para depth="0">On Mon, 2003-12-01 at 13:27, Peter Ledbrook wrote:
+</para><quote depth="1"><quotepara depth="1">Hiya,
+
+</quotepara><quotepara depth="1">I've noticed that a few new issues have been added to the self-hosted 
+Scarab issue tracker, yet no e-mails have appeared in the issues mailing 
+list. The same is true for comments added to existing issues. Anyone 
+know what's going on? This only seems to happen with certain (new?) 
+users, since my changes are triggering e-mails correctly.
+
+</quotepara><quotepara depth="1">Cheers,
+
+</quotepara><quotefooter type="signature" depth="1" hash="971418430226958581">Peter
+
+</quotefooter><quotefooter type="list-management" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@scarab.tigris.org</email>
+For additional commands, e-mail: <email>dev-help@scarab.tigris.org</email>
+</quotefooter></quote><footer type="noise" depth="0">
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@scarab.tigris.org</email>
+For additional commands, e-mail: <email>dev-help@scarab.tigris.org</email>
+
+</footer></body></message>

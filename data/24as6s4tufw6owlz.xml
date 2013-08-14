@@ -1,0 +1,93 @@
+<message message-id="a8fbe8aa-936a-4ca4-80df-622a84a40...@g1g2000pra.googlegroups.com" list="com.googlegroups.tortoisesvn" id="24as6s4tufw6owlz" type="general" date="2008-12-23T21:08:33-08:00" year="2008-01-01" year-month="2008-12-01" year-month-day="2008-12-23" thread-id="vrxpeavpc3jubr33"><headers><envelope-from-line>Tue Dec 23 23:55:35 2008</envelope-from-line><from personal="Allwyn" address="dsouzaall...@gmail.com">Allwyn &lt;dsouzaall...@gmail.com&gt;</from><to personal="us...@tortoisesvn.tigris.org" address="us...@tortoisesvn.tigris.org">us...@tortoisesvn.tigris.org</to><subject normal="TSVN 1.5.5 shows a strange folder in freshly created repository">Re: TSVN 1.5.5 shows a strange folder in freshly created repository</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 343
+          for &lt;marquita.guy.perkins@a.markmail.org&gt;;
+          Tue, 23 Dec 2008 23:55:35 -0800 (GMT-08:00)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 0E91D3B300C9
+	for &lt;marquita.guy.perkins@a.markmail.org&gt;; Tue, 23 Dec 2008 23:55:12 -0800 (PST)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (8.13.8/8.13.8) with ESMTP id mBO7tY3W011974
+	for &lt;marquita.guy.perkins@a.markmail.org&gt;; Tue, 23 Dec 2008 23:55:34 -0800</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id mBO7tB8R011966
+	for marquita.guy.perkins@a.markmail.org; Tue, 23 Dec 2008 23:55:11 -0800</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.tortoisesvn</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>f79ad5c3cde4659a</x-markmail-googlegroups-mid><received>by 10.114.77.1 with SMTP id z1mr4777551waa.23.1230105138598;
+        Tue, 23 Dec 2008 23:52:18 -0800 (PST)</received><received>from sc157-tigr.sjc.collab.net (sc157.sjc.collab.net [204.16.104.146])
+        by mx.google.com with ESMTP id m37si10115798waf.0.2008.12.23.23.52.18;
+        Tue, 23 Dec 2008 23:52:18 -0800 (PST)</received><received-spf>neutral (google.com: 204.16.104.146 is neither permitted nor denied by domain of users-return-991253+tortoisesvn-garchive-30292=googlegroups....@tortoisesvn.tigris.org) client-ip=204.16.104.146;</received-spf><authentication-results>mx.google.com; spf=neutral (google.com: 204.16.104.146 is neither permitted nor denied by domain of users-return-991253+tortoisesvn-garchive-30292=googlegroups....@tortoisesvn.tigris.org) smtp.mail=users-return-991253+tortoisesvn-garchive-30292=googlegroups....@tortoisesvn.tigris.org</authentication-results><received>from sc157-tigr.sjc.collab.net (localhost [127.0.0.1])
+	by sc157-tigr.sjc.collab.net (Postfix) with ESMTP id 4BA0A7B0215;
+	Tue, 23 Dec 2008 23:52:17 -0800 (PST)</received><received>from localhost ([127.0.0.1])          by Mail Reader Service (JAMES SMTP Server 2.3.0) with SMTP ID 808          for &lt;us...@tortoisesvn.tigris.org.mrs&gt;;          Tue, 23 Dec 2008 21:08:34 -0800 (PST)</received><received>from cylon1.sjc.collab.net (cylon1.sjc.collab.net [204.16.104.10])	by sc157-tigr.sjc.collab.net (Postfix) with ESMTP id 6A3277B00C1	for &lt;us...@tortoisesvn.tigris.org&gt;; Tue, 23 Dec 2008 21:08:34 -0800 (PST)</received><received>from yx-out-2526.google.com ([74.125.44.32])  by cylon1.sjc.collab.net with ESMTP; 23 Dec 2008 21:08:34 -0800</received><received>by yx-out-2526.google.com with SMTP id 8so782887yxr.86        for &lt;us...@tortoisesvn.tigris.org&gt;; Tue, 23 Dec 2008 21:08:33 -0800 (PST)</received><received>by 10.100.140.20 with SMTP id n20mr649112and.9.1230095313618; Tue,	23 Dec 2008 21:08:33 -0800 (PST)</received><date>Tue, 23 Dec 2008 21:08:33 -0800 (PST)</date><reply-to>users &lt;us...@tortoisesvn.tigris.org&gt;</reply-to><message-id>a8fbe8aa-936a-4ca4-80df-622a84a40...@g1g2000pra.googlegroups.com</message-id><in-reply-to>&lt;494BB4F1.8010...@gmail.com&gt;</in-reply-to><references>&lt;8a10a514-f535-4d35-9302-841182dcb...@40g2000prx.googlegroups.com&gt;	&lt;494BB4F1.8010...@gmail.com&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><x-http-useragent>Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR	1.1.4322),gzip(gfe),gzip(gfe)</x-http-useragent><x-http-via>1.1 ISASRV</x-http-via><user-agent>G2/1.0</user-agent><x-ip>203.196.164.210</x-ip><x-ironport>SCANNED</x-ironport><x-ironport-av>E=Sophos;i="4.36,275,1228118400";   d="scan'208";a="17931285"</x-ironport-av><x-ironport-anti-spam-result>AokBALtSUUlKfSwgi2dsb2JhbACTLT4BAQEKCwoHDwV/qG9Yg1OOBYZC</x-ironport-anti-spam-result><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><list-id>&lt;users.tortoisesvn.tigris.org&gt;</list-id><precedence>bulk</precedence></headers><normalized-references><normalized-message-id>a8fbe8aa-936a-4ca4-80df-622a84a40...@g1g2000pra.googlegroups.com</normalized-message-id><normalized-in-reply-to>494BB4F1.8010...@gmail.com</normalized-in-reply-to><normalized-reference>8a10a514-f535-4d35-9302-841182dcb...@40g2000prx.googlegroups.com</normalized-reference><normalized-reference>494BB4F1.8010...@gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><greeting depth="0">Hi Stefan,
+</greeting><para depth="0">
+The URL as shown in Windows explorer is - \\filesrv\xxx\yyy\zzz\AllwynD
+\test
+The URL as shown in TSVN 1.5.5 Repo Browser is -<br/>file:////filesrv/xxx/yyy/zzz/AllwynD/test
+         where xxx, yyy and zzz are plain English Aphabets A to Z (and
+no special characters at all. Not even a space).
+
+</para><para depth="0">The folder name in this case is test.
+
+</para><para depth="0">As per the problem mentioned, I can see a folder named "t" in the
+repository browser.
+
+</para><para depth="0">This problem does not arise when I use a mapped drive to the test
+folder above. It happens only when I use the servername  in the URL.
+
+</para><para depth="0">Please note - I am not manually entering the URL. I just browse to the
+folder and use the shell extension for TortoiseSVN / Repo-browser.
+
+</para><para depth="0">I do not how to send across the screenshot. I will mail the same to
+you on your Gmail ID.
+
+</para><para depth="0">Its a privilege to get a reply from you.
+
+</para><para depth="0">Regards,
+
+</para><para depth="0">Allwyn
+
+</para><para depth="0">On Dec 19, 7:51 pm, Stefan Kueng &lt;<email>tortoise...@gmail.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">Allwyn wrote:
+</quotepara><quote depth="2"><quotepara depth="2">Hello,
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">I recently installed TSVN 1.5.5. When I create a fresh repository in a
+folder named ABCDEFG, and then I right click within this folder and
+say "Tortoise SVN / Repo-Browser" I get to see a folder named "G" in
+the repository.
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">Now the fun begins,
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">If I make any changes to the repository like import,commit etc. I am
+unable to delete this folder "G"
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">And if before making any changes to the repository, I simply click on
+the folderpath above this folder "G" in the sidebar, the folder "G"
+dissappers. But when I again open the repository the folder "G"
+appears again.
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">Can someone tell me why???
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">What is the solution to this problem?
+</quotepara></quote><quotepara depth="1">
+* what's the url to your repository?
+* is the name of the folder *really* ABCDEFG? If not, what's it called
+  *exactly*?
+* screenshot?
+
+</quotepara><quotepara depth="1">Stefan
+
+</quotepara><quotepara depth="1">--
+       ___
+  oo  // \\      "De Chelonian Mobile"
+ (_,\/ \_/ \     TortoiseSVN
+   \ \_/_\_/&gt;    The coolest Interface to (Sub)Version Control
+   /_/   \_\    <url>http://tortoisesvn.net</url>
+
+</quotepara><quotepara depth="1">------------------------------------------------------<url>http://tortoisesvn.tigris.org/ds/viewMessage.do?dsForumId=4061&amp;dsMess</url>...
+
+</quotepara><quotepara depth="1">To unsubscribe from this discussion, e-mail:<br/>[<email>users-unsubscr...@tortoisesvn.tigris.org</email>].
+
+</quotepara><quotepara depth="1"> signature.asc
+&lt; 1KViewDownload- Hide quoted text -
+
+</quotepara><quotepara depth="1">- Show quoted text -
+</quotepara></quote><para depth="0">
+</para><para depth="0">------------------------------------------------------
+<url>http://tortoisesvn.tigris.org/ds/viewMessage.do?dsForumId=4061&amp;dsMessageId=991253</url>
+
+</para><para depth="0">To unsubscribe from this discussion, e-mail:<br/>[<email>users-unsubscribe@tortoisesvn.tigris.org</email>].
+</para></body></message>

@@ -1,0 +1,369 @@
+<message message-id="7DB05FAE36435F40BA952CF808CFE7B6FD26DB@HSDLNTD1110010.noida.hcltech.com" list="org.apache.maven.users" id="24cnf2nyu4d25ecb" type="users" date="2006-06-21T17:59:14+05:30" year="2006-01-01" year-month="2006-06-01" year-month-day="2006-06-21" thread-id="qhlit5ackq4nvuoz"><headers><envelope-from-line>From users-return-50367-apmail-maven-users-archive=maven.apache.org@maven.apache.org Wed Jun 21 12:38:47 2006</envelope-from-line><from personal="Nidhi Goyal, Noida" address="gnidhi@hcl.in">"Nidhi Goyal, Noida" &lt;gnidhi@hcl.in&gt;</from><to personal="Maven Users List" address="users@maven.apache.org">Maven Users List &lt;users@maven.apache.org&gt;</to><subject normal="Maven best practices - company-wide local repository?">RE: Maven best practices - company-wide local repository?</subject><return-path>users-return-50367-apmail-maven-users-archive=maven.apache.org@maven.apache.org</return-path><delivered-to>apmail-maven-users-archive@www.apache.org</delivered-to><received>(qmail 12007 invoked from network); 21 Jun 2006 12:35:49 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur.apache.org with SMTP; 21 Jun 2006 12:35:49 -0000</received><received>(qmail 10210 invoked by uid 500); 21 Jun 2006 12:34:25 -0000</received><delivered-to>apmail-maven-users-archive@maven.apache.org</delivered-to><received>(qmail 10152 invoked by uid 500); 21 Jun 2006 12:34:25 -0000</received><mailing-list>contact users-help@maven.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:users-unsubscribe@maven.apache.org&gt;</list-unsubscribe><list-help>&lt;mailto:users-help@maven.apache.org&gt;</list-help><list-post>&lt;mailto:users@maven.apache.org&gt;</list-post><list-id>"Maven Users List" &lt;users.maven.apache.org&gt;</list-id><reply-to>"Maven Users List" &lt;users@maven.apache.org&gt;</reply-to><delivered-to>mailing list users@maven.apache.org</delivered-to><received>(qmail 10141 invoked by uid 99); 21 Jun 2006 12:34:25 -0000</received><received>from asf.osuosl.org (HELO asf.osuosl.org) (140.211.166.49)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 21 Jun 2006 05:34:25 -0700</received><x-asf-spam-status>No, hits=0.0 required=10.0
+	tests=SPF_PASS,UNPARSEABLE_RELAY</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (asf.osuosl.org: domain of gnidhi@hcl.in designates 203.105.185.20 as permitted sender)</received-spf><received>from [203.105.185.20] (HELO nda-hclin-gws02.hcl.in) (203.105.185.20)
+    by apache.org (qpsmtpd/0.29) with SMTP; Wed, 21 Jun 2006 05:34:23 -0700</received><received>from nda-hclin-gws02.hcl.in (nda-hclin-gws02 [10.248.64.135])
+	by localhost.hcl.in (Postfix) with SMTP id 9B950CFC07E
+	for &lt;users@maven.apache.org&gt;; Wed, 21 Jun 2006 18:03:57 +0530 (IST)</received><received>from nda-egw02-out.corp.hcl.in (unknown [10.248.64.38])by 
+	nda-hclin-gws02.hcl.in (Postfix) with ESMTP id 66A49CFC0BCfor 
+	&lt;users@maven.apache.org&gt;; Wed, 21 Jun 2006 18:03:57 +0530 (IST)</received><received>from HSDLNTD1110010.noida.hcltech.com ([10.112.8.20]) by 
+	nda-egw02-out.corp.hcl.in with Microsoft SMTPSVC(6.0.3790.1830); Wed, 21 
+	Jun 2006 18:03:56 +0530</received><x-mimeole>Produced By Microsoft Exchange V6.5</x-mimeole><content-class>urn:content-classes:message</content-class><mime-version>1.0</mime-version><content-type>text/plain;
+	charset=us-ascii</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><date>Wed, 21 Jun 2006 17:59:14 +0530</date><message-id>7DB05FAE36435F40BA952CF808CFE7B6FD26DB@HSDLNTD1110010.noida.hcltech.com</message-id><x-ms-has-attach/><x-ms-tnef-correlator/><thread-topic>Maven best practices - company-wide local repository?</thread-topic><thread-index>AcaVLaIiVLTPaX1GQMmXvvQ4kOIWkgAAFpQw</thread-index><x-originalarrivaltime>21 Jun 2006 12:33:56.0138 (UTC) 
+	FILETIME=[F66360A0:01C6952E]</x-originalarrivaltime><x-imss-version>2.040</x-imss-version><x-imss-result>Passed</x-imss-result><x-imss-scores>Clean:99.90000 C:2 M:4 S:5 R:5</x-imss-scores><x-imss-settings>Baseline:2 C:2 M:2 S:2 R:2 (0.1500 0.1500)</x-imss-settings><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked><x-spam-rating>minotaur.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>7DB05FAE36435F40BA952CF808CFE7B6FD26DB@HSDLNTD1110010.noida.hcltech.com</normalized-message-id><normalized-thread-index>AcaVLaIiVLTPaX1GQMmXvvQ4kOIWkg</normalized-thread-index></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=us-ascii"><para depth="0">
+hey thanks ...I'm following the steps written in that document.The step
+u r telling about comes later.I'm able to execute the very first command
+
+</para><para depth="0">mvn archetype:create -DgroupId=com.mycompany.app -DartifactId=my-app
+
+</para><para depth="0">On excuting this I'm getting the following error:
+
+</para><para depth="0">C:\Documents and Settings\gnidhi&gt;mvn archetype:create
+-DgroupId=com.mycompany.app -DartifactId=my-app
+[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'archetype'.
+[INFO] org.apache.maven.plugins: checking for updates from central
+[WARNING] repository metadata for: 'org.apache.maven.plugins' could not
+be retrieved from repository: central due to an error: Error
+transferring file
+[INFO] Repository 'central' will be blacklisted
+[INFO]
+------------------------------------------------------------------------
+[ERROR] BUILD ERROR
+[INFO]
+------------------------------------------------------------------------
+[INFO] The plugin 'org.apache.maven.plugins:maven-archetype-plugin' does
+not exist or no valid version could be found
+[INFO]
+------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO]
+------------------------------------------------------------------------
+[INFO] Total time: 21 seconds
+[INFO] Finished at: Wed Jun 21 17:48:38 GMT+05:30 2006
+[INFO] Final Memory: 1M/2M
+
+</para><para depth="0">Please tell me where I'm wrong
+
+</para><para depth="0">Thanks,
+Nidhi
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Janhavi Phirke [mailto:<email>janhaviphirke@gmail.com</email>] 
+Sent: Wednesday, June 21, 2006 5:54 PM
+To: Maven Users List
+Subject: Re: Maven best practices - company-wide local repository?
+
+</quotepara><quotepara depth="1">Just few days before only I did my setup. But I didn't download any .war
+file. Go step by step as per given in the manual of maven on the site.
+But
+while doing so, you have to run the "mvn install" to download the jars
+from
+central repository to your local repository. I did it as per the steps
+written in "getting-started" and I didn't face such problems...so try
+once
+again with all the proper steps...
+
+</quotepara><quotepara depth="1">On 6/21/06, Nidhi Goyal, Noida &lt;<email>gnidhi@hcl.in</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+Hi JanHavi,
+
+</quotepara><quotepara depth="2">U mean to say I just need to extract the war file and run the commands
+"
+<url>http://maven.apache.org/guides/getting-started/index.html</url>" for
+creating
+project.
+
+</quotepara><quotepara depth="2">Thanks,
+Nidhi
+
+</quotepara><quote depth="3"><quotepara depth="3">-----Original Message-----
+From: Janhavi Phirke [mailto:<email>janhaviphirke@gmail.com</email>]
+Sent: Wednesday, June 21, 2006 5:44 PM
+To: Maven Users List
+Subject: Re: Maven best practices - company-wide local repository?
+
+</quotepara><quotepara depth="3">Hi Nidhi,
+
+</quotepara><quotepara depth="3">you just have to run that command to create the project. Also try to
+run
+the
+command "mvn install". There is no need to download the plugin
+separately.
+When you write that in your pom.xml (in this case, in your command),
+it
+gets
+downloaded in your local repository from the central repository.
+
+</quotepara><quotepara depth="3">On 6/21/06, Nidhi Goyal, Noida &lt;<email>gnidhi@hcl.in</email>&gt; wrote:
+</quotepara><quote depth="4"><quotepara depth="4">
+thx ben
+Do u meant to say tht I need to download file
+"px-webapp-1.0.0-RC1.war"
+
+</quotepara><quotepara depth="4">On the link u mentioned
+<url>https://is-micro.myip.hu/projects/ismicro-commons/proximity/</url>
+
+</quotepara><quotepara depth="4">I'm not getting what they mean to say with Maven 1 and Maven 2.
+
+</quotepara><quotepara depth="4">What I did was I just downloaded the file maven-2.0.4.bin.zip file
+and
+extract that at a location.
+After that I am downloading the Maven proximity.
+Please tell me how to install it and what other steps are required
+to
+create a project mentioned inside the link "
+<url>http://maven.apache.org/guides/getting-started/index.html</url>
+</quotepara><quote depth="5"><quotepara depth="5">"
+</quotepara></quote><quotepara depth="4">
+Thanks,
+Nidhi
+
+</quotepara><quote depth="5"><quotepara depth="5">-----Original Message-----
+From: <email>jamin.short@gmail.com</email> [mailto:<email>jamin.short@gmail.com</email>] On Behalf
+Of
+ben short
+Sent: Wednesday, June 21, 2006 5:10 PM
+To: Maven Users List
+Subject: Re: Maven best practices - company-wide local repository?
+
+</quotepara><quotepara depth="5"><url>https://is-micro.myip.hu/projects/ismicro-commons/proximity/</url>
+
+</quotepara><quotepara depth="5"><url>http://maven-proxy.codehaus.org/</url>
+
+</quotepara><quotepara depth="5">Ben
+
+</quotepara><quotepara depth="5">On 6/21/06, Nidhi Goyal, Noida &lt;<email>gnidhi@hcl.in</email>&gt; wrote:
+</quotepara><quote depth="6"><quotepara depth="6">
+Thanks for replying but please tell me the link from where to
+download
+Maven Proxy or proximity.
+I've tried to  create a project using the steps given in the link
+<url>http://maven.apache.org/guides/getting-started/index.html</url>
+
+</quotepara><quotepara depth="6">when I execute the command
+mvn archetype:create -DgroupId=com.mycompany.app
+</quotepara></quote></quote></quote><quotepara depth="3">-DartifactId=my-app
+</quotepara><quote depth="4"><quotepara depth="4">,
+</quotepara><quote depth="5"><quote depth="6"><quotepara depth="6">getting the follwing errors:
+
+</quotepara><quotepara depth="6">[INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'archetype'.
+[INFO] org.apache.maven.plugins: checking for updates from central
+[WARNING] repository metadata for: 'org.apache.maven.plugins'
+</quotepara></quote></quote></quote><quotepara depth="3">could
+</quotepara><quote depth="4"><quote depth="5"><quotepara depth="5">not
+</quotepara><quote depth="6"><quotepara depth="6">be retrieved from repository: central due to an error: Error
+transferring file
+[INFO] Repository 'central' will be blacklisted
+[INFO]
+
+</quotepara></quote></quote></quote><quotepara depth="3">------------------------------------------------------------------------
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">[ERROR] BUILD ERROR
+[INFO]
+
+</quotepara></quote></quote></quote><quotepara depth="3">------------------------------------------------------------------------
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">[INFO] The plugin
+</quotepara></quote></quote></quote><quotepara depth="3">'org.apache.maven.plugins:maven-archetype-plugin'
+</quotepara><quote depth="4"><quote depth="5"><quotepara depth="5">does
+</quotepara><quote depth="6"><quotepara depth="6">not exist or no valid version could be found
+[INFO]
+
+</quotepara></quote></quote></quote><quotepara depth="3">------------------------------------------------------------------------
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">[INFO] For more information, run Maven with the -e switch
+[INFO]
+
+</quotepara></quote></quote></quote><quotepara depth="3">------------------------------------------------------------------------
+</quotepara><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">[INFO] Total time: 22 seconds
+[INFO] Finished at: Wed Jun 21 17:00:28 GMT+05:30 2006
+[INFO] Final Memory: 1M/2M
+
+</quotepara><quotepara depth="6">Thanks,
+Nidhi
+
+</quotepara><quote depth="7"><quotepara depth="7">-----Original Message-----
+From: Alexandre Poitras [mailto:<email>alexandre.poitras@gmail.com</email>]
+Sent: Wednesday, June 21, 2006 4:57 PM
+To: Maven Users List
+Subject: Re: Maven best practices - company-wide local repository?
+
+</quotepara><quotepara depth="7">Install Maven Proxy or Proximity and you get your repository. It
+will
+get populated automatically when a developer request a dependency
+found on Maven central repo.
+
+</quotepara><quotepara depth="7">As for Maven, installation instructions are found on the front
+page.
+
+</quotepara><quotepara depth="7">On 6/21/06, Nidhi Goyal, Noida &lt;<email>gnidhi@hcl.in</email>&gt; wrote:
+</quotepara><quote depth="8"><quotepara depth="8">
+hi,
+
+</quotepara><quotepara depth="8">Please help me how to create a new project using Maven including
+it's
+installation. I'm not able to get how to create repositories for
+a
+project.
+I need step by step procedure including repositories code.
+
+</quotepara><quotepara depth="8">Thanks,
+Nidhi
+
+</quotepara><quote depth="9"><quotepara depth="9">-----Original Message-----
+From: Feniks Nator [mailto:<email>feniksenator@gmail.com</email>]
+Sent: Wednesday, June 21, 2006 4:48 PM
+To: Maven Users List
+Subject: Re: Maven best practices - company-wide local
+repository?
+
+</quotepara><quotepara depth="9">Oeps, seems like I've been a bit to fast.
+</quotepara><quote depth="10"><quotepara depth="10">and I consider if we should use a common local repository -
+for instance over a network share.
+</quotepara></quote><quotepara depth="9">
+You're talking about a common local repository.
+I agree with Christian, this could slow down things a lot.
+And it makes it more difficult to experiment (though you always
+can
+changing
+the settings.xml you use.)
+
+</quotepara><quotepara depth="9">I also strongly recommend to keep the LOCAL repository, really
+local,
+meaning on the developers workstation.
+
+</quotepara><quotepara depth="9">DISCLAIMER:
+
+</quotepara></quote></quote></quote></quote><quotepara depth="5">------------------------------------------------------------------------
+</quotepara><quote depth="6"><quote depth="7"><quote depth="8"><quotepara depth="8">-----------------------------------------------
+</quotepara><quote depth="9"><quotepara depth="9">The contents of this e-mail and any attachment(s) are
+</quotepara></quote></quote></quote></quote><quotepara depth="5">confidential
+</quotepara><quote depth="6"><quote depth="7"><quotepara depth="7">and
+</quotepara><quote depth="8"><quotepara depth="8">intended for the named recipient(s) only.
+</quotepara><quote depth="9"><quotepara depth="9">It shall not attach any liability on the originator or HCL or
+</quotepara></quote></quote></quote></quote><quotepara depth="5">its
+</quotepara><quote depth="6"><quote depth="7"><quote depth="8"><quotepara depth="8">affiliates. Any views or opinions presented in
+</quotepara><quote depth="9"><quotepara depth="9">this email are solely those of the author and may not
+</quotepara></quote></quote></quote></quote><quotepara depth="5">necessarily
+</quotepara><quote depth="6"><quote depth="7"><quote depth="8"><quotepara depth="8">reflect the opinions of HCL or its affiliates.
+</quotepara><quote depth="9"><quotepara depth="9">Any form of reproduction, dissemination, copying, disclosure,
+modification, distribution and / or publication of
+this message without the prior written consent of the author of
+</quotepara></quote></quote></quote><quotepara depth="6">this
+</quotepara><quote depth="7"><quote depth="8"><quotepara depth="8">e-mail is strictly prohibited. If you have
+</quotepara><quote depth="9"><quotepara depth="9">received this email in error please delete it and notify the
+</quotepara></quote></quote></quote><quotepara depth="6">sender
+</quotepara><quote depth="7"><quote depth="8"><quotepara depth="8">immediately. Before opening any mail and
+</quotepara><quote depth="9"><quotepara depth="9">attachments please check them for viruses and defect.
+
+</quotepara></quote></quote></quote></quote><quotepara depth="5">------------------------------------------------------------------------
+</quotepara><quote depth="6"><quote depth="7"><quote depth="8"><quotepara depth="8">-----------------------------------------------
+</quotepara><quote depth="9"><quotepara depth="9">
+</quotepara></quote></quote></quote></quote><quotepara depth="5">---------------------------------------------------------------------
+</quotepara><quote depth="6"><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">To unsubscribe, e-mail: <email>users-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>users-help@maven.apache.org</email>
+
+</quotepara></quote></quote></quote><quotepara depth="6">---------------------------------------------------------------------
+</quotepara><quote depth="7"><quote depth="8"><quotepara depth="8">To unsubscribe, e-mail: <email>users-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>users-help@maven.apache.org</email>
+
+</quotepara><quotepara depth="8">DISCLAIMER:
+
+</quotepara></quote></quote></quote><quotepara depth="5">------------------------------------------------------------------------
+</quotepara><quote depth="6"><quote depth="7"><quotepara depth="7">-----------------------------------------------
+</quotepara><quote depth="8"><quotepara depth="8">The contents of this e-mail and any attachment(s) are confidential
+</quotepara></quote></quote><quotepara depth="6">and
+</quotepara><quote depth="7"><quotepara depth="7">intended for the named recipient(s) only.
+</quotepara><quote depth="8"><quotepara depth="8">It shall not attach any liability on the originator or HCL or its
+affiliates. Any views or opinions presented in
+this email are solely those of the author and may not necessarily
+reflect the opinions of HCL or its affiliates.
+Any form of reproduction, dissemination, copying, disclosure,
+modification, distribution and / or publication of
+this message without the prior written consent of the author of
+</quotepara></quote></quote></quote><quotepara depth="5">this
+</quotepara><quote depth="6"><quote depth="7"><quotepara depth="7">e-mail is strictly prohibited. If you have
+</quotepara><quote depth="8"><quotepara depth="8">received this email in error please delete it and notify the
+</quotepara></quote></quote></quote><quotepara depth="5">sender
+</quotepara><quote depth="6"><quote depth="7"><quotepara depth="7">immediately. Before opening any mail and
+</quotepara><quote depth="8"><quotepara depth="8">attachments please check them for viruses and defect.
+
+</quotepara></quote></quote></quote><quotepara depth="5">------------------------------------------------------------------------
+</quotepara><quote depth="6"><quote depth="7"><quotepara depth="7">-----------------------------------------------
+</quotepara><quote depth="8"><quotepara depth="8">
+</quotepara></quote></quote><quotepara depth="6">---------------------------------------------------------------------
+</quotepara><quote depth="7"><quote depth="8"><quotepara depth="8">To unsubscribe, e-mail: <email>users-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>users-help@maven.apache.org</email>
+
+</quotepara></quote></quote></quote><quotepara depth="5">---------------------------------------------------------------------
+</quotepara><quote depth="6"><quote depth="7"><quotepara depth="7">To unsubscribe, e-mail: <email>users-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>users-help@maven.apache.org</email>
+
+</quotepara><quotepara depth="7">DISCLAIMER:
+
+</quotepara></quote></quote><quotepara depth="5">------------------------------------------------------------------------
+</quotepara><quote depth="6"><quotepara depth="6">-----------------------------------------------
+</quotepara><quote depth="7"><quotepara depth="7">The contents of this e-mail and any attachment(s) are confidential
+and
+intended for the named recipient(s) only.
+It shall not attach any liability on the originator or HCL or its
+affiliates. Any views or opinions presented in
+this email are solely those of the author and may not necessarily
+reflect
+the opinions of HCL or its affiliates.
+Any form of reproduction, dissemination, copying, disclosure,
+modification, distribution and / or publication of
+this message without the prior written consent of the author of this
+e-mail is strictly prohibited. If you have
+received this email in error please delete it and notify the sender
+immediately. Before opening any mail and
+attachments please check them for viruses and defect.
+
+</quotepara></quote></quote><quotepara depth="5">------------------------------------------------------------------------
+</quotepara><quote depth="6"><quotepara depth="6">-----------------------------------------------
+</quotepara><quote depth="7"><quotepara depth="7">
+</quotepara></quote></quote><quotepara depth="5">---------------------------------------------------------------------
+</quotepara><quote depth="6"><quote depth="7"><quotepara depth="7">To unsubscribe, e-mail: <email>users-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>users-help@maven.apache.org</email>
+
+</quotepara></quote><quotepara depth="6">DISCLAIMER:
+
+</quotepara></quote><quotepara depth="5">------------------------------------------------------------------------
+-----------------------------------------------
+</quotepara><quote depth="6"><quotepara depth="6">The contents of this e-mail and any attachment(s) are confidential and
+intended for the named recipient(s) only.
+It shall not attach any liability on the originator or HCL or its
+affiliates. Any views or opinions presented in
+this email are solely those of the author and may not necessarily
+reflect
+the opinions of HCL or its affiliates.
+Any form of reproduction, dissemination, copying, disclosure,
+modification, distribution and / or publication of
+this message without the prior written consent of the author of this
+e-mail is strictly prohibited. If you have
+received this email in error please delete it and notify the sender
+immediately. Before opening any mail and
+attachments please check them for viruses and defect.
+
+</quotepara></quote><quotepara depth="5">------------------------------------------------------------------------
+-----------------------------------------------
+</quotepara><quote depth="6"><quotefooter type="list-management" hash="16127185179961674046" depth="6">
+---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>users-help@maven.apache.org</email>
+
+</quotefooter></quote><quotefooter type="legalese" hash="10429125107659881483" depth="5">DISCLAIMER:
+<br/>----------------------------------------------------------------------------------------------------------------------- 
+The contents of this e-mail and any attachment(s) are confidential and intended <br/>for the named recipient(s) only. 
+It shall not attach any liability on the originator or HCL or its affiliates. <br/>Any views or opinions presented in 
+this email are solely those of the author and may not necessarily reflect the <br/>opinions of HCL or its affiliates. 
+Any form of reproduction, dissemination, copying, disclosure, modification, <br/>distribution and / or publication of 
+this message without the prior written consent of the author of this e-mail is <br/>strictly prohibited. If you have 
+received this email in error please delete it and notify the sender immediately.<br/>Before opening any mail and 
+attachments please check them for viruses and defect.
+<br/>----------------------------------------------------------------------------------------------------------------------- 
+
+</quotefooter><quotefooter type="list-management" hash="12315757008688440430" depth="5">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>users-help@maven.apache.org</email>
+
+</quotefooter></quote></quote></quote></quote></quote></body></message>

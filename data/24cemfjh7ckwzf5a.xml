@@ -1,0 +1,67 @@
+<message message-id="Pine.BSF.4.21.0107260848100.1599-100000@fenris.webthing.com" list="org.w3.www-validator" id="24cemfjh7ckwzf5a" type="development" date="2001-07-26T09:08:23+01:00" year="2001-01-01" year-month="2001-07-01" year-month-day="2001-07-26" thread-id="lgsqqx5gr3wwnxfg"><headers><envelope-from-line>From www-validator-request@tux.w3.org  Thu Jul 26 04:08:37 2001</envelope-from-line><from personal="Nick Kew" address="nick@webthing.com">Nick Kew &lt;nick@webthing.com&gt;</from><to personal="Terje Bless" address="link@pobox.com">Terje Bless &lt;link@pobox.com&gt;</to><cc personal="W3C Validator" address="www-validator@w3.org">W3C Validator &lt;www-validator@w3.org&gt;</cc><subject normal="charset parameter">Re: charset parameter</subject><received>from tux.w3.org (tux.w3.org [18.29.0.27])
+	by www19.w3.org (8.9.0/8.9.0) with ESMTP id EAA20382
+	for &lt;www-validator@www19.w3.org&gt;; Thu, 26 Jul 2001 04:08:37 -0400 (EDT)</received><received>from mail4.svr.pol.co.uk (mail4.svr.pol.co.uk [195.92.193.211])
+	by tux.w3.org (8.9.3/8.9.3) with ESMTP id EAA10369
+	for &lt;www-validator@w3.org&gt;; Thu, 26 Jul 2001 04:08:37 -0400</received><received>from modem-130.elrohir.dialup.pol.co.uk ([62.136.187.130] helo=jarl.webthing.com)
+	by mail4.svr.pol.co.uk with smtp (Exim 3.13 #0)
+	id 15PgCB-0006vM-00
+	for www-validator@w3.org; Thu, 26 Jul 2001 09:08:35 +0100</received><received>(qmail 1889 invoked from network); 26 Jul 2001 08:08:33 -0000</received><received>from fenris.webthing.com (@192.168.10.5)
+  by jarl.webthing.com with SMTP; 26 Jul 2001 08:08:33 -0000</received><received>(qmail 1623 invoked by uid 1000); 26 Jul 2001 08:08:23 -0000</received><received>from localhost (sendmail-bs@127.0.0.1)
+  by localhost with SMTP; 26 Jul 2001 08:08:23 -0000</received><date>Thu, 26 Jul 2001 09:08:23 +0100 (BST)</date><in-reply-to>&lt;20010726062553-r01010700-5602facd-0910-010c@192.168.1.6&gt;</in-reply-to><message-id>Pine.BSF.4.21.0107260848100.1599-100000@fenris.webthing.com</message-id><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII</content-type><x-archived-at>http://www.w3.org/mid/Pine.BSF.4.21.0107260848100.1599-100000@fenris.webthing.com</x-archived-at></headers><normalized-references><normalized-message-id>Pine.BSF.4.21.0107260848100.1599-100000@fenris.webthing.com</normalized-message-id><normalized-in-reply-to>20010726062553-r01010700-5602facd-0910-010c@192.168.1.6</normalized-in-reply-to></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">On Thu, 26 Jul 2001, Terje Bless wrote:
+
+</para><quote depth="1"><quotepara depth="1">On 25.07.01 at 14:03, Lloyd Wood &lt;<email>l.wood@eim.surrey.ac.uk</email>&gt; wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">I've always wondered how you define the charset for the line that defines
+the charset so that you can interpret it.
+</quotepara></quote><quotepara depth="1">
+For the HTTP header fields it's fairly simple; they're US-ASCII period. For
+that bogosity called "META" the waters are substansially more muddy.
+Especially since there aren't any clear rules for whether the charset in
+the META element overrides the one in the HTTP header... Or vice versa...
+</quotepara></quote><para depth="0">
+Surely that at least is clear: HTTP headers take precedence over
+&lt;META bogus="hot-air"&gt;?  Can't cite references OTTOMH (and not time
+to go looking just now), but ... 
+
+</para><quote depth="1"><quotepara depth="1">Or what this means for the case when the charset in the HTTP header is
+there by inference (as a default, not explicitly)...
+</quotepara></quote><para depth="0">
+But *ML rules don't apply to HTTP, so whence the conclusion that
+*anything* is implicit (as opposed to absent) in the headers?
+Sure, if we take the whole thing (*TP transmission + *ML document),
+then we can start to talk about undeclared charsets being implicit.
+
+</para><quote depth="1"><quotepara depth="1">"I'm sorry, but that Document Type is not in my Catalog. I cannot Validate
+this document"
+</quotepara></quote><para depth="0">
+We are happy with SYSTEM FPIs.  It's the No FPI case (or FPIs which
+are not accessible to the validator) you need to complain about.
+
+</para><quote depth="1"><quotepara depth="1"> and "I'm sorry, but that Character Encoding is not in my
+database. I cannot Validate this document."
+</quotepara></quote><para depth="0">
+Hmmm ..
+
+</para><para depth="0">Would it not be fair to say US-ASCII is a subset of every other encoding
+that might be considered as a sefault (certainly iso-8859-1 and utf-8)?
+so that a document that validates to it should always be fine?
+
+</para><quote depth="1"><quotepara depth="1"> or "I'm sorry, but I was unable
+to determine the Character Encoding based on available information. Please
+make your Character Encoding explicit in the HTTP headers".
+</quotepara></quote><para depth="0">
+Except if HTTP happens to be FTP or file upload, and there is no header...
+
+</para><quote depth="1"><quotepara depth="1">To "assume nothing" in this context means that if we cannot get a clear,
+unambigius, indication, we abort instead of guessing or, in this case,
+instead of interpreting the internally inconsistent specifications (that's
+the HTML-WG's job ;D).
+</quotepara></quote><para depth="0">
+Have you never had to do someone elses job because they made too
+much of a hash of it?  Not that I'm saying that's relevant here,
+but in general.
+
+</para><footer type="signature" hash="8276059291677772229" depth="0">-- 
+Nick Kew
+
+</footer></body></message>

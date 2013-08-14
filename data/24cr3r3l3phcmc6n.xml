@@ -1,0 +1,30 @@
+<message message-id="45FA4F8D.2070002@linux-kernel.at" list="com.redhat.axp-list" id="24cr3r3l3phcmc6n" type="general" date="2007-03-16T09:04:29+01:00" year="2007-01-01" year-month="2007-03-01" year-month-day="2007-03-16" thread-id="jssy3fbvozdhzmoq"><headers><envelope-from-line>From oliver@linux-kernel.at Fri Mar 16 04:04:49 2007</envelope-from-line><from personal="Oliver Falk" address="oliver@linux-kernel.at">Oliver Falk &lt;oliver@linux-kernel.at&gt;</from><to personal="Linux on Alpha processors" address="axp-list@redhat.com">Linux on Alpha processors &lt;axp-list@redhat.com&gt;</to><subject normal="Alpha Core 3">Re: Alpha Core 3</subject><received>from int-mx2.corp.redhat.com (nat-pool.util.phx.redhat.com
+	[10.8.5.200])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	l2G84mhL028790 for &lt;axp-list@listman.util.phx.redhat.com&gt;;
+	Fri, 16 Mar 2007 04:04:48 -0400</received><received>from mx2.redhat.com (mx2.redhat.com [10.255.15.25])
+	by int-mx2.corp.redhat.com (8.13.1/8.13.1) with ESMTP id l2G84lO6028246
+	for &lt;axp-list@redhat.com&gt;; Fri, 16 Mar 2007 04:04:47 -0400</received><received>from mail.linux-kernel.at (pils.linux-kernel.at [213.129.242.82])
+	by mx2.redhat.com (8.13.1/8.13.1) with ESMTP id l2G84jI5001434
+	for &lt;axp-list@redhat.com&gt;; Fri, 16 Mar 2007 04:04:45 -0400</received><received>from [127.0.0.1] (localhost [127.0.0.1]) (authenticated bits=0)
+	by mail.linux-kernel.at (8.14.0/8.14.0) with ESMTP id l2G84U1Q000905
+	for &lt;axp-list@redhat.com&gt;; Fri, 16 Mar 2007 09:04:30 +0100</received><message-id>45FA4F8D.2070002@linux-kernel.at</message-id><date>Fri, 16 Mar 2007 09:04:29 +0100</date><organization>Linux kernel Austria</organization><user-agent>Thunderbird 1.5.0.10 (X11/20070302)</user-agent><mime-version>1.0</mime-version><references>&lt;1173998235.3857.2.camel@localhost.localdomain&gt;	&lt;1173998998.3857.5.camel@localhost.localdomain&gt;
+	&lt;004d01c76768$8733d810$de00a8c0@srvr2&gt;</references><in-reply-to>&lt;004d01c76768$8733d810$de00a8c0@srvr2&gt;</in-reply-to><content-type>text/plain; charset=iso-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-scanned>ClamAV 0.90.1/2845/Fri Mar 16 08:49:01 2007 on
+	pils.linux-kernel.at</x-virus-scanned><x-virus-status>Clean</x-virus-status><x-lkernat-mailscanner-information>Please contact the ISP for more information</x-lkernat-mailscanner-information><x-lkernat-mailscanner>Found to be clean</x-lkernat-mailscanner><x-lkernat-mailscanner-spamcheck>not spam, SpamAssassin (not cached,
+	score=-4.399, required 5, ALL_TRUSTED -1.80, BAYES_00 -2.60)</x-lkernat-mailscanner-spamcheck><x-mailscanner-from>oliver@linux-kernel.at</x-mailscanner-from><x-redhat-spam-score>-1.44 </x-redhat-spam-score><x-loop>axp-list@redhat.com</x-loop><x-beenthere>axp-list@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>Linux on Alpha processors &lt;axp-list@redhat.com&gt;</reply-to><list-id>Linux on Alpha processors &lt;axp-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/axp-list&gt;,
+	&lt;mailto:axp-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/axp-list&gt;</list-archive><list-post>&lt;mailto:axp-list@redhat.com&gt;</list-post><list-help>&lt;mailto:axp-list-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/axp-list&gt;,
+	&lt;mailto:axp-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Fri, 16 Mar 2007 08:04:49 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>45FA4F8D.2070002@linux-kernel.at</normalized-message-id><normalized-in-reply-to>004d01c76768$8733d810$de00a8c0@srvr2</normalized-in-reply-to><normalized-reference>1173998235.3857.2.camel@localhost.localdomain</normalized-reference><normalized-reference>1173998998.3857.5.camel@localhost.localdomain</normalized-reference><normalized-reference>004d01c76768$8733d810$de00a8c0@srvr2</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Am 2007-03-16 02:14, Fernando Carnero schrieb:
+</para><quote depth="1"><quotepara depth="1">Sound like a ATI driver bug in 64 bits CPUs:
+<url>http://lists.debian.org/debian-x/2004/05/msg00753.html</url>
+<url>http://lists.debian.org/debian-ia64/2006/05/msg00050.html</url>
+<url>http://lists.freedesktop.org/archives/xorg/2005-December/011524.html</url>
+I don't know any patch for this, ATI cards are a unknown territory, all 
+problems with this cards (to much!) I resolved changin it by other 
+manufacturer, sory!
+</quotepara></quote><para depth="0">
+ATI and Linux. Horrible. It makes me even on i386/x86_64 cry out loud. 
+Bought a new Core 2 Duo with ATI Sapphire and the rest is... Argh. Don't 
+talk about it... 'Guess it's not any better with older ATI cards on Alpha.
+
+</para><para depth="0">-of
+</para></body></message>

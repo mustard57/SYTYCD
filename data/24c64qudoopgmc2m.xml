@@ -1,0 +1,31 @@
+<message message-id="cvszeev980125822@cvsserver" list="net.php.lists.php-cvs" id="24c64qudoopgmc2m" type="checkins" date="2001-01-22T01:10:22Z" year="2001-01-01" year-month="2001-01-01" year-month-day="2001-01-21" thread-id="xtj4twx2somc53zj"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Zeev Suraski" address="zeev@zend.com">Zeev Suraski &lt;zeev@zend.com&gt;</from><to personal="php-cvs@lists.php.net" address="php-cvs@lists.php.net">php-cvs@lists.php.net</to><subject normal="cvs: php4 /sapi/apache mod_php4.c">cvs: php4 /sapi/apache mod_php4.c  </subject><newsgroups>php.cvs</newsgroups><path>news.php.net</path><xref>news.php.net php.cvs:3726</xref><followup-to>php.internals</followup-to><return-path>php-cvs@lists.php.net</return-path><mailing-list>contact php-cvs-help@lists.php.net; run by ezmlm</mailing-list><delivered-to>mailing list php-cvs@lists.php.net</delivered-to><received>(qmail 23928 invoked from network); 22 Jan 2001 01:10:22 -0000</received><received>from unknown (HELO cvsserver) (127.0.0.1)
+  by localhost with SMTP; 22 Jan 2001 01:10:22 -0000</received><message-id>cvszeev980125822@cvsserver</message-id><date>Mon, 22 Jan 2001 01:10:22 -0000</date></headers><normalized-references><normalized-message-id>cvszeev980125822@cvsserver</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">zeev		Sun Jan 21 17:10:22 2001 EDT
+
+</para><para depth="0">  Modified files:              
+    /php4/sapi/apache	mod_php4.c 
+  Log:
+  Sigh.  Even less sleep than I thought :)  Really fix it this time.
+
+</para><para depth="0">Index: php4/sapi/apache/mod_php4.c
+diff -u php4/sapi/apache/mod_php4.c:1.86 php4/sapi/apache/mod_php4.c:1.87
+--- php4/sapi/apache/mod_php4.c:1.86	Sun Jan 21 17:08:28 2001
++++ php4/sapi/apache/mod_php4.c	Sun Jan 21 17:10:21 2001
+@@ -17,7 +17,7 @@
+    | PHP 4.0 patches by Zeev Suraski &lt;<email>zeev@zend.com</email>&gt;                      |
+    +----------------------------------------------------------------------+
+  */
+-/* $Id: mod_php4.c,v 1.86 2001/01/22 01:08:28 zeev Exp $ */
++/* $Id: mod_php4.c,v 1.87 2001/01/22 01:10:21 zeev Exp $ */
+
+</para><para depth="0"> #define NO_REGEX_EXTRA_H
+ #ifdef WIN32
+@@ -250,7 +250,7 @@
+ 	}
+ 	if (symbol_table
+&amp;&amp; !zend_hash_exists(symbol_table, "PATH_TRANSLATED", sizeof("PATH_TRANSLATED"))
+- &amp;&amp; zend_hash_find(symbol_table, "SCRIPT_FILENAME", sizeof("SCRIPT_FILENAME"), <br/>(void **) &amp;path_translated)=SUCCESS) { 
++ &amp;&amp; zend_hash_find(symbol_table, "SCRIPT_FILENAME", sizeof("SCRIPT_FILENAME"), <br/>(void **) &amp;path_translated)==SUCCESS) { 
+php_register_variable("PATH_TRANSLATED", Z_STRVAL_PP(path_translated), <br/>track_vars_array ELS_CC PLS_CC); 
+ 	}
+
+</para></body></message>

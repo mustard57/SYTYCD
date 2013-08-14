@@ -1,0 +1,45 @@
+<message message-id="200903011527.n21FRSX0016761@repoman.freebsd.org" list="org.freebsd.cvs-ports" id="24atw42f226b5pqb" type="checkins" date="2009-03-01T07:27:24.704863-08:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-01" thread-id="24atw42f226b5pqb"><headers><envelope-from-line>Sun Mar 01 07:27:47 2009</envelope-from-line><from personal="Martin Wilke" address="miwi@FreeBSD.org">Martin Wilke &lt;miwi@FreeBSD.org&gt;</from><to personal="ports-committers@FreeBSD.org" address="ports-committers@FreeBSD.org">ports-committers@FreeBSD.org</to><subject normal="cvs commit: ports/www/py-amf Makefile distinfo pkg-plist">cvs commit: ports/www/py-amf Makefile distinfo pkg-plist</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 292
+          for &lt;gerald.hunt.rosa@a.markmail.org&gt;;
+          Sun, 1 Mar 2009 07:27:47 -0800 (GMT-08:00)</received><received>from mx2.freebsd.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 5D8773B300B8
+	for &lt;gerald.hunt.rosa@a.markmail.org&gt;; Sun,  1 Mar 2009 07:27:24 -0800 (PST)</received><received>from hub.freebsd.org (hub.freebsd.org [IPv6:2001:4f8:fff6::36])
+	by mx2.freebsd.org (Postfix) with ESMTP id 5165E161580;
+	Sun,  1 Mar 2009 15:27:36 +0000 (UTC)
+	(envelope-from owner-cvs-ports@freebsd.org)</received><received>from hub.freebsd.org (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with ESMTP id B9056106568A;
+	Sun,  1 Mar 2009 15:27:35 +0000 (UTC)
+	(envelope-from owner-cvs-ports@freebsd.org)</received><delivered-to>cvs-ports@FreeBSD.org</delivered-to><received>from mx1.freebsd.org (mx1.freebsd.org [IPv6:2001:4f8:fff6::34])
+	by hub.freebsd.org (Postfix) with ESMTP id 74195106566B;
+	Sun,  1 Mar 2009 15:27:28 +0000 (UTC)
+	(envelope-from miwi@FreeBSD.org)</received><received>from repoman.freebsd.org (repoman.freebsd.org
+	[IPv6:2001:4f8:fff6::29])
+	by mx1.freebsd.org (Postfix) with ESMTP id 49FDC8FC0A;
+	Sun,  1 Mar 2009 15:27:28 +0000 (UTC)
+	(envelope-from miwi@FreeBSD.org)</received><received>from repoman.freebsd.org (localhost [127.0.0.1])
+	by repoman.freebsd.org (8.14.3/8.14.3) with ESMTP id n21FRSCg016762;
+	Sun, 1 Mar 2009 15:27:28 GMT (envelope-from miwi@repoman.freebsd.org)</received><received>(from miwi@localhost)
+	by repoman.freebsd.org (8.14.3/8.14.3/Submit) id n21FRSX0016761;
+	Sun, 1 Mar 2009 15:27:28 GMT (envelope-from miwi)</received><message-id>200903011527.n21FRSX0016761@repoman.freebsd.org</message-id><date>Sun, 1 Mar 2009 15:27:28 +0000 (UTC)</date><x-freebsd-cvs-branch>HEAD</x-freebsd-cvs-branch><x-beenthere>cvs-ports@freebsd.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>CVS commit messages for the ports tree &lt;cvs-ports.freebsd.org&gt;</list-id><list-unsubscribe>&lt;http://lists.freebsd.org/mailman/listinfo/cvs-ports&gt;,
+	&lt;mailto:cvs-ports-request@freebsd.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.freebsd.org/pipermail/cvs-ports&gt;</list-archive><list-post>&lt;mailto:cvs-ports@freebsd.org&gt;</list-post><list-help>&lt;mailto:cvs-ports-request@freebsd.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.freebsd.org/mailman/listinfo/cvs-ports&gt;,
+	&lt;mailto:cvs-ports-request@freebsd.org?subject=subscribe&gt;</list-subscribe><sender>owner-cvs-ports@freebsd.org</sender><errors-to>owner-cvs-ports@freebsd.org</errors-to></headers><normalized-references><normalized-message-id>200903011527.n21FRSX0016761@repoman.freebsd.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">miwi        2009-03-01 15:27:28 UTC
+
+</para><para depth="0">  FreeBSD ports repository
+
+</para><para depth="0">  Modified files:
+    www/py-amf           Makefile distinfo pkg-plist 
+  Log:
+  - Update to 0.4.1
+
+</para><para depth="0">  PR:             132210
+  Submitted by:   "Junji NAKANISHI" &lt;<email>jun-g@daemonfreaks.com</email>&gt; (maintainer)
+
+</para><para depth="0">  Revision  Changes    Path
+  1.3       +1 -1      ports/www/py-amf/Makefile
+  1.3       +3 -3      ports/www/py-amf/distinfo
+  1.3       +7 -0      ports/www/py-amf/pkg-plist
+</para><footer type="list-management" depth="0">_______________________________________________
+<email>cvs-ports@freebsd.org</email> mailing list
+<url>http://lists.freebsd.org/mailman/listinfo/cvs-ports</url>
+To unsubscribe, send any mail to "<email>cvs-ports-unsubscribe@freebsd.org</email>"
+</footer></body></message>

@@ -1,0 +1,20 @@
+<message message-id="200006271023.DAA19274@freefall.freebsd.org" list="org.freebsd.cvs-all" id="24bydosh5yzd4hh6" type="checkins" date="2000-06-27T03:23:54-07:00" year="2000-01-01" year-month="2000-06-01" year-month-day="2000-06-27" thread-id="24bydosh5yzd4hh6"><headers><envelope-from-line>From owner-cvs-all  Tue Jun 27  3:23:59 2000</envelope-from-line><from personal="Alexander Langer" address="alex@FreeBSD.org">Alexander Langer &lt;alex@FreeBSD.org&gt;</from><to personal="cvs-committers@FreeBSD.org" address="cvs-committers@FreeBSD.org">cvs-committers@FreeBSD.org</to><subject normal="cvs commit: ports/audio/xcdplayer/patches patch-cdrom-freebsd">cvs commit: ports/audio/xcdplayer/patches patch-cdrom-freebsd</subject><delivered-to>cvs-all@freebsd.org</delivered-to><received>from freefall.freebsd.org (freefall.FreeBSD.ORG [204.216.27.21])
+	by hub.freebsd.org (Postfix) with ESMTP
+	id 2E71337B77A; Tue, 27 Jun 2000 03:23:56 -0700 (PDT)
+	(envelope-from alex@FreeBSD.org)</received><received>(from alex@localhost)
+	by freefall.freebsd.org (8.9.3/8.9.2) id DAA19274;
+	Tue, 27 Jun 2000 03:23:55 -0700 (PDT)
+	(envelope-from alex@FreeBSD.org)</received><message-id>200006271023.DAA19274@freefall.freebsd.org</message-id><date>Tue, 27 Jun 2000 03:23:54 -0700 (PDT)</date><x-freebsd-cvs-branch>HEAD</x-freebsd-cvs-branch><sender>owner-cvs-all@FreeBSD.ORG</sender><precedence>bulk</precedence><x-loop>FreeBSD.ORG</x-loop></headers><normalized-references><normalized-message-id>200006271023.DAA19274@freefall.freebsd.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">alex        2000/06/27 03:23:54 PDT
+
+</para><para depth="0">  Added files:
+    audio/xcdplayer/patches patch-cdrom-freebsd 
+  Log:
+  Fix for phk's bio changes (&gt;= 500003)
+
+</para><para depth="0">  PR:		19454
+  Submitted by:	Mike Meyer &lt;<email>mwm@mired.org</email>&gt;
+
+</para><para depth="0">To Unsubscribe: send mail to <email>majordomo@FreeBSD.org</email>
+with "unsubscribe cvs-all" in the body of the message
+
+</para></body></message>

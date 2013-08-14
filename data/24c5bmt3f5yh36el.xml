@@ -1,0 +1,93 @@
+<message message-id="17808417.88261283989952545.JavaMail.jira@thor" list="org.apache.lucene.java-dev" id="24c5bmt3f5yh36el" type="bugs" date="2010-09-08T19:52:32-04:00" year="2010-01-01" year-month="2010-09-01" year-month-day="2010-09-08" thread-id="24c5bmt3f5yh36el"><headers><envelope-from-line>Wed Sep 08 15:52:58 2010</envelope-from-line><from personal="Lance Norskog (JIRA)" address="jira@apache.org">"Lance Norskog (JIRA)" &lt;jira@apache.org&gt;</from><to personal="dev@lucene.apache.org" address="dev@lucene.apache.org">dev@lucene.apache.org</to><subject normal="[jira] Created: (SOLR-2115) DataImportHandler has two parameters for config file and neither one works">[jira] Created: (SOLR-2115) DataImportHandler has two parameters for config file and neither one works</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 758
+          for &lt;juliette.rosa.rowe@a.markmail.org&gt;;
+          Wed, 8 Sep 2010 15:52:58 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id D925929082FA
+	for &lt;juliette.rosa.rowe@a.markmail.org&gt;; Wed,  8 Sep 2010 16:52:34 -0700 (PDT)</received><received>(qmail 67190 invoked by uid 500); 8 Sep 2010 23:52:57 -0000</received><mailing-list>contact dev-help@lucene.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@lucene.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@lucene.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@lucene.apache.org&gt;</list-post><list-id>&lt;dev.lucene.apache.org&gt;</list-id><reply-to>dev@lucene.apache.org</reply-to><delivered-to>mailing list dev@lucene.apache.org</delivered-to><received>(qmail 67183 invoked by uid 99); 8 Sep 2010 23:52:56 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 08 Sep 2010 23:52:56 +0000</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.22] (HELO thor.apache.org) (140.211.11.22)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 08 Sep 2010 23:52:54 +0000</received><received>from thor (localhost [127.0.0.1])
+	by thor.apache.org (8.13.8+Sun/8.13.8) with ESMTP id o88NqWc5011800
+	for &lt;dev@lucene.apache.org&gt;; Wed, 8 Sep 2010 23:52:32 GMT</received><message-id>17808417.88261283989952545.JavaMail.jira@thor</message-id><date>Wed, 8 Sep 2010 19:52:32 -0400 (EDT)</date><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-jira-fingerprint>30527f35849b9dde25b450d4833f0394</x-jira-fingerprint><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>17808417.88261283989952545.JavaMail.jira@thor</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">DataImportHandler has two parameters for config file and neither one works
+</para><para depth="0">--------------------------------------------------------------------------
+
+</para><para depth="0">                 Key: SOLR-2115
+                 URL: <url>https://issues.apache.org/jira/browse/SOLR-2115</url>
+             Project: Solr
+          Issue Type: Bug
+          Components: contrib - DataImportHandler
+    Affects Versions: 1.4.1, 1.4.2, 3.1, 4.0
+            Reporter: Lance Norskog
+             Fix For: 1.4.2, 3.1, 4.0
+
+</para><para depth="0">The DataImportHandler has two URL parameters for defining the data-config.xml<br/>file to be used for the command. 'config' is used in some places and<br/>'dataConfig' is used in other places.
+
+</para><para depth="0">'config' does not work from an HTTP request. However, if it is in the "defaults"<br/>section of the DIH &lt;requestHandler&gt; definition, it works. If the 'config'<br/>parameter is used in an HTTP request, the DIH uses the default in the<br/>&lt;requestHandler&gt; anyway.
+
+</para><para depth="0">This is the exception stack recieved by the client if there is no default. (This<br/>is the 3.X branch.)
+
+</para><para depth="0">&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/&gt;
+&lt;title&gt;Error 500 &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;h2&gt;HTTP ERROR: 500&lt;/h2&gt;&lt;pre&gt;null
+
+</para><para depth="0">java.lang.NullPointerException
+	at<br/>org.apache.solr.handler.dataimport.DataImportHandler.handleRequestBody(DataImportHandler.java:146)
+	at<br/>org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:131)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1316)
+	at<br/>org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:338)
+	at<br/>org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:241)
+	at<br/>org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1089)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:365)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:712)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:405)
+	at<br/>org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:211)
+	at<br/>org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:139)
+	at org.mortbay.jetty.Server.handle(Server.java:285)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:502)
+	at<br/>org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:821)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:513)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:208)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:378)
+	at<br/>org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:226)
+	at<br/>org.mortbay.thread.BoundedThreadPool$PoolThread.run(BoundedThreadPool.java:442)
+&lt;/pre&gt;
+&lt;p&gt;RequestURI=/solr/db/dataimport&lt;/p&gt;&lt;p&gt;&lt;i&gt;&lt;small&gt;&lt;a<br/>href="<url>http://jetty.mortbay.org/</url>"&gt;Powered by Jetty://&lt;/a&gt;&lt;/small&gt;&lt;/i&gt;&lt;/p&gt;&lt;br/&gt;
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+&lt;br/&gt;                                                
+
+</para><para depth="0">&lt;/body&gt;
+&lt;/html&gt;
+
+</para><footer type="signature" depth="0" hash="12364841950400781264">-- 
+This message is automatically generated by JIRA.
+-
+You can reply to this email to add a comment to the issue online.
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@lucene.apache.org</email>
+For additional commands, e-mail: <email>dev-help@lucene.apache.org</email>
+
+</footer></body></message>

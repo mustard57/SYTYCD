@@ -1,0 +1,56 @@
+<message message-id="22946726.1244676896447.JavaMail.jira@cloud.prod.atl2.jboss.com" list="org.jboss.lists.jboss-jira" id="24cser6i64d5qnwh" type="bugs" date="2009-06-10T15:34:39.481632-08:00" year="2009-01-01" year-month="2009-06-01" year-month-day="2009-06-10" thread-id="imqcquhnjfgfhcdx"><headers><envelope-from-line>Wed Jun 10 15:35:02 2009</envelope-from-line><from personal="Scott M Stark (JIRA)" address="jira-events@lists.jboss.org">"Scott M Stark (JIRA)" &lt;jira-events@lists.jboss.org&gt;</from><to personal="jboss-jira@lists.jboss.org" address="jboss-jira@lists.jboss.org">jboss-jira@lists.jboss.org</to><subject normal="[jboss-jira] [JBoss JIRA] Resolved: (JBAS-7010) JndiLoginInitialContextFactory is not creating expected SecurityContext">[jboss-jira] [JBoss JIRA] Resolved: (JBAS-7010) JndiLoginInitialContextFactory is not creating expected SecurityContext</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 704
+          for &lt;judith.stephens.joseph@a.markmail.org&gt;;
+          Wed, 10 Jun 2009 15:35:02 -0800 (GMT-08:00)</received><received>from chief.prod.atl2.jboss.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 1785E29082D3
+	for &lt;judith.stephens.joseph@a.markmail.org&gt;; Wed, 10 Jun 2009 16:34:39 -0700 (PDT)</received><received>from chief.prod.atl2.jboss.com (localhost.localdomain [127.0.0.1])
+	by chief.prod.atl2.jboss.com (8.13.1/8.13.1) with ESMTP id n5ANjf7W003833
+	for &lt;judith.stephens.joseph@a.markmail.org&gt;; Wed, 10 Jun 2009 19:45:41 -0400</received><received>from cloud.prod.atl2.jboss.com (cloud.prod.atl2.jboss.com
+	[64.74.196.157])
+	by chief.prod.atl2.jboss.com (8.13.1/8.13.1) with ESMTP id
+	n5ANjZD3003829
+	for &lt;jboss-jira@lists.jboss.org&gt;; Wed, 10 Jun 2009 19:45:35 -0400</received><received>from cloud.prod.atl2.jboss.com (localhost.localdomain [127.0.0.1])
+	by cloud.prod.atl2.jboss.com (8.13.1/8.13.1) with ESMTP id
+	n5ANYu8s031421
+	for &lt;jboss-jira@lists.jboss.org&gt;; Wed, 10 Jun 2009 19:34:56 -0400</received><message-id>22946726.1244676896447.JavaMail.jira@cloud.prod.atl2.jboss.com</message-id><date>Wed, 10 Jun 2009 19:34:56 -0400 (EDT)</date><in-reply-to>&lt;2519246.1244676656466.JavaMail.jira@cloud.prod.atl2.jboss.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><precedence>bulk</precedence><x-virus-scanned>ClamAV version 0.88.2,
+	clamav-milter version 0.88.2 on chief.prod.atl2.jboss.com</x-virus-scanned><x-virus-status>Clean</x-virus-status><x-beenthere>jboss-jira@lists.jboss.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><list-id>JBoss JIRA notifications &lt;jboss-jira.lists.jboss.org&gt;</list-id><list-unsubscribe>&lt;https://lists.jboss.org/mailman/listinfo/jboss-jira&gt;,
+	&lt;mailto:jboss-jira-request@lists.jboss.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.jboss.org/pipermail/jboss-jira&gt;</list-archive><list-post>&lt;mailto:jboss-jira@lists.jboss.org&gt;</list-post><list-help>&lt;mailto:jboss-jira-request@lists.jboss.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.jboss.org/mailman/listinfo/jboss-jira&gt;,
+	&lt;mailto:jboss-jira-request@lists.jboss.org?subject=subscribe&gt;</list-subscribe><sender>jboss-jira-bounces@lists.jboss.org</sender><errors-to>jboss-jira-bounces@lists.jboss.org</errors-to></headers><normalized-references><normalized-message-id>22946726.1244676896447.JavaMail.jira@cloud.prod.atl2.jboss.com</normalized-message-id><normalized-in-reply-to>2519246.1244676656466.JavaMail.jira@cloud.prod.atl2.jboss.com</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+     [<br/><url>https://jira.jboss.org/jira/browse/JBAS-7010?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url><br/>]
+
+</para><para depth="0">Scott M Stark resolved JBAS-7010.
+</para><para depth="0">---------------------------------
+
+</para><para depth="0">    Fix Version/s: JBossAS-5.2.0.Beta1
+       Resolution: Done
+
+</para><para depth="0">I updated the JndiLoginInitialContextFactory security actions to be consistent<br/>with the ClientLoginModule
+
+</para><quote depth="1"><quotepara depth="1">JndiLoginInitialContextFactory is not creating expected SecurityContext
+</quotepara><quotepara depth="1">-----------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: JBAS-7010
+                URL: <url>https://jira.jboss.org/jira/browse/JBAS-7010</url>
+            Project: JBoss Application Server
+         Issue Type: Bug
+     Security Level: Public(Everyone can see) 
+         Components: Naming, Security
+   Affects Versions: JBossAS-5.1.0.GA
+           Reporter: Scott M Stark
+           Assignee: Scott M Stark
+            Fix For: JBossAS-5.2.0.Beta1
+
+</quotepara><quotepara depth="1">Related to JBAS-6982, a SecurityContext is not resulting from the<br/>JndiLoginInitialContextFactory operation. The result is that a SecurityContext<br/>with a null principal and credential ends up being created by the<br/>org.jboss.ejb3.security.client.SecurityClientInterceptor even though there is a<br/>non-null principal and credential available.
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="2152092100150435196">-- 
+This message is automatically generated by JIRA.
+-
+If you think it was sent incorrectly contact one of the administrators:<br/><url>https://jira.jboss.org/jira/secure/Administrators.jspa</url>
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer><footer type="list-management" depth="0">_______________________________________________
+jboss-jira mailing list
+<email>jboss-jira@lists.jboss.org</email>
+<url>https://lists.jboss.org/mailman/listinfo/jboss-jira</url>
+</footer></body></message>

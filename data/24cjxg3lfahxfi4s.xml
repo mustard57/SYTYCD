@@ -1,0 +1,67 @@
+<message message-id="44BAC74C.10705@Sun.COM" list="org.opensolaris.docs-discuss" id="24cjxg3lfahxfi4s" type="development" date="2006-07-16T16:10:11" year="2006-01-01" year-month="2006-07-01" year-month-day="2006-07-16" thread-id="347lava6hiefw65d"><headers><envelope-from-line>From Virginia.Wray@Sun.COM  Sun Jul 16 16:10:04 2006</envelope-from-line><from personal="Virginia Wray" address="Virginia.Wray@Sun.COM">Virginia Wray &lt;Virginia.Wray@Sun.COM&gt;</from><subject normal="[docs-discuss] Re: starter kit doc review request">[docs-discuss] Re: starter kit doc review request</subject><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.8 required=5.0 tests=BAYES_00,INVALID_DATE,
+	MISSING_HEADERS,NO_RECEIVED,NO_RELAYS autolearn=disabled version=3.2.4</x-spam-status><date>Sun Jul 16 16:10:11 2006</date><in-reply-to>&lt;21057007.1153026202765.JavaMail.suncom@oss1&gt;</in-reply-to><references>&lt;21057007.1153026202765.JavaMail.suncom@oss1&gt;</references><message-id>44BAC74C.10705@Sun.COM</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>44BAC74C.10705@Sun.COM</normalized-message-id><normalized-in-reply-to>21057007.1153026202765.JavaMail.suncom@oss1</normalized-in-reply-to><normalized-reference>21057007.1153026202765.JavaMail.suncom@oss1</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+Pradhap Devarajan wrote On 07/15/06 23:02,:
+
+</para><quote depth="1"><quotepara depth="1">Michelle,
+      Couple of things which I had noted down
+
+</quotepara><quotepara depth="1">* In the prequsite list it would good be, if we explicitly mention that Solaris<br/>requires a primary partition for installation. Because people try to install<br/>Solaris on multiboot machine half-way through they recognize that Solaris<br/>requires a primary partition so they have to start all over again which is bad.
+
+</quotepara><quotepara depth="1">* In the re-partition section
+ <url>http://www.opensolaris.org/os/community/documentation/reviews/chapter1/ch01s03.html</url>
+
+</quotepara><quotepara depth="1">- I d'nt see why we need the steps 1-5.  Is it just to know the current parition<br/>layout ??
+
+</quotepara></quote><para depth="0">Pradhap is correct. When Dave and I put together the presentation for 
+the user group, we wanted to show them how the disk was partitioned 
+before we started the procedure, so we showed them what the Windows view 
+of the disk was first. Those steps have no bearing on actually 
+partitioning the drive.  You could start with  step 6, then step 1 and 
+proceed with step 7, etc.... (renumbering them, of course).
+
+</para><para depth="0">ginnie
+
+</para><quote depth="1"><quotepara depth="1">- In the step 6, It would be better if we mention that burn the system-rescuecd<br/>iso image and reboot the system. Ask user to make sure that (CD/DVD)rom is first<br/>boot device so that it boots up with system-rescudecd.
+
+</quotepara><quotepara depth="1">- Also we need to emphasize the repartition section aim is to create a free<br/>Primary partition.
+
+</quotepara><quotepara depth="1">- The link "Home" in end of the page is broken points to wrong location. And the<br/>next link is blank it would good if it points to "Installing the OpenSolaris<br/>Software "
+
+</quotepara><quotepara depth="1">* In the Installing the OpenSolaris Software section
+<url>http://www.opensolaris.org/os/community/documentation/reviews/chapter2/</url>
+-  There are lots of  typo "i install" this section need to replace those
+-  Link "Home" at the bottom of the page is pointing to a wrong location
+-  It would be better to have "Next" link
+
+</quotepara><quotepara depth="1">* In "Configuring Xorg for nVidia for Solaris" section
+<url>http://www.opensolaris.org/os/community/documentation/reviews/chapter3/</url>
+
+</quotepara><quotepara depth="1">- It says "configuring wireless networking" which is not related to this<br/>section.
+
+</quotepara><quotepara depth="1">- It would be better to add a trouble shooting tip:-
+             Sometime after the installation of Solaris at first boot, if<br/>Xorg/Xsun not configured properly dtlogin goes for a toss so user need to reboot<br/>the machine with "-s"  option from grub  to land into "Single user" mode and<br/>then start installation.
+
+</quotepara><quotepara depth="1">* In "Configuring Networking" section
+ <url>http://www.opensolaris.org/os/community/documentation/reviews/chapter3/ch01s03.html</url>
+
+</quotepara><quotepara depth="1">-  It would be good to add links for Ginetmenu and Netprof for wireless.
+-  For ethernet card if user need to change the IP address/Hostname he has no<br/>clue where to start. So it would be better to add "sys-unconfig" command so that<br/>users need to runs and reboot the machine for setting it up.
+
+</quotepara><quotepara depth="1">regards,
+Pradhap.D
+
+</quotepara><quotefooter type="signature" depth="1" hash="10942658658140775282">--
+Sun Microsystems (I) Pvt Ltd
+<url>http://blogs.sun.com/pradhap</url>
+
+</quotefooter><quotepara depth="1">This message posted from opensolaris.org
+</quotepara><quotefooter type="list-management" depth="1">_______________________________________________
+docs-discuss mailing list
+<email>docs-discuss@opensolaris.org</email>
+
+</quotefooter></quote><footer type="noise" depth="0">-- 
+
+</footer><para depth="0">       	Ginnie
+
+</para></body></message>

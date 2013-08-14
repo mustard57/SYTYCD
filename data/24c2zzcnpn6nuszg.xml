@@ -1,0 +1,28 @@
+<message message-id="068.c6cf95511eb88537ea6c47be8eeb7018@propel.phpdb.org" list="org.tigris.propel.issues" id="24c2zzcnpn6nuszg" type="bugs" date="2005-09-17T13:51:05Z" year="2005-01-01" year-month="2005-09-01" year-month-day="2005-09-17" thread-id="bexmz4pxjyho4437"><headers><envelope-from-line>From issues@propel.tigris.org Sat Sep 17 08:32:25 2005</envelope-from-line><from personal="Propel" address="trac@propel.phpdb.org">Propel &lt;trac@propel.phpdb.org&gt;</from><to personal="issues@propel.tigris.org" address="issues@propel.tigris.org">issues@propel.tigris.org</to><subject normal="[Propel] #91: Foreign table lookups not cached?">Re: [Propel] #91: Foreign table lookups not cached?</subject><return-path>trac@propel.phpdb.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.6 required=5.0 tests=BAYES_00,MIME_BASE64_BLANKS
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact issues-help@propel.tigris.org; run by ezmlm</mailing-list><delivered-to>mailing list issues@propel.tigris.org</delivered-to><delivered-to>moderator for issues@propel.tigris.org</delivered-to><received>(qmail 32356 invoked from network); 17 Sep 2005 13:51:05 -0000</received><received>from mail23.sea5.speakeasy.net (69.17.117.25)
+  by sc79.sfo.collab.net with SMTP; 17 Sep 2005 13:51:05 -0000</received><received>(qmail 30968 invoked from network); 17 Sep 2005 13:51:05 -0000</received><received>from velum.net (HELO [192.168.3.10]) ([66.92.168.124])
+          (envelope-sender &lt;trac@propel.phpdb.org&gt;)
+          by mail23.sea5.speakeasy.net (qmail-ldap-1.03) with SMTP
+          for &lt;issues@propel.tigris.org&gt;; 17 Sep 2005 13:51:05 -0000</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>base64</content-transfer-encoding><x-mailer>Trac 0.8.1, by Edgewall Software</x-mailer><x-trac-version>0.8.1</x-trac-version><x-trac-project>Propel</x-trac-project><x-url>http://propel.phpdb.org</x-url><sender>trac@propel.phpdb.org</sender><date>Sat, 17 Sep 2005 13:51:05 +0000</date><x-trac-ticket-url>http://propel.phpdb.org/trac/ticket/91</x-trac-ticket-url><message-id>068.c6cf95511eb88537ea6c47be8eeb7018@propel.phpdb.org</message-id><references>&lt;059.33d038ff76dfe116c218e293d1d6bfc2@propel.phpdb.org&gt;</references><x-trac-ticket-id>91</x-trac-ticket-id><in-reply-to>&lt;059.33d038ff76dfe116c218e293d1d6bfc2@propel.phpdb.org&gt;</in-reply-to></headers><normalized-references><normalized-message-id>068.c6cf95511eb88537ea6c47be8eeb7018@propel.phpdb.org</normalized-message-id><normalized-in-reply-to>059.33d038ff76dfe116c218e293d1d6bfc2@propel.phpdb.org</normalized-in-reply-to><normalized-reference>059.33d038ff76dfe116c218e293d1d6bfc2@propel.phpdb.org</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">#91: Foreign table lookups not cached?
+-----------------------+----------------------------------------------------
+       Id:  91         |      Status:  closed                  
+Component:  Generator  |    Modified:  Sat Sep 17 09:51:04 2005
+ Severity:  normal     |   Milestone:  1.2                     
+ Priority:  normal     |     Version:  devel                   
+    Owner:  sven       |    Reporter:  sven                    
+-----------------------+----------------------------------------------------
+Changes (by david):
+
+</para><para depth="0">  * resolution:  =&gt; fixed
+  * status:  new =&gt; closed
+
+</para><para depth="0">Comment:
+
+</para><para depth="0"> Fixed in changeset:201
+
+</para><footer type="signature" depth="0" hash="5842129776637633000">-- 
+Ticket URL: &lt;<url>http://propel.phpdb.org/trac/ticket/91</url>&gt;
+Propel &lt;<url>http://propel.phpdb.org</url>&gt;
+Object persistence and query tool for PHP5.
+</footer></body></message>

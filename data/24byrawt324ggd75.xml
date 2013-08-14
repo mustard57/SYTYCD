@@ -1,0 +1,17 @@
+<message message-id="EB0A327048144442AFB15FCE18DC96C701C469FE@RED-MSG-31.redmond.corp.microsoft.com" list="org.w3.public-qt-comments" id="24byrawt324ggd75" type="general" date="2004-01-19T11:35:35-08:00" year="2004-01-01" year-month="2004-01-01" year-month-day="2004-01-19" thread-id="24byrawt324ggd75"><headers><envelope-from-line>From owner-public-qt-comments@dr-nick.w3.org  Mon Jan 19 14:39:29 2004</envelope-from-line><from personal="Michael Rys" address="mrys@microsoft.com">Michael Rys &lt;mrys@microsoft.com&gt;</from><to personal="public-qt-comments@w3.org" address="public-qt-comments@w3.org">public-qt-comments@w3.org</to><subject normal="[DM] MS-DM-LC2-078">[DM] MS-DM-LC2-078</subject><return-path>owner-public-qt-comments@dr-nick.w3.org</return-path><x-original-to>public-qt-comments@frink.w3.org</x-original-to><delivered-to>public-qt-comments@frink.w3.org</delivered-to><received>from dr-nick.w3.org (dr-nick.w3.org [18.29.1.73])
+	by frink.w3.org (Postfix) with ESMTP id 6A522A0943
+	for &lt;public-qt-comments@frink.w3.org&gt;; Mon, 19 Jan 2004 14:39:02 -0500 (EST)</received><received>by dr-nick.w3.org (Postfix)
+	id BD73013FBF; Mon, 19 Jan 2004 14:35:43 -0500 (EST)</received><delivered-to>public-qt-comments@w3.org</delivered-to><received>from mail1.microsoft.com (mail1.microsoft.com [131.107.3.125])
+	by dr-nick.w3.org (Postfix) with ESMTP id 643B613F4A
+	for &lt;public-qt-comments@w3.org&gt;; Mon, 19 Jan 2004 14:35:43 -0500 (EST)</received><received>from inet-vrs-01.redmond.corp.microsoft.com ([157.54.8.27]) by mail1.microsoft.com with Microsoft SMTPSVC(6.0.3790.0);
+	 Mon, 19 Jan 2004 11:35:24 -0800</received><received>from 157.54.6.150 by inet-vrs-01.redmond.corp.microsoft.com (InterScan E-Mail VirusWall NT); Mon, 19 Jan 2004 11:35:42 -0800</received><received>from RED-MSG-31.redmond.corp.microsoft.com ([157.54.47.231]) by inet-hub-05.redmond.corp.microsoft.com with Microsoft SMTPSVC(6.0.3790.0);
+	 Mon, 19 Jan 2004 11:35:41 -0800</received><x-mimeole>Produced By Microsoft Exchange V6.5.6944.0</x-mimeole><content-class>urn:content-classes:message</content-class><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="us-ascii"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><date>Mon, 19 Jan 2004 11:35:35 -0800</date><message-id>EB0A327048144442AFB15FCE18DC96C701C469FE@RED-MSG-31.redmond.corp.microsoft.com</message-id><x-ms-has-attach/><x-ms-tnef-correlator/><thread-topic>[DM] MS-DM-LC2-078</thread-topic><thread-index>AcPew2iTLr78UyXyTWmOitzEYb454A==</thread-index><x-originalarrivaltime>19 Jan 2004 19:35:41.0523 (UTC) FILETIME=[6C67B230:01C3DEC3]</x-originalarrivaltime><x-archived-at>http://www.w3.org/mid/EB0A327048144442AFB15FCE18DC96C701C469FE@RED-MSG-31.redmond.corp.microsoft.com</x-archived-at></headers><normalized-references><normalized-message-id>EB0A327048144442AFB15FCE18DC96C701C469FE@RED-MSG-31.redmond.corp.microsoft.com</normalized-message-id><normalized-thread-index>AcPew2iTLr78UyXyTWmOitzEYb454A</normalized-thread-index></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;us-ascii&quot;"><para depth="0">
+Section 7.1.1 xdt:untypedAny	
+Technical	
+
+</para><para depth="0">Definition needs to adjust to deal with partially validated content. See
+<url>http://lists.w3.org/Archives/Member/w3c-xsl-query/2004Jan/0033.html</url>
+(member-only).
+
+</para></body></message>

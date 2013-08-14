@@ -1,0 +1,36 @@
+<message message-id="049.16349e44efd467e2d71e3e36a8c622b8@osgeo.org" list="org.osgeo.lists.grass-dev" id="24c5ez6fvmi6ulel" type="development" date="2009-12-18T20:40:10.514834-08:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-18" thread-id="h7p3ssixg6xmf2tq"><headers><envelope-from-line>Fri Dec 18 20:40:33 2009</envelope-from-line><from personal="GRASS GIS" address="trac@osgeo.org">GRASS GIS &lt;trac@osgeo.org&gt;</from><to personal="undisclosed-recipients:;" address="undisclosed-recipients:;">undisclosed-recipients:;</to><subject normal="[GRASS-dev] Re: [GRASS GIS] #693: wxGUI menus: i.ortho.photo locks up GUI">[GRASS-dev] Re: [GRASS GIS] #693: wxGUI menus: i.ortho.photo locks up GUI</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 48
+          for &lt;deann.vang.luna@a.markmail.org&gt;;
+          Fri, 18 Dec 2009 20:40:33 -0800 (GMT-08:00)</received><received>from lists.osgeo.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 1E8BC2908182
+	for &lt;deann.vang.luna@a.markmail.org&gt;; Fri, 18 Dec 2009 20:40:10 -0800 (PST)</received><received>from osgeo1.osgeo.org (localhost.localdomain [127.0.0.1])
+	by lists.osgeo.org (Postfix) with ESMTP id 7482EE014BF;
+	Fri, 18 Dec 2009 23:40:32 -0500 (EST)</received><x-original-to>grass-dev@lists.osgeo.org</x-original-to><delivered-to>grass-dev@lists.osgeo.org</delivered-to><received>from osgeo1.osgeo.org (localhost.localdomain [127.0.0.1])
+	by lists.osgeo.org (Postfix) with ESMTP id 950E0E00058;
+	Fri, 18 Dec 2009 23:40:29 -0500 (EST)</received><mime-version>1.0</mime-version><x-trac-version>0.10.3.1</x-trac-version><x-mailer>Trac 0.10.3.1, by Edgewall Software</x-mailer><x-trac-project>GRASS GIS</x-trac-project><date>Sat, 19 Dec 2009 04:40:29 -0000</date><x-url>http://grass.osgeo.org</x-url><x-trac-ticket-url>https://trac.osgeo.org/grass/ticket/693#comment:34</x-trac-ticket-url><message-id>049.16349e44efd467e2d71e3e36a8c622b8@osgeo.org</message-id><references>&lt;040.5680b2956c69f8f6b1a0e5bcc7be62bf@osgeo.org&gt;</references><x-trac-ticket-id>693</x-trac-ticket-id><in-reply-to>&lt;040.5680b2956c69f8f6b1a0e5bcc7be62bf@osgeo.org&gt;</in-reply-to><x-beenthere>grass-dev@lists.osgeo.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><reply-to>grass-dev@lists.osgeo.org</reply-to><list-id>GRASS GIS Development mailing list &lt;grass-dev.lists.osgeo.org&gt;</list-id><list-unsubscribe>&lt;http://lists.osgeo.org/mailman/listinfo/grass-dev&gt;,
+	&lt;mailto:grass-dev-request@lists.osgeo.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.osgeo.org/pipermail/grass-dev&gt;</list-archive><list-post>&lt;mailto:grass-dev@lists.osgeo.org&gt;</list-post><list-help>&lt;mailto:grass-dev-request@lists.osgeo.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.osgeo.org/mailman/listinfo/grass-dev&gt;,
+	&lt;mailto:grass-dev-request@lists.osgeo.org?subject=subscribe&gt;</list-subscribe><content-type>multipart/mixed; boundary="===============1971844855=="</content-type><sender>grass-dev-bounces@lists.osgeo.org</sender><errors-to>grass-dev-bounces@lists.osgeo.org</errors-to></headers><normalized-references><normalized-message-id>049.16349e44efd467e2d71e3e36a8c622b8@osgeo.org</normalized-message-id><normalized-in-reply-to>040.5680b2956c69f8f6b1a0e5bcc7be62bf@osgeo.org</normalized-in-reply-to><normalized-reference>040.5680b2956c69f8f6b1a0e5bcc7be62bf@osgeo.org</normalized-reference></normalized-references><body><para depth="0">#693: wxGUI menus: i.ortho.photo locks up GUI
+---------------------+------------------------------------------------------
+  Reporter:  hamish  |       Owner:  <email>grass-dev@lists.osgeo.org</email>
+      Type:  defect  |      Status:  new                      
+  Priority:  major   |   Milestone:  6.4.0                    
+ Component:  wxGUI   |     Version:  svn-develbranch6         
+Resolution:          |    Keywords:  i.ortho.photo            
+  Platform:  All     |         Cpu:  x86-64                   
+---------------------+------------------------------------------------------
+Comment (by kyngchaos):
+
+</para><para depth="0"> Chances are GRASS was started in a Terminal (that's how I have the OSX app
+ startup configured, and those using Macports/Fink most likely will use a
+ Terminal also).  Then an xterm opens for some commands, and now you have 2
+ different terminal applications, with unique looks and behaviors.  A bit
+ confusing.
+
+</para><footer type="signature" depth="0" hash="9126680148539685010">-- 
+Ticket URL: &lt;<url>https://trac.osgeo.org/grass/ticket/693#comment:34</url>&gt;
+GRASS GIS &lt;<url>http://grass.osgeo.org</url>&gt;
+</footer><footer type="list-management" depth="0">_______________________________________________
+grass-dev mailing list
+<email>grass-dev@lists.osgeo.org</email>
+<url>http://lists.osgeo.org/mailman/listinfo/grass-dev</url>
+</footer></body></message>

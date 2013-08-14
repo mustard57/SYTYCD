@@ -1,0 +1,26 @@
+<message message-id="20080430201111.25185.57705.launchpad@forster.canonical.com" list="com.ubuntu.lists.kernel-bugs" id="24au4rwzhnsqjkdt" type="bugs" date="2008-04-30T20:10:30Z" year="2008-01-01" year-month="2008-04-01" year-month-day="2008-04-30" thread-id="24au4rwzhnsqjkdt"><headers><envelope-from-line>From bounces@canonical.com Wed Apr 30 21:24:14 2008</envelope-from-line><from personal="Bug Watch Updater" address="bugwatch@bugs.launchpad.net">Bug Watch Updater &lt;bugwatch@bugs.launchpad.net&gt;</from><to personal="kernel-bugs@lists.ubuntu.com" address="kernel-bugs@lists.ubuntu.com">kernel-bugs@lists.ubuntu.com</to><subject normal="[Bug 216436] Re: [regression] Brightness hotkeys don't work anymore">[Bug 216436] Re: [regression] Brightness hotkeys don't work anymore</subject><received>from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.60)
+	(envelope-from &lt;bounces@canonical.com&gt;) id 1JrIqc-0002iG-3v
+	for kernel-bugs@lists.ubuntu.com; Wed, 30 Apr 2008 21:24:14 +0100</received><received>from forster.canonical.com ([91.189.90.190])
+	by adelie.canonical.com with esmtp (Exim 4.60 #1 (Debian))
+	id 1JrIqc-0006pk-1K
+	for &lt;kernel-bugs@lists.ubuntu.com&gt;; Wed, 30 Apr 2008 21:24:14 +0100</received><received>from localhost ([127.0.0.1] helo=forster.canonical.com)
+	by forster.canonical.com with esmtp (Exim 4.60 #1 (Debian))
+	id 1JrIqb-00085I-Qd
+	for &lt;kernel-bugs@lists.ubuntu.com&gt;; Wed, 30 Apr 2008 21:24:13 +0100</received><mime-version>1.0</mime-version><content-type>text/plain; charset="utf-8"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><references>&lt;20080412181601.6237.12374.malonedeb@gangotri.canonical.com&gt;</references><sender>bounces@canonical.com</sender><date>Wed, 30 Apr 2008 20:10:30 -0000</date><message-id>20080430201111.25185.57705.launchpad@forster.canonical.com</message-id><x-launchpad-bug>product=linux; status=Confirmed; importance=Unknown;
+	assignee=None; </x-launchpad-bug><x-launchpad-bug>distribution=ubuntu; sourcepackage=linux; component=main;
+	status=New; importance=Undecided; assignee=None; </x-launchpad-bug><x-launchpad-bug-tags>hardy regression</x-launchpad-bug-tags><x-launchpad-bug-private>no</x-launchpad-bug-private><x-launchpad-bug-security-vulnerability>no</x-launchpad-bug-security-vulnerability><x-launchpad-message-rationale>Subscriber (Linux) @kernel-bugs</x-launchpad-message-rationale><errors-to>bounces@canonical.com</errors-to><precedence>bulk</precedence><x-generated-by>Launchpad (canonical.com)</x-generated-by><x-beenthere>kernel-bugs@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><reply-to>Bug 216436 &lt;216436@bugs.launchpad.net&gt;</reply-to><list-id>Kernel Bugs tracking &lt;kernel-bugs.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/kernel-bugs&gt;,
+	&lt;mailto:kernel-bugs-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://lists.ubuntu.com/archives/kernel-bugs&gt;</list-archive><list-post>&lt;mailto:kernel-bugs@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:kernel-bugs-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/kernel-bugs&gt;,
+	&lt;mailto:kernel-bugs-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Wed, 30 Apr 2008 20:24:14 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>20080430201111.25185.57705.launchpad@forster.canonical.com</normalized-message-id><normalized-reference>20080412181601.6237.12374.malonedeb@gangotri.canonical.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">*** This bug is a duplicate of bug 212790 ***
+    <url>https://bugs.launchpad.net/bugs/212790</url>
+
+</para><para depth="0">** Changed in: linux
+       Status: Unknown =&gt; Confirmed
+
+</para><footer type="signature" depth="0" hash="6395702321024263746">-- 
+[regression] Brightness hotkeys don't work anymore
+<url>https://bugs.launchpad.net/bugs/216436</url>
+You received this bug notification because you are a member of Kernel
+Bugs, which is subscribed to Linux.
+
+</footer></body></message>

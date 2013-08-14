@@ -1,0 +1,44 @@
+<message message-id="20110331215141.28796.1097.launchpad@potassium.ubuntu.com" list="com.ubuntu.lists.ubuntu-bugs" id="24audn3q3mwtftsu" type="bugs" date="2011-03-31T21:51:39Z" year="2011-01-01" year-month="2011-03-01" year-month-day="2011-03-31" thread-id="2hwmov55gdjujwai"><headers><envelope-from-line>Thu Mar 31 14:11:31 2011</envelope-from-line><from personal="Neil J. Patel" address="neil.patel@canonical.com">"Neil J. Patel" &lt;neil.patel@canonical.com&gt;</from><to personal="ubuntu-bugs@lists.ubuntu.com" address="ubuntu-bugs@lists.ubuntu.com">ubuntu-bugs@lists.ubuntu.com</to><subject normal="[Bug 735746] Re: Selection does not fit small icons in Unity Dash">[Bug 735746] Re: Selection does not fit small icons in Unity Dash</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 485
+          for &lt;caroline.dejesus.ratliff@a.markmail.org&gt;;
+          Thu, 31 Mar 2011 14:11:31 -0800 (GMT-08:00)</received><received>from chlorine.canonical.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id B18233B300C3
+	for &lt;caroline.dejesus.ratliff@a.markmail.org&gt;; Thu, 31 Mar 2011 15:11:07 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=chlorine.canonical.com)
+	by chlorine.canonical.com with esmtp (Exim 4.71)
+	(envelope-from &lt;ubuntu-bugs-bounces@lists.ubuntu.com&gt;)
+	id 1Q5Q5S-0000Uh-0g; Thu, 31 Mar 2011 22:11:30 +0000</received><received>from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.71)
+	(envelope-from &lt;bounces@canonical.com&gt;) id 1Q5Q5Q-0000UJ-4k
+	for ubuntu-bugs@lists.ubuntu.com; Thu, 31 Mar 2011 22:11:28 +0000</received><received>from loganberry.canonical.com ([91.189.90.37])
+	by adelie.canonical.com with esmtp (Exim 4.71 #1 (Debian))
+	id 1Q5Q5P-0008JE-AE
+	for &lt;ubuntu-bugs@lists.ubuntu.com&gt;; Thu, 31 Mar 2011 22:11:27 +0000</received><received>from loganberry.canonical.com (localhost [127.0.0.1])
+	by loganberry.canonical.com (Postfix) with ESMTP id A4F8F2E8978
+	for &lt;ubuntu-bugs@lists.ubuntu.com&gt;;
+	Thu, 31 Mar 2011 22:11:25 +0000 (UTC)</received><mime-version>1.0</mime-version><date>Thu, 31 Mar 2011 21:51:39 -0000</date><x-launchpad-bug>product=exaile; status=Invalid; importance=Undecided;
+	assignee=None; </x-launchpad-bug><x-launchpad-bug>product=unity; milestone=3.8.2; status=Fix Committed;
+	importance=Medium; assignee=neil.patel@canonical.com; </x-launchpad-bug><x-launchpad-bug>distribution=ubuntu; sourcepackage=gbrainy; component=main;
+	status=Fix Released; importance=Low; assignee=None; </x-launchpad-bug><x-launchpad-bug>distribution=ubuntu; sourcepackage=teeworlds;
+	component=universe; status=New; importance=Undecided;
+	assignee=None; </x-launchpad-bug><x-launchpad-bug>distribution=ubuntu; sourcepackage=unity; component=main;
+	status=Triaged; importance=Undecided; assignee=None; </x-launchpad-bug><x-launchpad-bug-tags>dash gbrainy icons natty select small-icons unity</x-launchpad-bug-tags><x-launchpad-bug-private>no</x-launchpad-bug-private><x-launchpad-bug-security-vulnerability>no</x-launchpad-bug-security-vulnerability><x-launchpad-bug-commenters>janitor jmas-softcatala marcobiscaro2112 obake
+	robert-ancell</x-launchpad-bug-commenters><x-launchpad-bug-reporter>=?utf-8?q?Jos=C3=A9_Lou_Chang_=28obake=29?=</x-launchpad-bug-reporter><x-launchpad-bug-modifier>Neil J. Patel (njpatel)</x-launchpad-bug-modifier><references>&lt;20110315211651.18856.80896.malonedeb@palladium.canonical.com&gt;</references><message-id>20110331215141.28796.1097.launchpad@potassium.ubuntu.com</message-id><x-launchpad-message-rationale>Subscriber (Ubuntu) @ubuntu-bugs</x-launchpad-message-rationale><precedence>bulk</precedence><x-generated-by>Launchpad (canonical.com); Revision="12696";
+	Instance="initZopeless config overlay"</x-generated-by><x-launchpad-hash>938d44785ffad6271a03d2a63e2e50f5716e536d</x-launchpad-hash><x-beenthere>ubuntu-bugs@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.13</x-mailman-version><reply-to>Bug 735746 &lt;735746@bugs.launchpad.net&gt;</reply-to><list-id>Ubuntu bug tracker changes - HIGH VOLUME
+	&lt;ubuntu-bugs.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/options/ubuntu-bugs&gt;,
+	&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:ubuntu-bugs@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs&gt;,
+	&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>ubuntu-bugs-bounces@lists.ubuntu.com</sender><errors-to>ubuntu-bugs-bounces@lists.ubuntu.com</errors-to></headers><normalized-references><normalized-message-id>20110331215141.28796.1097.launchpad@potassium.ubuntu.com</normalized-message-id><normalized-reference>20110315211651.18856.80896.malonedeb@palladium.canonical.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">** Changed in: unity
+       Status: Triaged =&gt; Fix Committed
+
+</para><footer type="signature" depth="0" hash="1353618847055737190">-- 
+You received this bug notification because you are a member of Ubuntu
+Bugs, which is subscribed to Ubuntu.
+<url>https://bugs.launchpad.net/bugs/735746</url>
+
+</footer><para depth="0">Title:
+  Selection does not fit small icons in Unity Dash
+
+</para><footer type="list-management" depth="0">-- 
+ubuntu-bugs mailing list
+<email>ubuntu-bugs@lists.ubuntu.com</email>
+<url>https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs</url>
+</footer></body></message>

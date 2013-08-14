@@ -1,0 +1,30 @@
+<message message-id="1265637894.776723.1188.nullmailer@svn.kde.org" list="org.kde.kde-commits" id="24b2l6k5qpab3gvr" type="checkins" date="2010-02-08T14:04:54Z" year="2010-01-01" year-month="2010-02-01" year-month-day="2010-02-08" thread-id="muxzrmyj3tqsxdqu"><headers><envelope-from-line>Mon Feb 08 06:05:18 2010</envelope-from-line><from personal="Allen Winter" address="winter@kde.org">Allen Winter &lt;winter@kde.org&gt;</from><to personal="kde-commits@kde.org" address="kde-commits@kde.org">kde-commits@kde.org</to><subject normal="KDE/kdepim (silent)">KDE/kdepim (silent)</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 801
+          for &lt;juliet.walls.arnold@a.markmail.org&gt;;
+          Mon, 8 Feb 2010 06:05:17 -0800 (GMT-08:00)</received><received>from ktown.kde.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 2D7F229084B2
+	for &lt;juliet.walls.arnold@a.markmail.org&gt;; Mon,  8 Feb 2010 06:04:54 -0800 (PST)</received><received>(qmail 30151 invoked by uid 72); 8 Feb 2010 14:05:15 -0000</received><received>(qmail 29855 invoked from network); 8 Feb 2010 14:04:59 -0000</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on ktown.kde.org</x-spam-checker-version><received>from unknown (HELO office.kde.org) (195.135.221.67)
+	by ktown.kde.org with SMTP; 8 Feb 2010 14:04:57 -0000</received><received>from svn.kde.org (localhost [127.0.0.1])
+	by office.kde.org (Postfix) with SMTP id 9D35317E
+	for &lt;kde-commits@kde.org&gt;; Mon,  8 Feb 2010 15:04:57 +0100 (CET)</received><received>(nullmailer pid 1189 invoked by uid 30);
+	Mon, 08 Feb 2010 14:04:54 -0000</received><x-commit-directories>(0) trunk/KDE/kdepim</x-commit-directories><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><date>Mon, 08 Feb 2010 14:04:54 +0000</date><message-id>1265637894.776723.1188.nullmailer@svn.kde.org</message-id><x-beenthere>kde-commits@kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>kde-commits@kde.org</reply-to><list-id>Notification of KDE commits &lt;kde-commits.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-commits&gt;,
+	&lt;mailto:kde-commits-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-commits@kde.org&gt;</list-post><list-help>&lt;mailto:kde-commits-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-commits&gt;,
+	&lt;mailto:kde-commits-request@kde.org?subject=subscribe&gt;</list-subscribe><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>1265637894.776723.1188.nullmailer@svn.kde.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">SVN commit 1087067 by winterz:
+
+</para><para depth="0">SVN_SILENT:
+Blocked revisions 1087066 via svnmerge
+
+</para><para depth="0">........
+  r1087066 | winterz | 2010-02-08 09:03:16 -0500 (Mon, 08 Feb 2010) | 6 lines
+
+</para><para depth="0">  In the search window results list, make double-click on a message open
+  that message in a separate reader window.  also, make the [Open Message]
+  button open the message in a separate reader window.
+  kolab/issue4090
+  MERGE: none (already in trunk)
+........
+
+</para><para depth="0"> _M            . (directory)  
+
+</para><para depth="0"><url>http://websvn.kde.org/?view=rev&amp;revision=1087067</url>
+</para></body></message>

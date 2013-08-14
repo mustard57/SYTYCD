@@ -1,0 +1,53 @@
+<message message-id="20110222145005.46535458AB@master.openssl.org" list="org.openssl.openssl-cvs" id="24czvxtabm43qyr6" type="checkins" date="2011-02-22T06:49:43.610453-08:00" year="2011-01-01" year-month="2011-02-01" year-month-day="2011-02-22" thread-id="24czvxtabm43qyr6"><headers><envelope-from-line>Tue Feb 22 06:50:06 2011</envelope-from-line><from personal="Dr. Stephen Henson" address="steve@openssl.org">"Dr. Stephen Henson" &lt;steve@openssl.org&gt;</from><to personal="openssl-cvs@openssl.org" address="openssl-cvs@openssl.org">openssl-cvs@openssl.org</to><subject normal="[CVS] OpenSSL: openssl/util/ mk1mf.pl">[CVS] OpenSSL: openssl/util/ mk1mf.pl</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 499
+          for &lt;alberto.mosley.pennington@a.markmail.org&gt;;
+          Tue, 22 Feb 2011 06:50:06 -0800 (GMT-08:00)</received><received>from master.openssl.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 2A1313B300DE
+	for &lt;alberto.mosley.pennington@a.markmail.org&gt;; Tue, 22 Feb 2011 06:49:43 -0800 (PST)</received><received>by master.openssl.org (Postfix)
+	id 634EC458B1; Tue, 22 Feb 2011 15:50:05 +0100 (CET)</received><delivered-to>openssl-cvs-l@master.openssl.org</delivered-to><received>by master.openssl.org (Postfix, from userid 29101)
+	id 60F31458B0; Tue, 22 Feb 2011 15:50:05 +0100 (CET)</received><delivered-to>openssl-cvs@openssl.org</delivered-to><received>by master.openssl.org (Postfix, from userid 29001)
+	id 46535458AB; Tue, 22 Feb 2011 15:50:05 +0100 (CET)</received><user-agent>OSSP shiela 1.1.7 [CVS 1.12.13+RSE]</user-agent><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><lines>40</lines><message-id>20110222145005.46535458AB@master.openssl.org</message-id><date>Tue, 22 Feb 2011 15:50:05 +0100 (CET)</date><sender>owner-openssl-cvs@openssl.org</sender><precedence>bulk</precedence><reply-to>openssl-dev@openssl.org</reply-to><x-sender>"Dr. Stephen Henson" &lt;steve@openssl.org&gt;</x-sender><x-list-manager>OpenSSL Majordomo [version 1.94.5]</x-list-manager><x-list-name>openssl-cvs</x-list-name><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>20110222145005.46535458AB@master.openssl.org</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">  OpenSSL CVS Repository
+  <url>http://cvs.openssl.org/</url>
+  ____________________________________________________________________________
+
+</para><para depth="0">  Server: cvs.openssl.org                  Name:   Dr. Stephen Henson
+  Root:   /v/openssl/cvs                   Email:  <email>steve@openssl.org</email>
+  Module: openssl                          Date:   22-Feb-2011 15:50:05
+  Branch: HEAD                             Handle: 2011022214500500
+
+</para><para depth="0">  Modified files:
+    openssl/util            mk1mf.pl
+
+</para><para depth="0">  Log:
+    Remove duplicate test rule.
+
+</para><para depth="0">  Summary:
+    Revision    Changes     Path
+    1.109       +0  -6      openssl/util/mk1mf.pl
+  ____________________________________________________________________________
+
+</para><para depth="0">  patch -p0 &lt;&lt;'@@ .'
+  Index: openssl/util/mk1mf.pl
+  ============================================================================
+  $ cvs diff -u -r1.108 -r1.109 mk1mf.pl
+  --- openssl/util/mk1mf.pl	12 Feb 2011 17:38:40 -0000	1.108
+  +++ openssl/util/mk1mf.pl	22 Feb 2011 14:50:05 -0000	1.109
+  @@ -853,12 +853,6 @@
+   	$tt="\$(OBJ_D)${o}$t${obj}";
+   	$rules.=&amp;do_link_rule("\$(TEST_D)$o$t$exep",$tt,"\$(LIBS_DEP)","$t_libs<br/>\$(EX_LIBS)", $ltype);
+   	}
+  -foreach (split(/\s+/,$test))
+  -	{
+  -	$t=&amp;bname($_);
+  -	$tt="\$(OBJ_D)${o}$t${obj}";
+  -	$rules.=&amp;do_link_rule("\$(TEST_D)$o$t$exep",$tt,"\$(LIBS_DEP)","\$(L_LIBS)<br/>\$(EX_LIBS)");
+  -	}
+
+</para><para depth="0">   $defs.=&amp;do_defs("E_SHLIB",$engines . $otherlibs,"\$(ENG_D)",$shlibp);
+
+</para><footer type="noise" depth="0">  @@ .
+</footer><footer type="list-management" depth="0">______________________________________________________________________
+OpenSSL Project                                 <url>http://www.openssl.org</url>
+CVS Repository Commit List                     <email>openssl-cvs@openssl.org</email>
+Automated List Manager                           <email>majordomo@openssl.org</email>
+</footer></body></message>

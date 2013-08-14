@@ -1,0 +1,73 @@
+<message message-id="cvsfelipe1219767747@cvsserver" list="net.php.lists.php-cvs" id="24cusp23jqxoqdb2" type="checkins" date="2008-08-26T16:22:27Z" year="2008-01-01" year-month="2008-08-01" year-month-day="2008-08-26" thread-id="qgfw7lcpiwual3di"><headers><envelope-from-line>Tue Aug 26 09:22:40 2008</envelope-from-line><from personal="Felipe Pena" address="felipe@php.net">Felipe Pena &lt;felipe@php.net&gt;</from><to personal="php-cvs@lists.php.net" address="php-cvs@lists.php.net">php-cvs@lists.php.net</to><subject normal="[PHP-CVS] cvs: php-src(PHP_5_3) /ext/fileinfo fileinfo.c /ext/fileinfo/tests finfo_file_001.phpt">[PHP-CVS] cvs: php-src(PHP_5_3) /ext/fileinfo fileinfo.c  /ext/fileinfo/tests finfo_file_001.phpt  </subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 981
+          for &lt;thomas.morrison.jordan@a.markmail.org&gt;;
+          Tue, 26 Aug 2008 09:22:39 -0700 (PDT)</received><received>from lists.php.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id A84DE3B300C3
+	for &lt;thomas.morrison.jordan@a.markmail.org&gt;; Tue, 26 Aug 2008 09:22:39 -0700 (PDT)</received><x-host-fingerprint>216.92.131.4 lists.php.net  </x-host-fingerprint><received>from [216.92.131.4] ([216.92.131.4:12684] helo=lists.php.net)
+	by pb1.pair.com (ecelerity 2.1.1.9-wez r(12769M)) with ESMTP
+	id 89/FF-03121-ECD24B84 for &lt;thomas.morrison.jordan@a.markmail.org&gt;; Tue, 26 Aug 2008 12:22:38 -0400</received><received>(qmail 39964 invoked by uid 1010); 26 Aug 2008 16:22:31 -0000</received><mailing-list>contact php-cvs-help@lists.php.net; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:php-cvs-help@lists.php.net&gt;</list-help><list-unsubscribe>&lt;mailto:php-cvs-unsubscribe@lists.php.net&gt;</list-unsubscribe><list-post>&lt;mailto:php-cvs@lists.php.net&gt;</list-post><delivered-to>mailing list php-cvs@lists.php.net</delivered-to><received>(qmail 39956 invoked from network); 26 Aug 2008 16:22:30 -0000</received><authentication-results>pb1.pair.com header.from=felipe@php.net; sender-id=pass</authentication-results><authentication-results>pb1.pair.com smtp.mail=this-will-bounce@php.net; spf=pass; sender-id=pass</authentication-results><received-spf>pass (pb1.pair.com: domain php.net designates 69.147.83.196 as permitted sender)</received-spf><x-php-list-original-sender>this-will-bounce@php.net</x-php-list-original-sender><x-host-fingerprint>69.147.83.196 y1.php.net  </x-host-fingerprint><message-id>cvsfelipe1219767747@cvsserver</message-id><date>Tue, 26 Aug 2008 16:22:27 -0000</date></headers><normalized-references><normalized-message-id>cvsfelipe1219767747@cvsserver</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">felipe		Tue Aug 26 16:22:27 2008 UTC
+
+</para><para depth="0">  Modified files:              (Branch: PHP_5_3)
+    /php-src/ext/fileinfo	fileinfo.c 
+    /php-src/ext/fileinfo/tests	finfo_file_001.phpt 
+  Log:
+  - MFH: Improved fix
+
+</para><para depth="0"><url>http://cvs.php.net/viewvc.cgi/php-src/ext/fileinfo/fileinfo.c?r1=1.20.2.3&amp;r2=1.20.2.4&amp;diff_format=u</url>
+Index: php-src/ext/fileinfo/fileinfo.c
+diff -u php-src/ext/fileinfo/fileinfo.c:1.20.2.3<br/>php-src/ext/fileinfo/fileinfo.c:1.20.2.4
+--- php-src/ext/fileinfo/fileinfo.c:1.20.2.3	Tue Aug 26 15:06:28 2008
++++ php-src/ext/fileinfo/fileinfo.c	Tue Aug 26 16:22:27 2008
+@@ -16,7 +16,7 @@
+   +----------------------------------------------------------------------+
+ */
+
+</para><para depth="0">-/* $Id: fileinfo.c,v 1.20.2.3 2008/08/26 15:06:28 felipe Exp $ */
++/* $Id: fileinfo.c,v 1.20.2.4 2008/08/26 16:22:27 felipe Exp $ */
+
+</para><para depth="0"> #ifdef HAVE_CONFIG_H
+ #include "config.h"
+@@ -402,7 +402,7 @@
+ static void _php_finfo_get_type(INTERNAL_FUNCTION_PARAMETERS, int mode) /* {{{<br/>*/
+ {
+ 	long options = 0;
+-	char *buffer, *tmp, *ret_val;
++	char *tmp, *ret_val, *buffer = NULL;
+ 	int buffer_len;
+ 	struct php_fileinfo *finfo;
+ 	zval *zfinfo, *zcontext = NULL;
+@@ -449,7 +449,7 @@
+ 		} else { /* local file */
+ 			char resolved_path[MAXPATHLEN];
+
+</para><para depth="0">-			if (buffer_len &amp;&amp; VCWD_REALPATH(buffer, resolved_path)) {
++			if (*buffer &amp;&amp; VCWD_REALPATH(buffer, resolved_path)) {
+ 				ret_val = (char *) magic_file(finfo-&gt;magic, buffer);
+ 			} else {
+ 				RETURN_FALSE;
+<url>http://cvs.php.net/viewvc.cgi/php-src/ext/fileinfo/tests/finfo_file_001.phpt?r1=1.1.2.2&amp;r2=1.1.2.3&amp;diff_format=u</url>
+Index: php-src/ext/fileinfo/tests/finfo_file_001.phpt
+diff -u php-src/ext/fileinfo/tests/finfo_file_001.phpt:1.1.2.2<br/>php-src/ext/fileinfo/tests/finfo_file_001.phpt:1.1.2.3
+--- php-src/ext/fileinfo/tests/finfo_file_001.phpt:1.1.2.2	Tue Aug 26 15:06:28<br/>2008
++++ php-src/ext/fileinfo/tests/finfo_file_001.phpt	Tue Aug 26 16:22:27 2008
+@@ -4,6 +4,7 @@
+ &lt;?php
+
+</para><para depth="0"> $fp = finfo_open();
++var_dump(finfo_file($fp, "\0"));
+ var_dump(finfo_file($fp, ''));
+ var_dump(finfo_file($fp, NULL));
+ var_dump(finfo_file($fp, '.'));
+@@ -13,5 +14,6 @@
+ --EXPECT--
+ bool(false)
+ bool(false)
++bool(false)
+ string(9) "directory"
+ bool(false)
+
+</para><footer type="list-management" depth="0">-- 
+PHP CVS Mailing List (<url>http://www.php.net/</url>)
+To unsubscribe, visit: <url>http://www.php.net/unsub.php</url>
+
+</footer></body></message>

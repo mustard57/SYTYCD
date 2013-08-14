@@ -1,0 +1,22 @@
+<message message-id="1595.1191383289@sss.pgh.pa.us" list="org.postgresql.pgsql-sql" id="24amr2usfun3mlws" type="general" date="2007-10-02T23:48:09-04:00" year="2007-01-01" year-month="2007-10-01" year-month-day="2007-10-02" thread-id="24amr2usfun3mlws"><headers><envelope-from-line>From pgsql-sql-owner@postgresql.org  Wed Oct  3 00:48:21 2007</envelope-from-line><from personal="Tom Lane" address="tgl@sss.pgh.pa.us">Tom Lane &lt;tgl@sss.pgh.pa.us&gt;</from><to personal="Erik Jones" address="erik@myemma.com">Erik Jones &lt;erik@myemma.com&gt;</to><cc personal="weigelt@metux.de" address="weigelt@metux.de">weigelt@metux.de</cc><subject normal="Finding broken regex'es">Re: Finding broken regex'es </subject><received>from localhost (unknown [200.46.204.182])
+	by postgresql.org (Postfix) with ESMTP id EA98D9FA414
+	for &lt;pgsql-sql-postgresql.org@postgresql.org&gt;; Wed,  3 Oct 2007 00:48:17 -0300 (ADT)</received><received>from postgresql.org ([200.46.204.71])
+ by localhost (mx1.hub.org [200.46.204.182]) (amavisd-maia, port 10024)
+ with ESMTP id 05153-02 for &lt;pgsql-sql-postgresql.org@postgresql.org&gt;;
+ Wed,  3 Oct 2007 00:48:14 -0300 (ADT)</received><x-greylist>from auto-whitelisted by SQLgrey-1.7.5</x-greylist><received>from sss.pgh.pa.us (sss.pgh.pa.us [66.207.139.130])
+	by postgresql.org (Postfix) with ESMTP id 57FE39FA2BC
+	for &lt;pgsql-sql@postgresql.org&gt;; Wed,  3 Oct 2007 00:48:14 -0300 (ADT)</received><received>from sss2.sss.pgh.pa.us (tgl@localhost [127.0.0.1])
+	by sss.pgh.pa.us (8.14.1/8.14.1) with ESMTP id l933m9Wm001596;
+	Tue, 2 Oct 2007 23:48:09 -0400 (EDT)</received><in-reply-to>&lt;51E80F93-35D0-41A0-B9C0-A256A806C971@myemma.com&gt; </in-reply-to><references>&lt;20071002202313.GB18506@nibiru.local&gt; &lt;51E80F93-35D0-41A0-B9C0-A256A806C971@myemma.com&gt;</references><comments>In-reply-to Erik Jones &lt;erik@myemma.com&gt;
+	message dated "Tue, 02 Oct 2007 16:36:55 -0500"</comments><date>Tue, 02 Oct 2007 23:48:09 -0400</date><message-id>1595.1191383289@sss.pgh.pa.us</message-id><x-virus-scanned>Maia Mailguard 1.0.1</x-virus-scanned><x-archive-number>200710/7</x-archive-number><x-sequence-number>29379</x-sequence-number></headers><normalized-references><normalized-message-id>1595.1191383289@sss.pgh.pa.us</normalized-message-id><normalized-in-reply-to>51E80F93-35D0-41A0-B9C0-A256A806C971@myemma.com</normalized-in-reply-to><normalized-reference>20071002202313.GB18506@nibiru.local</normalized-reference><normalized-reference>51E80F93-35D0-41A0-B9C0-A256A806C971@myemma.com</normalized-reference></normalized-references><body type="text/plain"><para depth="0">Erik Jones &lt;<email>erik@myemma.com</email>&gt; writes:
+</para><quote depth="1"><quotepara depth="1">IIRC, if they're PERL compatible which it would seem from the php
+function you're using, no.  Postgres supports POSIX regexes but not
+(right now anyway) PERL regexes.
+</quotepara></quote><para depth="0">
+Actually what we support are Tcl (Henry Spencer) regexes, which are
+about as powerful as Perl's but have a few minor incompatibilities.
+Tcl and Perl regexes are both supersets of the POSIX requirements.
+
+</para><footer type="signature" hash="10356605740757837166" depth="0">			regards, tom lane
+
+</footer></body></message>

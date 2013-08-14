@@ -1,0 +1,48 @@
+<message message-id="3AA18D67.3CE769A5@videotron.ca" list="com.redhat.redhat-install-list" id="24biiiqhvmz2v2pc" type="development" date="2001-03-03T19:33:43-05:00" year="2001-01-01" year-month="2001-03-01" year-month-day="2001-03-03" thread-id="hhqi246sqwuqz7wf"><headers><envelope-from-line>From mail@redhat.com  Sat Mar  3 19:35:08 2001</envelope-from-line><from personal="Elton Woo" address="eltonw@videotron.ca">Elton Woo &lt;eltonw@videotron.ca&gt;</from><to personal="redhat-install-list@redhat.com" address="redhat-install-list@redhat.com">redhat-install-list@redhat.com</to><subject normal="sound, automatic power management">Re: sound, automatic power management</subject><return-path>mail@redhat.com</return-path><delivered-to>redhat-install-list@listman.redhat.com</delivered-to><received>from mail.redhat.com (mail.redhat.com [199.183.24.239])
+	by listman.redhat.com (Postfix) with ESMTP id ED2C52F085
+	for &lt;redhat-install-list@listman.redhat.com&gt;; Sat,  3 Mar 2001 19:35:07 -0500 (EST)</received><received>(from mail@localhost)
+	by mail.redhat.com (8.11.0/8.8.7) id f240a1i05378
+	for redhat-install-list@listman.redhat.com; Sat, 3 Mar 2001 19:36:01 -0500</received><received>from VL-MS-MR003.sc1.videotron.ca (relais.videotron.ca [24.201.245.36])
+	by mail.redhat.com (8.11.0/8.8.7) with ESMTP id f240a1405374
+	for &lt;redhat-install-list@redhat.com&gt;; Sat, 3 Mar 2001 19:36:01 -0500</received><received>from videotron.ca ([24.200.88.124]) by
+          VL-MS-MR003.sc1.videotron.ca (Netscape Messaging Server 4.15)
+          with ESMTP id G9NDMC04.1S4 for &lt;redhat-install-list@redhat.com&gt;;
+          Sat, 3 Mar 2001 19:35:00 -0500 </received><message-id>3AA18D67.3CE769A5@videotron.ca</message-id><date>Sat, 03 Mar 2001 19:33:43 -0500</date><x-mailer>Mozilla 4.76 [en] (X11; U; Linux 2.4.1-0.1.9 i586)</x-mailer><x-accept-language>en</x-accept-language><mime-version>1.0</mime-version><references>&lt;20000819102649.A723@home.com&gt; &lt;20010303154438.A2701@home.com&gt;</references><content-type>multipart/signed; protocol="application/x-pkcs7-signature"; micalg=sha1; boundary="------------ms8AC65596910CEB8C55511A61"</content-type><x-loop>redhat-install-list@redhat.com</x-loop><sender>redhat-install-list-admin@redhat.com</sender><errors-to>redhat-install-list-admin@redhat.com</errors-to><x-beenthere>redhat-install-list@redhat.com</x-beenthere><x-mailman-version>2.0.1</x-mailman-version><precedence>bulk</precedence><reply-to>redhat-install-list@redhat.com</reply-to><x-reply-to>eltonwoo@videotron.ca</x-reply-to><list-help>&lt;mailto:redhat-install-list-request@redhat.com?subject=help&gt;</list-help><list-post>&lt;mailto:redhat-install-list@redhat.com&gt;</list-post><list-subscribe>&lt;https://listman.redhat.com/mailman/listinfo/redhat-install-list&gt;,
+	&lt;mailto:redhat-install-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><list-id>Getting started with Red Hat Linux &lt;redhat-install-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://listman.redhat.com/mailman/listinfo/redhat-install-list&gt;,
+	&lt;mailto:redhat-install-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://listman.redhat.com/mailman/private/redhat-install-list/&gt;</list-archive></headers><attachments><signature type="application/x-pkcs7-signature" description="S/MIME Cryptographic Signature" file="smime.p7s" size="2749" uri="/24biiiqhvmz2v2pc/attach00/smime.p7s"/></attachments><normalized-references><normalized-message-id>3AA18D67.3CE769A5@videotron.ca</normalized-message-id><normalized-reference>20000819102649.A723@home.com</normalized-reference><normalized-reference>20010303154438.A2701@home.com</normalized-reference></normalized-references><body><para depth="0">David Ellement wrote:
+
+</para><quote depth="1"><quotepara depth="1">On 000819, at 10:26:49, David Ellement wrote:
+</quotepara><quote depth="2"><quotepara depth="2">... I tried installing a newer version of the kernel (2.2.16).
+The old kernel (2.2.14-5.0) automatically turns off the power at
+the end of a shutdown.  I can't seem to configure the new kernel
+to do the same.  What am I missing?
+</quotepara></quote><quotepara depth="1">
+I've installed RH7.0, with the 2.4.2 kernel.  It still doesn't turn
+off the power when I shut it down from the X login screen.  I can
+get it to turn off the power if I run poweroff as root.
+
+</quotepara><quotepara depth="1">How can I get the X shutdown process to run poweroff?
+
+</quotepara><quotefooter type="signature" depth="1" hash="2558298564292082793">--
+David Ellement
+</quotefooter></quote><para depth="0">
+            If you're running "kernel secure", it *will* do
+
+</para><para depth="0">that (i.e. only allow root to shut off the power). If you use the
+
+</para><para depth="0">regular kernel, then anyond can call a shutdown, and the system will
+
+</para><para depth="0">also switch off its power.
+
+</para><para depth="0">            HTH
+
+</para><footer type="signature" depth="0" hash="14825021871034881347">            Elton Woo  ;-)
+
+</footer><para depth="0">            [Linux newbie No. 193975]
+
+</para><footer type="signature" depth="0" hash="15769707244406300107">--
+        <email>eltonwoo@videotron.ca</email> - ICQ#9984432 - Montreal, Quebec, CANADA.
+              Registered Linux User #193975. AMD-K2 CPU on board.
+        "You only live once, so let's make life easier for each other."
+
+</footer></body></message>

@@ -1,0 +1,39 @@
+<message message-id="aa77c7fe-56b1-45be-adb5-64f0ea948375@f30g2000vbf.googlegroups.com" list="com.googlegroups.googlehealthdevelopers" id="24bnulnhy3t6pasz" type="general" date="2009-06-25T14:53:21.760723-08:00" year="2009-01-01" year-month="2009-06-01" year-month-day="2009-06-25" thread-id="3jt3nkz53g47uhc2"><headers><envelope-from-line>Thu Jun 25 14:53:44 2009</envelope-from-line><from personal="Jon" address="ziebelje@gmail.com">Jon &lt;ziebelje@gmail.com&gt;</from><to personal="Google Health Developers" address="googlehealthdevelopers@googlegroups.com">Google Health Developers &lt;googlehealthdevelopers@googlegroups.com&gt;</to><subject normal="[Google-Health-API] Re: Demographic Data">[Google-Health-API] Re: Demographic Data</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 68
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Thu, 25 Jun 2009 14:53:44 -0800 (GMT-08:00)</received><received>from mail-yx0-f149.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 560633B300DE
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Thu, 25 Jun 2009 15:53:21 -0700 (PDT)</received><received>by yxe13 with SMTP id 13so508795yxe.1
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Thu, 25 Jun 2009 15:53:43 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :mime-version:content-type:received:date:in-reply-to:x-ip:references
+         :user-agent:x-http-useragent:message-id:subject:from:to:reply-to
+         :sender:precedence:x-google-loop:mailing-list:list-id:list-post
+         :list-help:list-unsubscribe:x-beenthere-env:x-beenthere;
+        bh=iEGac64qtwT5n+P9VRQgT/3fk+Xlv72+4tsRY9VA5dY=;
+        b=kVS/1+0E5nTjesBYriLfUhi9g1fSSKWf686lvFRIhV65laxmbNDupEPgFXuiyifqVi
+         4drnZ8TyRm/HNi38loRs0kP3CbrB3TGB5BDkXcZQk9jyUC0WoG5V52z4kCCjWAXtlYJr
+         GGzzixvus5LcBjawTOi1g/V280nwEuEM1Mvn0=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:mime-version:content-type:date:in-reply-to
+         :x-ip:references:user-agent:x-http-useragent:message-id:subject:from
+         :to:reply-to:sender:precedence:x-google-loop:mailing-list:list-id
+         :list-post:list-help:list-unsubscribe:x-beenthere-env:x-beenthere;
+        b=NsP0QRmQPzvog7gK+kikSoXbTKoQv5hllhYDrUctgFm9dbuQHMK7fCzKKr9szORpAA
+         nR5gllGQm6AAPMTdb0/PGNJHYbjtPGFFA0DMELDCSKNOXxfT4IpRF9a1N5gv9T3bggIs
+         TSA+ZxSnsthpfykOie+LDcagGFgjR81ePuMM0=</domainkey-signature><received>by 10.90.33.20 with SMTP id g20mr702940agg.10.1245970412034;
+        Thu, 25 Jun 2009 15:53:32 -0700 (PDT)</received><received>by 10.177.37.21 with SMTP id p21gr1687yqj.0;
+	Thu, 25 Jun 2009 15:53:29 -0700 (PDT)</received><x-sender>ziebelje@gmail.com</x-sender><x-apparently-to>googlehealthdevelopers@googlegroups.com</x-apparently-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><received>by 10.100.248.16 with SMTP id v16mr719492anh.0.1245970408845; Thu,  25 Jun 2009 15:53:28 -0700 (PDT)</received><date>Thu, 25 Jun 2009 15:53:28 -0700 (PDT)</date><in-reply-to>&lt;3fa0dace-bba5-42be-aee8-1ad481078055@12g2000pri.googlegroups.com&gt;</in-reply-to><x-ip>75.186.96.127</x-ip><references>&lt;6173e4a3-7fd6-4d49-9bb9-68807987d5d7@r34g2000vba.googlegroups.com&gt;  &lt;3fa0dace-bba5-42be-aee8-1ad481078055@12g2000pri.googlegroups.com&gt;</references><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.11)  Gecko/2009060215 Firefox/3.0.11 (.NET CLR 3.5.30729),gzip(gfe),gzip(gfe)</x-http-useragent><message-id>aa77c7fe-56b1-45be-adb5-64f0ea948375@f30g2000vbf.googlegroups.com</message-id><reply-to>googlehealthdevelopers@googlegroups.com</reply-to><sender>googlehealthdevelopers@googlegroups.com</sender><precedence>bulk</precedence><x-google-loop>groups</x-google-loop><mailing-list>list googlehealthdevelopers@googlegroups.com;
+	contact googlehealthdevelopers+owner@googlegroups.com</mailing-list><list-id>&lt;googlehealthdevelopers.googlegroups.com&gt;</list-id><list-post>&lt;mailto:googlehealthdevelopers@googlegroups.com&gt;</list-post><list-help>&lt;mailto:googlehealthdevelopers+help@googlegroups.com&gt;</list-help><list-unsubscribe>&lt;http://googlegroups.com/group/googlehealthdevelopers/subscribe&gt;,
+	&lt;mailto:googlehealthdevelopers+unsubscribe@googlegroups.com&gt;</list-unsubscribe><x-beenthere-env>googlehealthdevelopers@googlegroups.com</x-beenthere-env><x-beenthere>googlehealthdevelopers@googlegroups.com</x-beenthere></headers><normalized-references><normalized-message-id>aa77c7fe-56b1-45be-adb5-64f0ea948375@f30g2000vbf.googlegroups.com</normalized-message-id><normalized-in-reply-to>3fa0dace-bba5-42be-aee8-1ad481078055@12g2000pri.googlegroups.com</normalized-in-reply-to><normalized-reference>6173e4a3-7fd6-4d49-9bb9-68807987d5d7@r34g2000vba.googlegroups.com</normalized-reference><normalized-reference>3fa0dace-bba5-42be-aee8-1ad481078055@12g2000pri.googlegroups.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+Are there any plans to add fields for that information? It would be
+very handy to have available should the user choose to enter it.
+</para><footer type="list-management" depth="0">--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups<br/>"Google Health Developers" group.
+To post to this group, send email to <email>googlehealthdevelopers@googlegroups.com</email>
+To unsubscribe from this group, send email to<br/>googlehealthdevelopers+<email>unsubscribe@googlegroups.com</email>
+For more options, visit this group at<br/><url>http://groups.google.com/group/googlehealthdevelopers?hl=en</url>
+-~----------~----~----~----~------~----~------~--~---
+
+</footer></body></message>

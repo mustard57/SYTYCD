@@ -1,0 +1,58 @@
+<message message-id="bb50c1c80606300815g311c8672xa716b0a9f6bbe992@mail.gmail.com" list="net.java.dev.dwr.users" id="24awwyr7scv5vlmi" type="users" date="2006-06-30T10:15:06-05:00" year="2006-01-01" year-month="2006-06-01" year-month-day="2006-06-30" thread-id="b7swku52oh4ujiwz"><headers><envelope-from-line>From users@dwr.dev.java.net Fri Jun 30 09:00:12 2006</envelope-from-line><from personal="Rob Moore" address="rob.moore@gmail.com">Rob Moore &lt;rob.moore@gmail.com&gt;</from><to personal="users@dwr.dev.java.net" address="users@dwr.dev.java.net">users@dwr.dev.java.net</to><subject normal="[dwr-user] 1.1 branch">Re: [dwr-user] 1.1 branch</subject><return-path>rob.moore@gmail.com</return-path><mailing-list>contact users-help@dwr.dev.java.net; run by ezmlm</mailing-list><delivered-to>mailing list users@dwr.dev.java.net</delivered-to><received>(qmail 19471 invoked from network); 30 Jun 2006 15:15:08 -0000</received><received>from cylon2.sjc.collab.net (204.16.104.18)
+  by s006.sfo.collab.net with SMTP; 30 Jun 2006 15:15:08 -0000</received><received>from nf-out-0910.google.com ([64.233.182.186])
+  by cylon2.sjc.collab.net with ESMTP; 30 Jun 2006 08:15:07 -0700</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AQAAAJjcpESKFwIKBwgWBw</x-ironport-anti-spam-result><x-ironport-av>i="4.06,197,1149490800"; 
+   d="scan'208"; a="18283844:sNHT19381215"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>by nf-out-0910.google.com with SMTP id y38so268161nfb
+        for &lt;users@dwr.dev.java.net&gt;; Fri, 30 Jun 2006 08:15:06 -0700 (PDT)</received><domainkey-signature>a=rsa-sha1; q=dns; c=nofws;
+        s=beta; d=gmail.com;
+        h=received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=EO3sL0pAykGXP9ym+DG7U9LOg7+1D2PgGVB3mIXR0Px1DxYjnRCdjG1RZsF2WKTA7WwaqH08e7xtVwSje0cDqX0K6/v7GnAfTtGrUJ/0gKnpl/Yyhi8dZnrtF8KAWSy61DG9E3pbgxZS8Ne481v3hkjJ6pyVVkrBUrfr5uFnN+o=</domainkey-signature><received>by 10.78.166.7 with SMTP id o7mr202025hue;
+        Fri, 30 Jun 2006 08:15:06 -0700 (PDT)</received><received>by 10.78.25.14 with HTTP; Fri, 30 Jun 2006 08:15:06 -0700 (PDT)</received><message-id>bb50c1c80606300815g311c8672xa716b0a9f6bbe992@mail.gmail.com</message-id><date>Fri, 30 Jun 2006 10:15:06 -0500</date><in-reply-to>&lt;5dd474260606292054w2ebb6f1w192d9028b329d532@mail.gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><content-disposition>inline</content-disposition><references>&lt;445E5F7A.20306@dwelle.net&gt;
+	 &lt;bb50c1c80606281623j215840d6xec5596b7a9b29b38@mail.gmail.com&gt;
+	 &lt;44A31A6F.4050901@gmail.com&gt;
+	 &lt;5dd474260606281955r66638830p5497273ac675a7ac@mail.gmail.com&gt;
+	 &lt;44A348E7.2030205@gmail.com&gt;
+	 &lt;5dd474260606291045w3af50404w6c25b3775d484b13@mail.gmail.com&gt;
+	 &lt;bb50c1c80606291125o4c58daadt5b98c1cbdc92e111@mail.gmail.com&gt;
+	 &lt;5dd474260606291422x2f1ad204ofbe69d37c2c25bf0@mail.gmail.com&gt;
+	 &lt;bb50c1c80606291657m718243dctb75fb4343654ef56@mail.gmail.com&gt;
+	 &lt;5dd474260606292054w2ebb6f1w192d9028b329d532@mail.gmail.com&gt;</references></headers><normalized-references><normalized-message-id>bb50c1c80606300815g311c8672xa716b0a9f6bbe992@mail.gmail.com</normalized-message-id><normalized-in-reply-to>5dd474260606292054w2ebb6f1w192d9028b329d532@mail.gmail.com</normalized-in-reply-to><normalized-reference>445E5F7A.20306@dwelle.net</normalized-reference><normalized-reference>bb50c1c80606281623j215840d6xec5596b7a9b29b38@mail.gmail.com</normalized-reference><normalized-reference>44A31A6F.4050901@gmail.com</normalized-reference><normalized-reference>5dd474260606281955r66638830p5497273ac675a7ac@mail.gmail.com</normalized-reference><normalized-reference>44A348E7.2030205@gmail.com</normalized-reference><normalized-reference>5dd474260606291045w3af50404w6c25b3775d484b13@mail.gmail.com</normalized-reference><normalized-reference>bb50c1c80606291125o4c58daadt5b98c1cbdc92e111@mail.gmail.com</normalized-reference><normalized-reference>5dd474260606291422x2f1ad204ofbe69d37c2c25bf0@mail.gmail.com</normalized-reference><normalized-reference>bb50c1c80606291657m718243dctb75fb4343654ef56@mail.gmail.com</normalized-reference><normalized-reference>5dd474260606292054w2ebb6f1w192d9028b329d532@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1; format=flowed"><greeting depth="0">Hi, Joe,
+</greeting><para depth="0">
+I was able to repeat the double alert message scenario with valid
+code. Looking at engine.js, I think it has to do with the absence of a
+return in the block:
+
+</para><para depth="0"> else {
+          DWREngine._handleMetaDataWarning(null, "Invalid content type
+from server: '" + contentType + "'");
+        }
+
+</para><para depth="0">As a result, the code continues to the invalid reply from server alert.
+
+</para><para depth="0">Rob
+
+</para><para depth="0">On 6/29/06, Joe Walker &lt;<email>joseph.walker@gmail.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">
+Thanks Rob.
+It would be good to know what you find.
+
+</quotepara><quotepara depth="1">Joe
+
+</quotepara><quotepara depth="1">On 6/30/06, Rob Moore &lt;<email>rob.moore@gmail.com</email> &gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+</quotepara></quote><quotepara depth="1">Works for Me (tm).
+
+</quotepara><quotepara depth="1">At first, I didn't have the handler configured correctly and I did
+notice that I received an invalid server response alert after the
+message about 'Invalid content type from server' but I had a stray
+paren in my script so that might have caused an issue apart from the
+code. I will fiddle with it tomorrow and see if I can reproduce the
+issue
+
+</quotepara><quotepara depth="1">Rob
+
+</quotepara><quotepara depth="1">---------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">To unsubscribe, e-mail: <email>users-unsubscribe@dwr.dev.java.net</email>
+For additional commands, e-mail: <email>users-help@dwr.dev.java.net</email>
+
+</quotepara></quote></body></message>

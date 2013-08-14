@@ -1,0 +1,46 @@
+<message message-id="20041207203758.X85748@minotaur.apache.org" list="org.apache.commons.dev" id="24b2v2eiu3bwkdoi" type="development" date="2004-12-07T20:49:26-08:00" year="2004-01-01" year-month="2004-12-01" year-month-day="2004-12-07" thread-id="24b2v2eiu3bwkdoi"><headers><envelope-from-line>From commons-dev-return-64061-apmail-jakarta-commons-dev-archive=jakarta.apache.org@jakarta.apache.org Wed Dec 08 04:49:32 2004</envelope-from-line><from personal="Martin Cooper" address="martinc@apache.org">Martin Cooper &lt;martinc@apache.org&gt;</from><to personal="commons-dev@jakarta.apache.org" address="commons-dev@jakarta.apache.org">commons-dev@jakarta.apache.org</to><subject normal="[FileUpload] Test changes">[FileUpload] Test changes</subject><return-path>commons-dev-return-64061-apmail-jakarta-commons-dev-archive=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-commons-dev-archive@www.apache.org</delivered-to><received>(qmail 93637 invoked from network); 8 Dec 2004 04:49:30 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur-2.apache.org with SMTP; 8 Dec 2004 04:49:30 -0000</received><received>(qmail 64150 invoked by uid 500); 8 Dec 2004 04:49:29 -0000</received><delivered-to>apmail-jakarta-commons-dev-archive@jakarta.apache.org</delivered-to><received>(qmail 63799 invoked by uid 500); 8 Dec 2004 04:49:27 -0000</received><mailing-list>contact commons-dev-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:commons-dev-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:commons-dev-subscribe@jakarta.apache.org&gt;</list-subscribe><list-help>&lt;mailto:commons-dev-help@jakarta.apache.org&gt;</list-help><list-post>&lt;mailto:commons-dev@jakarta.apache.org&gt;</list-post><list-id>"Jakarta Commons Developers List" &lt;commons-dev.jakarta.apache.org&gt;</list-id><reply-to>"Jakarta Commons Developers List" &lt;commons-dev@jakarta.apache.org&gt;</reply-to><delivered-to>mailing list commons-dev@jakarta.apache.org</delivered-to><received>(qmail 63784 invoked by uid 99); 8 Dec 2004 04:49:27 -0000</received><x-asf-spam-status>No, hits=-10.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from minotaur.apache.org (HELO minotaur.apache.org) (209.237.227.194)
+  by apache.org (qpsmtpd/0.28) with SMTP; Tue, 07 Dec 2004 20:49:27 -0800</received><received>(qmail 93597 invoked by uid 1339); 8 Dec 2004 04:49:26 -0000</received><received>from localhost (sendmail-bs@127.0.0.1)
+  by localhost with SMTP; 8 Dec 2004 04:49:26 -0000</received><date>Tue, 7 Dec 2004 20:49:26 -0800 (PST)</date><message-id>20041207203758.X85748@minotaur.apache.org</message-id><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII; format=flowed</content-type><x-spam-rating>localhost 1.6.2 0/1000/N</x-spam-rating><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>20041207203758.X85748@minotaur.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">Nice to see someone else committing to FileUpload! :-)
+
+</para><para depth="0">A few comments on the recent checkins:
+
+</para><para depth="0">1) Perhaps I'm jumping the gun here, but FileUploadTest needs to come back 
+as DiskFileUploadTest. Even though that class is now deprecated, we still 
+need to be able to test it for the next release, prior to removing it in 
+the release beyond that.
+
+</para><para depth="0">2) We need to keep the tests in the same package as the classes they are 
+testing. So, for example, the new ServletFileUploadTest should be pushed 
+down into org.apache.fileupload.servlet. (This is something I hadn't got 
+around to sorting out yet myself.)
+
+</para><para depth="0">3) ServletFileUploadTest appears to be testing DiskFileUpload instead of, 
+um, well, ServletFileUpload. ;-)
+
+</para><para depth="0">4) Rather than removing the constructor from ServletFileUploadTest, 
+shouldn't there still be one that takes a string parameter? I thought 
+JUnit was happier (or provided more helpful messages) with the constructor 
+there (but I could be wrong).
+
+</para><para depth="0">5) Is there some package out there in the world that we can simply depend 
+on for mock objects, rather than having to have our own? I wasn't happy 
+with the one just removed either, but I was hoping to find something else 
+we could just use.
+
+</para><para depth="0">6) FileUpload is now using the Sun coding conventions, and no longer uses 
+the Turbine ones. While I haven't yet made a pass through the tests to 
+make this change, just a heads up that new code should follow the Sun 
+conventions.
+
+</para><para depth="0">7) Most important of all: Thanks!
+
+</para><footer type="signature" hash="10927615562057750034" depth="0">--
+Martin Cooper
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>commons-dev-unsubscribe@jakarta.apache.org</email>
+For additional commands, e-mail: <email>commons-dev-help@jakarta.apache.org</email>
+
+</footer></body></message>

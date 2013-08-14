@@ -1,0 +1,94 @@
+<message message-id="20110508104543.GB5364@uriah.heep.sax.de" list="org.freebsd.freebsd-scsi" id="24ce62ikzkueieth" type="general" date="2011-05-08T02:45:31.814696-08:00" year="2011-01-01" year-month="2011-05-01" year-month-day="2011-05-08" thread-id="mtcr2c2enecdwe6n"><headers><envelope-from-line>Sun May 08 02:45:54 2011</envelope-from-line><from personal="Joerg Wunsch" address="freebsd-scsi@uriah.heep.sax.de">Joerg Wunsch &lt;freebsd-scsi@uriah.heep.sax.de&gt;</from><to personal="freebsd-scsi@freebsd.org" address="freebsd-scsi@freebsd.org">freebsd-scsi@freebsd.org</to><subject normal="Panic when removing a SCSI device entry">Re: Panic when removing a SCSI device entry</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 506
+          for &lt;annette.johns.sexton@a.markmail.org&gt;;
+          Sun, 8 May 2011 02:45:54 -0800 (GMT-08:00)</received><received>from mx2.freebsd.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 80DE529081B9
+	for &lt;annette.johns.sexton@a.markmail.org&gt;; Sun,  8 May 2011 03:45:31 -0700 (PDT)</received><received>from hub.freebsd.org (hub.freebsd.org [IPv6:2001:4f8:fff6::36])
+	by mx2.freebsd.org (Postfix) with ESMTP id BAB28150FEA;
+	Sun,  8 May 2011 10:45:52 +0000 (UTC)</received><received>from hub.freebsd.org (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with ESMTP id 5F5031065673;
+	Sun,  8 May 2011 10:45:52 +0000 (UTC)
+	(envelope-from owner-freebsd-scsi@freebsd.org)</received><delivered-to>freebsd-scsi@freebsd.org</delivered-to><received>from mx1.freebsd.org (mx1.freebsd.org [IPv6:2001:4f8:fff6::34])
+	by hub.freebsd.org (Postfix) with ESMTP id 49C511065670
+	for &lt;freebsd-scsi@freebsd.org&gt;; Sun,  8 May 2011 10:45:45 +0000 (UTC)
+	(envelope-from j@uriah.heep.sax.de)</received><received>from uriah.heep.sax.de (uriah.heep.sax.de [213.240.137.9])
+	by mx1.freebsd.org (Postfix) with ESMTP id E49258FC08
+	for &lt;freebsd-scsi@freebsd.org&gt;; Sun,  8 May 2011 10:45:44 +0000 (UTC)</received><received>by uriah.heep.sax.de (Postfix, from userid 107)
+	id 6274C8; Sun,  8 May 2011 12:45:43 +0200 (MET DST)</received><date>Sun, 8 May 2011 12:45:43 +0200</date><message-id>20110508104543.GB5364@uriah.heep.sax.de</message-id><references>&lt;20110508085314.GA5364@uriah.heep.sax.de&gt;
+	&lt;20110508094509.GT48734@deviant.kiev.zoral.com.ua&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><in-reply-to>&lt;20110508094509.GT48734@deviant.kiev.zoral.com.ua&gt;</in-reply-to><x-phone>+49-351-2012 669</x-phone><x-pgp-fingerprint>DC 47 E6 E4 FF A6 E9 8F  93 21 E0 7D F9 12 D6 4E</x-pgp-fingerprint><x-gpg-fingerprint>5E84 F980 C3CA FD4B B584  1070 F48C A81B 69A8 5873</x-gpg-fingerprint><user-agent>Mutt/1.5.20 (2009-06-14)</user-agent><x-beenthere>freebsd-scsi@freebsd.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><reply-to>Joerg Wunsch &lt;joerg_wunsch@uriah.heep.sax.de&gt;</reply-to><list-id>SCSI subsystem &lt;freebsd-scsi.freebsd.org&gt;</list-id><list-unsubscribe>&lt;http://lists.freebsd.org/mailman/listinfo/freebsd-scsi&gt;,
+	&lt;mailto:freebsd-scsi-request@freebsd.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.freebsd.org/pipermail/freebsd-scsi&gt;</list-archive><list-post>&lt;mailto:freebsd-scsi@freebsd.org&gt;</list-post><list-help>&lt;mailto:freebsd-scsi-request@freebsd.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.freebsd.org/mailman/listinfo/freebsd-scsi&gt;,
+	&lt;mailto:freebsd-scsi-request@freebsd.org?subject=subscribe&gt;</list-subscribe><sender>owner-freebsd-scsi@freebsd.org</sender><errors-to>owner-freebsd-scsi@freebsd.org</errors-to></headers><normalized-references><normalized-message-id>20110508104543.GB5364@uriah.heep.sax.de</normalized-message-id><normalized-in-reply-to>20110508094509.GT48734@deviant.kiev.zoral.com.ua</normalized-in-reply-to><normalized-reference>20110508085314.GA5364@uriah.heep.sax.de</normalized-reference><normalized-reference>20110508094509.GT48734@deviant.kiev.zoral.com.ua</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">As Kostik Belousov wrote:
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">and it's the indirection of *(dev)-&gt;si_siblings.le_prev that hits a
+NULL pointer.  Obviously, LIST_REMOVE doesn't anticipate that
+</quotepara></quote></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Is it NULL pointer dereference ? See below.
+</quotepara></quote><para depth="0">
+Yes, the fault address in the page fault is 0.
+
+</para><quote depth="1"><quotepara depth="1">Please provide the full printout from the panic. Also, it would
+be useful to get the dump and do "p *dev" from the frame of
+destroy_devl(). I might need further information after the requested
+data is provided.
+</quotepara></quote><para depth="0">
+Unfortunately, I somehow cannot get the system to provide a coredump.
+
+</para><para depth="0">The dmesg printout from the panic is:
+
+</para><para depth="0">sa0 at sym0 bus 0 scbus1 target 0 lun 0
+sa0: &lt;QUANTUM DLT7000 2560&gt; Removable Sequential Access SCSI-2 device 
+sa0: 20.000MB/s transfers (10.000MHz, offset 15, 16bit)
+(sa0:sym0:0:0:0): removing device entry
+
+</para><para depth="0">Fatal trap 12: page fault while in kernel mode
+cpuid = 0; apic id = 00
+fault virtual address   = 0x0
+fault code              = supervisor write, page not present
+instruction pointer     = 0x20:0xc052f346
+stack pointer           = 0x28:0xe98504a0
+frame pointer           = 0x28:0xe98504c4
+code segment            = base 0x0, limit 0xfffff, type 0x1b
+                        = DPL 0, pres 1, def32 1, gran 1
+processor eflags        = interrupt enabled, resume, IOPL = 0
+current process         = 52518 (mt)
+trap number             = 12
+panic: page fault
+cpuid = 0
+Uptime: 1d4h55m31s
+
+</para><para depth="0">(This includes the sa0 device arrival/removal messages.)
+
+</para><para depth="0">The disassembly of the respective part of destroy_devl() is:
+
+</para><para depth="0">0xc052f32e &lt;destroy_devl+30&gt;:   test   $0x10,%dl
+0xc052f331 &lt;destroy_devl+33&gt;:   je     0xc052f34c &lt;destroy_devl+60&gt;
+0xc052f333 &lt;destroy_devl+35&gt;:   mov    0x4c(%esi),%edx
+0xc052f336 &lt;destroy_devl+38&gt;:   test   %edx,%edx
+0xc052f338 &lt;destroy_devl+40&gt;:   je     0xc052f340 &lt;destroy_devl+48&gt;
+0xc052f33a &lt;destroy_devl+42&gt;:   mov    0x50(%esi),%eax
+0xc052f33d &lt;destroy_devl+45&gt;:   mov    %eax,0x50(%edx)
+0xc052f340 &lt;destroy_devl+48&gt;:   mov    0x50(%esi),%edx
+0xc052f343 &lt;destroy_devl+51&gt;:   mov    0x4c(%esi),%eax
+0xc052f346 &lt;destroy_devl+54&gt;:   mov    %eax,(%edx)
+0xc052f348 &lt;destroy_devl+56&gt;:   andl   $0xffffffef,0x4(%esi)
+
+</para><para depth="0">I could perhaps setup a serial console, so to get at least DDB
+functioning if you'd like to see more details.  A remote GDB might
+also be possible, but will require more work (setting up the
+respective environment on a second machine).
+
+</para><quote depth="1"><quotepara depth="1">Thing you may try meantime is the following patch.
+</quotepara></quote><para depth="0">
+OK, I'll do that tonight, so let's see how the subsequent nightly
+backups proceed.
+
+</para><footer type="signature" depth="0" hash="2809176499233616886">-- 
+cheers, J"org               .-.-.   --... ...--   -.. .  DL8DTL
+
+</footer><para depth="0"><url>http://www.sax.de/~joerg/</url>                        NIC: JW11-RIPE
+Never trust an operating system you don't have sources for. ;-)
+</para><footer type="list-management" depth="0">_______________________________________________
+<email>freebsd-scsi@freebsd.org</email> mailing list
+<url>http://lists.freebsd.org/mailman/listinfo/freebsd-scsi</url>
+To unsubscribe, send any mail to "<email>freebsd-scsi-unsubscribe@freebsd.org</email>"
+</footer></body></message>

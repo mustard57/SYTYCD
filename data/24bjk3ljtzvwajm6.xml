@@ -1,0 +1,26 @@
+<message message-id="547f29230711052050l7899d3afw1b1c2205e98fd7dc@mail.gmail.com" list="org.apache.tapestry.users" id="24bjk3ljtzvwajm6" type="users" date="2007-11-05T22:50:13-06:00" year="2007-01-01" year-month="2007-11-01" year-month-day="2007-11-05" thread-id="f5nc7bwptckuwmjm"><headers><envelope-from-line>Mon Nov 05 20:50:54 2007</envelope-from-line><from personal="César Lesc" address="cesar.smx@gmail.com">=?ISO-8859-1?Q?C=E9sar_Lesc?= &lt;cesar.smx@gmail.com&gt;</from><to personal="Tapestry users" address="users@tapestry.apache.org">Tapestry users &lt;users@tapestry.apache.org&gt;</to><subject normal="T5: basic CRUD pattern">Re: [Fwd: T5: basic CRUD pattern]</subject><received>from hermes.apache.org ([140.211.11.2])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 1015
+          for &lt;irene.bernard.beard@a.markmail.org&gt;;
+          Mon, 5 Nov 2007 20:50:54 -0800 (PST)</received><received>(qmail 91157 invoked by uid 500); 6 Nov 2007 04:50:34 -0000</received><mailing-list>contact users-help@tapestry.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:users-help@tapestry.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:users-unsubscribe@tapestry.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:users@tapestry.apache.org&gt;</list-post><list-id>&lt;users.tapestry.apache.org&gt;</list-id><reply-to>"Tapestry users" &lt;users@tapestry.apache.org&gt;</reply-to><delivered-to>mailing list users@tapestry.apache.org</delivered-to><received>(qmail 91148 invoked by uid 99); 6 Nov 2007 04:50:34 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 05 Nov 2007 20:50:34 -0800</received><x-asf-spam-status>No, hits=-0.0 required=10.0
+	tests=SPF_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (athena.apache.org: domain of cesar.smx@gmail.com designates 64.233.162.231 as permitted sender)</received-spf><received>from [64.233.162.231] (HELO nz-out-0506.google.com) (64.233.162.231)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 06 Nov 2007 04:50:36 +0000</received><received>by nz-out-0506.google.com with SMTP id j2so1313213nzf
+        for &lt;users@tapestry.apache.org&gt;; Mon, 05 Nov 2007 20:50:15 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=beta;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=9CTQ6fwgcpKhltwpAoF776ovrCs+nOFkk9iNm+hiTro=;
+        b=Ahj3qUgQeb2oSkq+y1DnGttubjNtw7wTAhQjGJHjf0DAL8migpeWAQvC+T4v7lsRIjJCSWdr6cuSZvPnVLCvlHsLkHQeowtitabth2hXeMi1pY9gURMo531h0yYa1OL2l2OCigA38GuxnMyB6NhfJ6yG8L8JV4lVVmZdeK28MsE=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=beta;
+        h=received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=HDc66x7LcHyh8EzpVtdiGTQj+AIVMoiLNy6jWo9Hg4WblgRyZnyNgwGwGurPaMWd0Z8yT2V2kwkKyig4TiCwq819YLQd3x1QzS+OOn1Z0IgR37Az7B4U9Y04k9LLD0IJrktsjCXctaxZE52V/jRMLvwx3RUHnhHHxJM7Pvs0lyE=</domainkey-signature><received>by 10.114.14.1 with SMTP id 1mr1727353wan.1194324614029;
+        Mon, 05 Nov 2007 20:50:14 -0800 (PST)</received><received>by 10.114.124.3 with HTTP; Mon, 5 Nov 2007 20:50:13 -0800 (PST)</received><message-id>547f29230711052050l7899d3afw1b1c2205e98fd7dc@mail.gmail.com</message-id><date>Mon, 5 Nov 2007 22:50:13 -0600</date><in-reply-to>&lt;1194314268.6402.48.camel@localhost&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><content-disposition>inline</content-disposition><references>&lt;1194314268.6402.48.camel@localhost&gt;</references><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>547f29230711052050l7899d3afw1b1c2205e98fd7dc@mail.gmail.com</normalized-message-id><normalized-in-reply-to>1194314268.6402.48.camel@localhost</normalized-in-reply-to><normalized-reference>1194314268.6402.48.camel@localhost</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">may be this post can help your hair.
+
+</para><para depth="0"><url>http://article.gmane.org/gmane.comp.java.tapestry.user/45921</url>
+
+</para><para depth="0">Cesar.
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@tapestry.apache.org</email>
+For additional commands, e-mail: <email>users-help@tapestry.apache.org</email>
+
+</footer></body></message>

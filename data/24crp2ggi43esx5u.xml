@@ -1,0 +1,180 @@
+<message message-id="ca4ff5990902080522pb179160j1cb834f3c87be985@mail.gmail.com" list="org.centos.centos-pt-br" id="24crp2ggi43esx5u" type="general" date="2009-02-08T11:22:58-02:00" year="2009-01-01" year-month="2009-02-01" year-month-day="2009-02-08" thread-id="k4errbux4hfiu66q"><headers><envelope-from-line>From thiagoavelinoster@gmail.com  Sun Feb  8 13:22:58 2009</envelope-from-line><from personal="Thiago Avelino" address="thiagoavelinoster@gmail.com">Thiago Avelino &lt;thiagoavelinoster@gmail.com&gt;</from><subject normal="[CentOS-pt-br] CentOS for NotebookS?">[CentOS-pt-br] CentOS for NotebookS?</subject><date>Sun, 8 Feb 2009 11:22:58 -0200</date><in-reply-to>&lt;d005f41b0902080514p4819293eh5715a69d4eadb4fe@mail.gmail.com&gt;</in-reply-to><references>&lt;134876db0902070736x5847dd67g32250009921d9828@mail.gmail.com&gt;
+	&lt;ca4ff5990902070739t488fd95i10c874115c07afec@mail.gmail.com&gt;
+	&lt;473f08370902070855y2289295dx33a1fd8fad086ba2@mail.gmail.com&gt;
+	&lt;d005f41b0902071203k40f970a0ra2e7980e9bc93b09@mail.gmail.com&gt;
+	&lt;134876db0902071808j5978e1aaw547947d5180486c2@mail.gmail.com&gt;
+	&lt;d005f41b0902080332k459998fckd090ddb95507135d@mail.gmail.com&gt;
+	&lt;ca4ff5990902080347v58b64407ua32a8dad03270150@mail.gmail.com&gt;
+	&lt;d005f41b0902080514p4819293eh5715a69d4eadb4fe@mail.gmail.com&gt;</references><message-id>ca4ff5990902080522pb179160j1cb834f3c87be985@mail.gmail.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>ca4ff5990902080522pb179160j1cb834f3c87be985@mail.gmail.com</normalized-message-id><normalized-in-reply-to>d005f41b0902080514p4819293eh5715a69d4eadb4fe@mail.gmail.com</normalized-in-reply-to><normalized-reference>134876db0902070736x5847dd67g32250009921d9828@mail.gmail.com</normalized-reference><normalized-reference>ca4ff5990902070739t488fd95i10c874115c07afec@mail.gmail.com</normalized-reference><normalized-reference>473f08370902070855y2289295dx33a1fd8fad086ba2@mail.gmail.com</normalized-reference><normalized-reference>d005f41b0902071203k40f970a0ra2e7980e9bc93b09@mail.gmail.com</normalized-reference><normalized-reference>134876db0902071808j5978e1aaw547947d5180486c2@mail.gmail.com</normalized-reference><normalized-reference>d005f41b0902080332k459998fckd090ddb95507135d@mail.gmail.com</normalized-reference><normalized-reference>ca4ff5990902080347v58b64407ua32a8dad03270150@mail.gmail.com</normalized-reference><normalized-reference>d005f41b0902080514p4819293eh5715a69d4eadb4fe@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Ate tem sé você souber ecrever em c++.
+
+</para><para depth="0">Você pode estar reportando este error para o pessoal do ubuntu.com
+
+</para><para depth="0">2009/2/8 Rafael Medeiros &lt;mederafael em gmail.com&gt;:
+</para><quote depth="1"><quotepara depth="1">tem como resolver essa parada? ou fica a cargo da distro?
+
+</quotepara><quotepara depth="1">2009/2/8 Thiago Avelino &lt;thiagoavelinoster em gmail.com&gt;
+</quotepara><quote depth="2"><quotepara depth="2">
+Isso é o frameware do modulo de sua "Ethernet Controller" no da
+distribuição usada.
+
+</quotepara><quotepara depth="2">2009/2/8 Rafael Medeiros &lt;mederafael em gmail.com&gt;:
+</quotepara><quote depth="3"><quotepara depth="3">Eae cara...baum, a wireles (intel) está funcionando, o que realmente é
+estranho é o que o led dele não fica ligado no linux!!!!
+quanto a placa de video (nvidia) está funcionando perfeitamente... O
+único
+problema mesmo é o led....talvez seja o ubuntu...
+
+</quotepara><quotepara depth="3">2009/2/8 Adriano Faleiro &lt;adrianofaleiro em gmail.com&gt;
+</quotepara><quote depth="4"><quotepara depth="4">
+qual a sua wireless Rafael???
+cara, eu gostei bastante do meu... ainda bem que não precisei de
+acionar a
+garantia ainda...
+a única coisa chata... é que com o tempo desanima ter que carregar um
+note
+tão pesado (vostro 1000)... o 1300 se não me engano já é 13" Vitor?
+bom. no meu fiz funcionar praticamente tudo.. em debian e ubuntu
+(apesar
+de fazer tudo na mão) não tive canseira...  no slackware, ainda to com
+canseira pra deixar 100% minha vga ( que nem com o driver proprietario
+funfou) e no centos vou descobrir daqui um pouco com o live cd...
+
+</quotepara><quotepara depth="4">2009/2/7 Rafael Medeiros &lt;mederafael em gmail.com&gt;
+</quotepara><quote depth="5"><quotepara depth="5">
+tenho um Dell vostro 1400.
+
+</quotepara><quotepara depth="5">Putz.. aquele botão de funcionalidades de video/mp3/contatos da um
+trabalho na instalação com dual boot...
+Outra coisa - A garantia é triste, vc tem que suar para conseguir ser
+atendido pela dell. Os técnicos são fracos.....
+Garantia no brasil é uma piada nacional......
+
+</quotepara><quotepara depth="5">Tenho ubuntu instalado no meu vostro 1400 - alguns problemas com a
+wireles ....mas já estou resolvendo...
+já estou baixando o centos 5 para trocar de linux.....
+
+</quotepara><quotepara depth="5">Abraços..
+
+</quotepara><quotepara depth="5">2009/2/7 Vitor Afonso Strabello &lt;vstrabello em gmail.com&gt;
+</quotepara><quote depth="6"><quotepara depth="6">
+Boa!
+
+</quotepara><quotepara depth="6">Ainda to sem recursos, mas com certeza compraria um Vostro da Dell.
+Quem
+sabe o 1300 =D
+
+</quotepara><quotepara depth="6">Quando eu tiver, vou testar o CentOS nele.
+
+</quotepara><quotepara depth="6">Abraços,
+
+</quotepara><quotefooter type="signature" depth="6" hash="11786134078156748557">Vitor
+
+</quotefooter><quotepara depth="6">2009/2/7 Thiago Avelino &lt;thiagoavelinoster em gmail.com&gt;
+</quotepara><quote depth="7"><quotepara depth="7">
+No wiki do centos tem alguns notebook que roda sem grandes
+problemas:
+<url>http://wiki.centos.org/HowTos/Laptops</url>
+
+</quotepara><quotepara depth="7">Só que você pode estar instalando e nós reportando os errors se der
+errors :)
+
+</quotepara><quotepara depth="7">2009/2/7 Adriano Faleiro &lt;adrianofaleiro em gmail.com&gt;
+</quotepara><quote depth="8"><quotepara depth="8">
+Bom dia pessoal... alguém já tem alguma experiência ou uso do
+CentOS
+em notebook, ou notebooks Dell Vostro 1000?
+
+</quotepara><quotefooter type="list-management" depth="8">_______________________________________________
+CentOS-pt-br mailing list
+CentOS-pt-br em centos.org
+<url>http://lists.centos.org/mailman/listinfo/centos-pt-br</url>
+
+</quotefooter></quote><quotefooter type="signature" depth="7" hash="6765295916429324901">--
+att.
+ _
+°v°   Thiago Avelino
+/(_)\   Programador | SysAdmin
+^ ^    Celular: (11) 7660-2933
+www.avelino.us | www.centos-br.org
+</quotefooter><quotefooter type="list-management" depth="7">_______________________________________________
+CentOS-pt-br mailing list
+CentOS-pt-br em centos.org
+<url>http://lists.centos.org/mailman/listinfo/centos-pt-br</url>
+</quotefooter></quote><quotefooter type="noise" depth="6">
+</quotefooter><quotefooter type="signature" depth="6" hash="16343095688821968798">--
+Inté
+msn: vstrabello em hotmail.com
+
+</quotefooter><quotefooter type="list-management" depth="6">_______________________________________________
+CentOS-pt-br mailing list
+CentOS-pt-br em centos.org
+<url>http://lists.centos.org/mailman/listinfo/centos-pt-br</url>
+
+</quotefooter></quote><quotefooter type="signature" depth="5" hash="2328414662768034425">--
+Atenciosamente,
+
+</quotefooter><quotepara depth="5">Rafael Nunes
+I'm free - Linux
+<url>http://www.linkedin.com/in/mederafael</url>
+
+</quotepara><quotefooter type="list-management" depth="5">_______________________________________________
+CentOS-pt-br mailing list
+CentOS-pt-br em centos.org
+<url>http://lists.centos.org/mailman/listinfo/centos-pt-br</url>
+
+</quotefooter></quote><quotefooter type="noise" depth="4">--
+</quotefooter><quotepara depth="4">----
+Adriano Faleiro + 55 62 84131906
+Gerente de TI
+e-mail: adriano em plexustecnologia.com
+site: www.plexustecnologia.com
+
+</quotepara><quotefooter type="list-management" depth="4">_______________________________________________
+CentOS-pt-br mailing list
+CentOS-pt-br em centos.org
+<url>http://lists.centos.org/mailman/listinfo/centos-pt-br</url>
+
+</quotefooter></quote><quotefooter type="signature" depth="3" hash="2328414662768034425">--
+Atenciosamente,
+
+</quotefooter><quotepara depth="3">Rafael Nunes
+I'm free - Linux
+<url>http://www.linkedin.com/in/mederafael</url>
+
+</quotepara><quotefooter type="list-management" depth="3">_______________________________________________
+CentOS-pt-br mailing list
+CentOS-pt-br em centos.org
+<url>http://lists.centos.org/mailman/listinfo/centos-pt-br</url>
+
+</quotefooter></quote><quotefooter type="signature" depth="2" hash="420078347472810343">--
+att.
+ _
+ °v°   Thiago Avelino
+/(_)\   Programador | SysAdmin
+ ^ ^    Celular: (11) 7660-2933
+www.avelino.us | www.centos-br.org
+</quotefooter><quotefooter type="list-management" depth="2">_______________________________________________
+CentOS-pt-br mailing list
+CentOS-pt-br em centos.org
+<url>http://lists.centos.org/mailman/listinfo/centos-pt-br</url>
+</quotefooter></quote><quotefooter type="noise" depth="1">
+</quotefooter><quotefooter type="signature" depth="1" hash="2328414662768034425">--
+Atenciosamente,
+
+</quotefooter><quotepara depth="1">Rafael Nunes
+I'm free - Linux
+<url>http://www.linkedin.com/in/mederafael</url>
+
+</quotepara><quotefooter type="list-management" depth="1">_______________________________________________
+CentOS-pt-br mailing list
+CentOS-pt-br em centos.org
+<url>http://lists.centos.org/mailman/listinfo/centos-pt-br</url>
+
+</quotefooter></quote><footer type="signature" depth="0" hash="1127266611809479209">-- 
+att.
+  _
+ °v°   Thiago Avelino
+/(_)\   Programador | SysAdmin
+ ^ ^    Celular: (11) 7660-2933
+www.avelino.us | www.centos-br.org
+</footer></body></message>

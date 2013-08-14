@@ -1,0 +1,29 @@
+<message message-id="20090616175512.E356816A09@immanuel.kde.org" list="org.kde.kde-bugs-dist" id="24cyjd7nvlzh2bhj" type="bugs" date="2009-06-16T19:55:12+02:00" year="2009-01-01" year-month="2009-06-01" year-month-day="2009-06-16" thread-id="4weze67ohzt4tqhr"><headers><envelope-from-line>Tue Jun 16 09:55:53 2009</envelope-from-line><from personal="Frank Reininghaus" address="frank78ac@googlemail.com">Frank Reininghaus &lt;frank78ac@googlemail.com&gt;</from><to personal="kde-bugs-dist@kde.org" address="kde-bugs-dist@kde.org">kde-bugs-dist@kde.org</to><subject normal="[Bug 196742] graphical glitch with tabs">[Bug 196742] graphical glitch with tabs</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 236
+          for &lt;grady.rosario.banks@a.markmail.org&gt;;
+          Tue, 16 Jun 2009 09:55:53 -0800 (GMT-08:00)</received><received>from ktown.kde.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id DFAF629082D8
+	for &lt;grady.rosario.banks@a.markmail.org&gt;; Tue, 16 Jun 2009 10:55:29 -0700 (PDT)</received><received>(qmail 14423 invoked by uid 72); 16 Jun 2009 17:55:51 -0000</received><received>(qmail 14400 invoked from network); 16 Jun 2009 17:55:49 -0000</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on ktown.kde.org</x-spam-checker-version><received>from unknown (HELO immanuel.kde.org) (138.246.255.177)
+	by ktown.kde.org with SMTP; 16 Jun 2009 17:55:47 -0000</received><received>by immanuel.kde.org (Postfix, from userid 30)
+	id E356816A09; Tue, 16 Jun 2009 19:55:12 +0200 (CEST)</received><x-bugzilla-url>http://bugs.kde.org/ </x-bugzilla-url><x-bugzilla-reason>GlobalWatcher</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>dolphin</x-bugzilla-product><x-bugzilla-component>general</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-severity>normal</x-bugzilla-severity><x-bugzilla-who>frank78ac@googlemail.com</x-bugzilla-who><x-bugzilla-status>NEW</x-bugzilla-status><x-bugzilla-priority>NOR</x-bugzilla-priority><x-bugzilla-assigned-to>peter.penz@gmx.at</x-bugzilla-assigned-to><x-bugzilla-target-milestone>---</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Status CC Ever Confirmed</x-bugzilla-changed-fields><in-reply-to>&lt;bug-196742-17878@http.bugs.kde.org/&gt;</in-reply-to><references>&lt;bug-196742-17878@http.bugs.kde.org/&gt;</references><auto-submitted>auto-generated</auto-submitted><content-type>text/plain; charset="UTF-8"</content-type><mime-version>1.0</mime-version><message-id>20090616175512.E356816A09@immanuel.kde.org</message-id><date>Tue, 16 Jun 2009 19:55:12 +0200 (CEST)</date><x-beenthere>kde-bugs-dist@kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>bug-control@bugs.kde.org</reply-to><list-id>"bugs.kde.org mail" &lt;kde-bugs-dist.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-bugs-dist&gt;,
+	&lt;mailto:kde-bugs-dist-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-bugs-dist@kde.org&gt;</list-post><list-help>&lt;mailto:kde-bugs-dist-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-bugs-dist&gt;,
+	&lt;mailto:kde-bugs-dist-request@kde.org?subject=subscribe&gt;</list-subscribe></headers><normalized-references><normalized-message-id>20090616175512.E356816A09@immanuel.kde.org</normalized-message-id><normalized-in-reply-to>bug-196742-17878@http.bugs.kde.org/</normalized-in-reply-to><normalized-reference>bug-196742-17878@http.bugs.kde.org/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0"><url>https://bugs.kde.org/show_bug.cgi?id=196742</url>
+
+</para><footer type="signature" depth="0" hash="16540068875016925228">Frank Reininghaus &lt;<email>frank78ac@googlemail.com</email>&gt; changed:
+
+</footer><para depth="0">           What    |Removed                     |Added
+</para><footer type="signature" depth="0" hash="17572362493325564319">----------------------------------------------------------------------------
+             Status|UNCONFIRMED                 |NEW
+                 CC|                            |<email>frank78ac@googlemail.com</email>
+     Ever Confirmed|0                           |1
+
+</footer><footer type="signature" depth="0" hash="1800916086784407944">--- Comment #2 from Frank Reininghaus &lt;frank78ac googlemail com&gt;  2009-06-16<br/>19:55:12 ---
+Thanks for the bug report, I could reproduce this in trunk. This might be a
+KTabBar or a Qt issue. It's strange though that it only happens when one of the
+tabs contains a split view...
+
+</footer><footer type="signature" depth="0" hash="13883541584017611628">-- 
+Configure bugmail: <url>https://bugs.kde.org/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are watching all bug changes.
+</footer></body></message>

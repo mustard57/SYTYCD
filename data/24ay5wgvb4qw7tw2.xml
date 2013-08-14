@@ -1,0 +1,36 @@
+<message message-id="E1PNpmx-0001TT-4w@mchenry.wikimedia.org" list="org.wikimedia.lists.wikibugs-l" id="24ay5wgvb4qw7tw2" type="bugs" date="2010-12-01T16:44:15Z" year="2010-01-01" year-month="2010-12-01" year-month-day="2010-12-01" thread-id="p3qk7pvh3zig345p"><headers><envelope-from-line>Wed Dec 01 08:46:55 2010</envelope-from-line><from personal="bugzilla-daemon@wikimedia.org" address="bugzilla-daemon@wikimedia.org">bugzilla-daemon@wikimedia.org</from><to personal="wikibugs-l@lists.wikimedia.org" address="wikibugs-l@lists.wikimedia.org">wikibugs-l@lists.wikimedia.org</to><subject normal="[Bug 7039] Show/hide bots/own edits from Recentchanges via preferences">[Bug 7039] Show/hide bots/own edits from Recentchanges via preferences</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 495
+          for &lt;lucio.may.cabrera@a.markmail.org&gt;;
+          Wed, 1 Dec 2010 08:46:55 -0800 (GMT-08:00)</received><received>from lists.wikimedia.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 8BFEA2908051
+	for &lt;lucio.may.cabrera@a.markmail.org&gt;; Wed,  1 Dec 2010 08:46:31 -0800 (PST)</received><received>from localhost ([127.0.0.1]:49338 helo=lily.esams.wikimedia.org)
+	by lily.knams.wikimedia.org with esmtp (Exim 4.69)
+	(envelope-from &lt;wikibugs-l-bounces@lists.wikimedia.org&gt;)
+	id 1PNppV-0000Ga-1E; Wed, 01 Dec 2010 16:46:53 +0000</received><received>from mchenry.wikimedia.org ([2620:0:860:2:219:b9ff:fedd:c027]:53744)
+	by lily.knams.wikimedia.org with esmtp (Exim 4.69)
+	(envelope-from &lt;bugzilla-daemon@wikimedia.org&gt;) id 1PNpmx-0008Ux-Kt
+	for wikibugs-l@lists.wikimedia.org; Wed, 01 Dec 2010 16:44:15 +0000</received><received>from kaulen.wikimedia.org ([208.80.152.149]:48754
+	helo=bugzilla.wikimedia.org)
+	by mchenry.wikimedia.org with esmtp (Exim 4.69)
+	(envelope-from &lt;bugzilla-daemon@wikimedia.org&gt;) id 1PNpmx-0001TT-4w
+	for wikibugs-l@lists.wikimedia.org; Wed, 01 Dec 2010 16:44:15 +0000</received><x-bugzilla-reason>CC</x-bugzilla-reason><x-bugzilla-type>changed</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>MediaWiki</x-bugzilla-product><x-bugzilla-component>Recent changes</x-bugzilla-component><x-bugzilla-keywords>patch</x-bugzilla-keywords><x-bugzilla-severity>enhancement</x-bugzilla-severity><x-bugzilla-who>umherirrender_de.wp@web.de</x-bugzilla-who><x-bugzilla-status>REOPENED</x-bugzilla-status><x-bugzilla-priority>Normal</x-bugzilla-priority><x-bugzilla-assigned-to>bugzilla.wikimedia@publi.purodha.net</x-bugzilla-assigned-to><x-bugzilla-target-milestone>---</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Keywords</x-bugzilla-changed-fields><in-reply-to>&lt;bug-7039-3@https.bugzilla.wikimedia.org/&gt;</in-reply-to><references>&lt;bug-7039-3@https.bugzilla.wikimedia.org/&gt;</references><x-bugzilla-url>https://bugzilla.wikimedia.org/</x-bugzilla-url><auto-submitted>auto-generated</auto-submitted><mime-version>1.0</mime-version><date>Wed,  1 Dec 2010 16:44:15 +0000</date><message-id>E1PNpmx-0001TT-4w@mchenry.wikimedia.org</message-id><x-beenthere>wikibugs-l@lists.wikimedia.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>wikitech-l@wikipedia.org</reply-to><list-id>Monitor updates to the Bugzilla bug tracker
+	&lt;wikibugs-l.lists.wikimedia.org&gt;</list-id><list-unsubscribe>&lt;https://lists.wikimedia.org/mailman/listinfo/wikibugs-l&gt;,
+	&lt;mailto:wikibugs-l-request@lists.wikimedia.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:wikibugs-l@lists.wikimedia.org&gt;</list-post><list-help>&lt;mailto:wikibugs-l-request@lists.wikimedia.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.wikimedia.org/mailman/listinfo/wikibugs-l&gt;,
+	&lt;mailto:wikibugs-l-request@lists.wikimedia.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>wikibugs-l-bounces@lists.wikimedia.org</sender><errors-to>wikibugs-l-bounces@lists.wikimedia.org</errors-to></headers><normalized-references><normalized-message-id>E1PNpmx-0001TT-4w@mchenry.wikimedia.org</normalized-message-id><normalized-in-reply-to>bug-7039-3@https.bugzilla.wikimedia.org/</normalized-in-reply-to><normalized-reference>bug-7039-3@https.bugzilla.wikimedia.org/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0"><url>https://bugzilla.wikimedia.org/show_bug.cgi?id=7039</url>
+
+</para><para depth="0">Umherirrender &lt;<email>umherirrender_de.wp@web.de</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+           Keywords|                            |patch
+
+</para><footer type="list-management" depth="0">-- 
+Configure bugmail: <url>https://bugzilla.wikimedia.org/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are on the CC list for the bug.
+
+</footer><footer type="list-management" depth="0">_______________________________________________
+Wikibugs-l mailing list
+<email>Wikibugs-l@lists.wikimedia.org</email>
+<url>https://lists.wikimedia.org/mailman/listinfo/wikibugs-l</url>
+</footer></body></message>

@@ -1,0 +1,74 @@
+<message message-id="37E666E0.92E37B0C@orlandi.com" list="org.postgresql.pgsql-hackers" id="24ae455kvx7lsjmr" type="development" date="1999-09-20T18:54:56+02:00" year="1999-01-01" year-month="1999-09-01" year-month-day="1999-09-20" thread-id="24ae455kvx7lsjmr"><headers><envelope-from-line>From bouncefilter  Mon Sep 20 12:55:16 1999</envelope-from-line><from personal="Daniele Orlandi" address="daniele@orlandi.com">Daniele Orlandi &lt;daniele@orlandi.com&gt;</from><to personal="pgsql-hackers@postgreSQL.org" address="pgsql-hackers@postgreSQL.org">pgsql-hackers@postgreSQL.org</to><subject normal="Crash (maybe related to temp tables)">Crash (maybe related to temp tables)</subject><received>from etabeta.xt.net (IDENT:root@etabeta.xt.net [62.212.0.40])
+	by hub.org (8.9.3/8.9.3) with ESMTP id MAA98991
+	for &lt;pgsql-hackers@postgreSQL.org&gt;; Mon, 20 Sep 1999 12:55:00 -0400 (EDT)
+	(envelope-from daniele@orlandi.com)</received><received>from orlandi.com (nabla.xt.net [62.212.0.41])
+	by etabeta.xt.net (8.9.3/8.8.8) with ESMTP id SAA02989
+	for &lt;pgsql-hackers@postgreSQL.org&gt;; Mon, 20 Sep 1999 18:54:56 +0200</received><message-id>37E666E0.92E37B0C@orlandi.com</message-id><date>Mon, 20 Sep 1999 18:54:56 +0200</date><organization>Utility Line Italia</organization><x-mailer>Mozilla 4.51 [en] (WinNT; U)</x-mailer><x-accept-language>it</x-accept-language><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>37E666E0.92E37B0C@orlandi.com</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">
+Hi,
+
+</para><para depth="0">Using PostgreSQL 6.5.2 just compiled on a RedHat 6.0 box.
+
+</para><para depth="0">------------------------
+BEGIN;
+
+</para><para depth="0">SELECT username,count(*) AS nsessions INTO TEMP TABLE active_nsessions FROM
+active GROUP BY username
+
+</para><para depth="0">SELECT username,count(*) AS nlinks INTO TEMP TABLE active_nlinks FROM active
+GROUP BY username,port,server
+
+</para><para depth="0">SELECT * FROM active,counters,users,active_nsessions,active_nlinks WHERE
+active.username=users.username AND active.username=counters.username AND
+active.username=active_nsessions.username AND
+active.username=active_nlinks.username
+
+</para><para depth="0">pqReadData() -- backend closed the channel unexpectedly.
+        This probably means the backend terminated abnormally
+        before or while processing the request.
+------------------------
+
+</para><para depth="0">Active table is empty with this structure:
+
+</para><para depth="0">CREATE TABLE active
+(
+ username               varchar(32),
+ server                 varchar(35),
+ pop                    varchar(20),
+ remAddr                varchar(30),
+ port                   varchar(15),
+ service                varchar(10),
+ addr                   inet,
+ privilege              int2,
+ authenmethod           int2,
+ authentype             int2,
+ authenservice          int2,
+ starttime              datetime,
+ taskid                 int4,
+ callerid               varchar(21),
+ callednumber           varchar(21),
+ rxrate                 int4,
+ txrate                 int4,
+
+</para><para depth="0"> bytesin                int8,
+ bytesout               int8,
+ paksin                 int8,
+ paksout                int8,
+
+</para><para depth="0"> watchdog_timeout       timespan,
+ watchdog_lastreset     datetime,
+
+</para><para depth="0"> logout_requested       bool,
+ logout_request_time    datetime
+);
+
+</para><para depth="0">Bye!
+
+</para><footer type="signature" hash="2669870577402528815" depth="0">-- 
+ Daniele
+
+</footer><footer type="signature" hash="134924493278962825" depth="0">-------------------------------------------------------------------------------
+ Daniele Orlandi - Utility Line Italia - <url>http://www.orlandi.com</url>
+ Via Mezzera 29/A - 20030 - Seveso (MI) - Italy
+-------------------------------------------------------------------------------
+
+</footer></body></message>

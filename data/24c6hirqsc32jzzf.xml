@@ -1,0 +1,19 @@
+<message message-id="001d01c01b7b$fb42cbc0$0100a8c0@kungfoo" list="net.php.lists.php-general" id="24c6hirqsc32jzzf" type="general" date="2000-09-10T19:08:04-04:00" year="2000-01-01" year-month="2000-09-01" year-month-day="2000-09-10" thread-id="qsca2wewrv4uv5h5"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Ryan J Nichols" address="ryan@globali.net">Ryan J Nichols &lt;ryan@globali.net&gt;</from><to personal="Hotchilli Support" address="support@hotchilli.co.uk">Hotchilli Support &lt;support@hotchilli.co.uk&gt;</to><subject normal="[PHP] Set text file to 0K before writing">Re: [PHP] Set text file to 0K before writing</subject><newsgroups>php.general</newsgroups><path>news.php.net</path><xref>news.php.net php.general:16092</xref><return-path>ryan@globali.net</return-path><mailing-list>contact php-general-help@lists.php.net; run by ezmlm</mailing-list><delivered-to>mailing list php-general@lists.php.net</delivered-to><received>(qmail 32006 invoked from network); 10 Sep 2000 23:11:02 -0000</received><received>from unknown (HELO globali.net) (207.91.110.3)
+  by toye.p.sourceforge.net with SMTP; 10 Sep 2000 23:11:02 -0000</received><received>(qmail 53185 invoked from network); 10 Sep 2000 22:57:36 -0000</received><received>from kungfoo.globali.net (HELO kungfoo) (root@207.91.110.40)
+  by ns1.globali.net with SMTP; 10 Sep 2000 22:57:36 -0000</received><message-id>001d01c01b7b$fb42cbc0$0100a8c0@kungfoo</message-id><references>&lt;001801c01b7a$ad126d80$f099063e@laptop.hotchilli.com&gt;</references><date>Sun, 10 Sep 2000 19:08:04 -0400</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 5.50.4133.2400</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V5.50.4133.2400</x-mimeole></headers><normalized-references><normalized-message-id>001d01c01b7b$fb42cbc0$0100a8c0@kungfoo</normalized-message-id><normalized-reference>001801c01b7a$ad126d80$f099063e@laptop.hotchilli.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><para depth="0">just fopen with mode "w" ?
+
+</para><quote depth="1"><quotepara depth="1">----- Original Message -----
+From: "Hotchilli Support" &lt;<email>support@hotchilli.co.uk</email>&gt;
+To: &lt;<email>php-general@lists.php.net</email>&gt;
+Sent: Sunday, September 10, 2000 6:58 PM
+Subject: [PHP] Set text file to 0K before writing
+
+</quotepara><quotepara depth="1">What's the quickest way to set a text file back to 0K before writing
+(without deleting and recreating it)?
+
+</quotepara><quotepara depth="1">Thanks
+
+</quotepara><quotefooter type="signature" hash="7987091016869726241" depth="1">Tony
+
+</quotefooter></quote></body></message>

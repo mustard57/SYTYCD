@@ -1,0 +1,38 @@
+<message message-id="059.259598ff1bb99cf5d7e8d0e567e4871f@djangoproject.com" list="com.googlegroups.django-updates" id="24aukojz3beramvt" type="general" date="2010-10-15T19:47:58Z" year="2010-01-01" year-month="2010-10-01" year-month-day="2010-10-15" thread-id="3lo72ykhncakdnfp"><headers><envelope-from-line>Fri Oct 15 13:57:00 2010</envelope-from-line><from personal="Django" address="&quot;nore...&quot;@djangoproject.com">Django &lt;"nore..."@djangoproject.com&gt;</from><cc personal="&quot;django-t...&quot;@holovaty.com" address="&quot;django-t...&quot;@holovaty.com">&lt;"django-t..."@holovaty.com&gt;</cc><subject normal="[Django] #14480: mysql and Django">Re: [Django] #14480: mysql and Django</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 968
+          for &lt;rufus.shaw.craft@a.markmail.org&gt;;
+          Fri, 15 Oct 2010 13:57:00 -0800 (GMT-08:00)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 8BF633B303A2
+	for &lt;rufus.shaw.craft@a.markmail.org&gt;; Fri, 15 Oct 2010 14:56:37 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (Postfix) with ESMTP id 6B91163B0154
+	for &lt;rufus.shaw.craft@a.markmail.org&gt;; Fri, 15 Oct 2010 14:56:37 -0700 (PDT)</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id o9FLubB4016003
+	for rufus.shaw.craft@a.markmail.org; Fri, 15 Oct 2010 14:56:37 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.django-updates</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>1a3f4e90504672dc</x-markmail-googlegroups-mid><received>by 10.143.9.17 with SMTP id m17mr503283wfi.43.1287172080131;
+        Fri, 15 Oct 2010 12:48:00 -0700 (PDT)</received><x-beenthere>django-updates@googlegroups.com</x-beenthere><received>by 10.142.6.9 with SMTP id 9ls2707565wff.3.p; Fri, 15 Oct 2010
+ 12:47:58 -0700 (PDT)</received><received>by 10.142.52.17 with SMTP id z17mr557907wfz.61.1287172078883;
+        Fri, 15 Oct 2010 12:47:58 -0700 (PDT)</received><received>by 10.142.52.17 with SMTP id z17mr557906wfz.61.1287172078859;
+        Fri, 15 Oct 2010 12:47:58 -0700 (PDT)</received><received>from djangoproject.com (djangoproject.com [64.207.133.18])
+        by gmr-mx.google.com with ESMTP id s21si14945539wff.4.2010.10.15.12.47.58;
+        Fri, 15 Oct 2010 12:47:58 -0700 (PDT)</received><received-spf>pass (google.com: best guess record for domain of nore...@djangoproject.com designates 64.207.133.18 as permitted sender) client-ip=64.207.133.18;</received-spf><authentication-results>gmr-mx.google.com; spf=pass (google.com: best guess record for domain of nore...@djangoproject.com designates 64.207.133.18 as permitted sender) smtp.mail=nore...@djangoproject.com</authentication-results><received>from [127.0.0.1] (localhost [127.0.0.1])
+	by djangoproject.com (Postfix) with ESMTP id 9D80244C1E7;
+	Fri, 15 Oct 2010 14:47:58 -0500 (CDT)</received><mime-version>1.0</mime-version><content-type>text/plain; charset="utf-8"</content-type><content-transfer-encoding>base64</content-transfer-encoding><sender>"nore..."@djangoproject.com</sender><x-trac-version>0.10.4</x-trac-version><x-mailer>Trac 0.10.4, by Edgewall Software</x-mailer><x-trac-project>Django</x-trac-project><date>Fri, 15 Oct 2010 19:47:58 -0000</date><reply-to>"nore..."@djangoproject.com</reply-to><x-url>http://code.djangoproject.com/</x-url><x-trac-ticket-url>http://code.djangoproject.com/ticket/14480#comment:1</x-trac-ticket-url><message-id>059.259598ff1bb99cf5d7e8d0e567e4871f@djangoproject.com</message-id><references>&lt;050.57b740e0c0b79e3653996ec599af3502@djangoproject.com&gt;</references><x-trac-ticket-id>14480</x-trac-ticket-id><in-reply-to>&lt;050.57b740e0c0b79e3653996ec599af3502@djangoproject.com&gt;</in-reply-to></headers><normalized-references><normalized-message-id>059.259598ff1bb99cf5d7e8d0e567e4871f@djangoproject.com</normalized-message-id><normalized-in-reply-to>050.57b740e0c0b79e3653996ec599af3502@djangoproject.com</normalized-in-reply-to><normalized-reference>050.57b740e0c0b79e3653996ec599af3502@djangoproject.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><footer type="signature" depth="0" hash="11818237265057081781">#14480: mysql and Django
+------------------------------------+---------------------------------------
+          Reporter:  emmaxing       |         Owner:  nobody
+            Status:  new            |     Milestone:        
+         Component:  Uncategorized  |       Version:  1.2   
+        Resolution:                 |      Keywords:        
+             Stage:  Unreviewed     |     Has_patch:  0     
+        Needs_docs:  0              |   Needs_tests:  0     
+Needs_better_patch:  0              |  
+------------------------------------+---------------------------------------
+Changes (by emmaxing):
+
+</footer><para depth="0">  * needs_better_patch:  =&gt; 0
+  * needs_tests:  =&gt; 0
+  * needs_docs:  =&gt; 0
+
+</para><footer type="signature" depth="0" hash="8082096806777349717">-- 
+Ticket URL: &lt;<url>http://code.djangoproject.com/ticket/14480#comment:1</url>&gt;
+Django &lt;<url>http://code.djangoproject.com/</url>&gt;
+The Web framework for perfectionists with deadlines.
+</footer></body></message>

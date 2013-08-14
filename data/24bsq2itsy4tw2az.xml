@@ -1,0 +1,9 @@
+<message message-id="E1I1X5s-0002uV-RE@committer01.frg.pub.inap.atl.jboss.com" list="org.jboss.lists.jboss-svn-commits" id="24bsq2itsy4tw2az" type="checkins" date="2007-06-21T20:33:46" year="2007-01-01" year-month="2007-06-01" year-month-day="2007-06-21" thread-id="24bsq2itsy4tw2az"><headers><envelope-from-line>From jboss-svn-commits@lists.jboss.org  Thu Jun 21 20:33:44 2007</envelope-from-line><from personal="jboss-svn-commits@lists.jboss.org" address="jboss-svn-commits@lists.jboss.org">"jboss-svn-commits@lists.jboss.org" &lt;jboss-svn-commits@lists.jboss.org&gt;</from><subject normal="[jboss-svn-commits] JBL Code SVN: r12762 - labs/jbossrules/trunk/drools-eclipse.">[jboss-svn-commits] JBL Code SVN: r12762 - labs/jbossrules/trunk/drools-eclipse.</subject><date>Thu Jun 21 20:33:46 2007</date><message-id>E1I1X5s-0002uV-RE@committer01.frg.pub.inap.atl.jboss.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>E1I1X5s-0002uV-RE@committer01.frg.pub.inap.atl.jboss.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Author: ahtik
+Date: 2007-06-21 20:33:44 -0400 (Thu, 21 Jun 2007)
+New Revision: 12762
+
+</para><para depth="0">Removed:
+   labs/jbossrules/trunk/drools-eclipse/drools-guided-editor-plugin/
+Log:
+project moved to drools-eclipse-plugin
+</para></body></message>

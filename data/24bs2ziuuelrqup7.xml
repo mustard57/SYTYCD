@@ -1,0 +1,68 @@
+<message message-id="4056C4BC.5060501@earthlink.net" list="org.openoffice.user-faq.authors" id="24bs2ziuuelrqup7" no-archive="yes" type="users" date="2004-03-16T01:11:24-08:00" year="2004-01-01" year-month="2004-03-01" year-month-day="2004-03-16" thread-id="qi26atv44zxhdnlh"><headers><envelope-from-line>From authors-return-459-tigrisq-archive=mail-user-faq=authors=openoffice.org=openoffice.org@user-faq.openoffice.org Tue Mar 16 09:08:08 2004</envelope-from-line><from personal="Tim Kampa" address="tjkampa@earthlink.net">Tim Kampa &lt;tjkampa@earthlink.net&gt;</from><to personal="authors@user-faq.openoffice.org" address="authors@user-faq.openoffice.org">authors@user-faq.openoffice.org</to><subject normal="[authors] Migrating to the new Template">Re: [authors] Migrating to the new Template</subject><return-path>authors-return-459-tigrisq-archive=mail-user-faq=authors=openoffice.org=openoffice.org@user-faq.openoffice.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-user-faq=authors=openoffice.org@openoffice.org</delivered-to><received>(qmail 18543 invoked by uid 5302); 16 Mar 2004 09:08:07 -0000</received><mailing-list>contact authors-help@user-faq.openoffice.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:authors-help@user-faq.openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:authors-unsubscribe@user-faq.openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:authors@user-faq.openoffice.org&gt;</list-post><reply-to>authors@user-faq.openoffice.org</reply-to><delivered-to>mailing list authors@user-faq.openoffice.org</delivered-to><received>(qmail 18521 invoked from network); 16 Mar 2004 09:08:07 -0000</received><message-id>4056C4BC.5060501@earthlink.net</message-id><date>Tue, 16 Mar 2004 01:11:24 -0800</date><user-agent>Mozilla Thunderbird 0.5 (Macintosh/20040208)</user-agent><x-accept-language>en-us, en</x-accept-language><mime-version>1.0</mime-version><references>&lt;40564C7B.6060608@math.umd.edu&gt;</references><in-reply-to>&lt;40564C7B.6060608@math.umd.edu&gt;</in-reply-to><content-type>text/plain; charset=us-ascii; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>4056C4BC.5060501@earthlink.net</normalized-message-id><normalized-in-reply-to>40564C7B.6060608@math.umd.edu</normalized-in-reply-to><normalized-reference>40564C7B.6060608@math.umd.edu</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">
+Daniel Carrera wrote:
+
+</para><quote depth="1"><quotepara depth="1">Hi all,
+
+</quotepara><quotepara depth="1">This is mostly for User Guide authors.  Tim has finished the new 
+template for the User Guide.  He has also written a HOWTO explaining how 
+to use it.
+
+</quotepara><quotepara depth="1">We haven't figured out how to download files from Plones.  So I put up 
+those documents in the old web page:
+
+</quotepara><quotepara depth="1"><url>http://www.math.umd.edu/~dcarrera/openoffice/docs/</url>
+
+</quotepara><quotepara depth="1">Tim, could you exlain to us how to migrate a document from one template 
+to another?  What is the best way to do that?
+
+</quotepara></quote><para depth="0">The only way I know of is very tedious. Cut and paste into the new 
+template, then go about applying the correct styles (OOoHeading1 for 
+Heading1, and so on). I guess better done now than later. I will go to 
+work on the Impress doc, and this is all stuff that can be done over 
+time (it will take me a while for the 50+ page Impress guide). 
+Eventually we should have all docs with the same styles though. The most 
+important thing is to start using the template for all new docs right away.
+
+</para><para depth="0">I do recall seeing someone on the Users list some time ago mention 
+something about Find and Replace for styles (is that vague enough for 
+ya?). However, I can't remember what the final answer was, whether or 
+not this is something that OOo is capable of. I'll check it out....
+
+</para><para depth="0">Also, as editors, it's up to Jim T. and myself to make sure that all 
+docs are formatted consistently (of course, any help will be greatly 
+appreciated). It's not really hard, but as I said, tedious. But once all 
+docs are formatted consistently it will be much easier to integrate them.
+
+</para><quote depth="1"><quotepara depth="1">Also, I have a question about the front page.  We are currently thinking 
+of dividing each guide (e.g. Migration Guide) into several parts, so 
+different volunteers can work on different sections simultaneously.  
+Now, does it really make sense for each small section to have a front 
+page?  I figure that there should be only one front page per guide.
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Also, regarding the copyright notices.  What should we do with those 
+when the documents are compiled into one single User Guide?  Does it 
+really make sense to have 40 copyright notices sprinkled every 7 pages 
+in the User Guide?
+
+</quotepara></quote><para depth="0">The idea of the template is to give authors everything they need to 
+format any doc for OOo. If they don't need the title page, they can 
+delete it. Same with the TOC, Index, PDL, etc. However, if they do need 
+any or all of these, then they are conveniently there for the authors to 
+use.
+
+</para><para depth="0">If an author is frequently writing small sections without a TOC, Index, 
+PDL, and so on, he/she could delete the unnecessary stuff and save a new 
+OOoLite template that still has all the relevant OOo styles. An author 
+can make as many of these customized templates as she/he needs. Does 
+this make sense?
+
+</para><para depth="0">Tim
+
+</para><quote depth="1"><quotepara depth="1">Any thoughts would be appreciated.
+
+</quotepara><quotefooter type="signature" depth="1" hash="4363153945391163310">Cheers,
+Daniel.
+
+</quotefooter></quote></body></message>

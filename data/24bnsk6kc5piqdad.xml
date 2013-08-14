@@ -1,0 +1,38 @@
+<message message-id="200005010154.SAA08504@silvia.hip.berkeley.edu" list="org.freebsd.freebsd-ports" id="24bnsk6kc5piqdad" type="general" date="2000-04-30T18:54:46-07:00" year="2000-01-01" year-month="2000-04-01" year-month-day="2000-04-30" thread-id="dui6g6lr5t7a5xvs"><headers><envelope-from-line>From owner-freebsd-ports  Sun Apr 30 18:56: 1 2000</envelope-from-line><from personal="Satoshi Asami" address="asami@cs.berkeley.edu">Satoshi Asami &lt;asami@cs.berkeley.edu&gt;</from><to personal="ports@freebsd.org" address="ports@freebsd.org">ports@freebsd.org</to><subject normal="lists of files and directories missing from PLIST">lists of files and directories missing from PLIST</subject><delivered-to>freebsd-ports@freebsd.org</delivered-to><received>from maynard.mail.mindspring.net (maynard.mail.mindspring.net [207.69.200.243])
+	by hub.freebsd.org (Postfix) with ESMTP id 77C6D37B633
+	for &lt;ports@freebsd.org&gt;; Sun, 30 Apr 2000 18:55:59 -0700 (PDT)
+	(envelope-from asami@cs.berkeley.edu)</received><received>from silvia.hip.berkeley.edu (sji-ca7-07.ix.netcom.com [209.109.235.7])
+	by maynard.mail.mindspring.net (8.9.3/8.8.5) with ESMTP id VAA21445
+	for &lt;ports@freebsd.org&gt;; Sun, 30 Apr 2000 21:55:36 -0400 (EDT)</received><received>(from asami@localhost) by silvia.hip.berkeley.edu (8.9.3/8.6.9) id SAA08504; Sun, 30 Apr 2000 18:54:46 -0700 (PDT)</received><date>Sun, 30 Apr 2000 18:54:46 -0700 (PDT)</date><message-id>200005010154.SAA08504@silvia.hip.berkeley.edu</message-id><x-authentication-warning>silvia.hip.berkeley.edu: asami set sender to asami@cs.berkeley.edu using -f</x-authentication-warning><sender>owner-freebsd-ports@FreeBSD.ORG</sender><precedence>bulk</precedence><x-loop>FreeBSD.org</x-loop></headers><normalized-references><normalized-message-id>200005010154.SAA08504@silvia.hip.berkeley.edu</normalized-message-id></normalized-references><body type="text/plain"><greeting depth="0">Hi,
+</greeting><para depth="0">
+In the past few days I've been working on getting the package
+building script smarter so it can recognize files that are left over
+after the port is deleted (mostly files missing from PLIST).  It's
+still rather rough but I've gotten something I'd like you to take a
+look at.  Here is a summary:
+
+</para><para depth="0">  <url>http://bento.FreeBSD.org/errorlogs/5-latest-logs/extras.html</url>
+
+</para><para depth="0">Right now only the 5-latest branch has a full listing (because the
+script was not ready before).
+
+</para><para depth="0">Note that the check works by pkg_delete'ing all the ports in
+/var/db/pkg and then comparing ${PREFIX} with mtree.  Thus, if there
+is a directory left by a package depended upon by a whole bunch of
+others, it will show up many times in the listing.  So please don't
+worry for things like share/doc/jpeg and share/locale for the time
+being, I'm fixing those at the root (graphics/jpeg, devel/gettext,
+etc.).
+
+</para><para depth="0">At some point in the future, I would like to make failure of this test
+fatal, i.e., the package build will fail if a port installs a file it
+doesn't say it does, or leaves an extra directory behind.  There are
+cases where files *are* supposed to be left behind (like info/dir), so
+we probably need an extra directive to speficy that.
+
+</para><para depth="0">Satoshi
+
+</para><para depth="0">To Unsubscribe: send mail to <email>majordomo@FreeBSD.org</email>
+with "unsubscribe freebsd-ports" in the body of the message
+
+</para></body></message>

@@ -1,0 +1,66 @@
+<message message-id="F4A5FC49-BBF8-4CAD-B08F-9EDD2291D6A2@fylab.com" list="org.codehaus.grails.user" id="24acuxqlc7him224" type="users" date="2009-03-18T09:49:00.331342-08:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-18" thread-id="24acuxqlc7him224"><headers><envelope-from-line>Wed Mar 18 09:49:23 2009</envelope-from-line><from personal="Franck Silvestre" address="franck.silvestre@fylab.com">Franck Silvestre &lt;franck.silvestre@fylab.com&gt;</from><to personal="user@grails.codehaus.org" address="user@grails.codehaus.org">user@grails.codehaus.org</to><subject normal="[grails-user] Cannot cast object to class grails.converters.XML">[grails-user] Cannot cast object to class grails.converters.XML</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 510
+          for &lt;katharine.henson.hurley@a.markmail.org&gt;;
+          Wed, 18 Mar 2009 09:49:23 -0800 (GMT-08:00)</received><received>from mail.codehaus.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id C18852908005
+	for &lt;katharine.henson.hurley@a.markmail.org&gt;; Wed, 18 Mar 2009 10:48:59 -0700 (PDT)</received><received>(qmail 2368 invoked by uid 89); 18 Mar 2009 17:49:12 -0000</received><mailing-list>contact user-help@grails.codehaus.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;http://xircles.codehaus.org/manage_email&gt;</list-post><list-help>&lt;http://xircles.codehaus.org/manage_email&gt;</list-help><list-unsubscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-unsubscribe><list-subscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-subscribe><list-id>&lt;user.grails.codehaus.org&gt;</list-id><reply-to>user@grails.codehaus.org</reply-to><delivered-to>mailing list user@grails.codehaus.org</delivered-to><received>(qmail 2358 invoked by uid 89); 18 Mar 2009 17:49:11 -0000</received><message-id>F4A5FC49-BBF8-4CAD-B08F-9EDD2291D6A2@fylab.com</message-id><content-type>text/plain; charset=US-ASCII; format=flowed; delsp=yes</content-type><content-transfer-encoding>7bit</content-transfer-encoding><mime-version>1.0 (Apple Message framework v930.3)</mime-version><date>Wed, 18 Mar 2009 18:49:08 +0100</date><x-mailer>Apple Mail (2.930.3)</x-mailer></headers><normalized-references><normalized-message-id>F4A5FC49-BBF8-4CAD-B08F-9EDD2291D6A2@fylab.com</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii; format=flowed; delsp=yes"><greeting depth="0">Hi,
+</greeting><para depth="0">
+I try to play with a simple REST service with Grails 1.1.
+
+</para><para depth="0">When I test it directly in the browser it works.
+When I test it with a unit test, I get the following error :
+Cannot cast object '....ScolarityService : null' with class  
+'.....ScolarityService' to class 'grails.converters.XML'
+
+</para><para depth="0">Very strange.
+
+</para><para depth="0">Here is the code of the controller :
+</para><para depth="0">---
+package ...
+
+</para><para depth="0">import grails.converters.XML
+
+</para><para depth="0">class ScolarityServiceController {
+
+</para><para depth="0">     def getHomeURL = {
+       render new ScolarityService(url : "<url>http://test.com</url>",  
+student_id : params.student_id) as XML
+     }
+}
+</para><para depth="0">---
+
+</para><para depth="0">The class "ScolarityService"
+</para><para depth="0">---
+public class ScolarityService {
+
+</para><para depth="0">   String url
+   String student_id
+
+</para><para depth="0">}
+</para><para depth="0">---
+
+</para><para depth="0">the test  method giving the error :
+</para><para depth="0">---
+void testGetHomeURL() {
+     this.controller.params.student_id = "cod-2040164"
+     this.controller.getHomeURL()
+
+</para><para depth="0">     String responseContent = this.controller.response.contentAsString
+
+</para><para depth="0">     def xml = new XmlSlurper().parseText(responseContent)
+     assertEquals "cod-2040164", xml.student_id.text()
+
+</para><para depth="0">   }
+</para><para depth="0">---
+
+</para><para depth="0">It' s the closure call wich triggers the error.
+Thanks for your help.
+
+</para><para depth="0">Franck
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe from this list, please visit:
+
+</footer><footer type="list-management" depth="0">    <url>http://xircles.codehaus.org/manage_email</url>
+
+</footer></body></message>

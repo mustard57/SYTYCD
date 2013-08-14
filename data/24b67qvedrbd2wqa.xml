@@ -1,0 +1,35 @@
+<message message-id="37764.62.2.21.164.1114695325.squirrel@www.gwch.net" list="com.redhat.fedora-test-list" id="24b67qvedrbd2wqa" type="development" date="2005-04-28T15:35:25+02:00" year="2005-01-01" year-month="2005-04-01" year-month-day="2005-04-28" thread-id="t22hdutniilqn5km"><headers><envelope-from-line>From roger@gwch.net Thu Apr 28 09:35:41 2005</envelope-from-line><from personal="Roger Grosswiler" address="roger@gwch.net">Roger Grosswiler &lt;roger@gwch.net&gt;</from><to personal="For testers of Fedora Core development releases" address="fedora-test-list@redhat.com">For testers of Fedora Core development releases &lt;fedora-test-list@redhat.com&gt;</to><subject normal="Stealthing Ports in system-config-securitylevel was: SSH brute force attack">Re: Stealthing Ports in system-config-securitylevel was: SSH brute  force attack</subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.12.11/8.12.10) with ESMTP id
+	j3SDZfQo024758 for &lt;fedora-test-list@listman.util.phx.redhat.com&gt;;
+	Thu, 28 Apr 2005 09:35:41 -0400</received><received>from mx3.redhat.com (mx3.redhat.com [172.16.48.32])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with ESMTP id j3SDZfO25307
+	for &lt;fedora-test-list@redhat.com&gt;; Thu, 28 Apr 2005 09:35:41 -0400</received><received>from mail.gwch.net (80-219-201-207.dclient.hispeed.ch
+	[80.219.201.207])
+	by mx3.redhat.com (8.12.11/8.12.11) with ESMTP id j3SDZYv4016419
+	for &lt;fedora-test-list@redhat.com&gt;; Thu, 28 Apr 2005 09:35:35 -0400</received><received>from localhost (link [127.0.0.1])
+	by mail.gwch.net (Postfix) with ESMTP id 3FAF5409E5
+	for &lt;fedora-test-list@redhat.com&gt;;
+	Thu, 28 Apr 2005 15:35:44 +0200 (CEST)</received><received>from mail.gwch.net ([127.0.0.1])
+	by localhost (mail.gwch.net [127.0.0.1]) (amavisd-new,
+	port 10024) with ESMTP id 07381-10 for &lt;fedora-test-list@redhat.com&gt;;
+	Thu, 28 Apr 2005 15:35:40 +0200 (CEST)</received><received>from www.gwch.net (80-219-201-207.dclient.hispeed.ch
+	[80.219.201.207]) by mail.gwch.net (Postfix) with ESMTP id ACD164099B
+	for &lt;fedora-test-list@redhat.com&gt;;
+	Thu, 28 Apr 2005 15:35:40 +0200 (CEST)</received><received>from 62.2.21.164 (SquirrelMail authenticated user rogerg)
+	by www.gwch.net with HTTP; Thu, 28 Apr 2005 15:35:25 +0200 (CEST)</received><message-id>37764.62.2.21.164.1114695325.squirrel@www.gwch.net</message-id><in-reply-to>&lt;20050428133322.90716.qmail@web51506.mail.yahoo.com&gt;</in-reply-to><references>6667 &lt;20050428133322.90716.qmail@web51506.mail.yahoo.com&gt;</references><date>Thu, 28 Apr 2005 15:35:25 +0200 (CEST)</date><user-agent>SquirrelMail/1.4.4-1.FC3</user-agent><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-priority>3 (Normal)</x-priority><importance>Normal</importance><x-virus-scanned>amavisd-new at gwch.net</x-virus-scanned><x-redhat-blacklist-warning>Relay 80.219.201.207 is blacklisted by a RBL system</x-redhat-blacklist-warning><x-redhat-spam-score>3.477 ***</x-redhat-spam-score><x-loop>fedora-test-list@redhat.com</x-loop><x-beenthere>fedora-test-list@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>roger@gwch.net, For testers of Fedora Core development releases
+	&lt;fedora-test-list@redhat.com&gt;</reply-to><list-id>For testers of Fedora Core development releases
+	&lt;fedora-test-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;http://www.redhat.com/mailman/listinfo/fedora-test-list&gt;,
+	&lt;mailto:fedora-test-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-test-list&gt;</list-archive><list-post>&lt;mailto:fedora-test-list@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-test-list-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;http://www.redhat.com/mailman/listinfo/fedora-test-list&gt;,
+	&lt;mailto:fedora-test-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Thu, 28 Apr 2005 13:35:41 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>37764.62.2.21.164.1114695325.squirrel@www.gwch.net</normalized-message-id><normalized-in-reply-to>20050428133322.90716.qmail@web51506.mail.yahoo.com</normalized-in-reply-to><normalized-reference>6667</normalized-reference><normalized-reference>20050428133322.90716.qmail@web51506.mail.yahoo.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><quote depth="1"><quote depth="2"><quotepara depth="2">If we were talking about usability, why not discussing an application level
+gateway-firewall for fedora like eg.
+zonealarm? This is well known by most of all users...
+</quotepara></quote><quotepara depth="1">
+Take a look at firewall builder in extras.
+
+</quotepara><quotefooter type="signature" depth="1" hash="14758181799518596329">-Steve
+
+</quotefooter></quote><para depth="0">i do know that fwbuilder as firestarter are in extras, but i still think, that<br/>fwbuiler is not really for newbs...
+
+</para><para depth="0">Roger
+</para></body></message>

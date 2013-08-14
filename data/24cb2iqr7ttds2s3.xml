@@ -1,0 +1,26 @@
+<message message-id="3cd93e9f$1$125$a14e5163@news.openoffice.org" list="org.openoffice.allbugs" id="24cb2iqr7ttds2s3" no-archive="yes" type="bugs" date="2002-05-08T15:05:03Z" year="2002-01-01" year-month="2002-05-01" year-month-day="2002-05-08" thread-id="43giwpbcup3sy5t5"><headers><envelope-from-line>From allbugs-return-20864-tigrisq-archive=mail-www=allbugs=openoffice.org=openoffice.org@openoffice.org Wed May 08 15:07:32 2002</envelope-from-line><from personal="issuezilla@openoffice.org" address="issuezilla@openoffice.org">issuezilla@openoffice.org</from><to personal="graphics-issues@openoffice.org" address="graphics-issues@openoffice.org">graphics-issues@openoffice.org</to><subject normal="[graphics-issues] [OpenOffice Issue 136] Changed - Graphics missing from slides">[graphics-issues] [OpenOffice Issue 136] Changed - Graphics missing from slides</subject><return-path>allbugs-return-20864-tigrisq-archive=mail-www=allbugs=openoffice.org=openoffice.org@openoffice.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-www=allbugs=openoffice.org@openoffice.org</delivered-to><received>(qmail 26028 invoked by uid 5302); 8 May 2002 15:07:32 -0000</received><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:allbugs-help@openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:allbugs-unsubscribe@openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:allbugs@openoffice.org&gt;</list-post><reply-to>allbugs@openoffice.org</reply-to><delivered-to>mailing list allbugs@openoffice.org</delivered-to><received>(qmail 26010 invoked by uid 5302); 8 May 2002 15:07:32 -0000</received><mailing-list>contact issues-help@graphics.openoffice.org; run by ezmlm</mailing-list><x-no-archive>yes</x-no-archive><reply-to>dev@graphics.openoffice.org</reply-to><delivered-to>mailing list issues@graphics.openoffice.org</delivered-to><newsgroups>ooo.graphics.issues</newsgroups><date>08 May 2002 15:05:03 GMT</date><lines>14</lines><message-id>3cd93e9f$1$125$a14e5163@news.openoffice.org</message-id><organization>CollabNet</organization><nntp-posting-host>63.251.56.5</nntp-posting-host><x-trace>1020870303 news.openoffice.org 125 63.251.56.5</x-trace><x-complaints-to>abuse@collab.net</x-complaints-to></headers><normalized-references><normalized-message-id>3cd93e9f$1$125$a14e5163@news.openoffice.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0"><url>http://www.openoffice.org/issues/show_bug.cgi?id=136</url>
+
+</para><para depth="0">*** shadow/136	Mon Nov 13 13:23:13 2000
+--- shadow/136.tmp.32207	Mon Nov 13 13:24:17 2000
+***************
+*** 22,24 ****
+--- 22,28 ----
+
+</para><para depth="0">  A graphic sidebar does not appear with OO 609
+  It DID used to appear under StarOffice 5.2
++ 
++ ------- Additional Comments From <email>jonathan.mills@sun.com</email>  2000-11-13 13:24<br/>-------
++ Created an attachment (id=15)
++ PowerPoint file
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>issues-unsubscribe@graphics.openoffice.org</email>
+For additional commands, e-mail: <email>issues-help@graphics.openoffice.org</email>
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>allbugs-unsubscribe@openoffice.org</email>
+For additional commands, e-mail: <email>allbugs-help@openoffice.org</email>
+
+</footer></body></message>

@@ -1,0 +1,57 @@
+<message message-id="201107260659.p6Q6xqUM019345@hera.kernel.org" list="org.kernel.vger.git-commits-head" id="24ctd3txjh6olvql" type="checkins" date="2011-07-25T22:59:32.183142-08:00" year="2011-01-01" year-month="2011-07-01" year-month-day="2011-07-25" thread-id="24ctd3txjh6olvql"><headers><envelope-from-line>Mon Jul 25 22:59:55 2011</envelope-from-line><from personal="Linux Kernel Mailing List" address="linux-kernel@vger.kernel.org">Linux Kernel Mailing List &lt;linux-kernel@vger.kernel.org&gt;</from><to personal="git-commits-head@vger.kernel.org" address="git-commits-head@vger.kernel.org">git-commits-head@vger.kernel.org</to><subject normal="powerpc: mem_init should call memblock_is_reserved with phys_addr_t">powerpc: mem_init should call memblock_is_reserved with phys_addr_t</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 25
+          for &lt;archive.user.67093@a.markmail.org&gt;;
+          Mon, 25 Jul 2011 22:59:55 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id D31497AD0001
+	for &lt;archive.user.67093@a.markmail.org&gt;; Mon, 25 Jul 2011 23:59:31 -0700 (PDT)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1752573Ab1GZG7y (ORCPT
+	&lt;rfc822;archive.user.67093@a.markmail.org&gt;);
+	Tue, 26 Jul 2011 02:59:54 -0400</received><received>from hera.kernel.org ([140.211.167.34]:52345 "EHLO hera.kernel.org"
+	rhost-flags-OK-OK-OK-OK) by vger.kernel.org with ESMTP
+	id S1752561Ab1GZG7x (ORCPT
+	&lt;rfc822;git-commits-head@vger.kernel.org&gt;);
+	Tue, 26 Jul 2011 02:59:53 -0400</received><received>from hera.kernel.org (localhost [127.0.0.1])
+	by hera.kernel.org (8.14.4/8.14.3) with ESMTP id p6Q6xqxt019363
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for &lt;git-commits-head@vger.kernel.org&gt;; Tue, 26 Jul 2011 06:59:52 GMT</received><x-virus-status>Clean</x-virus-status><x-virus-scanned>clamav-milter 0.97 at hera.kernel.org</x-virus-scanned><received>(from dwmw2@localhost)
+	by hera.kernel.org (8.14.4/8.14.4/Submit) id p6Q6xqUM019345
+	for git-commits-head@vger.kernel.org; Tue, 26 Jul 2011 06:59:52 GMT</received><date>Tue, 26 Jul 2011 06:59:52 GMT</date><message-id>201107260659.p6Q6xqUM019345@hera.kernel.org</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><x-git-commit>3d41e0f6d91cedcab08dff2f5e148b20c87a7432</x-git-commit><x-git-parent>72632ce5a4ee8c75aa7cc17eb4473fcf625b8941</x-git-parent><x-spam-status>No, score=-0.7 required=5.0 tests=ALL_TRUSTED,BAYES_00,
+	DATE_IN_FUTURE_96_Q autolearn=no version=3.3.2</x-spam-status><x-spam-checker-version>SpamAssassin 3.3.2 (2011-06-06) on hera.kernel.org</x-spam-checker-version><x-greylist>Sender IP whitelisted, not delayed by milter-greylist-4.2.3 (hera.kernel.org [127.0.0.1]); Tue, 26 Jul 2011 06:59:52 +0000 (UTC)</x-greylist><sender>git-commits-head-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;git-commits-head.vger.kernel.org&gt;</list-id><x-mailing-list>git-commits-head@vger.kernel.org</x-mailing-list><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>201107260659.p6Q6xqUM019345@hera.kernel.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Gitweb:     <url>http://git.kernel.org/linus/3d41e0f6d91cedcab08dff2f5e148b20c87a7432</url>
+Commit:     3d41e0f6d91cedcab08dff2f5e148b20c87a7432
+Parent:     72632ce5a4ee8c75aa7cc17eb4473fcf625b8941
+Author:     Becky Bruce &lt;<email>beckyb@kernel.crashing.org</email>&gt;
+AuthorDate: Tue Jun 28 09:54:46 2011 +0000
+Committer:  Benjamin Herrenschmidt &lt;<email>benh@kernel.crashing.org</email>&gt;
+CommitDate: Wed Jun 29 17:48:18 2011 +1000
+
+</para><para depth="0">    powerpc: mem_init should call memblock_is_reserved with phys_addr_t
+
+</para><para depth="0">    This has been broken for a while but hasn't been an issue until
+    now because nobody was reserving regions at high addresses.
+
+</para><para depth="0">    Signed-off-by: Becky Bruce &lt;<email>beckyb@kernel.crashing.org</email>&gt;
+    Signed-off-by: Benjamin Herrenschmidt &lt;<email>benh@kernel.crashing.org</email>&gt;
+</para><para depth="0">---
+ arch/powerpc/mm/mem.c |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+</para><para depth="0">diff --git a/arch/powerpc/mm/mem.c b/arch/powerpc/mm/mem.c
+index 57e545b..097b288 100644
+--- a/arch/powerpc/mm/mem.c
++++ b/arch/powerpc/mm/mem.c
+@@ -337,8 +337,9 @@ void __init mem_init(void)
+
+</para><para depth="0"> 		highmem_mapnr = lowmem_end_addr &gt;&gt; PAGE_SHIFT;
+ 		for (pfn = highmem_mapnr; pfn &lt; max_mapnr; ++pfn) {
++			phys_addr_t paddr = (phys_addr_t)pfn &lt;&lt; PAGE_SHIFT;
+ 			struct page *page = pfn_to_page(pfn);
+-			if (memblock_is_reserved(pfn &lt;&lt; PAGE_SHIFT))
++			if (memblock_is_reserved(paddr))
+ 				continue;
+ 			ClearPageReserved(page);
+ 			init_page_count(page);
+</para><footer type="list-management" depth="0">--
+To unsubscribe from this list: send the line "unsubscribe git-commits-head" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+</footer></body></message>

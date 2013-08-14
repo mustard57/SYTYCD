@@ -1,0 +1,23 @@
+<message message-id="20050227102812.8182.qmail@ktown.kde.org" list="org.kde.konq-bugs" id="24ajaazru5uwplq4" type="bugs" date="2005-02-27T10:28:12Z" year="2005-01-01" year-month="2005-02-01" year-month-day="2005-02-27" thread-id="23vhzkysyh2tptwt"><headers><envelope-from-line>From konq-bugs-bounces-+konq-bugs=progressive-comp.com@mail.kde.org Sun Feb 27 05:28:15 2005</envelope-from-line><from personal="Christian Loose" address="christian.loose@hamburg.de">Christian Loose &lt;christian.loose@hamburg.de&gt;</from><to personal="konq-bugs@kde.org" address="konq-bugs@kde.org">konq-bugs@kde.org</to><subject normal="[Bug 100350] &quot;Clear History&quot; followed by &quot;Clear&quot; crashes Kcontrol's &quot;History Sidebar&quot; module">[Bug 100350] "Clear History" followed by "Clear" crashes Kcontrol's "History Sidebar" module </subject><return-path>konq-bugs-bounces-+konq-bugs=progressive-comp.com@mail.kde.org</return-path><received>from ktown.kde.org (ktown.kde.org [131.246.103.200])
+	by mailer.progressive-comp.com with SMTP id j1RASE14025118
+	for &lt;konq-bugs@progressive-comp.com&gt;; Sun, 27 Feb 2005 05:28:15 -0500</received><received>(qmail 8200 invoked by uid 72); 27 Feb 2005 10:28:14 -0000</received><received>(qmail 8187 invoked by uid 1055); 27 Feb 2005 10:28:12 -0000</received><delivered-to>kde.org-konq-bugs@kde.org</delivered-to><received>(qmail 8183 invoked by uid 30); 27 Feb 2005 10:28:12 -0000</received><date>27 Feb 2005 10:28:12 -0000</date><message-id>20050227102812.8182.qmail@ktown.kde.org</message-id><content-type>text/plain; charset="utf-8"   </content-type><x-bugzilla-url>http://bugs.kde.org/   </x-bugzilla-url><x-bugzilla-reason>AssignedTo   </x-bugzilla-reason><precedence>bulk </precedence><in-reply-to>&lt;20050227045915.100350.rodrigueshugo@hotmail.com&gt;  </in-reply-to><x-beenthere>konq-bugs@mail.kde.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><reply-to>100350@bugs.kde.org</reply-to><list-id>"Konqueror, kio, khtml and kjs bugs" &lt;konq-bugs.mail.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/konq-bugs&gt;,
+	&lt;mailto:konq-bugs-request@mail.kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:konq-bugs@mail.kde.org&gt;</list-post><list-help>&lt;mailto:konq-bugs-request@mail.kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/konq-bugs&gt;,
+	&lt;mailto:konq-bugs-request@mail.kde.org?subject=subscribe&gt;</list-subscribe></headers><normalized-references><normalized-message-id>20050227102812.8182.qmail@ktown.kde.org</normalized-message-id><normalized-in-reply-to>20050227045915.100350.rodrigueshugo@hotmail.com</normalized-in-reply-to></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+</para><para depth="0"><url>http://bugs.kde.org/show_bug.cgi?id=100350</url>         
+christian.loose hamburg de changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+             Status|UNCONFIRMED                 |RESOLVED
+         Resolution|                            |INVALID
+
+</para><footer type="signature" hash="7153822240118451593" depth="0">------- Additional Comments From christian.loose hamburg de  2005-02-27 11:28<br/>-------
+duplicate entry (see Bug 100348)
+</footer><footer type="list-management" depth="0">_______________________________________________
+Konq-bugs mailing list
+<email>Konq-bugs@mail.kde.org</email>
+<url>https://mail.kde.org/mailman/listinfo/konq-bugs</url>
+
+</footer></body></message>

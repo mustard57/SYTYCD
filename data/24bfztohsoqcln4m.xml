@@ -1,0 +1,33 @@
+<message message-id="20081203131925.DFFD42159E48@dhansak.collabora.co.uk" list="org.freedesktop.lists.telepathy-commits" id="24bfztohsoqcln4m" type="checkins" date="2008-11-19T13:27:42Z" year="2008-01-01" year-month="2008-11-01" year-month-day="2008-11-19" thread-id="24bfztohsoqcln4m"><headers><envelope-from-line>From george.goldberg@collabora.co.uk  Wed Nov 19 05:27:42 2008</envelope-from-line><from personal="George Goldberg" address="george.goldberg@collabora.co.uk">George Goldberg &lt;george.goldberg@collabora.co.uk&gt;</from><subject normal="[Telepathy-commits] [telepathy-qt4/master] Add installable header for DBusProxy class, and add it to buildsystem.">[Telepathy-commits] [telepathy-qt4/master] Add installable header for DBusProxy class, and add it to buildsystem.</subject><date>Wed, 19 Nov 2008 13:27:42 +0000</date><message-id>20081203131925.DFFD42159E48@dhansak.collabora.co.uk</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>20081203131925.DFFD42159E48@dhansak.collabora.co.uk</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><footer type="signature" depth="0" hash="888456806985193669">---
+ TelepathyQt4/Client/DBusProxy |    6 ++++++
+ TelepathyQt4/Makefile.am      |    1 +
+ 2 files changed, 7 insertions(+), 0 deletions(-)
+ create mode 100644 TelepathyQt4/Client/DBusProxy
+
+</footer><para depth="0">diff --git a/TelepathyQt4/Client/DBusProxy b/TelepathyQt4/Client/DBusProxy
+new file mode 100644
+index 0000000..d5b2c35
+--- /dev/null
++++ b/TelepathyQt4/Client/DBusProxy
+@@ -0,0 +1,6 @@
++#ifndef _TelepathyQt4_Client_DBus_Proxy_HEADER_GUARD_
++#define _TelepathyQt4_Client_DBus_Proxy_HEADER_GUARD_
++
++#include &lt;TelepathyQt4/cli-dbus-proxy.h&gt;
++
++#endif
+diff --git a/TelepathyQt4/Makefile.am b/TelepathyQt4/Makefile.am
+index 9246f7e..9886ada 100644
+--- a/TelepathyQt4/Makefile.am
++++ b/TelepathyQt4/Makefile.am
+@@ -84,6 +84,7 @@ tpqt4clientinclude_HEADERS = \
+     Client/Connection \
+     Client/ConnectionManager \
+     Client/DBus \
++    Client/DBusProxy \
+     Client/MediaSessionHandler \
+     Client/MediaStreamHandler \
+     Client/OptionalInterfaceFactory \
+</para><footer type="signature" depth="0" hash="2733441680892536338">-- 
+1.5.6.5
+</footer></body></message>

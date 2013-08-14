@@ -1,0 +1,63 @@
+<message message-id="20060822132842.GF31854@fruitcom.com" list="com.digium.lists.asterisk-users" id="24b4qmoqwuoyb5ht" type="users" date="2006-08-22T06:28:42" year="2006-01-01" year-month="2006-08-01" year-month-day="2006-08-22" thread-id="hwjfzklcqmkol6ex"><headers><envelope-from-line>From es@fruitcom.com  Tue Aug 22 06:28:42 2006</envelope-from-line><from personal="Eric" address="es@fruitcom.com">Eric &lt;es@fruitcom.com&gt;</from><subject normal="[asterisk-users] placing a call with the Manager interface">[asterisk-users] placing a call with the Manager interface</subject><date>Tue Sep  5 15:23:41 2006</date><message-id>20060822132842.GF31854@fruitcom.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>20060822132842.GF31854@fruitcom.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">I am prototyping with the Manager interface and pasting the
+following into the telnet session.
+
+</para><para depth="0">Action: Originate
+Channel: SIP/dualphone
+Exten: SIP/snom
+Context: default
+Priority: 1
+Timeout: 500
+CallerID: Dualphone &lt;999999999&gt;
+Async: true
+
+</para><para depth="0">All that happens is that the phone display lights up and the
+phone rings once and then shows a missed call.
+
+</para><para depth="0">Below is the response I get from the Manager:
+
+</para><para depth="0">Any ideas what is causing this hangup?
+
+</para><para depth="0">Thanks.
+
+</para><para depth="0">Eric
+
+</para><para depth="0">========= Manager response ==================
+Response: Success
+Message: Originate successfully queued
+
+</para><para depth="0">Event: Newchannel
+Channel: SIP/dualphone-9524
+State: Down
+Callerid: &lt;unknown&gt;
+CalleridName: &lt;unknown&gt;
+Uniqueid: 1156253034.230
+
+</para><para depth="0">Event: Newcallerid
+Channel: SIP/dualphone-9524
+Callerid: 999999999
+CalleridName: Dualphone
+Uniqueid: 1156253034.230
+
+</para><para depth="0">Event: Newcallerid
+Channel: SIP/dualphone-9524
+Callerid: 999999999
+CalleridName: Dualphone
+Uniqueid: 1156253034.230
+
+</para><para depth="0">Event: Newchannel
+Channel: SIP/dualphone-9524
+State: Ringing
+Callerid: 999999999
+CalleridName: Dualphone
+Uniqueid: 1156253034.230
+
+</para><para depth="0">Event: Hangup
+Channel: SIP/dualphone-9524
+Uniqueid: 1156253034.230
+Cause: 16
+
+</para><para depth="0">Event: OriginateFailure
+Channel: SIP/dualphone
+Context: default
+Exten: SIP/snom
+</para></body></message>

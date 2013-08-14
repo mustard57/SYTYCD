@@ -1,0 +1,55 @@
+<message message-id="C32FC8D4.506F1%enzo.cesanelli@gmail.com" list="net.sourceforge.lists.plone-users" id="24crlu6zkcrh6bqm" type="users" date="2007-10-08T11:45:24+02:00" year="2007-01-01" year-month="2007-10-01" year-month-day="2007-10-08" thread-id="t3ba2ghzjhh4bnd4"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Enzo Cesanelli" address="enzo.cesanelli-Re5JQEeQqe8AvxtiuMwx3w@public.gmane.org">Enzo Cesanelli &lt;enzo.cesanelli-Re5JQEeQqe8AvxtiuMwx3w@public.gmane.org&gt;</from><to personal="Plone" address="plone-users-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org">Plone &lt;plone-users-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org&gt;</to><subject normal="Trying to use EasyCommenting...">Trying to use EasyCommenting...</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.web.zope.plone.user</newsgroups><date>Mon, 08 Oct 2007 11:45:24 +0200</date><lines>30</lines><approved>news@gmane.org</approved><message-id>C32FC8D4.506F1%enzo.cesanelli@gmail.com</message-id><nntp-posting-host>lo.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>sea.gmane.org 1191836742 9841 80.91.229.12 (8 Oct 2007 09:45:42 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Mon, 8 Oct 2007 09:45:42 +0000 (UTC)</nntp-posting-date><original-x-from>plone-users-bounces-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org Mon Oct 08 11:45:41 2007</original-x-from><return-path>plone-users-bounces-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org</return-path><envelope-to>gcwzpu-plone-users-Uylq5CNFT+jYtjvyW6yDsg@public.gmane.org</envelope-to><original-received>from lists-outbound.sourceforge.net ([66.35.250.225])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1IepBA-00041R-5h
+	for gcwzpu-plone-users-Uylq5CNFT+jYtjvyW6yDsg@public.gmane.org; Mon, 08 Oct 2007 11:45:36 +0200</original-received><original-received>from sc8-sf-list2-new.sourceforge.net (sc8-sf-list2-new-b.sourceforge.net [10.3.1.94])
+	by sc8-sf-spam2.sourceforge.net (Postfix) with ESMTP
+	id 4EE66FC89; Mon,  8 Oct 2007 02:45:30 -0700 (PDT)</original-received><original-received>from sc8-sf-mx2-b.sourceforge.net ([10.3.1.92]
+	helo=mail.sourceforge.net)
+	by sc8-sf-list2-new.sourceforge.net with esmtp (Exim 4.43)
+	id 1IepAy-0000Ot-0T
+	for plone-users-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org; Mon, 08 Oct 2007 02:45:24 -0700</original-received><original-received>from nf-out-0910.google.com ([64.233.182.191])
+	by mail.sourceforge.net with esmtp (Exim 4.44) id 1IepB1-0001zE-Vr
+	for plone-users-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org; Mon, 08 Oct 2007 02:45:29 -0700</original-received><original-received>by nf-out-0910.google.com with SMTP id 4so2891887nfv
+	for &lt;plone-users-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org&gt;;
+	Mon, 08 Oct 2007 02:45:26 -0700 (PDT)</original-received><original-received>by 10.86.51.2 with SMTP id y2mr4966060fgy.1191836726403;
+	Mon, 08 Oct 2007 02:45:26 -0700 (PDT)</original-received><original-received>from ?10.0.1.3? ( [213.140.6.120])
+	by mx.google.com with ESMTPS id d13sm11181673fka.2007.10.08.02.45.24
+	(version=TLSv1/SSLv3 cipher=OTHER);
+	Mon, 08 Oct 2007 02:45:25 -0700 (PDT)</original-received><user-agent>Microsoft-Entourage/11.3.6.070618</user-agent><thread-topic>Trying to use EasyCommenting...</thread-topic><thread-index>AcgJj/LjMWHBFXWDEdydKQARJHiV7g==</thread-index><x-spam-score>1.9 (+)</x-spam-score><x-spam-report>Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&amp;group_id=1&amp;atid=200001
+	0.0 RCVD_BY_IP             Received by mail server with no name
+	1.8 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+	[Blocked - see &lt;http://www.spamcop.net/bl.shtml?213.140.6.120&gt;]</x-spam-report><x-beenthere>plone-users-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><precedence>list</precedence><list-id>General mailinglist for users of Plone
+	&lt;plone-users.lists.sourceforge.net&gt;</list-id><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/plone-users&gt;, 
+	&lt;mailto:plone-users-request-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://sourceforge.net/mailarchive/forum.php?forum_name=plone-users&gt;</list-archive><list-post>&lt;mailto:plone-users-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org&gt;</list-post><list-help>&lt;mailto:plone-users-request-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/plone-users&gt;,
+	&lt;mailto:plone-users-request-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org?subject=subscribe&gt;</list-subscribe><original-sender>plone-users-bounces-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org</original-sender><errors-to>plone-users-bounces-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org</errors-to><xref>news.gmane.org gmane.comp.web.zope.plone.user:76168</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.web.zope.plone.user/76168&gt;</archived-at></headers><normalized-references><normalized-message-id>C32FC8D4.506F1%enzo.cesanelli@gmail.com</normalized-message-id><normalized-thread-index>AcgJj/LjMWHBFXWDEdydKQARJHiV7g</normalized-thread-index></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">I installed on my Plone 3 test instance the just released EasyCommenting 0.5
+&amp; EasyRating 2.5 products by Kai Diefenbach.
+
+</para><para depth="0">EasyRating works perfectly while EasyCommenting doesn't show any new
+interface on the standard ATCTs. Am I missing something?
+
+</para><para depth="0">I followed the install instructions and tried to make a fresh new plone
+installation too: no error is generated and the preferences are set, so I
+guess everything is going right. I also added the Pending Comments portlet
+but, obviously, never appears.
+
+</para><para depth="0">If I active the standard Plone discussion machinery (via zmi&gt;portal_types) I
+can see only the usual reply form.
+
+</para><para depth="0">Anyway, I'd like to finally have a modern comment machinery on Plone, so I'm
+asking some help to the author.
+
+</para><para depth="0">My environment is composed by Python 2.4.4 | Zope 2.10.4 | Plone 3.0.1
+
+</para><para depth="0">Thanks in advance,
+ Enzo
+
+</para><footer type="sponsored" depth="0">-------------------------------------------------------------------------
+This SF.net email is sponsored by: Splunk Inc.
+Still grepping through log files to find problems?  Stop.
+Now Search log events and configuration files using AJAX and a browser.
+Download your FREE copy of Splunk now &gt;&gt; <url>http://get.splunk.com/</url>
+
+</footer></body></message>

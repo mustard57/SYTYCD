@@ -1,0 +1,17 @@
+<message message-id="1185442127.5360.40.camel@MD97600" list="com.ubuntu.lists.ubuntu-de" id="24au2xnc67tcs6tz" type="general" date="2007-07-26T11:28:47+02:00" year="2007-01-01" year-month="2007-07-01" year-month-day="2007-07-26" thread-id="qa6hx7p5vvij5etl"><headers><envelope-from-line>From Detlef.Lechner@gmx.net Thu Jul 26 10:28:49 2007</envelope-from-line><from personal="Detlef Lechner" address="Detlef.Lechner@gmx.net">Detlef Lechner &lt;Detlef.Lechner@gmx.net&gt;</from><to personal="Matthias Böttcher" address="matthias.boettcher@gmail.com">"Matthias Böttcher" &lt;matthias.boettcher@gmail.com&gt;</to><cc personal="ubuntu-de@lists.ubuntu.com" address="ubuntu-de@lists.ubuntu.com">ubuntu-de@lists.ubuntu.com</cc><subject normal="Wie Akkulaufzeit verlängern?">Re: Wie Akkulaufzeit verlängern?</subject><received>from mail.gmx.net ([213.165.64.20])
+	by chlorine.canonical.com with smtp (Exim 4.60)
+	(envelope-from &lt;Detlef.Lechner@gmx.net&gt;) id 1IDzeL-0008SR-1f
+	for ubuntu-de@lists.ubuntu.com; Thu, 26 Jul 2007 10:28:49 +0100</received><received>(qmail invoked by alias); 26 Jul 2007 09:28:48 -0000</received><received>from p54BF3EE6.dip0.t-ipconnect.de (EHLO [192.168.178.25])
+	[84.191.62.230]
+	by mail.gmx.net (mp002) with SMTP; 26 Jul 2007 11:28:48 +0200</received><x-authenticated>#25518747</x-authenticated><x-provags-id>V01U2FsdGVkX199pbsab119tV53qKYCi7xGZPXgEXCvx8nLGSJWif
+	gr4VwpJkdOXqzY</x-provags-id><in-reply-to>&lt;11ac55140707250044j2ca6f743lf490a056c41bd27c@mail.gmail.com&gt;</in-reply-to><references>&lt;11ac55140707250044j2ca6f743lf490a056c41bd27c@mail.gmail.com&gt;</references><content-type>text/plain; charset=utf-8</content-type><date>Thu, 26 Jul 2007 11:28:47 +0200</date><message-id>1185442127.5360.40.camel@MD97600</message-id><mime-version>1.0</mime-version><x-mailer>Evolution 2.10.1 </x-mailer><content-transfer-encoding>8bit</content-transfer-encoding><x-y-gmx-trusted>0</x-y-gmx-trusted><x-beenthere>ubuntu-de@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><precedence>list</precedence><reply-to>Detlef.Lechner@gmx.net</reply-to><list-id>Ubuntu-Diskussion &lt;ubuntu-de.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-de&gt;,
+	&lt;mailto:ubuntu-de-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://lists.ubuntu.com/archives/ubuntu-de&gt;</list-archive><list-post>&lt;mailto:ubuntu-de@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-de-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-de&gt;,
+	&lt;mailto:ubuntu-de-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Thu, 26 Jul 2007 09:28:49 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>1185442127.5360.40.camel@MD97600</normalized-message-id><normalized-in-reply-to>11ac55140707250044j2ca6f743lf490a056c41bd27c@mail.gmail.com</normalized-in-reply-to><normalized-reference>11ac55140707250044j2ca6f743lf490a056c41bd27c@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Am Mittwoch, den 25.07.2007, 09:44 +0200 schrieb Matthias Böttcher:
+
+</para><quote depth="1"><quotepara depth="1">Was kann ich tun, um die Laufzeit im Batteriebetrieb zu verlängern?
+</quotepara></quote><para depth="0">Die Mailingliste <email>linux-acpi@vger.kernel.org</email> abonnieren und lesen.
+
+</para><para depth="0">Gruß
+Detlef
+
+</para></body></message>

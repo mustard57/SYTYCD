@@ -1,0 +1,89 @@
+<message message-id="201010070634.o976YlOG030724@svn.freebsd.org" list="org.freebsd.cvs-src" id="24bn5az5cfm3fnub" type="checkins" date="2010-10-06T22:34:41.66526-08:00" year="2010-01-01" year-month="2010-10-01" year-month-day="2010-10-06" thread-id="24bn5az5cfm3fnub"><headers><envelope-from-line>Wed Oct 06 22:35:04 2010</envelope-from-line><from personal="Gordon Tetlow" address="gordon@FreeBSD.org">Gordon Tetlow &lt;gordon@FreeBSD.org&gt;</from><to personal="src-committers@freebsd.org" address="src-committers@freebsd.org">src-committers@freebsd.org</to><subject normal="svn commit: r213507 - head/usr.bin/man">svn commit: r213507 - head/usr.bin/man</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 1009
+          for &lt;leann.clark.morse@a.markmail.org&gt;;
+          Wed, 6 Oct 2010 22:35:04 -0800 (GMT-08:00)</received><received>from mx2.freebsd.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 52F503B30393
+	for &lt;leann.clark.morse@a.markmail.org&gt;; Wed,  6 Oct 2010 23:34:41 -0700 (PDT)</received><received>from hub.freebsd.org (hub.freebsd.org [IPv6:2001:4f8:fff6::36])
+	by mx2.freebsd.org (Postfix) with ESMTP id 86C881A93FC;
+	Thu,  7 Oct 2010 06:34:53 +0000 (UTC)</received><received>from hub.freebsd.org (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with ESMTP id 158E11065695;
+	Thu,  7 Oct 2010 06:34:51 +0000 (UTC)
+	(envelope-from owner-svn-src-all@freebsd.org)</received><delivered-to>svn-src-all@freebsd.org</delivered-to><received>from mx1.freebsd.org (mx1.freebsd.org [IPv6:2001:4f8:fff6::34])
+	by hub.freebsd.org (Postfix) with ESMTP id 6B381106564A;
+	Thu,  7 Oct 2010 06:34:47 +0000 (UTC)
+	(envelope-from gordon@FreeBSD.org)</received><received>from svn.freebsd.org (svn.freebsd.org [IPv6:2001:4f8:fff6::2c])
+	by mx1.freebsd.org (Postfix) with ESMTP id 5B36D8FC0A;
+	Thu,  7 Oct 2010 06:34:47 +0000 (UTC)</received><received>from svn.freebsd.org (localhost [127.0.0.1])
+	by svn.freebsd.org (8.14.3/8.14.3) with ESMTP id o976YlEx030727;
+	Thu, 7 Oct 2010 06:34:47 GMT (envelope-from gordon@svn.freebsd.org)</received><received>(from gordon@localhost)
+	by svn.freebsd.org (8.14.3/8.14.3/Submit) id o976YlOG030724;
+	Thu, 7 Oct 2010 06:34:47 GMT (envelope-from gordon@svn.freebsd.org)</received><message-id>201010070634.o976YlOG030724@svn.freebsd.org</message-id><date>Thu, 7 Oct 2010 06:34:47 +0000 (UTC)</date><x-svn-group>head</x-svn-group><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><x-beenthere>svn-src-all@freebsd.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>"SVN commit messages for the entire src tree \(except for &amp;quot;
+	user&amp;quot; and &amp;quot; projects&amp;quot; \)" &lt;svn-src-all.freebsd.org&gt;</list-id><list-unsubscribe>&lt;http://lists.freebsd.org/mailman/listinfo/svn-src-all&gt;,
+	&lt;mailto:svn-src-all-request@freebsd.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.freebsd.org/pipermail/svn-src-all&gt;</list-archive><list-post>&lt;mailto:svn-src-all@freebsd.org&gt;</list-post><list-help>&lt;mailto:svn-src-all-request@freebsd.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.freebsd.org/mailman/listinfo/svn-src-all&gt;,
+	&lt;mailto:svn-src-all-request@freebsd.org?subject=subscribe&gt;</list-subscribe><sender>owner-svn-src-all@freebsd.org</sender><errors-to>owner-svn-src-all@freebsd.org</errors-to><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>201010070634.o976YlOG030724@svn.freebsd.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: gordon
+Date: Thu Oct  7 06:34:47 2010
+New Revision: 213507
+URL: <url>http://svn.freebsd.org/changeset/base/213507</url>
+
+</para><para depth="0">Log:
+  Add the ability to display specific manual pages if passed on the
+  commandline. This mirrors the old (undocumented) GNU man functionality.
+  Also document this feature in the implementation notes section of
+  the manpage.
+
+</para><para depth="0">  Submitted by:	arundel
+  Approved by:	wes (mentor implicit)
+
+</para><para depth="0">Modified:
+  head/usr.bin/man/man.1
+  head/usr.bin/man/man.sh
+
+</para><para depth="0">Modified: head/usr.bin/man/man.1
+==============================================================================
+--- head/usr.bin/man/man.1	Thu Oct  7 00:37:40 2010	(r213506)
++++ head/usr.bin/man/man.1	Thu Oct  7 06:34:47 2010	(r213507)
+@@ -225,6 +225,13 @@ will search the following paths when con
+ .It
+ .Pa /usr/share/man/man4
+ .El
++.Ss Displaying Specific Manual Files
++The
++.Nm
++utility also supports displaying a specific manual page if passed a path
++to the file as long as it contains a
++.Sq /
++character.
+ .Sh ENVIRONMENT
+ The following environment variables affect the execution of
+ .Nm :
+
+</para><para depth="0">Modified: head/usr.bin/man/man.sh
+==============================================================================
+--- head/usr.bin/man/man.sh	Thu Oct  7 00:37:40 2010	(r213506)
++++ head/usr.bin/man/man.sh	Thu Oct  7 06:34:47 2010	(r213507)
+@@ -356,6 +356,20 @@ man_display_page() {
+ man_find_and_display() {
+ 	local found_page locpath p path sect
+
+</para><para depth="0">+	# Check to see if it's a file. But only if it has a '/' in
++	# the filename.
++	case "$1" in
++	*/*)	if [ -f "$1" -a -r "$1" ]; then
++			decho "Found a usable page, displaying that"
++			found_page=yes
++			unset use_cat
++			manpage="$1"
++			man_display_page
++			return
++		fi
++		;;
++	esac
++
+ 	IFS=:
+ 	for sect in $MANSECT; do
+ 		decho "Searching section $sect" 2
+</para><footer type="list-management" depth="0">_______________________________________________
+<email>svn-src-all@freebsd.org</email> mailing list
+<url>http://lists.freebsd.org/mailman/listinfo/svn-src-all</url>
+To unsubscribe, send any mail to "<email>svn-src-all-unsubscribe@freebsd.org</email>"
+</footer></body></message>

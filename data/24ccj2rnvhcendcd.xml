@@ -1,0 +1,58 @@
+<message message-id="17551392-5817-4dab-8818-b7323d1dadb1@u69g2000hse.googlegroups.com" list="com.googlegroups.google-maps-api" id="24ccj2rnvhcendcd" type="development" date="2008-04-05T14:20:54-07:00" year="2008-01-01" year-month="2008-04-01" year-month-day="2008-04-05" thread-id="r67lpvxrcn4mswct"><headers><envelope-from-line>From - google-maps-api.googlegroups.com Jan 1 1990 </envelope-from-line><from personal="chrismarx" address="chrism...@gmail.com">chrismarx &lt;chrism...@gmail.com&gt;</from><to personal="Google Maps API" address="Google-Maps-API@googlegroups.com">Google Maps API &lt;Google-Maps-API@googlegroups.com&gt;</to><subject normal="Whats wrong with my code?">Re: Whats wrong with my code?</subject><mime-version>1.0</mime-version><message-id>17551392-5817-4dab-8818-b7323d1dadb1@u69g2000hse.googlegroups.com</message-id><date>Sat, 5 Apr 2008 14:20:54 -0700 (PDT)</date><received>by 10.141.186.1 with SMTP id n1mr82595rvp.27.1207430454262; Sat, 05 
+	Apr 2008 14:20:54 -0700 (PDT)</received><in-reply-to>&lt;fd685665-06f7-4458-9476-80addcc2bbea@c65g2000hsa.googlegroups.com&gt;</in-reply-to><x-ip>132.236.164.34</x-ip><references>&lt;a75d7c30-8351-4072-a8d1-d844294ad9ee@y21g2000hsf.googlegroups.com&gt; 
+	&lt;fd685665-06f7-4458-9476-80addcc2bbea@c65g2000hsa.googlegroups.com&gt;</references><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) 
+	Gecko/20080311 Firefox/2.0.0.13,gzip(gfe),gzip(gfe)</x-http-useragent><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>17551392-5817-4dab-8818-b7323d1dadb1@u69g2000hse.googlegroups.com</normalized-message-id><normalized-in-reply-to>fd685665-06f7-4458-9476-80addcc2bbea@c65g2000hsa.googlegroups.com</normalized-in-reply-to><normalized-reference>a75d7c30-8351-4072-a8d1-d844294ad9ee@y21g2000hsf.googlegroups.com</normalized-reference><normalized-reference>fd685665-06f7-4458-9476-80addcc2bbea@c65g2000hsa.googlegroups.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">probably should post a map!
+
+</para><para depth="0">On Apr 5, 2:01 am, Anson &lt;<email>thefossilfo...@msn.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">Ok firefox say thet athe gettileurl is not defined.
+
+</quotepara><quotepara depth="1">On Apr 5, 1:51 am, Anson &lt;<email>thefossilfo...@msn.com</email>&gt; wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">I am trying to add custom map layers to my google map but when i add
+them my map is blank what am I doing wrong?
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">if (GBrowserIsCompatible()) {
+                map = new GMap2(document.getElementById("map"));
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">                var tileDRG= new GTileLayer(new GCopyrightCollection(""),1,17);
+tileDRG.myLayers='DRG';
+tileDRG.myFormat='image/jpeg';
+tileDRG.myBaseURL='<url>http://www.terraserver-usa.com/ogcmap6.ashx?</url>';
+tileDRG.getTileUrl=CustomGetTileUrl;
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">                var tileNEX= new GTileLayer(new GCopyrightCollection(""),1,17);
+tileNEX.myLayers='nexrad-n0r';
+tileNEX.myFormat='image/png';
+tileNEX.myBaseURL='<url>http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/</url>
+n0r.cgi?';
+tileNEX.getTileUrl=CustomGetTileUrl;
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">var tileSTP= new GTileLayer(new GCopyrightCollection(""),1,17);
+tileSTP.myLayers='nexrad-ntp';
+tileSTP.myFormat='image/png';
+tileSTP.myBaseURL='<url>http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/</url>
+ntp.cgi?';
+tileSTP.getTileUrl=CustomGetTileUrl;
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">                var layer1=[tileDRG];
+                var layer2=[G_SATELLITE_MAP.getTileLayers()
+[0],G_HYBRID_MAP.getTileLayers()[1],tileSTP,tileNEX];
+                var custommap1 = new GMapType(layer1,
+G_SATELLITE_MAP.getProjection(), "Topo", G_SATELLITE_MAP);
+                var custommap2 = new GMapType(layer2,
+G_SATELLITE_MAP.getProjection(), "Nexrad", G_SATELLITE_MAP);
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">                map.addMapType(G_PHYSICAL_MAP);
+                map.addMapType(custommap1);
+        map.addMapType(custommap2);
+                map.setCenter(new GLatLng(39.811343, -96.416015), 4);
+                map.addControl(new GScaleControl());
+                map.addControl(new GLargeMapControl());
+                map.addControl(new GMapTypeControl());
+                map.enableScrollWheelZoom();
+                GEvent.addListener(map, 'click', mapClick);
+        }
+</quotepara></quote><quotepara depth="1">
+</quotepara><quote depth="2"><quotepara depth="2">}- Hide quoted text -
+</quotepara></quote><quotepara depth="1">
+</quotepara></quote></body></message>

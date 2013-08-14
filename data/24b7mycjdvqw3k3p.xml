@@ -1,0 +1,114 @@
+<message message-id="20060910162317.GE7315@alcor.net" list="com.ubuntu.lists.ubuntu-devel" id="24b7mycjdvqw3k3p" type="development" date="2006-09-10T09:23:17-07:00" year="2006-01-01" year-month="2006-09-01" year-month-day="2006-09-10" thread-id="hnjebe4hxpq6wmdz"><headers><envelope-from-line>From mdz@ubuntu.com Sun Sep 10 17:23:19 2006</envelope-from-line><from personal="Matt Zimmerman" address="mdz@ubuntu.com">Matt Zimmerman &lt;mdz@ubuntu.com&gt;</from><to personal="ubuntu-devel@lists.ubuntu.com" address="ubuntu-devel@lists.ubuntu.com">ubuntu-devel@lists.ubuntu.com</to><subject normal="32-bit Firefox (Re: How long will 64bit Ubuntu users have to wait?)">Re: 32-bit Firefox (Re: How long will 64bit Ubuntu users have to wait?)</subject><received>from mta10.adelphia.net ([68.168.78.202])
+	by esperanza.ubuntu.com with esmtp (Exim 4.60)
+	(envelope-from &lt;mdz@ubuntu.com&gt;) id 1GMS5X-0006n1-M4
+	for ubuntu-devel@lists.ubuntu.com; Sun, 10 Sep 2006 17:23:19 +0100</received><received>from mizar.alcor.net ([70.36.194.85]) by mta10.adelphia.net
+	(InterMail vM.6.01.05.02 201-2131-123-102-20050715) with ESMTP
+	id &lt;20060910162318.PXJM28375.mta10.adelphia.net@mizar.alcor.net&gt;
+	for &lt;ubuntu-devel@lists.ubuntu.com&gt;; Sun, 10 Sep 2006 12:23:18 -0400</received><received>by mizar.alcor.net (Postfix, from userid 1000)
+	id BC0BD3BF5E; Sun, 10 Sep 2006 09:23:17 -0700 (PDT)</received><date>Sun, 10 Sep 2006 09:23:17 -0700</date><message-id>20060910162317.GE7315@alcor.net</message-id><mail-followup-to>ubuntu-devel@lists.ubuntu.com</mail-followup-to><references>&lt;20060910025610.GV7315@alcor.net&gt;
+	&lt;BAY103-F40D1EE2042497585B38DC6DB350@phx.gbl&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><in-reply-to>&lt;BAY103-F40D1EE2042497585B38DC6DB350@phx.gbl&gt;</in-reply-to><user-agent>Mutt/1.5.12-2006-07-14</user-agent><x-beenthere>ubuntu-devel@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><precedence>list</precedence><list-id>Ubuntu Developer Discussion &lt;ubuntu-devel.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-devel&gt;,
+	&lt;mailto:ubuntu-devel-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://lists.ubuntu.com/archives/ubuntu-devel&gt;</list-archive><list-post>&lt;mailto:ubuntu-devel@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-devel-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-devel&gt;,
+	&lt;mailto:ubuntu-devel-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Sun, 10 Sep 2006 16:23:20 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>20060910162317.GE7315@alcor.net</normalized-message-id><normalized-in-reply-to>BAY103-F40D1EE2042497585B38DC6DB350@phx.gbl</normalized-in-reply-to><normalized-reference>20060910025610.GV7315@alcor.net</normalized-reference><normalized-reference>BAY103-F40D1EE2042497585B38DC6DB350@phx.gbl</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">On Sun, Sep 10, 2006 at 08:25:53AM -0500, Kilz _ wrote:
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">The correct solution to this problem is 64-bit plugins, in which case we
+need to petition Adobe (almost every issue of this type seems to lead to
+one of their plugins).  More voices increase the likelihood of this
+happening.
+
+</quotepara></quote><quotepara depth="1">Yes and that is something I have done. But waiting on Adobe to produce a
+64bit plugin or application may take some time. Why then are we hurting
+the 64bit users when its possible to run the existing 32bit version of the
+most needed ones. There are few people switching from Windows that do not
+require flash, or some other plugin that will not run on the 64bit
+browser.
+</quotepara></quote><para depth="0">
+All other major 64-bit distributions that I'm aware of ship 64-bit firefox,
+so please don't characterize this as Ubuntu specifically or intentionally
+"hurting" any users.  This is simply the status quo, and you are proposing a
+new step beyond that.  Furthermore, you are asking for someone (who?) do a
+substantial amount of work on your behalf (both now and ongoing) in order to
+provide it.  It is important to bear that in mind that when holding this
+type of discussion.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">Multiarch was not on the Edgy roadmap, and there are currently no plans to
+implement it.
+</quotepara></quote><quotepara depth="1">
+While I mentioned multiarch, I don't think any 64bit users expects full 
+multiarch from Ubuntu at this time. Most if not all would be happy seeing 
+some progress or a step towards it. Remember both Intel and AMD are now 
+making 64bit chips, even the cheap ones are now 64 bit. Other source and 
+rpm based distro's are mostly multiarch or working on it. The reason its 
+important is because not every application is ready as 64bit. But if the 
+applications that don't work for 64bit users were available as 32bit 
+versions this is a form of multiarch, limited, but better than nothing. As 
+it is we see eye candy being added while things don't work for us. 
+Functionality over eye candy any day for me.
+</quotepara></quote><para depth="0">
+The word "multiarch" refers to a very specific concept and feature of the
+packaging system, one which represents a relatively large development
+project.  It currently doesn't make sense for Ubuntu to attempt this at the
+expense of other development projects.
+
+</para><para depth="0">The current OpenOffice.org build, and the Firefox build we're discussing,
+are not multiarch, so it will avoid confusion if you don't use that
+terminology in this context.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">I would not object to having a 32-bit firefox build available.  That spec
+doesn't describe how to achieve the goal, but here are the basic elements
+required for a developer to get it done:
+
+</quotepara><quotepara depth="2">- Add its build-dependencies to ia32-libs or similar
+- Duplicate the firefox source package
+- Keep it up to date and respond to bug reports
+</quotepara></quote><quotepara depth="1">
+Thank you for at least seeing that 32bit Firefox is needed. But there are 
+really 3 things that are needed. Another one of them is Wine. Wine is open 
+source. But its not in the repositories. Only a dummy package that wont 
+install. It is almost impossible to compile a 64bit version. The 32bit 
+version works when forced in to a 64bit system with only 1 extra library.
+My wine howto has 16, 304 hits 
+<url>http://www.ubuntuforums.org/showthread.php?t=185557</url> . People coming over 
+from Windows expect to at least see wine and at least try to get that one 
+or two application they need it for running.
+</quotepara></quote><para depth="0">
+I don't agree with you that users migrating from Windows expect Wine, or
+even that they need it, and Wine (both Wine itself and our implementation of
+it) requires a lot of work before we could promote it as an out-of-the-box
+solution for Windows application compatibility.
+
+</para><quote depth="1"><quotepara depth="1">Next, one, just one 32bit media player, you can pick whatever one you want, 
+but one is needed.
+</quotepara></quote><para depth="0">
+I assume you want this in order to use 32-bit Windows DLLs in your media
+player.  Presumably you also understand the reasons why this configuration
+is problematic to set up and support.
+
+</para><quote depth="1"><quotepara depth="1">If these things were included the experience of people using the 64bit 
+version would at least be more positive and we may see more people 
+recommending it.
+</quotepara></quote><para depth="0">
+I have an alternative recommendation for you: run 32-bit Ubuntu.  Rather
+than running half of the desktop 32-bit on an otherwise 64-bit system,
+simply install a complete 32-bit system.  All of your complaints vanish.
+
+</para><para depth="0">Note that if you purchase a 64-bit system from a major PC vendor, you
+generally get a copy of (32-bit) Windows XP Home on it.  This generally
+works quite well, in fact I'm running such a configuration on my home PC
+right now (though for different reasons).
+
+</para><quote depth="1"><quotepara depth="1">These three things are requested again and again. I'm shocked to see that 
+no developer knows about them. But someone has told me developers do not 
+visit the user forums. I have no idea how someone can develop something 
+without feedback from the people that are using it.
+</quotepara></quote><para depth="0">
+Making this kind of accusatory assumption isn't very constructive.  I
+suggest a more positive and collaborative stance if you expect to continue
+to receive constructive feedback in return.
+
+</para><para depth="0">Of course the development team realizes that users want to use the official
+Flash plugin on 64-bit Ubuntu.  However, as I hope I've explained already,
+the issue is not as simple as it might at first appear.
+
+</para><footer type="signature" depth="0" hash="7980098183696354309">-- 
+ - mdz
+
+</footer></body></message>

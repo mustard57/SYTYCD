@@ -1,0 +1,109 @@
+<message message-id="20070412180032.2584E1A9838@eris.apache.org" list="org.apache.ws.axis-cvs" id="24chocbii4qpv7yc" type="checkins" date="2007-04-12T18:00:31Z" year="2007-01-01" year-month="2007-04-01" year-month-day="2007-04-12" thread-id="24chocbii4qpv7yc"><headers><envelope-from-line>From axis-cvs-return-23064-apmail-ws-axis-cvs-archive=ws.apache.org@ws.apache.org Thu Apr 12 18:00:58 2007</envelope-from-line><from personal="barrettj@apache.org" address="barrettj@apache.org">barrettj@apache.org</from><to personal="axis2-cvs@ws.apache.org" address="axis2-cvs@ws.apache.org">axis2-cvs@ws.apache.org</to><subject normal="svn commit: r528066 - /webservices/axis2/trunk/java/modules/metadata/src/org/apache/axis2/jaxws/description/impl/ServiceDescriptionImpl.java">svn commit: r528066 -
+ /webservices/axis2/trunk/java/modules/metadata/src/org/apache/axis2/jaxws/description/impl/ServiceDescriptionImpl.java</subject><return-path>axis-cvs-return-23064-apmail-ws-axis-cvs-archive=ws.apache.org@ws.apache.org</return-path><delivered-to>apmail-ws-axis-cvs-archive@www.apache.org</delivered-to><received>(qmail 27484 invoked from network); 12 Apr 2007 18:00:54 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (140.211.11.2)
+  by minotaur.apache.org with SMTP; 12 Apr 2007 18:00:54 -0000</received><received>(qmail 86942 invoked by uid 500); 12 Apr 2007 18:00:59 -0000</received><delivered-to>apmail-ws-axis-cvs-archive@ws.apache.org</delivered-to><received>(qmail 86848 invoked by uid 500); 12 Apr 2007 18:00:59 -0000</received><mailing-list>contact axis-cvs-help@ws.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:axis-cvs-help@ws.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:axis-cvs-unsubscribe@ws.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:axis-cvs@ws.apache.org&gt;</list-post><list-id>&lt;axis-cvs.ws.apache.org&gt;</list-id><delivered-to>mailing list axis-cvs@ws.apache.org</delivered-to><received>(qmail 86837 invoked by uid 500); 12 Apr 2007 18:00:59 -0000</received><delivered-to>apmail-ws-axis2-cvs@ws.apache.org</delivered-to><received>(qmail 86830 invoked by uid 99); 12 Apr 2007 18:00:59 -0000</received><received>from herse.apache.org (HELO herse.apache.org) (140.211.11.133)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 12 Apr 2007 11:00:59 -0700</received><x-asf-spam-status>No, hits=-99.5 required=10.0
+	tests=ALL_TRUSTED,NO_REAL_NAME</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.3] (HELO eris.apache.org) (140.211.11.3)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 12 Apr 2007 11:00:52 -0700</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id 2584E1A9838; Thu, 12 Apr 2007 11:00:32 -0700 (PDT)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Thu, 12 Apr 2007 18:00:31 -0000</date><x-mailer>svnmailer-1.1.0</x-mailer><message-id>20070412180032.2584E1A9838@eris.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20070412180032.2584E1A9838@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: barrettj
+Date: Thu Apr 12 11:00:29 2007
+New Revision: 528066
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?view=rev&amp;rev=528066</url>
+Log:
+AXIS2-2517
+Fix the validation of checked exceptions between an SEI and a service <br/>implementation 
+
+</para><para depth="0">Modified:
+<br/>webservices/axis2/trunk/java/modules/metadata/src/org/apache/axis2/jaxws/description/impl/ServiceDescriptionImpl.java 
+
+</para><para depth="0">Modified: <br/>webservices/axis2/trunk/java/modules/metadata/src/org/apache/axis2/jaxws/description/impl/ServiceDescriptionImpl.java 
+URL: <br/><url>http://svn.apache.org/viewvc/webservices/axis2/trunk/java/modules/metadata/src/org/apache/axis2/jaxws/description/impl/ServiceDescriptionImpl.java?view=diff&amp;rev=528066&amp;r1=528065&amp;r2=528066</url> 
+==============================================================================
+--- <br/>webservices/axis2/trunk/java/modules/metadata/src/org/apache/axis2/jaxws/description/impl/ServiceDescriptionImpl.java <br/>(original) 
++++ <br/>webservices/axis2/trunk/java/modules/metadata/src/org/apache/axis2/jaxws/description/impl/ServiceDescriptionImpl.java <br/>Thu Apr 12 11:00:29 2007 
+@@ -993,40 +993,40 @@
+         String[] seiExceptions = seiMDC.getExceptions();
+         String[] implExceptions = implMDC.getExceptions();
+
+</para><para depth="0">+ // An impl can choose to throw fewer checked exceptions than declared on the <br/>SEI, but not more. 
++        // This is analagous to the Java rules for interfaces.
+         if (seiExceptions == null) {
+             if (implExceptions == null) {
+                 return;
+             } else {
+-                //Exception: sei list is null, but impl list is not null
+- throw ExceptionFactory.makeWebServiceException("Validation error: <br/>Implementation method signature does not match SEI method signature - mismatched<br/>exceptions list: Implementation class: " 
+-                        + composite.getClassName() 
+-                        + "; method name: " + seiMDC.getMethodName() 
+-                        + "; endpointInterface: " + className);
+-
+-            }
+-        } else if (implExceptions == null) {
+-            //Exception: sei list is not null, but impl list is null
+- throw ExceptionFactory.makeWebServiceException("Validation error: <br/>Implementation method signature does not match SEI method signature - mismatched<br/>exceptions list: Implementation class: " 
++ // SEI delcares no checked exceptions, but the implementation has checked <br/>exceptions, which is an error 
++ throw ExceptionFactory.makeWebServiceException("Validation error: <br/>Implementation method signature has more checked exceptions than SEI method <br/>signature (0): Implementation class: " 
+                     + composite.getClassName() 
+                     + "; method name: " + seiMDC.getMethodName() 
+                     + "; endpointInterface: " + className);
+-
++            }
++        } else if (implExceptions == null) {
++ // Implementation throws fewer checked exceptions than SEI, which is OK. 
++            return;
+         }
+
+</para><para depth="0">-        //check the list length
+-        if (seiExceptions.length != implExceptions.length) {
+- throw ExceptionFactory.makeWebServiceException("Validation error: <br/>Implementation method signature does not match SEI method signature - mismatched<br/>exceptions list: Implementation class: " 
+-                                            + composite.getClassName() 
+- + "; method name: " + seiMDC.getMethodName() 
+- + "; endpointInterface: " + className); 
++ // Check the list length; An implementation can not declare more exceptions <br/>than the SEI 
++        if (seiExceptions.length &lt; implExceptions.length) {
++ throw ExceptionFactory.makeWebServiceException("Validation error: <br/>Implementation method signature has more checked exceptions (" 
++                + implExceptions.length + ") than SEI method signature ("
++                + seiExceptions.length + "): Implementation class: "
++                + composite.getClassName() 
++                + "; method name: " + seiMDC.getMethodName() 
++                + "; endpointInterface: " + className);
+         }
+
+</para><para depth="0">-        if (seiExceptions.length &gt; 0) {     
+-            
+-            for (String seiException : seiExceptions) {
++        // Make sure that each checked exception declared by the 
++        // implementation is on the SEI also
++        if (implExceptions.length &gt; 0) {                
++            for (String implException : implExceptions) {
+                 boolean foundIt = false;
+-                if (implExceptions.length &gt; 0) {        
+-                    for (String implException : implExceptions) {
++                if (seiExceptions.length &gt; 0) {         
++                    for (String seiException : seiExceptions) {
+                         if (seiException.equals(implException)) {
+                             foundIt = true;
+                             break;
+@@ -1035,11 +1035,11 @@
+                 }
+
+</para><para depth="0">                 if (!foundIt) {
+- throw ExceptionFactory.makeWebServiceException("Validation error: <br/>Implementation method signature does not match SEI method signature - mismatched<br/>exceptions list: Implementation class: " 
+- + composite.getClassName() 
+- + "; method name: " + seiMDC.getMethodName() 
+- + "; endpointInterface: " + className); 
+-
++ throw ExceptionFactory.makeWebServiceException("Validation error: <br/>Implementation method signature throws exception " 
++ + implException + "which is not declared on the SEI method signature: <br/>Implementation class: " 
++                        + composite.getClassName() 
++                        + "; method name: " + seiMDC.getMethodName() 
++                        + "; endpointInterface: " + className);
+                 }
+             }
+         }
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>axis-cvs-unsubscribe@ws.apache.org</email>
+For additional commands, e-mail: <email>axis-cvs-help@ws.apache.org</email>
+
+</footer></body></message>

@@ -1,0 +1,117 @@
+<message message-id="539649144.4759.1294750849886.JavaMail.tomcat@jira02.app.mwc.hst.phx2.redhat.com" list="org.jboss.lists.webbeans-issues" id="24aiygnt4nfmcj75" type="bugs" date="2011-01-11T05:00:29.79844-08:00" year="2011-01-01" year-month="2011-01-01" year-month-day="2011-01-11" thread-id="24aiygnt4nfmcj75"><headers><envelope-from-line>Tue Jan 11 05:00:52 2011</envelope-from-line><from personal="Nicklas Karlsson (JIRA)" address="jira-events@lists.jboss.org">"Nicklas Karlsson (JIRA)" &lt;jira-events@lists.jboss.org&gt;</from><to personal="weld-issues@lists.jboss.org" address="weld-issues@lists.jboss.org">weld-issues@lists.jboss.org</to><subject normal="[weld-issues] [JBoss JIRA] Created: (CDI-30) An API for conversation management">[weld-issues] [JBoss JIRA] Created: (CDI-30) An API for conversation management</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 245
+          for &lt;stuart.whitfield.peck@a.markmail.org&gt;;
+          Tue, 11 Jan 2011 05:00:52 -0800 (GMT-08:00)</received><received>from smtp01.dmz-a.mwc.hst.phx2.redhat.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 5E24E29081B5
+	for &lt;stuart.whitfield.peck@a.markmail.org&gt;; Tue, 11 Jan 2011 05:00:29 -0800 (PST)</received><received>from lists01.dmz-a.mwc.hst.phx2.redhat.com (lists01.dmz-a.mwc.hst.phx2.redhat.com [10.5.105.133])
+	by smtp01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id p0BD0qG0025190;
+	Tue, 11 Jan 2011 08:00:52 -0500</received><received>from lists01.dmz-a.mwc.hst.phx2.redhat.com (localhost.localdomain [127.0.0.1])
+	by lists01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id p0BD0p6x003056;
+	Tue, 11 Jan 2011 08:00:51 -0500</received><received>from smtp01.dmz-a.mwc.hst.phx2.redhat.com
+	(smtp01.dmz-a.mwc.hst.phx2.redhat.com [10.5.105.134])
+	by lists01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	p0BD0nRa003053
+	for &lt;weld-issues@lists.jboss.org&gt;; Tue, 11 Jan 2011 08:00:49 -0500</received><received>from jira02.app.mwc.hst.phx2.redhat.com
+	(jira02.app.mwc.hst.phx2.redhat.com [10.5.106.17])
+	by smtp01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	p0BD0ner025184
+	for &lt;weld-issues@lists.jboss.org&gt;; Tue, 11 Jan 2011 08:00:49 -0500</received><received>from jira02.app.mwc.hst.phx2.redhat.com (localhost.localdomain
+	[127.0.0.1])
+	by jira02.app.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	p0BD0nTl010973
+	for &lt;weld-issues@lists.jboss.org&gt;; Tue, 11 Jan 2011 08:00:49 -0500</received><date>Tue, 11 Jan 2011 08:00:49 -0500 (EST)</date><message-id>539649144.4759.1294750849886.JavaMail.tomcat@jira02.app.mwc.hst.phx2.redhat.com</message-id><mime-version>1.0</mime-version><x-jira-fingerprint>d8d074ee403d8fad252dcb81ed5a00f9</x-jira-fingerprint><x-beenthere>weld-issues@lists.jboss.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>Weld JIRA Issue Notification List &lt;weld-issues.lists.jboss.org&gt;</list-id><list-unsubscribe>&lt;https://lists.jboss.org/mailman/listinfo/weld-issues&gt;,
+	&lt;mailto:weld-issues-request@lists.jboss.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.jboss.org/pipermail/weld-issues&gt;</list-archive><list-post>&lt;mailto:weld-issues@lists.jboss.org&gt;</list-post><list-help>&lt;mailto:weld-issues-request@lists.jboss.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.jboss.org/mailman/listinfo/weld-issues&gt;,
+	&lt;mailto:weld-issues-request@lists.jboss.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>weld-issues-bounces@lists.jboss.org</sender><errors-to>weld-issues-bounces@lists.jboss.org</errors-to></headers><normalized-references><normalized-message-id>539649144.4759.1294750849886.JavaMail.tomcat@jira02.app.mwc.hst.phx2.redhat.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">An API for conversation management
+</para><para depth="0">----------------------------------
+
+</para><para depth="0">                 Key: CDI-30
+                 URL: <url>https://issues.jboss.org/browse/CDI-30</url>
+             Project: CDI Specification Issues
+          Issue Type: Feature Request
+          Components: Specification
+    Affects Versions: 1.0
+            Reporter: Nicklas Karlsson
+
+</para><para depth="0">  I think it would be useful to have a ConversationManager API for CDI that<br/>would allow for portable modules that use the conversation context.
+
+</para><para depth="0">  Weld has been using the following interface, which has also been approved by<br/>Mark Struberg representing OpenWebBeans and by Reza Rahman 
+representing CanDI and I hope it can be used for the basis of discussions on<br/>this topic:
+
+</para><para depth="0">public interface ConversationManager
+{
+   /**
+    * Checks the state of the conversation context
+    * 
+    * @return true if the conversation context is active, false otherwise
+    */
+   public abstract boolean isContextActive();
+
+</para><para depth="0">   /**
+    * Sets up and activates the conversation context
+    * 
+    * @return The conversation manager
+    * 
+    * @throws IllegalStateException if the context is already active
+    */   
+   public abstract ConversationManager setupContext();
+
+</para><para depth="0">   /**
+    * Destroys the conversations and deactivates the conversation context
+    * 
+    * @return The conversation manager
+    * 
+    * @throws IllegalStateException if the context is already deactive
+    */   
+   public abstract ConversationManager teardownContext();
+
+</para><para depth="0">   /**
+    * Resumes a long running conversation. If the cid is null, nothing is done<br/>and the current
+    * transient conversation is resumed
+    * 
+    * 
+    * @param cid The conversation id to restore
+    * @return The conversation manager
+    * @throws NonexistentConversationException If the non-transient conversation<br/>is not known
+    * @throws BusyConversationException If the conversation is locked and not<br/>released while waiting 
+    * @throws IllegalStateException if the conversation context is not active
+    */
+
+</para><para depth="0">   public abstract ConversationManager setupConversation(String cid);
+
+</para><para depth="0">   /**
+    * Destroys the current conversation if it's transient. Stores it for<br/>conversation 
+    * propagation if it's non-transient
+    * 
+    * @return The conversation manager
+    * @throws IllegalStateException if the conversation context is not active
+    */
+   public abstract ConversationManager teardownConversation();
+
+</para><para depth="0">   /**
+    * Gets the current non-transient conversations
+    * 
+    * @return The conversations, mapped by id
+    * @throws IllegalStateException if the conversation context is not active
+    */
+   public abstract Map&lt;String, Conversation&gt; getConversations();
+
+</para><para depth="0">   /**
+    * Returns a new, session-unique conversation ID
+    * 
+    * @return The conversation id
+    * @throws IllegalStateException if the conversation context is not active
+    */   
+   public abstract String generateConversationId();
+
+</para><footer type="noise" depth="0">}
+
+</footer><footer type="signature" depth="0" hash="1091421298996344687">-- 
+This message is automatically generated by JIRA.
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer><footer type="list-management" depth="0">_______________________________________________
+weld-issues mailing list
+<email>weld-issues@lists.jboss.org</email>
+<url>https://lists.jboss.org/mailman/listinfo/weld-issues</url>
+</footer></body></message>

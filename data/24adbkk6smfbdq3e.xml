@@ -1,0 +1,280 @@
+<message message-id="E1LoGOl-0005ok-BJ@committer01.frg.pub.inap.atl.jboss.com" list="org.jboss.lists.jbosstools-commits" id="24adbkk6smfbdq3e" type="checkins" date="2009-03-30T04:15:07.500264-08:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-30" thread-id="24adbkk6smfbdq3e"><headers><envelope-from-line>Mon Mar 30 04:15:30 2009</envelope-from-line><from personal="jbosstools-commits@lists.jboss.org" address="jbosstools-commits@lists.jboss.org">jbosstools-commits@lists.jboss.org</from><to personal="jbosstools-commits@lists.jboss.org" address="jbosstools-commits@lists.jboss.org">jbosstools-commits@lists.jboss.org</to><subject normal="[jbosstools-commits] JBoss Tools SVN: r14366 - trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor.">[jbosstools-commits] JBoss Tools SVN: r14366 - trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor.</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 647
+          for &lt;eloy.dodson.knox@a.markmail.org&gt;;
+          Mon, 30 Mar 2009 04:15:30 -0800 (GMT-08:00)</received><received>from chief.prod.atl2.jboss.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id AFE223B3020D
+	for &lt;eloy.dodson.knox@a.markmail.org&gt;; Mon, 30 Mar 2009 05:15:06 -0700 (PDT)</received><received>from chief.prod.atl2.jboss.com (localhost.localdomain [127.0.0.1])
+	by chief.prod.atl2.jboss.com (8.13.1/8.13.1) with ESMTP id n2UCFT4s019000
+	for &lt;eloy.dodson.knox@a.markmail.org&gt;; Mon, 30 Mar 2009 08:15:29 -0400</received><received>from fw02.atl2.jboss.com (fw02.pub.inap.atl.jboss.com
+	[64.74.196.134])
+	by chief.prod.atl2.jboss.com (8.13.1/8.13.1) with ESMTP id
+	n2UCFRNG018997 for &lt;jbosstools-commits@lists.jboss.org&gt;;
+	Mon, 30 Mar 2009 08:15:27 -0400</received><received>from committer01.frg.pub.inap.atl.jboss.com
+	(committer01.frg.pub.inap.atl.jboss.com [64.74.196.144])
+	by fw02.atl2.jboss.com (8.13.3/8.13.3) with ESMTP id n2UCFR2K008281
+	for &lt;jbosstools-commits@lists.jboss.org&gt;;
+	Mon, 30 Mar 2009 07:15:27 -0500 (EST)</received><received>from www-data by committer01.frg.pub.inap.atl.jboss.com with local
+	(Exim 4.50) id 1LoGOl-0005ok-BJ
+	for jbosstools-commits@lists.jboss.org; Mon, 30 Mar 2009 08:15:27 -0400</received><content-type>text/plain; charset=UTF-8</content-type><message-id>E1LoGOl-0005ok-BJ@committer01.frg.pub.inap.atl.jboss.com</message-id><date>Mon, 30 Mar 2009 08:15:27 -0400</date><x-beenthere>jbosstools-commits@lists.jboss.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><reply-to>jbosstools-commits@lists.jboss.org</reply-to><list-id>JBoss Tools Commits List &lt;jbosstools-commits.lists.jboss.org&gt;</list-id><list-unsubscribe>&lt;https://lists.jboss.org/mailman/listinfo/jbosstools-commits&gt;, 
+	&lt;mailto:jbosstools-commits-request@lists.jboss.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.jboss.org/pipermail/jbosstools-commits&gt;</list-archive><list-post>&lt;mailto:jbosstools-commits@lists.jboss.org&gt;</list-post><list-help>&lt;mailto:jbosstools-commits-request@lists.jboss.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.jboss.org/mailman/listinfo/jbosstools-commits&gt;, 
+	&lt;mailto:jbosstools-commits-request@lists.jboss.org?subject=subscribe&gt;</list-subscribe><sender>jbosstools-commits-bounces@lists.jboss.org</sender><errors-to>jbosstools-commits-bounces@lists.jboss.org</errors-to><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>E1LoGOl-0005ok-BJ@committer01.frg.pub.inap.atl.jboss.com</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: scabanovich
+Date: 2009-03-30 08:15:27 -0400 (Mon, 30 Mar 2009)
+New Revision: 14366
+
+</para><para depth="0">Modified:
+   trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/ExtendedFieldEditor.java
+   trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaChoicerFieldEditor.java
+   trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaEclipseChoicerFieldEditor.java
+   trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaFavoritesFieldEditor.java
+   trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/PropertyEditorDialog.java
+   trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/TabbedJavaChoicerFieldEditor.java
+   trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/TreeSelectionFieldEditor.java
+Log:
+JBIDE-4100
+
+</para><para depth="0">Modified:<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/ExtendedFieldEditor.java
+===================================================================
+---<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/ExtendedFieldEditor.java<br/>2009-03-28 18:33:28 UTC (rev 14365)
++++<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/ExtendedFieldEditor.java<br/>2009-03-30 12:15:27 UTC (rev 14366)
+@@ -48,6 +48,9 @@
+ 	private Label label;
+ 	private boolean enabled = Boolean.TRUE.booleanValue();
+ 	private IAttributeErrorProvider errorProvider;
++	
++	// Introduced to give opportunities of submitting or cancelling dialog from<br/>within editor controls.
++	private PropertyEditorDialog ownerDialog;
+ 	//
+ 	protected IWidgetSettings settings;
+
+</para><para depth="0">@@ -57,6 +60,14 @@
+ 		this.settings = settings;
+ 	}
+
+</para><para depth="0">+	public void setOwnerDialog(PropertyEditorDialog dialog) {
++		ownerDialog = dialog;
++	}
++
++	public PropertyEditorDialog getOwnerDialog() {
++		return ownerDialog;
++	}
++
+ 	protected abstract void adjustForNumColumns(int numColumns);
+
+</para><para depth="0"> 	protected void applyFont() {}
+
+</para><para depth="0">Modified:<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaChoicerFieldEditor.java
+===================================================================
+---<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaChoicerFieldEditor.java<br/>2009-03-28 18:33:28 UTC (rev 14365)
++++<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaChoicerFieldEditor.java<br/>2009-03-30 12:15:27 UTC (rev 14366)
+@@ -28,6 +28,7 @@
+ import org.eclipse.swt.SWT;
+ import org.eclipse.swt.events.ModifyEvent;
+ import org.eclipse.swt.events.ModifyListener;
++import org.eclipse.swt.events.MouseAdapter;
+ import org.eclipse.swt.events.MouseEvent;
+ import org.eclipse.swt.graphics.Image;
+ import org.eclipse.swt.layout.GridData;
+@@ -163,6 +164,14 @@
+ 		tree.addSelectionChangedListener(this);
+ 		tree.setAutoExpandLevel(2);
+
+</para><para depth="0">+		tree.getControl().addMouseListener(new MouseAdapter() {
++			public void mouseDoubleClick(MouseEvent e) {
++				if(getOwnerDialog() != null) {
++					getOwnerDialog().okPressed();
++				}
++			}
++		});
++
+ 		label = new Label(composite, SWT.NONE);
+ 		label.setText(EditorMessages.getString("JavaChoicerFieldEditor.Tab1.Text.Label"));
+
+</para><para depth="0">Modified:<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaEclipseChoicerFieldEditor.java
+===================================================================
+---<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaEclipseChoicerFieldEditor.java<br/>2009-03-28 18:33:28 UTC (rev 14365)
++++<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaEclipseChoicerFieldEditor.java<br/>2009-03-30 12:15:27 UTC (rev 14366)
+@@ -12,6 +12,7 @@
+
+</para><para depth="0"> import java.beans.PropertyChangeEvent;
+ import java.beans.PropertyChangeListener;
++import java.lang.reflect.Field;
+ import java.util.ArrayList;
+
+</para><para depth="0"> import org.eclipse.core.resources.IProject;
+@@ -27,12 +28,17 @@
+ import org.eclipse.jdt.core.search.IJavaSearchScope;
+ import org.eclipse.jdt.core.search.SearchEngine;
+ import org.eclipse.jdt.core.search.TypeNameMatch;
++import org.eclipse.jdt.internal.ui.dialogs.TypeInfoViewer;
+ import org.eclipse.jdt.internal.ui.dialogs.TypeSelectionComponent;
++import org.eclipse.swt.events.MouseAdapter;
++import org.eclipse.swt.events.MouseEvent;
++import org.eclipse.swt.events.MouseListener;
+ import org.eclipse.swt.events.SelectionEvent;
+ import org.eclipse.swt.events.SelectionListener;
+ import org.eclipse.swt.layout.GridLayout;
+ import org.eclipse.swt.widgets.Composite;
+ import org.eclipse.swt.widgets.Control;
++import org.eclipse.swt.widgets.Table;
+ import org.jboss.tools.common.model.XModelObject;
+ import org.jboss.tools.common.model.plugin.ModelPlugin;
+ import org.jboss.tools.common.model.ui.IValueChangeListener;
+@@ -136,9 +142,37 @@
+ 				if(hasFocus(tc)) handle(tc.getSelection());
+ 			}
+ 		});
++		
++		Table table = getTable();
++		if(table != null) {
++			table.addMouseListener(new MouseAdapter() {
++				public void mouseDoubleClick(MouseEvent e) {
++					if(getOwnerDialog() != null) {
++						getOwnerDialog().okPressed();
++					}
++				}
++			});
++		}
+ 		return composite;
+ 	}
+-	
++
++	Table getTable() {
++		try {
++			Field f = TypeSelectionComponent.class.getDeclaredField("fViewer");
++			if(f == null) return null;
++			f.setAccessible(true);
++			TypeInfoViewer v = (TypeInfoViewer)f.get(tc);
++			return v == null ? null : v.getTable();
++		} catch (NoSuchFieldException ee) {
++			
++		} catch (IllegalArgumentException e2) {
++			
++		} catch (IllegalAccessException e3) {
++			
++		}
++		return null;
++	}
++
+ 	boolean hasFocus(Composite c) {
+ 		if(c.isFocusControl()) return true;
+ 		Control[] cs = c.getChildren();
+
+</para><para depth="0">Modified:<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaFavoritesFieldEditor.java
+===================================================================
+---<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaFavoritesFieldEditor.java<br/>2009-03-28 18:33:28 UTC (rev 14365)
++++<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/JavaFavoritesFieldEditor.java<br/>2009-03-30 12:15:27 UTC (rev 14366)
+@@ -25,6 +25,8 @@
+ import org.eclipse.jface.viewers.TableViewer;
+ import org.eclipse.jface.viewers.Viewer;
+ import org.eclipse.swt.SWT;
++import org.eclipse.swt.events.MouseAdapter;
++import org.eclipse.swt.events.MouseEvent;
+ import org.eclipse.swt.layout.GridData;
+ import org.eclipse.swt.layout.GridLayout;
+ import org.eclipse.swt.widgets.Composite;
+@@ -125,6 +127,14 @@
+ 			}
+ 		});
+
+</para><para depth="0">+		classList.getControl().addMouseListener(new MouseAdapter() {
++			public void mouseDoubleClick(MouseEvent e) {
++				if(getOwnerDialog() != null) {
++					getOwnerDialog().okPressed();
++				}
++			}
++		});
++
+ 		return classList;
+ 	}
+
+</para><para depth="0">Modified:<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/PropertyEditorDialog.java
+===================================================================
+---<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/PropertyEditorDialog.java<br/>2009-03-28 18:33:28 UTC (rev 14365)
++++<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/PropertyEditorDialog.java<br/>2009-03-30 12:15:27 UTC (rev 14366)
+@@ -41,7 +41,7 @@
+ 	public PropertyEditorDialog(Shell parentShell, IPropertyEditor editor) {
+ 		super(parentShell);
+ 		this.propertyEditor = editor;
+-		initValue = editor.getValue();		
++		initValue = editor.getValue();
+ 	}
+
+</para><para depth="0"> 	protected Control createDialogArea(Composite parent) {
+@@ -84,8 +84,17 @@
+ 			parent.setLayout(layout);
+ 		} else cn = 2;
+ 		editor.fillIntoGrid(parent, cn);
++		editor.setOwnerDialog(this);
+ 	}
+-	
++
++	public void okPressed() {
++		Button b = getButton(IDialogConstants.OK_ID);
++		if(b == null || !b.isEnabled()) {
++			return;
++		}
++		super.okPressed();
++	}
++
+ 	protected void buttonPressed(int buttonId) {
+ 		if (IDialogConstants.OK_ID == buttonId) {
+ 			editor.store();
+@@ -98,6 +107,7 @@
+ 			adapter.removeValueChangeListener(listener);
+ 			adapter = null;
+ 		}
++		if(editor != null) editor.setOwnerDialog(null);
+ 	}
+
+</para><para depth="0"> 	class VCL implements PropertyChangeListener {
+
+</para><para depth="0">Modified:<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/TabbedJavaChoicerFieldEditor.java
+===================================================================
+---<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/TabbedJavaChoicerFieldEditor.java<br/>2009-03-28 18:33:28 UTC (rev 14365)
++++<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/TabbedJavaChoicerFieldEditor.java<br/>2009-03-30 12:15:27 UTC (rev 14366)
+@@ -48,6 +48,12 @@
+ 		favoritesEditor = new JavaFavoritesFieldEditor(settings);
+ 	}
+
+</para><para depth="0">+	public void setOwnerDialog(PropertyEditorDialog dialog) {
++		classicEditor.setOwnerDialog(dialog);
++		eclipseEditor.setOwnerDialog(dialog);
++		favoritesEditor.setOwnerDialog(dialog);
++	}
++
+ 	protected void adjustForNumColumns(int numColumns) {
+ 	}
+
+</para><para depth="0">Modified:<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/TreeSelectionFieldEditor.java
+===================================================================
+---<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/TreeSelectionFieldEditor.java<br/>2009-03-28 18:33:28 UTC (rev 14365)
++++<br/>trunk/common/plugins/org.jboss.tools.common.model.ui/src/org/jboss/tools/common/model/ui/attribute/editor/TreeSelectionFieldEditor.java<br/>2009-03-30 12:15:27 UTC (rev 14366)
+@@ -17,6 +17,8 @@
+ import org.eclipse.jface.viewers.SelectionChangedEvent;
+ import org.eclipse.jface.viewers.TreeViewer;
+ import org.eclipse.swt.SWT;
++import org.eclipse.swt.events.MouseAdapter;
++import org.eclipse.swt.events.MouseEvent;
+ import org.eclipse.swt.layout.GridData;
+ import org.eclipse.swt.widgets.Composite;
+ import org.eclipse.swt.widgets.Control;
+@@ -97,6 +99,13 @@
+ 			if (selectionChangedListener!=null) {
+ 				treeViewer.addSelectionChangedListener(selectionChangedListener);
+ 			}
++			treeViewer.getTree().addMouseListener(new MouseAdapter() {
++				public void mouseDoubleClick(MouseEvent e) {
++					if(getOwnerDialog() != null) {
++						getOwnerDialog().okPressed();
++					}
++				}
++			});
+ 		}
+ 		return treeViewer.getTree();
+ 	}
+
+</para><footer type="list-management" depth="0">_______________________________________________
+jbosstools-commits mailing list
+<email>jbosstools-commits@lists.jboss.org</email>
+<url>https://lists.jboss.org/mailman/listinfo/jbosstools-commits</url>
+</footer></body></message>

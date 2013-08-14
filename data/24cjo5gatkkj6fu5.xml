@@ -1,0 +1,27 @@
+<message message-id="1576649196.131268008008480.JavaMail.tomcat@djnweb1.sjc.collab.net" list="net.java.dev.glassfish.users" id="24cjo5gatkkj6fu5" no-archive="yes" type="users" date="2010-03-07T16:23:51.332243-08:00" year="2010-01-01" year-month="2010-03-01" year-month-day="2010-03-07" thread-id="24cjo5gatkkj6fu5"><headers><envelope-from-line>Sun Mar 07 16:24:14 2010</envelope-from-line><from personal="glassfish@javadesktop.org" address="glassfish@javadesktop.org">glassfish@javadesktop.org</from><to personal="users@glassfish.dev.java.net" address="users@glassfish.dev.java.net">users@glassfish.dev.java.net</to><subject normal="Using capabilities to bind non-root Glassfish to port 80 on Debian/Ubuntu">Using capabilities to bind non-root Glassfish to port 80 on Debian/Ubuntu</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 108
+          for &lt;chase.boyd.kelley@a.markmail.org&gt;;
+          Sun, 7 Mar 2010 16:24:14 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 0319B29082A1
+	for &lt;chase.boyd.kelley@a.markmail.org&gt;; Sun,  7 Mar 2010 16:23:51 -0800 (PST)</received><received>(qmail 23559 invoked by uid 5000); 8 Mar 2010 00:24:08 -0000</received><mailing-list>contact users-help@glassfish.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:users-help@glassfish.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:users-unsubscribe@glassfish.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:users@glassfish.dev.java.net&gt;</list-post><reply-to>users@glassfish.dev.java.net</reply-to><delivered-to>mailing list users@glassfish.dev.java.net</delivered-to><received>(qmail 23539 invoked from network); 8 Mar 2010 00:24:08 -0000</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>Aq4DAHnSk0tA9gsRYWdsb2JhbACDC5gYCxcOBwc1qCqPHoEyglxqBItN</x-ironport-anti-spam-result><x-ironport-av>E=Sophos;i="4.49,599,1262592000"; 
+   d="scan'208";a="1294984"</x-ironport-av><x-ironport>SCANNED</x-ironport><message-id>1576649196.131268008008480.JavaMail.tomcat@djnweb1.sjc.collab.net</message-id><date>Sun, 07 Mar 2010 16:26:17 PST</date><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>1576649196.131268008008480.JavaMail.tomcat@djnweb1.sjc.collab.net</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">I've seen the usual list of ways to do this in various places, but I haven't<br/>seen any mention of using capabilities to accomplish this.
+
+</para><para depth="0"><url>http://manpages.ubuntu.com/manpages/intrepid/man7/capabilities.7.html</url>
+
+</para><para depth="0">Would this work?  What are the drawbacks?
+
+</para><para depth="0">For reference, here is both the usual list of methods and the suggestion to use<br/>capabilities:
+
+</para><para depth="0"><url>http://stackoverflow.com/questions/413807/is-there-a-way-for-non-root-processes-to-bind-to-privileged-ports-1024-on-linux</url>
+
+</para><para depth="0">Thanks,
+Chris
+[Message sent by forum member 'chriskhan' (<email>chriskhan@gmail.com</email>)]
+
+</para><para depth="0"><url>http://forums.java.net/jive/thread.jspa?messageID=390546</url>
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@glassfish.dev.java.net</email>
+For additional commands, e-mail: <email>users-help@glassfish.dev.java.net</email>
+
+</footer></body></message>

@@ -1,0 +1,17 @@
+<message message-id="3F5CC15F.3080400@thoughtworks.net" list="org.codehaus.picocontainer.dev" id="24bal7lbo7pwjaid" type="development" date="2003-09-08T18:50:23+01:00" year="2003-01-01" year-month="2003-09-01" year-month-day="2003-09-08" thread-id="jt6e3mtoieduuwca"><headers><envelope-from-line>From aslak@thoughtworks.net Mon Sep  8 13:04:40 2003</envelope-from-line><from personal="Aslak Hellesøy" address="aslak@thoughtworks.net">=?ISO-8859-1?Q?Aslak_Helles=F8y?= &lt;aslak@thoughtworks.net&gt;</from><to personal="picocontainer-dev@lists.codehaus.org" address="picocontainer-dev@lists.codehaus.org">picocontainer-dev@lists.codehaus.org</to><subject normal="[picocontainer-dev] Release 1.0-beta-2 ?">[picocontainer-dev] Release 1.0-beta-2 ?</subject><received>from mail.thoughtworks.net (gigaton.thoughtworks.com [208.5.192.51])
+	by hogshead.codehaus.org (8.11.6/8.11.6) with ESMTP id h88I4d117458
+	for &lt;picocontainer-dev@lists.codehaus.org&gt;; Mon, 8 Sep 2003 13:04:39 -0500</received><received>from thoughtworks.net (unknown [164.38.204.70])
+	by mail.thoughtworks.net (Postfix) with ESMTP id 8B5A2CE3AE
+	for &lt;picocontainer-dev@lists.codehaus.org&gt;; Mon,  8 Sep 2003 10:59:33 -0700 (PDT)</received><message-id>3F5CC15F.3080400@thoughtworks.net</message-id><date>Mon, 08 Sep 2003 18:50:23 +0100</date><organization>ThoughtWorks</organization><user-agent>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.4) Gecko/20030529</user-agent><x-accept-language>en-us, en</x-accept-language><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>picocontainer-dev-admin@lists.codehaus.org</sender><errors-to>picocontainer-dev-admin@lists.codehaus.org</errors-to><x-beenthere>picocontainer-dev@lists.codehaus.org</x-beenthere><x-mailman-version>2.0.13</x-mailman-version><precedence>bulk</precedence><reply-to>picocontainer-dev@lists.codehaus.org</reply-to><x-reply-to>aslak@thoughtworks.net</x-reply-to><list-help>&lt;mailto:picocontainer-dev-request@lists.codehaus.org?subject=help&gt;</list-help><list-post>&lt;mailto:picocontainer-dev@lists.codehaus.org&gt;</list-post><list-subscribe>&lt;http://lists.codehaus.org/mailman/listinfo/picocontainer-dev&gt;,
+	&lt;mailto:picocontainer-dev-request@lists.codehaus.org?subject=subscribe&gt;</list-subscribe><list-id>&lt;picocontainer-dev.lists.codehaus.org&gt;</list-id><list-unsubscribe>&lt;http://lists.codehaus.org/mailman/listinfo/picocontainer-dev&gt;,
+	&lt;mailto:picocontainer-dev-request@lists.codehaus.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.codehaus.org/pipermail/picocontainer-dev/&gt;</list-archive></headers><normalized-references><normalized-message-id>3F5CC15F.3080400@thoughtworks.net</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">There is nothing left in JIRA's road map for 1.0-beta-2.
+<url>http://jira.codehaus.org/secure/BrowseProject.jspa?id=10120&amp;amp</url>;report=roadmap
+
+</para><para depth="0">Is there anything else that prevents us from releasing it?
+
+</para><para depth="0">Aslak
+
+</para><footer type="signature" hash="17651642810301831784" depth="0">-- 
+<url>http://blogs.codehaus.org/people/rinkrank/</url>
+
+</footer></body></message>

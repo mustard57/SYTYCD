@@ -1,0 +1,37 @@
+<message message-id="20110114123039.D6E30138B5A@mail02.netbeans.org" list="org.netbeans.graph.issues" id="24bhocxehnmsdhq2" no-archive="yes" type="bugs" date="2011-01-14T04:30:17.840804-08:00" year="2011-01-01" year-month="2011-01-01" year-month-day="2011-01-14" thread-id="hwiyn7t6xjboj4c6"><headers><envelope-from-line>Fri Jan 14 04:30:40 2011</envelope-from-line><from personal="jtulach@netbeans.org" address="jtulach@netbeans.org">jtulach@netbeans.org</from><to personal="issues@platform.netbeans.org" address="issues@platform.netbeans.org">issues@platform.netbeans.org</to><subject normal="[Bug 194260] StackOverflowError at java.io.UnixFileSystem.getBooleanAttributes0">[Bug 194260] StackOverflowError at java.io.UnixFileSystem.getBooleanAttributes0</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 4;
+          Fri, 14 Jan 2011 04:30:40 -0800 (GMT-08:00)</received><received>from mailout01.kenai.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 424052908192;
+	Fri, 14 Jan 2011 04:30:17 -0800 (PST)</received><received>from mail02.netbeans.org (nbxmlm02z1.network.org [192.9.171.191])
+	by mailout01.kenai.com (Postfix) with ESMTP id 33B0FA95AD;
+	Fri, 14 Jan 2011 12:30:40 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail02.netbeans.org (Postfix) with ESMTP id 13642138B67;
+	Fri, 14 Jan 2011 12:30:40 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail02.netbeans.org ([127.0.0.1])
+	by localhost (nbxmlm02z1.network.org [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id KdylIXH+U05m; Fri, 14 Jan 2011 12:30:39 +0000 (GMT)</received><received>by mail02.netbeans.org (Postfix, from userid 60005)
+	id D6E30138B5A; Fri, 14 Jan 2011 12:30:39 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail02.netbeans.org (Postfix) with ESMTP id C9434138B09
+	for &lt;issues@platform.netbeans.org&gt;; Fri, 14 Jan 2011 12:30:37 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail02.netbeans.org ([127.0.0.1])
+	by localhost (nbxmlm02z1.network.org [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id K0aSTSZz43Uy for &lt;issues@platform.netbeans.org&gt;;
+	Fri, 14 Jan 2011 12:30:36 +0000 (GMT)</received><received>from netbeans.org (nbxbz04z1.network.org [192.9.171.205])
+	by mail02.netbeans.org (Postfix) with ESMTP id 7A83B138AD2
+	for &lt;issues@platform.netbeans.org&gt;; Fri, 14 Jan 2011 12:30:36 +0000 (GMT)</received><x-bugzilla-reason>QAcontact</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>platform</x-bugzilla-product><x-bugzilla-component>Filesystems</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-who>jtulach@netbeans.org</x-bugzilla-who><x-bugzilla-status>RESOLVED</x-bugzilla-status><x-bugzilla-priority>P3</x-bugzilla-priority><x-bugzilla-assigned-to>jtulach@netbeans.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>7.0</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Status Resolution Target Milestone</x-bugzilla-changed-fields><in-reply-to>&lt;bug-194260-495@http.netbeans.org/bugzilla/&gt;</in-reply-to><references>&lt;bug-194260-495@http.netbeans.org/bugzilla/&gt;</references><auto-submitted>auto-generated</auto-submitted><content-type>text/plain; charset="UTF-8"</content-type><mime-version>1.0</mime-version><date>Fri, 14 Jan 2011 12:30:36 +0000</date><reply-to>issues@platform.netbeans.org</reply-to><x-loop>issues@platform.netbeans.org</x-loop><x-sequence>17274</x-sequence><errors-to>issues-owner@platform.netbeans.org</errors-to><precedence>list</precedence><x-no-archive>yes</x-no-archive><list-id>&lt;issues.platform.netbeans.org&gt;</list-id><list-help>&lt;mailto:sympa@platform.netbeans.org?subject=help&gt;</list-help><list-subscribe>&lt;mailto:sympa@platform.netbeans.org?subject=subscribe%20issues&gt;</list-subscribe><list-unsubscribe>&lt;mailto:sympa@platform.netbeans.org?subject=unsubscribe%20issues&gt;</list-unsubscribe><list-post>&lt;mailto:issues@platform.netbeans.org&gt;</list-post><list-owner>&lt;mailto:issues-request@platform.netbeans.org&gt;</list-owner><message-id>20110114123039.D6E30138B5A@mail02.netbeans.org</message-id></headers><normalized-references><normalized-message-id>20110114123039.D6E30138B5A@mail02.netbeans.org</normalized-message-id><normalized-in-reply-to>bug-194260-495@http.netbeans.org/bugzilla/</normalized-in-reply-to><normalized-reference>bug-194260-495@http.netbeans.org/bugzilla/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0"><url>http://netbeans.org/bugzilla/show_bug.cgi?id=194260</url>
+
+</para><para depth="0">Jaroslav Tulach &lt;<email>jtulach@netbeans.org</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+             Status|NEW                         |RESOLVED
+         Resolution|                            |DUPLICATE
+   Target Milestone|TBD                         |7.0
+
+</para><footer type="signature" depth="0" hash="15629278771895914636">--- Comment #3 from Jaroslav Tulach &lt;<email>jtulach@netbeans.org</email>&gt;  2011-01-14 12:30:35<br/>---
+
+</footer><para depth="0">*** This bug has been marked as a duplicate of bug 193732 ***
+
+</para><footer type="signature" depth="0" hash="14151145604003147269">-- 
+Configure bugmail: <url>http://netbeans.org/bugzilla/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the QA contact for the bug.
+</footer></body></message>

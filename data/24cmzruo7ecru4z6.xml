@@ -1,0 +1,60 @@
+<message message-id="26819544.8059.1300113789332.JavaMail.webservd@jnxjra02z1" list="net.java.dev.javaserverfaces.issues" id="24cmzruo7ecru4z6" no-archive="yes" type="bugs" date="2011-03-14T06:43:00.268146-08:00" year="2011-01-01" year-month="2011-03-01" year-month-day="2011-03-14" thread-id="b536hj64tenktcfy"><headers><envelope-from-line>Mon Mar 14 06:43:23 2011</envelope-from-line><from personal="adriaaaaan (JIRA)" address="jira-no-reply@java.net">"adriaaaaan (JIRA)" &lt;jira-no-reply@java.net&gt;</from><to personal="issues@javaserverfaces.java.net" address="issues@javaserverfaces.java.net">issues@javaserverfaces.java.net</to><subject normal="[JIRA] Commented: (JAVASERVERFACES-1989) Nested UI:Repeat ajax action fails when top level ui:repeat has no items for the nested ui:repeat">[JIRA] Commented: (JAVASERVERFACES-1989) Nested UI:Repeat ajax action fails when top level ui:repeat has no items for the nested ui:repeat</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 894
+          for &lt;phil.anthony.bradshaw@a.markmail.org&gt;;
+          Mon, 14 Mar 2011 06:43:23 -0800 (GMT-08:00)</received><received>from mailout02.kenai.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id D4E8F3B30383
+	for &lt;phil.anthony.bradshaw@a.markmail.org&gt;; Mon, 14 Mar 2011 07:42:59 -0700 (PDT)</received><received>from mail01.java.net (jnxmlm02z1.network.org [192.9.171.232])
+	by mailout02.kenai.com (Postfix) with ESMTP id B838F18282A;
+	Mon, 14 Mar 2011 14:43:22 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail01.java.net (Postfix) with ESMTP id 6E0F91D6320;
+	Mon, 14 Mar 2011 14:43:22 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail01.java.net ([127.0.0.1])
+	by localhost (jnxmlm02z1.network.org [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id YIveKLAz1GG9; Mon, 14 Mar 2011 14:43:22 +0000 (GMT)</received><received>by mail01.java.net (Postfix, from userid 60005)
+	id 361F01D6319; Mon, 14 Mar 2011 14:43:22 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail01.java.net (Postfix) with ESMTP id 896C91D6313
+	for &lt;issues@javaserverfaces.java.net&gt;; Mon, 14 Mar 2011 14:43:20 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail01.java.net ([127.0.0.1])
+	by localhost (jnxmlm02z1.network.org [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id k6wqvPc66Qfn for &lt;issues@javaserverfaces.java.net&gt;;
+	Mon, 14 Mar 2011 14:43:09 +0000 (GMT)</received><received>from jnxjra02z1 (jnxjra02z1.network.org [192.9.171.233])
+	by mail01.java.net (Postfix) with ESMTP id 5A6511D62FB
+	for &lt;issues@javaserverfaces.java.net&gt;; Mon, 14 Mar 2011 14:43:09 +0000 (GMT)</received><date>Mon, 14 Mar 2011 07:43:09 -0700 (PDT)</date><message-id>26819544.8059.1300113789332.JavaMail.webservd@jnxjra02z1</message-id><in-reply-to>&lt;13352386.8056.1300113549308.JavaMail.webservd@jnxjra02z1&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><auto-submitted>auto-generated</auto-submitted><x-jira-fingerprint>d9cfac1321f5849d5ddfc3b2d17f66bf</x-jira-fingerprint><reply-to>issues@javaserverfaces.java.net</reply-to><x-loop>issues@javaserverfaces.java.net</x-loop><x-sequence>912</x-sequence><errors-to>issues-owner@javaserverfaces.java.net</errors-to><precedence>list</precedence><x-no-archive>yes</x-no-archive><list-id>&lt;issues.javaserverfaces.java.net&gt;</list-id><list-help>&lt;mailto:sympa@javaserverfaces.java.net?subject=help&gt;</list-help><list-subscribe>&lt;mailto:sympa@javaserverfaces.java.net?subject=subscribe%20issues&gt;</list-subscribe><list-unsubscribe>&lt;mailto:sympa@javaserverfaces.java.net?subject=unsubscribe%20issues&gt;</list-unsubscribe><list-post>&lt;mailto:issues@javaserverfaces.java.net&gt;</list-post><list-owner>&lt;mailto:issues-request@javaserverfaces.java.net&gt;</list-owner></headers><normalized-references><normalized-message-id>26819544.8059.1300113789332.JavaMail.webservd@jnxjra02z1</normalized-message-id><normalized-in-reply-to>13352386.8056.1300113549308.JavaMail.webservd@jnxjra02z1</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+    [<br/><url>http://java.net/jira/browse/JAVASERVERFACES-1989?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&amp;focusedCommentId=304786#action_304786</url><br/>] 
+
+</para><para depth="0">adriaaaaan commented on JAVASERVERFACES-1989:
+</para><footer type="noise" depth="0">---------------------------------------------
+
+</footer><para depth="0">just it make it clear, any ajax button before the element with the empty<br/>collection of subItems works fine.  This bug totally breaks both our dynamic<br/>menus (any menuItem without a submenu breaks every menuitem below it) and our<br/>"igoogle" style dashboard (any dashboard column that is empty breaks every<br/>widget to the right of it).  
+
+</para><quote depth="1"><quotepara depth="1">Nested UI:Repeat ajax action fails when top level ui:repeat has no items for the<br/>nested ui:repeat
+</quotepara><quotepara depth="1">-------------------------------------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: JAVASERVERFACES-1989
+                URL: <url>http://java.net/jira/browse/JAVASERVERFACES-1989</url>
+            Project: javaserverfaces
+         Issue Type: Bug
+         Components: ajax, facelets
+   Affects Versions: 2.0.2
+        Environment: glassfish 3.0.1
+           Reporter: adriaaaaan
+           Assignee: rogerk
+
+</quotepara><quotepara depth="1">given the following code
+&lt;ui:repeat value="#{bean.items}" var="item"&gt;
+    &lt;ui:repeat value="#{item.subItems}" var="subItem"&gt;
+        &lt;h:commandButton value="#{subItem.name}" action="#{bean.action}"&gt;
+           &lt;f:ajax/&gt;
+        &lt;/h:commandButton&gt;
+    &lt;/ui:repeat&gt;
+&lt;/ui:repeat&gt;
+With a collection of items 3 items where the first one has some nested subItems,<br/>the second one does not (empty collection) but the third one does have some<br/>subItems. The action will not be called on any element that occurs AFTER the<br/>element with no subItems.  
+If you add a subItem to the second element, everything works as expected. It is<br/>always rendered as expected but the ajax breaks for every element that occurs<br/>after an element with no subItems.
+VERY VERY Annoying.  Can't test it on any later versions due to serious<br/>regressions in 2.0.3+ (nested ui:repeats don't work).  It is however a different<br/>issue.
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="8997166849445230545">-- 
+This message is automatically generated by JIRA.
+-
+If you think it was sent incorrectly contact one of the administrators:<br/><url>http://java.net/jira/secure/Administrators.jspa</url>
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer></body></message>

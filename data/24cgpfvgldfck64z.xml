@@ -1,0 +1,33 @@
+<message message-id="20110201224139.E34F07BF6D@immanuel.kde.org" list="org.kde.kde-bugs-dist" id="24cgpfvgldfck64z" type="bugs" date="2011-02-01T14:40:24.538986-08:00" year="2011-01-01" year-month="2011-02-01" year-month-day="2011-02-01" thread-id="gjjzbqdxcbdtqd46"><headers><envelope-from-line>Tue Feb 01 14:40:47 2011</envelope-from-line><from personal="Myriam Schweingruber" address="myriam@kde.org">Myriam Schweingruber &lt;myriam@kde.org&gt;</from><to personal="kde-bugs-dist@kde.org" address="kde-bugs-dist@kde.org">kde-bugs-dist@kde.org</to><subject normal="[Bug 265105] Amarok crash while playing MP3 stream (GStreamer backend)">[Bug 265105] Amarok crash while playing MP3 stream (GStreamer backend)</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 522
+          for &lt;grady.rosario.banks@a.markmail.org&gt;;
+          Tue, 1 Feb 2011 14:40:47 -0800 (GMT-08:00)</received><received>from ktown.kde.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id AF5C729081D2
+	for &lt;grady.rosario.banks@a.markmail.org&gt;; Tue,  1 Feb 2011 14:40:23 -0800 (PST)</received><received>(qmail 1425 invoked by uid 72); 1 Feb 2011 22:40:45 -0000</received><received>(qmail 1340 invoked from network); 1 Feb 2011 22:40:41 -0000</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on ktown.kde.org</x-spam-checker-version><received>from unknown (HELO immanuel.kde.org) (138.246.255.177)
+	by ktown.kde.org with SMTP; 1 Feb 2011 22:40:41 -0000</received><received>by immanuel.kde.org (Postfix, from userid 30)
+	id E34F07BF6D; Tue,  1 Feb 2011 23:41:39 +0100 (CET)</received><x-bugzilla-url>http://bugs.kde.org/ </x-bugzilla-url><x-bugzilla-reason>GlobalWatcher</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>amarok</x-bugzilla-product><x-bugzilla-component>general</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-severity>crash</x-bugzilla-severity><x-bugzilla-who>myriam@kde.org</x-bugzilla-who><x-bugzilla-status>NEEDSINFO</x-bugzilla-status><x-bugzilla-priority>NOR</x-bugzilla-priority><x-bugzilla-assigned-to>amarok-bugs-dist@kde.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>2.4.1</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Status Resolution</x-bugzilla-changed-fields><in-reply-to>&lt;bug-265105-17878@http.bugs.kde.org/&gt;</in-reply-to><references>&lt;bug-265105-17878@http.bugs.kde.org/&gt;</references><auto-submitted>auto-generated</auto-submitted><content-type>text/plain; charset="UTF-8"</content-type><mime-version>1.0</mime-version><message-id>20110201224139.E34F07BF6D@immanuel.kde.org</message-id><date>Tue,  1 Feb 2011 23:41:39 +0100 (CET)</date><x-beenthere>kde-bugs-dist@kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>bug-control@bugs.kde.org</reply-to><list-id>"bugs.kde.org mail" &lt;kde-bugs-dist.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-bugs-dist&gt;,
+	&lt;mailto:kde-bugs-dist-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-bugs-dist@kde.org&gt;</list-post><list-help>&lt;mailto:kde-bugs-dist-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-bugs-dist&gt;,
+	&lt;mailto:kde-bugs-dist-request@kde.org?subject=subscribe&gt;</list-subscribe></headers><normalized-references><normalized-message-id>20110201224139.E34F07BF6D@immanuel.kde.org</normalized-message-id><normalized-in-reply-to>bug-265105-17878@http.bugs.kde.org/</normalized-in-reply-to><normalized-reference>bug-265105-17878@http.bugs.kde.org/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0"><url>https://bugs.kde.org/show_bug.cgi?id=265105</url>
+
+</para><para depth="0">Myriam Schweingruber &lt;<email>myriam@kde.org</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+             Status|UNCONFIRMED                 |NEEDSINFO
+         Resolution|                            |BACKTRACE
+
+</para><para depth="0">--- Comment #2 from Myriam Schweingruber &lt;myriam kde org&gt;  2011-02-01 23:41:38<br/>---
+Could you please submit a separate bug report for Dragonplayer? Thze crash
+looks very different in the backtrace.
+
+</para><para depth="0">Also, your backtrace for the crash in Amarok is not useful, as you are lacking
+debugging symbols. If you can reproduce this bug, please check here on how to
+get a valid backtrace:
+
+</para><para depth="0"><url>http://techbase.kde.org/Development/Tutorials/Debugging/How_to_create_useful_crash_reports</url>
+
+</para><footer type="signature" depth="0" hash="13883541584017611628">-- 
+Configure bugmail: <url>https://bugs.kde.org/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are watching all bug changes.
+</footer></body></message>

@@ -1,0 +1,1037 @@
+<message message-id="20101124184709.0737C2100B9@git.gnome.org" list="org.gnome.svn-commits-list" id="24bgdavbk73wd4m5" type="checkins" date="2010-11-24T10:46:54.657831-08:00" year="2010-01-01" year-month="2010-11-01" year-month-day="2010-11-24" thread-id="n7j56swxp6eav2om"><headers><envelope-from-line>Wed Nov 24 10:47:17 2010</envelope-from-line><from personal="Kjartan Maraas" address="kmaraas@src.gnome.org">Kjartan Maraas &lt;kmaraas@src.gnome.org&gt;</from><to personal="commits-list@gnome.org" address="commits-list@gnome.org">commits-list@gnome.org</to><subject normal="[gnome-control-center] Updated Norwegian bokm??l translation">[gnome-control-center] Updated Norwegian bokm??l translation</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 449
+          for &lt;jefferson.lang.bennett@a.markmail.org&gt;;
+          Wed, 24 Nov 2010 10:47:17 -0800 (GMT-08:00)</received><received>from menubar.gnome.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 1C47F3B300B8
+	for &lt;jefferson.lang.bennett@a.markmail.org&gt;; Wed, 24 Nov 2010 10:46:54 -0800 (PST)</received><received>from menubar.gnome.org (localhost.localdomain [127.0.0.1])
+	by menubar.gnome.org (Postfix) with ESMTP id E46787502F6;
+	Wed, 24 Nov 2010 18:47:16 +0000 (UTC)</received><x-original-to>commits-list@gnome.org</x-original-to><delivered-to>commits-list@gnome.org</delivered-to><received>from localhost (localhost.localdomain [127.0.0.1])
+	by menubar.gnome.org (Postfix) with ESMTP id 1B32D7500E6
+	for &lt;commits-list@gnome.org&gt;; Wed, 24 Nov 2010 18:47:15 +0000 (UTC)</received><x-quarantine-id>&lt;KwmBh8Igi857&gt;</x-quarantine-id><x-virus-scanned>by amavisd-new at gnome.org</x-virus-scanned><x-amavis-alert>BAD HEADER SECTION, Non-encoded 8-bit data (char C3 hex):
+	Subject: ...-center] Updated Norwegian bokm\303\245l translation</x-amavis-alert><x-spam-flag>NO</x-spam-flag><x-spam-score>-1.082</x-spam-score><x-spam-level/><x-spam-status>No, score=-1.082 tagged_above=-999 required=2
+	tests=[ALL_TRUSTED=-1, BAYES_00=-1.9, SUBJECT_NEEDS_ENCODING=0.049,
+	SUBJ_ILLEGAL_CHARS=1.518, TW_HV=0.077, TW_KS=0.077, TW_SG=0.077,
+	T_FRT_CLICK=0.01, T_FRT_CONTACT=0.01] autolearn=no</x-spam-status><received>from menubar.gnome.org ([127.0.0.1])
+	by localhost (menubar.gnome.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id KwmBh8Igi857 for &lt;commits-list@gnome.org&gt;;
+	Wed, 24 Nov 2010 18:47:10 +0000 (UTC)</received><received>from git.gnome.org (git-back [172.31.1.34])
+	by menubar.gnome.org (Postfix) with ESMTP id 0C5317502F6
+	for &lt;commits-list@gnome.org&gt;; Wed, 24 Nov 2010 18:47:10 +0000 (UTC)</received><received>by git.gnome.org (Postfix, from userid 2182)
+	id 0737C2100B9; Wed, 24 Nov 2010 18:47:09 +0000 (UTC)</received><keywords>gnome-control-center</keywords><x-git-refname>refs/heads/master</x-git-refname><x-git-oldrev>c6f4bd18469cb52c6ad060218170e8f02bd0224a</x-git-oldrev><x-git-newrev>0936862719fc3307a92c838f347e6c39298fd76f</x-git-newrev><message-id>20101124184709.0737C2100B9@git.gnome.org</message-id><date>Wed, 24 Nov 2010 18:47:09 +0000 (UTC)</date><x-topics>gnome-control-center</x-topics><x-beenthere>commits-list@gnome.org</x-beenthere><x-mailman-version>2.1.13</x-mailman-version><precedence>list</precedence><list-id>Git commits &lt;commits-list.gnome.org&gt;</list-id><list-unsubscribe>&lt;http://mail.gnome.org/mailman/options/commits-list&gt;,
+	&lt;mailto:commits-list-request@gnome.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.gnome.org/archives/commits-list/&gt;</list-archive><list-post>&lt;mailto:commits-list@gnome.org&gt;</list-post><list-help>&lt;mailto:commits-list-request@gnome.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.gnome.org/mailman/listinfo/commits-list&gt;,
+	&lt;mailto:commits-list-request@gnome.org?subject=subscribe&gt;</list-subscribe><mime-version>1.0</mime-version><content-type>multipart/mixed; boundary="===============0944755330=="</content-type><sender>commits-list-bounces@gnome.org</sender><errors-to>commits-list-bounces@gnome.org</errors-to></headers><normalized-references><normalized-message-id>20101124184709.0737C2100B9@git.gnome.org</normalized-message-id></normalized-references><body><para depth="0">commit 0936862719fc3307a92c838f347e6c39298fd76f
+Author: Kjartan Maraas &lt;<email>kmaraas@gnome.org</email>&gt;
+Date:   Wed Nov 24 19:47:00 2010 +0100
+
+</para><para depth="0">    Updated Norwegian bokmÃ¥l translation
+
+</para><para depth="0"> po/nb.po |  470 +++++++++++++++++++++++++++++++++++++++++++-------------------
+ 1 files changed, 327 insertions(+), 143 deletions(-)
+</para><para depth="0">---
+diff --git a/po/nb.po b/po/nb.po
+index 2758986..aafa83d 100644
+--- a/po/nb.po
++++ b/po/nb.po
+@@ -7,8 +7,8 @@ msgid ""
+ msgstr ""
+ "Project-Id-Version: gnome-control-center 2.91.x\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-11-20 12:46+0100\n"
+-"PO-Revision-Date: 2010-11-20 14:09+0100\n"
++"POT-Creation-Date: 2010-11-24 19:33+0100\n"
++"PO-Revision-Date: 2010-11-24 19:46+0100\n"
+ "Last-Translator: Kjartan Maraas &lt;<email>kmaraas@gnome.org</email>&gt;\n"
+ "Language-Team: Norwegian BokmÃ¥l &lt;<email>i18n-nb@lister.ping.uio.no</email>&gt;\n"
+ "Language: \n"
+@@ -190,7 +190,7 @@ msgid "Tile"
+ msgstr "Flislegg"
+
+</para><para depth="0"> #: ../panels/background/background.ui.h:6
+-#: ../panels/universal-access/uap.ui.h:94
++#: ../panels/universal-access/uap.ui.h:93
+ msgid "Zoom"
+ msgstr "Zoom"
+
+</para><para depth="0">@@ -416,7 +416,7 @@ msgstr "Ã
+ #. Translators: those are keywords for the date and time control-center panel
+ #: ../panels/datetime/gnome-datetime-panel.desktop.in.in.h:2
+ msgid "Clock;Timezone;Location;"
+-msgstr ""
++msgstr "Klokke;Tidssone;Lokasjon;"
+
+</para><para depth="0"> #: ../panels/datetime/gnome-datetime-panel.desktop.in.in.h:3
+ msgid "Date And Time"
+@@ -454,7 +454,6 @@ msgid "Error setting default mailer: %s"
+ msgstr "Feil ved setting av forvalgt e-postprogram: %s"
+
+</para><para depth="0"> #: ../panels/default-applications/gnome-da-capplet.c:321
+-#: ../panels/sound/gvc-sound-theme-chooser.c:628
+ #: ../panels/sound/sound-theme-file-utils.c:292
+ msgid "Custom"
+ msgstr "Egendefinert"
+@@ -640,29 +639,29 @@ msgid "&lt;i&gt;Note: may limit resolution options&lt;/i&gt;"
+ msgstr "&lt;i&gt;Merk: kan begrense alternativer for opplÃ¸sing&lt;/i&gt;"
+
+</para><para depth="0"> #: ../panels/display/display-capplet.ui.h:2
+-#: ../panels/display/xrandr-capplet.c:313
++#: ../panels/display/xrandr-capplet.c:317
+ msgid "Left"
+ msgstr "Venstre"
+
+</para><para depth="0"> #: ../panels/display/display-capplet.ui.h:3
+-#: ../panels/display/xrandr-capplet.c:465
++#: ../panels/display/xrandr-capplet.c:469
+ msgid "Monitor"
+ msgstr "Skjerm"
+
+</para><para depth="0"> #: ../panels/display/display-capplet.ui.h:4
+-#: ../panels/display/xrandr-capplet.c:312
+-#: ../panels/display/xrandr-capplet.c:351
+-#: ../panels/universal-access/uap.ui.h:59
++#: ../panels/display/xrandr-capplet.c:316
++#: ../panels/display/xrandr-capplet.c:355
++#: ../panels/universal-access/uap.ui.h:58
+ msgid "Normal"
+ msgstr "Normal"
+
+</para><para depth="0"> #: ../panels/display/display-capplet.ui.h:5
+-#: ../panels/universal-access/uap.ui.h:60
++#: ../panels/universal-access/uap.ui.h:59
+ msgid "Off"
+ msgstr "Av"
+
+</para><para depth="0"> #: ../panels/display/display-capplet.ui.h:6
+-#: ../panels/universal-access/uap.ui.h:61
++#: ../panels/universal-access/uap.ui.h:60
+ msgid "On"
+ msgstr "PÃ¥"
+
+</para><para depth="0">@@ -671,7 +670,7 @@ msgid "R_otation:"
+ msgstr "R_otasjon:"
+
+</para><para depth="0"> #: ../panels/display/display-capplet.ui.h:8
+-#: ../panels/display/xrandr-capplet.c:314
++#: ../panels/display/xrandr-capplet.c:318
+ msgid "Right"
+ msgstr "HÃ¸yre:"
+
+</para><para depth="0">@@ -704,7 +703,7 @@ msgstr "Skjermer"
+ msgid "Panel;Projector;xrandr;Screen;Resolution;Refresh;"
+ msgstr "Panel;Prosjektor;xrandr;Skjerm;OpplÃ¸sning;Oppdater;"
+
+</para><para depth="0">-#: ../panels/display/xrandr-capplet.c:315
++#: ../panels/display/xrandr-capplet.c:319
+ msgid "Upside Down"
+ msgstr "Opp-ned"
+
+</para><para depth="0">@@ -713,22 +712,26 @@ msgstr "Opp-ned"
+ #. * used as an adjective, not as a verb.  For example, the Spanish
+ #. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+ #.
+-#: ../panels/display/xrandr-capplet.c:454
+-#: ../panels/display/xrandr-capplet.c:1623
++#: ../panels/display/xrandr-capplet.c:458
++#: ../panels/display/xrandr-capplet.c:1719
+ msgid "Mirror Screens"
+ msgstr "Speil skjermer"
+
+</para><para depth="0">-#: ../panels/display/xrandr-capplet.c:570
++#: ../panels/display/xrandr-capplet.c:574
+ #, c-format
+ msgid "%d x %d (%s)"
+ msgstr "%d x %d (%s)"
+
+</para><para depth="0">-#: ../panels/display/xrandr-capplet.c:572
++#: ../panels/display/xrandr-capplet.c:576
+ #, c-format
+ msgid "%d x %d"
+ msgstr "%d x %d"
+
+</para><para depth="0">-#: ../panels/display/xrandr-capplet.c:1478
++#: ../panels/display/xrandr-capplet.c:1482
++msgid "Drag to change primary display."
++msgstr "Dra for Ã¥ bytte primÃ¦r skjerm."
++
++#: ../panels/display/xrandr-capplet.c:1540
+ msgid ""
+ "Select a monitor to change its properties; drag it to rearrange its "
+ "placement."
+@@ -736,19 +739,27 @@ msgstr ""
+ "Velg en skjerm for Ã¥ endre egenskaper for denne. Dra den rundt for Ã¥ bytte "
+ "plassering."
+
+</para><para depth="0">-#: ../panels/display/xrandr-capplet.c:2053
++#: ../panels/display/xrandr-capplet.c:1945
++msgid "%a %R"
++msgstr "%a %R"
++
++#: ../panels/display/xrandr-capplet.c:1947
++msgid "%a %l:%M %p"
++msgstr "%a %H.%M"
++
++#: ../panels/display/xrandr-capplet.c:2232
+ msgid "Could not save the monitor configuration"
+ msgstr "Kunne ikke lagre skjermkonfigurasjon"
+
+</para><para depth="0">-#: ../panels/display/xrandr-capplet.c:2076
++#: ../panels/display/xrandr-capplet.c:2255
+ msgid "Could not get session bus while applying display configuration"
+ msgstr "Kunne ikke finne sesjonsbussen under aktivering av skjermkonfigurasjon"
+
+</para><para depth="0">-#: ../panels/display/xrandr-capplet.c:2121
++#: ../panels/display/xrandr-capplet.c:2300
+ msgid "Could not detect displays"
+ msgstr "Kunne ikke sÃ¸ke etter skjermer"
+
+</para><para depth="0">-#: ../panels/display/xrandr-capplet.c:2328
++#: ../panels/display/xrandr-capplet.c:2507
+ msgid "Could not get screen information"
+ msgstr "Fant ikke informasjon om skjermen"
+
+</para><para depth="0">@@ -915,7 +926,7 @@ msgstr "Tastetrykk _repeteres nÃ¥r tasten holdes nede"
+ #: ../panels/keyboard/gnome-keyboard-panel.ui.h:10
+ #: ../panels/region/gnome-region-panel.ui.h:5
+ #: ../panels/mouse/gnome-mouse-properties.ui.h:25
+-#: ../panels/universal-access/uap.ui.h:52
++#: ../panels/universal-access/uap.ui.h:51
+ msgid "Long"
+ msgstr "Lang"
+
+</para><para depth="0">@@ -935,7 +946,7 @@ msgstr "_Hastighet:"
+ #: ../panels/keyboard/gnome-keyboard-panel.ui.h:14
+ #: ../panels/region/gnome-region-panel.ui.h:19
+ #: ../panels/mouse/gnome-mouse-properties.ui.h:35
+-#: ../panels/universal-access/uap.ui.h:72
++#: ../panels/universal-access/uap.ui.h:71
+ msgid "Short"
+ msgstr "Kort"
+
+</para><para depth="0">@@ -973,6 +984,199 @@ msgstr "_Navn:"
+ msgid "_Speed:"
+ msgstr "_Hastighet:"
+
+</para><para depth="0">+#: ../panels/media/cc-media-panel.c:513
++msgid "No applications found"
++msgstr "Ingen programmer funnet"
++
++#: ../panels/media/cc-media-panel.c:525
++msgid "Ask what to do"
++msgstr "SpÃ¸r hvs som skal gjÃ¸res"
++
++#: ../panels/media/cc-media-panel.c:537
++msgid "Do Nothing"
++msgstr "Ikke gjÃ¸r noe"
++
++#: ../panels/media/cc-media-panel.c:549
++msgid "Open Folder"
++msgstr "Ã
++
++#: ../panels/media/cc-media-panel.c:575
++#, c-format
++msgid "Open %s"
++msgstr "Ã
++
++#: ../panels/media/cc-media-panel.c:608
++msgid "Open with other Application..."
++msgstr "Ã
++
++#: ../panels/media/nautilus-open-with-dialog.c:160
++msgid "Could not run application"
++msgstr "Kunne ikke kjÃ¸re programmet"
++
++#: ../panels/media/nautilus-open-with-dialog.c:172
++#, c-format
++msgid "Could not find '%s'"
++msgstr "Fant ikke Â«%sÂ»"
++
++#: ../panels/media/nautilus-open-with-dialog.c:175
++msgid "Could not find application"
++msgstr "Fant ikke programmet"
++
++#: ../panels/media/nautilus-open-with-dialog.c:250
++#, c-format
++msgid "Could not add application to the application database: %s"
++msgstr "Kunne ikke legge til programmet i programdatabasen: %s"
++
++#: ../panels/media/nautilus-open-with-dialog.c:251
++msgid "Could not add application"
++msgstr "Kunne ikke legge til programmet"
++
++#: ../panels/media/nautilus-open-with-dialog.c:289
++#, c-format
++msgid "Could not set application as the default: %s"
++msgstr "Kunne ikke sette programmet som forvalgt: %s"
++
++#: ../panels/media/nautilus-open-with-dialog.c:290
++msgid "Could not set as default application"
++msgstr "Kunne ikke sette forvalgt program"
++
++#: ../panels/media/nautilus-open-with-dialog.c:427
++msgid "Select an Application"
++msgstr "Velg et program"
++
++#: ../panels/media/nautilus-open-with-dialog.c:786
++msgid "Open With"
++msgstr "Ã
++
++#: ../panels/media/nautilus-open-with-dialog.c:822
++msgid "Select an application to view its description."
++msgstr "Velg et program for Ã¥ vise en beskrivelse av det"
++
++#: ../panels/media/nautilus-open-with-dialog.c:847
++msgid "_Use a custom command"
++msgstr "Br_uk en egendefinert kommando"
++
++#: ../panels/media/nautilus-open-with-dialog.c:864
++msgid "_Browse..."
++msgstr "_Bla gjennom..."
++
++#: ../panels/media/nautilus-open-with-dialog.c:900
++msgid "_Open"
++msgstr "_Ã
++
++#. first %s is a filename and second %s is a file extension
++#: ../panels/media/nautilus-open-with-dialog.c:980
++#, c-format
++msgid "Open %s and other %s document with:"
++msgstr "Ã
++
++#. the %s here is a file name
++#. %s is a filename
++#: ../panels/media/nautilus-open-with-dialog.c:984
++#: ../panels/media/nautilus-open-with-dialog.c:1015
++#, c-format
++msgid "Open %s with:"
++msgstr "Ã
++
++#: ../panels/media/nautilus-open-with-dialog.c:985
++#, c-format
++msgid "_Remember this application for %s documents"
++msgstr "Husk dette p_rogrammet for %s-dokumenter"
++
++#. Only in add mode - the %s here is a file extension
++#: ../panels/media/nautilus-open-with-dialog.c:994
++#, c-format
++msgid "Open all %s documents with:"
++msgstr "Ã
++
++#: ../panels/media/nautilus-open-with-dialog.c:1003
++#: ../panels/region/gnome-region-panel-xkb.c:70
++msgid "Unknown"
++msgstr "Ukjent"
++
++#. First %s is a filename, second is a description
++#. * of the type, eg "plain text document"
++#: ../panels/media/nautilus-open-with-dialog.c:1011
++#, c-format
++msgid "Open %s and other \"%s\" files with:"
++msgstr "Ã
++
++#. %s is a file type description
++#: ../panels/media/nautilus-open-with-dialog.c:1017
++#, c-format
++msgid "_Remember this application for \"%s\" files"
++msgstr "Husk dette p_rogrammet for Â«%sÂ»-filer"
++
++#. Only in add mode
++#: ../panels/media/nautilus-open-with-dialog.c:1026
++#, c-format
++msgid "Open all \"%s\" files with:"
++msgstr "Ã
++
++#: ../panels/media/nautilus-open-with-dialog.c:1037
++msgid "_Add"
++msgstr "_Legg til"
++
++#: ../panels/media/nautilus-open-with-dialog.c:1038
++msgid "Add Application"
++msgstr "Legg til program"
++
++#: ../panels/media/gnome-media-properties.ui.h:1
++msgid "Acti_on:"
++msgstr "Handl_ing:"
++
++#: ../panels/media/gnome-media-properties.ui.h:2
++msgid "CD _Audio:"
++msgstr "CD-_lyd:"
++
++#: ../panels/media/gnome-media-properties.ui.h:3
++msgid "Media and Autorun"
++msgstr "Medier og automatisk kjÃ¸ring"
++
++#: ../panels/media/gnome-media-properties.ui.h:4
++msgid "Other Media..."
++msgstr "Annet medie..."
++
++#: ../panels/media/gnome-media-properties.ui.h:5
++msgid "Select how media should be handled"
++msgstr "Velg hvordan medier skal hÃ¥ndteres"
++
++#: ../panels/media/gnome-media-properties.ui.h:6
++msgid "Select how other media should be handled"
++msgstr "Velg hvordan andre medier skal hÃ¥ndteres"
++
++#: ../panels/media/gnome-media-properties.ui.h:7
++msgid "_DVD Video:"
++msgstr "_DVD-video:"
++
++#: ../panels/media/gnome-media-properties.ui.h:8
++msgid "_Music Player:"
++msgstr "_Musikkavspiller:"
++
++#: ../panels/media/gnome-media-properties.ui.h:9
++msgid "_Never prompt or start programs on media insertion"
++msgstr ""
++
++#: ../panels/media/gnome-media-properties.ui.h:10
++msgid "_Photos:"
++msgstr "_Fotografier:"
++
++#: ../panels/media/gnome-media-properties.ui.h:11
++msgid "_Software:"
++msgstr "_Programvare:"
++
++#: ../panels/media/gnome-media-properties.ui.h:12
++msgid "_Type:"
++msgstr "_Type:"
++
++#: ../panels/media/gnome-media-panel.desktop.in.in.h:1
++msgid "Configure media and autorun preferences"
++msgstr "Konfigurer brukervalg for medier og automatisk kjÃ¸ring"
++
++#: ../panels/media/gnome-media-panel.desktop.in.in.h:2
++msgid "Removable Media"
++msgstr "Avtagbare medier"
++
+ #: ../panels/region/gnome-region-panel.ui.h:2
+ msgid "Keyboard _model:"
+ msgstr "Tastatur_modell:"
+@@ -986,7 +1190,7 @@ msgid "List of keyboard layouts selected for usage"
+ msgstr "Liste med tilgjengelige tastaturutforminger"
+
+</para><para depth="0"> #: ../panels/region/gnome-region-panel.ui.h:6
+-#: ../panels/universal-access/uap.ui.h:55
++#: ../panels/universal-access/uap.ui.h:54
+ msgid "Mouse Keys"
+ msgstr "Mustaster"
+
+</para><para depth="0">@@ -1017,7 +1221,7 @@ msgstr "Skriv ut et diagram med valgt tastaturutforming"
+ #: ../panels/region/gnome-region-panel.ui.h:13
+ #: ../panels/region/gnome-region-panel.desktop.in.in.h:4
+ msgid "Region and Language"
+-msgstr ""
++msgstr "Region og sprÃ¥k"
+
+</para><para depth="0"> #: ../panels/region/gnome-region-panel.ui.h:14
+ msgid "Remove the selected keyboard layout from the list"
+@@ -1112,10 +1316,6 @@ msgstr "_LeverandÃ¸rer:"
+ msgid "Keyboard Layout Options"
+ msgstr "Alternativer for tastaturutforming"
+
+</para><para depth="0">-#: ../panels/region/gnome-region-panel-xkb.c:70
+-msgid "Unknown"
+-msgstr "Ukjent"
+-
+ #: ../panels/region/gnome-region-panel-xkblt.c:218
+ msgid "Layout"
+ msgstr "Utseende"
+@@ -1130,13 +1330,13 @@ msgstr "Modeller"
+
+</para><para depth="0"> #: ../panels/region/gnome-region-panel-xkbot.c:227
+ #: ../panels/network/gnome-network-properties.c:554
+-#: ../panels/sound/gvc-sound-theme-chooser.c:823
++#: ../panels/sound/gvc-sound-theme-chooser.c:589
+ msgid "Default"
+ msgstr "Forvalg"
+
+</para><para depth="0"> #: ../panels/region/gnome-region-panel.desktop.in.in.h:1
+ msgid "Change your region and language settings"
+-msgstr ""
++msgstr "Bytt region og sprÃ¥kinnstillinger"
+
+</para><para depth="0"> #. Translators: those are keywords for the region control-center panel
+ #: ../panels/region/gnome-region-panel.desktop.in.in.h:3
+@@ -1198,7 +1398,7 @@ msgstr "HÃ¸y"
+
+</para><para depth="0"> #. large threshold
+ #: ../panels/mouse/gnome-mouse-properties.ui.h:22
+-#: ../panels/universal-access/uap.ui.h:49
++#: ../panels/universal-access/uap.ui.h:48
+ msgid "Large"
+ msgstr "Stor"
+
+</para><para depth="0">@@ -1208,7 +1408,7 @@ msgstr "Finn peker"
+
+</para><para depth="0"> #. low sensitivity
+ #: ../panels/mouse/gnome-mouse-properties.ui.h:27
+-#: ../panels/universal-access/uap.ui.h:53
++#: ../panels/universal-access/uap.ui.h:52
+ msgid "Low"
+ msgstr "Lav"
+
+</para><para depth="0">@@ -1241,13 +1441,13 @@ msgid "Show click type _window"
+ msgstr "Vis _vindu for type klikk"
+
+</para><para depth="0"> #: ../panels/mouse/gnome-mouse-properties.ui.h:37
+-#: ../panels/universal-access/uap.ui.h:74
++#: ../panels/universal-access/uap.ui.h:73
+ msgid "Simulated Secondary Click"
+ msgstr "Simulert andreklikk"
+
+</para><para depth="0"> #. small threshold
+ #: ../panels/mouse/gnome-mouse-properties.ui.h:41
+-#: ../panels/universal-access/uap.ui.h:77
++#: ../panels/universal-access/uap.ui.h:76
+ msgid "Small"
+ msgstr "Liten"
+
+</para><para depth="0">@@ -1290,7 +1490,7 @@ msgid "_Left-handed"
+ msgstr "_Venstrehendt"
+
+</para><para depth="0"> #: ../panels/mouse/gnome-mouse-properties.ui.h:54
+-#: ../panels/universal-access/uap.ui.h:97
++#: ../panels/universal-access/uap.ui.h:96
+ msgid "_Motion threshold:"
+ msgstr "_Terskel for bevegelse:"
+
+</para><para depth="0">@@ -1452,7 +1652,7 @@ msgstr "Br_uk samme proxy for alle protokoller"
+ #. Translators: those are keywords for the brightness and lock control-center<br/>panel
+ #: ../panels/screen/gnome-screen-panel.desktop.in.in.h:2
+ msgid "Brightness;Lock;Dim;Blank;"
+-msgstr ""
++msgstr "Lysstyrke;LÃ¥s;Blank;"
+
+</para><para depth="0"> #: ../panels/screen/gnome-screen-panel.desktop.in.in.h:3
+ msgid "Screen"
+@@ -1460,23 +1660,20 @@ msgstr "Skjerm"
+
+</para><para depth="0"> #: ../panels/screen/gnome-screen-panel.desktop.in.in.h:4
+ msgid "Screen brightness and lock settings"
+-msgstr ""
++msgstr "Lysstyrke og innstillinger for lÃ¥sing av skjerm"
+
+</para><para depth="0"> #: ../panels/power/gnome-power-panel.desktop.in.in.h:1
+-#: ../panels/power/gnome-power-panel.desktop.in.h:1
+ msgid "Power"
+ msgstr "StrÃ¸m"
+
+</para><para depth="0"> #: ../panels/power/gnome-power-panel.desktop.in.in.h:2
+-#: ../panels/power/gnome-power-panel.desktop.in.h:2
+ msgid "Power management settings"
+ msgstr "Innstillinger for strÃ¸mstyring"
+
+</para><para depth="0"> #. Translators: those are keywords for the power control-center panel
+ #: ../panels/power/gnome-power-panel.desktop.in.in.h:4
+-#: ../panels/power/gnome-power-panel.desktop.in.h:4
+ msgid "Power;Sleep;Suspend;Hibernate;"
+-msgstr ""
++msgstr "StrÃ¸m;Sove;Hvile;Dvale;"
+
+</para><para depth="0"> #: ../panels/power/cc-power-panel.c:151
+ msgid "Unknown time"
+@@ -1568,7 +1765,7 @@ msgstr "Utgang"
+
+</para><para depth="0"> #: ../panels/sound/gvc-applet.c:278
+ msgid "Sound Output Volume"
+-msgstr ""
++msgstr "Utgangsvolum for lyd"
+
+</para><para depth="0"> #: ../panels/sound/gvc-applet.c:282 ../panels/sound/gvc-mixer-dialog.c:1838
+ msgid "Input"
+@@ -1671,7 +1868,7 @@ msgstr ""
+
+</para><para depth="0"> #: ../panels/sound/gvc-mixer-dialog.c:1506
+ #: ../panels/sound/gvc-mixer-dialog.c:1717
+-#: ../panels/sound/gvc-sound-theme-chooser.c:833
++#: ../panels/sound/gvc-sound-theme-chooser.c:599
+ msgid "Name"
+ msgstr "Navn"
+
+</para><para depth="0">@@ -1682,7 +1879,7 @@ msgstr "Enhet"
+ #: ../panels/sound/gvc-mixer-dialog.c:1572
+ #, c-format
+ msgid "Speaker Testing for %s"
+-msgstr ""
++msgstr "Test av hÃ¸yttaler for %s"
+
+</para><para depth="0"> #: ../panels/sound/gvc-mixer-dialog.c:1630
+ msgid "Test Speakers"
+@@ -1698,7 +1895,7 @@ msgstr "Lydeffekter"
+
+</para><para depth="0"> #: ../panels/sound/gvc-mixer-dialog.c:1782
+ msgid "_Alert volume: "
+-msgstr ""
++msgstr "V_arselvolum: "
+
+</para><para depth="0"> #: ../panels/sound/gvc-mixer-dialog.c:1795
+ msgid "Hardware"
+@@ -1711,7 +1908,7 @@ msgstr "_Velg en enhet Ã¥ konfigurere:"
+ #: ../panels/sound/gvc-mixer-dialog.c:1827
+ #: ../panels/sound/gvc-mixer-dialog.c:1950
+ msgid "Settings for the selected device:"
+-msgstr ""
++msgstr "Innstillinger for valgt enhet:"
+
+</para><para depth="0"> #: ../panels/sound/gvc-mixer-dialog.c:1845
+ msgid "_Input volume: "
+@@ -1723,11 +1920,11 @@ msgstr "InngangsnivÃ¥:"
+
+</para><para depth="0"> #: ../panels/sound/gvc-mixer-dialog.c:1894
+ msgid "C_hoose a device for sound input:"
+-msgstr ""
++msgstr "_Velg en enhet som lydinngang:"
+
+</para><para depth="0"> #: ../panels/sound/gvc-mixer-dialog.c:1926
+ msgid "C_hoose a device for sound output:"
+-msgstr ""
++msgstr "_Velg en enhet som lydutgang:"
+
+</para><para depth="0"> #: ../panels/sound/gvc-mixer-dialog.c:1961
+ msgid "Applications"
+@@ -1753,7 +1950,7 @@ msgstr "Basselement"
+ #: ../panels/sound/gvc-stream-status-icon.c:233
+ #, c-format
+ msgid "Failed to start Sound Preferences: %s"
+-msgstr ""
++msgstr "Klarte ikke Ã¥ starte brukervalg for lyd: %s"
+
+</para><para depth="0"> #: ../panels/sound/gvc-stream-status-icon.c:256
+ msgid "_Mute"
+@@ -1767,46 +1964,29 @@ msgstr "Brukervalg for _lyd"
+ msgid "Muted"
+ msgstr "Dempet"
+
+</para><para depth="0">-#: ../panels/sound/gvc-sound-theme-chooser.c:326
+-msgid "No sounds"
+-msgstr "Ingen lyder"
+-
+-#: ../panels/sound/gvc-sound-theme-chooser.c:448
++#: ../panels/sound/gvc-sound-theme-chooser.c:189
+ msgid "Built-in"
+ msgstr "Innebygget"
+
+</para><para depth="0">-#: ../panels/sound/gvc-sound-theme-chooser.c:693
+-#: ../panels/sound/gvc-sound-theme-chooser.c:705
+-#: ../panels/sound/gvc-sound-theme-chooser.c:717
++#: ../panels/sound/gvc-sound-theme-chooser.c:459
++#: ../panels/sound/gvc-sound-theme-chooser.c:471
++#: ../panels/sound/gvc-sound-theme-chooser.c:483
+ msgid "Sound Preferences"
+ msgstr "Brukervalg for lyd"
+
+</para><para depth="0">-#: ../panels/sound/gvc-sound-theme-chooser.c:696
+-#: ../panels/sound/gvc-sound-theme-chooser.c:707
+-#: ../panels/sound/gvc-sound-theme-chooser.c:719
++#: ../panels/sound/gvc-sound-theme-chooser.c:462
++#: ../panels/sound/gvc-sound-theme-chooser.c:473
++#: ../panels/sound/gvc-sound-theme-chooser.c:485
+ msgid "Testing event sound"
+-msgstr ""
++msgstr "Tester lyd for hendelse"
+
+</para><para depth="0">-#: ../panels/sound/gvc-sound-theme-chooser.c:824
++#: ../panels/sound/gvc-sound-theme-chooser.c:590
+ msgid "From theme"
+ msgstr "Fra tema"
+
+</para><para depth="0">-#: ../panels/sound/gvc-sound-theme-chooser.c:840
+-msgid "Type"
+-msgstr "Type"
+-
+-#: ../panels/sound/gvc-sound-theme-chooser.c:1034
+-msgid "Sound _theme:"
+-msgstr "Lyd_tema:"
+-
+-#: ../panels/sound/gvc-sound-theme-chooser.c:1042
+-#, fuzzy
++#: ../panels/sound/gvc-sound-theme-chooser.c:778
+ msgid "C_hoose an alert sound:"
+-msgstr "Velg en utforming"
+-
+-#: ../panels/sound/gvc-sound-theme-chooser.c:1073
+-msgid "Enable _window and button sounds"
+-msgstr ""
++msgstr "_Velg en varsellyd:"
+
+</para><para depth="0"> #: ../panels/sound/data/gnome-sound-applet.desktop.in.h:1
+ msgid "Show desktop volume control"
+@@ -1819,7 +1999,7 @@ msgstr "Volumkontroll"
+ #. Translators: those are keywords for the sound control-center panel
+ #: ../panels/sound/data/gnome-sound-panel.desktop.in.in.h:2
+ msgid "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;"
+-msgstr ""
++msgstr "Kort;Mikrofon;Volum;Fade;Balanse;Bluetooth;Hodetelefon;"
+
+</para><para depth="0"> #: ../panels/sound/data/gnome-sound-panel.desktop.in.in.h:3
+ msgid "Change sound volume and sound events"
+@@ -1852,7 +2032,7 @@ msgstr "Sonar"
+ #. Translators: those are keywords for the universal access control-center<br/>panel
+ #: ../panels/universal-access/gnome-universal-access-panel.desktop.in.in.h:2
+ msgid "Keyboard;Mouse;a11y;Accessibility;"
+-msgstr ""
++msgstr "Tastatur;Mus;a11y;Tilgjengelighet;"
+
+</para><para depth="0"> #: ../panels/universal-access/gnome-universal-access-panel.desktop.in.in.h:3
+ msgid "Universal Access"
+@@ -2010,166 +2190,162 @@ msgid "Hover Click"
+ msgstr "Dwell-klikk"
+
+</para><para depth="0"> #: ../panels/universal-access/uap.ui.h:44
+-msgid "I need assistance with:"
+-msgstr "Jeg trenger hjelp med:"
+-
+-#: ../panels/universal-access/uap.ui.h:45
+ msgid "Ignores fast duplicate keypresses"
+ msgstr "Ignorer raskt dupliserte tastaturtrykk"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:46
++#: ../panels/universal-access/uap.ui.h:45
+ msgid "Increase size:"
+ msgstr "StÃ¸rre stÃ¸rrelse:"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:47
++#: ../panels/universal-access/uap.ui.h:46
+ msgid "Keyboard Settings..."
+ msgstr "Innstillinger for tastatur..."
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:50
++#: ../panels/universal-access/uap.ui.h:49
+ msgid "Larger"
+ msgstr "StÃ¸rre"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:54
++#: ../panels/universal-access/uap.ui.h:53
+ msgid "LowContrast"
+ msgstr "Lav kontrast"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:56
++#: ../panels/universal-access/uap.ui.h:55
+ msgid "Mouse Settings..."
+ msgstr "Innstillinger for mus..."
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:57
++#: ../panels/universal-access/uap.ui.h:56
+ msgid "Nomon"
+ msgstr "Nomon"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:58
++#: ../panels/universal-access/uap.ui.h:57
+ msgid "None"
+ msgstr "Ingen"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:62
++#: ../panels/universal-access/uap.ui.h:61
+ msgid "On screen keyboard"
+ msgstr "Tastatur pÃ¥ skjermen"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:63
++#: ../panels/universal-access/uap.ui.h:62
+ msgid "OnBoard"
+ msgstr "OnBoard"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:64
++#: ../panels/universal-access/uap.ui.h:63
+ msgid "Options..."
+ msgstr "Alternativer..."
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:65
++#: ../panels/universal-access/uap.ui.h:64
+ msgid "Pointing and Clicking"
+ msgstr "Pek og klikk"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:66
++#: ../panels/universal-access/uap.ui.h:65
+ msgid "Puts a delay between when a key is pressed and when it is accepted"
+ msgstr "Setter inn en pause fra en tast trykkes ned til den godtas"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:67
++#: ../panels/universal-access/uap.ui.h:66
+ msgid "Screen Reader"
+ msgstr "Skjermleser"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:68
++#: ../panels/universal-access/uap.ui.h:67
+ msgid "Seeing"
+ msgstr "Syn"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:69
++#: ../panels/universal-access/uap.ui.h:68
+ msgid "Shift+Ctrl+Alt+-"
+ msgstr "Shift+Ctrl+Alt+-"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:70
++#: ../panels/universal-access/uap.ui.h:69
+ msgid "Shift+Ctrl+Alt+="
+ msgstr "Shift+Ctrl+Alt+="
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:73
++#: ../panels/universal-access/uap.ui.h:72
+ msgid "Show Universal Access status"
+ msgstr "Vis status for universell tilgang"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:75
++#: ../panels/universal-access/uap.ui.h:74
+ msgid "Slow Keys"
+ msgstr "Trege taster"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:78
++#: ../panels/universal-access/uap.ui.h:77
+ msgid "Sound Settings..."
+ msgstr "Innstillinger for lyd..."
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:79
++#: ../panels/universal-access/uap.ui.h:78
+ msgid "Sticky Keys"
+ msgstr "Klebrige taster"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:80
++#: ../panels/universal-access/uap.ui.h:79
+ msgid "Test flash"
+ msgstr "Test blinking"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:81
++#: ../panels/universal-access/uap.ui.h:80
+ msgid "Text size:"
+ msgstr "TekststÃ¸rrelse:"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:82
++#: ../panels/universal-access/uap.ui.h:81
+ msgid "Treats a sequence of modifier keys as a key combination"
+ msgstr "Behandler en sekvens med endringstaster som en tastekombinasjon"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:83
++#: ../panels/universal-access/uap.ui.h:82
+ msgid "Trigger a click when the pointer hovers"
+ msgstr "Initier klikk nÃ¥r pekeren henger over et punkt"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:84
++#: ../panels/universal-access/uap.ui.h:83
+ msgid "Trigger a secondary click by holding down the primary button"
+ msgstr "UtlÃ¸s sekundÃ¦rklikk ved Ã¥ holde nede primÃ¦rknappen"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:85
++#: ../panels/universal-access/uap.ui.h:84
+ msgid "Turn on accessibility features from the keyboard"
+ msgstr "SlÃ¥ nÃ¥r funksjoner for tilgjengelighet fra tastaturet"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:86
++#: ../panels/universal-access/uap.ui.h:85
+ msgid "Turn on or off:"
+ msgstr "SlÃ¥ pÃ¥ eller av:"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:87
++#: ../panels/universal-access/uap.ui.h:86
+ msgid "Type here to test settings"
+ msgstr "Skriv her for Ã¥ prÃ¸ve ut innstillinger"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:88
++#: ../panels/universal-access/uap.ui.h:87
+ msgid "Typing"
+ msgstr "Skriving"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:89
++#: ../panels/universal-access/uap.ui.h:88
+ msgid "Typing Assistant"
+ msgstr "Skriveassistent"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:90
++#: ../panels/universal-access/uap.ui.h:89
+ msgid "Use a visual indication when an alert sound occurs"
+ msgstr "Bruk en visuell indikasjon nÃ¥r en varsellyd spilles av"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:91
++#: ../panels/universal-access/uap.ui.h:90
+ msgid "Use an alternative form of text input"
+ msgstr "Bruk en alternativ form for inndata for tekst"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:92
++#: ../panels/universal-access/uap.ui.h:91
+ msgid "Video Mouse"
+ msgstr "Videomus"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:93
++#: ../panels/universal-access/uap.ui.h:92
+ msgid "Visual Alerts"
+ msgstr "Synlige varsel"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:95
++#: ../panels/universal-access/uap.ui.h:94
+ msgid "Zoom in:"
+ msgstr "Zoom inn:"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:96
++#: ../panels/universal-access/uap.ui.h:95
+ msgid "Zoom out:"
+ msgstr "Zoom ut:"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:98
++#: ../panels/universal-access/uap.ui.h:97
+ msgid "accepted"
+ msgstr "godtatt"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:99
++#: ../panels/universal-access/uap.ui.h:98
+ msgid "pressed"
+ msgstr "trykket"
+
+</para><para depth="0">-#: ../panels/universal-access/uap.ui.h:100
++#: ../panels/universal-access/uap.ui.h:99
+ msgid "rejected"
+ msgstr "avvist"
+
+</para><para depth="0">@@ -2364,19 +2540,19 @@ msgstr ""
+
+</para><para depth="0"> #: ../panels/user-accounts/um-language-dialog.c:328
+ msgid "Other..."
+-msgstr ""
++msgstr "Annet..."
+
+</para><para depth="0"> #: ../panels/user-accounts/um-lockbutton.c:355
+ msgid "Lock"
+-msgstr ""
++msgstr "LÃ¥s"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-lockbutton.c:364
+ msgid "Unlock"
+-msgstr ""
++msgstr "LÃ¥s opp"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-lockbutton.c:373
+ msgid "Locked"
+-msgstr ""
++msgstr "LÃ¥st"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-lockbutton.c:382
+ msgid ""
+@@ -2477,20 +2653,24 @@ msgstr "Feil passord"
+ msgid "Select"
+ msgstr "Velg"
+
+</para><para depth="0">-#: ../panels/user-accounts/um-photo-dialog.c:212
++#: ../panels/user-accounts/um-photo-dialog.c:216
+ #: ../panels/user-accounts/data/photo-dialog.ui.h:2
+ msgid "Browse for more pictures"
+ msgstr "Se etter flere bilder"
+
+</para><para depth="0">-#: ../panels/user-accounts/um-photo-dialog.c:431
++#: ../panels/user-accounts/um-photo-dialog.c:429
++msgid "Disable image"
++msgstr "SlÃ¥ av bilde"
++
++#: ../panels/user-accounts/um-photo-dialog.c:447
+ msgid "Take a photo..."
+ msgstr "Ta et bilde..."
+
+</para><para depth="0">-#: ../panels/user-accounts/um-photo-dialog.c:449
++#: ../panels/user-accounts/um-photo-dialog.c:465
+ msgid "Browse for more pictures..."
+ msgstr "Se etter flere bilder..."
+
+</para><para depth="0">-#: ../panels/user-accounts/um-photo-dialog.c:677
++#: ../panels/user-accounts/um-photo-dialog.c:693
+ #, c-format
+ msgid "Used by %s"
+ msgstr "Brukt av %s"
+@@ -2554,28 +2734,28 @@ msgstr "Konto deaktivert"
+ #: ../panels/user-accounts/um-user-panel.c:473
+ msgctxt "Password mode"
+ msgid "To be set at next login"
+-msgstr ""
++msgstr "Settes ved neste innlogging"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-user-panel.c:476
+-#, fuzzy
+ msgctxt "Password mode"
+ msgid "None"
+ msgstr "Ingen"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-user-panel.c:818
+ msgid "Failed to contact the accounts service"
+-msgstr ""
++msgstr "Klarte ikke Ã¥ kontakte kontotjenesten"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-user-panel.c:820
+-#, fuzzy
+ msgid "Please make sure that the AccountService is installed and enabled."
+-msgstr "Sjekk at programmet er korrekt installert"
++msgstr "Sjekk at kontotjenesten er installert og aktivert."
+
+</para><para depth="0"> #: ../panels/user-accounts/um-user-panel.c:853
+ msgid ""
+ "To make changes,\n"
+ "click the * icon first"
+ msgstr ""
++"Klikk pÃ¥ *-ikonet\n"
++"for Ã¥ gjÃ¸re endringer"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-user-panel.c:891
+ #: ../panels/user-accounts/data/user-accounts-dialog.ui.h:13
+@@ -2588,6 +2768,8 @@ msgid ""
+ "To create a user,\n"
+ "click the * icon first"
+ msgstr ""
++"Klikk pÃ¥ *-ikonet\n"
++"for Ã¥ lage en bruker"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-user-panel.c:911
+ #: ../panels/user-accounts/data/user-accounts-dialog.ui.h:14
+@@ -2600,6 +2782,8 @@ msgid ""
+ "To delete the selected user,\n"
+ "click the * icon first"
+ msgstr ""
++"Klikk pÃ¥ *-ikonet\n"
++"for Ã¥ slette valgt bruker"
+
+</para><para depth="0"> #: ../panels/user-accounts/um-user-panel.c:1087
+ msgid "My Account"
+@@ -2616,7 +2800,7 @@ msgstr "Legg til eller fjern brukere"
+ #. Translators: those are keywords for the user accounts control-center panel
+ #: ../panels/user-accounts/data/gnome-user-accounts-panel.desktop.in.in.h:3
+ msgid "Login;Name;Fingerprint;Avatar;Logo;Face;Password;"
+-msgstr ""
++msgstr "Login;Navn;Fingeravtrykk;Avatar;Logo;Ansikt;Passord;"
+
+</para><para depth="0"> #: ../panels/user-accounts/data/gnome-user-accounts-panel.desktop.in.in.h:4
+ msgid "User Accounts"
+@@ -2651,7 +2835,7 @@ msgstr "Avbryt"
+ msgid ""
+ "&lt;a href=\"<url>http://wolfram.org/writing/howto/password.html</url>\"&gt;How to choose a "
+ "strong password&lt;/a&gt;"
+-msgstr ""
++msgstr "&lt;a href=\"<url>http://wolfram.org/writing/howto/password.html</url>\"&gt;Hvordan<br/>velge et sterkt passord&lt;/a&gt;"
+
+</para><para depth="0"> #: ../panels/user-accounts/data/password-dialog.ui.h:2
+ msgid ""
+@@ -2773,7 +2957,7 @@ msgstr "Adressebokkort:"
+
+</para><para depth="0"> #: ../panels/user-accounts/data/user-accounts-dialog.ui.h:11
+ msgid "Allow guests to log in to this computer"
+-msgstr ""
++msgstr "La gjester logge inn pÃ¥ denne datamaskinen"
+
+</para><para depth="0"> #: ../panels/user-accounts/data/user-accounts-dialog.ui.h:12
+ msgid "Automatic Login:"
+@@ -2809,7 +2993,7 @@ msgstr "Begrensninger:"
+
+</para><para depth="0"> #: ../panels/user-accounts/data/user-accounts-dialog.ui.h:23
+ msgid "Show Shutdown, Suspend and Restart actions"
+-msgstr ""
++msgstr "Vis handlinger for Ã¥ slÃ¥ av, starte pÃ¥ nytt og for hvilemodus"
+
+</para><para depth="0"> #: ../panels/user-accounts/data/user-accounts-dialog.ui.h:24
+ msgid "Show list of users"
+@@ -2890,7 +3074,7 @@ msgstr "Eksempel pÃ¥ brukervalgpanel"
+ #. Translators: those are keywords for the example control-center panel
+ #: ../examples/gnome-example-panel.desktop.in.in.h:4
+ msgid "Foo;Bar;Baz;"
+-msgstr ""
++msgstr "Foo;Bar;Baz;"
+
+</para><para depth="0"> #: ../shell/shell.ui.h:2
+ msgid "_All Settings"
+</para><footer type="list-management" depth="0">_______________________________________________
+commits-list mailing list (read only)
+<url>http://mail.gnome.org/mailman/listinfo/commits-list</url>
+
+</footer><para depth="0">Want to limit the commits to a few modules? Go to above URL, log in to edit your<br/>options and select the modules ('topics') you want.
+</para></body></message>

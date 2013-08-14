@@ -1,0 +1,61 @@
+<message message-id="1070032647.3fc7670763f2a@webmail.inpe.br" list="net.java.dev.soujava.enterprise-list" id="24bf2e7bse26g3qe" no-archive="yes" type="development" date="2003-11-28T13:17:27-02:00" year="2003-01-01" year-month="2003-11-01" year-month-day="2003-11-28" thread-id="guhrk5haxpm6vkik"><headers><envelope-from-line>From enterprise-list-return-2630-tigrisq-archive=mail-soujava=enterprise-list=dev.java.net=dev.java.net@soujava.dev.java.net Fri Nov 28 16:36:18 2003</envelope-from-line><from personal="Leandro Luque" address="leandro@lac.inpe.br">Leandro Luque &lt;leandro@lac.inpe.br&gt;</from><to personal="enterprise-list@soujava.dev.java.net" address="enterprise-list@soujava.dev.java.net">enterprise-list@soujava.dev.java.net</to><subject normal="[enterprise-list] conexão">Re: [enterprise-list] conexão</subject><return-path>enterprise-list-return-2630-tigrisq-archive=mail-soujava=enterprise-list=dev.java.net=dev.java.net@soujava.dev.java.net</return-path><delivered-to>tigrisq-archive=mail-soujava=enterprise-list=dev.java.net@dev.java.net</delivered-to><received>(qmail 4943 invoked by uid 5302); 28 Nov 2003 16:36:18 -0000</received><mailing-list>contact enterprise-list-help@soujava.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:enterprise-list-help@soujava.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:enterprise-list-unsubscribe@soujava.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:enterprise-list@soujava.dev.java.net&gt;</list-post><reply-to>enterprise-list@soujava.dev.java.net</reply-to><delivered-to>mailing list enterprise-list@soujava.dev.java.net</delivered-to><delivered-to>moderator for enterprise-list@soujava.dev.java.net</delivered-to><received>(qmail 2090 invoked from network); 28 Nov 2003 15:17:34 -0000</received><message-id>1070032647.3fc7670763f2a@webmail.inpe.br</message-id><date>Fri, 28 Nov 2003 13:17:27 -0200</date><references>&lt;20031127154406.84225.qmail@web41905.mail.yahoo.com&gt;</references><in-reply-to>&lt;20031127154406.84225.qmail@web41905.mail.yahoo.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>8bit</content-transfer-encoding><user-agent>Internet Messaging Program (IMP) 3.2.1</user-agent><x-originating-ip>150.163.12.175</x-originating-ip></headers><normalized-references><normalized-message-id>1070032647.3fc7670763f2a@webmail.inpe.br</normalized-message-id><normalized-in-reply-to>20031127154406.84225.qmail@web41905.mail.yahoo.com</normalized-in-reply-to><normalized-reference>20031127154406.84225.qmail@web41905.mail.yahoo.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Fala cara,
+
+</para><para depth="0">não respondi antes pq não leio as msgs todo dia,
+aí vai uma conexao com o Postgres:
+
+</para><para depth="0">Para outro banco, baixa o driver e troca a classe do driver no método
+registerDriver, ex: DriverManager.registerDriver(new xxx.xxx());
+
+</para><para depth="0">-----------------
+Connection connection;
+DriverManager.registerDriver(new org.postgresql.Driver());
+
+</para><para depth="0">connection = DriverManager.getConnection(
+           "jdbc:postgresql://" + this.database_host + ":" +
+           this.database_port + "/" + this.database_connect_string + "?user=" +
+           this.database_username + "&amp;password=" + this.database_password);
+
+</para><para depth="0">return connection;
+</para><para depth="0">------------------
+
+</para><para depth="0">Citando leo rocha &lt;<email>jsprocha@yahoo.com.br</email>&gt;:
+
+</para><quote depth="1"><quotepara depth="1">Pessoal?!
+Sabe como faço conexão com driver nativo java?ou melhor, como faço uma
+conexão em java sem utilizar odbc.
+Faço assim:
+public Connection conectar(String db)
+ {
+  Connection con = null;
+  try
+  {
+   if (db.equals("siga"))
+    db = "jdbc:odbc:SigaIntranet";
+     else if (db.equals("uemg_trace"))
+    db = "jdbc:odbc:Uemg_TraceIntranet";
+   Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+   con = DriverManager.getConnection(db,"","");
+  }
+  catch (Exception e)
+  {
+   System.out.println("Conectar "+e.toString());
+  }
+  return con;
+ }
+
+</quotepara><quotepara depth="1">Como posso mudar?
+[] Leandro
+
+</quotepara><quotepara depth="1">Tinha achado um driver de nome jturbo mas parece ser pago.
+
+</quotepara><quotefooter type="free-hosting" hash="6561094481165899787" depth="1">---------------------------------
+Yahoo! Mail - 6MB, anti-spam e antivírus gratuito. Crie sua conta agora!
+</quotefooter></quote><para depth="0">
+</para><para depth="0">-------------------------------------------------
+This mail sent through IMP: <url>http://horde.org/imp/</url>
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>enterprise-list-unsubscribe@soujava.dev.java.net</email>
+For additional commands, e-mail: <email>enterprise-list-help@soujava.dev.java.net</email>
+
+</footer></body></message>

@@ -1,0 +1,37 @@
+<message message-id="2ade7f6e0810100352n55bdc0ah13bd8682a53b1027@mail.gmail.com" list="org.codehaus.grails.user" id="24bovxf4vfsmm766" type="users" date="2008-10-10T18:52:22+08:00" year="2008-01-01" year-month="2008-10-01" year-month-day="2008-10-10" thread-id="24bovxf4vfsmm766"><headers><envelope-from-line>Fri Oct 10 02:52:42 2008</envelope-from-line><from personal="Michael Mallete" address="mrmallete@gmail.com">Michael Mallete &lt;mrmallete@gmail.com&gt;</from><to personal="user@grails.codehaus.org" address="user@grails.codehaus.org">user@grails.codehaus.org</to><subject normal="[grails-user] Presentation Slides or Content Ideas for Intro to Groovy and Grails talk">[grails-user] Presentation Slides or Content Ideas for Intro to Groovy and Grails talk</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 547
+          for &lt;katharine.henson.hurley@a.markmail.org&gt;;
+          Fri, 10 Oct 2008 02:52:41 -0800 (GMT-08:00)</received><received>from mail.codehaus.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id A04723B300C5
+	for &lt;katharine.henson.hurley@a.markmail.org&gt;; Fri, 10 Oct 2008 03:52:18 -0700 (PDT)</received><received>(qmail 12007 invoked by uid 89); 10 Oct 2008 10:52:26 -0000</received><mailing-list>contact user-help@grails.codehaus.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;http://xircles.codehaus.org/manage_email&gt;</list-post><list-help>&lt;http://xircles.codehaus.org/manage_email&gt;</list-help><list-unsubscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-unsubscribe><list-subscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-subscribe><list-id>&lt;user.grails.codehaus.org&gt;</list-id><reply-to>user@grails.codehaus.org</reply-to><delivered-to>mailing list user@grails.codehaus.org</delivered-to><received>(qmail 11964 invoked by uid 89); 10 Oct 2008 10:52:22 -0000</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:mime-version:content-type;
+        bh=5aHuTb8J7jyeMfjo7XYWfRJSjGdIovDmNvAKJyKsoTs=;
+        b=wKL2NmI3xmnx33wZFvLx4n8HKYcN82JHgO8aAt7fILOC26clZ3oTUKNn+OKIrD1h0E
+         yQUwJFqzlUdgxi6UbnrFCnvBf1vNgS4qApXPoD5xzdjAiMl9zfn7BB2XZziy3uVnjmDO
+         WruLPuTYrmBSxqbcoofsz6U9C7vCavxQo91Ro=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type;
+        b=ZUD+L082TQ/xyMi2Hdc3MCb0Ptd+jgJmOKPhW/w55CzUW1yXO+3AxuSBANAAmRe4Dz
+         udhrltHPvQd5d1xi45NMFOo7Ex1p9F9WjvzTfyhCxS1h5iPD1fCIj1cSgaLTMzzGV+Br
+         lzeGnO8x1Oa/+CUpH9XhKeUygF/hxO+9W7yh8=</domainkey-signature><message-id>2ade7f6e0810100352n55bdc0ah13bd8682a53b1027@mail.gmail.com</message-id><date>Fri, 10 Oct 2008 18:52:22 +0800</date><mime-version>1.0</mime-version><content-type>multipart/alternative; 
+	boundary="----=_Part_115766_6171133.1223635942035"</content-type></headers><normalized-references><normalized-message-id>2ade7f6e0810100352n55bdc0ah13bd8682a53b1027@mail.gmail.com</normalized-message-id></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_115766_6171133.1223635942035&quot;" type="text/plain; charset=ISO-8859-1"><greeting depth="0">Hi all,
+</greeting><para depth="0">
+I am set to make a one hour talk to our local JUG next week about an
+introduction to both Groovy and Grails. I was already able to do a Groovy
+presentation previously, and it took me more than an hour to finish. So a
+one hour limit for both technologies would mean a huge limit to the topics I
+could only tackle.
+
+</para><para depth="0">I would like to ask for advice on what to include. Or better, if someone
+already did something like it, would be kind enough to share their slides,
+or at least the bullet points of what they've done. The last thing I want is
+to screw it up, especially in front of discerning Java gurus, which could be
+potential converts ;)
+
+</para><para depth="0">Thanx in advance.
+
+</para><para depth="0">regards,
+mykol
+</para></body></message>

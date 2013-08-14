@@ -1,0 +1,47 @@
+<message message-id="87ws1wds3z.fsf@eps142.cdf.udc.es" list="org.openscenegraph.lists.osg-users" id="24aifj3rhc4okxsk" type="users" date="2009-11-12T10:12:16+01:00" year="2009-01-01" year-month="2009-11-01" year-month-day="2009-11-12" thread-id="veuqoiughzjv44hf"><headers><envelope-from-line>Thu Nov 12 01:12:56 2009</envelope-from-line><from personal="Alberto Luaces" address="aluaces@udc.es">Alberto Luaces &lt;aluaces@udc.es&gt;</from><to personal="osg-users@lists.openscenegraph.org" address="osg-users@lists.openscenegraph.org">osg-users@lists.openscenegraph.org</to><subject normal="[osg-users] a question about blender and osgExport">Re: [osg-users] a question about blender and osgExport</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 669
+          for &lt;monica.rutledge.butler@a.markmail.org&gt;;
+          Thu, 12 Nov 2009 01:12:56 -0800 (GMT-08:00)</received><received>from zapata.dreamhost.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id DE3E229081F3
+	for &lt;monica.rutledge.butler@a.markmail.org&gt;; Thu, 12 Nov 2009 01:12:32 -0800 (PST)</received><received>from zapata.dreamhost.com (localhost [127.0.0.1])
+	by zapata.dreamhost.com (Postfix) with ESMTP id 65CCF8DB00B3;
+	Thu, 12 Nov 2009 01:14:38 -0800 (PST)</received><x-original-to>osg-users@lists.openscenegraph.org</x-original-to><received>from smtpout2.correo.udc.es (smtpout2.correo.udc.es [193.147.40.144])
+	by zapata.dreamhost.com (Postfix) with ESMTP id 3FCCA8DB00AD
+	for &lt;osg-users@lists.openscenegraph.org&gt;;
+	Thu, 12 Nov 2009 01:14:37 -0800 (PST)</received><received>from localhost (localhost.localdomain [127.0.0.1])
+	by smtpout2.correo.udc.es (Postfix) with ESMTP id CBC0CEF691
+	for &lt;osg-users@lists.openscenegraph.org&gt;;
+	Thu, 12 Nov 2009 10:12:36 +0100 (CET)</received><x-virus-scanned>amavisd-new at smtpout2.correo.udc.es</x-virus-scanned><received>from smtpout2.correo.udc.es ([127.0.0.1])
+	by localhost (smtpout2.correo.udc.es [127.0.0.1]) (amavisd-new,
+	port 10024)
+	with ESMTP id kBNw4UUWe35g for &lt;osg-users@lists.openscenegraph.org&gt;;
+	Thu, 12 Nov 2009 10:12:32 +0100 (CET)</received><received>from eps142 (eps142.cdf.udc.es [193.144.52.142])
+	by smtpout2.correo.udc.es (Postfix) with ESMTP id E630FEF641
+	for &lt;osg-users@lists.openscenegraph.org&gt;;
+	Thu, 12 Nov 2009 10:12:31 +0100 (CET)</received><in-reply-to>&lt;1257992689.m2f.19531@forum.openscenegraph.org&gt; (ren jie's
+	message of "Thu, 12 Nov 2009 02:24:49 +0000")</in-reply-to><references>&lt;1257838620.m2f.19394@forum.openscenegraph.org&gt;
+	&lt;1257903806.m2f.19465@forum.openscenegraph.org&gt;
+	&lt;1257992689.m2f.19531@forum.openscenegraph.org&gt;</references><user-agent>Gnus/5.13 (Gnus v5.13) Emacs/23.1 (gnu/linux)</user-agent><date>Thu, 12 Nov 2009 10:12:16 +0100</date><message-id>87ws1wds3z.fsf@eps142.cdf.udc.es</message-id><mime-version>1.0</mime-version><x-beenthere>osg-users@lists.openscenegraph.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><reply-to>OpenSceneGraph Users &lt;osg-users@lists.openscenegraph.org&gt;</reply-to><list-id>OpenSceneGraph Users &lt;osg-users-openscenegraph.org&gt;</list-id><list-unsubscribe>&lt;http://lists.openscenegraph.org/options.cgi/osg-users-openscenegraph.org&gt;,
+	&lt;mailto:osg-users-request@lists.openscenegraph.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.openscenegraph.org/pipermail/osg-users-openscenegraph.org&gt;</list-archive><list-post>&lt;mailto:osg-users@lists.openscenegraph.org&gt;</list-post><list-help>&lt;mailto:osg-users-request@lists.openscenegraph.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.openscenegraph.org/listinfo.cgi/osg-users-openscenegraph.org&gt;,
+	&lt;mailto:osg-users-request@lists.openscenegraph.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>osg-users-bounces@lists.openscenegraph.org</sender><errors-to>osg-users-bounces@lists.openscenegraph.org</errors-to></headers><normalized-references><normalized-message-id>87ws1wds3z.fsf@eps142.cdf.udc.es</normalized-message-id><normalized-in-reply-to>&lt;1257992689.m2f.19531@forum.openscenegraph.org&gt;(renjie'smessageof"Thu,12Nov200902:24:49+0000")</normalized-in-reply-to><normalized-reference>1257838620.m2f.19394@forum.openscenegraph.org</normalized-reference><normalized-reference>1257903806.m2f.19465@forum.openscenegraph.org</normalized-reference><normalized-reference>1257992689.m2f.19531@forum.openscenegraph.org</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><greeting depth="0">Hi ren,
+</greeting><para depth="0">
+when you say "version of osgExport is the lastest version", can you at
+least point to where did you downloaded it? Also, as Cedric asked
+before, which version of *osg-data* (which holds nathan.osg) are you
+using?
+
+</para><para depth="0">Regards,
+
+</para><para depth="0">Alberto
+
+</para><para depth="0">"ren jie" writes:
+
+</para><quote depth="1"><quotepara depth="1">Hi everybody,
+
+</quotepara><quotepara depth="1">help me please!
+i have try this almost a week, but still have proplems
+</quotepara></quote><footer type="list-management" depth="0">_______________________________________________
+osg-users mailing list
+<email>osg-users@lists.openscenegraph.org</email>
+<url>http://lists.openscenegraph.org/listinfo.cgi/osg-users-openscenegraph.org</url>
+</footer></body></message>

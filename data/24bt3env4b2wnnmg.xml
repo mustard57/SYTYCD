@@ -1,0 +1,37 @@
+<message message-id="20110315164142.A0C041107EB@bastion02.phx2.fedoraproject.org" list="com.redhat.fedora-extras-commits" id="24bt3env4b2wnnmg" type="checkins" date="2011-03-15T08:41:35.206387-08:00" year="2011-01-01" year-month="2011-03-01" year-month-day="2011-03-15" thread-id="24bt3env4b2wnnmg"><headers><envelope-from-line>Tue Mar 15 08:41:58 2011</envelope-from-line><from personal="Fedora PackageDB" address="pkgdb@fedoraproject.org">Fedora PackageDB &lt;pkgdb@fedoraproject.org&gt;</from><to personal="cvsextras@fedoraproject.org" address="cvsextras@fedoraproject.org">cvsextras@fedoraproject.org</to><subject normal="[pkgdb] marathi-typing-booster (Fedora, 15) updated by tibbs">[pkgdb] marathi-typing-booster (Fedora, 15) updated by tibbs</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 456
+          for &lt;thomas.herring.ewing@a.markmail.org&gt;;
+          Tue, 15 Mar 2011 08:41:58 -0800 (GMT-08:00)</received><received>from bastion.fedoraproject.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id DD39B290808C
+	for &lt;thomas.herring.ewing@a.markmail.org&gt;; Tue, 15 Mar 2011 09:41:34 -0700 (PDT)</received><received>from lists.fedoraproject.org (collab1.vpn.fedoraproject.org [192.168.1.21])
+	by bastion02.phx2.fedoraproject.org (Postfix) with ESMTP id 8CC79110ACA;
+	Tue, 15 Mar 2011 16:41:56 +0000 (UTC)</received><received>from collab1.fedoraproject.org (localhost.localdomain [127.0.0.1])
+	by lists.fedoraproject.org (Postfix) with ESMTP id 83C31326797;
+	Tue, 15 Mar 2011 16:41:55 +0000 (UTC)</received><x-original-to>scm-commits@lists.fedoraproject.org</x-original-to><delivered-to>scm-commits@lists.fedoraproject.org</delivered-to><received>from smtp-mm01.fedoraproject.org (smtp-mm1.fedoraproject.org
+	[80.239.156.217])
+	by lists.fedoraproject.org (Postfix) with ESMTP id E6D3E32675E
+	for &lt;scm-commits@lists.fedoraproject.org&gt;;
+	Tue, 15 Mar 2011 16:41:43 +0000 (UTC)</received><received>from bastion.fedoraproject.org (bastion02.fedoraproject.org
+	[209.132.181.3])
+	by smtp-mm01.fedoraproject.org (Postfix) with ESMTP id 4523A87E6F
+	for &lt;scm-commits@lists.fedoraproject.org&gt;;
+	Tue, 15 Mar 2011 16:41:43 +0000 (UTC)</received><received>by bastion02.phx2.fedoraproject.org (Postfix)
+	id A4D3F11090A; Tue, 15 Mar 2011 16:41:42 +0000 (UTC)</received><delivered-to>cvsextras@fedoraproject.org</delivered-to><received>from app02.phx2.fedoraproject.org (app02.phx2.fedoraproject.org
+	[10.5.126.32])
+	by bastion02.phx2.fedoraproject.org (Postfix) with ESMTP id A0C041107EB
+	for &lt;cvsextras@fedoraproject.org&gt;; Tue, 15 Mar 2011 16:41:42 +0000 (UTC)</received><mime-version>1.0</mime-version><date>Tue, 15 Mar 2011 16:41:42 +0000</date><x-mailer>TurboMail TurboGears Extension v.2.1</x-mailer><message-id>20110315164142.A0C041107EB@bastion02.phx2.fedoraproject.org</message-id><x-topics>PackageDB</x-topics><x-beenthere>scm-commits@lists.fedoraproject.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>devel@lists.fedoraproject.org</reply-to><list-id>Fedora SCM commits &lt;scm-commits.lists.fedoraproject.org&gt;</list-id><list-unsubscribe>&lt;https://admin.fedoraproject.org/mailman/listinfo/scm-commits&gt;, 
+	&lt;mailto:scm-commits-request@lists.fedoraproject.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.fedoraproject.org/pipermail/scm-commits&gt;</list-archive><list-post>&lt;mailto:scm-commits@lists.fedoraproject.org&gt;</list-post><list-help>&lt;mailto:scm-commits-request@lists.fedoraproject.org?subject=help&gt;</list-help><list-subscribe>&lt;https://admin.fedoraproject.org/mailman/listinfo/scm-commits&gt;, 
+	&lt;mailto:scm-commits-request@lists.fedoraproject.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>scm-commits-bounces@lists.fedoraproject.org</sender><errors-to>scm-commits-bounces@lists.fedoraproject.org</errors-to></headers><normalized-references><normalized-message-id>20110315164142.A0C041107EB@bastion02.phx2.fedoraproject.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">tibbs added a Fedora 15 branch for marathi-typing-booster
+tibbs has set build to Approved for provenpackager on marathi-typing-booster<br/>(Fedora 15)
+tibbs has set checkout to Approved for provenpackager on marathi-typing-booster<br/>(Fedora 15)
+tibbs has set commit to Approved for provenpackager on marathi-typing-booster<br/>(Fedora 15)
+tibbs approved watchbugzilla on marathi-typing-booster (Fedora 15) for i18n-team
+tibbs approved watchcommits on marathi-typing-booster (Fedora 15) for i18n-team
+
+</para><para depth="0">To make changes to this package see:
+  <url>https://admin.fedoraproject.org/pkgdb/acls/name/marathi-typing-booster</url>
+</para><footer type="list-management" depth="0">-- 
+scm-commits mailing list
+<email>scm-commits@lists.fedoraproject.org</email>
+<url>https://admin.fedoraproject.org/mailman/listinfo/scm-commits</url>
+</footer></body></message>

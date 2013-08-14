@@ -1,0 +1,69 @@
+<message message-id="299304671.8955.1297370398121.JavaMail.tomcat@hel.zones.apache.org" list="org.apache.ws.commons-dev" id="24clvhx6mb6lsppj" type="bugs" date="2011-02-10T20:39:58Z" year="2011-01-01" year-month="2011-02-01" year-month-day="2011-02-10" thread-id="24clvhx6mb6lsppj"><headers><envelope-from-line>Thu Feb 10 12:40:25 2011</envelope-from-line><from personal="Sagara Gunathunga  (JIRA)" address="jira@apache.org">"Sagara Gunathunga  (JIRA)" &lt;jira@apache.org&gt;</from><to personal="dev@ws.apache.org" address="dev@ws.apache.org">dev@ws.apache.org</to><subject normal="[jira] Updated: (WODEN-164) Verify the WSDL and XSD files in the test folder contain the correct licenses">[jira] Updated: (WODEN-164) Verify the WSDL and XSD files in the test folder contain the correct licenses</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 507
+          for &lt;dustin.webb.jordan@a.markmail.org&gt;;
+          Thu, 10 Feb 2011 12:40:25 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id C42F83B30399
+	for &lt;dustin.webb.jordan@a.markmail.org&gt;; Thu, 10 Feb 2011 12:40:01 -0800 (PST)</received><received>(qmail 22850 invoked by uid 500); 10 Feb 2011 20:40:21 -0000</received><mailing-list>contact dev-help@ws.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@ws.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@ws.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@ws.apache.org&gt;</list-post><list-id>&lt;dev.ws.apache.org&gt;</list-id><reply-to>dev@ws.apache.org</reply-to><delivered-to>mailing list dev@ws.apache.org</delivered-to><received>(qmail 22716 invoked by uid 99); 10 Feb 2011 20:40:21 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 10 Feb 2011 20:40:21 +0000</received><x-asf-spam-status>No, hits=-2000.0 required=5.0
+	tests=ALL_TRUSTED,T_RP_MATCHES_RCVD</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.116] (HELO hel.zones.apache.org) (140.211.11.116)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 10 Feb 2011 20:40:19 +0000</received><received>from hel.zones.apache.org (hel.zones.apache.org [140.211.11.116])
+	by hel.zones.apache.org (Postfix) with ESMTP id 1E54F19D8FA
+	for &lt;dev@ws.apache.org&gt;; Thu, 10 Feb 2011 20:39:58 +0000 (UTC)</received><date>Thu, 10 Feb 2011 20:39:58 +0000 (UTC)</date><message-id>299304671.8955.1297370398121.JavaMail.tomcat@hel.zones.apache.org</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-jira-fingerprint>30527f35849b9dde25b450d4833f0394</x-jira-fingerprint><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>299304671.8955.1297370398121.JavaMail.tomcat@hel.zones.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+     [<br/><url>https://issues.apache.org/jira/browse/WODEN-164?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url><br/>]
+
+</para><para depth="0">Sagara Gunathunga  updated WODEN-164:
+</para><footer type="noise" depth="0">-------------------------------------
+
+</footer><para depth="0">    Fix Version/s:     (was: M9)
+                   1.0
+
+</para><quote depth="1"><quotepara depth="1">Verify the WSDL and XSD files in the test folder contain the correct licenses
+</quotepara><quotepara depth="1">-----------------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: WODEN-164
+                URL: <url>https://issues.apache.org/jira/browse/WODEN-164</url>
+            Project: Woden
+         Issue Type: Bug
+         Components: Parser
+   Affects Versions: M7a
+           Reporter: Lawrence Mandel
+           Assignee: Lawrence Mandel
+            Fix For: 1.0
+
+</quotepara><quotepara depth="1">There are a number of WSDL and XSD files in the Woden test folder. Some of these<br/>files look like they're from the W3C WSDL 2.0 test suite. Jeremy added the<br/>Apache license info to these files - I would guess because there was no license<br/>information in them. We either need to remove the files or replace the license<br/>with the correct license. AFAIK I didn't author any of these documents. John and<br/>Graham, please have a look at the list below and state if you authored the<br/>document and if we can remove it.
+test/
+  org.apache.woden/
+      badDescriptionTags.wsdl
+      primer-hotelReservationService.wsdl
+  org.apache.woden.resolver.resources/
+      binding.wsdl
+      interface.wsdl
+      schemaImport.xsd
+      schemaInclude.xsd
+      woden14.wsdl
+  org.apache.woden.wsdl20.extensions.http.resources/
+      HTTPBindingExtensions.wsdl
+      HTTPBindingFaultExtensions.wsdl
+      HTTPBindingMessageReferenceExtensions.wsdl
+      HTTPBindingOperationExtensions.wsdl
+      HTTPEndpointExtensions.wsdl
+  org.apache.woden.wsdl20.extensions.soap.resources/
+      SOAPBindingExtensions.wsdl
+      SOAPBindingFaultExtensions.wsdl
+      SOAPBindingFaultReferenceExtensions.wsdl
+      SOAPBindingMessageReferenceExtensions.wsdl
+      SOAPBindingOperationExtensions.wsdl
+  org.apache.woden.wsdl20.xml.resources/
+      EndpointElementTest.wsdl
+      ServiceElementTest.wsdl
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="1091421298996344687">-- 
+This message is automatically generated by JIRA.
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@ws.apache.org</email>
+For additional commands, e-mail: <email>dev-help@ws.apache.org</email>
+
+</footer></body></message>

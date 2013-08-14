@@ -1,0 +1,31 @@
+<message message-id="20010702201201.13316.qmail@openoffice.org" list="org.openoffice.allcvs" id="24b75edeez42aaig" type="checkins" date="2001-07-02T20:12:01Z" year="2001-01-01" year-month="2001-07-01" year-month-day="2001-07-02" thread-id="u43wmmhjl77lqlmp"><headers><envelope-from-line>From kz@openoffice.org  Mon Jul  2 20:12:01 2001 Jul  2 20:12:01 2001</envelope-from-line><from personal="kz@openoffice.org" address="kz@openoffice.org">kz@openoffice.org</from><to personal="cvs@util.openoffice.org" address="cvs@util.openoffice.org">cvs@util.openoffice.org</to><cc personal="allcvs@openoffice.org" address="allcvs@openoffice.org">allcvs@openoffice.org</cc><subject normal="MODIFIED: defs ...">MODIFIED: defs ...</subject><return-path>kz@openoffice.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact allcvs-help@openoffice.org; run by ezmlm</mailing-list><delivered-to>mailing list allcvs@openoffice.org</delivered-to><received>(qmail 13317 invoked by uid 117); 2 Jul 2001 20:12:01 -0000</received><date>2 Jul 2001 20:12:01 -0000</date><message-id>20010702201201.13316.qmail@openoffice.org</message-id></headers><normalized-references><normalized-message-id>20010702201201.13316.qmail@openoffice.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">  User: kz      
+  Date: 01/07/02 13:12:01
+
+</para><para depth="0">  Modified:    sot/util/defs wntmsci7
+  Log:
+  new version for SRC637
+
+</para><para depth="0">  Revision  Changes    Path
+  1.28      +1 -0      util/sot/util/defs/wntmsci7
+
+</para><para depth="0">  (In the diff below, changes in quantity of whitespace are not shown.)
+
+</para><para depth="0">  Index: wntmsci7
+  ===================================================================
+  RCS file: /cvs/util/sot/util/defs/wntmsci7,v
+  retrieving revision 1.27
+  retrieving revision 1.28
+  diff -c -b -r1.27 -r1.28
+  *** wntmsci7	2001/06/29 14:29:17	1.27
+  --- wntmsci7	2001/07/02 20:12:01	1.28
+  ***************
+  *** 1002,1004 ****
+  --- 1002,1005 ----
+    ?s_pType_com_sun_star_ucb_XContentCreator@?1??getCppuType@@YAABVType@uno@star@sun@com@@PBV?$Reference@VXContentCreator@ucb@star@sun@com@@@3456@@Z@4PAU_typelib_TypeDescriptionReference@@A
+    ??0SotStorage@@QAE@ABVContent@ucb@@ABVString@@GF@Z
+    ??_C@_0DF@HFCE@o?3?2TFD636?2wntmsci7?2inc?2com?1sun?1s@
+  + ??_C@_0DF@JBMJ@o?3?2SRC637?2wntmsci7?2inc?2com?1sun?1s@
+
+</para></body></message>

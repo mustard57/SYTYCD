@@ -1,0 +1,35 @@
+<message message-id="4421AAA4.1080306@jerusoftware.de" list="org.openoffice.de.dev" id="24awyufnsbtyliaj" no-archive="yes" type="development" date="2006-03-22T20:51:00+01:00" year="2006-01-01" year-month="2006-03-01" year-month-day="2006-03-22" thread-id="tswwj6ze5umkba7q"><headers><envelope-from-line>From dev-return-25844-tigrisq-archive=mail-de=dev=openoffice.org=openoffice.org@de.openoffice.org Wed Mar 22 19:51:15 2006</envelope-from-line><from personal="Jens Ruckelshäuser" address="info@jerusoftware.de">=?ISO-8859-15?Q?Jens_Ruckelsh=E4user?= &lt;info@jerusoftware.de&gt;</from><to personal="dev@de.openoffice.org" address="dev@de.openoffice.org">dev@de.openoffice.org</to><subject normal="[de-dev] Merkwürdige Fehlermeldung">Re: [de-dev] Merkwürdige Fehlermeldung</subject><return-path>dev-return-25844-tigrisq-archive=mail-de=dev=openoffice.org=openoffice.org@de.openoffice.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=0.3 required=5.0 tests=BAYES_50,HTTP_ESCAPED_HOST,
+	NO_RELAYS autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-de=dev=openoffice.org@openoffice.org</delivered-to><received>(qmail 8713 invoked by uid 5302); 22 Mar 2006 19:51:15 -0000</received><mailing-list>contact dev-help@de.openoffice.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:dev-help@de.openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@de.openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@de.openoffice.org&gt;</list-post><reply-to>dev@de.openoffice.org</reply-to><delivered-to>mailing list dev@de.openoffice.org</delivered-to><received>(qmail 8699 invoked from network); 22 Mar 2006 19:51:14 -0000</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AQAAAMc3IUSICQICCRk</x-ironport-anti-spam-result><x-ironport-av>i="4.03,119,1141632000"; 
+   d="scan'208"; a="12528403:sNHT142580949"</x-ironport-av><x-ironport>SCANNED</x-ironport><message-id>4421AAA4.1080306@jerusoftware.de</message-id><date>Wed, 22 Mar 2006 20:51:00 +0100</date><organization>JeRuSOFTware Oldenburg</organization><user-agent>Thunderbird 1.5 (X11/20051107)</user-agent><mime-version>1.0</mime-version><references>&lt;op.s6pnz4w3aryxdm@amd.lan&gt; &lt;Pine.LNX.4.64.0603202019560.8233@bianca.dialin.t-online.de&gt;</references><in-reply-to>&lt;Pine.LNX.4.64.0603202019560.8233@bianca.dialin.t-online.de&gt;</in-reply-to><content-type>text/plain; charset=ISO-8859-15</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-provags-id>kundenserver.de abuse@kundenserver.de login:3252c39dfdc58ee86609e2aa829fb0a1</x-provags-id></headers><normalized-references><normalized-message-id>4421AAA4.1080306@jerusoftware.de</normalized-message-id><normalized-in-reply-to>Pine.LNX.4.64.0603202019560.8233@bianca.dialin.t-online.de</normalized-in-reply-to><normalized-reference>op.s6pnz4w3aryxdm@amd.lan</normalized-reference><normalized-reference>Pine.LNX.4.64.0603202019560.8233@bianca.dialin.t-online.de</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-15"><para depth="0">Moin Guido,
+
+</para><para depth="0">Guido Ostkamp schrieb:
+</para><quote depth="1"><quotepara depth="1">Hallo Wolfgang,
+
+</quotepara><quote depth="2"><quotepara depth="2">Ganz davon abgesehen, dass es keinen Installationsordner gibt, der
+"...OpenOffice.org%202.0" hieße, sind in der Meldung Slashes statt
+Backslashes zu sehen und die Datei heißt angeblich
+"internal/idxexample.sdw".
+</quotepara></quote><quotepara depth="1">
+der Pfad ist ein URL Pfad und damit ist es logisch, daß darin Slashes
+zu sehen sind und auch ein %20. Letzteres ist die Darstellung eines
+Leerzeichens. Es wird also nach
+
+</quotepara><quotepara depth="1">C:\Programme\OpenOffice 2.0\presets\template\idxexample.sdw
+
+</quotepara><quotepara depth="1">gesucht. Wohlgemerkt "sdw" und nicht "odt". Das legt den Verdacht
+nahe, daß es sich hier um ein Überbleibsel aus einer OOo 1.1.x
+Installation handelt.
+</quotepara></quote><para depth="0">Ähm, war sdw nicht in OpenOffice 1.0.x und sxw dann unter 1.1.x das
+Standardformat? SDW War auf jeden Fall unter StarOffice 5.x das
+Standardformat, evtl war dann swx auch schon unter StarOffice 6.0
+(OpenOffice 1.0.x) vorhanden...
+
+</para><para depth="0">Grüße
+          Jens
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@de.openoffice.org</email>
+For additional commands, e-mail: <email>dev-help@de.openoffice.org</email>
+
+</footer></body></message>

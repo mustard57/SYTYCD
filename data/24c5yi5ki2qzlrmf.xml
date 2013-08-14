@@ -1,0 +1,125 @@
+<message message-id="094A73044298734FB7D58CAAA319E1D6CEF35B@UBIQ-SERV1.ubiquisys.local" list="org.samba.lists.samba" id="24c5yi5ki2qzlrmf" type="general" date="2008-04-11T11:58:56" year="2008-01-01" year-month="2008-04-01" year-month-day="2008-04-11" thread-id="6rspru2xq24stvlh"><headers><envelope-from-line>From Adrian.Marsh@ubiquisys.com  Fri Apr 11 11:58:26 2008</envelope-from-line><from personal="Adrian Marsh" address="Adrian.Marsh@ubiquisys.com">Adrian Marsh &lt;Adrian.Marsh@ubiquisys.com&gt;</from><subject normal="[Samba] Fileshares failing">[Samba] Fileshares failing</subject><date>Fri Apr 11 11:58:56 2008</date><in-reply-to>&lt;094A73044298734FB7D58CAAA319E1D6CEF353@UBIQ-SERV1.ubiquisys.local&gt;</in-reply-to><references>&lt;094A73044298734FB7D58CAAA319E1D6CEF353@UBIQ-SERV1.ubiquisys.local&gt;</references><message-id>094A73044298734FB7D58CAAA319E1D6CEF35B@UBIQ-SERV1.ubiquisys.local</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>094A73044298734FB7D58CAAA319E1D6CEF35B@UBIQ-SERV1.ubiquisys.local</normalized-message-id><normalized-in-reply-to>094A73044298734FB7D58CAAA319E1D6CEF353@UBIQ-SERV1.ubiquisys.local</normalized-in-reply-to><normalized-reference>094A73044298734FB7D58CAAA319E1D6CEF353@UBIQ-SERV1.ubiquisys.local</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Forgot to include the smb.conf file, and also say that wbinfo -u and -g
+both return results ok..
+
+</para><para depth="0"># Samba config file created using SWAT
+# from 0.0.0.0 (0.0.0.0)
+# Date: 2008/01/24 17:37:46
+
+</para><para depth="0">[global]
+	log file = /var/log/samba/%m.log
+	idmap gid = 16777216-33554431
+	passwd chat = *New*password* %n\n *Retype*new*password* %n\n
+	socket options = TCP_NODELAY SO_RCVBUF=8192 SO_SNDBUF=8192
+	obey pam restrictions = Yes
+	winbind use default domain = Yes
+	realm = DOMAINNAME.LOCAL
+	passwd program = /usr/bin/passwd %u
+	template shell = /bin/bash
+	dns proxy = No
+	cups options = raw
+	server string = S3 SVN Server
+	invalid users = root
+	idmap uid = 16777216-33554431
+	password server = ubiq-serv1.domainname.local
+	unix password sync = Yes
+	template homedir = /home/%U
+	workgroup = DOMAINNAME
+	os level = 20
+	auto services = centos
+	printcap name = /etc/printcap
+	security = ads
+	preferred master = no
+	winbind separator = #
+	max log size = 50
+	pam password change = Yes
+
+</para><para depth="0">[printers]
+	comment = All Printers
+	path = /var/spool/samba
+	printable = Yes
+	browseable = No
+
+</para><para depth="0">[centos]
+	comment = Centos 4 &amp; 5 Repository
+	path = /var/www/html/centos
+	guest ok = Yes
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: samba-bounces+adrian.marsh=<email>domainname.com@lists.samba.org</email>
+[mailto:samba-bounces+adrian.marsh=<email>domainname.com@lists.samba.org</email>] On
+Behalf Of Adrian Marsh
+Sent: 11 April 2008 12:51
+To: <email>samba@lists.samba.org</email>
+Subject: [Samba] Fileshares failing
+
+</quotepara><quotepara depth="1">Hi,
+
+</quotepara><quotepara depth="1">I used to have a set of samba shares working fine on a Centos 4 machine,
+accessed by XP clients and authenticated against a 2003 SBS server. Then
+I did a yum upgrade and a week later noticed that the seldom-used SMB
+shares have stopped working. No other changes to the Centos server, and
+no domain changes. The XP clients now just keep prompting for
+authentication.
+
+</quotepara><quotepara depth="1">A wireshark trap shows I'm getting a STATUS_LOGON_FAILURE (0xc000006d)
+returned to the client.
+
+</quotepara><quotepara depth="1">The log for that PC gives the below.    I also login to the server using
+SSH, which is turn uses PAM to authenticate as well, and that succeeds
+ok. So I'm guessing this might be a computer account problem, rather
+than a user access problem.
+
+</quotepara><quotepara depth="1">What would the next debug steps be?
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 0] auth/pampass.c:smb_pam_error_handler(73)
+
+</quotepara><quotepara depth="1">  smb_pam_error_handler: PAM: session setup failed : System error
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 1] smbd/session.c:session_claim(143)
+
+</quotepara><quotepara depth="1">  pam_session rejected the session for domainname#marsh [smb/25659/101]
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 1] smbd/password.c:register_vuid(310)
+
+</quotepara><quotepara depth="1">  Failed to claim session for vuid=101
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 0] auth/pampass.c:smb_pam_error_handler(73)
+
+</quotepara><quotepara depth="1">  smb_pam_error_handler: PAM: session setup failed : System error
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 1] smbd/session.c:session_claim(143)
+
+</quotepara><quotepara depth="1">  pam_session rejected the session for domainname#marsh [smb/25660/101]
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 1] smbd/password.c:register_vuid(310)
+
+</quotepara><quotepara depth="1">  Failed to claim session for vuid=101
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 0] auth/pampass.c:smb_pam_error_handler(73)
+
+</quotepara><quotepara depth="1">  smb_pam_error_handler: PAM: session setup failed : System error
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 1] smbd/session.c:session_claim(143)
+
+</quotepara><quotepara depth="1">  pam_session rejected the session for domainname#marsh [smb/25661/101]
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 1] smbd/password.c:register_vuid(310)
+
+</quotepara><quotepara depth="1">  Failed to claim session for vuid=101
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 0] auth/pampass.c:smb_pam_error_handler(73)
+
+</quotepara><quotepara depth="1">  smb_pam_error_handler: PAM: session setup failed : System error
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 1] smbd/session.c:session_claim(143)
+
+</quotepara><quotepara depth="1">  pam_session rejected the session for domainname#marsh [smb/25661/103]
+
+</quotepara><quotepara depth="1">[2008/04/11 12:15:59, 1] smbd/password.c:register_vuid(310)
+
+</quotepara><quotepara depth="1">  Failed to claim session for vuid=103
+
+</quotepara><quotefooter type="list-management" depth="1">-- 
+To unsubscribe from this list go to the following URL and read the
+instructions:  <url>https://lists.samba.org/mailman/listinfo/samba</url>
+</quotefooter></quote></body></message>

@@ -1,0 +1,35 @@
+<message message-id="42D9410B.7010304@rightstep.org" list="net.java.dev.java3d.interest" id="24bhdakwrm54cw5b" type="development" date="2005-07-16T10:16:59-07:00" year="2005-01-01" year-month="2005-07-01" year-month-day="2005-07-16" thread-id="24bhdakwrm54cw5b"><headers><envelope-from-line>From interest@java3d.dev.java.net Sat Jul 16 11:32:16 2005</envelope-from-line><from personal="Nicholas Pappas" address="npappas@rightstep.org">Nicholas Pappas &lt;npappas@rightstep.org&gt;</from><to personal="interest@java3d.dev.java.net" address="interest@java3d.dev.java.net">interest@java3d.dev.java.net</to><subject normal="Writing a HUD">Re: Writing a HUD</subject><return-path>npappas@rightstep.org</return-path><mailing-list>contact interest-help@java3d.dev.java.net; run by ezmlm</mailing-list><delivered-to>mailing list interest@java3d.dev.java.net</delivered-to><received>(qmail 29640 invoked from network); 16 Jul 2005 17:16:51 -0000</received><received>from asmx1.sfo.collab.net (64.125.133.81)
+  by s006.sfo.collab.net with SMTP; 16 Jul 2005 17:16:51 -0000</received><received>from sccrmhc12.comcast.net (sccrmhc12.comcast.net [204.127.202.56])
+	by asmx1.sfo.collab.net (8.12.8/8.12.8) with ESMTP id j6GHGoBG004073
+	for &lt;interest@java3d.dev.java.net&gt;; Sat, 16 Jul 2005 10:16:50 -0700</received><received>from [127.0.0.1] (c-24-19-201-140.hsd1.wa.comcast.net[24.19.201.140])
+          by comcast.net (sccrmhc12) with ESMTP
+          id &lt;2005071617164901200hb9gge&gt;; Sat, 16 Jul 2005 17:16:49 +0000</received><message-id>42D9410B.7010304@rightstep.org</message-id><date>Sat, 16 Jul 2005 10:16:59 -0700</date><user-agent>Mozilla Thunderbird 1.0 (Windows/20041206)</user-agent><x-accept-language>en-us, en</x-accept-language><mime-version>1.0</mime-version><references>&lt;12440295.1121533062524.JavaMail.root@ensim.rackshack.net&gt;</references><in-reply-to>&lt;12440295.1121533062524.JavaMail.root@ensim.rackshack.net&gt;</in-reply-to><content-type>text/plain; charset=UTF-8; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>42D9410B.7010304@rightstep.org</normalized-message-id><normalized-in-reply-to>12440295.1121533062524.JavaMail.root@ensim.rackshack.net</normalized-in-reply-to><normalized-reference>12440295.1121533062524.JavaMail.root@ensim.rackshack.net</normalized-reference></normalized-references><body type="text/plain; charset=utf-8; format=flowed"><para depth="0">This might be of use:
+<url>http://www.jmonkeyengine.com/pmwiki/index.php?pagename=Main%2FSearchWiki&amp;text=hud</url>
+
+</para><para depth="0">It is for jME (another option other then Java3D), but still might give 
+some good pointers.
+
+</para><para depth="0"><email>java3d-interest@javadesktop.org</email> wrote:
+</para><quote depth="1"><quotepara depth="1">What's the best way to go about writing a 2D overlay for Java3D?  I've had<br/>several attempts, but what I come up with is either really slow or ugly.
+
+</quotepara><quotepara depth="1">I'd like to the equivilant of drawing images, text and rounded rectangles over<br/>top of my 3D display.  I'd also like to create some primitive AWT-like controls,<br/>like radio buttons and text boxes.
+
+</quotepara><quotepara depth="1">My current strategy invoves rendering everything to a BufferedImage and bilting<br/>that to the screen as a raster, but this is slow and causes transparency<br/>problems.  
+
+</quotepara><quotepara depth="1">What would be the 'standard' way to solve this problem?
+
+</quotepara><quotepara depth="1">Thanks,
+
+</quotepara><quotepara depth="1">Mark McKay
+</quotepara><quotefooter type="signature" hash="10188476710368582650" depth="1">--
+<url>http://www.kitfox.com</url>
+</quotefooter><quotefooter type="signature" hash="16764045766185756027" depth="1">---
+[Message sent by forum member 'kitfox' (Mark McKay)]
+
+</quotefooter><quotepara depth="1"><url>http://www.javadesktop.org/forums/thread.jspa?messageID=99469&amp;#99469</url>
+
+</quotepara><quotefooter type="list-management" hash="13877550604823536734" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>interest-unsubscribe@java3d.dev.java.net</email>
+For additional commands, e-mail: <email>interest-help@java3d.dev.java.net</email>
+
+</quotefooter></quote></body></message>

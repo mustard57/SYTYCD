@@ -1,0 +1,71 @@
+<message message-id="87cf7824993a73f8e81d3d4e0b24a8e5@ruby-forum.com" list="com.googlegroups.rubyonrails-talk" id="24cxu7bk5lsq5a3x" type="general" date="2009-01-23T12:10:10.541797-08:00" year="2009-01-01" year-month="2009-01-01" year-month-day="2009-01-23" thread-id="24cxu7bk5lsq5a3x"><headers><envelope-from-line>Fri Jan 23 12:10:33 2009</envelope-from-line><from personal="Simone Guerra" address="rails-mailing-list@andreas-s.net">Simone Guerra &lt;rails-mailing-list@andreas-s.net&gt;</from><to personal="rubyonrails-talk@googlegroups.com" address="rubyonrails-talk@googlegroups.com">rubyonrails-talk@googlegroups.com</to><subject normal="[Rails] REST - Some doubts">[Rails] REST - Some doubts</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 758
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Fri, 23 Jan 2009 12:10:33 -0800 (GMT-08:00)</received><received>from mail-gx0-f62.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 1AD4E3B300DE
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Fri, 23 Jan 2009 12:10:10 -0800 (PST)</received><received>by mail-gx0-f62.google.com with SMTP id 22so101817gxk.9
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Fri, 23 Jan 2009 12:10:33 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :received:received:received-spf:authentication-results:received
+         :old-return-path:date:from:reply-to:to:message-id:subject
+         :mime-version:content-type:errors-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        bh=3S357ohjblpuY7oxh+2gYJNVL4rlJ+M3XyTZ4idf7XE=;
+        b=OmfmABXAWUb62x9Pq6BHiYqLlxxVTWSRzJWlpaM3gkH8Aw4b8OCk4qtRa4EsNZEGaM
+         LE4UuWemVbw9jJZx/8kwHr0vGDevgk7E6xSFqGFDmnvyuw5xkKZG6DROwErS8aXfsEu7
+         F9PAfMkpXBx/e2DH0Cugen2yi5v5RxfrOq9B4=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:received-spf:authentication-results
+         :old-return-path:date:from:reply-to:to:message-id:subject
+         :mime-version:content-type:errors-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        b=4SEfCbj59jMSJsWmoNAijsdItrkp8yplavypQzctIY4aTuO0AqNI0fS5FKWkDNFEf8
+         RZ8zjFF/v8nxKJ76Ls10Ro40Csr6eJVmPsHIlE2O7Dn8V3s43Fv6lGej+EkE0178wSl4
+         LBWpUiXGDSrDnMeMXhwKudkdKEf0qA4vShIM4=</domainkey-signature><received>by 10.101.1.16 with SMTP id d16mr1752196ani.29.1232741420816;
+        Fri, 23 Jan 2009 12:10:20 -0800 (PST)</received><received>by 10.176.101.40 with SMTP id y40gr129445yqb.0;
+	Fri, 23 Jan 2009 12:10:17 -0800 (PST)</received><x-sender>www-data@server.andreas-s.net</x-sender><x-apparently-to>rubyonrails-talk@googlegroups.com</x-apparently-to><received>by 10.86.82.6 with SMTP id f6mr213291fgb.15.1232741416884; Fri, 23 Jan 2009 12:10:16 -0800 (PST)</received><received>from server.andreas-s.net (server.andreas-s.net [88.198.17.227]) by mx.google.com with ESMTP id 3si2657529fgg.13.2009.01.23.12.10.16; Fri, 23 Jan 2009 12:10:16 -0800 (PST)</received><received-spf>pass (google.com: best guess record for domain of www-data@server.andreas-s.net designates 88.198.17.227 as permitted sender) client-ip=88.198.17.227;</received-spf><authentication-results>mx.google.com; spf=pass (google.com: best guess record for domain of www-data@server.andreas-s.net designates 88.198.17.227 as permitted sender) smtp.mail=www-data@server.andreas-s.net</authentication-results><received>from localhost (localhost [127.0.0.1]) (uid 33) by server.andreas-s.net with local; Fri, 23 Jan 2009 21:10:16 +0100 id 000C5DD6.497A2428.00007C2E</received><old-return-path>&lt;rails-mailing-list@andreas-s.net&gt;</old-return-path><date>Fri, 23 Jan 2009 21:10:16 +0100</date><reply-to>rubyonrails-talk@googlegroups.com</reply-to><message-id>87cf7824993a73f8e81d3d4e0b24a8e5@ruby-forum.com</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><errors-to>rails-mailing-list@andreas-s.net</errors-to><sender>rubyonrails-talk@googlegroups.com</sender><precedence>bulk</precedence><x-google-loop>groups</x-google-loop><mailing-list>list rubyonrails-talk@googlegroups.com;
+	contact rubyonrails-talk+owner@googlegroups.com</mailing-list><list-id>&lt;rubyonrails-talk.googlegroups.com&gt;</list-id><list-post>&lt;mailto:rubyonrails-talk@googlegroups.com&gt;</list-post><list-help>&lt;mailto:rubyonrails-talk+help@googlegroups.com&gt;</list-help><list-unsubscribe>&lt;http://googlegroups.com/group/rubyonrails-talk/subscribe&gt;,
+	&lt;mailto:rubyonrails-talk+unsubscribe@googlegroups.com&gt;</list-unsubscribe><x-beenthere-env>rubyonrails-talk@googlegroups.com</x-beenthere-env><x-beenthere>rubyonrails-talk@googlegroups.com</x-beenthere></headers><normalized-references><normalized-message-id>87cf7824993a73f8e81d3d4e0b24a8e5@ruby-forum.com</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+Hi,
+
+</para><para depth="0">I recently started using rest for building some new rails apps. I find
+it great and clean, but when I started a big project some days ago some
+doubts come to my mind.
+
+</para><para depth="0">First of all, after implementing the user management and authentication
+system (which in my case is quite complex) I noticed my routes.rb file
+was already fairly big. It seemed to be reasonable to me since I have to
+perform lot of operations on the users of my app, especially form the
+admin namespace, but the fact that I just started the project and I
+already have this huge routing files scares me.
+
+</para><para depth="0">Moreover, I'm used to have a lot of helper actions to handle calls to
+link_to_remote (used for example to dynamically change form fields based
+on user input). Some of these calls can be handled by the classic REST
+actions with respond_to, but for others it just makes sense to have a
+custom action, and this forces me to insert a custom route every time in
+my routes.rb file.
+The same applies to small actions like "activate" or "block" for users.
+I know that in the REST way of doing things this could be done by
+creating separate controllers, but this seems stupid to me (especially
+in my case, I'll be force to create one such controller for each user
+type, with subsequent route definition).
+
+</para><para depth="0">I hope someone can help me clarify those doubts.
+
+</para><para depth="0">Thank you in advance (and sorry for the english, it's not my native
+language)
+</para><footer type="signature" depth="0" hash="17010523593617309943">-- 
+Posted via <url>http://www.ruby-forum.com/</url>.
+
+</footer><footer type="list-management" depth="0">--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups "Ruby<br/>on Rails: Talk" group.
+To post to this group, send email to <email>rubyonrails-talk@googlegroups.com</email>
+To unsubscribe from this group, send email to<br/>rubyonrails-talk+<email>unsubscribe@googlegroups.com</email>
+For more options, visit this group at<br/><url>http://groups.google.com/group/rubyonrails-talk?hl=en</url>
+-~----------~----~----~----~------~----~------~--~---
+
+</footer></body></message>

@@ -1,0 +1,15 @@
+<message message-id="20091021235308.10705.qmail@netbeans.org" list="org.netbeans.enterprise.issues" id="24c2aepjjga7e72c" no-archive="yes" type="bugs" date="2009-10-21T15:52:46.036599-08:00" year="2009-01-01" year-month="2009-10-01" year-month-day="2009-10-21" thread-id="ue7gprdihm7apzqv"><headers><envelope-from-line>Wed Oct 21 15:53:09 2009</envelope-from-line><from personal="jqian@netbeans.org" address="jqian@netbeans.org">jqian@netbeans.org</from><to personal="issues@enterprise.netbeans.org" address="issues@enterprise.netbeans.org">issues@enterprise.netbeans.org</to><subject normal="[Issue 170536] Database BC : Unable to select table columns and jndi resource">[Issue 170536]  Database BC : Unable to select table columns and jndi resource</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 801
+          for &lt;lorrie.schwartz.medina@a.markmail.org&gt;;
+          Wed, 21 Oct 2009 15:53:08 -0800 (GMT-08:00)</received><received>from netbeans.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id ABEEC3B300B8
+	for &lt;lorrie.schwartz.medina@a.markmail.org&gt;; Wed, 21 Oct 2009 16:52:45 -0700 (PDT)</received><received>(qmail 10728 invoked by uid 5000); 21 Oct 2009 23:53:08 -0000</received><mailing-list>contact issues-help@enterprise.netbeans.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:issues-help@enterprise.netbeans.org&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@enterprise.netbeans.org&gt;</list-unsubscribe><list-post>&lt;mailto:issues@enterprise.netbeans.org&gt;</list-post><reply-to>issues@enterprise.netbeans.org</reply-to><delivered-to>mailing list issues@enterprise.netbeans.org</delivered-to><received>(qmail 10707 invoked by uid 5000); 21 Oct 2009 23:53:08 -0000</received><date>21 Oct 2009 23:53:08 -0000</date><message-id>20091021235308.10705.qmail@netbeans.org</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20091021235308.10705.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=170536</url>
+
+</para><footer type="signature" depth="0" hash="1379893295570745914">------- Additional comments from <email>jqian@netbeans.org</email> Wed Oct 21 23:53:07 +0000<br/>2009 -------
+<url>https://open-esb.dev.java.net/issues/show_bug.cgi?id=2268</url> indicates this is a<br/>JDK related issue.
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>issues-unsubscribe@enterprise.netbeans.org</email>
+For additional commands, e-mail: <email>issues-help@enterprise.netbeans.org</email>
+
+</footer></body></message>

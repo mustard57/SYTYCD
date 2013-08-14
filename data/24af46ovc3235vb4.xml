@@ -1,0 +1,61 @@
+<message message-id="20020629033708.1950.qmail@web11507.mail.yahoo.com" list="com.redhat.redhat-list" id="24af46ovc3235vb4" type="general" date="2002-06-28T23:38:01" year="2002-01-01" year-month="2002-06-01" year-month-day="2002-06-28" thread-id="gqrutzleku5jnsil"><headers><envelope-from-line>From mail@redhat.com  Fri Jun 28 23:37:11 2002</envelope-from-line><from personal="Delane Jackson" address="deejay_001@yahoo.com">Delane Jackson &lt;deejay_001@yahoo.com&gt;</from><to personal="redhat-list@redhat.com" address="redhat-list@redhat.com">redhat-list@redhat.com</to><subject normal="Openssl-0.9.6d and Openssh-3.4 error (solved)">Re: Openssl-0.9.6d and Openssh-3.4 error (solved)</subject><return-path>mail@redhat.com</return-path><delivered-to>redhat-list@listman.redhat.com</delivered-to><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com [172.16.52.254])
+	by listman.redhat.com (Postfix) with ESMTP id A1D1A3EB1E
+	for &lt;redhat-list@listman.redhat.com&gt;; Fri, 28 Jun 2002 23:37:11 -0400 (EDT)</received><received>(from mail@localhost)
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) id g5T3bAZ14502
+	for redhat-list@listman.redhat.com; Fri, 28 Jun 2002 23:37:10 -0400</received><received>from mx1.redhat.com (mx1.redhat.com [172.16.48.31])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g5T3b9o14385
+	for &lt;redhat-list@redhat.com&gt;; Fri, 28 Jun 2002 23:37:09 -0400</received><received>from web11507.mail.yahoo.com (web11507.mail.yahoo.com [216.136.172.39])
+	by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g5T3RS918494
+	for &lt;redhat-list@redhat.com&gt;; Fri, 28 Jun 2002 23:27:28 -0400</received><message-id>20020629033708.1950.qmail@web11507.mail.yahoo.com</message-id><received>from [63.228.114.5] by web11507.mail.yahoo.com via HTTP; Fri, 28 Jun 2002 20:37:08 PDT</received><in-reply-to>&lt;Pine.LNX.4.44.0206282016200.12645-100000@atlantis.spotnet.org&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><x-loop>redhat-list@redhat.com</x-loop><sender>redhat-list-admin@redhat.com</sender><errors-to>redhat-list-admin@redhat.com</errors-to><x-beenthere>redhat-list@redhat.com</x-beenthere><x-mailman-version>2.0.1</x-mailman-version><precedence>bulk</precedence><reply-to>redhat-list@redhat.com</reply-to><list-help>&lt;mailto:redhat-list-request@redhat.com?subject=help&gt;</list-help><list-post>&lt;mailto:redhat-list@redhat.com&gt;</list-post><list-subscribe>&lt;https://listman.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><list-id>General Red Hat Linux discussion list &lt;redhat-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://listman.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://listman.redhat.com/mailman/private/redhat-list/&gt;</list-archive><date>Fri Jun 28 23:38:01 2002</date><x-original-date>Fri, 28 Jun 2002 20:37:08 -0700 (PDT)</x-original-date></headers><normalized-references><normalized-message-id>20020629033708.1950.qmail@web11507.mail.yahoo.com</normalized-message-id><normalized-in-reply-to>Pine.LNX.4.44.0206282016200.12645-100000@atlantis.spotnet.org</normalized-in-reply-to></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">I appreciate your help. 
+I just edited the /etc/ld.so.conf file and added
+/srv/ssl/lib and openssh configured just fine.  
+--- David Talkington &lt;<email>dtalk@prairienet.org</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+</quotepara><quotepara depth="1">Delane Jackson wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">./configure --prefix=/srv/ssl
+--openssldir=/srv/ssl/ssldir
+make &amp;&amp; make install
+
+</quotepara><quotepara depth="2">now when I try to install openssh I get that error.
+</quotepara></quote><quotepara depth="1">
+And you're subsequently building openssh with
+--with-ssl-dir=/srv/ssl?  
+That should work fine.  If not, then ya got me, but
+I'll mention that I 
+don't use the --openssldir option, and I do have the
+binaries in my path 
+and the libs in my LD_LIBRARY_PATH at compile time.
+
+</quotepara><quotepara depth="1">- -d
+
+</quotepara><quotepara depth="1">- -- 
+David Talkington
+
+</quotepara><quotepara depth="1">PGP key:
+<url>http://www.prairienet.org/~dtalk/0xCA4C11AD.pgp</url>
+
+</quotepara><quotepara depth="1">-----BEGIN PGP SIGNATURE-----
+Version: PGP 6.5.8
+Comment: Made with pgp4pine 1.75-6
+
+</quotepara></quote><para depth="0">iQA/AwUBPR0nk79BpdPKTBGtEQL7mgCgyn1+u+QReriB0dFFd0Bfjrn6HqUAoMW1
+</para><quote depth="1"><quotepara depth="1">J4pdaRt3ZBdKrT6EKchnqnax
+=cgOW
+-----END PGP SIGNATURE-----
+
+</quotepara><quotefooter type="list-management" depth="1">_______________________________________________
+Redhat-list mailing list
+<email>Redhat-list@redhat.com</email>
+
+</quotefooter></quote><para depth="0"><url>https://listman.redhat.com/mailman/listinfo/redhat-list</url>
+
+</para><footer type="free-hosting" depth="0">__________________________________________________
+Do You Yahoo!?
+Yahoo! - Official partner of 2002 FIFA World Cup
+<url>http://fifaworldcup.yahoo.com</url>
+</footer></body></message>

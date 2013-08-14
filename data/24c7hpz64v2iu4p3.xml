@@ -1,0 +1,73 @@
+<message message-id="066.3c88ee49be82ea184e5ac46030c962ca@fedorahosted.org" list="com.redhat.fedora-test-list" id="24c7hpz64v2iu4p3" type="development" date="2011-06-15T11:53:42.520203-08:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-15" thread-id="r5rsrp55duwqkls5"><headers><envelope-from-line>Wed Jun 15 11:54:05 2011</envelope-from-line><from personal="Fedora QA" address="trac@fedorahosted.org">Fedora QA &lt;trac@fedorahosted.org&gt;</from><cc personal="test@lists.fedoraproject.org" address="test@lists.fedoraproject.org">test@lists.fedoraproject.org</cc><subject normal="[Fedora QA] #189: I would like to join the proven testers and would like to have a mentor">Re: [Fedora QA] #189: I would like to join the proven testers and would like to have a mentor</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 783
+          for &lt;juliette.sandoval.butler@a.markmail.org&gt;;
+          Wed, 15 Jun 2011 11:54:05 -0800 (GMT-08:00)</received><received>from bastion.fedoraproject.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 2ABE33B300C3
+	for &lt;juliette.sandoval.butler@a.markmail.org&gt;; Wed, 15 Jun 2011 12:53:42 -0700 (PDT)</received><received>from lists.fedoraproject.org (collab1.vpn.fedoraproject.org [192.168.1.21])
+	by bastion02.phx2.fedoraproject.org (Postfix) with ESMTP id C4CF810FC2B;
+	Wed, 15 Jun 2011 19:54:04 +0000 (UTC)</received><received>from collab1.fedoraproject.org (localhost.localdomain [127.0.0.1])
+	by lists.fedoraproject.org (Postfix) with ESMTP id 538AE12F682;
+	Wed, 15 Jun 2011 19:54:04 +0000 (UTC)</received><x-original-to>test@lists.fedoraproject.org</x-original-to><delivered-to>test@lists.fedoraproject.org</delivered-to><received>from smtp-mm01.fedoraproject.org (smtp-mm01.fedoraproject.org
+	[80.239.156.217])
+	by lists.fedoraproject.org (Postfix) with ESMTP id 4984132676C
+	for &lt;test@lists.fedoraproject.org&gt;;
+	Wed, 15 Jun 2011 19:54:02 +0000 (UTC)</received><received>from bastion.fedoraproject.org (bastion02.fedoraproject.org
+	[209.132.181.3])
+	by smtp-mm01.fedoraproject.org (Postfix) with ESMTP id 7EE9F87E6A
+	for &lt;test@lists.fedoraproject.org&gt;;
+	Wed, 15 Jun 2011 19:54:01 +0000 (UTC)</received><received>from hosted1.fedoraproject.org (hosted1.vpn.fedoraproject.org
+	[192.168.1.17])
+	by bastion02.phx2.fedoraproject.org (Postfix) with ESMTP id B4FE010FA6B;
+	Wed, 15 Jun 2011 19:54:00 +0000 (UTC)</received><mime-version>1.0</mime-version><x-trac-version>0.10.5</x-trac-version><x-mailer>Trac 0.10.5, by Edgewall Software</x-mailer><x-trac-project>Fedora QA</x-trac-project><date>Wed, 15 Jun 2011 19:54:00 -0000</date><x-url>http://fedorahosted.org/fedora-qa</x-url><x-trac-ticket-url>https://fedorahosted.org/fedora-qa/ticket/189#comment:2</x-trac-ticket-url><message-id>066.3c88ee49be82ea184e5ac46030c962ca@fedorahosted.org</message-id><references>&lt;057.3bab515b53029b29f7414b13f0613f68@fedorahosted.org&gt;</references><x-trac-ticket-id>189</x-trac-ticket-id><in-reply-to>&lt;057.3bab515b53029b29f7414b13f0613f68@fedorahosted.org&gt;</in-reply-to><x-beenthere>test@lists.fedoraproject.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>nobody@fedoraproject.org,
+	For testing and quality assurance of Fedora releases
+	&lt;test@lists.fedoraproject.org&gt;</reply-to><list-id>For testing and quality assurance of Fedora releases
+	&lt;test.lists.fedoraproject.org&gt;</list-id><list-unsubscribe>&lt;https://admin.fedoraproject.org/mailman/listinfo/test&gt;,
+	&lt;mailto:test-request@lists.fedoraproject.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.fedoraproject.org/pipermail/test&gt;</list-archive><list-post>&lt;mailto:test@lists.fedoraproject.org&gt;</list-post><list-help>&lt;mailto:test-request@lists.fedoraproject.org?subject=help&gt;</list-help><list-subscribe>&lt;https://admin.fedoraproject.org/mailman/listinfo/test&gt;,
+	&lt;mailto:test-request@lists.fedoraproject.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>test-bounces@lists.fedoraproject.org</sender><errors-to>test-bounces@lists.fedoraproject.org</errors-to></headers><normalized-references><normalized-message-id>066.3c88ee49be82ea184e5ac46030c962ca@fedorahosted.org</normalized-message-id><normalized-in-reply-to>057.3bab515b53029b29f7414b13f0613f68@fedorahosted.org</normalized-in-reply-to><normalized-reference>057.3bab515b53029b29f7414b13f0613f68@fedorahosted.org</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">#189: I would like to join the proven testers and would like to have a mentor
+------------------------------------------+---------------------------------
+  Reporter:  ikatalinikov                 |       Owner:  mcloaked
+      Type:  proventester request         |      Status:  assigned
+  Priority:  major                        |   Milestone:          
+ Component:  Proventester Mentor Request  |     Version:          
+Resolution:                               |    Keywords:          
+------------------------------------------+---------------------------------
+Changes (by mcloaked):
+
+</para><para depth="0">  * owner:  =&gt; mcloaked
+  * status:  new =&gt; assigned
+
+</para><para depth="0">Comment:
+
+</para><para depth="0"> Hi, I'll be happy to sponsor you into the proventesters group once you
+ have completed a few requirements. Please take a moment to read through
+ the proventester instructions at:
+
+</para><para depth="0"> <url>http://fedoraproject.org/wiki/Proven_tester</url>
+
+</para><para depth="0"> Once you have read through the instruction, can you please confirm that
+ you ...:
+
+</para><para depth="0"> have read and understand the instructions, and will follow the
+ instructions when testing Fedora critical path updates.
+
+</para><para depth="0"> understand how to enable the update-testing repository
+
+</para><para depth="0"> are familiar with providing test feedback using either the Bodhi web
+ interface, or the fedora-easy-karma utility
+
+</para><para depth="0"> Once you confirm these three from the list above, then I will be happy to
+ sponsor your membership in the proventester group, after you apply for
+ membership of that group in FAS.
+
+</para><para depth="0"> Please let me know if you have any questions or concerns.
+
+</para><footer type="signature" depth="0" hash="15261174573066484437">-- 
+Ticket URL: &lt;<url>https://fedorahosted.org/fedora-qa/ticket/189#comment:2</url>&gt;
+Fedora QA &lt;<url>http://fedorahosted.org/fedora-qa</url>&gt;
+Fedora Quality Assurance
+</footer><footer type="list-management" depth="0">-- 
+test mailing list
+<email>test@lists.fedoraproject.org</email>
+To unsubscribe: 
+<url>https://admin.fedoraproject.org/mailman/listinfo/test</url>
+</footer></body></message>

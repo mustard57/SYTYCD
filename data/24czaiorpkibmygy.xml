@@ -1,0 +1,50 @@
+<message message-id="E1KMNx9-0001gN-9k@mail.sourceforge.net" list="net.sourceforge.lists.taverna-cvs" id="24czaiorpkibmygy" type="checkins" date="2008-07-25T14:07:25Z" year="2008-01-01" year-month="2008-07-01" year-month-day="2008-07-25" thread-id="24czaiorpkibmygy"><headers><envelope-from-line>Fri Jul 25 07:07:30 2008</envelope-from-line><from personal="Stian Soiland-Reyes" address="stain@users.sourceforge.net">Stian Soiland-Reyes &lt;stain@users.sourceforge.net&gt;</from><to personal="taverna-cvs@lists.sourceforge.net" address="taverna-cvs@lists.sourceforge.net">taverna-cvs@lists.sourceforge.net</to><subject normal="[Taverna-cvs] t2workbench/application/src/main/osx/Taverna-2-beta-template.app/Contents/Frameworks/expat.framework/Versions/A expat, NONE, 1.1">[Taverna-cvs] t2workbench/application/src/main/osx/Taverna-2-beta-template.app/Contents/Frameworks/expat.framework/Versions/A expat, NONE, 1.1</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 277
+          for &lt;hank.mathews.nelson@a.markmail.org&gt;;
+          Fri, 25 Jul 2008 07:07:29 -0700 (PDT)</received><received>from lists-outbound.sourceforge.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id C2DB83B300C5
+	for &lt;hank.mathews.nelson@a.markmail.org&gt;; Fri, 25 Jul 2008 07:07:29 -0700 (PDT)</received><received>from sc8-sf-list2-new.sourceforge.net (sc8-sf-list2-new-b.sourceforge.net [10.3.1.94])
+	by sc8-sf-spam2.sourceforge.net (Postfix) with ESMTP id B81D9125A5
+	for &lt;hank.mathews.nelson@a.markmail.org&gt;; Fri, 25 Jul 2008 07:07:29 -0700 (PDT)</received><received>from sc8-sf-mx2-b.sourceforge.net ([10.3.1.92]
+	helo=mail.sourceforge.net)
+	by sc8-sf-list2-new.sourceforge.net with esmtp (Exim 4.43)
+	id 1KMNwy-00059m-7g
+	for taverna-cvs@lists.sourceforge.net; Fri, 25 Jul 2008 07:07:16 -0700</received><received>from mx-outbound.sourceforge.net ([66.35.250.223]
+	helo=sc8-sf-sshgate.sourceforge.net)
+	by mail.sourceforge.net with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.44) id 1KMNx9-0001gN-9k
+	for taverna-cvs@lists.sourceforge.net; Fri, 25 Jul 2008 07:07:27 -0700</received><received>from sc8-pr-cvs10-b.sourceforge.net ([10.5.1.180]
+	helo=sc8-pr-cvs10.sourceforge.net)
+	by sc8-sf-sshgate.sourceforge.net with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.43) id 1KMNx9-0004ax-4e
+	for taverna-cvs@lists.sourceforge.net; Fri, 25 Jul 2008 07:07:27 -0700</received><received>from localhost ([127.0.0.1] helo=sc8-pr-cvs10-b.sourceforge.net)
+	by sc8-pr-cvs10.sourceforge.net with esmtp (Exim 4.43)
+	id 1KMNx7-0001r7-7P
+	for taverna-cvs@lists.sourceforge.net; Fri, 25 Jul 2008 07:07:26 -0700</received><date>Fri, 25 Jul 2008 14:07:25 +0000</date><x-mailer>Python syncmail $Revision: 2220 $
+	&lt;http://sf.net/projects/cvs-syncmail&gt;</x-mailer><message-id>E1KMNx9-0001gN-9k@mail.sourceforge.net</message-id><x-spam-score>0.0 (/)</x-spam-score><x-spam-report>Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&amp;group_id=1&amp;atid=200001</x-spam-report><x-beenthere>taverna-cvs@lists.sourceforge.net</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><precedence>list</precedence><reply-to>taverna-hackers@lists.sourceforge.net</reply-to><list-id>&lt;taverna-cvs.lists.sourceforge.net&gt;</list-id><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/taverna-cvs&gt;, 
+	&lt;mailto:taverna-cvs-request@lists.sourceforge.net?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://sourceforge.net/mailarchive/forum.php?forum_name=taverna-cvs&gt;</list-archive><list-post>&lt;mailto:taverna-cvs@lists.sourceforge.net&gt;</list-post><list-help>&lt;mailto:taverna-cvs-request@lists.sourceforge.net?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/taverna-cvs&gt;,
+	&lt;mailto:taverna-cvs-request@lists.sourceforge.net?subject=subscribe&gt;</list-subscribe><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>taverna-cvs-bounces@lists.sourceforge.net</sender><errors-to>taverna-cvs-bounces@lists.sourceforge.net</errors-to></headers><normalized-references><normalized-message-id>E1KMNx9-0001gN-9k@mail.sourceforge.net</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">Update of<br/>/cvsroot/taverna/t2workbench/application/src/main/osx/Taverna-2-beta-template.app/Contents/Frameworks/expat.framework/Versions/A
+In directory<br/>sc8-pr-cvs10.sourceforge.net:/tmp/cvs-serv6348/application/src/main/osx/Taverna-2-beta-template.app/Contents/Frameworks/expat.framework/Versions/A
+
+</para><para depth="0">Added Files:
+	expat 
+Log Message:
+OSX application template
+
+</para><para depth="0">--- NEW FILE: expat ---
+(This appears to be a binary file; contents omitted.)
+
+</para><footer type="sponsored" depth="0">-------------------------------------------------------------------------
+This SF.Net email is sponsored by the Moblin Your Move Developer's challenge
+Build the coolest Linux based applications with Moblin SDK &amp; win great prizes
+Grand prize is a trip for two to an Open Source event anywhere in the world
+<url>http://moblin-contest.org/redirect.php?banner_id=100&amp;url=/</url>
+</footer><footer type="list-management" depth="0">_______________________________________________
+Taverna-cvs mailing list
+<email>Taverna-cvs@lists.sourceforge.net</email>
+<url>https://lists.sourceforge.net/lists/listinfo/taverna-cvs</url>
+Developers Guide: <url>http://www.mygrid.org.uk/usermanual1.7/dev_guide.html</url>
+</footer></body></message>

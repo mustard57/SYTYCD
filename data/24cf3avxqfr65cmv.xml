@@ -1,0 +1,72 @@
+<message message-id="AANLkTinuHd8DMHj-PZrcRHxGFTkfEQAbb1Fn=_ieWqig@mail.gmail.com" list="net.sourceforge.lists.net-snmp-users" id="24cf3avxqfr65cmv" type="users" date="2010-10-19T08:23:31+01:00" year="2010-01-01" year-month="2010-10-01" year-month-day="2010-10-19" thread-id="hci4yqqllntygupk"><headers><envelope-from-line>Mon Oct 18 23:24:46 2010</envelope-from-line><from personal="Dave Shield" address="D.T.Shield@liverpool.ac.uk">Dave Shield &lt;D.T.Shield@liverpool.ac.uk&gt;</from><to personal="Leo Lin" address="hayashi_leo@yahoo.com">Leo Lin &lt;hayashi_leo@yahoo.com&gt;</to><cc personal="Net-snmp-users" address="net-snmp-users@lists.sourceforge.net">Net-snmp-users &lt;net-snmp-users@lists.sourceforge.net&gt;</cc><subject normal="Understanding snmpwalk">Re: Understanding snmpwalk</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 210
+          for &lt;sonia.miller.terry@a.markmail.org&gt;;
+          Mon, 18 Oct 2010 23:24:45 -0800 (GMT-08:00)</received><received>from lists.sourceforge.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 9944D29081B6
+	for &lt;sonia.miller.terry@a.markmail.org&gt;; Tue, 19 Oct 2010 00:24:22 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=sfs-ml-4.v29.ch3.sourceforge.com)
+	by sfs-ml-4.v29.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;net-snmp-users-bounces@lists.sourceforge.net&gt;)
+	id 1P86Xu-00066C-3L; Tue, 19 Oct 2010 07:23:42 +0000</received><received>from sog-mx-2.v43.ch3.sourceforge.com ([172.29.43.192]
+	helo=mx.sourceforge.net)
+	by sfs-ml-4.v29.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;dave.shield@googlemail.com&gt;) id 1P86Xs-000660-8H
+	for net-snmp-users@lists.sourceforge.net;
+	Tue, 19 Oct 2010 07:23:40 +0000</received><received-spf>pass (sog-mx-2.v43.ch3.sourceforge.com: domain of googlemail.com
+	designates 74.125.82.175 as permitted sender)
+	client-ip=74.125.82.175;
+	envelope-from=dave.shield@googlemail.com;
+	helo=mail-wy0-f175.google.com; </received-spf><received>from mail-wy0-f175.google.com ([74.125.82.175])
+	by sog-mx-2.v43.ch3.sourceforge.com with esmtp (Exim 4.69)
+	id 1P86Xp-0000ME-Ut for net-snmp-users@lists.sourceforge.net;
+	Tue, 19 Oct 2010 07:23:40 +0000</received><received>by wyb40 with SMTP id 40so2168287wyb.34
+	for &lt;net-snmp-users@lists.sourceforge.net&gt;;
+	Tue, 19 Oct 2010 00:23:32 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.227.144.13 with SMTP id x13mr3648775wbu.213.1287473011599;
+	Tue, 19 Oct 2010 00:23:31 -0700 (PDT)</received><received>by 10.216.235.31 with HTTP; Tue, 19 Oct 2010 00:23:31 -0700 (PDT)</received><in-reply-to>&lt;785959.73661.qm@web33106.mail.mud.yahoo.com&gt;</in-reply-to><references>&lt;785959.73661.qm@web33106.mail.mud.yahoo.com&gt;</references><date>Tue, 19 Oct 2010 08:23:31 +0100</date><x-google-sender-auth>hWh1bM7Y1jTBmaMqWeHI1x3SVxk</x-google-sender-auth><message-id>AANLkTinuHd8DMHj-PZrcRHxGFTkfEQAbb1Fn=_ieWqig@mail.gmail.com</message-id><x-spam-score>-1.5 (-)</x-spam-score><x-spam-report>Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/,
+	low trust [74.125.82.175 listed in list.dnswl.org]
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	0.0 FREEMAIL_FROM          Sender email is freemail
+	(dave.shield[at]googlemail.com)
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+	not necessarily valid
+	-0.1 DKIM_VALID Message has at least one valid DKIM or DK signature</x-spam-report><x-headers-end>1P86Xp-0000ME-Ut</x-headers-end><x-beenthere>net-snmp-users@lists.sourceforge.net</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>General discussion forum for net-snmp users
+	&lt;net-snmp-users.lists.sourceforge.net&gt;</list-id><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/net-snmp-users&gt;, 
+	&lt;mailto:net-snmp-users-request@lists.sourceforge.net?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://sourceforge.net/mailarchive/forum.php?forum_name=net-snmp-users&gt;</list-archive><list-post>&lt;mailto:net-snmp-users@lists.sourceforge.net&gt;</list-post><list-help>&lt;mailto:net-snmp-users-request@lists.sourceforge.net?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/net-snmp-users&gt;, 
+	&lt;mailto:net-snmp-users-request@lists.sourceforge.net?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><errors-to>net-snmp-users-bounces@lists.sourceforge.net</errors-to></headers><normalized-references><normalized-message-id>AANLkTinuHd8DMHj-PZrcRHxGFTkfEQAbb1Fn=_ieWqig@mail.gmail.com</normalized-message-id><normalized-in-reply-to>785959.73661.qm@web33106.mail.mud.yahoo.com</normalized-in-reply-to><normalized-reference>785959.73661.qm@web33106.mail.mud.yahoo.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">On 19 October 2010 01:44, Leo Lin &lt;<email>hayashi_leo@yahoo.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">if I issue snmpwalk like so
+    $snmpwalk -v1 -cprivate localhost MyTable
+the agent displays the contents of the table, but it hangs for a while, and<br/>later I get
+    Timeout: No response from localhost
+then the snmpd shutsdown.
+
+</quotepara><quotepara depth="1">Is this normal?
+</quotepara></quote><para depth="0">
+No.
+
+</para><para depth="0">Do you see the whole of the table before the agent hangs?
+Or does it stop somewhere in the middle?
+
+</para><para depth="0">If you restart the agent, and then issue a single "snmpgetnext"
+request on the last entry in the table - what happens?
+Do you get anything back, or does the agent hang again?
+
+</para><para depth="0">If you get something back, then what?
+If it hangs, what is the next registered object in the agent?
+
+</para><para depth="0">Dave
+
+</para><para depth="0">------------------------------------------------------------------------------
+Download new Adobe(R) Flash(R) Builder(TM) 4
+The new Adobe(R) Flex(R) 4 and Flash(R) Builder(TM) 4 (formerly 
+Flex(R) Builder(TM)) enable the development of rich applications that run
+across multiple browsers and platforms. Download your free trials today!
+<url>http://p.sf.net/sfu/adobe-dev2dev</url>
+</para><footer type="list-management" depth="0">_______________________________________________
+Net-snmp-users mailing list
+<email>Net-snmp-users@lists.sourceforge.net</email>
+Please see the following page to unsubscribe or change other options:
+<url>https://lists.sourceforge.net/lists/listinfo/net-snmp-users</url>
+</footer></body></message>

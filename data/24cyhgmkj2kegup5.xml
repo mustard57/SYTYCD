@@ -1,0 +1,39 @@
+<message message-id="5137842.1255785358609.JavaMail.jboss@nukes01.app.mwc.hst.phx2.redhat.com" list="org.jboss.lists.jboss-dev-forums" id="24cyhgmkj2kegup5" type="development" date="2009-10-17T05:15:47.493357-08:00" year="2009-01-01" year-month="2009-10-01" year-month-day="2009-10-17" thread-id="24cyhgmkj2kegup5"><headers><envelope-from-line>Sat Oct 17 05:16:10 2009</envelope-from-line><from personal="forker01" address="do-not-reply@jboss.com">forker01 &lt;do-not-reply@jboss.com&gt;</from><to personal="jboss-dev-forums@lists.jboss.org" address="jboss-dev-forums@lists.jboss.org">jboss-dev-forums@lists.jboss.org</to><subject normal="[jboss-dev-forums] [JBoss ESB Development] - [Jboss-esb] - Fault tolerance and dead letter queue">[jboss-dev-forums] [JBoss ESB Development] - [Jboss-esb] - Fault tolerance and dead letter queue</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 995
+          for &lt;ulysses.drake.guerrero@a.markmail.org&gt;;
+          Sat, 17 Oct 2009 05:16:08 -0800 (GMT-08:00)</received><received>from smtp01.dmz-a.mwc.hst.phx2.redhat.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 3340329082CA
+	for &lt;ulysses.drake.guerrero@a.markmail.org&gt;; Sat, 17 Oct 2009 06:15:45 -0700 (PDT)</received><received>from lists01.dmz-a.mwc.hst.phx2.redhat.com (lists01.dmz-a.mwc.hst.phx2.redhat.com [10.5.105.133])
+	by smtp01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id n9HDG83v003914;
+	Sat, 17 Oct 2009 09:16:08 -0400</received><received>from lists01.dmz-a.mwc.hst.phx2.redhat.com (localhost.localdomain [127.0.0.1])
+	by lists01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id n9HDG7X7014500;
+	Sat, 17 Oct 2009 09:16:07 -0400</received><received>from smtp01.dmz-a.mwc.hst.phx2.redhat.com
+	(smtp01.dmz-a.mwc.hst.phx2.redhat.com [10.5.105.134])
+	by lists01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	n9HDFwje014497
+	for &lt;jboss-dev-forums@lists.jboss.org&gt;; Sat, 17 Oct 2009 09:15:58 -0400</received><received>from nukes01.app.mwc.hst.phx2.redhat.com
+	(nukes01.app.mwc.hst.phx2.redhat.com [10.5.106.10])
+	by smtp01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	n9HDFwxi003790
+	for &lt;jboss-dev-forums@lists.jboss.org&gt;; Sat, 17 Oct 2009 09:15:58 -0400</received><received>from nukes01.app.mwc.hst.phx2.redhat.com (localhost.localdomain
+	[127.0.0.1])
+	by nukes01.app.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	n9HDFwjB006935
+	for &lt;jboss-dev-forums@lists.jboss.org&gt;; Sat, 17 Oct 2009 09:15:58 -0400</received><message-id>5137842.1255785358609.JavaMail.jboss@nukes01.app.mwc.hst.phx2.redhat.com</message-id><date>Sat, 17 Oct 2009 09:15:58 -0400 (EDT)</date><mime-version>1.0</mime-version><x-beenthere>jboss-dev-forums@lists.jboss.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>Developer Forums discussion archive &lt;jboss-dev-forums.lists.jboss.org&gt;</list-id><list-unsubscribe>&lt;https://lists.jboss.org/mailman/listinfo/jboss-dev-forums&gt;, 
+	&lt;mailto:jboss-dev-forums-request@lists.jboss.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.jboss.org/pipermail/jboss-dev-forums&gt;</list-archive><list-post>&lt;mailto:jboss-dev-forums@lists.jboss.org&gt;</list-post><list-help>&lt;mailto:jboss-dev-forums-request@lists.jboss.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.jboss.org/mailman/listinfo/jboss-dev-forums&gt;,
+	&lt;mailto:jboss-dev-forums-request@lists.jboss.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>jboss-dev-forums-bounces@lists.jboss.org</sender><errors-to>jboss-dev-forums-bounces@lists.jboss.org</errors-to></headers><normalized-references><normalized-message-id>5137842.1255785358609.JavaMail.jboss@nukes01.app.mwc.hst.phx2.redhat.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">We are three students and this is our first time with jboss-esb. 
+We are trying to add a more powerful fault tolerance to jboss-esb, for this we<br/>are "picking" the messages from the Dead Letter Queue (the delivery of this<br/>messages has failed) and based on the fault information of each message need to<br/>make a decision (do something, invoke another service, try to invoke the same<br/>service again...), but the fault information is empty, like the fault reason  or<br/>the fault code. 
+The question is: Does Jboss-esb set the fault information to this<br/>delivery-failed messages?
+
+</para><para depth="0">Sorry for my poor English, I tried to give an introduction to our problem and<br/>then ask the question. 
+
+</para><para depth="0">Thanks
+
+</para><para depth="0">View the original post :<br/><url>http://www.jboss.org/index.html?module=bb&amp;op=viewtopic&amp;p=4260882#4260882</url>
+
+</para><para depth="0">Reply to the post :<br/><url>http://www.jboss.org/index.html?module=bb&amp;op=posting&amp;mode=reply&amp;p=4260882</url>
+</para><footer type="list-management" depth="0">_______________________________________________
+jboss-dev-forums mailing list
+<email>jboss-dev-forums@lists.jboss.org</email>
+<url>https://lists.jboss.org/mailman/listinfo/jboss-dev-forums</url>
+</footer></body></message>

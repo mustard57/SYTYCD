@@ -1,0 +1,54 @@
+<message message-id="1090231239.10085.13.camel@Myth.home.local" list="com.redhat.linux-cluster" id="24atxnqvqbbgxdtn" type="general" date="2004-07-19T05:00:39-05:00" year="2004-01-01" year-month="2004-07-01" year-month-day="2004-07-19" thread-id="f6u73syymxa6xc4e"><headers><envelope-from-line>From mailing-lists@hughesjr.com Mon Jul 19 06:00:57 2004</envelope-from-line><from personal="Johnny Hughes" address="mailing-lists@hughesjr.com">Johnny Hughes &lt;mailing-lists@hughesjr.com&gt;</from><to personal="linux-cluster@redhat.com" address="linux-cluster@redhat.com">linux-cluster@redhat.com</to><subject normal="[Linux-cluster] unresolved symbol">Re: [Linux-cluster] unresolved symbol</subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.12.10/8.12.10) with ESMTP id
+	i6JA0vXW030648 for &lt;linux-cluster@listman.util.phx.redhat.com&gt;;
+	Mon, 19 Jul 2004 06:00:57 -0400</received><received>from mx1.redhat.com (mx1.redhat.com [172.16.48.31])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with ESMTP id i6JA0va05703
+	for &lt;linux-cluster@redhat.com&gt;; Mon, 19 Jul 2004 06:00:57 -0400</received><received>from mx1.lsn.net (mx1.lsn.net [66.90.130.73])
+	by mx1.redhat.com (8.12.10/8.12.10) with ESMTP id i6JA0ue1022244
+	for &lt;linux-cluster@redhat.com&gt;; Mon, 19 Jul 2004 06:00:56 -0400</received><received>from CentOS-31.home.local (24-155-104-176.dyn.grandenetworks.net
+	[24.155.104.176])
+	by mx1.lsn.net (8.13.0.Beta3/8.12.8) with ESMTP id i6JA0tv3015906
+	for &lt;linux-cluster@redhat.com&gt;; Mon, 19 Jul 2004 05:00:56 -0500</received><received>from server1.home.local (server1 [192.168.0.1])
+	by CentOS-31.home.local (8.12.11/8.12.11) with ESMTP id i6JA0dJe027395
+	for &lt;linux-cluster@redhat.com&gt;; Mon, 19 Jul 2004 05:00:40 -0500</received><received>from myth.home.local ([192.168.0.4]) by server1.home.local with SMTP
+	(Microsoft Exchange Internet Mail Service Version 5.5.2657.72)
+	id 3K39LRFQ; Mon, 19 Jul 2004 05:00:39 -0500</received><in-reply-to>&lt;40FB8FD1.6070902@nextnationnet.com&gt;</in-reply-to><references>&lt;40FB8FD1.6070902@nextnationnet.com&gt;</references><content-type>text/plain; charset=iso-8859-1</content-type><message-id>1090231239.10085.13.camel@Myth.home.local</message-id><mime-version>1.0</mime-version><x-mailer>Ximian Evolution 1.4.6 </x-mailer><date>Mon, 19 Jul 2004 05:00:39 -0500</date><content-transfer-encoding>7bit</content-transfer-encoding><x-hughesjr-mailscanner-information>Please contact jhughes@hughesjr.com for
+	more info</x-hughesjr-mailscanner-information><x-hughesjr-mailscanner>Found to be clean</x-hughesjr-mailscanner><x-hughesjr-mailscanner-spamcheck>not spam, SpamAssassin (score=0.213,
+	required 6.8, AWL 0.20, NO_RDNS2 0.01)</x-hughesjr-mailscanner-spamcheck><x-mailscanner-from>mailing-lists@hughesjr.com</x-mailscanner-from><x-antivirus>checked by Vexira Milter 1.0.6; VAE 6.26.0.5; VDF 6.26.0.32</x-antivirus><x-redhat-spam-score>0 </x-redhat-spam-score><x-loop>linux-cluster@redhat.com</x-loop><x-beenthere>linux-cluster@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>mailing-lists@hughesjr.com,
+	Discussion of clustering software components including GFS
+	&lt;linux-cluster@redhat.com&gt;</reply-to><list-id>Discussion of clustering software components including GFS
+	&lt;linux-cluster.redhat.com&gt;</list-id><list-unsubscribe>&lt;http://www.redhat.com/mailman/listinfo/linux-cluster&gt;,
+	&lt;mailto:linux-cluster-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;/archives/linux-cluster&gt;</list-archive><list-post>&lt;mailto:linux-cluster@redhat.com&gt;</list-post><list-help>&lt;mailto:linux-cluster-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;http://www.redhat.com/mailman/listinfo/linux-cluster&gt;,
+	&lt;mailto:linux-cluster-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Mon, 19 Jul 2004 10:00:58 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>1090231239.10085.13.camel@Myth.home.local</normalized-message-id><normalized-in-reply-to>40FB8FD1.6070902@nextnationnet.com</normalized-in-reply-to><normalized-reference>40FB8FD1.6070902@nextnationnet.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On Mon, 2004-07-19 at 04:09, chloong wrote:
+</para><quote depth="1"><quotepara depth="1">hi all,
+I am facing this unresolved symbol error when i do a depmod -a for gfs.
+
+</quotepara><quotepara depth="1">i am using kernel 2.4.21-15.0.3.EL. I actually re-compile the GFS using 
+GFS-6.0.0-1.2.src.rpm from HughesJR.com where it is able to compile 
+under 2.4.21-15.0.3.EL version where as the one that i downloaded from 
+RedHat is only be able to compile under 2.4.21-15.EL version.
+
+</quotepara><quotepara depth="1">I was able to compile it and installed but when i run depmod -a it 
+complain that there are unresolved symbol for all the GFS modules....
+</quotepara></quote><para depth="0">
+Did you compile the version for your arch (i686, athlon)?
+
+</para><para depth="0">If you are running a i686 kernel, you need to compile with a target=i686
+or if you have an athlon kernel, you need to compile with target=athlon
+
+</para><para depth="0">You can download the binary modules from my site as well and see if you
+have the same problem.
+
+</para><para depth="0">In order to compile the SRPM as written for a target=athlon you will
+need to install (at least for the compile), kernel-unsupported,
+kernel-smp, and kernel-source ... for target=i686 you need to install 
+kernel-unsupported, kernel-smp, kernel-source, and kernel-hugemem
+
+</para><footer type="signature" depth="0" hash="17744317686157977900">Johnny Hughes
+HughesJR.com
+
+</footer><quote depth="1"><quotepara depth="1">I checked that my kernel version is correct using uname -r...
+
+</quotepara><quotepara depth="1">How could i go about this....? Please help....
+</quotepara></quote></body></message>

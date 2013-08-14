@@ -1,0 +1,13 @@
+<message message-id="20011008133942.54203.qmail@pb1.pair.com" list="net.php.lists.php-general" id="24c3uenud5yyezqc" type="general" date="2001-10-08T15:36:18+02:00" year="2001-01-01" year-month="2001-10-01" year-month-day="2001-10-08" thread-id="24c3uenud5yyezqc"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Ouster" address="ermannov@libero.it">Ouster &lt;ermannov@libero.it&gt;</from><to personal="php-general@lists.php.net" address="php-general@lists.php.net">php-general@lists.php.net</to><subject normal="Objects and case">Objects and case</subject><newsgroups>php.general</newsgroups><path>news.php.net</path><xref>news.php.net php.general:70355</xref><return-path>ermannov@libero.it</return-path><mailing-list>contact php-general-help@lists.php.net; run by ezmlm</mailing-list><delivered-to>mailing list php-general@lists.php.net</delivered-to><received>(qmail 54204 invoked by uid 1007); 8 Oct 2001 13:39:43 -0000</received><message-id>20011008133942.54203.qmail@pb1.pair.com</message-id><date>Mon, 8 Oct 2001 15:36:18 +0200</date><lines>13</lines><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-newsreader>Microsoft Outlook Express 5.50.4522.1200</x-newsreader><x-mimeole>Produced By Microsoft MimeOLE V5.50.4522.1200</x-mimeole><x-posted-by>212.210.110.100</x-posted-by></headers><normalized-references><normalized-message-id>20011008133942.54203.qmail@pb1.pair.com</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">I've created an object named "ProfiloPC", and stored its definition in an
+included file.
+When I serialize this object I can see its name is "profilopc".
+I need to use this object in a session, but I receive an error message where
+PHP says that I've tried to use a method of the class"profilopc".
+Of course I include the file with the definition of the class in each page,
+as the manual state, but objects name are case sensitive?
+
+</para><para depth="0">I'm using NT4, IIS4, PHP 4.0.5
+
+</para><para depth="0">Thanks.
+
+</para></body></message>

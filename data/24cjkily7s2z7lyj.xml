@@ -1,0 +1,60 @@
+<message message-id="Pine.LNX.4.62.0508231247280.17436@ns.pyerotechnics.com" list="com.mysql.lists.mysql" id="24cjkily7s2z7lyj" type="general" date="2005-08-23T13:07:09-04:00" year="2005-01-01" year-month="2005-08-01" year-month-day="2005-08-23" thread-id="vnqdhyvzmw7rmzof"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="Jason Pyeron" address="jpyeron@pdinc.us">Jason Pyeron &lt;jpyeron@pdinc.us&gt;</from><to personal="mysql@lists.mysql.com" address="mysql@lists.mysql.com">mysql@lists.mysql.com</to><subject normal="mysql-4.1.13 and RHEL and rpm was Re: mysql-4.1.13 and openssl-0.9.8 configuration issue">mysql-4.1.13 and RHEL and rpm was Re: mysql-4.1.13 and openssl-0.9.8 configuration issue</subject><return-path>jpyeron@pdinc.us</return-path><mailing-list>contact mysql-help@lists.mysql.com; run by ezmlm</mailing-list><delivered-to>mailing list mysql@lists.mysql.com</delivered-to><received>(qmail 20233 invoked by uid 509); 23 Aug 2005 17:06:42 -0000</received><received-spf>pass (lists.mysql.com: local policy)</received-spf><received>from ns.pyerotechnics.com (HELO ns.pyerotechnics.com) (67.95.164.48)
+    by lists.mysql.com (qpsmtpd/0.29) with ESMTP; Tue, 23 Aug 2005 19:06:42 +0200</received><received>from localhost (jpyeron@localhost)
+	by ns.pyerotechnics.com (8.11.6/8.11.6) with ESMTP id j7NH7AI17761
+	for &lt;mysql@lists.mysql.com&gt;; Tue, 23 Aug 2005 13:07:10 -0400</received><date>Tue, 23 Aug 2005 13:07:09 -0400 (EDT)</date><x-x-sender>jpyeron@ns.pyerotechnics.com</x-x-sender><in-reply-to>&lt;430B4D66.7070504@redred.com&gt;</in-reply-to><message-id>Pine.LNX.4.62.0508231247280.17436@ns.pyerotechnics.com</message-id><references>&lt;20050822175325.85443.qmail@web32105.mail.mud.yahoo.com&gt;
+ &lt;430B432B.70703@redred.com&gt; &lt;Pine.LNX.4.62.0508231159060.15877@ns.pyerotechnics.com&gt;
+ &lt;430B4D66.7070504@redred.com&gt;</references><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII; format=flowed</content-type></headers><normalized-references><normalized-message-id>Pine.LNX.4.62.0508231247280.17436@ns.pyerotechnics.com</normalized-message-id><normalized-in-reply-to>430B4D66.7070504@redred.com</normalized-in-reply-to><normalized-reference>20050822175325.85443.qmail@web32105.mail.mud.yahoo.com</normalized-reference><normalized-reference>430B432B.70703@redred.com</normalized-reference><normalized-reference>Pine.LNX.4.62.0508231159060.15877@ns.pyerotechnics.com</normalized-reference><normalized-reference>430B4D66.7070504@redred.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">
+Could you post your local mods and versions, if you need this, then others 
+may too. Did you file a bug with redhat?
+
+</para><para depth="0">I am making the openssl-0.9.8-0 rpms right now.
+
+</para><para depth="0">rpmbuild -ta openssl-0.9.8.tgz
+
+</para><para depth="0">table for you to fill in:
+
+</para><para depth="0">package         version         reason
+--------------- --------------- ----------------------------------------
+openssl         0.9.8		?? feature x needed ??
+zlib            ???             ???
+etc...          ???             ???
+
+</para><para depth="0">You do know that RH support will not be provided for your tar ball 
+installs, nor will the up2date client bring you the latest patch 
+versions.
+
+</para><para depth="0">On Tue, 23 Aug 2005, RedRed!com IT Department wrote:
+
+</para><quote depth="1"><quotepara depth="1">I couldn't find the an rpm for the lastest version of zlib, openssl, etc...
+
+</quotepara><quotepara depth="1">I could use the mysql rpm but does it have all of the features and extras in 
+it or does it come barebone? Does it know where to look for all of the 
+necessary libraries and includes? I have never ventured into the rpm realm so 
+I am not sure if they give me the same flexibility that compiling does.
+
+</quotepara><quotepara depth="1">Jason Pyeron wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">Just curious, why not use the rpm to install?
+We use RHEL3 and RHEL4 here, every thing is done by rpm.
+
+</quotepara><quotepara depth="2">Is something missing? If so could you let us know, I would like to get the 
+rpms patched.
+
+</quotepara><quotefooter type="signature" hash="8552852338321722698" depth="2">-Jason Pyeron
+
+</quotefooter></quote></quote><footer type="signature" hash="7906920265282206523" depth="0">-- 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-                                                               -
+- Jason Pyeron                      PD Inc. <url>http://www.pdinc.us</url> -
+- Partner &amp; Sr. Manager             7 West 24th Street #100     -
+- +1 (443) 921-0381                 Baltimore, Maryland 21218   -
+-                                                               -
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+</footer><footer type="legalese" depth="0">This message is for the designated recipient only and may contain 
+privileged, proprietary, or otherwise private information. If you 
+have received it in error, purge the message from your system and 
+notify the sender immediately.  Any other use of the email by you 
+is prohibited.
+
+</footer></body></message>

@@ -1,0 +1,18 @@
+<message message-id="20020524012739.GB25886@jonquille.ozlabs.hp.com" list="org.samba.lists.samba-technical" id="24bnlwrgyupyjfe6" type="general" date="2002-05-23T18:37:01" year="2002-01-01" year-month="2002-05-01" year-month-day="2002-05-23" thread-id="zdetuil3jqb2kx6g"><headers><envelope-from-line>From tpot@samba.org  Thu May 23 18:37:01 2002</envelope-from-line><from personal="Tim Potter" address="tpot@samba.org">Tim Potter &lt;tpot@samba.org&gt;</from><subject normal="Proposed code cleanup">Proposed code cleanup</subject><date>Tue Dec  2 04:17:55 2003</date><in-reply-to>&lt;Pine.LNX.4.44.0205241115370.30291-100000@piglett.bartlett.house&gt;</in-reply-to><references>&lt;20020523224804.GA25886@jonquille.ozlabs.hp.com&gt; &lt;Pine.LNX.4.44.0205241115370.30291-100000@piglett.bartlett.house&gt;</references><message-id>20020524012739.GB25886@jonquille.ozlabs.hp.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>20020524012739.GB25886@jonquille.ozlabs.hp.com</normalized-message-id><normalized-in-reply-to>Pine.LNX.4.44.0205241115370.30291-100000@piglett.bartlett.house</normalized-in-reply-to><normalized-reference>20020523224804.GA25886@jonquille.ozlabs.hp.com</normalized-reference><normalized-reference>Pine.LNX.4.44.0205241115370.30291-100000@piglett.bartlett.house</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On Fri, May 24, 2002 at 11:17:59AM +1000, Andrew Bartlett wrote:
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">Anyway - that looks like a good patch.  I've been dying to get rid of all 
+those silly make_nmb_name() calls everywhere but was not brave enough.
+</quotepara></quote><quotepara depth="1">
+I'll proabably add a cli_pipe_connection() function (feel free to suggest 
+a better name) that just calls cli_full_connection, but with IPC$ implicit
+and instead specifying the pipe to setup.
+
+</quotepara><quotepara depth="1">How does that sound?
+</quotepara></quote><para depth="0">
+Sounds good to me.
+
+</para><para depth="0">One point - is there any reason to pass around the password and the
+length of the password to cli_full_connection()?
+
+</para><para depth="0">Tim.
+</para></body></message>

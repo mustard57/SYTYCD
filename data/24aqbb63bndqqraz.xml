@@ -1,0 +1,65 @@
+<message message-id="E1DLs9e-0000Zc-00@lalai.hermes.si" list="org.tigris.subversion.svn-breakage" id="24aqbb63bndqqraz" no-archive="yes" type="checkins" date="2005-04-14T02:24:22+02:00" year="2005-01-01" year-month="2005-04-01" year-month-day="2005-04-13" thread-id="24aqbb63bndqqraz"><headers><envelope-from-line>From svn-breakage-return-28879-tigrisq-archive=mail-subversion=svn-breakage=tigris.org=tigris.org@subversion.tigris.org Thu Apr 14 00:24:42 2005</envelope-from-line><from personal="brane@xbc.nu" address="brane@xbc.nu">brane@xbc.nu</from><to personal="svn-breakage@subversion.tigris.org" address="svn-breakage@subversion.tigris.org">svn-breakage@subversion.tigris.org</to><subject normal="svn trunk r14168: PASS (i686-pc-linux-gnu shared ra_local fsfs)">svn trunk r14168: PASS (i686-pc-linux-gnu shared ra_local fsfs)</subject><return-path>svn-breakage-return-28879-tigrisq-archive=mail-subversion=svn-breakage=tigris.org=tigris.org@subversion.tigris.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-subversion=svn-breakage=tigris.org@tigris.org</delivered-to><received>(qmail 12250 invoked by uid 5302); 14 Apr 2005 00:24:40 -0000</received><mailing-list>contact svn-breakage-help@subversion.tigris.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:svn-breakage-help@subversion.tigris.org&gt;</list-help><list-unsubscribe>&lt;mailto:svn-breakage-unsubscribe@subversion.tigris.org&gt;</list-unsubscribe><list-post>&lt;mailto:svn-breakage@subversion.tigris.org&gt;</list-post><reply-to>dev@subversion.tigris.org</reply-to><delivered-to>mailing list svn-breakage@subversion.tigris.org</delivered-to><received>(qmail 11480 invoked from network); 14 Apr 2005 00:24:37 -0000</received><reply-to>dev@subversion.tigris.org</reply-to><message-id>E1DLs9e-0000Zc-00@lalai.hermes.si</message-id><sender>Branko Cibej &lt;branko.cibej@hermes.si&gt;</sender><date>Thu, 14 Apr 2005 02:24:22 +0200</date><x-virus-scanned>by amavisd-new at hermes.si (internal)</x-virus-scanned></headers><normalized-references><normalized-message-id>E1DLs9e-0000Zc-00@lalai.hermes.si</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">PASS: update apr-0.9
+PASS: update apr-util-0.9
+PASS: update httpd-2.0
+PASS: update subversion
+PASS: autogen.sh
+BUILD: apr-0.9
+PASS: apr-0.9::check rebuild status
+BUILD: apr-util-0.9
+PASS: apr-util-0.9::check rebuild status
+BUILD: httpd-2.0
+PASS: httpd-2.0::check rebuild status
+
+</para><para depth="0">BUILD: trunk r14168 on i686-pc-linux-gnu shared
+
+</para><para depth="0">PASS: check build type
+PASS: create object directory
+
+</para><para depth="0">/home/brane/svn/config.shared:
+#!/bin/sh
+
+</para><para depth="0">run_configure() {
+  testing=/home/brane/svn/testing
+  srcdir="$1"
+  shift
+  env CC='gcc-3.0' \
+    "${srcdir}/configure" \
+    "--prefix=/home/brane/svn/inst" \
+    "--with-berkeley-db=/usr/local/BerkeleyDB.4.2" \
+    "--with-dbm=db42" \
+    "--with-apr=${testing}-inst/apr-0.9/bin/apr-config" \
+    "--with-apr-util=${testing}-inst/apr-util-0.9/bin/apu-config" \
+    "--with-apxs=${testing}-inst/httpd-2.0/bin/apxs" \
+    "--with-zlib" \
+    "--with-ssl" \
+    "--with-swig=/usr/local" \
+    "$@"
+}
+
+</para><para depth="0">run_configure ../svn-trunk "$@"
+PASS: configure
+PASS: build
+PASS: install
+PASS: svn-trunk::rebuild flag
+
+</para><para depth="0">TEST: trunk r14168 on i686-pc-linux-gnu shared ra_local fsfs
+
+</para><para depth="0">PASS: check build type
+PASS: check RA type
+PASS: check FS type
+PASS: check object directory
+PASS: check svn executable
+PASS: check svnadmin executable
+PASS: check svnlook executable
+PASS: check svnserve executable
+PASS: check svnversion executable
+PASS: make check
+PASS: Timer: make check 1786 sec
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>svn-breakage-unsubscribe@subversion.tigris.org</email>
+For additional commands, e-mail: <email>svn-breakage-help@subversion.tigris.org</email>
+
+</footer></body></message>

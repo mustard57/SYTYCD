@@ -1,0 +1,47 @@
+<message message-id="20100616161853.1442.32306.malone@soybean.canonical.com" list="com.ubuntu.lists.desktop-bugs" id="24adxykldnoq7ioc" type="bugs" date="2010-06-16T16:18:53Z" year="2010-01-01" year-month="2010-06-01" year-month-day="2010-06-16" thread-id="lofafzojcrcjbl6o"><headers><envelope-from-line>Wed Jun 16 08:26:20 2010</envelope-from-line><from personal="Nikolaus Filus" address="nfilus@gmx.net">Nikolaus Filus &lt;nfilus@gmx.net&gt;</from><to personal="desktop-bugs@lists.ubuntu.com" address="desktop-bugs@lists.ubuntu.com">desktop-bugs@lists.ubuntu.com</to><subject normal="[Bug 40872] Re: Desktop icons are allowed to overlap">[Bug 40872] Re: Desktop icons are allowed to overlap</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 1019;
+          Wed, 16 Jun 2010 08:26:20 -0800 (GMT-08:00)</received><received>from chlorine.canonical.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 05A682908298;
+	Wed, 16 Jun 2010 09:25:57 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=chlorine.canonical.com)
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;desktop-bugs-bounces@lists.ubuntu.com&gt;)
+	id 1OOvRT-0001AP-AG; Wed, 16 Jun 2010 17:26:19 +0100</received><received>from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;bounces@canonical.com&gt;) id 1OOvRS-0001A8-1z
+	for desktop-bugs@lists.ubuntu.com; Wed, 16 Jun 2010 17:26:18 +0100</received><received>from loganberry.canonical.com ([91.189.90.37])
+	by adelie.canonical.com with esmtp (Exim 4.69 #1 (Debian))
+	id 1OOvRP-0003Mc-Tj
+	for &lt;desktop-bugs@lists.ubuntu.com&gt;; Wed, 16 Jun 2010 17:26:16 +0100</received><received>from loganberry.canonical.com (localhost [127.0.0.1])
+	by loganberry.canonical.com (Postfix) with ESMTP id 3F5E72E8313
+	for &lt;desktop-bugs@lists.ubuntu.com&gt;;
+	Wed, 16 Jun 2010 17:26:01 +0100 (BST)</received><mime-version>1.0</mime-version><date>Wed, 16 Jun 2010 16:18:53 -0000</date><x-launchpad-bug>product=hundredpapercuts; status=Invalid; importance=Low;
+	assignee=None; </x-launchpad-bug><x-launchpad-bug>product=nautilus; status=Confirmed; importance=Unknown;
+	assignee=None; </x-launchpad-bug><x-launchpad-bug>product=nautilus-elementary; status=Confirmed;
+	importance=Undecided; assignee=None; </x-launchpad-bug><x-launchpad-bug>distribution=ubuntu; sourcepackage=nautilus; component=main; 
+	status=Triaged; importance=Low;
+	assignee=desktop-bugs@lists.ubuntu.com; </x-launchpad-bug><x-launchpad-bug-tags>patch-forwarded-upstream</x-launchpad-bug-tags><x-launchpad-bug-private>no</x-launchpad-bug-private><x-launchpad-bug-security-vulnerability>no</x-launchpad-bug-security-vulnerability><x-launchpad-bug-commenters>altayhunter arand archimedes beerpoweredhooligan
+	brett-alton chrisccoulson colts-on-tap conrad-steenberg
+	cyrenity dawnlight djsiegel evfool flavio-guerra hdave
+	hellocatfood kako13pr leander-nijland mat.t. miles-lane mpt
+	nfilus nigelbabu nightwolf177-deactivatedaccount paulvg
+	peek-nimbios pelladigabor rmm08 ruben-verweij sambehera seb128
+	sl-solaris snowmanam2 watervole02 wladston xen-uno yelo3</x-launchpad-bug-commenters><references>&lt;20060423053135.17670.23976.malonedeb@gandwana.ubuntu.com&gt;</references><message-id>20100616161853.1442.32306.malone@soybean.canonical.com</message-id><x-launchpad-message-rationale>Subscriber @desktop-bugs</x-launchpad-message-rationale><precedence>bulk</precedence><x-generated-by>Launchpad (canonical.com); Revision="None";
+	Instance="initZopeless config overlay"</x-generated-by><x-launchpad-hash>98d8730bbe5cf95852c684baf2032b56fcd1eeaf</x-launchpad-hash><x-beenthere>desktop-bugs@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><reply-to>Bug 40872 &lt;40872@bugs.launchpad.net&gt;</reply-to><list-id>Desktop bug tracker changes - HIGH VOLUME
+	&lt;desktop-bugs.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/desktop-bugs&gt;,
+	&lt;mailto:desktop-bugs-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:desktop-bugs@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:desktop-bugs-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/desktop-bugs&gt;,
+	&lt;mailto:desktop-bugs-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>desktop-bugs-bounces@lists.ubuntu.com</sender><errors-to>desktop-bugs-bounces@lists.ubuntu.com</errors-to></headers><normalized-references><normalized-message-id>20100616161853.1442.32306.malone@soybean.canonical.com</normalized-message-id><normalized-reference>20060423053135.17670.23976.malonedeb@gandwana.ubuntu.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">I found the patch was already discussed in Bug #20284 comment 10. This
+issue may be a duplicate of the referenced bug #12454, which was fixed
+and re-appeared?! Funnily the regression pops up every some months, as
+the upstream bug is from 2001!
+
+</para><footer type="signature" depth="0" hash="5931964047843626357">-- 
+Desktop icons are allowed to overlap
+<url>https://bugs.launchpad.net/bugs/40872</url>
+You received this bug notification because you are a member of Ubuntu
+Desktop Bugs, which is a direct subscriber.
+
+</footer><footer type="list-management" depth="0">-- 
+desktop-bugs mailing list
+<email>desktop-bugs@lists.ubuntu.com</email>
+<url>https://lists.ubuntu.com/mailman/listinfo/desktop-bugs</url>
+</footer></body></message>

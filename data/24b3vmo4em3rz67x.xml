@@ -1,0 +1,16 @@
+<message message-id="20031116222213.21019.qmail@netbeans.org" list="org.netbeans.jemmy.issues" id="24b3vmo4em3rz67x" no-archive="yes" type="bugs" date="2003-11-16T22:22:13Z" year="2003-01-01" year-month="2003-11-01" year-month-day="2003-11-16" thread-id="35b3h6d4eifosdpn"><headers><envelope-from-line>From issues-return-651-tigrisq-archive=mail-jemmy=issues=netbeans.org=netbeans.org@jemmy.netbeans.org Sun Nov 16 22:22:13 2003</envelope-from-line><from personal="issues@www.netbeans.org" address="issues@www.netbeans.org">issues@www.netbeans.org</from><to personal="issues@jemmy.netbeans.org" address="issues@jemmy.netbeans.org">issues@jemmy.netbeans.org</to><subject normal="[Issue 37268] - IDEValidation test never completes">[Issue 37268]  - IDEValidation test never completes</subject><return-path>issues-return-651-tigrisq-archive=mail-jemmy=issues=netbeans.org=netbeans.org@jemmy.netbeans.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-jemmy=issues=netbeans.org@netbeans.org</delivered-to><received>(qmail 21031 invoked by uid 5302); 16 Nov 2003 22:22:13 -0000</received><mailing-list>contact issues-help@jemmy.netbeans.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:issues-help@jemmy.netbeans.org&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@jemmy.netbeans.org&gt;</list-unsubscribe><list-post>&lt;mailto:issues@jemmy.netbeans.org&gt;</list-post><reply-to>issues@jemmy.netbeans.org</reply-to><delivered-to>mailing list issues@jemmy.netbeans.org</delivered-to><received>(qmail 21020 invoked by uid 5000); 16 Nov 2003 22:22:13 -0000</received><date>16 Nov 2003 22:22:13 -0000</date><message-id>20031116222213.21019.qmail@netbeans.org</message-id></headers><normalized-references><normalized-message-id>20031116222213.21019.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=37268</url>
+
+</para><para depth="0"><email>jglick@netbeans.org</email> changed:
+
+</para><para depth="0">                  What    |Old Value                  |New Value
+==================================================================================
+                  Keywords|                           |TEST
+</para><footer type="noise" depth="0">----------------------------------------------------------------------------------
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>issues-unsubscribe@jemmy.netbeans.org</email>
+For additional commands, e-mail: <email>issues-help@jemmy.netbeans.org</email>
+
+</footer></body></message>

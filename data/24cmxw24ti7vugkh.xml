@@ -1,0 +1,23 @@
+<message message-id="20060225220438.GA73531@xor.obsecurity.org" list="org.freebsd.freebsd-emulation" id="24cmxw24ti7vugkh" type="checkins" date="2006-02-25T14:04:51" year="2006-01-01" year-month="2006-02-01" year-month-day="2006-02-25" thread-id="v5w2z3trninnjlrp"><headers><envelope-from-line>From kris@obsecurity.org  Sat Feb 25 14:04:39 2006</envelope-from-line><from personal="Kris Kennaway" address="kris@obsecurity.org">Kris Kennaway &lt;kris@obsecurity.org&gt;</from><subject normal="[kris@FreeBSD.org: cvs commit: ports/emulators/rtc Makefile]">[kris@FreeBSD.org: cvs commit: ports/emulators/rtc Makefile]</subject><date>Sat Feb 25 14:04:51 2006</date><in-reply-to>&lt;20060225230128.2764ed73@Magellan.Leidinger.net&gt;</in-reply-to><references>&lt;20060225211045.GR15500@xor.obsecurity.org&gt;
+	&lt;20060225230128.2764ed73@Magellan.Leidinger.net&gt;</references><message-id>20060225220438.GA73531@xor.obsecurity.org</message-id><content-type>multipart/mixed; 
+	boundary="----=_Part_266_8287698.1217310722889"</content-type><mime-version>1.0</mime-version></headers><attachments><signature type="application/pgp-signature" file="attachment.bin" size="189" uri="/24cmxw24ti7vugkh/attach00/attachment.bin"/></attachments><normalized-references><normalized-message-id>20060225220438.GA73531@xor.obsecurity.org</normalized-message-id><normalized-in-reply-to>20060225230128.2764ed73@Magellan.Leidinger.net</normalized-in-reply-to><normalized-reference>20060225211045.GR15500@xor.obsecurity.org</normalized-reference><normalized-reference>20060225230128.2764ed73@Magellan.Leidinger.net</normalized-reference></normalized-references><body><para depth="0">On Sat, Feb 25, 2006 at 11:01:28PM +0100, Alexander Leidinger wrote:
+</para><quote depth="1"><quotepara depth="1">Am Sat, 25 Feb 2006 16:10:45 -0500
+schrieb Kris Kennaway &lt;<email>kris@obsecurity.org</email>&gt;:
+
+</quotepara><quote depth="2"><quotepara depth="2">FYI; see <url>http://pointyhat.freebsd.org</url> and/or previous email
+notifications for the full log.
+
+</quotepara><quotefooter type="signature" hash="8861907660687053711" depth="2">Thanks,
+Kris
+
+</quotefooter><quotepara depth="2">P.S. Since we are currently in ports freeze for the 5.5 and 6.1
+release cycles, your swift attention to this problem is requested.
+</quotepara></quote><quotepara depth="1">
+I didn't looked at the pointyhat logs, but I think the problem is the
+remaining linker.hints file at deinstall time. I solved this with a
+kldxref (PREFIX/modules is now removed).
+</quotepara></quote><para depth="0">
+Is it really useful to install into PREFIX/modules in the first place?
+
+</para><para depth="0">Kris
+</para></body></message>

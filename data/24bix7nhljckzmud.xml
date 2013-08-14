@@ -1,0 +1,26 @@
+<message message-id="90EB974D9BCBE2499D2C4B234F9EEDEB182071@neptun1.office.rac.de" list="org.tigris.tortoisesvn.dev" id="24bix7nhljckzmud" no-archive="yes" type="development" date="2004-04-01T13:49:38+02:00" year="2004-01-01" year-month="2004-04-01" year-month-day="2004-04-01" thread-id="qhuolky26hc4id2b"><headers><envelope-from-line>From dev-return-4584-tigrisq-archive=mail-tortoisesvn=dev=tigris.org=tigris.org@tortoisesvn.tigris.org Thu Apr 01 11:49:41 2004</envelope-from-line><from personal="Lübbe Onken" address="l.onken@rac.de">"Lübbe Onken" &lt;l.onken@rac.de&gt;</from><to personal="'dev@tortoisesvn.tigris.org'" address="dev@tortoisesvn.tigris.org">"'dev@tortoisesvn.tigris.org'" &lt;dev@tortoisesvn.tigris.org&gt;</to><subject normal="[TSVN] Include Exclude patterns in 1.0.2 and 1.0.3..">RE: [TSVN] Include Exclude patterns in 1.0.2 and 1.0.3..</subject><return-path>dev-return-4584-tigrisq-archive=mail-tortoisesvn=dev=tigris.org=tigris.org@tortoisesvn.tigris.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-tortoisesvn=dev=tigris.org@tigris.org</delivered-to><received>(qmail 4861 invoked by uid 5302); 1 Apr 2004 11:49:41 -0000</received><mailing-list>contact dev-help@tortoisesvn.tigris.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:dev-help@tortoisesvn.tigris.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@tortoisesvn.tigris.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@tortoisesvn.tigris.org&gt;</list-post><reply-to>dev@tortoisesvn.tigris.org</reply-to><delivered-to>mailing list dev@tortoisesvn.tigris.org</delivered-to><received>(qmail 4852 invoked from network); 1 Apr 2004 11:49:41 -0000</received><message-id>90EB974D9BCBE2499D2C4B234F9EEDEB182071@neptun1.office.rac.de</message-id><date>Thu, 1 Apr 2004 13:49:38 +0200 </date><mime-version>1.0</mime-version><x-mailer>Internet Mail Service (5.5.2650.21)</x-mailer><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>90EB974D9BCBE2499D2C4B234F9EEDEB182071@neptun1.office.rac.de</normalized-message-id></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><quote depth="1"><greeting depth="1">Hello,
+</greeting><quotepara depth="1">Hi Johan 
+First, Thanks for a GREAT program!
+</quotepara></quote><para depth="0">You're welcome
+
+</para><quote depth="1"><quotepara depth="1">And now to my issue.
+I just subscribed to this list so im sorry if this question 
+has allready
+been taken care of.
+I could not find in in the archive so here we go.
+</quotepara></quote><para depth="0">Are you really sure? There are at least 10 postings on that subject from
+yesterday ?!?
+
+</para><quote depth="1"><quotepara depth="1">Exclude pattern doesnt seem to work in version 1.0.2 and 1.0.3.
+</quotepara></quote><para depth="0">Did you use ";" to separate the entries? If yes, use blanks instead.
+
+</para><para depth="0">-Lübbe
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@tortoisesvn.tigris.org</email>
+For additional commands, e-mail: <email>dev-help@tortoisesvn.tigris.org</email>
+
+</footer></body></message>

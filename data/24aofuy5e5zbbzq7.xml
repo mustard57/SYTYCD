@@ -1,0 +1,30 @@
+<message message-id="8e69b662050519130844df1ede@mail.gmail.com" list="org.codehaus.mule.user" id="24aofuy5e5zbbzq7" type="users" date="2005-05-19T13:08:35-07:00" year="2005-01-01" year-month="2005-05-01" year-month-day="2005-05-19" thread-id="2g27kwn2lfaemh2s"><headers><envelope-from-line>From - 19 May 2005 20:08:36 -0000</envelope-from-line><from personal="Cass Costello" address="casspc@gmail.com">Cass Costello &lt;casspc@gmail.com&gt;</from><to personal="user@mule.codehaus.org" address="user@mule.codehaus.org">user@mule.codehaus.org</to><subject normal="[mule-user] Mule in production">Re: [mule-user] Mule in production</subject><return-path>casspc@gmail.com</return-path><mailing-list>contact user-help@mule.codehaus.org; run by ezmlm</mailing-list><delivered-to>mailing list user@mule.codehaus.org</delivered-to><received>(qmail 23286 invoked from network); 19 May 2005 20:08:36 -0000</received><received>from rproxy.gmail.com (64.233.170.193)
+  by codehaus.org with SMTP; 19 May 2005 20:08:36 -0000</received><received>by rproxy.gmail.com with SMTP id a36so521837rnf
+        for &lt;user@mule.codehaus.org&gt;; Thu, 19 May 2005 13:08:35 -0700 (PDT)</received><domainkey-signature>a=rsa-sha1; q=dns; c=nofws;
+        s=beta; d=gmail.com;
+        h=received:message-id:date:from:reply-to:to:subject:in-reply-to:mime-version:content-type:references;
+        b=KQu7Lotv3j6h7DhzKNAsOacJdHq/foFZWJeIrFqsFu70mF7huwX/eeIeB9v4GfmGqrKtxO9cQrZ82cxXV7bYOrwD1xRDMBrwdk/CBp/uB4uTNzsU2fg5Wcwb57glxjTYTePC6ufAgM+3/c6IQJtmV4Wg67D4o6f1fJaRRifWVpQ=</domainkey-signature><received>by 10.38.14.25 with SMTP id 25mr1267145rnn;
+        Thu, 19 May 2005 13:08:35 -0700 (PDT)</received><received>by 10.38.78.56 with HTTP; Thu, 19 May 2005 13:08:35 -0700 (PDT)</received><message-id>8e69b662050519130844df1ede@mail.gmail.com</message-id><date>Thu, 19 May 2005 13:08:35 -0700</date><reply-to>Cass Costello &lt;casspc@gmail.com&gt;</reply-to><in-reply-to>&lt;20050519194212.283ECB713@xprdmailfe17.nwk.excite.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>multipart/alternative; 
+	boundary="----=_Part_921_16909522.1116533315696"</content-type><references>&lt;20050519194212.283ECB713@xprdmailfe17.nwk.excite.com&gt;</references></headers><normalized-references><normalized-message-id>8e69b662050519130844df1ede@mail.gmail.com</normalized-message-id><normalized-in-reply-to>20050519194212.283ECB713@xprdmailfe17.nwk.excite.com</normalized-in-reply-to><normalized-reference>20050519194212.283ECB713@xprdmailfe17.nwk.excite.com</normalized-reference></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_921_16909522.1116533315696&quot;" type="text/plain; charset=ISO-8859-1"><para depth="0">We're planning to. :) 1st release is a few months out. Serious load testing 
+will begin in 6-8 weeks - will report back then.
+
+</para><para depth="0">And since this is my first post to the list ... thanks to everyone working 
+on Mule. It's exactly what the doctor ordered for our scenario (details to 
+follow).
+
+</para><para depth="0">-Cass Costello
+
+</para><para depth="0">On 5/19/05, WD &lt;<email>webdevil2003@excite.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">
+Can we have a list of who's using Mule for large scale,high transaction 
+applications in production? What were their experiences?
+
+</quotepara><quotepara depth="1">Thanks
+
+</quotepara><quotefooter type="signature" hash="15587777866668328218" depth="1">WD
+
+</quotefooter><quotefooter type="free-hosting" hash="3259961339647770587" depth="1">_______________________________________________
+Join Excite! - <url>http://www.excite.com</url>
+The most personalized portal on the Web!
+
+</quotefooter></quote></body></message>

@@ -1,0 +1,40 @@
+<message message-id="cone.1185592230.18339.5980.500@commodore.email-scan.com" list="com.redhat.fedora-list" id="24afhuiz5xqh44rg" type="general" date="2007-07-27T23:10:30-04:00" year="2007-01-01" year-month="2007-07-01" year-month-day="2007-07-27" thread-id="glmof77gdagzablt"><headers><envelope-from-line>From mrsam@courier-mta.com Fri Jul 27 23:10:36 2007</envelope-from-line><from personal="Sam Varshavchik" address="mrsam@courier-mta.com">Sam Varshavchik &lt;mrsam@courier-mta.com&gt;</from><to personal="For users of Fedora" address="fedora-list@redhat.com">For users of Fedora &lt;fedora-list@redhat.com&gt;</to><subject normal="computer name on a LAN">Re: computer name on a LAN</subject><received>from int-mx2.corp.redhat.com (nat-pool.util.phx.redhat.com
+	[10.8.5.200])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	l6S3Aa7x012764 for &lt;fedora-list@listman.util.phx.redhat.com&gt;;
+	Fri, 27 Jul 2007 23:10:36 -0400</received><received>from mx2.redhat.com (mx2.redhat.com [10.255.15.25])
+	by int-mx2.corp.redhat.com (8.13.1/8.13.1) with ESMTP id l6S3AZqi012177
+	for &lt;fedora-list@redhat.com&gt;; Fri, 27 Jul 2007 23:10:35 -0400</received><received>from www.courier-mta.com (www.courier-mta.com [216.254.115.190])
+	by mx2.redhat.com (8.13.1/8.13.1) with ESMTP id l6S3AV9i025877
+	for &lt;fedora-list@redhat.com&gt;; Fri, 27 Jul 2007 23:10:33 -0400</received><received>from localhost (localhost [127.0.0.1]) (uid 8)
+	by commodore.email-scan.com with local; Fri, 27 Jul 2007 23:10:30 -0400
+	id 000000000024EFB2.0000000046AAB3A6.0000182F</received><x-imap-sender>mrsam@courier-mta.com</x-imap-sender><references>&lt;46AAB109.6060108@enter.net&gt;</references><message-id>cone.1185592230.18339.5980.500@commodore.email-scan.com</message-id><x-mailer>http://www.courier-mta.org/cone/</x-mailer><x-pgp-key>http://www.courier-mta.org/KEYS.bin</x-pgp-key><date>Fri, 27 Jul 2007 23:10:30 -0400</date><mime-version>1.0</mime-version><content-type>multipart/signed;
+	boundary="=_mimegpg-commodore.email-scan.com-5980-1185592230-0001";
+	micalg=pgp-sha1; protocol="application/pgp-signature"</content-type><x-redhat-spam-score>-1.44 </x-redhat-spam-score><x-loop>fedora-list@redhat.com</x-loop><x-beenthere>fedora-list@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>For users of Fedora &lt;fedora-list@redhat.com&gt;</reply-to><list-id>For users of Fedora &lt;fedora-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-list&gt;,
+	&lt;mailto:fedora-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-list&gt;</list-archive><list-post>&lt;mailto:fedora-list@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-list-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-list&gt;,
+	&lt;mailto:fedora-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Sat, 28 Jul 2007 03:10:36 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>cone.1185592230.18339.5980.500@commodore.email-scan.com</normalized-message-id><normalized-reference>46AAB109.6060108@enter.net</normalized-reference></normalized-references><body><para depth="0">Michael Klinosky writes:
+
+</para><quote depth="1"><quotepara depth="1">I have a 4-port router/dsl modem, and 4 machines connected. All of my 
+linux units have F7. All of the machines have names (set in 
+System&gt;Admin&gt;Network, in 'DNS'). E.g. d500.localdomain
+
+</quotepara><quotepara depth="1">I'm trying to learn rsync. However, I decided that learning a less 
+complex program would ease the learning curve. So I'm working with rcp.
+
+</quotepara><quotepara depth="1">LQ has a small tutorial at   <url>http://wiki.linuxquestions.org/wiki/Rcp</url>
+which states that I can give the computer name. However, it doesn't work:
+[mpk@d500 documents]$ rcp info 5bw130:
+5bw130: Unknown host
+
+</quotepara><quotepara depth="1">I also tried with its lan ip:
+[mpk@d500 documents]$ rcp info 10.0.0.6:
+10.0.0.6: No route to host
+
+</quotepara><quotepara depth="1">What's going on here?
+</quotepara></quote><para depth="0">
+1) You do not have DNS or /etc/hosts set up
+
+</para><para depth="0">2) You do not have routing set up correctly, most likely due to incorrect 
+network interface configuration. Check your network interface's subnet mask.
+
+</para></body></message>

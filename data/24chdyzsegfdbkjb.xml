@@ -1,0 +1,15 @@
+<message message-id="20061005203234.17655.qmail@netbeans.org" list="org.netbeans.serverplugins.issues" id="24chdyzsegfdbkjb" type="bugs" date="2006-10-05T20:32:34Z" year="2006-01-01" year-month="2006-10-01" year-month-day="2006-10-05" thread-id="24chdyzsegfdbkjb"><headers><envelope-from-line>From issues@serverplugins.netbeans.org Thu Oct 05 13:44:16 2006</envelope-from-line><from personal="jungi@netbeans.org" address="jungi@netbeans.org">jungi@netbeans.org</from><to personal="issues@serverplugins.netbeans.org" address="issues@serverplugins.netbeans.org">issues@serverplugins.netbeans.org</to><subject normal="[Issue 74087] Spaces in paths are not escaped">[Issue 74087]  Spaces in paths are not escaped</subject><return-path>root@netbeans.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact issues-help@serverplugins.netbeans.org; run by ezmlm</mailing-list><delivered-to>mailing list issues@serverplugins.netbeans.org</delivered-to><received>(qmail 17656 invoked by uid 5000); 5 Oct 2006 20:32:34 -0000</received><date>5 Oct 2006 20:32:34 -0000</date><message-id>20061005203234.17655.qmail@netbeans.org</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20061005203234.17655.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=74087</url>
+
+</para><para depth="0">User jungi changed the following:
+
+</para><para depth="0">                What    |Old value                 |New value
+================================================================================
+                  Status|RESOLVED                  |VERIFIED
+</para><footer type="noise" depth="0">--------------------------------------------------------------------------------
+
+</footer><footer type="signature" depth="0" hash="2178303605145233068">------- Additional comments from <email>jungi@netbeans.org</email> Thu Oct  5 20:32:34 +0000<br/>2006 -------
+v.
+
+</footer></body></message>

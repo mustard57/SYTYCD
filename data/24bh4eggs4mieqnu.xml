@@ -1,0 +1,25 @@
+<message message-id="199611132112.QAA19149@access.netaxs.com" list="edu.merit.nanog" id="24bh4eggs4mieqnu" type="general" date="1996-11-13T16:12:09-05:00" year="1996-01-01" year-month="1996-11-01" year-month-day="1996-11-13" thread-id="xyde5t7xak4x6x2v"><headers><envelope-from-line>From owner-nanog@merit.edu Wed Nov 13 16:25:18 1996</envelope-from-line><from personal="Avi Freedman" address="freedman@netaxs.com">Avi Freedman &lt;freedman@netaxs.com&gt;</from><to personal="Erik Britt-Webb" address="erik@vjinfo.com">Erik Britt-Webb &lt;erik@vjinfo.com&gt;</to><cc personal="nanog@merit.edu" address="nanog@merit.edu">nanog@merit.edu</cc><subject normal="&quot;Naive&quot; (not so stupid) Newbie bashfully seeks help">Re: "Naive" (not so stupid) Newbie bashfully seeks help</subject><received>from merit.edu by nic.merit.edu (8.7.6/nic-1.0)
+	id QAA18742; Wed, 13 Nov 1996 16:25:17 -0500 (EST)</received><received>from localhost (daemon@localhost) by merit.edu (8.7.6/merit-2.0) with SMTP id QAA07666; Wed, 13 Nov 1996 16:13:14 -0500 (EST)</received><received>by merit.edu (bulk_mailer v1.5); Wed, 13 Nov 1996 16:12:31 -0500</received><received>(from daemon@localhost) by merit.edu (8.7.6/merit-2.0) id QAA07612 for nanog-outgoing; Wed, 13 Nov 1996 16:12:31 -0500 (EST)</received><received>from access.netaxs.com (freedman@access.netaxs.com [207.8.186.2]) by merit.edu (8.7.6/merit-2.0) with ESMTP id QAA07607 for &lt;nanog@merit.edu&gt;; Wed, 13 Nov 1996 16:12:25 -0500 (EST)</received><received>(from freedman@localhost) by access.netaxs.com (8.7.6/8.6.11) id QAA19149; Wed, 13 Nov 1996 16:12:10 -0500 (EST)</received><message-id>199611132112.QAA19149@access.netaxs.com</message-id><date>Wed, 13 Nov 1996 16:12:09 -0500 (EST)</date><in-reply-to>&lt;2.2.32.19961113205756.006b2e94@synet.net&gt; from "Erik Britt-Webb" at Nov 13, 96 02:57:56 pm</in-reply-to><x-mailer>ELM [version 2.4 PL25]</x-mailer><content-type>text</content-type><sender>owner-nanog@merit.edu</sender></headers><normalized-references><normalized-message-id>199611132112.QAA19149@access.netaxs.com</normalized-message-id><normalized-in-reply-to>&lt;2.2.32.19961113205756.006b2e94@synet.net&gt;from"ErikBritt-Webb"atNov13,9602:57:56pm</normalized-in-reply-to></normalized-references><body type="text"><para depth="0">[avi goes jhawk]
+
+</para><para depth="0">This isn't appropriate for the nanog mailing list.
+Perhaps you'd like to try inet-access?
+Check out www.amazing.com for the inet-access FAQ.
+
+</para><para depth="0">Avi
+
+</para><quote depth="1"><quotepara depth="1">Ok, I wont' approach the mailbomb subject.  I've been on the list for a
+week, but haven't seen anything applying to my ignorance gap--which is
+considerable.  Can anyone help this fledgling with his problems?
+
+</quotepara><quotepara depth="1">FACTS...
+- Small US office has 56kb satellite link to India office
+- 56kb connected using Bay Networks AN Router &amp; IP/RIP
+- Same US office just brought up T1 Frame-relay line through national ISP
+- T1 connected using Cisco 1005 Router &amp; ....I think IP/RIP??
+- US office server is WinNT 4.0 &amp; workstations are Win95
+</quotepara></quote><para depth="0">
+&lt;snip&gt;
+
+</para><para depth="0">- - - - - - - - - - - - - - - - -
+
+</para></body></message>

@@ -1,0 +1,61 @@
+<message message-id="48674efc0905101358t750d905la0407d0dad793c47@mail.gmail.com" list="com.googlegroups.google-ajax-search-api" id="24aqejjwqkinh7g5" type="development" date="2009-05-10T12:58:32.726695-08:00" year="2009-01-01" year-month="2009-05-01" year-month-day="2009-05-10" thread-id="24aqejjwqkinh7g5"><headers><envelope-from-line>Sun May 10 12:58:55 2009</envelope-from-line><from personal="Jagadeesh kasiram" address="jaga.mcaproj@gmail.com">Jagadeesh kasiram &lt;jaga.mcaproj@gmail.com&gt;</from><to personal="Google-AJAX-Search-API@googlegroups.com" address="Google-AJAX-Search-API@googlegroups.com">Google-AJAX-Search-API@googlegroups.com</to><subject normal="query for next page result.">query for next page result.</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 1005
+          for &lt;sergio.hammond.finch@a.markmail.org&gt;;
+          Sun, 10 May 2009 12:58:55 -0800 (GMT-08:00)</received><received>from wf-out-1516.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 4B5622908377
+	for &lt;sergio.hammond.finch@a.markmail.org&gt;; Sun, 10 May 2009 13:58:32 -0700 (PDT)</received><received>by wf-out-1516.google.com with SMTP id q26so1222760wfc.45
+        for &lt;sergio.hammond.finch@a.markmail.org&gt;; Sun, 10 May 2009 13:58:55 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :received:received:received-spf:authentication-results:received
+         :dkim-signature:domainkey-signature:mime-version:content-type
+         :received:date:message-id:subject:from:to:reply-to:sender:precedence
+         :x-google-loop:mailing-list:list-id:list-post:list-help
+         :list-unsubscribe:x-beenthere-env:x-beenthere;
+        bh=Hw3GRUUy0wAc0jJVMzkUMy8Pfqn+wGrXfVFs41dDKO8=;
+        b=e6MN9KkDH8pXThAXCW+rsYU8IvdGmxY0RPpVSXqmk9nBU6xNCXUpTqiPGueea07lbJ
+         ao0dEfAoBP2SRj/pn3cU2gXKSJwo6J4royvtWjx9ChYP66Xrsj0FYqgP9VkCZBtDZQf0
+         scGLQWwK21llHtGrSf9LVu4hQ3z0lSH5v9S74=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:received-spf:authentication-results
+         :dkim-signature:domainkey-signature:mime-version:content-type:date
+         :message-id:subject:from:to:reply-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        b=ojG74KzNTLHLrNN1n2pvxPvJa6GO0R+Z0YQbUXQGZszLdtj3rqLdt2LZiF3L5I0Eno
+         OEHrYGL3CBYvUbdhwkzbu3YT98rtf577uU9sRiyP2rd3Ft6T6bzML4cOGPBstrJE9M3d
+         NDia8zFG24Og29Rs1gmSWAwVuX2HsFCUx02rY=</domainkey-signature><received>by 10.142.240.9 with SMTP id n9mr498296wfh.1.1241989130803;
+        Sun, 10 May 2009 13:58:50 -0700 (PDT)</received><received>by 10.106.47.1 with SMTP id u1gr12063pru.0;
+	Sun, 10 May 2009 13:58:48 -0700 (PDT)</received><x-sender>jaga.mcaproj@gmail.com</x-sender><x-apparently-to>Google-AJAX-Search-API@googlegroups.com</x-apparently-to><received>by 10.114.25.19 with SMTP id 19mr1365384way.22.1241989127868; Sun, 10 May 2009 13:58:47 -0700 (PDT)</received><received>from wf-out-1314.google.com (wf-out-1314.google.com [209.85.200.170]) by gmr-mx.google.com with ESMTP id k32si1643417wah.2.2009.05.10.13.58.46; Sun, 10 May 2009 13:58:46 -0700 (PDT)</received><received-spf>pass (google.com: domain of jaga.mcaproj@gmail.com designates 209.85.200.170 as permitted sender) client-ip=209.85.200.170;</received-spf><authentication-results>gmr-mx.google.com; spf=pass (google.com: domain of jaga.mcaproj@gmail.com designates 209.85.200.170 as permitted sender) smtp.mail=jaga.mcaproj@gmail.com; dkim=pass (test mode) header.i=@gmail.com</authentication-results><received>by wf-out-1314.google.com with SMTP id 23so1906110wfg.2 for &lt;Google-AJAX-Search-API@googlegroups.com&gt;; Sun, 10 May 2009 13:58:46 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma; h=domainkey-signature:mime-version:received:date:message-id:subject :from:to:content-type; bh=kjv6yeDtV7LgI8b4QlroctHP+UKGI55SOjQTib9n6KY=; b=hVD53KIMTJ+fKWSyqNTuJ9U2Zh2s9wOapEDBdrMlqvC0jS+oQY4/bxlM/UKgr08crH gGnbdxhjbXe0Su5dWeasEhAvm9QX75K/BZSye3F2s3dDbHWfI0494i1w+TIYqeQXb53I OtZmdumMgV6+e2vv2/LqLsQC4TujN4elU1PNY=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma; h=mime-version:date:message-id:subject:from:to:content-type; b=srl1eqeTLKt61bwz2HaS4L3uj1hVkucqP0rkCD/IeUbSQo+1hI22+RXj/YxAQLgI32 uRuJ2evJAmm8vly7EbcpVrjUA9dPwODYHA2b0DhCr45NibPdX1atDRYElvnpXOgis3Uj Xl9QmJuEHIcQj+xTkPUl+wtypdij2MmjUpGUo=</domainkey-signature><mime-version>1.0</mime-version><content-type>multipart/alternative; boundary="001636e911aeb800e00469952089"</content-type><received>by 10.142.84.3 with SMTP id h3mr2611151wfb.237.1241989126815; Sun,  10 May 2009 13:58:46 -0700 (PDT)</received><date>Mon, 11 May 2009 02:28:46 +0530</date><message-id>48674efc0905101358t750d905la0407d0dad793c47@mail.gmail.com</message-id><reply-to>Google-AJAX-Search-API@googlegroups.com</reply-to><sender>Google-AJAX-Search-API@googlegroups.com</sender><precedence>bulk</precedence><x-google-loop>groups</x-google-loop><mailing-list>list Google-AJAX-Search-API@googlegroups.com;
+	contact Google-AJAX-Search-API+owner@googlegroups.com</mailing-list><list-id>&lt;Google-AJAX-Search-API.googlegroups.com&gt;</list-id><list-post>&lt;mailto:Google-AJAX-Search-API@googlegroups.com&gt;</list-post><list-help>&lt;mailto:Google-AJAX-Search-API+help@googlegroups.com&gt;</list-help><list-unsubscribe>&lt;http://googlegroups.com/group/Google-AJAX-Search-API/subscribe&gt;,
+	&lt;mailto:Google-AJAX-Search-API+unsubscribe@googlegroups.com&gt;</list-unsubscribe><x-beenthere-env>Google-AJAX-Search-API@googlegroups.com</x-beenthere-env><x-beenthere>Google-AJAX-Search-API@googlegroups.com</x-beenthere></headers><normalized-references><normalized-message-id>48674efc0905101358t750d905la0407d0dad793c47@mail.gmail.com</normalized-message-id></normalized-references><body multipart="multipart/alternative; boundary=&quot;001636e911aeb800e00469952089&quot;" type="text/plain; charset=ISO-8859-1"><greeting depth="0">Hi,
+</greeting><para depth="0">
+               This is the query i am using to retrive data, from this query
+i am getting only four results.
+
+</para><para depth="0">String<br/>text="<url>http://ajax.googleapis.com/ajax/services/search/web?v=1.0&amp;q=</url>"+URLEncoder.encode(searchString,
+"UTF-8");
+
+</para><para depth="0">Now i am in a position to get more results.  i mean if i click next button i
+need 5th to 8th result.for that i tried
+
+</para><para depth="0">count=5;//value will change accordingly
+
+</para><para depth="0">String<br/>text="<url>http://ajax.googleapis.com/ajax/services/search/web?v=1.0&amp;q=</url>"+URLEncoder.encode(searchString,
+"UTF-8") +"start="+ count;
+
+</para><para depth="0">But for this query also i am getting only four results only.
+
+</para><para depth="0">what shall i do to get next page result.
+
+</para><para depth="0">Regards
+Jagadeesh
+
+</para><footer type="list-management" depth="0">--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups<br/>"Google AJAX APIs" group.
+To post to this group, send email to <email>Google-AJAX-Search-API@googlegroups.com</email>
+To unsubscribe from this group, send email to<br/>Google-AJAX-Search-API+<email>unsubscribe@googlegroups.com</email>
+For more options, visit this group at<br/><url>http://groups.google.com/group/Google-AJAX-Search-API?hl=en</url>
+-~----------~----~----~----~------~----~------~--~---
+
+</footer></body></message>

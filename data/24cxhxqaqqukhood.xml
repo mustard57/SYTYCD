@@ -1,0 +1,14 @@
+<message message-id="20070905174347.12128.qmail@tigris.org" list="org.tigris.scplugin.issues" id="24cxhxqaqqukhood" type="bugs" date="2007-09-05T17:43:47Z" year="2007-01-01" year-month="2007-09-01" year-month-day="2007-09-05" thread-id="hwcfuti74cs2jzvt"><headers><envelope-from-line>From issues@scplugin.tigris.org Wed Sep 05 10:51:48 2007</envelope-from-line><from personal="jackrepenning@tigris.org" address="jackrepenning@tigris.org">jackrepenning@tigris.org</from><to personal="issues@scplugin.tigris.org" address="issues@scplugin.tigris.org">issues@scplugin.tigris.org</to><subject normal="[Issue 13] Need to implement the Subversion checkout command.">[Issue 13]  Need to implement the Subversion checkout command.</subject><return-path>root@tigris.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact issues-help@scplugin.tigris.org; run by ezmlm</mailing-list><delivered-to>mailing list issues@scplugin.tigris.org</delivered-to><received>(qmail 12131 invoked by uid 5000); 5 Sep 2007 17:43:47 -0000</received><date>5 Sep 2007 17:43:47 -0000</date><message-id>20070905174347.12128.qmail@tigris.org</message-id><in-reply-to>&lt;iz13.scplugin.tigris.org&gt;</in-reply-to><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20070905174347.12128.qmail@tigris.org</normalized-message-id><normalized-in-reply-to>iz13.scplugin.tigris.org</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>http://scplugin.tigris.org/issues/show_bug.cgi?id=13</url>
+
+</para><para depth="0">This issue depends on issue 47, which changed state:
+
+</para><para depth="0">                What    |Old value                 |New value
+================================================================================
+                  Status|NEW                       |RESOLVED
+</para><para depth="0">--------------------------------------------------------------------------------
+              Resolution|                          |FIXED
+</para><footer type="noise" depth="0">--------------------------------------------------------------------------------
+
+</footer></body></message>

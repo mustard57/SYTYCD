@@ -1,0 +1,62 @@
+<message message-id="E1DxNqB-0003SF-Gw@sc8-sf-web4.sourceforge.net" list="net.sourceforge.lists.htmlunit-develop" id="24bgkg4f2ydk3pis" type="bugs" date="2005-07-28T18:09:15" year="2005-01-01" year-month="2005-07-01" year-month-day="2005-07-28" thread-id="24bgkg4f2ydk3pis"><headers><envelope-from-line>From nobody@sourceforge.net Tue Jul 26 04:43:22 2005</envelope-from-line><from personal="SourceForge.net" address="noreply@sourceforge.net">"SourceForge.net" &lt;noreply@sourceforge.net&gt;</from><to personal="noreply@sourceforge.net" address="noreply@sourceforge.net">noreply@sourceforge.net</to><subject normal="[HtmlUnit] [ htmlunit-Bugs-1244810 ] Support for handling zipped content from http server">[HtmlUnit] [ htmlunit-Bugs-1244810 ] Support for handling zipped content from http server</subject><received>from sc8-sf-mx2-b.sourceforge.net ([10.3.1.92] helo=mail.sourceforge.net)
+	by sc8-sf-list1.sourceforge.net with esmtp (Exim 4.30)
+	id 1DxNqB-0005W1-Jr
+	for htmlunit-develop@lists.sourceforge.net; Tue, 26 Jul 2005 04:43:19 -0700</received><received>from [10.3.1.28] (helo=sc8-sf-web4.sourceforge.net)
+	by mail.sourceforge.net with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.44)
+	id 1DxNqB-0001GE-Oc; Tue, 26 Jul 2005 04:43:19 -0700</received><received>from nobody by sc8-sf-web4.sourceforge.net with local (Exim 4.33)
+	id 1DxNqB-0003SF-Gw; Tue, 26 Jul 2005 04:43:19 -0700</received><mime-version>1.0</mime-version><content-type>text/plain; charset="ISO-8859-1"</content-type><message-id>E1DxNqB-0003SF-Gw@sc8-sf-web4.sourceforge.net</message-id><sender>htmlunit-develop-admin@lists.sourceforge.net</sender><errors-to>htmlunit-develop-admin@lists.sourceforge.net</errors-to><x-beenthere>htmlunit-develop@lists.sourceforge.net</x-beenthere><x-mailman-version>2.0.9-sf.net</x-mailman-version><precedence>bulk</precedence><reply-to>htmlunit-develop@lists.sourceforge.net</reply-to><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/htmlunit-develop&gt;,
+	&lt;mailto:htmlunit-develop-request@lists.sourceforge.net?subject=unsubscribe&gt;</list-unsubscribe><list-id>&lt;htmlunit-develop.lists.sourceforge.net&gt;</list-id><list-post>&lt;mailto:htmlunit-develop@lists.sourceforge.net&gt;</list-post><list-help>&lt;mailto:htmlunit-develop-request@lists.sourceforge.net?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/htmlunit-develop&gt;,
+	&lt;mailto:htmlunit-develop-request@lists.sourceforge.net?subject=subscribe&gt;</list-subscribe><list-archive>&lt;http://sourceforge.net/mailarchive/forum.php?forum=htmlunit-develop&gt;</list-archive><date>Thu Jul 28 18:09:15 2005</date><x-original-date>Tue, 26 Jul 2005 04:43:19 -0700</x-original-date></headers><normalized-references><normalized-message-id>E1DxNqB-0003SF-Gw@sc8-sf-web4.sourceforge.net</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;iso-8859-1&quot;"><para depth="0">Bugs item #1244810, was opened at 2005-07-25 23:59
+Message generated for change (Comment added) made by mguillem
+You can respond by visiting: 
+<url>https://sourceforge.net/tracker/?func=detail&amp;atid=448266&amp;aid=1244810&amp;group_id=47038</url>
+
+</para><para depth="0">Please note that this message will contain a full copy of the comment thread,
+including the initial issue submission, for this request,
+not just the latest update.
+Category: None
+Group: 1.6
+Status: Open
+Resolution: None
+Priority: 5
+Submitted By: Ritesh Trivedi (ritesht)
+Assigned to: Nobody/Anonymous (nobody)
+Summary: Support for handling zipped content from http server
+
+</para><para depth="0">Initial Comment:
+Hi,
+
+</para><para depth="0">I have a requirement where the server is returning a 
+zipped HTML/XML pages in response. Currently those 
+are not handled in HTMLUnit framework.
+
+</para><para depth="0">I have changed the 1.6 code to support this functionality 
+partly. I will be more than happy to review/contribute the 
+changes in.
+
+</para><para depth="0">I will appreciate the faster response, so I dont have to 
+keep merging my changes into the new releases of 
+HTMLUnit.
+
+</para><para depth="0">Thanks
+Ritesh
+
+</para><para depth="0">----------------------------------------------------------------------
+
+</para><quote depth="1"><quotepara depth="1">Comment By: Marc Guillemot (mguillem)
+</quotepara></quote><para depth="0">Date: 2005-07-26 13:43
+
+</para><para depth="0">Message:
+Logged In: YES 
+user_id=402164
+
+</para><para depth="0">I think that it is an interesting improvement. Can you
+provide your patch against the latest CVS version?
+
+</para><para depth="0">----------------------------------------------------------------------
+
+</para><footer type="signature" hash="15701814247508952210" depth="0">You can respond by visiting: 
+<url>https://sourceforge.net/tracker/?func=detail&amp;atid=448266&amp;aid=1244810&amp;group_id=47038</url>
+
+</footer></body></message>

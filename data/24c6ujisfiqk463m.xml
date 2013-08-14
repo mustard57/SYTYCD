@@ -1,0 +1,69 @@
+<message message-id="1304762838.12.0.883579579237.issue8407@psf.upfronthosting.co.za" list="org.python.python-bugs-list" id="24c6ujisfiqk463m" type="bugs" date="2011-05-07T10:07:18Z" year="2011-01-01" year-month="2011-05-01" year-month-day="2011-05-07" thread-id="saltiwhcyeb5ape4"><headers><envelope-from-line>Sat May 07 02:18:23 2011</envelope-from-line><from personal="STINNER Victor" address="report@bugs.python.org">STINNER Victor &lt;report@bugs.python.org&gt;</from><to personal="python-bugs-list@python.org" address="python-bugs-list@python.org">python-bugs-list@python.org</to><subject normal="[issue8407] expose signalfd(2) and pthread_sigmask in the signal module">[issue8407] expose signalfd(2) and pthread_sigmask in the signal module</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 679
+          for &lt;velma.pena.rice@a.markmail.org&gt;;
+          Sat, 7 May 2011 02:18:23 -0800 (GMT-08:00)</received><received>from mail.python.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 4C4213B300C1
+	for &lt;velma.pena.rice@a.markmail.org&gt;; Sat,  7 May 2011 03:18:00 -0700 (PDT)</received><received>from albatross.python.org (localhost [127.0.0.1])
+	by mail.python.org (Postfix) with ESMTP id 3QRQsp4SDvz7LkX
+	for &lt;velma.pena.rice@a.markmail.org&gt;; Sat,  7 May 2011 12:18:22 +0200 (CEST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/simple; d=python.org; s=200901;
+	t=1304763502; bh=RHCnj+xd0Kf7WRkSztOx3exJjy9LL8RxxvJlKUcUqp8=;
+	h=MIME-Version:Subject:To:From:Date:Message-Id:In-Reply-To:Reply-To:
+	 List-Id:List-Unsubscribe:List-Archive:List-Post:List-Help:
+	 List-Subscribe:Content-Type:Content-Transfer-Encoding:Sender;
+	b=t4LTkdaFzONVyAlhNjNArpmFW1dxr6KZCo9MsONWPZXsigvjl9cbUBNO7cuRlAGUn
+	 7XQjhJSL32BwBk8MoCQNlHhEieHh1ixDiYExnrTer3qHlRZss8CqwA39j/lcl+CnHS
+	 KbYtIjcOx9TnwYnB73yf+R04gFeXm+MRWxrqVWzw=</dkim-signature><x-original-to>python-bugs-list@python.org</x-original-to><delivered-to>python-bugs-list@mail.python.org</delivered-to><received>from albatross.python.org (localhost [127.0.0.1])
+	by mail.python.org (Postfix) with ESMTP id 3QRQd23r97z7Lkl
+	for &lt;python-bugs-list@python.org&gt;;
+	Sat,  7 May 2011 12:07:18 +0200 (CEST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/simple; d=python.org; s=200901;
+	t=1304762838; i=@python.org;
+	bh=zdSohIg5oCdx7tqUX0nItgBbgvLJ4T73he83SwycaYk=;
+	h=MIME-Version:Content-Type:Subject:To:From:Date:Reply-To:
+	Message-Id:In-Reply-To:Content-Transfer-Encoding;
+	b=Miiawf54KoeH1t7EsQPtS6qyAHGbNlcaoiEDMd7mEnIkXxqZH544ujbRnoV1r47nF
+	ADAhwJQYFY6/9jEGhO+Ye8BqEACbnnonMPlk6BOwjIVZ09ZrFtpRTjbQjmZUfcEj3u
+	/07RmkwqQAxb25ORK5c0NS5xeMrHkbMplilALkmI=</dkim-signature><x-spam-status>OK 0.001</x-spam-status><x-spam-evidence>'*H*': 1.00; '*S*': 0.00; 'subject:module': 0.04;
+	'feature.': 0.07; 'url:bugs': 0.07; 'python': 0.07; 'raised.':
+	0.09; 'tracker': 0.09; 'written': 0.12;
+	'from:addr:bugs.python.org': 0.16; 'from:addr:report': 0.16;
+	'message-id:@psf.upfronthosting.co.za': 0.16; 'received:10.0.0.1':
+	0.16; 'received:psf.upfronthosting.co.za': 0.16;
+	'received:upfronthosting.co.za': 0.16; 'reply-
+	to:addr:bugs.python.org': 0.16; 'reply-to:addr:report': 0.16;
+	'reply-to:name:python tracker': 0.16; 'url:patch': 0.16;
+	'subject:] ': 0.16; '----------': 0.18; 'comment:': 0.19; 'header
+	:In-Reply-To:1': 0.22; 'doc': 0.23; 'demonstrate': 0.26; 'tests':
+	0.26; 'instead': 0.26; '(as': 0.29; 'explains': 0.29; 'subject:[':
+	0.34; 'file': 0.35; 'data': 0.37; 'url:python': 0.37; 'patch':
+	0.38; 'received:10.0.0': 0.38; 'subject:skip:p 10': 0.38;
+	'url:org': 0.38; 'signal': 0.39; 'subject: \n\t': 0.39;
+	'to:addr:python.org': 0.39; 'how': 0.39; 'simple': 0.60; 'header
+	:Message-Id:1': 0.62; 'header:Reply-To:1': 0.72; 'victor': 0.84</x-spam-evidence><received>from localhost (HELO mail.python.org) (127.0.0.1)
+	by albatross.python.org with SMTP; 07 May 2011 12:07:18 +0200</received><received>from psf.upfronthosting.co.za (bugs.python.org [46.4.197.70])
+	by mail.python.org (Postfix) with ESMTP
+	for &lt;python-bugs-list@python.org&gt;;
+	Sat,  7 May 2011 12:07:18 +0200 (CEST)</received><received>from psf.upfronthosting.co.za (localhost [10.0.0.1])
+	by psf.upfronthosting.co.za (Postfix) with ESMTP id 2B41D1D88C
+	for &lt;python-bugs-list@python.org&gt;;
+	Sat,  7 May 2011 12:07:18 +0200 (CEST)</received><mime-version>1.0</mime-version><date>Sat, 07 May 2011 10:07:18 +0000</date><precedence>bulk</precedence><x-roundup-name>Python tracker</x-roundup-name><x-roundup-loop>hello</x-roundup-loop><x-roundup-version>1.4.10</x-roundup-version><message-id>1304762838.12.0.883579579237.issue8407@psf.upfronthosting.co.za</message-id><x-roundup-issue-status>open</x-roundup-issue-status><x-roundup-issue-files>signal_pthread_sigmask-2.patch, signalfd-3.patch,
+	pending_signals.patch, pending_signals-3.patch,
+	wakeup_signum.patch</x-roundup-issue-files><x-roundup-issue-type>feature request</x-roundup-issue-type><x-roundup-issue-keywords>patch, needs review</x-roundup-issue-keywords><x-roundup-issue-severity>normal</x-roundup-issue-severity><x-roundup-issue-versions>Python 3.3</x-roundup-issue-versions><x-roundup-issue-priority>normal</x-roundup-issue-priority><x-roundup-issue-components>Extension Modules, Library (Lib)</x-roundup-issue-components><in-reply-to>&lt;1271307639.03.0.656473126494.issue8407@psf.upfronthosting.co.za&gt;</in-reply-to><x-beenthere>python-bugs-list@python.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><reply-to>Python tracker &lt;report@bugs.python.org&gt;</reply-to><list-id>List which receives bug reports on Python
+	&lt;python-bugs-list.python.org&gt;</list-id><list-unsubscribe>&lt;http://mail.python.org/mailman/options/python-bugs-list&gt;,
+	&lt;mailto:python-bugs-list-request@python.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.python.org/pipermail/python-bugs-list&gt;</list-archive><list-post>&lt;mailto:python-bugs-list@python.org&gt;</list-post><list-help>&lt;mailto:python-bugs-list-request@python.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.python.org/mailman/listinfo/python-bugs-list&gt;,
+	&lt;mailto:python-bugs-list-request@python.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>python-bugs-list-bounces+velma.pena.rice=a.markmail.org@python.org</sender><errors-to>python-bugs-list-bounces+velma.pena.rice=a.markmail.org@python.org</errors-to></headers><normalized-references><normalized-message-id>1304762838.12.0.883579579237.issue8407@psf.upfronthosting.co.za</normalized-message-id><normalized-in-reply-to>1271307639.03.0.656473126494.issue8407@psf.upfronthosting.co.za</normalized-in-reply-to></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">
+STINNER Victor &lt;<email>victor.stinner@haypocalc.com</email>&gt; added the comment:
+
+</para><para depth="0">wakeup_signum.patch: simple patch to write the signal number (as a single byte)<br/>instead of just b'\x00' into the wake up file descriptor. It gives the ability<br/>to watch more than one signal and be able to know which one was raised. Included<br/>tests demonstrate the feature. The doc explains how to decode data written to<br/>the file descriptor.
+
+</para><para depth="0">----------
+Added file: <url>http://bugs.python.org/file21922/wakeup_signum.patch</url>
+
+</para><footer type="signature" depth="0" hash="17753301159941138961">_______________________________________
+Python tracker &lt;<email>report@bugs.python.org</email>&gt;
+&lt;<url>http://bugs.python.org/issue8407</url>&gt;
+</footer><footer type="noise" depth="0">_______________________________________
+</footer><footer type="list-management" depth="0">_______________________________________________
+Python-bugs-list mailing list
+Unsubscribe:<br/><url>http://mail.python.org/mailman/options/python-bugs-list/velma.pena.rice%40a.markmail.org</url>
+
+</footer></body></message>

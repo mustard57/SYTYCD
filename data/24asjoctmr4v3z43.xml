@@ -1,0 +1,25 @@
+<message message-id="455F01BF.7090101@club-internet.fr" list="org.openoffice.fr.prog" id="24asjoctmr4v3z43" type="general" date="2006-11-18T13:51:11+01:00" year="2006-01-01" year-month="2006-11-01" year-month-day="2006-11-18" thread-id="q6ixqzrbfrmgeqzi"><headers><envelope-from-line>From prog@fr.openoffice.org Sat Nov 18 05:08:45 2006</envelope-from-line><from personal="Bernard Marcelly" address="marcelly@club-internet.fr">Bernard Marcelly &lt;marcelly@club-internet.fr&gt;</from><to personal="prog@fr.openoffice.org" address="prog@fr.openoffice.org">prog@fr.openoffice.org</to><subject normal="[prog] Récupération variable state d'=?UTF-8?B?dW4gUHVzaEJ1dHRvbg==?=">Re: [prog]  Récupération variable state d'=?UTF-8?B?dW4gUHVzaEJ1dHRvbg==?=</subject><return-path>marcelly@club-internet.fr</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-0.0 required=5.0 tests=BAYES_40,SUBJECT_FUZZY_TION
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact prog-help@fr.openoffice.org; run by ezmlm</mailing-list><delivered-to>mailing list prog@fr.openoffice.org</delivered-to><received>(qmail 27316 invoked from network); 18 Nov 2006 12:51:15 -0000</received><received>from cylon1.sjc.collab.net (204.16.104.10)
+  by s002.sjc.collab.net with SMTP; 18 Nov 2006 12:51:15 -0000</received><received>from relay-bm.club-internet.fr ([194.158.104.68])
+  by cylon1.sjc.collab.net with ESMTP; 18 Nov 2006 04:51:14 -0800</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AgAAAOiOXkXCnmhEh2dsb2JhbACMRgEBAQgOKg</x-ironport-anti-spam-result><x-ironport-av>i="4.09,436,1157353200"; 
+   d="scan'208"; a="45709479:sNHT16615781"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from [127.0.0.1] (bny92-2-87-91-30-212.dsl.club-internet.fr [87.91.30.212])
+	by relay-bm.club-internet.fr (Postfix) with ESMTP id 62D8F25617
+	for &lt;prog@fr.openoffice.org&gt;; Sat, 18 Nov 2006 13:51:13 +0100 (CET)</received><date>Sat, 18 Nov 2006 13:51:11 +0100</date><mime-version>1.0</mime-version><message-id>455F01BF.7090101@club-internet.fr</message-id><user-agent>Thunderbird 1.5.0.8 (Windows/20061025)</user-agent><references>&lt;loom.20061118T113109-95@post.gmane.org&gt;</references><in-reply-to>&lt;loom.20061118T113109-95@post.gmane.org&gt;</in-reply-to><content-type>text/plain;
+		charset="utf-8";
+		format="flowed"</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-avk-virus-check>AVK 17.902;74B55F6</x-avk-virus-check></headers><normalized-references><normalized-message-id>455F01BF.7090101@club-internet.fr</normalized-message-id><normalized-in-reply-to>loom.20061118T113109-95@post.gmane.org</normalized-in-reply-to><normalized-reference>loom.20061118T113109-95@post.gmane.org</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;&#9;charset=&quot;utf-8&quot;;&#13;&#10;&#9;&#9;format=&quot;flowed&quot;"><para depth="0">Bonjour Christophe
+Message du 2006-11-18 11:40:
+</para><quote depth="1"><quotepara depth="1">
+Je souhaiterais connaitre la méthode pour récupérer l'état d'un "PushButton"
+régler en mode bascule dans un formulaire.
+
+</quotepara><quotepara depth="1">En examinant ses propriètés avec la méthode suivante, je ne trouve ancune
+variable qui change et notament la variable state qui reste sur 0 est ce un bug
+ou la méthode n'est pas bonne?
+
+</quotepara></quote><para depth="0">C'est l'Issue 63286 qui sera corrigée sur la version 2.1.
+
+</para><para depth="0">  Bonne journée
+    Bernard
+
+</para></body></message>

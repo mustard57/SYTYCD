@@ -1,0 +1,50 @@
+<message message-id="22372479.2007.1296757412866.JavaMail.geo-discussion-forums@yqq19" list="com.googlegroups.3dwh" id="24c4gjyzkxuz26hy" type="general" date="2011-02-03T10:23:29.218804-08:00" year="2011-01-01" year-month="2011-02-01" year-month-day="2011-02-03" thread-id="24c4gjyzkxuz26hy"><headers><envelope-from-line>Thu Feb 03 10:23:52 2011</envelope-from-line><from personal="MaNo" address="fonkarapap@gmail.com">MaNo &lt;fonkarapap@gmail.com&gt;</from><to personal="3dwh@googlegroups.com" address="3dwh@googlegroups.com">3dwh@googlegroups.com</to><subject normal="Google maps update, notifies the model!">Google maps update, notifies the model!</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 256
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Thu, 3 Feb 2011 10:23:52 -0800 (GMT-08:00)</received><received>from mail-gw0-f60.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id A7BC42908097
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Thu,  3 Feb 2011 10:23:28 -0800 (PST)</received><received>by gwj15 with SMTP id 15sf898352gwj.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Thu, 03 Feb 2011 10:23:51 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:x-beenthere:date:from:reply-to:to:message-id
+         :subject:mime-version:x-original-sender:precedence:mailing-list
+         :list-id:list-post:list-help:list-archive:sender:list-subscribe
+         :list-unsubscribe:content-type;
+        bh=jaVqFIY5Wgxqx3E1+4zSWjObG/Rmnk0649W3lfb54RQ=;
+        b=MlkqKxjvKUXMYKOuJOqWwsCzkffzY2voHaNUQHFCCC7OpRYjTFs1Bk6hx407+hSGbR
+         2DmciR3mLnNSYZ9H99mFUCtWbmvDMR/3bISkmBYfNv9EFOBE+LB0LJBmYi7kBMWB9BGH
+         w/MxkLxU48UV0wEIqY8mK5ClYLTS2YsntSJkk=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:date:from:reply-to:to:message-id:subject:mime-version
+         :x-original-sender:precedence:mailing-list:list-id:list-post
+         :list-help:list-archive:sender:list-subscribe:list-unsubscribe
+         :content-type;
+        b=IGpfoClu8f9CSQqosIXViTYhsACQvTRKcVn8RA0dWteNPXufJNBq5MlddBEuRcl5p/
+         5hYCXKb8IBzswIOa8nljldavaG48nVvDi9fnoh71YYSDCAnsKvpfNylF+bQtPN0ub6OE
+         AKG++xaKBkcgLYEvt1rUZ+yrCHgJFeLnLFGzQ=</domainkey-signature><received>by 10.90.34.15 with SMTP id h15mr830873agh.7.1296757431285;
+        Thu, 03 Feb 2011 10:23:51 -0800 (PST)</received><x-beenthere>3dwh@googlegroups.com</x-beenthere><received>by 10.90.138.2 with SMTP id l2ls309020agd.4.p; Thu, 03 Feb 2011
+ 10:23:33 -0800 (PST)</received><received>by 10.90.99.20 with SMTP id w20mr820141agb.34.1296757413599;
+        Thu, 03 Feb 2011 10:23:33 -0800 (PST)</received><date>Thu, 3 Feb 2011 10:23:32 -0800 (PST)</date><reply-to>3dwh@googlegroups.com</reply-to><message-id>22372479.2007.1296757412866.JavaMail.geo-discussion-forums@yqq19</message-id><mime-version>1.0</mime-version><x-original-sender>fonkarapap@gmail.com</x-original-sender><precedence>list</precedence><mailing-list>list 3dwh@googlegroups.com; contact 3dwh+owners@googlegroups.com</mailing-list><list-id>&lt;3dwh.googlegroups.com&gt;</list-id><list-post>&lt;http://groups.google.com/group/3dwh/post?hl=en_US&gt;, &lt;mailto:3dwh@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:3dwh+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/3dwh?hl=en_US&gt;</list-archive><sender>3dwh@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/3dwh/subscribe?hl=en_US&gt;, &lt;mailto:3dwh+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/3dwh/subscribe?hl=en_US&gt;, &lt;mailto:3dwh+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>multipart/alternative; 
+	boundary="----=_Part_2006_14613390.1296757412863"</content-type></headers><normalized-references><normalized-message-id>22372479.2007.1296757412866.JavaMail.geo-discussion-forums@yqq19</normalized-message-id></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_2006_14613390.1296757412863&quot;" type="text/plain; charset=ISO-8859-1"><para depth="0">I was surprised last night when I saw a cute map thumbnail in front of the 
+title of the Sounio model in Attica, Greece.
+I had noticed already that the map in atticca has been updated and i had in 
+mind to update the model soon.
+But after the notification, i worked all night and replaced the filel. I had 
+to reposition again, correct some old silly mistakes 
+and the model looks great! The new terrain pass very much to the ancient 
+ruins and gives another atmosphere!
+<url>http://sketchup.google.com/3dwarehouse/details?mid=a020874608cad09bfe0d75618d817a51</url>
+Thanks to the 3dwarehouse Team for the new notification! It shows they 
+respect the modelers.
+A couple of weeks i had read in this forum from SnowTiger, who was 
+complaining for that and proposing excactly the same thing!
+Thank you too, SnowTiger! Keep on great!
+
+</para><para depth="0">ps: email notification would be even better because i think that the most 
+modelers don't visit their models everyday 
+
+</para><footer type="signature" depth="0" hash="18060797537150143169">-- 
+You received this message because you are subscribed to the "3D Modeling for<br/>Google Earth &amp; Maps" group.
+
+</footer><para depth="0">To participate in this discussion or adjust your membership options, visit<br/><url>http://sketchup.google.com/3dwarehouse/forum</url>
+</para></body></message>

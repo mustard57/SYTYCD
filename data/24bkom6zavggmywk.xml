@@ -1,0 +1,53 @@
+<message message-id="200505151716.j4FHGdgI020175@cvs-int.fedora.redhat.com" list="com.redhat.fedora-extras-commits" id="24bkom6zavggmywk" type="checkins" date="2005-05-15T13:16:39-04:00" year="2005-01-01" year-month="2005-05-01" year-month-day="2005-05-15" thread-id="24bkom6zavggmywk"><headers><envelope-from-line>From accounts@fedora.redhat.com Sun May 15 13:16:41 2005</envelope-from-line><from personal="&quot;W. Michael Petullo&quot; (mikep)" address="fedora-extras-commits@redhat.com">"\"W. Michael Petullo\" (mikep)" &lt;fedora-extras-commits@redhat.com&gt;</from><to personal="fedora-extras-commits@redhat.com" address="fedora-extras-commits@redhat.com">fedora-extras-commits@redhat.com</to><subject normal="rpms/pam_mount import.log,1.7,1.8">rpms/pam_mount import.log,1.7,1.8</subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.12.11/8.12.10) with ESMTP id
+	j4FHGePY031833
+	for &lt;fedora-extras-commits@listman.util.phx.redhat.com&gt;;
+	Sun, 15 May 2005 13:16:40 -0400</received><received>from mx1.util.phx.redhat.com (mx1.util.phx.redhat.com [10.8.4.92])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with ESMTP id j4FHGeO29347
+	for &lt;fedora-extras-commits@redhat.com&gt;; Sun, 15 May 2005 13:16:40 -0400</received><received>from fedora-admin.mgmt.phx.redhat.com
+	(fedora-admin.mgmt.phx.redhat.com [10.8.7.50])
+	by mx1.util.phx.redhat.com (8.11.6/8.11.6) with ESMTP id j4FHGek06539
+	for &lt;fedora-extras-commits@redhat.com&gt;; Sun, 15 May 2005 13:16:40 -0400</received><received>from fedora-admin.mgmt.phx.redhat.com (localhost.localdomain
+	[127.0.0.1])
+	by fedora-admin.mgmt.phx.redhat.com (8.12.11/8.12.11) with ESMTP id
+	j4FHGeIP009546
+	for &lt;fedora-extras-commits@redhat.com&gt;; Sun, 15 May 2005 13:16:40 -0400</received><received>(from accounts@localhost)
+	by fedora-admin.mgmt.phx.redhat.com (8.12.11/8.12.11/Submit) id
+	j4FHGebo009544
+	for fedora-extras-commits@redhat.com; Sun, 15 May 2005 13:16:40 -0400</received><received>from mx1.util.phx.redhat.com (mx1.util.phx.redhat.com [10.8.4.92])
+	by fedora-admin.mgmt.phx.redhat.com (8.12.11/8.12.11) with ESMTP id
+	j4FHGdnG009533
+	for &lt;cvsextras@fedora.redhat.com&gt;; Sun, 15 May 2005 13:16:39 -0400</received><received>from cvs-int.fedora.redhat.com (nat-pool.util.phx.redhat.com
+	[10.8.5.200])
+	by mx1.util.phx.redhat.com (8.11.6/8.11.6) with ESMTP id j4FHGdk06535
+	for &lt;cvsextras@fedora.redhat.com&gt;; Sun, 15 May 2005 13:16:39 -0400</received><received>from cvs.fedora.redhat.com (localhost.localdomain [127.0.0.1])
+	by cvs-int.fedora.redhat.com (8.12.11/8.12.11) with SMTP id
+	j4FHGdgI020175
+	for &lt;cvsextras@fedora.redhat.com&gt;; Sun, 15 May 2005 13:16:39 -0400</received><message-id>200505151716.j4FHGdgI020175@cvs-int.fedora.redhat.com</message-id><received>by cvs.fedora.redhat.com (sSMTP sendmail emulation);
+	Sun, 15 May 2005 13:16:39 -0400</received><old-from>"W. Michael Petullo" &lt;mikep@fedora.redhat.com&gt;</old-from><date>Sun, 15 May 2005 13:16:39 -0400</date><content-type>text/plain; charset=iso-8859-1</content-type><x-cvsroot>/cvs/extras</x-cvsroot><x-cvs-module>rpms</x-cvs-module><x-cvs-directory>rpms/pam_mount</x-cvs-directory><x-cvs-user>mikep</x-cvs-user><x-cvs-server>cvs-int.fedora.redhat.com</x-cvs-server><precedence>first-class</precedence><x-loop>fedora-extras-commits@redhat.com</x-loop><x-beenthere>fedora-extras-commits@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><reply-to>Fedora Extras CVS commits &lt;fedora-extras-commits@redhat.com&gt;</reply-to><list-id>Fedora Extras CVS commits &lt;fedora-extras-commits.redhat.com&gt;</list-id><list-unsubscribe>&lt;http://www.redhat.com/mailman/listinfo/fedora-extras-commits&gt;, 
+	&lt;mailto:fedora-extras-commits-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-extras-commits&gt;</list-archive><list-post>&lt;mailto:fedora-extras-commits@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-extras-commits-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;http://www.redhat.com/mailman/listinfo/fedora-extras-commits&gt;, 
+	&lt;mailto:fedora-extras-commits-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Sun, 15 May 2005 17:16:41 -0000</x-list-received-date><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>200505151716.j4FHGdgI020175@cvs-int.fedora.redhat.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Author: mikep
+
+</para><para depth="0">Update of /cvs/extras/rpms/pam_mount
+In directory cvs-int.fedora.redhat.com:/tmp/cvs-serv20144
+
+</para><para depth="0">Modified Files:
+	import.log 
+Log Message:
+auto-import pam_mount-0.9.24-1 on branch devel from pam_mount-0.9.24-1.src.rpm
+
+</para><para depth="0">Index: import.log
+===================================================================
+RCS file: /cvs/extras/rpms/pam_mount/import.log,v
+retrieving revision 1.7
+retrieving revision 1.8
+diff -u -r1.7 -r1.8
+--- import.log	5 May 2005 04:16:52 -0000	1.7
++++ import.log	15 May 2005 17:16:37 -0000	1.8
+@@ -4,3 +4,4 @@
+ pam_mount-0_9_23-0_fdr_1:FC-1:pam_mount-0.9.23-0.fdr.1.src.rpm:1115140797
+ pam_mount-0_9_23-1:HEAD:pam_mount-0.9.23-1.src.rpm:1115266422
+ pam_mount-0_9_23-1:FC-3:pam_mount-0.9.23-1.src.rpm:1115266499
++pam_mount-0_9_24-1:HEAD:pam_mount-0.9.24-1.src.rpm:1116177304
+</para></body></message>

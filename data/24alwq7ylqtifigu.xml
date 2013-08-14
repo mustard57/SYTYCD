@@ -1,0 +1,68 @@
+<message message-id="de6e0d6d401b9302e1432914120a75ca@ruby-forum.com" list="com.googlegroups.rubyonrails-talk" id="24alwq7ylqtifigu" type="general" date="2009-03-31T20:59:34.559499-08:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-31" thread-id="65cbhmeoy6nwvr2c"><headers><envelope-from-line>Tue Mar 31 20:59:57 2009</envelope-from-line><from personal="Tushar Gandhi" address="rails-mailing-list@andreas-s.net">Tushar Gandhi &lt;rails-mailing-list@andreas-s.net&gt;</from><to personal="rubyonrails-talk@googlegroups.com" address="rubyonrails-talk@googlegroups.com">rubyonrails-talk@googlegroups.com</to><subject normal="[Rails] Re: Application without database.yml">[Rails] Re: Application without database.yml</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 8
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Tue, 31 Mar 2009 20:59:57 -0800 (GMT-08:00)</received><received>from yw-out-2122.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id EDEAD2908056
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 31 Mar 2009 21:59:33 -0700 (PDT)</received><received>by yw-out-2122.google.com with SMTP id 8so1089536yws.75
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 31 Mar 2009 21:59:56 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :received:received:received-spf:authentication-results:received
+         :old-return-path:date:from:reply-to:to:message-id:in-reply-to
+         :references:subject:mime-version:content-type
+         :content-transfer-encoding:errors-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        bh=WG7vBlCgUNqQBdUqFQqJxj0OY1WLolnfv+p48yrily4=;
+        b=FYdXFQu+sWjPAPutoG5+QLBC2ltaH/SKvwO9j/jN2reUdXVok5TMA5pk0tTSKFBVi5
+         I1U8u/1EBhgMehzRwdxEJpF01iW8L/IMftEoTHUJO0MJwbBm4FJ6A2+P17wu7ri+3AYt
+         UoBNhzrX/cPlahTcrNgWJtmMmzfoUHZaLpx9Q=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:received-spf:authentication-results
+         :old-return-path:date:from:reply-to:to:message-id:in-reply-to
+         :references:subject:mime-version:content-type
+         :content-transfer-encoding:errors-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        b=CrmAqGLxiR/uuhZ1KZIg7AmBf/pXs00D+zkTknsYzW5+8pdxuRIipCQVMHHdGoXqI4
+         9wNlu5krfVZIOjacESZabJ7h4+cs93ktgfQ584xvNe5gu2XHOBQEuhlchODrfRsK3rNA
+         VDuKRq4Nzurw+a8fMykaHtAsViVhS3f9ymvqg=</domainkey-signature><received>by 10.150.227.14 with SMTP id z14mr1085339ybg.19.1238561988103;
+        Tue, 31 Mar 2009 21:59:48 -0700 (PDT)</received><received>by 10.176.203.19 with SMTP id a19gr137662yqg.0;
+	Tue, 31 Mar 2009 21:59:41 -0700 (PDT)</received><x-sender>www-data@server.andreas-s.net</x-sender><x-apparently-to>rubyonrails-talk@googlegroups.com</x-apparently-to><received>by 10.204.62.7 with SMTP id v7mr178781bkh.8.1238561980130; Tue, 31 Mar 2009 21:59:40 -0700 (PDT)</received><received>from server.andreas-s.net (server.andreas-s.net [88.198.17.227]) by gmr-mx.google.com with ESMTP id 15si288959fxm.1.2009.03.31.21.59.40; Tue, 31 Mar 2009 21:59:40 -0700 (PDT)</received><received-spf>pass (google.com: best guess record for domain of www-data@server.andreas-s.net designates 88.198.17.227 as permitted sender) client-ip=88.198.17.227;</received-spf><authentication-results>gmr-mx.google.com; spf=pass (google.com: best guess record for domain of www-data@server.andreas-s.net designates 88.198.17.227 as permitted sender) smtp.mail=www-data@server.andreas-s.net</authentication-results><received>from localhost (localhost [127.0.0.1]) (uid 33) by server.andreas-s.net with local; Wed, 01 Apr 2009 06:59:39 +0200 id 002B5633.49D2F4BB.00005652</received><old-return-path>&lt;rails-mailing-list@andreas-s.net&gt;</old-return-path><date>Wed, 1 Apr 2009 06:59:39 +0200</date><reply-to>rubyonrails-talk@googlegroups.com</reply-to><message-id>de6e0d6d401b9302e1432914120a75ca@ruby-forum.com</message-id><in-reply-to>&lt;4704ff69-7b2b-42bf-8366-29aacf217d5e@p6g2000pre.googlegroups.com&gt;</in-reply-to><references>&lt;d091de0780c858bef1edce9ac37254f4@ruby-forum.com&gt; &lt;b471d3c7-ce86-4a73-a317-b081f376dad8@y13g2000yqn.googlegroups.com&gt; &lt;ac4a399ab460b1d397f82eb9c5e4b259@ruby-forum.com&gt; &lt;895331a53111d96817748701769002e9@ruby-forum.com&gt; &lt;4704ff69-7b2b-42bf-8366-29aacf217d5e@p6g2000pre.googlegroups.com&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><errors-to>rails-mailing-list@andreas-s.net</errors-to><sender>rubyonrails-talk@googlegroups.com</sender><precedence>bulk</precedence><x-google-loop>groups</x-google-loop><mailing-list>list rubyonrails-talk@googlegroups.com;
+	contact rubyonrails-talk+owner@googlegroups.com</mailing-list><list-id>&lt;rubyonrails-talk.googlegroups.com&gt;</list-id><list-post>&lt;mailto:rubyonrails-talk@googlegroups.com&gt;</list-post><list-help>&lt;mailto:rubyonrails-talk+help@googlegroups.com&gt;</list-help><list-unsubscribe>&lt;http://googlegroups.com/group/rubyonrails-talk/subscribe&gt;,
+	&lt;mailto:rubyonrails-talk+unsubscribe@googlegroups.com&gt;</list-unsubscribe><x-beenthere-env>rubyonrails-talk@googlegroups.com</x-beenthere-env><x-beenthere>rubyonrails-talk@googlegroups.com</x-beenthere></headers><normalized-references><normalized-message-id>de6e0d6d401b9302e1432914120a75ca@ruby-forum.com</normalized-message-id><normalized-in-reply-to>4704ff69-7b2b-42bf-8366-29aacf217d5e@p6g2000pre.googlegroups.com</normalized-in-reply-to><normalized-reference>d091de0780c858bef1edce9ac37254f4@ruby-forum.com</normalized-reference><normalized-reference>b471d3c7-ce86-4a73-a317-b081f376dad8@y13g2000yqn.googlegroups.com</normalized-reference><normalized-reference>ac4a399ab460b1d397f82eb9c5e4b259@ruby-forum.com</normalized-reference><normalized-reference>895331a53111d96817748701769002e9@ruby-forum.com</normalized-reference><normalized-reference>4704ff69-7b2b-42bf-8366-29aacf217d5e@p6g2000pre.googlegroups.com</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+Jason Arora wrote:
+</para><quote depth="1"><quotepara depth="1">It is possible to use Rails without a database. This is what Fernando
+is referring to:
+
+</quotepara><quotepara depth="1">  # Skip frameworks you're not going to use. To use Rails without a
+database
+  # you must remove the Active Record framework.
+  # config.frameworks -=
+[ :active_record, :active_resource, :action_mailer ]
+
+</quotepara><quotepara depth="1">On Mar 31, 3:13�am, Fernando Perez &lt;<email>rails-mailing-l...@andreas-s.net</email>&gt;
+</quotepara></quote><para depth="0">
+Hi,
+I removed comment of the
+config.frameworks -=[ :active_record, :active_resource, :action_mailer 
+].
+I removed the database.yml and tried to start the server. I am getting 
+an error
+"uninitialized constant Rails::Plugin::ActiveRecord (NameError)"
+I am using rfacebook plugin in this application.
+Could you give me the solution for this?
+Thanks,
+Tushar
+
+</para><footer type="signature" depth="0" hash="17010523593617309943">-- 
+Posted via <url>http://www.ruby-forum.com/</url>.
+
+</footer><footer type="list-management" depth="0">--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups "Ruby<br/>on Rails: Talk" group.
+To post to this group, send email to <email>rubyonrails-talk@googlegroups.com</email>
+To unsubscribe from this group, send email to<br/>rubyonrails-talk+<email>unsubscribe@googlegroups.com</email>
+For more options, visit this group at<br/><url>http://groups.google.com/group/rubyonrails-talk?hl=en</url>
+-~----------~----~----~----~------~----~------~--~---
+
+</footer></body></message>

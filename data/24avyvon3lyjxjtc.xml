@@ -1,0 +1,59 @@
+<message message-id="26557.167.153.10.243.1139002701.squirrel@webmail.zedshaw.com" list="org.ruby-lang.ruby-talk" id="24avyvon3lyjxjtc" type="announcements" date="2006-02-04T06:38:41+09:00" year="2006-01-01" year-month="2006-02-01" year-month-day="2006-02-03" thread-id="qv7ebzzedaeidmtp"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="zedshaw@zedshaw.com" address="zedshaw@zedshaw.com">zedshaw@zedshaw.com</from><subject normal="[ANN] Mongrel HTTP Library 0.2.2 (Serving Directories)">Re: [ANN] Mongrel HTTP Library 0.2.2 (Serving Directories)</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.lang.ruby.general</newsgroups><date>Sat, 4 Feb 2006 06:38:41 +0900</date><lines>38</lines><approved>news@gmane.org</approved><message-id>26557.167.153.10.243.1139002701.squirrel@webmail.zedshaw.com</message-id><references>&lt;AD25AB45-7E91-417B-984A-EAAB9968C416@zedshaw.com&gt; 
+    &lt;e25e4df80602030638k3b68b4bhf2bfc7d773e82770@mail.gmail.com&gt; 
+    &lt;e25e4df80602030641p3e05e489td504535cbe2afcb1@mail.gmail.com&gt; 
+    &lt;59064.69.10.68.195.1138978681.squirrel@webmail.zedshaw.com&gt;
+    &lt;e25e4df80602030707h3ce2f1f1l8aabfc8df47038b@mail.gmail.com&gt;</references><reply-to>ruby-talk@ruby-lang.org</reply-to><nntp-posting-host>main.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain;charset=iso-8859-1</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><x-trace>sea.gmane.org 1139002760 7956 80.91.229.2 (3 Feb 2006 21:39:20 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Fri, 3 Feb 2006 21:39:20 +0000 (UTC)</nntp-posting-date><original-x-from>ruby-talk-admin@ruby-lang.org Fri Feb 03 22:39:18 2006</original-x-from><return-path>ruby-talk-admin@ruby-lang.org</return-path><envelope-to>gclrg-ruby-talk@m.gmane.org</envelope-to><original-received>from beryllium.ruby-lang.org ([210.163.138.100])
+	by ciao.gmane.org with esmtp (Exim 4.43)
+	id 1F58eA-0005mu-Qo
+	for gclrg-ruby-talk@m.gmane.org; Fri, 03 Feb 2006 22:39:15 +0100</original-received><original-received>from beryllium.ruby-lang.org (beryllium.ruby-lang.org [127.0.0.1])
+	by beryllium.ruby-lang.org (Postfix) with ESMTP id 4095033C82;
+	Sat,  4 Feb 2006 06:38:53 +0900 (JST)</original-received><original-received>from localhost (beryllium.ruby-lang.org [127.0.0.1])
+	by beryllium.ruby-lang.org (Postfix) with ESMTP id 746B333CAF
+	for &lt;ruby-talk@ruby-lang.org&gt;; Sat,  4 Feb 2006 06:38:41 +0900 (JST)</original-received><original-received>from beryllium.ruby-lang.org ([127.0.0.1])
+	by localhost (beryllium.ruby-lang.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 07824-04 for &lt;ruby-talk@ruby-lang.org&gt;;
+	Sat, 4 Feb 2006 06:38:41 +0900 (JST)</original-received><original-received>from webmail1.sd.dreamhost.com (webmail1.sd.dreamhost.com [66.33.201.159])
+	by beryllium.ruby-lang.org (Postfix) with ESMTP id A5EFD33FFB
+	for &lt;ruby-talk@ruby-lang.org&gt;; Sat,  4 Feb 2006 06:38:36 +0900 (JST)</original-received><original-received>from webmail.zedshaw.com (localhost [127.0.0.1])
+	by webmail1.sd.dreamhost.com (Postfix) with ESMTP id D15312C6D7
+	for &lt;ruby-talk@ruby-lang.org&gt;; Fri,  3 Feb 2006 13:38:21 -0800 (PST)</original-received><original-received>from 167.153.10.243
+        (SquirrelMail authenticated user zedshaw@zedshaw.com)
+        by webmail.zedshaw.com with HTTP;
+        Fri, 3 Feb 2006 13:38:21 -0800 (PST)</original-received><delivered-to>ruby-talk@ruby-lang.org</delivered-to><original-posted>Fri, 3 Feb 2006 13:38:21 -0800 (PST)</original-posted><original-to>ruby-talk@ruby-lang.org (ruby-talk ML)</original-to><in-reply-to>&lt;e25e4df80602030707h3ce2f1f1l8aabfc8df47038b@mail.gmail.com&gt;</in-reply-to><x-ml-name>ruby-talk</x-ml-name><x-mail-count>178273</x-mail-count><x-mlserver>fml [fml 4.0.3 release (20011202/4.0.3)]; post only (only members can post)</x-mlserver><x-ml-info>If you have a question, send e-mail with the body
+	"help" (without quotes) to the address ruby-talk-ctl@ruby-lang.org;
+	help=&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=help&gt;</x-ml-info><user-agent>SquirrelMail/1.4.4</user-agent><x-original-to>ruby-talk@ruby-lang.org</x-original-to><x-virus-scanned>by amavisd-new-20030616-p10 (Debian) at ruby-lang.org</x-virus-scanned><x-spam-checker-version>SpamAssassin 3.0.3 (2005-04-27) on 
+	beryllium.ruby-lang.org</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-6.0 required=7.0 tests=BAYES_00,
+	CONTENT_TYPE_PRESENT,NO_REAL_NAME,RCVDFRMLOCALIP autolearn=no 
+	version=3.0.3</x-spam-status><precedence>bulk</precedence><original-lines>34</original-lines><list-id>ruby-talk.ruby-lang.org</list-id><list-software>fml [fml 4.0.3 release (20011202/4.0.3)]</list-software><list-post>&lt;mailto:ruby-talk@ruby-lang.org&gt;</list-post><list-owner>&lt;mailto:ruby-talk-admin@ruby-lang.org&gt;</list-owner><list-help>&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=help&gt;</list-help><list-unsubscribe>&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=unsubscribe&gt;</list-unsubscribe><xref>news.gmane.org gmane.comp.lang.ruby.general:135787</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.lang.ruby.general/135787&gt;</archived-at></headers><normalized-references><normalized-message-id>26557.167.153.10.243.1139002701.squirrel@webmail.zedshaw.com</normalized-message-id><normalized-in-reply-to>e25e4df80602030707h3ce2f1f1l8aabfc8df47038b@mail.gmail.com</normalized-in-reply-to><normalized-reference>AD25AB45-7E91-417B-984A-EAAB9968C416@zedshaw.com</normalized-reference><normalized-reference>e25e4df80602030638k3b68b4bhf2bfc7d773e82770@mail.gmail.com</normalized-reference><normalized-reference>e25e4df80602030641p3e05e489td504535cbe2afcb1@mail.gmail.com</normalized-reference><normalized-reference>59064.69.10.68.195.1138978681.squirrel@webmail.zedshaw.com</normalized-reference><normalized-reference>e25e4df80602030707h3ce2f1f1l8aabfc8df47038b@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain;charset=iso-8859-1"><quote depth="1"><quotepara depth="1">On 2/3/06, <email>zedshaw@zedshaw.com</email> &lt;<email>zedshaw@zedshaw.com</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+Did you make sure to require rubygems first?  Here's my install:
+</quotepara></quote></quote><para depth="0">&lt;snip&gt;
+
+</para><quote depth="1"><quotepara depth="1">Nope, different error now.  (Other gems work just fine, so I don't think
+it's my gem install)
+
+</quotepara><quotepara depth="1">irb(main):001:0&gt; require 'rubygems'
+=&gt; true
+irb(main):002:0&gt; require 'mongrel'
+NameError: uninitialized constant Mongrel
+        from ./mongrel.rb:4
+        from
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:21:in
+`require'
+        from (irb):2
+irb(main):003:0&gt;
+</quotepara></quote><para depth="0">
+Are you sure that you don't have any previous versions of Mongrel
+installed via source?  Or is ./mongrel.rb a file you're working on that's
+getting loaded when you do require?  The reason I ask is "from
+./mongrel.rb:4" means that you're trying to use Mongrel modules at line 4.
+ When I look at line 4 of the mongrel.rb library it's a "require
+'stringio'" line.  So, that error has to be coming from somewhere else.
+
+</para><para depth="0">Make sure you can identify all the "mongrel.rb" files on your system and
+that you're not loading the wrong one on accident.
+
+</para><para depth="0">Zed A. Shaw
+<url>http://www.zedshaw.com/</url>
+
+</para></body></message>

@@ -1,0 +1,47 @@
+<message message-id="E1OdQz8-00HVnA-P7@intern.SerNet.DE" list="org.samba.lists.samba-technical" id="24ay5csdwztxmnki" type="general" date="2010-07-26T18:56:04+02:00" year="2010-01-01" year-month="2010-07-01" year-month-day="2010-07-26" thread-id="jmx2pbfta34la3op"><headers><envelope-from-line>Mon Jul 26 08:57:11 2010</envelope-from-line><from personal="Volker Lendecke" address="Volker.Lendecke@SerNet.DE">Volker Lendecke &lt;Volker.Lendecke@SerNet.DE&gt;</from><to personal="James Peach" address="jorgar@gmail.com">James Peach &lt;jorgar@gmail.com&gt;</to><cc personal="James Peach" address="jamespeach@me.com">James Peach &lt;jamespeach@me.com&gt;</cc><subject normal="[PATCH] switch smbcli_open over to NTCreateAndX">Re: [PATCH] switch smbcli_open over to NTCreateAndX</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 659
+          for &lt;duane.harrington.stanton@a.markmail.org&gt;;
+          Mon, 26 Jul 2010 08:57:11 -0800 (GMT-08:00)</received><received>from lists.samba.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 877282908321
+	for &lt;duane.harrington.stanton@a.markmail.org&gt;; Mon, 26 Jul 2010 09:56:48 -0700 (PDT)</received><received>from fn.samba.org (localhost [127.0.0.1])
+	by lists.samba.org (Postfix) with ESMTP id 4EB8AAD08D;
+	Mon, 26 Jul 2010 10:57:10 -0600 (MDT)</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on fn.samba.org</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-4.3 required=3.8 tests=AWL,BAYES_00,INVALID_DATE,
+	RCVD_IN_DNSWL_MED autolearn=ham version=3.2.5</x-spam-status><x-original-to>samba-technical@samba.org</x-original-to><delivered-to>samba-technical@samba.org</delivered-to><received>from mail.SerNet.de (mail.SerNet.de [193.175.80.2])
+	by lists.samba.org (Postfix) with ESMTP id 16E2EAD076
+	for &lt;samba-technical@samba.org&gt;; Mon, 26 Jul 2010 10:57:04 -0600 (MDT)</received><received>from intern.SerNet.DE by mail.SerNet.DE with esmtp (Exim 4.69 #1)
+	id 1OdQz9-0005hK-3Z; Mon, 26 Jul 2010 18:57:03 +0200</received><received>by intern.SerNet.DE
+	id 1OdQz8-00HVnA-P7; Mon, 26 Jul 2010 18:57:02 +0200</received><received>by intern.SerNet.DE
+	id 1OdQz8-00HVmw-Dt; Mon, 26 Jul 2010 18:57:02 +0200</received><date>Mon, 26 Jul 2010 18:56:04 +0200</date><date>Mon, 26 Jul 2010 18:56:04 +0200</date><references>&lt;C934EB67-4AF9-4517-B28D-FEDB7AB50B4E@me.com&gt;
+	&lt;AANLkTikT-CF566F0avp5bPxTA1J84mlD9fGdMORPmHcw@mail.gmail.com&gt;
+	&lt;E1OcBF5-00D9hy-9l@intern.SerNet.DE&gt;
+	&lt;AANLkTimUFQ6-drR4h_iPwExvy1JMbSJp-akaTZX0cdrZ@mail.gmail.com&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><in-reply-to>&lt;AANLkTimUFQ6-drR4h_iPwExvy1JMbSJp-akaTZX0cdrZ@mail.gmail.com&gt;</in-reply-to><user-agent>Mutt/1.5.20 (2009-06-14)</user-agent><message-id>E1OdQz8-00HVnA-P7@intern.SerNet.DE</message-id><organization>SerNet GmbH, Goettingen, Germany</organization><x-beenthere>samba-technical@lists.samba.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><reply-to>Volker.Lendecke@SerNet.DE</reply-to><list-id>"Discussions on Samba internals. For general questions please
+	subscribe to the list samba@samba.org"
+	&lt;samba-technical.lists.samba.org&gt;</list-id><list-unsubscribe>&lt;https://lists.samba.org/mailman/options/samba-technical&gt;,
+	&lt;mailto:samba-technical-request@lists.samba.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.samba.org/pipermail/samba-technical&gt;</list-archive><list-post>&lt;mailto:samba-technical@lists.samba.org&gt;</list-post><list-help>&lt;mailto:samba-technical-request@lists.samba.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.samba.org/mailman/listinfo/samba-technical&gt;,
+	&lt;mailto:samba-technical-request@lists.samba.org?subject=subscribe&gt;</list-subscribe><sender>samba-technical-bounces@lists.samba.org</sender><errors-to>samba-technical-bounces@lists.samba.org</errors-to></headers><normalized-references><normalized-message-id>E1OdQz8-00HVnA-P7@intern.SerNet.DE</normalized-message-id><normalized-in-reply-to>AANLkTimUFQ6-drR4h_iPwExvy1JMbSJp-akaTZX0cdrZ@mail.gmail.com</normalized-in-reply-to><normalized-reference>C934EB67-4AF9-4517-B28D-FEDB7AB50B4E@me.com</normalized-reference><normalized-reference>AANLkTikT-CF566F0avp5bPxTA1J84mlD9fGdMORPmHcw@mail.gmail.com</normalized-reference><normalized-reference>E1OcBF5-00D9hy-9l@intern.SerNet.DE</normalized-reference><normalized-reference>AANLkTimUFQ6-drR4h_iPwExvy1JMbSJp-akaTZX0cdrZ@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">On Mon, Jul 26, 2010 at 09:33:14AM -0700, James Peach wrote:
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">Everybody else uses ntcreate, so this might be a
+little regression test for the "old" code.
+</quotepara></quote><quotepara depth="1">
+Well the end result of that argument is that smbtorture should use
+random ancient calls in unpredictable circumstances :) I counter by
+claiming that smbtorture should use the calls that are in use by real
+clients, since those are the ones that matter to users.
+</quotepara></quote><para depth="0">
+Well, it *does* use the modern calls in other circumstances.
+I would argue pretty stronly that we keep the old calls
+active. I had more than one day of bug-fixing of weird
+clients against NetApp filers, because those do exactly what
+you describe: They only serve the clients that are in their
+supported client matrix, they don't go an inch beyond what
+their clients demand. They don't act like Samba tries to
+act, namely try to do everything a Windows server would do.
+
+</para><para depth="0">But that's really a matter of philosophy.
+
+</para><para depth="0">If you apply that patch, please make sure that the
+corresponding call is still excercised in another test.
+
+</para><para depth="0">Thanks,
+
+</para><para depth="0">Volker
+</para></body></message>

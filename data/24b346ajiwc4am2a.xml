@@ -1,0 +1,67 @@
+<message message-id="F60DDAE4-1F0E-4E68-8C4C-7448982DB6B8@dgrmm.net" list="org.ruby-lang.ruby-talk" id="24b346ajiwc4am2a" type="general" date="2008-01-24T04:49:26+09:00" year="2008-01-01" year-month="2008-01-01" year-month-day="2008-01-23" thread-id="njentayghd5idcj6"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="David Morton" address="mortonda@dgrmm.net">David Morton &lt;mortonda@dgrmm.net&gt;</from><to personal="ruby-talk ML" address="ruby-talk@ruby-lang.org">ruby-talk ML &lt;ruby-talk@ruby-lang.org&gt;</to><subject normal="How to improve this code?">Re: How to improve this code?</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.lang.ruby.general</newsgroups><date>Thu, 24 Jan 2008 04:49:26 +0900</date><lines>51</lines><approved>news@gmane.org</approved><message-id>F60DDAE4-1F0E-4E68-8C4C-7448982DB6B8@dgrmm.net</message-id><references>&lt;8481b6ae68522e58f5839b51444599c3@ruby-forum.com&gt; &lt;Pine.LNX.4.64.0801231504510.11747@parore.tait.co.nz&gt; &lt;a18c7d02762f726b3335da29a7661a83@ruby-forum.com&gt; &lt;21620A0E-6F78-4776-A861-77C363C5DE9C@dgrmm.net&gt; &lt;772886391b4172307c5b14972688b5c1@ruby-forum.com&gt;</references><reply-to>ruby-talk@ruby-lang.org</reply-to><nntp-posting-host>lo.gmane.org</nntp-posting-host><mime-version>1.0 (Apple Message framework v915)</mime-version><content-type>text/plain; charset=US-ASCII; format=flowed; delsp=yes</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>ger.gmane.org 1201117845 25926 80.91.229.12 (23 Jan 2008 19:50:45 GMT)</x-trace><x-complaints-to>usenet@ger.gmane.org</x-complaints-to><nntp-posting-date>Wed, 23 Jan 2008 19:50:45 +0000 (UTC)</nntp-posting-date><original-x-from>ruby-talk-admin@ruby-lang.org Wed Jan 23 20:51:04 2008</original-x-from><return-path>ruby-talk-admin@ruby-lang.org</return-path><envelope-to>gclrg-ruby-talk@m.gmane.org</envelope-to><original-received>from carbon.ruby-lang.org ([221.186.184.68])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1JHlcb-0005Qd-QZ
+	for gclrg-ruby-talk@m.gmane.org; Wed, 23 Jan 2008 20:50:57 +0100</original-received><original-received>from carbon.ruby-lang.org (beryllium.ruby-lang.org [127.0.0.1])
+	by carbon.ruby-lang.org (Postfix) with ESMTP id 6A55E3C224C74;
+	Thu, 24 Jan 2008 04:49:30 +0900 (JST)</original-received><original-received>from S1.cableone.net (s1.cableone.net [24.116.0.227])
+	by carbon.ruby-lang.org (Postfix) with ESMTP id 59CC93C224BA3
+	for &lt;ruby-talk@ruby-lang.org&gt;; Thu, 24 Jan 2008 04:49:26 +0900 (JST)</original-received><original-received>from freedom.dgrmm.net (unverified [24.119.31.249]) 
+	by S1.cableone.net (CableOne SMTP Service S1) with ESMTP id 141144663-1872270 
+	for &lt;ruby-talk@ruby-lang.org&gt;; Wed, 23 Jan 2008 12:49:32 -0700</original-received><original-received>from localhost (localhost [127.0.0.1])
+	by freedom.dgrmm.net (Postfix) with ESMTP id BA6D711C605
+	for &lt;ruby-talk@ruby-lang.org&gt;; Wed, 23 Jan 2008 13:49:31 -0600 (CST)</original-received><original-received>from freedom.dgrmm.net ([127.0.0.1])
+ by localhost (host.domain.tld [127.0.0.1]) (amavisd-maia, port 10024)
+ with ESMTP id 28317-08 for &lt;ruby-talk@ruby-lang.org&gt;;
+ Wed, 23 Jan 2008 13:49:28 -0600 (CST)</original-received><original-received>from dhd.dgrmm (dhd.dgrmm [192.168.2.89])
+	(using TLSv1 with cipher AES128-SHA (128/128 bits))
+	(No client certificate requested)
+	by freedom.dgrmm.net (Postfix) with ESMTP id D332511C5E9
+	for &lt;ruby-talk@ruby-lang.org&gt;; Wed, 23 Jan 2008 13:49:28 -0600 (CST)</original-received><delivered-to>ruby-talk@ruby-lang.org</delivered-to><original-posted>Wed, 23 Jan 2008 13:49:24 -0600</original-posted><in-reply-to>&lt;772886391b4172307c5b14972688b5c1@ruby-forum.com&gt;</in-reply-to><x-ml-name>ruby-talk</x-ml-name><x-mail-count>288402</x-mail-count><x-mlserver>fml [fml 4.0.3 release (20011202/4.0.3)]; post only (only members can post)</x-mlserver><x-ml-info>If you have a question, send e-mail with the body
+	"help" (without quotes) to the address ruby-talk-ctl@ruby-lang.org;
+	help=&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=help&gt;</x-ml-info><x-mailer>Apple Mail (2.915)</x-mailer><x-spam-checker-version>SpamAssassin 3.1.7 (2006-10-05) on 
+	carbon.ruby-lang.org</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-6.1 required=7.0 tests=ARIN,AWL,BAYES_00,
+	CONTENT_TYPE_PRESENT,QENCPTR1,QENCPTR2,X_MAILER_PRESENT 
+	autolearn=disabled version=3.1.7</x-spam-status><x-original-to>ruby-talk@ruby-lang.org</x-original-to><x-pgp-agent>GPGMail d51 (Leopard)</x-pgp-agent><x-virus-scanned>Maia Mailguard 1.0.2</x-virus-scanned><x-notascii>charset=us-ascii;</x-notascii><x-ip-stats>Incoming Outgoing Last 0, First 22, in=58, out=258, spam=0 Known=true ip=24.119.31.249</x-ip-stats><x-originating-ip>24.119.31.249</x-originating-ip><x-abuse-info>Send abuse complaints to abuse@cableone.net</x-abuse-info><precedence>bulk</precedence><original-lines>49</original-lines><list-id>ruby-talk.ruby-lang.org</list-id><list-software>fml [fml 4.0.3 release (20011202/4.0.3)]</list-software><list-post>&lt;mailto:ruby-talk@ruby-lang.org&gt;</list-post><list-owner>&lt;mailto:ruby-talk-admin@ruby-lang.org&gt;</list-owner><list-help>&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=help&gt;</list-help><list-unsubscribe>&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=unsubscribe&gt;</list-unsubscribe><xref>news.gmane.org gmane.comp.lang.ruby.general:245658</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.lang.ruby.general/245658&gt;</archived-at></headers><normalized-references><normalized-message-id>F60DDAE4-1F0E-4E68-8C4C-7448982DB6B8@dgrmm.net</normalized-message-id><normalized-in-reply-to>772886391b4172307c5b14972688b5c1@ruby-forum.com</normalized-in-reply-to><normalized-reference>8481b6ae68522e58f5839b51444599c3@ruby-forum.com</normalized-reference><normalized-reference>Pine.LNX.4.64.0801231504510.11747@parore.tait.co.nz</normalized-reference><normalized-reference>a18c7d02762f726b3335da29a7661a83@ruby-forum.com</normalized-reference><normalized-reference>21620A0E-6F78-4776-A861-77C363C5DE9C@dgrmm.net</normalized-reference><normalized-reference>772886391b4172307c5b14972688b5c1@ruby-forum.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed; delsp=yes"><para depth="0">-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+</para><para depth="0">On Jan 23, 2008, at 1:21 PM, 7stud -- wrote:
+
+</para><quote depth="1"><quotepara depth="1">David Morton wrote:
+</quotepara><quote depth="2"><quote depth="3"><quotepara depth="3">
+In particular, the csv module is so inefficient, James Gray wrote  
+his
+own module and called it fastercsv.
+</quotepara></quote><quotepara depth="2">
+Most of the time, it's better to look for standard libraries or at
+least good third party libraries rather than re-inventing the wheel
+though.   Most of the time, when one re-invents the wheel, one gets  
+it
+wrong.
+
+</quotepara></quote><quotepara depth="1">Looking for a standard library module so that you can split a string  
+on
+a comma is a ridiculous waste of time.   At some point, you actually
+have to be able to program something.
+</quotepara></quote><para depth="0">
+If you think parsing a CSV file is as simple as splitting on a comma,  
+you need to think again.
+
+</para><para depth="0">Look up RFC 4180.   It's not a hard format, but it *is* more than just  
+"foo,bar".split(',').
+
+</para><para depth="0">It's enough code that I'd rather use an existing library than to waste  
+a ridiculous amount of time doing it (correctly) myself.
+
+</para><para depth="0">David Morton
+Maia Mailguard <url>http://www.maiamailguard.com</url>
+<email>mortonda@dgrmm.net</email>
+
+</para><para depth="0">-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.7 (Darwin)
+
+</para><para depth="0">iD8DBQFHl5pEUy30ODPkzl0RAkPDAKCcpJjxQZfSjGIuPBvtY0AQg7nU7wCeJT9s
+vP9SrJlvtHuAzElaQgTvZQQ=
+=Qyq3
+-----END PGP SIGNATURE-----
+
+</para></body></message>

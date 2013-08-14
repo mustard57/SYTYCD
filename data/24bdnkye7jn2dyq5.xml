@@ -1,0 +1,41 @@
+<message message-id="200301081012.h08ACEWL015203@repoman.freebsd.org" list="org.freebsd.cvs-all" id="24bdnkye7jn2dyq5" type="checkins" date="2003-01-08T02:12:14-08:00" year="2003-01-01" year-month="2003-01-01" year-month-day="2003-01-08" thread-id="24bdnkye7jn2dyq5"><headers><envelope-from-line>From owner-cvs-all  Wed Jan  8  2:12:16 2003</envelope-from-line><from personal="David E. O'Brien" address="obrien@FreeBSD.org">"David E. O'Brien" &lt;obrien@FreeBSD.org&gt;</from><to personal="cvs-committers@FreeBSD.org" address="cvs-committers@FreeBSD.org">cvs-committers@FreeBSD.org</to><subject normal="cvs commit: src/bin/df df.c src/include stdlib.h src/lib/libc/gen getbsize.3 getbsize.c src/usr.bin/du du.c src/usr.bin/systat swap.c src/usr.sbin/pkg_install/info show.c src/usr.sbin/pstat pstat.c src/usr.sbin/quot quot.c">cvs commit: src/bin/df df.c src/include stdlib.h src/lib/libc/gen getbsize.3 getbsize.c src/usr.bin/du du.c src/usr.bin/systat swap.c src/usr.sbin/pkg_install/info show.c src/usr.sbin/pstat pstat.c src/usr.sbin/quot quot.c</subject><delivered-to>cvs-all@freebsd.org</delivered-to><received>from mx1.FreeBSD.org (mx1.freebsd.org [216.136.204.125])
+	by hub.freebsd.org (Postfix) with ESMTP
+	id 15DC637B401; Wed,  8 Jan 2003 02:12:15 -0800 (PST)</received><received>from repoman.freebsd.org (repoman.freebsd.org [216.136.204.115])
+	by mx1.FreeBSD.org (Postfix) with ESMTP
+	id BC04943EB2; Wed,  8 Jan 2003 02:12:14 -0800 (PST)
+	(envelope-from obrien@FreeBSD.org)</received><received>from repoman.freebsd.org (localhost [127.0.0.1])
+	by repoman.freebsd.org (8.12.6/8.12.6) with ESMTP id h08ACEfh015204;
+	Wed, 8 Jan 2003 02:12:14 -0800 (PST)
+	(envelope-from obrien@repoman.freebsd.org)</received><received>(from obrien@localhost)
+	by repoman.freebsd.org (8.12.6/8.12.6/Submit) id h08ACEWL015203;
+	Wed, 8 Jan 2003 02:12:14 -0800 (PST)</received><message-id>200301081012.h08ACEWL015203@repoman.freebsd.org</message-id><date>Wed, 8 Jan 2003 02:12:14 -0800 (PST)</date><x-freebsd-cvs-branch>RELENG_5_0</x-freebsd-cvs-branch><sender>owner-cvs-all@FreeBSD.ORG</sender><precedence>bulk</precedence><list-id>&lt;cvs-all.FreeBSD.ORG&gt;</list-id><list-archive>&lt;http://docs.freebsd.org/mail/&gt; (Web Archive)</list-archive><list-help>&lt;mailto:majordomo@FreeBSD.ORG?subject=help&gt; (List Instructions)</list-help><list-subscribe>&lt;mailto:majordomo@FreeBSD.ORG?subject=subscribe%20cvs-all&gt;</list-subscribe><list-unsubscribe>&lt;mailto:majordomo@FreeBSD.ORG?subject=unsubscribe%20cvs-all&gt;</list-unsubscribe><x-loop>FreeBSD.ORG</x-loop></headers><normalized-references><normalized-message-id>200301081012.h08ACEWL015203@repoman.freebsd.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">obrien      2003/01/08 02:12:14 PST
+
+</para><para depth="0">  Modified files:        (Branch: RELENG_5_0)
+    bin/df               df.c 
+    include              stdlib.h 
+    lib/libc/gen         getbsize.3 getbsize.c 
+    usr.bin/du           du.c 
+    usr.bin/systat       swap.c 
+    usr.sbin/pkg_install/info show.c 
+    usr.sbin/pstat       pstat.c 
+    usr.sbin/quot        quot.c 
+  Log:
+  MFC: revert getbsize's headerlenp argument back to an int *.
+
+</para><para depth="0">  Approved by:    re
+
+</para><para depth="0">  Revision  Changes    Path
+  1.44.2.1  +3 -4      src/bin/df/df.c
+  1.45.2.1  +1 -1      src/include/stdlib.h
+  1.9.2.1   +1 -1      src/lib/libc/gen/getbsize.3
+  1.5.2.1   +1 -1      src/lib/libc/gen/getbsize.c
+  1.27.2.1  +1 -2      src/usr.bin/du/du.c
+  1.20.2.1  +1 -3      src/usr.bin/systat/swap.c
+  1.33.2.1  +1 -1      src/usr.sbin/pkg_install/info/show.c
+  1.78.2.1  +6 -8      src/usr.sbin/pstat/pstat.c
+  1.19.2.1  +1 -1      src/usr.sbin/quot/quot.c
+
+</para><para depth="0">To Unsubscribe: send mail to <email>majordomo@FreeBSD.org</email>
+with "unsubscribe cvs-all" in the body of the message
+
+</para></body></message>

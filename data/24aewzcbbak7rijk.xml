@@ -1,0 +1,23 @@
+<message message-id="20030929115253.5842.qmail@ktown.kde.org" list="org.kde.kde-multimedia" id="24aewzcbbak7rijk" type="bugs" date="2003-09-29T11:52:53Z" year="2003-01-01" year-month="2003-09-01" year-month-day="2003-09-29" thread-id="m2resc3cdwrf5zlu"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Bugs Kde Org" address="bugs.kde.org@tange.dk">Bugs Kde Org &lt;bugs.kde.org@tange.dk&gt;</from><subject normal="[Bug 65118] speed adjustment is not kept at song change">[Bug 65118] speed adjustment is not kept at song change</subject><path>main.gmane.org!not-for-mail</path><newsgroups>gmane.comp.kde.users.multimedia</newsgroups><date>29 Sep 2003 11:52:53 -0000</date><lines>16</lines><sender>kde-multimedia-bounces-+gckum-kde-multimedia=m.gmane.org@mail.kde.org</sender><approved>news@gmane.org</approved><message-id>20030929115253.5842.qmail@ktown.kde.org</message-id><reply-to>65118@bugs.kde.org, "For discussion of multimedia \(sound/video\)
+	issues under KDE" &lt;kde-multimedia@mail.kde.org&gt;</reply-to><nntp-posting-host>deer.gmane.org</nntp-posting-host><x-trace>sea.gmane.org 1064836672 18534 80.91.224.253 (29 Sep 2003 11:57:52 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Mon, 29 Sep 2003 11:57:52 +0000 (UTC)</nntp-posting-date><original-x-from>kde-multimedia-bounces-+gckum-kde-multimedia=m.gmane.org@mail.kde.org Mon Sep 29 13:57:49 2003</original-x-from><return-path>kde-multimedia-bounces-+gckum-kde-multimedia=m.gmane.org@mail.kde.org</return-path><original-received>from kde.informatik.uni-kl.de ([131.246.103.200] helo=ktown.kde.org)
+	by deer.gmane.org with smtp (Exim 3.35 #1 (Debian))
+	id 1A3wez-0005CW-00
+	for &lt;gckum-kde-multimedia@gmane.org&gt;; Mon, 29 Sep 2003 13:57:49 +0200</original-received><original-received>(qmail 11042 invoked from network); 29 Sep 2003 11:57:49 -0000</original-received><original-received>from localhost (HELO ktown.kde.org) (127.0.0.1)
+  by localhost with SMTP; 29 Sep 2003 11:57:49 -0000</original-received><original-received>(qmail 5852 invoked by uid 1055); 29 Sep 2003 11:52:54 -0000</original-received><delivered-to>kde.org-kde-multimedia@kde.org</delivered-to><original-received>(qmail 5843 invoked by uid 30); 29 Sep 2003 11:52:53 -0000</original-received><original-to>kde-multimedia@kde.org</original-to><x-bugzilla-url>http://bugs.kde.org/ </x-bugzilla-url><x-bugzilla-reason>AssignedTo     </x-bugzilla-reason><x-beenthere>kde-multimedia@mail.kde.org</x-beenthere><x-mailman-version>2.1.1</x-mailman-version><precedence>list</precedence><list-id>For discussion of multimedia (sound/video) issues under KDE
+	&lt;kde-multimedia.mail.kde.org&gt;</list-id><list-unsubscribe>&lt;http://mail.kde.org/mailman/listinfo/kde-multimedia&gt;,
+	&lt;mailto:kde-multimedia-request@mail.kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.kde.org/pipermail/kde-multimedia&gt;</list-archive><list-post>&lt;mailto:kde-multimedia@mail.kde.org&gt;</list-post><list-help>&lt;mailto:kde-multimedia-request@mail.kde.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.kde.org/mailman/listinfo/kde-multimedia&gt;,
+	&lt;mailto:kde-multimedia-request@mail.kde.org?subject=subscribe&gt;</list-subscribe><errors-to>kde-multimedia-bounces-+gckum-kde-multimedia=m.gmane.org@mail.kde.org</errors-to><xref>main.gmane.org gmane.comp.kde.users.multimedia:2045</xref><x-report-spam>http://spam.gmane.org/gmane.comp.kde.users.multimedia:2045</x-report-spam></headers><normalized-references><normalized-message-id>20030929115253.5842.qmail@ktown.kde.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">------- You are receiving this mail because: -------
+You are the assignee for the bug, or are watching the assignee.
+
+</para><footer type="signature" hash="7301027274066270402" depth="0"><url>http://bugs.kde.org/show_bug.cgi?id=65118</url>     
+
+</footer><footer type="signature" hash="6530845292211825315" depth="0">------- Additional Comments From <email>bugs.kde.org@tange.dk</email>  2003-09-29 13:52 -------
+Kjofol does not work for me: I simply cannot read the small fonts. The player I<br/>use 
+_must_ support configurable font sizes and preferably it should behave like a<br/>standard 
+KDE-application (e.g. title bar and menu bar should be as I have themed it to<br/>be). If the 
+application does things its own way then it takes away the power from me - the<br/>user, 
+and I do not see that as user friendlyness. 
+
+</footer><para depth="0">Thanks for the tip, though.
+
+</para></body></message>

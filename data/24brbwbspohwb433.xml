@@ -1,0 +1,18 @@
+<message message-id="3C5134B5.2040302@sun.com" list="org.netbeans.nbusers" id="24brbwbspohwb433" no-archive="yes" type="users" date="2002-01-25T12:34:29+02:00" year="2002-01-01" year-month="2002-01-01" year-month-day="2002-01-25" thread-id="24brbwbspohwb433"><headers><envelope-from-line>From nbusers-return-14996-tigrisq-archive=mail-www=nbusers=netbeans.org=netbeans.org@netbeans.org Fri Jan 25 11:31:58 2002</envelope-from-line><from personal="Jesse Glick" address="jesse.glick@sun.com">Jesse Glick &lt;jesse.glick@sun.com&gt;</from><to personal="nbusers@netbeans.org" address="nbusers@netbeans.org">nbusers@netbeans.org</to><subject normal="[nbusers] Tab look">Re: [nbusers] Tab look</subject><return-path>nbusers-return-14996-tigrisq-archive=mail-www=nbusers=netbeans.org=netbeans.org@netbeans.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-www=nbusers=netbeans.org@netbeans.org</delivered-to><received>(qmail 847 invoked by uid 5302); 25 Jan 2002 11:31:58 -0000</received><mailing-list>contact nbusers-help@netbeans.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:nbusers-help@netbeans.org&gt;</list-help><list-unsubscribe>&lt;mailto:nbusers-unsubscribe@netbeans.org&gt;</list-unsubscribe><list-post>&lt;mailto:nbusers@netbeans.org&gt;</list-post><reply-to>nbusers@netbeans.org</reply-to><delivered-to>mailing list nbusers@netbeans.org</delivered-to><received>(qmail 838 invoked by uid 5302); 25 Jan 2002 11:31:58 -0000</received><path>not-for-mail</path><newsgroups>netbeans.nbusers</newsgroups><date>Fri, 25 Jan 2002 12:34:29 +0200</date><organization>Sun Microsystems / NetBeans</organization><lines>16</lines><message-id>3C5134B5.2040302@sun.com</message-id><references>&lt;netbeans.nbusers/3C50AAB6.7030307@nowhere.com&gt;</references><nntp-posting-host>ip503c5274.speed.planet.nl</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>h74.sny.collab.net 1011958317 30107 80.60.82.116 (25 Jan 2002 11:31:57 GMT)</x-trace><x-complaints-to>support@collab.net</x-complaints-to><nntp-posting-date>Fri, 25 Jan 2002 11:31:57 +0000 (UTC)</nntp-posting-date><user-agent>Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.7) Gecko/20011221</user-agent><x-accept-language>en-us</x-accept-language></headers><normalized-references><normalized-message-id>3C5134B5.2040302@sun.com</normalized-message-id><normalized-reference>netbeans.nbusers/3C50AAB6.7030307@nowhere.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">Steve wrote:
+
+</para><quote depth="1"><quotepara depth="1">What happened to the setting for the look and feel of the tabs?  There 
+used to be a setting to display the tabs as one line with arrows or a 
+menu.  Has this been removed?
+</quotepara></quote><para depth="0">
+Disabled by default. Use -J-Dnetbeans.experimental.oneline=true to turn 
+it on. The popup mode is gone, but the arrow mode is still there.
+
+</para><para depth="0">-Jesse
+
+</para><footer type="signature" depth="0" hash="15797624738482717471">-- 
+Jesse Glick        &lt;mailto:<email>jesse.glick@sun.com</email>&gt;
+NetBeans, Open APIs  &lt;<url>http://www.netbeans.org/</url>&gt;
+
+</footer></body></message>

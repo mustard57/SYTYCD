@@ -1,0 +1,26 @@
+<message message-id="Pine.LNX.4.21.0401261059430.7678-100000@nerist.nerist.ernet.in" list="com.redhat.redhat-list" id="24bnyy74pizdzmtk" type="general" date="2004-01-26T00:54:02" year="2004-01-01" year-month="2004-01-01" year-month-day="2004-01-26" thread-id="24bnyy74pizdzmtk"><headers><envelope-from-line>From mail@redhat.com Mon Jan 26 00:53:20 2004</envelope-from-line><from personal="tvp@nerist.ernet.in" address="tvp@nerist.ernet.in">tvp@nerist.ernet.in</from><to personal="redhat-list@redhat.com" address="redhat-list@redhat.com">redhat-list@redhat.com</to><subject normal="PINGING QUESTION">PINGING QUESTION</subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com [172.16.52.254])
+	by listman.back-rdu.redhat.com (8.11.6/8.11.6) with ESMTP id i0Q5rKB29675
+	for &lt;redhat-list@listman.back-rdu.redhat.com&gt;; Mon, 26 Jan 2004 00:53:20 -0500</received><received>(from mail@localhost)
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) id i0Q5s6O14239
+	for redhat-list@listman.back-rdu.redhat.com; Mon, 26 Jan 2004 00:54:06 -0500</received><received>from mx1.redhat.com (mx1.redhat.com [172.16.48.31])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id i0Q5s6a14235
+	for &lt;redhat-list@redhat.com&gt;; Mon, 26 Jan 2004 00:54:06 -0500</received><received>from nerist.nerist.ernet.in (IDENT:root@[202.141.91.2])
+	by mx1.redhat.com (8.11.6/8.11.6) with SMTP id i0Q5rxr30043
+	for &lt;redhat-list@redhat.com&gt;; Mon, 26 Jan 2004 00:54:02 -0500</received><received>from localhost (tvp@localhost)
+	by nerist.nerist.ernet.in (8.9.3/8.9.3) with ESMTP id LAA07982
+	for &lt;redhat-list@redhat.com&gt;; Mon, 26 Jan 2004 11:07:07 +0530</received><message-id>Pine.LNX.4.21.0401261059430.7678-100000@nerist.nerist.ernet.in</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><x-loop>redhat-list@redhat.com</x-loop><sender>redhat-list-admin@redhat.com</sender><errors-to>redhat-list-admin@redhat.com</errors-to><x-beenthere>redhat-list@redhat.com</x-beenthere><x-mailman-version>2.0.13</x-mailman-version><precedence>junk</precedence><reply-to>redhat-list@redhat.com</reply-to><list-help>&lt;mailto:redhat-list-request@redhat.com?subject=help&gt;</list-help><list-post>&lt;mailto:redhat-list@redhat.com&gt;</list-post><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><list-id>General Red Hat Linux discussion list &lt;redhat-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/redhat-list/&gt;</list-archive><date>Mon Jan 26 00:54:02 2004</date><x-original-date>Mon, 26 Jan 2004 11:07:07 +0530 (IST)</x-original-date></headers><normalized-references><normalized-message-id>Pine.LNX.4.21.0401261059430.7678-100000@nerist.nerist.ernet.in</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Dear Users
+I have been managing a small network for quite some time . I have
+configured two VLANs , one for server side and another client side. Server
+side IPs could be (say) 101.102.2.1 t0 101.102.2.10 and client side IPs
+could be 192.168.2.1 to 192.168.2.100( just an example). two Vlans could
+be routed through IP 101.102.2.21. Our ISP router IP is
+(say) 222.122.99.65. 
+
+</para><para depth="0">But What I want to know is that when i log on as a normal user and ping my
+ISP router its fine but as a root response time is very high. Is this my
+server problem? Or some script is running behind ?
+
+</para><para depth="0">USER
+</para></body></message>

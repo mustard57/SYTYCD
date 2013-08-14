@@ -1,0 +1,156 @@
+<message message-id="2c778a730811190110kaa3e861w87268f36b8b6e498@mail.gmail.com" list="org.webkit.lists.webkit-dev" id="24arx3xfzutdmptf" type="development" date="2008-11-19T01:10:29.577056-08:00" year="2008-01-01" year-month="2008-11-01" year-month-day="2008-11-19" thread-id="4yxg4c4i62ybpr7o"><headers><envelope-from-line>Wed Nov 19 01:10:52 2008</envelope-from-line><from personal="Sriram Neelakandan" address="sriram.neelakandan@gmail.com">Sriram Neelakandan &lt;sriram.neelakandan@gmail.com&gt;</from><to personal="Darren VanBuren" address="onekopaka@gmail.com">Darren VanBuren &lt;onekopaka@gmail.com&gt;</to><cc personal="webkit-dev@lists.webkit.org" address="webkit-dev@lists.webkit.org">"webkit-dev@lists.webkit.org" &lt;webkit-dev@lists.webkit.org&gt;</cc><subject normal="[webkit-dev] Need some information----by HCL technologies, INDIA">Re: [webkit-dev] Need some information----by HCL technologies, INDIA</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 612
+          for &lt;john.travis.conley@a.markmail.org&gt;;
+          Wed, 19 Nov 2008 01:10:52 -0800 (GMT-08:00)</received><received>from bz1.apple.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 416EB3B300CB
+	for &lt;john.travis.conley@a.markmail.org&gt;; Wed, 19 Nov 2008 01:10:29 -0800 (PST)</received><received>from lists.macosforge.org (delta.macosforge.org [17.254.17.249])
+	by bz1.apple.com (Postfix) with ESMTP id 24FA2E8258CC;
+	Wed, 19 Nov 2008 01:10:52 -0800 (PST)</received><received>from delta.macosforge.org (localhost [127.0.0.1])
+	by lists.macosforge.org (Postfix) with ESMTP id 0FBF3708724;
+	Wed, 19 Nov 2008 01:09:32 -0800 (PST)</received><x-original-to>webkit-dev@lists.webkit.org</x-original-to><delivered-to>webkit-dev@lists.webkit.org</delivered-to><received>from mail-in13.apple.com (mail-in.apple.com [17.254.13.11])
+	by lists.macosforge.org (Postfix) with ESMTP id 81672708720
+	for &lt;webkit-dev@lists.webkit.org&gt;; Wed, 19 Nov 2008 01:09:29 -0800 (PST)</received><received>from mail-in13.apple.com (unknown [127.0.0.1])
+	by mail-in13.apple.com (Symantec Brightmail Gateway) with ESMTP id
+	CF8A81060F
+	for &lt;webkit-dev@lists.webkit.org&gt;; Wed, 19 Nov 2008 01:10:48 -0800 (PST)</received><x-auditid>11fe0d0b-a43b0bb000000ff0-ef-4923d8189e63</x-auditid><received>from wf-out-1314.google.com (wf-out-1314.google.com [209.85.200.169])
+	by mail-in13.apple.com (Apple Secure Mail Relay) with ESMTP id
+	26E7810631
+	for &lt;webkit-dev@lists.webkit.org&gt;; Wed, 19 Nov 2008 01:10:48 -0800 (PST)</received><received>by wf-out-1314.google.com with SMTP id 25so3825407wfa.0
+	for &lt;webkit-dev@lists.webkit.org&gt;; Wed, 19 Nov 2008 01:10:47 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:received:received:message-id:date:from:to
+	:subject:cc:in-reply-to:mime-version:content-type:references;
+	bh=tzrjsU/lG00jHzRMmsP2h3iaqKQVAzGVzpn7tDig+KI=;
+	b=bsmHqU5Egk5aGqgZ1m5R50BIpuowoc1vdWA1a9XSYSCk8vwBt4Z9W3cYAPJEVSioUN
+	cWe49/Mi4TZy+fIKMQqzbNuUFu5nCEk1sW1XpAyppZIx8x5eeUTQoTY+pzMhIAMRkXYD
+	KrtXIDchKtPYSEodEe3sZESGAnN+YUDi4rHkM=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=message-id:date:from:to:subject:cc:in-reply-to:mime-version
+	:content-type:references;
+	b=CbKS58psMtumsx9XVQ6eX5WaueVVKQk9+hDODqpmWJKa5dWJIEirDoXqa/UY+Hwp+K
+	vgAxWmKDXJILDmivWxMbMNeDN2mF6UXevJ/flkGJRGE3WZb6/js9PNIv62xDglzCtb8K
+	r8Yi3UTeAy6rWJPrspYarz/Y8aPyEVZDLWVO4=</domainkey-signature><received>by 10.142.187.8 with SMTP id k8mr429377wff.48.1227085847878;
+	Wed, 19 Nov 2008 01:10:47 -0800 (PST)</received><received>by 10.142.162.16 with HTTP; Wed, 19 Nov 2008 01:10:47 -0800 (PST)</received><message-id>2c778a730811190110kaa3e861w87268f36b8b6e498@mail.gmail.com</message-id><date>Wed, 19 Nov 2008 14:40:47 +0530</date><in-reply-to>&lt;34A2655C-D9E0-4E2B-9293-ED4F03AD14F6@gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><references>&lt;D753F020111EA54696B6490419033398016155C6@chn-hclt-evs05.HCLT.CORP.HCL.IN&gt;
+	&lt;f3f9e0a30811182331j60cfb09qf428e9ca7b0288ff@mail.gmail.com&gt;
+	&lt;34A2655C-D9E0-4E2B-9293-ED4F03AD14F6@gmail.com&gt;</references><x-brightmail-tracker>AAAABAyvEkkMrxS6DK+cRQyvqLc=</x-brightmail-tracker><x-beenthere>webkit-dev@lists.webkit.org</x-beenthere><x-mailman-version>2.1.11</x-mailman-version><precedence>list</precedence><list-id>WebKit developers &lt;webkit-dev.lists.webkit.org&gt;</list-id><list-unsubscribe>&lt;http://lists.webkit.org/mailman/options.cgi/webkit-dev&gt;,
+	&lt;mailto:webkit-dev-request@lists.webkit.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.webkit.org/pipermail/webkit-dev&gt;</list-archive><list-post>&lt;mailto:webkit-dev@lists.webkit.org&gt;</list-post><list-help>&lt;mailto:webkit-dev-request@lists.webkit.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.webkit.org/mailman/listinfo.cgi/webkit-dev&gt;,
+	&lt;mailto:webkit-dev-request@lists.webkit.org?subject=subscribe&gt;</list-subscribe><content-type>multipart/mixed; boundary="===============2075069133=="</content-type><sender>webkit-dev-bounces@lists.webkit.org</sender><errors-to>webkit-dev-bounces@lists.webkit.org</errors-to></headers><normalized-references><normalized-message-id>2c778a730811190110kaa3e861w87268f36b8b6e498@mail.gmail.com</normalized-message-id><normalized-in-reply-to>34A2655C-D9E0-4E2B-9293-ED4F03AD14F6@gmail.com</normalized-in-reply-to><normalized-reference>D753F020111EA54696B6490419033398016155C6@chn-hclt-evs05.HCLT.CORP.HCL.IN</normalized-reference><normalized-reference>f3f9e0a30811182331j60cfb09qf428e9ca7b0288ff@mail.gmail.com</normalized-reference><normalized-reference>34A2655C-D9E0-4E2B-9293-ED4F03AD14F6@gmail.com</normalized-reference></normalized-references><body><para depth="0">Interestingly,  the problem is seen in Firefox / Thunderbird &amp; Outlook
+Express as well.
+But GNOME/Evolution seems to render it correctly
+
+</para><para depth="0">On Wed, Nov 19, 2008 at 1:03 PM, Darren VanBuren &lt;<email>onekopaka@gmail.com</email>&gt;wrote:
+
+</para><quote depth="1"><quotepara depth="1">Fine in Mail on Leopard and iPod touch.
+
+</quotepara><quotepara depth="1">Darren VanBuren
+</quotepara><quotepara depth="1">-------------------------
+Sent from my iPod
+
+</quotepara><quotepara depth="1">On Nov 18, 2008, at 23:31, "Eric Seidel" &lt;<email>eric@webkit.org</email>&gt; wrote:
+
+</quotepara><quotepara depth="1"> This mail displays incorrectly for me in Gmail.  I'm not sure if it's
+</quotepara><quote depth="2"><quotepara depth="2">a WebKit bug or a Gmail bug.  I suspect WebKit.
+
+</quotepara><quotepara depth="2">His bullet items are indented to the left, outside of the normal message
+region.
+
+</quotepara><quotepara depth="2">-eric
+
+</quotepara><quotepara depth="2">On Tue, Nov 18, 2008 at 11:11 PM, Laxmi Kumar Sahu &lt;<email>laxmikumar.s@hcl.in</email>&gt;
+wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">Hi,
+
+</quotepara><quotepara depth="3">As one of our client want to embed the webkit browser, so before that we
+need these information on webkit engine to analysis as follows,
+
+</quotepara><quotepara depth="3">1.       Is it work in VxWorks   environment ?
+
+</quotepara><quotepara depth="3">2.       Which version of HTTP it support ?
+
+</quotepara><quotepara depth="3">3.       Is cache memory use in this engine or not ?
+
+</quotepara><quotepara depth="3">4.       What about the visiting history, transaction history and  From
+input history; these are using in it or not ?
+
+</quotepara><quotepara depth="3">5.       Is visual bookmark work or not ?
+
+</quotepara><quotepara depth="3">6.       Any password authentication process is there or not ?
+
+</quotepara><quotepara depth="3">7.       Are Scroll bar, zooming, user agent functionalities available in
+webkit or not ?
+
+</quotepara><quotepara depth="3">8.       What about the RSS reader and Ajax, are it works ?
+
+</quotepara><quotepara depth="3">9.       Are the JavaVM, WebDAV service connection and character change
+functionalities work or not ?
+
+</quotepara><quotepara depth="3">10.   Which version of FLASH, PDF viewer, XPS viewer,
+siverlight/moonlight,
+and ActiveX  are working, if yes. Otherwise inform "NO" ..
+
+</quotepara><quotepara depth="3">11.   Is USB key board works in it or not ?
+
+</quotepara><quotepara depth="3">12.   Are the SSL 2.0, SSL 3.0 and TLS 1.0 work in webkit for security
+purpose ?
+
+</quotepara><quotepara depth="3">Please, inform the above quarries as soon as possible.
+
+</quotepara><quotepara depth="3">Then can  our team will proceed to analysis better and embed your web
+engine
+with our client's engine.
+
+</quotepara><quotepara depth="3">Regards,
+
+</quotepara><quotepara depth="3">Laxmi Kumar S.
+
+</quotepara><quotepara depth="3">+91-9600013082
+
+</quotepara><quotepara depth="3">HCL Technologies,
+
+</quotepara><quotepara depth="3">INDIA
+
+</quotepara><quotepara depth="3">DISCLAIMER:
+
+</quotepara><quotefooter type="noise" depth="3">-----------------------------------------------------------------------------------------------------------------------
+
+</quotefooter><quotefooter type="legalese" depth="3">The contents of this e-mail and any attachment(s) are confidential and
+intended for the named recipient(s) only.
+It shall not attach any liability on the originator or HCL or its
+affiliates. Any views or opinions presented in
+this email are solely those of the author and may not necessarily reflect
+the opinions of HCL or its affiliates.
+Any form of reproduction, dissemination, copying, disclosure,
+modification,
+distribution and / or publication of
+this message without the prior written consent of the author of this
+e-mail
+is strictly prohibited. If you have
+received this email in error please delete it and notify the sender
+immediately. Before opening any mail and
+attachments please check them for viruses and defect.
+
+</quotefooter><quotefooter type="noise" depth="3">-----------------------------------------------------------------------------------------------------------------------
+
+</quotefooter><quotefooter type="list-management" depth="3">_______________________________________________
+webkit-dev mailing list
+<email>webkit-dev@lists.webkit.org</email>
+<url>http://lists.webkit.org/mailman/listinfo.cgi/webkit-dev</url>
+
+</quotefooter><quotefooter type="noise" depth="3"> _______________________________________________
+</quotefooter></quote><quotepara depth="2">webkit-dev mailing list
+<email>webkit-dev@lists.webkit.org</email>
+<url>http://lists.webkit.org/mailman/listinfo.cgi/webkit-dev</url>
+
+</quotepara></quote><quotefooter type="list-management" depth="1">_______________________________________________
+webkit-dev mailing list
+<email>webkit-dev@lists.webkit.org</email>
+<url>http://lists.webkit.org/mailman/listinfo.cgi/webkit-dev</url>
+
+</quotefooter></quote><footer type="signature" depth="0" hash="12404614598988742982">-- 
+Sriram Neelakandan
+Author - Embedded Linux System Design And Development (
+<url>http://tinyurl.com/2doosu</url>)
+</footer><footer type="list-management" depth="0">_______________________________________________
+webkit-dev mailing list
+<email>webkit-dev@lists.webkit.org</email>
+<url>http://lists.webkit.org/mailman/listinfo.cgi/webkit-dev</url>
+</footer></body></message>

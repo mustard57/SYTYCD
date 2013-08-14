@@ -1,0 +1,25 @@
+<message message-id="395853A6.37DBBDFC@pacific.net.sg" list="org.apache.struts.user" id="24cg5ringybim37a" type="users" date="2000-06-27T15:11:34+08:00" year="2000-01-01" year-month="2000-06-01" year-month-day="2000-06-27" thread-id="24cg5ringybim37a"><headers><envelope-from-line>From wongkw@pacific.net.sg  Tue Jun 27 07:07:05 2000</envelope-from-line><from personal="Wong Kok Wai" address="wongkw@pacific.net.sg">Wong Kok Wai &lt;wongkw@pacific.net.sg&gt;</from><to personal="struts-user" address="struts-user@jakarta.apache.org">struts-user &lt;struts-user@jakarta.apache.org&gt;</to><subject normal="Struts and ServletExec (Day 2)">Struts and ServletExec (Day 2)</subject><return-path>wongkw@pacific.net.sg</return-path><mailing-list>contact struts-user-help@jakarta.apache.org; run by ezmlm</mailing-list><delivered-to>mailing list struts-user@jakarta.apache.org</delivered-to><received>(qmail 29982 invoked from network); 27 Jun 2000 07:07:05 -0000</received><received>from sunny.pacific.net.sg (203.120.90.127)
+  by locus.apache.org with SMTP; 27 Jun 2000 07:07:05 -0000</received><received>from pop1.pacific.net.sg (pop1.pacific.net.sg [203.120.90.85])
+        by sunny.pacific.net.sg with ESMTP
+        id PAA04371 for &lt;struts-user@jakarta.apache.org&gt;; Tue, 27 Jun 2000 15:06:58 +0800 (SGT)</received><received>from pacific.net.sg ([202.42.135.132])
+        by pop1.pacific.net.sg with ESMTP
+        id PAA03749 for &lt;struts-user@jakarta.apache.org&gt;; Tue, 27 Jun 2000 15:06:54 +0800 (SGT)</received><message-id>395853A6.37DBBDFC@pacific.net.sg</message-id><date>Tue, 27 Jun 2000 15:11:34 +0800</date><x-mailer>Mozilla 4.7 [en] (WinNT; I)</x-mailer><x-accept-language>en</x-accept-language><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-spam-rating>locus.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>395853A6.37DBBDFC@pacific.net.sg</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Managed to deploy the struts-example.war. Here are my notes:
+
+</para><para depth="0">1) You need to unjar the WAR to a directory. ServletExec has a
+(unofficial) bug that prevents deployment with WAR
+2) Add struts.jar to the classpath.
+3) Also need to add JAXP to the classpath (jaxp.jar and parser.jar)
+
+</para><para depth="0">Now ServletExec should starts up without problem. One major problem
+reminds:
+
+</para><para depth="0">When I clicked on the register link, I've got a 404 "The requested URL
+/struts/editRegistration.do was not found on this server.".
+
+</para><para depth="0">When I try the second link, the login form comes up but when I clicked
+the submit button, I've obtain another 404 "The requested URL
+/struts/logon.do was not found on this server.".
+
+</para><para depth="0">Any clue?
+
+</para></body></message>

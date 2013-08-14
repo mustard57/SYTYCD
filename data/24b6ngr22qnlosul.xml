@@ -1,0 +1,352 @@
+<message message-id="20070102192124.DE5941A981A@eris.apache.org" list="org.apache.ode.commits" id="24b6ngr22qnlosul" type="checkins" date="2007-01-02T19:21:24Z" year="2007-01-01" year-month="2007-01-01" year-month-day="2007-01-02" thread-id="24b6ngr22qnlosul"><headers><envelope-from-line>From ode-commits-return-988-apmail-incubator-ode-commits-archive=incubator.apache.org@incubator.apache.org Tue Jan 02 19:22:23 2007</envelope-from-line><from personal="mszefler@apache.org" address="mszefler@apache.org">mszefler@apache.org</from><to personal="ode-commits@incubator.apache.org" address="ode-commits@incubator.apache.org">ode-commits@incubator.apache.org</to><subject normal="svn commit: r491904 - in /incubator/ode/trunk/bpel-test: build.xml pom.xml src/test/java/org/apache/ode/test/BPELTest.java">svn commit: r491904 - in /incubator/ode/trunk/bpel-test: build.xml pom.xml
+ src/test/java/org/apache/ode/test/BPELTest.java</subject><return-path>ode-commits-return-988-apmail-incubator-ode-commits-archive=incubator.apache.org@incubator.apache.org</return-path><delivered-to>apmail-incubator-ode-commits-archive@locus.apache.org</delivered-to><received>(qmail 11750 invoked from network); 2 Jan 2007 19:22:22 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (140.211.11.2)
+  by minotaur.apache.org with SMTP; 2 Jan 2007 19:22:22 -0000</received><received>(qmail 2625 invoked by uid 500); 2 Jan 2007 19:22:29 -0000</received><delivered-to>apmail-incubator-ode-commits-archive@incubator.apache.org</delivered-to><received>(qmail 2595 invoked by uid 500); 2 Jan 2007 19:22:29 -0000</received><mailing-list>contact ode-commits-help@incubator.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:ode-commits-help@incubator.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:ode-commits-unsubscribe@incubator.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:ode-commits@incubator.apache.org&gt;</list-post><list-id>&lt;ode-commits.incubator.apache.org&gt;</list-id><reply-to>ode-dev@incubator.apache.org</reply-to><delivered-to>mailing list ode-commits@incubator.apache.org</delivered-to><received>(qmail 2586 invoked by uid 99); 2 Jan 2007 19:22:29 -0000</received><received>from herse.apache.org (HELO herse.apache.org) (140.211.11.133)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 02 Jan 2007 11:22:29 -0800</received><x-asf-spam-status>No, hits=-9.4 required=10.0
+	tests=ALL_TRUSTED,NO_REAL_NAME</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.3] (HELO eris.apache.org) (140.211.11.3)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 02 Jan 2007 11:22:21 -0800</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id DE5941A981A; Tue,  2 Jan 2007 11:21:24 -0800 (PST)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Tue, 02 Jan 2007 19:21:24 -0000</date><x-mailer>svnmailer-1.1.0</x-mailer><message-id>20070102192124.DE5941A981A@eris.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20070102192124.DE5941A981A@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: mszefler
+Date: Tue Jan  2 11:21:23 2007
+New Revision: 491904
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?view=rev&amp;rev=491904</url>
+Log:
+Some things that were missed in the test scheduler fix.
+Fixed bpel-test pom.
+
+</para><para depth="0">Modified:
+    incubator/ode/trunk/bpel-test/build.xml
+    incubator/ode/trunk/bpel-test/pom.xml
+incubator/ode/trunk/bpel-test/src/test/java/org/apache/ode/test/BPELTest.java 
+
+</para><para depth="0">Modified: incubator/ode/trunk/bpel-test/build.xml
+URL: <br/><url>http://svn.apache.org/viewvc/incubator/ode/trunk/bpel-test/build.xml?view=diff&amp;rev=491904&amp;r1=491903&amp;r2=491904</url> 
+==============================================================================
+--- incubator/ode/trunk/bpel-test/build.xml (original)
++++ incubator/ode/trunk/bpel-test/build.xml Tue Jan  2 11:21:23 2007
+@@ -25,8 +25,8 @@
+     &lt;property name="derby.target.sql" value="${database.dir}/derby.sql" /&gt;
+
+</para><para depth="0">-    &lt;target name="db" &gt;
+-        &lt;delete dir="${database.dir}"/&gt;
++    &lt;target name="db" &gt;
++        &lt;delete dir="${database.dir}"/&gt;
+         &lt;mkdir dir="${database.dir}"/&gt;
+         &lt;antcall inheritRefs="true" target="gen-schemas" /&gt;
+         &lt;sql driver="org.apache.derby.jdbc.EmbeddedDriver"
+@@ -41,7 +41,7 @@
+     &lt;target name="gen-schemas"&gt;
+         &lt;java classname="org.apache.openjpa.jdbc.meta.MappingTool"&gt;
+             &lt;arg line="-p ${descriptors.dir}/persistence.xml"/&gt;
+-            &lt;arg line="-sa build"/&gt;
++            &lt;arg line="-sa build"/&gt;
+             &lt;arg line="-fk true"/&gt;
+             &lt;arg line="-sql ${derby.target.sql}"/&gt;
+             &lt;classpath&gt;
+
+</para><para depth="0">Modified: incubator/ode/trunk/bpel-test/pom.xml
+URL: <br/><url>http://svn.apache.org/viewvc/incubator/ode/trunk/bpel-test/pom.xml?view=diff&amp;rev=491904&amp;r1=491903&amp;r2=491904</url> 
+==============================================================================
+--- incubator/ode/trunk/bpel-test/pom.xml (original)
++++ incubator/ode/trunk/bpel-test/pom.xml Tue Jan  2 11:21:23 2007
+@@ -1,34 +1,34 @@
+-&lt;?xml version="1.0"?&gt;
+-&lt;!--
+-  ~ Licensed to the Apache Software Foundation (ASF) under one
+-  ~ or more contributor license agreements.  See the NOTICE file
+-  ~ distributed with this work for additional information
+-  ~ regarding copyright ownership.  The ASF licenses this file
+-  ~ to you under the Apache License, Version 2.0 (the
+-  ~ "License"); you may not use this file except in compliance
+-  ~ with the License.  You may obtain a copy of the License at
+-  ~
+-  ~    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+-  ~
+-  ~ Unless required by applicable law or agreed to in writing,
+-  ~ software distributed under the License is distributed on an
+-  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+-  ~ KIND, either express or implied.  See the License for the
+-  ~ specific language governing permissions and limitations
+-  ~ under the License.
+-  --&gt;
+-&lt;project&gt;
+-    &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
+-    &lt;artifactId&gt;ode-test&lt;/artifactId&gt;
+-    &lt;name&gt;ODE :: BPEL Tests&lt;/name&gt;
+-    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+-    &lt;parent&gt;
+-        &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
+-        &lt;artifactId&gt;ode&lt;/artifactId&gt;
+-        &lt;version&gt;2.0-SNAPSHOT&lt;/version&gt;
+-    &lt;/parent&gt;
+-    &lt;version&gt;2.0-SNAPSHOT&lt;/version&gt;
+-    &lt;build&gt;
++&lt;?xml version="1.0"?&gt;
++&lt;!--
++  ~ Licensed to the Apache Software Foundation (ASF) under one
++  ~ or more contributor license agreements.  See the NOTICE file
++  ~ distributed with this work for additional information
++  ~ regarding copyright ownership.  The ASF licenses this file
++  ~ to you under the Apache License, Version 2.0 (the
++  ~ "License"); you may not use this file except in compliance
++  ~ with the License.  You may obtain a copy of the License at
++  ~
++  ~    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
++  ~
++  ~ Unless required by applicable law or agreed to in writing,
++  ~ software distributed under the License is distributed on an
++  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
++  ~ KIND, either express or implied.  See the License for the
++  ~ specific language governing permissions and limitations
++  ~ under the License.
++  --&gt;
++&lt;project&gt;
++    &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
++    &lt;artifactId&gt;ode-test&lt;/artifactId&gt;
++    &lt;name&gt;ODE :: BPEL Tests&lt;/name&gt;
++    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
++    &lt;parent&gt;
++        &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
++        &lt;artifactId&gt;ode&lt;/artifactId&gt;
++        &lt;version&gt;2.0-SNAPSHOT&lt;/version&gt;
++    &lt;/parent&gt;
++    &lt;version&gt;2.0-SNAPSHOT&lt;/version&gt;
++    &lt;build&gt;
+         &lt;plugins&gt;
+             &lt;plugin&gt;
+                 &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+@@ -37,36 +37,40 @@
+                 &lt;configuration&gt;
+                     &lt;useProjectReferences&gt;false&lt;/useProjectReferences&gt;
+                 &lt;/configuration&gt;
+-            &lt;/plugin&gt;
++            &lt;/plugin&gt;
+
+</para><para depth="0">             &lt;plugin&gt;
+                 &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+                 &lt;artifactId&gt;maven-antrun-plugin&lt;/artifactId&gt;
+-                &lt;version&gt;1.0&lt;/version&gt;
+-                &lt;executions&gt;
++                &lt;version&gt;1.0&lt;/version&gt;
++                &lt;executions&gt;
++                    &lt;!-- This is causing a problem, file not found derby.sql
++ Let's move this into a separate test module. -Maciej1/2/07 
+                     &lt;execution&gt;
+                         &lt;id&gt;Generate Derby DB&lt;/id&gt;
+                         &lt;phase&gt;compile&lt;/phase&gt;
++
++                             
+                         &lt;configuration&gt;
+                             &lt;tasks&gt;
+&lt;ant antfile="build.xml" target="db" inheritRefs="true"/&gt; 
+                             &lt;/tasks&gt;
+-                        &lt;/configuration&gt;
++                        &lt;/configuration&gt;
+                         &lt;goals&gt;
+                             &lt;goal&gt;run&lt;/goal&gt;
+                         &lt;/goals&gt;
+                     &lt;/execution&gt;
++                    --&gt;
+
+</para><para depth="0">-
+- &lt;!-- Having some problems with this because the embedded DB is created 
++ &lt;!-- Having some problems with this because the embedded DB is created 
+                         relative to the build path - see persistent.xml URL
+                     &lt;execution&gt;
+                         &lt;phase&gt;compile&lt;/phase&gt;
+                         &lt;id&gt;OpenJPA Mapping Tool&lt;/id&gt;
+                         &lt;configuration&gt;
+                             &lt;tasks&gt;
+- &lt;java classname="org.apache.openjpa.jdbc.meta.MappingTool"&gt; 
+- &lt;arg line="-p ${basedir}/src/test/resources/META-INF/persistence.xml"/&gt; 
++ &lt;java classname="org.apache.openjpa.jdbc.meta.MappingTool"&gt; 
++ &lt;arg line="-p ${basedir}/src/test/resources/META-INF/persistence.xml"/&gt; 
+                                     &lt;arg line="-a buildSchema"/&gt;
+                                     &lt;arg line="-fk true"/&gt;
+                                     &lt;classpath&gt;
+@@ -78,36 +82,41 @@
+                         &lt;goals&gt;
+                             &lt;goal&gt;run&lt;/goal&gt;
+                         &lt;/goals&gt;
+-                    &lt;/execution&gt;
++                    &lt;/execution&gt;
+                     --&gt;
+                 &lt;/executions&gt;
+
+</para><para depth="0">-            &lt;/plugin&gt;
++            &lt;/plugin&gt;
+
+</para><para depth="0">         &lt;/plugins&gt;
+     &lt;/build&gt;
+
+</para><para depth="0">-    &lt;dependencies&gt;
+-        &lt;dependency&gt;
+-            &lt;groupId&gt;junit&lt;/groupId&gt;
+-            &lt;artifactId&gt;junit&lt;/artifactId&gt;
+-            &lt;version&gt;3.8.1&lt;/version&gt;
+-            &lt;scope&gt;test&lt;/scope&gt;
+-        &lt;/dependency&gt;
+-        &lt;dependency&gt;
+-            &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
+-            &lt;artifactId&gt;ode-bpel-runtime&lt;/artifactId&gt;
+-        &lt;/dependency&gt;
+-        &lt;dependency&gt;
+-            &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
+-            &lt;artifactId&gt;ode-bpel-store&lt;/artifactId&gt;
+-            &lt;version&gt;${project.version}&lt;/version&gt;
+-        &lt;/dependency&gt;
+-        &lt;dependency&gt;
+-            &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
+-            &lt;artifactId&gt;ode-dao-jpa-ojpa-derby&lt;/artifactId&gt;
+-            &lt;version&gt;${project.version}&lt;/version&gt;
+-        &lt;/dependency&gt;
+-
+-    &lt;/dependencies&gt;
+-&lt;/project&gt;
++    &lt;dependencies&gt;
++        &lt;dependency&gt;
++            &lt;groupId&gt;junit&lt;/groupId&gt;
++            &lt;artifactId&gt;junit&lt;/artifactId&gt;
++            &lt;version&gt;3.8.1&lt;/version&gt;
++            &lt;scope&gt;test&lt;/scope&gt;
++        &lt;/dependency&gt;
++        &lt;dependency&gt;
++            &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
++            &lt;artifactId&gt;ode-bpel-runtime&lt;/artifactId&gt;
++        &lt;/dependency&gt;
++        &lt;dependency&gt;
++            &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
++            &lt;artifactId&gt;ode-bpel-store&lt;/artifactId&gt;
++            &lt;version&gt;${project.version}&lt;/version&gt;
++        &lt;/dependency&gt;
++        &lt;dependency&gt;
++            &lt;groupId&gt;org.apache.ode&lt;/groupId&gt;
++            &lt;artifactId&gt;ode-dao-jpa-ojpa-derby&lt;/artifactId&gt;
++            &lt;version&gt;${project.version}&lt;/version&gt;
++        &lt;/dependency&gt;
++&lt;dependency&gt;
++                &lt;groupId&gt;org.apache.derby&lt;/groupId&gt;
++                &lt;artifactId&gt;derby&lt;/artifactId&gt;
++            &lt;/dependency&gt;
++
++
++    &lt;/dependencies&gt;
++&lt;/project&gt;
+
+</para><para depth="0">Modified: <br/>incubator/ode/trunk/bpel-test/src/test/java/org/apache/ode/test/BPELTest.java 
+URL: <br/><url>http://svn.apache.org/viewvc/incubator/ode/trunk/bpel-test/src/test/java/org/apache/ode/test/BPELTest.java?view=diff&amp;rev=491904&amp;r1=491903&amp;r2=491904</url> 
+==============================================================================
+--- <br/>incubator/ode/trunk/bpel-test/src/test/java/org/apache/ode/test/BPELTest.java <br/>(original) 
++++ <br/>incubator/ode/trunk/bpel-test/src/test/java/org/apache/ode/test/BPELTest.java <br/>Tue Jan 2 11:21:23 2007 
+@@ -18,25 +18,32 @@
+  */
+ package org.apache.ode.test;
+
+</para><para depth="0">+import java.io.File;
++import java.util.Collection;
++import java.util.Properties;
++import java.util.regex.Pattern;
++
++import javax.persistence.EntityManager;
++import javax.persistence.EntityManagerFactory;
++import javax.persistence.Persistence;
++import javax.xml.namespace.QName;
++
+ import junit.framework.TestCase;
++
+ import org.apache.ode.bpel.engine.BpelServerImpl;
+-import org.apache.ode.bpel.iapi.*;
++import org.apache.ode.bpel.iapi.BpelEngineException;
++import org.apache.ode.bpel.iapi.Message;
++import org.apache.ode.bpel.iapi.MyRoleMessageExchange;
++import org.apache.ode.bpel.iapi.ProcessStore;
++import org.apache.ode.bpel.iapi.ProcessStoreEvent;
++import org.apache.ode.bpel.iapi.ProcessStoreListener;
++import org.apache.ode.bpel.iapi.Scheduler;
+ import org.apache.ode.bpel.memdao.BpelDAOConnectionFactoryImpl;
+-import org.apache.ode.dao.jpa.ojpa.BPELDAOConnectionFactoryImpl;
+ import org.apache.ode.store.ProcessStoreImpl;
+ import org.apache.ode.test.scheduler.TestScheduler;
+ import org.apache.ode.utils.DOMUtils;
+ import org.w3c.dom.Element;
+
+</para><para depth="0">-import javax.persistence.EntityManager;
+-import javax.persistence.EntityManagerFactory;
+-import javax.persistence.Persistence;
+-import javax.xml.namespace.QName;
+-import java.io.File;
+-import java.util.Collection;
+-import java.util.Properties;
+-import java.util.regex.Pattern;
+-
+ public abstract class BPELTest extends TestCase {
+
+</para><para depth="0"> 	private BpelServerImpl server;
+@@ -44,6 +51,7 @@
+ 	private MessageExchangeContextImpl mexContext;
+ 	private EntityManager em;
+ 	private EntityManagerFactory emf;
++    private TestScheduler scheduler;
+
+</para><para depth="0"> 	@Override
+ 	protected void setUp() throws Exception {
+@@ -56,11 +64,26 @@
+ 			em = emf.createEntityManager();
+ 			String pr = Persistence.PERSISTENCE_PROVIDER;
+server.setDaoConnectionFactory(new <br/>org.apache.ode.dao.jpa.ojpa.BPELDAOConnectionFactoryImpl(em)); 
++            scheduler = new TestScheduler() {
++                @Override
++                public void begin() {
++                    super.begin();
++                    em.getTransaction().begin();
++                }
++
++                @Override
++                public void commit() {
++                    super.commit();
++                    em.getTransaction().commit();
++                }
++                
++            };
+ 		} else {
+ 			server.setDaoConnectionFactory(new BpelDAOConnectionFactoryImpl());
++            scheduler = new TestScheduler();
+ 		}
+server.setInMemDaoConnectionFactory(new BpelDAOConnectionFactoryImpl()); 
+-        server.setScheduler(new TestScheduler());
++        server.setScheduler(scheduler);
+ 		server.setBindingContext(new BindingContextImpl());
+ 		server.setMessageExchangeContext(mexContext);
+         store = new ProcessStoreImpl();
+@@ -118,7 +141,7 @@
+ 			}
+ 		}
+
+</para><para depth="0">-		if ( em != null ) em.getTransaction().begin();
++		scheduler.begin();
+ 		try {
+ 			Collection&lt;QName&gt; procs =  store.deploy(new File(deployDir));
+             for (QName procName : procs) {
+@@ -135,11 +158,11 @@
+ 			e.printStackTrace();
+ 			fail();
+ 		}
+-		if ( em != null ) em.getTransaction().commit();
++		scheduler.commit();
+
+</para><para depth="0"> 		while (testPropsFile.exists()) {
+
+</para><para depth="0">-			if ( em != null ) em.getTransaction().begin();
++			scheduler.begin();
+
+</para><para depth="0"> 			Properties testProps = new Properties();
+ 			testProps.load(testPropsFile.toURL().openStream());
+@@ -241,7 +264,7 @@
+ 			propsFileCnt++;
+ 			testPropsFile = new File(deployDir + "/test" + propsFileCnt
+ 					+ ".properties");
+-			if ( em != null ) em.getTransaction().commit();
++			scheduler.commit();
+ 		}
+ 	}
+
+</para></body></message>

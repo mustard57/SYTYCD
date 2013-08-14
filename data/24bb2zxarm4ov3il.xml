@@ -1,0 +1,74 @@
+<message message-id="C68CB012D9182D408CED7B884F441D4D0476A9A54A@nambxv01a.corp.adobe.com" list="org.w3.www-tag" id="24bb2zxarm4ov3il" type="development" date="2010-10-14T14:46:49-07:00" year="2010-01-01" year-month="2010-10-01" year-month-day="2010-10-14" thread-id="yq6oircnyvsiejpi"><headers><envelope-from-line>Thu Oct 14 13:47:27 2010</envelope-from-line><from personal="Larry Masinter" address="masinter@adobe.com">Larry Masinter &lt;masinter@adobe.com&gt;</from><to personal="ashok.malhotra@oracle.com" address="ashok.malhotra@oracle.com">"ashok.malhotra@oracle.com" &lt;ashok.malhotra@oracle.com&gt;</to><cc personal="John Kemp" address="john@jkemp.net">John Kemp &lt;john@jkemp.net&gt;</cc><subject normal="ACTION-434: Some notes on organizing discussion on WebApps     architecture">RE: ACTION-434: Some notes on organizing discussion on WebApps     architecture</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 266
+          for &lt;abe.sellers.hickman@a.markmail.org&gt;;
+          Thu, 14 Oct 2010 13:47:27 -0800 (GMT-08:00)</received><received>from frink.w3.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 1700A2908004
+	for &lt;abe.sellers.hickman@a.markmail.org&gt;; Thu, 14 Oct 2010 14:47:04 -0700 (PDT)</received><received>from lists by frink.w3.org with local (Exim 4.69)
+	(envelope-from &lt;www-tag-request@listhub.w3.org&gt;)
+	id 1P6Vdo-0002FM-0k
+	for www-tag-dist@listhub.w3.org; Thu, 14 Oct 2010 21:47:12 +0000</received><received>from bart.w3.org ([128.30.52.63])
+	by frink.w3.org with esmtp (Exim 4.69)
+	(envelope-from &lt;masinter@adobe.com&gt;)
+	id 1P6Vdl-0002EA-H7
+	for www-tag@listhub.w3.org; Thu, 14 Oct 2010 21:47:09 +0000</received><received>from exprod6og115.obsmtp.com ([64.18.1.35])
+	by bart.w3.org with esmtp (Exim 4.69)
+	(envelope-from &lt;masinter@adobe.com&gt;)
+	id 1P6Vdj-0004gQ-7y
+	for www-tag@w3.org; Thu, 14 Oct 2010 21:47:09 +0000</received><received>from source ([192.150.8.22]) by exprod6ob115.postini.com ([64.18.5.12]) with SMTP
+	ID DSNKTLd6OT5x9uPRhtu0uNDxfny0x51jh9PM@postini.com; Thu, 14 Oct 2010 14:47:06 PDT</received><received>from inner-relay-1.corp.adobe.com ([153.32.1.51])
+	by outbound-smtp-2.corp.adobe.com (8.12.10/8.12.10) with ESMTP id o9ELkU2Z011847;
+	Thu, 14 Oct 2010 14:46:30 -0700 (PDT)</received><received>from nacas01.corp.adobe.com (nacas01.corp.adobe.com [10.8.189.99])
+	by inner-relay-1.corp.adobe.com (8.12.10/8.12.10) with ESMTP id o9ELkTtm014899;
+	Thu, 14 Oct 2010 14:46:29 -0700 (PDT)</received><received>from excas03.corp.adobe.com (10.8.189.123) by nacas01.corp.adobe.com
+ (10.8.189.99) with Microsoft SMTP Server (TLS) id 8.2.254.0; Thu, 14 Oct 2010
+ 14:46:28 -0700</received><received>from nambxv01a.corp.adobe.com ([10.8.189.95]) by
+ excas03.corp.adobe.com ([10.8.189.123]) with mapi; Thu, 14 Oct 2010 14:46:28
+ -0700</received><date>Thu, 14 Oct 2010 14:46:49 -0700</date><thread-topic>ACTION-434: Some notes on organizing discussion on WebApps
+    architecture</thread-topic><thread-index>Actr6Gfsifjoj/DNTMOvdZBqiHVeFgAAHuGg</thread-index><message-id>C68CB012D9182D408CED7B884F441D4D0476A9A54A@nambxv01a.corp.adobe.com</message-id><references>&lt;4C7C3551020AE442A8994B13EAF69DDC01A86F7E@VF-MBX11.internal.vodafone.com&gt;
+ &lt;C68CB012D9182D408CED7B884F441D4D0476A9A105@nambxv01a.corp.adobe.com&gt;
+ &lt;1C05ABAB-3924-445F-AF40-43F3B03597DD@jkemp.net&gt;
+ &lt;C68CB012D9182D408CED7B884F441D4D0476A9A4C0@nambxv01a.corp.adobe.com&gt;
+ &lt;D326BD65-1932-4C59-B9EC-1FB543A58716@jkemp.net&gt;
+ &lt;C68CB012D9182D408CED7B884F441D4D0476A9A522@nambxv01a.corp.adobe.com&gt;
+ &lt;4CB77842.1050907@oracle.com&gt;</references><in-reply-to>&lt;4CB77842.1050907@oracle.com&gt;</in-reply-to><accept-language>en-US</accept-language><content-language>en-US</content-language><x-ms-has-attach/><x-ms-tnef-correlator/><acceptlanguage>en-US</acceptlanguage><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><mime-version>1.0</mime-version><received-spf>pass</received-spf><x-spf-guess>pass</x-spf-guess><x-w3c-hub-spam-status>No, score=-6.6</x-w3c-hub-spam-status><x-w3c-hub-spam-report>BAYES_00=-2.599, RCVD_IN_DNSWL_MED=-4, SPF_PASS=-0.001</x-w3c-hub-spam-report><x-w3c-scan-sig>bart.w3.org 1P6Vdj-0004gQ-7y 63b9fe75fb675d6045ec8141c52c83d5</x-w3c-scan-sig><x-original-to>www-tag@w3.org</x-original-to><archived-at>&lt;http://www.w3.org/mid/C68CB012D9182D408CED7B884F441D4D0476A9A54A@nambxv01a.corp.adobe.com&gt;</archived-at><resent-from>www-tag@w3.org</resent-from><x-mailing-list>&lt;www-tag@w3.org&gt; archive/latest/14662</x-mailing-list><x-loop>www-tag@w3.org</x-loop><sender>www-tag-request@w3.org</sender><resent-sender>www-tag-request@w3.org</resent-sender><precedence>list</precedence><list-id>&lt;www-tag.w3.org&gt;</list-id><list-help>&lt;http://www.w3.org/Mail/&gt;</list-help><list-unsubscribe>&lt;mailto:www-tag-request@w3.org?subject=unsubscribe&gt;</list-unsubscribe><resent-message-id>&lt;E1P6Vdo-0002FM-0k@frink.w3.org&gt;</resent-message-id><resent-date>Thu, 14 Oct 2010 21:47:12 +0000</resent-date></headers><normalized-references><normalized-message-id>C68CB012D9182D408CED7B884F441D4D0476A9A54A@nambxv01a.corp.adobe.com</normalized-message-id><normalized-thread-index>Actr6Gfsifjoj/DNTMOvdZBqiHVeFg</normalized-thread-index><normalized-in-reply-to>4CB77842.1050907@oracle.com</normalized-in-reply-to><normalized-reference>4C7C3551020AE442A8994B13EAF69DDC01A86F7E@VF-MBX11.internal.vodafone.com</normalized-reference><normalized-reference>C68CB012D9182D408CED7B884F441D4D0476A9A105@nambxv01a.corp.adobe.com</normalized-reference><normalized-reference>1C05ABAB-3924-445F-AF40-43F3B03597DD@jkemp.net</normalized-reference><normalized-reference>C68CB012D9182D408CED7B884F441D4D0476A9A4C0@nambxv01a.corp.adobe.com</normalized-reference><normalized-reference>D326BD65-1932-4C59-B9EC-1FB543A58716@jkemp.net</normalized-reference><normalized-reference>C68CB012D9182D408CED7B884F441D4D0476A9A522@nambxv01a.corp.adobe.com</normalized-reference><normalized-reference>4CB77842.1050907@oracle.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">I agree about being explicit...
+
+</para><para depth="0">I think the design choice between using cookies and using URI annotations
+(query parameters or fragment identifiers or path or even server parts
+of the identifier) should be, in the best designs, that the URI annotations
+identify those elements of the application state that make sense to
+save and restore at a later time, or to communicate to a third party.
+
+</para><para depth="0">Does that make sense?
+
+</para><para depth="0">Larry
+</para><footer type="signature" depth="0" hash="12336111237880593297">--
+<url>http://larry.masinter.net</url>
+
+</footer><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: ashok malhotra [mailto:<email>ashok.malhotra@oracle.com</email>] 
+Sent: Thursday, October 14, 2010 2:38 PM
+To: Larry Masinter
+Cc: John Kemp; Appelquist, Daniel, VF-Group; <email>jar@creativecommons.org</email>;<br/><email>www-tag@w3.org</email>
+Subject: Re: ACTION-434: Some notes on organizing discussion on WebApps<br/>architecture
+
+</quotepara><quotepara depth="1">  Larry wrote:
+
+</quotepara><quotepara depth="1">"Well, I wonder if we might introduce another step between
+"resource" and "representation" which is "application resource
+in identified state", so that the representation isn't a
+representation of the resource, but a representation of the
+resource in that state."
+
+</quotepara><quotepara depth="1">Perhaps!  But how is the state indicated?  Either the URL changes or there is<br/>some other
+information such as cookies.  We need to be explicit about this.
+
+</quotepara><quotepara depth="1">All the best, Ashok
+
+</quotepara><quotepara depth="1">On 10/14/2010 2:11 PM, Larry Masinter wrote:
+</quotepara><quote depth="2"><quotepara depth="2">Well, I wonder if we might introduce another step between
+"resource" and "representation" which is "application resource
+in identified state", so that the representation isn't a
+representation of the resource, but a representation of the
+resource in that state.
+</quotepara></quote><quotefooter type="noise" depth="1">
+</quotefooter></quote></body></message>

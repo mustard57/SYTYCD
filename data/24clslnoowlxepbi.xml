@@ -1,0 +1,249 @@
+<message message-id="200305160300.48807.deller@gmx.de" list="org.kde.kde-pim" id="24clslnoowlxepbi" type="general" date="2003-05-16T03:04:42+02:00" year="2003-01-01" year-month="2003-05-01" year-month-day="2003-05-15" thread-id="5q4gohigz4rvzua6"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Helge Deller" address="deller@gmx.de">Helge Deller &lt;deller@gmx.de&gt;</from><subject normal="kmobile [was: Re: kdepim/kmobile (silent)]">Re: kmobile [was: Re: kdepim/kmobile (silent)]</subject><path>main.gmane.org!not-for-mail</path><newsgroups>gmane.comp.kde.devel.pim</newsgroups><date>Fri, 16 May 2003 03:04:42 +0200</date><lines>238</lines><sender>kde-pim-bounces-+kde-kde-pim=m.gmane.org@mail.kde.org</sender><approved>news@gmane.org</approved><message-id>200305160300.48807.deller@gmx.de</message-id><references>&lt;Pine.GSO.4.44.0305151552520.14166-100000@odin.cs.kun.nl&gt;
+	&lt;200305152316.37943.deller@gmx.de&gt; &lt;200305160059.45167.adridg@cs.kun.nl&gt;</references><reply-to>kde-pim@kde.org</reply-to><nntp-posting-host>main.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain;
+  charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>main.gmane.org 1053047032 10757 80.91.224.249 (16 May 2003 01:03:52 GMT)</x-trace><x-complaints-to>usenet@main.gmane.org</x-complaints-to><nntp-posting-date>Fri, 16 May 2003 01:03:52 +0000 (UTC)</nntp-posting-date><original-x-from>kde-pim-bounces-+kde-kde-pim=m.gmane.org@mail.kde.org Fri May 16 03:03:49 2003</original-x-from><return-path>kde-pim-bounces-+kde-kde-pim=m.gmane.org@mail.kde.org</return-path><original-received>from kde.informatik.uni-kl.de ([131.246.103.200] helo=ktown.kde.org)
+	by main.gmane.org with smtp (Exim 3.35 #1 (Debian))
+	id 19GTd8-0002ic-00
+	for &lt;kde-kde-pim@gmane.org&gt;; Fri, 16 May 2003 03:03:26 +0200</original-received><original-received>(qmail 22516 invoked from network); 16 May 2003 01:05:06 -0000</original-received><original-received>from localhost (HELO ktown.kde.org) (127.0.0.1)
+  by localhost with SMTP; 16 May 2003 01:05:06 -0000</original-received><original-received>(qmail 22434 invoked by uid 1055); 16 May 2003 01:04:59 -0000</original-received><delivered-to>kde.org-kde-pim@kde.org</delivered-to><original-received>(qmail 22432 invoked from network); 16 May 2003 01:04:58 -0000</original-received><original-received>from pop.gmx.net (HELO mail.gmx.net) (213.165.64.20)
+  by kde.informatik.uni-kl.de with SMTP; 16 May 2003 01:04:55 -0000</original-received><original-received>(qmail 29709 invoked by uid 65534); 16 May 2003 01:04:27 -0000</original-received><original-received>from pD9040D0B.dip.t-dialin.net (EHLO P100) (217.4.13.11)
+  by mail.gmx.net (mp012-rz3) with SMTP; 16 May 2003 03:04:27 +0200</original-received><original-to>kde-pim@kde.org,
+ Adriaan de Groot &lt;adridg@cs.kun.nl&gt;</original-to><user-agent>KMail/1.5.9</user-agent><in-reply-to>&lt;200305160059.45167.adridg@cs.kun.nl&gt;</in-reply-to><content-disposition>inline</content-disposition><x-beenthere>kde-pim@mail.kde.org</x-beenthere><x-mailman-version>2.1.1</x-mailman-version><precedence>list</precedence><list-id>KDE PIM &lt;kde-pim.mail.kde.org&gt;</list-id><list-unsubscribe>&lt;http://mail.kde.org/mailman/listinfo/kde-pim&gt;,
+	&lt;mailto:kde-pim-request@mail.kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.kde.org/pipermail/kde-pim&gt;</list-archive><list-post>&lt;mailto:kde-pim@mail.kde.org&gt;</list-post><list-help>&lt;mailto:kde-pim-request@mail.kde.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.kde.org/mailman/listinfo/kde-pim&gt;,
+	&lt;mailto:kde-pim-request@mail.kde.org?subject=subscribe&gt;</list-subscribe><errors-to>kde-pim-bounces-+kde-kde-pim=m.gmane.org@mail.kde.org</errors-to><xref>main.gmane.org gmane.comp.kde.devel.pim:5820</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.kde.devel.pim/5820&gt;</archived-at></headers><normalized-references><normalized-message-id>200305160300.48807.deller@gmx.de</normalized-message-id><normalized-in-reply-to>200305160059.45167.adridg@cs.kun.nl</normalized-in-reply-to><normalized-reference>Pine.GSO.4.44.0305151552520.14166-100000@odin.cs.kun.nl</normalized-reference><normalized-reference>200305152316.37943.deller@gmx.de</normalized-reference><normalized-reference>200305160059.45167.adridg@cs.kun.nl</normalized-reference></normalized-references><body type="text/plain;&#13;&#10; charset=&quot;iso-8859-1&quot;"><para depth="0">On Friday 16 May 2003 12:59 am, Adriaan de Groot wrote:
+</para><quote depth="1"><quotepara depth="1">OK, it's just that kamera:/ came up in the thread. kioslaves are rare for
+this kind of mobile devices because they operate differently from many
+other devices on the system. Sure, cameras and mp3 players that show up as
+USB mass storage devices are fine - but you don't need a new ioslave for
+those anyway. 
+</quotepara></quote><para depth="0">
+Why not ? Ok, it's accessible easily if you know how to do it, but
+you have to set the mount permissions right, you need to mount them,
+and then you have them under file:/some_mount_point.
+I don't think this is intuitive for a nice desktop like KDE, and
+I'm pretty sure, that my father/mother won't handle it that easily
+like most expirienced Linux-users.
+
+</para><quote depth="1"><quotepara depth="1">But Pilots are unsuitable for kioslaves because of (a) their 
+battery life 
+</quotepara></quote><para depth="0">
+like most cell phones
+
+</para><quote depth="1"><quotepara depth="1">(b) _they_ start the communication, not the desktop. 
+</quotepara></quote><para depth="0">
+sure. Again like my cell phone.
+But what's the problem. If the user goes there, then konqui (or kmobile - the
+deamon) could pop up a message box where the user is asked to turn
+the device on or to Cancel the connection.
+In some way, I think the kdelibs/kioslave authenticate functions could help
+to implement it in kmobile.
+
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quotepara depth="3">How do you reconcile "no intention to replace kamera" with "universal
+generic access to mobile devices"? (that last thing is a paraphrase of
+what you've claimed kmobile is to be). It either is universal, in which
+case you _should_ port everything to use it, or it's not, in which case
+gosh, lots of code with nowhere to go.
+</quotepara></quote><quotepara depth="2">
+The kmobile interface is universal and many kioslaves could be ported
+over from their current kioslave-only-centric state to the kmobile's
+(which is basically the same and makes porting really simple).
+</quotepara></quote><quotepara depth="1">
+Isn't the point of an ioslave twofold? One is to access data on a
+device/server through some protocol -- that device or protocol specific
+stuff would end up in the KMobile driver. The other is to know what the
+data on the device means. That part would still need to live on top of
+KMobile, wouldn't it? So you'd end up splitting the ioslave into two, with
+KMobile in the middle -- doing what exactly?
+</quotepara></quote><para depth="0">
+KMobile-driver = driving the device on the low-level,
+KMobile client lib = giving one single linkable Library and DCOP-Interface to<br/>KDE applications
+kmobile kioslave = "normal" kioslave functionality
+
+</para><quote depth="1"><quotepara depth="1">Actually, reading your "DESIGN" document reminds me of what I was thinking
+when I started KitchenSync. 
+</quotepara></quote><para depth="0">
+Yes. I liked the idea of kitchensync. I was just bored to write many drivers of<br/>the 
+pretty much same type for different applications. kmobile is just the "logical"
+integrator.
+
+</para><quote depth="1"><quotepara depth="1">A single daemon that offers DCOP interfaces to 
+the lowlevel devices it manages. Damn, that was a long time ago (june 2001,
+in fact).
+
+</quotepara><quote depth="2"><quotepara depth="2">about the idea. It's always hard to convince people, but I do think the
+easiest way is, if you have something to show. I'm trying this right now
+and all I ask for, is to be a little more patient.
+</quotepara></quote><quotepara depth="1">
+Well sure. Take this thread as an attempt to find out what exactly is being
+designed and coded, so it's clear to all parties.
+</quotepara></quote><para depth="0">
+Ok, thanks.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">No. My plan is, that Kitchensync will do that, and that Kitchensync
+will have with a kmobile-driver one single driver to access many mobile
+devices at once.
+</quotepara></quote><quotepara depth="1">
+OK, but kitchensync already _has_ the low-level drivers for the devices it
+supports, and it has a high-level interface as well against which it syncs.
+All that lives in the API KS has -- cutting out the middleman of KMobile.
+
+</quotepara><quotepara depth="1">This brings us back to your original motivation for KMobile: you don't
+_just_ want to sync, you want to be able to access the data on the mobile
+device all the time. I think that desire deserves an argument all its own,
+but not in this thread. Anyway, you're trying to _cut_ _down_ code
+duplication by providing a single mobile-devices daemon that offers a DCOP
+interface to whatever is attached right now. Shuffle KS around a little and
+it
+interoperates, and then the DCOP interface is still available for whatever
+else wants to use it - like other ioslaves.
+</quotepara></quote><para depth="0">
+Exactly. That's a nice and short description.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">The advantage with this concept is, that you don't need to write
+multiple drivers for kioslave/kitchensync-driver and
+import/export-filters for kaddressbook, kalendar, ...
+</quotepara></quote><quotepara depth="1">
+I understand the kioslave/KS duplication - but I'll also claim that the
+things KS talks to are the kind of things you may not want to access as if
+they were local files.
+</quotepara></quote><para depth="0">
+That depends on very much. Pictures on cameras could be synced with 
+kitchensync and kmobile, but often you want to access them directly.
+Addressbooks in phones or Pilots are maybe not that great to access
+directly via konqueror, but they are great for kitchensync.
+The combination of kmobile/kitchensync/kioslave/DCOP interface and
+shared library offeres all possibilities, just with single drivers and a common
+interface.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">driver itself. Only the last piece (the kmobile driver) knows, what's
+possible to do with the device and what not.
+</quotepara></quote><quotepara depth="1">
+Hm. And you have a notion of how to do totally generalized capabilities
+queries, do you?
+</quotepara></quote><para depth="0">
+Of course not. But starting to find out is better than to just not trying it.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">My intention was never to offend anyone here at all, and I really would
+like to excuse myself, if people feel offended by the fact that I added
+it
+</quotepara></quote><quotepara depth="1">
+It's not a matter of offence, it's a matter of trying to produce a coherent
+bit of software that is apparently the core focus of KDE 3.2. And that
+takes a lot of talk sometimes.
+</quotepara></quote><para depth="0">
+I never said, that it could be a core focus for KDE 3.2.
+Do you really think so ?
+
+</para><para depth="0">[removed "st**** Windows-Users" discussions... 
+ Adriaan is right and it's not the issue here]
+
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quotepara depth="3">You're saying that "mobile:/" is more sensible that "kamera:/" here?
+Because everyone knows what mobile things are plugged into the system,
+whereas having a camera plugged in does not imply camerosity?
+</quotepara></quote><quotepara depth="2">
+No, but "mobile:/" can be a one-start-point to _many_ mobile devices at
+once. "kamera:/" could easily present only those devices which are
+camera- and camera-alike devices - you won't loose your "kamera:/" URL by
+that fact. One positive side-effect would be, that you would see
+camera-alike devices beeing supported even if it's support isn't yet in
+the current kamera:/ kioslave, but in another kioslave.
+</quotepara></quote><quotepara depth="1">
+OK, I'm starting to see how this works: mobile:/camera/ shows me the
+cameras connected to the system, mobile:/camera/mltf100t/ shows my my F100,
+with the images that are in it 
+</quotepara></quote><para depth="0">
+Nearly. 
+mobile:/ shows you all device icons (including one with a camera symbol and<br/>named 
+as F100).  If you click of mobile:/F100 you'll see sub-directories acording to<br/>the 
+capatibilities of your device (e.g. Addressbook and a "Files"-Folder)
+mobile:/F100/Files   (or: mobile:/F100/Pictures) will show you your pictures.
+
+</para><quote depth="1"><quotepara depth="1">(also available as 
+file:/mnt/camera/dcim/mltf100t/, but that's another matter).
+mobile:/ipaq/addressbook/ shows something like the addresses on my (purely
+hypothetical) ipaq.
+</quotepara></quote><para depth="0">
+yes.
+Just try the skeleton (the sample) driver yourself.
+E.g.  compile kdepim/kmobile -&gt; start up the "kmobile" application which is
+planned to be a daemon for the kicker sidebar (near the klipboard icon)
+and add the "Skeleton" Device.
+Then start up konqueror and go to "mobile:/", or just double-click on the<br/>Skeleton
+Icon.
+
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quotepara depth="3">So for kamera:/ you'd need to write a new driver to access the camera.
+Ditto for kmobile, yes? Except it might already have a
+"retrievePicture" method for everything.
+</quotepara></quote><quotepara depth="2">
+Yes, but it still will be the well-known kioslave get() function, not a
+special "retrievePicture". There are only some special functions for
+Addressbook, Notes and Calendar entries, which are the hard part
+to provide syncing-possibilties to kitchensync.
+</quotepara></quote><quotepara depth="1">
+What makes you think that those three are "the hard part"? Or special in
+any particular way? You missed todo's, by the way, and my Bejeweled scores,
+and the notepad doodles. Sure, those might fit in the general framework
+instead - as might address and notes. So I don't understand this
+difference. Either the device driver can represent what you ask it, or it
+can't. I can imagine mobile:/palm/zire71/addresses/?name="Helge" showing me
+a list of addresses containing Helge. That doesn't need any special access
+methods.
+</quotepara></quote><para depth="0">
+Yes, I missed the todos. But what are Bejeweled scores and the notepad doodles ?
+Maybe those could be represented in a sub-folder by the kioslave-part of the
+kmobile driver in a such named sub-directory instead. Syncing with those would<br/>be on
+file-bases, while addresses and calendar-entries and todos often can't and
+have the be handled special. That's the "hard part", since they need special
+care inside a kitchensync driver.
+
+</para><quote depth="1"><quotepara depth="1">But doing this kind of communication with your PDA all the time is slow and
+eats batteries. Before you know it, your device drivers are going to start
+caching data on the desktop side and doing syncing secretly, furtively in
+dark corners.
+</quotepara></quote><para depth="0">
+Yes, my gnokii-driver does caching already. It's easy, in principle it's
+only an array of addresses.
+But who cares, if _all_ communication only goes via this single driver - 
+both from kitchensync, kioslave and import/export filters in kaddressbook ?
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">I'm not going (or trying) to force anyone to use kmobile.
+</quotepara></quote><quotepara depth="1">
+Part of the point is - again with reference to KDE 3.2 - is that actually,
+people are going to have to be forced to use _something_ so that the PIM
+suite is consistent and usable.
+</quotepara></quote><para depth="0">
+Sure. kmobile offers one possibility.
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">kmobile has functions which can be used by applications if they want and
+every application can use kmobile already now directly via the mobile:/
+kioslave.
+</quotepara></quote><quotepara depth="1">
+Which would be pretty funky, if your bluetooth PDA got in range and all of
+a sudden the addressbook resource mobile:/palm/tungstenT/addressbook/ got
+lots of new entries.
+</quotepara></quote><para depth="0">
+:-)
+
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quotepara depth="3">Here, I'll make you a deal. Port the KPilot bottom end to libkmobile.
+If you don't have a Pilot, I'll send you one. Currently all KPilot
+communication goes through the pilot-link library, and has a very much
+question-response nature. You may use the coldsync libraries instead if
+you wish.
+</quotepara></quote><quotepara depth="2">
+GREAT !!
+In fact I already asked a few people, if they would give me one of their
+"old" Pilots for testing.
+</quotepara></quote><quotepara depth="1">
+I hope you can repair the charging traces on my old Palm V ( a little
+solder or metallic paint will do). But while sitting here trying to
+criticize the idea, I've become intrigued again by the possibilities of
+this idea (after all, it's mine, I should have patented it :) ) and I'll
+try to play with it a little.
+</quotepara></quote><para depth="0">
+Helge
+</para><footer type="list-management" depth="0">_______________________________________________
+kde-pim mailing list
+<email>kde-pim@mail.kde.org</email>
+<url>http://mail.kde.org/mailman/listinfo/kde-pim</url>
+kde-pim home page at <url>http://pim.kde.org/</url>
+
+</footer></body></message>

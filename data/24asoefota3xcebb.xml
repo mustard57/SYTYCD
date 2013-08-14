@@ -1,0 +1,26 @@
+<message message-id="5.0.2.1.0.20010711163948.00a71bd0@franklin.cisco.com" list="org.apache.portals.jetspeed-dev" id="24asoefota3xcebb" type="development" date="2001-07-11T16:40:25-07:00" year="2001-01-01" year-month="2001-07-01" year-month-day="2001-07-11" thread-id="qyftagh5jft5timk"><headers><envelope-from-line>From jetspeed-dev-return-1255-apmail-jakarta-jetspeed-dev-archive=jakarta.apache.org@jakarta.apache.org Wed Jul 11 23:38:04 2001</envelope-from-line><from personal="Atul Dambalkar" address="adambalk@cisco.com">Atul Dambalkar &lt;adambalk@cisco.com&gt;</from><to personal="jetspeed-dev@jakarta.apache.org" address="jetspeed-dev@jakarta.apache.org">jetspeed-dev@jakarta.apache.org</to><subject normal="org.apache.turbine.om.security TurbineUser/Group/Role classes need to override &quot;equals&quot;">Re: org.apache.turbine.om.security TurbineUser/Group/Role
+  classes need to override "equals"</subject><return-path>jetspeed-dev-return-1255-apmail-jakarta-jetspeed-dev-archive=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-jetspeed-dev-archive@jakarta.apache.org</delivered-to><received>(qmail 35819 invoked by uid 500); 11 Jul 2001 23:38:03 -0000</received><mailing-list>contact jetspeed-dev-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;mailto:jetspeed-dev@jakarta.apache.org&gt;</list-post><list-help>&lt;mailto:jetspeed-dev-help@jakarta.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:jetspeed-dev-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:jetspeed-dev-subscribe@jakarta.apache.org&gt;</list-subscribe><reply-to>jetspeed-dev@jakarta.apache.org</reply-to><delivered-to>mailing list jetspeed-dev@jakarta.apache.org</delivered-to><received>(qmail 35808 invoked from network); 11 Jul 2001 23:38:03 -0000</received><message-id>5.0.2.1.0.20010711163948.00a71bd0@franklin.cisco.com</message-id><x-sender>adambalk@franklin.cisco.com</x-sender><x-mailer>QUALCOMM Windows Eudora Version 5.0.2</x-mailer><date>Wed, 11 Jul 2001 16:40:25 -0700</date><in-reply-to>&lt;5.0.2.1.0.20010711162937.00aa95a0@franklin.cisco.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"; format=flowed</content-type><x-spam-rating>h31.sny.collab.net 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>5.0.2.1.0.20010711163948.00a71bd0@franklin.cisco.com</normalized-message-id><normalized-in-reply-to>5.0.2.1.0.20010711162937.00aa95a0@franklin.cisco.com</normalized-in-reply-to></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;; format=flowed"><para depth="0">At 04:36 PM 7/11/01 -0700, you wrote:
+</para><quote depth="1"><quotepara depth="1">Hi David/Raphael,
+
+</quotepara><quotepara depth="1">This can be a low priority..as I do have a work around.
+
+</quotepara><quotepara depth="1">TurbineUser/Group/Role classes need to override "boolean equals(Object 
+obj) method from java.lang.Object, so as it to be comparable in a 
+java.util.Map and may also implement java.lang.Comparable interface.
+</quotepara></quote><para depth="0">
+Or may be BaseProfileLocator can do that for now. But again it is a low 
+priority. Actually, I can do those modifications in BaseProfileLocator 
+object, if you can tell me about, the equality criteria for User/Role/Group 
+objects.
+
+</para><quote depth="1"><quotepara depth="1">-Atul
+
+</quotepara><quotefooter type="list-management" hash="7686385084597910468" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>jetspeed-dev-unsubscribe@jakarta.apache.org</email>
+For additional commands, e-mail: <email>jetspeed-dev-help@jakarta.apache.org</email>
+
+</quotefooter></quote><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>jetspeed-dev-unsubscribe@jakarta.apache.org</email>
+For additional commands, e-mail: <email>jetspeed-dev-help@jakarta.apache.org</email>
+
+</footer></body></message>

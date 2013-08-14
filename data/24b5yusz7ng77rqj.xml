@@ -1,0 +1,102 @@
+<message message-id="AANLkTim9lAI5_ss9Q01-as-ZLTyilSOhbycMjR5g2D-0@mail.gmail.com" list="com.googlegroups.protobuf" id="24b5yusz7ng77rqj" type="general" date="2010-07-16T07:00:25+01:00" year="2010-01-01" year-month="2010-07-01" year-month-day="2010-07-15" thread-id="2j6e26hyfwtq74pm"><headers><envelope-from-line>Thu Jul 15 22:00:56 2010</envelope-from-line><from personal="Marc Gravell" address="marc.gravell@gmail.com">Marc Gravell &lt;marc.gravell@gmail.com&gt;</from><to personal="Ferryandi Chai" address="fjchairul@gmail.com">Ferryandi Chai &lt;fjchairul@gmail.com&gt;</to><cc personal="Protocol Buffers" address="protobuf@googlegroups.com">Protocol Buffers &lt;protobuf@googlegroups.com&gt;</cc><subject normal="[protobuf] [Protobuf] Can protobuf serialize datatable (C#)">Re: [protobuf] [Protobuf] Can protobuf serialize datatable (C#)</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 347
+          for &lt;laurel.velazquez.nieves@a.markmail.org&gt;;
+          Thu, 15 Jul 2010 22:00:56 -0800 (GMT-08:00)</received><received>from mail-gw0-f60.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 57F1329081E9
+	for &lt;laurel.velazquez.nieves@a.markmail.org&gt;; Thu, 15 Jul 2010 23:00:32 -0700 (PDT)</received><received>by gwb19 with SMTP id 19sf2733231gwb.15
+        for &lt;laurel.velazquez.nieves@a.markmail.org&gt;; Thu, 15 Jul 2010 23:00:55 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:x-beenthere:received:received:received
+         :received:received-spf:received:received:mime-version:received
+         :in-reply-to:references:from:date:message-id:subject:to:cc
+         :x-original-sender:x-original-authentication-results:precedence
+         :mailing-list:list-id:list-post:list-help:list-archive:sender
+         :list-subscribe:list-unsubscribe:content-type;
+        bh=rnEnsIVRQMKc0esRHYYrxjAMbzdPnx1eBAIHg13iNPE=;
+        b=jePuZGPI59BexHqPsGj6z8/ZGHrZCFAY+F8HuVZtGTkKjYcRB8ugJtN5ya3jXKhOAO
+         /huhpq2YmOJhJ2bkBg4CseiTc3oRuYT2t+3NwTTbEZ9gvkgRmAdqSbV0xHzXmGbUFoJr
+         i2gEfi7MMQtuqjXWFu/emnjD+SjN+8/l3WlwI=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:received-spf:mime-version:in-reply-to:references:from
+         :date:message-id:subject:to:cc:x-original-sender
+         :x-original-authentication-results:precedence:mailing-list:list-id
+         :list-post:list-help:list-archive:sender:list-subscribe
+         :list-unsubscribe:content-type;
+        b=WRMJkQxzWvpXvoW5zgGcm+oi50rD7LzldM6bCU5d+lTr0sWWg/zgR5Zj6EImJVrIym
+         +hJMFExtCFeromph966jIytJxHV010jhsCu5vBe8YdPVgj2y6fO+mPzXEPD3B6YJF++j
+         2uz2OnaCTLf1UDFtIDN0xJXYc9WWqh46S9qd4=</domainkey-signature><received>by 10.90.119.3 with SMTP id r3mr157246agc.18.1279260047655;
+        Thu, 15 Jul 2010 23:00:47 -0700 (PDT)</received><x-beenthere>protobuf@googlegroups.com</x-beenthere><received>by 10.231.125.77 with SMTP id x13ls2471032ibr.1.p; Thu, 15 Jul 2010 
+	23:00:46 -0700 (PDT)</received><received>by 10.231.183.7 with SMTP id ce7mr55136ibb.7.1279260046585;
+        Thu, 15 Jul 2010 23:00:46 -0700 (PDT)</received><received>by 10.231.183.7 with SMTP id ce7mr55134ibb.7.1279260046531;
+        Thu, 15 Jul 2010 23:00:46 -0700 (PDT)</received><received>from mail-iw0-f170.google.com (mail-iw0-f170.google.com [209.85.214.170])
+        by gmr-mx.google.com with ESMTP id z11si1294206ibb.0.2010.07.15.23.00.45;
+        Thu, 15 Jul 2010 23:00:45 -0700 (PDT)</received><received-spf>pass (google.com: domain of marc.gravell@gmail.com designates 209.85.214.170 as permitted sender) client-ip=209.85.214.170;</received-spf><received>by iwn36 with SMTP id 36so1952343iwn.29
+        for &lt;protobuf@googlegroups.com&gt;; Thu, 15 Jul 2010 23:00:45 -0700 (PDT)</received><received>by 10.42.8.72 with SMTP id h8mr208086ich.17.1279260045179; Thu, 15 
+	Jul 2010 23:00:45 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.42.6.72 with HTTP; Thu, 15 Jul 2010 23:00:25 -0700 (PDT)</received><in-reply-to>&lt;0859162d-bec8-4d25-9952-82f48264ffde@m17g2000prl.googlegroups.com&gt;</in-reply-to><references>&lt;0859162d-bec8-4d25-9952-82f48264ffde@m17g2000prl.googlegroups.com&gt;</references><date>Fri, 16 Jul 2010 07:00:25 +0100</date><message-id>AANLkTim9lAI5_ss9Q01-as-ZLTyilSOhbycMjR5g2D-0@mail.gmail.com</message-id><x-original-sender>marc.gravell@gmail.com</x-original-sender><x-original-authentication-results>gmr-mx.google.com; spf=pass (google.com: 
+	domain of marc.gravell@gmail.com designates 209.85.214.170 as permitted 
+	sender) smtp.mail=marc.gravell@gmail.com; dkim=pass (test mode) 
+	header.i=@gmail.com</x-original-authentication-results><precedence>list</precedence><mailing-list>list protobuf@googlegroups.com; contact protobuf+owners@googlegroups.com</mailing-list><list-id>&lt;protobuf.googlegroups.com&gt;</list-id><list-post>&lt;http://groups.google.com/group/protobuf/post?hl=en_US&gt;, 
+	&lt;mailto:protobuf@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:protobuf+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/protobuf?hl=en_US&gt;</list-archive><sender>protobuf@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/protobuf/subscribe?hl=en_US&gt;, 
+	&lt;mailto:protobuf+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/protobuf/subscribe?hl=en_US&gt;, 
+	&lt;mailto:protobuf+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>multipart/alternative; boundary=0016e68debc6917ddd048b7af067</content-type></headers><normalized-references><normalized-message-id>AANLkTim9lAI5_ss9Q01-as-ZLTyilSOhbycMjR5g2D-0@mail.gmail.com</normalized-message-id><normalized-in-reply-to>0859162d-bec8-4d25-9952-82f48264ffde@m17g2000prl.googlegroups.com</normalized-in-reply-to><normalized-reference>0859162d-bec8-4d25-9952-82f48264ffde@m17g2000prl.googlegroups.com</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=0016e68debc6917ddd048b7af067" type="text/plain; charset=ISO-8859-1"><para depth="0">From the message, that *sounds* like protobuf-net...
+
+</para><para depth="0">There is no built-in handling of this, but it is possibly something that
+could be added, especially in "v2" which has a much more flexible model. For
+example, you *could* argue that there is an implicit schema that uses a
+repeated element per row, and the column ordinal for a field.
+
+</para><para depth="0">There are a couple of points here thought:
+
+</para><para depth="0">- protobuf /normally/ doesn't include schema information; so when
+deserializing *either* you would have to set up the schema (columns etc)
+*first* and then use Merge, /or/ I could include schema information as an
+exception
+- it would need some thought re the difference between DataSet and DataTable
+- a data-set has relations etc, which don't necessarily fit very well here
+
+</para><para depth="0">I'm interested in your thoughts with this; are you just after something to
+load/save the data? Or interop with other platforms?
+
+</para><para depth="0">And the other important question: /an option/ is to move the data to/from a
+DTO during serialization; the DTO would serialize fine with protobuf-net.
+
+</para><para depth="0">Marc
+
+</para><para depth="0">On 15 July 2010 09:43, Ferryandi Chai &lt;<email>fjchairul@gmail.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">Hi All,
+
+</quotepara><quotepara depth="1">Im just wondering can protobuf serialize datatable.
+Im a c# developer, and when i tried to serialize datatable it prompt
+this error:
+
+</quotepara><quotepara depth="1">"Only data-contract classes (and lists/arrays of such) can be
+processed (error processing DataTable)"
+
+</quotepara><quotepara depth="1">Tried to google this problem but cannot find solutions.
+
+</quotepara><quotepara depth="1">Thx
+F!
+
+</quotepara><quotefooter type="list-management" depth="1">--
+You received this message because you are subscribed to the Google Groups
+"Protocol Buffers" group.
+To post to this group, send email to <email>protobuf@googlegroups.com</email>.
+To unsubscribe from this group, send email to
+protobuf+<email>unsubscribe@googlegroups.com</email>&lt;<email>protobuf%2Bunsubscribe@googlegroups.com</email>&gt;
+.
+For more options, visit this group at
+<url>http://groups.google.com/group/protobuf?hl=en</url>.
+
+</quotefooter></quote><footer type="signature" depth="0" hash="1839327368624061981">-- 
+Regards,
+
+</footer><para depth="0">Marc
+
+</para><footer type="list-management" depth="0">-- 
+You received this message because you are subscribed to the Google Groups<br/>"Protocol Buffers" group.
+To post to this group, send email to <email>protobuf@googlegroups.com</email>.
+To unsubscribe from this group, send email to<br/>protobuf+<email>unsubscribe@googlegroups.com</email>.
+For more options, visit this group at<br/><url>http://groups.google.com/group/protobuf?hl=en</url>.
+
+</footer></body></message>

@@ -1,0 +1,27 @@
+<message message-id="200003231405.OAA01008@rhodes.demon.co.uk" list="org.kde.kde-devel" id="24c7ug6ndtpjwh5s" type="development" date="2000-03-23T14:05:25Z" year="2000-01-01" year-month="2000-03-01" year-month-day="2000-03-23" thread-id="24c7ug6ndtpjwh5s"><headers><envelope-from-line>From kde-devel-request@max.tat.physik.uni-tuebingen.de  Thu Mar 23 13:06:18 2000</envelope-from-line><from personal="Stephen Rhodes" address="stephen@rhodes.demon.co.uk">Stephen Rhodes &lt;stephen@rhodes.demon.co.uk&gt;</from><to personal="kde-devel@kde.org" address="kde-devel@kde.org">kde-devel@kde.org</to><subject normal="Failures in make check in kdelibs build">Failures in make check in kdelibs build</subject><return-path>kde-devel-request@max.tat.physik.uni-tuebingen.de</return-path><received>from max.tat.physik.uni-tuebingen.de (max.tat.physik.uni-tuebingen.de [134.2.170.93])
+	by mailer.progressive-comp.com with id NAA07533
+	for &lt;kde-devel@progressive-comp.com&gt;; Thu, 23 Mar 2000 13:06:18 -0500</received><received>by max.tat.physik.uni-tuebingen.de id &lt;S742956AbQCWSF3&gt;;
+	Thu, 23 Mar 2000 19:05:29 +0100</received><message-id>200003231405.OAA01008@rhodes.demon.co.uk</message-id><mime-version>1.0 (NeXT Mail 4.2mach v148)</mime-version><content-type>text/enriched; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding><content-disposition>inline</content-disposition><x-nextstep-mailer>Mail 4.2mach (Enhance 2.0b5)</x-nextstep-mailer><date>Thu, 23 Mar 2000 14:05:25 GMT</date><old-return-path>&lt;stephen@rhodes.demon.co.uk&gt;</old-return-path><x-orcpt>rfc822;kde-devel@kde.org</x-orcpt><resent-message-id>&lt;zfV-eC.A.-GE.pzl24@max&gt;</resent-message-id><resent-from>kde-devel@max.tat.physik.uni-tuebingen.de</resent-from><old-reply-to>kde-devel@kde.org</old-reply-to><x-mailing-list>&lt;kde-devel@max.tat.physik.uni-tuebingen.de&gt; archive/latest/13745</x-mailing-list><x-loop>kde-devel@max.tat.physik.uni-tuebingen.de</x-loop><precedence>list</precedence><resent-sender>kde-devel-request@max.tat.physik.uni-tuebingen.de</resent-sender><reply-to>kde-devel@kde.org</reply-to><resent-date>Thu, 23 Mar 2000 19:05:29 +0100</resent-date></headers><normalized-references><normalized-message-id>200003231405.OAA01008@rhodes.demon.co.uk</normalized-message-id></normalized-references><body type="text/enriched; charset=us-ascii"><para depth="0">1. KDEUI
+
+</para><para depth="0">&lt;fixed&gt;&lt;fontfamily&gt;&lt;param&gt;Courier&lt;/param&gt;kwindowtest.cpp&lt;/fontfamily&gt;
+&lt;/fixed&gt; - function &lt;fixed&gt;&lt;fontfamily&gt;&lt;param&gt;Courier
+&lt;/param&gt;testWindows::slotOpen()&lt;/fontfamily&gt;&lt;/fixed&gt; is broken
+
+</para><para depth="0">2. KSPELL
+
+</para><para depth="0">&lt;fixed&gt;&lt;fontfamily&gt;&lt;param&gt;Courier&lt;/param&gt;KSconfig.h&lt;/fontfamily&gt;&lt;/fixed&gt; -
+syntax error in line containing &lt;fixed&gt;&lt;fontfamily&gt;&lt;param&gt;Courier
+&lt;/param&gt;KConfig *kc
+
+</para><para depth="0">&lt;/fontfamily&gt;&lt;/fixed&gt;3. KHTML
+
+</para><para depth="0">Latest revision now fails in the linker with an undefined reference to 
+
+</para><para depth="0">&lt;fixed&gt;&lt;fontfamily&gt;&lt;param&gt;Courier
+&lt;/param&gt;KJavaAppletConnect::KJavaAppletConnect(KJaverAppletServer *)
+
+</para><para depth="0">&lt;/fontfamily&gt;&lt;/fixed&gt;regards,
+
+</para><para depth="0">Stephen
+
+</para></body></message>

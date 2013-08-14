@@ -1,0 +1,34 @@
+<message message-id="20090716110830.14216.qmail@dev.java.net" list="net.java.dev.maven2-repository.commits" id="24apa4sem77pelc5" no-archive="yes" type="checkins" date="2009-07-16T03:08:09.142949-08:00" year="2009-01-01" year-month="2009-07-01" year-month-day="2009-07-16" thread-id="24apa4sem77pelc5"><headers><envelope-from-line>Thu Jul 16 03:08:32 2009</envelope-from-line><from personal="kohsuke@dev.java.net" address="kohsuke@dev.java.net">kohsuke@dev.java.net</from><to personal="commits@maven2-repository.dev.java.net" address="commits@maven2-repository.dev.java.net">commits@maven2-repository.dev.java.net</to><subject normal="svn commit: r661184 - trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT">svn commit: r661184 - trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 945
+          for &lt;cindy.hensley.frank@a.markmail.org&gt;;
+          Thu, 16 Jul 2009 03:08:31 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id AA9E429083C5
+	for &lt;cindy.hensley.frank@a.markmail.org&gt;; Thu, 16 Jul 2009 04:08:08 -0700 (PDT)</received><received>(qmail 14239 invoked by uid 5000); 16 Jul 2009 11:08:31 -0000</received><mailing-list>contact commits-help@maven2-repository.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:commits-help@maven2-repository.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@maven2-repository.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:commits@maven2-repository.dev.java.net&gt;</list-post><reply-to>commits@maven2-repository.dev.java.net</reply-to><delivered-to>mailing list commits@maven2-repository.dev.java.net</delivered-to><received>(qmail 14221 invoked by uid 5000); 16 Jul 2009 11:08:30 -0000</received><date>16 Jul 2009 11:08:30 -0000</date><message-id>20090716110830.14216.qmail@dev.java.net</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20090716110830.14216.qmail@dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: kohsuke
+Date: 2009-07-16 11:08:28+0000
+New Revision: 661184
+
+</para><para depth="0">Modified:
+   trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom
+   trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.md5
+   trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.sha1
+
+</para><para depth="0">Log:
+Upload by wagon-svn
+
+</para><para depth="0">Modified:<br/>trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom?view=diff&amp;rev=661184&amp;p1=trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom&amp;p2=trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom&amp;r1=661183&amp;r2=661184</url>
+==============================================================================
+
+</para><para depth="0">Modified:<br/>trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.md5
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.md5?view=diff&amp;rev=661184&amp;p1=trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.md5&amp;p2=trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.md5&amp;r1=661183&amp;r2=661184</url>
+==============================================================================
+
+</para><para depth="0">Modified:<br/>trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.sha1
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.sha1?view=diff&amp;rev=661184&amp;p1=trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.sha1&amp;p2=trunk/repository/com/sun/jersey/jersey-bundle/1.1.2-ea-SNAPSHOT/jersey-bundle-1.1.2-ea-SNAPSHOT.pom.sha1&amp;r1=661183&amp;r2=661184</url>
+==============================================================================
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>commits-unsubscribe@maven2-repository.dev.java.net</email>
+For additional commands, e-mail: <email>commits-help@maven2-repository.dev.java.net</email>
+
+</footer></body></message>

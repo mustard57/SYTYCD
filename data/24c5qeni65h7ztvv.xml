@@ -1,0 +1,289 @@
+<message message-id="44D4066A.6000906@sun.com" list="net.java.dev.nbjfuguesupport.dev" id="24c5qeni65h7ztvv" type="development" date="2006-08-05T04:46:02+02:00" year="2006-01-01" year-month="2006-08-01" year-month-day="2006-08-04" thread-id="ovaweeiecc5k5mw6"><headers><envelope-from-line>From dev@nbjfuguesupport.dev.java.net Fri Aug 04 20:09:17 2006</envelope-from-line><from personal="Geertjan Wielenga" address="Geertjan.Wielenga@Sun.COM">Geertjan Wielenga &lt;Geertjan.Wielenga@Sun.COM&gt;</from><to personal="dev@nbjfuguesupport.dev.java.net" address="dev@nbjfuguesupport.dev.java.net">dev@nbjfuguesupport.dev.java.net</to><subject normal="Problem building jFugue...">Re: Problem building jFugue...</subject><return-path>geertjan.wielenga@sun.com</return-path><mailing-list>contact dev-help@nbjfuguesupport.dev.java.net; run by ezmlm</mailing-list><delivered-to>mailing list dev@nbjfuguesupport.dev.java.net</delivered-to><received>(qmail 4689 invoked from network); 5 Aug 2006 02:46:13 -0000</received><received>from cylon2.sjc.collab.net (204.16.104.18)
+  by s006.sfo.collab.net with SMTP; 5 Aug 2006 02:46:13 -0000</received><received>from brmea-mail-2.sun.com ([192.18.98.43])
+  by cylon2.sjc.collab.net with ESMTP; 04 Aug 2006 19:46:12 -0700</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AQAAANCi00SKaAEBAgcECgcGHVM</x-ironport-anti-spam-result><x-ironport-av>i="4.07,214,1151910000"; 
+   d="scan'208"; a="22157478:sNHT21908768"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from fe-amer-10.sun.com ([192.18.108.184])
+	by brmea-mail-2.sun.com (8.13.6+Sun/8.12.9) with ESMTP id k752kBup027293
+	for &lt;dev@nbjfuguesupport.dev.java.net&gt;; Fri, 4 Aug 2006 20:46:12 -0600 (MDT)</received><received>from conversion-daemon.mail-amer.sun.com by mail-amer.sun.com
+ (Sun Java System Messaging Server 6.2-4.02 (built Sep  9 2005))
+ id &lt;0J3I00L017N9XG00@mail-amer.sun.com&gt;
+ (original mail from Geertjan.Wielenga@Sun.COM)
+ for dev@nbjfuguesupport.dev.java.net; Fri, 04 Aug 2006 20:46:11 -0600 (MDT)</received><received>from [88.102.77.4] (4.77.broadband7.iol.cz [88.102.77.4])
+ by mail-amer.sun.com
+ (Sun Java System Messaging Server 6.2-4.02 (built Sep  9 2005))
+ with ESMTPSA id &lt;0J3I0022D7OWWX00@mail-amer.sun.com&gt; for
+ dev@nbjfuguesupport.dev.java.net; Fri, 04 Aug 2006 20:46:11 -0600 (MDT)</received><date>Sat, 05 Aug 2006 04:46:02 +0200</date><in-reply-to>&lt;e1b5a5620608041842t5c5fbd17x990b027a112611ee@mail.gmail.com&gt;</in-reply-to><sender>Geertjan.Wielenga@Sun.COM</sender><message-id>44D4066A.6000906@sun.com</message-id><mime-version>1.0</mime-version><content-type>text/plain; format=flowed; charset=windows-1252</content-type><content-transfer-encoding>8BIT</content-transfer-encoding><references>&lt;000e01c6b812$92dac210$0201a8c0@home&gt; &lt;44D3C5F2.3060105@sun.com&gt;
+ &lt;e1b5a5620608041842t5c5fbd17x990b027a112611ee@mail.gmail.com&gt;</references><user-agent>Thunderbird 1.5.0.5 (Windows/20060719)</user-agent></headers><normalized-references><normalized-message-id>44D4066A.6000906@sun.com</normalized-message-id><normalized-in-reply-to>e1b5a5620608041842t5c5fbd17x990b027a112611ee@mail.gmail.com</normalized-in-reply-to><normalized-reference>000e01c6b812$92dac210$0201a8c0@home</normalized-reference><normalized-reference>44D3C5F2.3060105@sun.com</normalized-reference><normalized-reference>e1b5a5620608041842t5c5fbd17x990b027a112611ee@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; format=flowed; charset=windows-1252"><para depth="0">
+OK, another posibility -- right-click he module suite ("Music NotePad"", 
+choose Properties and go to Libraries. Now, in THAT Libraries panel 
+(because the list below reflects modules selected on the module suite), 
+uncheck and then check everything that is currently checked in the nodes 
+(such as "platform6") there. Sorry for this painful process, but I'm not 
+sure what else to do than this. Seems that those module versions need to 
+be refreshed as well, although I don't understand why since you're using 
+the same version of the IDE as me. (One other thing, if you haven't 
+already, maybe try this before the unchecking.checking because it goes 
+faster), close the IDE and delete the "private: folders in the module 
+suite project (because that's where the problem currently is, judging 
+from the error messages) anf then restart the IDE and open the module 
+suite again.
+
+</para><para depth="0">Apologies for asking you to go through all this, but I can't think of 
+anything else...
+
+</para><para depth="0">Geertjan
+
+</para><para depth="0">John Reynolds wrote:
+</para><quote depth="1"><quotepara depth="1">I'll be glad to report the problems I had.  I am using a clean install 
+of NetBeans 5.5 Beta 2, and I checked out jFugue this morning.
+
+</quotepara><quotepara depth="1">At this point, I get the following error as the application is 
+starting up:
+
+</quotepara><quotepara depth="1">Warning - could not install some modules:
+    Core - The module org-openide-explorer was requested in 
+implementation version "1" but only "060805" was found.
+    Favorites - The module org-openide-explorer was requested in 
+version &gt;= 6.2 but only 1.0 was found.
+    Core - Windows - The module org-openide-explorer was requested in 
+implementation version "1" but only "060805" was found.
+    XML Model Source Retriever - The module named 
+org.netbeans.modules.projectapi/1 was needed and not found.
+    XML Model Source Retriever - The module named 
+org.netbeans.modules.xml.text/2 was needed and not found.
+    XML Model Source Retriever - The module named 
+org.netbeans.modules.xml.xam/1 was needed and not found.
+    Editor - The module org-openide-explorer was requested in version 
+</quotepara><quote depth="2"><quotepara depth="2">= 6.2 but only 1.0 was found.
+</quotepara></quote><quotepara depth="1">    Auto Update - The module org-openide-explorer was requested in 
+version &gt;= 6.2 but only 1.0 was found.
+    Core - Component Palette - The module org-openide-explorer was 
+requested in version &gt;= 6.3 but only 1.0 was found.
+    Musician - None of the modules providing the capability 
+org.openide.windows.IOProvider could be installed.
+Datasystems API - The module org-openide-explorer was requested in 
+version &gt;= 6.2 but only 1.0 was found.
+    Actions APIs - The module org-openide-explorer was requested in 
+version &gt;= 6.2 but only 1.0 was found.
+    19 further modules could not be installed due to the above problems.
+
+</quotepara><quotepara depth="1">Please note that I am using JDK 1.5, and I did a clean install of 
+NetBeans this morning.
+
+</quotepara><quotepara depth="1">Thanks,
+
+</quotepara><quotepara depth="1">JohnR
+
+</quotepara><quotepara depth="1">On 8/4/06, *Geertjan Wielenga* &lt;<email>Geertjan.Wielenga@sun.com</email> 
+&lt;mailto:<email>Geertjan.Wielenga@sun.com</email>&gt;&gt; wrote:
+
+</quotepara><quotepara depth="1">    Pierre Matthijs wrote:
+    &gt;
+    &gt; -----Oorspronkelijk bericht-----
+    &gt; *Van:* John Reynolds [mailto:<email>john.t.reynolds@gmail.com</email>
+    &lt;mailto:<email>john.t.reynolds@gmail.com</email>&gt;]
+    &gt; *Verzonden:* vrijdag 4 augustus 2006 18:43
+    &gt; *Aan:* <email>dev@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev@nbjfuguesupport.dev.java.net</email>&gt;
+    &gt; *Onderwerp:* Re: Problem building jFugue...
+    &gt;
+    &gt; Thanks Geetjan... That got me a bit farther, but I'm beginning to
+    &gt; think that I should wait until the project is stable again.
+    &gt;
+    &gt; It's very unfortunate that jFugue was featured on java.net
+    &lt;<url>http://java.net</url>&gt;
+    &gt; &lt;<url>http://java.net</url> &lt;<url>http://java.net</url>&gt;&gt; while in this state, but
+    It's certainly worth the
+    &gt; effort to get it built.
+    &gt;
+    &gt; Sorry that I'm reacting …
+    &gt;
+    &gt; The project on java.net &lt;<url>http://java.net</url>&gt;, and thus what you
+    downloaded, IS stable, as
+    &gt; much as can be, and as much as has ever been.
+    &gt;
+    &gt; The changes under development are only on my PC, and NOT on the
+    server.
+    &gt;
+    &gt; And as a matter of fact, the reason why I asked to wait a few
+    day's,
+    &gt; is just with the intension to KEEP it stable all the time.
+    &gt;
+    &gt; Pierre
+    &gt;
+
+</quotepara><quotepara depth="1">    Yes, these are good points.
+
+</quotepara><quotepara depth="1">    Any problems encountered should be reported and dealt with. (And then
+    added to the FAQ that is in progress.)
+
+</quotepara><quotepara depth="1">    -- Gj
+
+</quotepara><quotepara depth="1">    &gt;
+    &gt; Thanks,
+    &gt;
+    &gt; JohnR
+    &gt;
+    &gt; On 8/4/06, *Geertjan Wielenga* &lt;<email>Geertjan.Wielenga@sun.com</email>
+    &lt;mailto:<email>Geertjan.Wielenga@sun.com</email>&gt;
+    &gt; &lt;mailto: <email>Geertjan.Wielenga@sun.com</email>
+    &lt;mailto:<email>Geertjan.Wielenga@sun.com</email>&gt;&gt;&gt; wrote:
+    &gt;
+    &gt; John,
+    &gt;
+    &gt; Strange.
+    &gt;
+    &gt; In this particular case, you need to right click the Musician
+    project
+    &gt; and choose Properties. Go to the Libraries panel. There you
+    should add
+    &gt; the "Explorer and Property Sheet API". It should've been there
+    already
+    &gt; but, like I said, we're undergoing severe structural changes at the
+    &gt; moment so things are a bit out of whack.
+    &gt;
+    &gt; -- Geertjan
+    &gt;
+    &gt;
+    &gt; &gt; Doh! Found that setting.
+    &gt; &gt;
+    &gt; &gt; Now I am getting errors like:
+    &gt; &gt;
+    C:\jFugue\nbjfuguesupport\jfugueFunctionality\Musician\src\org\netbeans\modules\musician\instruments\InstrumentsTopComponent.java:11:
+
+</quotepara><quotepara depth="1">    &gt;
+    &gt; &gt; package org.openide.explorer does not exist
+    &gt; &gt; import org.openide.explorer.ExplorerManager;
+    &gt; &gt;
+    &gt; &gt;
+    &gt; &gt; On 8/4/06, *John Reynolds* &lt; <email>john.t.reynolds@gmail.com</email>
+    &lt;mailto:<email>john.t.reynolds@gmail.com</email>&gt;
+    &gt; &lt;mailto:<email>john.t.reynolds@gmail.com</email>
+    &lt;mailto:<email>john.t.reynolds@gmail.com</email>&gt;&gt;
+    &gt; &gt; &lt;mailto:<email>john.t.reynolds@gmail.com</email>
+    &lt;mailto:<email>john.t.reynolds@gmail.com</email>&gt;
+    &gt; &lt;mailto:<email>john.t.reynolds@gmail.com</email>
+    &lt;mailto:<email>john.t.reynolds@gmail.com</email>&gt;&gt;&gt;&gt; wrote:
+    &gt; &gt;
+    &gt; &gt; Thanks Geertjan,
+    &gt; &gt;
+    &gt; &gt; I found a netbeans library dependency, XML Tools API, that was
+    for
+    &gt; &gt; some reason specifically excluded, and that got me to the point
+    &gt; &gt; where I can attempt a build.
+    &gt; &gt;
+    &gt; &gt; I am now getting the following:
+    &gt; &gt; (try -source 1.5 to enable generics)
+    &gt; &gt; Vector &lt;Instrument&gt;instr = new Vector&lt;Instrument&gt;();
+    &gt; &gt;
+    &gt; &gt;
+    &gt; &gt; I am using Java 1.5 (1.4 isn't installed on my workstation)... but
+    &gt; &gt; I am not sure where in the project I would set -source 1.5)
+    &gt; &gt;
+    &gt; &gt; Thanks,
+    &gt; &gt;
+    &gt; &gt; JohnR
+    &gt; &gt;
+    &gt; &gt;
+    &gt; &gt;
+    &gt; &gt;
+    &gt; &gt; On 8/4/06, *Geertjan Wielenga* &lt; <email>Geertjan.Wielenga@sun.com</email>
+    &lt;mailto:<email>Geertjan.Wielenga@sun.com</email>&gt;
+    &gt; &lt;mailto:<email>Geertjan.Wielenga@sun.com</email>
+    &lt;mailto:<email>Geertjan.Wielenga@sun.com</email>&gt;&gt;
+    &gt; &gt; &lt;mailto: <email>Geertjan.Wielenga@sun.com</email>
+    &lt;mailto:<email>Geertjan.Wielenga@sun.com</email>&gt;
+    &gt; &lt;mailto: <email>Geertjan.Wielenga@sun.com</email>
+    &lt;mailto:<email>Geertjan.Wielenga@sun.com</email>&gt;&gt;&gt;&gt; wrote:
+    &gt; &gt;
+    &gt; &gt; John Reynolds wrote:
+    &gt; &gt; &gt; Please bear with me... this is probably a dumb question.
+    &gt; &gt; &gt;
+    &gt; &gt; &gt; I got the source for jFugue via CVS, opened the project in
+    &gt; &gt; Netbeans
+    &gt; &gt; &gt; (5.5 beta 2), and when I try to build I get the following:
+    &gt; &gt; &gt;
+    &gt; &gt; &gt; C:\jFugue\nbjfuguesupport\nbproject\build- impl.xml:19: You must
+    &gt; &gt; &gt; define '
+    nbplatform.NetBeans_5.5_Beta_(Build_060717).harness.dir'
+    &gt; &gt; &gt;
+    &gt; &gt; &gt;
+    &gt; &gt; &gt; I am not sure what this means. From reading build-imple.xml ,
+    &gt; &gt; it seems
+    &gt; &gt; &gt; that I need to create a directory, but I am not sure
+    &gt; &gt; where. Was I
+    &gt; &gt; &gt; supposed to download the Netbeans sources?
+    &gt; &gt; &gt;
+    &gt; &gt; &gt; Thanks,
+    &gt; &gt; &gt;
+    &gt; &gt; &gt; JohnR
+    &gt; &gt; Hi John!
+    &gt; &gt;
+    &gt; &gt; Two things:
+    &gt; &gt;
+    &gt; &gt; 1. Pierre Matthijs is making some very large structural
+    &gt; &gt; changes in the
+    &gt; &gt; coming days. In terms of committing code, we shouldn't do
+    &gt; &gt; anything until
+    &gt; &gt; he's finished his work, which will be during the next few days.
+    &gt; &gt;
+    &gt; &gt; 2. But, of course, you can run the application and play with
+    &gt; &gt; it. To do
+    &gt; &gt; that, you need to build it. And to do THAT, what I think you
+    &gt; &gt; need to do
+    &gt; &gt; is go to the platform.properties file and replace the value
+    &gt; &gt; you find
+    &gt; &gt; there with "default". Or, delete the "private" folder and
+    &gt; &gt; reopen the
+    &gt; &gt; project. There's just some dependency somewhere that you need
+    &gt; &gt; to refresh
+    &gt; &gt; and these two steps might help.
+    &gt; &gt;
+    &gt; &gt; -- Geertjan
+    &gt; &gt;
+    &gt; &gt;
+    ---------------------------------------------------------------------
+    &gt; &gt; To unsubscribe, e-mail:
+    &gt; &gt; <email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>&gt;
+    &gt; &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>&gt;&gt;
+    &gt; &gt; &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>&gt;
+    &gt; &lt;mailto: <email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>&gt;&gt;&gt;
+    &gt; &gt; For additional commands, e-mail:
+    &gt; &gt; <email>dev-help@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-help@nbjfuguesupport.dev.java.net</email>&gt;
+    &gt; &lt;mailto: <email>dev-help@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-help@nbjfuguesupport.dev.java.net</email>&gt;&gt;
+    &gt; &gt; &lt;mailto: <email>dev-help@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-help@nbjfuguesupport.dev.java.net</email>&gt;
+    &gt; &lt;mailto:<email>dev-help@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-help@nbjfuguesupport.dev.java.net</email>&gt;&gt;&gt;
+    &gt; &gt;
+    &gt; &gt;
+    &gt; &gt;
+    &gt;
+    &gt;
+    ---------------------------------------------------------------------
+    &gt; To unsubscribe, e-mail:
+    <email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>&gt;
+    &gt; &lt;mailto: <email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>&gt;&gt;
+    &gt; For additional commands, e-mail:
+    <email>dev-help@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-help@nbjfuguesupport.dev.java.net</email>&gt;
+    &gt; &lt;mailto: <email>dev-help@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-help@nbjfuguesupport.dev.java.net</email>&gt;&gt;
+    &gt;
+
+</quotepara><quotepara depth="1">    ---------------------------------------------------------------------
+    To unsubscribe, e-mail:
+    <email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-unsubscribe@nbjfuguesupport.dev.java.net</email>&gt;
+    For additional commands, e-mail:
+    <email>dev-help@nbjfuguesupport.dev.java.net</email>
+    &lt;mailto:<email>dev-help@nbjfuguesupport.dev.java.net</email>&gt;
+
+</quotepara></quote></body></message>

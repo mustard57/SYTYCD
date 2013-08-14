@@ -1,0 +1,35 @@
+<message message-id="4A1F13A7.8010007@gmail.com" list="org.openoffice.br-pt.usuarios" id="24ayuic63a3x7ir2" no-archive="yes" type="general" date="2009-05-28T14:43:47.537753-08:00" year="2009-01-01" year-month="2009-05-01" year-month-day="2009-05-28" thread-id="wtepvlsfadjislhh"><headers><envelope-from-line>Thu May 28 14:44:10 2009</envelope-from-line><from personal="Marco" address="marcodefreitas@gmail.com">Marco &lt;marcodefreitas@gmail.com&gt;</from><to personal="usuarios@br-pt.openoffice.org" address="usuarios@br-pt.openoffice.org">usuarios@br-pt.openoffice.org</to><subject normal="[usuarios OOo] Como instalar uma extenção para todos os usuário linux? o Vero.">Re: [usuarios OOo] Como instalar uma extenção para todos os usuário linux? o Vero.</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 966
+          for &lt;sonya.nash.woodward@a.markmail.org&gt;;
+          Thu, 28 May 2009 14:44:10 -0800 (GMT-08:00)</received><received>from openoffice.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 4293B3B300C9
+	for &lt;sonya.nash.woodward@a.markmail.org&gt;; Thu, 28 May 2009 15:43:47 -0700 (PDT)</received><received>(qmail 3686 invoked by uid 5000); 28 May 2009 22:44:09 -0000</received><mailing-list>contact usuarios-help@br-pt.openoffice.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:usuarios-help@br-pt.openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:usuarios-unsubscribe@br-pt.openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:usuarios@br-pt.openoffice.org&gt;</list-post><reply-to>usuarios@br-pt.openoffice.org</reply-to><delivered-to>mailing list usuarios@br-pt.openoffice.org</delivered-to><received>(qmail 3669 invoked from network); 28 May 2009 22:44:09 -0000</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AqkEAAaxHkrRVd2Fi2dsb2JhbACQE4dAPwEBARUKGKQxgROPagEDAgSECQU</x-ironport-anti-spam-result><x-ironport-av>E=Sophos;i="4.41,267,1241420400"; 
+   d="scan'208";a="27427329"</x-ironport-av><x-ironport>SCANNED</x-ironport><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from
+         :user-agent:mime-version:to:subject:references:in-reply-to
+         :x-enigmail-version:openpgp:content-type:content-transfer-encoding;
+        bh=6DjtpnNJfmB/mLwh9DBG8LfK3Ta699UfQ8at+MBu3EQ=;
+        b=J/jobBe8Q5Yrimxe2Zw1+lRhzg3sMZ4FdlBd1R+WV39m52K5xBbZ4MxKbckR2YJDSH
+         lRJhEBF/+KzwN/INPdg7GwbKoVRHHRvpCxUq9XWexShX7h9qLU8cWgqYNINDOb/ATfX7
+         j9SaFA0LdMho5rBg9xYK+t1xtlwsseRurs7b8=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:x-enigmail-version:openpgp:content-type
+         :content-transfer-encoding;
+        b=dEHo2WqMYCi9HjI7qtDspN8jFMjORfH6n9QFD5iTjKFDLoE4j2/ijep3BcuDO7225t
+         0fgl6HCxn7PHFWHonfXh553hSro5xd9IOVymVc0M0XzL/YZLHvUoRCNbJ8pdREbONAFc
+         ZzmSVxWLjp6zvNrPGWpJ6yD6iXyS6JWc7A56Q=</domainkey-signature><message-id>4A1F13A7.8010007@gmail.com</message-id><date>Thu, 28 May 2009 19:43:51 -0300</date><user-agent>Thunderbird 2.0.0.21 (X11/20090409)</user-agent><mime-version>1.0</mime-version><references>&lt;1243444934.5117.4.camel@deskx-desktop&gt; &lt;4A1D7C28.6020602@scinergy.com.br&gt;</references><in-reply-to>&lt;4A1D7C28.6020602@scinergy.com.br&gt;</in-reply-to><x-enigmail-version>0.95.7</x-enigmail-version><openpgp/><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>4A1F13A7.8010007@gmail.com</normalized-message-id><normalized-in-reply-to>4A1D7C28.6020602@scinergy.com.br</normalized-in-reply-to><normalized-reference>1243444934.5117.4.camel@deskx-desktop</normalized-reference><normalized-reference>4A1D7C28.6020602@scinergy.com.br</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Olivier Hallot escreveu:
+</para><quote depth="1"><quotepara depth="1">Como root, acione o BrOffice e faça a instalação do Vero. A extensão
+perguntará se é para todos os usuários.
+
+</quotepara></quote><para depth="0">Excelente.
+
+</para><footer type="signature" depth="0" hash="4036051170256716464">-- 
+Marco de Freitas
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>usuarios-unsubscribe@br-pt.openoffice.org</email>
+For additional commands, e-mail: <email>usuarios-help@br-pt.openoffice.org</email>
+
+</footer></body></message>

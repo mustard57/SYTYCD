@@ -1,0 +1,40 @@
+<message message-id="4480112D.9070702@gmx.net" list="com.digium.lists.asterisk-dev" id="24ciuvhgevjvyfcr" type="development" date="2006-06-02T03:21:33" year="2006-01-01" year-month="2006-06-01" year-month-day="2006-06-02" thread-id="sv4pnbf6pzv6o5ou"><headers><envelope-from-line>From kibeki@gmx.net  Fri Jun  2 03:21:33 2006</envelope-from-line><from personal="kibeki@gmx.net" address="kibeki@gmx.net">"kibeki@gmx.net" &lt;kibeki@gmx.net&gt;</from><subject normal="[asterisk-dev] SIP transfer committed">[asterisk-dev] SIP transfer committed</subject><date>Tue Sep  5 14:26:12 2006</date><in-reply-to>&lt;685F7837-3D04-4D23-B943-0F6CF248DF3F@edvina.net&gt;</in-reply-to><references>&lt;685F7837-3D04-4D23-B943-0F6CF248DF3F@edvina.net&gt;</references><message-id>4480112D.9070702@gmx.net</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>4480112D.9070702@gmx.net</normalized-message-id><normalized-in-reply-to>685F7837-3D04-4D23-B943-0F6CF248DF3F@edvina.net</normalized-in-reply-to><normalized-reference>685F7837-3D04-4D23-B943-0F6CF248DF3F@edvina.net</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><greeting depth="0">Hi,
+</greeting><para depth="0">we want to test the new SIP transfer. What do i have to checkout to get the 
+necessary code? currently we are using the latest release versions (1.2.8).
+much thanks and regards
+Bernd
+
+</para><para depth="0">Olle E Johansson wrote:
+</para><quote depth="1"><quotepara depth="1">Friends,
+
+</quotepara><quotepara depth="1">I finally committed the last piece of the new SIP transfer support code. 
+This greatly enhances the support of SIP
+transfers - or at least is meaning to. The code has been tested on 1.2 
+for almost a year in production, but the
+trunk version is a port from this. A port in many cases means that one 
+introduces new bugs.
+
+</quotepara><quotepara depth="1">This code will be tested heavily this week. If you test it and find new 
+bugs, please make sure you report
+them on the bug tracker so we can fix this quickly.
+
+</quotepara><quotepara depth="1">This patch affected both the handling of incoming INVITEs and REFERs. We 
+now have support for INVITE/Replaces
+in relation to REFER. We will have to test what needs to be done to 
+support INVITE/Replaces in relation to call pickup,
+that is an area I have not been focusing on yet. As kpfleming says: I 
+demand that is may or may not work :-)
+
+</quotepara><quotepara depth="1">Thanks to Nuvio, Voop and Foniris for sponsoring the work with SIP 
+transfers. It's been a long journey through
+masquerading, channel locks and a lot of evil bugs.
+
+</quotepara><quotepara depth="1">/O
+</quotepara><quotepara depth="1">_______________________________________________
+--Bandwidth and Colocation provided by Easynews.com --
+
+</quotepara><quotepara depth="1">asterisk-dev mailing list
+To UNSUBSCRIBE or update options visit:
+  <url>http://lists.digium.com/mailman/listinfo/asterisk-dev</url>
+
+</quotepara></quote></body></message>

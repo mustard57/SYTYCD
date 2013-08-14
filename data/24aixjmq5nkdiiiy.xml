@@ -1,0 +1,14 @@
+<message message-id="1206197490.8.0.654630734639.issue1054434@psf.upfronthosting.co.za" list="org.python.python-bugs-list" id="24aixjmq5nkdiiiy" type="bugs" date="2008-03-22T14:51:30Z" year="2008-01-01" year-month="2008-03-01" year-month-day="2008-03-22" thread-id="24aixjmq5nkdiiiy"><headers><envelope-from-line>From report@bugs.python.org  Sat Mar 22 15:51:30 2008</envelope-from-line><from personal="Guilherme Polo" address="report@bugs.python.org">Guilherme Polo &lt;report@bugs.python.org&gt;</from><subject normal="[issue1054434] automatic XMLRPC boxcarring via multicall for xmlrpclib">[issue1054434] automatic XMLRPC boxcarring via multicall for xmlrpclib</subject><date>Sat, 22 Mar 2008 14:51:30 +0000</date><message-id>1206197490.8.0.654630734639.issue1054434@psf.upfronthosting.co.za</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>1206197490.8.0.654630734639.issue1054434@psf.upfronthosting.co.za</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Guilherme Polo &lt;ggpolo at gmail.com&gt; added the comment:
+
+</para><para depth="0">I see these multicall classes (including tests) in python-trunk, except
+for the threaded one. So, should this remain open ? If yes, what has to
+be done here ?
+
+</para><para depth="0">----------
+nosy: +gpolo
+
+</para><para depth="0">_____________________________________
+Tracker &lt;report at bugs.python.org&gt;
+&lt;<url>http://bugs.python.org/issue1054434</url>&gt;
+</para><para depth="0">_____________________________________
+</para></body></message>

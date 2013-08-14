@@ -1,0 +1,37 @@
+<message message-id="15165758.611.1309187086691.JavaMail.geo-discussion-forums@vbit26" list="com.googlegroups.openmeetings-user" id="24byglxom44eos5i" type="users" date="2011-06-27T08:04:46-07:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-27" thread-id="24byglxom44eos5i"><headers><envelope-from-line>Mon Jun 27 08:27:18 2011</envelope-from-line><from personal="Guillaume" address="&quot;guiguinie...&quot;@gmail.com">Guillaume &lt;"guiguinie..."@gmail.com&gt;</from><to personal="openmeetings-user@googlegroups.com" address="openmeetings-user@googlegroups.com">openmeetings-user@googlegroups.com</to><subject normal="Re : Re: [openmeetings-user] Precision about variables">Re : Re: [openmeetings-user] Precision about variables</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 966
+          for &lt;eugenio.joyner.york@a.markmail.org&gt;;
+          Mon, 27 Jun 2011 08:27:18 -0800 (GMT-08:00)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 8D38C29081D5
+	for &lt;eugenio.joyner.york@a.markmail.org&gt;; Mon, 27 Jun 2011 09:26:55 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (Postfix) with ESMTP id 6358A63B014E
+	for &lt;eugenio.joyner.york@a.markmail.org&gt;; Mon, 27 Jun 2011 09:26:55 -0700 (PDT)</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id p5RGQtVn024281
+	for eugenio.joyner.york@a.markmail.org; Mon, 27 Jun 2011 09:26:55 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.openmeetings-user</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>ed9faa6b317f9183</x-markmail-googlegroups-mid><received>by 10.52.181.33 with SMTP id dt1mr2411951vdc.9.1309187090504;
+        Mon, 27 Jun 2011 08:04:50 -0700 (PDT)</received><x-beenthere>openmeetings-user@googlegroups.com</x-beenthere><received>by 10.220.147.130 with SMTP id l2ls4441vcv.5.gmail; Mon, 27 Jun 2011
+ 08:04:47 -0700 (PDT)</received><received>by 10.220.67.23 with SMTP id p23mr676874vci.46.1309187087151;
+        Mon, 27 Jun 2011 08:04:47 -0700 (PDT)</received><date>Mon, 27 Jun 2011 08:04:46 -0700 (PDT)</date><reply-to>openmeetings-user@googlegroups.com</reply-to><message-id>15165758.611.1309187086691.JavaMail.geo-discussion-forums@vbit26</message-id><in-reply-to>&lt;BANLkTikFh_Nf0HPP4t5pTe9Mu9Mer9UV4Q@mail.gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>multipart/mixed; 
+	boundary="----=_Part_609_28554661.1309187086689"</content-type></headers><normalized-references><normalized-message-id>15165758.611.1309187086691.JavaMail.geo-discussion-forums@vbit26</normalized-message-id><normalized-in-reply-to>BANLkTikFh_Nf0HPP4t5pTe9Mu9Mer9UV4Q@mail.gmail.com</normalized-in-reply-to></normalized-references><body><para depth="0">Ok, its at the beginning of the method endUline, you have :
+
+</para><para depth="0">"Get Bounds of that object"
+ var minx = this.width+2;
+ var miny = this.height+2;
+
+</para><para depth="0">and after :
+" this.currentlayer = new lz.drawViewNew(this,{
+                name:tempName,x:minx-1-(this.currentulinelineWidth,
+                y:miny-1-(this.currentulinelineWidth),
+                width:(width+this.currentlinelineWidth),
+                height:(width+this.currentlinelineWidth),
+                opacity:this.currentulineOpacity}); "
+
+</para><para depth="0">I don't know if theses variables are responsible of the shifting of the 
+Uline or maybe the update of variables x1,y1,x2,y2.
+
+</para><para depth="0">This is my question.
+
+</para><para depth="0">Any idea about that ?
+
+</para><para depth="0">Thanks
+
+</para></body></message>

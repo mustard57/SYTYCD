@@ -1,0 +1,52 @@
+<message message-id="handler.6251.D6251.96370458815022.ackdone@bugs.kde.org" list="org.kde.kde-bugs-dist" id="24bz4tbi5kaspjw3" type="bugs" date="2000-07-16T01:48:02+02:00" year="2000-01-01" year-month="2000-07-01" year-month-day="2000-07-15" thread-id="eqtreldceqn2xfq5"><headers><envelope-from-line>From kde-bugs-dist-admin@max.tat.physik.uni-tuebingen.de  Sat Jul 15 19:49:04 2000</envelope-from-line><from personal="Stephan Kulow" address="owner@bugs.kde.org">Stephan Kulow &lt;owner@bugs.kde.org&gt;</from><to personal="Stefan Schimanski" address="1Stein@gmx.de">Stefan Schimanski &lt;1Stein@gmx.de&gt;</to><subject normal="Bug#6251: marked as done (kmix should use already set mixer options)">Bug#6251: marked as done (kmix should use already set mixer options)</subject><return-path>kde-bugs-dist-admin@max.tat.physik.uni-tuebingen.de</return-path><received>from max.tat.physik.uni-tuebingen.de (max.tat.physik.uni-tuebingen.de [134.2.170.93])
+	by mailer.progressive-comp.com with id TAA12188
+	for &lt;kde-bugs-dist@progressive-comp.com&gt;; Sat, 15 Jul 2000 19:49:03 -0400</received><resent-message-id>&lt;200007152349.TAA12188@mailer.progressive-comp.com&gt;</resent-message-id><received>(root@max.tat.physik.uni-tuebingen.de) by master.kde.org
+        id &lt;S222807AbQGOXuB&gt;; Sun, 16 Jul 2000 01:50:01 +0200</received><received>(from localhost user: 'bugs' uid#1003 fake: STDIN
+        (bugs@max.tat.physik.uni-tuebingen.de)) by master.kde.org
+        id &lt;S222809AbQGOXsC&gt;; Sun, 16 Jul 2000 01:48:02 +0200</received><message-id>handler.6251.D6251.96370458815022.ackdone@bugs.kde.org</message-id><in-reply-to>&lt;00071601430202.16831@newton.heim6.tu-clausthal.de&gt;</in-reply-to><references>&lt;00071601430202.16831@newton.heim6.tu-clausthal.de&gt; &lt;200007121201.e6CC1wI10776@jet.lst.de&gt;</references><x-kde-pr-message>closed 6251</x-kde-pr-message><date>Sun, 16 Jul 2000 01:48:02 +0200</date><sender>kde-bugs-dist-admin@max.tat.physik.uni-tuebingen.de</sender><resent-sender>kde-bugs-dist-admin@max.tat.physik.uni-tuebingen.de</resent-sender><resent-from>kde-bugs-dist@max.tat.physik.uni-tuebingen.de</resent-from><x-mailing-list>&lt;kde-bugs-dist@master.kde.org&gt;</x-mailing-list><errors-to>kde-bugs-dist-admin@max.tat.physik.uni-tuebingen.de</errors-to><x-beenthere>kde-bugs-dist@master.kde.org</x-beenthere><x-mailman-version>2.0beta4</x-mailman-version><precedence>bulk</precedence><list-id>all bugs &lt;kde-bugs-dist.master.kde.org&gt;</list-id><resent-date>Sun, 16 Jul 2000 01:50:01 +0200</resent-date></headers><normalized-references><normalized-message-id>handler.6251.D6251.96370458815022.ackdone@bugs.kde.org</normalized-message-id><normalized-in-reply-to>00071601430202.16831@newton.heim6.tu-clausthal.de</normalized-in-reply-to><normalized-reference>00071601430202.16831@newton.heim6.tu-clausthal.de</normalized-reference><normalized-reference>200007121201.e6CC1wI10776@jet.lst.de</normalized-reference></normalized-references><body type="text/plain"><para depth="0">Your message dated Sun, 16 Jul 2000 01:43:02 +0200
+with message-id &lt;<email>00071601430202.16831@newton.heim6.tu-clausthal.de</email>&gt;
+and subject line Bug#6251: kmix should use already set mixer options
+has caused the attached bug report to be marked as done.
+
+</para><para depth="0">This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+bug report if necessary, and/or fix the problem forthwith.
+
+</para><para depth="0">(NB: If you are a system administrator and have no idea what I'm
+talking about this indicates a serious mail system misconfiguration
+somewhere.  Please contact me immediately.)
+
+</para><para depth="0">Stephan Kulow
+(administrator, KDE bugs database)
+
+</para><para depth="0">Received: (at submit) by bugs.kde.org; 12 Jul 2000 11:02:08 +0000
+From <email>mm@jet.lst.de</email> Wed Jul 12 13:02:08 2000
+Received: from jet.lst.de ([194.231.72.23]:25604 "EHLO jet.lst.de")
+        by master.kde.org with ESMTP id &lt;S222979AbQGLLBv&gt;;
+        Wed, 12 Jul 2000 13:01:51 +0200
+Received: (from mm@localhost)
+        by jet.lst.de (8.10.1/8.10.1) id e6CC1wI10776;
+        Wed, 12 Jul 2000 14:01:58 +0200
+Date:   Wed, 12 Jul 2000 14:01:58 +0200
+Message-Id: &lt;<email>200007121201.e6CC1wI10776@jet.lst.de</email>&gt;
+From:   Marcus Meissner &lt;<email>mm@lst.de</email>&gt;
+To:     <email>submit@bugs.kde.org</email>
+Subject: kmix should use already set mixer options
+Return-Path: &lt;<email>mm@jet.lst.de</email>&gt;
+X-Orcpt: rfc822;<email>submit@bugs.kde.org</email>
+
+</para><para depth="0">Package: kmix
+Version: 1.90 (KDE 1.91 Beta &gt;= 20000629)
+Severity: wishlist
+
+</para><para depth="0">Hi,
+
+</para><para depth="0">kmix should use the system set mixer options when starting (niot just restore
+the ones from the last call). 
+
+</para><para depth="0">It also could try to query the mixer settings occassionaly and update the
+sliders accordingly if the mixer is set from some other device.
+
+</para><para depth="0">Ciao, Marcus
+
+</para></body></message>

@@ -1,0 +1,28 @@
+<message message-id="1071049290.12727.763.camel@stratustier" list="org.w3.www-qa" id="24cjf6pgfd6zz5rt" type="development" date="2003-12-10T10:41:29+01:00" year="2003-01-01" year-month="2003-12-01" year-month-day="2003-12-10" thread-id="4xsxaqm675mvvykv"><headers><envelope-from-line>From owner-www-qa@dr-nick.w3.org  Wed Dec 10 04:41:31 2003</envelope-from-line><from personal="Dominique Hazaël-Massieux" address="dom@w3.org">Dominique =?ISO-8859-1?Q?Haza=EBl-Massieux?= &lt;dom@w3.org&gt;</from><to personal="Olivier Thereaux" address="ot@w3.org">Olivier Thereaux &lt;ot@w3.org&gt;</to><cc personal="www-qa@w3.org" address="www-qa@w3.org">www-qa@w3.org</cc><subject normal="[Tips] one new, one updated - call for review">Re: [Tips] one new, one updated - call for review</subject><return-path>owner-www-qa@dr-nick.w3.org</return-path><x-original-to>www-qa@frink.w3.org</x-original-to><delivered-to>www-qa@frink.w3.org</delivered-to><received>from dr-nick.w3.org (dr-nick.w3.org [18.29.1.73])
+	by frink.w3.org (Postfix) with ESMTP id 06DDFA080E
+	for &lt;www-qa@frink.w3.org&gt;; Wed, 10 Dec 2003 04:41:31 -0500 (EST)</received><received>by dr-nick.w3.org (Postfix)
+	id C6DA71339A; Wed, 10 Dec 2003 04:41:30 -0500 (EST)</received><delivered-to>www-qa@w3.org</delivered-to><received>from homer.w3.org (homer.w3.org [18.29.0.30])
+	by dr-nick.w3.org (Postfix) with ESMTP
+	id AF6E813376; Wed, 10 Dec 2003 04:41:30 -0500 (EST)</received><received>from localhost.localdomain (homer.w3.org [18.29.0.30])
+	by homer.w3.org (Postfix) with ESMTP
+	id E205FC2; Wed, 10 Dec 2003 04:41:29 -0500 (EST)</received><in-reply-to>&lt;20031210021351.GA8031@w3.mag.keio.ac.jp&gt;</in-reply-to><references>&lt;20031210021351.GA8031@w3.mag.keio.ac.jp&gt;</references><content-type>multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature";
+	boundary="=-W2N5YW/WTgjjuiJvn+45"</content-type><x-mailer>Ximian Evolution 1.0.5 </x-mailer><date>10 Dec 2003 10:41:29 +0100</date><message-id>1071049290.12727.763.camel@stratustier</message-id><mime-version>1.0</mime-version><x-archived-at>http://www.w3.org/mid/1071049290.12727.763.camel@stratustier</x-archived-at></headers><attachments><signature type="application/pgp-signature" description="Ceci est une partie de message numériquement signée" file="signature.asc" size="189" uri="/24cjf6pgfd6zz5rt/attach01/signature.asc"/></attachments><normalized-references><normalized-message-id>1071049290.12727.763.camel@stratustier</normalized-message-id><normalized-in-reply-to>20031210021351.GA8031@w3.mag.keio.ac.jp</normalized-in-reply-to><normalized-reference>20031210021351.GA8031@w3.mag.keio.ac.jp</normalized-reference></normalized-references><body><para depth="0">Le mer 10/12/2003 à 03:13, Olivier Thereaux a écrit :
+</para><quote depth="1"><quotepara depth="1">- I have put together a first draft of a QA Tip on "beyond validation"
+  (checklink, CSS, etc)
+	<url>http://www.w3.org/QA/Tips/beyond-validation</url>
+</quotepara></quote><para depth="0">
+Looks good to me... With regard to the semantic extractor, if we're
+going to advertize it as a useful service, it may be time to create a
+real HTML interface for it, instead of relying on the HTML embedded in
+XSLT mechanism. What do you think?
+
+</para><para depth="0">Also, it might be worth mentionning the Spell Checker, although it might
+be a bit too W3C-ish
+<url>http://www.w3.org/2002/01/spellchecker</url>
+
+</para><footer type="signature" hash="15516923097767540189" depth="0">Dom
+-- 
+Dominique Hazaël-Massieux - <url>http://www.w3.org/People/Dom/</url>
+W3C/ERCIM
+mailto:<email>dom@w3.org</email>
+</footer></body></message>

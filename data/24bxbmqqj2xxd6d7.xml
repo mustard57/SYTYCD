@@ -1,0 +1,62 @@
+<message message-id="4518D927.9050803@cij.co.jp" list="org.openssl.openssl-users" id="24bxbmqqj2xxd6d7" type="users" date="2006-09-26T16:39:19+09:00" year="2006-01-01" year-month="2006-09-01" year-month-day="2006-09-26" thread-id="24bxbmqqj2xxd6d7"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Kan Arita" address="arita.kan-lYktlgGLF9t4Eiagz67IpQ@public.gmane.org">Kan Arita &lt;arita.kan-lYktlgGLF9t4Eiagz67IpQ@public.gmane.org&gt;</from><subject normal="About patch-CVE-2006-4339">About patch-CVE-2006-4339</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.encryption.openssl.user</newsgroups><date>Tue, 26 Sep 2006 16:39:19 +0900</date><lines>46</lines><approved>news@gmane.org</approved><message-id>4518D927.9050803@cij.co.jp</message-id><reply-to>openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org</reply-to><nntp-posting-host>main.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-2022-JP</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>sea.gmane.org 1159258044 8045 80.91.229.2 (26 Sep 2006 08:07:24 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Tue, 26 Sep 2006 08:07:24 +0000 (UTC)</nntp-posting-date><original-x-from>owner-mmx-openssl-users-JaO/zf/mEB0FxBIgtc4dClaTQe2KTcn/@public.gmane.org Tue Sep 26 10:07:22 2006</original-x-from><return-path>owner-mmx-openssl-users-JaO/zf/mEB0FxBIgtc4dClaTQe2KTcn/@public.gmane.org</return-path><envelope-to>openssl-users@m.gmane.org</envelope-to><original-received>from mmx1.engelschall.com ([195.30.6.154])
+	by ciao.gmane.org with esmtp (Exim 4.43)
+	id 1GS7yK-0004Mz-Hn
+	for openssl-users@m.gmane.org; Tue, 26 Sep 2006 10:07:20 +0200</original-received><original-received>by mmx1.engelschall.com (Postfix)
+	id E356556609; Tue, 26 Sep 2006 10:06:57 +0200 (CEST)</original-received><original-received>from master.openssl.org (master.openssl.org [195.30.6.166])
+	by mmx1.engelschall.com (Postfix) with ESMTP id CA1AC56421
+	for &lt;mmx-openssl-users-w8N0r6uhvJHfKM7srBC2yEEOCMrvLtNR@public.gmane.org&gt;; Tue, 26 Sep 2006 10:06:57 +0200 (CEST)</original-received><original-received>by master.openssl.org (Postfix)
+	id 8D1941AC6142; Tue, 26 Sep 2006 10:06:57 +0200 (CEST)</original-received><delivered-to>openssl-users-l-P6BqreUs7qIPwi1/lhCOyh2eb7JE58TQ@public.gmane.org</delivered-to><original-received>by master.openssl.org (Postfix, from userid 29101)
+	id 8A2C21AC60EC; Tue, 26 Sep 2006 10:06:57 +0200 (CEST)</original-received><x-original-to>openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org</x-original-to><delivered-to>openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org</delivered-to><x-greylist>delayed 1572 seconds by postgrey-1.27 at master.openssl.org; Tue, 26 Sep 2006 10:06:56 CEST</x-greylist><original-received>from fw.ykhm.cij.co.jp (fw.cij.co.jp [61.206.48.131])
+	by master.openssl.org (Postfix) with ESMTP id EC1691AC6050
+	for &lt;openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org&gt;; Tue, 26 Sep 2006 10:06:55 +0200 (CEST)</original-received><original-received>from fw.cij.co.jp (fw.ykhm.cij.co.jp [192.168.9.99])
+	by fw.ykhm.cij.co.jp (Postfix) with ESMTP id C96723B3F6
+	for &lt;openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org&gt;; Tue, 26 Sep 2006 16:40:26 +0900 (JST)</original-received><original-received>from kauai.ykhm.cij.co.jp (kauai.ykhm.cij.co.jp [192.168.9.2])
+	by fw.cij.co.jp (Postfix) with ESMTP id A38A7C68EA
+	for &lt;openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org&gt;; Tue, 26 Sep 2006 16:40:26 +0900 (JST)</original-received><original-received>from [127.0.0.1] (arita.itc.ykhm.cij.co.jp [192.168.1.107])
+	by kauai.ykhm.cij.co.jp (Postfix) with ESMTP id 8F4424BEAE
+	for &lt;openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org&gt;; Tue, 26 Sep 2006 16:40:26 +0900 (JST)</original-received><user-agent>Thunderbird 1.5.0.5 (Windows/20060719)</user-agent><original-to>openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org</original-to><x-enigmail-version>0.94.0.0</x-enigmail-version><original-sender>owner-openssl-users-MCmKBN63+BlAfugRpC6u6w@public.gmane.org</original-sender><precedence>bulk</precedence><x-sender>Kan Arita &lt;arita.kan-lYktlgGLF9t4Eiagz67IpQ@public.gmane.org&gt;</x-sender><x-list-manager>OpenSSL Majordomo [version 1.94.5]</x-list-manager><x-list-name>openssl-users</x-list-name><xref>news.gmane.org gmane.comp.encryption.openssl.user:23879</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.encryption.openssl.user/23879&gt;</archived-at></headers><normalized-references><normalized-message-id>4518D927.9050803@cij.co.jp</normalized-message-id></normalized-references><body type="text/plain; charset=iso-2022-jp"><greeting depth="0">Hi All,
+</greeting><para depth="0">
+I let the following patch apply to openssl-0.9.6m.
+  ・<url>http://www.openssl.org/news/patch-CVE-2006-4339.txt</url>
+but make test(test_ss) is failed(The following reference).
+I think that degrade occurs in rsa_sign.c.
+May not this patch apply to 0.9.6?
+
+</para><para depth="0">Though there is not new release of 0.9.6 series for
+this security vulnerability, May I think that the support
+ of 0.9.6 series was finished as the openssl project?
+
+</para><para depth="0">------ make test error --------
+Generate and certify a test certificate
+
+</para><para depth="0">make a certificate request using 'req'
+rsa
+Using configuration from CAss.cnf
+Generating a 512 bit RSA private key
+......++++++++++++
+...++++++++++++
+writing new private key to 'keyCA.ss'
+</para><para depth="0">-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+</para><para depth="0">-----
+Country Name (2 letter code) [AU]:AU
+Organization Name (eg, company) []:Dodgy Brothers
+Common Name (eg, YOUR name) []:Dodgy CA
+
+</para><para depth="0">convert the certificate request into a self signed certificate using 'x509'
+Signature did not match the certificate request
+error using 'x509' to self sign a certificate request
+make[1]: *** [test_ss] Error 1
+</para><footer type="noise" depth="0">-------------------------------
+
+</footer><footer type="list-management" depth="0">______________________________________________________________________
+OpenSSL Project                                 <url>http://www.openssl.org</url>
+User Support Mailing List<br/>openssl-users-MCmKBN63+<email>BlAfugRpC6u6w@public.gmane.org</email>
+Automated List Manager<br/>majordomo-MCmKBN63+<email>BlAfugRpC6u6w@public.gmane.org</email>
+
+</footer></body></message>

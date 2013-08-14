@@ -1,0 +1,31 @@
+<message message-id="Pine.BSF.3.91.960216124406.13853A-100000@haldjas.folklore.ee" list="org.freebsd.freebsd-hackers" id="24as5ejz45wuflbh" type="development" date="1996-02-16T12:46:49+02:00" year="1996-01-01" year-month="1996-02-01" year-month-day="1996-02-16" thread-id="xjs3qtljooo4w64a"><headers><envelope-from-line>From owner-freebsd-hackers  Fri Feb 16 02:45:22 1996</envelope-from-line><from personal="Narvi" address="narvi@haldjas.folklore.ee">Narvi &lt;narvi@haldjas.folklore.ee&gt;</from><to personal="Nate Williams" address="nate@sri.MT.net">Nate Williams &lt;nate@sri.MT.net&gt;</to><cc personal="hackers@FreeBSD.ORG" address="hackers@FreeBSD.ORG">hackers@FreeBSD.ORG</cc><subject normal="Broadcast, Netmask, and other such information">Re: Broadcast, Netmask, and other such information </subject><return-path>owner-hackers</return-path><received>(from root@localhost)
+          by freefall.freebsd.org (8.7.3/8.7.3) id CAA26960
+          for hackers-outgoing; Fri, 16 Feb 1996 02:45:22 -0800 (PST)</received><received>from haldjas.folklore.ee (Haldjas.folklore.ee [193.40.6.121])
+          by freefall.freebsd.org (8.7.3/8.7.3) with SMTP id CAA26893
+          for &lt;hackers@FreeBSD.ORG&gt;; Fri, 16 Feb 1996 02:44:33 -0800 (PST)</received><received>(from narvi@localhost) by haldjas.folklore.ee (8.6.12/8.6.12) id MAA13884; Fri, 16 Feb 1996 12:46:50 +0200</received><date>Fri, 16 Feb 1996 12:46:49 +0200 (EET)</date><in-reply-to>&lt;199602152223.PAA01710@rocky.sri.MT.net&gt;</in-reply-to><message-id>Pine.BSF.3.91.960216124406.13853A-100000@haldjas.folklore.ee</message-id><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII</content-type><sender>owner-hackers@FreeBSD.ORG</sender><precedence>bulk</precedence></headers><normalized-references><normalized-message-id>Pine.BSF.3.91.960216124406.13853A-100000@haldjas.folklore.ee</normalized-message-id><normalized-in-reply-to>199602152223.PAA01710@rocky.sri.MT.net</normalized-in-reply-to></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">
+On Thu, 15 Feb 1996, Nate Williams wrote:
+
+</para><quote depth="1"><quotepara depth="1">David Greenman writes:
+</quotepara><quote depth="2"><quote depth="3"><quotepara depth="3">Maybe I'm not making myself clear.  When I say 'addresses in the
+subnet', I'm trying to convey a number which *should* be a power of 2 #.
+In the above example, there are 32 addresses assigned in each subnet, of
+which there are only 31 usable as host addresses (except in the first
+and last subnets due to the .0 &amp; .255 addresses being unusable).
+</quotepara></quote><quotepara depth="2">
+   Actually, no, you would only get 30 hosts per subnet. The all-ones host
+part on each subnet is the subnet's broadcast address and all-zeros host
+can't be used, either.
+</quotepara></quote><quotepara depth="1">
+I'm assigned 32 IP addresses out of the 10.5.5.0/24, which is
+10.5.5.96/27. Are you saying that I can't use the address 10.5.5.96
+since it's the 'all zeroes' address?
+
+</quotepara><quotefooter type="signature" hash="6857087948681333075" depth="1">Nate
+
+</quotefooter></quote><para depth="0">Yes, you can't. The "network" and "broadcast" adresses are reserved - you 
+can't use them for IP adresses for physical interfaces. I assure you - 
+there is no way and it should not be done.
+
+</para><para depth="0">	Sander.
+
+</para></body></message>

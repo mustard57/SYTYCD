@@ -1,0 +1,63 @@
+<message message-id="83F0258A9996D311B14200A0C98F173602755A53@aas-internet.aas.com" list="org.apache.tomcat.users" id="24ccxvw5axp4ksib" type="users" date="2002-10-30T09:03:58-05:00" year="2002-01-01" year-month="2002-10-01" year-month-day="2002-10-30" thread-id="24ccxvw5axp4ksib"><headers><envelope-from-line>From tomcat-user-return-39487-qmlist-jakarta-archive-tomcat-user=jakarta.apache.org@jakarta.apache.org Wed Oct 30 14:04:53 2002</envelope-from-line><from personal="Turner, John" address="JTurner@AAS.com">"Turner, John" &lt;JTurner@AAS.com&gt;</from><to personal="'Tomcat Users List'" address="tomcat-user@jakarta.apache.org">'Tomcat Users List' &lt;tomcat-user@jakarta.apache.org&gt;</to><subject normal="need help connecting Tomcat 4.1.12, Apache 2.0.43 using jk2 ( mod_jk2-2.0.43.dll)">RE: need help connecting Tomcat 4.1.12, Apache 2.0.43 using jk2 (
+	mod_jk2-2.0.43.dll)</subject><return-path>tomcat-user-return-39487-qmlist-jakarta-archive-tomcat-user=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-tomcat-user-archive@apache.org</delivered-to><received>(qmail 32305 invoked from network); 30 Oct 2002 14:04:52 -0000</received><received>from unknown (HELO nagoya.betaversion.org) (192.18.49.131)
+  by daedalus.apache.org with SMTP; 30 Oct 2002 14:04:52 -0000</received><received>(qmail 9094 invoked by uid 97); 30 Oct 2002 14:05:19 -0000</received><delivered-to>qmlist-jakarta-archive-tomcat-user@jakarta.apache.org</delivered-to><received>(qmail 9078 invoked by uid 97); 30 Oct 2002 14:05:19 -0000</received><mailing-list>contact tomcat-user-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:tomcat-user-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:tomcat-user-subscribe@jakarta.apache.org&gt;</list-subscribe><list-help>&lt;mailto:tomcat-user-help@jakarta.apache.org&gt;</list-help><list-post>&lt;mailto:tomcat-user@jakarta.apache.org&gt;</list-post><list-id>"Tomcat Users List" &lt;tomcat-user.jakarta.apache.org&gt;</list-id><reply-to>"Tomcat Users List" &lt;tomcat-user@jakarta.apache.org&gt;</reply-to><delivered-to>mailing list tomcat-user@jakarta.apache.org</delivered-to><received>(qmail 9066 invoked by uid 98); 30 Oct 2002 14:05:18 -0000</received><x-antivirus>nagoya (v4218 created Aug 14 2002)</x-antivirus><message-id>83F0258A9996D311B14200A0C98F173602755A53@aas-internet.aas.com</message-id><date>Wed, 30 Oct 2002 09:03:58 -0500</date><mime-version>1.0</mime-version><x-mailer>Internet Mail Service (5.5.2653.19)</x-mailer><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>83F0258A9996D311B14200A0C98F173602755A53@aas-internet.aas.com</normalized-message-id></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><para depth="0">
+This should be all you need, courtesy of Robert Sowders:
+
+</para><para depth="0"><url>ftp://pokey.wr.usgs.gov/pub/rsowders/Apache2_Jk2_TC4.1.x_JSDK1.4.x.zip</url>
+
+</para><para depth="0">John
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: dave m [mailto:<email>learning_tomcat@hotmail.com</email>]
+Sent: Wednesday, October 30, 2002 9:00 AM
+To: <email>tomcat-user@jakarta.apache.org</email>
+Subject: need help connecting Tomcat 4.1.12, Apache 2.0.43 using jk2
+(mod_jk2-2.0.43.dll)
+
+</quotepara><quotepara depth="1">I've tried to find info under this mailing list's archives 
+and I've looked 
+under the jk2 HOW-TOs and under Tomcat's documentation, but 
+I'm still in the 
+dark about this.  I am 'EXTREMELY' new (ultra-newbie?) to 
+Apache and to 
+Tomcat.  I can find no step-by-step tutorial on how to set 
+the two products 
+up under Windows 2000 (specifically the newer versions like 
+Apache 2.0.43 
+and Tomcat 4.1.12).  Would someone be willing to help me? 
+(I'll be happy to 
+write up my 'process' for the next person who asks this once I am 
+successful).
+
+</quotepara><quotepara depth="1">To give you a hint of where I'm at in the installation, I've 
+installed both 
+Apache and Tomcat on my Windows 2000 machine (I changed the working 
+directory from "C:\Program files\Apache Group" to just "C:\Apache" as 
+someone had mentioned space names give Tomcat problems.
+
+</quotepara><quotepara depth="1">I have also downloaded the appropriate .dll file 
+(mod_jk2-2.0.43) which 
+matches my version of Apache.
+
+</quotepara><quotepara depth="1">Where do I go from here?.
+
+</quotepara><quotepara depth="1">Thanks
+
+</quotepara><quotepara depth="1">Learning_Tomcat
+
+</quotepara><quotefooter type="free-hosting" hash="4689817574518477635" depth="1">_________________________________________________________________
+Surf the Web without missing calls! Get MSN Broadband.  
+<url>http://resourcecenter.msn.com/access/plans/freeactivation.asp</url>
+
+</quotefooter><quotefooter type="list-management" hash="5358698242450641228" depth="1">--
+To unsubscribe, e-mail:   
+</quotefooter></quote><para depth="0">&lt;mailto:<email>tomcat-user-unsubscribe@jakarta.apache.org</email>&gt;
+For additional commands, e-mail:
+&lt;mailto:<email>tomcat-user-help@jakarta.apache.org</email>&gt;
+
+</para><footer type="list-management" depth="0">--
+To unsubscribe, e-mail:   &lt;mailto:<email>tomcat-user-unsubscribe@jakarta.apache.org</email>&gt;
+For additional commands, e-mail: &lt;mailto:<email>tomcat-user-help@jakarta.apache.org</email>&gt;
+
+</footer></body></message>

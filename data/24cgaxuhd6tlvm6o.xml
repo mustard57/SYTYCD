@@ -1,0 +1,53 @@
+<message message-id="1353239058.1252530563631.JavaMail.jboss@jira01.app.mwc.hst.phx2.redhat.com" list="org.jboss.lists.esb-issues" id="24cgaxuhd6tlvm6o" type="bugs" date="2009-09-09T13:09:10.565899-08:00" year="2009-01-01" year-month="2009-09-01" year-month-day="2009-09-09" thread-id="24cgaxuhd6tlvm6o"><headers><envelope-from-line>Wed Sep 09 13:09:33 2009</envelope-from-line><from personal="David Ward (JIRA)" address="jira-events@lists.jboss.org">"David Ward (JIRA)" &lt;jira-events@lists.jboss.org&gt;</from><to personal="esb-issues@lists.jboss.org" address="esb-issues@lists.jboss.org">esb-issues@lists.jboss.org</to><subject normal="[esb-issues] [JBoss JIRA] Created: (JBESB-2822) SOAPProxy wsdl contract is not available using new http gateway">[esb-issues] [JBoss JIRA] Created: (JBESB-2822) SOAPProxy wsdl contract is not available using new http gateway</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 837
+          for &lt;jacob.parrish.ingram@a.markmail.org&gt;;
+          Wed, 9 Sep 2009 13:09:33 -0800 (GMT-08:00)</received><received>from smtp01.dmz-a.mwc.hst.phx2.redhat.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 2F7DE290829A
+	for &lt;jacob.parrish.ingram@a.markmail.org&gt;; Wed,  9 Sep 2009 14:09:10 -0700 (PDT)</received><received>from lists01.dmz-a.mwc.hst.phx2.redhat.com (lists01.dmz-a.mwc.hst.phx2.redhat.com [10.5.105.133])
+	by smtp01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id n89L9Xil021789
+	for &lt;jacob.parrish.ingram@a.markmail.org&gt;; Wed, 9 Sep 2009 17:09:33 -0400</received><received>from lists01.dmz-a.mwc.hst.phx2.redhat.com (localhost.localdomain [127.0.0.1])
+	by lists01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id n89L9XBr026051
+	for &lt;jacob.parrish.ingram@a.markmail.org&gt;; Wed, 9 Sep 2009 17:09:33 -0400</received><received>from smtp01.dmz-a.mwc.hst.phx2.redhat.com
+	(smtp01.dmz-a.mwc.hst.phx2.redhat.com [10.5.105.134])
+	by lists01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	n89L9Ns4026047
+	for &lt;esb-issues@lists.jboss.org&gt;; Wed, 9 Sep 2009 17:09:23 -0400</received><received>from jira01.app.mwc.hst.phx2.redhat.com
+	(jira01.app.mwc.hst.phx2.redhat.com [10.5.106.7])
+	by smtp01.dmz-a.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	n89L9NtZ021786
+	for &lt;esb-issues@lists.jboss.org&gt;; Wed, 9 Sep 2009 17:09:23 -0400</received><received>from jira01.app.mwc.hst.phx2.redhat.com (localhost.localdomain
+	[127.0.0.1])
+	by jira01.app.mwc.hst.phx2.redhat.com (8.13.8/8.13.8) with ESMTP id
+	n89L9NCm006482
+	for &lt;esb-issues@lists.jboss.org&gt;; Wed, 9 Sep 2009 17:09:23 -0400</received><message-id>1353239058.1252530563631.JavaMail.jboss@jira01.app.mwc.hst.phx2.redhat.com</message-id><date>Wed, 9 Sep 2009 17:09:23 -0400 (EDT)</date><mime-version>1.0</mime-version><precedence>bulk</precedence><x-beenthere>esb-issues@lists.jboss.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><list-id>esb -Issues List &lt;esb-issues.lists.jboss.org&gt;</list-id><list-unsubscribe>&lt;https://lists.jboss.org/mailman/listinfo/esb-issues&gt;,
+	&lt;mailto:esb-issues-request@lists.jboss.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.jboss.org/pipermail/esb-issues&gt;</list-archive><list-post>&lt;mailto:esb-issues@lists.jboss.org&gt;</list-post><list-help>&lt;mailto:esb-issues-request@lists.jboss.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.jboss.org/mailman/listinfo/esb-issues&gt;,
+	&lt;mailto:esb-issues-request@lists.jboss.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>esb-issues-bounces@lists.jboss.org</sender><errors-to>esb-issues-bounces@lists.jboss.org</errors-to></headers><normalized-references><normalized-message-id>1353239058.1252530563631.JavaMail.jboss@jira01.app.mwc.hst.phx2.redhat.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">SOAPProxy wsdl contract is not available using new http gateway
+</para><para depth="0">---------------------------------------------------------------
+
+</para><para depth="0">                 Key: JBESB-2822
+                 URL: <url>https://jira.jboss.org/jira/browse/JBESB-2822</url>
+             Project: JBoss ESB
+          Issue Type: Bug
+      Security Level: Public (Everyone can see)
+    Affects Versions: 4.7
+            Reporter: David Ward
+             Fix For: 4.7
+
+</para><para depth="0">When using thew new http-gateway fronting the SOAPProxy action, an HTTP wsdl<br/>contract link is missing from the contracts web application.  This used to work<br/>with the old http-provider, and still works with the current jbr-provider.
+
+</para><para depth="0">I put debug into the contract.war/index.jsp, and noticed that when using the new<br/>http-gateway, only 1 EPR (INVM) is being returned by<br/>registry.findEPRs(serviceCategory, serviceName).  When I instead use the<br/>jbr-provider, I get 2 EPRs (INVM + HTTP) as expected.
+
+</para><para depth="0">FYI, the publisher (SOAPProxyWsdlContractPublisher) is an instance of<br/>ContractPublisher, not ContractReferencePublisher, but this shouldn't matter.
+
+</para><footer type="signature" depth="0" hash="2152092100150435196">-- 
+This message is automatically generated by JIRA.
+-
+If you think it was sent incorrectly contact one of the administrators:<br/><url>https://jira.jboss.org/jira/secure/Administrators.jspa</url>
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer><footer type="list-management" depth="0">_______________________________________________
+esb-issues mailing list
+<email>esb-issues@lists.jboss.org</email>
+<url>https://lists.jboss.org/mailman/listinfo/esb-issues</url>
+</footer></body></message>

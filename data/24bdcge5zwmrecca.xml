@@ -1,0 +1,86 @@
+<message message-id="Pine.SOC.4.63.1011141833580.71@unix0.york.ac.uk" list="com.redhat.fedora-list" id="24bdcge5zwmrecca" type="general" date="2010-11-14T10:37:20.50478-08:00" year="2010-01-01" year-month="2010-11-01" year-month-day="2010-11-14" thread-id="4fgmbvt5jj2xwkfc"><headers><envelope-from-line>Sun Nov 14 10:37:43 2010</envelope-from-line><from personal="Patrick Dupre" address="pd520@york.ac.uk">Patrick Dupre &lt;pd520@york.ac.uk&gt;</from><cc personal="Community support for Fedora users" address="users@lists.fedoraproject.org">Community support for Fedora users &lt;users@lists.fedoraproject.org&gt;</cc><subject normal="mount crypted partition">Re: mount crypted partition</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 468
+          for &lt;trinidad.chen.johns@a.markmail.org&gt;;
+          Sun, 14 Nov 2010 10:37:43 -0800 (GMT-08:00)</received><received>from bastion.fedoraproject.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 2510629081D0
+	for &lt;trinidad.chen.johns@a.markmail.org&gt;; Sun, 14 Nov 2010 10:37:20 -0800 (PST)</received><received>from lists.fedoraproject.org (collab1.vpn.fedoraproject.org [192.168.1.21])
+	by bastion02.phx2.fedoraproject.org (Postfix) with ESMTP id D782F10F8D9;
+	Sun, 14 Nov 2010 18:37:42 +0000 (UTC)</received><received>from collab1.fedoraproject.org (localhost.localdomain [127.0.0.1])
+	by lists.fedoraproject.org (Postfix) with ESMTP id 3FAC4326798;
+	Sun, 14 Nov 2010 18:37:42 +0000 (UTC)</received><x-original-to>users@lists.fedoraproject.org</x-original-to><delivered-to>users@lists.fedoraproject.org</delivered-to><received>from smtp-mm3.fedoraproject.org (smtp-mm3.fedoraproject.org
+	[152.46.7.226])
+	by lists.fedoraproject.org (Postfix) with ESMTP id 3F068326795
+	for &lt;users@lists.fedoraproject.org&gt;;
+	Sun, 14 Nov 2010 18:37:40 +0000 (UTC)</received><received>from ixe-mta-27.emailfiltering.com (ixe-mta-27-tx.emailfiltering.com
+	[194.116.199.158])
+	by smtp-mm3.fedoraproject.org (Postfix) with ESMTP id A830937D47
+	for &lt;users@lists.fedoraproject.org&gt;;
+	Sun, 14 Nov 2010 18:37:39 +0000 (UTC)</received><received>from mail-gw12.york.ac.uk ([144.32.129.162])
+	by ixe-mta-27.emailfiltering.com with emfmta (version 4.6.0.72) by TLS
+	id 819951834 for users@lists.fedoraproject.org; d6ef2bfbe36d05e7;
+	Sun, 14 Nov 2010 18:37:38 +0000</received><received>from unix0.york.ac.uk ([144.32.196.246]:39498)
+	by mail-gw12.york.ac.uk with esmtps
+	(TLS1.0:DHE_RSA_AES_256_CBC_SHA1:32) (Exim 4.71)
+	(envelope-from &lt;pd520@york.ac.uk&gt;) id 1PHhSL-0002dX-Vk
+	for users@lists.fedoraproject.org; Sun, 14 Nov 2010 18:37:38 +0000</received><date>Sun, 14 Nov 2010 18:37:37 +0000 (GMT)</date><in-reply-to>&lt;4CE02671.506@sapience.com&gt;</in-reply-to><message-id>Pine.SOC.4.63.1011141833580.71@unix0.york.ac.uk</message-id><references>&lt;Pine.SOC.4.63.1011141629580.28198@unix0.york.ac.uk&gt;
+	&lt;20101114173258.GA3531@wolff.to&gt;
+	&lt;Pine.SOC.4.63.1011141741460.26135@unix0.york.ac.uk&gt;
+	&lt;4CE02671.506@sapience.com&gt;</references><mime-version>1.0</mime-version><content-type>MULTIPART/MIXED; BOUNDARY="-559023410-851401618-1289759857=:71"</content-type><x-beenthere>users@lists.fedoraproject.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>Community support for Fedora users &lt;users@lists.fedoraproject.org&gt;</reply-to><list-id>Community support for Fedora users &lt;users.lists.fedoraproject.org&gt;</list-id><list-unsubscribe>&lt;https://admin.fedoraproject.org/mailman/listinfo/users&gt;,
+	&lt;mailto:users-request@lists.fedoraproject.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.fedoraproject.org/pipermail/users&gt;</list-archive><list-post>&lt;mailto:users@lists.fedoraproject.org&gt;</list-post><list-help>&lt;mailto:users-request@lists.fedoraproject.org?subject=help&gt;</list-help><list-subscribe>&lt;https://admin.fedoraproject.org/mailman/listinfo/users&gt;,
+	&lt;mailto:users-request@lists.fedoraproject.org?subject=subscribe&gt;</list-subscribe><sender>users-bounces@lists.fedoraproject.org</sender><errors-to>users-bounces@lists.fedoraproject.org</errors-to></headers><normalized-references><normalized-message-id>Pine.SOC.4.63.1011141833580.71@unix0.york.ac.uk</normalized-message-id><normalized-in-reply-to>4CE02671.506@sapience.com</normalized-in-reply-to><normalized-reference>Pine.SOC.4.63.1011141629580.28198@unix0.york.ac.uk</normalized-reference><normalized-reference>20101114173258.GA3531@wolff.to</normalized-reference><normalized-reference>Pine.SOC.4.63.1011141741460.26135@unix0.york.ac.uk</normalized-reference><normalized-reference>4CE02671.506@sapience.com</normalized-reference></normalized-references><body><para depth="0">On Sun, 14 Nov 2010, Genes MailLists wrote:
+
+</para><quote depth="1"><quotepara depth="1">On 11/14/2010 12:48 PM, Patrick Dupre wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">I set the /etc/crypttab
+home-crypt    UUID=5fcf268d-4729-4c70-949d-36e979241422     none
+</quotepara></quote><quotepara depth="1">
+...
+
+</quotepara><quote depth="2"><quotepara depth="2">I got the UUID from:
+blkid /dev/mapper/home-crypt
+
+</quotepara></quote><quotepara depth="1"> 1) please post to <email>fedora-list@redhat.com</email> - its a dead list - stick
+with only posting to users@...fedoraproject.com
+</quotepara></quote><para depth="0">
+I just use the auto reply !
+
+</para><quote depth="1"><quotepara depth="1"> 2) Looks like the wrong UUID - you need the UUID from the device not
+the mapped device (think logically how the system can possibly extract
+the UUID from the mapped device before it is mapped).
+
+</quotepara><quotepara depth="1">  i.e. blkid /dev/sdaX
+
+</quotepara></quote><para depth="0">God,
+
+</para><para depth="0">I made progress,
+It asks me the paraphrase now, but I get a:
+Nov 14 14:19:02 eschyle modprobe: FATAL: Error inserting padlock_sha 
+(/lib/modules/2.6.34.7-61.fc13.i686.PAE/kernel/drivers/crypto/padlock-sha.ko): 
+No such device
+
+</para><para depth="0">Should I modify the
+  /boot/initramfs-2.6.34.7-61.fc13.i686.PAE.img:
+
+</para><para depth="0">to include the module ?
+How do I get the list of the embedded modules ?
+
+</para><footer type="noise" depth="0">?
+
+</footer><para depth="0">Thank
+
+</para><footer type="noise" depth="0">-- 
+</footer><footer type="signature" depth="0" hash="17954610375568949327">---
+==========================================================================
+  Patrick DUPRÉ                      |   |
+  Department of Chemistry            |   |  Phone: (44)-(0)-1904-434384
+  The University of York             |   |  Fax:   (44)-(0)-1904-432516
+  Heslington                         |   |
+  York YO10 5DD  United Kingdom      |   |  email: <email>patrick.dupre@york.ac.uk</email>
+==========================================================================
+</footer><footer type="list-management" depth="0">-- 
+users mailing list
+<email>users@lists.fedoraproject.org</email>
+To unsubscribe or change subscription options:
+<url>https://admin.fedoraproject.org/mailman/listinfo/users</url>
+Guidelines: <url>http://fedoraproject.org/wiki/Mailing_list_guidelines</url>
+</footer></body></message>

@@ -1,0 +1,35 @@
+<message message-id="20041228154552.GA6324@satec.es" list="com.mysql.lists.perl" id="24cuvgvqgtrunutt" type="general" date="2004-12-28T16:45:52+01:00" year="2004-01-01" year-month="2004-12-01" year-month-day="2004-12-28" thread-id="24cuvgvqgtrunutt"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="jorge@es.gnu.org" address="jorge@es.gnu.org">jorge@es.gnu.org</from><to personal="msql-mysql-modules@lists.mysql.com" address="msql-mysql-modules@lists.mysql.com">msql-mysql-modules@lists.mysql.com</to><subject normal="debian instructions">debian instructions</subject><return-path>jorgem@satec.es</return-path><mailing-list>contact perl-help@lists.mysql.com; run by ezmlm</mailing-list><delivered-to>mailing list perl@lists.mysql.com</delivered-to><received>(qmail 29827 invoked from network); 28 Dec 2004 15:45:59 -0000</received><received-spf>pass (lists.mysql.com: local policy)</received-spf><received>from donlimpio.satec.es (HELO donlimpio.satec.es) (213.164.38.79)
+  by lists.mysql.com (qpsmtpd/0.28-dev) with ESMTP; Tue, 28 Dec 2004 16:45:58 +0100</received><received>from haku.satec.es ([213.164.32.98]) by donlimpio.satec.es with InterScan Messaging Security Suite; Tue, 28 Dec 2004 16:45:58 +0100</received><received>from haku.satec.es (haku.satec.es [127.0.0.1])
+	by haku.satec.es (8.13.2/8.13.2/Debian-1) with ESMTP id iBSFjq31006592
+	for &lt;msql-mysql-modules@lists.mysql.com&gt;; Tue, 28 Dec 2004 16:45:53 +0100</received><received>(from jorgem@localhost)
+	by haku.satec.es (8.13.2/8.13.2/Submit) id iBSFjqBU006589
+	for msql-mysql-modules@lists.mysql.com; Tue, 28 Dec 2004 16:45:52 +0100</received><x-authentication-warning>haku.satec.es: jorgem set sender to jorgem@satec.es using -f</x-authentication-warning><date>Tue, 28 Dec 2004 16:45:52 +0100</date><message-id>20041228154552.GA6324@satec.es</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><user-agent>Mutt/1.5.6+20040722i</user-agent><x-virus-checked>Checked</x-virus-checked></headers><normalized-references><normalized-message-id>20041228154552.GA6324@satec.es</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><greeting depth="0">Hi there,
+</greeting><para depth="0">
+</para><quote depth="1"><quotepara depth="1"> Linux/Debian
+
+</quotepara><quotepara depth="1">   Install the packages
+
+</quotepara><quotepara depth="1">     mysql-client mysql-server mysql-doc mysql-common
+     libdbi-perl lidbd-mysql-perl
+
+</quotepara><quotepara depth="1">   No idea how one does install these under Debian, but I am
+   sure you know. :-)      
+
+</quotepara><quotepara depth="1"> For others, or in case of problems see INSTALL.html.
+</quotepara></quote><para depth="0">
+You can add the following for Debian:
+
+</para><para depth="0"> apt-get install mysql-client mysql-server mysql-doc mysql-common libdbi-perl<br/>lidbd-mysql-perl
+
+</para><para depth="0">That would do the job.
+
+</para><para depth="0">Thanks and kind regards.
+
+</para><para depth="0">-------------------------------------------------------------------------------
+  .''`.               Proudly running Debian GNU/Linux 
+ : :' :	
+ `. `'  First they ignore you, then they laugh at you, then they fight you,
+   `-   then you win.                                    -- Mahatma Gandhi
+</para><para depth="0">------------------------------------------------------------------------------
+
+</para></body></message>

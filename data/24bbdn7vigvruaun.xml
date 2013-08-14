@@ -1,0 +1,33 @@
+<message message-id="20030901185255.73373.qmail@minotaur.apache.org" list="org.apache.poi.dev" id="24bbdn7vigvruaun" type="checkins" date="2003-09-01T18:52:55Z" year="2003-01-01" year-month="2003-09-01" year-month-day="2003-09-01" thread-id="24bbdn7vigvruaun"><headers><envelope-from-line>From poi-dev-return-7482-apmail-jakarta-poi-dev-archive=jakarta.apache.org@jakarta.apache.org Mon Sep 01 21:40:05 2003</envelope-from-line><from personal="klute@apache.org" address="klute@apache.org">klute@apache.org</from><to personal="jakarta-poi-cvs@apache.org" address="jakarta-poi-cvs@apache.org">jakarta-poi-cvs@apache.org</to><subject normal="cvs commit: jakarta-poi/src/java/org/apache/poi/hpsf package.html">cvs commit: jakarta-poi/src/java/org/apache/poi/hpsf package.html</subject><return-path>poi-dev-return-7482-apmail-jakarta-poi-dev-archive=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-poi-dev-archive@www.apache.org</delivered-to><received>(qmail 21174 invoked from network); 1 Sep 2003 21:40:04 -0000</received><received>from daedalus.apache.org (HELO apache.org) (208.185.179.12)
+  by minotaur-2.apache.org with SMTP; 1 Sep 2003 21:40:04 -0000</received><received>(qmail 51422 invoked by uid 500); 1 Sep 2003 21:39:51 -0000</received><delivered-to>apmail-jakarta-poi-dev-archive@jakarta.apache.org</delivered-to><received>(qmail 51280 invoked by uid 500); 1 Sep 2003 21:39:50 -0000</received><mailing-list>contact poi-dev-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:poi-dev-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:poi-dev-subscribe@jakarta.apache.org&gt;</list-subscribe><list-help>&lt;mailto:poi-dev-help@jakarta.apache.org&gt;</list-help><list-post>&lt;mailto:poi-dev@jakarta.apache.org&gt;</list-post><list-id>"POI Developers List" &lt;poi-dev.jakarta.apache.org&gt;</list-id><reply-to>"POI Developers List" &lt;poi-dev@jakarta.apache.org&gt;</reply-to><delivered-to>mailing list poi-dev@jakarta.apache.org</delivered-to><received>(qmail 51257 invoked by uid 500); 1 Sep 2003 21:39:49 -0000</received><received>(qmail 51228 invoked from network); 1 Sep 2003 21:39:48 -0000</received><received>from unknown (HELO minotaur.apache.org) (209.237.227.194)
+  by daedalus.apache.org with SMTP; 1 Sep 2003 21:39:48 -0000</received><received>(qmail 73374 invoked by uid 1458); 1 Sep 2003 18:52:55 -0000</received><date>1 Sep 2003 18:52:55 -0000</date><message-id>20030901185255.73373.qmail@minotaur.apache.org</message-id><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>20030901185255.73373.qmail@minotaur.apache.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">klute       2003/09/01 11:52:55
+
+</para><para depth="0">  Modified:    src/java/org/apache/poi/hpsf package.html
+  Log:
+
+</para><para depth="0">  Revision  Changes    Path
+  1.4       +1 -3      jakarta-poi/src/java/org/apache/poi/hpsf/package.html
+
+</para><para depth="0">  Index: package.html
+  ===================================================================
+  RCS file: /home/cvs/jakarta-poi/src/java/org/apache/poi/hpsf/package.html,v
+  retrieving revision 1.3
+  retrieving revision 1.4
+  diff -u -r1.3 -r1.4
+  --- package.html	10 Mar 2002 17:03:41 -0000	1.3
+  +++ package.html	1 Sep 2003 18:52:55 -0000	1.4
+  @@ -7,8 +7,6 @@
+
+</para><para depth="0">    &lt;body&gt;
+     &lt;div&gt;
+- Horrible PropertySet Format API reads things like Document Summary info from 
+  -      OLE 2 Compound document files.
+      &lt;p&gt;Processes streams in the Horrible Property Set Format (HPSF) in POI
+       filesystems. Microsoft Office documents, i.e. POI filesystems, usually
+       contain meta data like author, title, last editing date etc. These items
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>poi-dev-unsubscribe@jakarta.apache.org</email>
+For additional commands, e-mail: <email>poi-dev-help@jakarta.apache.org</email>
+
+</footer></body></message>

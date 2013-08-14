@@ -1,0 +1,51 @@
+<message message-id="49F5DF58.6060904@yahoo-inc.com" list="com.yahoogroups.yws-flickr" id="24ao5ao7hdtpd7es" type="general" date="2009-04-27T12:37:44-04:00" year="2009-01-01" year-month="2009-04-01" year-month-day="2009-04-27" thread-id="kt6gcrs2pqpi5ruz"><headers><envelope-from-line>Mon Apr 27 08:38:13 2009</envelope-from-line><from personal="kellan" address="kellan@yahoo-inc.com">kellan &lt;kellan@yahoo-inc.com&gt;</from><to personal="yws-flickr@yahoogroups.com" address="yws-flickr@yahoogroups.com">yws-flickr@yahoogroups.com</to><subject normal="[yws-flickr] New FlickrAuth change causing confusion and tech support issues">Re: [yws-flickr] New FlickrAuth change causing confusion and tech support issues</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 11
+          for &lt;lauren.flynn.cooley@a.markmail.org&gt;;
+          Mon, 27 Apr 2009 08:38:12 -0800 (GMT-08:00)</received><received>from n50c.bullet.mail.sp1.yahoo.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 7C0D4290808B
+	for &lt;lauren.flynn.cooley@a.markmail.org&gt;; Mon, 27 Apr 2009 09:37:49 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoogroups.com; s=lima; t=1240850292; bh=f9nkwJsthCst9ww+3j+ZdJo4AbwmQiKKBHABp3huCCk=; h=Received:Received:X-Yahoo-Newman-Id:X-Sender:X-Apparently-To:X-Received:X-Received:X-Received:X-Received:Message-ID:User-Agent:To:References:In-Reply-To:X-Originating-IP:X-eGroups-Msg-Info:From:X-Yahoo-Profile:Sender:MIME-Version:Mailing-List:Delivered-To:List-Id:Precedence:List-Unsubscribe:Date:Subject:Reply-To:X-Yahoo-Newman-Property:Content-Type; b=FFQPbYNA/i8CrYYHyhMOLLIFavc+Miq+7zPVdqehOI1OfVa0Oi4RAI2x6+iPnhhZ23zKlimEhixoVxIQlCVBhsjDcJ5IWv4vCl20rKuqJMZ7nuPv11C3R43+Sw7HEiRV</dkim-signature><domainkey-signature>a=rsa-sha1; q=dns; c=nofws; s=lima; d=yahoogroups.com;
+	b=ogHy97pvEAHBPVQZAIpBegHaNkSGWd7txwslQBHzz7AFiWL8jOoyIAYeavU3L1hRc5XYiXBlvNcmDVAdSQFaiAdg+DzawnifOn9YE812UsObgaGDB8+HedXHoKohL0uQ;</domainkey-signature><received>from [69.147.65.173] by n50.bullet.mail.sp1.yahoo.com with NNFMP; 27 Apr 2009 16:38:12 -0000</received><received>from [69.147.108.198] by t15.bullet.mail.sp1.yahoo.com with NNFMP; 27 Apr 2009 16:38:11 -0000</received><x-yahoo-newman-id>15610238-m4869</x-yahoo-newman-id><x-sender>kellan@yahoo-inc.com</x-sender><x-apparently-to>yws-flickr@yahoogroups.com</x-apparently-to><x-received>(qmail 89116 invoked from network); 27 Apr 2009 16:38:03 -0000</x-received><x-received>from unknown (98.137.34.46)
+  by m7.grp.re1.yahoo.com with QMQP; 27 Apr 2009 16:38:03 -0000</x-received><x-received>from unknown (HELO rsmtp2.corp.yahoo.com) (207.126.228.150)
+  by mta3.grp.sp2.yahoo.com with SMTP; 27 Apr 2009 16:38:03 -0000</x-received><x-received>from traveling-laptop-107.hjny.corp.yahoo.com (traveling-laptop-107.hjny.corp.yahoo.com [10.74.137.107])
+	(authenticated bits=0)
+	by rsmtp2.corp.yahoo.com (8.13.8/8.13.8/y.rout) with ESMTP id n3RGbiB8071226
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for &lt;yws-flickr@yahoogroups.com&gt;; Mon, 27 Apr 2009 09:37:45 -0700 (PDT)</x-received><message-id>49F5DF58.6060904@yahoo-inc.com</message-id><user-agent>Thunderbird 2.0.0.21 (Macintosh/20090302)</user-agent><references>&lt;gt2bdh+83kf@eGroups.com&gt;</references><in-reply-to>&lt;gt2bdh+83kf@eGroups.com&gt;</in-reply-to><x-originating-ip>207.126.228.150</x-originating-ip><x-egroups-msg-info>1:12:0:0:0</x-egroups-msg-info><x-yahoo-profile>ykellan</x-yahoo-profile><sender>yws-flickr@yahoogroups.com</sender><mime-version>1.0</mime-version><mailing-list>list yws-flickr@yahoogroups.com; contact yws-flickr-owner@yahoogroups.com</mailing-list><delivered-to>mailing list yws-flickr@yahoogroups.com</delivered-to><list-id>&lt;yws-flickr.yahoogroups.com&gt;</list-id><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:yws-flickr-unsubscribe@yahoogroups.com&gt;</list-unsubscribe><date>Mon, 27 Apr 2009 12:37:44 -0400</date><reply-to>yws-flickr@yahoogroups.com</reply-to><x-yahoo-newman-property>groups-email-ff-u</x-yahoo-newman-property><content-type>multipart/alternative;
+ boundary="wARGSnQbyxO9Uyda3C6Fv8KMEqMc561aVsaD0k1"</content-type></headers><normalized-references><normalized-message-id>49F5DF58.6060904@yahoo-inc.com</normalized-message-id><normalized-in-reply-to>gt2bdh+83kf@eGroups.com</normalized-in-reply-to><normalized-reference>gt2bdh+83kf@eGroups.com</normalized-reference></normalized-references><body multipart="multipart/alternative;&#13;&#10; boundary=&quot;wargsnqbyxo9uyda3c6fv8kmeqmc561avsad0k1&quot;" type="text/plain; charset=ISO-8859-1"><greeting depth="0">Hey all,
+</greeting><para depth="0">
+Sorry about this, this is my fault.  We pushed out a rush change to some 
+language last week, and then I was out with a pulled back and not around 
+to clean it up.
+
+</para><para depth="0">I'm going to be looking at sorting things out today.
+
+</para><para depth="0">That said, if you're currently using a key we issued for a Desktop app 
+with Web style auth you can expect this be to deprecated, and then 
+turned off at some point in the future. (though you'll get some warning)
+
+</para><footer type="signature" depth="0" hash="4386217040725841773">-kellan
+
+</footer><para depth="0">kinoma_inc wrote:
+</para><quote depth="1"><quotepara depth="1">Hello,
+
+</quotepara><quotepara depth="1">We've started getting tech support issues about a recent (we think) change to<br/>the Flickr authentication page.  The new text reads:
+
+</quotepara><quotepara depth="1">    Important: You should have been sent here by Charles Wiltgen.
+    If that doesn't match where you come from you may not want to
+    authorize it to access your account.
+
+</quotepara><quotepara depth="1">The name in the first sentence is mine, and links to a non-existant URL.<br/>Because users have never heard my name, and because the link is broken, it's<br/>causing confusion and tech support issues.
+
+</quotepara><quotepara depth="1">How do I change the name from my name to the product name (Kinoma Play), and the<br/>URL to &lt;<url>http://kinoma.com/</url>&gt;?  We've spent all morning looking all possible<br/>Flickr and Yahoo account information, and we're stymied.  All of our Flickr and<br/>Yahoo contacts no longer work for Yahoo.   :^(
+
+</quotepara><quotepara depth="1">Please help!
+
+</quotepara><quotepara depth="1">Thank you,
+
+</quotepara><quotefooter type="signature" depth="1" hash="17779531361911764723">-- Charles
+
+</quotefooter><quotefooter type="noise" depth="1">------------------------------------
+
+</quotefooter><quotepara depth="1">Yahoo! Groups Links
+
+</quotepara></quote></body></message>

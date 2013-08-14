@@ -1,0 +1,18 @@
+<message message-id="9AE88E3C-825D-4CB9-8868-E92D915A644F@sun.com" list="org.opensolaris.indiana-discuss" id="24aeuxvgzoik5faj" type="general" date="2008-07-10T09:07:11+12:00" year="2008-01-01" year-month="2008-07-01" year-month-day="2008-07-09" thread-id="n2vvqcxqsw6kxhvj"><headers><envelope-from-line>From Glynn.Foster@Sun.COM  Wed Jul  9 14:07:11 2008</envelope-from-line><from personal="Glynn Foster" address="Glynn.Foster@Sun.COM">Glynn Foster &lt;Glynn.Foster@Sun.COM&gt;</from><subject normal="[indiana-discuss] new ISO soon?">[indiana-discuss] new ISO soon?</subject><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.0 required=5.0 tests=BAYES_00,MISSING_HEADERS,
+	NO_RECEIVED,NO_RELAYS autolearn=disabled version=3.2.4</x-spam-status><date>Thu, 10 Jul 2008 09:07:11 +1200</date><in-reply-to>&lt;21701047.1215625042274.JavaMail.Twebapp@oss-app1&gt;</in-reply-to><references>&lt;21701047.1215625042274.JavaMail.Twebapp@oss-app1&gt;</references><message-id>9AE88E3C-825D-4CB9-8868-E92D915A644F@sun.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>9AE88E3C-825D-4CB9-8868-E92D915A644F@sun.com</normalized-message-id><normalized-in-reply-to>21701047.1215625042274.JavaMail.Twebapp@oss-app1</normalized-in-reply-to><normalized-reference>21701047.1215625042274.JavaMail.Twebapp@oss-app1</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+On 10/07/2008, at 5:36 AM, Ken Mays wrote:
+</para><quote depth="1"><quotepara depth="1">So anyhow, I'd like to see an updated Live CD snapshot for Aug 2008  
+of OpenSolaris 2008.x with the newer GNOME 2.22.x release and latest  
+ON build 93/94.
+</quotepara></quote><para depth="0">
+There will be in effect 2 ISOs being produced. The re-spin of 2008.05  
+(planned for August) will essentially fix some of the packaging bugs  
+various people have experienced, along with a few minor tweaks.  On  
+the other side, a set of development ISOs will start to be produced  
+that track the 'unstable' line working towards a final release of  
+2008.11 in November.
+
+</para><para depth="0">Glynn
+
+</para></body></message>

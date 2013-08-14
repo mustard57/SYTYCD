@@ -1,0 +1,11 @@
+<message message-id="20070423094431.28CDE57D88@drupal3.drupal.org" list="org.drupal.drupal-cvs" id="24an3autyssqpl7d" type="checkins" date="2007-04-23T09:44:31Z" year="2007-01-01" year-month="2007-04-01" year-month-day="2007-04-23" thread-id="24an3autyssqpl7d"><headers><envelope-from-line>From drupal-cvs@drupal.org  Mon Apr 23 09:44:31 2007</envelope-from-line><from personal="drupal-cvs@drupal.org" address="drupal-cvs at drupal.org">"drupal-cvs@drupal.org" &lt;drupal-cvs at drupal.org&gt;</from><subject normal="[contributions(DRUPAL-5):snpower] /modules/faq faq.css">[contributions(DRUPAL-5):snpower] /modules/faq faq.css</subject><date>Mon, 23 Apr 2007 09:44:31 +0000 (UTC)</date><message-id>20070423094431.28CDE57D88@drupal3.drupal.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>20070423094431.28CDE57D88@drupal3.drupal.org</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">User: snpower	Branch: DRUPAL-5	Date: Mon, 23 Apr 2007 09:44:31 +0000
+
+</para><para depth="0">Modified files:
+  /modules/faq faq.css
+
+</para><para depth="0">Log message:
+  added in style for faq_arrow class
+
+</para><para depth="0">Links:
+  <url>http://cvs.drupal.org/diff.php?path=contributions/modules/faq/faq.css&amp;old=1.1.2.5&amp;new=1.1.2.6&amp;root=contrib</url>
+</para></body></message>

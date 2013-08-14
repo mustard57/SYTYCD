@@ -1,0 +1,70 @@
+<message message-id="200106182027.NAA22423@single.eng.sun.com" list="org.openoffice.tools.dev" id="24abu25toifh5235" type="development" date="2001-06-18T13:27:45-07:00" year="2001-01-01" year-month="2001-06-01" year-month-day="2001-06-18" thread-id="hsod5mm6ysib4ydz"><headers><envelope-from-line>From Patrick.Luby@Sun.COM  Mon Jun 18 20:27:47 2001 Jun 18 20:27:47 2001</envelope-from-line><from personal="Patrick Luby" address="Patrick.Luby@Sun.COM">Patrick Luby &lt;Patrick.Luby@Sun.COM&gt;</from><to personal="dev@tools.openoffice.org" address="dev@tools.openoffice.org">dev@tools.openoffice.org</to><subject normal="[tools-dev] STLport-4.0 patch for Solaris 8">RE: [tools-dev] STLport-4.0 patch for Solaris 8</subject><return-path>Patrick.Luby@Sun.COM</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-6.6 required=5.0 tests=BAYES_00,RCVD_IN_DNSWL_MED
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact tools-dev-help@openoffice.org; run by ezmlm</mailing-list><delivered-to>mailing list tools-dev@openoffice.org</delivered-to><received>(qmail 9811 invoked from network); 18 Jun 2001 20:27:47 -0000</received><received>from patan.sun.com (192.18.98.43)
+  by h12.sny.collab.net with SMTP; 18 Jun 2001 20:27:47 -0000</received><received>from single.eng.sun.com ([129.144.176.34])
+	by patan.sun.com (8.9.3+Sun/8.9.3) with ESMTP id OAA17533
+	for &lt;dev@tools.openoffice.org&gt;; Mon, 18 Jun 2001 14:27:44 -0600 (MDT)</received><received>from guibo (guibo [129.144.172.92])
+	by single.eng.sun.com (8.9.3+Sun/8.9.3/ENSMAIL,v2.1p1) with SMTP id NAA22423
+	for &lt;dev@tools.openoffice.org&gt;; Mon, 18 Jun 2001 13:27:45 -0700 (PDT)</received><message-id>200106182027.NAA22423@single.eng.sun.com</message-id><date>Mon, 18 Jun 2001 13:27:45 -0700 (PDT)</date><reply-to>Patrick Luby &lt;Patrick.Luby@Sun.COM&gt;</reply-to><mime-version>1.0</mime-version><content-type>TEXT/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>QUOTED-PRINTABLE</content-transfer-encoding><content-md5>/5q49LqPrL6th1UkMB9HNQ==</content-md5><x-mailer>dtmail 1.3.0 @(#)CDE Version 1.4 SunOS 5.8 sun4u sparc </x-mailer></headers><normalized-references><normalized-message-id>200106182027.NAA22423@single.eng.sun.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Markus,
+
+</para><para depth="0">Yes, adding -I/usr/include to the sunpro.mak file will have the same affect as 
+my changes when building the STLport-4.0 package. However, this solution does 
+not fix a problem on Solaris 8 that shows up when OpenOffice.org sources include
+STLport-4.0 headers. In such cases, you will get numerous "include file not 
+found" errors.
+
+</para><para depth="0">The patch I have solves the latter problem as well as the first one that you 
+reported in issue 693.
+
+</para><para depth="0">Can you try it out and see if you encounter any problems and/or bugs in my 
+implementation?
+
+</para><para depth="0">Thanks,
+
+</para><para depth="0">Patrick
+
+</para><quote depth="1"><quotepara depth="1">Mailing-List: contact <email>tools-dev-help@openoffice.org</email>; run by ezmlm
+X-No-Archive: yes
+list-help: &lt;mailto:<email>tools-dev-help@openoffice.org</email>&gt;
+list-unsubscribe: &lt;mailto:<email>tools-dev-unsubscribe@openoffice.org</email>&gt;
+list-post: &lt;mailto:<email>dev@tools.openoffice.org</email>&gt;
+Delivered-To: mailing list <email>tools-dev@openoffice.org</email>
+From: Markus Döhr &lt;<email>doehrm@aubi.de</email>&gt;
+To: "'<email>dev@tools.openoffice.org</email>'" &lt;<email>dev@tools.openoffice.org</email>&gt;
+MIME-Version: 1.0
+Subject: RE: [tools-dev] STLport-4.0 patch for Solaris 8
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by single.eng.sun.com id 
+NAA20664
+
+</quotepara><quote depth="2"><quotepara depth="2">On Solaris 8, the STLport-4.0 package that is downloaded from 
+www.stlport.org will not compile with the Forte 6 Update 1 
+compiler on Solaris 8.
+</quotepara></quote><quotepara depth="1">
+According to
+
+</quotepara><quotepara depth="1"><url>http://www.openoffice.org/issues/show_bug.cgi?id=693</url>
+
+</quotepara><quotepara depth="1">I built it successfully.
+
+</quotepara><quotepara depth="1">Regards,
+
+</quotepara><quotefooter type="signature" depth="1" hash="13286753672191616389">-- 
+Markus Doehr            AUBI Baubeschläge GmbH
+SAP R/3 Basis           Zum Grafenwald
+IT Admin                54411 Hermeskeil
+Tel: +49 6503 917 152   Fax: +49 6503 917 190
+
+</quotefooter><quotefooter type="list-management" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>tools-dev-unsubscribe@openoffice.org</email>
+For additional commands, e-mail: <email>tools-dev-help@openoffice.org</email>
+
+</quotefooter></quote><footer type="signature" depth="0" hash="1755524050413190050">_____________________________________________________________________
+Patrick Luby                          Email: <email>patrick.luby@eng.sun.com</email>
+Software Engineering Manager          Phone: 408-863-3284
+Sun Microsystems, Desktop Foundation Software
+901 San Antonio Road, UCUP01-103
+Palo Alto, CA 94303-4900
+</footer><footer type="noise" depth="0">_____________________________________________________________________
+
+</footer></body></message>

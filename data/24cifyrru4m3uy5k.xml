@@ -1,0 +1,37 @@
+<message message-id="ce1f2ea80803292059u26475ec7g6f918266ad948f75@mail.gmail.com" list="org.apache.commons.issues" id="24cifyrru4m3uy5k" type="bugs" date="2008-03-29T23:59:12-04:00" year="2008-01-01" year-month="2008-03-01" year-month-day="2008-03-29" thread-id="4tf35m2nzj6kh7ww"><headers><envelope-from-line>Sat Mar 29 20:59:45 2008</envelope-from-line><from personal="Rahul Akolkar" address="rahul.akolkar@gmail.com">Rahul Akolkar &lt;rahul.akolkar@gmail.com&gt;</from><to personal="issues@commons.apache.org" address="issues@commons.apache.org">issues@commons.apache.org</to><cc personal="jzhang44@iit.edu" address="jzhang44@iit.edu">jzhang44@iit.edu</cc><subject normal="commons digester DTD">Re: commons digester DTD</subject><received>from hermes.apache.org ([140.211.11.2])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 351
+          for &lt;orval.downs.valentine@a.markmail.org&gt;;
+          Sat, 29 Mar 2008 20:59:43 -0700 (PDT)</received><received>(qmail 47869 invoked by uid 500); 30 Mar 2008 03:59:41 -0000</received><mailing-list>contact issues-help@commons.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:issues-help@commons.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@commons.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:issues@commons.apache.org&gt;</list-post><list-id>&lt;issues.commons.apache.org&gt;</list-id><reply-to>issues@commons.apache.org</reply-to><delivered-to>mailing list issues@commons.apache.org</delivered-to><received>(qmail 47860 invoked by uid 99); 30 Mar 2008 03:59:41 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sat, 29 Mar 2008 20:59:41 -0700</received><x-asf-spam-status>No, hits=-0.0 required=10.0
+	tests=SPF_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (athena.apache.org: domain of rahul.akolkar@gmail.com designates 72.14.220.154 as permitted sender)</received-spf><received>from [72.14.220.154] (HELO fg-out-1718.google.com) (72.14.220.154)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sun, 30 Mar 2008 03:59:01 +0000</received><received>by fg-out-1718.google.com with SMTP id 22so961151fge.24
+        for &lt;issues@commons.apache.org&gt;; Sat, 29 Mar 2008 20:59:12 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=beta;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:cc:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=hGvx0GqQaKTOQ+CGH5kS9e8mJdY4P+K+vosYecWBCkY=;
+        b=ihUr3vQGFGrCyQFx9dfVYf5AiD8S9C0Hl5AnzVhvSj29XUoW+mxUWXgLqBeHTTdF1EwGI2oEJkrriGzG+d19ONAqMWK4yrrfYqiMx+En0OHBx7W6ivyNSLQGW+Q5F7KQHa44jTFvWLLj2bQBnvwD7InrP9mIArpZkFpy8PYfsV0=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=beta;
+        h=message-id:date:from:to:subject:cc:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=c7gz+L/bdJeNc2coCHA00FbGOBWZsk50VMwi8gKeBlP/0FFzTmrKKVYi5f8AAh+LpANtmhxmtR6EJNRTB7aHeCSx30uG2SCdRc7DON6692MvJyiKvdWS2YWE6dgCd7GXZsNAkIBLR/TFApHtM9vT09ctVXCg8yJtayTKu+WJoIw=</domainkey-signature><received>by 10.82.118.1 with SMTP id q1mr12411827buc.4.1206849552116;
+        Sat, 29 Mar 2008 20:59:12 -0700 (PDT)</received><received>by 10.82.140.18 with HTTP; Sat, 29 Mar 2008 20:59:12 -0700 (PDT)</received><message-id>ce1f2ea80803292059u26475ec7g6f918266ad948f75@mail.gmail.com</message-id><date>Sat, 29 Mar 2008 23:59:12 -0400</date><in-reply-to>&lt;e053d834260a4.260a4e053d834@iit.edu&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><content-disposition>inline</content-disposition><references>&lt;e053d834260a4.260a4e053d834@iit.edu&gt;</references><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>ce1f2ea80803292059u26475ec7g6f918266ad948f75@mail.gmail.com</normalized-message-id><normalized-in-reply-to>e053d834260a4.260a4e053d834@iit.edu</normalized-in-reply-to><normalized-reference>e053d834260a4.260a4e053d834@iit.edu</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On 3/29/08, Jianguo Zhang &lt;<email>jzhang44@iit.edu</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">it seems commons digester DTD have no attributes definition for
+ node-create-rule. while it defines object-param-rule two times. Is the
+ second one of object-param-rule should be node-create-rule.
+
+</quotepara></quote><para depth="0">&lt;snip/&gt;
+
+</para><para depth="0">Seems likely, please open an issue in JIRA [1], if one isn't there
+already for this.
+
+</para><para depth="0">Posts on the list run the risk of getting lost unless acted upon
+immediately, JIRA will keep it on the radar.
+
+</para><para depth="0">-Rahul
+
+</para><para depth="0">[1] <url>http://issues.apache.org/jira/browse/DIGESTER</url>
+
+</para><quote depth="1"><quotepara depth="1"> thanks.
+
+</quotepara><quotepara depth="1">jianguo
+
+</quotepara></quote></body></message>

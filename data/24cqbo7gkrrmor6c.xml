@@ -1,0 +1,31 @@
+<message message-id="Mutt.19970304073113.j@uriah.heep.sax.de" list="org.freebsd.freebsd-questions" id="24cqbo7gkrrmor6c" type="general" date="1997-03-04T07:31:13+01:00" year="1997-01-01" year-month="1997-03-01" year-month-day="1997-03-03" thread-id="3u4v6bkuy7i7iqry"><headers><envelope-from-line>From owner-freebsd-questions  Wed Mar  5 04:45:44 1997</envelope-from-line><from personal="J Wunsch" address="j@uriah.heep.sax.de">J Wunsch &lt;j@uriah.heep.sax.de&gt;</from><to personal="Typh0on@concentric.net" address="Typh0on@concentric.net">Typh0on@concentric.net</to><cc personal="hackers@FreeBSD.ORG" address="hackers@FreeBSD.ORG">hackers@FreeBSD.ORG</cc><subject normal="2.2 Gamma Install Problem">Re: 2.2 Gamma Install Problem</subject><return-path>owner-questions</return-path><received>(from root@localhost)
+          by freefall.freebsd.org (8.8.5/8.8.5) id EAA15112
+          for questions-outgoing; Wed, 5 Mar 1997 04:45:44 -0800 (PST)</received><received>from who.cdrom.com (who.cdrom.com [204.216.27.3])
+          by freefall.freebsd.org (8.8.5/8.8.5) with ESMTP id EAA15061;
+          Wed, 5 Mar 1997 04:45:37 -0800 (PST)</received><received>from os.inf.tu-dresden.de (os.inf.tu-dresden.de [141.76.1.46])
+          by who.cdrom.com (8.7.5/8.6.11) with ESMTP id EAA29968
+          ; Wed, 5 Mar 1997 04:45:35 -0800 (PST)</received><received>from sax.sax.de (sax.sax.de [193.175.26.33])
+	by os.inf.tu-dresden.de (8.8.5/8.8.5) with ESMTP id NAA27870;
+	Wed, 5 Mar 1997 13:29:14 +0100</received><received>(from uucp@localhost) by sax.sax.de (8.6.12/8.6.12-s1) with UUCP id IAA07738; Tue, 4 Mar 1997 08:03:34 +0100</received><received>(from j@localhost)
+	by uriah.heep.sax.de (8.8.5/8.8.5) id HAA10348;
+	Tue, 4 Mar 1997 07:31:13 +0100 (MET)</received><message-id>Mutt.19970304073113.j@uriah.heep.sax.de</message-id><date>Tue, 4 Mar 1997 07:31:13 +0100</date><references>&lt;Pine.BSI.3.94.970303122300.20520B-100000@localhost&gt; &lt;331B43BB.30AB@pop3.concentric.net&gt; &lt;Mutt.19970303234553.j@uriah.heep.sax.de&gt; &lt;331B8448.67EE@pop3.concentric.net&gt;</references><x-mailer>Mutt 0.55-PL10</x-mailer><mime-version>1.0</mime-version><x-phone>+49-351-2012 669</x-phone><x-pgp-fingerprint>DC 47 E6 E4 FF A6 E9 8F  93 21 E0 7D F9 12 D6 4E</x-pgp-fingerprint><reply-to>joerg_wunsch@uriah.heep.sax.de (Joerg Wunsch)</reply-to><in-reply-to>&lt;331B8448.67EE@pop3.concentric.net&gt;; from Richard Linane on Mar 3, 1997 21:09:12 -0500</in-reply-to><sender>owner-questions@FreeBSD.ORG</sender><x-loop>FreeBSD.org</x-loop><precedence>bulk</precedence></headers><normalized-references><normalized-message-id>Mutt.19970304073113.j@uriah.heep.sax.de</normalized-message-id><normalized-in-reply-to>&lt;331B8448.67EE@pop3.concentric.net&gt;;fromRichardLinaneonMar3,199721:09:12-0500</normalized-in-reply-to><normalized-reference>Pine.BSI.3.94.970303122300.20520B-100000@localhost</normalized-reference><normalized-reference>331B43BB.30AB@pop3.concentric.net</normalized-reference><normalized-reference>Mutt.19970303234553.j@uriah.heep.sax.de</normalized-reference><normalized-reference>331B8448.67EE@pop3.concentric.net</normalized-reference></normalized-references><body type="text/plain"><para depth="0">As Richard Linane wrote:
+
+</para><quote depth="1"><quotepara depth="1">usr/bin/window
+usr/bin/write
+usr/bin/xargs
+
+</quotepara><quotepara depth="1">gunzip: stdin: invalid comp data--format violated
+/stand/cpio/: premature end of file
+Debug: switching back to VTY1
+
+</quotepara><quote depth="2"><quotepara depth="2">Thats exactly what had been displayed&lt;
+</quotepara></quote></quote><para depth="0">
+That means input data has stopped flowing in. :-(
+
+</para><footer type="signature" hash="8661382734148043745" depth="0">-- 
+cheers, J"org
+
+</footer><para depth="0"><email>joerg_wunsch@uriah.heep.sax.de</email> -- <url>http://www.sax.de/~joerg/</url> -- NIC: JW11-RIPE
+Never trust an operating system you don't have sources for. ;-)
+
+</para></body></message>

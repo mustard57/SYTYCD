@@ -1,0 +1,203 @@
+<message message-id="FD2AF2B184C9450BA4059D3CCF9C7F80@monica" list="net.sourceforge.lists.htmlunit-user" id="24aw4op2oz3fe37t" type="users" date="2009-01-20T20:42:53+11:00" year="2009-01-01" year-month="2009-01-01" year-month-day="2009-01-20" thread-id="24aw4op2oz3fe37t"><headers><envelope-from-line>Tue Jan 20 01:55:43 2009</envelope-from-line><from personal="Ricky Hazelwood" address="rjhazelwood@gmail.com">Ricky Hazelwood &lt;rjhazelwood@gmail.com&gt;</from><to personal="htmlunit-user@lists.sourceforge.net" address="htmlunit-user@lists.sourceforge.net">htmlunit-user@lists.sourceforge.net</to><subject normal="[Htmlunit-user] YUI 2.6.0 Ajax Request">[Htmlunit-user] YUI 2.6.0 Ajax Request</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 44
+          for &lt;prince.haley.galloway@a.markmail.org&gt;;
+          Tue, 20 Jan 2009 01:55:42 -0800 (GMT-08:00)</received><received>from lists.sourceforge.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 5D3403B300DE
+	for &lt;prince.haley.galloway@a.markmail.org&gt;; Tue, 20 Jan 2009 01:55:19 -0800 (PST)</received><received>from localhost ([127.0.0.1] helo=sfs-ml-2.v29.ch3.sourceforge.com)
+	by 3yr0jf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;htmlunit-user-bounces@lists.sourceforge.net&gt;)
+	id 1LPDKN-0002k2-AD; Tue, 20 Jan 2009 09:55:23 +0000</received><received>from sfi-mx-3.v28.ch3.sourceforge.com ([172.29.28.123]
+	helo=mx.sourceforge.net)
+	by 3yr0jf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;rjhazelwood@gmail.com&gt;) id 1LPDKM-0002jl-BH
+	for htmlunit-user@lists.sourceforge.net; Tue, 20 Jan 2009 09:55:22 +0000</received><received-spf>pass (3b2kzd1.ch3.sourceforge.com: domain of gmail.com
+	designates 209.85.146.182 as permitted sender)
+	client-ip=209.85.146.182; envelope-from=rjhazelwood@gmail.com;
+	helo=wa-out-1112.google.com; </received-spf><received>from wa-out-1112.google.com ([209.85.146.182])
+	by 3b2kzd1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	id 1LPDKH-0004hV-DJ
+	for htmlunit-user@lists.sourceforge.net; Tue, 20 Jan 2009 09:55:22 +0000</received><received>by wa-out-1112.google.com with SMTP id m34so1744076wag.10
+	for &lt;htmlunit-user@lists.sourceforge.net&gt;;
+	Tue, 20 Jan 2009 01:55:16 -0800 (PST)</received><received>by 10.114.210.2 with SMTP id i2mr810346wag.47.1232445315977;
+	Tue, 20 Jan 2009 01:55:15 -0800 (PST)</received><received>from monica (203-219-208-109.static.tpgi.com.au [203.219.208.109])
+	by mx.google.com with ESMTPS id z20sm12309534pod.26.2009.01.20.01.55.12
+	(version=SSLv3 cipher=RC4-MD5); Tue, 20 Jan 2009 01:55:14 -0800 (PST)</received><message-id>FD2AF2B184C9450BA4059D3CCF9C7F80@monica</message-id><date>Tue, 20 Jan 2009 20:42:53 +1100</date><mime-version>1.0</mime-version><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><importance>Normal</importance><x-mailer>Microsoft Windows Live Mail 12.0.1606</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V12.0.1606</x-mimeole><x-spam-score>-1.5 (-)</x-spam-score><x-spam-report>Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	-1.5 SPF_CHECK_PASS SPF reports sender host as permitted sender for
+	sender-domain
+	-0.0 SPF_PASS               SPF: sender matches SPF record
+	-0.0 DKIM_VERIFIED Domain Keys Identified Mail: signature passes
+	verification
+	0.0 DKIM_SIGNED Domain Keys Identified Mail: message has a signature
+	0.0 HTML_MESSAGE           BODY: HTML included in message</x-spam-report><x-headers-end>1LPDKH-0004hV-DJ</x-headers-end><x-beenthere>htmlunit-user@lists.sourceforge.net</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>htmlunit-user@lists.sourceforge.net</reply-to><list-id>&lt;htmlunit-user.lists.sourceforge.net&gt;</list-id><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/htmlunit-user&gt;, 
+	&lt;mailto:htmlunit-user-request@lists.sourceforge.net?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://sourceforge.net/mailarchive/forum.php?forum_name=htmlunit-user&gt;</list-archive><list-post>&lt;mailto:htmlunit-user@lists.sourceforge.net&gt;</list-post><list-help>&lt;mailto:htmlunit-user-request@lists.sourceforge.net?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/htmlunit-user&gt;, 
+	&lt;mailto:htmlunit-user-request@lists.sourceforge.net?subject=subscribe&gt;</list-subscribe><content-type>multipart/mixed; boundary="===============4250632071493801332=="</content-type><errors-to>htmlunit-user-bounces@lists.sourceforge.net</errors-to></headers><normalized-references><normalized-message-id>FD2AF2B184C9450BA4059D3CCF9C7F80@monica</normalized-message-id></normalized-references><body><para depth="0">Htmlunit (2.3 / 2.4 and latest code) doesn't seem to handle YUI 2.6.0 ajax<br/>request.
+Here is a simple test:
+
+</para><para depth="0">  import com.gargoylesoftware.htmlunit.BrowserVersion;
+  import com.gargoylesoftware.htmlunit.WebClient;
+  import com.gargoylesoftware.htmlunit.html.HtmlPage;
+
+</para><para depth="0">  import org.junit.Test;
+  import static org.junit.Assert.assertTrue;
+
+</para><para depth="0">  public class HtmlUnitTest
+  {
+      @Test
+      public void ajax() throws Exception
+      {
+          WebClient client = new WebClient(BrowserVersion.FIREFOX_2);
+          final HtmlPage page = (HtmlPage)<br/>client.getPage("<url>http://developer.yahoo.com/yui/examples/datatable/dt_xhrjson_clean.html</url>");
+          assertTrue(page.getEnclosingWindow().getThreadManager().joinAll(10000L));
+      }
+  }
+Here is the exception message:
+
+</para><para depth="0">  com.gargoylesoftware.htmlunit.ScriptException: TypeError: Cannot call method<br/>"appendChild" of null<br/>(<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js#12</url>)
+  ======= EXCEPTION START ========
+  EcmaError: lineNumber=[12] column=[0] lineSource=[null] name=[TypeError]<br/>sourceName=[<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js</url>]<br/>message=[TypeError: Cannot call method "appendChild" of null<br/>(<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js#12</url>)]
+  com.gargoylesoftware.htmlunit.ScriptException: TypeError: Cannot call method<br/>"appendChild" of null<br/>(<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js#12</url>)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine$HtmlUnitContextAction.run(JavaScriptEngine.java:528)
+   at org.mozilla.javascript.Context.call(Context.java:502)
+   at org.mozilla.javascript.ContextFactory.call(ContextFactory.java:511)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine.callFunction(JavaScriptEngine.java:437)
+   at<br/>com.gargoylesoftware.htmlunit.html.HtmlPage.executeJavaScriptFunctionIfPossible(HtmlPage.java:917)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.host.EventListenersContainer.executeEventListeners(EventListenersContainer.java:126)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.host.EventListenersContainer.executeBubblingListeners(EventListenersContainer.java:163)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.host.Node.fireEvent(Node.java:560)
+   at<br/>com.gargoylesoftware.htmlunit.html.HtmlElement$2.run(HtmlElement.java:1251)
+   at org.mozilla.javascript.Context.call(Context.java:502)
+   at org.mozilla.javascript.ContextFactory.call(ContextFactory.java:511)
+   at<br/>com.gargoylesoftware.htmlunit.html.HtmlElement.fireEvent(HtmlElement.java:1255)
+   at<br/>com.gargoylesoftware.htmlunit.html.HtmlPage.executeEventHandlersIfNeeded(HtmlPage.java:1154)
+   at com.gargoylesoftware.htmlunit.html.HtmlPage.initialize(HtmlPage.java:173)
+   at<br/>com.gargoylesoftware.htmlunit.WebClient.loadWebResponseInto(WebClient.java:456)
+   at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:331)
+   at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:388)
+   at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:373)
+   at au.com.suncorp.ffe.audit.htmlunit.HtmlUnitTest.ajax(HtmlUnitTest.java:25)
+   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   at<br/>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+   at<br/>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+   at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:59)
+   at<br/>org.junit.internal.runners.MethodRoadie.runTestMethod(MethodRoadie.java:98)
+   at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:79)
+   at<br/>org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:87)
+   at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:77)
+   at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:42)
+   at<br/>org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:88)
+   at<br/>org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+   at<br/>org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+   at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+   at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+   at<br/>org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+   at com.intellij.rt.junit4.Junit4ClassSuite.run(Junit4ClassSuite.java:99)
+   at<br/>com.intellij.rt.execution.junit.IdeaTestRunner.doRun(IdeaTestRunner.java:94)
+   at<br/>com.intellij.rt.execution.junit.IdeaTestRunner.startRunnerWithArgs(IdeaTestRunner.java:22)
+   at<br/>com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:118)
+   at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:40)
+   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   at<br/>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+   at<br/>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+   at com.intellij.rt.execution.application.AppMain.main(AppMain.java:90)
+  Caused by: org.mozilla.javascript.EcmaError: TypeError: Cannot call method<br/>"appendChild" of null<br/>(<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js#12</url>)
+   at<br/>org.mozilla.javascript.ScriptRuntime.constructError(ScriptRuntime.java:3558)
+   at<br/>org.mozilla.javascript.ScriptRuntime.constructError(ScriptRuntime.java:3536)
+   at org.mozilla.javascript.ScriptRuntime.typeError(ScriptRuntime.java:3564)
+   at org.mozilla.javascript.ScriptRuntime.typeError2(ScriptRuntime.java:3583)
+   at<br/>org.mozilla.javascript.ScriptRuntime.undefCallError(ScriptRuntime.java:3602)
+   at<br/>org.mozilla.javascript.ScriptRuntime.getPropFunctionAndThis(ScriptRuntime.java:2161)
+   at org.mozilla.javascript.Interpreter.interpretLoop(Interpreter.java:3170)
+   at org.mozilla.javascript.Interpreter.interpret(Interpreter.java:2484)
+   at<br/>org.mozilla.javascript.InterpretedFunction.call(InterpretedFunction.java:164)
+   at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:401)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.HtmlUnitContextFactory.doTopCall(HtmlUnitContextFactory.java:170)
+   at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3004)
+   at<br/>org.mozilla.javascript.InterpretedFunction.call(InterpretedFunction.java:162)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine.callFunction(JavaScriptEngine.java:465)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine$6.doRun(JavaScriptEngine.java:430)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine$HtmlUnitContextAction.run(JavaScriptEngine.java:522)
+   ... 46 more
+  Enclosed exception: 
+  org.mozilla.javascript.EcmaError: TypeError: Cannot call method "appendChild"<br/>of null (<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js#12</url>)
+   at<br/>org.mozilla.javascript.ScriptRuntime.constructError(ScriptRuntime.java:3558)
+   at<br/>org.mozilla.javascript.ScriptRuntime.constructError(ScriptRuntime.java:3536)
+   at org.mozilla.javascript.ScriptRuntime.typeError(ScriptRuntime.java:3564)
+   at org.mozilla.javascript.ScriptRuntime.typeError2(ScriptRuntime.java:3583)
+   at<br/>org.mozilla.javascript.ScriptRuntime.undefCallError(ScriptRuntime.java:3602)
+   at<br/>org.mozilla.javascript.ScriptRuntime.getPropFunctionAndThis(ScriptRuntime.java:2161)
+   at org.mozilla.javascript.Interpreter.interpretLoop(Interpreter.java:3170)
+   at script(<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js:12</url>)
+   at script(<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js:11</url>)
+   at script(<url>http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js:9</url>)
+   at script(script in<br/><url>http://developer.yahoo.com/yui/examples/datatable/dt_xhrjson_clean.html</url> from<br/>(48, 32) to (99, 10):70)
+   at script(script in<br/><url>http://developer.yahoo.com/yui/examples/datatable/dt_xhrjson_clean.html</url> from<br/>(48, 32) to (99, 10):50)
+   at<br/>script(<url>http://yui.yahooapis.com/2.6.0/build/yahoo-dom-event/yahoo-dom-event.js:8</url>)
+   at org.mozilla.javascript.Interpreter.interpret(Interpreter.java:2484)
+   at<br/>org.mozilla.javascript.InterpretedFunction.call(InterpretedFunction.java:164)
+   at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:401)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.HtmlUnitContextFactory.doTopCall(HtmlUnitContextFactory.java:170)
+   at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3004)
+   at<br/>org.mozilla.javascript.InterpretedFunction.call(InterpretedFunction.java:162)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine.callFunction(JavaScriptEngine.java:465)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine$6.doRun(JavaScriptEngine.java:430)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine$HtmlUnitContextAction.run(JavaScriptEngine.java:522)
+   at org.mozilla.javascript.Context.call(Context.java:502)
+   at org.mozilla.javascript.ContextFactory.call(ContextFactory.java:511)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.JavaScriptEngine.callFunction(JavaScriptEngine.java:437)
+   at<br/>com.gargoylesoftware.htmlunit.html.HtmlPage.executeJavaScriptFunctionIfPossible(HtmlPage.java:917)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.host.EventListenersContainer.executeEventListeners(EventListenersContainer.java:126)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.host.EventListenersContainer.executeBubblingListeners(EventListenersContainer.java:163)
+   at<br/>com.gargoylesoftware.htmlunit.javascript.host.Node.fireEvent(Node.java:560)
+   at<br/>com.gargoylesoftware.htmlunit.html.HtmlElement$2.run(HtmlElement.java:1251)
+   at org.mozilla.javascript.Context.call(Context.java:502)
+   at org.mozilla.javascript.ContextFactory.call(ContextFactory.java:511)
+   at<br/>com.gargoylesoftware.htmlunit.html.HtmlElement.fireEvent(HtmlElement.java:1255)
+   at<br/>com.gargoylesoftware.htmlunit.html.HtmlPage.executeEventHandlersIfNeeded(HtmlPage.java:1154)
+   at com.gargoylesoftware.htmlunit.html.HtmlPage.initialize(HtmlPage.java:173)
+   at<br/>com.gargoylesoftware.htmlunit.WebClient.loadWebResponseInto(WebClient.java:456)
+   at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:331)
+   at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:388)
+   at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:373)
+   at au.com.suncorp.ffe.audit.htmlunit.HtmlUnitTest.ajax(HtmlUnitTest.java:25)
+   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   at<br/>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+   at<br/>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+   at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:59)
+   at<br/>org.junit.internal.runners.MethodRoadie.runTestMethod(MethodRoadie.java:98)
+   at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:79)
+   at<br/>org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:87)
+   at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:77)
+   at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:42)
+   at<br/>org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:88)
+   at<br/>org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:51)
+   at<br/>org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:44)
+   at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:27)
+   at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:37)
+   at<br/>org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:42)
+   at com.intellij.rt.junit4.Junit4ClassSuite.run(Junit4ClassSuite.java:99)
+   at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:40)
+   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   at<br/>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+   at<br/>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+   at com.intellij.rt.execution.application.AppMain.main(AppMain.java:90)
+  == CALLING JAVASCRIPT ==
+
+</para><para depth="0">    function (c) {
+        return X.call(b, YAHOO.util.Event.getEvent(c, O), S);
+    }
+
+</para><para depth="0">  ======= EXCEPTION END ========
+
+</para><para depth="0">Cheers,
+Ricky
+</para><footer type="sponsored" depth="0">------------------------------------------------------------------------------
+This SF.net email is sponsored by:
+SourcForge Community
+SourceForge wants to tell your story.
+<url>http://p.sf.net/sfu/sf-spreadtheword</url>
+</footer><footer type="list-management" depth="0">_______________________________________________
+Htmlunit-user mailing list
+<email>Htmlunit-user@lists.sourceforge.net</email>
+<url>https://lists.sourceforge.net/lists/listinfo/htmlunit-user</url>
+</footer></body></message>

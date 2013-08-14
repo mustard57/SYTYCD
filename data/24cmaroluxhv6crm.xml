@@ -1,0 +1,47 @@
+<message message-id="20091230102001.6A8803A9929B@gamma.macosforge.org" list="org.webkit.lists.webkit-unassigned" id="24cmaroluxhv6crm" type="bugs" date="2009-12-30T02:19:44.004641-08:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-30" thread-id="pft5wdvw5dzq5u4f"><headers><envelope-from-line>Wed Dec 30 02:20:06 2009</envelope-from-line><from personal="bugzilla-daemon@webkit.org" address="bugzilla-daemon@webkit.org">bugzilla-daemon@webkit.org</from><to personal="webkit-unassigned@lists.webkit.org" address="webkit-unassigned@lists.webkit.org">webkit-unassigned@lists.webkit.org</to><subject normal="[Webkit-unassigned] [Bug 30055] Bad DOM performance in large SVG files">[Webkit-unassigned] [Bug 30055] Bad DOM performance in large SVG files</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 450
+          for &lt;paula.ryan.christensen@a.markmail.org&gt;;
+          Wed, 30 Dec 2009 02:20:06 -0800 (GMT-08:00)</received><received>from bz3.apple.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 9FD4A3B300B4
+	for &lt;paula.ryan.christensen@a.markmail.org&gt;; Wed, 30 Dec 2009 02:19:43 -0800 (PST)</received><received>from lists.macosforge.org (epsilon.macosforge.org [17.254.17.250])
+	by bz3.apple.com (Postfix) with SMTP id 669191A251A8C;
+	Wed, 30 Dec 2009 02:20:06 -0800 (PST)</received><received>from epsilon.macosforge.org (localhost [127.0.0.1])
+	by lists.macosforge.org (Postfix) with ESMTP id 5B6F96A3286;
+	Wed, 30 Dec 2009 02:20:06 -0800 (PST)</received><x-original-to>webkit-unassigned@lists.webkit.org</x-original-to><delivered-to>webkit-unassigned@lists.webkit.org</delivered-to><received>from mail-in12.apple.com (mail-in.apple.com [17.254.13.10])
+	by lists.macosforge.org (Postfix) with ESMTP id D54006A3280
+	for &lt;webkit-unassigned@lists.webkit.org&gt;;
+	Wed, 30 Dec 2009 02:20:01 -0800 (PST)</received><x-auditid>11fe0d0a-b7ccdae0000010ab-e7-4b3b29514a7c</x-auditid><received>from bz1.apple.com (bz1.apple.com [17.254.13.36])
+	(using TLS with cipher AES256-SHA (AES256-SHA/256 bits))
+	(Client did not present a certificate)
+	by mail-in12.apple.com (Apple Secure Mail Relay) with SMTP id
+	51.26.04267.1592B3B4; Wed, 30 Dec 2009 02:20:01 -0800 (PST)</received><received>from gamma.macosforge.org (gamma.macosforge.org [17.254.17.248])
+	by bz1.apple.com (Postfix) with SMTP id 7098119DD9CC4
+	for &lt;webkit-unassigned@lists.webkit.org&gt;;
+	Wed, 30 Dec 2009 02:20:01 -0800 (PST)</received><received>by gamma.macosforge.org (Postfix, from userid 70)
+	id 6A8803A9929B; Wed, 30 Dec 2009 02:20:01 -0800 (PST)</received><x-bugzilla-reason>AssignedTo</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>WebKit</x-bugzilla-product><x-bugzilla-component>Layout and Rendering</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-severity>Normal</x-bugzilla-severity><x-bugzilla-who>paroga@paroga.com</x-bugzilla-who><x-bugzilla-status>NEW</x-bugzilla-status><x-bugzilla-priority>P2</x-bugzilla-priority><x-bugzilla-assigned-to>webkit-unassigned@lists.webkit.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>---</x-bugzilla-target-milestone><x-bugzilla-changed-fields/><in-reply-to>&lt;bug-30055-2851@https.bugs.webkit.org/&gt;</in-reply-to><references>&lt;bug-30055-2851@https.bugs.webkit.org/&gt;</references><auto-submitted>auto-generated</auto-submitted><mime-version>1.0</mime-version><message-id>20091230102001.6A8803A9929B@gamma.macosforge.org</message-id><date>Wed, 30 Dec 2009 02:20:01 -0800 (PST)</date><x-brightmail-tracker>AAAAAhJGMLcSRvBk</x-brightmail-tracker><x-beenthere>webkit-unassigned@lists.webkit.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><list-id>WebKit unassigned bugs &lt;webkit-unassigned.lists.webkit.org&gt;</list-id><list-unsubscribe>&lt;http://lists.webkit.org/mailman/options.cgi/webkit-unassigned&gt;,
+	&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.webkit.org/pipermail/webkit-unassigned&gt;</list-archive><list-post>&lt;mailto:webkit-unassigned@lists.webkit.org&gt;</list-post><list-help>&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.webkit.org/mailman/listinfo.cgi/webkit-unassigned&gt;,
+	&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>webkit-unassigned-bounces@lists.webkit.org</sender><errors-to>webkit-unassigned-bounces@lists.webkit.org</errors-to></headers><normalized-references><normalized-message-id>20091230102001.6A8803A9929B@gamma.macosforge.org</normalized-message-id><normalized-in-reply-to>bug-30055-2851@https.bugs.webkit.org/</normalized-in-reply-to><normalized-reference>bug-30055-2851@https.bugs.webkit.org/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0"><url>https://bugs.webkit.org/show_bug.cgi?id=30055</url>
+
+</para><para depth="0">--- Comment #33 from Patrick R. Gansterer &lt;<email>paroga@paroga.com</email>&gt;  2009-12-30<br/>02:19:59 PST ---
+(In reply to comment #31)
+</para><quote depth="1"><quotepara depth="1">Yes, if we're waiting to commit this because a problem exists that we've never
+actually created a bug for, then definitely we should create a bug. :)
+</quotepara></quote><para depth="0">Can we r+ and cq+ it again since bug 32815 is fixed now?
+
+</para><para depth="0">(In reply to comment #32)
+</para><quote depth="1"><quotepara depth="1">Can we move this fix to SVGRenderBase::prepareToRenderSVGContent??
+
+</quotepara><quotepara depth="1">This would stop rendering earlier and can improve the rendering time on other
+parts like images too.
+</quotepara></quote><para depth="0">I think we should commit this change and maybe another too. This patch is not
+in the SVG part so it might improve also some other parts.
+
+</para><footer type="signature" depth="0" hash="7587865278882035605">-- 
+Configure bugmail: <url>https://bugs.webkit.org/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the assignee for the bug.
+</footer><footer type="list-management" depth="0">_______________________________________________
+webkit-unassigned mailing list
+<email>webkit-unassigned@lists.webkit.org</email>
+<url>http://lists.webkit.org/mailman/listinfo.cgi/webkit-unassigned</url>
+</footer></body></message>

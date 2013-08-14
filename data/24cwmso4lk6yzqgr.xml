@@ -1,0 +1,66 @@
+<message message-id="5F43E1D7-ACC3-490E-94B0-A6B6252E016A@gmail.com" list="com.googlegroups.rubyonrails-core" id="24cwmso4lk6yzqgr" type="development" date="2010-02-27T09:53:41+07:00" year="2010-01-01" year-month="2010-02-01" year-month-day="2010-02-26" thread-id="kuzcgxohmxvstzy6"><headers><envelope-from-line>Fri Feb 26 19:03:30 2010</envelope-from-line><from personal="Prem Sichanugrist" address="sikandsak@gmail.com">Prem Sichanugrist &lt;sikandsak@gmail.com&gt;</from><to personal="rubyonrails-core@googlegroups.com" address="rubyonrails-core@googlegroups.com">rubyonrails-core@googlegroups.com</to><subject normal="[Rails-core] additional checkbox values">Re: [Rails-core] additional checkbox values</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 719
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Fri, 26 Feb 2010 19:03:30 -0800 (GMT-08:00)</received><received>from mail-gw0-f60.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 7CD453B300B9
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Fri, 26 Feb 2010 19:03:07 -0800 (PST)</received><received>by gwaa12 with SMTP id a12sf836622gwa.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Fri, 26 Feb 2010 19:03:30 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:x-beenthere:received:received:received
+         :received:received-spf:received:received:received:subject
+         :mime-version:content-type:from:in-reply-to:date:message-id
+         :references:to:x-mailer:x-original-authentication-results
+         :x-original-sender:reply-to:precedence:mailing-list:list-id
+         :list-post:list-help:list-archive:x-thread-url:x-message-url:sender
+         :list-subscribe:list-unsubscribe;
+        bh=DXIpLYQ/n5XcO3o6jGNizyC2VQ3mJGLm1z8pqCbsyp8=;
+        b=4SYNNRY6O7uHEanpp6v6XwQ8mDdkffslA4MJkhNMU2ZzY+r2jk/AFvLS7nlwcdA7Nq
+         klyDw28EB28Ew2nlqODlfeQzY1eO6JfpyPLzx5ZmJgW3rzBNVSxsBk/ibnJ3159VAWfn
+         izVmvQKomb1Fuc2kmZtbthExaTlQKoSLdkieY=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:received-spf:subject:mime-version:content-type:from
+         :in-reply-to:date:message-id:references:to:x-mailer
+         :x-original-authentication-results:x-original-sender:reply-to
+         :precedence:mailing-list:list-id:list-post:list-help:list-archive
+         :x-thread-url:x-message-url:sender:list-subscribe:list-unsubscribe;
+        b=xn3WFbnxBsRm6G+35JkhQiJLmNKgx+CG76ZdjbYkSpIokG3EyUK36ttIZIznD46aAO
+         3+G//hT3A9ZXci7qh2ZWjgFTYUXQZX56AJjvhAazfMXIHWXpHs/AfZYRFhiiktVVWA2c
+         n2Rd7E9+mw401r2NB1urmqqOJEaewc2qa1oZA=</domainkey-signature><received>by 10.101.165.32 with SMTP id s32mr42233ano.38.1267239232696;
+        Fri, 26 Feb 2010 18:53:52 -0800 (PST)</received><x-beenthere>rubyonrails-core@googlegroups.com</x-beenthere><received>by 10.91.26.32 with SMTP id d32ls423799agj.1.p; Fri, 26 Feb 2010 
+	18:53:49 -0800 (PST)</received><received>by 10.91.163.17 with SMTP id q17mr1503093ago.11.1267239229342;
+        Fri, 26 Feb 2010 18:53:49 -0800 (PST)</received><received>by 10.91.163.17 with SMTP id q17mr1503091ago.11.1267239229313;
+        Fri, 26 Feb 2010 18:53:49 -0800 (PST)</received><received>from mail-gy0-f182.google.com (mail-gy0-f182.google.com [209.85.160.182])
+        by gmr-mx.google.com with ESMTP id 25si72050yxe.2.2010.02.26.18.53.48;
+        Fri, 26 Feb 2010 18:53:48 -0800 (PST)</received><received-spf>pass (google.com: domain of sikandsak@gmail.com designates 209.85.160.182 as permitted sender) client-ip=209.85.160.182;</received-spf><received>by gya1 with SMTP id 1so423827gya.27
+        for &lt;rubyonrails-core@googlegroups.com&gt;; Fri, 26 Feb 2010 18:53:48 -0800 (PST)</received><received>by 10.150.120.7 with SMTP id s7mr965829ybc.345.1267239228024;
+        Fri, 26 Feb 2010 18:53:48 -0800 (PST)</received><received>from ?192.168.10.100? (ppp-124-120-16-231.revip2.asianet.co.th [124.120.16.231])
+        by mx.google.com with ESMTPS id 22sm276370ywh.1.2010.02.26.18.53.44
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Fri, 26 Feb 2010 18:53:46 -0800 (PST)</received><mime-version>1.0 (Apple Message framework v1077)</mime-version><content-type>multipart/signed; boundary=Apple-Mail-16--978270977; protocol="application/pkcs7-signature"; micalg=sha1</content-type><in-reply-to>&lt;22c3a883-3f14-47fa-b891-c657f1a395fd@j27g2000yqn.googlegroups.com&gt;</in-reply-to><date>Sat, 27 Feb 2010 09:53:41 +0700</date><message-id>5F43E1D7-ACC3-490E-94B0-A6B6252E016A@gmail.com</message-id><references>&lt;22c3a883-3f14-47fa-b891-c657f1a395fd@j27g2000yqn.googlegroups.com&gt;</references><x-mailer>Apple Mail (2.1077)</x-mailer><x-original-authentication-results>gmr-mx.google.com; spf=pass (google.com: 
+	domain of sikandsak@gmail.com designates 209.85.160.182 as permitted sender) 
+	smtp.mail=sikandsak@gmail.com; dkim=pass (test mode) header.i=@gmail.com</x-original-authentication-results><x-original-sender>sikandsak@gmail.com</x-original-sender><reply-to>rubyonrails-core@googlegroups.com</reply-to><precedence>list</precedence><mailing-list>list rubyonrails-core@googlegroups.com; contact 
+	rubyonrails-core+owners@googlegroups.com</mailing-list><list-id>&lt;rubyonrails-core.googlegroups.com&gt;</list-id><list-post>&lt;http://groups.google.com/group/rubyonrails-core/post?hl=en_US&gt;, 
+	&lt;mailto:rubyonrails-core@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:rubyonrails-core+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/rubyonrails-core?hl=en_US&gt;</list-archive><x-thread-url>http://groups.google.com/group/rubyonrails-core/t/bb71689b88c39adc</x-thread-url><x-message-url>http://groups.google.com/group/rubyonrails-core/msg/35458a8d0414b54c</x-message-url><sender>rubyonrails-core@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/rubyonrails-core/subscribe?hl=en_US&gt;, 
+	&lt;mailto:rubyonrails-core+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/rubyonrails-core/subscribe?hl=en_US&gt;, 
+	&lt;mailto:rubyonrails-core+unsubscribe@googlegroups.com&gt;</list-unsubscribe></headers><attachments><signature type="application/pkcs7-signature" file="smime.p7s" size="5366" uri="/24cwmso4lk6yzqgr/attach00/smime.p7s"/></attachments><normalized-references><normalized-message-id>5F43E1D7-ACC3-490E-94B0-A6B6252E016A@gmail.com</normalized-message-id><normalized-in-reply-to>22c3a883-3f14-47fa-b891-c657f1a395fd@j27g2000yqn.googlegroups.com</normalized-in-reply-to><normalized-reference>22c3a883-3f14-47fa-b891-c657f1a395fd@j27g2000yqn.googlegroups.com</normalized-reference></normalized-references><body><para depth="0">Could you please point out to the ticket that was rejected?
+
+</para><para depth="0">On 27 ก.พ. 2553, at 2:43, Trek wrote:
+
+</para><quote depth="1"><quotepara depth="1">Every once in a while I get bit when hand crafting a checkbox input
+(instead of using helpers). When no value attribute is supplied some
+browser send "on" as the default value, but this isn't one of the
+string values that is correctly cast to true.
+
+</quotepara><quotepara depth="1">I vaguely recall this being a rejected patch in the past, but couldn't
+locate it. If I'm imagining the rejection would this be an acceptable
+addition? Rails 2.x branch or just 3?
+
+</quotepara><quotefooter type="signature" depth="1" hash="15894644901953867040">-Trek
+
+</quotefooter><quotefooter type="list-management" depth="1">-- 
+You received this message because you are subscribed to the Google Groups "Ruby<br/>on Rails: Core" group.
+To post to this group, send email to <email>rubyonrails-core@googlegroups.com</email>.
+To unsubscribe from this group, send email to<br/>rubyonrails-core+<email>unsubscribe@googlegroups.com</email>.
+For more options, visit this group at<br/><url>http://groups.google.com/group/rubyonrails-core?hl=en</url>.
+
+</quotefooter></quote></body></message>

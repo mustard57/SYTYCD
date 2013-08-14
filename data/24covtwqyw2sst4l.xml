@@ -1,0 +1,21 @@
+<message message-id="200004101811.e3AIBZC26612@bjork.codefab.com" list="com.omnigroup.macosx-dev" id="24covtwqyw2sst4l" type="development" date="2000-04-10T14:11:33-04:00" year="2000-01-01" year-month="2000-04-01" year-month-day="2000-04-10" thread-id="24covtwqyw2sst4l"><headers><envelope-from-line>From bbum@codefab.com  Mon Apr 10 11:11:34 2000</envelope-from-line><from personal="Bill Bumgarner" address="bbum@codefab.com">Bill Bumgarner &lt;bbum@codefab.com&gt;</from><to personal="macosx-dev@omnigroup.com" address="macosx-dev@omnigroup.com">macosx-dev@omnigroup.com</to><subject normal="TIL: anyone figured out...">TIL: anyone figured out...</subject><received>from pi.codefab.com (pi.codefab.com [12.38.161.140])
+	by scyther.omnigroup.com (8.9.1/8.9.1) with ESMTP id LAA21276
+	for &lt;macosx-dev@omnigroup.com&gt;; Mon, 10 Apr 2000 11:11:34 -0700 (PDT)</received><received>from bjork.codefab.com (bjork.codefab.com [12.38.161.11])
+	by pi.codefab.com (8.10.0/8.10.0) with ESMTP id e3AIBaA45049
+	for &lt;macosx-dev@omnigroup.com&gt;; Mon, 10 Apr 2000 14:11:36 -0400 (EDT)</received><received>from duh (duh.codefab.com [12.38.161.15])
+	by bjork.codefab.com (8.10.0/8.10.0) with SMTP id e3AIBZC26612
+	for &lt;macosx-dev@omnigroup.com&gt;; Mon, 10 Apr 2000 14:11:35 -0400 (EDT)</received><message-id>200004101811.e3AIBZC26612@bjork.codefab.com</message-id><date>Mon, 10 Apr 2000 14:11:33 -0400</date><reply-to>bbum@codefab.com</reply-to><x-mailer-extensions>SWSignature 1.3.2</x-mailer-extensions><x-mailer>by Apple MailViewer (2.106)</x-mailer></headers><normalized-references><normalized-message-id>200004101811.e3AIBZC26612@bjork.codefab.com</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">...how to get a convenient, by-date ordered, listing of all the articles that  
+have changed across the entire product line?
+
+</para><para depth="0">This used to "just work"-- I could visit a single location that would list all  
+of the TIL [tech info library-- til.info.apple.com] articles that have changed  
+in reverse date order.  Incredibly handy for those of us that use numerous  
+different apple products in our day-to-day.
+
+</para><para depth="0">However, with the update to the new look-n-feel, it seems that this feature is  
+gone?  Or was it just moved and I haven't found the new location?
+
+</para><para depth="0">thanks,
+b.bum
+
+</para></body></message>

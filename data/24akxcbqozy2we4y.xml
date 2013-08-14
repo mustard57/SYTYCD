@@ -1,0 +1,73 @@
+<message message-id="ac3eb2510902100909x1c6c01a4mcb8e4d102f2560e4@mail.gmail.com" list="org.kernel.vger.linux-hotplug" id="24akxcbqozy2we4y" type="development" date="2009-02-10T09:08:46.564136-08:00" year="2009-01-01" year-month="2009-02-01" year-month-day="2009-02-10" thread-id="mtxxt4eca6xcsc7y"><headers><envelope-from-line>Tue Feb 10 09:09:09 2009</envelope-from-line><from personal="Kay Sievers" address="kay.sievers@vrfy.org">Kay Sievers &lt;kay.sievers@vrfy.org&gt;</from><to personal="Yan Seiner" address="yan@seiner.com">Yan Seiner &lt;yan@seiner.com&gt;</to><cc personal="linux-hotplug@vger.kernel.org" address="linux-hotplug@vger.kernel.org">linux-hotplug@vger.kernel.org</cc><subject normal="How to write this rule?">Re: How to write this rule?</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 390
+          for &lt;archive.user.71310@a.markmail.org&gt;;
+          Tue, 10 Feb 2009 09:09:09 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 2F9162908007
+	for &lt;archive.user.71310@a.markmail.org&gt;; Tue, 10 Feb 2009 09:08:46 -0800 (PST)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1754618AbZBJRJI (ORCPT
+	&lt;rfc822;archive.user.71310@a.markmail.org&gt;);
+	Tue, 10 Feb 2009 12:09:08 -0500</received><received>(majordomo@vger.kernel.org) by vger.kernel.org id S1754748AbZBJRJH
+	(ORCPT &lt;rfc822;linux-hotplug-outgoing&gt;);
+	Tue, 10 Feb 2009 12:09:07 -0500</received><received>from nf-out-0910.google.com ([64.233.182.188]:32572 "EHLO
+	nf-out-0910.google.com" rhost-flags-OK-OK-OK-OK) by vger.kernel.org
+	with ESMTP id S1754618AbZBJRJG (ORCPT
+	&lt;rfc822;linux-hotplug@vger.kernel.org&gt;);
+	Tue, 10 Feb 2009 12:09:06 -0500</received><received>by nf-out-0910.google.com with SMTP id d21so7542nfb.21
+        for &lt;linux-hotplug@vger.kernel.org&gt;; Tue, 10 Feb 2009 09:09:04 -0800 (PST)</received><mime-version>1.0</mime-version><received>by 10.210.91.17 with SMTP id o17mr2370409ebb.18.1234285744025; Tue, 
+	10 Feb 2009 09:09:04 -0800 (PST)</received><in-reply-to>&lt;40d9c5c5a41490f9b0b0dd0c10527607.squirrel@www.datavault.us&gt;</in-reply-to><references>&lt;49919B04.6040209@seiner.com&gt;
+	 &lt;ac3eb2510902100729t2bc1eab1y9b9563c26e931d7a@mail.gmail.com&gt;
+	 &lt;40d9c5c5a41490f9b0b0dd0c10527607.squirrel@www.datavault.us&gt;</references><date>Tue, 10 Feb 2009 18:09:04 +0100</date><message-id>ac3eb2510902100909x1c6c01a4mcb8e4d102f2560e4@mail.gmail.com</message-id><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>linux-hotplug-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;linux-hotplug.vger.kernel.org&gt;</list-id><x-mailing-list>linux-hotplug@vger.kernel.org</x-mailing-list></headers><normalized-references><normalized-message-id>ac3eb2510902100909x1c6c01a4mcb8e4d102f2560e4@mail.gmail.com</normalized-message-id><normalized-in-reply-to>40d9c5c5a41490f9b0b0dd0c10527607.squirrel@www.datavault.us</normalized-in-reply-to><normalized-reference>49919B04.6040209@seiner.com</normalized-reference><normalized-reference>ac3eb2510902100729t2bc1eab1y9b9563c26e931d7a@mail.gmail.com</normalized-reference><normalized-reference>40d9c5c5a41490f9b0b0dd0c10527607.squirrel@www.datavault.us</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">On Tue, Feb 10, 2009 at 18:04, Yan Seiner &lt;<email>yan@seiner.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">On Tue, February 10, 2009 7:29 am, Kay Sievers wrote:
+</quotepara><quote depth="2"><quotepara depth="2">On Tue, Feb 10, 2009 at 16:19, Yan Seiner &lt;<email>yan@seiner.com</email>&gt; wrote:
+</quotepara><quote depth="3"><quotepara depth="3">I have a device that presents itself as both a /dev/input/mouise and
+/dev/input/event.
+
+</quotepara><quotepara depth="3">The mouse:
+
+</quotepara><quotepara depth="3"> looking at device '/class/input/input10/mouse6':
+  KERNEL=="mouse6"
+  SUBSYSTEM=="input"
+  DRIVER==""
+</quotepara></quote><quotepara depth="2">
+</quotepara><quote depth="3"><quotepara depth="3">The event:
+
+</quotepara><quotepara depth="3"> looking at device '/class/input/input10/event10':
+  KERNEL=="event10"
+  SUBSYSTEM=="input"
+  DRIVER==""
+</quotepara></quote><quotepara depth="2">
+</quotepara><quote depth="3"><quotepara depth="3">The *only* difference between the two is the KERNEL== line.  I need to
+create a symlink to both the mouse and the event.  I tried this:
+</quotepara></quote><quotepara depth="2">
+Use the links in: /dev/input/by-id/?
+
+</quotepara><quotepara depth="2">They look like this for a USB mouse here:
+  $ tree /dev/input/by-id/
+  /dev/input/by-id/
+  |-- usb-Logitech_USB-PS_2_Optical_Mouse-event-mouse -&gt; ../event8
+  `-- usb-Logitech_USB-PS_2_Optical_Mouse-mouse -&gt; ../mouse1
+</quotepara></quote></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Hah!  Won't quite work as I have 2 of these, but I can match on the
+ID_PATH env var!
+</quotepara></quote><para depth="0">
+That's what /dev/input/by-path/ is for:
+
+</para><para depth="0">/dev/input/
+|-- by-id
+|   |-- usb-Logitech_USB-PS_2_Optical_Mouse-event-mouse -&gt; ../event6
+|   `-- usb-Logitech_USB-PS_2_Optical_Mouse-mouse -&gt; ../mouse1
+|-- by-path
+|   |-- pci-0000:00:1d.2-usb-0:1:1.0-event-mouse -&gt; ../event6
+|   |-- pci-0000:00:1d.2-usb-0:1:1.0-mouse -&gt; ../mouse1
+|   |-- platform-i8042-serio-0-event-kbd -&gt; ../event0
+|   |-- platform-i8042-serio-1-event-mouse -&gt; ../event1
+|   |-- platform-i8042-serio-1-mouse -&gt; ../mouse0
+|   `-- platform-pcspkr-event-spkr -&gt; ../event2
+...
+
+</para><para depth="0">Kay
+</para><footer type="list-management" depth="0">--
+To unsubscribe from this list: send the line "unsubscribe linux-hotplug" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+</footer></body></message>

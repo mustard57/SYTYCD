@@ -1,0 +1,61 @@
+<message message-id="COL102-W4463CF47487A394129B1F298120@phx.gbl" list="com.ubuntu.lists.ubuntu-bugs" id="24amzenhztt4oaym" type="bugs" date="2010-12-13T16:33:50Z" year="2010-01-01" year-month="2010-12-01" year-month-day="2010-12-13" thread-id="3jtpkctlpbs476jc"><headers><envelope-from-line>Mon Dec 13 08:41:48 2010</envelope-from-line><from personal="Larry Martin" address="larry.martin@hotmail.com">Larry Martin &lt;larry.martin@hotmail.com&gt;</from><to personal="ubuntu-bugs@lists.ubuntu.com" address="ubuntu-bugs@lists.ubuntu.com">ubuntu-bugs@lists.ubuntu.com</to><subject normal="[Bug 581157] Re: Ubuntu 10.4 drops to a BusyBox / Initramfs shell - WON'T BOOT UP AT ALL">RE: [Bug 581157] Re: Ubuntu 10.4 drops to a BusyBox / Initramfs shell - WON'T BOOT UP AT ALL</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 820
+          for &lt;caroline.dejesus.ratliff@a.markmail.org&gt;;
+          Mon, 13 Dec 2010 08:41:48 -0800 (GMT-08:00)</received><received>from chlorine.canonical.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 5C35229081D8
+	for &lt;caroline.dejesus.ratliff@a.markmail.org&gt;; Mon, 13 Dec 2010 08:41:25 -0800 (PST)</received><received>from localhost ([127.0.0.1] helo=chlorine.canonical.com)
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;ubuntu-bugs-bounces@lists.ubuntu.com&gt;)
+	id 1PSBT9-0003bL-Oq; Mon, 13 Dec 2010 16:41:47 +0000</received><received>from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;bounces@canonical.com&gt;) id 1PSBT6-0003bC-9R
+	for ubuntu-bugs@lists.ubuntu.com; Mon, 13 Dec 2010 16:41:44 +0000</received><received>from loganberry.canonical.com ([91.189.90.37])
+	by adelie.canonical.com with esmtp (Exim 4.69 #1 (Debian))
+	id 1PSBT4-00083t-I6
+	for &lt;ubuntu-bugs@lists.ubuntu.com&gt;; Mon, 13 Dec 2010 16:41:43 +0000</received><received>from loganberry.canonical.com (localhost [127.0.0.1])
+	by loganberry.canonical.com (Postfix) with ESMTP id 6E5C42E84D1
+	for &lt;ubuntu-bugs@lists.ubuntu.com&gt;;
+	Mon, 13 Dec 2010 16:41:10 +0000 (UTC)</received><mime-version>1.0</mime-version><date>Mon, 13 Dec 2010 16:33:50 -0000</date><x-launchpad-bug>product=wubi; status=New; importance=Undecided; assignee=None;</x-launchpad-bug><x-launchpad-bug>distribution=ubuntu; sourcepackage=None; component=None;
+	status=Invalid; importance=Undecided; assignee=None; </x-launchpad-bug><x-launchpad-bug-private>no</x-launchpad-bug-private><x-launchpad-bug-security-vulnerability>no</x-launchpad-bug-security-vulnerability><x-launchpad-bug-commenters>aaron-fd andrew-p-burton bl-main72 danmartinj
+	larry-martin lengoanhcat logan-2k6 ondra-ondrovo
+	philippe-gauthier robt4reed sockpuppet112310 weswada</x-launchpad-bug-commenters><x-launchpad-bug-reporter>Larry Martin (larry-martin)</x-launchpad-bug-reporter><x-launchpad-bug-modifier>Larry Martin (larry-martin)</x-launchpad-bug-modifier><references>&lt;20100516021451.31307.71538.malonedeb@wampee.canonical.com&gt;
+	&lt;20101128033043.27491.77292.malone@palladium.canonical.com&gt;</references><message-id>COL102-W4463CF47487A394129B1F298120@phx.gbl</message-id><x-launchpad-message-rationale>Subscriber (Ubuntu) @ubuntu-bugs</x-launchpad-message-rationale><precedence>bulk</precedence><x-generated-by>Launchpad (canonical.com); Revision="None";
+	Instance="initZopeless config overlay"</x-generated-by><x-launchpad-hash>6ffb66d102a19f5741ef687921155a5b27d46f91</x-launchpad-hash><x-beenthere>ubuntu-bugs@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><reply-to>Bug 581157 &lt;581157@bugs.launchpad.net&gt;</reply-to><list-id>Ubuntu bug tracker changes - HIGH VOLUME
+	&lt;ubuntu-bugs.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs&gt;,
+	&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:ubuntu-bugs@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs&gt;,
+	&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>ubuntu-bugs-bounces@lists.ubuntu.com</sender><errors-to>ubuntu-bugs-bounces@lists.ubuntu.com</errors-to></headers><normalized-references><normalized-message-id>COL102-W4463CF47487A394129B1F298120@phx.gbl</normalized-message-id><normalized-reference>20100516021451.31307.71538.malonedeb@wampee.canonical.com</normalized-reference><normalized-reference>20101128033043.27491.77292.malone@palladium.canonical.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">
+I TOTALLY AGREE.  I am now very "gun shy" of using Wubi.  It burned me last<br/>time.  Something went terribly wrong starting w/10.4 regarding the wubi<br/>installer.  Initially, the ubuntu bug team said that they didn't see any problem<br/>and even closed my bug report as being invalid.  Then I started getting emails<br/>from other wubi users who experience either same thing or something very close.
+It will be a long time before I venture to try wubi again.  Thx. for your email.<br/>I take comfort in knowing that I wasn't just "imagining" all of this.  The bug<br/>is real.
+
+</para><para depth="0">Larry
+
+</para><quote depth="1"><quotepara depth="1">Date: Sun, 28 Nov 2010 03:30:42 +0000
+From: <email>581157@bugs.launchpad.net</email>
+To: <email>larry.martin@hotmail.com</email>
+Subject: [Bug 581157] Re: Ubuntu 10.4 drops to a BusyBox / Initramfs shell -<br/>WON'T BOOT UP AT ALL
+
+</quotepara><quotepara depth="1">10.10  is not any better with Windows 7 as near as I can tell.  I think
+installing on a partition would be much easier.   I only wanted wubi for
+cross platform read and write between hard drive.   There seems to be
+always way more trouble with linux being compatible with NTFS than
+Windows reading the ext2 ext3 + drives.
+
+</quotepara><quotefooter type="signature" depth="1" hash="8619037033638004455">-- 
+Ubuntu 10.4 drops to a BusyBox / Initramfs shell - WON'T BOOT UP AT ALL
+<url>https://bugs.launchpad.net/bugs/581157</url>
+You received this bug notification because you are a direct subscriber
+of the bug.
+</quotefooter></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="11424249910712248001">-- 
+You received this bug notification because you are a member of Ubuntu
+Bugs, which is subscribed to Ubuntu.
+<url>https://bugs.launchpad.net/bugs/581157</url>
+
+</footer><para depth="0">Title:
+  Ubuntu 10.4 drops to a BusyBox / Initramfs shell - WON'T BOOT UP AT ALL
+
+</para><footer type="list-management" depth="0">-- 
+ubuntu-bugs mailing list
+<email>ubuntu-bugs@lists.ubuntu.com</email>
+<url>https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs</url>
+</footer></body></message>

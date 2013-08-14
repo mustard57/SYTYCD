@@ -1,0 +1,22 @@
+<message message-id="003d01c15f00$a5ea50c0$21000a0a@win32.local" list="org.perl.perl5-porters" id="24anknss5ryisx2v" type="development" date="2001-10-27T18:01:33+02:00" year="2001-01-01" year-month="2001-10-01" year-month-day="2001-10-27" thread-id="ybycueboiyril4yx"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Arthur Bergman" address="arthur@contiller.se">Arthur Bergman &lt;arthur@contiller.se&gt;</from><to personal="Jarkko Hietaniemi" address="jhi@iki.fi">Jarkko Hietaniemi &lt;jhi@iki.fi&gt;</to><cc personal="dougm@covalent.net" address="dougm@covalent.net">dougm@covalent.net</cc><subject normal="perl_destruct() closing std{in,out,err}">Re: perl_destruct() closing std{in,out,err}</subject><newsgroups>perl.perl5.porters</newsgroups><path>nntp.perl.org</path><xref>nntp.perl.org perl.perl5.porters:45712</xref><return-path>arthur@contiller.se</return-path><mailing-list>contact perl5-porters-help@perl.org; run by ezmlm</mailing-list><delivered-to>mailing list perl5-porters@perl.org</delivered-to><received>(qmail 1245 invoked from network); 27 Oct 2001 15:55:08 -0000</received><received>from vog-mail01.vogon.se (HELO mail.vogon.se) (212.107.224.138)
+  by onion.valueclick.com with SMTP; 27 Oct 2001 15:55:08 -0000</received><received>from [212.107.224.129] (HELO vogw2kdev)
+  by mail.vogon.se (CommuniGate Pro SMTP 3.4.2)
+  with SMTP id 3260974; Sat, 27 Oct 2001 18:02:55 +0200</received><message-id>003d01c15f00$a5ea50c0$21000a0a@win32.local</message-id><references>&lt;Pine.LNX.4.21.0110261650270.21661-100000@mako.covalent.net&gt; &lt;20011027142330.1170.8@bactrian.ni-s.u-net.com&gt; &lt;20011027185345.C25907@alpha.hut.fi&gt;</references><date>Sat, 27 Oct 2001 18:01:33 +0200</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 5.50.4133.2400</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V5.50.4133.2400</x-mimeole><x-spam-rating>onion.valueclick.com 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>003d01c15f00$a5ea50c0$21000a0a@win32.local</normalized-message-id><normalized-reference>Pine.LNX.4.21.0110261650270.21661-100000@mako.covalent.net</normalized-reference><normalized-reference>20011027142330.1170.8@bactrian.ni-s.u-net.com</normalized-reference><normalized-reference>20011027185345.C25907@alpha.hut.fi</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><quote depth="1"><quote depth="2"><quotepara depth="2">I am awaiting suggestions/inspiration as to how to handle this, given that 
+all SVs etc. and malloc pool(s) seem to magicially vanish under at least 
+win32 ithreads - so I am at loss as to where I can record infromation 
+bewteen runs. Seems the original/only thread at least should special case 
+fds 0..2 and associated PerlIO stuff and refuse to free associated 
+resources.
+</quotepara></quote><quotepara depth="1">
+Could we create a dummy thread that does no execution but is there
+to hold on to various precious shared datastructures?  Just flailing
+my hands.
+
+</quotepara></quote><para depth="0">s/thread/interpreter/
+
+</para><para depth="0">And that is exactly what sharedsv_init does
+
+</para><para depth="0">Arthur
+
+</para></body></message>

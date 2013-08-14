@@ -1,0 +1,180 @@
+<message message-id="003901c66a9c$b96a4630$3305a8c0@MEDIAWAVE" list="org.apache.logging.log4j-user" id="24bpm4w3pqfxlgn3" type="users" date="2006-04-28T10:21:17+02:00" year="2006-01-01" year-month="2006-04-01" year-month-day="2006-04-28" thread-id="xudx6xo2fkcfus3e"><headers><envelope-from-line>From log4j-user-return-18040-apmail-logging-log4j-user-archive=logging.apache.org@logging.apache.org Fri Apr 28 08:21:50 2006</envelope-from-line><from personal="Rafal Markut" address="rafal.markut@mediawave.de">Rafal Markut &lt;rafal.markut@mediawave.de&gt;</from><to personal="Log4J Users List" address="log4j-user@logging.apache.org">Log4J Users List &lt;log4j-user@logging.apache.org&gt;</to><subject normal="Log4j doesn't create log files">Re: Log4j doesn't create log files</subject><return-path>log4j-user-return-18040-apmail-logging-log4j-user-archive=logging.apache.org@logging.apache.org</return-path><delivered-to>apmail-logging-log4j-user-archive@www.apache.org</delivered-to><received>(qmail 98477 invoked from network); 28 Apr 2006 08:21:50 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur.apache.org with SMTP; 28 Apr 2006 08:21:50 -0000</received><received>(qmail 1925 invoked by uid 500); 28 Apr 2006 08:21:47 -0000</received><delivered-to>apmail-logging-log4j-user-archive@logging.apache.org</delivered-to><received>(qmail 1862 invoked by uid 500); 28 Apr 2006 08:21:45 -0000</received><mailing-list>contact log4j-user-help@logging.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:log4j-user-unsubscribe@logging.apache.org&gt;</list-unsubscribe><list-help>&lt;mailto:log4j-user-help@logging.apache.org&gt;</list-help><list-post>&lt;mailto:log4j-user@logging.apache.org&gt;</list-post><list-id>"Log4J Users List" &lt;log4j-user.logging.apache.org&gt;</list-id><reply-to>"Log4J Users List" &lt;log4j-user@logging.apache.org&gt;</reply-to><delivered-to>mailing list log4j-user@logging.apache.org</delivered-to><received>(qmail 1845 invoked by uid 99); 28 Apr 2006 08:21:44 -0000</received><received>from asf.osuosl.org (HELO asf.osuosl.org) (140.211.166.49)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 28 Apr 2006 01:21:44 -0700</received><x-asf-spam-status>No, hits=1.9 required=10.0
+	tests=RCVD_IN_NJABL_SPAM</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (asf.osuosl.org: local policy)</received-spf><received>from [195.30.0.14] (HELO popmail.space.net) (195.30.0.14)
+    by apache.org (qpsmtpd/0.29) with SMTP; Fri, 28 Apr 2006 01:21:43 -0700</received><received>(qmail 36355 invoked from network); 28 Apr 2006 08:21:20 -0000</received><received>from host-62-245-145-114.customer.m-online.net (HELO mediawav77xgn8) (62.245.145.114)
+  by popmail.space.net with SMTP; 28 Apr 2006 08:21:20 -0000</received><x-spacenet-authentification>SMTP AUTH verified &lt;rafal.markut@mediawave.de&gt;</x-spacenet-authentification><message-id>003901c66a9c$b96a4630$3305a8c0@MEDIAWAVE</message-id><references>&lt;00ef01c669f6$e3666e10$3305a8c0@MEDIAWAVE&gt; &lt;c83e39890604270725q522c6ef8r6f6f57027deaa380@mail.gmail.com&gt;</references><date>Fri, 28 Apr 2006 10:21:17 +0200</date><mime-version>1.0</mime-version><content-type>text/plain;
+	format=flowed;
+	charset="iso-8859-1";
+	reply-type=original</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 6.00.2900.2869</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V6.00.2900.2869</x-mimeole><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked><x-spam-rating>minotaur.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>003901c66a9c$b96a4630$3305a8c0@MEDIAWAVE</normalized-message-id><normalized-reference>00ef01c669f6$e3666e10$3305a8c0@MEDIAWAVE</normalized-reference><normalized-reference>c83e39890604270725q522c6ef8r6f6f57027deaa380@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;format=flowed;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;;&#13;&#10;&#9;reply-type=original"><greeting depth="0">Hi,
+</greeting><para depth="0">
+I solved my problem.
+
+</para><para depth="0">I had: log4j.appender.*.file=${applicationRoot}/logs/*.log
+but when I made:
+log4j.appender.*.file=/usr/share/tomcat/webapps/firstsyst/logs/*.log
+then it works.
+
+</para><para depth="0">Why is the variable ${applicationRoot}not set ?
+
+</para><para depth="0">with best regards,
+Rafal
+
+</para><quote depth="1"><quotepara depth="1">----- Original Message ----- 
+From: "James Stauffer" &lt;<email>stauffer.james@gmail.com</email>&gt;
+To: "Log4J Users List" &lt;<email>log4j-user@logging.apache.org</email>&gt;
+Sent: Thursday, April 27, 2006 4:25 PM
+Subject: Re: Log4j doesn't create log files
+
+</quotepara><quotepara depth="1">Use -Dlog4j.debug to see how it is being configured.
+
+</quotepara><quotepara depth="1">On 4/27/06, Rafal Markut &lt;<email>rafal.markut@mediawave.de</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">Hello,
+
+</quotepara><quotepara depth="2">I use Turbine 2.3.2 with Torque 3.1.1.
+In that turbine there is log4j-1.2.12.jar.
+
+</quotepara><quotepara depth="2">It doesn't create on my linux server the log files (e.g. turbine.log).
+
+</quotepara><quotepara depth="2">This same application I have on windows and everything works fine.
+
+</quotepara><quotepara depth="2">My linux server and windows are using Tomcat 5.x
+
+</quotepara><quotepara depth="2">In TurbineResources.properties:
+
+</quotepara><quotepara depth="2">log4j.file = /WEB-INF/conf/log4j.properties
+
+</quotepara><quotepara depth="2">In log4j.properties
+
+</quotepara><quotepara depth="2"># ------------------------------------------------------------------------
+#
+# Logging Configuration
+#
+# $Id: log4j.properties,v 1.1 2006/03/30 14:35:01 rmarkut Exp $
+#
+# ------------------------------------------------------------------------
+
+</quotepara><quotepara depth="2">#
+# If we don't know the logging facility, put it into the
+# turbine.log
+#
+log4j.rootLogger = INFO, app
+
+</quotepara><quotepara depth="2">#
+# Turbine goes into Turbine Log
+#
+log4j.category.org.apache.turbine = INFO, turbine
+log4j.additivity.org.apache.turbine = false
+
+</quotepara><quotepara depth="2">#
+# Torque has its own log file
+#
+log4j.category.org.apache.torque = INFO, torque
+log4j.additivity.org.apache.torque = false
+
+</quotepara><quotepara depth="2">#
+# Velocity Logfile
+#
+log4j.category.velocity = INFO, velocity
+log4j.additivity.velocity = false
+
+</quotepara><quotepara depth="2">#
+# Scheduler Category
+#
+log4j.category.scheduler = INFO, scheduler
+log4j.additivity.scheduler = false
+
+</quotepara><quotepara depth="2">#
+# Avalon Logfile
+#
+log4j.category.avalon = INFO, avalon
+log4j.additivity.avalon = false
+
+</quotepara><quotepara depth="2">########################################################################
+#
+# Logfile definitions
+#
+########################################################################
+
+</quotepara><quotepara depth="2">#
+# turbine.log
+#
+log4j.appender.turbine = org.apache.log4j.FileAppender
+log4j.appender.turbine.file = ${applicationRoot}/logs/turbine.log
+log4j.appender.turbine.layout = org.apache.log4j.PatternLayout
+log4j.appender.turbine.layout.conversionPattern = %d [%t] %-5p %c - %m%n
+log4j.appender.turbine.append = false
+
+</quotepara><quotepara depth="2">#
+# torque.log
+#
+log4j.appender.torque = org.apache.log4j.FileAppender
+log4j.appender.torque.file = ${applicationRoot}/logs/torque.log
+log4j.appender.torque.layout = org.apache.log4j.PatternLayout
+log4j.appender.torque.layout.conversionPattern = %d [%t] %-5p %c - %m%n
+log4j.appender.torque.append = false
+
+</quotepara><quotepara depth="2">#
+# Scheduler Output
+#
+log4j.appender.scheduler = org.apache.log4j.FileAppender
+log4j.appender.scheduler.file = ${applicationRoot}/logs/scheduler.log
+log4j.appender.scheduler.layout = org.apache.log4j.PatternLayout
+log4j.appender.scheduler.layout.conversionPattern = %d [%t] %-5p %c - %m%n
+log4j.appender.scheduler.append = false
+
+</quotepara><quotepara depth="2">#
+# Velocity gets configured to write its output onto the velocity
+# category.
+#
+log4j.appender.velocity = org.apache.log4j.FileAppender
+log4j.appender.velocity.file = ${applicationRoot}/logs/velocity.log
+log4j.appender.velocity.layout = org.apache.log4j.PatternLayout
+log4j.appender.velocity.layout.conversionPattern = %d [%t] %-5p %c - %m%n
+log4j.appender.velocity.append = false
+
+</quotepara><quotepara depth="2">#
+# Avalon gets configured to write its output onto the avalon
+# category.
+#
+log4j.appender.avalon = org.apache.log4j.FileAppender
+log4j.appender.avalon.file = ${applicationRoot}/logs/avalon.log
+log4j.appender.avalon.layout = org.apache.log4j.PatternLayout
+log4j.appender.avalon.layout.conversionPattern = %d [%t] %-5p %c - %m%n
+log4j.appender.avalon.append = false
+
+</quotepara><quotepara depth="2">#
+# Application.log
+#
+log4j.appender.app = org.apache.log4j.FileAppender
+log4j.appender.app.file = ${applicationRoot}/logs/application.log
+log4j.appender.app.layout = org.apache.log4j.PatternLayout
+log4j.appender.app.layout.conversionPattern = %d [%t] %-5p %c - %m%n
+log4j.appender.app.append = false
+
+</quotepara><quotepara depth="2">I don't get any error messages in catalina.out or localhost_log.*.txt
+
+</quotepara><quotepara depth="2">Any ideas ? Did somebody has such problem before ?
+
+</quotepara><quotepara depth="2">Thank you for help in advance.
+
+</quotepara><quotepara depth="2">with best regads,
+Rafal
+
+</quotepara><quotefooter type="list-management" hash="7749091489809393102" depth="2">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>log4j-user-unsubscribe@logging.apache.org</email>
+For additional commands, e-mail: <email>log4j-user-help@logging.apache.org</email>
+
+</quotefooter></quote><quotefooter type="signature" hash="12790463078283697557" depth="1">--
+James Stauffer
+Are you good? Take the test at <url>http://www.livingwaters.com/good/</url>
+
+</quotefooter><quotefooter type="list-management" hash="7749091489809393102" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>log4j-user-unsubscribe@logging.apache.org</email>
+For additional commands, e-mail: <email>log4j-user-help@logging.apache.org</email>
+
+</quotefooter><quotefooter type="list-management" hash="7749091489809393102" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>log4j-user-unsubscribe@logging.apache.org</email>
+For additional commands, e-mail: <email>log4j-user-help@logging.apache.org</email>
+
+</quotefooter></quote></body></message>

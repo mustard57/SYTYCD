@@ -1,0 +1,29 @@
+<message message-id="830BF4914C3C4B4EB1C438D93ABF897A67CF02@lgchexch011.ad.lgc.com" list="org.apache.ant.user" id="24codlkiuj5jy4lo" type="users" date="2004-05-10T11:23:10-05:00" year="2004-01-01" year-month="2004-05-01" year-month-day="2004-05-10" thread-id="cwiqti3vjdgutex4"><headers><envelope-from-line>From user-return-43028-apmail-ant-user-archive=ant.apache.org@ant.apache.org Mon May 10 16:23:55 2004</envelope-from-line><from personal="Dominique Devienne" address="DDevienne@lgc.com">Dominique Devienne &lt;DDevienne@lgc.com&gt;</from><to personal="'Ant Users List'" address="user@ant.apache.org">'Ant Users List' &lt;user@ant.apache.org&gt;</to><subject normal="${ant.target}?">RE: ${ant.target}?</subject><return-path>user-return-43028-apmail-ant-user-archive=ant.apache.org@ant.apache.org</return-path><delivered-to>apmail-ant-user-archive@www.apache.org</delivered-to><received>(qmail 67968 invoked from network); 10 May 2004 16:23:54 -0000</received><received>from unknown (HELO mail.apache.org) (209.237.227.199)
+  by minotaur-2.apache.org with SMTP; 10 May 2004 16:23:54 -0000</received><received>(qmail 74150 invoked by uid 500); 10 May 2004 16:24:04 -0000</received><delivered-to>apmail-ant-user-archive@ant.apache.org</delivered-to><received>(qmail 74102 invoked by uid 500); 10 May 2004 16:24:04 -0000</received><mailing-list>contact user-help@ant.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:user-unsubscribe@ant.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:user-subscribe@ant.apache.org&gt;</list-subscribe><list-help>&lt;mailto:user-help@ant.apache.org&gt;</list-help><list-post>&lt;mailto:user@ant.apache.org&gt;</list-post><list-id>"Ant Users List" &lt;user.ant.apache.org&gt;</list-id><reply-to>"Ant Users List" &lt;user@ant.apache.org&gt;</reply-to><delivered-to>mailing list user@ant.apache.org</delivered-to><received>(qmail 74059 invoked by uid 98); 10 May 2004 16:24:04 -0000</received><received>from DDevienne@lgc.com by hermes.apache.org by uid 82 with qmail-scanner-1.20 
+ (clamuko: 0.70.  Clear:RC:0(134.132.72.99):. 
+ Processed in 0.06942 secs); 10 May 2004 16:24:04 -0000</received><x-qmail-scanner-mail-from>DDevienne@lgc.com via hermes.apache.org</x-qmail-scanner-mail-from><x-qmail-scanner>1.20 (Clear:RC:0(134.132.72.99):. Processed in 0.06942 secs)</x-qmail-scanner><received>from unknown (HELO junior.lgc.com) (134.132.72.99)
+  by hermes.apache.org with SMTP; 10 May 2004 16:24:03 -0000</received><received>from lgchvw01.lgc.com (lgchvw01.lgc.com [134.132.93.107])
+	by junior.lgc.com (8.11.7/8.11.3) with SMTP id i4AGMJ426816
+	for &lt;user@ant.apache.org&gt;; Mon, 10 May 2004 11:22:19 -0500 (CDT)</received><received>from 134.132.93.152 by lgchvw01.lgc.com (InterScan E-Mail VirusWall NT); Mon, 10 May 2004 11:23:13 -0500</received><received>by lgchexchbh.ad.lgc.com with Internet Mail Service (5.5.2657.72)
+	id &lt;K4CT9776&gt;; Mon, 10 May 2004 11:23:13 -0500</received><message-id>830BF4914C3C4B4EB1C438D93ABF897A67CF02@lgchexch011.ad.lgc.com</message-id><date>Mon, 10 May 2004 11:23:10 -0500</date><mime-version>1.0</mime-version><x-mailer>Internet Mail Service (5.5.2657.72)</x-mailer><content-type>text/plain</content-type><x-spam-rating>hermes.apache.org 1.6.2 0/1000/N</x-spam-rating><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>830BF4914C3C4B4EB1C438D93ABF897A67CF02@lgchexch011.ad.lgc.com</normalized-message-id></normalized-references><body type="text/plain"><quote depth="1"><quotepara depth="1">From: Jack Woehr [mailto:<email>jax@purematrix.com</email>]
+
+</quotepara><quotepara depth="1">Is there a built-in property for the current target's name, e.g.,
+${ant.target}? Seems logical but I can't find it in the manual.
+</quotepara></quote><para depth="0">
+No. You can access it thru a &lt;script&gt; though. --DD
+
+</para><para depth="0">&lt;?xml version="1.0"?&gt;
+
+</para><para depth="0">&lt;project&gt;
+  &lt;script language="javascript"&gt;
+    name = self.getOwningTarget().getName();
+    self.getProject().setNewProperty("targetname", name);
+  &lt;/script&gt;
+  &lt;echo message="current target is '${targetname}'" /&gt;
+&lt;/project&gt;
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>user-unsubscribe@ant.apache.org</email>
+For additional commands, e-mail: <email>user-help@ant.apache.org</email>
+
+</footer></body></message>

@@ -1,0 +1,259 @@
+<message message-id="1193728084.389172.4344.nullmailer@svn.kde.org" list="org.kde.kde-commits" id="24ckw6plkcmejlap" type="checkins" date="2007-10-30T07:08:04Z" year="2007-01-01" year-month="2007-10-01" year-month-day="2007-10-30" thread-id="lfph53ewlhgw3tuo"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Sri Ramadhas" address="shriramadhas@gmail.com">Sri Ramadhas &lt;shriramadhas@gmail.com&gt;</from><to personal="kde-commits@kde.org" address="kde-commits@kde.org">kde-commits@kde.org</to><subject normal="l10n-kde4/ta/messages/kdelibs">l10n-kde4/ta/messages/kdelibs</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.kde.cvs</newsgroups><date>Tue, 30 Oct 2007 07:08:04 +0000</date><lines>251</lines><approved>news@gmane.org</approved><message-id>1193728084.389172.4344.nullmailer@svn.kde.org</message-id><reply-to>kde-commits@kde.org</reply-to><nntp-posting-host>lo.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-trace>ger.gmane.org 1193728198 26333 80.91.229.12 (30 Oct 2007 07:09:58 GMT)</x-trace><x-complaints-to>usenet@ger.gmane.org</x-complaints-to><nntp-posting-date>Tue, 30 Oct 2007 07:09:58 +0000 (UTC)</nntp-posting-date><original-x-from>kde-commits-bounces-+gckc-kde-cvs=m.gmane.org@kde.org Tue Oct 30 08:10:00 2007</original-x-from><return-path>kde-commits-bounces-+gckc-kde-cvs=m.gmane.org@kde.org</return-path><envelope-to>gckc-kde-cvs@gmane.org</envelope-to><original-received>from ktown.kde.org ([131.246.120.250])
+	by lo.gmane.org with smtp (Exim 4.50)
+	id 1ImlEe-0003mA-3A
+	for gckc-kde-cvs@gmane.org; Tue, 30 Oct 2007 08:10:00 +0100</original-received><original-received>(qmail 20921 invoked by uid 72); 30 Oct 2007 07:09:45 -0000</original-received><original-received>(qmail 20736 invoked from network); 30 Oct 2007 07:09:35 -0000</original-received><x-spam-checker-version>SpamAssassin 3.2.3 (2007-08-08) on ktown.kde.org</x-spam-checker-version><original-received>from unknown (HELO office.kde.org) (195.135.221.67)
+	by ktown.kde.org with SMTP; 30 Oct 2007 07:09:22 -0000</original-received><original-received>from svn.kde.org (localhost [127.0.0.1])
+	by office.kde.org (Postfix) with SMTP id 090CE49C
+	for &lt;kde-commits@kde.org&gt;; Tue, 30 Oct 2007 08:08:04 +0100 (CET)</original-received><original-received>(nullmailer pid 4345 invoked by uid 30);
+	Tue, 30 Oct 2007 07:08:04 -0000</original-received><x-commit-directories>(0) trunk/l10n-kde4/ta/messages/kdelibs</x-commit-directories><x-beenthere>kde-commits@kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>Notification of KDE commits &lt;kde-commits.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-commits&gt;,
+	&lt;mailto:kde-commits-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-commits@kde.org&gt;</list-post><list-help>&lt;mailto:kde-commits-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-commits&gt;,
+	&lt;mailto:kde-commits-request@kde.org?subject=subscribe&gt;</list-subscribe><xref>news.gmane.org gmane.comp.kde.cvs:567600</xref></headers><normalized-references><normalized-message-id>1193728084.389172.4344.nullmailer@svn.kde.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">SVN commit 730920 by shriramadhas:
+
+</para><para depth="0">fuzzy
+
+</para><para depth="0"> M  +25 -45    kdelibs4.po  
+
+</para><para depth="0">--- trunk/l10n-kde4/ta/messages/kdelibs/kdelibs4.po #730919:730920
+@@ -9,7 +9,7 @@
+ "Project-Id-Version: kdelibs4\n"
+ "Report-Msgid-Bugs-To: <url>http://bugs.kde.org</url>\n"
+ "POT-Creation-Date: 2007-10-29 06:04+0100\n"
+-"PO-Revision-Date: 2007-10-29 17:40+0530\n"
++"PO-Revision-Date: 2007-10-30 12:37+0530\n"
+ "Last-Translator: ஸ்ரீராமதாஸ் &lt;<email>shriramadhas@gmail.com</email>&gt;\n"
+ "Language-Team: தமிழ் &lt;<email>ubuntu-l10n-tam@lists.ubuntu.com</email>&gt;\n"
+ "MIME-Version: 1.0\n"
+@@ -5386,7 +5386,6 @@
+ msgstr[0] "குறைந்த பட்சம் ஒரு எழுத்தினையாவது கடவுச் சொல் கொண்டிருத்தல்<br/>வேண்டும்"
+ msgstr[1] "குறைந்த பட்சம்  %1 எழுத்துக்களையாவது கடவுச் சொல் கொண்டிருத்தல்<br/>வேண்டும்"
+
+</para><para depth="0">-
+ #: kdeui/dialogs/knewpassworddialog.cpp:112
+ #: kde3support/kdeui/k3passworddialog.cpp:624
+ msgid "Passwords match"
+@@ -5421,15 +5420,13 @@
+ msgstr "கடவுச்சொல் திறன் குறைவு"
+
+</para><para depth="0"> #: kdeui/dialogs/kassistantdialog.cpp:94
+-#, fuzzy
+ msgctxt "Opposite to Back"
+ msgid "Next"
+ msgstr "அடுத்த"
+
+</para><para depth="0"> #: kdeui/dialogs/kassistantdialog.cpp:95
+-#, fuzzy
+ msgid "Finish"
+-msgstr "முடி"
++msgstr "முடிக்க"
+
+</para><para depth="0"> #: kdeui/dialogs/kpixmapregionselectordialog.cpp:47
+ msgid "Select Region of Image"
+@@ -5440,19 +5437,17 @@
+ msgstr "இடத்தை தேர்ந்தெடுக்க பிம்பத்தின் மீது க்ளிக் செய்து இழுக்கவும்."
+
+</para><para depth="0"> #: kdeui/dialogs/kshortcutsdialog.cpp:365
+-#, fuzzy
+ #| msgid "Default"
+ msgid "Default:"
+-msgstr "முன்னிருப்பு"
++msgstr "இயல்பிருப்பு:"
+
+</para><para depth="0"> #: kdeui/dialogs/kshortcutsdialog.cpp:368 kdeui/widgets/klineedit.cpp:1050
+ msgid "None"
+ msgstr "ஏதுமில்லை "
+
+</para><para depth="0"> #: kdeui/dialogs/kshortcutsdialog.cpp:371
+-#, fuzzy
+ msgid "Custom:"
+-msgstr "தனிப்பயன் "
++msgstr "தனிப்பட்ட"
+
+</para><para depth="0"> #: kdeui/dialogs/kshortcutsdialog.cpp:464
+ msgid "Shortcuts"
+@@ -5479,9 +5474,8 @@
+ #: kdeui/dialogs/kshortcutsdialog.cpp:762
+ #: kdeui/dialogs/kshortcutsdialog.cpp:778 kdeui/shortcuts/kglobalaccel.cpp:286
+ #: kdeui/widgets/kkeysequencewidget.cpp:131
+-#, fuzzy
+ msgid "Reassign"
+-msgstr "ரஷியன்"
++msgstr "மீண்டும் அமர்த்துக"
+
+</para><para depth="0"> #: kdeui/dialogs/kshortcutsdialog.cpp:745
+ msgid "Conflict with Standard Application Shortcut"
+@@ -5517,18 +5511,18 @@
+ "Do you want to reassign it from that action to the current one?"
+
+</para><para depth="0"> #: kdeui/dialogs/kshortcutsdialog.cpp:855
+-#, fuzzy, kde-format
++#, kde-format
+ #| msgid "%1%"
+ msgctxt "@item:intable Action name in shortcuts configuration"
+ msgid "%1"
+-msgstr "%1%"
++msgstr "%1"
+
+</para><para depth="0"> #: kdeui/dialogs/kshortcutsdialog.cpp:878
+-#, fuzzy, kde-format
++#, kde-format
+ #| msgid "%1%"
+ msgctxt "@info:tooltip Action tooltip in shortcuts configuration"
+ msgid "%1"
+-msgstr "%1%"
++msgstr "%1"
+
+</para><para depth="0"> #: kdeui/dialogs/kshortcutsdialog.cpp:1100
+ msgid "Configure Shortcuts"
+@@ -5598,9 +5592,8 @@
+ msgstr "--- பிரிப்பான் ---"
+
+</para><para depth="0"> #: kdeui/dialogs/kedittoolbar.cpp:435
+-#, fuzzy
+ msgid "Configure Toolbars"
+-msgstr "கருவிப்பட்டைகளை வடிவமை "
++msgstr "கருவிப்பட்டைகளை வடிவமை"
+
+</para><para depth="0"> #: kdeui/dialogs/kedittoolbar.cpp:484
+ msgid ""
+@@ -5609,9 +5602,8 @@
+ msgstr "இப்பயன்பாட்டின் அனைத்து கருவிப் பட்டிகளையும் அதனதன் இயல்பு மதிப்பிறகே<br/>வைத்துவிடலாமா? மாற்றங்கள் உடனே செயல்படுத்தப்படும்."
+
+</para><para depth="0"> #: kdeui/dialogs/kedittoolbar.cpp:484
+-#, fuzzy
+ msgid "Reset ToolBars"
+-msgstr "கருவிப்பட்டைகள்"
++msgstr "கருவிப்பட்டைகள் மீளமை"
+
+</para><para depth="0"> #: kdeui/dialogs/kedittoolbar.cpp:484 khtml/khtmlview.cpp:2727
+ #: khtml/khtmlview.cpp:2760 khtml/html/html_formimpl.cpp:2169
+@@ -5619,9 +5611,8 @@
+ msgstr "மீளமை"
+
+</para><para depth="0"> #: kdeui/dialogs/kedittoolbar.cpp:791
+-#, fuzzy
+ msgid "&amp;Toolbar:"
+-msgstr "கருவிப்பட்டை: "
++msgstr "&amp;கருவிப்பட்டை:"
+
+</para><para depth="0"> #: kdeui/dialogs/kedittoolbar.cpp:807
+ msgid "A&amp;vailable actions:"
+@@ -5637,11 +5628,11 @@
+
+</para><para depth="0"> #. i18n filtering message for action names
+ #: kdeui/dialogs/kedittoolbar.cpp:996
+-#, fuzzy, kde-format
++#, kde-format
+ #| msgid "%1%"
+ msgctxt "@item:intable Action name in toolbar editor"
+ msgid "%1"
+-msgstr "%1%"
++msgstr "%1"
+
+</para><para depth="0"> #: kdeui/dialogs/kedittoolbar.cpp:1016
+ msgid "This element will be replaced with all the elements of an embedded<br/>component."
+@@ -5687,10 +5678,10 @@
+ msgstr "&lt;html&gt;&lt;font size=\"5\"&gt;%1&lt;/font&gt;&lt;br /&gt;&lt;b&gt;வெளியீடு %2&lt;/b&gt;&lt;br /&gt;கேபசூ<br/>%3&lt;/html&gt;"
+
+</para><para depth="0"> #: kdeui/dialogs/kaboutapplicationdialog.cpp:111
+-#, fuzzy, kde-format
++#, kde-format
+ #| msgid "License:"
+ msgid "License: %1"
+-msgstr "உரிமை:"
++msgstr "உரிமம்: %1"
+
+</para><para depth="0"> #: kdeui/dialogs/kaboutapplicationdialog.cpp:123
+ #: kde3support/kdeui/k3aboutapplication.cpp:51
+@@ -5710,23 +5701,18 @@
+
+</para><para depth="0"> #: kdeui/dialogs/kaboutapplicationdialog.cpp:134
+ #: kde3support/kdeui/k3aboutapplication.cpp:107
+-#, fuzzy
+ msgid ""
+ "Please use &lt;a href=\"<url>http://bugs.kde.org</url>\"&gt;<url>http://bugs.kde.org</url>&lt;/a&gt; to report "
+ "bugs.\n"
+-msgstr ""
+-"பிழைகளை அறிக்கையிட <url>http://bugs.kde.org</url> ஐ பயன்படுத்துக, நேரடியாக ஆசிரியருக்கு "
+-"அஞ்சலிட வேண்டாம்."
++msgstr "வழுக்களைத் &lt;a href=\"<url>http://bugs.kde.org</url>\"&gt;<url>http://bugs.kde.org</url>&lt;/a&gt; ல்<br/>தாக்கல் செய்க.\n"
+
+</para><para depth="0"> #: kdeui/dialogs/kaboutapplicationdialog.cpp:137
+ #: kdeui/dialogs/kaboutapplicationdialog.cpp:142
+ #: kde3support/kdeui/k3aboutapplication.cpp:111
+ #: kde3support/kdeui/k3aboutapplication.cpp:114
+-#, fuzzy, kde-format
++#, kde-format
+ msgid "Please report bugs to &lt;a href=\"mailto:%1\"&gt;%2&lt;/a&gt;.\n"
+-msgstr ""
+-"பிழைகளை அறிக்கையிட &lt;a href=\"mailto:%1\"&gt;%1&lt;/a&gt; பயன்படுத்துக, நேரடியாக "
+-"ஆசிரியருக்கு அஞ்சலிட வேண்டாம்.\n"
++msgstr "வழுக்களை &lt;a href=\"mailto:%1\"&gt;%2&lt;/a&gt; க்கு மடலிடுக.\n"
+
+</para><para depth="0"> #: kdeui/dialogs/kaboutapplicationdialog.cpp:190
+ #: kde3support/kdeui/k3aboutapplication.cpp:137
+@@ -5739,10 +5725,9 @@
+ msgstr "மொழிபெயர்ப்பு "
+
+</para><para depth="0"> #: kdeui/dialogs/kaboutapplicationdialog.cpp:234
+-#, fuzzy
+ #| msgid "&amp;License Agreement"
+ msgid "License Agreement"
+-msgstr "&amp;அனுமதி ஒப்பந்தம்"
++msgstr "உரிம ஒப்புதல்"
+
+</para><para depth="0"> #: kdeui/dialogs/kbugreport.cpp:102
+ msgid "Submit Bug Report"
+@@ -5944,9 +5929,8 @@
+ msgstr "நிகரான செய்தி (செய்தியை மூடு)"
+
+</para><para depth="0"> #: kdeui/dialogs/kaboutkdedialog_p.cpp:42
+-#, fuzzy
+ msgid "About KDE"
+-msgstr "KDE பற்றி... "
++msgstr "கேபசூ பற்றி"
+
+</para><para depth="0"> #: kdeui/dialogs/kaboutkdedialog_p.cpp:49
+ #, kde-format
+@@ -6055,20 +6039,18 @@
+ msgstr "&amp;KDE-ஐ ஆதரித்தல்"
+
+</para><para depth="0"> #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:98
+-#, fuzzy
+ #| msgid "sets the application name"
+ msgid "Switch Application Language"
+-msgstr "நிரலின் பெயரை அமைக்கும்."
++msgstr "பயன்பாட்டின் மொழியினைத் மாற்றவும்"
+
+</para><para depth="0"> #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:108
+ msgid "Please choose language which should be used for this application:"
+ msgstr "இப்பயன்பாட்டிற்குப் ப் பயன்படுத்தப்பட வேண்டிய மொழியினைத் தேர்வுச்<br/>செ:ய்க"
+
+</para><para depth="0"> #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:136
+-#, fuzzy
+ #| msgid "Default language:"
+ msgid "Add Fallback Language"
+-msgstr "முன்னிருப்பு மொழி:"
++msgstr "மாற்று மொழியொனைச சேர்க்க"
+
+</para><para depth="0"> #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:137
+ msgid ""
+@@ -6083,15 +6065,13 @@
+ msgstr "இப்பயன்பாட்டிற்கான மொழி மாற்றப் பட்டுள்ளது. பயன்பாடு மீண்டும் துவங்கப்<br/>படும் போது இம்மாற்றம் பிரதிபலிக்கப் படும்."
+
+</para><para depth="0"> #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:227
+-#, fuzzy
+ msgid "Application language changed"
+-msgstr "நிரல்: "
++msgstr "பயன்பாட்டின் மொழி மாற்றப்பட்டது"
+
+</para><para depth="0"> #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:280
+-#, fuzzy
+ #| msgid "Default language:"
+ msgid "Primary language:"
+-msgstr "முன்னிருப்பு மொழி:"
++msgstr "முதல் மொழி:"
+
+</para><para depth="0"> #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:280
+ #, fuzzy
+
+</para></body></message>

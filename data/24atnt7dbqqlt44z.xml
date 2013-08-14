@@ -1,0 +1,69 @@
+<message message-id="43E3030B.9070704@sun.com" list="org.openoffice.ja.translate" id="24atnt7dbqqlt44z" no-archive="yes" type="general" date="2006-02-03T16:15:23+09:00" year="2006-01-01" year-month="2006-02-01" year-month-day="2006-02-02" thread-id="e773yp42rrccopyy"><headers><envelope-from-line>From translate-return-1982-tigrisq-archive=mail-ja=translate=openoffice.org=openoffice.org@ja.openoffice.org Fri Feb 03 07:15:31 2006</envelope-from-line><from personal="Reiko Saito" address="Reiko.Saito@Sun.COM">Reiko Saito &lt;Reiko.Saito@Sun.COM&gt;</from><to personal="translate@ja.openoffice.org" address="translate@ja.openoffice.org">translate@ja.openoffice.org</to><subject normal="[ja-translate] [誤訳・珍訳] ツール &gt; カスタマイズ &gt; イベント">Re: [ja-translate] [誤訳・珍訳] ツール &gt; カスタマイズ &gt; イベント</subject><return-path>translate-return-1982-tigrisq-archive=mail-ja=translate=openoffice.org=openoffice.org@ja.openoffice.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-0.2 required=5.0 tests=BAYES_00,NO_RELAYS,
+	TVD_SPACE_RATIO autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-ja=translate=openoffice.org@openoffice.org</delivered-to><received>(qmail 2186 invoked by uid 5302); 3 Feb 2006 07:15:29 -0000</received><mailing-list>contact translate-help@ja.openoffice.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:translate-help@ja.openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:translate-unsubscribe@ja.openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:translate@ja.openoffice.org&gt;</list-post><reply-to>translate@ja.openoffice.org</reply-to><delivered-to>mailing list translate@ja.openoffice.org</delivered-to><received>(qmail 2167 invoked from network); 3 Feb 2006 07:15:28 -0000</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AR4FAGuR4kOHXgIKF2M</x-ironport-anti-spam-result><x-ironport-av>i="4.02,82,1139212800"; 
+   d="scan'208"; a="6644193:sNHT90270446"</x-ironport-av><x-ironport>SCANNED</x-ironport><date>Fri, 03 Feb 2006 16:15:23 +0900</date><in-reply-to>&lt;A0F2A9C0-907F-4868-852E-6EC9F0F5ABF4@free.fr&gt;</in-reply-to><sender>Reiko.Saito@Sun.COM</sender><message-id>43E3030B.9070704@sun.com</message-id><mime-version>1.0</mime-version><content-type>text/plain; format=flowed; charset=UTF-8</content-type><content-transfer-encoding>8BIT</content-transfer-encoding><x-accept-language>en, ja</x-accept-language><references>&lt;43B032E9.100@openoffice.org&gt; &lt;43E2F153.2050200@japan.sun.com&gt;
+ &lt;43E2FAF4.90306@sun.com&gt; &lt;43E2FC63.3030405@sun.com&gt;
+ &lt;A0F2A9C0-907F-4868-852E-6EC9F0F5ABF4@free.fr&gt;</references><user-agent>Mozilla/5.0 (X11; U; Linux i686; ja-JP; rv:1.4.1) Gecko/20040406</user-agent></headers><normalized-references><normalized-message-id>43E3030B.9070704@sun.com</normalized-message-id><normalized-in-reply-to>A0F2A9C0-907F-4868-852E-6EC9F0F5ABF4@free.fr</normalized-in-reply-to><normalized-reference>43B032E9.100@openoffice.org</normalized-reference><normalized-reference>43E2F153.2050200@japan.sun.com</normalized-reference><normalized-reference>43E2FAF4.90306@sun.com</normalized-reference><normalized-reference>43E2FC63.3030405@sun.com</normalized-reference><normalized-reference>A0F2A9C0-907F-4868-852E-6EC9F0F5ABF4@free.fr</normalized-reference></normalized-references><body type="text/plain; format=flowed; charset=utf-8"><para depth="0">
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quote depth="4"><quotepara depth="4">Close Document                  ドキュメントを閉じ る            ド 
+キュメントを閉じる(時)
+</quotepara></quote><quotepara depth="3">
+ドキュメントを閉じる
+
+</quotepara><quote depth="4"><quotepara depth="4">Document is closing             ドキュメントを閉じてい ます      ド 
+キュメントを閉じている(時)
+</quotepara></quote><quotepara depth="3">
+ドキュメントが閉じている最中
+
+</quotepara><quotepara depth="3">--&gt; これ、苦しいかしら。意味が伝わるようにし たいのだけど。
+「ドキュメントが閉じている」ってすると、 Document is closed と見分け 
+がつかない。
+「ドキュメントを閉じようとしている」だと「ド キュメントを閉じる」と区 
+別が
+つかない、、、のよね。
+</quotepara></quote></quote><quotepara depth="1">
+「閉じる」という動詞は他動詞でもありますが自動 詞でもあるのでこんなのは 
+だめですか：
+
+</quotepara><quotepara depth="1">Document is closedは完了形なら
+「ドキュメントが閉じた」はだめですかね？
+
+</quotepara><quotepara depth="1">そしてDocument is closingは
+「ドキュメントが閉じる」
+
+</quotepara><quotepara depth="1">日本語は母語ではないので「違和感がない」という よりは何も「感」じないで 
+すので…変なら無視して 下さい！
+</quotepara></quote><para depth="0">
+このペアだけ見ると、Good なんだけど、
+その前に Close Document があってその訳が「ドキュメントを閉じる」にして
+いるでしょ。それと並んで「ドキュメントが閉じる」だと、区別つかないかなーと
+思っているんです。
+
+</para><para depth="0">ドキュメントを閉じる
+ドキュメントが閉じる
+
+</para><para depth="0">... どうですか ?　「を」と「が」しか違わなくて
+意味の違いを直感的に区別できないの。
+
+</para><para depth="0">ドキュメントを閉じる
+ドキュメントが閉じる動作に入ったとき
+
+</para><para depth="0">とか...
+
+</para><para depth="0">斎藤　玲子
+
+</para><footer type="signature" depth="0" hash="8764253158920648737">-- 
+********************************************
+Reiko Saito
+Japanese Language Lead
+Translation and Language Information (TLIS)
+Globalization Services
+Sun Microsystems, Inc.
+Email: <email>reiko.saito@sun.com</email>
+Phone: +81 45 227 9045
+********************************************
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>translate-unsubscribe@ja.openoffice.org</email>
+For additional commands, e-mail: <email>translate-help@ja.openoffice.org</email>
+
+</footer></body></message>

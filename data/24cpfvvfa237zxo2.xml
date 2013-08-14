@@ -1,0 +1,61 @@
+<message message-id="20100331165807.GA20547@tango.0pointer.de" list="org.kernel.vger.linux-usb" id="24cpfvvfa237zxo2" type="development" date="2010-03-31T18:58:07+02:00" year="2010-01-01" year-month="2010-03-01" year-month-day="2010-03-31" thread-id="4qlojmdks4r4liju"><headers><envelope-from-line>Wed Mar 31 09:07:51 2010</envelope-from-line><from personal="Lennart Poettering" address="lennart@poettering.net">Lennart Poettering &lt;lennart@poettering.net&gt;</from><to personal="David Zeuthen" address="david@fubar.dk">David Zeuthen &lt;david@fubar.dk&gt;</to><cc personal="dgilbert@interlog.com" address="dgilbert@interlog.com">dgilbert@interlog.com</cc><subject normal="System hangs when using USB 3.0 HD with on Ubuntu">Re: System hangs when using USB 3.0 HD with on Ubuntu</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 507
+          for &lt;archive.user.71132@a.markmail.org&gt;;
+          Wed, 31 Mar 2010 09:07:51 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 9B842290849E
+	for &lt;archive.user.71132@a.markmail.org&gt;; Wed, 31 Mar 2010 10:07:27 -0700 (PDT)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1757889Ab0CaRHs (ORCPT
+	&lt;rfc822;archive.user.71132@a.markmail.org&gt;);
+	Wed, 31 Mar 2010 13:07:48 -0400</received><received>from tango.0pointer.de ([85.214.72.216]:56767 "EHLO
+	tango.0pointer.de" rhost-flags-OK-OK-OK-OK) by vger.kernel.org
+	with ESMTP id S1757829Ab0CaRHr (ORCPT
+	&lt;rfc822;linux-usb@vger.kernel.org&gt;); Wed, 31 Mar 2010 13:07:47 -0400</received><received>by tango.0pointer.de (Postfix, from userid 1000)
+	id F2DC1131F7; Wed, 31 Mar 2010 18:58:07 +0200 (CEST)</received><date>Wed, 31 Mar 2010 18:58:07 +0200</date><message-id>20100331165807.GA20547@tango.0pointer.de</message-id><references>&lt;Pine.LNX.4.44L0.1003311054500.1739-100000@iolanthe.rowland.org&gt;
+ &lt;1270048801.16657.8.camel@localhost.localdomain&gt;
+ &lt;4BB37454.8070808@interlog.com&gt;
+ &lt;1270053444.16657.17.camel@localhost.localdomain&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><in-reply-to>&lt;1270053444.16657.17.camel@localhost.localdomain&gt;</in-reply-to><organization>Red Hat, Inc.</organization><x-campaign-1>()  ASCII Ribbon Campaign</x-campaign-1><x-campaign-2>/  Against HTML Email &amp; vCards - Against Microsoft Attachments</x-campaign-2><user-agent>Leviathan/19.8.0 [zh] (Cray 3; I; Solaris 4.711; Console)</user-agent><sender>linux-usb-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;linux-usb.vger.kernel.org&gt;</list-id><x-mailing-list>linux-usb@vger.kernel.org</x-mailing-list></headers><normalized-references><normalized-message-id>20100331165807.GA20547@tango.0pointer.de</normalized-message-id><normalized-in-reply-to>1270053444.16657.17.camel@localhost.localdomain</normalized-in-reply-to><normalized-reference>Pine.LNX.4.44L0.1003311054500.1739-100000@iolanthe.rowland.org</normalized-reference><normalized-reference>1270048801.16657.8.camel@localhost.localdomain</normalized-reference><normalized-reference>4BB37454.8070808@interlog.com</normalized-reference><normalized-reference>1270053444.16657.17.camel@localhost.localdomain</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">On Wed, 31.03.10 12:37, David Zeuthen (<email>david@fubar.dk</email>) wrote:
+
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quotepara depth="3">and this definitely runs for this USB device assuming removable is 0 in
+sysfs. Perhaps <url>http://bugs.freedesktop.org/show_bug.cgi?id=25673</url> is
+related? Maybe try with the latest libatasmart?
+</quotepara></quote><quotepara depth="2">
+Since the sequence of commands was IDENTIFY DEVICE,
+SET FEATURES then IDENTIFY DEVICE again my guess is
+that SET FEATURES caused the problem. Why would a
+program called ata_id try to change the state of
+the device?
+</quotepara></quote><quotepara depth="1">
+As I said above, I don't think it's ata_id that is the problem - I think
+it's udisks-probe-ata-smart, via libatasmart, that is responsible for
+submitting the SET FEATURES command:
+
+</quotepara><quotepara depth="1"><url>http://git.0pointer.de/?p=libatasmart.git;a=blob;f=atasmart.c;h=a4b60c0eedf8e4f1ebafd932b7070c030459ef16;hb=HEAD#l2561</url>
+
+</quotepara><quotepara depth="1">when it finds out that the SMART feature is available, yet not turned
+on. I actually don't think libatasmart has any business making such
+decisions on behalf of the user... Lennart, any chance we can stop
+libatasmart from doing this? Thanks.
+</quotepara></quote><para depth="0">
+Uh. I think it definitely needs to call this. I am pretty sure most USB
+HDDs you plug in have SMART disabled by default until libatasmart
+enables it. So, libatasmart would stop enabling it automatically you'd
+end up with no SMART at all for these devices.
+
+</para><para depth="0">Also, on my desktop here, when you reset the BIOS settings to the
+defaults, SMART is off. So, that means that somebody needs to enable
+SMART from Linux, and who should do that if not libatasmart?
+
+</para><para depth="0">if that device chokes on SETFEATURES then we might need to blacklist
+that, not disabled SMART for all devices right-away...
+
+</para><para depth="0">Lennart
+
+</para><footer type="signature" depth="0" hash="13479304126464806765">-- 
+Lennart Poettering                        Red Hat, Inc.
+lennart [at] poettering [dot] net
+<url>http://0pointer.net/lennart/</url>           GnuPG 0x1A015CC4
+</footer><footer type="list-management" depth="0">--
+To unsubscribe from this list: send the line "unsubscribe linux-usb" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+</footer></body></message>

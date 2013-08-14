@@ -1,0 +1,17 @@
+<message message-id="20020412142934.18947.qmail@netbeans.org" list="org.netbeans.debuggercore.issues" id="24am3dv42bg7jz3g" no-archive="yes" type="bugs" date="2002-04-12T14:29:34Z" year="2002-01-01" year-month="2002-04-01" year-month-day="2002-04-12" thread-id="24am3dv42bg7jz3g"><headers><envelope-from-line>From issues-return-3670-tigrisq-archive=mail-debuggercore=issues=netbeans.org=netbeans.org@debuggercore.netbeans.org Fri Apr 12 14:29:36 2002</envelope-from-line><from personal="issues@www.netbeans.org" address="issues@www.netbeans.org">issues@www.netbeans.org</from><to personal="issues@debuggercore.netbeans.org" address="issues@debuggercore.netbeans.org">issues@debuggercore.netbeans.org</to><subject normal="[Issue 13915] - debuggercore should not keep serialized ModuleInstall state">[Issue 13915]  - debuggercore should not keep serialized ModuleInstall state</subject><return-path>issues-return-3670-tigrisq-archive=mail-debuggercore=issues=netbeans.org=netbeans.org@debuggercore.netbeans.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-debuggercore=issues=netbeans.org@netbeans.org</delivered-to><received>(qmail 18973 invoked by uid 5302); 12 Apr 2002 14:29:35 -0000</received><mailing-list>contact issues-help@debuggercore.netbeans.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:issues-help@debuggercore.netbeans.org&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@debuggercore.netbeans.org&gt;</list-unsubscribe><list-post>&lt;mailto:issues@debuggercore.netbeans.org&gt;</list-post><reply-to>nbdev@netbeans.org</reply-to><delivered-to>mailing list issues@debuggercore.netbeans.org</delivered-to><received>(qmail 18948 invoked by uid 5000); 12 Apr 2002 14:29:34 -0000</received><date>12 Apr 2002 14:29:34 -0000</date><message-id>20020412142934.18947.qmail@netbeans.org</message-id></headers><normalized-references><normalized-message-id>20020412142934.18947.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=13915</url>
+
+</para><para depth="0"><email>jjancura@netbeans.org</email> changed:
+
+</para><para depth="0">                  What    |Old Value                  |New Value
+==================================================================================
+                    Status|NEW                        |RESOLVED
+</para><para depth="0">----------------------------------------------------------------------------------
+                Resolution|                           |FIXED
+</para><footer type="noise" depth="0">----------------------------------------------------------------------------------
+
+</footer><para depth="0">------- Additional Comments From <email>jjancura@netbeans.org</email>  2002-04-12 07:29 PDT<br/>-------
+fixed
+
+</para></body></message>

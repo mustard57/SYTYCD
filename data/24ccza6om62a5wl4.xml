@@ -1,0 +1,23 @@
+<message message-id="xzp4rh9z5zi.fsf@flood.ping.uio.no" list="org.freebsd.freebsd-alpha" id="24ccza6om62a5wl4" type="general" date="2002-05-15T19:16:33+02:00" year="2002-01-01" year-month="2002-05-01" year-month-day="2002-05-15" thread-id="xnflbsmpdb52s2r2"><headers><envelope-from-line>From owner-freebsd-alpha  Wed May 15 10:16:38 2002</envelope-from-line><from personal="Dag-Erling Smorgrav" address="des@ofug.org">Dag-Erling Smorgrav &lt;des@ofug.org&gt;</from><to personal="Andrew Gallatin" address="gallatin@cs.duke.edu">Andrew Gallatin &lt;gallatin@cs.duke.edu&gt;</to><cc personal="alpha@FreeBSD.ORG" address="alpha@FreeBSD.ORG">alpha@FreeBSD.ORG</cc><subject normal="memory management fault during netbooting on 4.6-PRERELEASE">Re: memory management fault during netbooting on 4.6-PRERELEASE</subject><delivered-to>freebsd-alpha@freebsd.org</delivered-to><received>from flood.ping.uio.no (flood.ping.uio.no [129.240.78.31])
+	by hub.freebsd.org (Postfix) with ESMTP id 3771637B407
+	for &lt;alpha@FreeBSD.ORG&gt;; Wed, 15 May 2002 10:16:36 -0700 (PDT)</received><received>by flood.ping.uio.no (Postfix, from userid 2602)
+	id 146575307; Wed, 15 May 2002 19:16:34 +0200 (CEST)</received><x-url>http://www.ofug.org/~des/</x-url><x-disclaimer>The views expressed in this message do not necessarily
+  coincide with those of any organisation or company with
+  which I am or have been affiliated.</x-disclaimer><references>&lt;20020514235608.A69014@xor.obsecurity.org&gt;
+	&lt;xzpg00t26ia.fsf@flood.ping.uio.no&gt;
+	&lt;15586.25870.79809.901266@grasshopper.cs.duke.edu&gt;</references><date>15 May 2002 19:16:33 +0200</date><in-reply-to>&lt;15586.25870.79809.901266@grasshopper.cs.duke.edu&gt;</in-reply-to><message-id>xzp4rh9z5zi.fsf@flood.ping.uio.no</message-id><lines>11</lines><user-agent>Gnus/5.0808 (Gnus v5.8.8) Emacs/21.2</user-agent><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><sender>owner-freebsd-alpha@FreeBSD.ORG</sender><precedence>bulk</precedence><list-id>&lt;freebsd-alpha.FreeBSD.ORG&gt;</list-id><list-archive>&lt;http://docs.freebsd.org/mail/&gt; (Web Archive)</list-archive><list-help>&lt;mailto:majordomo@FreeBSD.ORG?subject=help&gt; (List Instructions)</list-help><list-subscribe>&lt;mailto:majordomo@FreeBSD.ORG?subject=subscribe%20freebsd-alpha&gt;</list-subscribe><list-unsubscribe>&lt;mailto:majordomo@FreeBSD.ORG?subject=unsubscribe%20freebsd-alpha&gt;</list-unsubscribe><x-loop>FreeBSD.org</x-loop></headers><normalized-references><normalized-message-id>xzp4rh9z5zi.fsf@flood.ping.uio.no</normalized-message-id><normalized-in-reply-to>15586.25870.79809.901266@grasshopper.cs.duke.edu</normalized-in-reply-to><normalized-reference>20020514235608.A69014@xor.obsecurity.org</normalized-reference><normalized-reference>xzpg00t26ia.fsf@flood.ping.uio.no</normalized-reference><normalized-reference>15586.25870.79809.901266@grasshopper.cs.duke.edu</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Andrew Gallatin &lt;<email>gallatin@cs.duke.edu</email>&gt; writes:
+</para><quote depth="1"><quotepara depth="1">An alpha needs to access memory in naturally aligned chunks.  If a
+load or store is done to a misaligned address (a 32-bit load from an
+address starting on a 16 bit boundary, for example).
+</quotepara></quote><para depth="0">
+I know about that, I was just surprised to see unaligned accesses in
+the base system.
+
+</para><para depth="0">DES
+</para><footer type="signature" hash="16270204713553583500" depth="0">-- 
+Dag-Erling Smorgrav - <email>des@ofug.org</email>
+
+</footer><para depth="0">To Unsubscribe: send mail to <email>majordomo@FreeBSD.org</email>
+with "unsubscribe freebsd-alpha" in the body of the message
+
+</para></body></message>

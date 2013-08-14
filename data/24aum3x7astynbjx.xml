@@ -1,0 +1,99 @@
+<message message-id="20070302190205.B10931A981D@eris.apache.org" list="org.apache.ofbiz.commits" id="24aum3x7astynbjx" type="checkins" date="2007-03-02T19:02:05Z" year="2007-01-01" year-month="2007-03-01" year-month-day="2007-03-02" thread-id="24aum3x7astynbjx"><headers><envelope-from-line>From commits-return-2270-apmail-ofbiz-commits-archive=ofbiz.apache.org@ofbiz.apache.org Fri Mar 02 19:02:27 2007</envelope-from-line><from personal="sichen@apache.org" address="sichen@apache.org">sichen@apache.org</from><to personal="commits@ofbiz.apache.org" address="commits@ofbiz.apache.org">commits@ofbiz.apache.org</to><subject normal="svn commit: r513886 - /ofbiz/trunk/applications/accounting/webapp/accounting/payment/PrintChecks.fo.ftl">svn commit: r513886 -
+ /ofbiz/trunk/applications/accounting/webapp/accounting/payment/PrintChecks.fo.ftl</subject><return-path>commits-return-2270-apmail-ofbiz-commits-archive=ofbiz.apache.org@ofbiz.apache.org</return-path><delivered-to>apmail-ofbiz-commits-archive@www.apache.org</delivered-to><received>(qmail 15535 invoked from network); 2 Mar 2007 19:02:27 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (140.211.11.2)
+  by minotaur.apache.org with SMTP; 2 Mar 2007 19:02:27 -0000</received><received>(qmail 37746 invoked by uid 500); 2 Mar 2007 19:02:35 -0000</received><delivered-to>apmail-ofbiz-commits-archive@ofbiz.apache.org</delivered-to><received>(qmail 37728 invoked by uid 500); 2 Mar 2007 19:02:35 -0000</received><mailing-list>contact commits-help@ofbiz.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:commits-help@ofbiz.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@ofbiz.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:commits@ofbiz.apache.org&gt;</list-post><list-id>&lt;commits.ofbiz.apache.org&gt;</list-id><reply-to>dev@ofbiz.apache.org</reply-to><delivered-to>mailing list commits@ofbiz.apache.org</delivered-to><received>(qmail 37719 invoked by uid 99); 2 Mar 2007 19:02:35 -0000</received><received>from herse.apache.org (HELO herse.apache.org) (140.211.11.133)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 02 Mar 2007 11:02:35 -0800</received><x-asf-spam-status>No, hits=-99.5 required=10.0
+	tests=ALL_TRUSTED,NO_REAL_NAME</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.3] (HELO eris.apache.org) (140.211.11.3)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 02 Mar 2007 11:02:26 -0800</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id B10931A981D; Fri,  2 Mar 2007 11:02:05 -0800 (PST)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Fri, 02 Mar 2007 19:02:05 -0000</date><x-mailer>svnmailer-1.1.0</x-mailer><message-id>20070302190205.B10931A981D@eris.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20070302190205.B10931A981D@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: sichen
+Date: Fri Mar  2 11:02:04 2007
+New Revision: 513886
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?view=rev&amp;rev=513886</url>
+Log:
+Updated check PDF for FOP 0.93 and beyond. This is an inelegant way to achieve <br/>fixed-height blocks, none of the other methods seem to work such as <br/>block-progression-dimension.minimum. 
+
+</para><para depth="0">Modified:
+ofbiz/trunk/applications/accounting/webapp/accounting/payment/PrintChecks.fo.ftl
+
+</para><para depth="0">Modified: <br/>ofbiz/trunk/applications/accounting/webapp/accounting/payment/PrintChecks.fo.ftl 
+URL: <br/><url>http://svn.apache.org/viewvc/ofbiz/trunk/applications/accounting/webapp/accounting/payment/PrintChecks.fo.ftl?view=diff&amp;rev=513886&amp;r1=513885&amp;r2=513886</url> 
+==============================================================================
+--- <br/>ofbiz/trunk/applications/accounting/webapp/accounting/payment/PrintChecks.fo.ftl <br/>(original) 
++++ <br/>ofbiz/trunk/applications/accounting/webapp/accounting/payment/PrintChecks.fo.ftl <br/>Fri Mar 2 11:02:04 2007 
+@@ -51,7 +51,14 @@
+
+</para><para depth="0">         &lt;#-- the check: note that the format is fairly precise --&gt;
+
+</para><para depth="0">-        &lt;fo:table height="8.85cm"&gt;
++        &lt;#-- this seems to be the only way to force a fixed height in fop --&gt;
++        &lt;fo:table table-layout="fixed"&gt;
++          &lt;fo:table-column column-width="100%"/&gt;
++          &lt;fo:table-body&gt;
++          &lt;fo:table-row height="8.85cm"&gt;
++          &lt;fo:table-cell&gt;
++          
++        &lt;fo:table table-layout="fixed"&gt;
+           &lt;fo:table-column column-width="17.7cm"/&gt;
+           &lt;fo:table-column/&gt;
+           &lt;fo:table-body&gt;
+@@ -81,9 +88,21 @@
+           &lt;/fo:table-body&gt;
+         &lt;/fo:table&gt;
+
+</para><para depth="0">+        &lt;/fo:table-cell&gt;
++        &lt;/fo:table-row&gt;
++        &lt;/fo:table-body&gt;
++        &lt;/fo:table&gt;
++
+         &lt;#-- payment applications (twice: both blocks are exactly the same) --&gt;
+
+</para><para depth="0">-        &lt;fo:table height="9.3cm" margin="10pt"&gt;
++        &lt;#-- this seems to be the only way to force a fixed height in fop --&gt;
++        &lt;fo:table table-layout="fixed"&gt;
++          &lt;fo:table-column column-width="100%"/&gt;
++          &lt;fo:table-body&gt;
++          &lt;fo:table-row height="9.3cm"&gt;
++          &lt;fo:table-cell&gt;
++ 
++ &lt;fo:table height="9.3cm" table-layout="fixed" margin-left="5pt" <br/>margin-right="5pt"&gt; 
+           &lt;fo:table-column/&gt;
+           &lt;fo:table-column/&gt;
+           &lt;fo:table-column/&gt;
+@@ -162,9 +181,22 @@
+           &lt;/fo:table-body&gt;
+         &lt;/fo:table&gt;
+
+</para><para depth="0">+        &lt;/fo:table-cell&gt;
++        &lt;/fo:table-row&gt;
++        &lt;/fo:table-body&gt;
++        &lt;/fo:table&gt;
++
++
+         &lt;#-- copy of above --&gt;
+
+</para><para depth="0">-        &lt;fo:table height="9.3cm" margin="10pt"&gt;
++        &lt;#-- this seems to be the only way to force a fixed height in fop --&gt;
++        &lt;fo:table table-layout="fixed"&gt;
++          &lt;fo:table-column column-width="100%"/&gt;
++          &lt;fo:table-body&gt;
++          &lt;fo:table-row height="9.3cm"&gt;
++          &lt;fo:table-cell&gt;
++ 
++ &lt;fo:table height="9.3cm" table-layout="fixed" margin-left="5pt" <br/>margin-right="5pt"&gt; 
+           &lt;fo:table-column/&gt;
+           &lt;fo:table-column/&gt;
+           &lt;fo:table-column/&gt;
+@@ -240,6 +272,11 @@
+               &lt;/fo:table-cell&gt;
+             &lt;/fo:table-row&gt;
+           &lt;/fo:table-body&gt;
++        &lt;/fo:table&gt;
++
++        &lt;/fo:table-cell&gt;
++        &lt;/fo:table-row&gt;
++        &lt;/fo:table-body&gt;
+         &lt;/fo:table&gt;
+
+</para><para depth="0">       &lt;/fo:block&gt;
+
+</para></body></message>

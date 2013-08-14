@@ -1,0 +1,56 @@
+@import "vars.less";
+
+#search {
+	.results {
+		.result {
+			padding: 0;
+			border: 1px solid @theme-major;
+			.less-border-radius();
+			margin-bottom: .5em;
+
+			.tag {
+				padding-right: .5em;
+				font-weight: bold;
+			}
+
+		}
+
+		.result:last-child {
+		  border-bottom: 1px solid @theme-major;
+		}
+
+		.result:hover {
+			background-color: #E1DBEE;
+			.mail-header {
+				background-color: #BFB9cc;
+			}
+			
+		}
+	}
+}
+
+#search .results {
+	padding: 1em;
+}
+.mail-header {
+	background-color: @theme-major-light;
+	color: #000;
+	padding: 0.5em;
+}
+
+.chart-wrapper {
+	border: 1px solid @theme-major-dark;
+	margin-bottom: 1em;
+}
+
+.details {
+	border: 1px solid #ccc;
+
+	.body {
+		padding: 1em;
+	}
+}
+
+.no-dec {
+	text-decoration: none;
+}

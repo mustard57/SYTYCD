@@ -1,0 +1,52 @@
+<message message-id="596F535A-25AA-43E6-84D7-685B2269C151@gmail.com" list="org.apache.incubator.river-dev" id="24c2ebxxoyysrpgk" type="development" date="2010-10-13T11:58:57-04:00" year="2010-01-01" year-month="2010-10-01" year-month-day="2010-10-13" thread-id="66kbokyyqv7dnf5o"><headers><envelope-from-line>Wed Oct 13 07:59:28 2010</envelope-from-line><from personal="Dennis Reedy" address="dennis.reedy@gmail.com">Dennis Reedy &lt;dennis.reedy@gmail.com&gt;</from><to personal="river-dev@incubator.apache.org" address="river-dev@incubator.apache.org">river-dev@incubator.apache.org</to><subject normal="SimpleJeri">Re: SimpleJeri</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 558
+          for &lt;bridgett.brady.black@a.markmail.org&gt;;
+          Wed, 13 Oct 2010 07:59:28 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 360B73B303A2
+	for &lt;bridgett.brady.black@a.markmail.org&gt;; Wed, 13 Oct 2010 08:59:05 -0700 (PDT)</received><received>(qmail 30173 invoked by uid 500); 13 Oct 2010 15:59:28 -0000</received><mailing-list>contact river-dev-help@incubator.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:river-dev-help@incubator.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:river-dev-unsubscribe@incubator.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:river-dev@incubator.apache.org&gt;</list-post><list-id>&lt;river-dev.incubator.apache.org&gt;</list-id><reply-to>river-dev@incubator.apache.org</reply-to><delivered-to>mailing list river-dev@incubator.apache.org</delivered-to><received>(qmail 30165 invoked by uid 99); 13 Oct 2010 15:59:27 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 13 Oct 2010 15:59:27 +0000</received><x-asf-spam-status>No, hits=0.0 required=10.0
+	tests=FREEMAIL_FROM,RCVD_IN_DNSWL_NONE,SPF_PASS,T_TO_NO_BRKTS_FREEMAIL</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (athena.apache.org: domain of dennis.reedy@gmail.com designates 209.85.216.47 as permitted sender)</received-spf><received>from [209.85.216.47] (HELO mail-qw0-f47.google.com) (209.85.216.47)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 13 Oct 2010 15:59:20 +0000</received><received>by qwe5 with SMTP id 5so586250qwe.6
+        for &lt;river-dev@incubator.apache.org&gt;; Wed, 13 Oct 2010 08:58:59 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:content-type:mime-version
+         :subject:from:in-reply-to:date:content-transfer-encoding:message-id
+         :references:to:x-mailer;
+        bh=vrlpINBf5a9lOrASdCN5NOPT/rUHYurp3/rmrsOup2g=;
+        b=qgk9cihAcn8DQA0PNQLvOqcvbBEpeymz+4nyTCzAip0FogBNSzxvuiVQ0HUtJXxoaC
+         6vdJioXJoAdrXnJYVwcUagxrNzPWm7JqSAtyMISCZectcwhRJHxTBjBAclrQFwxCsS0Q
+         1i7M6gqWCWLTrQ2+Dyxw2JwWumwpJomsqJzmQ=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=content-type:mime-version:subject:from:in-reply-to:date
+         :content-transfer-encoding:message-id:references:to:x-mailer;
+        b=d1TavJ9vO8UPfbmP2EbjaZVYwMKqBux7EiD49Yf/1v4HkwF25t9fLFEKyHWDgvgkGF
+         5rflEGWJ7Uo7BzmISMeEHMEGmynequSy1XY4dnI3lrXH8tyQqVaoY4wpqeA/2XCNlD0r
+         lq83DfKEpXkNmbPpTuRufJxBDRwN/kbeRt0cA=</domainkey-signature><received>by 10.229.250.193 with SMTP id mp1mr7734446qcb.129.1286985539590;
+        Wed, 13 Oct 2010 08:58:59 -0700 (PDT)</received><received>from [10.0.1.4] (c-69-255-104-205.hsd1.va.comcast.net [69.255.104.205])
+        by mx.google.com with ESMTPS id x9sm3866740qco.22.2010.10.13.08.58.58
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Wed, 13 Oct 2010 08:58:58 -0700 (PDT)</received><content-type>text/plain; charset=us-ascii</content-type><mime-version>1.0 (Apple Message framework v1081)</mime-version><in-reply-to>&lt;4CB5D33B.9020702@qcg.nl&gt;</in-reply-to><date>Wed, 13 Oct 2010 11:58:57 -0400</date><content-transfer-encoding>quoted-printable</content-transfer-encoding><message-id>596F535A-25AA-43E6-84D7-685B2269C151@gmail.com</message-id><references>&lt;4CB5CFC8.609@qcg.nl&gt; &lt;DC33F78F-9E08-4C38-97A3-5802182CB970@gmail.com&gt; &lt;4CB5D142.4070205@qcg.nl&gt; &lt;302EC1E0-EB69-4C1B-B3D5-2A5B6841C2D0@gmail.com&gt; &lt;4CB5D33B.9020702@qcg.nl&gt;</references><x-mailer>Apple Mail (2.1081)</x-mailer></headers><normalized-references><normalized-message-id>596F535A-25AA-43E6-84D7-685B2269C151@gmail.com</normalized-message-id><normalized-in-reply-to>4CB5D33B.9020702@qcg.nl</normalized-in-reply-to><normalized-reference>4CB5CFC8.609@qcg.nl</normalized-reference><normalized-reference>DC33F78F-9E08-4C38-97A3-5802182CB970@gmail.com</normalized-reference><normalized-reference>4CB5D142.4070205@qcg.nl</normalized-reference><normalized-reference>302EC1E0-EB69-4C1B-B3D5-2A5B6841C2D0@gmail.com</normalized-reference><normalized-reference>4CB5D33B.9020702@qcg.nl</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">
+On Oct 13, 2010, at 1141AM, Sim IJskes - QCG wrote:
+
+</para><quote depth="1"><quotepara depth="1">On 10/13/2010 05:38 PM, Dennis Reedy wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+On Oct 13, 2010, at 1133AM, Sim IJskes - QCG wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">On 10/13/2010 05:31 PM, Dennis Reedy wrote:
+</quotepara><quote depth="4"><quotepara depth="4">Is this something different then creating a JERI exporter?
+</quotepara></quote><quotepara depth="3">
+Is this a question or a remark?
+</quotepara></quote><quotepara depth="2">
+Its a question
+</quotepara></quote><quotepara depth="1">
+Ok. Thank you. Is it different?
+
+</quotepara><quotepara depth="1">&lt;<url>http://svn.apache.org/viewvc/incubator/river/jtsk/skunk/sijskes/SimpleJeri/src/org/apache/river/extra/examples/simplejeri/</url>&gt;
+
+</quotepara></quote><para depth="0">Okay, now I understand. This is about creating a simple client/service example<br/>that uses JERI, but doesnt use discovery from a client point of view, or<br/>discovery/join from a service point of view. Sorry for the misunderstanding. 
+
+</para><para depth="0">The question I have is if you consider using the various helper classes in your<br/>skunk branch as _the way_ to create services going forward. 
+
+</para><para depth="0">Dennis
+
+</para></body></message>

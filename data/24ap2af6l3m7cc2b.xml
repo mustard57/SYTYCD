@@ -1,0 +1,101 @@
+<message message-id="2dd04b2a1003100712q6803fa87g3bbbed1694f651e4@mail.gmail.com" list="org.apache.couchdb.user" id="24ap2af6l3m7cc2b" type="users" date="2010-03-10T10:12:01-05:00" year="2010-01-01" year-month="2010-03-01" year-month-day="2010-03-10" thread-id="24ap2af6l3m7cc2b"><headers><envelope-from-line>Wed Mar 10 07:12:32 2010</envelope-from-line><from personal="j d" address="dobber1134@gmail.com">j d &lt;dobber1134@gmail.com&gt;</from><to personal="user@couchdb.apache.org" address="user@couchdb.apache.org">user@couchdb.apache.org</to><subject normal="RHEL5.1">Re: RHEL5.1</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 588
+          for &lt;clara.mcgee.sellers@a.markmail.org&gt;;
+          Wed, 10 Mar 2010 07:12:32 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id C53103B300BA
+	for &lt;clara.mcgee.sellers@a.markmail.org&gt;; Wed, 10 Mar 2010 07:12:08 -0800 (PST)</received><received>(qmail 91592 invoked by uid 500); 10 Mar 2010 15:12:31 -0000</received><mailing-list>contact user-help@couchdb.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:user-help@couchdb.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:user-unsubscribe@couchdb.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:user@couchdb.apache.org&gt;</list-post><list-id>&lt;user.couchdb.apache.org&gt;</list-id><reply-to>user@couchdb.apache.org</reply-to><delivered-to>mailing list user@couchdb.apache.org</delivered-to><received>(qmail 91584 invoked by uid 99); 10 Mar 2010 15:12:31 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 10 Mar 2010 15:12:31 +0000</received><x-asf-spam-status>No, hits=2.2 required=10.0
+	tests=FREEMAIL_ENVFROM_END_DIGIT,FREEMAIL_FROM,SPF_PASS,T_TO_NO_BRKTS_FREEMAIL</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (athena.apache.org: domain of dobber1134@gmail.com designates 209.85.210.182 as permitted sender)</received-spf><received>from [209.85.210.182] (HELO mail-yx0-f182.google.com) (209.85.210.182)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 10 Mar 2010 15:12:26 +0000</received><received>by yxe12 with SMTP id 12so1697310yxe.28
+        for &lt;user@couchdb.apache.org&gt;; Wed, 10 Mar 2010 07:12:06 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:in-reply-to:references
+         :date:message-id:subject:from:to:content-type;
+        bh=7IFR9Eav0EFq0zP0ih6jyGNG1Jm3flmD7j762JEcWEg=;
+        b=wp9q7Kd7yXiAbwy0P6OCc/sr136favruUWML3MC6yZTdsoy+2gHrFVXBAR1ZCPFONO
+         Vf6By2TNl6YSUq7sAHkXx3ovye9MWgJqUzg5HmtsblXd+TlxThkA6YR54b+P1+rfKDuW
+         Esy04SztWJdQROdJ6A/nnZPomU52hdL/yPgik=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        b=MXngSzhnbO2E/CZq7CAZ7aasPPEQOrHwt/enmybztzaCuUduJpCakMwMUiS/99JQJy
+         D1NCEuI9Kwv3GOtjNxMWLNrdA58ro3PAXShYA44SgGAsNlcC1FEfVdYUuHklMq66MuNZ
+         rL7VmRzok0ACyPsLjBUXHMRQUnKDf8xm5DmcE=</domainkey-signature><mime-version>1.0</mime-version><received>by 10.101.36.14 with SMTP id o14mr793410anj.28.1268233921925; Wed, 
+	10 Mar 2010 07:12:01 -0800 (PST)</received><in-reply-to>&lt;2dd04b2a1003100706s60040048u34cac27b297c3253@mail.gmail.com&gt;</in-reply-to><references>&lt;2dd04b2a1003100446g157e3b7cod3e683ac4cc5b422@mail.gmail.com&gt;
+	 &lt;8ec76081003100507y77131396j37a73e29e2ac7a11@mail.gmail.com&gt;
+	 &lt;4B979F7D.6050605@vpro.nl&gt;
+	 &lt;2dd04b2a1003100556g52ee4748gccaf994db893d318@mail.gmail.com&gt;
+	 &lt;2dd04b2a1003100558n5e3ac516mfe514452a49bc446@mail.gmail.com&gt;
+	 &lt;4B97B039.8070105@vpro.nl&gt;
+	 &lt;2dd04b2a1003100706s60040048u34cac27b297c3253@mail.gmail.com&gt;</references><date>Wed, 10 Mar 2010 10:12:01 -0500</date><message-id>2dd04b2a1003100712q6803fa87g3bbbed1694f651e4@mail.gmail.com</message-id><content-type>text/plain; charset=ISO-8859-1</content-type></headers><normalized-references><normalized-message-id>2dd04b2a1003100712q6803fa87g3bbbed1694f651e4@mail.gmail.com</normalized-message-id><normalized-in-reply-to>2dd04b2a1003100706s60040048u34cac27b297c3253@mail.gmail.com</normalized-in-reply-to><normalized-reference>2dd04b2a1003100446g157e3b7cod3e683ac4cc5b422@mail.gmail.com</normalized-reference><normalized-reference>8ec76081003100507y77131396j37a73e29e2ac7a11@mail.gmail.com</normalized-reference><normalized-reference>4B979F7D.6050605@vpro.nl</normalized-reference><normalized-reference>2dd04b2a1003100556g52ee4748gccaf994db893d318@mail.gmail.com</normalized-reference><normalized-reference>2dd04b2a1003100558n5e3ac516mfe514452a49bc446@mail.gmail.com</normalized-reference><normalized-reference>4B97B039.8070105@vpro.nl</normalized-reference><normalized-reference>2dd04b2a1003100706s60040048u34cac27b297c3253@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">oops...
+
+</para><para depth="0">On Wed, Mar 10, 2010 at 10:06 AM, j d &lt;<email>dobber1134@gmail.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">Thank you Nils for your persistence and help.
+
+</quotepara><quotepara depth="1">On Wed, Mar 10, 2010 at 9:44 AM, Nils Breunese &lt;<email>N.Breunese@vpro.nl</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">j d wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">by the way my epel.repo file looks like:
+</quotepara><quotepara depth="3">--------------------
+[epel]
+name=Extra Packages for Enterprise Linux 5 - $basearch
+#baseurl=<url>http://download.fedoraproject.org/pub/epel/5/</url>$basearch
+
+</quotepara><quotepara depth="3">mirrorlist=<url>http://mirrors.fedoraproject.org/mirrorlist?repo=epel-5&amp;arch=</url>$basearch
+failovermethod=priority
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL
+
+</quotepara><quotepara depth="3">[epel-debuginfo]
+name=Extra Packages for Enterprise Linux 5 - $basearch - Debug
+#baseurl=<url>http://download.fedoraproject.org/pub/epel/5/</url>$basearch/debug
+
+</quotepara><quotepara depth="3">mirrorlist=<url>http://mirrors.fedoraproject.org/mirrorlist?repo=epel-debug-5&amp;arch=</url>$basearch
+failovermethod=priority
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL
+gpgcheck=1
+
+</quotepara><quotepara depth="3">[epel-source]
+name=Extra Packages for Enterprise Linux 5 - $basearch - Source
+#baseurl=<url>http://download.fedoraproject.org/pub/epel/5/SRPMS</url>
+
+</quotepara><quotepara depth="3">mirrorlist=<url>http://mirrors.fedoraproject.org/mirrorlist?repo=epel-source-5&amp;arch=</url>$basearch
+failovermethod=priority
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL
+gpgcheck=1
+</quotepara><quotepara depth="3">------------------------
+</quotepara></quote><quotepara depth="2">
+Yeah, fine. I'd just disable [epel-debuginfo] and [epel-source] again,
+because you don't need those. But that shouldn't change anything for you
+right now.
+
+</quotepara><quote depth="3"><quotefooter type="noise" depth="3">(...)
+</quotefooter><quote depth="4"><quotepara depth="4">
+Error: Missing Dependency: libicu-devel is needed by package couchdb
+]
+
+</quotepara><quotepara depth="4">thoughts?
+</quotepara></quote></quote><quotepara depth="2">
+Your yum setup looks a little broken, possibly because your RHN
+subscription seems to be expired or something. Which also might explain
+why you're still on RHEL 5.1 while 5.4 is the current version.
+
+</quotepara></quote></quote><para depth="0">Yeah, I inherited this server and I'm sure whatever support and
+updating services they paid for are now over.  I didn't think I needed
+the RHN, I figured that was only a rpm repo run by Red Hat and that I
+just needed to point yum to a free place (like EPEL).  I guess at this
+point my only choices are to either update RHEL (hope you can do this
+for free if you don't buy support) or to take another 3 days to wipe
+the machine and reinstall with another Linux variant.
+
+</para><quote depth="1"><quote depth="2"><quotefooter type="signature" depth="2" hash="16675072222693920976">Nils Breunese.
+
+</quotefooter><quotepara depth="2">P.S. I just updated <url>http://wiki.apache.org/couchdb/Installing_on_RHEL5</url>
+with separate sections for installing a prepackaged CouchDB and
+installing from source.
+
+</quotepara></quote></quote><para depth="0">Thanks again Nils.
+</para></body></message>

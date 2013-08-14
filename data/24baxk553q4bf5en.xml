@@ -1,0 +1,52 @@
+<message message-id="1094291643.1218812505355.JavaMail.jira@brutus" list="org.apache.incubator.qpid-dev" id="24baxk553q4bf5en" type="bugs" date="2008-08-15T08:01:45-07:00" year="2008-01-01" year-month="2008-08-01" year-month-day="2008-08-15" thread-id="dlvbompsf2u4vsm7"><headers><envelope-from-line>Fri Aug 15 08:02:40 2008</envelope-from-line><from personal="Steve Huston (JIRA)" address="qpid-dev@incubator.apache.org">"Steve Huston (JIRA)" &lt;qpid-dev@incubator.apache.org&gt;</from><to personal="qpid-dev@incubator.apache.org" address="qpid-dev@incubator.apache.org">qpid-dev@incubator.apache.org</to><subject normal="[jira] Commented: (QPID-1160) Mutex/Lock avoidance in management agent interface">[jira] Commented: (QPID-1160) Mutex/Lock avoidance in management agent interface</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 145
+          for &lt;linda.wilkerson.dillon@a.markmail.org&gt;;
+          Fri, 15 Aug 2008 08:02:40 -0700 (PDT)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 25EBB290803F
+	for &lt;linda.wilkerson.dillon@a.markmail.org&gt;; Fri, 15 Aug 2008 08:02:40 -0700 (PDT)</received><received>(qmail 32094 invoked by uid 500); 15 Aug 2008 15:02:37 -0000</received><mailing-list>contact qpid-dev-help@incubator.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:qpid-dev-help@incubator.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:qpid-dev-unsubscribe@incubator.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:qpid-dev@incubator.apache.org&gt;</list-post><list-id>&lt;qpid-dev.incubator.apache.org&gt;</list-id><reply-to>qpid-dev@incubator.apache.org</reply-to><delivered-to>mailing list qpid-dev@incubator.apache.org</delivered-to><received>(qmail 32083 invoked by uid 99); 15 Aug 2008 15:02:37 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 15 Aug 2008 08:02:37 -0700</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.140] (HELO brutus.apache.org) (140.211.11.140)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 15 Aug 2008 15:01:46 +0000</received><received>from brutus (localhost [127.0.0.1])
+	by brutus.apache.org (Postfix) with ESMTP id 56F72234C1BB
+	for &lt;qpid-dev@incubator.apache.org&gt;; Fri, 15 Aug 2008 08:01:45 -0700 (PDT)</received><message-id>1094291643.1218812505355.JavaMail.jira@brutus</message-id><date>Fri, 15 Aug 2008 08:01:45 -0700 (PDT)</date><in-reply-to>&lt;39142150.1214837625202.JavaMail.jira@brutus&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>1094291643.1218812505355.JavaMail.jira@brutus</normalized-message-id><normalized-in-reply-to>39142150.1214837625202.JavaMail.jira@brutus</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+    [<br/><url>https://issues.apache.org/jira/browse/QPID-1160?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&amp;focusedCommentId=12622883#action_12622883</url><br/>] 
+
+</para><para depth="0">Steve Huston commented on QPID-1160:
+</para><para depth="0">------------------------------------
+
+</para><para depth="0">As part of the Windows port I added a QPID_TSS macro to qpid/sys/Thread.h ala:
+
+</para><para depth="0">#ifdef _WIN32
+#  define QPID_TSS __declspec(thread)
+#elif defined (gcc)
+#  define QPID_TSS __thread
+#else
+#  define QPID_TSS
+#endif
+
+</para><para depth="0">It goes against the guideline for not doing platform-specific ifdefs, but does<br/>solve the problem for these two compilers. Is this acceptable?
+
+</para><quote depth="1"><quotepara depth="1">Mutex/Lock avoidance in management agent interface
+</quotepara><quotepara depth="1">--------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: QPID-1160
+                URL: <url>https://issues.apache.org/jira/browse/QPID-1160</url>
+            Project: Qpid
+         Issue Type: Improvement
+         Components: C++ Broker
+   Affects Versions: M3
+           Reporter: Ted Ross
+           Assignee: Ted Ross
+           Priority: Minor
+            Fix For: M3
+
+</quotepara><quotepara depth="1">For management purposes, the C++ broker tracks statistics per-queue, exchange,<br/>and binding.  These statistics counters are necessarily incremented in the<br/>message forwarding fast-path and therefore must have very low performance cost.
+There is an issue with the multi-threaded nature of the C++ broker in that<br/>counter increments must be thread-safe or else they will become corrupt in a<br/>short time.  The current code base uses mutexes to protect the counters but this<br/>defeats the benefit of having multiple worker threads because counter contention<br/>causes the threads to stall while waiting for one another.
+This issue has been created to track the fix for this performance problem in the<br/>broker.
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="12364841950400781264">-- 
+This message is automatically generated by JIRA.
+-
+You can reply to this email to add a comment to the issue online.
+
+</footer></body></message>

@@ -1,0 +1,23 @@
+<message message-id="Pine.SOL.4.10.10111211259380.15478-100000@snaxel" list="org.w3.www-rdf-comments" id="24boyxrjgggtmzs4" type="development" date="2001-11-21T13:07:00+01:00" year="2001-01-01" year-month="2001-11-01" year-month-day="2001-11-21" thread-id="hjcxntsek4p26wbf"><headers><envelope-from-line>From www-rdf-comments-request@tux.w3.org  Wed Nov 21 07:10:57 2001</envelope-from-line><from personal="Karsten-A. Otto" address="ottoka@cs.tu-berlin.de">"Karsten-A. Otto" &lt;ottoka@cs.tu-berlin.de&gt;</from><to personal="Dave Beckett" address="dave.beckett@bristol.ac.uk">Dave Beckett &lt;dave.beckett@bristol.ac.uk&gt;</to><cc personal="www-rdf-comments@w3.org" address="www-rdf-comments@w3.org">www-rdf-comments@w3.org</cc><subject normal="Updated RDF Grammar">Re: Updated RDF Grammar </subject><received>from tux.w3.org (tux.w3.org [18.29.0.27])
+	by www19.w3.org (8.9.0/8.9.0) with ESMTP id HAA26661
+	for &lt;www-rdf-comments@www19.w3.org&gt;; Wed, 21 Nov 2001 07:10:57 -0500 (EST)</received><received>from mail.cs.tu-berlin.de (root@mail.cs.tu-berlin.de [130.149.17.13])
+	by tux.w3.org (8.9.3/8.9.3) with ESMTP id HAA16070
+	for &lt;www-rdf-comments@w3.org&gt;; Wed, 21 Nov 2001 07:10:57 -0500</received><received>from snaxel.cs.tu-berlin.de (ottoka@snaxel.cs.tu-berlin.de [130.149.19.39])
+	by mail.cs.tu-berlin.de (8.9.3/8.9.3) with ESMTP id NAA04551;
+	Wed, 21 Nov 2001 13:07:01 +0100 (MET)</received><received>(from ottoka@localhost)
+	by snaxel.cs.tu-berlin.de (8.9.3/8.9.3) id NAA15513;
+	Wed, 21 Nov 2001 13:07:00 +0100 (MET)</received><date>Wed, 21 Nov 2001 13:07:00 +0100 (MET)</date><x-sender>ottoka@snaxel</x-sender><in-reply-to>&lt;18506.1006342466@tatooine.ilrt.bris.ac.uk&gt;</in-reply-to><message-id>Pine.SOL.4.10.10111211259380.15478-100000@snaxel</message-id><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII</content-type><x-archived-at>http://www.w3.org/mid/Pine.SOL.4.10.10111211259380.15478-100000@snaxel</x-archived-at><status>O</status><x-status/><x-keywords/><x-uid>180</x-uid></headers><normalized-references><normalized-message-id>Pine.SOL.4.10.10111211259380.15478-100000@snaxel</normalized-message-id><normalized-in-reply-to>18506.1006342466@tatooine.ilrt.bris.ac.uk</normalized-in-reply-to></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Dave Beckett wrote:
+
+</para><quote depth="1"><quotepara depth="1">Although, I can't see what use an empty &lt;rdf:RDF/&gt; would be, it is still OK.
+
+</quotepara><quotepara depth="1">I hope this answers your questions
+
+</quotepara></quote><para depth="0">Thank you, and yes, this answers my questions. An empty &lt;rdf:RDF/&gt; expresses
+an empty model. It may be useful in set-operations involving multiple
+(partial) models, for example merging and difference.
+
+</para><para depth="0">Regards,
+
+</para><para depth="0">Karsten Otto
+
+</para></body></message>

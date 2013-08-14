@@ -1,0 +1,18 @@
+<message message-id="1b15366e0608241500j5f1b4662p9a0d9cd811de841f@mail.gmail.com" list="org.freebsd.freebsd-questions" id="24ajwj4pnuciqwxd" type="general" date="2006-08-24T22:00:25" year="2006-01-01" year-month="2006-08-01" year-month-day="2006-08-24" thread-id="q24lwmiva3nuyt4b"><headers><envelope-from-line>From mjk@iki.fi  Thu Aug 24 22:00:23 2006</envelope-from-line><from personal="Matti J. Karki" address="mjk@iki.fi">"Matti J. Karki" &lt;mjk@iki.fi&gt;</from><subject normal="Code beautifiers, anyone?">Code beautifiers, anyone?</subject><date>Thu Aug 24 22:00:25 2006</date><in-reply-to>&lt;7.0.1.0.2.20060824192439.02386de8@broadpark.no&gt;</in-reply-to><references>&lt;7.0.1.0.2.20060824145822.0194fc10@broadpark.no&gt;
+	&lt;1b15366e0608240618j62d41ad3j537f095b2e566ed5@mail.gmail.com&gt;
+	&lt;7.0.1.0.2.20060824192439.02386de8@broadpark.no&gt;</references><message-id>1b15366e0608241500j5f1b4662p9a0d9cd811de841f@mail.gmail.com</message-id><content-type>multipart/mixed; 
+	boundary="----=_Part_17300_9164314.1217313832682"</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>1b15366e0608241500j5f1b4662p9a0d9cd811de841f@mail.gmail.com</normalized-message-id><normalized-in-reply-to>7.0.1.0.2.20060824192439.02386de8@broadpark.no</normalized-in-reply-to><normalized-reference>7.0.1.0.2.20060824145822.0194fc10@broadpark.no</normalized-reference><normalized-reference>1b15366e0608240618j62d41ad3j537f095b2e566ed5@mail.gmail.com</normalized-reference><normalized-reference>7.0.1.0.2.20060824192439.02386de8@broadpark.no</normalized-reference></normalized-references><body><para depth="0">On 8/24/06, Kyrre Nyg?rd &lt;<email>kyrreny@broadpark.no</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">
+Perhaps you could share with us whatever scripts you've written?
+
+</quotepara></quote><para depth="0">Totally forgot to include the actual intendation script.
+
+</para><para depth="0">There should be a Python script attached to this mail. Please note,
+that the script is not a silver bullet! It was designed to clean up
+some pretty messed up C code. Usually I study the coding style before
+creating this kind of clean-up-scripts. Also, the code is not very
+clean itself (pretty ironic, I guess) :) It's just a hack to take care
+of one step of the cleaning process.
+
+</para><para depth="0">        -Matti
+</para></body></message>

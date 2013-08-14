@@ -1,0 +1,72 @@
+<message message-id="CAA4ffp-qVMKF9QSK5=6O7YF9nvNn7ppa+ocGptYebUt0tgCJAw@mail.gmail.com" list="org.apache.incubator.ooo-dev" id="24awtfbr3q37aorn" type="development" date="2011-07-03T22:11:03-03:00" year="2011-01-01" year-month="2011-07-01" year-month-day="2011-07-03" thread-id="qykkyppkh4iylrsf"><headers><envelope-from-line>Sun Jul 03 17:11:51 2011</envelope-from-line><from personal="Simon Phipps" address="simon@webmink.com">Simon Phipps &lt;simon@webmink.com&gt;</from><to personal="ooo-dev@incubator.apache.org" address="ooo-dev@incubator.apache.org">ooo-dev@incubator.apache.org</to><subject normal="OOO and LibreOffice.">Re: OOO and LibreOffice.</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 638
+          for &lt;shawn.caldwell.walsh@a.markmail.org&gt;;
+          Sun, 3 Jul 2011 17:11:51 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id C998E29081A7
+	for &lt;shawn.caldwell.walsh@a.markmail.org&gt;; Sun,  3 Jul 2011 18:11:27 -0700 (PDT)</received><received>(qmail 80283 invoked by uid 500); 4 Jul 2011 01:11:50 -0000</received><mailing-list>contact ooo-dev-help@incubator.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:ooo-dev-help@incubator.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:ooo-dev-unsubscribe@incubator.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:ooo-dev@incubator.apache.org&gt;</list-post><list-id>&lt;ooo-dev.incubator.apache.org&gt;</list-id><reply-to>ooo-dev@incubator.apache.org</reply-to><delivered-to>mailing list ooo-dev@incubator.apache.org</delivered-to><received>(qmail 80269 invoked by uid 99); 4 Jul 2011 01:11:49 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 04 Jul 2011 01:11:49 +0000</received><x-asf-spam-status>No, hits=1.5 required=5.0
+	tests=HTML_MESSAGE,RCVD_IN_DNSWL_LOW,SPF_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (athena.apache.org: domain of simon@webmink.com designates 209.85.216.182 as permitted sender)</received-spf><received>from [209.85.216.182] (HELO mail-qy0-f182.google.com) (209.85.216.182)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 04 Jul 2011 01:11:44 +0000</received><received>by qyk38 with SMTP id 38so3280593qyk.6
+        for &lt;ooo-dev@incubator.apache.org&gt;; Sun, 03 Jul 2011 18:11:23 -0700 (PDT)</received><received>by 10.229.88.132 with SMTP id a4mr4279825qcm.186.1309741883244; Sun,
+ 03 Jul 2011 18:11:23 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.229.224.67 with HTTP; Sun, 3 Jul 2011 18:11:03 -0700 (PDT)</received><x-originating-ip>[189.94.46.104]</x-originating-ip><in-reply-to>&lt;CAP-ksohqRVsboihksP20RAorwBF0G30bRUXiWvZW4Pth5UdiDw@mail.gmail.com&gt;</in-reply-to><references>&lt;BANLkTi=HV9uyQzvADD0KSLFcoPesdjfu1w@mail.gmail.com&gt;
+ &lt;1309381916.82460.YahooMailClassic@web113503.mail.gq1.yahoo.com&gt;
+ &lt;BANLkTikDx3yVjKZJcr57o95+H=bevXn2jA@mail.gmail.com&gt; &lt;00c701cc36ec$5dab9750$1902c5f0$@acm.org&gt;
+ &lt;BANLkTik1v+arZ8We2Z=WKaQCjQGvjWn9yw@mail.gmail.com&gt; &lt;010001cc3741$51c88740$f55995c0$@acm.org&gt;
+ &lt;BANLkTikJJO7YPoa0t7kNMmMX-J8GKrx+ZQ@mail.gmail.com&gt; &lt;00d001cc380f$98fec4c0$cafc4e40$@acm.org&gt;
+ &lt;1309664343.19050.3.camel@rigel&gt; &lt;CAKQbXgBkwyPMN8nY9FJHBd0hHMBYywjgaCygJKLJ+3hLb9tJ4g@mail.gmail.com&gt;
+ &lt;CAPDmd-B71bOiEDBN0cHbFbEfsmqzwfPaYofuGBcoiu3CVDhcFQ@mail.gmail.com&gt;
+ &lt;CAKQbXgCe_wLUOFu7oZFSk7ZrrdqAa--SJqSvbiaGY=9sXD8n7w@mail.gmail.com&gt;
+ &lt;4F66DB94-E1C4-41F3-B2D8-163747C6767C@webmink.com&gt; &lt;CAP-ksohqRVsboihksP20RAorwBF0G30bRUXiWvZW4Pth5UdiDw@mail.gmail.com&gt;</references><date>Sun, 3 Jul 2011 22:11:03 -0300</date><message-id>CAA4ffp-qVMKF9QSK5=6O7YF9nvNn7ppa+ocGptYebUt0tgCJAw@mail.gmail.com</message-id><content-type>multipart/alternative; boundary=0016364ee472b2c21e04a7340bbc</content-type></headers><normalized-references><normalized-message-id>CAA4ffp-qVMKF9QSK5=6O7YF9nvNn7ppa+ocGptYebUt0tgCJAw@mail.gmail.com</normalized-message-id><normalized-in-reply-to>CAP-ksohqRVsboihksP20RAorwBF0G30bRUXiWvZW4Pth5UdiDw@mail.gmail.com</normalized-in-reply-to><normalized-reference>BANLkTi=HV9uyQzvADD0KSLFcoPesdjfu1w@mail.gmail.com</normalized-reference><normalized-reference>1309381916.82460.YahooMailClassic@web113503.mail.gq1.yahoo.com</normalized-reference><normalized-reference>BANLkTikDx3yVjKZJcr57o95+H=bevXn2jA@mail.gmail.com</normalized-reference><normalized-reference>00c701cc36ec$5dab9750$1902c5f0$@acm.org</normalized-reference><normalized-reference>BANLkTik1v+arZ8We2Z=WKaQCjQGvjWn9yw@mail.gmail.com</normalized-reference><normalized-reference>010001cc3741$51c88740$f55995c0$@acm.org</normalized-reference><normalized-reference>BANLkTikJJO7YPoa0t7kNMmMX-J8GKrx+ZQ@mail.gmail.com</normalized-reference><normalized-reference>00d001cc380f$98fec4c0$cafc4e40$@acm.org</normalized-reference><normalized-reference>1309664343.19050.3.camel@rigel</normalized-reference><normalized-reference>CAKQbXgBkwyPMN8nY9FJHBd0hHMBYywjgaCygJKLJ+3hLb9tJ4g@mail.gmail.com</normalized-reference><normalized-reference>CAPDmd-B71bOiEDBN0cHbFbEfsmqzwfPaYofuGBcoiu3CVDhcFQ@mail.gmail.com</normalized-reference><normalized-reference>CAKQbXgCe_wLUOFu7oZFSk7ZrrdqAa--SJqSvbiaGY=9sXD8n7w@mail.gmail.com</normalized-reference><normalized-reference>4F66DB94-E1C4-41F3-B2D8-163747C6767C@webmink.com</normalized-reference><normalized-reference>CAP-ksohqRVsboihksP20RAorwBF0G30bRUXiWvZW4Pth5UdiDw@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=0016364ee472b2c21e04a7340bbc" type="text/plain; charset=ISO-8859-1"><para depth="0">On Sun, Jul 3, 2011 at 10:03 PM, Rob Weir &lt;<email>apache@robweir.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">On Sun, Jul 3, 2011 at 8:40 PM, Simon Phipps &lt;<email>simon@webmink.com</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+On 3 Jul 2011, at 19:43, Ross Gardler wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">But before we can
+get to that point we need to address the technical differences between
+the two code bases. LO is already 8 months or so adrift of OOo (or at
+least that is what I am led to believe).
+</quotepara></quote><quotepara depth="2">
+It's worth observing that the code that new developers will be able to
+</quotepara></quote><quotepara depth="1">work on at Apache is also likely to have significant differences from the
+last release from the Sun/Oracle infrastructure, as well as a completely
+different workflow. I suspect we'll all have no choice but to accept there's
+a lot of refactoring and relearning to do whatever happens.
+</quotepara><quote depth="2"><quotepara depth="2">
+</quotepara><quote depth="3"><quotepara depth="3">What happened to the plan for OOo and TDF people to get together?
+</quotepara></quote><quotepara depth="2">
+We attempted it here at FISL and had a good turnout to the sessions Jomar
+</quotepara></quote><quotepara depth="1">Silva organised (and which I attended too). The result is a commitment (in
+the form of a letter of intent signed by on behalf of the responsible
+minister) by the Brazilian government to invest in both AOOo and
+LibreOffice. I hope we'll have a news posting about it early in the week.
+</quotepara><quote depth="2"><quotepara depth="2">
+It's tough, because there's a lot of emotion and history on both "sides",
+</quotepara></quote><quotepara depth="1">but I agree with Jomar that it's possible to devise ways to work together.
+One challenge we'll have with the new developers that Brazil will commit
+will be getting engaged with the codebase. We think a great way for them to
+do that now (rather than at an unknown point in the future) is to use the
+"Easy Hacks" page that LibreOffice has put together to go start work on the
+code now.
+</quotepara><quote depth="2"><quotepara depth="2">
+I suggest we encourage others to do the same.  Doing so is educational
+</quotepara></quote><quotepara depth="1">and co-operative, and TDF are perfectly happy to accept contributions under
+the Apache license.
+</quotepara><quote depth="2"><quotefooter type="noise" depth="2">
+</quotefooter></quote><quotepara depth="1">Simon,
+
+</quotepara><quotepara depth="1">Any chance of TDF requiring Apache 2.0 for new code contributions, in
+addition to their current requirement for LGPL/MPL?  My reading of
+their rules suggests that a simple majority of their Steering
+Committee authorize such a change.  Doing so would open up many more
+possibilities for future collaboration and cooperation.  Not doing so
+would severely constrain possibilities for cooperation.
+
+</quotepara></quote><para depth="0">It's certainly worth asking, although I believe their current LGPLv3+MPL
+policy is more a suggestion than a requirement so it would ultimately be up
+to each contributor. Perhaps you could ask on the steering-discuss list[1]?
+
+</para><para depth="0">S.
+
+</para><para depth="0">[1]  <url>http://listarchives.documentfoundation.org/www/steering-discuss/</url>
+</para></body></message>

@@ -1,0 +1,36 @@
+<message message-id="20090426204637.66A952A8188@concordia.buildd" list="com.ubuntu.lists.ubuntu-autotest" id="24bxoddb4k6wsykp" type="general" date="2009-04-26T21:46:37+01:00" year="2009-01-01" year-month="2009-04-01" year-month-day="2009-04-26" thread-id="24bxoddb4k6wsykp"><headers><envelope-from-line>From buildd@sanae.canonical.com Sun Apr 26 21:46:39 2009</envelope-from-line><from personal="Build Daemon user" address="noreply@buildd.ubuntu.com">Build Daemon user &lt;noreply@buildd.ubuntu.com&gt;</from><to personal="undisclosed-recipients:;" address="undisclosed-recipients:;">undisclosed-recipients:;</to><subject normal="Log for failed build of language-pack-kde-tl_1:9.04+20090413 (dist=jaunty-autotest)">Log for failed build of language-pack-kde-tl_1:9.04+20090413 (dist=jaunty-autotest)</subject><received>from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.60)
+	(envelope-from &lt;buildd@sanae.canonical.com&gt;) id 1LyBFF-0005DQ-U2
+	for ubuntu-autotest@lists.ubuntu.com; Sun, 26 Apr 2009 21:46:38 +0100</received><received>from sanae.canonical.com ([91.189.90.172])
+	by adelie.canonical.com with esmtp (Exim 4.69 #1 (Debian))
+	id 1LyBFF-0004dS-Rx
+	for &lt;ubuntu-autotest@lists.ubuntu.com&gt;; Sun, 26 Apr 2009 21:46:37 +0100</received><received>by sanae.canonical.com (Postfix, from userid 2001)
+	id C8E8039B6B; Sun, 26 Apr 2009 21:46:37 +0100 (BST)</received><x-original-to>buildd+warty@sanae.ubuntu.com</x-original-to><delivered-to>buildd+warty@sanae.ubuntu.com</delivered-to><received>from neptunium.canonical.com (neptunium.canonical.com [91.189.88.6])
+	by sanae.canonical.com (Postfix) with ESMTP id A6F8E39B5A
+	for &lt;buildd+warty@sanae.ubuntu.com&gt;;
+	Sun, 26 Apr 2009 21:46:37 +0100 (BST)</received><received>from concordia.buildd (concordia.buildd [10.122.37.55])
+	by neptunium.canonical.com (Postfix) with ESMTP id 9697B40C02B
+	for &lt;buildd+warty@sanae.ubuntu.com&gt;;
+	Sun, 26 Apr 2009 21:46:37 +0100 (BST)</received><received>by concordia.buildd (Postfix)
+	id 768582A8105; Sun, 26 Apr 2009 21:46:37 +0100 (BST)</received><delivered-to>buildd+porters@concordia.buildd</delivered-to><received>by concordia.buildd (Postfix, from userid 2001)
+	id 66A952A8188; Sun, 26 Apr 2009 21:46:37 +0100 (BST)</received><message-id>20090426204637.66A952A8188@concordia.buildd</message-id><date>Sun, 26 Apr 2009 21:46:37 +0100 (BST)</date><x-beenthere>ubuntu-autotest@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><precedence>list</precedence><list-id>Logs for Ubuntu test rebuilds &lt;ubuntu-autotest.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-autotest&gt;, 
+	&lt;mailto:ubuntu-autotest-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://lists.ubuntu.com/archives/ubuntu-autotest&gt;</list-archive><list-post>&lt;mailto:ubuntu-autotest@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-autotest-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-autotest&gt;,
+	&lt;mailto:ubuntu-autotest-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Sun, 26 Apr 2009 20:46:39 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>20090426204637.66A952A8188@concordia.buildd</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">Automatic build of language-pack-kde-tl_1:9.04+20090413 on concordia by<br/>sbuild/lpia 1.170.5
+Build started at 20090426-2146
+******************************************************************************
+Checking available source versions...
+Fetching source files...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Need to get 9134B of source archives.
+Get:1 <url>http://archive.internal</url> jaunty-autotest/main language-pack-kde-tl<br/>1:9.04+20090413 (dsc) [595B]
+Get:2 <url>http://archive.internal</url> jaunty-autotest/main language-pack-kde-tl<br/>1:9.04+20090413 (tar) [8539B]
+Fetched 9134B in 0s (288kB/s)
+Download complete and in download only mode
+: lpia not in arch list: all -- skipping
+******************************************************************************
+Finished at 20090426-2146
+Build needed 00:00:00, 0k disk space
+
+</para></body></message>

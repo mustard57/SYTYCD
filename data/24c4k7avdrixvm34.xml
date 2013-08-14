@@ -1,0 +1,32 @@
+<message message-id="20070903104313.7F8011A9832@eris.apache.org" list="org.apache.ofbiz.commits" id="24c4k7avdrixvm34" type="checkins" date="2007-09-03T10:43:12Z" year="2007-01-01" year-month="2007-09-01" year-month-day="2007-09-03" thread-id="24c4k7avdrixvm34"><headers><envelope-from-line>From commits-return-4400-apmail-ofbiz-commits-archive=ofbiz.apache.org@ofbiz.apache.org Mon Sep 03 10:43:35 2007</envelope-from-line><from personal="jonesde@apache.org" address="jonesde@apache.org">jonesde@apache.org</from><to personal="commits@ofbiz.apache.org" address="commits@ofbiz.apache.org">commits@ofbiz.apache.org</to><subject normal="svn commit: r572278 - /ofbiz/trunk/framework/example/testdef/tests.xml">svn commit: r572278 - /ofbiz/trunk/framework/example/testdef/tests.xml</subject><return-path>commits-return-4400-apmail-ofbiz-commits-archive=ofbiz.apache.org@ofbiz.apache.org</return-path><delivered-to>apmail-ofbiz-commits-archive@www.apache.org</delivered-to><received>(qmail 72790 invoked from network); 3 Sep 2007 10:43:34 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (140.211.11.2)
+  by minotaur.apache.org with SMTP; 3 Sep 2007 10:43:34 -0000</received><received>(qmail 19706 invoked by uid 500); 3 Sep 2007 10:43:29 -0000</received><delivered-to>apmail-ofbiz-commits-archive@ofbiz.apache.org</delivered-to><received>(qmail 19674 invoked by uid 500); 3 Sep 2007 10:43:29 -0000</received><mailing-list>contact commits-help@ofbiz.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:commits-help@ofbiz.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@ofbiz.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:commits@ofbiz.apache.org&gt;</list-post><list-id>&lt;commits.ofbiz.apache.org&gt;</list-id><reply-to>dev@ofbiz.apache.org</reply-to><delivered-to>mailing list commits@ofbiz.apache.org</delivered-to><received>(qmail 19665 invoked by uid 99); 3 Sep 2007 10:43:29 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 03 Sep 2007 03:43:29 -0700</received><x-asf-spam-status>No, hits=-100.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.3] (HELO eris.apache.org) (140.211.11.3)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 03 Sep 2007 10:43:33 +0000</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id 7F8011A9832; Mon,  3 Sep 2007 03:43:13 -0700 (PDT)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Mon, 03 Sep 2007 10:43:12 -0000</date><x-mailer>svnmailer-1.0.8</x-mailer><message-id>20070903104313.7F8011A9832@eris.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20070903104313.7F8011A9832@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: jonesde
+Date: Mon Sep  3 03:43:06 2007
+New Revision: 572278
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?rev=572278&amp;view=rev</url>
+Log:
+Updated for change in test def xml spec
+
+</para><para depth="0">Modified:
+    ofbiz/trunk/framework/example/testdef/tests.xml
+
+</para><para depth="0">Modified: ofbiz/trunk/framework/example/testdef/tests.xml
+URL: <br/><url>http://svn.apache.org/viewvc/ofbiz/trunk/framework/example/testdef/tests.xml?rev=572278&amp;r1=572277&amp;r2=572278&amp;view=diff</url> 
+==============================================================================
+--- ofbiz/trunk/framework/example/testdef/tests.xml (original)
++++ ofbiz/trunk/framework/example/testdef/tests.xml Mon Sep  3 03:43:06 2007
+@@ -23,7 +23,7 @@
+xsi:noNamespaceSchemaLocation="<url>http://ofbiz.apache.org/dtds/test-suite.xsd</url>"&gt; 
+
+</para><para depth="0">     &lt;test-case case-name="userLoginEntityXmlAssert"&gt;
+- &lt;entity-xml-assert <br/>entity-xml-url="component://example/testdef/assertdata/TestUserLoginData.xml"/&gt; 
++ &lt;entity-xml action="assert" <br/>entity-xml-url="component://example/testdef/assertdata/TestUserLoginData.xml"/&gt; 
+     &lt;/test-case&gt;
+     &lt;test-case case-name="testCreateExampleService Through Service Engine"&gt;
+         &lt;service-test service-name="testCreateExampleService"/&gt;
+
+</para></body></message>

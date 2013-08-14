@@ -1,0 +1,29 @@
+<message message-id="8AB97A4A-E7A9-11D8-B270-000393D4AB70@joar.com" list="com.omnigroup.macosx-dev" id="24cer2tyisraccwb" type="development" date="2004-08-06T15:07:17+02:00" year="2004-01-01" year-month="2004-08-01" year-month-day="2004-08-06" thread-id="24cer2tyisraccwb"><headers><envelope-from-line>From joar@joar.com  Fri Aug  6 06:07:21 2004</envelope-from-line><from personal="j o a r" address="joar@joar.com">j o a r &lt;joar@joar.com&gt;</from><to personal="Виктор Борщак" address="vctr.br@mail.ru">"Виктор Борщак" &lt;vctr.br@mail.ru&gt;</to><cc personal="macosx-dev@omnigroup.com" address="macosx-dev@omnigroup.com">macosx-dev@omnigroup.com</cc><subject normal="Applications to open a particular file type">Re: Applications to open a particular file type</subject><return-path>joar@joar.com</return-path><x-original-to>macosx-dev@omnigroup.com</x-original-to><delivered-to>macosx-dev@omnigroup.com</delivered-to><received>from joar.com (1-1-7-25a.sbi.sth.bostream.se [213.238.209.246])
+	by machop.omnigroup.com (Postfix) with ESMTP id E4272E87144
+	for &lt;macosx-dev@omnigroup.com&gt;; Fri,  6 Aug 2004 06:07:20 -0700 (PDT)</received><received>from [10.0.1.20] (account postmaster HELO [10.0.1.20])
+	by joar.com (CommuniGate Pro SMTP 4.1.8)
+	with ESMTP-TLS id 514244; Fri, 06 Aug 2004 15:07:17 +0200</received><in-reply-to>&lt;E1Bt3zJ-000ADY-00.vctr-br-mail-ru@f22.mail.ru&gt;</in-reply-to><references>&lt;E1Bt3zJ-000ADY-00.vctr-br-mail-ru@f22.mail.ru&gt;</references><mime-version>1.0 (Apple Message framework v618)</mime-version><content-type>text/plain; charset=ISO-2022-JP; delsp=yes; format=flowed</content-type><message-id>8AB97A4A-E7A9-11D8-B270-000393D4AB70@joar.com</message-id><content-transfer-encoding>7bit</content-transfer-encoding><date>Fri, 6 Aug 2004 15:07:17 +0200</date><x-mailer>Apple Mail (2.618)</x-mailer><x-beenthere>macosx-dev@omnigroup.com</x-beenthere><x-mailman-version>2.1.3</x-mailman-version><precedence>list</precedence><list-id>Developing applications for Mac OS X &lt;macosx-dev.omnigroup.com&gt;</list-id><list-unsubscribe>&lt;http://www.omnigroup.com/mailman/listinfo/macosx-dev&gt;,
+	&lt;mailto:macosx-dev-request@omnigroup.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;/mailman/archive/macosx-dev&gt;</list-archive><list-post>&lt;mailto:macosx-dev@omnigroup.com&gt;</list-post><list-help>&lt;mailto:macosx-dev-request@omnigroup.com?subject=help&gt;</list-help><list-subscribe>&lt;http://www.omnigroup.com/mailman/listinfo/macosx-dev&gt;,
+	&lt;mailto:macosx-dev-request@omnigroup.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Fri, 06 Aug 2004 13:07:22 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>8AB97A4A-E7A9-11D8-B270-000393D4AB70@joar.com</normalized-message-id><normalized-in-reply-to>E1Bt3zJ-000ADY-00.vctr-br-mail-ru@f22.mail.ru</normalized-in-reply-to><normalized-reference>E1Bt3zJ-000ADY-00.vctr-br-mail-ru@f22.mail.ru</normalized-reference></normalized-references><body type="text/plain; charset=iso-2022-jp; delsp=yes; format=flowed"><para depth="0">
+On 2004-08-06, at 14.38, Виктор Борщак wrote:
+
+</para><quote depth="1"><quotepara depth="1">How can I get a list of applications capable to open a particuar file  
+types?
+I tried hard, but still can get only the default application.
+</quotepara></quote><para depth="0">
+How about "LSCopyApplicationURLsForURL"?
+
+</para><para depth="0">"Locates all known applications suitable for opening an item designated  
+by URL."
+
+</para><para depth="0">&lt;<url>http://developer.apple.com/documentation/Carbon/Reference/</url> 
+LaunchServicesReference/index.html?<url>http://developer.apple.com/</url> 
+documentation/Carbon/Reference/LaunchServicesReference/LSRReference/ 
+function_group_1.html#//apple_ref/c/func/LSGetApplicationForInfo&gt;
+
+</para><para depth="0">It works on an URL and not a particular file type though, so perhaps it  
+will not work for you?
+
+</para><footer type="signature" depth="0" hash="6505265170495921013">j o a r
+
+</footer></body></message>

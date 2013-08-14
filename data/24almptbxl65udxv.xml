@@ -1,0 +1,97 @@
+<message message-id="20100528020312.GJ3508@fetter.org" list="org.postgresql.pgsql-hackers" id="24almptbxl65udxv" type="development" date="2010-05-27T19:03:12-07:00" year="2010-01-01" year-month="2010-05-01" year-month-day="2010-05-27" thread-id="qhfdlstzo24ey4pi"><headers><envelope-from-line>Thu May 27 18:03:36 2010</envelope-from-line><from personal="David Fetter" address="david@fetter.org">David Fetter &lt;david@fetter.org&gt;</from><to personal="Robert Haas" address="robertmhaas@gmail.com">Robert Haas &lt;robertmhaas@gmail.com&gt;</to><cc personal="Peter Eisentraut" address="peter_e@gmx.net">Peter Eisentraut &lt;peter_e@gmx.net&gt;</cc><subject normal="[HACKERS] Specification for Trusted PLs?">Re: [HACKERS] Specification for Trusted PLs?</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 70
+          for &lt;juan.avila.conrad@a.markmail.org&gt;;
+          Thu, 27 May 2010 18:03:36 -0800 (GMT-08:00)</received><received>from mx1.hub.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 7E3D13B300BA
+	for &lt;juan.avila.conrad@a.markmail.org&gt;; Thu, 27 May 2010 19:03:12 -0700 (PDT)</received><received>from postgresql.org (mail.postgresql.org [200.46.204.86])
+	by mx1.hub.org (Postfix) with ESMTP id D2FD232683D6;
+	Fri, 28 May 2010 02:03:33 +0000 (UTC)</received><received>from maia.hub.org (maia-3.hub.org [200.46.204.243])
+	by mail.postgresql.org (Postfix) with ESMTP id 2B217632D16
+	for &lt;pgsql-hackers-postgresql.org@mail.postgresql.org&gt;; Thu, 27 May 2010 23:03:22 -0300 (ADT)</received><received>from mail.postgresql.org ([200.46.204.86])
+ by maia.hub.org (mx1.hub.org [200.46.204.243]) (amavisd-maia, port 10024)
+ with ESMTP id 56912-01
+ for &lt;pgsql-hackers-postgresql.org@mail.postgresql.org&gt;;
+ Fri, 28 May 2010 02:03:13 +0000 (UTC)</received><x-greylist>from auto-whitelisted by SQLgrey-1.7.6</x-greylist><received>from fetter.org (unknown [64.81.66.25])
+	by mail.postgresql.org (Postfix) with ESMTP id C553A632B59
+	for &lt;pgsql-hackers@postgresql.org&gt;; Thu, 27 May 2010 23:03:14 -0300 (ADT)</received><received>by fetter.org (Postfix, from userid 500)
+	id BC45BFBCE43; Thu, 27 May 2010 19:03:12 -0700 (PDT)</received><date>Thu, 27 May 2010 19:03:12 -0700</date><message-id>20100528020312.GJ3508@fetter.org</message-id><references>&lt;20100521162624.GU21875@tamriel.snowman.net&gt;
+ &lt;20100521173909.GB1336@fetter.org&gt;
+ &lt;20100521174545.GV21875@tamriel.snowman.net&gt;
+ &lt;20100521175818.GB24638@fetter.org&gt;
+ &lt;AANLkTinr7UhByQm8eQwJNWMVjtkPPCxdvgHERkh302o4@mail.gmail.com&gt;
+ &lt;21876.1274466097@sss.pgh.pa.us&gt;
+ &lt;AANLkTinLAh5uFwJ5E4_K8JFrJK2TTTsVmBSdh1w8NJex@mail.gmail.com&gt;
+ &lt;1274997795.18581.52.camel@vanquo.pezone.net&gt;
+ &lt;20100527231015.GG3508@fetter.org&gt;
+ &lt;AANLkTimMuBHmb-4iSbn3S50qZLpxLlgeBU5vHnFNdpui@mail.gmail.com&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><content-disposition>inline</content-disposition><in-reply-to>&lt;AANLkTimMuBHmb-4iSbn3S50qZLpxLlgeBU5vHnFNdpui@mail.gmail.com&gt;</in-reply-to><user-agent>Mutt/1.5.20 (2009-12-10)</user-agent><x-virus-scanned>Maia Mailguard 1.0.1</x-virus-scanned><x-spam-status>No, hits=-1.107 tagged_above=-5 required=5 tests=BAYES_00=-1.9,
+ RDNS_NONE=0.793</x-spam-status><x-spam-level/><x-mailing-list>pgsql-hackers</x-mailing-list><list-archive>&lt;http://archives.postgresql.org/pgsql-hackers&gt;</list-archive><list-help>&lt;mailto:majordomo@postgresql.org?body=help&gt;</list-help><list-id>&lt;pgsql-hackers.postgresql.org&gt;</list-id><list-owner>&lt;mailto:pgsql-hackers-owner@postgresql.org&gt;</list-owner><list-post>&lt;mailto:pgsql-hackers@postgresql.org&gt;</list-post><list-subscribe>&lt;mailto:majordomo@postgresql.org?body=sub%20pgsql-hackers&gt;</list-subscribe><list-unsubscribe>&lt;mailto:majordomo@postgresql.org?body=unsub%20pgsql-hackers&gt;</list-unsubscribe><precedence>bulk</precedence><sender>pgsql-hackers-owner@postgresql.org</sender><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>20100528020312.GJ3508@fetter.org</normalized-message-id><normalized-in-reply-to>AANLkTimMuBHmb-4iSbn3S50qZLpxLlgeBU5vHnFNdpui@mail.gmail.com</normalized-in-reply-to><normalized-reference>20100521162624.GU21875@tamriel.snowman.net</normalized-reference><normalized-reference>20100521173909.GB1336@fetter.org</normalized-reference><normalized-reference>20100521174545.GV21875@tamriel.snowman.net</normalized-reference><normalized-reference>20100521175818.GB24638@fetter.org</normalized-reference><normalized-reference>AANLkTinr7UhByQm8eQwJNWMVjtkPPCxdvgHERkh302o4@mail.gmail.com</normalized-reference><normalized-reference>21876.1274466097@sss.pgh.pa.us</normalized-reference><normalized-reference>AANLkTinLAh5uFwJ5E4_K8JFrJK2TTTsVmBSdh1w8NJex@mail.gmail.com</normalized-reference><normalized-reference>1274997795.18581.52.camel@vanquo.pezone.net</normalized-reference><normalized-reference>20100527231015.GG3508@fetter.org</normalized-reference><normalized-reference>AANLkTimMuBHmb-4iSbn3S50qZLpxLlgeBU5vHnFNdpui@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On Thu, May 27, 2010 at 09:51:30PM -0400, Robert Haas wrote:
+</para><quote depth="1"><quotepara depth="1">On Thu, May 27, 2010 at 7:10 PM, David Fetter &lt;<email>david@fetter.org</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2">On Fri, May 28, 2010 at 01:03:15AM +0300, Peter Eisentraut wrote:
+</quotepara><quote depth="3"><quotepara depth="3">On fre, 2010-05-21 at 14:22 -0400, Robert Haas wrote:
+</quotepara><quote depth="4"><quotepara depth="4">On Fri, May 21, 2010 at 2:21 PM, Tom Lane &lt;<email>tgl@sss.pgh.pa.us</email>&gt; wrote:
+</quotepara><quote depth="5"><quotepara depth="5">Robert Haas &lt;<email>robertmhaas@gmail.com</email>&gt; writes:
+</quotepara><quote depth="6"><quotepara depth="6">So... can we get back to coming up with a reasonable
+definition,
+</quotepara></quote><quotepara depth="5">
+(1) no access to system calls (including file and network
+I/O)
+
+</quotepara><quotepara depth="5">(2) no access to process memory, other than variables defined
+within the PL.
+
+</quotepara><quotepara depth="5">What else?
+</quotepara></quote><quotepara depth="4">
+Doesn't subvert the general PostgreSQL security mechanisms?
+ Not sure how to formulate that.
+</quotepara></quote><quotepara depth="3">
+Succinctly: A trusted language does not grant access to data that
+the user would otherwise not have.
+</quotepara></quote><quotepara depth="2">
+That's a great definition from a point of view of understanding by
+human beings.  A whitelist system will work better from the point
+of automating tests which, while they couldn't conclusively prove
+that something was actually this way, could go a long way toward
+making sure that PLs didn't regress into untrusted territory.
+</quotepara></quote><quotepara depth="1">
+You haven't presented any sort of plan for how such automated
+testing would actually work.  Perhaps if you presented the plan
+first we could think about how to provide for its needs.  I'm
+generally of the opinion that it's not possible to do automated
+testing for security vulnerabilities (beyond crash testing, perhaps)
+but if you have a good idea let's talk about it.
+</quotepara></quote><para depth="0">
+I don't know about a *good* idea, but here's the one I've got.
+
+</para><para depth="0">1.  Make a whitelist.  This is what needs to work in order for a
+language to be a fully functional trusted PL.
+
+</para><para depth="0">2.  Write tests that check that each thing on the whitelist works as
+advertised.  These are language specific.
+
+</para><para depth="0">3.  (the un-fun part) Write tests which attempt to do things not in
+the whitelist.  We can start from the vulnerabilities so far
+discovered.
+
+</para><para depth="0">4.  Each time a vulnerability is discovered in one language, write
+something that tests for it in the other languages.
+
+</para><para depth="0">I get that this isn't going to ensure that the access control is
+perfect.  It's more a backstop against regressions of previously
+function access controls.
+
+</para><para depth="0">Cheers,
+David.
+</para><footer type="signature" depth="0" hash="17095077016047925249">-- 
+David Fetter &lt;<email>david@fetter.org</email>&gt; <url>http://fetter.org/</url>
+Phone: +1 415 235 3778  AIM: dfetter666  Yahoo!: dfetter
+Skype: davidfetter      XMPP: <email>david.fetter@gmail.com</email>
+iCal: webcal://www.tripit.com/feed/ical/people/david74/tripit.ics
+
+</footer><para depth="0">Remember to vote!
+Consider donating to Postgres: <url>http://www.postgresql.org/about/donate</url>
+
+</para><footer type="list-management" depth="0">-- 
+Sent via pgsql-hackers mailing list (<email>pgsql-hackers@postgresql.org</email>)
+To make changes to your subscription:
+<url>http://www.postgresql.org/mailpref/pgsql-hackers</url>
+</footer></body></message>

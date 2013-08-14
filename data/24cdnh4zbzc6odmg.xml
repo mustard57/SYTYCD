@@ -1,0 +1,16 @@
+<message message-id="20070129083824.27498.qmail@netbeans.org" list="org.netbeans.openide.issues" id="24cdnh4zbzc6odmg" type="bugs" date="2007-01-29T08:38:24Z" year="2007-01-01" year-month="2007-01-01" year-month-day="2007-01-29" thread-id="tvmdsva3qfjrxpiq"><headers><envelope-from-line>From issues@openide.netbeans.org Mon Jan 29 02:46:36 2007</envelope-from-line><from personal="janie@netbeans.org" address="janie@netbeans.org">janie@netbeans.org</from><to personal="issues@openide.netbeans.org" address="issues@openide.netbeans.org">issues@openide.netbeans.org</to><subject normal="[Issue 93347] After changing source directory a java.lang.reflect.UndeclaredThrowableException exception has occurred">[Issue 93347]  After changing source directory a java.lang.reflect.UndeclaredThrowableException exception has occurred</subject><return-path>root@netbeans.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><mailing-list>contact issues-help@openide.netbeans.org; run by ezmlm</mailing-list><delivered-to>mailing list issues@openide.netbeans.org</delivered-to><received>(qmail 27499 invoked by uid 5000); 29 Jan 2007 08:38:24 -0000</received><date>29 Jan 2007 08:38:24 -0000</date><message-id>20070129083824.27498.qmail@netbeans.org</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20070129083824.27498.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=93347</url>
+
+</para><para depth="0">User janie changed the following:
+
+</para><para depth="0">                What    |Old value                 |New value
+================================================================================
+             Assigned to|issues@ide                |dsimonek
+</para><para depth="0">--------------------------------------------------------------------------------
+               Component|ide                       |openide
+</para><para depth="0">--------------------------------------------------------------------------------
+              QA contact|issues@ide                |issues@openide
+</para><footer type="noise" depth="0">--------------------------------------------------------------------------------
+
+</footer></body></message>

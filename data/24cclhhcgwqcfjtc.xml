@@ -1,0 +1,63 @@
+<message message-id="Pine.LNX.4.33.0110231617190.26195-100000@warbird.moongroup.org" list="com.redhat.redhat-list" id="24cclhhcgwqcfjtc" type="general" date="2001-10-23T16:17:51-04:00" year="2001-01-01" year-month="2001-10-01" year-month-day="2001-10-23" thread-id="zumk5ptp3owydaf4"><headers><envelope-from-line>From mail@redhat.com  Tue Oct 23 16:17:32 2001</envelope-from-line><from personal="Chuck Mead" address="csm@MoonGroup.com">Chuck Mead &lt;csm@MoonGroup.com&gt;</from><to personal="redhat-list@redhat.com" address="redhat-list@redhat.com">redhat-list@redhat.com</to><subject normal="Kernel Upgrade on 7.2 with ext3 file system">Re: Kernel Upgrade on 7.2 with ext3 file system</subject><return-path>mail@redhat.com</return-path><delivered-to>redhat-list@listman.redhat.com</delivered-to><received>from int-mx1.corp.redhat.com (unknown [172.16.44.254])
+	by listman.redhat.com (Postfix) with ESMTP id 38A3E2F3E9
+	for &lt;redhat-list@listman.redhat.com&gt;; Tue, 23 Oct 2001 16:17:32 -0400 (EDT)</received><received>from mail.redhat.com (mail.redhat.com [199.183.24.239])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id f9NKHWN21697
+	for &lt;redhat-list@listman.redhat.com&gt;; Tue, 23 Oct 2001 16:17:32 -0400</received><received>(from mail@localhost)
+	by mail.redhat.com (8.11.0/8.8.7) id f9NKHWW20140
+	for redhat-list@listman.redhat.com; Tue, 23 Oct 2001 16:17:32 -0400</received><received>from varmint.moongroup.com (varmint.moongroup.com [216.228.97.23])
+	by mail.redhat.com (8.11.0/8.8.7) with ESMTP id f9NKHVg20136
+	for &lt;redhat-list@redhat.com&gt;; Tue, 23 Oct 2001 16:17:31 -0400</received><received>from gateway.moongroup.org (rdu26-229-191.nc.rr.com [66.26.229.191])
+	by varmint.moongroup.com (Postfix) with ESMTP id BD8772FAE8
+	for &lt;redhat-list@redhat.com&gt;; Tue, 23 Oct 2001 16:17:29 -0400 (EDT)</received><received>from warbird.moongroup.org (unknown [192.168.0.102])
+	by gateway.moongroup.org (Postfix) with ESMTP id 75088A4D9
+	for &lt;redhat-list@redhat.com&gt;; Tue, 23 Oct 2001 16:18:11 -0400 (EDT)</received><received>from localhost (localhost.localdomain [127.0.0.1])
+	by warbird.moongroup.org (Postfix) with ESMTP id 788081364AA
+	for &lt;redhat-list@redhat.com&gt;; Tue, 23 Oct 2001 16:17:53 -0400 (EDT)</received><date>Tue, 23 Oct 2001 16:17:51 -0400 (EDT)</date><in-reply-to>&lt;Pine.LNX.4.33.0110231117350.2454-100000@dell&gt;</in-reply-to><message-id>Pine.LNX.4.33.0110231617190.26195-100000@warbird.moongroup.org</message-id><x-warning-1>Spammers extracting addresses from this message will definitely want to include the following addresses:</x-warning-1><x-warning-2>uce@ftc.gov - report@fraud.org - spamrecycle@ChooseYourMail.com</x-warning-2><x-warning-3>rbl@mail-abuse.org - rss@mail-abuse.org - dul@mail-abuse.org</x-warning-3><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><x-loop>redhat-list@redhat.com</x-loop><sender>redhat-list-admin@redhat.com</sender><errors-to>redhat-list-admin@redhat.com</errors-to><x-beenthere>redhat-list@redhat.com</x-beenthere><x-mailman-version>2.0.1</x-mailman-version><precedence>bulk</precedence><reply-to>redhat-list@redhat.com</reply-to><x-reply-to>&lt;csm@MoonGroup.com&gt;</x-reply-to><list-help>&lt;mailto:redhat-list-request@redhat.com?subject=help&gt;</list-help><list-post>&lt;mailto:redhat-list@redhat.com&gt;</list-post><list-subscribe>&lt;https://listman.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><list-id>General Red Hat discussion list &lt;redhat-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://listman.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://listman.redhat.com/pipermail/redhat-list/&gt;</list-archive></headers><normalized-references><normalized-message-id>Pine.LNX.4.33.0110231617190.26195-100000@warbird.moongroup.org</normalized-message-id><normalized-in-reply-to>Pine.LNX.4.33.0110231117350.2454-100000@dell</normalized-in-reply-to></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+</para><para depth="0">On Tue, 23 Oct 2001, rpjday posted the following:
+
+</para><para depth="0">r&gt;On Tue, 23 Oct 2001, Jeff Lane wrote:
+r&gt;
+r&gt;&gt; Not to add a me-too, but I had no problems either.  However, I didnt
+r&gt;&gt; exactly upgrade my kernel.  I started with the 2.4.7 from Roswell2, adn
+r&gt;&gt; then upgraded to the kernel.org 2.4.10.  (I normally keep known working
+r&gt;&gt; kernels, and my systems usually end up with 5 different bootable kernels.)
+r&gt;&gt;
+r&gt;&gt; The only thing I am missing is ext3 support under 2.4.10, but that is
+r&gt;&gt; because I didnt patch the kernel to include it.... however, since I am
+r&gt;&gt; using ext3 on this machine, the 2.4.10 kernel will mount all the
+r&gt;&gt; filesystems as ext2 with no problems at all. (other than the annoying
+r&gt;&gt; failed messages at boot that say module ext3 doesnt exisit).
+r&gt;&gt;
+r&gt;&gt; cheers
+r&gt;&gt;
+r&gt;&gt; On Tue, 23 Oct 2001, Kandy Danner wrote:
+r&gt;&gt;
+r&gt;&gt; &gt;
+r&gt;&gt; &gt; I was wondering if anyone has successfully done a 2.4.10 kernel upgrade
+r&gt;&gt; &gt; on 7.2 with an ext3 filesystem.
+r&gt;
+r&gt;by the way, the patch is at www.uow.edu.au/~andrewm/linux/ext3.  you
+r&gt;should apply the appropriate patch to a pristine version of the 2.4.10
+r&gt;kernel source.
+
+</para><para depth="0">All of the ac patches have the ext3 code built in... 
+
+</para><para depth="0">- -- 
+csm
+Free Dmitry!
+Boycott Adobe!
+Repeal the DMCA!
+Stop the SSSCA!
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see <url>http://www.gnupg.org</url>
+
+</para><para depth="0">iEYEARECAAYFAjvV0HEACgkQv6Gjsf2pQ0qrjgCfcx/ClbJ3etbnakW2q9ZDFUD0
+l7UAn3rZFiQgNfjwCsAEqjKp0pgrsASF
+=tcrK
+-----END PGP SIGNATURE-----
+</para></body></message>

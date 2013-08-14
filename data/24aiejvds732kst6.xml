@@ -1,0 +1,39 @@
+<message message-id="1273237422.30501.1308778847954.JavaMail.tomcat@hel.zones.apache.org" list="org.apache.ws.wss4j-dev" id="24aiejvds732kst6" type="bugs" date="2011-06-22T13:40:46.787743-08:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-22" thread-id="maloc5xmvuyy3vuw"><headers><envelope-from-line>Wed Jun 22 13:41:09 2011</envelope-from-line><from personal="Andreas Veithen (JIRA)" address="jira@apache.org">"Andreas Veithen (JIRA)" &lt;jira@apache.org&gt;</from><to personal="dev@ws.apache.org" address="dev@ws.apache.org">dev@ws.apache.org</to><subject normal="[jira] [Work started] (AXIOM-354) Potential class loader leak caused by the thread local in org.apache.axiom.util.UIDGenerator">[jira] [Work started] (AXIOM-354) Potential class loader leak caused by the thread local in org.apache.axiom.util.UIDGenerator</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 612
+          for &lt;mauricio.beard.pittman@a.markmail.org&gt;;
+          Wed, 22 Jun 2011 13:41:09 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 5E1B77AD0001
+	for &lt;mauricio.beard.pittman@a.markmail.org&gt;; Wed, 22 Jun 2011 14:40:46 -0700 (PDT)</received><received>(qmail 27456 invoked by uid 500); 22 Jun 2011 21:41:09 -0000</received><mailing-list>contact dev-help@ws.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@ws.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@ws.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@ws.apache.org&gt;</list-post><list-id>&lt;dev.ws.apache.org&gt;</list-id><reply-to>dev@ws.apache.org</reply-to><delivered-to>mailing list dev@ws.apache.org</delivered-to><received>(qmail 27332 invoked by uid 99); 22 Jun 2011 21:41:09 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 22 Jun 2011 21:41:09 +0000</received><x-asf-spam-status>No, hits=-2000.0 required=5.0
+	tests=ALL_TRUSTED,T_RP_MATCHES_RCVD</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.116] (HELO hel.zones.apache.org) (140.211.11.116)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 22 Jun 2011 21:41:08 +0000</received><received>from hel.zones.apache.org (hel.zones.apache.org [140.211.11.116])
+	by hel.zones.apache.org (Postfix) with ESMTP id E9D2C429F7B
+	for &lt;dev@ws.apache.org&gt;; Wed, 22 Jun 2011 21:40:47 +0000 (UTC)</received><date>Wed, 22 Jun 2011 21:40:47 +0000 (UTC)</date><message-id>1273237422.30501.1308778847954.JavaMail.tomcat@hel.zones.apache.org</message-id><in-reply-to>&lt;4298255.239191294581765819.JavaMail.jira@thor&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-jira-fingerprint>30527f35849b9dde25b450d4833f0394</x-jira-fingerprint></headers><normalized-references><normalized-message-id>1273237422.30501.1308778847954.JavaMail.tomcat@hel.zones.apache.org</normalized-message-id><normalized-in-reply-to>4298255.239191294581765819.JavaMail.jira@thor</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+     [<br/><url>https://issues.apache.org/jira/browse/AXIOM-354?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url><br/>]
+
+</para><para depth="0">Work on AXIOM-354 started by Andreas Veithen.
+
+</para><quote depth="1"><quotepara depth="1">Potential class loader leak caused by the thread local in<br/>org.apache.axiom.util.UIDGenerator
+</quotepara><quotepara depth="1">--------------------------------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: AXIOM-354
+                URL: <url>https://issues.apache.org/jira/browse/AXIOM-354</url>
+            Project: Axiom
+         Issue Type: Bug
+         Components: API
+   Affects Versions: 1.2.10
+           Reporter: Andreas Veithen
+           Assignee: Andreas Veithen
+            Fix For: 1.2.12
+
+</quotepara><quotepara depth="1">UIDGenerator uses a ThreadLocal with a value class that belongs to Axiom (namely<br/>UIDGeneratorImpl). Since the ThreadLocal is never cleaned up explicitly (doing<br/>that would break the UIDGenerator), this may cause a class loader leak (i.e. in<br/>a Web application, it may prevent the class loader from being garbage collected<br/>when the application is stopped). Since UIDGeneratorImpl basically stores 3<br/>values of type long, it should be easy to refactor the code so that the value<br/>class ThreadLocal is not loaded from the application class loader (e.g. by using<br/>long[] as value class). However, I first need to confirm that there is really a<br/>class loader leak here.
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="15849834374859606468">--
+This message is automatically generated by JIRA.
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@ws.apache.org</email>
+For additional commands, e-mail: <email>dev-help@ws.apache.org</email>
+
+</footer></body></message>

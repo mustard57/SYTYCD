@@ -1,0 +1,79 @@
+<message message-id="30759881.1165914682341.JavaMail.jira@brutus" list="org.apache.myfaces.dev" id="24bwqpxjjst6uirt" type="bugs" date="2006-12-12T01:11:22-08:00" year="2006-01-01" year-month="2006-12-01" year-month-day="2006-12-12" thread-id="bqsr3zwbojrkn6oe"><headers><envelope-from-line>From dev-return-19394-apmail-myfaces-dev-archive=myfaces.apache.org@myfaces.apache.org Tue Dec 12 09:11:48 2006</envelope-from-line><from personal="Mario Ivankovits (JIRA)" address="dev@myfaces.apache.org">"Mario Ivankovits (JIRA)" &lt;dev@myfaces.apache.org&gt;</from><to personal="dev@myfaces.apache.org" address="dev@myfaces.apache.org">dev@myfaces.apache.org</to><subject normal="[jira] Commented: (TOMAHAWK-819) Re-enabled autogeneration of components code, fixed bug in commandButton/commandLink, adding several valueBindings to components">[jira] Commented: (TOMAHAWK-819) Re-enabled autogeneration of
+ components code, fixed bug in commandButton/commandLink, adding several
+ valueBindings to components</subject><return-path>dev-return-19394-apmail-myfaces-dev-archive=myfaces.apache.org@myfaces.apache.org</return-path><delivered-to>apmail-myfaces-dev-archive@www.apache.org</delivered-to><received>(qmail 1411 invoked from network); 12 Dec 2006 09:11:45 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (140.211.11.2)
+  by minotaur.apache.org with SMTP; 12 Dec 2006 09:11:45 -0000</received><received>(qmail 4102 invoked by uid 500); 12 Dec 2006 09:11:51 -0000</received><delivered-to>apmail-myfaces-dev-archive@myfaces.apache.org</delivered-to><received>(qmail 4067 invoked by uid 500); 12 Dec 2006 09:11:51 -0000</received><mailing-list>contact dev-help@myfaces.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@myfaces.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@myfaces.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@myfaces.apache.org&gt;</list-post><list-id>&lt;dev.myfaces.apache.org&gt;</list-id><reply-to>"MyFaces Development" &lt;dev@myfaces.apache.org&gt;</reply-to><delivered-to>mailing list dev@myfaces.apache.org</delivered-to><received>(qmail 4056 invoked by uid 99); 12 Dec 2006 09:11:51 -0000</received><received>from herse.apache.org (HELO herse.apache.org) (140.211.11.133)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 12 Dec 2006 01:11:51 -0800</received><x-asf-spam-status>No, hits=0.0 required=10.0
+	tests=</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.4] (HELO brutus.apache.org) (140.211.11.4)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 12 Dec 2006 01:11:42 -0800</received><received>from brutus (localhost [127.0.0.1])
+	by brutus.apache.org (Postfix) with ESMTP id 53D6B71413F
+	for &lt;dev@myfaces.apache.org&gt;; Tue, 12 Dec 2006 01:11:22 -0800 (PST)</received><message-id>30759881.1165914682341.JavaMail.jira@brutus</message-id><date>Tue, 12 Dec 2006 01:11:22 -0800 (PST)</date><in-reply-to>&lt;17372876.1165911741139.JavaMail.jira@brutus&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>30759881.1165914682341.JavaMail.jira@brutus</normalized-message-id><normalized-in-reply-to>17372876.1165911741139.JavaMail.jira@brutus</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">[ <br/><url>http://issues.apache.org/jira/browse/TOMAHAWK-819?page=comments#action_12457638</url> <br/>] 
+
+</para><para depth="0">Mario Ivankovits commented on TOMAHAWK-819:
+-------------------------------------------
+
+</para><para depth="0">We wont remove them from tomahawk without a sufficient dependency period, no <br/>worry :-) 
+
+</para><quote depth="1"><quotepara depth="1">BUT there is NO method how to issue different modes of authority roles for <br/>different components in the same page (let say to display div tag when user has <br/>not required role). 
+</quotepara></quote><para depth="0">
+Hmmm ...... I dont understand.
+
+</para><para depth="0">As far as I know you can simply use the "rendered=#{}" way to determine if a <br/>component should be rendered, based on the security el. 
+
+</para><quote depth="1"><quotepara depth="1">Re-enabled autogeneration of components code, fixed bug in <br/>commandButton/commandLink, adding several valueBindings to components 
+<br/>-------------------------------------------------------------------------------------------------------------------------------- 
+
+</quotepara><quotepara depth="1">                Key: TOMAHAWK-819
+                URL: <url>http://issues.apache.org/jira/browse/TOMAHAWK-819</url>
+            Project: MyFaces Tomahawk
+         Issue Type: Improvement
+   Affects Versions: 1.1.5-SNAPSHOT
+           Reporter: Zdenek Sochor
+           Priority: Critical
+        Attachments: build-tools.patch, tomahawk.patch
+
+</quotepara><quotepara depth="1">I wanted to expand functionality of role management in components, <br/>(TOMAHAWK-489), but i ended in re-enabling autogeneration of code. 
+This should simplify adding of properties and gettter/setter with save/restore <br/>state of components INCLUDING fixing several components which 
+didn't take EL values for several properties, for which it should have.
+Autogeneration is based on old maven build tools.
+Currently (in patch), autogeneration for TOMAHAWK components is w/o error (at <br/>least in components with XML definition), 
+BUT autogenerated Myfaces CORE components breaks several examples (MYFACES-1509)
+  - this can be fixed by reverting of myfaces-api changes after generation.
+After reverting core, autogenerated Tomahawk classes can be used in final <br/>snapshot. 
+I added support for role management of enable/disableOnUserRole:
+It supports 3 logical functions:
+- logical AND (user has to be in ALL roles specified)
+- logical OR (user has to be in ONE of roles specified),
+	this is default mode (and only 1 currently supported in Tomahawk)
+- logical NOT (user MUST NOT be in any roles specified)
+If none/attribute not specified or other String used, it defaults to OR <br/>function. 
+This extension to functionality takes in account 'disabled' and 'rendered' <br/>attributes: 
+- disabled="true" take precedence in case of 'enabledOnUserRole'
+- 'rendered' value is taken in account AFTER evaluating roles
+Examples:
+&lt;t:commandButton value="value" enabledOnUserRole="role1,role2" <br/>roleSelectionMode="not" disabled="false" /&gt; 
+[to be enabled, user MUST NOT be in both role1 AND role2]
+&lt;t:commandButton value="value" enabledOnUserRole="role1,role2" <br/>roleSelectionMode="not" disabled="true" /&gt; 
+[always disabled]
+&lt;t:commandButton value="value" visibleOnUserRole="role1,role2,role3" <br/>roleSelectionMode="and" /&gt; 
+[to be visible, user MUST BE in all roles - role1, role2 AND role3]
+&lt;t:commandButton value="value" visibleOnUserRole="role1,role2" <br/>roleSelectionMode="and" rendered="false"/&gt; 
+[never rendered]
+&lt;t:commandButton value="value" enabledOnUserRole="role1,role2,role3" <br/>roleSelectionMode="or" /&gt; 
+EQUALS
+&lt;t:commandButton value="value" enabledOnUserRole="role1,role2,role3"/&gt;
+[to be enabled, user MUST BE in one or more roles from list (role1, role2, <br/>role3)] 
+-------------------------------------------------------------
+Hidden bug in commandButton/commandLink - fixed
+-------------------------------------------------------------
+Note on bug:
+EnabledOnUserRole is currently never used in HtmlCommandButton (tomahawk 1.1.5 <br/>in svn) 
+-- i addded support for it (method isDisabled())
+</quotepara></quote><footer type="signature" hash="5229058166721915630" depth="0">
+-- 
+This message is automatically generated by JIRA.
+-
+If you think it was sent incorrectly contact one of the administrators: <br/><url>http://issues.apache.org/jira/secure/Administrators.jspa</url> 
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer></body></message>

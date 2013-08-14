@@ -1,0 +1,55 @@
+<message message-id="11332409-9422-4110-a4f6-c317f92f2cf6@x1g2000prh.googlegroups.com" list="com.googlegroups.google-base-data-api" id="24cypg264kumva52" type="development" date="2008-11-04T11:52:46.578876-08:00" year="2008-01-01" year-month="2008-11-01" year-month-day="2008-11-04" thread-id="7vt6s6znffqjfedx"><headers><envelope-from-line>Tue Nov 04 11:53:09 2008</envelope-from-line><from personal="icebackhaz" address="icebackhaz@gmail.com">icebackhaz &lt;icebackhaz@gmail.com&gt;</from><to personal="Google Base Data API" address="Google-Base-data-API@googlegroups.com">Google Base Data API &lt;Google-Base-data-API@googlegroups.com&gt;</to><subject normal="[Google-Base-API] Re: Creating Item Types Programatically">[Google-Base-API] Re: Creating Item Types Programatically</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 655
+          for &lt;delia.trevino.griffin@a.markmail.org&gt;;
+          Tue, 4 Nov 2008 11:53:09 -0800 (GMT-08:00)</received><received>from mail-gx0-f62.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 178033B3022C
+	for &lt;delia.trevino.griffin@a.markmail.org&gt;; Tue,  4 Nov 2008 11:52:46 -0800 (PST)</received><received>by gxk22 with SMTP id 22so5031032gxk.9
+        for &lt;delia.trevino.griffin@a.markmail.org&gt;; Tue, 04 Nov 2008 11:53:08 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :mime-version:content-type:content-transfer-encoding:received:date
+         :in-reply-to:x-ip:references:user-agent:x-http-useragent:message-id
+         :subject:from:to:reply-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        bh=X9TQLGdUi3AHLlYF/gZjsiMPupAn7c0XChnLNe4mhLk=;
+        b=Grq3a3EZAEQntIpMFWFD73373f70VWK4YKxmpX8Dj0ZDV9px7aB1mNI5NNkJvTgYOO
+         RrLFmekBzNF4SIKEnjjnRME+ZDGdn1HgYfzGVDp4OswUNoFxE0/4I4sle1dwj7TdaVOs
+         FFq1p23wxQ8sIkr3/f382x3Zzm5/2iK4Jsy4g=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:mime-version:content-type
+         :content-transfer-encoding:date:in-reply-to:x-ip:references
+         :user-agent:x-http-useragent:message-id:subject:from:to:reply-to
+         :sender:precedence:x-google-loop:mailing-list:list-id:list-post
+         :list-help:list-unsubscribe:x-beenthere-env:x-beenthere;
+        b=O3O8rRJJ/8WLrAgIq4HgDH50gtRAXW8k9CxCbs/MfioRxrpybUUBycnXfWjud5KkuH
+         l61Na/TDxhA1RNaFf0MX6LWeM1Lm6sKO/bZIwbtNaAQlpe6322iFn5DSIU7GELJvJxD6
+         Pc0zjmR/7Li14+PLfbY2uqHc+3hNa/3TDAumM=</domainkey-signature><received>by 10.100.111.15 with SMTP id j15mr131375anc.11.1225828376753;
+        Tue, 04 Nov 2008 11:52:56 -0800 (PST)</received><received>by 10.106.66.4 with SMTP id o4gr3602pra.0;
+	Tue, 04 Nov 2008 11:52:48 -0800 (PST)</received><x-sender>icebackhaz@gmail.com</x-sender><x-apparently-to>Google-Base-data-API@googlegroups.com</x-apparently-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><received>by 10.100.166.9 with SMTP id o9mr135ane.0.1225828368442; Tue, 04 Nov  2008 11:52:48 -0800 (PST)</received><date>Tue, 4 Nov 2008 11:52:48 -0800 (PST)</date><in-reply-to>&lt;43b5def1-f9eb-445e-bbb0-764f03d08047@v72g2000hsv.googlegroups.com&gt;</in-reply-to><x-ip>63.253.45.141</x-ip><references>&lt;43b5def1-f9eb-445e-bbb0-764f03d08047@v72g2000hsv.googlegroups.com&gt;</references><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.3)  Gecko/2008092510 Ubuntu/8.04 (hardy) Firefox/3.0.3,gzip(gfe),gzip(gfe)</x-http-useragent><message-id>11332409-9422-4110-a4f6-c317f92f2cf6@x1g2000prh.googlegroups.com</message-id><reply-to>Google-Base-data-API@googlegroups.com</reply-to><sender>Google-Base-data-API@googlegroups.com</sender><precedence>bulk</precedence><x-google-loop>groups</x-google-loop><mailing-list>list Google-Base-data-API@googlegroups.com;
+	contact Google-Base-data-API+owner@googlegroups.com</mailing-list><list-id>&lt;Google-Base-data-API.googlegroups.com&gt;</list-id><list-post>&lt;mailto:Google-Base-data-API@googlegroups.com&gt;</list-post><list-help>&lt;mailto:Google-Base-data-API+help@googlegroups.com&gt;</list-help><list-unsubscribe>&lt;http://googlegroups.com/group/Google-Base-data-API/subscribe&gt;,
+	&lt;mailto:Google-Base-data-API+unsubscribe@googlegroups.com&gt;</list-unsubscribe><x-beenthere-env>Google-Base-data-API@googlegroups.com</x-beenthere-env><x-beenthere>Google-Base-data-API@googlegroups.com</x-beenthere></headers><normalized-references><normalized-message-id>11332409-9422-4110-a4f6-c317f92f2cf6@x1g2000prh.googlegroups.com</normalized-message-id><normalized-in-reply-to>43b5def1-f9eb-445e-bbb0-764f03d08047@v72g2000hsv.googlegroups.com</normalized-in-reply-to><normalized-reference>43b5def1-f9eb-445e-bbb0-764f03d08047@v72g2000hsv.googlegroups.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+Since it isn't a database you can create items of any structure you
+would like.  entry.setTextAttribute(tag,value) essentially.
+
+</para><para depth="0">On Oct 30, 1:33 pm, Mats &lt;<email>m.hellst...@gmail.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">Hi all,
+
+</quotepara><quotepara depth="1">I've started playing around with Google Base and the .NET API today.
+I'm planning to build an application where I want to persist objects
+to Google Base. The thing is that I don't know exactly how the object
+will look when I'm saving it, would it be possible to create objects
+on the fly (sample code would be much appreciated :-) ) or am I
+missing some other concept here?
+
+</quotepara><quotepara depth="1">Greetings,
+
+</quotepara><quotefooter type="signature" depth="1" hash="8416188838093142994">Mats
+</quotefooter></quote><footer type="list-management" depth="0">--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups<br/>"Google Base Data API" group.
+To post to this group, send email to <email>Google-Base-data-API@googlegroups.com</email>
+To unsubscribe from this group, send email to<br/>Google-Base-data-API+<email>unsubscribe@googlegroups.com</email>
+For more options, visit this group at<br/><url>http://groups.google.com/group/Google-Base-data-API?hl=en</url>
+-~----------~----~----~----~------~----~------~--~---
+
+</footer></body></message>

@@ -1,0 +1,127 @@
+<message message-id="20080325160341.DE7E31A9838@eris.apache.org" list="org.apache.incubator.stdcxx-commits" id="24ayy27wpf5ptvlb" type="checkins" date="2008-03-25T16:03:39Z" year="2008-01-01" year-month="2008-03-01" year-month-day="2008-03-25" thread-id="24ayy27wpf5ptvlb"><headers><envelope-from-line>Tue Mar 25 09:04:03 2008</envelope-from-line><from personal="faridz@apache.org" address="faridz@apache.org">faridz@apache.org</from><to personal="commits@stdcxx.apache.org" address="commits@stdcxx.apache.org">commits@stdcxx.apache.org</to><subject normal="svn commit: r640873 - in /stdcxx/branches/4.2.x/etc/config/src: EXCEPTION_SPECIFICATION_ON_NEW.cpp ICONV.cpp NEWLINE.cpp NEW_OFLOW_SAFE.cpp NEW_THROWS.cpp VA_LIST.cpp VSNPRINTF_RETURN.cpp">svn commit: r640873 - in /stdcxx/branches/4.2.x/etc/config/src: EXCEPTION_SPECIFICATION_ON_NEW.cpp ICONV.cpp NEWLINE.cpp NEW_OFLOW_SAFE.cpp NEW_THROWS.cpp VA_LIST.cpp VSNPRINTF_RETURN.cpp</subject><received>from hermes.apache.org ([140.211.11.2])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 510
+          for &lt;tamika.jones.tanner@a.markmail.org&gt;;
+          Tue, 25 Mar 2008 09:04:03 -0700 (PDT)</received><received>(qmail 55535 invoked by uid 500); 25 Mar 2008 16:04:01 -0000</received><mailing-list>contact commits-help@stdcxx.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:commits-help@stdcxx.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@stdcxx.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:commits@stdcxx.apache.org&gt;</list-post><list-id>&lt;commits.stdcxx.apache.org&gt;</list-id><reply-to>dev@stdcxx.apache.org</reply-to><delivered-to>mailing list commits@stdcxx.apache.org</delivered-to><received>(qmail 55520 invoked by uid 99); 25 Mar 2008 16:04:01 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 25 Mar 2008 09:04:01 -0700</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.3] (HELO eris.apache.org) (140.211.11.3)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 25 Mar 2008 16:03:30 +0000</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id DE7E31A9838; Tue, 25 Mar 2008 09:03:41 -0700 (PDT)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Tue, 25 Mar 2008 16:03:39 -0000</date><x-mailer>svnmailer-1.0.8</x-mailer><message-id>20080325160341.DE7E31A9838@eris.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20080325160341.DE7E31A9838@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: faridz
+Date: Tue Mar 25 09:03:37 2008
+New Revision: 640873
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?rev=640873&amp;view=rev</url>
+Log:
+2008-03-25  Farid Zaripov  &lt;<email>farid_zaripov@epam.com</email>&gt;
+
+</para><para depth="0">	Merged r640859 from trunk.
+	* etc/config/src/EXCEPTION_SPECIFICATION_ON_NEW.cpp: #included &lt;stddef.h&gt; for<br/>size_t type.
+	* etc/config/src/ICONV.cpp: Ditto.
+	* etc/config/src/NEW_OFLOW_SAFE.cpp: Ditto.
+	* etc/config/src/NEW_THROWS.cpp: Ditto.
+	* etc/config/src/NEWLINE.cpp: Ditto.
+	* etc/config/src/VA_LIST.cpp: Ditto.
+	* etc/config/src/VSNPRINTF_RETURN.cpp: Ditto.
+
+</para><para depth="0">Modified:
+    stdcxx/branches/4.2.x/etc/config/src/EXCEPTION_SPECIFICATION_ON_NEW.cpp
+    stdcxx/branches/4.2.x/etc/config/src/ICONV.cpp
+    stdcxx/branches/4.2.x/etc/config/src/NEWLINE.cpp
+    stdcxx/branches/4.2.x/etc/config/src/NEW_OFLOW_SAFE.cpp
+    stdcxx/branches/4.2.x/etc/config/src/NEW_THROWS.cpp
+    stdcxx/branches/4.2.x/etc/config/src/VA_LIST.cpp
+    stdcxx/branches/4.2.x/etc/config/src/VSNPRINTF_RETURN.cpp
+
+</para><para depth="0">Modified:<br/>stdcxx/branches/4.2.x/etc/config/src/EXCEPTION_SPECIFICATION_ON_NEW.cpp
+URL:<br/><url>http://svn.apache.org/viewvc/stdcxx/branches/4.2.x/etc/config/src/EXCEPTION_SPECIFICATION_ON_NEW.cpp?rev=640873&amp;r1=640872&amp;r2=640873&amp;view=diff</url>
+==============================================================================
+--- stdcxx/branches/4.2.x/etc/config/src/EXCEPTION_SPECIFICATION_ON_NEW.cpp<br/>(original)
++++ stdcxx/branches/4.2.x/etc/config/src/EXCEPTION_SPECIFICATION_ON_NEW.cpp Tue<br/>Mar 25 09:03:37 2008
+@@ -23,6 +23,7 @@
+  **************************************************************************/
+
+</para><para depth="0"> #include &lt;stdlib.h&gt;
++#include &lt;stddef.h&gt;
+ #include "config.h"
+
+</para><para depth="0">Modified: stdcxx/branches/4.2.x/etc/config/src/ICONV.cpp
+URL:<br/><url>http://svn.apache.org/viewvc/stdcxx/branches/4.2.x/etc/config/src/ICONV.cpp?rev=640873&amp;r1=640872&amp;r2=640873&amp;view=diff</url>
+==============================================================================
+--- stdcxx/branches/4.2.x/etc/config/src/ICONV.cpp (original)
++++ stdcxx/branches/4.2.x/etc/config/src/ICONV.cpp Tue Mar 25 09:03:37 2008
+@@ -23,6 +23,7 @@
+  **************************************************************************/
+
+</para><para depth="0"> #include &lt;iconv.h&gt;
++#include &lt;stddef.h&gt;
+
+</para><para depth="0"> extern "C" {
+
+</para><para depth="0">Modified: stdcxx/branches/4.2.x/etc/config/src/NEWLINE.cpp
+URL:<br/><url>http://svn.apache.org/viewvc/stdcxx/branches/4.2.x/etc/config/src/NEWLINE.cpp?rev=640873&amp;r1=640872&amp;r2=640873&amp;view=diff</url>
+==============================================================================
+--- stdcxx/branches/4.2.x/etc/config/src/NEWLINE.cpp (original)
++++ stdcxx/branches/4.2.x/etc/config/src/NEWLINE.cpp Tue Mar 25 09:03:37 2008
+@@ -23,6 +23,7 @@
+  **************************************************************************/
+
+</para><para depth="0"> #include &lt;stdio.h&gt;
++#include &lt;stddef.h&gt;
+
+</para><para depth="0"> int main ()
+
+</para><para depth="0">Modified: stdcxx/branches/4.2.x/etc/config/src/NEW_OFLOW_SAFE.cpp
+URL:<br/><url>http://svn.apache.org/viewvc/stdcxx/branches/4.2.x/etc/config/src/NEW_OFLOW_SAFE.cpp?rev=640873&amp;r1=640872&amp;r2=640873&amp;view=diff</url>
+==============================================================================
+--- stdcxx/branches/4.2.x/etc/config/src/NEW_OFLOW_SAFE.cpp (original)
++++ stdcxx/branches/4.2.x/etc/config/src/NEW_OFLOW_SAFE.cpp Tue Mar 25 09:03:37<br/>2008
+@@ -22,6 +22,8 @@
+  * 
+  **************************************************************************/
+
+</para><para depth="0">+#include &lt;stddef.h&gt;
++
+ #include "config.h"
+ #include "nodbg.h"
+
+</para><para depth="0">Modified: stdcxx/branches/4.2.x/etc/config/src/NEW_THROWS.cpp
+URL:<br/><url>http://svn.apache.org/viewvc/stdcxx/branches/4.2.x/etc/config/src/NEW_THROWS.cpp?rev=640873&amp;r1=640872&amp;r2=640873&amp;view=diff</url>
+==============================================================================
+--- stdcxx/branches/4.2.x/etc/config/src/NEW_THROWS.cpp (original)
++++ stdcxx/branches/4.2.x/etc/config/src/NEW_THROWS.cpp Tue Mar 25 09:03:37 2008
+@@ -22,6 +22,8 @@
+  * 
+  **************************************************************************/
+
+</para><para depth="0">+#include &lt;stddef.h&gt;
++
+ #include "config.h"
+ #include "nodbg.h"
+
+</para><para depth="0">Modified: stdcxx/branches/4.2.x/etc/config/src/VA_LIST.cpp
+URL:<br/><url>http://svn.apache.org/viewvc/stdcxx/branches/4.2.x/etc/config/src/VA_LIST.cpp?rev=640873&amp;r1=640872&amp;r2=640873&amp;view=diff</url>
+==============================================================================
+--- stdcxx/branches/4.2.x/etc/config/src/VA_LIST.cpp (original)
++++ stdcxx/branches/4.2.x/etc/config/src/VA_LIST.cpp Tue Mar 25 09:03:37 2008
+@@ -24,6 +24,7 @@
+
+</para><para depth="0"> #include "config.h"
+
+</para><para depth="0">+#include &lt;stddef.h&gt;
+ #include &lt;stdarg.h&gt;
+ #include &lt;stdio.h&gt;
+ #include &lt;string.h&gt;
+
+</para><para depth="0">Modified: stdcxx/branches/4.2.x/etc/config/src/VSNPRINTF_RETURN.cpp
+URL:<br/><url>http://svn.apache.org/viewvc/stdcxx/branches/4.2.x/etc/config/src/VSNPRINTF_RETURN.cpp?rev=640873&amp;r1=640872&amp;r2=640873&amp;view=diff</url>
+==============================================================================
+--- stdcxx/branches/4.2.x/etc/config/src/VSNPRINTF_RETURN.cpp (original)
++++ stdcxx/branches/4.2.x/etc/config/src/VSNPRINTF_RETURN.cpp Tue Mar 25<br/>09:03:37 2008
+@@ -22,6 +22,7 @@
+  * 
+  **************************************************************************/
+
+</para><para depth="0">+#include &lt;stddef.h&gt;
+ #include &lt;stdarg.h&gt;
+ #include &lt;stdio.h&gt;
+
+</para></body></message>

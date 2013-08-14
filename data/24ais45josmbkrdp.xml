@@ -1,0 +1,69 @@
+<message message-id="200704170210.30119.p_manto@libero.it" list="org.openoffice.api.dev" id="24ais45josmbkrdp" type="development" date="2007-04-17T02:10:30+02:00" year="2007-01-01" year-month="2007-04-01" year-month-day="2007-04-16" thread-id="emqsggllsjiubmoc"><headers><envelope-from-line>From dev@api.openoffice.org Mon Apr 16 17:18:38 2007</envelope-from-line><from personal="Paolo Mantovani" address="p_manto@libero.it">Paolo Mantovani &lt;p_manto@libero.it&gt;</from><to personal="dev@api.openoffice.org" address="dev@api.openoffice.org">dev@api.openoffice.org</to><subject normal="[api-dev] Replaceing selected text with Basic Macro">Re: [api-dev] Replaceing selected text with Basic Macro</subject><return-path>p_manto@libero.it</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.6 required=5.0 tests=BAYES_00 autolearn=disabled
+	version=3.2.4</x-spam-status><mailing-list>contact dev-help@api.openoffice.org; run by ezmlm</mailing-list><delivered-to>mailing list dev@api.openoffice.org</delivered-to><received>(qmail 21122 invoked from network); 17 Apr 2007 00:10:28 -0000</received><received>from cylon2.sjc.collab.net (204.16.104.18)
+  by s002.sjc.collab.net with SMTP; 17 Apr 2007 00:10:28 -0000</received><received>from webmail1.posta.tim.it (HELO fep08-svc.tim.it) ([213.230.128.226])
+  by cylon2.sjc.collab.net with ESMTP; 16 Apr 2007 17:10:27 -0700</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AgAAAIKsI0bV5oDikmdsb2JhbACQCgEBAQEHBggOHA</x-ironport-anti-spam-result><x-ironport-av>i="4.14,416,1170662400"; 
+   d="scan'208"; a="55139762:sNHT21437185"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from [217.201.56.243] by fep08-svc.tim.it
+          (InterMail vM.6.01.06.03 201-2131-130-104-20060516) with ESMTP
+          id &lt;20070417001021.ZXGE9155.fep08-svc.tim.it@[217.201.56.243]&gt;
+          for &lt;dev@api.openoffice.org&gt;; Tue, 17 Apr 2007 02:10:21 +0200</received><date>Tue, 17 Apr 2007 02:10:30 +0200</date><user-agent>KMail/1.9.4</user-agent><references>&lt;8ad06bca0704161531x41e2de1bxdc60a7ae54fbe48@mail.gmail.com&gt;</references><in-reply-to>&lt;8ad06bca0704161531x41e2de1bxdc60a7ae54fbe48@mail.gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain;
+  charset="windows-1252"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><content-disposition>inline</content-disposition><message-id>200704170210.30119.p_manto@libero.it</message-id></headers><normalized-references><normalized-message-id>200704170210.30119.p_manto@libero.it</normalized-message-id><normalized-in-reply-to>8ad06bca0704161531x41e2de1bxdc60a7ae54fbe48@mail.gmail.com</normalized-in-reply-to><normalized-reference>8ad06bca0704161531x41e2de1bxdc60a7ae54fbe48@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10; charset=&quot;windows-1252&quot;"><para depth="0">Alle 00:31, martedì 17 aprile 2007, Johnny Andersson ha scritto:
+</para><quote depth="1"><quotepara depth="1">I have a small problem that I just can't figure out at these late hours
+(00:13 right now):
+
+</quotepara><quotepara depth="1">I have written a macro that reads highlighted text and replaces it with
+something else (which is calculated by the macro).
+
+</quotepara><quotepara depth="1">To read the highlighted text I use ThisComponent.getCurrentSelection
+().getByIndex(0).getString().
+
+</quotepara><quotepara depth="1">This caused me no problems, however I couldn't figure out the parameter in
+getByIndex(0). Why 0? What does it mean? 0 what? I tried 1 and 2 but they
+only caused errors.
+</quotepara></quote><para depth="0">
+Because the getCurrentSelection() method in writer normally gets a
+com.sun.star.text.TextRanges (that is a container)
+In general it contains at least one TextRange, but in case of multiple 
+selection it contains more elements.
+Use the getCount() method to discover how many TextRanges are actually 
+selected
+
+</para><quote depth="1"><quotepara depth="1">Ok, I guess I can figure that one out myself with some help from Google, so
+here is my real question:
+
+</quotepara><quotepara depth="1">When I replace the highlighted text, I do that with
+ThisComponent.getCurrentSelection().getByIndex(0).setString(MyString). The
+problem is that I want the new inserted string also to be highlighted, so I
+can perform the macro on it without having to highlight it manually.
+
+</quotepara><quotepara depth="1">Any ideas? Is there some better way to do this?
+
+</quotepara><quotepara depth="1">Just an example to illustrate what I mean:
+</quotepara></quote><para depth="0">[....]
+
+</para><para depth="0">Hoping that I have correctly understood your example, the following code 
+should do (more or less) what you need.
+Check the Andrew Pitonyak's macro document for better techniques and examples
+
+</para><para depth="0">-----------8&lt;-----------
+REM  *****  BASIC  *****
+
+</para><para depth="0">Sub Main
+
+</para><para depth="0">oRange = ThisComponent.currentselection(0)
+oText = oRange.getText()
+
+</para><para depth="0">oCursor = oText.createTextCursorByRange(oRange)
+bAbsorb = True
+oText.insertString( oRange, "new string", bAbsorb)
+
+</para><para depth="0">'restore selection
+ThisComponent.CurrentController.select(oRange)
+
+</para><para depth="0">End Sub
+-----------8&lt;-----------
+
+</para><para depth="0">ciao
+Paolo M
+
+</para></body></message>

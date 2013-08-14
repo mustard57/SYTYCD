@@ -1,0 +1,40 @@
+<message message-id="20110218032805.E07904581C4@codehaus01.managed.contegix.com" list="org.codehaus.gumtree.scm" id="24cnjcpvwny7vsft" type="checkins" date="2011-02-17T19:27:48.238611-08:00" year="2011-01-01" year-month="2011-02-01" year-month-day="2011-02-17" thread-id="24cnjcpvwny7vsft"><headers><envelope-from-line>Thu Feb 17 19:28:11 2011</envelope-from-line><from personal="tonylam@codehaus.org" address="tonylam@codehaus.org">tonylam@codehaus.org</from><to personal="scm@gumtree.codehaus.org" address="scm@gumtree.codehaus.org">scm@gumtree.codehaus.org</to><subject normal="[gumtree-scm]  [9979] gumtree/branches/REL-1.6.x/au.gov.ansto.bragg.platypus.workbench.config/: ">[gumtree-scm]  [9979] gumtree/branches/REL-1.6.x/au.gov.ansto.bragg.platypus.workbench.config/: </subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 296
+          for &lt;judy.booker.bernard@a.markmail.org&gt;;
+          Thu, 17 Feb 2011 19:28:11 -0800 (GMT-08:00)</received><received>from mail.codehaus.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id BF94E3B300C1
+	for &lt;judy.booker.bernard@a.markmail.org&gt;; Thu, 17 Feb 2011 19:27:47 -0800 (PST)</received><received>(qmail 18779 invoked by uid 89); 18 Feb 2011 03:28:06 -0000</received><mailing-list>contact scm-help@gumtree.codehaus.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;http://xircles.codehaus.org/manage_email&gt;</list-post><list-help>&lt;http://xircles.codehaus.org/manage_email&gt;</list-help><list-unsubscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-unsubscribe><list-subscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-subscribe><list-id>&lt;scm.gumtree.codehaus.org&gt;</list-id><reply-to>dev@gumtree.codehaus.org</reply-to><delivered-to>mailing list scm@gumtree.codehaus.org</delivered-to><received>(qmail 18769 invoked by uid 89); 18 Feb 2011 03:28:04 -0000</received><mime-version>1.0</mime-version><x-mailer>SVN::Notify 2.46: http://search.cpan.org/dist/SVN-Notify/</x-mailer><content-type>text/html; charset=UTF-8</content-type><message-id>20110218032805.E07904581C4@codehaus01.managed.contegix.com</message-id><date>Thu, 17 Feb 2011 21:28:05 -0600 (CST)</date><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>20110218032805.E07904581C4@codehaus01.managed.contegix.com</normalized-message-id></normalized-references><body html2text="elinks" type="text/html; charset=utf-8"><para depth="0"> Revision
+         [1]9979
+
+</para><para depth="0"> Author
+         tonylam
+
+</para><para depth="0"> Date
+         2011-02-17 21:28:05 -0600 (Thu, 17 Feb 2011)
+
+</para><para depth="0">  Log Message
+
+</para><para depth="0">  Property Changed
+
+</para><para depth="0">   * gumtree/branches/REL-1.6.x/au.gov.ansto.bragg.platypus.workbench.config/
+
+</para><para depth="0">  Diff
+
+</para><para depth="0">    Property changes:
+    gumtree/branches/REL-1.6.x/au.gov.ansto.bragg.platypus.workbench.config
+
+</para><para depth="0">Name: svn:ignore
+   + target
+
+</para><para depth="0"> ------------------------------------------------------------------------------
+
+</para><para depth="0"> To unsubscribe from this list please visit:
+
+</para><footer type="list-management" depth="0"> [2]<url>http://xircles.codehaus.org/manage_email</url>
+
+</footer><para depth="0">References
+
+</para><footer type="list-management" depth="0">   Visible links
+   1. <url>http://fisheye.codehaus.org/changelog/gumtree/?cs=9979</url>
+   2. <url>http://xircles.codehaus.org/manage_email</url>
+</footer></body></message>

@@ -1,0 +1,17 @@
+<message message-id="20000524205041.A19434@metastasis.f00f.org" list="org.kernel.vger.linux-kernel" id="24b3hlqzazdny2vj" type="development" date="2000-05-24T20:50:41+12:00" year="2000-01-01" year-month="2000-05-01" year-month-day="2000-05-24" thread-id="qpvzpxq6shcz3rvq"><headers><envelope-from-line>From cw@f00f.org  Wed May 24 04:03:43 2000</envelope-from-line><from personal="Chris Wedgwood" address="cw@f00f.org">Chris Wedgwood &lt;cw@f00f.org&gt;</from><to personal="unknown" address="unknown">unknown</to><subject normal="killall -9 does not work !?">Re: killall -9 does not work !?</subject><date>Wed, 24 May 2000 20:50:41 +1200</date><message-id>20000524205041.A19434@metastasis.f00f.org</message-id><in-reply-to>&lt;200005240249.VAA32448@khijol.org&gt;</in-reply-to></headers><normalized-references><normalized-message-id>20000524205041.A19434@metastasis.f00f.org</normalized-message-id><normalized-in-reply-to>200005240249.VAA32448@khijol.org</normalized-in-reply-to></normalized-references><body type="text/plain"><para depth="0">
+On Tue, May 23, 2000 at 09:49:42PM -0500, Ed Carp wrote:
+
+</para><para depth="0">    &gt; &gt; If there isn't swapping and a process is stuck in down, then
+    &gt; &gt; something has deadlocked and needs to be fixed.
+
+</para><para depth="0">That's why I later went on to qualify this by saying stuck for an
+extended period of time or something...
+
+</para><para depth="0">  --cw
+
+</para><footer type="list-management" depth="0">-
+To unsubscribe from this list: send the line "unsubscribe linux-kernel" in
+the body of a message to <email>majordomo@vger.rutgers.edu</email>
+Please read the FAQ at <url>http://www.tux.org/lkml/</url>
+
+</footer></body></message>

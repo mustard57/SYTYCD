@@ -1,0 +1,58 @@
+<message message-id="Pine.LNX.4.64.0608151204400.10351@frodo.shire" list="org.kernel.vger.linux-kernel" id="24cc4u6shsote266" type="development" date="2006-08-15T12:05:09+02:00" year="2006-01-01" year-month="2006-08-01" year-month-day="2006-08-15" thread-id="am3tfbbvpvrgrecu"><headers><envelope-from-line>From linux-kernel-owner+akpm=40zip.com.au-S965351AbWHOKF2@vger.kernel.org  Tue Aug 15 03:10:23 2006</envelope-from-line><from personal="Esben Nielsen" address="nielsen.esben@gogglemail.com">Esben Nielsen &lt;nielsen.esben@gogglemail.com&gt;</from><to personal="Oleg Nesterov" address="oleg@tv-sign.ru">Oleg Nesterov &lt;oleg@tv-sign.ru&gt;</to><cc personal="Esben Nielsen" address="nielsen.esben@gogglemail.com">Esben Nielsen &lt;nielsen.esben@gogglemail.com&gt;</cc><subject normal="[PATCH] cleanup and remove some extra spinlocks from rtmutex">Re: [PATCH] cleanup and remove some extra spinlocks from rtmutex</subject><return-path>linux-kernel-owner+akpm=40zip.com.au-S965351AbWHOKF2@vger.kernel.org</return-path><received>from localhost (bix [127.0.0.1])
+	by localhost.localdomain (8.12.10/8.12.10) with ESMTP id k7FAANai014568
+	for &lt;akpm@localhost&gt;; Tue, 15 Aug 2006 03:10:23 -0700</received><delivered-to>akpm@zipworld.com.au</delivered-to><received>from mail-zipworld.pacific.net.au [61.8.0.24]
+	by localhost with POP3 (fetchmail-6.2.0)
+	for akpm@localhost (single-drop); Tue, 15 Aug 2006 03:10:23 -0700 (PDT)</received><received>from mailin2.pacific.net.au (mailin2.pacific.net.au [61.8.0.81])
+	by mailstore.pacific.net.au (Postfix) with ESMTP id 714FAA2DE8
+	for &lt;akpm@zipworld.com.au&gt;; Tue, 15 Aug 2006 20:06:24 +1000 (EST)</received><received>from vger.kernel.org (unknown [209.132.176.167])
+	by mailin2.pacific.net.au (Postfix) with ESMTP id 0D80B3EA285
+	for &lt;akpm@zip.com.au&gt;; Tue, 15 Aug 2006 20:06:24 +1000 (EST)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S965351AbWHOKF2 (ORCPT &lt;rfc822;akpm@zip.com.au&gt;);
+	Tue, 15 Aug 2006 06:05:28 -0400</received><received>(majordomo@vger.kernel.org) by vger.kernel.org id S965354AbWHOKF2
+	(ORCPT &lt;rfc822;linux-kernel-outgoing&gt;);
+	Tue, 15 Aug 2006 06:05:28 -0400</received><received>from mx03.stofanet.dk ([212.10.10.13]:3207 "EHLO mx03.stofanet.dk")
+	by vger.kernel.org with ESMTP id S965351AbWHOKF1 (ORCPT
+	&lt;rfc822;linux-kernel@vger.kernel.org&gt;);
+	Tue, 15 Aug 2006 06:05:27 -0400</received><received>from 56345dc0.rev.stofanet.dk ([86.52.93.192])
+	by mx03.stofanet.dk (envelope-from
+	&lt;nielsen.esben@gogglemail.com&gt;)
+	with esmtp id 1GCvnJ-0002AB-0x; Tue, 15 Aug 2006 12:05:11 +0200</received><date>Tue, 15 Aug 2006 12:05:09 +0200 (CEST)</date><x-x-sender>simlo@frodo.shire</x-x-sender><in-reply-to>&lt;20060815142605.GA232@oleg&gt;</in-reply-to><message-id>Pine.LNX.4.64.0608151204400.10351@frodo.shire</message-id><references>&lt;1154439588.25445.31.camel@localhost.localdomain&gt;
+ &lt;20060813190326.GA2276@oleg&gt; &lt;Pine.LNX.4.64.0608142217400.10597@frodo.shire&gt;
+ &lt;20060815110353.GA111@oleg&gt; &lt;Pine.LNX.4.64.0608151152110.10351@frodo.shire&gt;
+ &lt;20060815142605.GA232@oleg&gt;</references><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII; format=flowed</content-type><sender>linux-kernel-owner@vger.kernel.org</sender><precedence>bulk</precedence><x-mailing-list>linux-kernel@vger.kernel.org</x-mailing-list><x-spam-checker-version>SpamAssassin 3.0.2 (2004-11-16) on bix</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.7 required=2.0 tests=AWL,BAYES_00 autolearn=ham 
+	version=3.0.2</x-spam-status><status>RO</status><x-status/><x-keywords/><x-uid>4896</x-uid></headers><normalized-references><normalized-message-id>Pine.LNX.4.64.0608151204400.10351@frodo.shire</normalized-message-id><normalized-in-reply-to>20060815142605.GA232@oleg</normalized-in-reply-to><normalized-reference>1154439588.25445.31.camel@localhost.localdomain</normalized-reference><normalized-reference>20060813190326.GA2276@oleg</normalized-reference><normalized-reference>Pine.LNX.4.64.0608142217400.10597@frodo.shire</normalized-reference><normalized-reference>20060815110353.GA111@oleg</normalized-reference><normalized-reference>Pine.LNX.4.64.0608151152110.10351@frodo.shire</normalized-reference><normalized-reference>20060815142605.GA232@oleg</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; format=flowed"><para depth="0">
+On Tue, 15 Aug 2006, Oleg Nesterov wrote:
+
+</para><quote depth="1"><quotepara depth="1">On 08/15, Esben Nielsen wrote:
+</quotepara><quote depth="2"><quotepara depth="2">
+On Tue, 15 Aug 2006, Oleg Nesterov wrote:
+</quotepara><quote depth="3"><quotepara depth="3">
+task-&gt;pi_blocked_on != NULL, we hold task-&gt;pi_blocked_on-&gt;lock-&gt;wait_lock.
+Can it go away ?
+</quotepara></quote><quotepara depth="2">
+That is correct. But does it make the code more readable?
+</quotepara></quote><quotepara depth="1">
+Well, in my opinion - yes. But yes, it's only my personal feeling :)
+
+</quotepara><quote depth="2"><quotepara depth="2">                                                           When you read
+the code you shouldn't need to go into that kind of complicated arguments
+to see the correctness - unless the code can't be written otherwise.
+</quotepara></quote><quotepara depth="1">
+Sure, this needs a comment.
+</quotepara></quote><para depth="0">
+It is even better if you can read the code without a comment. Good code 
+doesn't need comments.
+
+</para><para depth="0">Esben
+
+</para><quote depth="1"><quotepara depth="1">Thanks again,
+
+</quotepara><quotefooter type="signature" depth="1" hash="4972532276335490514">Oleg.
+
+</quotefooter></quote><footer type="list-management" depth="0">-
+To unsubscribe from this list: send the line "unsubscribe linux-kernel" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+Please read the FAQ at  <url>http://www.tux.org/lkml/</url>
+
+</footer></body></message>

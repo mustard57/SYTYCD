@@ -1,0 +1,84 @@
+<message message-id="2fbc9b21002270934r40c8a1c2rf741b6b854765a08@mail.gmail.com" list="org.openoffice.users" id="24ad4g5nmzehdl5c" no-archive="yes" type="users" date="2010-02-27T18:34:21+01:00" year="2010-01-01" year-month="2010-02-01" year-month-day="2010-02-27" thread-id="ghn4lzrnq4ctoq65"><headers><envelope-from-line>Sat Feb 27 09:34:47 2010</envelope-from-line><from personal="M Henri Day" address="mhenriday@gmail.com">M Henri Day &lt;mhenriday@gmail.com&gt;</from><to personal="users@openoffice.org" address="users@openoffice.org">users@openoffice.org</to><subject normal="[users] &quot;soffice.bin&quot; = highly dangerous??">Re: [users] "soffice.bin" = highly dangerous??</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 894
+          for &lt;blaine.garcia.berg@a.markmail.org&gt;;
+          Sat, 27 Feb 2010 09:34:47 -0800 (GMT-08:00)</received><received>from openoffice.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 79E2A2908219
+	for &lt;blaine.garcia.berg@a.markmail.org&gt;; Sat, 27 Feb 2010 09:34:24 -0800 (PST)</received><received>(qmail 27445 invoked by uid 5000); 27 Feb 2010 17:34:44 -0000</received><mailing-list>contact users-help@openoffice.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:users-help@openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:users-unsubscribe@openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:users@openoffice.org&gt;</list-post><reply-to>users@openoffice.org</reply-to><delivered-to>mailing list users@openoffice.org</delivered-to><received>(qmail 27412 invoked from network); 27 Feb 2010 17:34:44 -0000</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AjQBACDmiEvRVdrkkWdsb2JhbACDBI4nghOGfVgIFQEBAQEJCwoHEwMfqTU1gVyEdi2ISgEBAwWEDGoE</x-ironport-anti-spam-result><x-ironport-av>E=Sophos;i="4.49,551,1262592000"; 
+   d="scan'208";a="36886235"</x-ironport-av><x-ironport>SCANNED</x-ironport><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:in-reply-to:references
+         :from:date:message-id:subject:to:content-type;
+        bh=rBYevKjLhURXsM9EfsK0n1b1QADpsPOsObIgBkngk8k=;
+        b=CLtKMJOaB15s1hbqldw3q0Gi2mSoCVueBMR+RtNPTWhRJLNNJE0T5DsgwQEtahanmW
+         ZGBxgN0h9hxr0xq9OxnE4leydtaeLeGAD59dUhMTbe19Dgbn6TGO1Pz8ergLCPZJYQWq
+         qUFHYPwlepXXO1wV2oWmqX8VB0XN8Yzec7bjo=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+         :content-type;
+        b=hS2VxfIaBF1/LW43ZivfHsdEROMHi9CQTmK8EEbeZITI3h+7Mxf8Roif6RSPB1XUaX
+         U/daSQMA6HW0heUSwTtp+UObsEVKTeGeI+FjX2vtahRCo/c/9jL0vQerKONuHopdSKXg
+         nYUpbgoCicnXCUFscaeDW5MFQE37WGNGrbhUs=</domainkey-signature><mime-version>1.0</mime-version><in-reply-to>&lt;4B8953D9.6010200@openoffice.org&gt;</in-reply-to><references>&lt;4B891E0D.7060609@s7.dion.ne.jp&gt; &lt;2fbc9b21002270636j16c279cdif64c49ad3feb7cbc@mail.gmail.com&gt; 
+	&lt;4B89355B.5090407@s7.dion.ne.jp&gt; &lt;4B894194.3040000@openoffice.org&gt; 
+	&lt;880dece01002270830l47c569fk7a528d8530e94ea3@mail.gmail.com&gt; 
+	&lt;4B894E60.6050909@openoffice.org&gt; &lt;2fbc9b21002270904u50b62f84hf10ac35147818f1d@mail.gmail.com&gt; 
+	&lt;4B8953D9.6010200@openoffice.org&gt;</references><date>Sat, 27 Feb 2010 18:34:21 +0100</date><message-id>2fbc9b21002270934r40c8a1c2rf741b6b854765a08@mail.gmail.com</message-id><content-type>multipart/alternative; boundary=0015174488f868ee3b0480986eb7</content-type></headers><normalized-references><normalized-message-id>2fbc9b21002270934r40c8a1c2rf741b6b854765a08@mail.gmail.com</normalized-message-id><normalized-in-reply-to>4B8953D9.6010200@openoffice.org</normalized-in-reply-to><normalized-reference>4B891E0D.7060609@s7.dion.ne.jp</normalized-reference><normalized-reference>2fbc9b21002270636j16c279cdif64c49ad3feb7cbc@mail.gmail.com</normalized-reference><normalized-reference>4B89355B.5090407@s7.dion.ne.jp</normalized-reference><normalized-reference>4B894194.3040000@openoffice.org</normalized-reference><normalized-reference>880dece01002270830l47c569fk7a528d8530e94ea3@mail.gmail.com</normalized-reference><normalized-reference>4B894E60.6050909@openoffice.org</normalized-reference><normalized-reference>2fbc9b21002270904u50b62f84hf10ac35147818f1d@mail.gmail.com</normalized-reference><normalized-reference>4B8953D9.6010200@openoffice.org</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=0015174488f868ee3b0480986eb7" type="text/plain; charset=UTF-8"><para depth="0">2010/2/27 Hagar de l'Est &lt;<email>hagar_de_lest@openoffice.org</email>&gt;
+
+</para><quote depth="1"><quotepara depth="1">Agreed.
+
+</quotepara><quotepara depth="1">But sometimes, this kind of electroshock with strong words can trigger
+something. Perhaps that out of curiosity, the OP will check about GNU/Linux
+distros and try a live-CD then make a dual boot and conclude that Windows is
+not the only OS worth using in the world.
+
+</quotepara><quotepara depth="1">:-))
+
+</quotepara><quotepara depth="1">Le 27/02/2010 18:04, M Henri Day a écrit :
+
+</quotepara><quotepara depth="1"> 2010/2/27 Hagar de l'Est&lt;<email>hagar_de_lest@openoffice.org</email>&gt;
+</quotepara><quote depth="2"><quotepara depth="2">
+ I've never said that GNU/Linux is bug-free.
+</quotepara><quote depth="3"><quotepara depth="3">
+Le 27/02/2010 17:30, Dotan Cohen a écrit :
+
+</quotepara><quotepara depth="3">  For the crappy OS, I rather agree too! Windows is sold in many shops,
+</quotepara><quote depth="4"><quotefooter type="noise" depth="4">
+</quotefooter><quote depth="5"><quotepara depth="5">it's
+not really bug free and it can lead to additional costs (anti-virus,
+firewall, anti-spywares, ...). The underlying message was in fact:
+check
+other OSes like GNU/Linux (they don't need all these security
+applications).
+But it depends on your use of your computer perhaps.
+
+</quotepara><quotepara depth="5"> Linux is bug-free? Hahaha!
+</quotepara></quote><quotepara depth="4">
+To the OP: it is not uncommon for anti-[virus/malware/etc] programs to
+flag FOSS software as FOSS software devs generally don't "register"
+their "products" with these companies. That does not mean that all
+FOSS software is 100% safe, but anti-* programs' warnings are in no
+way indicative of problems.
+
+</quotepara></quote><quotepara depth="3"> I agree (with apologies to Eric Arthur Blair) that 1) all OS have
+</quotepara></quote><quotepara depth="2">problems,
+but that 2) some have more problems than others. But calling the OS that a
+poster is using «crappy» probably does little to help him or her resolve a
+concrete problem - and is in this case, particularly egregious, as the OP
+pointed out that he also used an alternative. Let us concentrate on
+helping
+each other - that should provide adequate room for our creativity !...
+
+</quotepara><quotefooter type="signature" depth="2" hash="18314831098911675665">Henri
+
+</quotefooter></quote></quote><para depth="0">But note, Hagar, that the OP indicated in his viery first posting that
+«[r]ecently I installed OO32 on both my Windows machines (plus a
+Linuxmachine)» (if I remember correctly, Ubuntu Jaunty), so presumably he is
+already aware of the fact that Windows OS are not the only ones worth using.
+Besides, my professional experience - and the little insight I have into the
+way I myself work - indicates to me that on the contrary, words like
+«crappy» tend to make the recipient less rather than more likely to accept a
+suggestion. Which leads me to the next problem - how can I remind you that
+we usually bottom-post on this list without putting you on the defensive
+?...
+
+</para><para depth="0">Henri
+</para></body></message>

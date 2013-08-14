@@ -1,0 +1,91 @@
+<message message-id="87wriawqfn.fsf@cspdebsid.excito" list="org.gnome.mc" id="24auo2k6gb3je524" type="general" date="2011-05-01T14:33:48+02:00" year="2011-01-01" year-month="2011-05-01" year-month-day="2011-05-01" thread-id="bhmfarqjhceqff43"><headers><envelope-from-line>Sun May 01 04:34:15 2011</envelope-from-line><from personal="Csanyi Pal" address="csanyipal@gmail.com">Csanyi Pal &lt;csanyipal@gmail.com&gt;</from><to personal="mc@gnome.org" address="mc@gnome.org">mc@gnome.org</to><subject normal="Control-backslash doesn't work on console in MC">Re: Control-backslash doesn't work on console in MC</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 49
+          for &lt;fritz.diaz.acosta@a.markmail.org&gt;;
+          Sun, 1 May 2011 04:34:15 -0800 (GMT-08:00)</received><received>from menubar.gnome.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id E76763B300C1
+	for &lt;fritz.diaz.acosta@a.markmail.org&gt;; Sun,  1 May 2011 05:33:51 -0700 (PDT)</received><received>from menubar.gnome.org (localhost.localdomain [127.0.0.1])
+	by menubar.gnome.org (Postfix) with ESMTP id AC2717500DB;
+	Sun,  1 May 2011 12:34:14 +0000 (UTC)</received><x-original-to>mc@gnome.org</x-original-to><delivered-to>mc@gnome.org</delivered-to><received>from localhost (localhost.localdomain [127.0.0.1])
+	by menubar.gnome.org (Postfix) with ESMTP id D764E7500DB
+	for &lt;mc@gnome.org&gt;; Sun,  1 May 2011 12:34:12 +0000 (UTC)</received><x-virus-scanned>by amavisd-new at gnome.org</x-virus-scanned><x-spam-flag>NO</x-spam-flag><x-spam-score>-2.612</x-spam-score><x-spam-level/><x-spam-status>No, score=-2.612 tagged_above=-999 required=2
+	tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1,
+	DKIM_VALID_AU=-0.1, FREEMAIL_FROM=0.001, RCVD_IN_DNSWL_LOW=-0.7,
+	RFC_ABUSE_POST=0.001, SPF_PASS=-0.001, TW_EJ=0.077,
+	T_TO_NO_BRKTS_FREEMAIL=0.01] autolearn=ham</x-spam-status><received>from menubar.gnome.org ([127.0.0.1])
+	by localhost (menubar.gnome.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id PVI4DFqJnmSS for &lt;mc@gnome.org&gt;;
+	Sun,  1 May 2011 12:34:10 +0000 (UTC)</received><received>from mail-fx0-f54.google.com (mail-fx0-f54.google.com
+	[209.85.161.54])
+	by menubar.gnome.org (Postfix) with ESMTP id DAC757500C9
+	for &lt;mc@gnome.org&gt;; Sun,  1 May 2011 12:34:01 +0000 (UTC)</received><received>by fxm11 with SMTP id 11so6774213fxm.27
+	for &lt;mc@gnome.org&gt;; Sun, 01 May 2011 05:33:59 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:from:to:subject:references:date:in-reply-to
+	:message-id:user-agent:mime-version:content-type
+	:content-transfer-encoding;
+	bh=CoCBUcx0iXxbhIhftpE3Lomoe7OhI2hTu3VfJKhSsk4=;
+	b=UbBjd5gN/L6WmDySvBnmofd587YR9iitWkavzf0f26k3aW92G/hAsIKip4rSe4GLbh
+	HocDM0a7upauotlGMZCFlKohVODcW7/xeI4YIxglulYxRPp5+CXr5y7KrfAADlsFO2i5
+	rSr+aiGCctTXG+syciSKOMRksyCtRUkQpsde4=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=from:to:subject:references:date:in-reply-to:message-id:user-agent
+	:mime-version:content-type:content-transfer-encoding;
+	b=W6Elv57U6C9a/4V6aoBi5cWM5A70VK8obLAGaTqKVagpFC2fUbE7/Ru1FzBYWEGLQL
+	Q6AxFOJHCLo2GhRr/m9SKAvTMdoTGrBBMQZ7DaIzTgTd/sSV4zoeqsnk5jqp+3IBoydE
+	Q+qEFLafQEosF8bjDbOeQorql6gOGiDBUq9c4=</domainkey-signature><received>by 10.223.31.133 with SMTP id y5mr909464fac.7.1304253239222;
+	Sun, 01 May 2011 05:33:59 -0700 (PDT)</received><received>from cspdebsid.excito.gmail.com (226-170-85-95.dynamic.stcable.net
+	[95.85.170.226])
+	by mx.google.com with ESMTPS id x16sm1455151fal.19.2011.05.01.05.33.57
+	(version=TLSv1/SSLv3 cipher=OTHER);
+	Sun, 01 May 2011 05:33:58 -0700 (PDT)</received><references>&lt;87iptw8352.fsf@cspdebsid.excito&gt;
+	&lt;1304158473.2227.14.camel@newpride&gt; &lt;8739l081ql.fsf@cspdebsid.excito&gt;
+	&lt;web-1213382872@box.vrn.ru&gt; &lt;87aaf7x7jz.fsf@cspdebsid.excito&gt;
+	&lt;1304251138.2314.5.camel@newpride&gt;</references><date>Sun, 01 May 2011 14:33:48 +0200</date><in-reply-to>&lt;1304251138.2314.5.camel@newpride&gt; (Yury V. Zaytsev's message of
+	"Sun, 01 May 2011 13:58:58 +0200")</in-reply-to><message-id>87wriawqfn.fsf@cspdebsid.excito</message-id><user-agent>Gnus/5.13 (Gnus v5.13) Emacs/23.3 (gnu/linux)</user-agent><mime-version>1.0</mime-version><x-beenthere>mc@gnome.org</x-beenthere><x-mailman-version>2.1.14</x-mailman-version><precedence>list</precedence><list-id>List for GNU Midnight Commander users &lt;mc.gnome.org&gt;</list-id><list-unsubscribe>&lt;http://mail.gnome.org/mailman/options/mc&gt;,
+	&lt;mailto:mc-request@gnome.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.gnome.org/archives/mc/&gt;</list-archive><list-post>&lt;mailto:mc@gnome.org&gt;</list-post><list-help>&lt;mailto:mc-request@gnome.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.gnome.org/mailman/listinfo/mc&gt;,
+	&lt;mailto:mc-request@gnome.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="utf-8"</content-type><content-transfer-encoding>base64</content-transfer-encoding><errors-to>mc-bounces@gnome.org</errors-to><sender>mc-bounces@gnome.org</sender></headers><normalized-references><normalized-message-id>87wriawqfn.fsf@cspdebsid.excito</normalized-message-id><normalized-in-reply-to>&lt;1304251138.2314.5.camel@newpride&gt;(YuryV.Zaytsev'smessageof"Sun,01May201113:58:58+0200")</normalized-in-reply-to><normalized-reference>87iptw8352.fsf@cspdebsid.excito</normalized-reference><normalized-reference>1304158473.2227.14.camel@newpride</normalized-reference><normalized-reference>8739l081ql.fsf@cspdebsid.excito</normalized-reference><normalized-reference>web-1213382872@box.vrn.ru</normalized-reference><normalized-reference>87aaf7x7jz.fsf@cspdebsid.excito</normalized-reference><normalized-reference>1304251138.2314.5.camel@newpride</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">"Yury V. Zaytsev" &lt;<email>yury@shurup.com</email>&gt; writes:
+
+</para><quote depth="1"><quotepara depth="1">On Sun, 2011-05-01 at 08:24 +0200, Csanyi Pal wrote: 
+</quotepara><quote depth="2"><quotepara depth="2">Andrew Borodin &lt;<email>aborodin-Fc3hKxfcIzw@public.gmane.org</email>&gt; writes:
+
+</quotepara><quote depth="3"><quotepara depth="3">On Sat, 30 Apr 2011 12:36:34 +0200 Csanyi Pal wrote:
+</quotepara><quote depth="4"><quotepara depth="4">I expect that Ctrl+AltGr+Q should gives the Control-backslash,
+that is the directory hotlist.
+</quotepara></quote><quotepara depth="3">
+Please run cat, press Ctrl+AltGr+Q and show the result here.
+</quotepara></quote><quotepara depth="2">
+$ cat
+^\Kilépés
+</quotepara></quote><quotepara depth="1">
+That's weird because it does what it should. I wonder if this doesn't
+work because AltGr is implicated, i.e. Alt state is read from X and
+returns pressed, so it doesn't show the hotlist, because it thinks
+that it's a different binding... 
+</quotepara></quote><para depth="0">
+I haven't installed X Window System yet on my operating system.
+
+</para><para depth="0">Here is how MC behave when I press the '-' character that is on the
+place on the keyboard where '\' character stand on an English keyboard:
+it gives to me the 'Unselect a group of files' dialog. The same dialog
+can I get pressing AltGr+Q.
+
+</para><para depth="0">On the other hand when I get first the '|' character pressing AltGr+W in 
+MC then after that I can get '\' in MC by pressing AltGr+Q:
+
+</para><para depth="0">Here is a part of MC pasted:
+Tipp: Ha látni szeretné a .* rejtett fájlokat, állítsa be az
+Alapbeállításoknál.csanyipal@cspdebsid:~$ |\\\\\\\\
+[^] 1Súgó   2Menü   3Megnéz 4Szerk. 5Másol 
+
+</para><quote depth="1"><quotepara depth="1">Otherwise if it's not X, I can't see how it can mess thing up assuming
+that the right codes are returned. Any chance of rebuilding --without-x?
+</quotepara></quote><para depth="0">
+I could try to download mc source and build it here on Debian wheezy/sid
+with this option.
+
+</para><footer type="signature" depth="0" hash="11352365955723506006">-- 
+Best Regards,
+Paul
+<url>http://csanyi-pal.info</url>
+</footer><footer type="list-management" depth="0">_______________________________________________
+mc mailing list
+<url>http://mail.gnome.org/mailman/listinfo/mc</url>
+</footer></body></message>

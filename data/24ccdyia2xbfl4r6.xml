@@ -1,0 +1,57 @@
+<message message-id="20100210061303.F24B53C6E4B0@gamma.macosforge.org" list="org.webkit.lists.webkit-unassigned" id="24ccdyia2xbfl4r6" type="bugs" date="2010-02-09T22:12:44.47109-08:00" year="2010-01-01" year-month="2010-02-01" year-month-day="2010-02-09" thread-id="h44w23icwowzad3o"><headers><envelope-from-line>Tue Feb 09 22:13:07 2010</envelope-from-line><from personal="bugzilla-daemon@webkit.org" address="bugzilla-daemon@webkit.org">bugzilla-daemon@webkit.org</from><to personal="webkit-unassigned@lists.webkit.org" address="webkit-unassigned@lists.webkit.org">webkit-unassigned@lists.webkit.org</to><subject normal="[Webkit-unassigned] [Bug 34782] Normalize custom ctors for Image, Option, Audio">[Webkit-unassigned] [Bug 34782] Normalize custom ctors for Image, Option, Audio</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 328
+          for &lt;paula.ryan.christensen@a.markmail.org&gt;;
+          Tue, 9 Feb 2010 22:13:06 -0800 (GMT-08:00)</received><received>from bz1.apple.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id C4F343B32674
+	for &lt;paula.ryan.christensen@a.markmail.org&gt;; Tue,  9 Feb 2010 22:12:42 -0800 (PST)</received><received>from lists.macosforge.org (epsilon.macosforge.org [17.254.17.250])
+	by bz1.apple.com (Postfix) with SMTP id 964521A9EAA69;
+	Tue,  9 Feb 2010 22:13:05 -0800 (PST)</received><received>from epsilon.macosforge.org (localhost [127.0.0.1])
+	by lists.macosforge.org (Postfix) with ESMTP id 8F7B373E3E1;
+	Tue,  9 Feb 2010 22:13:05 -0800 (PST)</received><x-original-to>webkit-unassigned@lists.webkit.org</x-original-to><delivered-to>webkit-unassigned@lists.webkit.org</delivered-to><received>from mail-in11.apple.com (mail-in.apple.com [17.254.13.7])
+	by lists.macosforge.org (Postfix) with ESMTP id 79A6373E3E0
+	for &lt;webkit-unassigned@lists.webkit.org&gt;;
+	Tue,  9 Feb 2010 22:13:04 -0800 (PST)</received><x-auditid>11fe0d07-b7b37ae00000036c-ef-4b724e70f030</x-auditid><received>from bz3.apple.com (bz3.apple.com [17.254.13.38])
+	(using TLS with cipher AES256-SHA (AES256-SHA/256 bits))
+	(Client did not present a certificate)
+	by mail-in11.apple.com (Apple Secure Mail Relay) with SMTP id
+	E6.CE.00876.07E427B4; Tue,  9 Feb 2010 22:13:04 -0800 (PST)</received><received>from gamma.macosforge.org (gamma.macosforge.org [17.254.17.248])
+	by bz3.apple.com (Postfix) with SMTP id 0216B1AE0FD48
+	for &lt;webkit-unassigned@lists.webkit.org&gt;;
+	Tue,  9 Feb 2010 22:13:04 -0800 (PST)</received><received>by gamma.macosforge.org (Postfix, from userid 70)
+	id F24B53C6E4B0; Tue,  9 Feb 2010 22:13:03 -0800 (PST)</received><x-bugzilla-reason>AssignedTo</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>WebKit</x-bugzilla-product><x-bugzilla-component>New Bugs</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-severity>Normal</x-bugzilla-severity><x-bugzilla-who>darin@apple.com</x-bugzilla-who><x-bugzilla-status>NEW</x-bugzilla-status><x-bugzilla-priority>P2</x-bugzilla-priority><x-bugzilla-assigned-to>webkit-unassigned@lists.webkit.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>---</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Attachment #48457 Flag</x-bugzilla-changed-fields><in-reply-to>&lt;bug-34782-2851@https.bugs.webkit.org/&gt;</in-reply-to><references>&lt;bug-34782-2851@https.bugs.webkit.org/&gt;</references><auto-submitted>auto-generated</auto-submitted><mime-version>1.0</mime-version><message-id>20100210061303.F24B53C6E4B0@gamma.macosforge.org</message-id><date>Tue,  9 Feb 2010 22:13:03 -0800 (PST)</date><x-brightmail-tracker>AAAAAxLTv4MS08pfEtSNgg==</x-brightmail-tracker><x-beenthere>webkit-unassigned@lists.webkit.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><list-id>WebKit unassigned bugs &lt;webkit-unassigned.lists.webkit.org&gt;</list-id><list-unsubscribe>&lt;http://lists.webkit.org/mailman/options.cgi/webkit-unassigned&gt;,
+	&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.webkit.org/pipermail/webkit-unassigned&gt;</list-archive><list-post>&lt;mailto:webkit-unassigned@lists.webkit.org&gt;</list-post><list-help>&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.webkit.org/mailman/listinfo.cgi/webkit-unassigned&gt;,
+	&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>webkit-unassigned-bounces@lists.webkit.org</sender><errors-to>webkit-unassigned-bounces@lists.webkit.org</errors-to></headers><normalized-references><normalized-message-id>20100210061303.F24B53C6E4B0@gamma.macosforge.org</normalized-message-id><normalized-in-reply-to>bug-34782-2851@https.bugs.webkit.org/</normalized-in-reply-to><normalized-reference>bug-34782-2851@https.bugs.webkit.org/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0"><url>https://bugs.webkit.org/show_bug.cgi?id=34782</url>
+
+</para><para depth="0">Darin Adler &lt;<email>darin@apple.com</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+  Attachment #48457|review?                     |review-
+               Flag|                            |
+
+</para><para depth="0">--- Comment #4 from Darin Adler &lt;<email>darin@apple.com</email>&gt;  2010-02-09 22:13:01 PST ---
+(From update of attachment 48457)
+This is *so* funny. I have a similar patch on my machine that I started working
+on earlier today. I chose to emphasize the fact that the create functions are
+for use with JavaScript constructors by using the name createForJSConstructor
+rather than just create for them. And I did the work for WebKit's built-in
+JavaScript engine too, not just for V8. As you should.
+
+</para><para depth="0">You're also using some non-standard formatting here. In the WebKit project we
+do not put each argument of a function on a separate line, even if there are
+many of them.
+
+</para><para depth="0">The arguments should be "const String&amp;" rather than "String". And we name
+things "document", not "doc", in new code at least.
+
+</para><para depth="0">And we don't use PassRefPtr for local variables.
+
+</para><footer type="signature" depth="0" hash="7587865278882035605">-- 
+Configure bugmail: <url>https://bugs.webkit.org/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the assignee for the bug.
+</footer><footer type="list-management" depth="0">_______________________________________________
+webkit-unassigned mailing list
+<email>webkit-unassigned@lists.webkit.org</email>
+<url>http://lists.webkit.org/mailman/listinfo.cgi/webkit-unassigned</url>
+</footer></body></message>

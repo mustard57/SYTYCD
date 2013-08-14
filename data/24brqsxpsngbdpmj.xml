@@ -1,0 +1,40 @@
+<message message-id="201003230009.o2N09DYM007402@repoman.freebsd.org" list="org.freebsd.cvs-ports" id="24brqsxpsngbdpmj" type="checkins" date="2010-03-22T16:09:03.932541-08:00" year="2010-01-01" year-month="2010-03-01" year-month-day="2010-03-22" thread-id="72z43lmlvxsl2src"><headers><envelope-from-line>Mon Mar 22 16:09:26 2010</envelope-from-line><from personal="Edwin Groothuis" address="edwin@FreeBSD.org">Edwin Groothuis &lt;edwin@FreeBSD.org&gt;</from><to personal="ports-committers@FreeBSD.org" address="ports-committers@FreeBSD.org">ports-committers@FreeBSD.org</to><subject normal="cvs commit: CVSROOT modules">cvs commit: CVSROOT modules</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 19
+          for &lt;gerald.hunt.rosa@a.markmail.org&gt;;
+          Mon, 22 Mar 2010 16:09:26 -0800 (GMT-08:00)</received><received>from mx2.freebsd.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id A1BCE2908286
+	for &lt;gerald.hunt.rosa@a.markmail.org&gt;; Mon, 22 Mar 2010 17:09:03 -0700 (PDT)</received><received>from hub.freebsd.org (hub.freebsd.org [IPv6:2001:4f8:fff6::36])
+	by mx2.freebsd.org (Postfix) with ESMTP id F3530161A7A;
+	Tue, 23 Mar 2010 00:09:25 +0000 (UTC)</received><received>from hub.freebsd.org (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with ESMTP id C313A1065677;
+	Tue, 23 Mar 2010 00:09:25 +0000 (UTC)
+	(envelope-from owner-cvs-ports@freebsd.org)</received><delivered-to>cvs-ports@FreeBSD.org</delivered-to><received>from mx1.freebsd.org (mx1.freebsd.org [IPv6:2001:4f8:fff6::34])
+	by hub.freebsd.org (Postfix) with ESMTP id B660E106564A;
+	Tue, 23 Mar 2010 00:09:13 +0000 (UTC)
+	(envelope-from edwin@FreeBSD.org)</received><received>from repoman.freebsd.org (repoman.freebsd.org
+	[IPv6:2001:4f8:fff6::29])
+	by mx1.freebsd.org (Postfix) with ESMTP id 8CF888FC1B;
+	Tue, 23 Mar 2010 00:09:13 +0000 (UTC)</received><received>from repoman.freebsd.org (localhost [127.0.0.1])
+	by repoman.freebsd.org (8.14.3/8.14.3) with ESMTP id o2N09DcR007403;
+	Tue, 23 Mar 2010 00:09:13 GMT
+	(envelope-from edwin@repoman.freebsd.org)</received><received>(from edwin@localhost)
+	by repoman.freebsd.org (8.14.3/8.14.3/Submit) id o2N09DYM007402;
+	Tue, 23 Mar 2010 00:09:13 GMT (envelope-from edwin)</received><message-id>201003230009.o2N09DYM007402@repoman.freebsd.org</message-id><date>Tue, 23 Mar 2010 00:09:13 +0000 (UTC)</date><x-freebsd-cvs-branch>HEAD</x-freebsd-cvs-branch><x-beenthere>cvs-ports@freebsd.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>CVS commit messages for the ports tree &lt;cvs-ports.freebsd.org&gt;</list-id><list-unsubscribe>&lt;http://lists.freebsd.org/mailman/listinfo/cvs-ports&gt;,
+	&lt;mailto:cvs-ports-request@freebsd.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.freebsd.org/pipermail/cvs-ports&gt;</list-archive><list-post>&lt;mailto:cvs-ports@freebsd.org&gt;</list-post><list-help>&lt;mailto:cvs-ports-request@freebsd.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.freebsd.org/mailman/listinfo/cvs-ports&gt;,
+	&lt;mailto:cvs-ports-request@freebsd.org?subject=subscribe&gt;</list-subscribe><sender>owner-cvs-ports@freebsd.org</sender><errors-to>owner-cvs-ports@freebsd.org</errors-to></headers><normalized-references><normalized-message-id>201003230009.o2N09DYM007402@repoman.freebsd.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">edwin       2010-03-23 00:09:13 UTC
+
+</para><para depth="0">  FreeBSD ports repository
+
+</para><para depth="0">  Modified files:
+    .                    modules 
+  Log:
+  Ports modules update at Tuesday 23 March 2010 at 00:09
+  Feature safe: yes
+
+</para><para depth="0">  Revision  Changes    Path
+  1.20731   +0 -0      CVSROOT/modules
+</para><footer type="list-management" depth="0">_______________________________________________
+<email>cvs-ports@freebsd.org</email> mailing list
+<url>http://lists.freebsd.org/mailman/listinfo/cvs-ports</url>
+To unsubscribe, send any mail to "<email>cvs-ports-unsubscribe@freebsd.org</email>"
+</footer></body></message>

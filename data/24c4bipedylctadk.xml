@@ -1,0 +1,68 @@
+<message message-id="42DF9FA7.8040100@sun.com" list="org.opensolaris.opensolaris-discuss" id="24c4bipedylctadk" type="general" date="2005-07-21T06:14:15" year="2005-01-01" year-month="2005-07-01" year-month-day="2005-07-21" thread-id="xtsdsuaqvcmhi7yc"><headers><envelope-from-line>From alvaro.lopez@sun.com  Thu Jul 21 06:14:15 2005</envelope-from-line><from personal="Alvaro Lopez Ortega" address="alvaro.lopez@sun.com">Alvaro Lopez Ortega &lt;alvaro.lopez@sun.com&gt;</from><subject normal="[osol-discuss] Why I do think OpenSolaris ought to work with Debian">[osol-discuss] Why I do think OpenSolaris ought to work with Debian</subject><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.8 required=5.0 tests=BAYES_00,INVALID_DATE,
+	MISSING_HEADERS,NO_RECEIVED,NO_RELAYS autolearn=disabled version=3.2.4</x-spam-status><date>Wed Aug 10 15:46:07 2005</date><in-reply-to>&lt;42DF993A.nailIOKH1MMQU@burner&gt;</in-reply-to><references>&lt;42DE812C.7040304@sun.com&gt;
+	&lt;Pine.SOL.4.58.0507201035300.488@zen.rite-group.com&gt;
+	&lt;20050720182316.GB51010@orblivion.com&gt; &lt;42DE9D2D.40004@Sun.Com&gt;
+	&lt;42DF7501.nailIN421RYA2@burner&gt; &lt;42DF8E6A.9020500@sun.com&gt;
+	&lt;42DF993A.nailIOKH1MMQU@burner&gt;</references><message-id>42DF9FA7.8040100@sun.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>42DF9FA7.8040100@sun.com</normalized-message-id><normalized-in-reply-to>42DF993A.nailIOKH1MMQU@burner</normalized-in-reply-to><normalized-reference>42DE812C.7040304@sun.com</normalized-reference><normalized-reference>Pine.SOL.4.58.0507201035300.488@zen.rite-group.com</normalized-reference><normalized-reference>20050720182316.GB51010@orblivion.com</normalized-reference><normalized-reference>42DE9D2D.40004@Sun.Com</normalized-reference><normalized-reference>42DF7501.nailIN421RYA2@burner</normalized-reference><normalized-reference>42DF8E6A.9020500@sun.com</normalized-reference><normalized-reference>42DF993A.nailIOKH1MMQU@burner</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+Joerg Schilling wrote:
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">  It really makes sense to me: Linux has been the most advanced
+  Free Software choice.  What I'm proposing is to make OpenSolaris
+  join that huge community.
+
+</quotepara><quotepara depth="2">  As long as we continue being apart, Debian will continue being
+  Linux centric, but we can change that joining them with
+  OpenSolaris.
+</quotepara></quote><quotepara depth="1">
+You should first check whether the goals of Debian are compatible
+with the goals of the OpenSolaris community.
+</quotepara></quote><para depth="0">
+   Just curiosity.  What are those differences?  It seems to be pretty
+   much the same thing for me.
+
+</para><quote depth="1"><quotepara depth="1">To me, OpenSolaris is a more advanced software choice and I don't
+like to miss things in case I am forced to follow the Linux way by
+enforcing Debian rules on Solaris.
+</quotepara></quote><para depth="0">
+   That is wrong.  Debian is using Linux just because it has been the
+   most advanced choice from long time ago.  Debian is not Linux
+   dependent in any way.
+
+</para><quote depth="1"><quotepara depth="1">Debian people have the freedom to create a Debian/Solaris if they
+like.
+</quotepara></quote><para depth="0">
+   I don't know if they will have enough motivation to do it. I
+   strongly think we should kick it off.  We are trying to generate a
+   user base for OpenSolaris, so a effort like this makes sense to me.
+
+</para><quote depth="1"><quotepara depth="1">I believe that we should first define your needs and based thereof
+define our rules for OpenSolaris. Profiting from from work made by
+Debian people does not mean that we need to copy their rules. We
+would first need to find a way to discuss important issues for
+OpenSolaris such as:
+</quotepara></quote><para depth="0">
+   I haven't proposed to adopt their rules, but start a new branch in
+   their project.  OpenSolaris will continue working in his way, as
+   well as Debian will do the same, the only difference is that there
+   will be a new Debian/OpenSolaris architecture which will provide the
+   OpenSolaris software with the Debian rules.
+
+</para><quote depth="1"><quotepara depth="1">There are many more issues. If you blindly follow the Debian rules,
+you would immediately lose binary compatibility. Is that what you
+like to see?
+</quotepara></quote><para depth="0">
+   I'm not blind, I'm just asking to do one more step.  Of course there
+   will be lot of issues to fix. I know.  But it will be more difficult
+   it we don't start working on it.
+
+</para><para depth="0">   If Debian/OpenSolaris loses the compatibility, it is just a
+   Debian/OpenSolaris problem.  If the compatibility is that important
+   some people, you can be sure nobody will use it.  Anyway, as long as
+   the source code comes from OpenSolaris the compatibility should come
+   from there.
+
+</para><footer type="signature" depth="0" hash="9228295549004217923">-- 
+Greetings, alo.
+
+</footer></body></message>

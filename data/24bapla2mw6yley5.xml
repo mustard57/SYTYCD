@@ -1,0 +1,60 @@
+<message message-id="84EA05E2CA77634C82730353CBE3A84303218F19@SAUSEXMB1.amd.com" list="org.kernel.vger.linux-kernel" id="24bapla2mw6yley5" type="development" date="2006-07-27T14:29:01-05:00" year="2006-01-01" year-month="2006-07-01" year-month-day="2006-07-27" thread-id="rhx755erzhii5hcx"><headers><envelope-from-line>From linux-kernel-owner+akpm=40zip.com.au-S1751962AbWG0TpO@vger.kernel.org  Thu Jul 27 12:41:59 2006</envelope-from-line><from personal="Langsdorf, Mark" address="mark.langsdorf@amd.com">"Langsdorf, Mark" &lt;mark.langsdorf@amd.com&gt;</from><to personal="Ashok Raj" address="ashok.raj@intel.com">Ashok Raj &lt;ashok.raj@intel.com&gt;</to><cc personal="linux-kernel" address="linux-kernel@vger.kernel.org">linux-kernel &lt;linux-kernel@vger.kernel.org&gt;</cc><subject normal="[patch] Reorganize the cpufreq cpu hotplug locking to not be totally bizare">RE: [patch] Reorganize the cpufreq cpu hotplug locking to not be totally bizare</subject><return-path>linux-kernel-owner+akpm=40zip.com.au-S1751962AbWG0TpO@vger.kernel.org</return-path><received>from localhost (bix [127.0.0.1])
+	by localhost.localdomain (8.12.10/8.12.10) with ESMTP id k6RJfwIU007938
+	for &lt;akpm@localhost&gt;; Thu, 27 Jul 2006 12:41:59 -0700</received><delivered-to>akpm@zipworld.com.au</delivered-to><received>from mail-zipworld.pacific.net.au [61.8.0.24]
+	by localhost with POP3 (fetchmail-6.2.0)
+	for akpm@localhost (single-drop); Thu, 27 Jul 2006 12:41:59 -0700 (PDT)</received><received>from mailin2.pacific.net.au (mailin2.pacific.net.au [61.8.0.81])
+	by mailstore.pacific.net.au (Postfix) with ESMTP id BC3849499E
+	for &lt;akpm@zipworld.com.au&gt;; Fri, 28 Jul 2006 05:46:18 +1000 (EST)</received><received>from vger.kernel.org (unknown [209.132.176.167])
+	by mailin2.pacific.net.au (Postfix) with ESMTP id 3C0F218611A
+	for &lt;akpm@zip.com.au&gt;; Fri, 28 Jul 2006 05:46:18 +1000 (EST)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1751962AbWG0TpO (ORCPT &lt;rfc822;akpm@zip.com.au&gt;);
+	Thu, 27 Jul 2006 15:45:14 -0400</received><received>(majordomo@vger.kernel.org) by vger.kernel.org id S1751965AbWG0TpO
+	(ORCPT &lt;rfc822;linux-kernel-outgoing&gt;);
+	Thu, 27 Jul 2006 15:45:14 -0400</received><received>from outbound-red.frontbridge.com ([216.148.222.49]:29389 "EHLO
+	outbound1-red-R.bigfish.com") by vger.kernel.org with ESMTP
+	id S1751962AbWG0TpL convert rfc822-to-8bit (ORCPT
+	&lt;rfc822;linux-kernel@vger.kernel.org&gt;);
+	Thu, 27 Jul 2006 15:45:11 -0400</received><received>from outbound1-red.bigfish.com (localhost.localdomain [127.0.0.1])
+	by outbound1-red-R.bigfish.com (Postfix) with ESMTP id 52977EB2827;
+	Thu, 27 Jul 2006 19:45:11 +0000 (UTC)</received><received>from mail94-red-R.bigfish.com (unknown [172.18.12.3])
+	by outbound1-red.bigfish.com (Postfix) with ESMTP id 499D2EB1CFB;
+	Thu, 27 Jul 2006 19:45:11 +0000 (UTC)</received><received>from mail94-red.bigfish.com (localhost.localdomain [127.0.0.1])
+	by mail94-red-R.bigfish.com (Postfix) with ESMTP id 3B42B60A812;
+	Thu, 27 Jul 2006 19:45:11 +0000 (UTC)</received><x-bigfish>V</x-bigfish><received>by mail94-red (MessageSwitch) id 1154029511162120_14947; Thu, 27 Jul 2006 19:45:11 +0000 (UCT)</received><received>from amdext4.amd.com (amdext4.amd.com [163.181.251.6])
+	by mail94-red.bigfish.com (Postfix) with ESMTP id 085A7603E80;
+	Thu, 27 Jul 2006 19:45:10 +0000 (UTC)</received><received>from SAUSGW02.amd.com (sausgw02.amd.com [163.181.250.22])
+	by amdext4.amd.com (8.12.11/8.12.11/AMD) with ESMTP id k6RJShdR012024;
+	Thu, 27 Jul 2006 14:29:13 -0500</received><received>from 163.181.22.101 by SAUSGW02.amd.com with ESMTP (AMD SMTP
+ Relay (Email Firewall v6.1.0)); Thu, 27 Jul 2006 14:29:02 -0500</received><x-server-uuid>5FC0E2DF-CD44-48CD-883A-0ED95B391E89</x-server-uuid><received>from sausexmb1.amd.com ([163.181.3.156]) by sausexbh1.amd.com
+ with Microsoft SMTPSVC(6.0.3790.2499); Thu, 27 Jul 2006 14:29:02 -0500</received><x-mimeole>Produced By Microsoft Exchange V6.5</x-mimeole><content-class>urn:content-classes:message</content-class><mime-version>1.0</mime-version><date>Thu, 27 Jul 2006 14:29:01 -0500</date><message-id>84EA05E2CA77634C82730353CBE3A84303218F19@SAUSEXMB1.amd.com</message-id><in-reply-to>&lt;20060726141531.A22927@unix-os.sc.intel.com&gt;</in-reply-to><x-ms-has-attach/><x-ms-tnef-correlator/><thread-topic>[patch] Reorganize the cpufreq cpu hotplug locking to not
+ be totally bizare</thread-topic><thread-index>Acaw/Hg1M0HOXRPqTrKaTHj9e92TaQAtijuQ</thread-index><x-originalarrivaltime>27 Jul 2006 19:29:02.0648 (UTC)
+ FILETIME=[EAB23380:01C6B1B2]</x-originalarrivaltime><x-wss-id>68D7CC740Y8619859-01-01</x-wss-id><content-type>text/plain;
+ charset=us-ascii</content-type><content-transfer-encoding>8BIT</content-transfer-encoding><sender>linux-kernel-owner@vger.kernel.org</sender><precedence>bulk</precedence><x-mailing-list>linux-kernel@vger.kernel.org</x-mailing-list><x-spam-checker-version>SpamAssassin 3.0.2 (2004-11-16) on bix</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.7 required=2.0 tests=AWL,BAYES_00 autolearn=ham 
+	version=3.0.2</x-spam-status><status>RO</status><x-status/><x-keywords/><x-uid>7652</x-uid></headers><normalized-references><normalized-message-id>84EA05E2CA77634C82730353CBE3A84303218F19@SAUSEXMB1.amd.com</normalized-message-id><normalized-thread-index>Acaw/Hg1M0HOXRPqTrKaTHj9e92TaQ</normalized-thread-index><normalized-in-reply-to>20060726141531.A22927@unix-os.sc.intel.com</normalized-in-reply-to></normalized-references><body type="text/plain;&#13;&#10; charset=us-ascii"><para depth="0">
+</para><quote depth="1"><quotepara depth="1">before introducing the ugly recursion we did try the 
+preempt_disable() for cpufreq, and it worked for most all 
+governers with preempt_disable(), but powernowk8 called 
+set_cpus_allowed() in the callback path that threw out a 
+scheduling while in atomic BUG().
+
+</quotepara><quotepara depth="1"><url>http://lkml.org/lkml/2005/10/31/239</url>
+</quotepara></quote><para depth="0">
+Is there some other preferred call we could be making 
+instead of set_cpus_allowed() ?  We need to be able to
+program the MSRs on that specific core, and as far as
+I know, the only way to do that is to guarantee that
+we are scheduled on that particular core.  
+
+</para><para depth="0">If there's a better way to hop to a specific core, I'll
+gladly rewrite the code in question.
+
+</para><para depth="0">-Mark Langsdorf
+AMD, Inc.
+
+</para><footer type="list-management" depth="0">-
+To unsubscribe from this list: send the line "unsubscribe linux-kernel" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+Please read the FAQ at  <url>http://www.tux.org/lkml/</url>
+
+</footer></body></message>

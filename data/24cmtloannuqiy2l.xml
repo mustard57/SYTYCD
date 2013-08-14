@@ -1,0 +1,40 @@
+<message message-id="d165c580910091536m52b10268q78a4113c702afc98@mail.gmail.com" list="org.r-project.r-help" id="24cmtloannuqiy2l" type="users" date="2009-10-09T14:36:19.942682-08:00" year="2009-01-01" year-month="2009-10-01" year-month-day="2009-10-09" thread-id="24cmtloannuqiy2l"><headers><envelope-from-line>Fri Oct 09 14:36:42 2009</envelope-from-line><from personal="Sharon Beckett" address="sbeckett77@gmail.com">Sharon Beckett &lt;sbeckett77@gmail.com&gt;</from><to personal="r-help@r-project.org" address="r-help@r-project.org">r-help@r-project.org</to><subject normal="[R] user input in R">[R] user input in R</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 314
+          for &lt;forest.reynolds.hoffman@a.markmail.org&gt;;
+          Fri, 9 Oct 2009 14:36:42 -0800 (GMT-08:00)</received><received>from hypatia.math.ethz.ch (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 2E45C2908209
+	for &lt;forest.reynolds.hoffman@a.markmail.org&gt;; Fri,  9 Oct 2009 15:36:19 -0700 (PDT)</received><received>from hypatia.math.ethz.ch (hypatia [129.132.145.15])
+	by hypatia.math.ethz.ch (8.14.1/8.14.1) with ESMTP id n99MaULC005950;
+	Sat, 10 Oct 2009 00:36:40 +0200</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on hypatia.math.ethz.ch</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-6.6 required=5.0 tests=BAYES_00, DKIM_SIGNED,
+	RCVD_IN_DNSWL_MED autolearn=ham version=3.2.5</x-spam-status><received>from phil3.ethz.ch (phil3.ethz.ch [129.132.202.239])
+	by hypatia.math.ethz.ch (8.14.1/8.14.1) with ESMTP id n99MaNWg005840
+	for &lt;r-help@lists.R-project.org&gt;; Sat, 10 Oct 2009 00:36:23 +0200</received><received>from mail-fx0-f220.google.com ([209.85.220.220])
+	by phil3.ethz.ch with esmtp (Exim 4.66)
+	(envelope-from &lt;sbeckett77@gmail.com&gt;) id 1MwO4d-000147-CX
+	for r-help@lists.R-project.org; Sat, 10 Oct 2009 00:36:33 +0200</received><received>by fxm20 with SMTP id 20so6255505fxm.38
+	for &lt;r-help@lists.R-project.org&gt;; Fri, 09 Oct 2009 15:36:21 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:mime-version:received:date:message-id:subject
+	:from:to:content-type;
+	bh=xO8gCXUzAai7AnEgOrlQLrf01YkE5P+xNqp4s0MlDA0=;
+	b=PR0ZcG266LZu7G8R4c3yhwhG+TWNPoc4i6rSce3odSfkn12WRMoltK4roSaKg69hWi
+	A8+dfXfXBZxx/XzjcIOYCQik2vd3LY078liBXT54vTASdLUfTVtBXws3KRMGLv2Y10gO
+	To5MsVugdS0RQ4m7VvmvsqqIoV0nIwPi1Kiuc=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=mime-version:date:message-id:subject:from:to:content-type;
+	b=a+L5vTBjwPmFCXlg0PFfGYWjSWYVXHnldghkG0YbDRQtomfAiDzXIiVXRd7gR7yxrz
+	mLtJD9kqkOJS53kE/tYtdr5ruQo4mrsxIUfL64F68p1QDFnWDib5C0NmGODq9fBo5mRF
+	0qhw41mRfwg5M6je4bieYjJzHcgMWPd9lfzGU=</domainkey-signature><mime-version>1.0</mime-version><received>by 10.223.27.194 with SMTP id j2mr1007862fac.76.1255127781893; Fri, 
+	09 Oct 2009 15:36:21 -0700 (PDT)</received><date>Fri, 9 Oct 2009 12:36:21 -1000</date><message-id>d165c580910091536m52b10268q78a4113c702afc98@mail.gmail.com</message-id><x-tag-only>YES</x-tag-only><x-filter-node>phil3.ethz.ch</x-filter-node><x-usf-spam-level>--</x-usf-spam-level><x-usf-spam-status>hits=-2.4 tests=BAYES_00,DNS_FROM_RFC_POST</x-usf-spam-status><x-usf-spam-flag>NO</x-usf-spam-flag><x-virus-scanned>by amavisd-new at stat.math.ethz.ch</x-virus-scanned><x-beenthere>r-help@r-project.org</x-beenthere><x-mailman-version>2.1.11</x-mailman-version><precedence>list</precedence><list-id>"Main R Mailing List: Primary help" &lt;r-help.r-project.org&gt;</list-id><list-unsubscribe>&lt;https://stat.ethz.ch/mailman/options/r-help&gt;,
+	&lt;mailto:r-help-request@r-project.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://stat.ethz.ch/pipermail/r-help&gt;</list-archive><list-post>&lt;mailto:r-help@r-project.org&gt;</list-post><list-help>&lt;mailto:r-help-request@r-project.org?subject=help&gt;</list-help><list-subscribe>&lt;https://stat.ethz.ch/mailman/listinfo/r-help&gt;,
+	&lt;mailto:r-help-request@r-project.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>r-help-bounces@r-project.org</sender><errors-to>r-help-bounces@r-project.org</errors-to></headers><normalized-references><normalized-message-id>d165c580910091536m52b10268q78a4113c702afc98@mail.gmail.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0"> I'm just learning R (I don't know any other programming languages),
+   and I have a question. I am trying to figure out how to ask for user
+   input (say, a set of 3 numbers) then put those numbers into an array.
+   I've looked around, but I haven't been able to find any answers that I
+   understand.
+   Thanks!
+
+</para><footer type="list-management" depth="0">______________________________________________
+<email>R-help@r-project.org</email> mailing list
+<url>https://stat.ethz.ch/mailman/listinfo/r-help</url>
+PLEASE do read the posting guide <url>http://www.R-project.org/posting-guide.html</url>
+and provide commented, minimal, self-contained, reproducible code.
+</footer></body></message>

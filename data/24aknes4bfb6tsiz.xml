@@ -1,0 +1,55 @@
+<message message-id="200705260943.l4Q9hXEo031533@pam.servers.ljworld.com" list="com.googlegroups.django-updates" id="24aknes4bfb6tsiz" type="general" date="2007-05-26T04:43:33-05:00" year="2007-01-01" year-month="2007-05-01" year-month-day="2007-05-26" thread-id="24aknes4bfb6tsiz"><headers><envelope-from-line>Wed Sep 03 04:03:45 2008</envelope-from-line><from personal="nore...@djangoproject.com" address="nore...@djangoproject.com">nore...@djangoproject.com</from><to personal="django-updates@googlegroups.com" address="django-updates@googlegroups.com">django-updates@googlegroups.com</to><subject normal="[Changeset] r5353 - django/trunk/docs">[Changeset] r5353 - django/trunk/docs</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 66
+          for &lt;rufus.shaw.craft@a.markmail.org&gt;;
+          Wed, 3 Sep 2008 04:03:45 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 98855290808E
+	for &lt;rufus.shaw.craft@a.markmail.org&gt;; Wed,  3 Sep 2008 04:03:45 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (8.13.8/8.13.8) with ESMTP id m83B3jiB007752
+	for &lt;rufus.shaw.craft@a.markmail.org&gt;; Wed, 3 Sep 2008 04:03:45 -0700</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id m83B3jkh007750
+	for rufus.shaw.craft@a.markmail.org; Wed, 3 Sep 2008 04:03:45 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.django-updates</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>7b502de51649b2e3</x-markmail-googlegroups-mid><received>by 10.36.50.17 with SMTP id x17mr819503nzx.1180172613437;
+        Sat, 26 May 2007 02:43:33 -0700 (PDT)</received><received>from pam.servers.ljworld.com ([24.124.1.58])
+        by mx.google.com with ESMTP id y6si102794nzg.2007.05.26.02.43.33;
+        Sat, 26 May 2007 02:43:33 -0700 (PDT)</received><received-spf>neutral (google.com: 24.124.1.58 is neither permitted nor denied by best guess record for domain of nore...@djangoproject.com)</received-spf><received>from pam.servers.ljworld.com (pam.servers.ljworld.com [127.0.0.1])
+	by pam.servers.ljworld.com (8.12.11/8.12.11) with ESMTP id l4Q9hXO5031535
+	for &lt;django-updates@googlegroups.com&gt;; Sat, 26 May 2007 04:43:33 -0500</received><received>(from apache@localhost)
+	by pam.servers.ljworld.com (8.12.11/8.12.11/Submit) id l4Q9hXEo031533
+	for django-updates@googlegroups.com; Sat, 26 May 2007 04:43:33 -0500</received><date>Sat, 26 May 2007 04:43:33 -0500</date><message-id>200705260943.l4Q9hXEo031533@pam.servers.ljworld.com</message-id><x-authentication-warning>pam.servers.ljworld.com: apache set sender to nore...@djangoproject.com using -f</x-authentication-warning><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>200705260943.l4Q9hXEo031533@pam.servers.ljworld.com</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: mtredinnick
+Date: 2007-05-26 04:43:32 -0500 (Sat, 26 May 2007)
+New Revision: 5353
+
+</para><para depth="0">Modified:
+   django/trunk/docs/templates.txt
+Log:
+Fixed #4355 -- Clarified a confusing example in the use of the url template
+tag. Based on a patch from Collin Grady.
+
+</para><para depth="0">Modified: django/trunk/docs/templates.txt
+===================================================================
+--- django/trunk/docs/templates.txt	2007-05-26 09:22:55 UTC (rev 5352)
++++ django/trunk/docs/templates.txt	2007-05-26 09:43:32 UTC (rev 5353)
+@@ -843,10 +843,11 @@
+ should be comma-separated values that will be used as positional and keyword
+ arguments in the URL. All arguments required by the URLconf should be present.
+
+</para><para depth="0">-For example, suppose you have a view, ``app_name.client``, whose URLconf takes
+-a client ID. The URLconf line might look like this::
++For example, suppose you have a view, ``app_views.client``, whose URLconf
++takes a client ID (here, ``client()`` is a method inside the views file
++``app_views.py``). The URLconf line might look like this::
+
+</para><para depth="0">-    ('^client/(\d+)/$', 'app_name.client')
++    ('^client/(\d+)/$', 'app_views.client')
+
+</para><para depth="0"> If this app's URLconf is included into the project's URLconf under a path
+ such as this::
+@@ -855,7 +856,7 @@
+
+</para><para depth="0"> ...then, in a template, you can create a link to this view like this::
+
+</para><para depth="0">-    {% url app_name.client client.id %}
++    {% url app_views.client client.id %}
+
+</para><para depth="0"> The template tag will output the string ``/clients/client/123/``.
+
+</para></body></message>

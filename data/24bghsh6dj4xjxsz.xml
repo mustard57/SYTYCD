@@ -1,0 +1,101 @@
+<message message-id="E1ApqoN-0004jY-00@avocet.mail.pas.earthlink.net" list="org.apache.perl.asp" id="24bghsh6dj4xjxsz" type="development" date="2004-02-08T09:25:27-06:00" year="2004-01-01" year-month="2004-02-01" year-month-day="2004-02-08" thread-id="yt7bqtdaqtswb764"><headers><envelope-from-line>From asp-return-2105-apmail-perl-asp-archive=perl.apache.org@perl.apache.org Sun Feb 08 15:25:36 2004</envelope-from-line><from personal="Steve Brown" address="steve@sprintmail.com">Steve Brown &lt;steve@sprintmail.com&gt;</from><to personal="'Helmut Zeilinger'" address="mail@hzlabs.com">'Helmut Zeilinger' &lt;mail@hzlabs.com&gt;</to><cc personal="'Candland, Spencer'" address="scandland@aboutws.com">"'Candland, Spencer'" &lt;scandland@aboutws.com&gt;</cc><subject normal="ASP on Redhat Virtual Server">RE: ASP on Redhat Virtual Server</subject><return-path>asp-return-2105-apmail-perl-asp-archive=perl.apache.org@perl.apache.org</return-path><delivered-to>apmail-perl-asp-archive@www.apache.org</delivered-to><received>(qmail 42779 invoked from network); 8 Feb 2004 15:25:36 -0000</received><received>from daedalus.apache.org (HELO mail.apache.org) (208.185.179.12)
+  by minotaur-2.apache.org with SMTP; 8 Feb 2004 15:25:36 -0000</received><received>(qmail 31317 invoked by uid 500); 8 Feb 2004 15:25:30 -0000</received><delivered-to>apmail-perl-asp-archive@perl.apache.org</delivered-to><received>(qmail 31293 invoked by uid 500); 8 Feb 2004 15:25:29 -0000</received><mailing-list>contact asp-help@perl.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:asp-help@perl.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:asp-unsubscribe@perl.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:asp@perl.apache.org&gt;</list-post><delivered-to>mailing list asp@perl.apache.org</delivered-to><received>(qmail 31273 invoked from network); 8 Feb 2004 15:25:29 -0000</received><received>from unknown (HELO avocet.mail.pas.earthlink.net) (207.217.120.50)
+  by daedalus.apache.org with SMTP; 8 Feb 2004 15:25:29 -0000</received><received>from user-0c939n3.cable.mindspring.com ([24.145.166.227] helo=Laptop)
+	by avocet.mail.pas.earthlink.net with esmtp (Exim 3.33 #1)
+	id 1ApqoN-0004jY-00; Sun, 08 Feb 2004 07:25:31 -0800</received><date>Sun, 8 Feb 2004 09:25:27 -0600</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-mailer>Microsoft Office Outlook, Build 11.0.5510</x-mailer><thread-index>AcPuU3PcQ15ULZU6TLiTb36h+TJfbAAAxC8Q</thread-index><x-mimeole>Produced By Microsoft MimeOLE V6.00.2800.1165</x-mimeole><in-reply-to>&lt;2520000.1076249510@localhost&gt;</in-reply-to><message-id>E1ApqoN-0004jY-00@avocet.mail.pas.earthlink.net</message-id><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>E1ApqoN-0004jY-00@avocet.mail.pas.earthlink.net</normalized-message-id><normalized-thread-index>AcPuU3PcQ15ULZU6TLiTb36h+TJfbA</normalized-thread-index><normalized-in-reply-to>2520000.1076249510@localhost</normalized-in-reply-to></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;us-ascii&quot;"><para depth="0">No.  I'm actually trying to do SSI in an html file.
+
+</para><footer type="signature" hash="10132215678089035960" depth="0">Steve Brown
+
+</footer><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Helmut Zeilinger [mailto:<email>mail@hzlabs.com</email>]
+Sent: Sunday, February 08, 2004 8:12 AM
+To: Steve Brown; <email>asp@perl.apache.org</email>
+Cc: 'Candland, Spencer'
+Subject: Re: ASP on Redhat Virtual Server
+
+</quotepara><quotepara depth="1">Hi Steve,
+
+</quotepara><quotepara depth="1">did you do
+
+</quotepara><quotepara depth="1">AddType text/html .asp      ?
+
+</quotepara><quotepara depth="1">(and set the executable bit of the asp-file)
+
+</quotepara><quotepara depth="1">That's because the XBitHack on directive only works
+on files of the type text/html. (At least that's what the
+Apache manual says)
+
+</quotepara><quotepara depth="1">Of course you could do the same
+with
+
+</quotepara><quotepara depth="1">print readpipe ('ls');
+
+</quotepara><quotepara depth="1">and so on.. (glob()..)
+
+</quotepara><quotepara depth="1">Regards
+
+</quotepara><quotefooter type="signature" hash="3311207351746034794" depth="1">Helmut
+
+</quotefooter><quote depth="2"><quotepara depth="2">It works!  It really WORKS!
+
+</quotepara><quotepara depth="2">A big THANK YOU to all who helped me through this.  Some 20+ ASP's are
+now registering folks for orienteering events, keeping track of results
+and keeping track of the volunteers who help with the events.
+
+</quotepara><quotepara depth="2">I still have at least one problem left to solve.  I can't do a server
+side include to include code in a different directory than the
+DOCUMENT_ROOT directory.  I can't &lt;!--#exec cmd="/bin/ls" --&gt; or
+&lt;!--#exec cgi="<url>http://ptoc.org/cgi-bin/bulletin.pl</url>" --&gt; or exec
+cmd="<url>http://ptoc.org/cgi-bin/bulletin.pl</url>" --&gt;
+
+</quotepara><quotepara depth="2">I can do &lt;!--#echo var="DATE_LOCAL" --&gt; and  &lt;!--#flastmod
+file="test.html" --&gt;
+
+</quotepara><quotepara depth="2">Some of httpd.conf is as follows
+
+</quotepara><quotepara depth="2">&lt;VirtualHost 209.133.46.140&gt;
+
+</quotepara><quotepara depth="2">&lt;Directory /home/webadmin/ptoc.org/html&gt;
+
+</quotepara><quotepara depth="2">Options Indexes FollowSymLinks ExecCGI Includes
+
+</quotepara><quotepara depth="2">AllowOverride All
+
+</quotepara><quotepara depth="2">XBitHack on
+
+</quotepara><quotepara depth="2">&lt;/Directory&gt;
+
+</quotepara><quotepara depth="2">PerlModule  Apache::ASP
+
+</quotepara><quotepara depth="2">&lt;Files ~ (\.asp)&gt;
+
+</quotepara><quotepara depth="2">  SetHandler  perl-script
+
+</quotepara><quotepara depth="2">  PerlHandler Apache::ASP
+
+</quotepara><quotepara depth="2">  PerlSetVar  Global /home/webadmin/ptoc.org/register
+
+</quotepara><quotepara depth="2">  PerlSetVar  StateDir /tmp/asp
+
+</quotepara><quotepara depth="2">  PerlSetVar Debug 2
+
+</quotepara><quotepara depth="2">  PerlSetVar UseStrict 0
+
+</quotepara><quotepara depth="2">&lt;/Files&gt;
+
+</quotepara><quotepara depth="2">DocumentRoot "/home/webadmin/ptoc.org/html"
+
+</quotepara><quotepara depth="2">Alias "/register/" "/home/webadmin/ptoc.org/register/"
+
+</quotepara><quotepara depth="2">ScriptAlias "/cgi-bin/" "/home/webadmin/ptoc.org/cgi-bin/"
+
+</quotepara><quotepara depth="2">Any help is greatly appreciated.
+
+</quotepara><quotefooter type="signature" hash="10132215678089035960" depth="2">Steve Brown
+
+</quotefooter></quote></quote><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>asp-unsubscribe@perl.apache.org</email>
+For additional commands, e-mail: <email>asp-help@perl.apache.org</email>
+
+</footer></body></message>

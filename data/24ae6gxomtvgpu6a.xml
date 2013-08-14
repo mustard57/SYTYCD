@@ -1,0 +1,42 @@
+<message message-id="46B2DAC8E63ED4D5EA26A1A5@[192.168.1.2]" list="org.openldap.openldap-technical" id="24ae6gxomtvgpu6a" type="general" date="2011-05-10T08:20:34-07:00" year="2011-01-01" year-month="2011-05-01" year-month-day="2011-05-10" thread-id="k7ymup3tznqrqkpp"><headers><envelope-from-line>Tue May 10 07:22:44 2011</envelope-from-line><from personal="Quanah Gibson-Mount" address="quanah@zimbra.com">Quanah Gibson-Mount &lt;quanah@zimbra.com&gt;</from><to personal="Meghanand Acharekar" address="vasco.debian@gmail.com">Meghanand Acharekar &lt;vasco.debian@gmail.com&gt;</to><subject normal="Not able start TLS.">Re: Not able start TLS.</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 146
+          for &lt;teresa.soto.forbes@a.markmail.org&gt;;
+          Tue, 10 May 2011 07:22:44 -0800 (GMT-08:00)</received><received>from boole.openldap.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 0751A3B300CB
+	for &lt;teresa.soto.forbes@a.markmail.org&gt;; Tue, 10 May 2011 08:22:21 -0700 (PDT)</received><received>from boole.openldap.org (mailman@localhost [IPv6:::1])
+	by boole.openldap.org (8.14.4/8.14.4) with ESMTP id p4AFLO6B066292;
+	Tue, 10 May 2011 15:21:27 GMT
+	(envelope-from openldap-technical-bounces@openldap.org)</received><received>from mta02.zimbra.com (mta02.zimbra.com [205.140.197.62])
+ by boole.openldap.org (8.14.4/8.14.4) with ESMTP id p4AFKwCA066260
+ for &lt;openldap-technical@openldap.org&gt;; Tue, 10 May 2011 15:21:22 GMT
+ (envelope-from quanah@zimbra.com)</received><received>from localhost (localhost.localdomain [127.0.0.1])
+ by mta02.zimbra.com (Postfix) with ESMTP id 6CB947C0013;
+ Tue, 10 May 2011 08:20:38 -0700 (PDT)</received><x-virus-scanned>amavisd-new at zimbra.com</x-virus-scanned><received>from mta02.zimbra.com ([127.0.0.1])
+ by localhost (mta02.zimbra.com [127.0.0.1]) (amavisd-new, port 10024)
+ with ESMTP id 5xhdwmGsfi5x; Tue, 10 May 2011 08:20:29 -0700 (PDT)</received><received>from [192.168.1.2] (unknown [75.111.45.108])
+ by mta02.zimbra.com (Postfix) with ESMTPSA id C181E7C0031;
+ Tue, 10 May 2011 08:20:29 -0700 (PDT)</received><date>Tue, 10 May 2011 08:20:34 -0700</date><message-id>46B2DAC8E63ED4D5EA26A1A5@[192.168.1.2]</message-id><in-reply-to>&lt;BANLkTimUYvxbT_jZOBVvV95Db9q_sWg5Ug@mail.gmail.com&gt;</in-reply-to><references>&lt;BANLkTimUYvxbT_jZOBVvV95Db9q_sWg5Ug@mail.gmail.com&gt;</references><x-mailer>Mulberry/4.0.8 (Win32)</x-mailer><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8; format=flowed</content-type><content-disposition>inline</content-disposition><x-spam-status>No, score=-0.0 required=5.0 tests=T_RP_MATCHES_RCVD
+ autolearn=unavailable version=3.3.1</x-spam-status><x-spam-checker-version>SpamAssassin 3.3.1 (2010-03-16) on boole.openldap.org</x-spam-checker-version><x-mime-autoconverted>from quoted-printable to 8bit by boole.openldap.org id
+ p4AFKwCA066260</x-mime-autoconverted><x-beenthere>openldap-technical@openldap.org</x-beenthere><x-mailman-version>2.1.14</x-mailman-version><precedence>list</precedence><list-id>OpenLDAP Technical Discussion list &lt;openldap-technical.openldap.org&gt;</list-id><list-unsubscribe>&lt;http://www.openldap.org/lists/mm/options/openldap-technical&gt;, 
+ &lt;mailto:openldap-technical-request@openldap.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://www.openldap.org/lists/openldap-technical&gt;</list-archive><list-post>&lt;mailto:openldap-technical@openldap.org&gt;</list-post><list-help>&lt;mailto:openldap-technical-request@openldap.org?subject=help&gt;</list-help><list-subscribe>&lt;http://www.openldap.org/lists/mm/listinfo/openldap-technical&gt;, 
+ &lt;mailto:openldap-technical-request@openldap.org?subject=subscribe&gt;</list-subscribe><errors-to>openldap-technical-bounces@OpenLDAP.org</errors-to><sender>openldap-technical-bounces@OpenLDAP.org</sender><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>46B2DAC8E63ED4D5EA26A1A5@[192.168.1.2]</normalized-message-id><normalized-in-reply-to>BANLkTimUYvxbT_jZOBVvV95Db9q_sWg5Ug@mail.gmail.com</normalized-in-reply-to><normalized-reference>BANLkTimUYvxbT_jZOBVvV95Db9q_sWg5Ug@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=utf-8; format=flowed"><para depth="0">--On Tuesday, May 10, 2011 4:56 PM +0530 Meghanand Acharekar 
+&lt;<email>vasco.debian@gmail.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">using /usr/local/libexec/slapd -s 256 -h "ldap:///"
+daemon: TLS not supported (ldaps:///)
+</quotepara></quote><para depth="0">
+You didn't tell slapd to start with ldaps:///, you told it to start with 
+ldap:///.  What exactly is the question?
+
+</para><para depth="0">--Quanah
+
+</para><footer type="noise" depth="0">--
+
+</footer><footer type="signature" depth="0" hash="10254161557497824444">Quanah Gibson-Mount
+Sr. Member of Technical Staff
+Zimbra, Inc
+A Division of VMware, Inc.
+</footer><para depth="0">--------------------
+Zimbra ::  the leader in open source messaging and collaboration
+
+</para></body></message>

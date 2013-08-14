@@ -1,0 +1,37 @@
+<message message-id="319daa5c0708280940g70bd6773q6f62210d401fbbb5@mail.gmail.com" list="uk.org.greenend.chiark.ukcrypto" id="24cw2q75nbk63ms5" type="general" date="2007-08-28T17:40:26+01:00" year="2007-01-01" year-month="2007-08-01" year-month-day="2007-08-28" thread-id="hxjitp33sd7dwbv6"><headers><envelope-from-line>From owner-mailman@chiark.greenend.org.uk Tue Aug 28 18:44:11 2007</envelope-from-line><from personal="Hasan Qunoo" address="hassanq@gmail.com">Hasan Qunoo &lt;hassanq@gmail.com&gt;</from><to personal="ukcrypto@chiark.greenend.org.uk" address="ukcrypto@chiark.greenend.org.uk">ukcrypto@chiark.greenend.org.uk</to><subject normal="Beware police at work">Re: Beware police at work</subject><return-path>owner-mailman@chiark.greenend.org.uk</return-path><envelope-to>ukcrypto@chiark.greenend.org.uk</envelope-to><received>from an-out-0708.google.com ([209.85.132.251])
+	by chiark.greenend.org.uk (Debian Exim 3.36 #1) with esmtp
+	(return-path hassanq@gmail.com)
+	id 1IQ56p-0000Yx-00
+	for ukcrypto@chiark.greenend.org.uk; Tue, 28 Aug 2007 18:44:11 +0100</received><received>from an-out-0708.google.com ([209.85.132.251])
+	  by chiark.greenend.org.uk (SAUCE v0.8.99.iwj.5)
+          with esmtp id sauce-30286-1188323-1; 28 Aug 2007 17:44:11 +0000 (GMT)</received><received>by an-out-0708.google.com with SMTP id d31so289474and
+        for &lt;ukcrypto@chiark.greenend.org.uk&gt;; Tue, 28 Aug 2007 10:43:58 -0700 (PDT)</received><dkim-signature>a=rsa-sha1; c=relaxed/relaxed;
+        d=gmail.com; s=beta;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=aIAW9VdNu5PvyvN8eshbamAYZOO04vmrw+cyUKV0N0AWtTO4gF1LGRukOiQjGF/odm4gPyeI429jH625TiqxZlN4q3yDJLNwCiIm7jlIBNIielJSRSO5T3xgyEKVmjQM/PU9zKeoU+DvVxNMfj+iFNsd4hv2QiPEgDiu0gPi6rQ=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=beta;
+        h=received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=A5TpIzCsVEYgw3GG1jVYqyegfLLL0V2rpc2AcZ1bx+H+RA/Ke8uBGlIgxJuTDhwX+2QuTV38dPOJ+03yJLUnItrfTO0wggSp8eCrjVKbEEg3y2/uBwHEM13P6amb1imJMb0m4ZE3BXFTBCzVD/p2OjqheBkuOpk/+/H/xvsdO5A=</domainkey-signature><received>by 10.100.132.16 with SMTP id f16mr2963246and.1188319226867;
+        Tue, 28 Aug 2007 09:40:26 -0700 (PDT)</received><received>by 10.100.132.6 with HTTP; Tue, 28 Aug 2007 09:40:26 -0700 (PDT)</received><message-id>319daa5c0708280940g70bd6773q6f62210d401fbbb5@mail.gmail.com</message-id><date>Tue, 28 Aug 2007 17:40:26 +0100</date><in-reply-to>&lt;8uLklz0TkE1GFA$q@perry.co.uk&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><content-disposition>inline</content-disposition><references>&lt;46D440C8.14710.104FF23@davidh.spidacom.co.uk&gt;
+	 &lt;8uLklz0TkE1GFA$q@perry.co.uk&gt;</references><sender>ukcrypto-admin@chiark.greenend.org.uk</sender><errors-to>ukcrypto-admin@chiark.greenend.org.uk</errors-to><x-beenthere>ukcrypto@chiark.greenend.org.uk</x-beenthere><x-mailman-version>2.0.11</x-mailman-version><precedence>bulk</precedence><reply-to>ukcrypto@chiark.greenend.org.uk</reply-to><list-unsubscribe>&lt;http://www.chiark.greenend.org.uk/mailman/listinfo/ukcrypto&gt;,
+	&lt;mailto:ukcrypto-request@chiark.greenend.org.uk?subject=unsubscribe&gt;</list-unsubscribe><list-id>UK Cryptography Policy Discussion Group &lt;ukcrypto.chiark.greenend.org.uk&gt;</list-id><list-post>&lt;mailto:ukcrypto@chiark.greenend.org.uk&gt;</list-post><list-help>&lt;mailto:ukcrypto-request@chiark.greenend.org.uk?subject=help&gt;</list-help><list-subscribe>&lt;http://www.chiark.greenend.org.uk/mailman/listinfo/ukcrypto&gt;,
+	&lt;mailto:ukcrypto-request@chiark.greenend.org.uk?subject=subscribe&gt;</list-subscribe><list-archive>&lt;http://www.chiark.greenend.org.uk/pipermail/ukcrypto/&gt;</list-archive></headers><normalized-references><normalized-message-id>319daa5c0708280940g70bd6773q6f62210d401fbbb5@mail.gmail.com</normalized-message-id><normalized-in-reply-to>8uLklz0TkE1GFA$q@perry.co.uk</normalized-in-reply-to><normalized-reference>46D440C8.14710.104FF23@davidh.spidacom.co.uk</normalized-reference><normalized-reference>8uLklz0TkE1GFA$q@perry.co.uk</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">I am a bit surprised there was no question whether the officer who
+should be examining the data can understand Arabic or not.
+
+</para><para depth="0">Hasan
+
+</para><para depth="0">On 8/28/07, Roland Perry &lt;<email>lists@internetpolicyagency.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">In article &lt;<email>46D440C8.14710.104FF23@davidh.spidacom.co.uk</email>&gt;, David Hansen
+&lt;<email>davidh@spidacom.co.uk</email>&gt; writes
+</quotepara><quote depth="2"><quote depth="3"><quotepara depth="3">DC Murray, who gave his evidence from behind screens
+</quotepara></quote><quotepara depth="2">
+So much for open court. More and more of these petty officials are
+demanding to be hidden from us plebs. They must be very delicate
+flowers.
+</quotepara></quote><quotepara depth="1">
+That's a bit unfair. He works for Special Branch, and making him
+identifiable will likely hinder his future work.
+</quotepara><quotefooter type="signature" depth="1" hash="17723651206502479707">--
+Roland Perry
+
+</quotefooter></quote></body></message>

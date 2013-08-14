@@ -1,0 +1,38 @@
+<message message-id="b37300880705141005o7ee584ddk8cb6bd130a3a5dcb@mail.gmail.com" list="org.ruby-lang.ruby-talk" id="24byxm7ue2zcub2n" type="general" date="2007-05-15T02:05:13+09:00" year="2007-01-01" year-month="2007-05-01" year-month-day="2007-05-14" thread-id="y3dpqviqjxolwpmt"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Gregory Brown" address="gregory.t.brown@gmail.com">Gregory Brown &lt;gregory.t.brown@gmail.com&gt;</from><to personal="ruby-talk ML" address="ruby-talk@ruby-lang.org">ruby-talk ML &lt;ruby-talk@ruby-lang.org&gt;</to><subject normal="Yet Another Software Challenge">Re: Yet Another Software Challenge</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.lang.ruby.general</newsgroups><date>Tue, 15 May 2007 02:05:13 +0900</date><lines>19</lines><approved>news@gmane.org</approved><message-id>b37300880705141005o7ee584ddk8cb6bd130a3a5dcb@mail.gmail.com</message-id><references>&lt;1179148509.015341.196220@e51g2000hsg.googlegroups.com&gt;</references><reply-to>ruby-talk@ruby-lang.org</reply-to><nntp-posting-host>lo.gmane.org</nntp-posting-host><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>sea.gmane.org 1179162372 19809 80.91.229.12 (14 May 2007 17:06:12 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Mon, 14 May 2007 17:06:12 +0000 (UTC)</nntp-posting-date><original-x-from>ruby-talk-admin@ruby-lang.org Mon May 14 19:06:11 2007</original-x-from><return-path>ruby-talk-admin@ruby-lang.org</return-path><envelope-to>gclrg-ruby-talk@m.gmane.org</envelope-to><original-received>from carbon.ruby-lang.org ([221.186.184.68])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1Hndzj-0006Bz-Fp
+	for gclrg-ruby-talk@m.gmane.org; Mon, 14 May 2007 19:06:02 +0200</original-received><original-received>from carbon.ruby-lang.org (beryllium.ruby-lang.org [127.0.0.1])
+	by carbon.ruby-lang.org (Postfix) with ESMTP id 0066B3C22729A;
+	Tue, 15 May 2007 02:05:15 +0900 (JST)</original-received><original-received>from nz-out-0506.google.com (nz-out-0506.google.com [64.233.162.230])
+	by carbon.ruby-lang.org (Postfix) with ESMTP id D82C33C21EBBF
+	for &lt;ruby-talk@ruby-lang.org&gt;; Tue, 15 May 2007 02:05:12 +0900 (JST)</original-received><original-received>by nz-out-0506.google.com with SMTP id v1so2112735nzb
+        for &lt;ruby-talk@ruby-lang.org&gt;; Mon, 14 May 2007 10:05:13 -0700 (PDT)</original-received><original-received>by 10.114.94.1 with SMTP id r1mr1074442wab.1179162312020;
+        Mon, 14 May 2007 10:05:12 -0700 (PDT)</original-received><original-received>by 10.114.191.17 with HTTP; Mon, 14 May 2007 10:05:11 -0700 (PDT)</original-received><delivered-to>ruby-talk@ruby-lang.org</delivered-to><original-posted>Mon, 14 May 2007 13:05:11 -0400</original-posted><in-reply-to>&lt;1179148509.015341.196220@e51g2000hsg.googlegroups.com&gt;</in-reply-to><x-ml-name>ruby-talk</x-ml-name><x-mail-count>251576</x-mail-count><x-mlserver>fml [fml 4.0.3 release (20011202/4.0.3)]; post only (only members can post)</x-mlserver><x-ml-info>If you have a question, send e-mail with the body
+	"help" (without quotes) to the address ruby-talk-ctl@ruby-lang.org;
+	help=&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=help&gt;</x-ml-info><x-spam-checker-version>SpamAssassin 3.1.7 (2006-10-05) on 
+	carbon.ruby-lang.org</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-7.6 required=7.0 tests=ARIN,AWL,BAYES_05,
+	CONTENT_TYPE_PRESENT,QENCPTR2 autolearn=disabled version=3.1.7</x-spam-status><x-original-to>ruby-talk@ruby-lang.org</x-original-to><dkim-signature>a=rsa-sha1; c=relaxed/relaxed;
+        d=gmail.com; s=beta;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=HipLBQMhqVXY5mQcVg9nyqa1EjGijwZ8RygrJn6p4MxGDo1oeSfZu39wvQq+Vc+YnWCbm9/+h0wVbDwXSgaKU8p+OJG8wwjjf55YZox7D93sAJSaCR/eWeBBA0iIwmntqV7Nb+RHwJHndrwS+tU55jKbfio5kppZWN+VNs/uQvQ=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=beta;
+        h=received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=rROK7fp6ho1qNLUGrVwGSa6tTz7aVtPc3OE3+132W79utH3zVZWDgEtQLgSichpwwUz8XQuhDQa9ZJiuN25I+W50noAW+2koyf89C+s47SF1m4gajtxwyC5IazZGsyPWnplRPubzm95bi9FcrK7kSVQh+/qeL6/EBsOCzL0iAYY=</domainkey-signature><content-disposition>inline</content-disposition><precedence>bulk</precedence><original-lines>17</original-lines><list-id>ruby-talk.ruby-lang.org</list-id><list-software>fml [fml 4.0.3 release (20011202/4.0.3)]</list-software><list-post>&lt;mailto:ruby-talk@ruby-lang.org&gt;</list-post><list-owner>&lt;mailto:ruby-talk-admin@ruby-lang.org&gt;</list-owner><list-help>&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=help&gt;</list-help><list-unsubscribe>&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=unsubscribe&gt;</list-unsubscribe><xref>news.gmane.org gmane.comp.lang.ruby.general:209056</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.lang.ruby.general/209056&gt;</archived-at></headers><normalized-references><normalized-message-id>b37300880705141005o7ee584ddk8cb6bd130a3a5dcb@mail.gmail.com</normalized-message-id><normalized-in-reply-to>1179148509.015341.196220@e51g2000hsg.googlegroups.com</normalized-in-reply-to><normalized-reference>1179148509.015341.196220@e51g2000hsg.googlegroups.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1; format=flowed"><para depth="0">On 5/14/07, Thierry &lt;<email>machicoane@gmail.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">For those interested in &lt;b&gt;programming riddles&lt;/b&gt;, I would like to
+announce a new programming challenge I'm just launching at
+<url>http://software.challenge.googlepages.com</url>
+
+</quotepara><quotepara depth="1">This challenge is in its early stage and thus set to be continuously
+improved.
+
+</quotepara><quotepara depth="1">I would be especially interested in your comments and feedbacks about
+this initiative and its relevance.
+</quotepara></quote><para depth="0">
+Got through the first challenge in about maybe 5-10 minutes, mostly
+because I misread the description wrong.  This is very cool but I feel
+like i'd spend my day on it if I didn't force myself to put off
+working on it until later!
+
+</para><para depth="0">How many riddles are there so far?
+
+</para></body></message>

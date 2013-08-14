@@ -1,0 +1,44 @@
+<message message-id="BAY15-DAV22PETXd4Fm000094f1@hotmail.com" list="org.apache.portals.pluto-user" id="24chkk6na7ejtqkx" type="users" date="2004-02-28T11:40:54+01:00" year="2004-01-01" year-month="2004-02-01" year-month-day="2004-02-28" thread-id="q2eu6isqq2fiyvrs"><headers><envelope-from-line>From pluto-user-return-472-apmail-jakarta-pluto-user-archive=jakarta.apache.org@jakarta.apache.org Sat Feb 28 10:41:23 2004</envelope-from-line><from personal="niksa_os" address="niksa_os@hotmail.com">niksa_os &lt;niksa_os@hotmail.com&gt;</from><to personal="metek@touchtonecorp.com" address="metek@touchtonecorp.com">metek@touchtonecorp.com</to><subject normal="JSR-168 port of phpBB Forums, anyone interested?">Re: JSR-168 port of phpBB Forums, anyone interested?</subject><return-path>pluto-user-return-472-apmail-jakarta-pluto-user-archive=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-pluto-user-archive@www.apache.org</delivered-to><received>(qmail 40758 invoked from network); 28 Feb 2004 10:41:23 -0000</received><received>from daedalus.apache.org (HELO mail.apache.org) (208.185.179.12)
+  by minotaur-2.apache.org with SMTP; 28 Feb 2004 10:41:23 -0000</received><received>(qmail 2604 invoked by uid 500); 28 Feb 2004 10:40:57 -0000</received><delivered-to>apmail-jakarta-pluto-user-archive@jakarta.apache.org</delivered-to><received>(qmail 2394 invoked by uid 500); 28 Feb 2004 10:40:56 -0000</received><mailing-list>contact pluto-user-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><reply-to>pluto-user@jakarta.apache.org</reply-to><list-help>&lt;mailto:pluto-user-help@jakarta.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:pluto-user-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:pluto-user@jakarta.apache.org&gt;</list-post><reply-to>pluto-user@jakarta.apache.org</reply-to><delivered-to>mailing list pluto-user@jakarta.apache.org</delivered-to><received>(qmail 2381 invoked from network); 28 Feb 2004 10:40:56 -0000</received><received>from unknown (HELO hotmail.com) (65.54.184.79)
+  by daedalus.apache.org with SMTP; 28 Feb 2004 10:40:56 -0000</received><received>from mail pickup service by hotmail.com with Microsoft SMTPSVC;
+	 Sat, 28 Feb 2004 02:41:10 -0800</received><received>from 195.29.35.178 by bay15-dav22.bay15.hotmail.com with DAV;
+	Sat, 28 Feb 2004 10:41:10 +0000</received><x-originating-ip>[195.29.35.178]</x-originating-ip><x-originating-email>[niksa_os@hotmail.com]</x-originating-email><x-sender>niksa_os@hotmail.com</x-sender><references>&lt;200402271456.AA1563885678@mail.touchtonecorp.com&gt;</references><date>Sat, 28 Feb 2004 11:40:54 +0100</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 6.00.2800.1158</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V6.00.2800.1165</x-mimeole><message-id>BAY15-DAV22PETXd4Fm000094f1@hotmail.com</message-id><x-originalarrivaltime>28 Feb 2004 10:41:10.0396 (UTC) FILETIME=[610C13C0:01C3FDE7]</x-originalarrivaltime><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>BAY15-DAV22PETXd4Fm000094f1@hotmail.com</normalized-message-id><normalized-reference>200402271456.AA1563885678@mail.touchtonecorp.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><para depth="0">I think that Java version of phpBB exist. I was read somewhere about it and
+I think it's open source. I can't find it now, try google.
+So, maybe you can contact these people and agree about portlet extension.
+
+</para><para depth="0">Can you use, and extend, JBoss solution (Forums)? What they (JBoss) said?
+
+</para><quote depth="1"><quotepara depth="1">----- Original Message ----- 
+From: "Mete Kural" &lt;<email>metek@touchtonecorp.com</email>&gt;
+To: &lt;<email>pluto-user@jakarta.apache.org</email>&gt;
+Sent: Friday, February 27, 2004 3:56 PM
+Subject: JSR-168 port of phpBB Forums, anyone interested?
+
+</quotepara><quote depth="2"><quotepara depth="2">Hello All,
+
+</quotepara><quotepara depth="2">Would anybody be interested in a JSR-168 port of the famous phpBB forums.
+</quotepara></quote><quotepara depth="1">JBoss has half of the solution, a port of phpBB to J2EE, which is called
+Forums on JBoss and I was trying to convince the lead developer to port if
+further to JSR-168 so that it can be deployed on JSR-168 compliant portal
+servers. At the moment he thinks that JSR-168 simply not powerful enough as
+an interface for a complicated forums application such as phpBB. I disagree
+but I don't have the eloquence to explain this to him. Maybe those of you
+who are more knowledgable of JSR-168 can give him reasons that JSR-168 is
+indeed capable of a forums application interface. Quoting him:
+</quotepara><quote depth="2"><quotepara depth="2">
+"-a portlet in not allowed to modify the stylesheet, so that would means
+to ditch the BB themes which require custom CSS fragments ?
+-a portlet cannot redirect page
+In my mind portlets are very limited and are suitable for simple stuff, a
+forum is such an other beast."
+
+</quotepara><quotepara depth="2">If you have any responses to these claims, please make a post on this
+forum where the discussion is taking place:
+
+</quotepara><quotepara depth="2"><url>http://www.jboss.org/index.html?module=bb&amp;op=viewtopic&amp;t=46091</url>
+
+</quotepara><quotepara depth="2">Thank you,
+Mete
+
+</quotepara></quote></quote></body></message>

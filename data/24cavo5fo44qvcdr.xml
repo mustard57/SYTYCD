@@ -1,0 +1,28 @@
+<message message-id="20040309214138.22224.qmail@tigris.org" list="org.tigris.frameworx.cvs" id="24cavo5fo44qvcdr" no-archive="yes" type="checkins" date="2004-03-09T21:41:38Z" year="2004-01-01" year-month="2004-03-01" year-month-day="2004-03-09" thread-id="24cavo5fo44qvcdr"><headers><envelope-from-line>From cvs-return-418-tigrisq-archive=mail-frameworx=cvs=tigris.org=tigris.org@frameworx.tigris.org Tue Mar 09 21:41:40 2004</envelope-from-line><from personal="thhal@tigris.org" address="thhal@tigris.org">thhal@tigris.org</from><to personal="cvs@frameworx.tigris.org" address="cvs@frameworx.tigris.org">cvs@frameworx.tigris.org</to><subject normal="CVS update: /frameworx/tp_mdr/">CVS update: /frameworx/tp_mdr/</subject><return-path>cvs-return-418-tigrisq-archive=mail-frameworx=cvs=tigris.org=tigris.org@frameworx.tigris.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-frameworx=cvs=tigris.org@tigris.org</delivered-to><received>(qmail 22340 invoked by uid 5302); 9 Mar 2004 21:41:40 -0000</received><mailing-list>contact cvs-help@frameworx.tigris.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:cvs-help@frameworx.tigris.org&gt;</list-help><list-unsubscribe>&lt;mailto:cvs-unsubscribe@frameworx.tigris.org&gt;</list-unsubscribe><list-post>&lt;mailto:cvs@frameworx.tigris.org&gt;</list-post><reply-to>cvs@frameworx.tigris.org</reply-to><delivered-to>mailing list cvs@frameworx.tigris.org</delivered-to><received>(qmail 22249 invoked by uid 5000); 9 Mar 2004 21:41:38 -0000</received><date>9 Mar 2004 21:41:38 -0000</date><message-id>20040309214138.22224.qmail@tigris.org</message-id></headers><normalized-references><normalized-message-id>20040309214138.22224.qmail@tigris.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">User: thhal   
+Date: 04/03/09 13:41:38
+
+</para><para depth="0">Added:
+ /frameworx/tp_mdr/
+  .cvsignore
+
+</para><para depth="0">Log:
+ .tracking directories forces entry in .cvsignore
+
+</para><para depth="0">File Changes:
+
+</para><para depth="0">Directory: /frameworx/tp_mdr/
+=============================
+
+</para><para depth="0">File [added]: .cvsignore
+Url:<br/><url>http://frameworx.tigris.org/source/browse/frameworx/tp_mdr/.cvsignore?rev=1.1&amp;content-type=text/vnd.viewcvs-markup</url>
+Added lines: 1
+</para><para depth="0">--------------
+.tracking
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>cvs-unsubscribe@frameworx.tigris.org</email>
+For additional commands, e-mail: <email>cvs-help@frameworx.tigris.org</email>
+
+</footer></body></message>

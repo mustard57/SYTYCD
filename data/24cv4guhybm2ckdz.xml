@@ -1,0 +1,69 @@
+<message message-id="20110126231750.12441.30134.malonedeb@soybean.canonical.com" list="com.ubuntu.lists.desktop-bugs" id="24cv4guhybm2ckdz" type="bugs" date="2011-01-26T23:17:50Z" year="2011-01-01" year-month="2011-01-01" year-month-day="2011-01-26" thread-id="24cv4guhybm2ckdz"><headers><envelope-from-line>Wed Jan 26 15:25:39 2011</envelope-from-line><from personal="Davide" address="708386@bugs.launchpad.net">Davide &lt;708386@bugs.launchpad.net&gt;</from><to personal="desktop-bugs@lists.ubuntu.com" address="desktop-bugs@lists.ubuntu.com">desktop-bugs@lists.ubuntu.com</to><subject normal="[Bug 708386] [NEW] 1 m^3-&gt;m^3 = 1bat if i change m^3-&gt;mm =1 ... when the second choice button of conversion change the result don't.">[Bug 708386] [NEW] 1 m^3-&gt;m^3 = 1bat if i change m^3-&gt;mm =1 ... when the second choice button of conversion change the result don't.</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 381;
+          Wed, 26 Jan 2011 15:25:38 -0800 (GMT-08:00)</received><received>from chlorine.canonical.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 56AD829081DE;
+	Wed, 26 Jan 2011 15:25:15 -0800 (PST)</received><received>from localhost ([127.0.0.1] helo=chlorine.canonical.com)
+	by chlorine.canonical.com with esmtp (Exim 4.71)
+	(envelope-from &lt;desktop-bugs-bounces@lists.ubuntu.com&gt;)
+	id 1PiEk5-0003Jj-AT; Wed, 26 Jan 2011 23:25:37 +0000</received><received>from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.71)
+	(envelope-from &lt;bounces@canonical.com&gt;) id 1PiEk3-0003JZ-Vj
+	for desktop-bugs@lists.ubuntu.com; Wed, 26 Jan 2011 23:25:36 +0000</received><received>from loganberry.canonical.com ([91.189.90.37])
+	by adelie.canonical.com with esmtp (Exim 4.71 #1 (Debian))
+	id 1PiEk3-000714-Gy
+	for &lt;desktop-bugs@lists.ubuntu.com&gt;; Wed, 26 Jan 2011 23:25:35 +0000</received><received>from loganberry.canonical.com (localhost [127.0.0.1])
+	by loganberry.canonical.com (Postfix) with ESMTP id 4DAF12E8788
+	for &lt;desktop-bugs@lists.ubuntu.com&gt;;
+	Wed, 26 Jan 2011 23:25:35 +0000 (UTC)</received><mime-version>1.0</mime-version><date>Wed, 26 Jan 2011 23:17:50 -0000</date><x-launchpad-bug>distribution=ubuntu; sourcepackage=gcalctool; component=main; 
+	status=New; importance=Undecided; assignee=None; </x-launchpad-bug><x-launchpad-bug-tags>apport-bug i386 natty running-unity</x-launchpad-bug-tags><x-launchpad-bug-private>no</x-launchpad-bug-private><x-launchpad-bug-security-vulnerability>no</x-launchpad-bug-security-vulnerability><x-launchpad-bug-commenters>calcagnile-davide</x-launchpad-bug-commenters><x-launchpad-bug-reporter>Davide (calcagnile-davide)</x-launchpad-bug-reporter><x-launchpad-bug-modifier>Davide (calcagnile-davide)</x-launchpad-bug-modifier><references>&lt;20110126231750.12441.30134.malonedeb@soybean.canonical.com&gt;</references><message-id>20110126231750.12441.30134.malonedeb@soybean.canonical.com</message-id><x-launchpad-message-rationale>Subscriber (gcalctool in ubuntu) @desktop-bugs</x-launchpad-message-rationale><precedence>bulk</precedence><x-generated-by>Launchpad (canonical.com); Revision="12263";
+	Instance="initZopeless config overlay"</x-generated-by><x-launchpad-hash>b34017e5d42f20e15e97afcaaff74665a75602f0</x-launchpad-hash><x-beenthere>desktop-bugs@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.13</x-mailman-version><reply-to>Bug 708386 &lt;708386@bugs.launchpad.net&gt;</reply-to><list-id>Desktop bug tracker changes - HIGH VOLUME
+	&lt;desktop-bugs.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/options/desktop-bugs&gt;,
+	&lt;mailto:desktop-bugs-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:desktop-bugs@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:desktop-bugs-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/desktop-bugs&gt;,
+	&lt;mailto:desktop-bugs-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="utf-8"</content-type><content-transfer-encoding>base64</content-transfer-encoding><sender>desktop-bugs-bounces@lists.ubuntu.com</sender><errors-to>desktop-bugs-bounces@lists.ubuntu.com</errors-to></headers><normalized-references><normalized-message-id>20110126231750.12441.30134.malonedeb@soybean.canonical.com</normalized-message-id><normalized-reference>20110126231750.12441.30134.malonedeb@soybean.canonical.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Public bug reported:
+
+</para><para depth="0">Binary package hint: gcalctool
+
+</para><para depth="0">in advanced mode, when the second button of choice is trying to change
+the unit conversion, remaining the same type of category, the result
+remains the same.
+
+</para><para depth="0">ProblemType: Bug
+DistroRelease: Ubuntu 11.04
+Package: gcalctool 5.91.5-0ubuntu1
+ProcVersionSignature: Ubuntu 2.6.37-12.26-generic 2.6.37
+Uname: Linux 2.6.37-12-generic i686
+Architecture: i386
+Date: Wed Jan 26 23:51:43 2011
+ExecutablePath: /usr/bin/gcalctool
+InstallationMedia: Ubuntu 11.04 "Natty Narwhal" - Alpha i386 (20110124.2)
+ProcEnviron:
+ LANGUAGE=it_IT:it_IT.UTF-8:it:en_GB:en
+ LANG=it_IT.UTF-8
+ LC_MESSAGES=it_IT.utf8
+ SHELL=/bin/bash
+SourcePackage: gcalctool
+XsessionErrors:
+ (nautilus:1319): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL'<br/>failed
+ (nautilus:1319): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL'<br/>failed
+ (nautilus:1319): GConf-CRITICAL **: gconf_value_free: assertion `value != NULL'<br/>failed
+
+</para><para depth="0">** Affects: gcalctool (Ubuntu)
+     Importance: Undecided
+         Status: New
+
+</para><para depth="0">** Tags: apport-bug i386 natty running-unity
+
+</para><footer type="signature" depth="0" hash="14931465015858476479">-- 
+You received this bug notification because you are a member of Ubuntu
+Desktop Bugs, which is subscribed to gcalctool in ubuntu.
+<url>https://bugs.launchpad.net/bugs/708386</url>
+
+</footer><para depth="0">Title:
+  1 m^3-&gt;m^3 = 1bat if i change m^3-&gt;mm =1 ... when the second choice
+  button of conversion change the result don't.
+
+</para><footer type="list-management" depth="0">-- 
+desktop-bugs mailing list
+<email>desktop-bugs@lists.ubuntu.com</email>
+<url>https://lists.ubuntu.com/mailman/listinfo/desktop-bugs</url>
+</footer></body></message>

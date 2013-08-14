@@ -1,0 +1,43 @@
+<message message-id="Pine.SGI.4.20.0002211617390.335037-100000@hgu080.ha.uk.sbphrd.com" list="com.mysql.lists.mysql" id="24b7eijxrzniuvvi" type="general" date="2000-02-21T16:20:40Z" year="2000-01-01" year-month="2000-02-01" year-month-day="2000-02-21" thread-id="4ifqtkjyqr7qy4ym"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="Please change this to match your real name" address="haigha00@mh.uk.sbphrd.com">Please change this to match your real name &lt;haigha00@mh.uk.sbphrd.com&gt;</from><to personal="sinisa@mysql.com" address="sinisa@mysql.com">sinisa@mysql.com</to><cc personal="mysql@lists.mysql.com" address="mysql@lists.mysql.com">mysql@lists.mysql.com</cc><subject normal="errors in installation of MySQL, regarding insatllation of grant tables.">Re: errors in installation of MySQL, regarding insatllation of grant tables.</subject><return-path>haigha00@mh.uk.sbphrd.com</return-path><mailing-list>contact mysql-help@lists.mysql.com; run by ezmlm (http://www.ezmlm.org)</mailing-list><delivered-to>mailing list mysql@lists.mysql.com</delivered-to><received>(qmail 17680 invoked from network); 21 Feb 2000 18:25:02 -0000</received><received>from ns02.sbphrd.com (firewall-user@208.198.64.2)
+  by www2.analytikerna.se with SMTP; 21 Feb 2000 18:25:02 -0000</received><received>by ns02.sbphrd.com; id LAA28041; Mon, 21 Feb 2000 11:20:51 -0500</received><received>from unknown(139.136.64.5) by ns02.sbphrd.com via smap (V5.0)
+	id xma028027; Mon, 21 Feb 00 11:20:42 -0500</received><received>from hbu037.ha.uk.sbphrd.com (hbu037.ha.uk.sbphrd.com [139.136.216.37])
+	by phinet.sbphrd.com (8.9.1b+Sun/8.9.1) with ESMTP id LAA11141;
+	Mon, 21 Feb 2000 11:20:57 -0500 (EST)</received><received>from hgu080.ha.uk.sbphrd.com (hgu080.ha.uk.sbphrd.com [139.136.157.80]) by hbu037.ha.uk.sbphrd.com (8.8.8/8.8.8/sbphrd/mh/19971204) with ESMTP
+	id QAA31646; Mon, 21 Feb 2000 16:20:40 GMT</received><received>from localhost (haigha00@localhost) by hgu080.ha.uk.sbphrd.com (8.8.8/8.8.8) with ESMTP
+	id QAA337339; Mon, 21 Feb 2000 16:20:40 GMT</received><x-authentication-warning>hgu080.ha.uk.sbphrd.com: haigha00 owned process doing -bs</x-authentication-warning><date>Mon, 21 Feb 2000 16:20:40 +0000</date><x-sender>haigha00@hgu080.ha.uk.sbphrd.com</x-sender><in-reply-to>&lt;14513.25975.719022.644396@localhost.localdomain&gt;</in-reply-to><message-id>Pine.SGI.4.20.0002211617390.335037-100000@hgu080.ha.uk.sbphrd.com</message-id><mime-version>1.0</mime-version><content-type>TEXT/PLAIN; charset=US-ASCII</content-type></headers><normalized-references><normalized-message-id>Pine.SGI.4.20.0002211617390.335037-100000@hgu080.ha.uk.sbphrd.com</normalized-message-id><normalized-in-reply-to>14513.25975.719022.644396@localhost.localdomain</normalized-in-reply-to></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">I am using 
+
+</para><para depth="0">mysql-3.22.32-sgi-irix6.5-mips
+php-4.0b3
+apache_1.3.11
+HTML-Embperl-1.3b2
+DBIx-Recordset-0.20-beta
++included apache modules
+
+</para><para depth="0">hope that is helpfull
+
+</para><para depth="0">thanks
+Andy
+
+</para><para depth="0">On Mon, 21 Feb 2000 <email>sinisa@mysql.com</email> wrote:
+
+</para><quote depth="1"><quotepara depth="1">Please check whether you have downloaded the right version for your
+OS.
+
+</quotepara><quotepara depth="1">There are two versions, 6.3 and 6.5. You should, of course, use the
+second one.
+
+</quotepara><quotepara depth="1">Regards,
+
+</quotepara><quotefooter type="signature" hash="4877610957608118720" depth="1">Sinisa
+
+</quotefooter><quotefooter type="signature" hash="8879599444849513088" depth="1">+----------------------------------------------------------------------+
+| TcX  ____  __     _____   _____  ___     ==  <email>mysql@tcx.se</email>            |
+|     /*/\*\/\*\   /*/ \*\ /*/ \*\ |*|     Sinisa Milivojevic          |
+|    /*/ /*/ /*/   \*\_   |*|   |*||*|     mailto:<email>sinisa@mysql.com</email>     |
+|   /*/ /*/ /*/\*\/*/  \*\|*|   |*||*|     Larnaka, Cyprus             |
+|  /*/     /*/  /*/\*\_/*/ \*\_/*/ |*|____                             |
+|  ^^^^^^^^^^^^/*/^^^^^^^^^^^\*\^^^^^^^^^^^                            |
+|             /*/             \*\                Developers Team       |
++----------------------------------------------------------------------+
+
+</quotefooter></quote></body></message>

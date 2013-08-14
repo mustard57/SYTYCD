@@ -1,0 +1,23 @@
+<message message-id="1267024135.m2f.40186@forum.winehq.org" list="org.winehq.wine-users" id="24cthorfp2cm3gwj" type="users" date="2010-02-24T09:08:55-06:00" year="2010-01-01" year-month="2010-02-01" year-month-day="2010-02-24" thread-id="xuqiuktvkjttrqco"><headers><envelope-from-line>Wed Feb 24 07:10:53 2010</envelope-from-line><from personal="vitamin" address="wineforum-user@winehq.org">vitamin &lt;wineforum-user@winehq.org&gt;</from><to personal="wine-users@winehq.org" address="wine-users@winehq.org">wine-users@winehq.org</to><subject normal="[Wine]  Re: Building latest Wine-GIT on AMD64 still fails">[Wine]  Re: Building latest Wine-GIT on AMD64 still fails</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 353
+          for &lt;laverne.dale.stark@a.markmail.org&gt;;
+          Wed, 24 Feb 2010 07:10:53 -0800 (GMT-08:00)</received><received>from wine.codeweavers.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id CD6F629086DA
+	for &lt;laverne.dale.stark@a.markmail.org&gt;; Wed, 24 Feb 2010 07:10:29 -0800 (PST)</received><received>from localhost
+	([127.0.0.1] helo=localhost.localdomain ident=list)
+	by wine.codeweavers.com with esmtp (Exim 4.69)
+	(envelope-from &lt;wine-users-bounces@winehq.org&gt;)
+	id 1NkIrH-0006D8-4J; Wed, 24 Feb 2010 09:09:08 -0600</received><received>from www-data by wine.codeweavers.com with local (Exim 4.69)
+	(envelope-from &lt;www-data@wine.codeweavers.com&gt;) id 1NkIr9-0006Cz-Fo
+	for wine-users@winehq.org; Wed, 24 Feb 2010 09:08:55 -0600</received><message-id>1267024135.m2f.40186@forum.winehq.org</message-id><references>&lt;1267009340.m2f.40168@forum.winehq.org&gt;</references><in-reply-to>&lt;1267009340.m2f.40168@forum.winehq.org&gt;</in-reply-to><x-generated-by>M2F: www.mail2forum.com</x-generated-by><date>Wed, 24 Feb 2010 09:08:55 -0600</date><x-beenthere>wine-users@winehq.org</x-beenthere><x-mailman-version>2.1.11</x-mailman-version><precedence>list</precedence><reply-to>wine-users@winehq.org</reply-to><list-id>Wine Users Mailing List &lt;wine-users.winehq.org&gt;</list-id><list-unsubscribe>&lt;http://www.winehq.org/mailman/options/wine-users&gt;,
+	&lt;mailto:wine-users-request@winehq.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://www.winehq.org/pipermail/wine-users&gt;</list-archive><list-post>&lt;mailto:wine-users@winehq.org&gt;</list-post><list-help>&lt;mailto:wine-users-request@winehq.org?subject=help&gt;</list-help><list-subscribe>&lt;http://www.winehq.org/mailman/listinfo/wine-users&gt;,
+	&lt;mailto:wine-users-request@winehq.org?subject=subscribe&gt;</list-subscribe><sender>wine-users-bounces@winehq.org</sender><errors-to>wine-users-bounces@winehq.org</errors-to><x-spam-score>-4.4</x-spam-score></headers><normalized-references><normalized-message-id>1267024135.m2f.40186@forum.winehq.org</normalized-message-id><normalized-in-reply-to>1267009340.m2f.40168@forum.winehq.org</normalized-in-reply-to><normalized-reference>1267009340.m2f.40168@forum.winehq.org</normalized-reference></normalized-references><body type="text/plain"><para depth="0">
+Quix0r wrote:
+</para><quote depth="1"><quotepara depth="1">checking whether ccache gcc -m32 works... no
+configure: error: Cannot build a 32-bit program, you need to install 32-bit<br/>development libraries.
+</quotepara></quote><para depth="0">
+This means you don't have gcc-32 installed (or whatever the package name for<br/>it).
+
+</para><para depth="0">Wine is a 32-bit app and needs gcc that can create 32-bit binaries as well as<br/>all required libraries. <url>http://wiki.winehq.org/WineOn64bit</url>
+
+</para></body></message>

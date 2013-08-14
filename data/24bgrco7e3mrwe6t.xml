@@ -1,0 +1,105 @@
+<message message-id="20041222163350790268.GyazMail.Maveric@openoffice.org" list="org.openoffice.de.users" id="24bgrco7e3mrwe6t" no-archive="yes" type="users" date="2004-12-22T16:33:50+01:00" year="2004-01-01" year-month="2004-12-01" year-month-day="2004-12-22" thread-id="y3iy25hldqcf42kq"><headers><envelope-from-line>From users-return-29257-tigrisq-archive=mail-de=users=openoffice.org=openoffice.org@de.openoffice.org Wed Dec 22 15:34:06 2004</envelope-from-line><from personal="Eric Hoch" address="Maveric@openoffice.org">Eric Hoch &lt;Maveric@openoffice.org&gt;</from><to personal="users@de.openoffice.org" address="users@de.openoffice.org">users@de.openoffice.org</to><subject normal="[de-users] openoffice bricht installation ab">Re: [de-users] openoffice bricht installation ab</subject><return-path>users-return-29257-tigrisq-archive=mail-de=users=openoffice.org=openoffice.org@de.openoffice.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=0.2 required=5.0 tests=BAYES_50,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-de=users=openoffice.org@openoffice.org</delivered-to><received>(qmail 27832 invoked by uid 5302); 22 Dec 2004 15:34:05 -0000</received><mailing-list>contact users-help@de.openoffice.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:users-help@de.openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:users-unsubscribe@de.openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:users@de.openoffice.org&gt;</list-post><reply-to>users@de.openoffice.org</reply-to><delivered-to>mailing list users@de.openoffice.org</delivered-to><received>(qmail 27807 invoked from network); 22 Dec 2004 15:34:04 -0000</received><date>Wed, 22 Dec 2004 16:33:50 +0100</date><message-id>20041222163350790268.GyazMail.Maveric@openoffice.org</message-id><in-reply-to>&lt;20766.1103715826@www8.gmx.net&gt;</in-reply-to><references>&lt;20041221233819392104.GyazMail.Maveric@openoffice.org&gt;
+ &lt;20766.1103715826@www8.gmx.net&gt;</references><mime-version>1.0 (GMessage framework 1.2.3.1)</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><organization>OpenOffice.org</organization><x-mailer>GyazMail version 1.2.3.1</x-mailer></headers><normalized-references><normalized-message-id>20041222163350790268.GyazMail.Maveric@openoffice.org</normalized-message-id><normalized-in-reply-to>20766.1103715826@www8.gmx.net</normalized-in-reply-to><normalized-reference>20041221233819392104.GyazMail.Maveric@openoffice.org</normalized-reference><normalized-reference>20766.1103715826@www8.gmx.net</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Halo Dario, 
+Am Wed, 22 Dec 2004 12:43:46 +0100 (MET), schrieb he Du:
+</para><quote depth="1"><quotepara depth="1">die englische version
+</quotepara></quote><para depth="0">
+Das ist doch schonmal was mit dem ich was anfangen kann, wenn auch 
+nicht sehr viel :-) Später mehr. 
+
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quotepara depth="3"> jedes mal wenn ich
+ versuche die installation zu starten, verlangt das setup von mir ein
+ administrator passwort.
+</quotepara></quote><quotepara depth="2">
+ Völlig korrekt. Du mußt OOo als Admin installieren. Mac OS X ist 
+ ein Mehrbenutzerbetriebssytem und nur root/Admin hat das Recht 
+ Software zu installieren. Alle anderen Benutzer nicht. 
+
+</quotepara><quote depth="3"><quotepara depth="3"> Nachdem ich dies eingebe, scheint die installation
+ abzubrechen. 
+</quotepara></quote><quotepara depth="2">
+ Was heist scheint abzubrechen. Bricht sie ab ja oder nein. So eine 
+ vage Aussage, hilft mir nicht weiter. 
+</quotepara></quote><quotepara depth="1">
+es bricht ab
+</quotepara></quote><para depth="0">
+Gut. Lese gerade weiter unten, daß auch keine Fehlermeldung kommt. 
+Ist X11 installiert? Oder ein Xfree86/X.org? 
+
+</para><para depth="0">Wenn nicht, dann schließt sich der Installer der englischen 1.1.2 
+und startet den Installer für ein Xfree86 4.3.0. Dieser Installer 
+für Xfree86 4.3.0 kann unter Mac OS X hängen, warum das so ist, 
+weiß ich nicht, da ich Apple's X11 installiert habe bzw. 
+Xfree/X.org immer über fink/Darwinports installiert habe oder gar 
+selber kompiliert. Daher weiß ich die Ursache für den Hänger nicht. 
+Im einfachsten Falle ist es "nur" ein defekter Download. Hast du 
+mal die md5 Summen überprüft? Geht im Terminal mit md5 &lt;Name des zu 
+prüfenden Paktes&gt;. 
+
+</para><para depth="0">Einfacher für mich wäre es, wenn du dir die deutsche Version von 
+OOo 1.1.4 herunterlädst. Die hab ich selber gepackt und da kenn ich 
+jede Marotte des Installers und jede kleine Hürde die ihn eventuell 
+aus der Bahn werfen könnte. Du kannst die deutsche Version von OOo 
+1.1.4 für Mac OS X hier 
+&lt;<url>http://de.openoffice.org/downloads/quick.html</url>&gt; herunterladen. Als 
+Betriebssystem einfach Mac OS X (X11) auswählen. 
+
+</para><para depth="0">Du hattest nicht zufällig vorher schonmal OOo versucht zu 
+installieren oder gar installiert gehabt? 
+
+</para><para depth="0">Gibt es ein .sversionrc? Die findest du in dem du im Terminal "ls 
+-al .sversionrc" eingibst. Wenn es eine gibt, mir "rm .sversionrc" 
+löchen, andernfalls kann es der Grund warum die Installation 
+scheitert schon einmal nicht sein. 
+
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quotepara depth="3">  Das Passwort ist korrekt, denn wenn ich ein anderes eingebe bringt
+ setup
+ eine meldung, dass dies nicht funktioniert. 
+</quotepara></quote><quotepara depth="2">
+ Das hilft mir nicht weiter. 
+</quotepara></quote><quotepara depth="1">
+sorry, copy paste fehler es kommt KEINE meldung. Das Setup-Fenster schliesst
+einfach, und nix passiert mehr mit der installation.
+</quotepara><quote depth="2"><quotefooter type="noise" depth="2">
+</quotefooter><quote depth="3"><quotepara depth="3"> ich habe ein powerbook mit 10.3 os 512 mb ram und mind 5 gb hd frei
+</quotepara></quote><quotefooter type="noise" depth="2">
+</quotefooter><quote depth="3"><quotepara depth="3">  danke für die hilfe 
+</quotepara></quote><quotepara depth="2">
+ Ja und wem helf ich? Es ist gute Sitte, Brauch und Höflichkeit, 
+ hier auf der Mailingliste seinen Namen zu nennen. Und wenn dann 
+ noch fresch "he du" als Absender da steht hab ich eigentlich schon 
+ keine Lust mehr zu helfen. Also entweder Regeln befolgen oder damit 
+ leben, daß das Interesse zu helfen gering ist. 
+</quotepara></quote><quotepara depth="1">
+tut mir leid, schreibe sonst den namen schon hin, habs einfach vergessen
+dario ist mein name.
+</quotepara></quote><para depth="0">
+Danke, 
+
+</para><quote depth="1"><quotepara depth="1">Es zwingt Dich ja niemand mir zu helfen, wenn meine Frage nicht Deinem
+Standard entspricht.
+</quotepara></quote><para depth="0">
+Mir macht es relativ wenig aus ob eine Mail dem Standard entspricht 
+oder nicht, ich will nur gleich den Leuten einen Hinweis geben, 
+damit sie, falls sie länger auf der Liste bleiben und Hilfe 
+brauchen, sich entsprechend richtig verhalten. 
+
+</para><quote depth="1"><quotepara depth="1">Falls Dus doch machst, bin ich Dir natürlich sehr dankbar.
+</quotepara></quote><para depth="0">
+Ich hab es ja gemacht und ich tu es ja wieder.
+
+</para><footer type="signature" depth="0" hash="18374065872995191700">Mit freundlichen Grüßen
+Eric Hoch
+
+</footer><footer type="signature" depth="0" hash="6407151028502692452">-- 
+## Ansprechpartner Anwenderunterstützung, users-Mailingliste, MacOSX
+## War unsere Hilfe erfolgreich? Bitte teilen Sie es uns mit. Danke.
+## de.OpenOffice.org - Office für MacOS X, Linux, Solaris &amp; Windows 
+## Netikette? <url>http://www.eschkitai.de/openoffice/netikette.html</url>
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@de.openoffice.org</email>
+For additional commands, e-mail: <email>users-help@de.openoffice.org</email>
+
+</footer></body></message>

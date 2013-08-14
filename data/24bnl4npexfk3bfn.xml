@@ -1,0 +1,21 @@
+<message message-id="5B293180C7E402448C1A06849D71F57E425448@btmail02.aithome.com" list="net.php.lists.php-general" id="24bnl4npexfk3bfn" type="general" date="2007-04-04T23:22:04+07:00" year="2007-01-01" year-month="2007-04-01" year-month-day="2007-04-04" thread-id="qri6jvtgkul7zxim"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Bagus Nugroho" address="bnugroho@aitemail.com">Bagus Nugroho &lt;bnugroho@aitemail.com&gt;</from><to personal="php-general@lists.php.net" address="php-general@lists.php.net">php-general@lists.php.net</to><subject normal="Install PECL">Install PECL</subject><newsgroups>php.general</newsgroups><path>news.php.net</path><xref>news.php.net php.general:252056</xref><return-path>bnugroho@aitemail.com</return-path><mailing-list>contact php-general-help@lists.php.net; run by ezmlm</mailing-list><delivered-to>mailing list php-general@lists.php.net</delivered-to><received>(qmail 19298 invoked by uid 1010); 4 Apr 2007 16:26:31 -0000</received><delivered-to>ezmlm-scan-php-general@lists.php.net</delivered-to><delivered-to>ezmlm-php-general@lists.php.net</delivered-to><received>(qmail 19283 invoked from network); 4 Apr 2007 16:26:31 -0000</received><received>from unknown (HELO lists.php.net) (127.0.0.1)
+  by localhost with SMTP; 4 Apr 2007 16:26:31 -0000</received><authentication-results>pb1.pair.com smtp.mail=bnugroho@aitemail.com; spf=pass; sender-id=pass</authentication-results><authentication-results>pb1.pair.com header.from=bnugroho@aitemail.com; sender-id=pass</authentication-results><received-spf>pass (pb1.pair.com: domain aitemail.com designates 222.124.1.107 as permitted sender)</received-spf><x-php-list-original-sender>bnugroho@aitemail.com</x-php-list-original-sender><x-host-fingerprint>222.124.1.107 btmail02.aithome.com Windows 2000 SP4, XP SP1</x-host-fingerprint><received>from [222.124.1.107] ([222.124.1.107:20288] helo=btmail02.aithome.com)
+	by pb1.pair.com (ecelerity 2.1.1.9-wez r(12769M)) with ESMTP
+	id 23/81-18035-1B1D3164 for &lt;php-general@lists.php.net&gt;; Wed, 04 Apr 2007 12:26:28 -0400</received><received>from btmail02.aithome.com ([10.1.30.3]) by btmail02.aithome.com with Microsoft SMTPSVC(6.0.3790.1830);
+	 Wed, 4 Apr 2007 23:27:04 +0700</received><content-class>urn:content-classes:message</content-class><mime-version>1.0</mime-version><content-type>multipart/alternative;
+	boundary="----_=_NextPart_001_01C776D6.1498EE33"</content-type><x-mimeole>Produced By Microsoft Exchange V6.5</x-mimeole><date>Wed, 4 Apr 2007 23:22:04 +0700</date><message-id>5B293180C7E402448C1A06849D71F57E425448@btmail02.aithome.com</message-id><x-ms-has-attach/><x-ms-tnef-correlator/><thread-topic>Install PECL</thread-topic><thread-index>Acd2yQSwZkrpiB9zRPu33bgLVdprfAADF1Tf</thread-index><references>&lt;00c701c7769d$e7446230$0e030196@alamazon.com&gt; &lt;p06240805c2396bb16416@[192.168.1.102]&gt;</references><x-originalarrivaltime>04 Apr 2007 16:27:04.0993 (UTC) FILETIME=[14F38110:01C776D6]</x-originalarrivaltime></headers><normalized-references><normalized-message-id>5B293180C7E402448C1A06849D71F57E425448@btmail02.aithome.com</normalized-message-id><normalized-thread-index>Acd2yQSwZkrpiB9zRPu33bgLVdprfA</normalized-thread-index><normalized-reference>00c701c7769d$e7446230$0e030196@alamazon.com</normalized-reference><normalized-reference>p06240805c2396bb16416@[192.168.1.102]</normalized-reference></normalized-references><body multipart="multipart/alternative;&#13;&#10;&#9;boundary=&quot;----_=_nextpart_001_01c776d6.1498ee33&quot;" type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><greeting depth="0">Hi All,
+</greeting><para depth="0">I'm trying to install PECL package as install PEAR package, but there's error as<br/>: 
+-----------
+C:\PHP&gt;pear install <url>http://localhost/pear/APC-3.0.13.tgz</url> <br/>&lt;<url>http://localhost/pear/APC-3.0.13.tgz</url>&gt; 
+downloading APC-3.0.13.tgz ...
+Starting to download APC-3.0.13.tgz (105,042 bytes)
+........................done: 105,042 bytes
+40 source files, building
+ERROR: The DSP APC.dsp does not exist.
+--------
+Is my install method wrong?
+Or it was PECL install is different with PEAR install
+
+</para><para depth="0">Thanks in advance
+bn
+</para></body></message>

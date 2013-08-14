@@ -1,0 +1,4116 @@
+<message message-id="20090318123413.8459.qmail@dev.java.net" list="net.java.dev.jaxb.cvs" id="24cqcgp7dwpwswc7" no-archive="yes" type="checkins" date="2009-03-18T04:33:53.056799-08:00" year="2009-01-01" year-month="2009-03-01" year-month-day="2009-03-18" thread-id="24cqcgp7dwpwswc7"><headers><envelope-from-line>Wed Mar 18 04:34:15 2009</envelope-from-line><from personal="pavel_bucek@dev.java.net" address="pavel_bucek@dev.java.net">pavel_bucek@dev.java.net</from><to personal="cvs@jaxb.dev.java.net" address="cvs@jaxb.dev.java.net">cvs@jaxb.dev.java.net</to><subject normal="CVS update: /jaxb/www/2.0.1/docs/, /jaxb/www/2.0.2/docs/, /jaxb/www/2.0.3/docs/, /jaxb/www/2.0.4/docs/, /jaxb/www/2.0.5/docs/, /jaxb/www/2.1.1/docs...">CVS update: /jaxb/www/2.0.1/docs/, /jaxb/www/2.0.2/docs/, /jaxb/www/2.0.3/docs/, /jaxb/www/2.0.4/docs/, /jaxb/www/2.0.5/docs/, /jaxb/www/2.1.1/docs...</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 930
+          for &lt;randolph.mcknight.christensen@a.markmail.org&gt;;
+          Wed, 18 Mar 2009 04:34:15 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 991972908005
+	for &lt;randolph.mcknight.christensen@a.markmail.org&gt;; Wed, 18 Mar 2009 05:33:52 -0700 (PDT)</received><received>(qmail 8483 invoked by uid 5000); 18 Mar 2009 12:34:14 -0000</received><mailing-list>contact cvs-help@jaxb.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:cvs-help@jaxb.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:cvs-unsubscribe@jaxb.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:cvs@jaxb.dev.java.net&gt;</list-post><reply-to>cvs@jaxb.dev.java.net</reply-to><delivered-to>mailing list cvs@jaxb.dev.java.net</delivered-to><received>(qmail 8461 invoked by uid 5000); 18 Mar 2009 12:34:13 -0000</received><date>18 Mar 2009 12:34:13 -0000</date><message-id>20090318123413.8459.qmail@dev.java.net</message-id><content-type>text/plain; charset=ISO-8859-1</content-type></headers><normalized-references><normalized-message-id>20090318123413.8459.qmail@dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1" overflow="true"><para depth="0">User: pavel_bucek
+Date: 2009-03-18 12:34:13+0000
+Modified:
+   jaxb/www/2.0.1/docs/samples.html
+   jaxb/www/2.0.2/docs/samples.html
+   jaxb/www/2.0.3/docs/samples.html
+   jaxb/www/2.0.4/docs/samples.html
+   jaxb/www/2.0.5/docs/samples.html
+   jaxb/www/2.1.1/docs/samples.html
+   jaxb/www/2.1.10/docs/samples.html
+   jaxb/www/2.1.2/docs/samples.html
+   jaxb/www/2.1.3/docs/samples.html
+   jaxb/www/2.1.4/docs/samples.html
+   jaxb/www/2.1.5/docs/samples.html
+   jaxb/www/2.1.6/docs/samples.html
+   jaxb/www/2.1.7/docs/samples.html
+   jaxb/www/2.1.8/docs/samples.html
+   jaxb/www/2.1.9/docs/samples.html
+
+</para><para depth="0">Log:
+ removing links to samples - samples aren't published, available only in release<br/>zips
+
+</para><para depth="0">File Changes:
+
+</para><para depth="0">Directory: /jaxb/www/2.0.1/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.0.1/docs/samples.html?r1=1.1&amp;r2=1.2</url>
+Delta lines:  +33 -33
+</para><para depth="0">---------------------
+--- samples.html	2006-06-08 21:35:41+0000	1.1
++++ samples.html	2009-03-18 12:34:04+0000	1.2
+@@ -192,7 +192,7 @@
+
+</para><para depth="0"> &lt;dl class="sample-list"&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++&lt;b&gt;catalog resolver&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -200,13 +200,13 @@
+         in external web sites.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++&lt;b&gt;character-escape&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/create-marshal"&gt;create-marshal (formerly SampleApp3)&lt;/a&gt;
++&lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -215,7 +215,7 @@
+         property.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++&lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -223,7 +223,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++&lt;b&gt;dtd&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -231,7 +231,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++&lt;b&gt;element-substitution&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -239,7 +239,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++&lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -247,7 +247,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++&lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -257,14 +257,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++&lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++&lt;b&gt;Java to Schema Binding&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -272,7 +272,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -280,7 +280,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom marshaling/unmarshaling<br/>XML content&lt;/a&gt;
++&lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -288,7 +288,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define properties<br/>and fields as XML Attributes&lt;/a&gt;
++&lt;b&gt;@XmlAttribute used to define properties and fields as XML Attributes&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -296,15 +296,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++&lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is used to<br/>customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++&lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -312,7 +312,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in Java to<br/>Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -320,7 +320,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++&lt;b&gt;locator-support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -331,20 +331,20 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
++&lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly SampleApp2)&lt;/a&gt;
++&lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++&lt;b&gt;namespace-prefix&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -352,21 +352,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++&lt;b&gt;partial-unmarshalling&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++&lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/synchronized-methods"&gt;Generating synchronized methods&lt;/a&gt;
++&lt;b&gt;Generating synchronized methods&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -375,28 +375,28 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++&lt;b&gt;Type substitutoin support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++&lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller (formerly<br/>SampleApp4)&lt;/a&gt;
++&lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding using<br/>Binder&lt;/a&gt;
++&lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -404,7 +404,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++&lt;b&gt;RI-specific customizations&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -412,7 +412,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++&lt;b&gt;XML message passing via socket&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -420,7 +420,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-stylesheet"&gt;Marshalling output customization&lt;/a&gt;
++&lt;b&gt;Marshalling output customization&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -433,8 +433,8 @@
+ &lt;HR&gt;
+
+</para><para depth="0"> &lt;DIV class="footer"&gt;
+-	  $Revision: 1.1 $&lt;BR&gt;
+-	  $Date: 2006/06/08 21:35:41 $
++	  $Revision: 1.2 $&lt;BR&gt;
++	  $Date: 2009/03/18 12:34:04 $
+ 	&lt;/DIV&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.0.2/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.0.2/docs/samples.html?r1=1.1&amp;r2=1.2</url>
+Delta lines:  +33 -33
+</para><para depth="0">---------------------
+--- samples.html	2006-08-02 17:25:38+0000	1.1
++++ samples.html	2009-03-18 12:34:05+0000	1.2
+@@ -192,7 +192,7 @@
+
+</para><para depth="0"> &lt;dl class="sample-list"&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++&lt;b&gt;catalog resolver&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -200,13 +200,13 @@
+         in external web sites.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++&lt;b&gt;character-escape&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/create-marshal"&gt;create-marshal (formerly SampleApp3)&lt;/a&gt;
++&lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -215,7 +215,7 @@
+         property.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++&lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -223,7 +223,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++&lt;b&gt;dtd&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -231,7 +231,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++&lt;b&gt;element-substitution&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -239,7 +239,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++&lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -247,7 +247,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++&lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -257,14 +257,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++&lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++&lt;b&gt;Java to Schema Binding&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -272,7 +272,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -280,7 +280,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom marshaling/unmarshaling<br/>XML content&lt;/a&gt;
++&lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -288,7 +288,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define properties<br/>and fields as XML Attributes&lt;/a&gt;
++&lt;b&gt;@XmlAttribute used to define properties and fields as XML Attributes&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -296,15 +296,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++&lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is used to<br/>customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++&lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -312,7 +312,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in Java to<br/>Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -320,7 +320,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++&lt;b&gt;locator-support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -331,20 +331,20 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
++&lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly SampleApp2)&lt;/a&gt;
++&lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++&lt;b&gt;namespace-prefix&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -352,21 +352,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++&lt;b&gt;partial-unmarshalling&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++&lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/synchronized-methods"&gt;Generating synchronized methods&lt;/a&gt;
++&lt;b&gt;Generating synchronized methods&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -375,28 +375,28 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++&lt;b&gt;Type substitutoin support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++&lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller (formerly<br/>SampleApp4)&lt;/a&gt;
++&lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding using<br/>Binder&lt;/a&gt;
++&lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -404,7 +404,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++&lt;b&gt;RI-specific customizations&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -412,7 +412,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++&lt;b&gt;XML message passing via socket&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -420,7 +420,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-stylesheet"&gt;Marshalling output customization&lt;/a&gt;
++&lt;b&gt;Marshalling output customization&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -433,8 +433,8 @@
+ &lt;HR&gt;
+
+</para><para depth="0"> &lt;DIV class="footer"&gt;
+-	  $Revision: 1.1 $&lt;BR&gt;
+-	  $Date: 2006/08/02 17:25:38 $
++	  $Revision: 1.2 $&lt;BR&gt;
++	  $Date: 2009/03/18 12:34:05 $
+ 	&lt;/DIV&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.0.3/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.0.3/docs/samples.html?r1=1.1&amp;r2=1.2</url>
+Delta lines:  +43 -43
+</para><para depth="0">---------------------
+--- samples.html	2006-10-14 00:23:42+0000	1.1
++++ samples.html	2009-03-18 12:34:05+0000	1.2
+@@ -192,7 +192,7 @@
+
+</para><para depth="0"> &lt;dl class="sample-list"&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++&lt;b&gt;catalog resolver&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -200,13 +200,13 @@
+         in external web sites.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++&lt;b&gt;character-escape&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/create-marshal"&gt;create-marshal (formerly SampleApp3)&lt;/a&gt;
++&lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -215,7 +215,7 @@
+         property.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++&lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -223,7 +223,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++&lt;b&gt;dtd&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -231,7 +231,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++&lt;b&gt;element-substitution&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -239,7 +239,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++&lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -247,7 +247,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++&lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -257,14 +257,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++&lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++&lt;b&gt;Java to Schema Binding&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -272,7 +272,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -280,7 +280,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom marshaling/unmarshaling<br/>XML content&lt;/a&gt;
++&lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -288,7 +288,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define properties<br/>and fields as XML Attributes&lt;/a&gt;
++&lt;b&gt;@XmlAttribute used to define properties and fields as XML Attributes&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -296,15 +296,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++&lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is used to<br/>customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++&lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -312,7 +312,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in Java to<br/>Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -320,7 +320,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++&lt;b&gt;locator-support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -331,21 +331,20 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly SampleApp2)&lt;/a&gt;
++&lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+-        This sample application demonstrates how to modify a java content tree 
+-        and marshal it back to XML data.
+-    &lt;/dd&gt;
++This project processes a UBL (Universal Business Language) order
++instance and prints a report to the screen.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++&lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+-      This sample app demonstrates how a pull-parser can
+-      be used with JAXB to increase the flexibility of processing.
++        This sample application demonstrates how to modify a java content tree 
++        and marshal it back to XML data.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++&lt;b&gt;namespace-prefix&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -353,14 +352,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++&lt;b&gt;partial-unmarshalling&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/synchronized-methods"&gt;Generating synchronized methods&lt;/a&gt;
++&lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
++&lt;/dt&gt;
++&lt;dd&gt;
++      This sample app demonstrates how a pull-parser can
++      be used with JAXB to increase the flexibility of processing.
++    &lt;/dd&gt;
++&lt;dt&gt;
++&lt;b&gt;Generating synchronized methods&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -369,34 +375,28 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++&lt;b&gt;Type substitutoin support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
+-&lt;/dt&gt;
+-&lt;dd&gt;
+-This project processes a UBL (Universal Business Language) order
+-instance and prints a report to the screen.&lt;/dd&gt;
+-&lt;dt&gt;
+-&lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++&lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller (formerly<br/>SampleApp4)&lt;/a&gt;
++&lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding using<br/>Binder&lt;/a&gt;
++&lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -404,7 +404,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++&lt;b&gt;RI-specific customizations&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -412,7 +412,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++&lt;b&gt;XML message passing via socket&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -420,7 +420,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-stylesheet"&gt;Marshalling output customization&lt;/a&gt;
++&lt;b&gt;Marshalling output customization&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -433,8 +433,8 @@
+ &lt;HR&gt;
+
+</para><para depth="0"> &lt;DIV class="footer"&gt;
+-	  $Revision: 1.1 $&lt;BR&gt;
+-	  $Date: 2006/10/14 00:23:42 $
++	  $Revision: 1.2 $&lt;BR&gt;
++	  $Date: 2009/03/18 12:34:05 $
+ 	&lt;/DIV&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.0.4/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.0.4/docs/samples.html?r1=1.1&amp;r2=1.2</url>
+Delta lines:  +43 -43
+</para><para depth="0">---------------------
+--- samples.html	2006-11-15 23:04:34+0000	1.1
++++ samples.html	2009-03-18 12:34:05+0000	1.2
+@@ -192,7 +192,7 @@
+
+</para><para depth="0"> &lt;dl class="sample-list"&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++&lt;b&gt;catalog resolver&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -200,13 +200,13 @@
+         in external web sites.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++&lt;b&gt;character-escape&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/create-marshal"&gt;create-marshal (formerly SampleApp3)&lt;/a&gt;
++&lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -215,7 +215,7 @@
+         property.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++&lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -223,7 +223,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++&lt;b&gt;dtd&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -231,7 +231,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++&lt;b&gt;element-substitution&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -239,7 +239,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++&lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -247,7 +247,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++&lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -257,14 +257,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++&lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++&lt;b&gt;Java to Schema Binding&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -272,7 +272,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -280,7 +280,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom marshaling/unmarshaling<br/>XML content&lt;/a&gt;
++&lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -288,7 +288,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define properties<br/>and fields as XML Attributes&lt;/a&gt;
++&lt;b&gt;@XmlAttribute used to define properties and fields as XML Attributes&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -296,15 +296,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++&lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is used to<br/>customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++&lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -312,7 +312,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in Java to<br/>Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -320,7 +320,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++&lt;b&gt;locator-support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -331,21 +331,20 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly SampleApp2)&lt;/a&gt;
++&lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+-        This sample application demonstrates how to modify a java content tree 
+-        and marshal it back to XML data.
+-    &lt;/dd&gt;
++This project processes a UBL (Universal Business Language) order
++instance and prints a report to the screen.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++&lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+-      This sample app demonstrates how a pull-parser can
+-      be used with JAXB to increase the flexibility of processing.
++        This sample application demonstrates how to modify a java content tree 
++        and marshal it back to XML data.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++&lt;b&gt;namespace-prefix&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -353,14 +352,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++&lt;b&gt;partial-unmarshalling&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/synchronized-methods"&gt;Generating synchronized methods&lt;/a&gt;
++&lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
++&lt;/dt&gt;
++&lt;dd&gt;
++      This sample app demonstrates how a pull-parser can
++      be used with JAXB to increase the flexibility of processing.
++    &lt;/dd&gt;
++&lt;dt&gt;
++&lt;b&gt;Generating synchronized methods&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -369,34 +375,28 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++&lt;b&gt;Type substitutoin support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
+-&lt;/dt&gt;
+-&lt;dd&gt;
+-This project processes a UBL (Universal Business Language) order
+-instance and prints a report to the screen.&lt;/dd&gt;
+-&lt;dt&gt;
+-&lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++&lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller (formerly<br/>SampleApp4)&lt;/a&gt;
++&lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding using<br/>Binder&lt;/a&gt;
++&lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -404,7 +404,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++&lt;b&gt;RI-specific customizations&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -412,7 +412,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++&lt;b&gt;XML message passing via socket&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -420,7 +420,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-stylesheet"&gt;Marshalling output customization&lt;/a&gt;
++&lt;b&gt;Marshalling output customization&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -433,8 +433,8 @@
+ &lt;HR&gt;
+
+</para><para depth="0"> &lt;DIV class="footer"&gt;
+-	  $Revision: 1.1 $&lt;BR&gt;
+-	  $Date: 2006/11/15 23:04:34 $
++	  $Revision: 1.2 $&lt;BR&gt;
++	  $Date: 2009/03/18 12:34:05 $
+ 	&lt;/DIV&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.0.5/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.0.5/docs/samples.html?r1=1.1&amp;r2=1.2</url>
+Delta lines:  +43 -43
+</para><para depth="0">---------------------
+--- samples.html	2007-01-22 21:51:58+0000	1.1
++++ samples.html	2009-03-18 12:34:06+0000	1.2
+@@ -192,7 +192,7 @@
+
+</para><para depth="0"> &lt;dl class="sample-list"&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++&lt;b&gt;catalog resolver&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -200,13 +200,13 @@
+         in external web sites.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++&lt;b&gt;character-escape&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/create-marshal"&gt;create-marshal (formerly SampleApp3)&lt;/a&gt;
++&lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -215,7 +215,7 @@
+         property.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++&lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -223,7 +223,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++&lt;b&gt;dtd&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -231,7 +231,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++&lt;b&gt;element-substitution&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -239,7 +239,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++&lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -247,7 +247,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++&lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -257,14 +257,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++&lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++&lt;b&gt;Java to Schema Binding&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -272,7 +272,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -280,7 +280,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom marshaling/unmarshaling<br/>XML content&lt;/a&gt;
++&lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -288,7 +288,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define properties<br/>and fields as XML Attributes&lt;/a&gt;
++&lt;b&gt;@XmlAttribute used to define properties and fields as XML Attributes&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -296,15 +296,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++&lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is used to<br/>customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++&lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -312,7 +312,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in Java to<br/>Schema Bindings&lt;/a&gt;
++&lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -320,7 +320,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++&lt;b&gt;locator-support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -331,21 +331,20 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly SampleApp2)&lt;/a&gt;
++&lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+-        This sample application demonstrates how to modify a java content tree 
+-        and marshal it back to XML data.
+-    &lt;/dd&gt;
++This project processes a UBL (Universal Business Language) order
++instance and prints a report to the screen.&lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++&lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+-      This sample app demonstrates how a pull-parser can
+-      be used with JAXB to increase the flexibility of processing.
++        This sample application demonstrates how to modify a java content tree 
++        and marshal it back to XML data.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++&lt;b&gt;namespace-prefix&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -353,14 +352,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++&lt;b&gt;partial-unmarshalling&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/synchronized-methods"&gt;Generating synchronized methods&lt;/a&gt;
++&lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
++&lt;/dt&gt;
++&lt;dd&gt;
++      This sample app demonstrates how a pull-parser can
++      be used with JAXB to increase the flexibility of processing.
++    &lt;/dd&gt;
++&lt;dt&gt;
++&lt;b&gt;Generating synchronized methods&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -369,34 +375,28 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++&lt;b&gt;Type substitutoin support&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
+-&lt;/dt&gt;
+-&lt;dd&gt;
+-This project processes a UBL (Universal Business Language) order
+-instance and prints a report to the screen.&lt;/dd&gt;
+-&lt;dt&gt;
+-&lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++&lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller (formerly<br/>SampleApp4)&lt;/a&gt;
++&lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding using<br/>Binder&lt;/a&gt;
++&lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -404,7 +404,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++&lt;b&gt;RI-specific customizations&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -412,7 +412,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++&lt;b&gt;XML message passing via socket&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -420,7 +420,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+ &lt;dt&gt;
+-&lt;a href="../samples/xml-stylesheet"&gt;Marshalling output customization&lt;/a&gt;
++&lt;b&gt;Marshalling output customization&lt;/b&gt;
+ &lt;/dt&gt;
+ &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -433,8 +433,8 @@
+ &lt;HR&gt;
+
+</para><para depth="0"> &lt;DIV class="footer"&gt;
+-	  $Revision: 1.1 $&lt;BR&gt;
+-	  $Date: 2007/01/22 21:51:58 $
++	  $Revision: 1.2 $&lt;BR&gt;
++	  $Date: 2009/03/18 12:34:06 $
+ 	&lt;/DIV&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.1/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.1/docs/samples.html?r1=1.2&amp;r2=1.3</url>
+Delta lines:  +36 -36
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:27+0000	1.2
++++ samples.html	2009-03-18 12:34:06+0000	1.3
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -196,20 +196,20 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -218,14 +218,14 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -233,7 +233,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -241,7 +241,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -249,7 +249,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -257,7 +257,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -267,14 +267,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++        &lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -282,7 +282,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -290,7 +290,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -298,7 +298,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define<br/>properties and fields as XML Attributes&lt;/a&gt;
++        &lt;b&gt;@XmlAttribute used to define properties and fields as XML<br/>Attributes&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -306,15 +306,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++        &lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is<br/>used to customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++        &lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -322,7 +322,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -330,14 +330,14 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -348,14 +348,14 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly<br/>SampleApp2)&lt;/a&gt;
++        &lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++        &lt;b&gt;namespace-prefix&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -363,21 +363,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/synchronized-methods"&gt;Generating synchronized<br/>methods&lt;/a&gt;
++        &lt;b&gt;Generating synchronized methods&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -386,34 +386,34 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++        &lt;b&gt;Type substitutoin support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -421,7 +421,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -429,7 +429,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -437,7 +437,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-stylesheet"&gt;Marshalling output<br/>customization&lt;/a&gt;
++        &lt;b&gt;Marshalling output customization&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -450,9 +450,9 @@
+     &lt;hr&gt;
+
+</para><para depth="0">     &lt;div class="footer"&gt;
+-	  $Revision: 1.2 $
++	  $Revision: 1.3 $
+       &lt;br&gt;
+-	  $Date: 2009/03/18 10:24:27 $
++	  $Date: 2009/03/18 12:34:06 $
+
+</para><para depth="0">     &lt;/div&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.10/docs/
+=================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.10/docs/samples.html?r1=1.3&amp;r2=1.4</url>
+Delta lines:  +35 -35
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:27+0000	1.3
++++ samples.html	2009-03-18 12:34:06+0000	1.4
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -196,13 +196,13 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -210,14 +210,14 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -225,7 +225,7 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -233,14 +233,14 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -248,7 +248,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updatablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -256,14 +256,14 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -274,7 +274,7 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -282,7 +282,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -290,7 +290,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -298,7 +298,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -306,7 +306,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -315,7 +315,7 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -325,14 +325,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -340,13 +340,13 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -354,35 +354,35 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++        &lt;b&gt;Type substitutoin support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++        &lt;b&gt;namespace-prefix&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -390,14 +390,14 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++        &lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define<br/>properties and fields as XML Attributes&lt;/a&gt;
++        &lt;b&gt;@XmlAttribute used to define properties and fields as XML<br/>Attributes&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -405,7 +405,7 @@
+       XML attributes.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/synchronized-methods"&gt;Generating synchronized<br/>methods&lt;/a&gt;
++        &lt;b&gt;Generating synchronized methods&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -414,7 +414,7 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-stylesheet"&gt;Marshalling output<br/>customization&lt;/a&gt;
++        &lt;b&gt;Marshalling output customization&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -422,8 +422,8 @@
+         This example demonstrates how such modification can be done easily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is<br/>used to customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++        &lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -431,14 +431,14 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly<br/>SampleApp2)&lt;/a&gt;
++        &lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++        &lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+@@ -450,9 +450,9 @@
+     &lt;hr&gt;
+
+</para><para depth="0">     &lt;div class="footer"&gt;
+-	  $Revision: 1.3 $
++	  $Revision: 1.4 $
+       &lt;br&gt;
+-	  $Date: 2009/03/18 10:24:27 $
++	  $Date: 2009/03/18 12:34:06 $
+
+</para><para depth="0">     &lt;/div&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.2/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.2/docs/samples.html?r1=1.2&amp;r2=1.3</url>
+Delta lines:  +36 -36
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:27+0000	1.2
++++ samples.html	2009-03-18 12:34:07+0000	1.3
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -196,20 +196,20 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -218,14 +218,14 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -233,7 +233,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -241,7 +241,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -249,7 +249,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -257,7 +257,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -267,14 +267,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++        &lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -282,7 +282,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -290,7 +290,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -298,7 +298,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define<br/>properties and fields as XML Attributes&lt;/a&gt;
++        &lt;b&gt;@XmlAttribute used to define properties and fields as XML<br/>Attributes&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -306,15 +306,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++        &lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is<br/>used to customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++        &lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -322,7 +322,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -330,14 +330,14 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -348,14 +348,14 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly<br/>SampleApp2)&lt;/a&gt;
++        &lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++        &lt;b&gt;namespace-prefix&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -363,21 +363,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/synchronized-methods"&gt;Generating synchronized<br/>methods&lt;/a&gt;
++        &lt;b&gt;Generating synchronized methods&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -386,34 +386,34 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++        &lt;b&gt;Type substitutoin support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -421,7 +421,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -429,7 +429,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -437,7 +437,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-stylesheet"&gt;Marshalling output<br/>customization&lt;/a&gt;
++        &lt;b&gt;Marshalling output customization&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -450,9 +450,9 @@
+     &lt;hr&gt;
+
+</para><para depth="0">     &lt;div class="footer"&gt;
+-	  $Revision: 1.2 $
++	  $Revision: 1.3 $
+       &lt;br&gt;
+-	  $Date: 2009/03/18 10:24:27 $
++	  $Date: 2009/03/18 12:34:07 $
+
+</para><para depth="0">     &lt;/div&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.3/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.3/docs/samples.html?r1=1.2&amp;r2=1.3</url>
+Delta lines:  +36 -36
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:28+0000	1.2
++++ samples.html	2009-03-18 12:34:07+0000	1.3
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -196,20 +196,20 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -218,14 +218,14 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -233,7 +233,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -241,7 +241,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -249,7 +249,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -257,7 +257,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -267,14 +267,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++        &lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -282,7 +282,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -290,7 +290,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -298,7 +298,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define<br/>properties and fields as XML Attributes&lt;/a&gt;
++        &lt;b&gt;@XmlAttribute used to define properties and fields as XML<br/>Attributes&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -306,15 +306,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++        &lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is<br/>used to customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++        &lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -322,7 +322,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -330,14 +330,14 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -348,14 +348,14 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly<br/>SampleApp2)&lt;/a&gt;
++        &lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++        &lt;b&gt;namespace-prefix&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -363,21 +363,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/synchronized-methods"&gt;Generating synchronized<br/>methods&lt;/a&gt;
++        &lt;b&gt;Generating synchronized methods&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -386,34 +386,34 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++        &lt;b&gt;Type substitutoin support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -421,7 +421,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -429,7 +429,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -437,7 +437,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-stylesheet"&gt;Marshalling output<br/>customization&lt;/a&gt;
++        &lt;b&gt;Marshalling output customization&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -450,9 +450,9 @@
+     &lt;hr&gt;
+
+</para><para depth="0">     &lt;div class="footer"&gt;
+-	  $Revision: 1.2 $
++	  $Revision: 1.3 $
+       &lt;br&gt;
+-	  $Date: 2009/03/18 10:24:28 $
++	  $Date: 2009/03/18 12:34:07 $
+
+</para><para depth="0">     &lt;/div&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.4/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.4/docs/samples.html?r1=1.3&amp;r2=1.4</url>
+Delta lines:  +36 -36
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:28+0000	1.3
++++ samples.html	2009-03-18 12:34:08+0000	1.4
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -196,20 +196,20 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -218,14 +218,14 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -233,7 +233,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -241,7 +241,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -249,7 +249,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -257,7 +257,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -267,14 +267,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++        &lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -282,7 +282,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -290,7 +290,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -298,7 +298,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define<br/>properties and fields as XML Attributes&lt;/a&gt;
++        &lt;b&gt;@XmlAttribute used to define properties and fields as XML<br/>Attributes&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -306,15 +306,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++        &lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is<br/>used to customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++        &lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -322,7 +322,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -330,14 +330,14 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -348,14 +348,14 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly<br/>SampleApp2)&lt;/a&gt;
++        &lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++        &lt;b&gt;namespace-prefix&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -363,21 +363,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/synchronized-methods"&gt;Generating synchronized<br/>methods&lt;/a&gt;
++        &lt;b&gt;Generating synchronized methods&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -386,34 +386,34 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++        &lt;b&gt;Type substitutoin support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -421,7 +421,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -429,7 +429,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -437,7 +437,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-stylesheet"&gt;Marshalling output<br/>customization&lt;/a&gt;
++        &lt;b&gt;Marshalling output customization&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -450,9 +450,9 @@
+     &lt;hr&gt;
+
+</para><para depth="0">     &lt;div class="footer"&gt;
+-	  $Revision: 1.3 $
++	  $Revision: 1.4 $
+       &lt;br&gt;
+-	  $Date: 2009/03/18 10:24:28 $
++	  $Date: 2009/03/18 12:34:08 $
+
+</para><para depth="0">     &lt;/div&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.5/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.5/docs/samples.html?r1=1.2&amp;r2=1.3</url>
+Delta lines:  +36 -36
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:29+0000	1.2
++++ samples.html	2009-03-18 12:34:08+0000	1.3
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -196,20 +196,20 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -218,14 +218,14 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -233,7 +233,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -241,7 +241,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -249,7 +249,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -257,7 +257,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -267,14 +267,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++        &lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -282,7 +282,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -290,7 +290,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -298,7 +298,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define<br/>properties and fields as XML Attributes&lt;/a&gt;
++        &lt;b&gt;@XmlAttribute used to define properties and fields as XML<br/>Attributes&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -306,15 +306,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++        &lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is<br/>used to customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++        &lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -322,7 +322,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -330,14 +330,14 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -348,14 +348,14 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly<br/>SampleApp2)&lt;/a&gt;
++        &lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++        &lt;b&gt;namespace-prefix&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -363,21 +363,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/synchronized-methods"&gt;Generating synchronized<br/>methods&lt;/a&gt;
++        &lt;b&gt;Generating synchronized methods&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -386,34 +386,34 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++        &lt;b&gt;Type substitutoin support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -421,7 +421,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -429,7 +429,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -437,7 +437,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-stylesheet"&gt;Marshalling output<br/>customization&lt;/a&gt;
++        &lt;b&gt;Marshalling output customization&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -450,9 +450,9 @@
+     &lt;hr&gt;
+
+</para><para depth="0">     &lt;div class="footer"&gt;
+-	  $Revision: 1.2 $
++	  $Revision: 1.3 $
+       &lt;br&gt;
+-	  $Date: 2009/03/18 10:24:29 $
++	  $Date: 2009/03/18 12:34:08 $
+
+</para><para depth="0">     &lt;/div&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.6/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.6/docs/samples.html?r1=1.2&amp;r2=1.3</url>
+Delta lines:  +36 -36
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:30+0000	1.2
++++ samples.html	2009-03-18 12:34:09+0000	1.3
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -196,20 +196,20 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -218,14 +218,14 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -233,7 +233,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -241,7 +241,7 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -249,7 +249,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -257,7 +257,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -267,14 +267,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++        &lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+         binding produced by the XJC binding compiler.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -282,7 +282,7 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -290,7 +290,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -298,7 +298,7 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define<br/>properties and fields as XML Attributes&lt;/a&gt;
++        &lt;b&gt;@XmlAttribute used to define properties and fields as XML<br/>Attributes&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -306,15 +306,15 @@
+       XML attributes.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++        &lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is<br/>used to customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++        &lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -322,7 +322,7 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -330,14 +330,14 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -348,14 +348,14 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly<br/>SampleApp2)&lt;/a&gt;
++        &lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++        &lt;b&gt;namespace-prefix&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -363,21 +363,21 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/synchronized-methods"&gt;Generating synchronized<br/>methods&lt;/a&gt;
++        &lt;b&gt;Generating synchronized methods&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -386,34 +386,34 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++        &lt;b&gt;Type substitutoin support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updateablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -421,7 +421,7 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -429,7 +429,7 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-channel"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -437,7 +437,7 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-stylesheet"&gt;Marshalling output<br/>customization&lt;/a&gt;
++        &lt;b&gt;Marshalling output customization&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -450,9 +450,9 @@
+     &lt;hr&gt;
+
+</para><para depth="0">     &lt;div class="footer"&gt;
+-	  $Revision: 1.2 $
++	  $Revision: 1.3 $
+       &lt;br&gt;
+-	  $Date: 2009/03/18 10:24:30 $
++	  $Date: 2009/03/18 12:34:09 $
+
+</para><para depth="0">     &lt;/div&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.7/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.7/docs/samples.html?r1=1.2&amp;r2=1.3</url>
+Delta lines:  +35 -35
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:30+0000	1.2
++++ samples.html	2009-03-18 12:34:09+0000	1.3
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -196,13 +196,13 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -210,14 +210,14 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -225,7 +225,7 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -233,14 +233,14 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -248,7 +248,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updatablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -256,14 +256,14 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -274,7 +274,7 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -282,7 +282,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -290,7 +290,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -298,7 +298,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -306,7 +306,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -315,7 +315,7 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -325,14 +325,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -340,13 +340,13 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -354,35 +354,35 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/type-substitution"&gt;Type substitutoin support&lt;/a&gt;
++        &lt;b&gt;Type substitutoin support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates type substitution using
+       the W3C XML Schema Part 0: Primer international purchase order schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/namespace-prefix"&gt;namespace-prefix&lt;/a&gt;
++        &lt;b&gt;namespace-prefix&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the new JAXB RI 
+@@ -390,14 +390,14 @@
+         customize the namespace prefixes generated during marshalling.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlRootElement"&gt;Defining XML elements via<br/>@XmlRootElement&lt;/a&gt;
++        &lt;b&gt;Defining XML elements via @XmlRootElement&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+       @XmlRootElement to define a class to be an XML element.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAttribute"&gt;@XmlAttribute used to define<br/>properties and fields as XML Attributes&lt;/a&gt;
++        &lt;b&gt;@XmlAttribute used to define properties and fields as XML<br/>Attributes&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -405,7 +405,7 @@
+       XML attributes.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/synchronized-methods"&gt;Generating synchronized<br/>methods&lt;/a&gt;
++        &lt;b&gt;Generating synchronized methods&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample shows how to use the new non-standard synchronized
+@@ -414,7 +414,7 @@
+       to contain the "synchronized" keyword.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/xml-stylesheet"&gt;Marshalling output<br/>customization&lt;/a&gt;
++        &lt;b&gt;Marshalling output customization&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         A common customization need for the marshalling output is
+@@ -422,8 +422,8 @@
+         This example demonstrates how such modification can be done easily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlSchemaType"&gt;Annotation @XmlSchemaType is<br/>used to customize the mapping of a 
+-	property or field to an XML built-in type.&lt;/a&gt;
++        &lt;b&gt;Annotation @XmlSchemaType is used to customize the mapping of a 
++	property or field to an XML built-in type.&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of annotation
+@@ -431,14 +431,14 @@
+       an XML built-in type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/modify-marshal"&gt;modify-marshal (formerly<br/>SampleApp2)&lt;/a&gt;
++        &lt;b&gt;modify-marshal (formerly SampleApp2)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to modify a java content tree 
+         and marshal it back to XML data.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/inline-customize"&gt;inline-customize (formerly<br/>SampleApp6)&lt;/a&gt;
++        &lt;b&gt;inline-customize (formerly SampleApp6)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to customize the default 
+@@ -450,9 +450,9 @@
+     &lt;hr&gt;
+
+</para><para depth="0">     &lt;div class="footer"&gt;
+-	  $Revision: 1.2 $
++	  $Revision: 1.3 $
+       &lt;br&gt;
+-	  $Date: 2009/03/18 10:24:30 $
++	  $Date: 2009/03/18 12:34:09 $
+
+</para><para depth="0">     &lt;/div&gt;
+
+</para><para depth="0">Directory: /jaxb/www/2.1.8/docs/
+================================
+
+</para><para depth="0">File [changed]: samples.html
+Url:<br/><url>https://jaxb.dev.java.net/source/browse/jaxb/www/2.1.8/docs/samples.html?r1=1.2&amp;r2=1.3</url>
+Delta lines:  +35 -35
+</para><para depth="0">---------------------
+--- samples.html	2009-03-18 10:24:30+0000	1.2
++++ samples.html	2009-03-18 12:34:10+0000	1.3
+@@ -188,7 +188,7 @@
+
+</para><para depth="0">     &lt;dl class="sample-list"&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/dtd"&gt;dtd&lt;/a&gt;
++        &lt;b&gt;dtd&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrate some of the DTD support available in
+@@ -196,13 +196,13 @@
+         Vendor Extensions&amp;lt;/a&amp;gt; page for more detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/"&gt;Universal Business Language (UBL)&lt;/a&gt;
++        &lt;b&gt;Universal Business Language (UBL)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ This project processes a UBL (Universal Business Language) order
+ instance and prints a report to the screen.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/ubl"&gt;XML message passing via socket&lt;/a&gt;
++        &lt;b&gt;XML message passing via socket&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This example demonstrates how one can use one communication channel
+@@ -210,14 +210,14 @@
+       combined with JAXB.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/class-resolver"&gt;ClassResolver&lt;/a&gt;
++        &lt;b&gt;ClassResolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This little DI-container-by-JAXB example demonstrates how one can avoid
+       passing in a list of classes upfront, and instead load classes lazily.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/catalog-resolver"&gt;catalog resolver&lt;/a&gt;
++        &lt;b&gt;catalog resolver&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example demonstrates how to use the "-catalog"
+@@ -225,7 +225,7 @@
+         in external web sites.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-create-marshal"&gt;Java to Schema Binding&lt;/a&gt;
++        &lt;b&gt;Java to Schema Binding&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates marshalling, unmarshalling and
+@@ -233,14 +233,14 @@
+       JAXB annotations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-read"&gt;Using unmarshaller (formerly<br/>SampleApp1)&lt;/a&gt;
++        &lt;b&gt;Using unmarshaller (formerly SampleApp1)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to unmarshal an instance<br/>document
+       into a Java content tree and access data contained within it.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlType"&gt;Ordering Properties and Fieldes in<br/>Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -248,7 +248,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/updatablePartialBind"&gt;Updateable Partial Binding<br/>using Binder&lt;/a&gt;
++        &lt;b&gt;Updateable Partial Binding using Binder&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates how to partially map a DOM tree
+@@ -256,14 +256,14 @@
+       the DOM tree.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/partial-unmarshalling"&gt;partial-unmarshalling&lt;/a&gt;
++        &lt;b&gt;partial-unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         In this example, the input document will be unmarshalled a small chunk 
+         at a time, instead of unmarshalling the whole document at once.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/locator-support"&gt;locator-support&lt;/a&gt;
++        &lt;b&gt;locator-support&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample shows how to use the new non-standard locator support.  By 
+@@ -274,7 +274,7 @@
+         &amp;lt;tt&amp;gt;com.sun.xml.bind.extra.Locatable&amp;lt;/tt&amp;gt;.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAccessorOrder"&gt;Ordering Properties and<br/>Fieldes in Java to Schema Bindings&lt;/a&gt;
++        &lt;b&gt;Ordering Properties and Fieldes in Java to Schema Bindings&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of mapping annotations
+@@ -282,7 +282,7 @@
+       properties and fields in Java to schema bindings.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/element-substitution"&gt;element-substitution&lt;/a&gt;
++        &lt;b&gt;element-substitution&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application illustrates how W3C XML Schema substitution 
+@@ -290,7 +290,7 @@
+         &amp;lt;a href="vendor.html"&amp;gt;Vendor Extensions&amp;lt;/a&amp;gt; page for more<br/>detail.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/datatypeconverter"&gt;datatypeconverter (formerly<br/>SampleApp7)&lt;/a&gt;
++        &lt;b&gt;datatypeconverter (formerly SampleApp7)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is very similar to the inline-customize sample 
+@@ -298,7 +298,7 @@
+         as robust, &amp;lt;jaxb:javaType&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/external-customize"&gt;external-customize (formerly<br/>SampleApp8)&lt;/a&gt;
++        &lt;b&gt;external-customize (formerly SampleApp8)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application is identical to the datatypeconverter sample 
+@@ -306,7 +306,7 @@
+         are contained in an external binding file.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/create-marshal"&gt;create-marshal (formerly<br/>SampleApp3)&lt;/a&gt;
++        &lt;b&gt;create-marshal (formerly SampleApp3)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This sample application demonstrates how to use the ObjectFactory 
+@@ -315,7 +315,7 @@
+         property.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/fix-collides"&gt;fix-collides (formerly part of<br/>SampleApp9)&lt;/a&gt;
++        &lt;b&gt;fix-collides (formerly part of SampleApp9)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         Another binding customization example that illustrates how to resolve 
+@@ -325,14 +325,14 @@
+         compiling the schema.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/pull-parser"&gt;pull parser based unmarshalling&lt;/a&gt;
++        &lt;b&gt;pull parser based unmarshalling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample app demonstrates how a pull-parser can
+       be used with JAXB to increase the flexibility of processing.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/vendor-extensions"&gt;RI-specific customizations&lt;/a&gt;
++        &lt;b&gt;RI-specific customizations&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This example demonstrates how to use 
+@@ -340,13 +340,13 @@
+ 			as well as &amp;lt;jaxb:serializable&amp;gt; customization.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/character-escape"&gt;character-escape&lt;/a&gt;
++        &lt;b&gt;character-escape&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;This example shows how you can use the new JAXB RI Marshaller 
+         property "com.sun.xml.bind.characterEscapeHandler" to change 
+         the default character escaping behavior.&lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/j2s-xmlAdapter"&gt;Adapters for custom<br/>marshaling/unmarshaling XML content&lt;/a&gt;
++        &lt;b&gt;Adapters for custom marshaling/unmarshaling XML content&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       This sample application demonstrates the use of interface XmlAdapter 
+@@ -354,35 +354,35 @@
+       XML content into/out of a Java type.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/streaming-unmarshalling"&gt;Streaming Unmarshalling<br/>w/o StAX&lt;/a&gt;
++        &lt;b&gt;Streaming Unmarshalling w/o StAX&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+         This example illustrates a different approach to the streaming<br/>unmarshalling,
+         which is suitable for processing a large document.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/cycle-recovery"&gt;Application-driven cycle<br/>handling&lt;/a&gt;
++        &lt;b&gt;Application-driven cycle handling&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+       JAXB RI's vendor extension "CycleRecoverable" provides application a hook<br/>to handle
+       cycles in the object graph. Advanced.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../samples/unmarshal-validate"&gt;validating unmarshaller<br/>(formerly SampleApp4)&lt;/a&gt;
++        &lt;b&gt;validating unmarshaller (formerly SampleApp4)&lt;/b&gt;
+       &lt;/dt&gt;
+       &lt;dd&gt;
+ 			This sample application demonstrates how to enable
+ 			validation during the unmarshal operations.
+     &lt;/dd&gt;
+       &lt;dt&gt;
+-        &lt;a href="../sampl
+</para></body></message>

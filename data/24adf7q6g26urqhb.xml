@@ -1,0 +1,121 @@
+<message message-id="CA8E8C3D951F944E8D35D267E166C75202BFB057@MERC23.na.sas.com" list="org.netbeans.nbusers" id="24adf7q6g26urqhb" no-archive="yes" type="users" date="2005-08-19T13:24:42-04:00" year="2005-01-01" year-month="2005-08-01" year-month-day="2005-08-19" thread-id="apvxyfljyjno6i7j"><headers><envelope-from-line>From nbusers-return-58137-tigrisq-archive=mail-www=nbusers=netbeans.org=netbeans.org@netbeans.org Fri Aug 19 17:24:48 2005</envelope-from-line><from personal="David Barron" address="David.Barron@sas.com">David Barron &lt;David.Barron@sas.com&gt;</from><to personal="nbusers@netbeans.org" address="nbusers@netbeans.org">nbusers@netbeans.org</to><subject normal="[nbusers] Java indent engine">RE: [nbusers] Java indent engine</subject><return-path>nbusers-return-58137-tigrisq-archive=mail-www=nbusers=netbeans.org=netbeans.org@netbeans.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.4 required=5.0 tests=BAYES_00,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-www=nbusers=netbeans.org@netbeans.org</delivered-to><received>(qmail 7964 invoked by uid 5302); 19 Aug 2005 17:24:46 -0000</received><mailing-list>contact nbusers-help@netbeans.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:nbusers-help@netbeans.org&gt;</list-help><list-unsubscribe>&lt;mailto:nbusers-unsubscribe@netbeans.org&gt;</list-unsubscribe><list-post>&lt;mailto:nbusers@netbeans.org&gt;</list-post><reply-to>nbusers@netbeans.org</reply-to><delivered-to>mailing list nbusers@netbeans.org</delivered-to><received>(qmail 7951 invoked from network); 19 Aug 2005 17:24:45 -0000</received><x-mimeole>Produced By Microsoft Exchange V6.5.7226.0</x-mimeole><content-class>urn:content-classes:message</content-class><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="us-ascii"</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><date>Fri, 19 Aug 2005 13:24:42 -0400</date><message-id>CA8E8C3D951F944E8D35D267E166C75202BFB057@MERC23.na.sas.com</message-id><x-ms-has-attach/><x-ms-tnef-correlator/><thread-topic>[nbusers] Java indent engine</thread-topic><thread-index>AcWkzBcNsdZbR2o1Qzq7g22tD4JgBwAAK90QAAAljtAAAm5YgAABE7cgAADBuIAAACyU4AAA6csw</thread-index></headers><normalized-references><normalized-message-id>CA8E8C3D951F944E8D35D267E166C75202BFB057@MERC23.na.sas.com</normalized-message-id><normalized-thread-index>AcWkzBcNsdZbR2o1Qzq7g22tD4JgBw</normalized-thread-index></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;us-ascii&quot;"><para depth="0">Well, I tried.
+
+</para><para depth="0">I tried installing the Jalopy module the way the web site describes and it<br/>fails.  Here are the errors I'm seeing:
+
+</para><para depth="0">The module named org.openide.deprecated was needed and not found.
+No module providing the capability org.openide.compiler.CompilationEngine could<br/>be found.
+The module named org.openide.execution.deprecated was needed and not found.
+The module named org.openide.compiler was needed and not found.
+No module providing the capability org.openide.TopManager could be found.
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Mark Claassen [mailto:<email>mclaassen@ocie.net</email>] 
+Sent: Friday, August 19, 2005 1:01 PM
+To: <email>nbusers@netbeans.org</email>
+Subject: RE: [nbusers] Java indent engine
+
+</quotepara><quotepara depth="1">You can use ctrl-shift-f to reformat the whole file...fixing the<br/>inconsistencies.  Unfortunately, if you do this you will get the "} else {"
+thing.  I don't know of anyway to have nb do this to more than one file at a<br/>time though.  Maybe you will have to use Jalopy to clean things up.
+
+</quotepara><quotepara depth="1">Good luck!
+
+</quotepara><quotepara depth="1">Confidentiality Notice:  OCIESERVICE
+</quotepara><quotefooter type="legalese" depth="1">---------------------------------------------------------------------
+The contents of this e-mail message and any attachments are intended solely for<br/>the addressee(s) named in this message. This communication is intended to be and<br/>to remain confidential.  If you are not the intended recipient of this message,<br/>or if this message has been addressed to you in error, please immediately alert<br/>the sender by reply e-mail and then delete this message and its attachments. Do<br/>not deliver, distribute, copy, disclose the contents or take any action in<br/>reliance upon the information contained in the communication or any attachments.
+</quotefooter><quotefooter type="signature" depth="1" hash="11859978158944053799">---------------------
+Mark Claassen
+Donnell Systems, Inc.
+300 S. St. Louis Blvd. Ste. 203
+South Bend, IN 46617
+E-mail: mailto:<email>mclaassen@ocie.net</email>
+Voice: (574)232-3784
+Fax: (574)232-4014
+
+</quotefooter><quote depth="2"><quotepara depth="2">-----Original Message-----
+From: David Barron [mailto:<email>David.Barron@sas.com</email>]
+Sent: Friday, August 19, 2005 11:53 AM
+To: <email>nbusers@netbeans.org</email>
+Subject: RE: [nbusers] Java indent engine
+
+</quotepara><quotepara depth="2">Yes I've done that and that is what causes the mix of spaces and tabs that I'm<br/>getting now.
+
+</quotepara><quote depth="3"><quotepara depth="3">-----Original Message-----
+From: Mark Claassen [mailto:<email>mclaassen@ocie.net</email>]
+Sent: Friday, August 19, 2005 12:35 PM
+To: <email>nbusers@netbeans.org</email>
+Subject: RE: [nbusers] Java indent engine
+
+</quotepara><quotepara depth="3">I wish there was a setting where you could control the:
+	if () {
+	} else {
+	}
+I don't like the "} else {" and I think this should be controlled in the editor<br/>as you type.
+
+</quotepara><quotepara depth="3">However, you are in a bit of luck.  I rather use tabs as well, and there is a<br/>setting in:
+Tools -&gt; Options -&gt; Editors -&gt; Editor Settings -&gt; Java Editor -&gt; Java<br/>Indentation Engine for just this.  Uncheck the "Expand tabs to spaces" box
+
+</quotepara><quotefooter type="signature" depth="3" hash="17400182979097923850">Mark
+
+</quotefooter><quote depth="4"><quotepara depth="4">-----Original Message-----
+From: David Barron [mailto:<email>David.Barron@sas.com</email>]
+Sent: Friday, August 19, 2005 11:01 AM
+To: <email>nbusers@netbeans.org</email>
+Subject: RE: [nbusers] Java indent engine
+
+</quotepara><quotepara depth="4">That's an option, but wouldn't it be better to be able to configure the editor?
+Or am I asking too much.
+
+</quotepara><quote depth="5"><quotepara depth="5">-----Original Message-----
+From: Reed, Brent [mailto:<email>reedb@byui.edu</email>]
+Sent: Friday, August 19, 2005 10:52 AM
+To: <email>nbusers@netbeans.org</email>
+Subject: RE: [nbusers] Java indent engine
+
+</quotepara><quotepara depth="5">No, it only runs when invoked.
+
+</quotepara><quotefooter type="signature" depth="5" hash="14885258412545679230">Brent
+
+</quotefooter><quote depth="6"><quotepara depth="6">-----Original Message-----
+From: David Barron [mailto:<email>David.Barron@sas.com</email>]
+Sent: Friday, August 19, 2005 8:48 AM
+To: <email>nbusers@netbeans.org</email>
+Subject: RE: [nbusers] Java indent engine
+
+</quotepara><quotepara depth="6">Does jalopy control indentation while editing the way the Java Indentation<br/>Engine does?
+
+</quotepara><quote depth="7"><quotepara depth="7">-----Original Message-----
+From: <email>netbeans@claudius.com.br</email> [mailto:<email>netbeans@claudius.com.br</email>]
+Sent: Friday, August 19, 2005 10:32 AM
+To: <email>nbusers@netbeans.org</email>
+Subject: Re: [nbusers] Java indent engine
+
+</quotepara><quotepara depth="7">   Take a look at Jalopy plugin, available at<br/><url>http://contrib.netbeans.org/servlets/ProjectDocumentList</url> and search for<br/>"jalopy-plugin-netbeans-java5.nbm", download and install it.
+   The Jalopy options is locate at: Tools menu --&gt; Jalopy options --&gt;<br/>Indentation --&gt; Misc (tab) --&gt; check "Use tabs to indent"
+
+</quotepara><quotepara depth="7">Claudio Miranda
+
+</quotepara><quotepara depth="7">On Fri, 19 Aug 2005 09:41:58 -0400, "David Barron"
+&lt;<email>David.Barron@sas.com</email>&gt; escreveu:
+</quotepara><quote depth="8"><quotepara depth="8">
+I really enjoy working with NetBeans, especially since 4.1 has been
+released.  Very solid and extremely easy to use.
+However, there is one thing about Eclipse that I prefer and that's the
+indent engine.  I'm one of those weird programmers who prefers to indent with<br/>tabs instead of spaces.  Yes yes, I know, it's not according to the standard,<br/>but indenting with tabs looks much more consistant from one editor to another.
+
+</quotepara><quotepara depth="8">Anyway, Eclipse allows me to indent with only tabs if I choose to.  In
+the NetBeans Java Indent Engine the only option I have is to turn off "Expand<br/>Tabs to Spaces" and if I do this I end up with a bizare mix of tabs and spaces<br/>in the indentations.  This looks ok in NetBeans, as long as I don't look to<br/>closely, but if I load the file into another editor, TextPad for example, the<br/>indentations end up all over the place.  Not good.
+
+</quotepara><quotepara depth="8">Is there ANY way to use only tabs for indents in NetBeans?  I'd even
+be willing to rebuild from source if someone has any advice on where to make the<br/>changes.
+
+</quotepara></quote><quotepara depth="7">Cordialmente
+
+</quotepara><quotefooter type="signature" depth="7" hash="1222385478811403065"> Claudio Miranda
+ ___________________________________________________________________
+ <url>http://www.claudius.com.br/blog</url>          claudio|em|claudius.com.br
+ Summa Technologies do Brasil
+
+</quotefooter></quote></quote></quote></quote></quote></quote></quote></body></message>

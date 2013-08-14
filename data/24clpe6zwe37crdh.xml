@@ -1,0 +1,9 @@
+<message message-id="E1Jbjrm-0002ME-Sf@committer01.frg.pub.inap.atl.jboss.com" list="org.jboss.lists.jboss-svn-commits" id="24clpe6zwe37crdh" type="checkins" date="2008-03-18T18:01:09" year="2008-01-01" year-month="2008-03-01" year-month-day="2008-03-18" thread-id="24clpe6zwe37crdh"><headers><envelope-from-line>From jboss-svn-commits@lists.jboss.org  Tue Mar 18 18:01:06 2008</envelope-from-line><from personal="jboss-svn-commits@lists.jboss.org" address="jboss-svn-commits@lists.jboss.org">"jboss-svn-commits@lists.jboss.org" &lt;jboss-svn-commits@lists.jboss.org&gt;</from><subject normal="[jboss-svn-commits] JBL Code SVN: r19068 - labs/jbossrules/tags/4.0.5.19064GA.">[jboss-svn-commits] JBL Code SVN: r19068 - labs/jbossrules/tags/4.0.5.19064GA.</subject><date>Tue Mar 18 18:01:09 2008</date><message-id>E1Jbjrm-0002ME-Sf@committer01.frg.pub.inap.atl.jboss.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>E1Jbjrm-0002ME-Sf@committer01.frg.pub.inap.atl.jboss.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Author: fmeyer
+Date: 2008-03-18 18:01:06 -0400 (Tue, 18 Mar 2008)
+New Revision: 19068
+
+</para><para depth="0">Removed:
+   labs/jbossrules/tags/4.0.5.19064GA/m2_repo/
+Log:
+JBRULES-1513 removing local m2_repo
+</para></body></message>

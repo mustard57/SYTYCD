@@ -1,0 +1,84 @@
+<message message-id="00e401c12c2b$603fe2e0$0401a8c0@advance04" list="org.perl.beginners-cgi" id="24asv2e5nndhepou" type="users" date="2001-08-24T00:27:15+01:00" year="2001-01-01" year-month="2001-08-01" year-month-day="2001-08-23" thread-id="6gflwt2ooptbtiyv"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Advance Design - Vance" address="vance.burkill@btconnect.com">Advance Design - Vance &lt;vance.burkill@btconnect.com&gt;</from><to personal="A1-beginners-cgi@pe" address="beginners-cgi@perl.org">"A1-beginners-cgi@pe" &lt;beginners-cgi@perl.org&gt;</to><subject normal="Browser Problem">Re: Browser Problem</subject><newsgroups>perl.beginners.cgi</newsgroups><path>nntp.perl.org</path><xref>nntp.perl.org perl.beginners.cgi:2094</xref><return-path>vance.burkill@btconnect.com</return-path><mailing-list>contact beginners-cgi-help@perl.org; run by ezmlm</mailing-list><delivered-to>mailing list beginners-cgi@perl.org</delivered-to><received>(qmail 85856 invoked from network); 23 Aug 2001 23:23:12 -0000</received><received>from c2bapps1.btconnect.com (193.113.209.21)
+  by onion.valueclick.com with SMTP; 23 Aug 2001 23:23:12 -0000</received><received>from advance04 (actually host host217-32-133-225.hg.mdip.bt.net) by c2bapps1 with SMTP (XT-PP); Fri, 24 Aug 2001 00:22:39 +0100</received><message-id>00e401c12c2b$603fe2e0$0401a8c0@advance04</message-id><date>Fri, 24 Aug 2001 00:27:15 +0100</date><organization>Advance Design</organization><mime-version>1.0</mime-version><content-type>multipart/alternative;
+	boundary="----=_NextPart_000_00DF_01C12C33.86806440"</content-type><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 5.50.4522.1200</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V5.50.4522.1200</x-mimeole><x-spam-rating>onion.valueclick.com 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>00e401c12c2b$603fe2e0$0401a8c0@advance04</normalized-message-id></normalized-references><body multipart="multipart/alternative;&#13;&#10;&#9;boundary=&quot;----=_nextpart_000_00df_01c12c33.86806440&quot;" type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><greeting depth="0">Hello Curtis,
+</greeting><para depth="0">
+I am just returning a complete html document from the perl file using the<br/>following: (perl in blue, html in red) 
+
+</para><para depth="0">Start Perl stuff...
+End Perl stuff...
+print&lt;&lt;container;
+
+</para><para depth="0">&lt;!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;base-02.html&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Content
+&lt;/body&gt;
+&lt;/html&gt;
+
+</para><para depth="0">container
+
+</para><para depth="0">Your email suggests I should have a content-type header included in here<br/>somewhere...
+?
+
+</para><para depth="0">Thanks for your help.
+
+</para><para depth="0">Vance
+
+</para><para depth="0"><email>advance@dial.pipex.com</email>
+www.advance-design.co.uk
+
+</para><para depth="0">--- Advance Design - Vance &lt;<email>vance.burkill@btconnect.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">Hello
+I have written some web pages incorporating Forms and Perl processing on the<br/>server. Everything
+works fine on my IE 5.5 Browser but when I use the Netscape 4.7 and Opera 5.12<br/>browsers, the
+HTML sent back from the Perl programme appears as (source) text.
+Do you have any ideas why.
+
+</quotepara><quotepara depth="1">Thanks
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Newer versions of Internet Explorer have a "feature" that examines that<br/>beginning of the data that
+it receives and attempts to render the data accordingly.  It completely violates<br/>W3C standards by
+ignoring the content-type header.  Many, many developers have been bitten by<br/>this bug.  I've
+accidently sent GIFs with a content type of image/pjpeg and IE still rendered it<br/>correctly but
+Netscape didn't.  That was less than fun to debug.
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">In your script, find out what is responsible for printing the content-type<br/>header and post that
+code snippet here.  It will be something like the following:
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">    # If you're doing it by hand, it will resemble this:
+    print "Content-type: text/html\n\n"; 
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">    # If you're using CGI.pm, it will resemble on of the two following lines:
+    print header();
+    # or (varies depending on the name of the CGI object)
+    print $query-&gt;header;
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">There are many different ways of printing the content-type header, but they will<br/>likely resemble
+the snippets above.  Send that and we may have an answer for you.
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Of course, you can also telnet to port 80 (assuming that's the telnet port) and<br/>view the headers
+that way).  Most likely, you're sending a content type of 'text/plain'.  Here's<br/>what you'd enter
+in telnet:
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">    GET /cgi-bin/somescript.cgi?foo=bar HTTP/1.1
+    Host: www.somehost.com
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Substitute your own host and path and make sure you have two newlines after the<br/>host header.
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">Cheers,
+Curtis Poe
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotepara depth="1">=====
+Senior Programmer
+Onsite! Technology (<url>http://www.onsitetech.com/</url>)
+"Ovid" on <url>http://www.perlmonks.org/</url>
+</quotepara></quote><para depth="0">
+</para><quote depth="1"><quotefooter type="free-hosting" hash="254674451298365388" depth="1">__________________________________________________
+Do You Yahoo!?
+Make international calls for as low as $.04/minute with Yahoo! Messenger
+<url>http://phonecard.yahoo.com/</url>
+</quotefooter></quote><para depth="0">
+</para></body></message>

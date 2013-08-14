@@ -1,0 +1,21 @@
+<message message-id="20081209095529.9989.qmail@netbeans.org" list="org.netbeans.core.issues" id="24bi2uehhh3nbp7w" no-archive="yes" type="bugs" date="2008-12-09T01:55:08.569999-08:00" year="2008-01-01" year-month="2008-12-01" year-month-day="2008-12-09" thread-id="55tdz7rmsdb2qef4"><headers><envelope-from-line>Tue Dec 09 01:55:31 2008</envelope-from-line><from personal="anebuzelsky@netbeans.org" address="anebuzelsky@netbeans.org">anebuzelsky@netbeans.org</from><to personal="issues@core.netbeans.org" address="issues@core.netbeans.org">issues@core.netbeans.org</to><subject normal="[Issue 149765] ClassCastException: org.netbeans.modules.ruby.rubyproject.GotoTest cannot be cast to javax.swing.Action">[Issue 149765]  ClassCastException: org.netbeans.modules.ruby.rubyproject.GotoTest cannot be cast to javax.swing.Action</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 569
+          for &lt;thad.hickman.estes@a.markmail.org&gt;;
+          Tue, 9 Dec 2008 01:55:31 -0800 (GMT-08:00)</received><received>from netbeans.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 155F03B30279
+	for &lt;thad.hickman.estes@a.markmail.org&gt;; Tue,  9 Dec 2008 01:55:08 -0800 (PST)</received><received>(qmail 10034 invoked by uid 5000); 9 Dec 2008 09:55:29 -0000</received><mailing-list>contact issues-help@core.netbeans.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:issues-help@core.netbeans.org&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@core.netbeans.org&gt;</list-unsubscribe><list-post>&lt;mailto:issues@core.netbeans.org&gt;</list-post><reply-to>nbdev@netbeans.org</reply-to><delivered-to>mailing list issues@core.netbeans.org</delivered-to><received>(qmail 9990 invoked by uid 5000); 9 Dec 2008 09:55:29 -0000</received><date>9 Dec 2008 09:55:29 -0000</date><message-id>20081209095529.9989.qmail@netbeans.org</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20081209095529.9989.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>http://www.netbeans.org/issues/show_bug.cgi?id=149765</url>
+
+</para><para depth="0">User anebuzelsky changed the following:
+
+</para><para depth="0">                What    |Old value                 |New value
+================================================================================
+             Assigned to|issues@core               |jrechtacek
+</para><para depth="0">--------------------------------------------------------------------------------
+               Component|core                      |openide
+</para><para depth="0">--------------------------------------------------------------------------------
+              QA contact|issues@core               |issues@openide
+</para><para depth="0">--------------------------------------------------------------------------------
+            Subcomponent|code                      |actions
+</para><footer type="noise" depth="0">--------------------------------------------------------------------------------
+
+</footer></body></message>

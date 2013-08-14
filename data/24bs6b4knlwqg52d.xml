@@ -1,0 +1,60 @@
+<message message-id="1623187590.5361245380160812.JavaMail.jira@wso2.org.ec2.wso2.com" list="org.wso2.carbon-dev" id="24bs6b4knlwqg52d" type="bugs" date="2009-06-19T02:56:00Z" year="2009-01-01" year-month="2009-06-01" year-month-day="2009-06-18" thread-id="qclvkubgrtxyjvho"><headers><envelope-from-line>Thu Jun 18 19:14:36 2009</envelope-from-line><from personal="sumedha rubasinghe (JIRA)" address="jira@wso2.org">"sumedha rubasinghe (JIRA)" &lt;jira@wso2.org&gt;</from><to personal="carbon-dev@wso2.org" address="carbon-dev@wso2.org">carbon-dev@wso2.org</to><subject normal="[Carbon-dev] [jira] Updated: (CARBON-3959) DLCM: redirect the user into promoted or demoted lifecyle collection.">[Carbon-dev] [jira] Updated: (CARBON-3959) DLCM: redirect the user into promoted or demoted lifecyle collection.</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 267
+          for &lt;marina.sweet.shields@a.markmail.org&gt;;
+          Thu, 18 Jun 2009 19:14:36 -0800 (GMT-08:00)</received><received>from wso2.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 498CE3B3020D
+	for &lt;marina.sweet.shields@a.markmail.org&gt;; Thu, 18 Jun 2009 20:14:13 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=wso2.org)
+	by wso2.org with esmtp (Exim 4.50)
+	id 1MHUYk-00011z-Vx
+	for marina.sweet.shields@a.markmail.org; Thu, 18 Jun 2009 20:14:34 -0700</received><received>from [71.6.142.196] (helo=cheetara.wso2.com ident=Debian-exim)
+	by wso2.org with esmtp (Exim 4.50) id 1MHUYk-00011u-26
+	for carbon-dev@wso2.org; Thu, 18 Jun 2009 20:14:34 -0700</received><received>from ww2.wso2.org ([66.240.231.219])
+	by cheetara.wso2.com with esmtp (Exim 4.63)
+	(envelope-from &lt;jira@wso2.org&gt;) id 1MHUXt-0007wG-IT
+	for carbon-dev@wso2.org; Thu, 18 Jun 2009 20:13:46 -0700</received><received>from ec2-75-101-159-38.compute-1.amazonaws.com ([75.101.159.38]
+	helo=wso2.org.ec2.wso2.com) by ww2.wso2.org with esmtp (Exim 4.63)
+	(envelope-from &lt;jira@wso2.org&gt;) id 1MHUbS-0003Xg-J4
+	for carbon-dev@wso2.org; Thu, 18 Jun 2009 20:17:22 -0700</received><received>from localhost ([127.0.0.1] helo=wso2.org.ec2.wso2.com)
+	by wso2.org.ec2.wso2.com with esmtp (Exim 4.69)
+	(envelope-from &lt;jira@wso2.org&gt;) id 1MHUGm-0004yD-QQ
+	for carbon-dev@wso2.org; Fri, 19 Jun 2009 02:56:00 +0000</received><message-id>1623187590.5361245380160812.JavaMail.jira@wso2.org.ec2.wso2.com</message-id><date>Fri, 19 Jun 2009 02:56:00 +0000 (UTC)</date><in-reply-to>&lt;1077867674.6081243535537477.JavaMail.jira@wso2.org.ec2.wso2.com&gt;</in-reply-to><mime-version>1.0</mime-version><x-jira-fingerprint>08150977a08300c9c0e69105a3d1095f</x-jira-fingerprint><x-sa-exim-connect-ip>66.240.231.219</x-sa-exim-connect-ip><x-sa-exim-mail-from>jira@wso2.org</x-sa-exim-mail-from><x-spam-checker-version>SpamAssassin 3.1.7-deb (2006-10-05) on 
+	cheetara.wso2.com</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.5 required=4.0 tests=AWL,BAYES_00,
+	FORGED_RCVD_HELO autolearn=ham version=3.1.7-deb</x-spam-status><x-sa-exim-version>4.2.1 (built Tue, 09 Jan 2007 17:51:29 +0000)</x-sa-exim-version><x-sa-exim-scanned>Yes (on cheetara.wso2.com)</x-sa-exim-scanned><x-beenthere>carbon-dev@wso2.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>carbon-dev@wso2.org</reply-to><list-id>&lt;carbon-dev.wso2.org&gt;</list-id><list-unsubscribe>&lt;https://mail.wso2.org/cgi-bin/mailman/listinfo/carbon-dev&gt;, 
+	&lt;mailto:carbon-dev-request@wso2.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.wso2.org/pipermail/carbon-dev&gt;</list-archive><list-post>&lt;mailto:carbon-dev@wso2.org&gt;</list-post><list-help>&lt;mailto:carbon-dev-request@wso2.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.wso2.org/cgi-bin/mailman/listinfo/carbon-dev&gt;,
+	&lt;mailto:carbon-dev-request@wso2.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>carbon-dev-bounces@wso2.org</sender><errors-to>carbon-dev-bounces@wso2.org</errors-to></headers><normalized-references><normalized-message-id>1623187590.5361245380160812.JavaMail.jira@wso2.org.ec2.wso2.com</normalized-message-id><normalized-in-reply-to>1077867674.6081243535537477.JavaMail.jira@wso2.org.ec2.wso2.com</normalized-in-reply-to></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">
+     [<br/><url>https://wso2.org/jira/browse/CARBON-3959?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url><br/>]
+
+</para><para depth="0">sumedha rubasinghe updated CARBON-3959:
+</para><para depth="0">---------------------------------------
+
+</para><para depth="0">    Priority: Normal  (was: High)
+
+</para><para depth="0">This is an improvement. Reducing priority for Tinkiri release.
+
+</para><quote depth="1"><quotepara depth="1">DLCM: redirect the user into promoted or demoted lifecyle collection.
+</quotepara><quotepara depth="1">---------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: CARBON-3959
+                URL: <url>https://wso2.org/jira/browse/CARBON-3959</url>
+            Project: WSO2 Carbon
+         Issue Type: Improvement
+         Components: Registry
+   Affects Versions: 2.0 M2
+           Reporter: Krishantha Samaraweera
+           Assignee: Ruwan Janapriya
+
+</quotepara><quotepara depth="1">Add DLC and promote it to next level. Once you promote or demote the lifecycle<br/>state, it is better if we can redirect the users to next lifecycle phase<br/>collection.
+And also it is good to display a message box saying whether the lifecycle<br/>promote/demote successfully or not.
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="15606846466146214988">-- 
+This message is automatically generated by JIRA.
+-
+If you think it was sent incorrectly contact one of the administrators:<br/><url>https://wso2.org/jira/secure/Administrators.jspa</url>
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer><footer type="list-management" depth="0">_______________________________________________
+Carbon-dev mailing list
+<email>Carbon-dev@wso2.org</email>
+<url>https://mail.wso2.org/cgi-bin/mailman/listinfo/carbon-dev</url>
+</footer></body></message>

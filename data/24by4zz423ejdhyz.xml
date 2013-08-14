@@ -1,0 +1,76 @@
+<message message-id="E1Mvt0Y-0000V3-3p@23jxhf1.ch3.sourceforge.com" list="net.sourceforge.lists.monetdb-sql-checkins" id="24by4zz423ejdhyz" type="checkins" date="2009-10-08T05:26:08.091067-08:00" year="2009-01-01" year-month="2009-10-01" year-month-day="2009-10-08" thread-id="24by4zz423ejdhyz"><headers><envelope-from-line>Thu Oct 08 05:26:31 2009</envelope-from-line><from personal="Sjoerd Mullender" address="sjoerd@users.sourceforge.net">Sjoerd Mullender &lt;sjoerd@users.sourceforge.net&gt;</from><to personal="monetdb-sql-checkins@lists.sourceforge.net" address="monetdb-sql-checkins@lists.sourceforge.net">monetdb-sql-checkins@lists.sourceforge.net</to><subject normal="[Monetdb-sql-checkins] sql/src/backends/monet5 sql_gencode.mx, Nov2009, 1.336.2.1, 1.336.2.2">[Monetdb-sql-checkins] sql/src/backends/monet5 sql_gencode.mx, Nov2009, 1.336.2.1, 1.336.2.2</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 652
+          for &lt;tyree.guerra.keith@a.markmail.org&gt;;
+          Thu, 8 Oct 2009 05:26:30 -0800 (GMT-08:00)</received><received>from lists.sourceforge.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 9AC533B300BA
+	for &lt;tyree.guerra.keith@a.markmail.org&gt;; Thu,  8 Oct 2009 06:26:07 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=sfs-ml-1.v29.ch3.sourceforge.com)
+	by 235xhf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;monetdb-sql-checkins-bounces@lists.sourceforge.net&gt;)
+	id 1Mvt0j-0007NK-8G; Thu, 08 Oct 2009 13:26:25 +0000</received><received>from sfi-mx-4.v28.ch3.sourceforge.com ([172.29.28.124]
+	helo=mx.sourceforge.net)
+	by 235xhf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;sjoerd@users.sourceforge.net&gt;) id 1Mvt0j-0007Mg-0t
+	for monetdb-sql-checkins@lists.sourceforge.net;
+	Thu, 08 Oct 2009 13:26:25 +0000</received><x-acl-warn/><received>from sfp-cvsdas-1.v30.ch3.sourceforge.com ([172.29.30.177]
+	helo=23jxhf1.ch3.sourceforge.com)
+	by 1b2kzd1.ch3.sourceforge.com with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.69) id 1Mvt0d-0005TH-6s
+	for monetdb-sql-checkins@lists.sourceforge.net;
+	Thu, 08 Oct 2009 13:26:19 +0000</received><received>from [127.0.0.1] (helo=users.sourceforge.net)
+	by 23jxhf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;sjoerd@users.sourceforge.net&gt;) id 1Mvt0Y-0000V3-3p
+	for monetdb-sql-checkins@lists.sourceforge.net;
+	Thu, 08 Oct 2009 13:26:14 +0000</received><date>Thu, 08 Oct 2009 13:26:14 +0000</date><x-mailer>Python syncmail 2.5 &lt;http://sf.net/projects/cvs-syncmail&gt;</x-mailer><precedence>list</precedence><message-id>E1Mvt0Y-0000V3-3p@23jxhf1.ch3.sourceforge.com</message-id><x-spam-score>0.0 (/)</x-spam-score><x-spam-report>Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details. _SUMMARY_</x-spam-report><x-headers-end>1Mvt0d-0005TH-6s</x-headers-end><x-beenthere>monetdb-sql-checkins@lists.sourceforge.net</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><reply-to>monetdb-developers@lists.sourceforge.net</reply-to><list-id>"Checkin messages for sql module."
+	&lt;monetdb-sql-checkins.lists.sourceforge.net&gt;</list-id><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/monetdb-sql-checkins&gt;,
+	&lt;mailto:monetdb-sql-checkins-request@lists.sourceforge.net?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:monetdb-sql-checkins@lists.sourceforge.net&gt;</list-post><list-help>&lt;mailto:monetdb-sql-checkins-request@lists.sourceforge.net?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/monetdb-sql-checkins&gt;,
+	&lt;mailto:monetdb-sql-checkins-request@lists.sourceforge.net?subject=subscribe&gt;</list-subscribe><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><errors-to>monetdb-sql-checkins-bounces@lists.sourceforge.net</errors-to></headers><normalized-references><normalized-message-id>E1Mvt0Y-0000V3-3p@23jxhf1.ch3.sourceforge.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">Update of /cvsroot/monetdb/sql/src/backends/monet5
+In directory 23jxhf1.ch3.sourceforge.com:/tmp/cvs-serv1853/src/backends/monet5
+
+</para><para depth="0">Modified Files:
+      Tag: Nov2009
+	sql_gencode.mx 
+Log Message:
+propagated changes of Thursday Oct 08 2009
+from the Aug2009 branch to the Nov2009 branch
+
+</para><para depth="0">  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  2009/10/08 - nielsnes: src/backends/monet5/sql_gencode.mx,1.332.2.5
+  fixed bug in mvc last entry and
+  in sql_gencode create buffer for each argument
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+</para><para depth="0">Index: sql_gencode.mx
+===================================================================
+RCS file: /cvsroot/monetdb/sql/src/backends/monet5/sql_gencode.mx,v
+retrieving revision 1.336.2.1
+retrieving revision 1.336.2.2
+diff -u -d -r1.336.2.1 -r1.336.2.2
+--- sql_gencode.mx	8 Oct 2009 11:06:23 -0000	1.336.2.1
++++ sql_gencode.mx	8 Oct 2009 13:26:12 -0000	1.336.2.2
+@@ -2068,12 +2068,12 @@
+ 	if (f-&gt;ops) {
+ 		int argc = 0;
+ 		node *n;
+-		char *buf = GDKmalloc(SMALLBUFSIZ);
+
+</para><para depth="0"> 		for (n = f-&gt;ops-&gt;h; n; n = n-&gt;next, argc++) {
+ 			sql_arg *a = n-&gt;data;
+ 			int type = a-&gt;type.type-&gt;localtype;
+ 			int varid = 0;
++			char *buf = GDKmalloc(SMALLBUFSIZ);
+
+</para><para depth="0"> 			if (a-&gt;name) 
+ 				(void) snprintf(buf, SMALLBUFSIZ, "A%s", a-&gt;name);
+
+</para><para depth="0">------------------------------------------------------------------------------
+Come build with us! The BlackBerry(R) Developer Conference in SF, CA
+is the only developer event you need to attend this year. Jumpstart your
+developing skills, take BlackBerry mobile applications to market and stay 
+ahead of the curve. Join us from November 9 - 12, 2009. Register now!
+<url>http://p.sf.net/sfu/devconference</url>
+</para><footer type="list-management" depth="0">_______________________________________________
+Monetdb-sql-checkins mailing list
+<email>Monetdb-sql-checkins@lists.sourceforge.net</email>
+<url>https://lists.sourceforge.net/lists/listinfo/monetdb-sql-checkins</url>
+</footer></body></message>

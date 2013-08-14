@@ -1,0 +1,35 @@
+<message message-id="1143759454.5842.24.camel@localhost.localdomain" list="com.ubuntu.lists.bazaar" id="24bsr3wavectc34a" type="general" date="2006-03-31T09:57:34+11:00" year="2006-01-01" year-month="2006-03-01" year-month-day="2006-03-30" thread-id="don5x27ncjrlwk4r"><headers><envelope-from-line>From robertc@robertcollins.net Thu Mar 30 23:58:05 2006</envelope-from-line><from personal="Robert Collins" address="robertc@robertcollins.net">Robert Collins &lt;robertc@robertcollins.net&gt;</from><to personal="Matthew D. Fuller" address="fullermd@over-yonder.net">"Matthew D. Fuller" &lt;fullermd@over-yonder.net&gt;</to><cc personal="bazaar-ng@lists.canonical.com" address="bazaar-ng@lists.canonical.com">"bazaar-ng@lists.canonical.com" &lt;bazaar-ng@lists.canonical.com&gt;</cc><subject normal="[PATCH][RFC] Make log filename faster">Re: [PATCH][RFC] Make log filename faster</subject><received>from virt-161-port-5-wol-ad4.wholesaledsl.net ([203.132.224.161]
+	helo=mail.wholesaledsl.net)
+	by esperanza.ubuntu.com with smtp (Exim 4.52) id 1FP65c-0000Nd-Ns
+	for bazaar-ng@lists.canonical.com; Thu, 30 Mar 2006 23:58:05 +0100</received><received>(qmail 15850 invoked from network); 30 Mar 2006 23:58:22 -0000</received><received>from unknown (HELO lifelesswks.robertcollins.net) (220.240.27.19)
+	by -R with SMTP; 30 Mar 2006 23:58:22 -0000</received><received>from [3ffe:8002:1004:0:212:f0ff:fe0c:6e67]
+	(helo=lifelesslap.robertcollins.net)
+	by lifelesswks.robertcollins.net with asmtp (Exim 4.34)
+	id 1FP654-00048h-N8; Fri, 31 Mar 2006 09:57:30 +1100</received><received>from localhost ([127.0.0.1] helo=localhost.localdomain)
+	by lifelesslap.robertcollins.net with esmtp (Exim 4.60)
+	(envelope-from &lt;robertc@robertcollins.net&gt;)
+	id 1FP659-0001dP-Ew; Fri, 31 Mar 2006 09:57:35 +1100</received><in-reply-to>&lt;20060330005628.GW37096@over-yonder.net&gt;</in-reply-to><references>&lt;1143618475.19847.38.camel@localhost.localdomain&gt;
+	&lt;442AA514.8010503@utoronto.ca&gt; &lt;20060330005628.GW37096@over-yonder.net&gt;</references><content-type>multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature";
+	boundary="=-HljPOphjB//6/u5Gxqte"</content-type><date>Fri, 31 Mar 2006 09:57:34 +1100</date><message-id>1143759454.5842.24.camel@localhost.localdomain</message-id><mime-version>1.0</mime-version><x-mailer>Evolution 2.6.0 </x-mailer><x-beenthere>bazaar-ng@lists.canonical.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>bazaar-ng discussion &lt;bazaar-ng.lists.canonical.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/bazaar-ng&gt;,
+	&lt;mailto:bazaar-ng-request@lists.canonical.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://lists.ubuntu.com/archives/bazaar-ng&gt;</list-archive><list-post>&lt;mailto:bazaar-ng@lists.canonical.com&gt;</list-post><list-help>&lt;mailto:bazaar-ng-request@lists.canonical.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/bazaar-ng&gt;,
+	&lt;mailto:bazaar-ng-request@lists.canonical.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Thu, 30 Mar 2006 22:58:05 -0000</x-list-received-date></headers><attachments><signature type="application/pgp-signature" description="This is a digitally signed message part" file="signature.asc" size="191" uri="/24bsr3wavectc34a/attach00/signature.asc"/></attachments><normalized-references><normalized-message-id>1143759454.5842.24.camel@localhost.localdomain</normalized-message-id><normalized-in-reply-to>20060330005628.GW37096@over-yonder.net</normalized-in-reply-to><normalized-reference>1143618475.19847.38.camel@localhost.localdomain</normalized-reference><normalized-reference>442AA514.8010503@utoronto.ca</normalized-reference><normalized-reference>20060330005628.GW37096@over-yonder.net</normalized-reference></normalized-references><body><para depth="0">On Wed, 2006-03-29 at 18:56 -0600, Matthew D. Fuller wrote:
+</para><quote depth="1"><quotepara depth="1">On Wed, Mar 29, 2006 at 10:17:40AM -0500 I heard the voice of
+Aaron Bentley, and lo! it spake thus:
+</quotepara><quote depth="2"><quotepara depth="2">
+3. checking the relevent inventories to ensure that the file was
+actually changed.
+</quotepara></quote><quotepara depth="1">
+I still think we need to track filenames on --unchanged commits, so we
+can use forced commits to update/note things without changing the
+file; given that, log should probably show changes that didn't change
+anything, but are marked as affecting the file.
+</quotepara></quote><para depth="0">
+I'm unclear on what you mean here - could you give me a use case, or
+perhaps a sample transcript of what you'd like to see?
+
+</para><para depth="0">Rob
+
+</para><footer type="signature" depth="0" hash="971136530371539935">-- 
+GPG key available at: &lt;<url>http://www.robertcollins.net/keys.txt</url>&gt;.
+</footer></body></message>

@@ -1,0 +1,43 @@
+<message message-id="43CF49B8.80306@sbcglobal.net" list="com.redhat.fedora-list" id="24atis5npid5qypa" type="general" date="2006-01-19T02:11:36-06:00" year="2006-01-01" year-month="2006-01-01" year-month-day="2006-01-19" thread-id="noxh5gqorqmyzksi"><headers><envelope-from-line>From mike.mccarty@sbcglobal.net Thu Jan 19 03:11:49 2006</envelope-from-line><from personal="Mike McCarty" address="mike.mccarty@sbcglobal.net">Mike McCarty &lt;mike.mccarty@sbcglobal.net&gt;</from><to personal="For users of Fedora Core releases" address="fedora-list@redhat.com">For users of Fedora Core releases &lt;fedora-list@redhat.com&gt;</to><subject normal="Distributing user-developed Linux software and licensing issues.">Re: Distributing user-developed Linux software and licensing issues.</subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	k0J8BnHA018995 for &lt;fedora-list@listman.util.phx.redhat.com&gt;;
+	Thu, 19 Jan 2006 03:11:49 -0500</received><received>from mx1.redhat.com (mx1.redhat.com [172.16.48.31])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with ESMTP id k0J8Bn110473
+	for &lt;fedora-list@redhat.com&gt;; Thu, 19 Jan 2006 03:11:49 -0500</received><received>from smtp110.sbc.mail.re2.yahoo.com (smtp110.sbc.mail.re2.yahoo.com
+	[68.142.229.95])
+	by mx1.redhat.com (8.12.11/8.12.11) with SMTP id k0J8Blqi015651
+	for &lt;fedora-list@redhat.com&gt;; Thu, 19 Jan 2006 03:11:47 -0500</received><received>(qmail 31470 invoked from network); 19 Jan 2006 08:11:42 -0000</received><received>from unknown (HELO ?172.17.205.79?)
+	(mike.mccarty@sbcglobal.net@70.245.137.244 with plain)
+	by smtp110.sbc.mail.re2.yahoo.com with SMTP; 19 Jan 2006 08:11:42 -0000</received><message-id>43CF49B8.80306@sbcglobal.net</message-id><date>Thu, 19 Jan 2006 02:11:36 -0600</date><user-agent>Mozilla Thunderbird 1.0.2 (X11/20050317)</user-agent><x-accept-language>en-us, en</x-accept-language><mime-version>1.0</mime-version><references>&lt;20060118231058.28593.qmail@web36713.mail.mud.yahoo.com&gt;
+	&lt;200601190927.29000.markkuk@tuubi.net&gt;</references><in-reply-to>&lt;200601190927.29000.markkuk@tuubi.net&gt;</in-reply-to><content-type>text/plain; charset=iso-8859-1</content-type><content-transfer-encoding>8bit</content-transfer-encoding><x-redhat-spam-score>0 </x-redhat-spam-score><x-loop>fedora-list@redhat.com</x-loop><x-beenthere>fedora-list@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>For users of Fedora Core releases &lt;fedora-list@redhat.com&gt;</reply-to><list-id>For users of Fedora Core releases &lt;fedora-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-list&gt;,
+	&lt;mailto:fedora-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-list&gt;</list-archive><list-post>&lt;mailto:fedora-list@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-list-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-list&gt;,
+	&lt;mailto:fedora-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Thu, 19 Jan 2006 08:11:49 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>43CF49B8.80306@sbcglobal.net</normalized-message-id><normalized-in-reply-to>200601190927.29000.markkuk@tuubi.net</normalized-in-reply-to><normalized-reference>20060118231058.28593.qmail@web36713.mail.mud.yahoo.com</normalized-reference><normalized-reference>200601190927.29000.markkuk@tuubi.net</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Markku Kolkka wrote:
+</para><quote depth="1"><quotepara depth="1">Runesabre kirjoitti viestissään (lähetysaika torstai, 19. 
+tammikuuta 2006 01:10):
+
+</quotepara><quote depth="2"><quotepara depth="2">I'm not a security expert so I'm learning as I go.
+What I can't really understand is how a client-side
+application can be completely open source and secure
+at the same time without giving away its encryption
+techniques.
+</quotepara></quote><quotepara depth="1">
+The client is Open Source, secure, _and_ it "gives away" the 
+encryption techniques. All encryption algorithms in general use 
+</quotepara></quote><para depth="0">
+[snip]
+
+</para><para depth="0">Another way to answer this is by saying that the term "strong
+encryption" means encryption which is secure even when the
+means of encryption and decryption are both known to the
+third party. Any other kind of encryption is known as "weak
+encryption".
+
+</para><para depth="0">Mike
+</para><footer type="signature" depth="0" hash="2536475007791491213">-- 
+p="p=%c%s%c;main(){printf(p,34,p,34);}";main(){printf(p,34,p,34);}
+This message made from 100% recycled bits.
+You have found the bank of Larn.
+I can explain it for you, but I can't understand it for you.
+I speak only for myself, and I am unanimous in that!
+</footer></body></message>

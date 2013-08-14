@@ -1,0 +1,64 @@
+<message message-id="18487240.1094490308657.JavaMail.orion@beaver.codehaus.org" list="org.apache.maven.dev" id="24bdf5josfqnseig" type="bugs" date="2004-09-06T13:05:08-04:00" year="2004-01-01" year-month="2004-09-01" year-month-day="2004-09-06" thread-id="nukysmk73twk4bfm"><headers><envelope-from-line>From dev-return-30648-apmail-maven-dev-archive=maven.apache.org@maven.apache.org Mon Sep 06 16:59:23 2004</envelope-from-line><from personal="jira@codehaus.org" address="jira@codehaus.org">jira@codehaus.org</from><to personal="dev@maven.apache.org" address="dev@maven.apache.org">dev@maven.apache.org</to><subject normal="[jira] Closed: (MPDASHBOARD-11) New aggregator : JCoverage covered lines percentile">[jira] Closed: (MPDASHBOARD-11) New aggregator : JCoverage covered lines percentile</subject><return-path>dev-return-30648-apmail-maven-dev-archive=maven.apache.org@maven.apache.org</return-path><delivered-to>apmail-maven-dev-archive@www.apache.org</delivered-to><received>(qmail 52980 invoked from network); 6 Sep 2004 16:59:23 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur-2.apache.org with SMTP; 6 Sep 2004 16:59:23 -0000</received><received>(qmail 3977 invoked by uid 500); 6 Sep 2004 16:59:22 -0000</received><delivered-to>apmail-maven-dev-archive@maven.apache.org</delivered-to><received>(qmail 3756 invoked by uid 500); 6 Sep 2004 16:59:21 -0000</received><mailing-list>contact dev-help@maven.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:dev-unsubscribe@maven.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:dev-subscribe@maven.apache.org&gt;</list-subscribe><list-help>&lt;mailto:dev-help@maven.apache.org&gt;</list-help><list-post>&lt;mailto:dev@maven.apache.org&gt;</list-post><list-id>"Maven Developers List" &lt;dev.maven.apache.org&gt;</list-id><reply-to>"Maven Developers List" &lt;dev@maven.apache.org&gt;</reply-to><delivered-to>mailing list dev@maven.apache.org</delivered-to><received>(qmail 3742 invoked by uid 99); 6 Sep 2004 16:59:21 -0000</received><x-asf-spam-status>No, hits=0.0 required=10.0
+	tests=NO_REAL_NAME</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (hermes.apache.org: local policy)</received-spf><received>from [64.7.141.17] (HELO codehaus.org) (64.7.141.17)
+  by apache.org (qpsmtpd/0.28) with SMTP; Mon, 06 Sep 2004 09:59:19 -0700</received><received>(qmail 17157 invoked from network); 6 Sep 2004 17:05:08 -0000</received><received>from localhost (HELO beaver.codehaus.org) (127.0.0.1)
+  by codehaus.org with SMTP; 6 Sep 2004 17:05:08 -0000</received><message-id>18487240.1094490308657.JavaMail.orion@beaver.codehaus.org</message-id><date>Mon, 6 Sep 2004 13:05:08 -0400 (EDT)</date><in-reply-to>&lt;14703631.1094460251316.JavaMail.orion@beaver.codehaus.org&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>18487240.1094490308657.JavaMail.orion@beaver.codehaus.org</normalized-message-id><normalized-in-reply-to>14703631.1094460251316.JavaMail.orion@beaver.codehaus.org</normalized-in-reply-to></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Message:
+
+</para><para depth="0">   The following issue has been closed.
+
+</para><para depth="0">   Resolver: Vincent Massol
+       Date: Mon, 6 Sep 2004 1:04 PM
+
+</para><para depth="0">Applied Thanks. Next time could you please also add a patch for the <br/>aggregators.xml documentation file? As I'm not a JCoverage expert, could you <br/>please describe exactly what your aggregator does. I've written "Total <br/>percentage of lines covered" but I'm not sure that's right. 
+---------------------------------------------------------------------
+View the issue:
+  <url>http://jira.codehaus.org/browse/MPDASHBOARD-11</url>
+
+</para><para depth="0">Here is an overview of the issue:
+---------------------------------------------------------------------
+        Key: MPDASHBOARD-11
+    Summary: New aggregator : JCoverage covered lines percentile
+       Type: New Feature
+
+</para><para depth="0">     Status: Closed
+   Priority: Major
+ Resolution: FIXED
+
+</para><para depth="0"> Original Estimate: 5 minutes
+ Time Spent: Unknown
+  Remaining: 5 minutes
+
+</para><para depth="0">    Project: maven-dashboard-plugin
+   Fix Fors:
+             1.5
+   Versions:
+             1.5
+
+</para><para depth="0">   Assignee: Vincent Massol
+   Reporter: Thomas Recloux
+
+</para><para depth="0">    Created: Mon, 6 Sep 2004 4:43 AM
+    Updated: Mon, 6 Sep 2004 1:04 PM
+
+</para><para depth="0">Description:
+I have developped this aggregator for Jcoverage, it computes the lines coverage <br/>percentile. I'll join the patch.txt and the agregator .jelly file. 
+
+</para><para depth="0">I have added the aggregator to the tests
+
+</para><para depth="0">Thanks to Mathieu Fosse for his help.
+
+</para><para depth="0">---------------------------------------------------------------------
+JIRA INFORMATION:
+This message is automatically generated by JIRA.
+
+</para><para depth="0">If you think it was sent incorrectly contact one of the administrators:
+   <url>http://jira.codehaus.org/secure/Administrators.jspa</url>
+
+</para><para depth="0">If you want more information on JIRA, or have a bug to report see:
+   <url>http://www.atlassian.com/software/jira</url>
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@maven.apache.org</email>
+For additional commands, e-mail: <email>dev-help@maven.apache.org</email>
+
+</footer></body></message>

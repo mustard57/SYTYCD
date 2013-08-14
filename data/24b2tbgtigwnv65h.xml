@@ -1,0 +1,21 @@
+<message message-id="F37B2F40039ED411A91200D0B7914F59099DB2@CYNMAIL01" list="org.apache.tomcat.users" id="24b2tbgtigwnv65h" type="users" date="2001-06-27T12:53:52-04:00" year="2001-01-01" year-month="2001-06-01" year-month-day="2001-06-27" thread-id="24b2tbgtigwnv65h"><headers><envelope-from-line>From tomcat-user-return-39306-apmail-jakarta-tomcat-user-archive=jakarta.apache.org@jakarta.apache.org Wed Jun 27 16:52:35 2001</envelope-from-line><from personal="Jamie Gagnon" address="jgagnon@cynocom.net">Jamie Gagnon &lt;jgagnon@cynocom.net&gt;</from><to personal="tomcat-user@jakarta.apache.org" address="tomcat-user@jakarta.apache.org">tomcat-user@jakarta.apache.org</to><subject normal="SSL with Verisign key">SSL with Verisign key</subject><return-path>tomcat-user-return-39306-apmail-jakarta-tomcat-user-archive=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-tomcat-user-archive@jakarta.apache.org</delivered-to><received>(qmail 47595 invoked by uid 500); 27 Jun 2001 16:52:32 -0000</received><mailing-list>contact tomcat-user-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><reply-to>tomcat-user@jakarta.apache.org</reply-to><list-help>&lt;mailto:tomcat-user-help@jakarta.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:tomcat-user-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:tomcat-user@jakarta.apache.org&gt;</list-post><delivered-to>mailing list tomcat-user@jakarta.apache.org</delivered-to><received>(qmail 47455 invoked from network); 27 Jun 2001 16:52:19 -0000</received><received>from unknown (HELO cynmail01.CYNOCOM) (216.242.117.5)
+  by h31.sny.collab.net with SMTP; 27 Jun 2001 16:52:19 -0000</received><received>by CYNMAIL01 with Internet Mail Service (5.5.2650.21)
+	id &lt;NNBCALL3&gt;; Wed, 27 Jun 2001 12:53:52 -0400</received><message-id>F37B2F40039ED411A91200D0B7914F59099DB2@CYNMAIL01</message-id><date>Wed, 27 Jun 2001 12:53:52 -0400</date><mime-version>1.0</mime-version><x-mailer>Internet Mail Service (5.5.2650.21)</x-mailer><content-type>multipart/alternative;
+	boundary="----_=_NextPart_001_01C0FF29.BEAC0D24"</content-type><x-spam-rating>h31.sny.collab.net 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>F37B2F40039ED411A91200D0B7914F59099DB2@CYNMAIL01</normalized-message-id></normalized-references><body multipart="multipart/alternative;&#13;&#10;&#9;boundary=&quot;----_=_nextpart_001_01c0ff29.beac0d24&quot;" type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><para depth="0">    I have Tomcat 3.2 , Java 2 SDK 1.3, and JSSE 1.0.2. 
+I have Tomcat running successfully with the test SSL certificate generated
+with 
+the following instructions;
+&lt;<url>http://java.sun.com/j2ee/j2sdkee/techdocs/guides/ejb/html/Security7.html</url>&gt;
+<url>http://java.sun.com/j2ee/j2sdkee/techdocs/guides/ejb/html/Security7.html</url>
+Now I'm ready to get Tomcat running in a production environment with SSL
+using my Verisign Certificate, but I
+cant seem to find the proper instructions/steps that need to be taken to
+achieve this goal. 
+PLEASE, if anyone has been able to get this working, I really need Step bye
+Step instructions.
+
+</para><para depth="0">Please respond to;
+<email>jgagnon@cynocom.net</email> &lt;mailto:<email>jgagnon@cynocom.net</email>&gt;  
+
+</para><para depth="0">Thanks in advance
+</para></body></message>

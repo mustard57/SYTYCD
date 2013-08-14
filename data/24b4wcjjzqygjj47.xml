@@ -1,0 +1,84 @@
+<message message-id="52c1411d0908121700i463fe6d4me6c277f4f320629c@mail.gmail.com" list="org.osgeo.lists.grass-user" id="24b4wcjjzqygjj47" type="users" date="2009-08-12T15:59:47.880071-08:00" year="2009-01-01" year-month="2009-08-01" year-month-day="2009-08-12" thread-id="24b4wcjjzqygjj47"><headers><envelope-from-line>Wed Aug 12 16:00:10 2009</envelope-from-line><from personal="Fran Tarkington" address="fran.tarkington@gmail.com">Fran Tarkington &lt;fran.tarkington@gmail.com&gt;</from><to personal="grass-user@lists.osgeo.org" address="grass-user@lists.osgeo.org">grass-user@lists.osgeo.org</to><subject normal="[GRASS-user] v.in.ogr to SDE">[GRASS-user] v.in.ogr to SDE</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 210
+          for &lt;opal.perez.roberson@a.markmail.org&gt;;
+          Wed, 12 Aug 2009 16:00:10 -0800 (GMT-08:00)</received><received>from lists.osgeo.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 7017E3B300C9
+	for &lt;opal.perez.roberson@a.markmail.org&gt;; Wed, 12 Aug 2009 16:59:47 -0700 (PDT)</received><received>from osgeo1.osgeo.org (localhost.localdomain [127.0.0.1])
+	by lists.osgeo.org (Postfix) with ESMTP id 65023E01AA5;
+	Wed, 12 Aug 2009 20:00:09 -0400 (EDT)</received><x-original-to>grass-user@lists.osgeo.org</x-original-to><delivered-to>grass-user@lists.osgeo.org</delivered-to><received>from qw-out-1920.google.com (qw-out-1920.google.com [74.125.92.150])
+	by lists.osgeo.org (Postfix) with ESMTP id D6D4EE0090B
+	for &lt;grass-user@lists.osgeo.org&gt;; Wed, 12 Aug 2009 20:00:07 -0400 (EDT)</received><received>by qw-out-1920.google.com with SMTP id 5so229068qwc.40
+	for &lt;grass-user@lists.osgeo.org&gt;; Wed, 12 Aug 2009 17:00:07 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:mime-version:received:date:message-id:subject
+	:from:to:content-type;
+	bh=Lr+7930Pp2fAYIR2O/5Uw3cDDVPw/pEB2m+Lm/cYKd8=;
+	b=HAxmFZodai/54WCSXBzMXDp4Qb4bMCHFeNCaAD41dDlcCJJYVxVND5ridfDYEY+sqC
+	Apm2PK49Ff333FHgbzlifhEmLlx1X1qb4byKEEFUz2vNO691GNG1nc4x6dyLnjR8xBP7
+	wXMV7sleVLEg9JpCvFA+3sNuxAIz1zYuDbkK8=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=mime-version:date:message-id:subject:from:to:content-type;
+	b=gIsxdghkAOHiq9wTiU9nRP6eNbY1IBOh2CvABd5E9XHRrfLeeLjIUsNTJ0JFZZEYmZ
+	ZgvDLJGgoqe+E1x4RYI7yG9/r9hJ0KTWhfgn1m7JBeKKG7OBDFdN9w51XRiQ5Un0RhmW
+	RZp2tjs8JZzWd9PFcEWCTyD96uT+Xa5NMaYQc=</domainkey-signature><mime-version>1.0</mime-version><received>by 10.229.33.15 with SMTP id f15mr642173qcd.59.1250121606090; Wed, 
+	12 Aug 2009 17:00:06 -0700 (PDT)</received><date>Wed, 12 Aug 2009 17:00:06 -0700</date><message-id>52c1411d0908121700i463fe6d4me6c277f4f320629c@mail.gmail.com</message-id><x-beenthere>grass-user@lists.osgeo.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>GRASS user list &lt;grass-user.lists.osgeo.org&gt;</list-id><list-unsubscribe>&lt;http://lists.osgeo.org/mailman/listinfo/grass-user&gt;,
+	&lt;mailto:grass-user-request@lists.osgeo.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.osgeo.org/pipermail/grass-user&gt;</list-archive><list-post>&lt;mailto:grass-user@lists.osgeo.org&gt;</list-post><list-help>&lt;mailto:grass-user-request@lists.osgeo.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.osgeo.org/mailman/listinfo/grass-user&gt;,
+	&lt;mailto:grass-user-request@lists.osgeo.org?subject=subscribe&gt;</list-subscribe><content-type>multipart/mixed; boundary="===============0779247279=="</content-type><sender>grass-user-bounces@lists.osgeo.org</sender><errors-to>grass-user-bounces@lists.osgeo.org</errors-to></headers><normalized-references><normalized-message-id>52c1411d0908121700i463fe6d4me6c277f4f320629c@mail.gmail.com</normalized-message-id></normalized-references><body><para depth="0">Hi
+
+</para><para depth="0">I have grass installed using the osgeo4w.  Am trying to use the v.in.ogr
+command to import some vector data from an ESRI SDE data source.
+
+</para><para depth="0">I have successfully used the OGR2OGR utility that came installed with the
+ogeo4w to extract vector data from SDE to a shapefile.  When I open op a
+osgoe4w command prompt and query the formats supported I get the following
+list:
+
+</para><para depth="0">C:\Windows\system32&gt;ogrinfo --formats
+Supported Formats:
+  -&gt; "OCI" (read/write)
+  -&gt; "SDE" (readonly)
+  -&gt; "ESRI Shapefile" (read/write)
+  -&gt; "MapInfo File" (read/write)
+  -&gt; "UK .NTF" (readonly)
+  -&gt; "SDTS" (readonly)
+  -&gt; "TIGER" (read/write)
+  -&gt; "S57" (read/write)
+  -&gt; "DGN" (read/write)
+  -&gt; "VRT" (readonly)
+  -&gt; "REC" (readonly)
+  -&gt; "Memory" (read/write)
+  -&gt; "BNA" (read/write)
+  -&gt; "CSV" (read/write)
+  -&gt; "GML" (read/write)
+  -&gt; "GPX" (read/write)
+  -&gt; "KML" (read/write)
+  -&gt; "GeoJSON" (read/write)
+  -&gt; "Interlis 1" (read/write)
+  -&gt; "Interlis 2" (read/write)
+  -&gt; "GMT" (read/write)
+  -&gt; "SQLite" (read/write)
+  -&gt; "ODBC" (read/write)
+  -&gt; "PGeo" (readonly)
+  -&gt; "OGDI" (readonly)
+  -&gt; "PostgreSQL" (read/write)
+  -&gt; "MySQL" (read/write)
+  -&gt; "AVCBin" (readonly)
+
+</para><para depth="0">Yet when I try to use the v.in.ogr command with the following syntax I get
+the error: Unable to open data source.  The following is a summary of the
+syntax that I am using:
+
+</para><para depth="0">v.in.ogr dsn=SDE:habs.ca,5153,ordb1,oraUserName,password,MYSCHEMA.LOCATIONS
+output=LOCATIONS
+
+</para><para depth="0">Is there any way I can verify that the grass is using the same GDAL/OGR
+versions as I am using on the OSGEO4W command line?
+
+</para><para depth="0">Any help would be appreciated.
+
+</para><para depth="0">Thanks
+
+</para><para depth="0">Fran
+</para><footer type="list-management" depth="0">_______________________________________________
+grass-user mailing list
+<email>grass-user@lists.osgeo.org</email>
+<url>http://lists.osgeo.org/mailman/listinfo/grass-user</url>
+</footer></body></message>

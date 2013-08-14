@@ -1,0 +1,39 @@
+<message message-id="20101029165531.02FCB42A915F@gamma.macosforge.org" list="org.webkit.lists.webkit-unassigned" id="24chrvttv73tvy2m" type="bugs" date="2010-10-29T08:55:21.189517-08:00" year="2010-01-01" year-month="2010-10-01" year-month-day="2010-10-29" thread-id="gbh4wkyd42qvhtww"><headers><envelope-from-line>Fri Oct 29 08:55:44 2010</envelope-from-line><from personal="bugzilla-daemon@webkit.org" address="bugzilla-daemon@webkit.org">bugzilla-daemon@webkit.org</from><to personal="webkit-unassigned@lists.webkit.org" address="webkit-unassigned@lists.webkit.org">webkit-unassigned@lists.webkit.org</to><subject normal="[Webkit-unassigned] [Bug 39691] [Qt] GraphicsLayer: support tiling">[Webkit-unassigned] [Bug 39691] [Qt] GraphicsLayer: support tiling</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 1004
+          for &lt;paula.ryan.christensen@a.markmail.org&gt;;
+          Fri, 29 Oct 2010 08:55:44 -0800 (GMT-08:00)</received><received>from bz1.apple.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id D9B0229081E7
+	for &lt;paula.ryan.christensen@a.markmail.org&gt;; Fri, 29 Oct 2010 09:55:20 -0700 (PDT)</received><received>from lists.macosforge.org (epsilon.macosforge.org [17.254.20.231])
+	by bz1.apple.com (Postfix) with SMTP id A2B601EEEBA3C;
+	Fri, 29 Oct 2010 09:55:43 -0700 (PDT)</received><received>from epsilon.macosforge.org (localhost [127.0.0.1])
+	by lists.macosforge.org (Postfix) with ESMTP id 9A06CCB249E;
+	Fri, 29 Oct 2010 09:55:43 -0700 (PDT)</received><x-original-to>webkit-unassigned@lists.webkit.org</x-original-to><delivered-to>webkit-unassigned@lists.webkit.org</delivered-to><received>from mail-in12.apple.com (mail-in.apple.com [17.254.13.10])
+	by lists.macosforge.org (Postfix) with ESMTP id 64F4FCB2497
+	for &lt;webkit-unassigned@lists.webkit.org&gt;;
+	Fri, 29 Oct 2010 09:55:31 -0700 (PDT)</received><x-auditid>11fe0d0a-b7cfeae0000010c3-85-4ccafc82a032</x-auditid><received>from bz1.apple.com (bz1.apple.com [17.254.13.36])
+	(using TLS with cipher AES256-SHA (AES256-SHA/256 bits))
+	(Client did not present a certificate)
+	by mail-in12.apple.com (Apple Secure Mail Relay) with SMTP id
+	A4.FE.04291.28CFACC4; Fri, 29 Oct 2010 09:55:30 -0700 (PDT)</received><received>from gamma.macosforge.org (gamma.macosforge.org [17.254.20.229])
+	by bz1.apple.com (Postfix) with SMTP id 077151EEEBA23
+	for &lt;webkit-unassigned@lists.webkit.org&gt;;
+	Fri, 29 Oct 2010 09:55:31 -0700 (PDT)</received><received>by gamma.macosforge.org (Postfix, from userid 70)
+	id 02FCB42A915F; Fri, 29 Oct 2010 09:55:31 -0700 (PDT)</received><x-bugzilla-reason>AssignedTo</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>WebKit</x-bugzilla-product><x-bugzilla-component>Layout and Rendering</x-bugzilla-component><x-bugzilla-keywords>Qt, QtTriaged</x-bugzilla-keywords><x-bugzilla-severity>Normal</x-bugzilla-severity><x-bugzilla-who>noam.rosenthal@nokia.com</x-bugzilla-who><x-bugzilla-status>RESOLVED</x-bugzilla-status><x-bugzilla-priority>P2</x-bugzilla-priority><x-bugzilla-assigned-to>webkit-unassigned@lists.webkit.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>---</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Blocks</x-bugzilla-changed-fields><in-reply-to>&lt;bug-39691-2851@https.bugs.webkit.org/&gt;</in-reply-to><references>&lt;bug-39691-2851@https.bugs.webkit.org/&gt;</references><auto-submitted>auto-generated</auto-submitted><mime-version>1.0</mime-version><message-id>20101029165531.02FCB42A915F@gamma.macosforge.org</message-id><date>Fri, 29 Oct 2010 09:55:31 -0700 (PDT)</date><x-brightmail-tracker>AAAAARZ9pAs=</x-brightmail-tracker><x-beenthere>webkit-unassigned@lists.webkit.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><list-id>WebKit unassigned bugs &lt;webkit-unassigned.lists.webkit.org&gt;</list-id><list-unsubscribe>&lt;http://lists.webkit.org/mailman/options.cgi/webkit-unassigned&gt;,
+	&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.webkit.org/pipermail/webkit-unassigned&gt;</list-archive><list-post>&lt;mailto:webkit-unassigned@lists.webkit.org&gt;</list-post><list-help>&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.webkit.org/mailman/listinfo.cgi/webkit-unassigned&gt;,
+	&lt;mailto:webkit-unassigned-request@lists.webkit.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>webkit-unassigned-bounces@lists.webkit.org</sender><errors-to>webkit-unassigned-bounces@lists.webkit.org</errors-to></headers><normalized-references><normalized-message-id>20101029165531.02FCB42A915F@gamma.macosforge.org</normalized-message-id><normalized-in-reply-to>bug-39691-2851@https.bugs.webkit.org/</normalized-in-reply-to><normalized-reference>bug-39691-2851@https.bugs.webkit.org/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0"><url>https://bugs.webkit.org/show_bug.cgi?id=39691</url>
+
+</para><para depth="0">Noam Rosenthal &lt;<email>noam.rosenthal@nokia.com</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+             Blocks|                            |41137
+
+</para><footer type="signature" depth="0" hash="7587865278882035605">-- 
+Configure bugmail: <url>https://bugs.webkit.org/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the assignee for the bug.
+</footer><footer type="list-management" depth="0">_______________________________________________
+webkit-unassigned mailing list
+<email>webkit-unassigned@lists.webkit.org</email>
+<url>http://lists.webkit.org/mailman/listinfo.cgi/webkit-unassigned</url>
+</footer></body></message>

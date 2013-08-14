@@ -1,0 +1,37 @@
+<message message-id="34b8543c0705260720j133e7071n6cb23048cc4d5525@mail.gmail.com" list="org.apache.lucene.java-user" id="24bncuixcca5mbkh" type="users" date="2007-05-26T17:50:25+03:30" year="2007-01-01" year-month="2007-05-01" year-month-day="2007-05-26" thread-id="7jrqqikjw53pybaz"><headers><envelope-from-line>From java-user-return-28345-apmail-lucene-java-user-archive=lucene.apache.org@lucene.apache.org Sat May 26 14:20:54 2007</envelope-from-line><from personal="Mohammad Norouzi" address="mnrz57@gmail.com">Mohammad Norouzi &lt;mnrz57@gmail.com&gt;</from><to personal="java-user@lucene.apache.org" address="java-user@lucene.apache.org">java-user@lucene.apache.org</to><subject normal="how to exact search?">how to exact search?</subject><return-path>java-user-return-28345-apmail-lucene-java-user-archive=lucene.apache.org@lucene.apache.org</return-path><delivered-to>apmail-lucene-java-user-archive@www.apache.org</delivered-to><received>(qmail 53642 invoked from network); 26 May 2007 14:20:53 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (140.211.11.2)
+  by minotaur.apache.org with SMTP; 26 May 2007 14:20:53 -0000</received><received>(qmail 4689 invoked by uid 500); 26 May 2007 14:20:54 -0000</received><delivered-to>apmail-lucene-java-user-archive@lucene.apache.org</delivered-to><received>(qmail 3655 invoked by uid 500); 26 May 2007 14:20:52 -0000</received><mailing-list>contact java-user-help@lucene.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:java-user-help@lucene.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:java-user-unsubscribe@lucene.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:java-user@lucene.apache.org&gt;</list-post><list-id>&lt;java-user.lucene.apache.org&gt;</list-id><reply-to>java-user@lucene.apache.org</reply-to><delivered-to>mailing list java-user@lucene.apache.org</delivered-to><received>(qmail 3644 invoked by uid 99); 26 May 2007 14:20:51 -0000</received><received>from herse.apache.org (HELO herse.apache.org) (140.211.11.133)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sat, 26 May 2007 07:20:51 -0700</received><x-asf-spam-status>No, hits=2.9 required=10.0
+	tests=HTML_10_20,HTML_MESSAGE,SPF_PASS</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (herse.apache.org: domain of mnrz57@gmail.com designates 209.85.132.240 as permitted sender)</received-spf><received>from [209.85.132.240] (HELO an-out-0708.google.com) (209.85.132.240)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sat, 26 May 2007 07:20:46 -0700</received><received>by an-out-0708.google.com with SMTP id b20so327255ana
+        for &lt;java-user@lucene.apache.org&gt;; Sat, 26 May 2007 07:20:25 -0700 (PDT)</received><dkim-signature>a=rsa-sha1; c=relaxed/relaxed;
+        d=gmail.com; s=beta;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type;
+        b=byv8aW0WHDlVq95sLw2I/l2mGWXWOjHUz21EZk8yL0PEJWHTSMLpVhsigaBlKJVHC79zZ4RQA/VTb2n+W98/VD+xg5AUsrUUdM83C/jcBW7YQ63LQtYxdxwqNDSwE+S7lKIwl5nlNM0XRmeNqCN9+yHlKw9vt2qXiTqTi+pMiKU=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=beta;
+        h=received:message-id:date:from:to:subject:mime-version:content-type;
+        b=Y57LC/dbeaJ29pleAjEzvqkro83TEUV5UDFWuJVvK8oXkCshJTMTo7YQ3wvJVOBxkoqeb01dmsuXeYyVSkK/JLqTlY7ScG54e9M7q66vuvvoFnk8//ASFVfxiuwTT8jcmZBMOx2uB1lXEhvOdrkNW7+95meesQmw3liZ+BBLvZU=</domainkey-signature><received>by 10.100.202.13 with SMTP id z13mr3480867anf.1180189225136;
+        Sat, 26 May 2007 07:20:25 -0700 (PDT)</received><received>by 10.100.11.19 with HTTP; Sat, 26 May 2007 07:20:25 -0700 (PDT)</received><message-id>34b8543c0705260720j133e7071n6cb23048cc4d5525@mail.gmail.com</message-id><date>Sat, 26 May 2007 17:50:25 +0330</date><mime-version>1.0</mime-version><content-type>multipart/alternative; 
+	boundary="----=_Part_169308_19698673.1180189225086"</content-type><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>34b8543c0705260720j133e7071n6cb23048cc4d5525@mail.gmail.com</normalized-message-id></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_169308_19698673.1180189225086&quot;" type="text/plain; charset=UTF-8; format=flowed"><para depth="0">Hi All
+I want to search an exact phrase, for example field1:"This is a Text"
+or by this query: field1:"Test"  returns the result that only contain the
+word "Test" and not "Test one" or "Test two"
+
+</para><para depth="0">I have a page that build a query and finally send that query to a
+MultiFieldQueryParser
+I have a class extends from MultiFieldQueryParser and override getRangeQuery
+to managing my range queries but there is something I cant understand when
+the query is field1:Test  getFieldQuery() method will be called but when the
+query is field1:"Test" (with double quotes) neither of methods will be
+called!!!
+
+</para><para depth="0">what happen when I use ( " ) in the query? and how can I catch it to use a
+PhraseQuery to exact search?
+
+</para><para depth="0">Thank you very much
+
+</para><footer type="signature" hash="16119945363395785912" depth="0">-- 
+Regards,
+Mohammad
+--------------------------
+see my blog: <url>http://brainable.blogspot.com/</url>
+</footer></body></message>

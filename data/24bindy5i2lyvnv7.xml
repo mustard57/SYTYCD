@@ -1,0 +1,65 @@
+<message message-id="10915684.62.1277029593460.JavaMail.geo-discussion-forums@yqbp30" list="com.googlegroups.mapping-malaysia" id="24bindy5i2lyvnv7" type="general" date="2010-06-20T02:26:23.632825-08:00" year="2010-01-01" year-month="2010-06-01" year-month-day="2010-06-20" thread-id="e7hlt5o3abjrpxwe"><headers><envelope-from-line>Sun Jun 20 02:26:46 2010</envelope-from-line><from personal="shahada.abubakar@gmail.com" address="shahada.abubakar@gmail.com">shahada.abubakar@gmail.com</from><to personal="mapping-malaysia@googlegroups.com" address="mapping-malaysia@googlegroups.com">mapping-malaysia@googlegroups.com</to><subject normal="Cleaning Up Route 54 (between sungai buloh and LDP interchange)">Re: Cleaning Up Route 54 (between sungai buloh and LDP interchange)</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 756
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Sun, 20 Jun 2010 02:26:46 -0800 (GMT-08:00)</received><received>from mail-gw0-f60.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 2B2803B303A0
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Sun, 20 Jun 2010 03:26:23 -0700 (PDT)</received><received>by gwaa18 with SMTP id a18sf2469051gwa.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Sun, 20 Jun 2010 03:26:45 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:x-beenthere:received:received:date
+         :from:reply-to:to:message-id:in-reply-to:subject:mime-version
+         :x-original-sender:precedence:mailing-list:list-id:list-post
+         :list-help:list-archive:sender:list-subscribe:list-unsubscribe
+         :content-type;
+        bh=4lWubj+8AwkxyYm4UoYnNH66hy9WJVMJGV0zCNj2Nao=;
+        b=JGFyU1hCIF0mxUe8pP9efZtv4XeJgLNxQHPaCpiIFLPRVDxRYsPTMoD9blWpDO7HxO
+         dA6jg5qLAffXbteVsw+U5fsz47ToycbaqnPp6XEF5wk969zkV4jUdsnnyErtP5wxhenV
+         agW0RFdrWvOgFYrf/5tcvgf/Cwfnht7cB4vSU=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:date:from:reply-to:to:message-id:in-reply-to:subject
+         :mime-version:x-original-sender:precedence:mailing-list:list-id
+         :list-post:list-help:list-archive:sender:list-subscribe
+         :list-unsubscribe:content-type;
+        b=MNWZJgE+Tw+mNSnK7DkiIjHdpB/fR/aDDuj5Zz39ZFsBu2xsi161w+daTPF0gXgslw
+         TrQ3xt1vh0nlSNN9MPjaDPEYVYas2ODmdSkH6QFDmzC0Np0sb5nyjEj7+fXK5PW+C33I
+         dEjKQycSBZpp8xjE8iyFWn62sP1emw4xvY040=</domainkey-signature><received>by 10.101.137.32 with SMTP id p32mr96406ann.19.1277029605823;
+        Sun, 20 Jun 2010 03:26:45 -0700 (PDT)</received><x-beenthere>mapping-malaysia@googlegroups.com</x-beenthere><received>by 10.101.200.2 with SMTP id c2ls530582anq.4.p; Sun, 20 Jun 2010 
+	03:26:34 -0700 (PDT)</received><received>by 10.101.151.19 with SMTP id d19mr96583ano.5.1277029594073;
+        Sun, 20 Jun 2010 03:26:34 -0700 (PDT)</received><date>Sun, 20 Jun 2010 03:26:33 -0700 (PDT)</date><reply-to>mapping-malaysia@googlegroups.com</reply-to><message-id>10915684.62.1277029593460.JavaMail.geo-discussion-forums@yqbp30</message-id><in-reply-to>&lt;AANLkTin6SPOEzIvjhr_TfA6DdhqgngrSbYsfY_IFT9tv@mail.gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><x-original-sender>shahada.abubakar@gmail.com</x-original-sender><precedence>list</precedence><mailing-list>list mapping-malaysia@googlegroups.com; contact 
+	mapping-malaysia+owners@googlegroups.com</mailing-list><list-id>&lt;mapping-malaysia.googlegroups.com&gt;</list-id><list-post>&lt;http://groups.google.com/group/mapping-malaysia/post?hl=en_US&gt;, 
+	&lt;mailto:mapping-malaysia@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:mapping-malaysia+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/mapping-malaysia?hl=en_US&gt;</list-archive><sender>mapping-malaysia@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/mapping-malaysia/subscribe?hl=en_US&gt;, 
+	&lt;mailto:mapping-malaysia+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/mapping-malaysia/subscribe?hl=en_US&gt;, 
+	&lt;mailto:mapping-malaysia+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>multipart/alternative; 
+	boundary="----=_Part_61_2160122.1277029593451"</content-type></headers><normalized-references><normalized-message-id>10915684.62.1277029593460.JavaMail.geo-discussion-forums@yqbp30</normalized-message-id><normalized-in-reply-to>AANLkTin6SPOEzIvjhr_TfA6DdhqgngrSbYsfY_IFT9tv@mail.gmail.com</normalized-in-reply-to></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_61_2160122.1277029593451&quot;" type="text/plain; charset=UTF-8"><para depth="0">Decided to take your advice and re-cycle roads as much as I can. So
+I "undid" my deletes, and started recycling with this one:
+
+</para><para depth="0"><url>http://www.google.com/mapmaker?hl=en&amp;fll=3.201459</url>,101.590823&amp;fr=0.000214,0.000215&amp;mpp=0.596232&amp;gw=39&amp;ll=3.201914,101.590442&amp;spn=0.004585,0.007419&amp;t=h&amp;z=18&amp;iwloc=0_0&amp;fid=3588319477058569489:18027984353211176540
+
+</para><para depth="0">I moved it further up to re-use it as the downramp of the overpass.
+Quite happy with the results.
+
+</para><para depth="0">Then I tried to adjust the intersection at the overpass itself ...
+
+</para><para depth="0"><url>http://www.google.com/mapmaker?hl=en&amp;fll=3.201791</url>,101.589653&amp;fr=0.000214,0.000215&amp;mpp=0.596232&amp;gw=39&amp;ll=3.201914,101.590442&amp;spn=0.004585,0.007419&amp;t=h&amp;z=18&amp;iwloc=0_0&amp;fid=3588319477249278073:74837501847737946
+
+</para><para depth="0">But got this error:
+
+</para><para depth="0">"Bad data (Road Section Inconsistent) has been found in this area.
+Please report this error with a link to this page. Some data in this
+area is bad and cannot..."
+
+</para><para depth="0">And now touching any of the connecting roads gives me the same ...
+
+</para><para depth="0">*sigh*
+
+</para><para depth="0">Yeah, GMM's moderating feature ideally would provide for better and
+more consistent quality maps compared to OSM's "do-as-you-like"
+approach -- so I'm still a believer, for now 8-). The main problem I
+see is too much of the earlier traces were done and accepted on
+a "something is better than nothing" basis, and now the GMM moderating
+feature works against fixing it easily. Apparently making a lot of
+changes to "mature features" brings down your "karma" points too. 8-(
+
+</para><para depth="0">Regards,
+.sha
+</para></body></message>

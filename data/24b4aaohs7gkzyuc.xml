@@ -1,0 +1,70 @@
+<message message-id="a05200f05ba51bbc580e1@[209.58.107.65]" list="com.omnigroup.macosx-talk" id="24b4aaohs7gkzyuc" type="general" date="2003-01-20T06:59:01" year="2003-01-01" year-month="2003-01-01" year-month-day="2003-01-20" thread-id="2bde3ud7avx3keey"><headers><envelope-from-line>From cdyer@esystemsja.com  Mon Jan 20 06:58:18 2003</envelope-from-line><from personal="Charles Dyer" address="cdyer@esystemsja.com">Charles Dyer &lt;cdyer@esystemsja.com&gt;</from><to personal="MacOSX-Talk" address="macosx-talk@omnigroup.com">MacOSX-Talk &lt;macosx-talk@omnigroup.com&gt;</to><subject normal="drivers">Re: drivers</subject><received>from chat.speednet-jm.net ([208.163.52.20])
+	by omnigroup.com (8.10.2/8.9.1) with SMTP id h0KEwEZ14337
+	for &lt;macosx-talk@omnigroup.com&gt;; Mon, 20 Jan 2003 06:58:15 -0800 (PST)</received><received>from ([])
+        by chat.speednet-jm.net (Merak 4.4.2) with SMTP id DEMO
+        for &lt;macosx-talk@omnigroup.com&gt;; Mon, 20 Jan 2003 09:57:42 -0500</received><mime-version>1.0</mime-version><x-sender>cdyer@pop3.esystemsja.com</x-sender><message-id>a05200f05ba51bbc580e1@[209.58.107.65]</message-id><in-reply-to>&lt;BA516994.DA66%erik@barzeski.com&gt;</in-reply-to><references>&lt;BA516994.DA66%erik@barzeski.com&gt;</references><content-type>text/plain; charset="us-ascii" ; format="flowed"</content-type><sender>macosx-talk-admin@omnigroup.com</sender><errors-to>macosx-talk-admin@omnigroup.com</errors-to><x-beenthere>macosx-talk@omnigroup.com</x-beenthere><x-mailman-version>2.0.6</x-mailman-version><precedence>bulk</precedence><list-unsubscribe>&lt;http://www.omnigroup.com/mailman/listinfo/macosx-talk&gt;,
+	&lt;mailto:macosx-talk-request@omnigroup.com?subject=unsubscribe&gt;</list-unsubscribe><list-id>Discussions of Mac OS X &lt;macosx-talk.omnigroup.com&gt;</list-id><list-post>&lt;mailto:macosx-talk@omnigroup.com&gt;</list-post><list-help>&lt;mailto:macosx-talk-request@omnigroup.com?subject=help&gt;</list-help><list-subscribe>&lt;http://www.omnigroup.com/mailman/listinfo/macosx-talk&gt;,
+	&lt;mailto:macosx-talk-request@omnigroup.com?subject=subscribe&gt;</list-subscribe><list-archive>&lt;http://www.omnigroup.com/mailman/archive/macosx-talk/&gt;</list-archive><date>Mon Jan 20 06:59:01 2003</date><x-original-date>Mon, 20 Jan 2003 09:58:08 -0500</x-original-date></headers><normalized-references><normalized-message-id>a05200f05ba51bbc580e1@[209.58.107.65]</normalized-message-id><normalized-in-reply-to>BA516994.DA66%erik@barzeski.com</normalized-in-reply-to><normalized-reference>BA516994.DA66%erik@barzeski.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot; ; format=&quot;flowed&quot;"><para depth="0">At 08:53 -0500 20/01/2003, Erik J. Barzeski wrote:
+</para><quote depth="1"><quotepara depth="1">I have an Astra 6450 that works wonderfully with VueScan and has for about
+one to two years or so.
+</quotepara></quote><para depth="0">
+from the VueScan site: (See Jared's and my previous posts on this 
+thread for the URL)
+
+</para><para depth="0">USB Flatbed scanners supported:
+All Epson models
+Canon FB630U, FB636U, FB1210U, N650U, N656U, D660U, N670U, N676U, 
+N1220U, N1240U, LIDE 20, LIDE 30
+HP 2100C, 2200C, 4100C, 5200C, 5300C, 6200C, 6300C, 7400C
+Microtek X12USL, 4700, 5600, 5700, 6700 (1200 dpi and below), 6800 
+(without ICE) and 8700
+UMAX 3400 (some versions), 5400
+BearPaw 1200, 2400
+Genius ColorPage-HR6
+Plustek OpticPro
+Most Acer/BenQ, AGFA models
+
+</para><para depth="0">Notice that he makes specific mention of two and only two models of 
+UMAX scanners. Notice that the UMAX Astra 2100U is not one of the 
+models so listed. I've tried VueScan, even though the 2100 isn't on 
+the Officially Supported list. As promised, VueScan does not work 
+with the 2100.
+
+</para><para depth="0">Please note that the relevant paragraph from my original post, which 
+you snipped, was:
+
+</para><para depth="0">"If anyone ever writes an OS X native driver for low-end USB scanners 
+such as the UMAX Astra 2100 I figure that they have a market... so 
+long as the price is right."
+
+</para><para depth="0">The fact that the 6450 may/may not work with VueScan is irrelevant. 
+What is relevant is that UMAX has elected to not supply OS X drivers 
+for the majority of its scanners, and that only a few are supported 
+by a third party. As the 6450 is not officially supported, support 
+for it may go away in later versions of VueScan. It would seem to 
+indicate that it would be a bad idea to buy UMAX scanners if you 
+intend to use OS X, based on the available info. It appears that 
+their OS X support is, to put it kindly, spotty. It would be better 
+to support another vendor, one which supports OS X.
+
+</para><para depth="0">However, if someone is silly enough to buy a UMAX scanner despite 
+_knowing_ about UMAX's lack of support, well I can't stop them.
+
+</para><quote depth="1"><quotepara depth="1">On 1/20/03 8:28am, "Charles Dyer" &lt;<email>cdyer@esystemsja.com</email>&gt; wrote:
+</quotepara><quote depth="2"><quotepara depth="2"> If VueScan supported the Astra, it'd have lots of sales, given the
+ number of Astras sold. However, as there doesn't seem to be much
+ movement on the driver front, I suspect that most Astra owners will
+ simply buy a new scanner which _does_ have OS X drivers, probably
+ _not_ one from UMAX.
+</quotepara></quote><quotefooter type="noise" depth="1">
+</quotefooter><quotefooter type="list-management" depth="1">_______________________________________________
+MacOSX-talk mailing list
+<email>MacOSX-talk@omnigroup.com</email>
+<url>http://www.omnigroup.com/mailman/listinfo/macosx-talk</url>
+</quotefooter></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="5721268327731974349">-- 
+We are Microsoft of Borg. You will be assimilated. Stability is irrelevant.
+Where _you_ want to go to today is irrelevant. We will add your currency to
+our own. Bend over right now. Resistance is futile.
+
+</footer></body></message>

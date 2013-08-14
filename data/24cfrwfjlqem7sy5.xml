@@ -1,0 +1,51 @@
+<message message-id="20080302110629.GO20469@igg.indexgeo.com.au" list="org.apache.forrest.dev" id="24cfrwfjlqem7sy5" type="development" date="2008-03-02T22:06:29+11:00" year="2008-01-01" year-month="2008-03-01" year-month-day="2008-03-02" thread-id="66bfpi2klhlebv3c"><headers><envelope-from-line>Sun Mar 02 03:07:12 2008</envelope-from-line><from personal="David Crossley" address="crossley@apache.org">David Crossley &lt;crossley@apache.org&gt;</from><to personal="dev@forrest.apache.org" address="dev@forrest.apache.org">dev@forrest.apache.org</to><subject normal="forrest test suites (Was: FOR-1072)">forrest test suites (Was: FOR-1072)</subject><received>from hermes.apache.org ([140.211.11.2])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 650
+          for &lt;gustavo.simmons.miles@a.markmail.org&gt;;
+          Sun, 2 Mar 2008 03:07:12 -0800 (PST)</received><received>(qmail 30499 invoked by uid 500); 2 Mar 2008 11:07:07 -0000</received><mailing-list>contact dev-help@forrest.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@forrest.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@forrest.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@forrest.apache.org&gt;</list-post><reply-to>dev@forrest.apache.org</reply-to><list-id>&lt;dev.forrest.apache.org&gt;</list-id><delivered-to>mailing list dev@forrest.apache.org</delivered-to><received>(qmail 30476 invoked by uid 99); 2 Mar 2008 11:07:06 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sun, 02 Mar 2008 03:07:06 -0800</received><x-asf-spam-status>No, hits=1.2 required=10.0
+	tests=SPF_NEUTRAL</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>neutral (nike.apache.org: local policy)</received-spf><received>from [66.111.4.27] (HELO out3.smtp.messagingengine.com) (66.111.4.27)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sun, 02 Mar 2008 11:06:18 +0000</received><received>from compute2.internal (compute2.internal [10.202.2.42])
+	by out1.messagingengine.com (Postfix) with ESMTP id 1540EAA676
+	for &lt;dev@forrest.apache.org&gt;; Sun,  2 Mar 2008 06:06:39 -0500 (EST)</received><received>from heartbeat1.messagingengine.com ([10.202.2.160])
+  by compute2.internal (MEProxy); Sun, 02 Mar 2008 06:06:39 -0500</received><x-sasl-enc>TJQf01x7kHQfE4s6Ey1Xbu/hUwnyJin/Ki3TvGNZ66FD 1204455993</x-sasl-enc><received>from localhost (dsl-41-216.nsw1.net.au [125.168.41.216])
+	by mail.messagingengine.com (Postfix) with ESMTPSA id 761A9AE0B
+	for &lt;dev@forrest.apache.org&gt;; Sun,  2 Mar 2008 06:06:33 -0500 (EST)</received><date>Sun, 2 Mar 2008 22:06:29 +1100</date><message-id>20080302110629.GO20469@igg.indexgeo.com.au</message-id><references>&lt;2081193116.1204407771100.JavaMail.jira@brutus&gt; &lt;1008110444.1204443050438.JavaMail.jira@brutus&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><in-reply-to>&lt;1008110444.1204443050438.JavaMail.jira@brutus&gt;</in-reply-to><user-agent>Mutt/1.4.2.2i</user-agent><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20080302110629.GO20469@igg.indexgeo.com.au</normalized-message-id><normalized-in-reply-to>1008110444.1204443050438.JavaMail.jira@brutus</normalized-in-reply-to><normalized-reference>2081193116.1204407771100.JavaMail.jira@brutus</normalized-reference><normalized-reference>1008110444.1204443050438.JavaMail.jira@brutus</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><quote depth="1"><quotepara depth="1">Jeremias Maerki updated FOR-1072:
+---------------------------------
+
+</quotepara><quotepara depth="1">BTW, where can I find this "forrest-sample-2" so I could run it myself? I've<br/>only run "forrest seed" now.
+</quotepara></quote><para depth="0">
+Forrest has the following that can be used as tests. We don't have many
+real testcases, just suites of documents that should exercise each piece
+of functionality. Some automatically generated stuff is good test fodder.
+
+</para><para depth="0">'forrest seed' equates to 'forrest seed-sample' - our main test
+(doing 'forrest -p' shows others).
+Provides a local sample site to mess around with 'forrest run'
+and 'forrest site'.
+
+</para><para depth="0">Create a new 'forrest seed' and follow the instructions
+(in forrest.properties.dispatcher.properties) to enable the Dispatcher
+work-in-progress. We call that "sample-2".
+
+</para><para depth="0">$FORREST_HOME/main/build.sh test
+runs the 'site' target of both those samples.
+... i should do this before committing, i should do this ...
+
+</para><para depth="0">The forrestbot on our zone runs them every two hours.
+... so when we don't run 'build test', it catches us.
+<url>http://forrest.zones.apache.org/</url>
+
+</para><para depth="0">cd $FORREST_HOME/site-author
+forrest -f publish.xml build
+would run the local forrestbot to build the forrest website.
+(Deploy is a separate stage.)
+
+</para><para depth="0">Each plugin has its own documentation set. However, i think that
+we don't have pdf output configured for their sites. It is easily
+added locally if one needs specific plugin pdf tests.
+We don't yet have a way to run all their 'site' targets at once.
+
+</para><para depth="0">So there are lots of chances to exercise FOP.
+
+</para><para depth="0">-David
+</para></body></message>

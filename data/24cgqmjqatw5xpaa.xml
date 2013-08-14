@@ -1,0 +1,82 @@
+<message message-id="4DF762E4.4010...@gmail.com" list="com.googlegroups.slack-users-br" id="24cgqmjqatw5xpaa" type="users" date="2011-06-14T10:32:20-03:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-14" thread-id="fj5drxcb3jwk65wp"><headers><envelope-from-line>Tue Jun 14 05:52:05 2011</envelope-from-line><from personal="renato" address="&quot;ratoman....&quot;@gmail.com">renato &lt;"ratoman...."@gmail.com&gt;</from><to personal="slack-users-br@googlegroups.com" address="slack-users-br@googlegroups.com">slack-users-br@googlegroups.com</to><subject normal="[slack-users] Proxy MSN: Controlar cadastro de novos contatos">Re: [slack-users] Proxy MSN: Controlar cadastro de novos contatos</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 918
+          for &lt;terra.hess.wong@a.markmail.org&gt;;
+          Tue, 14 Jun 2011 05:52:05 -0800 (GMT-08:00)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 656C33B300C3
+	for &lt;terra.hess.wong@a.markmail.org&gt;; Tue, 14 Jun 2011 06:51:41 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (Postfix) with ESMTP id 3CFF363B014E
+	for &lt;terra.hess.wong@a.markmail.org&gt;; Tue, 14 Jun 2011 06:51:41 -0700 (PDT)</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id p5EDpeuE027784
+	for terra.hess.wong@a.markmail.org; Tue, 14 Jun 2011 06:51:40 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.slack-users-br</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>c243e1de5189d880</x-markmail-googlegroups-mid><received>by 10.224.31.79 with SMTP id x15mr2000927qac.6.1308058449488;
+        Tue, 14 Jun 2011 06:34:09 -0700 (PDT)</received><x-beenthere>slack-users-br@googlegroups.com</x-beenthere><received>by 10.224.175.74 with SMTP id w10ls1116341qaz.0.gmail; Tue, 14 Jun
+ 2011 06:34:05 -0700 (PDT)</received><received>by 10.224.127.76 with SMTP id f12mr2691275qas.11.1308058445629;
+        Tue, 14 Jun 2011 06:34:05 -0700 (PDT)</received><received>by 10.224.127.76 with SMTP id f12mr2691274qas.11.1308058445589;
+        Tue, 14 Jun 2011 06:34:05 -0700 (PDT)</received><received>from mail-vx0-f173.google.com ([209.85.220.173])
+        by gmr-mx.google.com with ESMTPS id k32si6110929qcs.1.2011.06.14.06.34.05
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Tue, 14 Jun 2011 06:34:05 -0700 (PDT)</received><received-spf>pass (google.com: domain of ratoman....@gmail.com designates 209.85.220.173 as permitted sender) client-ip=209.85.220.173;</received-spf><authentication-results>gmr-mx.google.com; spf=pass (google.com: domain of ratoman....@gmail.com designates 209.85.220.173 as permitted sender) smtp.mail=ratoman....@gmail.com; dkim=pass (test mode) header...@gmail.com</authentication-results><received>by mail-vx0-f173.google.com with SMTP id 37so6376023vxb.18
+        for &lt;slack-users-br@googlegroups.com&gt;; Tue, 14 Jun 2011 06:34:05 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:message-id:date:from:user-agent:mime-version:to
+         :subject:references:in-reply-to:content-type;
+        bh=ytTBCQ/Wh8a1JNcCSism0XuFEWkJsziddbo2mMiSlq4=;
+        b=KBHp1kUhd1XKtsmZ15OFjwfZk2dpsn4O7KNIBe05pwEOC+6nXKYNcJ/fdXrKCHqOyN
+         lBByxifV4MoY+qaV/pz0rfcQvbQ3NHyMnDTDquYBQ2LxXpT4xzsPNmK90CkrRBYK0a2X
+         GbcYEHObvHckil0OzQQVOyG8iwiJM0mNwS1AE=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type;
+        b=XxckX8rg6LIC7dfLfO15y1sJb6n+OGUkAcMMFYpnglcUQJ+1t6Ze+ZP/xwjLebNmAv
+         X13us8/3fPbA/0DCgnv20iBCfT1NSlIMXvHpiD8giDKgF/XZoP3R868AoC5w60S8W5CL
+         zovl0cgNlI62z92FNXiYdP6oYgnY5BLfGkIWc=</domainkey-signature><received>by 10.52.98.40 with SMTP id ef8mr5592477vdb.54.1308058444902;
+        Tue, 14 Jun 2011 06:34:04 -0700 (PDT)</received><received>from [10.0.0.60] ([189.101.1.232])
+        by mx.google.com with ESMTPS id dq5sm4484212vbb.16.2011.06.14.06.33.57
+        (version=SSLv3 cipher=OTHER);
+        Tue, 14 Jun 2011 06:33:59 -0700 (PDT)</received><message-id>4DF762E4.4010...@gmail.com</message-id><date>Tue, 14 Jun 2011 10:32:20 -0300</date><user-agent>Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.17) Gecko/20110414 Thunderbird/3.1.10</user-agent><mime-version>1.0</mime-version><references>&lt;4DF6275B.5000...@gmail.com&gt; &lt;BANLkTin0fXE9jO=UbiZ_6kkHxNxoR89...@mail.gmail.com&gt; &lt;4DF66380.4010...@gmail.com&gt; &lt;BANLkTikdumHCdxCxm0xzRzk4qgtcv76...@mail.gmail.com&gt;</references><in-reply-to>&lt;BANLkTikdumHCdxCxm0xzRzk4qgtcv76...@mail.gmail.com&gt;</in-reply-to><content-type>multipart/alternative;
+ boundary="------------000802010503030000040203"</content-type></headers><normalized-references><normalized-message-id>4DF762E4.4010...@gmail.com</normalized-message-id><normalized-in-reply-to>BANLkTikdumHCdxCxm0xzRzk4qgtcv76...@mail.gmail.com</normalized-in-reply-to><normalized-reference>4DF6275B.5000...@gmail.com</normalized-reference><normalized-reference>BANLkTin0fXE9jO=UbiZ_6kkHxNxoR89...@mail.gmail.com</normalized-reference><normalized-reference>4DF66380.4010...@gmail.com</normalized-reference><normalized-reference>BANLkTikdumHCdxCxm0xzRzk4qgtcv76...@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative;&#13;&#10; boundary=&quot;------------000802010503030000040203&quot;" type="text/plain; charset=ISO-8859-1; format=flowed"><para depth="0">Uai, aï¿½ ficou bom o negï¿½cio!
+
+</para><para depth="0">On 13-06-2011 18:10, Francisco V Brasileiro wrote:
+</para><quote depth="1"><quotepara depth="1">Sim Renato,
+
+</quotepara><quotepara depth="1">Como diria Delfim Neto: ï¿½ um IM Proxy e como tal, funciona como um proxy.
+
+</quotepara><quotepara depth="1">Pense no squid...... o imspector ï¿½ da mesma categoria, apenas para 
+protocolos diferentes, enquanto o squid ï¿½ pra http/https/ftp o 
+imspector ï¿½ para MSN, Yahoo, Jabber, etc.
+
+</quotepara><quotepara depth="1">Ou seja, o mesmo desenho de rede que se faz para a implementaï¿½ï¿½o do 
+squid, pode ser aplicado para implementar o imspector, quer seja de 
+forma transparente (usando redirect), quer seja setando o proxy na 
+configuraï¿½ï¿½o do cliente.
+
+</quotepara><quotepara depth="1">"A utopia estï¿½ lï¿½ no horizonte. Me aproximo dois passos, ela se afasta 
+dois passos. Caminho dez passos e o horizonte corre dez passos. Por 
+mais que eu caminhe, jamais alcanï¿½arei. Para que serve a utopia? Serve 
+para isso: para que eu nï¿½o deixe de caminhar". Eduardo Galeano.
+
+</quotepara><quotepara depth="1">______________________________________________________________________
+Francisco Vasconcelos Brasileiro <email>franci...@brasileiro.adm.br</email> 
+&lt;mailto:<email>franci...@brasileiro.adm.br</email>&gt;
+UIN: 6826562                                          Linux User: #101368
+
+</quotepara><quotepara depth="1">Em 13 de junho de 2011 16:22, renato &lt;<email>ratoman....@gmail.com</email> 
+&lt;mailto:<email>ratoman....@gmail.com</email>&gt;&gt; escreveu:
+
+</quotepara><quotepara depth="1">    Deixa eu ver se eu entendi:
+    ï¿½ possï¿½vel ter um servidor interno que vai monitorar os dados,
+    fazer os monitoramentos e aplicar as regras, e "transport" nesse
+    caso ï¿½ estabelecer ou encaminhar as conexï¿½es para um servidor
+    externo, como os servidores do Windows Live por exemplo.
+
+</quotepara><quotepara depth="1">-- 
+GUS-BR - Grupo de Usuï¿½rios de Slackware Brasil
+<url>http://www.slackwarebrasil.org/</url>
+<url>http://groups.google.com/group/slack-users-br</url>
+
+</quotepara><quotepara depth="1">Antes de perguntar:
+<url>http://www.istf.com.br/perguntas/</url>
+
+</quotepara><quotepara depth="1">Para sair da lista envie um e-mail para:
+slack-users-br+<email>unsubscribe@googlegroups.com</email> 
+</quotepara></quote><footer type="noise" depth="0">
+</footer></body></message>

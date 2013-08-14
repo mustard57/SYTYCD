@@ -1,0 +1,50 @@
+<message message-id="200204191459.47019.aseigo@olympusproject.org" list="org.kde.kde-usability" id="24cumj47pmkrtxlj" type="general" date="2002-04-19T14:59:47-06:00" year="2002-01-01" year-month="2002-04-01" year-month-day="2002-04-19" thread-id="r4yishlaahxzgl3h"><headers><envelope-from-line>From kde-usability-admin@mail.kde.org  Fri Apr 19 17:01:04 2002</envelope-from-line><from personal="Aaron J. Seigo" address="aseigo@olympusproject.org">"Aaron J. Seigo" &lt;aseigo@olympusproject.org&gt;</from><to personal="kde-usability@mail.kde.org" address="kde-usability@mail.kde.org">kde-usability@mail.kde.org</to><subject normal="K-ARTIST:Mime icons usability &amp; visibility ;-)">Re: K-ARTIST:Mime icons usability &amp; visibility ;-)</subject><return-path>kde-usability-admin@mail.kde.org</return-path><received>from mail.kde.org (max.tat.physik.uni-tuebingen.de [134.2.170.93])
+	by mailer.progressive-comp.com with id RAA22339
+	for &lt;kde-usability@progressive-comp.com&gt;; Fri, 19 Apr 2002 17:01:03 -0400</received><received>(qmail 2954 invoked by uid 0); 19 Apr 2002 21:01:01 -0000</received><resent-date>19 Apr 2002 21:01:01 -0000</resent-date><resent-message-id>&lt;20020419210101.2953.qmail@mail.kde.org&gt;</resent-message-id><resent-cc>recipient list not shown: ;</resent-cc><delivered-to>kde-usability@mail.kde.org</delivered-to><received>(qmail 1634 invoked from network); 19 Apr 2002 20:59:51 -0000</received><received>from unknown (HELO gtv.ca) (24.87.44.230)
+  by max.tat.physik.uni-tuebingen.de with SMTP; 19 Apr 2002 20:59:51 -0000</received><received>from stilborne ([24.79.44.47])
+	by gtv.ca (8.11.6/8.8.7) with ESMTP id g3JKWES21111
+	for &lt;kde-usability@mail.kde.org&gt;; Fri, 19 Apr 2002 14:32:14 -0600</received><content-type>text/plain;
+  charset="us-ascii"</content-type><user-agent>KMail/1.4.5</user-agent><references>&lt;1018910451.2090.10.camel@ANTIALIAS.bredbandsbolaget.se&gt; &lt;200204192145.20885.simon@simonzone.com&gt; &lt;200204191313.33148.whalesuit@yahoo.com&gt;</references><in-reply-to>&lt;200204191313.33148.whalesuit@yahoo.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-transfer-encoding>8bit</content-transfer-encoding><message-id>200204191459.47019.aseigo@olympusproject.org</message-id><x-spam-rating>max.tat.physik.uni-tuebingen.de 0/1000/N</x-spam-rating><resent-sender>kde-usability-admin@mail.kde.org</resent-sender><resent-from>kde-usability@mail.kde.org</resent-from><x-mailing-list>&lt;kde-usability@mail.kde.org&gt;</x-mailing-list><sender>kde-usability-admin@mail.kde.org</sender><errors-to>kde-usability-admin@mail.kde.org</errors-to><x-beenthere>kde-usability@mail.kde.org</x-beenthere><x-mailman-version>2.0.5</x-mailman-version><precedence>bulk</precedence><reply-to>kde-usability@mail.kde.org</reply-to><x-reply-to>kde-usability@mail.kde.org</x-reply-to><list-help>&lt;mailto:kde-usability-request@mail.kde.org?subject=help&gt;</list-help><list-post>&lt;mailto:kde-usability@mail.kde.org&gt;</list-post><list-subscribe>&lt;http://mail.kde.org/mailman/listinfo/kde-usability&gt;,
+	&lt;mailto:kde-usability-request@mail.kde.org?subject=subscribe&gt;</list-subscribe><list-id>For discussion of the KDE Usability Project &lt;kde-usability.mail.kde.org&gt;</list-id><list-unsubscribe>&lt;http://mail.kde.org/mailman/listinfo/kde-usability&gt;,
+	&lt;mailto:kde-usability-request@mail.kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.kde.org/pipermail/kde-usability/&gt;</list-archive><date>Fri, 19 Apr 2002 14:59:47 -0600</date></headers><normalized-references><normalized-message-id>200204191459.47019.aseigo@olympusproject.org</normalized-message-id><normalized-in-reply-to>200204191313.33148.whalesuit@yahoo.com</normalized-in-reply-to><normalized-reference>1018910451.2090.10.camel@ANTIALIAS.bredbandsbolaget.se</normalized-reference><normalized-reference>200204192145.20885.simon@simonzone.com</normalized-reference><normalized-reference>200204191313.33148.whalesuit@yahoo.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10; charset=&quot;us-ascii&quot;"><para depth="0">On April 19, 2002 02:13 pm, Eric E wrote:
+</para><quote depth="1"><quotepara depth="1">The adaptiveness you're talking seem more general to me how many apps can
+you run at once, extra tray apps, etc., in addition to eye candy.
+</quotepara></quote><para depth="0">
+this is another part of the problem i didn't even bother getting into. 
+depending on which apps you use and how you use them, certain look 'n feel 
+settings cause more or less pain for the user.
+
+</para><para depth="0">you can't set the eye-candy-o-meter without a solid understanding of:
+
+</para><para depth="0"> o the hardware at hand (CPU, video card, RAM, I/O speed)
+ o the applications used and general usage patterns of that system
+ o the user's personal quirks^H tastes
+
+</para><para depth="0">it deffinitely sounds like a job for some sort of agent software to me, and 
+quite a sophisticated one at that.
+
+</para><quote depth="1"><quotepara depth="1">Entirely true, and we all want to get there, but you're asking a team of
+volunteers to solve the next 50 years of HCI problems.  Let's go a little
+slow here, man, even if we are just polishing railings instead of building
+new buildings.
+</quotepara></quote><para depth="0">
+agreed, completely. fix what is wrong with today, then work on tomorrow.
+
+</para><para depth="0">and even more importantly, instead of saying things should be perfect 
+(yes,everyone would like to see kde be able to configure itself according to 
+your desires which it picks up via ESP), provide concrete solutions. as in:
+
+</para><para depth="0"> o here is the problem
+ o here is the solution
+ o here is an implementation
+
+</para><para depth="0">anything short of that is not useful.
+
+</para><footer type="signature" hash="16753116286053661323" depth="0">-- 
+Aaron Seigo
+</footer><footer type="list-management" depth="0">_______________________________________________
+kde-usability mailing list
+<email>kde-usability@mail.kde.org</email>
+<url>http://mail.kde.org/mailman/listinfo/kde-usability</url>
+
+</footer></body></message>

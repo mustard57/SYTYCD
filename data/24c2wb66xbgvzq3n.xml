@@ -1,0 +1,59 @@
+<message message-id="b5c049b90803120508n1148f1abyaddf1f1fc7e665d@mail.gmail.com" list="net.sourceforge.lists.saxon-help" id="24c2wb66xbgvzq3n" type="users" date="2008-03-12T13:08:25+01:00" year="2008-01-01" year-month="2008-03-01" year-month-day="2008-03-12" thread-id="n5n4nk3m7eacni2i"><headers><envelope-from-line>From "jz@uva"_&lt;zhangjunte@gmail.com&gt; Wed Mar 12 05:08:35 2008</envelope-from-line><from personal="jz@uva" address="zhangjunte@gmail.com">"jz@uva" &lt;zhangjunte@gmail.com&gt;</from><to personal="saxon-help" address="saxon-help@lists.sourceforge.net">saxon-help &lt;saxon-help@lists.sourceforge.net&gt;</to><subject normal="[saxon] Do Stylesheet conversion from shell and flat text as parameter">[saxon] Do Stylesheet conversion from shell and flat text as parameter</subject><delivered-to>net.sourceforge.lists.saxon-help@localhost</delivered-to><received>from lists-outbound.sourceforge.net ([66.35.250.225])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 445
+          for &lt;andrea.glover.blanchard@a.markmail.org&gt;;
+          Wed, 12 Mar 2008 05:08:35 -0700 (PDT)</received><received>from sc8-sf-list1-new.sourceforge.net (sc8-sf-list1-new-b.sourceforge.net [10.3.1.93])
+	by sc8-sf-spam2.sourceforge.net (Postfix) with ESMTP
+	id EFC82166C4; Wed, 12 Mar 2008 04:08:34 -0800 (PST)</received><received>from sc8-sf-mx1-b.sourceforge.net ([10.3.1.91]
+	helo=mail.sourceforge.net)
+	by sc8-sf-list1-new.sourceforge.net with esmtp (Exim 4.43)
+	id 1JZPky-0000Jw-4l
+	for saxon-help@lists.sourceforge.net; Wed, 12 Mar 2008 05:08:31 -0700</received><received>from el-out-1112.google.com ([209.85.162.177])
+	by mail.sourceforge.net with esmtp (Exim 4.44) id 1JZPkv-0007zM-Rn
+	for saxon-help@lists.sourceforge.net; Wed, 12 Mar 2008 05:08:27 -0700</received><received>by el-out-1112.google.com with SMTP id m34so1512238ele.9
+	for &lt;saxon-help@lists.sourceforge.net&gt;;
+	Wed, 12 Mar 2008 05:08:25 -0700 (PDT)</received><received>by 10.151.83.12 with SMTP id k12mr4500146ybl.7.1205323705212;
+	Wed, 12 Mar 2008 05:08:25 -0700 (PDT)</received><received>by 10.150.50.12 with HTTP; Wed, 12 Mar 2008 05:08:25 -0700 (PDT)</received><message-id>b5c049b90803120508n1148f1abyaddf1f1fc7e665d@mail.gmail.com</message-id><date>Wed, 12 Mar 2008 13:08:25 +0100</date><in-reply-to>&lt;b5c049b90803120452v8b5db9tf583d19b2b1e9f1b@mail.gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-disposition>inline</content-disposition><references>&lt;b5c049b90803120452v8b5db9tf583d19b2b1e9f1b@mail.gmail.com&gt;</references><x-spam-score>0.0 (/)</x-spam-score><x-spam-report>Spam Filtering performed by sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	Report problems to
+	http://sf.net/tracker/?func=add&amp;group_id=1&amp;atid=200001
+	0.0 RCVD_BY_IP             Received by mail server with no name</x-spam-report><x-beenthere>saxon-help@lists.sourceforge.net</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><precedence>list</precedence><reply-to>Mailing list for the SAXON XSLT and XQuery processor &lt;saxon-help@lists.sourceforge.net&gt;</reply-to><list-id>Mailing list for the SAXON XSLT and XQuery processor
+	&lt;saxon-help.lists.sourceforge.net&gt;</list-id><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/saxon-help&gt;,
+	&lt;mailto:saxon-help-request@lists.sourceforge.net?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://sourceforge.net/mailarchive/forum.php?forum_name=saxon-help&gt;</list-archive><list-post>&lt;mailto:saxon-help@lists.sourceforge.net&gt;</list-post><list-help>&lt;mailto:saxon-help-request@lists.sourceforge.net?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/saxon-help&gt;,
+	&lt;mailto:saxon-help-request@lists.sourceforge.net?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>saxon-help-bounces@lists.sourceforge.net</sender><errors-to>saxon-help-bounces@lists.sourceforge.net</errors-to></headers><normalized-references><normalized-message-id>b5c049b90803120508n1148f1abyaddf1f1fc7e665d@mail.gmail.com</normalized-message-id><normalized-in-reply-to>b5c049b90803120452v8b5db9tf583d19b2b1e9f1b@mail.gmail.com</normalized-in-reply-to><normalized-reference>b5c049b90803120452v8b5db9tf583d19b2b1e9f1b@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><greeting depth="0">Hi Michael and others,
+</greeting><para depth="0">
+ I am using Saxon to do my XSLT. I am doing conversions with XSLT from
+ the shell in Linux.
+
+</para><para depth="0"> What I do is:
+
+</para><para depth="0"> $ java -cp saxon9.jar net.sf.saxon.Transform data.xml style.xsl
+
+</para><para depth="0"> Then the output is printed in the shell. This is ok and exactly what I want.
+
+</para><para depth="0"> But now I need to generate the stylesheet dynamically. I could create
+ temporary XSL files, but this is not efficient and may cause conflicts
+ if multiple users are doing the same at the same time.
+
+</para><para depth="0"> Is there a way to do a conversion with Saxon in the shell by replacing
+ "style.xsl" with its actual content?
+
+</para><para depth="0"> So something like:
+
+</para><para depth="0"> $ java -cp saxon9.jar net.sf.saxon.Transform data.xml `echo 'actual
+ content of stylesheet'`
+
+</para><para depth="0"> Btw, this is not working, but I hope my idea is clear.
+
+</para><para depth="0"> Best,
+   jz
+
+</para><footer type="sponsored" depth="0">-------------------------------------------------------------------------
+This SF.net email is sponsored by: Microsoft
+Defy all challenges. Microsoft(R) Visual Studio 2008.
+<url>http://clk.atdmt.com/MRT/go/vse0120000070mrt/direct/01/</url>
+</footer><footer type="list-management" depth="0">_______________________________________________
+saxon-help mailing list archived at <url>http://saxon.markmail.org/</url>
+<email>saxon-help@lists.sourceforge.net</email>
+<url>https://lists.sourceforge.net/lists/listinfo/saxon-help</url> 
+
+</footer></body></message>

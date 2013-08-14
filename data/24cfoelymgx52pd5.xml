@@ -1,0 +1,65 @@
+<message message-id="20070910020513.GB12975%yamahata@valinux.co.jp" list="com.xensource.lists.xen-ia64-devel" id="24cfoelymgx52pd5" type="development" date="2007-09-10T11:05:13+09:00" year="2007-01-01" year-month="2007-09-01" year-month-day="2007-09-09" thread-id="24cfoelymgx52pd5"><headers><envelope-from-line>From xen-ia64-devel-bounces@lists.xensource.com Sun Sep 09 19:05:28 2007</envelope-from-line><from personal="Isaku Yamahata" address="yamahata@valinux.co.jp">Isaku Yamahata &lt;yamahata@valinux.co.jp&gt;</from><to personal="xen-ia64-devel@lists.xensource.com" address="xen-ia64-devel@lists.xensource.com">xen-ia64-devel@lists.xensource.com</to><subject normal="[Xen-ia64-devel] [PATCH] use xc_map_foreign_pages() in copy_from_GFW_to_nvram()">[Xen-ia64-devel] [PATCH] use xc_map_foreign_pages() in copy_from_GFW_to_nvram()</subject><return-path>xen-ia64-devel-bounces@lists.xensource.com</return-path><envelope-to>www-data@colo.xensource.com</envelope-to><delivery-date>Sun, 09 Sep 2007 19:05:28 -0700</delivery-date><received>from vm04-bcn-london.deploy.xenoserver.org ([217.147.82.229] helo=lists.xensource.com)
+	by lists.xensource.com with esmtp (Exim 4.43)
+	id 1IUYeW-0004Ec-12
+	for www-data@colo.xensource.com; Sun, 09 Sep 2007 19:05:28 -0700</received><received>from localhost ([127.0.0.1] helo=lists.xensource.com)
+	by host-192-168-0-1-bcn-london with esmtp (Exim 4.50)
+	id 1IUYep-0002RE-GL; Mon, 10 Sep 2007 02:05:47 +0000</received><received>from [192.168.0.10] (helo=lists.xensource.com)
+	by host-192-168-0-1-bcn-london with esmtp (Exim 4.50)
+	id 1IUYeo-0002Qs-2r
+	for xen-ia64-devel@lists.xensource.com; Mon, 10 Sep 2007 02:05:46 +0000</received><received>from fms-01.valinux.co.jp ([210.128.90.1] helo=mail.valinux.co.jp)
+	by lists.xensource.com with esmtp (Exim 4.50) id 1IUYeh-0000zg-4z
+	for xen-ia64-devel@lists.xensource.com; Mon, 10 Sep 2007 02:05:44 +0000</received><received>from ls (vagw.valinux.co.jp [210.128.90.14])
+	by mail.valinux.co.jp (Postfix) with SMTP id EF30F2DCB1B;
+	Mon, 10 Sep 2007 11:05:13 +0900 (JST)</received><received>(nullmailer pid 15265 invoked by uid 20675);
+	Mon, 10 Sep 2007 02:05:13 -0000</received><date>Mon, 10 Sep 2007 11:05:13 +0900</date><message-id>20070910020513.GB12975%yamahata@valinux.co.jp</message-id><mime-version>1.0</mime-version><content-type>multipart/mixed; boundary="2oS5YaxWCcQjTEyO"</content-type><content-disposition>inline</content-disposition><user-agent>Mutt/1.4.2.1i</user-agent><x-sa-exim-connect-ip>210.128.90.1</x-sa-exim-connect-ip><x-sa-exim-mail-from>yamahata@valinux.co.jp</x-sa-exim-mail-from><x-spam-checker-version>SpamAssassin 3.1.0 (2005-09-13) on (none)</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.3 required=5.0 tests=AWL,BAYES_50 autolearn=ham 
+	version=3.1.0</x-spam-status><x-sa-exim-version>4.2.1 (built Mon, 27 Mar 2006 13:42:28 +0200)</x-sa-exim-version><x-sa-exim-scanned>Yes (on lists.xensource.com)</x-sa-exim-scanned><x-beenthere>xen-ia64-devel@lists.xensource.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>Discussion of the ia64 port of Xen
+	&lt;xen-ia64-devel.lists.xensource.com&gt;</list-id><list-unsubscribe>&lt;http://lists.xensource.com/cgi-bin/mailman/listinfo/xen-ia64-devel&gt;,
+	&lt;mailto:xen-ia64-devel-request@lists.xensource.com?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:xen-ia64-devel@lists.xensource.com&gt;</list-post><list-help>&lt;mailto:xen-ia64-devel-request@lists.xensource.com?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.xensource.com/cgi-bin/mailman/listinfo/xen-ia64-devel&gt;,
+	&lt;mailto:xen-ia64-devel-request@lists.xensource.com?subject=subscribe&gt;</list-subscribe><sender>xen-ia64-devel-bounces@lists.xensource.com</sender><errors-to>xen-ia64-devel-bounces@lists.xensource.com</errors-to></headers><attachments><attachment type="text/x-diff" file="15925_05431e5ce0fd_ia64_use_xc_map_foreign_pages.patch" size="909" uri="/24cfoelymgx52pd5/attach01/15925_05431e5ce0fd_ia64_use_xc_map_foreign_pages.patch" extension="patch"><page page="1"><attachpara># HG changeset patch
+# User yamahata@valinux.co.jp
+# Date 1189388010 -32400
+# Node ID 05431e5ce0fdfa9fd652db5f838d91bfacd3898b
+# Parent  ef63d6bd99b6039d9e97085067cb480b4652d62c
+use xc_map_foreign_pages() where possible
+PATCHNAME: ia64_use_xc_map_foreign_pages
+
+Signed-off-by: Isaku Yamahata &lt;yamahata@valinux.co.jp&gt;
+
+diff -r ef63d6bd99b6 -r 05431e5ce0fd tools/libxc/ia64/xc_ia64_hvm_build.c
+--- a/tools/libxc/ia64/xc_ia64_hvm_build.c	Fri Sep 07 15:04:51 2007 +0900
++++ b/tools/libxc/ia64/xc_ia64_hvm_build.c	Mon Sep 10 10:33:30 2007 +0900
+@@ -653,7 +653,7 @@ copy_from_GFW_to_nvram(int xc_handle, ui
+     for ( i=0; i&lt;nr_pages; i++ )
+         pfn_list[i] = (addr_from_GFW_4k_align &gt;&gt; PAGE_SHIFT) + i;
+ 
+-    tmp_ptr = (char *)xc_map_foreign_batch(xc_handle, dom,
++    tmp_ptr = (char *)xc_map_foreign_pages(xc_handle, dom,
+     PROT_READ | PROT_WRITE, pfn_list, nr_pages);
+     if ( NULL == tmp_ptr )
+     {
+</attachpara></page></attachment></attachments><normalized-references><normalized-message-id>20070910020513.GB12975%yamahata@valinux.co.jp</normalized-message-id></normalized-references><body><para depth="0"># HG changeset patch
+# User <email>yamahata@valinux.co.jp</email>
+# Date 1189388010 -32400
+# Node ID 05431e5ce0fdfa9fd652db5f838d91bfacd3898b
+# Parent  ef63d6bd99b6039d9e97085067cb480b4652d62c
+use xc_map_foreign_pages() where possible
+PATCHNAME: ia64_use_xc_map_foreign_pages
+
+</para><para depth="0">Signed-off-by: Isaku Yamahata &lt;<email>yamahata@valinux.co.jp</email>&gt;
+
+</para><para depth="0">diff -r ef63d6bd99b6 -r 05431e5ce0fd tools/libxc/ia64/xc_ia64_hvm_build.c
+--- a/tools/libxc/ia64/xc_ia64_hvm_build.c	Fri Sep 07 15:04:51 2007 +0900
++++ b/tools/libxc/ia64/xc_ia64_hvm_build.c	Mon Sep 10 10:33:30 2007 +0900
+@@ -653,7 +653,7 @@ copy_from_GFW_to_nvram(int xc_handle, ui
+     for ( i=0; i&lt;nr_pages; i++ )
+         pfn_list[i] = (addr_from_GFW_4k_align &gt;&gt; PAGE_SHIFT) + i;
+
+</para><para depth="0">-    tmp_ptr = (char *)xc_map_foreign_batch(xc_handle, dom,
++    tmp_ptr = (char *)xc_map_foreign_pages(xc_handle, dom,
+     PROT_READ | PROT_WRITE, pfn_list, nr_pages);
+     if ( NULL == tmp_ptr )
+     {
+
+</para><footer type="signature" hash="17607874636535838587" depth="0">-- 
+yamahata
+</footer></body></message>

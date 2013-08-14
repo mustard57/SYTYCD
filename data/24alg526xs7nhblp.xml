@@ -1,0 +1,1041 @@
+<message message-id="20070918001547.C78981A9875@eris.apache.org" list="org.apache.james.site-dev" id="24alg526xs7nhblp" type="checkins" date="2007-09-18T00:14:48Z" year="2007-01-01" year-month="2007-09-01" year-month-day="2007-09-17" thread-id="24alg526xs7nhblp"><headers><envelope-from-line>From site-dev-return-850-apmail-james-site-dev-archive=james.apache.org@james.apache.org Tue Sep 18 00:16:53 2007</envelope-from-line><from personal="bago@apache.org" address="bago@apache.org">bago@apache.org</from><to personal="site-cvs@james.apache.org" address="site-cvs@james.apache.org">site-cvs@james.apache.org</to><subject normal="svn commit: r576631 [17/29] - in /james/site/trunk/www/jsieve: ./ apidocs/ apidocs/org/apache/jsieve/ apidocs/org/apache/jsieve/class-use/ apidocs/org/apache/jsieve/commands/ apidocs/org/apache/jsieve/commands/class-use/ apidocs/org/apache/jsieve/comma...">svn commit: r576631 [17/29] - in /james/site/trunk/www/jsieve: ./ apidocs/
+ apidocs/org/apache/jsieve/ apidocs/org/apache/jsieve/class-use/
+ apidocs/org/apache/jsieve/commands/
+ apidocs/org/apache/jsieve/commands/class-use/
+ apidocs/org/apache/jsieve/comma...</subject><return-path>site-dev-return-850-apmail-james-site-dev-archive=james.apache.org@james.apache.org</return-path><delivered-to>apmail-james-site-dev-archive@www.apache.org</delivered-to><received>(qmail 31855 invoked from network); 18 Sep 2007 00:16:53 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (140.211.11.2)
+  by minotaur.apache.org with SMTP; 18 Sep 2007 00:16:53 -0000</received><received>(qmail 3905 invoked by uid 500); 18 Sep 2007 00:16:45 -0000</received><delivered-to>apmail-james-site-dev-archive@james.apache.org</delivered-to><received>(qmail 3890 invoked by uid 500); 18 Sep 2007 00:16:45 -0000</received><mailing-list>contact site-dev-help@james.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:site-dev-help@james.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:site-dev-unsubscribe@james.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:site-dev@james.apache.org&gt;</list-post><reply-to>site-dev@james.apache.org</reply-to><list-id>&lt;site-dev.james.apache.org&gt;</list-id><delivered-to>mailing list site-dev@james.apache.org</delivered-to><received>(qmail 3881 invoked by uid 500); 18 Sep 2007 00:16:45 -0000</received><delivered-to>apmail-james-site-cvs@james.apache.org</delivered-to><received>(qmail 3878 invoked by uid 99); 18 Sep 2007 00:16:45 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 17 Sep 2007 17:16:45 -0700</received><x-asf-spam-status>No, hits=-100.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.3] (HELO eris.apache.org) (140.211.11.3)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 18 Sep 2007 00:16:51 +0000</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id C78981A9875; Mon, 17 Sep 2007 17:15:47 -0700 (PDT)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Tue, 18 Sep 2007 00:14:48 -0000</date><x-mailer>svnmailer-1.0.8</x-mailer><message-id>20070918001547.C78981A9875@eris.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>20070918001547.C78981A9875@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Modified: james/site/trunk/www/jsieve/pmd.xml
+URL: <br/><url>http://svn.apache.org/viewvc/james/site/trunk/www/jsieve/pmd.xml?rev=576631&amp;r1=576630&amp;r2=576631&amp;view=diff</url> 
+==============================================================================
+--- james/site/trunk/www/jsieve/pmd.xml (original)
++++ james/site/trunk/www/jsieve/pmd.xml Mon Sep 17 17:14:20 2007
+@@ -1,1447 +1,1447 @@
+-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+-&lt;pmd version="3.9" timestamp="2007-09-17T22:02:07.538" elapsedTime="0s"&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/Argument.java"&gt; 
+-&lt;violation line="35" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="Argument" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/Arguments.java"&gt; 
+-&lt;violation line="81" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="Arguments" method="getTestList" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testList' (lines '81'-'82').
+-&lt;/violation&gt;
+-&lt;violation line="82" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="Arguments" method="getTestList" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="82" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="Arguments" method="getTestList" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'testList' (lines '82'-'88').
+-&lt;/violation&gt;
+-&lt;violation line="85" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="Arguments" method="getTestList" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/BaseSieveContext.java"&gt; 
+-&lt;violation line="26" rule="AtLeastOneConstructor" ruleset="Controversial Rules"<br/>package="org.apache.jsieve" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AtLeastOneConstructor</url>" <br/>priority="3"&gt; 
+-Each class should declare at least one constructor
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/CommandManager.java"&gt; 
+-&lt;violation line="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="CommandManager" method="getInstance" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'instance' (lines '51'-'52').
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="CommandManager" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="CommandManager" method="getInstance" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'instance' (lines '52'-'58').
+-&lt;/violation&gt;
+-&lt;violation line="55" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="CommandManager" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="110" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="CommandManager" priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'cmdClass' (lines '110'-'110').
+-&lt;/violation&gt;
+-&lt;violation line="113" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="CommandManager" method="lookup" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'cmdClass' (lines '113'-'116').
+-&lt;/violation&gt;
+-&lt;violation line="165" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="CommandManager" method="isSupported" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'isSupported' (lines '165'-'169').
+-&lt;/violation&gt;
+-&lt;violation line="171" rule="EmptyCatchBlock" ruleset="Basic Rules" <br/>package="org.apache.jsieve" class="CommandManager" method="isSupported" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock</url>" <br/>priority="3"&gt; 
+-Avoid empty catch blocks
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/Commands.java"&gt; 
+-&lt;violation line="80" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="Commands" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '80'-'86').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/ComparatorManager.java"&gt; 
+-&lt;violation line="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ComparatorManager" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'current' (lines '51'-'52').
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ComparatorManager" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ComparatorManager" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'current' (lines '52'-'58').
+-&lt;/violation&gt;
+-&lt;violation line="55" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ComparatorManager" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="110" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ComparatorManager" priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'comparatorClass' (lines '110'-'110').
+-&lt;/violation&gt;
+-&lt;violation line="112" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ComparatorManager" method="lookup" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'comparatorClass' (lines '112'-'115').
+-&lt;/violation&gt;
+-&lt;violation line="165" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ComparatorManager" <br/>method="isSupported" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'isSupported' (lines '165'-'172').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/ConfigurationManager.java"&gt; 
+-&lt;violation line="95" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'instance' (lines '95'-'96').
+-&lt;/violation&gt;
+-&lt;violation line="96" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="96" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'instance' (lines '96'-'102').
+-&lt;/violation&gt;
+-&lt;violation line="99" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="160" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'configName' (lines '160'-'160').
+-&lt;/violation&gt;
+-&lt;violation line="162" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getConfigStream" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'stream' (lines '162'-'168').
+-&lt;/violation&gt;
+-&lt;violation line="163" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getConfigStream" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'configName' (lines '163'-'183').
+-&lt;/violation&gt;
+-&lt;violation line="192" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getCommandMap" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'commandMap' (lines '192'-'193').
+-&lt;/violation&gt;
+-&lt;violation line="193" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" method="getCommandMap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="193" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getCommandMap" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'commandMap' (lines '193'-'199').
+-&lt;/violation&gt;
+-&lt;violation line="196" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" method="getCommandMap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="208" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getTestMap" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testMap' (lines '208'-'209').
+-&lt;/violation&gt;
+-&lt;violation line="209" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" method="getTestMap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="209" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getTestMap" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'testMap' (lines '209'-'215').
+-&lt;/violation&gt;
+-&lt;violation line="212" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" method="getTestMap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="224" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getComparatorMap" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'comparatorMap' (lines '224'-'225').
+-&lt;/violation&gt;
+-&lt;violation line="225" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getComparatorMap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="225" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getComparatorMap" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'comparatorMap' (lines '225'-'231').
+-&lt;/violation&gt;
+-&lt;violation line="228" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getComparatorMap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="329" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getDigester" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'digester' (lines '329'-'330').
+-&lt;/violation&gt;
+-&lt;violation line="330" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" method="getDigester" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="330" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="ConfigurationManager" <br/>method="getDigester" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'digester' (lines '330'-'336').
+-&lt;/violation&gt;
+-&lt;violation line="333" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="ConfigurationManager" method="getDigester" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/Executable.java"&gt; 
+-&lt;violation line="30" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="Executable" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="30" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="Executable" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '30'-'30').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/Logger.java"&gt; 
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="Logger" method="getLog" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'log' (lines '50'-'51').
+-&lt;/violation&gt;
+-&lt;violation line="51" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="Logger" method="getLog" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="Logger" method="getLog" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'log' (lines '51'-'57').
+-&lt;/violation&gt;
+-&lt;violation line="54" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="Logger" method="getLog" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/NumberArgument.java"&gt; 
+-&lt;violation line="92" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="NumberArgument" method="setValue" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'endIndex' (lines '92'-'102').
+-&lt;/violation&gt;
+-&lt;violation line="92" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="NumberArgument" method="setValue" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'endIndex' (lines '92'-'107').
+-&lt;/violation&gt;
+-&lt;violation line="92" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="NumberArgument" method="setValue" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'endIndex' (lines '92'-'97').
+-&lt;/violation&gt;
+-&lt;violation line="93" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="NumberArgument" method="setValue" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'magnitude' (lines '93'-'101').
+-&lt;/violation&gt;
+-&lt;violation line="93" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="NumberArgument" method="setValue" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'magnitude' (lines '93'-'106').
+-&lt;/violation&gt;
+-&lt;violation line="93" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="NumberArgument" method="setValue" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'magnitude' (lines '93'-'96').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/SieveContext.java"&gt; 
+-&lt;violation line="26" rule="AtLeastOneConstructor" ruleset="Controversial Rules"<br/>package="org.apache.jsieve" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AtLeastOneConstructor</url>" <br/>priority="3"&gt; 
+-Each class should declare at least one constructor
+-&lt;/violation&gt;
+-&lt;violation line="38" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveContext" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'coordinate' (lines '38'-'38').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/SieveFactory.java"&gt; 
+-&lt;violation line="73" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveFactory" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="133" rule="EmptyCatchBlock" ruleset="Basic Rules" <br/>package="org.apache.jsieve" class="SieveFactory" method="evaluate" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock</url>" <br/>priority="3"&gt; 
+-Avoid empty catch blocks
+-&lt;/violation&gt;
+-&lt;violation line="200" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveFactory" method="getInstance" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'instance' (lines '200'-'201').
+-&lt;/violation&gt;
+-&lt;violation line="201" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="SieveFactory" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="201" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveFactory" method="getInstance" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'instance' (lines '201'-'207').
+-&lt;/violation&gt;
+-&lt;violation line="204" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="SieveFactory" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/SieveParserVisitorImpl.java"&gt; 
+-&lt;violation line="57" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="83" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'children' (lines '83'-'99').
+-&lt;/violation&gt;
+-&lt;violation line="84" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'argument' (lines '84'-'88').
+-&lt;/violation&gt;
+-&lt;violation line="84" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'argument' (lines '84'-'92').
+-&lt;/violation&gt;
+-&lt;violation line="105" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'children' (lines '105'-'106').
+-&lt;/violation&gt;
+-&lt;violation line="110" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testList' (lines '110'-'116').
+-&lt;/violation&gt;
+-&lt;violation line="110" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testList' (lines '110'-'118').
+-&lt;/violation&gt;
+-&lt;violation line="116" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testList' (lines '116'-'116').
+-&lt;/violation&gt;
+-&lt;violation line="116" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testList' (lines '116'-'118').
+-&lt;/violation&gt;
+-&lt;violation line="118" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testList' (lines '118'-'116').
+-&lt;/violation&gt;
+-&lt;violation line="118" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testList' (lines '118'-'118').
+-&lt;/violation&gt;
+-&lt;violation line="148" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'children' (lines '148'-'149').
+-&lt;/violation&gt;
+-&lt;violation line="153" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'arguments' (lines '153'-'159').
+-&lt;/violation&gt;
+-&lt;violation line="154" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'block' (lines '154'-'161').
+-&lt;/violation&gt;
+-&lt;violation line="159" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'arguments' (lines '159'-'159').
+-&lt;/violation&gt;
+-&lt;violation line="161" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'block' (lines '161'-'161').
+-&lt;/violation&gt;
+-&lt;violation line="247" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'children' (lines '247'-'248').
+-&lt;/violation&gt;
+-&lt;violation line="252" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'arguments' (lines '252'-'257').
+-&lt;/violation&gt;
+-&lt;violation line="257" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="SieveParserVisitorImpl" method="visit"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'arguments' (lines '257'-'257').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/StringListArgument.java"&gt; 
+-&lt;violation line="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="StringListArgument" method="getList" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'list' (lines '58'-'59').
+-&lt;/violation&gt;
+-&lt;violation line="59" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="StringListArgument" method="getList" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="59" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="StringListArgument" method="getList" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'list' (lines '59'-'65').
+-&lt;/violation&gt;
+-&lt;violation line="62" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="StringListArgument" method="getList" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/Test.java"&gt; 
+-&lt;violation line="51" rule="BooleanInstantiation" ruleset="Basic Rules" <br/>package="org.apache.jsieve" class="Test" method="execute" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/basic.html#BooleanInstantiation</url>" <br/>priority="2"&gt; 
+-Avoid instantiating Boolean objects; reference Boolean.TRUE or Boolean.FALSE or<br/>call Boolean.valueOf() instead. 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/TestList.java"&gt; 
+-&lt;violation line="74" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="TestList" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '74'-'85').
+-&lt;/violation&gt;
+-&lt;violation line="84" rule="BooleanInstantiation" ruleset="Basic Rules" <br/>package="org.apache.jsieve" class="TestList" method="execute" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/basic.html#BooleanInstantiation</url>" <br/>priority="2"&gt; 
+-Avoid instantiating Boolean objects; reference Boolean.TRUE or Boolean.FALSE or<br/>call Boolean.valueOf() instead. 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/TestManager.java"&gt; 
+-&lt;violation line="40" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="TestManager" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="TestManager" method="getInstance" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'current' (lines '51'-'52').
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="TestManager" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="TestManager" method="getInstance" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'current' (lines '52'-'58').
+-&lt;/violation&gt;
+-&lt;violation line="55" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve" class="TestManager" method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="113" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="TestManager" priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'testClass' (lines '113'-'113').
+-&lt;/violation&gt;
+-&lt;violation line="115" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="TestManager" method="lookup" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'testClass' (lines '115'-'119').
+-&lt;/violation&gt;
+-&lt;violation line="167" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve" class="TestManager" method="isSupported" <br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'isSupported' (lines '167'-'174').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/AbstractActionCommand.java"&gt; 
+-&lt;violation line="36" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractActionCommand" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/AbstractBodyCommand.java"&gt; 
+-&lt;violation line="34" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractBodyCommand" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/AbstractCommand.java"&gt; 
+-&lt;violation line="40" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractCommand" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="53" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '53'-'56').
+-&lt;/violation&gt;
+-&lt;violation line="129" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'arguments' (lines '129'-'130').
+-&lt;/violation&gt;
+-&lt;violation line="129" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '129'-'130').
+-&lt;/violation&gt;
+-&lt;violation line="129" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '129'-'130').
+-&lt;/violation&gt;
+-&lt;violation line="129" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '129'-'130').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/AbstractConditionalCommand.java"&gt; 
+-&lt;violation line="39" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractConditionalCommand" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="54" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractConditionalCommand" <br/>method="execute" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'oldManager' (lines '54'-'68').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/AbstractControlCommand.java"&gt; 
+-&lt;violation line="34" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractControlCommand" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/AbstractPrologCommand.java"&gt; 
+-&lt;violation line="37" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="AbstractPrologCommand" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/CommandStateManager.java"&gt; 
+-&lt;violation line="95" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="CommandStateManager" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'instance' (lines '95'-'96').
+-&lt;/violation&gt;
+-&lt;violation line="96" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands" class="CommandStateManager" <br/>method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="96" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="CommandStateManager" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'instance' (lines '96'-'102').
+-&lt;/violation&gt;
+-&lt;violation line="99" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands" class="CommandStateManager" <br/>method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/ConditionManager.java"&gt; 
+-&lt;violation line="175" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="ConditionManager" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'instance' (lines '175'-'176').
+-&lt;/violation&gt;
+-&lt;violation line="176" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands" class="ConditionManager" <br/>method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="176" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="ConditionManager" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'instance' (lines '176'-'182').
+-&lt;/violation&gt;
+-&lt;violation line="179" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands" class="ConditionManager" <br/>method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/Discard.java"&gt; 
+-&lt;violation line="38" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Discard" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Discard" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'arguments' (lines '50'-'55').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Discard" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '50'-'55').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Discard" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '50'-'55').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Discard" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '50'-'55').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/Else.java"&gt; 
+-&lt;violation line="39" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Else" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Else" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'arguments' (lines '50'-'73').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Else" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '50'-'73').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Else" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '50'-'73').
+-&lt;/violation&gt;
+-&lt;violation line="62" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands" class="Else" method="executeBasic" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/Elsif.java"&gt; 
+-&lt;violation line="40" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Elsif" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Elsif" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'arguments' (lines '52'-'76').
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Elsif" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '52'-'76').
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Elsif" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '52'-'76').
+-&lt;/violation&gt;
+-&lt;violation line="61" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands" class="Elsif" method="executeBasic" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/ExecutableCommand.java"&gt; 
+-&lt;violation line="44" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands" class="ExecutableCommand" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="44" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="ExecutableCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'arguments' (lines '44'-'45').
+-&lt;/violation&gt;
+-&lt;violation line="44" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="ExecutableCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '44'-'45').
+-&lt;/violation&gt;
+-&lt;violation line="44" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="ExecutableCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '44'-'45').
+-&lt;/violation&gt;
+-&lt;violation line="44" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="ExecutableCommand" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '44'-'45').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/If.java"&gt; 
+-&lt;violation line="39" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="If" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="If" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'arguments' (lines '52'-'75').
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="If" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '52'-'75').
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="If" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '52'-'75').
+-&lt;/violation&gt;
+-&lt;violation line="61" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands" class="If" method="executeBasic" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/Keep.java"&gt; 
+-&lt;violation line="39" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Keep" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Keep" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'arguments' (lines '50'-'55').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Keep" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '50'-'55').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Keep" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '50'-'55').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/Redirect.java"&gt; 
+-&lt;violation line="42" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Redirect" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="54" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Redirect" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '54'-'69').
+-&lt;/violation&gt;
+-&lt;violation line="54" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Redirect" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '54'-'69').
+-&lt;/violation&gt;
+-&lt;violation line="74" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Redirect" priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'args' (lines '74'-'74').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/Require.java"&gt; 
+-&lt;violation line="46" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Require" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="57" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Require" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '57'-'73').
+-&lt;/violation&gt;
+-&lt;violation line="57" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Require" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '57'-'73').
+-&lt;/violation&gt;
+-&lt;violation line="57" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Require" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '57'-'73').
+-&lt;/violation&gt;
+-&lt;violation line="82" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Require" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '82'-'106').
+-&lt;/violation&gt;
+-&lt;violation line="91" rule="EmptyCatchBlock" ruleset="Basic Rules" <br/>package="org.apache.jsieve.commands" class="Require" method="validateFeature" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/basic.html#EmptyCatchBlock</url>" <br/>priority="3"&gt; 
+-Avoid empty catch blocks
+-&lt;/violation&gt;
+-&lt;violation line="133" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Require" priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'args' (lines '133'-'133').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/Stop.java"&gt; 
+-&lt;violation line="39" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Stop" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Stop" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'arguments' (lines '50'-'54').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Stop" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '50'-'54').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Stop" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '50'-'54').
+-&lt;/violation&gt;
+-&lt;violation line="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands" class="Stop" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'mail' (lines '50'-'54').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/extensions/Log.java"&gt; 
+-&lt;violation line="48" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="56" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'block' (lines '56'-'119').
+-&lt;/violation&gt;
+-&lt;violation line="56" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'mail' (lines '56'-'119').
+-&lt;/violation&gt;
+-&lt;violation line="63" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" <br/>method="executeBasic" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'message' (lines '63'-'106').
+-&lt;/violation&gt;
+-&lt;violation line="127" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'message' (lines '127'-'143').
+-&lt;/violation&gt;
+-&lt;violation line="150" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'message' (lines '150'-'155').
+-&lt;/violation&gt;
+-&lt;violation line="161" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'message' (lines '161'-'166').
+-&lt;/violation&gt;
+-&lt;violation line="172" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'message' (lines '172'-'177').
+-&lt;/violation&gt;
+-&lt;violation line="183" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'message' (lines '183'-'188').
+-&lt;/violation&gt;
+-&lt;violation line="194" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'message' (lines '194'-'199').
+-&lt;/violation&gt;
+-&lt;violation line="205" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'message' (lines '205'-'210').
+-&lt;/violation&gt;
+-&lt;violation line="215" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'arguments' (lines '215'-'218').
+-&lt;/violation&gt;
+-&lt;violation line="215" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.extensions" class="Log" priority="5"&gt;
+-Found 'DU'-anomaly for variable 'context' (lines '215'-'218').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/extensions/LogLevelTags.java"&gt; 
+-&lt;violation line="29" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands.extensions" class="LogLevelTags" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="30" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands.extensions" class="LogLevelTags" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="31" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands.extensions" class="LogLevelTags" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="32" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands.extensions" class="LogLevelTags" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="33" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands.extensions" class="LogLevelTags" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="34" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.commands.extensions" class="LogLevelTags" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/optional/FileInto.java"&gt; 
+-&lt;violation line="46" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="FileInto" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="61" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="FileInto" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '61'-'91').
+-&lt;/violation&gt;
+-&lt;violation line="61" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="FileInto" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '61'-'91').
+-&lt;/violation&gt;
+-&lt;violation line="67" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="FileInto" <br/>method="executeBasic" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'destination' (lines '67'-'91').
+-&lt;/violation&gt;
+-&lt;violation line="76" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="FileInto" <br/>method="executeBasic" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'isDuplicate' (lines '76'-'80').
+-&lt;/violation&gt;
+-&lt;violation line="80" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="FileInto" <br/>method="executeBasic" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'isDuplicate' (lines '80'-'80').
+-&lt;/violation&gt;
+-&lt;violation line="96" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="FileInto" <br/>priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'args' (lines '96'-'96').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/commands/optional/Reject.java"&gt; 
+-&lt;violation line="53" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="Reject" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="Reject" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'block' (lines '64'-'75').
+-&lt;/violation&gt;
+-&lt;violation line="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="Reject" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'context' (lines '64'-'75').
+-&lt;/violation&gt;
+-&lt;violation line="100" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.commands.optional" class="Reject" <br/>priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'args' (lines '100'-'100').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/comparators/AsciiCasemap.java"&gt; 
+-&lt;violation line="36" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="AsciiCasemap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/comparators/AsciiNumeric.java"&gt; 
+-&lt;violation line="35" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="AsciiNumeric" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/comparators/ComparatorNames.java"&gt; 
+-&lt;violation line="29" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="ComparatorNames" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="30" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="ComparatorNames" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/comparators/ComparatorUtils.java"&gt; 
+-&lt;violation line="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'comparatorName' (lines '70'-'84').
+-&lt;/violation&gt;
+-&lt;violation line="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'matchArgument' (lines '70'-'84').
+-&lt;/violation&gt;
+-&lt;violation line="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'matchTarget' (lines '70'-'84').
+-&lt;/violation&gt;
+-&lt;violation line="76" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="match" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'isMatched' (lines '76'-'78').
+-&lt;/violation&gt;
+-&lt;violation line="76" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="match" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'isMatched' (lines '76'-'80').
+-&lt;/violation&gt;
+-&lt;violation line="76" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="match" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'isMatched' (lines '76'-'82').
+-&lt;/violation&gt;
+-&lt;violation line="101" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="matches" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'pattern' (lines '101'-'104').
+-&lt;/violation&gt;
+-&lt;violation line="152" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getGlobCompiler" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'globCompiler' (lines '152'-'153').
+-&lt;/violation&gt;
+-&lt;violation line="153" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getGlobCompiler" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="153" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getGlobCompiler" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'globCompiler' (lines '153'-'159').
+-&lt;/violation&gt;
+-&lt;violation line="156" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getGlobCompiler" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="168" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getGlobCompilerBasic" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="199" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getPerl5Matcher" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'perl5Matcher' (lines '199'-'200').
+-&lt;/violation&gt;
+-&lt;violation line="200" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getPerl5Matcher" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="200" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getPerl5Matcher" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'perl5Matcher' (lines '200'-'206').
+-&lt;/violation&gt;
+-&lt;violation line="203" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getPerl5Matcher" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="215" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="ComparatorUtils" <br/>method="getPerl5MatcherBasic" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/comparators/Contains.java"&gt; 
+-&lt;violation line="37" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="Contains" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="37" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="Contains" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'container' (lines '37'-'37').
+-&lt;/violation&gt;
+-&lt;violation line="37" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="Contains" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'content' (lines '37'-'37').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/comparators/Equals.java"&gt; 
+-&lt;violation line="36" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="Equals" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="Equals" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'string1' (lines '36'-'36').
+-&lt;/violation&gt;
+-&lt;violation line="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="Equals" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'string2' (lines '36'-'36').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/comparators/Matches.java"&gt; 
+-&lt;violation line="38" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.comparators" class="Matches" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="38" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="Matches" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'glob' (lines '38'-'38').
+-&lt;/violation&gt;
+-&lt;violation line="38" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="Matches" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'string' (lines '38'-'38').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/comparators/Octet.java"&gt; 
+-&lt;violation line="37" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.comparators" class="Octet" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/mail/ActionKeep.java"&gt; 
+-&lt;violation line="33" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.mail" class="ActionKeep" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/mail/MailAdapter.java"&gt; 
+-&lt;violation line="47" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="55" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="66" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="66" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.mail" class="MailAdapter" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'name' (lines '66'-'66').
+-&lt;/violation&gt;
+-&lt;violation line="84" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="84" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.mail" class="MailAdapter" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'name' (lines '84'-'85').
+-&lt;/violation&gt;
+-&lt;violation line="93" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="100" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="100" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.mail" class="MailAdapter" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'action' (lines '100'-'100').
+-&lt;/violation&gt;
+-&lt;violation line="105" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="121" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="128" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="148" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="MailAdapter" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="148" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.mail" class="MailAdapter" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'headerName' (lines '148'-'148').
+-&lt;/violation&gt;
+-&lt;violation line="153" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="Address" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="161" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="Address" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="169" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail" class="Address" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/mail/MailUtils.java"&gt; 
+-&lt;violation line="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.mail" class="MailUtils" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'name' (lines '58'-'71').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/mail/optional/EnvelopeAccessors.java"&gt; 
+-&lt;violation line="42" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail.optional" class="EnvelopeAccessors" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="42" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.mail.optional" class="EnvelopeAccessors" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'name' (lines '42'-'42').
+-&lt;/violation&gt;
+-&lt;violation line="52" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail.optional" class="EnvelopeAccessors" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="71" rule="UnusedModifier" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.mail.optional" class="EnvelopeAccessors" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnusedModifier</url>" <br/>priority="3"&gt; 
+-Avoid modifiers which are implied by the context
+-&lt;/violation&gt;
+-&lt;violation line="71" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.mail.optional" class="EnvelopeAccessors" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'name' (lines '71'-'72').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/parser/SieveNode.java"&gt; 
+-&lt;violation line="37" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.parser" class="SieveNode" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/parser/address/AddressNode.java"&gt; 
+-&lt;violation line="24" rule="AtLeastOneConstructor" ruleset="Controversial Rules"<br/>package="org.apache.jsieve.parser.address" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AtLeastOneConstructor</url>" <br/>priority="3"&gt; 
+-Each class should declare at least one constructor
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/parser/address/BaseAddressListVisitor.java"&gt; 
+-&lt;violation line="39" rule="AtLeastOneConstructor" ruleset="Controversial Rules"<br/>package="org.apache.jsieve.parser.address" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AtLeastOneConstructor</url>" <br/>priority="3"&gt; 
+-Each class should declare at least one constructor
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/parser/address/SieveAddressBuilder.java"&gt; 
+-&lt;violation line="61" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.parser.address" class="SieveAddressBuilder" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'headerName' (lines '61'-'81').
+-&lt;/violation&gt;
+-&lt;violation line="128" rule="AtLeastOneConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.parser.address" class="Worker" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AtLeastOneConstructor</url>" <br/>priority="3"&gt; 
+-Each class should declare at least one constructor
+-&lt;/violation&gt;
+-&lt;violation line="146" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.parser.address" class="Worker" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'node' (lines '146'-'153').
+-&lt;/violation&gt;
+-&lt;violation line="155" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.parser.address" class="Worker" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'node' (lines '155'-'162').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/samples/james/ActionDispatcher.java"&gt; 
+-&lt;violation line="68" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="ActionDispatcher" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'instance' (lines '68'-'69').
+-&lt;/violation&gt;
+-&lt;violation line="69" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="ActionDispatcher" <br/>method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="69" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="ActionDispatcher" <br/>method="getInstance" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'instance' (lines '69'-'75').
+-&lt;/violation&gt;
+-&lt;violation line="72" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="ActionDispatcher" <br/>method="getInstance" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="164" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="ActionDispatcher" <br/>method="getMethodMap" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'methodMap' (lines '164'-'165').
+-&lt;/violation&gt;
+-&lt;violation line="165" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="ActionDispatcher" <br/>method="getMethodMap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="165" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="ActionDispatcher" <br/>method="getMethodMap" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'methodMap' (lines '165'-'171').
+-&lt;/violation&gt;
+-&lt;violation line="168" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="ActionDispatcher" <br/>method="getMethodMap" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/samples/james/Actions.java"&gt; 
+-&lt;violation line="92" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'repositoryDestinationBuffer' (lines <br/>'92'-'110'). 
+-&lt;/violation&gt;
+-&lt;violation line="92" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'repositoryDestinationBuffer' (lines <br/>'92'-'110'). 
+-&lt;/violation&gt;
+-&lt;violation line="93" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'recipient' (lines '93'-'97').
+-&lt;/violation&gt;
+-&lt;violation line="93" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'recipient' (lines '93'-'97').
+-&lt;/violation&gt;
+-&lt;violation line="94" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'delivered' (lines '94'-'138').
+-&lt;/violation&gt;
+-&lt;violation line="94" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'delivered' (lines '94'-'138').
+-&lt;/violation&gt;
+-&lt;violation line="174" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'anAction' (lines '174'-'179').
+-&lt;/violation&gt;
+-&lt;violation line="232" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'reporting_UA_name' (lines '232'-'235').
+-&lt;/violation&gt;
+-&lt;violation line="235" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'reporting_UA_name' (lines '235'-'240').
+-&lt;/violation&gt;
+-&lt;violation line="247" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="execute" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'original_recipient' (lines '247'-'250').
+-&lt;/violation&gt;
+-&lt;violation line="306" rule="UnnecessaryConversionTemporary" ruleset="Basic <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="getSoleRecipient" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/basic.html#UnnecessaryConversionTemporary</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary temporaries when converting primitives to Strings
+-&lt;/violation&gt;
+-&lt;violation line="318" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="getAttributePrefix" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'value' (lines '318'-'319').
+-&lt;/violation&gt;
+-&lt;violation line="319" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="Actions" <br/>method="getAttributePrefix" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="319" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" <br/>method="getAttributePrefix" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'value' (lines '319'-'325').
+-&lt;/violation&gt;
+-&lt;violation line="322" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="Actions" <br/>method="getAttributePrefix" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="374" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'aMailetContext' (lines '374'-'391').
+-&lt;/violation&gt;
+-&lt;violation line="374" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="Actions" priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'ex' (lines '374'-'374').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/samples/james/JSieve.java"&gt; 
+-&lt;violation line="100" rule="UnnecessaryConstructor" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#UnnecessaryConstructor</url>" <br/>priority="3"&gt; 
+-Avoid unnecessary constructors - the compiler will generate these for you
+-&lt;/violation&gt;
+-&lt;violation line="128" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" method="service"<br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'recipients' (lines '128'-'142').
+-&lt;/violation&gt;
+-&lt;violation line="186" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" method="newName"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'count' (lines '186'-'190').
+-&lt;/violation&gt;
+-&lt;violation line="187" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" method="newName"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'index' (lines '187'-'188').
+-&lt;/violation&gt;
+-&lt;violation line="188" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="JSieve" method="newName" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="190" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" method="newName"<br/>priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'count' (lines '190'-'190').
+-&lt;/violation&gt;
+-&lt;violation line="273" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" <br/>method="getStartNode" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'node' (lines '273'-'274').
+-&lt;/violation&gt;
+-&lt;violation line="274" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="JSieve" method="getStartNode" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="274" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" <br/>method="getStartNode" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'node' (lines '274'-'280').
+-&lt;/violation&gt;
+-&lt;violation line="277" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="JSieve" method="getStartNode" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="298" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" priority="5"&gt; 
+-Found 'UR'-anomaly for variable 'msg' (lines '298'-'298').
+-&lt;/violation&gt;
+-&lt;violation line="300" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="JSieve" <br/>method="computeStartNode" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'content' (lines '300'-'303').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/samples/james/SieveMailAdapter.java"&gt; 
+-&lt;violation line="100" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="SieveMailAdapter" <br/>method="getActions" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'actions' (lines '100'-'101').
+-&lt;/violation&gt;
+-&lt;violation line="101" rule="AssignmentInOperand" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="SieveMailAdapter" <br/>method="getActions" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#AssignmentInOperand</url>" <br/>priority="3"&gt; 
+-Avoid assignments in operands
+-&lt;/violation&gt;
+-&lt;violation line="101" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="SieveMailAdapter" <br/>method="getActions" priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'actions' (lines '101'-'107').
+-&lt;/violation&gt;
+-&lt;violation line="104" rule="OnlyOneReturn" ruleset="Controversial Rules" <br/>package="org.apache.jsieve.samples.james" class="SieveMailAdapter" <br/>method="getActions" <br/>externalInfoUrl="<url>http://pmd.sourceforge.net/rules/controversial.html#OnlyOneReturn</url>" <br/>priority="3"&gt; 
+-A method should have only one exit point, and that should be the last statement<br/>in the method 
+-&lt;/violation&gt;
+-&lt;violation line="284" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="SieveMailAdapter" <br/>priority="5"&gt; 
+-Found 'DU'-anomaly for variable 'name' (lines '284'-'295').
+-&lt;/violation&gt;
+-&lt;violation line="313" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="SieveMailAdapter" <br/>method="getEnvelopeTo" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'recipient' (lines '313'-'316').
+-&lt;/violation&gt;
+-&lt;violation line="360" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="SieveMailAdapter" <br/>method="toString" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'messageID' (lines '360'-'363').
+-&lt;/violation&gt;
+-&lt;violation line="363" rule="DataflowAnomalyAnalysis" ruleset="Controversial <br/>Rules" package="org.apache.jsieve.samples.james" class="SieveMailAdapter" <br/>method="toString" priority="5"&gt; 
+-Found 'DD'-anomaly for variable 'messageID' (lines '363'-'367').
+-&lt;/violation&gt;
+-&lt;/file&gt;
+-&lt;file <br/>name="/opt/development/sieve-workspace/jsieve/src/main/java/org/apache/jsieve/tests/AbstractCompatatorTest.java"&gt; 
+
+</para><para depth="0">[... 1874 lines stripped ...]
+
+</para></body></message>

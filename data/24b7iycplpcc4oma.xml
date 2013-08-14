@@ -1,0 +1,21 @@
+<message message-id="20060703100050.6660.qmail@ktown.kde.org" list="org.kde.kde-bugs-dist" id="24b7iycplpcc4oma" type="bugs" date="2006-07-03T10:00:50Z" year="2006-01-01" year-month="2006-07-01" year-month-day="2006-07-03" thread-id="24b7iycplpcc4oma"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Peter Simonsson" address="peter.simonsson@gmail.com">Peter Simonsson &lt;peter.simonsson@gmail.com&gt;</from><subject normal="[Bug 121857] Strange string format in po file for Konversation">[Bug 121857] Strange string format in po file for Konversation</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.kde.devel.bugs</newsgroups><date>3 Jul 2006 10:00:50 -0000</date><lines>17</lines><approved>news@gmane.org</approved><message-id>20060703100050.6660.qmail@ktown.kde.org</message-id><references>&lt;20060213014827.121857.maartenrutten@kde.nl&gt;</references><reply-to>121857@bugs.kde.org</reply-to><nntp-posting-host>main.gmane.org</nntp-posting-host><content-type>text/plain; charset="utf-8"</content-type><x-trace>sea.gmane.org 1151920945 7428 80.91.229.2 (3 Jul 2006 10:02:25 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Mon, 3 Jul 2006 10:02:25 +0000 (UTC)</nntp-posting-date><original-x-from>kde-bugs-dist-bounces-+gckdb-kde-bugs-dist=m.gmane.org@kde.org Mon Jul 03 12:02:24 2006</original-x-from><return-path>kde-bugs-dist-bounces-+gckdb-kde-bugs-dist=m.gmane.org@kde.org</return-path><envelope-to>gckdb-kde-bugs-dist@gmane.org</envelope-to><original-received>from ktown.kde.org ([131.246.120.250])
+	by ciao.gmane.org with smtp (Exim 4.43)
+	id 1FxLFg-0005Sn-3p
+	for gckdb-kde-bugs-dist@gmane.org; Mon, 03 Jul 2006 12:02:00 +0200</original-received><original-received>(qmail 7377 invoked by uid 72); 3 Jul 2006 10:01:54 -0000</original-received><original-received>(qmail 6661 invoked by uid 30); 3 Jul 2006 10:00:50 -0000</original-received><original-to>kde-bugs-dist@kde.org</original-to><x-bugzilla-url>http://bugs.kde.org/   </x-bugzilla-url><x-bugzilla-reason>CC   </x-bugzilla-reason><precedence>bulk </precedence><in-reply-to>&lt;20060213014827.121857.maartenrutten@kde.nl&gt;  </in-reply-to><x-beenthere>kde-bugs-dist@kde.org</x-beenthere><x-mailman-version>2.1.8</x-mailman-version><list-id>"bugs.kde.org mail" &lt;kde-bugs-dist.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-bugs-dist&gt;,
+	&lt;mailto:kde-bugs-dist-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-bugs-dist@kde.org&gt;</list-post><list-help>&lt;mailto:kde-bugs-dist-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-bugs-dist&gt;,
+	&lt;mailto:kde-bugs-dist-request@kde.org?subject=subscribe&gt;</list-subscribe><xref>news.gmane.org gmane.comp.kde.devel.bugs:400868</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.kde.devel.bugs/400868&gt;</archived-at></headers><normalized-references><normalized-message-id>20060703100050.6660.qmail@ktown.kde.org</normalized-message-id><normalized-in-reply-to>20060213014827.121857.maartenrutten@kde.nl</normalized-in-reply-to><normalized-reference>20060213014827.121857.maartenrutten@kde.nl</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">------- You are receiving this mail because: -------
+You are on the CC list for the bug, or are watching someone who is.
+
+</para><para depth="0"><url>http://bugs.kde.org/show_bug.cgi?id=121857</url>         
+peter.simonsson gmail com changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+             Status|NEW                         |RESOLVED
+         Resolution|                            |FIXED
+
+</para><footer type="signature" hash="14110280098921495703" depth="0">------- Additional Comments From peter.simonsson gmail com  2006-07-03 12:00<br/>-------
+Cleaned up the messages a bit and added some hints, hopefuly useful ones :)
+Closing the bug now, but please reopen if you think it's not clear enough and<br/>thanks for the report.
+
+</footer></body></message>

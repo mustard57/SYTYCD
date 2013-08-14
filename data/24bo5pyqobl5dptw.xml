@@ -1,0 +1,568 @@
+<message message-id="1243528408-5401-69-git-send-email-paul.poulain@biblibre.com" list="org.koha.lists.koha-patches" id="24bo5pyqobl5dptw" type="development" date="2009-05-28T18:33:19+02:00" year="2009-01-01" year-month="2009-05-01" year-month-day="2009-05-28" thread-id="w65yiuqxvslpe5qx"><headers><envelope-from-line>Thu May 28 08:49:07 2009</envelope-from-line><from personal="paul.poulain@biblibre.com" address="paul.poulain@biblibre.com">paul.poulain@biblibre.com</from><to personal="patches@koha.org" address="patches@koha.org">patches@koha.org</to><subject normal="[Koha-patches] [PATCH 69/78] Suggestions.pm, probably useless &amp; not working (check with hdl)">[Koha-patches] [PATCH 69/78] Suggestions.pm, probably useless &amp; not working (check with hdl)</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 142
+          for &lt;chasity.oneill.owen@a.markmail.org&gt;;
+          Thu, 28 May 2009 08:49:07 -0800 (GMT-08:00)</received><received>from koha.paulpoulain.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 40A5929083F1
+	for &lt;chasity.oneill.owen@a.markmail.org&gt;; Thu, 28 May 2009 09:48:43 -0700 (PDT)</received><received>from localhost (localhost [127.0.0.1])
+	by koha.paulpoulain.com (Postfix) with ESMTP id 8AD992AE78;
+	Thu, 28 May 2009 18:49:05 +0200 (CEST)</received><x-virus-scanned>Debian amavisd-new at koha</x-virus-scanned><received>from koha.paulpoulain.com ([127.0.0.1])
+	by localhost (listes.koha-fr.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id bEUPIz6Xn5XG; Thu, 28 May 2009 18:49:02 +0200 (CEST)</received><received>from koha.paulpoulain.com (localhost [127.0.0.1])
+	by koha.paulpoulain.com (Postfix) with ESMTP id 1BE652AE32;
+	Thu, 28 May 2009 18:39:55 +0200 (CEST)</received><x-original-to>koha-patches@lists.koha.org</x-original-to><delivered-to>koha-patches@lists.koha.org</delivered-to><received>from localhost (localhost [127.0.0.1])
+	by koha.paulpoulain.com (Postfix) with ESMTP id 75D0D2AEE0
+	for &lt;koha-patches@lists.koha.org&gt;;
+	Thu, 28 May 2009 18:39:52 +0200 (CEST)</received><x-virus-scanned>Debian amavisd-new at koha</x-virus-scanned><received>from koha.paulpoulain.com ([127.0.0.1])
+	by localhost (listes.koha-fr.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id FnicnuQL3s2E for &lt;koha-patches@lists.koha.org&gt;;
+	Thu, 28 May 2009 18:39:52 +0200 (CEST)</received><received>from mail-ew0-f207.google.com (mail-ew0-f207.google.com
+	[209.85.219.207])
+	by koha.paulpoulain.com (Postfix) with ESMTP id 7B0042AE78
+	for &lt;koha-patches@lists.koha.org&gt;;
+	Thu, 28 May 2009 18:36:07 +0200 (CEST)</received><received>by mail-ew0-f207.google.com with SMTP id 3so5449859ewy.20
+	for &lt;koha-patches@lists.koha.org&gt;; Thu, 28 May 2009 09:36:07 -0700 (PDT)</received><received>by 10.210.61.2 with SMTP id j2mr3030108eba.2.1243528567417;
+	Thu, 28 May 2009 09:36:07 -0700 (PDT)</received><x-forwarded-to>koha-patches@lists.koha.org</x-forwarded-to><x-forwarded-for>patches@koha.org koha-patches@lists.koha.org</x-forwarded-for><delivered-to>patches@koha.org</delivered-to><received>by 10.210.28.5 with SMTP id b5cs104646ebb;
+	Thu, 28 May 2009 09:36:07 -0700 (PDT)</received><received>by 10.210.120.7 with SMTP id s7mr1246353ebc.67.1243528445300;
+	Thu, 28 May 2009 09:34:05 -0700 (PDT)</received><received>from biblibre.com (biblibre.pck.nerim.net [213.41.255.216])
+	by mx.google.com with ESMTP id 10si345622eyd.12.2009.05.28.09.34.01;
+	Thu, 28 May 2009 09:34:05 -0700 (PDT)</received><received-spf>neutral (google.com: 213.41.255.216 is neither permitted nor
+	denied by best guess record for domain of
+	paul.poulain@biblibre.com) client-ip=213.41.255.216; </received-spf><authentication-results>mx.google.com;
+	spf=neutral (google.com: 213.41.255.216 is neither
+	permitted nor denied by best guess record for domain of
+	paul.poulain@biblibre.com) smtp.mail=paul.poulain@biblibre.com</authentication-results><received>by biblibre.com (Postfix, from userid 500)
+	id BC8029E0D1; Thu, 28 May 2009 18:33:30 +0200 (CEST)</received><date>Thu, 28 May 2009 18:33:19 +0200</date><message-id>1243528408-5401-69-git-send-email-paul.poulain@biblibre.com</message-id><x-mailer>git-send-email 1.6.0.4</x-mailer><in-reply-to>&lt;1243528408-5401-68-git-send-email-paul.poulain@biblibre.com&gt;</in-reply-to><references>&lt;1243528408-5401-1-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-2-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-3-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-4-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-5-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-6-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-7-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-8-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-9-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-10-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-11-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-12-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-13-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-14-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-15-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-16-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-17-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-18-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-19-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-20-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-21-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-22-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-23-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-24-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-25-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-26-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-27-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-28-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-29-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-30-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-31-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-32-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-33-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-34-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-35-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-36-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-37-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-38-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-39-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-40-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-41-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-42-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-43-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-44-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-45-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-46-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-47-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-48-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-49-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-50-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-51-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-52-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-53-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-54-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-55-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-56-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-57-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-58-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-59-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-60-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-61-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-62-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-63-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-64-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-65-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-66-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-67-git-send-email-paul.poulain@biblibre.com&gt;
+	&lt;1243528408-5401-68-git-send-email-paul.poulain@biblibre.com&gt;</references><x-beenthere>koha-patches@lists.koha.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>&lt;koha-patches.lists.koha.org&gt;</list-id><list-unsubscribe>&lt;http://lists.koha.org/mailman/listinfo/koha-patches&gt;,
+	&lt;mailto:koha-patches-request@lists.koha.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.koha.org/pipermail/koha-patches&gt;</list-archive><list-post>&lt;mailto:koha-patches@lists.koha.org&gt;</list-post><list-help>&lt;mailto:koha-patches-request@lists.koha.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.koha.org/mailman/listinfo/koha-patches&gt;,
+	&lt;mailto:koha-patches-request@lists.koha.org?subject=subscribe&gt;</list-subscribe><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>koha-patches-bounces@lists.koha.org</sender><errors-to>koha-patches-bounces@lists.koha.org</errors-to></headers><normalized-references><normalized-message-id>1243528408-5401-69-git-send-email-paul.poulain@biblibre.com</normalized-message-id><normalized-in-reply-to>1243528408-5401-68-git-send-email-paul.poulain@biblibre.com</normalized-in-reply-to><normalized-reference>1243528408-5401-1-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-2-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-3-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-4-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-5-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-6-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-7-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-8-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-9-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-10-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-11-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-12-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-13-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-14-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-15-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-16-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-17-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-18-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-19-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-20-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-21-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-22-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-23-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-24-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-25-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-26-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-27-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-28-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-29-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-30-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-31-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-32-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-33-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-34-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-35-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-36-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-37-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-38-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-39-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-40-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-41-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-42-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-43-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-44-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-45-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-46-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-47-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-48-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-49-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-50-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-51-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-52-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-53-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-54-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-55-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-56-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-57-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-58-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-59-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-60-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-61-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-62-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-63-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-64-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-65-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-66-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-67-git-send-email-paul.poulain@biblibre.com</normalized-reference><normalized-reference>1243528408-5401-68-git-send-email-paul.poulain@biblibre.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">From: Paul Poulain &lt;<email>paul.poulain@biblibre.com</email>&gt;
+
+</para><para depth="0">---
+ C4/Suggestions.pm |  187 ++++++++++++++++++++++++++---------------------------
+ 1 files changed, 91 insertions(+), 96 deletions(-)
+
+</para><para depth="0">diff --git a/C4/Suggestions.pm b/C4/Suggestions.pm
+index 1732540..8d9295b 100644
+--- a/C4/Suggestions.pm
++++ b/C4/Suggestions.pm
+@@ -24,7 +24,7 @@ use Mail::Sendmail;
+
+</para><para depth="0"> use C4::Context;
+ use C4::Output;
+-use C4::Dates qw(format_date);
++use C4::Dates qw(format_date_in_iso);
+ use vars qw($VERSION @ISA @EXPORT);
+
+</para><para depth="0"> BEGIN {
+@@ -47,7 +47,7 @@ BEGIN {
+
+</para><para depth="0"> =head1 NAME
+
+</para><para depth="0">-C4::Suggestions - Some useful functions for dealings with suggestions.
++C4::Suggestions - Some useful functions for dealings with aqorders.
+
+</para><para depth="0"> =head1 SYNOPSIS
+
+</para><para depth="0">@@ -55,7 +55,7 @@ use C4::Suggestions;
+
+</para><para depth="0"> =head1 DESCRIPTION
+
+</para><para depth="0">-The functions in this module deal with the suggestions in OPAC and in librarian<br/>interface
++The functions in this module deal with the aqorders in OPAC and in librarian<br/>interface
+
+</para><para depth="0"> A suggestion is done in the OPAC. It has the status "ASKED"
+
+</para><para depth="0">@@ -65,7 +65,7 @@ When the book is ordered, the suggestion status becomes<br/>"ORDERED"
+
+</para><para depth="0"> When a book is ordered and arrived in the library, the status becomes<br/>"AVAILABLE"
+
+</para><para depth="0">-All suggestions of a borrower can be seen by the borrower itself.
++All aqorders of a borrower can be seen by the borrower itself.
+ Suggestions done by other borrowers can be seen when not "AVAILABLE"
+
+</para><para depth="0"> =head1 FUNCTIONS
+@@ -77,7 +77,7 @@ Suggestions done by other borrowers can be seen when not<br/>"AVAILABLE"
+ searches for a suggestion
+
+</para><para depth="0"> return :
+-C&lt;\@array&gt; : the suggestions found. Array of hash.
++C&lt;\@array&gt; : the aqorders found. Array of hash.
+ Note the status is stored twice :
+ * in the status field
+ * as parameter ( for example ASKED =&gt; 1, or REJECTED =&gt; 1) . This is for<br/>template &amp; translation purposes.
+@@ -85,7 +85,7 @@ Note the status is stored twice :
+ =cut
+
+</para><para depth="0"> sub SearchSuggestion  {
+-    my<br/>($user,$author,$title,$publishercode,$status,$suggestedbyme,$branchcode)=@_;
++    my (%suggestion,$suggestedbyme)=@_;
+     my $dbh = C4::Context-&gt;dbh;
+     my $query = "
+     SELECT suggestions.*,
+@@ -99,23 +99,17 @@ sub SearchSuggestion  {
+         U2.borrowernumber AS borrnummanagedby
+     FROM suggestions
+     LEFT JOIN borrowers AS U1 ON suggestedby=U1.borrowernumber
+-    LEFT JOIN borrowers AS U2 ON managedby=U2.borrowernumber
++    LEFT JOIN borrowers AS U2 ON suggestionmanagedby=U2.borrowernumber
+     WHERE 1=1 ";
+
+</para><para depth="0">     my @sql_params;
+-    if ($author) {
+-       push @sql_params,"%".$author."%";
+-       $query .= " and author like ?";
++    foreach ('title','author','isbn','publishercode','seriestitle') {
++       if ($suggestion{$_}){
++        push @sql_params,"%".$dbh-&gt;quote($suggestion{$_})."%";
++        $query .= " and aqorders.$_ like ?";
++       }   
+     }
+-    if ($title) {
+-        push @sql_params,"%".$title."%";
+-        $query .= " and suggestions.title like ?";
+-    }
+-    if ($publishercode) {
+-        push @sql_params,"%".$publishercode."%";
+-        $query .= " and publishercode like ?";
+-    }
+-    if (C4::Context-&gt;preference("IndependantBranches") || $branchcode) {
++    if (C4::Context-&gt;preference("IndependantBranches") ||<br/>$suggestion{'branchcode'}) {
+         my $userenv = C4::Context-&gt;userenv;
+         if ($userenv) {
+             unless ($userenv-&gt;{flags} % 2 == 1){
+@@ -123,36 +117,35 @@ sub SearchSuggestion  {
+                 $query .= " and (U1.branchcode = ? or U1.branchcode ='')";
+             }
+         }
+-        if ($branchcode) {
+-            push @sql_params,$branchcode;
++        if ($suggestion{'branchcode'}) {
++            push @sql_params,$suggestion{'branchcode'};
+             $query .= " and (U1.branchcode = ? or U1.branchcode ='')";
+         }
+     }
+-    if ($status) {
+-        push @sql_params,$status;
+-        $query .= " and status=?";
++    if ($suggestion{'status'}) {
++        push @sql_params,$suggestion{'status'};
++        $query .= " and aqorders.status=?";
+     }
+     if ($suggestedbyme) {
+         unless ($suggestedbyme eq -1) {
+-            push @sql_params,$user;
+-            $query .= " and suggestedby=?";
++            push @sql_params,$suggestion{'suggestedby'};
++            $query .= " and aqorders.suggestedby=?";
+         }
+     } else {
+-        $query .= " and managedby is NULL";
++        $query .= " and status NOT IN ('ORDERED', 'CLAIMED','RECEIVED')";
+     }
+-    my $sth=$dbh-&gt;prepare($query);
++    my $sth=$dbh-&gt;prepare($query);  
+     $sth-&gt;execute(@sql_params);
+     my @results;
+     my $even=1; # the even variable is used to set even / odd lines, for<br/>highlighting
+     while (my $data=$sth-&gt;fetchrow_hashref){
+-        $data-&gt;{$data-&gt;{STATUS}} = 1;
++        $data-&gt;{$data-&gt;{'status'}} = 1;
+         if ($even) {
+             $even=0;
+-            $data-&gt;{even}=1;
++            $data-&gt;{'even'}=1;
+         } else {
+             $even=1;
+         }
+-#         $data-&gt;{date} = format_date($data-&gt;{date});
+         push(@results,$data);
+     }
+     return (\@results);
+@@ -160,9 +153,9 @@ sub SearchSuggestion  {
+
+</para><para depth="0"> =head2 GetSuggestion
+
+</para><para depth="0">-\%sth = &amp;GetSuggestion($suggestionid)
++\%sth = &amp;GetSuggestion($ordernumber)
+
+</para><para depth="0">-this function get the detail of the suggestion $suggestionid (input arg)
++this function get the detail of the suggestion $ordernumber (input arg)
+
+</para><para depth="0"> return :
+     the result of the SQL query as a hash : $sth-&gt;fetchrow_hashref.
+@@ -170,21 +163,21 @@ return :
+ =cut
+
+</para><para depth="0"> sub GetSuggestion {
+-    my ($suggestionid) = @_;
++    my ($ordernumber) = @_;
+     my $dbh = C4::Context-&gt;dbh;
+     my $query = "
+         SELECT *
+-        FROM   suggestions
+-        WHERE  suggestionid=?
++        FROM   aqorders
++        WHERE  ordernumber=?
+     ";
+     my $sth = $dbh-&gt;prepare($query);
+-    $sth-&gt;execute($suggestionid);
++    $sth-&gt;execute($ordernumber);
+     return($sth-&gt;fetchrow_hashref);
+ }
+
+</para><para depth="0"> =head2 GetSuggestionFromBiblionumber
+
+</para><para depth="0">-$suggestionid = &amp;GetSuggestionFromBiblionumber($dbh,$biblionumber)
++$ordernumber = &amp;GetSuggestionFromBiblionumber($dbh,$biblionumber)
+
+</para><para depth="0"> Get a suggestion from it's biblionumber.
+
+</para><para depth="0">@@ -196,19 +189,19 @@ the id of the suggestion which is related to the<br/>biblionumber given on input arg
+ sub GetSuggestionFromBiblionumber {
+     my ($dbh,$biblionumber) = @_;
+     my $query = qq|
+-        SELECT suggestionid
+-        FROM   suggestions
++        SELECT ordernumber
++        FROM   aqorders
+         WHERE  biblionumber=?
+     |;
+     my $sth = $dbh-&gt;prepare($query);
+     $sth-&gt;execute($biblionumber);
+-    my ($suggestionid) = $sth-&gt;fetchrow;
+-    return $suggestionid;
++    my ($ordernumber) = $sth-&gt;fetchrow;
++    return $ordernumber;
+ }
+
+</para><para depth="0"> =head2 GetSuggestionByStatus
+
+</para><para depth="0">-$suggestions = &amp;GetSuggestionByStatus($status,[$branchcode])
++$aqorders = &amp;GetSuggestionByStatus($status,[$branchcode])
+
+</para><para depth="0"> Get a suggestion from it's status
+
+</para><para depth="0">@@ -222,17 +215,17 @@ sub GetSuggestionByStatus {
+     my $branchcode = shift;
+     my $dbh = C4::Context-&gt;dbh;
+     my @sql_params=($status);  
+-    my $query = qq(SELECT suggestions.*,
++    my $query = qq(SELECT aqorders.*,
+                         U1.surname   AS surnamesuggestedby,
+                         U1.firstname AS firstnamesuggestedby,
+             U1.branchcode AS branchcodesuggestedby,
+ 						U1.borrowernumber AS borrnumsuggestedby,
+-                        U2.surname   AS surnamemanagedby,
+-                        U2.firstname AS firstnamemanagedby,
+-						U2.borrowernumber AS borrnummanagedby
+-                        FROM suggestions
++                        U2.surname   AS surnamesuggestionmanagedby,
++                        U2.firstname AS firstnamesuggestionmanagedby,
++						U2.borrowernumber AS borrnumsuggestionmanagedby
++                        FROM aqorders
+                         LEFT JOIN borrowers AS U1 ON<br/>suggestedby=U1.borrowernumber
+-                        LEFT JOIN borrowers AS U2 ON<br/>managedby=U2.borrowernumber
++                        LEFT JOIN borrowers AS U2 ON<br/>suggestionmanagedby=U2.borrowernumber
+                         WHERE status = ?);
+     if (C4::Context-&gt;preference("IndependantBranches") || $branchcode) {
+         my $userenv = C4::Context-&gt;userenv;
+@@ -253,7 +246,6 @@ sub GetSuggestionByStatus {
+
+</para><para depth="0">     my $results;
+     $results=  $sth-&gt;fetchall_arrayref({});
+-#     map{$_-&gt;{date} = format_date($_-&gt;{date})} @$results;
+     return $results;
+ }
+
+</para><para depth="0">@@ -261,7 +253,7 @@ sub GetSuggestionByStatus {
+
+</para><para depth="0"> &amp;CountSuggestion($status)
+
+</para><para depth="0">-Count the number of suggestions with the status given on input argument.
++Count the number of aqorders with the status given on input argument.
+ the arg status can be :
+
+</para><para depth="0"> =over 2
+@@ -290,7 +282,7 @@ sub CountSuggestion {
+         if ($userenv-&gt;{flags} % 2 == 1){
+             my $query = qq |
+                 SELECT count(*)
+-                FROM   suggestions
++                FROM   aqorders
+                 WHERE  status=?
+             |;
+             $sth = $dbh-&gt;prepare($query);
+@@ -299,7 +291,7 @@ sub CountSuggestion {
+         else {
+             my $query = qq |
+                 SELECT count(*)
+-                FROM suggestions LEFT JOIN borrowers ON<br/>borrowers.borrowernumber=suggestions.suggestedby
++                FROM aqorders LEFT JOIN borrowers ON<br/>borrowers.borrowernumber=aqorders.suggestedby
+                 WHERE status=?
+                 AND (borrowers.branchcode='' OR borrowers.branchcode =?)
+             |;
+@@ -310,7 +302,7 @@ sub CountSuggestion {
+     else {
+         my $query = qq |
+             SELECT count(*)
+-            FROM suggestions
++            FROM aqorders
+             WHERE status=?
+         |;
+          $sth = $dbh-&gt;prepare($query);
+@@ -330,21 +322,24 @@ Insert a new suggestion on database with value given on<br/>input arg.
+ =cut
+
+</para><para depth="0"> sub NewSuggestion {
+-    my<br/>($borrowernumber,$title,$author,$publishercode,$note,$copyrightdate,$volumedesc,$publicationyear,$place,$isbn,$biblionumber,$reason)<br/>= @_;
++    my %data=@_;
++#<br/>$borrowernumber,$title,$author,$publishercode,$note,$copyrightdate,$volumedesc,$publicationyear,$place,$isbn,$biblionumber,$reason)<br/>= @_;
+     my $dbh = C4::Context-&gt;dbh;
++    $data{'suggestioncreatedon'}=<br/>format_date_in_iso($data{'suggestioncreatedon'}) if<br/>($data{'suggestioncreatedon'});
+     my $query = qq |
+-        INSERT INTO suggestions
+-            (status,suggestedby,title,author,publishercode,note,copyrightdate,
+-            volumedesc,publicationyear,place,isbn,biblionumber,reason)
+-        VALUES ('ASKED',?,?,?,?,?,?,?,?,?,?,?,?)
+-    |;
++        INSERT INTO aqorders SET
++            status='ASKED',|;
++    my @parameters;  
++    map { push @parameters,"$_ = ".$dbh-&gt;quote($data{$_}) if($data{$_}); }(keys<br/>%data);
++    $query.=join ",", @parameters;  
++    warn $query;  
+     my $sth = $dbh-&gt;prepare($query);
+-<br/>$sth-&gt;execute($borrowernumber,$title,$author,$publishercode,$note,$copyrightdate,$volumedesc,$publicationyear,$place,$isbn,$biblionumber,$reason);
++    $sth-&gt;execute;
+ }
+
+</para><para depth="0"> =head2 ModStatus
+
+</para><para depth="0">-&amp;ModStatus($suggestionid,$status,$managedby,$biblionumber)
++&amp;ModStatus($ordernumber,$status,$suggestionmanagedby,$biblionumber)
+
+</para><para depth="0"> Modify the status (status can be 'ASKED', 'ACCEPTED', 'REJECTED', 'ORDERED')
+ and send a mail to notify the user that did the suggestion.
+@@ -354,63 +349,63 @@ Note that there is no function to modify a suggestion :<br/>only the status can be m
+ =cut
+
+</para><para depth="0"> sub ModStatus {
+-    my ($suggestionid,$status,$managedby,$biblionumber,$reason) = @_;
++    my ($ordernumber,$status,$suggestionmanagedby,$biblionumber,$reason) = @_;
+     my $dbh = C4::Context-&gt;dbh;
+     my $sth;
+-    if ($managedby&gt;0) {
++    if ($suggestionmanagedby&gt;0) {
+         if ($biblionumber) {
+         my $query = qq|
+-            UPDATE suggestions
+-            SET    status=?,managedby=?,biblionumber=?,reason=?
+-            WHERE  suggestionid=?
++            UPDATE aqorders
++            SET    status=?,suggestionmanagedby=?,biblionumber=?,reason=?
++            WHERE  ordernumber=?
+         |;
+         $sth = $dbh-&gt;prepare($query);
+-        $sth-&gt;execute($status,$managedby,$biblionumber,$reason,$suggestionid);
++<br/>$sth-&gt;execute($status,$suggestionmanagedby,$biblionumber,$reason,$ordernumber);
+         } else {
+             my $query = qq|
+-                UPDATE suggestions
+-                SET    status=?,managedby=?,reason=?
+-                WHERE  suggestionid=?
++                UPDATE aqorders
++                SET    status=?,suggestionmanagedby=?,reason=?
++                WHERE  ordernumber=?
+             |;
+             $sth = $dbh-&gt;prepare($query);
+-            $sth-&gt;execute($status,$managedby,$reason,$suggestionid);
++            $sth-&gt;execute($status,$suggestionmanagedby,$reason,$ordernumber);
+         }
+    } else {
+         if ($biblionumber) {
+             my $query = qq|
+-                UPDATE suggestions
++                UPDATE aqorders
+                 SET    status=?,biblionumber=?,reason=?
+-                WHERE  suggestionid=?
++                WHERE  ordernumber=?
+             |;
+             $sth = $dbh-&gt;prepare($query);
+-            $sth-&gt;execute($status,$biblionumber,$reason,$suggestionid);
++            $sth-&gt;execute($status,$biblionumber,$reason,$ordernumber);
+         }
+         else {
+             my $query = qq|
+-                UPDATE suggestions
++                UPDATE aqorders
+                 SET    status=?,reason=?
+-                WHERE  suggestionid=?
++                WHERE  ordernumber=?
+             |;
+             $sth = $dbh-&gt;prepare($query);
+-            $sth-&gt;execute($status,$reason,$suggestionid);
++            $sth-&gt;execute($status,$reason,$ordernumber);
+         }
+     }
+     # check mail sending.
+     my $queryMail = "
+-        SELECT suggestions.*,
++        SELECT aqorders.*,
+             boby.surname AS bysurname,
+             boby.firstname AS byfirstname,
+             boby.email AS byemail,
+             lib.surname AS libsurname,
+             lib.firstname AS libfirstname,
+             lib.email AS libemail
+-        FROM suggestions
++        FROM aqorders
+             LEFT JOIN borrowers AS boby ON boby.borrowernumber=suggestedby
+-            LEFT JOIN borrowers AS lib ON lib.borrowernumber=managedby
+-        WHERE suggestionid=?
++            LEFT JOIN borrowers AS lib ON<br/>lib.borrowernumber=suggestionmanagedby
++        WHERE ordernumber=?
+     ";
+     $sth = $dbh-&gt;prepare($queryMail);
+-    $sth-&gt;execute($suggestionid);
++    $sth-&gt;execute($ordernumber);
+     my $emailinfo = $sth-&gt;fetchrow_hashref;
+     my $template = gettemplate("suggestion/mail_suggestion_$status.tmpl",<br/>"intranet", CGI-&gt;new());
+
+</para><para depth="0">@@ -438,51 +433,51 @@ sub ModStatus {
+
+</para><para depth="0"> =head2 ConnectSuggestionAndBiblio
+
+</para><para depth="0">-&amp;ConnectSuggestionAndBiblio($suggestionid,$biblionumber)
++&amp;ConnectSuggestionAndBiblio($ordernumber,$biblionumber)
+
+</para><para depth="0"> connect a suggestion to an existing biblio
+
+</para><para depth="0"> =cut
+
+</para><para depth="0"> sub ConnectSuggestionAndBiblio {
+-    my ($suggestionid,$biblionumber) = @_;
++    my ($ordernumber,$biblionumber) = @_;
+     my $dbh=C4::Context-&gt;dbh;
+     my $query = "
+-        UPDATE suggestions
++        UPDATE aqorders
+         SET    biblionumber=?
+-        WHERE  suggestionid=?
++        WHERE  ordernumber=?
+     ";
+     my $sth = $dbh-&gt;prepare($query);
+-    $sth-&gt;execute($biblionumber,$suggestionid);
++    $sth-&gt;execute($biblionumber,$ordernumber);
+ }
+
+</para><para depth="0"> =head2 DelSuggestion
+
+</para><para depth="0">-&amp;DelSuggestion($borrowernumber,$suggestionid)
++&amp;DelSuggestion($borrowernumber,$ordernumber)
+
+</para><para depth="0"> Delete a suggestion. A borrower can delete a suggestion only if he is its<br/>owner.
+
+</para><para depth="0"> =cut
+
+</para><para depth="0"> sub DelSuggestion {
+-    my ($borrowernumber,$suggestionid,$type) = @_;
++    my ($borrowernumber,$ordernumber,$type) = @_;
+     my $dbh = C4::Context-&gt;dbh;
+     # check that the suggestion comes from the suggestor
+     my $query = "
+         SELECT suggestedby
+-        FROM   suggestions
+-        WHERE  suggestionid=?
++        FROM   aqorders
++        WHERE  ordernumber=?
+     ";
+     my $sth = $dbh-&gt;prepare($query);
+-    $sth-&gt;execute($suggestionid);
++    $sth-&gt;execute($ordernumber);
+     my ($suggestedby) = $sth-&gt;fetchrow;
+     if ($type eq "intranet" || $suggestedby eq $borrowernumber ) {
+         my $queryDelete = "
+-            DELETE FROM suggestions
+-            WHERE suggestionid=?
++            DELETE FROM aqorders
++            WHERE ordernumber=?
+         ";
+         $sth = $dbh-&gt;prepare($queryDelete);
+-        my $suggestiondeleted=$sth-&gt;execute($suggestionid);
++        my $suggestiondeleted=$sth-&gt;execute($ordernumber);
+         return $suggestiondeleted;  
+     }
+ }
+</para><footer type="signature" depth="0" hash="8331668924077695930">-- 
+1.6.0.4
+
+</footer><footer type="list-management" depth="0">_______________________________________________
+Koha-patches mailing list
+<email>Koha-patches@lists.koha.org</email>
+<url>http://lists.koha.org/mailman/listinfo/koha-patches</url>
+</footer></body></message>

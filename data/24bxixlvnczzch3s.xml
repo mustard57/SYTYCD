@@ -1,0 +1,53 @@
+<message message-id="-ZCdnWHy4paQcr7QnZ2dnUVZ_t6dnZ2d@mozilla.org" list="org.mozilla.lists.dev-platform" id="24bxixlvnczzch3s" type="development" date="2011-01-04T22:09:48-06:00" year="2011-01-01" year-month="2011-01-01" year-month-day="2011-01-04" thread-id="4dir7mtvkwqrfopl"><headers><envelope-from-line>Tue Jan 04 20:11:14 2011</envelope-from-line><from personal="Boris Zbarsky" address="bzbarsky@mit.edu">Boris Zbarsky &lt;bzbarsky@mit.edu&gt;</from><to personal="dev-platform@lists.mozilla.org" address="dev-platform@lists.mozilla.org">dev-platform@lists.mozilla.org</to><subject normal="nsIPrincipal question">Re: nsIPrincipal question</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 614
+          for &lt;ted.caldwell.gaines@a.markmail.org&gt;;
+          Tue, 4 Jan 2011 20:11:14 -0800 (GMT-08:00)</received><received>from lists.mozilla.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id D9BF23B300B8
+	for &lt;ted.caldwell.gaines@a.markmail.org&gt;; Tue,  4 Jan 2011 20:10:50 -0800 (PST)</received><x-virus-scanned>amavisd-new at mozilla.org</x-virus-scanned><received>from notorious.mozilla.org (localhost.localdomain [127.0.0.1])
+	by lists.mozilla.org (Postfix) with ESMTP id B73F958478
+	for &lt;ted.caldwell.gaines@a.markmail.org&gt;; Tue,  4 Jan 2011 20:11:13 -0800 (PST)</received><path>Xl.tags.giganews.com!border1.nntp.dca.giganews.com!nntp.giganews.com!local2.nntp.dca.giganews.com!nntp.mozilla.org!news.mozilla.org.POSTED!not-for-mail</path><nntp-posting-date>Tue, 04 Jan 2011 22:09:48 -0600</nntp-posting-date><date>Tue, 04 Jan 2011 22:09:48 -0600</date><user-agent>Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US;
+	rv:1.9.2.13) Gecko/20101207 Thunderbird/3.1.7</user-agent><mime-version>1.0</mime-version><newsgroups>mozilla.dev.platform</newsgroups><references>&lt;870d3a1b-cd90-4088-bd2a-f42925f88c47@i18g2000yqn.googlegroups.com&gt;
+	&lt;BtGdnWbPtazW077QnZ2dnUVZ_tSdnZ2d@mozilla.org&gt;
+	&lt;4D235DF1.7060202@welho.com&gt;
+	&lt;G92dnQL2XMsR5r7QnZ2dnUVZ_vKdnZ2d@mozilla.org&gt;
+	&lt;5uadnXr2wsU6FL7QnZ2dnUVZ_sednZ2d@mozilla.org&gt;
+	&lt;HPydnX8c6v7rAb7QnZ2dnUVZ_hmdnZ2d@mozilla.org&gt;</references><in-reply-to>&lt;HPydnX8c6v7rAb7QnZ2dnUVZ_hmdnZ2d@mozilla.org&gt;</in-reply-to><message-id>-ZCdnWHy4paQcr7QnZ2dnUVZ_t6dnZ2d@mozilla.org</message-id><lines>32</lines><x-usenet-provider>http://www.giganews.com</x-usenet-provider><nntp-posting-host>24.143.104.105</nntp-posting-host><x-authenticatedusername>NoAuthUser</x-authenticatedusername><x-trace>sv3-CuX8lFDsI0H5Z5HnWoj9FU66WUAAGiUyA/9rZ7zdb/Yzu9OYNGX3HX7QpUuSvhCGzGDeKwwrkb388oZ!PE8dxtdJMBeK4ZAvVem7/LeR4DalD0WvGOBpOlTcTXkYRurcmiPtSVgYCVkCVyultL9sDMT/cMx4!02YWsCblapxowQ==</x-trace><x-complaints-to>abuse@mozilla.org</x-complaints-to><x-dmca-complaints-to>abuse@mozilla.org</x-dmca-complaints-to><x-abuse-and-dmca-info>Please be sure to forward a copy of ALL headers</x-abuse-and-dmca-info><x-abuse-and-dmca-info>Otherwise we will be unable to process your complaint
+	properly</x-abuse-and-dmca-info><x-postfilter>1.3.40</x-postfilter><bytes>2834</bytes><x-original-bytes>2773</x-original-bytes><xref>number.nntp.dca.giganews.com mozilla.dev.platform:10829</xref><x-beenthere>dev-platform@lists.mozilla.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><precedence>list</precedence><list-id>"The Mozilla platform \(XULRunner\)" &lt;dev-platform.lists.mozilla.org&gt;</list-id><list-unsubscribe>&lt;https://lists.mozilla.org/options/dev-platform&gt;,
+	&lt;mailto:dev-platform-request@lists.mozilla.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:dev-platform@lists.mozilla.org&gt;</list-post><list-help>&lt;mailto:dev-platform-request@lists.mozilla.org?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.mozilla.org/listinfo/dev-platform&gt;,
+	&lt;mailto:dev-platform-request@lists.mozilla.org?subject=subscribe&gt;</list-subscribe><content-transfer-encoding>7bit</content-transfer-encoding><content-type>text/plain; charset="us-ascii"; Format="flowed"</content-type><sender>dev-platform-bounces+ted.caldwell.gaines=a.markmail.org@lists.mozilla.org</sender><errors-to>dev-platform-bounces+ted.caldwell.gaines=a.markmail.org@lists.mozilla.org</errors-to></headers><normalized-references><normalized-message-id>-ZCdnWHy4paQcr7QnZ2dnUVZ_t6dnZ2d@mozilla.org</normalized-message-id><normalized-in-reply-to>HPydnX8c6v7rAb7QnZ2dnUVZ_hmdnZ2d@mozilla.org</normalized-in-reply-to><normalized-reference>870d3a1b-cd90-4088-bd2a-f42925f88c47@i18g2000yqn.googlegroups.com</normalized-reference><normalized-reference>BtGdnWbPtazW077QnZ2dnUVZ_tSdnZ2d@mozilla.org</normalized-reference><normalized-reference>4D235DF1.7060202@welho.com</normalized-reference><normalized-reference>G92dnQL2XMsR5r7QnZ2dnUVZ_vKdnZ2d@mozilla.org</normalized-reference><normalized-reference>5uadnXr2wsU6FL7QnZ2dnUVZ_sednZ2d@mozilla.org</normalized-reference><normalized-reference>HPydnX8c6v7rAb7QnZ2dnUVZ_hmdnZ2d@mozilla.org</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;; format=&quot;flowed&quot;"><para depth="0">On 1/4/11 4:21 PM, John J Barton wrote:
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">Does what matter?
+</quotepara></quote><quotepara depth="1">
+nsIPrincipal. If you are creating a sandbox, the information about
+nsIPrincipal obscures your goal. You can reach your goal more easily by
+using the nsIDOMWindow to create the sandbox.
+</quotepara></quote><para depth="0">
+If you have a Window on hand, sure.  (Though note that this doesn't give 
+identical behavior last I checked; e.g. if you use the window then |new 
+Image()| will work in the sandbox and create an element in the window's 
+document, but if you just use a principal that will throw.)
+
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">Not in Firefox 4.
+</quotepara></quote><quotepara depth="1">
+Hmm...I was looking at
+<url>http://mxr.mozilla.org/mozilla-central/source/caps/idl/nsIScriptSecurityManager.idl</url>
+</quotepara></quote><para depth="0">
+Yes, and?  getCodebasePrincipal was scriptable even before Firefox 4. 
+You could get principals off of nodes before Firefox 4. 
+getSystemPrincipal is scriptable in Firefox 4.  What more do you need 
+for "getting principals"?
+
+</para><para depth="0">Maybe I'm misunderstanding the "it's all noscript" complaint?
+
+</para><quote depth="1"><quotepara depth="1">I would like to be able to create a sandbox in a library function, to
+compile code for the caller (for module loading) If |window| is in my
+scope, I can use it to create a sandbox; if not I have to use system
+principal.
+</quotepara></quote><para depth="0">
+No, you really don't.  See above.
+
+</para><para depth="0">-Boris
+</para><footer type="list-management" depth="0">_______________________________________________
+dev-platform mailing list
+<email>dev-platform@lists.mozilla.org</email>
+<url>https://lists.mozilla.org/listinfo/dev-platform</url>
+</footer></body></message>

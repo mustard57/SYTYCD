@@ -1,0 +1,30 @@
+<message message-id="43846ED0.1020001@wanadoo.fr" list="org.openoffice.fr.users" id="24cjv4236o65m7e7" no-archive="yes" type="users" date="2005-11-23T14:29:52+01:00" year="2005-01-01" year-month="2005-11-01" year-month-day="2005-11-23" thread-id="dzbonyfg26sn5427"><headers><envelope-from-line>From users-return-42168-tigrisq-archive=mail-fr=users=openoffice.org=openoffice.org@fr.openoffice.org Sat Nov 26 05:17:00 2005</envelope-from-line><from personal="Luc Mamin" address="mamin.luc@wanadoo.fr">Luc Mamin &lt;mamin.luc@wanadoo.fr&gt;</from><to personal="users@fr.openoffice.org" address="users@fr.openoffice.org">users@fr.openoffice.org</to><subject normal="[users-fr] [calc] effectuer un calcul">Re: [users-fr] [calc] effectuer un calcul</subject><return-path>users-return-42168-tigrisq-archive=mail-fr=users=openoffice.org=openoffice.org@fr.openoffice.org</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=0.2 required=5.0 tests=BAYES_50,NO_RELAYS
+	autolearn=disabled version=3.2.4</x-spam-status><delivered-to>tigrisq-archive=mail-fr=users=openoffice.org@openoffice.org</delivered-to><received>(qmail 16323 invoked by uid 5302); 26 Nov 2005 04:39:52 -0000</received><mailing-list>contact users-help@fr.openoffice.org; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:users-help@fr.openoffice.org&gt;</list-help><list-unsubscribe>&lt;mailto:users-unsubscribe@fr.openoffice.org&gt;</list-unsubscribe><list-post>&lt;mailto:users@fr.openoffice.org&gt;</list-post><reply-to>users@fr.openoffice.org</reply-to><delivered-to>mailing list users@fr.openoffice.org</delivered-to><received>(qmail 16170 invoked from network); 26 Nov 2005 03:57:12 -0000</received><x-me-uuid>20051123132925938.E51DD1C001F0@mwinf0608.wanadoo.fr</x-me-uuid><message-id>43846ED0.1020001@wanadoo.fr</message-id><date>Wed, 23 Nov 2005 14:29:52 +0100</date><user-agent>Mozilla Thunderbird 1.0.7 (Windows/20050923)</user-agent><x-accept-language>fr, en</x-accept-language><mime-version>1.0</mime-version><references>&lt;4382D74F.4080903@laposte.net&gt;</references><in-reply-to>&lt;4382D74F.4080903@laposte.net&gt;</in-reply-to><content-type>text/plain; charset=ISO-8859-1; format=flowed</content-type><content-transfer-encoding>8bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>43846ED0.1020001@wanadoo.fr</normalized-message-id><normalized-in-reply-to>4382D74F.4080903@laposte.net</normalized-in-reply-to><normalized-reference>4382D74F.4080903@laposte.net</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1; format=flowed"><para depth="0">Loïc Evanno a écrit :
+
+</para><quote depth="1"><quotepara depth="1">Bonjour,
+dans A2 et A4, je tire un nombre au hasard entre -100 et 100, dans A3, 
+je mets la formule suivante : =SI(A10=1;"+";SI(A10=2;"-";"x")) (x est 
+un caractère spécial pour le signe multiplier) et A10 est le résultat 
+de ALEA.ENTRE.BORNES(1;3). Cela me donne donc une opération à 
+effectuer par les élèves.
+Comment dois-je faire pour que dans A6 s'affiche le résultat de mon 
+opération ? (par exemple si dans A2 j'ai -15, dans A4 51 et dans A3 x, 
+je veux qu'il m'affiche -765 dans A6)
+Merci.
+
+</quotepara><quotefooter type="list-management" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@fr.openoffice.org</email>
+For additional commands, e-mail: <email>users-help@fr.openoffice.org</email>
+
+</quotefooter></quote><para depth="0">Bonjour,
+
+</para><para depth="0">Quelque chose comme ça : =SI(A3="+";A2+A4;SI(A3="-";A2-A3;A2*A4)) ?
+
+</para><para depth="0">Luc
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@fr.openoffice.org</email>
+For additional commands, e-mail: <email>users-help@fr.openoffice.org</email>
+
+</footer></body></message>

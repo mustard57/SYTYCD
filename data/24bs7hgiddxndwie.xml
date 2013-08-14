@@ -1,0 +1,57 @@
+<message message-id="456EE41E.8000701@velum.net" list="org.tigris.propel.users" id="24bs7hgiddxndwie" type="users" date="2006-11-30T09:01:02-05:00" year="2006-01-01" year-month="2006-11-01" year-month-day="2006-11-30" thread-id="educul5philmavsp"><headers><envelope-from-line>From users@propel.tigris.org Thu Nov 30 06:10:28 2006</envelope-from-line><from personal="Hans Lellelid" address="hans@velum.net">Hans Lellelid &lt;hans@velum.net&gt;</from><to personal="users@propel.tigris.org" address="users@propel.tigris.org">users@propel.tigris.org</to><subject normal="[propel] updating primary key of an object fails">Re: [propel] updating primary key of an object fails</subject><return-path>hans@velum.net</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.1 required=5.0 tests=BAYES_05 autolearn=disabled
+	version=3.2.4</x-spam-status><mailing-list>contact users-help@propel.tigris.org; run by ezmlm</mailing-list><delivered-to>mailing list users@propel.tigris.org</delivered-to><received>(qmail 2894 invoked from network); 30 Nov 2006 14:01:01 -0000</received><received>from cylon2.sjc.collab.net (204.16.104.18)
+  by sc51.sjc.collab.net with SMTP; 30 Nov 2006 14:01:01 -0000</received><received>from mxout-03.mxes.net ([216.86.168.178])
+  by cylon2.sjc.collab.net with ESMTP; 30 Nov 2006 06:01:01 -0800</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AgAAACZzbkXYVqiyh2dsb2JhbACMbQEBCQ4q</x-ironport-anti-spam-result><x-ironport-av>i="4.09,479,1157353200"; 
+   d="scan'208"; a="37905609:sNHT17232957"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from [192.168.0.54] (unknown [66.7.145.210])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by smtp.mxes.net (Postfix) with ESMTP id 2842851931
+	for &lt;users@propel.tigris.org&gt;; Thu, 30 Nov 2006 09:01:00 -0500 (EST)</received><message-id>456EE41E.8000701@velum.net</message-id><date>Thu, 30 Nov 2006 09:01:02 -0500</date><user-agent>Thunderbird 1.5.0.8 (Windows/20061025)</user-agent><mime-version>1.0</mime-version><references>&lt;456EE27A.5020104@palepurple.co.uk&gt;</references><in-reply-to>&lt;456EE27A.5020104@palepurple.co.uk&gt;</in-reply-to><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>456EE41E.8000701@velum.net</normalized-message-id><normalized-in-reply-to>456EE27A.5020104@palepurple.co.uk</normalized-in-reply-to><normalized-reference>456EE27A.5020104@palepurple.co.uk</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><greeting depth="0">Hi David,
+</greeting><para depth="0">
+David Goodwin wrote:
+</para><quote depth="1"><quotepara depth="1">Hi,
+
+</quotepara><quotepara depth="1">In a simple test, Propel doesn't seem to handle updating the primary key
+of a record e.g.
+
+</quotepara><quotepara depth="1">$user = new User();
+$user-&gt;setName("Bob");
+$user-&gt;save();
+echo $user-&gt;getId();
+// echo's 51, auto-assigned through autoincrement column etc.
+
+</quotepara><quotepara depth="1">$user-&gt;setId(500);
+$user-&gt;save();
+// Attempts the SQL of UPDATE user SET id = 500 WHERE id = 500
+
+</quotepara><quotepara depth="1">Clearly the SQL should actually be something like :
+
+</quotepara><quotepara depth="1">UPDATE user SET id = 500 WHERE id = 51
+
+</quotepara><quotepara depth="1">Does anyone have a patch to implement this? Is there any reason why
+propel doesn't already?
+</quotepara></quote><para depth="0">
+Funny, I just helped someone at work with a similar question.  The fact
+is that Propel always removes keys you define as "auto-increment" from
+the update criteria.  The code in question is in your
+BaseUserPeer::doUpdate() method; however the big problem that you're
+going to have is:  how would propel know what the ID was before you
+changed it?
+
+</para><para depth="0">This is something that you'll probably need to do manually.  You could
+do something like [untested]:
+
+</para><para depth="0">$updateValues = new Criteria();
+$updateValues-&gt;add(UserPeer::ID, 500);
+
+</para><para depth="0">$selectCrit = new Criteria();
+$selectCrit-&gt;add(UserPeer::ID, 51);
+
+</para><para depth="0">BasePeer::doUpdate($selectCrit, $updateValues,
+Propel::getConnection(UserPeer::DATABASE_NAME));
+
+</para><para depth="0">HTH,
+Hans
+
+</para></body></message>

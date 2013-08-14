@@ -1,0 +1,19 @@
+<message message-id="3F40F74D.60106@bath.ac.uk" list="org.css-discuss.lists.css-d" id="24b7w5e6acz7ukbs" type="general" date="2003-08-18T16:57:01+01:00" year="2003-01-01" year-month="2003-08-01" year-month-day="2003-08-18" thread-id="57bmoja7gzj3hyqa"><headers><envelope-from-line>From cs1spw at bath.ac.uk  Mon Aug 18 16:57:01 2003</envelope-from-line><from personal="Simon Willison" address="cs1spw at bath.ac.uk">Simon Willison &lt;cs1spw at bath.ac.uk&gt;</from><subject normal="[css-d] Is it possible to make a div grow to enclose a float?">[css-d] Is it possible to make a div grow to enclose a float?</subject><date>Mon, 18 Aug 2003 16:57:01 +0100</date><in-reply-to>&lt;009901c365a0$4d2db640$0ee9d2cc@p3&gt;</in-reply-to><references>&lt;009901c365a0$4d2db640$0ee9d2cc@p3&gt;</references><message-id>3F40F74D.60106@bath.ac.uk</message-id></headers><normalized-references><normalized-message-id>3F40F74D.60106@bath.ac.uk</normalized-message-id><normalized-in-reply-to>009901c365a0$4d2db640$0ee9d2cc@p3</normalized-in-reply-to><normalized-reference>009901c365a0$4d2db640$0ee9d2cc@p3</normalized-reference></normalized-references><body type="text/plain"><para depth="0">Joel Goldstick (Software Consulting) wrote:
+</para><quote depth="1"><quotepara depth="1">Shows a list of articles that is floated right in the center content area.
+On this page, the content is very short, and so the float extends down
+beyond the content div.  Is there a way to force that dive to grow
+vertically to enclose the float?
+</quotepara></quote><para depth="0">
+You need a clearing element at the bottom of the div. I often use &lt;br&gt;s 
+for this, but other elements such as empty divs work fine as well:
+
+</para><para depth="0">&lt;div&gt;
+.. floated elements ..
+&lt;br style="clear: both"&gt;
+&lt;/div&gt;
+
+</para><para depth="0">Hope that helps,
+
+</para><footer type="signature" hash="5534779202956162898" depth="0">Simon Willison
+
+</footer></body></message>

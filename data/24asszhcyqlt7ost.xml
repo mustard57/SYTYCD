@@ -1,0 +1,64 @@
+<message message-id="f16625f20902101736q53534ef6k507e3ed595e23b7a@mail.gmail.com" list="com.selenic.mercurial" id="24asszhcyqlt7ost" type="general" date="2009-02-10T17:36:04.70605-08:00" year="2009-01-01" year-month="2009-02-01" year-month-day="2009-02-10" thread-id="24asszhcyqlt7ost"><headers><envelope-from-line>Tue Feb 10 17:36:27 2009</envelope-from-line><from personal="Jeremy Whitlock" address="jcscoobyrs@gmail.com">Jeremy Whitlock &lt;jcscoobyrs@gmail.com&gt;</from><to personal="mercurial@selenic.com" address="mercurial@selenic.com">mercurial@selenic.com</to><subject normal="&quot;hg rollback&quot; doesn't work like the hgbook suggests">"hg rollback" doesn't work like the hgbook suggests</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 1006
+          for &lt;earnestine.morrison.kennedy@a.markmail.org&gt;;
+          Tue, 10 Feb 2009 17:36:27 -0800 (GMT-08:00)</received><received>from mail.waste.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 410D22908007
+	for &lt;earnestine.morrison.kennedy@a.markmail.org&gt;; Tue, 10 Feb 2009 17:36:04 -0800 (PST)</received><received>from waste.org (staticwaste [66.93.16.53])
+	by mail.waste.org (Postfix) with ESMTP id 99F745C805C;
+	Tue, 10 Feb 2009 19:37:12 -0600 (CST)</received><received>from el-out-1112.google.com (el-out-1112.google.com [209.85.162.176])
+	by waste.org (8.13.8/8.13.8/Debian-3) with ESMTP id n1B1aL8A028027
+	for &lt;mercurial@selenic.com&gt;; Tue, 10 Feb 2009 19:36:22 -0600</received><received>by el-out-1112.google.com with SMTP id v27so124489ele.17
+	for &lt;mercurial@selenic.com&gt;; Tue, 10 Feb 2009 17:36:16 -0800 (PST)</received><mime-version>1.0</mime-version><received>by 10.151.108.5 with SMTP id k5mr345120ybm.194.1234316175331; Tue, 
+	10 Feb 2009 17:36:15 -0800 (PST)</received><date>Tue, 10 Feb 2009 18:36:15 -0700</date><message-id>f16625f20902101736q53534ef6k507e3ed595e23b7a@mail.gmail.com</message-id><x-virus-scanned>by amavisd-new</x-virus-scanned><x-beenthere>mercurial@selenic.com</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>&lt;mercurial.selenic.com&gt;</list-id><list-unsubscribe>&lt;http://selenic.com/mailman/listinfo/mercurial&gt;,
+	&lt;mailto:mercurial-request@selenic.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://selenic.com/pipermail/mercurial&gt;</list-archive><list-post>&lt;mailto:mercurial@selenic.com&gt;</list-post><list-help>&lt;mailto:mercurial-request@selenic.com?subject=help&gt;</list-help><list-subscribe>&lt;http://selenic.com/mailman/listinfo/mercurial&gt;,
+	&lt;mailto:mercurial-request@selenic.com?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>mercurial-bounces@selenic.com</sender><errors-to>mercurial-bounces@selenic.com</errors-to></headers><normalized-references><normalized-message-id>f16625f20902101736q53534ef6k507e3ed595e23b7a@mail.gmail.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><greeting depth="0">Hi All,
+</greeting><para depth="0">    I'm sure there are discrepancies with the current hg and what the
+book has but I wanted to email the list to better understand.
+Basically, I'm learning how to use "hg backout" to remove changes
+committed to a repository.  Here are the steps I've followed:
+
+</para><para depth="0"><url>http://hgbook.red-bean.com/hgbookch9.html#x13-1790009.3</url>
+
+</para><para depth="0">I started with 9.3.1 and continued through 9.3.3.  The problem is when
+I run "hg rollback", I end up with a conflicted myfile.  Even using
+merge tools like FileMerge (OS X) and ediff end up with the conflict
+being so that there is no way to get what the book suggests without
+manual intervention.  I copied/pasted all commands.  Instead of:
+
+</para><para depth="0">first change
+third change
+
+</para><para depth="0">I end up with a file that needs to be manually merged with a merge
+tool and at best, I can only end up with either "first change" or:
+
+</para><para depth="0">first change
+second change
+
+</para><para depth="0">unless I modify the conflict myself.  What did I do wrong?  I'm using
+Mercurial 1.1 on OS X and I've tried using the FileMerge and ediff.
+(ediff was hooked up via the
+<url>http://www.selenic.com/mercurial/wiki/index.cgi/MergingWithEmacs</url> wiki
+page.)  Without a merge command specified, I end up with the following
+in the conflicted file:
+
+</para><para depth="0">first change
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; local
+second change
+third change
+=======
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quote depth="4"><quote depth="5"><quote depth="6"><quote depth="7"><quotepara depth="7">other
+</quotepara></quote></quote></quote></quote></quote></quote></quote><para depth="0">
+If I can provide anything else, please let me know.  I can kind of see
+why the conflict is the way it is but I'll leave it up to you to let
+me know if there is something I did wrong.
+
+</para><footer type="signature" depth="0" hash="2668413352250413019">-- 
+Take care,
+
+</footer><footer type="signature" depth="0" hash="15452211621014123867">Jeremy Whitlock
+<url>http://www.thoughtspark.org</url>
+</footer><footer type="list-management" depth="0">_______________________________________________
+Mercurial mailing list
+<email>Mercurial@selenic.com</email>
+<url>http://selenic.com/mailman/listinfo/mercurial</url>
+</footer></body></message>

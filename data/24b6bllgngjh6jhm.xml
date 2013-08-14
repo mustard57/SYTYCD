@@ -1,0 +1,34 @@
+<message message-id="4615FD74.2080009@student.pwr.wroc.pl" list="net.java.dev.pwrjug.users" id="24b6bllgngjh6jhm" type="users" date="2007-04-06T09:57:40+02:00" year="2007-01-01" year-month="2007-04-01" year-month-day="2007-04-06" thread-id="nifooextlsu6g6s3"><headers><envelope-from-line>From users@pwrjug.dev.java.net Fri Apr 06 01:15:05 2007</envelope-from-line><from personal="Marcin Przyłucki" address="146355@student.pwr.wroc.pl">Marcin =?UTF-8?Q?Przy=C5=82ucki?= &lt;146355@student.pwr.wroc.pl&gt;</from><to personal="users@pwrjug.dev.java.net" address="users@pwrjug.dev.java.net">users@pwrjug.dev.java.net</to><subject normal="[PWrJUG] Sun Java Desktop Workshop">Re: [PWrJUG] Sun Java Desktop Workshop</subject><return-path>146355@student.pwr.wroc.pl</return-path><mailing-list>contact users-help@pwrjug.dev.java.net; run by ezmlm</mailing-list><delivered-to>mailing list users@pwrjug.dev.java.net</delivered-to><received>(qmail 726 invoked from network); 6 Apr 2007 07:58:19 -0000</received><received>from cylon2.sjc.collab.net (204.16.104.18)
+  by s015.sjc.collab.net with SMTP; 6 Apr 2007 07:58:19 -0000</received><received>from student.pwr.wroc.pl ([156.17.1.47])
+  by cylon2.sjc.collab.net with ESMTP; 06 Apr 2007 00:58:19 -0700</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>Aj0KALCZFUacEQEv/2dsb2JhbACBdA</x-ironport-anti-spam-result><x-ironport-av>i="4.14,381,1170662400"; 
+   d="scan'208"; a="54043716:sNHT16463454"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from student (student.pwr.wroc.pl [156.17.1.47])
+ by student.pwr.wroc.pl
+ (Sun Java System Messaging Server 6.2-6.01 (built Apr  3 2006))
+ with ESMTP id &lt;0JG200DPZGT6EN20@student.pwr.wroc.pl&gt; for
+ users@pwrjug.dev.java.net; Fri, 06 Apr 2007 09:58:19 +0200 (CEST)</received><received>from student.pwr.wroc.pl ([156.17.1.47])
+	by student.pwr.wroc.pl (MailMonitor for SMTP v1.2.2 ) ; Fri,
+ 06 Apr 2007 09:58:18 +0200 (CEST)</received><received>from [10.61.100.204] ([82.160.195.9])
+ by student.pwr.wroc.pl (Sun Java System Messaging Server 6.2-6.01 (built Apr 3
+ 2006)) with ESMTPSA id &lt;0JG2008FPGT5Z740@student.pwr.wroc.pl&gt; for
+ users@pwrjug.dev.java.net; Fri, 06 Apr 2007 09:58:18 +0200 (CEST)</received><date>Fri, 06 Apr 2007 09:57:40 +0200</date><in-reply-to>&lt;f6d3f4df2db1.46156b40@sun.com&gt;</in-reply-to><message-id>4615FD74.2080009@student.pwr.wroc.pl</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8; format=flowed</content-type><content-transfer-encoding>8BIT</content-transfer-encoding><references>&lt;f6d3f4df2db1.46156b40@sun.com&gt;</references><user-agent>Thunderbird 1.5.0.10 (Windows/20070221)</user-agent></headers><normalized-references><normalized-message-id>4615FD74.2080009@student.pwr.wroc.pl</normalized-message-id><normalized-in-reply-to>f6d3f4df2db1.46156b40@sun.com</normalized-in-reply-to><normalized-reference>f6d3f4df2db1.46156b40@sun.com</normalized-reference></normalized-references><body type="text/plain; charset=utf-8; format=flowed"><para depth="0">Rozumiem, że odnośnie punktu 3) wymagania sprzętowe, wystarczy spełniać 
+jeden z tych trzech podpunktów, czyli 3a) lub 3b) lub 3c) ?
+
+</para><para depth="0">Michal Ociepka napisał(a):
+</para><quote depth="1"><quotepara depth="1">Witam,
+
+</quotepara><quotepara depth="1">W kwietniu (18.04 lub 19.04), tak jak obiecalismy, zorganizujemy warsztaty Sun<br/>Java Desktop System Workshop prowadzone przez Marcina Pryca z Sun Microsystems<br/>Ireland. W zwiazku z problemami znalezienia sali komputerowej posiadajacej<br/>odpowiednie zasoby potrzebne do "w miare komfortowej pracy", prosimy wszystkich<br/>chetnych posiadajacych wlasne komputerki przenosne i spelniajacych podane w<br/>pliku Documents and Files (folder inne)<br/>(<url>https://pwrjug.dev.java.net/servlets/ProjectDocumentList</url>) wymagania, o jak<br/>najszybsze zgloszenie sie do mnie wraz z informacja, ktore z wymienionych w<br/>pliku wymagan spelniacie. Ilosc miejsc w jest ograniczona.
+
+</quotepara><quotefooter type="signature" hash="13412368763996209807" depth="1">zdrowko
+Michal Ociepka
+
+</quotefooter><quotefooter type="signature" hash="8534393310536215176" depth="1">--
+Michal Ociepka
+Sun Campus Ambassador, Poland
+Email: <email>Michal.Ociepka@Sun.COM</email>
+Mobile: + 48 501818523
+
+</quotefooter><quotefooter type="list-management" hash="954696517140470386" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>users-unsubscribe@pwrjug.dev.java.net</email>
+For additional commands, e-mail: <email>users-help@pwrjug.dev.java.net</email>
+
+</quotefooter></quote></body></message>

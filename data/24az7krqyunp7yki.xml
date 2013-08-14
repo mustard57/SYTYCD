@@ -1,0 +1,45 @@
+<message message-id="4640871C.80209@mail.utexas.edu" list="org.tigris.subversion.dev" id="24az7krqyunp7yki" type="development" date="2007-05-08T09:20:12-05:00" year="2007-01-01" year-month="2007-05-01" year-month-day="2007-05-08" thread-id="ubymac6oq3xwbond"><headers><envelope-from-line>From dev@subversion.tigris.org Tue May 08 07:27:55 2007</envelope-from-line><from personal="Hyrum K. Wright" address="hyrum_wright@mail.utexas.edu">"Hyrum K. Wright" &lt;hyrum_wright@mail.utexas.edu&gt;</from><to personal="dustin@v.igoro.us" address="dustin@v.igoro.us">dustin@v.igoro.us</to><cc personal="dev@subversion.tigris.org" address="dev@subversion.tigris.org">dev@subversion.tigris.org</cc><subject normal="[PATCH]: svnmerge between multiple repositories, same repo path">Re: [PATCH]: svnmerge between multiple repositories, same repo path</subject><return-path>hyrum_wright@mail.utexas.edu</return-path><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.6 required=5.0 tests=BAYES_00 autolearn=disabled
+	version=3.2.4</x-spam-status><mailing-list>contact dev-help@subversion.tigris.org; run by ezmlm</mailing-list><delivered-to>mailing list dev@subversion.tigris.org</delivered-to><received>(qmail 28341 invoked from network); 8 May 2007 14:20:16 -0000</received><received>from cylon2.sjc.collab.net (204.16.104.18)
+  by sc157.sjc.collab.net with SMTP; 8 May 2007 14:20:16 -0000</received><received>from hendrix.ece.utexas.edu ([128.83.59.42])
+  by cylon2.sjc.collab.net with ESMTP; 08 May 2007 07:20:15 -0700</received><x-ironport-anti-spam-filtered>true</x-ironport-anti-spam-filtered><x-ironport-anti-spam-result>AgAAALMjQEaAUzsqi2dsb2JhbACPegIBEA0F</x-ironport-anti-spam-result><x-ironport-av>i="4.14,506,1170662400"; 
+   d="asc'?scan'208"; a="57025912:sNHT77573433"</x-ironport-av><x-ironport>SCANNED</x-ironport><received>from ridge.ece.utexas.edu ([146.6.53.76])
+	by hendrix.ece.utexas.edu with esmtp (Exim 3.36 #1 (Debian))
+	id 1HlQY3-0000ws-00; Tue, 08 May 2007 09:20:15 -0500</received><message-id>4640871C.80209@mail.utexas.edu</message-id><date>Tue, 08 May 2007 09:20:12 -0500</date><user-agent>Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.3) Gecko/20070326 Thunderbird/2.0.0.0 Mnenhy/0.7.5.0</user-agent><mime-version>1.0</mime-version><references>&lt;20070501180219.GK32232@v.igoro.us&gt; &lt;20070508060013.GA5902@v.igoro.us&gt;</references><in-reply-to>&lt;20070508060013.GA5902@v.igoro.us&gt;</in-reply-to><x-enigmail-version>0.95.0</x-enigmail-version><content-type>multipart/signed; micalg=pgp-sha1;
+ protocol="application/pgp-signature";
+ boundary="------------enigA947ACBEDADFB75BA6ECFC9F"</content-type></headers><attachments><signature type="application/pgp-signature" description="OpenPGP digital signature" file="signature.asc" size="252" uri="/24az7krqyunp7yki/attach00/signature.asc"/></attachments><normalized-references><normalized-message-id>4640871C.80209@mail.utexas.edu</normalized-message-id><normalized-in-reply-to>20070508060013.GA5902@v.igoro.us</normalized-in-reply-to><normalized-reference>20070501180219.GK32232@v.igoro.us</normalized-reference><normalized-reference>20070508060013.GA5902@v.igoro.us</normalized-reference></normalized-references><body><para depth="0"><email>dustin@v.igoro.us</email> wrote:
+</para><quote depth="1"><quotepara depth="1">On Tue, May 01, 2007 at 01:02:19PM -0500, <email>dustin@v.igoro.us</email> wrote:
+</quotepara><quote depth="2"><quotepara depth="2">Pursuant to discussion on the svnmerge mailing list, I wrote up some
+patches to allow svnmerge to merge between multiple repositories, where
+the repository path is the same in each.
+</quotepara></quote><quotepara depth="1">
+Sorry to self-reply here, but does anyone want to second this patch,
+before I put it on the tracker?  Alternately, does anyone think it's a
+terrible idea, and want to eviscerate me for even conceiving of it?
+</quotepara></quote><para depth="0">
+Dustin,
+Thanks for following up on this.  After looking at your previous mail,
+I've not reviewed the patches, but I do have a couple of suggestions.
+While you did include summaries of your patches, they don't follow our
+log message guidelines[1].  By submitting your patches with appropriate
+messages, they are much more likely to get reviewed.
+
+</para><para depth="0">The patch submission guidelines[2] also note that "a patch submission
+should contain one logical change; please don't mix N unrelated changes
+in one submission -- send N separate emails instead."  Sending five
+patches in one mail may be a bit difficult for some people to grok.
+
+</para><para depth="0">May I suggest either grouping the patches together in logical chunks, or
+submitting them serially?  (Submit one, discuss, apply, repeat.)  It may
+take more time that way, but the reviewers are more likely to understand
+what each patch is doing.
+
+</para><para depth="0">[1] <url>http://subversion.tigris.org/hacking.html#log-messages</url>
+[2] <url>http://subversion.tigris.org/hacking.html#patches</url>
+
+</para><para depth="0">(I've also updated the subject to include the brackets around [PATCH] so
+that it gets filtered correctly.)
+
+</para><para depth="0">-Hyrum
+
+</para></body></message>

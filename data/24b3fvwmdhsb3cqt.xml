@@ -1,0 +1,197 @@
+<message message-id="20060206121349.8C40C207825@localhost.localdomain" list="com.mysql.lists.commits" id="24b3fvwmdhsb3cqt" type="checkins" date="2006-02-06T13:13:49+01:00" year="2006-01-01" year-month="2006-02-01" year-month-day="2006-02-06" thread-id="24b3fvwmdhsb3cqt"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="msvensson@mysql.com" address="msvensson@mysql.com">msvensson@mysql.com</from><to personal="commits@lists.mysql.com" address="commits@lists.mysql.com">commits@lists.mysql.com</to><subject normal="bk commit into 5.0 tree (msvensson:1.2021)">bk commit into 5.0 tree (msvensson:1.2021)</subject><return-path>msvensson@mysql.com</return-path><mailing-list>contact commits-help@lists.mysql.com; run by ezmlm</mailing-list><delivered-to>mailing list commits@lists.mysql.com</delivered-to><received>(qmail 31509 invoked by uid 509); 6 Feb 2006 12:11:12 -0000</received><received-spf>pass (lists.mysql.com: local policy)</received-spf><received>from mailgate.mysql.com (HELO mailgate.mysql.com) (10.100.1.79)
+    by lists.mysql.com (qpsmtpd/0.29) with ESMTP; Mon, 06 Feb 2006 13:11:12 +0100</received><received>from localhost (localhost.localdomain [127.0.0.1])
+	by mailgate.mysql.com (8.13.4/8.13.4) with ESMTP id k16CDqZN013834
+	for &lt;commits@lists.mysql.com&gt;; Mon, 6 Feb 2006 13:13:52 +0100</received><received>from mail.mysql.com ([10.222.1.99])
+ by localhost (mailgate.mysql.com [10.222.1.98]) (amavisd-new, port 10026)
+ with LMTP id 12375-03 for &lt;commits@lists.mysql.com&gt;;
+ Mon,  6 Feb 2006 13:13:52 +0100 (CET)</received><received>from localhost.localdomain (10-100-64-4.mysql.internal [10.100.64.4])
+	(authenticated bits=0)
+	by mail.mysql.com (8.13.3/8.13.3) with ESMTP id k16CDnst012859
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for &lt;commits@lists.mysql.com&gt;; Mon, 6 Feb 2006 13:13:50 +0100</received><received>by localhost.localdomain (Postfix, from userid 500)
+	id 8C40C207825; Mon,  6 Feb 2006 13:13:49 +0100 (CET)</received><x-csetkey>&lt;msvensson@neptunus.(none)|ChangeSet|20060206121343|41605&gt;</x-csetkey><message-id>20060206121349.8C40C207825@localhost.localdomain</message-id><date>Mon,  6 Feb 2006 13:13:49 +0100 (CET)</date><x-virus-scanned>by amavisd-new at mailgate.mysql.com</x-virus-scanned></headers><normalized-references><normalized-message-id>20060206121349.8C40C207825@localhost.localdomain</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">Below is the list of changes that have just been committed into a local
+5.0 repository of msvensson. When msvensson does a push these changes will
+be propagated to the main repository and, within 24 hours after the
+push, to the public repository.
+For information on how to access the public repository
+see <url>http://dev.mysql.com/doc/mysql/en/installing-source-tree.html</url>
+
+</para><para depth="0">ChangeSet
+  1.2021 06/02/06 13:13:43 msvensson@neptunus.(none) +3 -0
+  Start cluster only for testcases that really needs it and stop it when 
+  not needed by the tescases. This will save test time for those testcases
+  that does not need cluster, but need a restart, as they dont have to wait
+  the extra time it would take for cluster to restart. It will also save
+  time for testcases that does not require a restart, as cluster does not 
+  need to be contacted for each table to be dropped or created.   
+
+</para><para depth="0">  mysql-test/mysql-test-run.pl
+    1.61 06/02/06 13:13:38 msvensson@neptunus.(none) +22 -10
+    Only start ndbcluster for testcases that needs it.
+
+</para><para depth="0">  mysql-test/lib/mtr_report.pl
+    1.19 06/02/06 13:13:38 msvensson@neptunus.(none) +7 -1
+    Print a * after testname of testcases that requires a restart.
+
+</para><para depth="0">  mysql-test/lib/mtr_cases.pl
+    1.13 06/02/06 13:13:38 msvensson@neptunus.(none) +28 -0
+    Mark all ndb_* test cases as ndbcluster needed
+    Mark all testcases with a*_master.opt filer containing "--ndbcluster" as<br/>ndbcluster needed
+
+</para><para depth="0"># This is a BitKeeper patch.  What follows are the unified diffs for the
+# set of deltas contained in the patch.  The rest of the patch, the part
+# that BitKeeper cares about, is below these diffs.
+# User:	msvensson
+# Host:	neptunus.(none)
+# Root:	/home/msvensson/mysql/mysqltestrun_faster/my50-mysqltestrun_faster
+
+</para><para depth="0">--- 1.12/mysql-test/lib/mtr_cases.pl	2005-10-16 20:31:44 +02:00
++++ 1.13/mysql-test/lib/mtr_cases.pl	2006-02-06 13:13:38 +01:00
+@@ -252,6 +252,21 @@
+     $tinfo-&gt;{'slave_restart'}= 1;
+   }
+
+</para><para depth="0">+  # Cluster is needed by test case if testname is ndb_*
++  $tinfo-&gt;{'ndbcluster'}= 0; # Default value
++  if ( defined mtr_match_prefix($tname,"ndb") )
++  {
++    if ( $::opt_skip_ndbcluster )
++    {
++      $tinfo-&gt;{'skip'}= 1;
++      return;
++    }
++    else
++    {
++      $tinfo-&gt;{'ndbcluster'}= 1;
++    }
++  }
++
+   # FIXME what about embedded_server + ndbcluster, skip ?!
+
+</para><para depth="0">   my $master_opt_file= "$testdir/$tname-master.opt";
+@@ -310,6 +325,19 @@
+           $tinfo-&gt;{'master_opt'}= [];
+         }
+
+</para><para depth="0">+	# Cluster is needed if opt file contains --ndbcluster
++        if ( $opt eq "--ndbcluster" )
++        {
++	  if ( $::opt_skip_ndbcluster )
++	  {
++	    $tinfo-&gt;{'skip'}= 1;
++	    return;
++	  }
++	  else
++	  {
++	    $tinfo-&gt;{'ndbcluster'}= 1;
++	  }
++	}
+       }
+
+</para><para depth="0">       # Ok, this was a real option list, add it
+
+</para><para depth="0">--- 1.18/mysql-test/lib/mtr_report.pl	2005-09-30 22:37:50 +02:00
++++ 1.19/mysql-test/lib/mtr_report.pl	2006-02-06 13:13:38 +01:00
+@@ -74,8 +74,14 @@
+
+</para><para depth="0"> sub mtr_report_test_name ($) {
+   my $tinfo= shift;
++  my $name= $tinfo-&gt;{'name'};
+
+</para><para depth="0">-  printf "%-30s ", $tinfo-&gt;{'name'};
++  # Add a * to test name if it needs restarting
++  if ( $tinfo-&gt;{'master_restart'} )
++  {
++    $name="$name*";
++  }
++  printf "%-30s ", $name;
+ }
+
+</para><para depth="0"> sub mtr_report_test_skipped ($) {
+
+</para><para depth="0">--- 1.60/mysql-test/mysql-test-run.pl	2006-01-09 18:16:51 +01:00
++++ 1.61/mysql-test/mysql-test-run.pl	2006-02-06 13:13:38 +01:00
+@@ -305,6 +305,7 @@
+ our $path_ndb_backup_dir;
+ our $file_ndb_testrun_log;
+ our $flag_ndb_status_ok= 1;
++our $flag_use_ndbcluster= 0;
+
+</para><para depth="0"> ######################################################################
+ #
+@@ -1730,7 +1731,9 @@
+   if ( ! $glob_use_running_server and ! $glob_use_embedded_server )
+   {
+     if ( $tinfo-&gt;{'master_restart'} or
+-         $master-&gt;[0]-&gt;{'running_master_is_special'} )
++         $master-&gt;[0]-&gt;{'running_master_is_special'} or
++	 $tinfo-&gt;{'ndbcluster'} == $master-&gt;[0]-&gt;{'ndbcluster'}
++       )
+     {
+       stop_masters();
+       $master-&gt;[0]-&gt;{'running_master_is_special'}= 0; # Forget why we stopped
+@@ -1770,6 +1773,9 @@
+   # Start masters
+   # ----------------------------------------------------------------------
+
+</para><para depth="0">+  # If the testcase needs cluster, set the global flag
++  $flag_use_ndbcluster= $tinfo-&gt;{'ndbcluster'};
++
+   if ( ! $glob_use_running_server and ! $glob_use_embedded_server )
+   {
+     # FIXME give the args to the embedded server?!
+@@ -1781,12 +1787,17 @@
+     {
+       if ( $master-&gt;[0]-&gt;{'ndbcluster'} )
+       {
+-	$master-&gt;[0]-&gt;{'ndbcluster'}= ndbcluster_start();
+-        if ( $master-&gt;[0]-&gt;{'ndbcluster'} )
+-        {
+-          report_failure_and_restart($tinfo);
+-          return;
+-        }
++	# Cluster is not started
++	if ( $tinfo-&gt;{'ndbcluster'} )
++	{
++	  # Test needs cluster, start it
++	  $master-&gt;[0]-&gt;{'ndbcluster'}= ndbcluster_start();
++	  if ( $master-&gt;[0]-&gt;{'ndbcluster'} )
++	  {
++	    report_failure_and_restart($tinfo);
++	    return;
++	  }
++	}
+       }
+       if ( ! $master-&gt;[0]-&gt;{'pid'} )
+       {
+@@ -1800,8 +1811,9 @@
+           return;
+         }
+       }
+-      if ( $opt_with_ndbcluster and ! $master-&gt;[1]-&gt;{'pid'} )
++      if ( $tinfo-&gt;{'ndbcluster'} and ! $master-&gt;[1]-&gt;{'pid'} )
+       {
++	# Test needs cluster, start an extra mysqld connected to cluster
+         $master-&gt;[1]-&gt;{'pid'}=
+           mysqld_start('master',1,$tinfo-&gt;{'master_opt'},[]);
+         if ( ! $master-&gt;[1]-&gt;{'pid'} )
+@@ -2104,7 +2116,7 @@
+       mtr_add_arg($args, "%s--skip-innodb", $prefix);
+     }
+
+</para><para depth="0">-    if ( $opt_skip_ndbcluster )
++    if ( $opt_skip_ndbcluster || !$flag_use_ndbcluster)
+     {
+       mtr_add_arg($args, "%s--skip-ndbcluster", $prefix);
+     }
+@@ -2180,7 +2192,7 @@
+     }
+   }
+
+</para><para depth="0">-  if ( $opt_with_ndbcluster )
++  if ( $flag_use_ndbcluster )
+   {
+     mtr_add_arg($args, "%s--ndbcluster", $prefix);
+     mtr_add_arg($args, "%s--ndb-connectstring=%s", $prefix,
+
+</para></body></message>

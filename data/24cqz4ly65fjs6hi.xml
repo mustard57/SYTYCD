@@ -1,0 +1,52 @@
+<message message-id="7186fdf20811040423g661824a9u2fd90d4f34d3ec1b@mail.gmail.com" list="com.googlegroups.away3d-dev" id="24cqz4ly65fjs6hi" type="development" date="2008-11-04T12:23:47Z" year="2008-01-01" year-month="2008-11-01" year-month-day="2008-11-04" thread-id="liitdj3uxsvq3bnc"><headers><envelope-from-line>Tue Nov 04 04:24:43 2008</envelope-from-line><from personal="Rob Bateman" address="rob.bateman@gmail.com">Rob Bateman &lt;rob.bateman@gmail.com&gt;</from><to personal="away3d-dev@googlegroups.com" address="away3d-dev@googlegroups.com">away3d-dev@googlegroups.com</to><subject normal="[away3d] Re: get viewTransform in Object3D?">[away3d] Re: get viewTransform in Object3D?</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 726
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Tue, 4 Nov 2008 04:24:43 -0800 (GMT-08:00)</received><received>from yx-out-2122.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id E69863B3022C
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Tue,  4 Nov 2008 04:24:19 -0800 (PST)</received><received>by yx-out-2122.google.com with SMTP id 22so593502yxm.75
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 04 Nov 2008 04:24:42 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :received:received:received-spf:authentication-results:received
+         :dkim-signature:domainkey-signature:received:received:message-id
+         :date:from:to:subject:in-reply-to:mime-version:content-type
+         :references:reply-to:sender:precedence:x-google-loop:mailing-list
+         :list-id:list-post:list-help:list-unsubscribe:x-beenthere-env
+         :x-beenthere;
+        bh=g31ikN189JK5QzqBpo67hod4Qzl+tV9R381jaPMdzSg=;
+        b=Db4yMQ26yip5jymr6vLBUWx6T7RGN5LxuqdXlinUz1+14Hol4+Lwn02Tl8COmgdgrk
+         pFDjg4xBTy0xQbVLDs156Digf36/bMqID7kh/axNL6Fnii5ML9+tITQ/r3Ucmq0lmPKF
+         nGjbvy1oaZYZrKm9a7275iThNPj7Qr9FAO2W4=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:received-spf:authentication-results
+         :dkim-signature:domainkey-signature:message-id:date:from:to:subject
+         :in-reply-to:mime-version:content-type:references:reply-to:sender
+         :precedence:x-google-loop:mailing-list:list-id:list-post:list-help
+         :list-unsubscribe:x-beenthere-env:x-beenthere;
+        b=T8UfH89c3zxASgPyuKwlZGz9GfTIvjRUeAX8Am60rcy1s2MEIULGta23eMwBWz/YRQ
+         pGnkrERTyi84OU28vQ2KGErlNQRhHvVuHRhYLoyEu4hVR8y6xNF2gHTo0IPpBr34xI5a
+         GSecIcwJkNVCYSqEkPbNhB/rxd0O+486Ze5+4=</domainkey-signature><received>by 10.151.155.10 with SMTP id h10mr93128ybo.15.1225801479817;
+        Tue, 04 Nov 2008 04:24:39 -0800 (PST)</received><received>by 10.106.25.29 with SMTP id 29gr5984pry.0;
+	Tue, 04 Nov 2008 04:23:52 -0800 (PST)</received><x-sender>rob.bateman@gmail.com</x-sender><x-apparently-to>away3d-dev@googlegroups.com</x-apparently-to><received>by 10.114.254.1 with SMTP id b1mr256386wai.4.1225801429159; Tue, 04 Nov 2008 04:23:49 -0800 (PST)</received><received>from wa-out-1112.google.com ([172.21.188.24]) by mx.google.com with ESMTP id k32si765199wah.1.2008.11.04.04.23.47; Tue, 04 Nov 2008 04:23:47 -0800 (PST)</received><received-spf>neutral (google.com: 172.21.188.24 is neither permitted nor denied by domain of rob.bateman@gmail.com) client-ip=172.21.188.24;</received-spf><authentication-results>mx.google.com; spf=neutral (google.com: 172.21.188.24 is neither permitted nor denied by domain of rob.bateman@gmail.com) smtp.mail=rob.bateman@gmail.com; dkim=pass (test mode) header.i=@gmail.com</authentication-results><received>by wa-out-1112.google.com with SMTP id l24so1684758waf.12 for &lt;away3d-dev@googlegroups.com&gt;; Tue, 04 Nov 2008 04:23:47 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma; h=domainkey-signature:received:received:message-id:date:from:to :subject:in-reply-to:mime-version:content-type:references; bh=APV+2y6HiUhhd9vtNoKIF+NYbeOcDdE2HzXsnNVwrhs=; b=RfdUJcDj7i27j4HziCWxfn3hfAKzyJWMl+LcBwyBvZFTnZyYdp6Le8vgXST7sDKTgq RQ5L6ozi/AYoH1o9J8moyJCzy3ViDpKbWVZxNHGJrY5TK+okFeuJ7JhE0MW1VqzJp3kn T3GsbQ5JWy5tNq3rm21/ok8p9BRh+2eDNU19c=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma; h=message-id:date:from:to:subject:in-reply-to:mime-version :content-type:references; b=H8Twcsos1vnKJSNs06NMZxuGLBV3qmyb4DXbPbAsA+JoVKum/0aNgjWIzhphO2Gfgg zR4fBvvFZo/49ecPI8Cxf6xOEeGeYqLqEqEh0C4CVQrtGlG0zsbA/3DP0QdWZj9cPUTI 8LXZMZRq5VR5dfPHyoKCgf9sEeGou1K1zLIGQ=</domainkey-signature><received>by 10.114.95.1 with SMTP id s1mr918779wab.13.1225801427521; Tue, 04 Nov 2008 04:23:47 -0800 (PST)</received><received>by 10.114.25.16 with HTTP; Tue, 4 Nov 2008 04:23:47 -0800 (PST)</received><message-id>7186fdf20811040423g661824a9u2fd90d4f34d3ec1b@mail.gmail.com</message-id><date>Tue, 4 Nov 2008 12:23:47 +0000</date><in-reply-to>&lt;f3115f2e-1d18-45dd-9885-e0598a723824@w24g2000prd.googlegroups.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>multipart/alternative;  boundary="----=_Part_41995_5048612.1225801427518"</content-type><references>&lt;f3115f2e-1d18-45dd-9885-e0598a723824@w24g2000prd.googlegroups.com&gt;</references><reply-to>away3d-dev@googlegroups.com</reply-to><sender>away3d-dev@googlegroups.com</sender><precedence>bulk</precedence><x-google-loop>groups</x-google-loop><mailing-list>list away3d-dev@googlegroups.com;
+	contact away3d-dev+owner@googlegroups.com</mailing-list><list-id>&lt;away3d-dev.googlegroups.com&gt;</list-id><list-post>&lt;mailto:away3d-dev@googlegroups.com&gt;</list-post><list-help>&lt;mailto:away3d-dev+help@googlegroups.com&gt;</list-help><list-unsubscribe>&lt;http://googlegroups.com/group/away3d-dev/subscribe&gt;,
+	&lt;mailto:away3d-dev+unsubscribe@googlegroups.com&gt;</list-unsubscribe><x-beenthere-env>away3d-dev@googlegroups.com</x-beenthere-env><x-beenthere>away3d-dev@googlegroups.com</x-beenthere></headers><normalized-references><normalized-message-id>7186fdf20811040423g661824a9u2fd90d4f34d3ec1b@mail.gmail.com</normalized-message-id><normalized-in-reply-to>f3115f2e-1d18-45dd-9885-e0598a723824@w24g2000prd.googlegroups.com</normalized-in-reply-to><normalized-reference>f3115f2e-1d18-45dd-9885-e0598a723824@w24g2000prd.googlegroups.com</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=&quot;----=_part_41995_5048612.1225801427518&quot;" type="text/plain; charset=ISO-8859-1"><para depth="0">Hey Demon S
+
+</para><para depth="0">you'll have to remind us what property that was...
+
+</para><para depth="0">Rob
+
+</para><para depth="0">On Mon, Nov 3, 2008 at 9:10 AM, Demon.S &lt;<email>demons.vip@gmail.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">hi, i got a problem with this, because of this property was a public
+variable in old version.. but now it set to protected.
+i wanna use it in custom shader or material, but seems it 's hard to
+get this now, any ideas ?
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="15990497665749335838">-- 
+Rob Bateman
+Flash Development &amp; Consultancy
+
+</footer><footer type="signature" depth="0" hash="1238313919934137924"><email>rob.bateman@gmail.com</email>
+www.infiniteturtles.co.uk
+www.away3d.com
+</footer></body></message>

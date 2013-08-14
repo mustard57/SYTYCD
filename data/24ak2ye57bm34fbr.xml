@@ -1,0 +1,26 @@
+<message message-id="20020127000006.GA622@ryoko.kuiki.net" list="org.perl.poe" id="24ak2ye57bm34fbr" type="general" date="2002-01-26T18:00:06-06:00" year="2002-01-01" year-month="2002-01-01" year-month-day="2002-01-26" thread-id="6bhwtuii4ar4cxjk"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="hachi@kuiki.net" address="hachi@kuiki.net">hachi@kuiki.net</from><to personal="poe@perl.org" address="poe@perl.org">poe@perl.org</to><subject normal="Subclassing POE::Kernel">Subclassing POE::Kernel</subject><newsgroups>perl.poe</newsgroups><path>nntp.perl.org</path><xref>nntp.perl.org perl.poe:870</xref><return-path>hachi@kuiki.net</return-path><mailing-list>contact poe-help@perl.org; run by ezmlm</mailing-list><delivered-to>mailing list poe@perl.org</delivered-to><received>(qmail 7296 invoked by uid 76); 27 Jan 2002 00:00:09 -0000</received><received>from hachi@24-196-120-102.fdl.wi.charter.com (HELO ryoko.kuiki.net) (24.196.120.102)
+  by onion.perl.org (qpsmtpd/0.06) with SMTP; Sun Jan 27 00:00:09 2002 -0000</received><received>from hachi by ryoko.kuiki.net with local (Exim 3.33 #1 (Debian))
+	id 16Ucju-0000B8-00
+	for &lt;poe@perl.org&gt;; Sat, 26 Jan 2002 18:00:06 -0600</received><date>Sat, 26 Jan 2002 18:00:06 -0600</date><message-id>20020127000006.GA622@ryoko.kuiki.net</message-id><mail-followup-to>poe@perl.org</mail-followup-to><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-disposition>inline</content-disposition><user-agent>Mutt/1.3.25i</user-agent></headers><normalized-references><normalized-message-id>20020127000006.GA622@ryoko.kuiki.net</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">I wrote a function for POE::Kernel called 'kill_session', oddly enough, it 
+forces the removal of a session that you specify. All children of the 
+session move up and become children of the grandparent, and all of the 
+dispatching is taken care of for this.
+
+</para><para depth="0">The problem is, I have no clue how to subclass POE::Kernel, my attempt is 
+located at <url>http://kuiki.net/hachi/Kernel-killable.pm.txt</url>
+
+</para><para depth="0">I also wrote a test case for the function, located at 
+<url>http://kuiki.net/hachi/kill-test.perl</url>
+
+</para><para depth="0">If someone wants to help me out with subclassing this sucker properly, 
+thanks. Otherwise you can just shove the function into Kernel.pm and it will 
+work.
+
+</para><para depth="0">Have fun either way :)
+
+</para><para depth="0">--hachi
+
+</para><para depth="0">PS. I found that I wanted this functionality for use in 
+POE::Component::Server::IRC, so thats why it has been written.
+
+</para></body></message>

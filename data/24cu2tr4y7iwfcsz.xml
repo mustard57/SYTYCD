@@ -1,0 +1,74 @@
+<message message-id="C268F9E3-AB7C-4108-B76B-5617EEAC6...@gmail.com" list="com.googlegroups.mongodb-user" id="24cu2tr4y7iwfcsz" type="users" date="2010-01-14T06:56:59-05:00" year="2010-01-01" year-month="2010-01-01" year-month-day="2010-01-14" thread-id="nmhb2bnzgyxmahee"><headers><envelope-from-line>Thu Jan 14 04:36:41 2010</envelope-from-line><from personal="Eliot Horowitz" address="&quot;eliothorow...&quot;@gmail.com">Eliot Horowitz &lt;"eliothorow..."@gmail.com&gt;</from><to personal="mongodb-user@googlegroups.com" address="mongodb-user@googlegroups.com">"mongodb-user@googlegroups.com" &lt;mongodb-user@googlegroups.com&gt;</to><subject normal="[mongodb-user] Can I use find() to iterate of large collection of records ?">Re: [mongodb-user] Can I use find() to iterate of large collection of records ?</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 584
+          for &lt;hans.mercado.sharp@a.markmail.org&gt;;
+          Thu, 14 Jan 2010 04:36:41 -0800 (GMT-08:00)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 26B593B300B8
+	for &lt;hans.mercado.sharp@a.markmail.org&gt;; Thu, 14 Jan 2010 04:36:18 -0800 (PST)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (Postfix) with ESMTP id 0CD1A63B0156
+	for &lt;hans.mercado.sharp@a.markmail.org&gt;; Thu, 14 Jan 2010 04:36:18 -0800 (PST)</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id o0ECaHgK024484
+	for hans.mercado.sharp@a.markmail.org; Thu, 14 Jan 2010 04:36:17 -0800</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.mongodb-user</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>0cf69bbbe0dacc0e</x-markmail-googlegroups-mid><x-beenthere>mongodb-user@googlegroups.com</x-beenthere><received>by 10.229.100.199 with SMTP id z7ls49975qcn.0.p; Thu, 14 Jan 2010 
+	03:57:06 -0800 (PST)</received><received>by 10.229.24.205 with SMTP id w13mr44536qcb.13.1263470226303;
+        Thu, 14 Jan 2010 03:57:06 -0800 (PST)</received><received>by 10.229.24.205 with SMTP id w13mr44535qcb.13.1263470226279;
+        Thu, 14 Jan 2010 03:57:06 -0800 (PST)</received><received>from qw-out-1920.google.com (qw-out-1920.google.com [74.125.92.145])
+        by gmr-mx.google.com with ESMTP id 18si238429qyk.5.2010.01.14.03.57.05;
+        Thu, 14 Jan 2010 03:57:05 -0800 (PST)</received><received-spf>pass (google.com: domain of eliothorow...@gmail.com designates 74.125.92.145 as permitted sender) client-ip=74.125.92.145;</received-spf><authentication-results>gmr-mx.google.com; spf=pass (google.com: domain of eliothorow...@gmail.com designates 74.125.92.145 as permitted sender) smtp.mail=eliothorow...@gmail.com; dkim=pass (test mode) header...@gmail.com</authentication-results><received>by qw-out-1920.google.com with SMTP id 14so582787qwa.4
+        for &lt;mongodb-user@googlegroups.com&gt;; Thu, 14 Jan 2010 03:57:05 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:from:to
+         :in-reply-to:content-type:content-transfer-encoding:x-mailer
+         :mime-version:subject:date:references;
+        bh=+072XP/uqMx9e7qtM6CdvKzlMt28IaVR6N6KX5heN64=;
+        b=QmR5hsV4ywhEGOhYmxebU0y386SYf6YmmtKQsO5529i3wRD9AbzfFbdCwYimeT6I1H
+         vF7AzBdQ2kd44Cc2gHjRwUsv7Tpp4yyQCQpM5aLAMtedLTzcfJSZm5dxFqMbiyKRJVcu
+         g0pXjrh6VuuVR7hFPnabFXGZY4Tp4rk0ncn68=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:from:to:in-reply-to:content-type
+         :content-transfer-encoding:x-mailer:mime-version:subject:date
+         :references;
+        b=eqNKAfdDR5Az6qHtT1812E/fpEcbTLI2YtF79pqVhShq/i32ne1v/d8ahBktFly73z
+         5MXEryOLJrPOiz1c0X0jt0NDYV+mKijfdUvdusNW5Guyenx6dId6XdAIf2IPhAzML6Ie
+         AUtCf57d5bhQvW3LDs2oejjjWXmS5+YFWXsFA=</domainkey-signature><received>by 10.224.89.196 with SMTP id f4mr498572qam.90.1263470224970;
+        Thu, 14 Jan 2010 03:57:04 -0800 (PST)</received><received>from ?192.168.1.24? (207-237-227-239.c3-0.nyr-ubr1.nyr.ny.cable.rcn.com [207.237.227.239])
+        by mx.google.com with ESMTPS id 23sm538964qyk.7.2010.01.14.03.57.03
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Thu, 14 Jan 2010 03:57:04 -0800 (PST)</received><message-id>C268F9E3-AB7C-4108-B76B-5617EEAC6...@gmail.com</message-id><in-reply-to>&lt;670fee54-8d8e-4400-bbfd-dfb3bcfa5...@m25g2000yqc.googlegroups.com&gt;</in-reply-to><content-type>text/plain;
+	charset=utf-8;
+	format=flowed;
+	delsp=yes</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding><x-mailer>iPhone Mail (7D11)</x-mailer><mime-version>1.0 (iPhone Mail 7D11)</mime-version><date>Thu, 14 Jan 2010 06:56:59 -0500</date><references>&lt;670fee54-8d8e-4400-bbfd-dfb3bcfa5...@m25g2000yqc.googlegroups.com&gt;</references></headers><normalized-references><normalized-message-id>C268F9E3-AB7C-4108-B76B-5617EEAC6...@gmail.com</normalized-message-id><normalized-in-reply-to>670fee54-8d8e-4400-bbfd-dfb3bcfa5...@m25g2000yqc.googlegroups.com</normalized-in-reply-to><normalized-reference>670fee54-8d8e-4400-bbfd-dfb3bcfa5...@m25g2000yqc.googlegroups.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=utf-8;&#13;&#10;&#9;format=flowed;&#13;&#10;&#9;delsp=yes"><para depth="0">It gets 4mb of data at a time. So othere operations get interleaved so  
+there is no blocking issue
+
+</para><para depth="0">On Jan 14, 2010, at 4:24 AM, Thibaut Barrère  
+&lt;<email>thibaut.barr...@gmail.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">Hi,
+
+</quotepara><quotepara depth="1">I'm working on code to export ~15k rows from MongoDB to CSV.
+
+</quotepara><quotepara depth="1">My understanding (based on what I read here:
+<url>http://www.mongodb.org/display/DOCS/Ruby+Tutorial#RubyTutorial-UsingaCursortogetalloftheDocuments</url>
+)
+is that the find() call will be able to iterate over a large number of
+records, because it's actually a cursor underneath, so I think things
+should work just fine.
+
+</quotepara><quotepara depth="1">But I'd rather ask: what are the implications of using find() on a
+large number of records for iteration ? Is is a locking operation ? As
+the export is not an instantaneous process, what happens if an insert
+occurs in the middle of the export ?
+
+</quotepara><quotepara depth="1">thanks!
+
+</quotepara><quotefooter type="signature" depth="1" hash="10736972505375003112">Thibaut
+</quotefooter><quotefooter type="signature" depth="1" hash="2615458753382231994">--
+<url>http://www.learnivore.com</url>
+</quotefooter><quotefooter type="list-management" depth="1">-- 
+You received this message because you are subscribed to the Google  
+Groups "mongodb-user" group.
+To post to this group, send email to <email>mongodb-user@googlegroups.com</email>.
+To unsubscribe from this group, send email to<br/>mongodb-user+<email>unsubscribe@googlegroups.com</email> 
+.
+For more options, visit this group at<br/><url>http://groups.google.com/group/mongodb-user?hl=en</url> 
+.
+
+</quotefooter></quote></body></message>

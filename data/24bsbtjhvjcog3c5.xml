@@ -1,0 +1,39 @@
+<message message-id="20090730154555.C614FF08037@sc82-ffo.sjc.collab.net" list="org.funambol.forge.core.commits" id="24bsbtjhvjcog3c5" type="checkins" date="2009-07-30T07:45:34.37436-08:00" year="2009-01-01" year-month="2009-07-01" year-month-day="2009-07-30" thread-id="24bsbtjhvjcog3c5"><headers><envelope-from-line>Thu Jul 30 07:45:57 2009</envelope-from-line><from personal="Marco Testa" address="marco.testa@funambol.com">Marco Testa &lt;marco.testa@funambol.com&gt;</from><to personal="commits@core.forge.funambol.org" address="commits@core.forge.funambol.org">commits@core.forge.funambol.org</to><subject normal="svn commit: r31720 - branches/us1334/funambol/modules/email/email-core/src/main/java/com/funambol/email/engine/source/CacheDAO.java">svn commit: r31720 - branches/us1334/funambol/modules/email/email-core/src/main/java/com/funambol/email/engine/source/CacheDAO.java</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 424
+          for &lt;chris.fox.farrell@a.markmail.org&gt;;
+          Thu, 30 Jul 2009 07:45:57 -0800 (GMT-08:00)</received><received>from sc82-ffo.sjc.collab.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 0C9BD29082EE
+	for &lt;chris.fox.farrell@a.markmail.org&gt;; Thu, 30 Jul 2009 08:45:34 -0700 (PDT)</received><received>from sc82-ffo.sjc.collab.net (localhost [127.0.0.1])
+	by sc82-ffo.sjc.collab.net (Postfix) with ESMTP id 05F04F08037;
+	Thu, 30 Jul 2009 08:45:57 -0700 (PDT)</received><received>from localhost ([127.0.0.1])          by Mail Reader Service (JAMES SMTP Server 2.3.0) with SMTP ID 726          for &lt;commits@core.forge.funambol.org.mrs&gt;;          Thu, 30 Jul 2009 08:45:55 -0700 (PDT)</received><received>by sc82-ffo.sjc.collab.net (Postfix, from userid 5000)	id C614FF08037; Thu, 30 Jul 2009 08:45:55 -0700 (PDT)</received><date>Thu, 30 Jul 2009 08:45:55 -0700 (PDT)</date><reply-to>dev@core.forge.funambol.org</reply-to><message-id>20090730154555.C614FF08037@sc82-ffo.sjc.collab.net</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding><list-unsubscribe>&lt;http://core.forge.funambol.org/ds/viewForumSummary.do?dsForumId=403&gt;</list-unsubscribe><list-subscribe>&lt;http://core.forge.funambol.org/ds/viewForumSummary.do?dsForumId=403&gt;</list-subscribe><list-archive>&lt;http://core.forge.funambol.org/ds/viewForumSummary.do?dsForumId=403&gt;</list-archive><list-id>&lt;commits.core.forge.funambol.org&gt;</list-id><x-no-archive>no</x-no-archive><x-no-archive>no</x-no-archive><precedence>bulk</precedence></headers><normalized-references><normalized-message-id>20090730154555.C614FF08037@sc82-ffo.sjc.collab.net</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Author: testa
+Date: 2009-07-30 15:45:55+0000
+New Revision: 31720
+
+</para><para depth="0">Modified:
+   branches/us1334/funambol/modules/email/email-core/src/main/java/com/funambol/email/engine/source/CacheDAO.java
+
+</para><para depth="0">Log:
+The getLocalItems method returns a Map nstead of a LinkedHashMap
+
+</para><para depth="0">Modified:<br/>branches/us1334/funambol/modules/email/email-core/src/main/java/com/funambol/email/engine/source/CacheDAO.java
+Url:<br/><url>https://core.forge.funambol.org/source/browse/core/branches/us1334/funambol/modules/email/email-core/src/main/java/com/funambol/email/engine/source/CacheDAO.java?view=diff&amp;pathrev=31720&amp;r1=31719&amp;r2=31720</url>
+==============================================================================
+---<br/>branches/us1334/funambol/modules/email/email-core/src/main/java/com/funambol/email/engine/source/CacheDAO.java<br/>(original)
++++<br/>branches/us1334/funambol/modules/email/email-core/src/main/java/com/funambol/email/engine/source/CacheDAO.java<br/>2009-07-30 15:45:55+0000
+@@ -275,9 +275,9 @@
+      * @return LinkedHashMap a map of Cache items with guid as key
+      * @throws EntityException if an error occurs
+      */
+-    public LinkedHashMap&lt;String, CacheItem&gt; getLocalItems(String sourceURI  ,
+-                                                      long   principalId,
+-                                                      String username   )
++    public Map&lt;String, CacheItem&gt; getLocalItems(String sourceURI  ,
++                                                long   principalId,
++                                                String username   )
+     throws EntityException {
+
+</para><para depth="0">         Connection connection   = null;
+
+</para><para depth="0">------------------------------------------------------
+<url>https://core.forge.funambol.org/ds/viewMessage.do?dsForumId=403&amp;dsMessageId=62489</url>
+</para></body></message>

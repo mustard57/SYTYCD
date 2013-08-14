@@ -1,0 +1,79 @@
+<message message-id="1252366886.26.0.132828809391.issue6817@psf.upfronthosting.co.za" list="org.python.python-bugs-list" id="24c5unb75xjeepue" type="bugs" date="2009-09-07T15:41:09.462299-08:00" year="2009-01-01" year-month="2009-09-01" year-month-day="2009-09-07" thread-id="p3znjqvakymgzixe"><headers><envelope-from-line>Mon Sep 07 15:41:32 2009</envelope-from-line><from personal="STINNER Victor" address="report@bugs.python.org">STINNER Victor &lt;report@bugs.python.org&gt;</from><to personal="python-bugs-list@python.org" address="python-bugs-list@python.org">python-bugs-list@python.org</to><subject normal="[issue6817] char buffer in function posix_getcwdu should not be fix length">[issue6817] char buffer in function posix_getcwdu should not be fix length</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 328
+          for &lt;velma.pena.rice@a.markmail.org&gt;;
+          Mon, 7 Sep 2009 15:41:32 -0800 (GMT-08:00)</received><received>from mail.python.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id B84613B300DE
+	for &lt;velma.pena.rice@a.markmail.org&gt;; Mon,  7 Sep 2009 16:41:08 -0700 (PDT)</received><received>from albatross.python.org (localhost.localdomain [127.0.0.1])
+	by mail.python.org (Postfix) with ESMTP id 2342AC7DC
+	for &lt;velma.pena.rice@a.markmail.org&gt;; Tue,  8 Sep 2009 01:41:31 +0200 (CEST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/simple; d=python.org; s=200901;
+	t=1252366891; bh=m893IfP3+RrNoJOQ41evoi8ACPp2dnnYRQMVTk546bc=;
+	h=MIME-Version:Subject:To:From:Date:MIME-Version:Message-Id:
+	 In-Reply-To:Reply-To:List-Id:List-Unsubscribe:List-Archive:
+	 List-Post:List-Help:List-Subscribe:Content-Type:
+	 Content-Transfer-Encoding:Sender;
+	b=pbrkjSLh+uf+PpJi/fWObpTKzWvceSR57hYTpGXFD8CcSJrtpTihHGR2Ap05prmIz
+	 sOuxqnrZa03qkb/LhOoZiDHKrbbuPDkqBWbKGZW7kRTw3kU3KBUqA61I7HbYtIlNMr
+	 jazzo/6Ep6arqpGA129M3IYv+LaMRtA4P2EC2FsA=</dkim-signature><x-original-to>python-bugs-list@python.org</x-original-to><delivered-to>python-bugs-list@mail.python.org</delivered-to><received>from albatross.python.org (localhost.localdomain [127.0.0.1])
+	by mail.python.org (Postfix) with ESMTP id 6E28CC752
+	for &lt;python-bugs-list@python.org&gt;;
+	Tue,  8 Sep 2009 01:41:26 +0200 (CEST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/simple; d=python.org; s=200901;
+	t=1252366886; i=@python.org;
+	bh=9zZQpkBCXYCBlg6Tg+7E2UxM0ZJrryYR2nbFCFzpalc=;
+	h=MIME-Version:Content-Type:Subject:To:From:Date:MIME-Version:
+	Reply-To:Message-Id:In-Reply-To:Content-Transfer-Encoding;
+	b=uyBRstXj5sqXOL90ALVa60HGji7q2nRkM1Xn+e6WxrgGb7TbZr3Akt2ATjzrf5jhS
+	2jt9I8OXQP8GbKPnG9zamZr6t+oazAV1z/Df5RIh4NJq1Sjey7nZfUlgNg7kcauMW7
+	ZzvcbXGibNBABBQUQ+4NHLfHcF+QRE9ldEWQvuF4=</dkim-signature><x-spam-status>OK 0.000</x-spam-status><x-spam-evidence>'*H*': 1.00; '*S*': 0.00; 'python': 0.03; 'unix':
+	0.04; 'versions': 0.04; '----------': 0.05; 'url:bugs': 0.07;
+	'comment:': 0.09; 'fixes': 0.09; 'subject:char': 0.09; 'windows.':
+	0.09; 'header:In-Reply-To:1': 0.10; '"#ifdef': 0.16; 'branch,':
+	0.16; 'buf': 0.16; 'from:addr:bugs.python.org': 0.16;
+	'from:addr:report': 0.16; 'function.': 0.16; 'getcwd': 0.16;
+	'header:MIME-Version:2': 0.16; 'message-
+	id:@psf.upfronthosting.co.za': 0.16; 'py3k': 0.16;
+	'received:10.0.0.1': 0.16; 'received:88.198.142': 0.16;
+	'received:88.198.142.26': 0.16;
+	'received:psf.upfronthosting.co.za': 0.16;
+	'received:upfronthosting.co.za': 0.16; 'reply-
+	to:addr:bugs.python.org': 0.16; 'reply-to:addr:report': 0.16;
+	'reply-to:name:python tracker': 0.16; 'res': 0.16; 'stinner':
+	0.16; 'subject:function': 0.16; 'subject:should': 0.16; 'to:addr
+	:python-bugs-list': 0.16; 'tracker': 0.16; 'subject:] ': 0.19;
+	'code': 0.24; 'patch': 0.27; 'subject:[': 0.28; 'bytes': 0.33;
+	'windows': 0.35; 'same': 0.37; 'there': 0.37; 'but': 0.39;
+	'to:addr:python.org': 0.39; 'header:Received:3': 0.61;
+	'received:co.za': 0.70; 'subject:skip:p 10': 0.71; 'header:Reply-
+	To:1': 0.76; 'received:za': 0.77; 'dead': 0.84; 'declared': 0.84;
+	'subject: \n\t': 0.88</x-spam-evidence><received>from localhost.localdomain (HELO mail.python.org) (127.0.0.1)
+	by albatross.python.org with SMTP; 08 Sep 2009 01:41:26 +0200</received><received>from psf.upfronthosting.co.za (bugs.python.org [88.198.142.26])
+	by mail.python.org (Postfix) with ESMTP
+	for &lt;python-bugs-list@python.org&gt;;
+	Tue,  8 Sep 2009 01:41:26 +0200 (CEST)</received><received>from psf.upfronthosting.co.za (localhost [10.0.0.1])
+	by psf.upfronthosting.co.za (Postfix) with ESMTP id 49B1978636
+	for &lt;python-bugs-list@python.org&gt;;
+	Tue,  8 Sep 2009 01:41:26 +0200 (CEST)</received><x-mailbox-line>From nobody Mon Sep  7 23:41:26 2009</x-mailbox-line><mime-version>1.0</mime-version><date>Mon, 07 Sep 2009 23:41:26 +0000</date><precedence>bulk</precedence><x-roundup-name>Python tracker</x-roundup-name><x-roundup-loop>hello</x-roundup-loop><x-roundup-version>1.4.8</x-roundup-version><mime-version>1.0</mime-version><message-id>1252366886.26.0.132828809391.issue6817@psf.upfronthosting.co.za</message-id><x-roundup-issue-status>open</x-roundup-issue-status><x-roundup-issue-files>patch_get_cwdu.diff</x-roundup-issue-files><x-roundup-issue-keywords>patch</x-roundup-issue-keywords><x-roundup-issue-severity>normal</x-roundup-issue-severity><in-reply-to>&lt;1251860266.99.0.218849353808.issue6817@psf.upfronthosting.co.za&gt;</in-reply-to><x-beenthere>python-bugs-list@python.org</x-beenthere><x-mailman-version>2.1.12</x-mailman-version><reply-to>Python tracker &lt;report@bugs.python.org&gt;</reply-to><list-id>List which receives bug reports on Python
+	&lt;python-bugs-list.python.org&gt;</list-id><list-unsubscribe>&lt;http://mail.python.org/mailman/options/python-bugs-list&gt;,
+	&lt;mailto:python-bugs-list-request@python.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://mail.python.org/pipermail/python-bugs-list&gt;</list-archive><list-post>&lt;mailto:python-bugs-list@python.org&gt;</list-post><list-help>&lt;mailto:python-bugs-list-request@python.org?subject=help&gt;</list-help><list-subscribe>&lt;http://mail.python.org/mailman/listinfo/python-bugs-list&gt;,
+	&lt;mailto:python-bugs-list-request@python.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>python-bugs-list-bounces+velma.pena.rice=a.markmail.org@python.org</sender><errors-to>python-bugs-list-bounces+velma.pena.rice=a.markmail.org@python.org</errors-to></headers><normalized-references><normalized-message-id>1252366886.26.0.132828809391.issue6817@psf.upfronthosting.co.za</normalized-message-id><normalized-in-reply-to>1251860266.99.0.218849353808.issue6817@psf.upfronthosting.co.za</normalized-in-reply-to></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">
+STINNER Victor &lt;<email>victor.stinner@haypocalc.com</email>&gt; added the comment:
+
+</para><para depth="0">The "#ifdef MS_WINDOWS" is not a the right place in posix_getcwdu(): buf and
+res are declared but unused, and there is dead code on Windows.
+
+</para><para depth="0">The patch only fixes the UNIX implementation, not the Windows
+implementation.
+
+</para><para depth="0">In the py3k branch, bytes and unicode versions of getcwd are factorized in a
+common function. The same should be done in python trunk.
+
+</para><footer type="noise" depth="0">----------
+
+</footer><footer type="signature" depth="0" hash="5274729633919715436">_______________________________________
+Python tracker &lt;<email>report@bugs.python.org</email>&gt;
+&lt;<url>http://bugs.python.org/issue6817</url>&gt;
+</footer><footer type="noise" depth="0">_______________________________________
+</footer><footer type="list-management" depth="0">_______________________________________________
+Python-bugs-list mailing list
+Unsubscribe:<br/><url>http://mail.python.org/mailman/options/python-bugs-list/velma.pena.rice%40a.markmail.org</url>
+
+</footer></body></message>

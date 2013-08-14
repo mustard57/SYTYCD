@@ -1,0 +1,36 @@
+<message message-id="8982951.5138.1310423426178.JavaMail.geo-discussion-forums@yqad28" list="com.googlegroups.3dwh" id="24asm2o2q4iwkf7g" type="general" date="2011-07-11T15:30:26-07:00" year="2011-01-01" year-month="2011-07-01" year-month-day="2011-07-11" thread-id="3gyp4urpdnc4oul2"><headers><envelope-from-line>Mon Jul 11 14:31:02 2011</envelope-from-line><from personal="SnowTiger" address="snowtiger@modelstoglobe.com">SnowTiger &lt;snowtiger@modelstoglobe.com&gt;</from><to personal="3dwh@googlegroups.com" address="3dwh@googlegroups.com">3dwh@googlegroups.com</to><subject normal="how do u make such good models snow tiger?">Re: how do u make such good models snow tiger?</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 337
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Mon, 11 Jul 2011 14:31:02 -0800 (GMT-08:00)</received><received>from mail-yi0-f60.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id B3DA33B30274
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Mon, 11 Jul 2011 15:30:38 -0700 (PDT)</received><received>by yic24 with SMTP id 24sf4110054yic.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Mon, 11 Jul 2011 15:31:01 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:date:from:reply-to:to:message-id:in-reply-to:subject
+         :mime-version:x-original-sender:precedence:mailing-list:list-id
+         :x-google-group-id:list-post:list-help:list-archive:sender
+         :list-subscribe:list-unsubscribe:content-type;
+        bh=II4fXz4Av2UxanbNtmEvdzjFXwsf2puHvhGe/PkCw3E=;
+        b=ALF3spV4xXbeboIPvNRYQPNg0phYMECC56fQcjA3tOBLPh430AiNZgkEv+h2qkR4vm
+         pjSFw7cW0GTr7TO8XHAvPYHsBt12WmmVrPN5Fhgh3vAphh5PM2t2/cwt/vccpMmlC92Y
+         SK99RVG/kE6oDRad4hL3zAWhOKXNgbDicGqG4=</dkim-signature><received>by 10.90.207.15 with SMTP id e15mr433265agg.56.1310423461395;
+        Mon, 11 Jul 2011 15:31:01 -0700 (PDT)</received><x-beenthere>3dwh@googlegroups.com</x-beenthere><received>by 10.91.69.31 with SMTP id w31ls196774agk.2.gmail; Mon, 11 Jul 2011
+ 15:30:26 -0700 (PDT)</received><received>by 10.91.160.33 with SMTP id m33mr780482ago.3.1310423426661;
+        Mon, 11 Jul 2011 15:30:26 -0700 (PDT)</received><date>Mon, 11 Jul 2011 15:30:26 -0700 (PDT)</date><reply-to>3dwh@googlegroups.com</reply-to><message-id>8982951.5138.1310423426178.JavaMail.geo-discussion-forums@yqad28</message-id><in-reply-to>&lt;19065462.4491.1310414701471.JavaMail.geo-discussion-forums@yqyy3&gt;</in-reply-to><mime-version>1.0</mime-version><x-original-sender>snowtiger@modelstoglobe.com</x-original-sender><precedence>list</precedence><mailing-list>list 3dwh@googlegroups.com; contact 3dwh+owners@googlegroups.com</mailing-list><list-id>&lt;3dwh.googlegroups.com&gt;</list-id><x-google-group-id>500668364543</x-google-group-id><list-post>&lt;http://groups.google.com/group/3dwh/post?hl=en_US&gt;, &lt;mailto:3dwh@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:3dwh+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/3dwh?hl=en_US&gt;</list-archive><sender>3dwh@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/3dwh/subscribe?hl=en_US&gt;, &lt;mailto:3dwh+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/3dwh/subscribe?hl=en_US&gt;, &lt;mailto:3dwh+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>multipart/alternative; 
+	boundary="----=_Part_5137_23906095.1310423426177"</content-type></headers><normalized-references><normalized-message-id>8982951.5138.1310423426178.JavaMail.geo-discussion-forums@yqad28</normalized-message-id><normalized-in-reply-to>19065462.4491.1310414701471.JavaMail.geo-discussion-forums@yqyy3</normalized-in-reply-to></normalized-references><body multipart="multipart/alternative; &#13;&#10;&#9;boundary=&quot;----=_part_5137_23906095.1310423426177&quot;" type="text/plain; charset=ISO-8859-1"><para depth="0">BTW - Here is one more tip.
+
+</para><para depth="0">It can be difficult to estimate or determine exact building heights in many 
+cases.
+While sometimes this information is available on the web, many times it is 
+not.
+When all else fails, and providing the Satellite Image has a Date Stamp on 
+it (or even when there is none, the date and time can be estimated), you can 
+often get very close to the correct/actual height using Shadows, providing 
+you can see a shadow in the sat. image as in most cases.
+It's not perfect, but it's better than simply guessing.
+
+</para><footer type="signature" depth="0" hash="18060797537150143169">-- 
+You received this message because you are subscribed to the "3D Modeling for<br/>Google Earth &amp; Maps" group.
+
+</footer><para depth="0">To participate in this discussion or adjust your membership options, visit<br/><url>http://sketchup.google.com/3dwarehouse/forum</url>
+</para></body></message>

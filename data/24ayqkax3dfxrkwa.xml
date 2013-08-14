@@ -1,0 +1,34 @@
+<message message-id="20091212152038.13468.qmail@dev.java.net" list="net.java.dev.maven2-repository.commits" id="24ayqkax3dfxrkwa" no-archive="yes" type="checkins" date="2009-12-12T07:20:16.23271-08:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-12" thread-id="24ayqkax3dfxrkwa"><headers><envelope-from-line>Sat Dec 12 07:20:39 2009</envelope-from-line><from personal="kohsuke@dev.java.net" address="kohsuke@dev.java.net">kohsuke@dev.java.net</from><to personal="commits@maven2-repository.dev.java.net" address="commits@maven2-repository.dev.java.net">commits@maven2-repository.dev.java.net</to><subject normal="svn commit: r1437662 - trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT">svn commit: r1437662 - trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 22
+          for &lt;cindy.hensley.frank@a.markmail.org&gt;;
+          Sat, 12 Dec 2009 07:20:39 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id B483E2908184
+	for &lt;cindy.hensley.frank@a.markmail.org&gt;; Sat, 12 Dec 2009 07:20:15 -0800 (PST)</received><received>(qmail 13494 invoked by uid 5000); 12 Dec 2009 15:20:38 -0000</received><mailing-list>contact commits-help@maven2-repository.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:commits-help@maven2-repository.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@maven2-repository.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:commits@maven2-repository.dev.java.net&gt;</list-post><reply-to>commits@maven2-repository.dev.java.net</reply-to><delivered-to>mailing list commits@maven2-repository.dev.java.net</delivered-to><received>(qmail 13475 invoked by uid 5000); 12 Dec 2009 15:20:38 -0000</received><date>12 Dec 2009 15:20:38 -0000</date><message-id>20091212152038.13468.qmail@dev.java.net</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20091212152038.13468.qmail@dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: kohsuke
+Date: 2009-12-12 15:20:36+0000
+New Revision: 1437662
+
+</para><para depth="0">Modified:
+   trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom
+   trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.md5
+   trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.sha1
+
+</para><para depth="0">Log:
+Upload by wagon-svn
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom?view=diff&amp;rev=1437662&amp;p1=trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom&amp;p2=trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom&amp;r1=1437661&amp;r2=1437662</url>
+==============================================================================
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.md5
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.md5?view=diff&amp;rev=1437662&amp;p1=trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.md5&amp;p2=trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.md5&amp;r1=1437661&amp;r2=1437662</url>
+==============================================================================
+
+</para><para depth="0">Modified:<br/>trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.sha1
+Url:<br/><url>https://maven2-repository.dev.java.net/source/browse/maven2-repository/trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.sha1?view=diff&amp;rev=1437662&amp;p1=trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.sha1&amp;p2=trunk/repository/org/atmosphere/atmosphere-jgroups/0.5-SNAPSHOT/atmosphere-jgroups-0.5-SNAPSHOT.pom.sha1&amp;r1=1437661&amp;r2=1437662</url>
+==============================================================================
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>commits-unsubscribe@maven2-repository.dev.java.net</email>
+For additional commands, e-mail: <email>commits-help@maven2-repository.dev.java.net</email>
+
+</footer></body></message>

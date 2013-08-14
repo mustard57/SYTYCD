@@ -1,0 +1,43 @@
+<message message-id="000801c73f13$f4823150$123aa8c0@netscan.ca" list="net.php.lists.php-general" id="24aq4vvtdajlrzp4" type="general" date="2007-01-23T12:28:54-05:00" year="2007-01-01" year-month="2007-01-01" year-month-day="2007-01-23" thread-id="p2zkepgtaomulkpn"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Beauford" address="phpuser@netscan.ca">Beauford &lt;phpuser@netscan.ca&gt;</from><to personal="'PHP'" address="php-general@lists.php.net">'PHP' &lt;php-general@lists.php.net&gt;</to><subject normal="[PHP] preg_match problem">RE: [PHP] preg_match problem</subject><newsgroups>php.general</newsgroups><path>news.php.net</path><xref>news.php.net php.general:247630</xref><return-path>phpuser@netscan.ca</return-path><mailing-list>contact php-general-help@lists.php.net; run by ezmlm</mailing-list><delivered-to>mailing list php-general@lists.php.net</delivered-to><received>(qmail 47245 invoked by uid 1010); 23 Jan 2007 17:30:56 -0000</received><delivered-to>ezmlm-scan-php-general@lists.php.net</delivered-to><delivered-to>ezmlm-php-general@lists.php.net</delivered-to><received>(qmail 47223 invoked from network); 23 Jan 2007 17:30:56 -0000</received><received>from unknown (HELO lists.php.net) (127.0.0.1)
+  by localhost with SMTP; 23 Jan 2007 17:30:56 -0000</received><authentication-results>pb1.pair.com smtp.mail=phpuser@netscan.ca; spf=permerror; sender-id=unknown</authentication-results><authentication-results>pb1.pair.com header.from=phpuser@netscan.ca; sender-id=unknown</authentication-results><received-spf>error (pb1.pair.com: domain netscan.ca from 206.248.190.45 cause and error)</received-spf><x-php-list-original-sender>phpuser@netscan.ca</x-php-list-original-sender><x-host-fingerprint>206.248.190.45 netscan.ca Windows 2000 SP2+, XP SP1 (seldom 98 4.10.2222)</x-host-fingerprint><received>from [206.248.190.45] ([206.248.190.45:62636] helo=netscan.ca)
+	by pb1.pair.com (ecelerity 2.1.1.9-wez r(12769M)) with ESMTP
+	id 40/43-17963-D4646B54 for &lt;php-general@lists.php.net&gt;; Tue, 23 Jan 2007 12:30:55 -0500</received><received>from creeve [192.168.58.18] by netscan.ca with ESMTP
+  (SMTPD32-8.00) id A5D91EF000B6; Tue, 23 Jan 2007 12:28:57 -0500</received><date>Tue, 23 Jan 2007 12:28:54 -0500</date><message-id>000801c73f13$f4823150$123aa8c0@netscan.ca</message-id><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-mailer>Microsoft Office Outlook 11</x-mailer><thread-index>Acc+7Tm5LXp6q0WsRfejbKoWfxgAVAAJdrUw</thread-index><x-mimeole>Produced By Microsoft MimeOLE V6.00.2900.2962</x-mimeole><in-reply-to>&lt;52dbac0f0701230452m6a17f77g99317337a94e2b7d@mail.gmail.com&gt;</in-reply-to><references>&lt;52dbac0f0701230452m6a17f77g99317337a94e2b7d@mail.gmail.com&gt;</references></headers><normalized-references><normalized-message-id>000801c73f13$f4823150$123aa8c0@netscan.ca</normalized-message-id><normalized-thread-index>Acc+7Tm5LXp6q0WsRfejbKoWfxgAVA</normalized-thread-index><normalized-in-reply-to>52dbac0f0701230452m6a17f77g99317337a94e2b7d@mail.gmail.com</normalized-in-reply-to><normalized-reference>52dbac0f0701230452m6a17f77g99317337a94e2b7d@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;us-ascii&quot;"><para depth="0">
+</para><quote depth="1"><quotepara depth="1">if (preg_match('/^[A-Za-z0-9!@#$%&amp;()*;:_.'\\/\\\\ ]+$/', $string))
+
+</quotepara><quotepara depth="1">Use single quotes and double back-slashes. PHP strings also 
+have escape sequences that use the back-slash as escape 
+character, that's why you have to double them. And single 
+quotes to avoid the $ character interpreted as the start of a 
+variable.
+
+</quotepara><quotepara depth="1">PS: Will we be risking going the perl way if we ask that PHP 
+supported regular expressions natively (I mean: without 
+having to provide them as strings)?
+</quotepara></quote><para depth="0">
+I have tried all the examples posted in the last couple of days, and none of
+them, including the above work. Is there another solution to this, as this
+just seems to be way to buggy?
+
+</para><para depth="0">Warning: Unexpected character in input: '\' (ASCII=92) state=1 in
+/constants.php on line 107
+
+</para><para depth="0">Warning: Unexpected character in input: '\' (ASCII=92) state=1 in
+//constants.php on line 107
+
+</para><para depth="0">Warning: Unexpected character in input: '\' (ASCII=92) state=1 in
+/constants.php on line 107
+
+</para><para depth="0">Warning: Unexpected character in input: '\' (ASCII=92) state=1 in
+/constants.php on line 107
+
+</para><para depth="0">Warning: Unexpected character in input: '\' (ASCII=92) state=1 in
+//constants.php on line 107
+
+</para><para depth="0">Warning: Unexpected character in input: '\' (ASCII=92) state=1 in
+//constants.php on line 107
+
+</para><para depth="0">Parse error: syntax error, unexpected ']' in //constants.php on line 107 
+
+</para></body></message>

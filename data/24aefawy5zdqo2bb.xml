@@ -1,0 +1,26 @@
+<message message-id="20110606175414.23447AC783@svn.kde.org" list="org.kde.kde-commits" id="24aefawy5zdqo2bb" type="checkins" date="2011-06-06T19:54:14+02:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-06" thread-id="sockg7nnrj4h4ugn"><headers><envelope-from-line>Mon Jun 06 09:54:42 2011</envelope-from-line><from personal="Ingo Malchow" address="ingomalchow@googlemail.com">Ingo Malchow &lt;ingomalchow@googlemail.com&gt;</from><to personal="kde-commits@kde.org" address="kde-commits@kde.org">kde-commits@kde.org</to><subject normal="www/sites/www/download">www/sites/www/download</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 483
+          for &lt;juliet.walls.arnold@a.markmail.org&gt;;
+          Mon, 6 Jun 2011 09:54:42 -0800 (GMT-08:00)</received><received>from ktown.kde.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 6DDCF29081E6
+	for &lt;juliet.walls.arnold@a.markmail.org&gt;; Mon,  6 Jun 2011 10:54:18 -0700 (PDT)</received><received>(qmail 9261 invoked by uid 72); 6 Jun 2011 17:54:40 -0000</received><received>(qmail 9253 invoked from network); 6 Jun 2011 17:54:38 -0000</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on ktown.kde.org</x-spam-checker-version><received>from unknown (HELO svn.kde.org) (195.135.221.69)
+	by ktown.kde.org with SMTP; 6 Jun 2011 17:54:38 -0000</received><received>by svn.kde.org (Postfix, from userid 50712)
+	id 23447AC783; Mon,  6 Jun 2011 19:54:14 +0200 (CEST)</received><x-commit-directories>(0) trunk/www/sites/www/download</x-commit-directories><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><message-id>20110606175414.23447AC783@svn.kde.org</message-id><date>Mon,  6 Jun 2011 19:54:14 +0200 (CEST)</date><x-beenthere>kde-commits@kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>kde-commits@kde.org</reply-to><list-id>Notification of KDE commits &lt;kde-commits.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-commits&gt;,
+	&lt;mailto:kde-commits-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-commits@kde.org&gt;</list-post><list-help>&lt;mailto:kde-commits-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-commits&gt;,
+	&lt;mailto:kde-commits-request@kde.org?subject=subscribe&gt;</list-subscribe><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>20110606175414.23447AC783@svn.kde.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">SVN commit 1235553 by imalchow:
+
+</para><para depth="0">fix link description
+
+</para><para depth="0"> M  +1 -1      index.php  
+
+</para><para depth="0">--- trunk/www/sites/www/download/index.php #1235552:1235553
+@@ -86,7 +86,7 @@
+ &lt;p&gt;
+ KDE SC 4.6 is the version for the majority of end users that look
+ for the latest stable KDE software release. Please see the
+-&lt;a href="/info/4.6.3.php"&gt;4.6.2 Info Page&lt;/a&gt; for details.
++&lt;a href="/info/4.6.3.php"&gt;4.6.3 Info Page&lt;/a&gt; for details.
+ &lt;/p&gt;
+
+</para><para depth="0"> &lt;a name="v3.5"&gt;&lt;/a&gt;&lt;h3&gt;KDE 3 series&lt;/h3&gt;
+</para></body></message>

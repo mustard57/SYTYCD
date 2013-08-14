@@ -1,0 +1,132 @@
+<message message-id="426DB7C8.5020708@canterbury.ac.nz" list="org.python.python-dev" id="24bzrxpiymsjyk6h" type="development" date="2005-04-26T05:39:09" year="2005-01-01" year-month="2005-04-01" year-month-day="2005-04-26" thread-id="osj6j4h4wi3fct7t"><headers><envelope-from-line>From greg.ewing@canterbury.ac.nz  Tue Apr 26 05:38:48 2005</envelope-from-line><from personal="Greg Ewing" address="greg.ewing@canterbury.ac.nz">Greg Ewing &lt;greg.ewing@canterbury.ac.nz&gt;</from><subject normal="[Python-Dev] Re: anonymous blocks">[Python-Dev] Re: anonymous blocks</subject><date>Tue Apr 26 05:39:09 2005</date><in-reply-to>&lt;ca471dc205042416572da9db71@mail.gmail.com&gt;</in-reply-to><references>&lt;ca471dc205042116402d7d38da@mail.gmail.com&gt;
+	&lt;ca471dc205042416572da9db71@mail.gmail.com&gt;</references><message-id>426DB7C8.5020708@canterbury.ac.nz</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>426DB7C8.5020708@canterbury.ac.nz</normalized-message-id><normalized-in-reply-to>ca471dc205042416572da9db71@mail.gmail.com</normalized-in-reply-to><normalized-reference>ca471dc205042116402d7d38da@mail.gmail.com</normalized-reference><normalized-reference>ca471dc205042416572da9db71@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Guido van Rossum wrote:
+
+</para><quote depth="1"><quotepara depth="1">    with VAR = EXPR:
+        BODY
+
+</quotepara><quotepara depth="1">This would translate to the following code:
+
+</quotepara><quotepara depth="1">    it = EXPR
+    err = None
+    while True:
+        try:
+            if err is None:
+                VAR = it.next()
+            else:
+                VAR = it.next_ex(err)
+        except StopIteration:
+            break
+        try:
+            err = None
+            BODY
+        except Exception, err: # Pretend "except Exception:" == "except:"
+            if not hasattr(it, "next_ex"):
+                raise
+</quotepara></quote><para depth="0">
+I like the general shape of this, but I have one or two
+reservations about the details.
+
+</para><para depth="0">1) We're going to have to think carefully about the naming of
+functions designed for use with this statement. If 'with'
+is going to be in there as a keyword, then it really shouldn't
+be part of the function name as well. Instead of
+
+</para><para depth="0">   with f = with_file(pathname):
+     ...
+
+</para><para depth="0">I would rather see something like
+
+</para><para depth="0">   with f = opened(pathname):
+     ...
+
+</para><para depth="0">This sort of convention (using a past participle as a function
+name) would work for some other cases as well:
+
+</para><para depth="0">   with some_data.locked():
+     ...
+
+</para><para depth="0">   with some_resource.allocated():
+     ...
+
+</para><para depth="0">On the negative side, not having anything like 'with' in the
+function name means that the fact the function is designed for
+use in a with-statement could be somewhat non-obvious. Since
+there's not going to be much other use for such a function,
+this is a bad thing.
+
+</para><para depth="0">It could also lead people into subtle usage traps such as
+
+</para><para depth="0">   with f = open(pathname):
+     ...
+
+</para><para depth="0">which would fail in a somewhat obscure way.
+
+</para><para depth="0">So maybe the 'with' keyword should be dropped (again!) in
+favour of
+
+</para><para depth="0">   with_opened(pathname) as f:
+     ...
+
+</para><para depth="0">2) I'm not sure about the '='. It makes it look rather deceptively
+like an ordinary assignment, and I'm sure many people are going
+to wonder what the difference is between
+
+</para><para depth="0">   with f = opened(pathname):
+     do_stuff_to(f)
+
+</para><para depth="0">and simply
+
+</para><para depth="0">   f = opened(pathname)
+   do_stuff_to(f)
+
+</para><para depth="0">or even just unconsciously read the first as the second without
+noticing that anything special is going on. Especially if they're
+coming from a language like Pascal which has a much less magical
+form of with-statement.
+
+</para><para depth="0">So maybe it would be better to make it look more different:
+
+</para><para depth="0">   with opened(pathname) as f:
+     ...
+
+</para><para depth="0">* It seems to me that this same exception-handling mechanism
+would be just as useful in a regular for-loop, and that, once
+it becomes possible to put 'yield' in a try-statement, people
+are going to *expect* it to work in for-loops as well.
+
+</para><para depth="0">Guido has expressed concern about imposing extra overhead on
+all for-loops. But would the extra overhead really be all that
+noticeable? For-loops already put a block on the block stack,
+so the necessary processing could be incorporated into the
+code for unwinding a for-block during an exception, and little
+if anything would need to change in the absence of an exception.
+
+</para><para depth="0">However, if for-loops also gain this functionality, we end up
+with the rather embarrassing situation that there is *no difference*
+in semantics between a for-loop and a with-statement!
+
+</para><para depth="0">This could be "fixed" by making the with-statement not loop,
+as has been suggested. That was my initial thought as well,
+but having thought more deeply, I'm starting to think that
+Guido was right in the first place, and that a with-statement
+should be capable of looping. I'll elaborate in another post.
+
+</para><quote depth="1"><quotepara depth="1">So a block could return a value to the generator using a return
+statement; the generator can catch this by catching ReturnFlow.
+(Syntactic sugar could be "VAR = yield ..." like in Ruby.)
+</quotepara></quote><para depth="0">
+This is a very elegant idea, but I'm seriously worried by the
+possibility that a return statement could do something other
+than return from the function it's written in, especially if
+for-loops also gain this functionality. Intercepting break
+and continue isn't so bad, since they're already associated
+with the loop they're in, but return has always been an
+unconditional get-me-out-of-this-function. I'd feel uncomfortable
+if this were no longer true.
+
+</para><footer type="signature" hash="9673456130793636827" depth="0">-- 
+Greg Ewing, Computer Science Dept, +--------------------------------------+
+University of Canterbury,	   | A citizen of NewZealandCorp, a	  |
+Christchurch, New Zealand	   | wholly-owned subsidiary of USA Inc.  |
+<email>greg.ewing@canterbury.ac.nz</email>	   +--------------------------------------+
+</footer></body></message>

@@ -1,0 +1,72 @@
+<message message-id="OF27046B65.E628C53E-ONC1257681.004B621C-C1257681.004B6222@unog.un.org" list="org.vtk.vtkusers" id="24b22xvbxeczmni4" type="general" date="2009-12-03T14:43:23+01:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-03" thread-id="24b22xvbxeczmni4"><headers><envelope-from-line>Thu Dec 03 06:04:57 2009</envelope-from-line><from personal="Jason BELLONE" address="JBELLONE@unog.ch">Jason BELLONE &lt;JBELLONE@unog.ch&gt;</from><to personal="vtkusers@vtk.org" address="vtkusers@vtk.org">vtkusers@vtk.org</to><subject normal="[vtkusers] InfoVis Provenance Patterns">[vtkusers] InfoVis Provenance Patterns</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 821
+          for &lt;benita.walton.melton@a.markmail.org&gt;;
+          Thu, 3 Dec 2009 06:04:57 -0800 (GMT-08:00)</received><received>from public.kitware.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 31D643B300C3
+	for &lt;benita.walton.melton@a.markmail.org&gt;; Thu,  3 Dec 2009 06:04:34 -0800 (PST)</received><received>by public.kitware.com (Postfix, from userid 5001)
+	id CB50116280; Thu,  3 Dec 2009 08:59:14 -0500 (EST)</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on public.kitware.com</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-2.6 required=2.0 tests=BAYES_00,HTML_MESSAGE
+	autolearn=unavailable version=3.2.5</x-spam-status><received>from public.kitware.com (localhost [127.0.0.1])
+	by public.kitware.com (Postfix) with ESMTP id 55810161CF;
+	Thu,  3 Dec 2009 08:59:04 -0500 (EST)</received><x-original-to>vtkusers@vtk.org</x-original-to><delivered-to>vtkusers@vtk.org</delivered-to><received>by public.kitware.com (Postfix, from userid 5001)
+	id DC1D816251; Thu,  3 Dec 2009 08:58:51 -0500 (EST)</received><x-greylist>delayed 1255 seconds by postgrey-1.31 at public;
+	Thu, 03 Dec 2009 08:58:45 EST</x-greylist><received>from ollie.ch.colt.net (ollie.ch.colt.net [212.23.235.147])
+	by public.kitware.com (Postfix) with ESMTP id B9B31161CF
+	for &lt;vtkusers@vtk.org&gt;; Thu,  3 Dec 2009 08:58:45 -0500 (EST)</received><received>from icts-webshield12.unog.ch (unknown [193.239.220.12])
+	by ollie.ch.colt.net (Postfix) with ESMTP id 99C691800C
+	for &lt;vtkusers@vtk.org&gt;; Thu,  3 Dec 2009 14:43:24 +0100 (CET)</received><received>from localhost (unknown [127.0.0.1])
+	by icts-webshield12.unog.ch (Postfix) with ESMTP id 1763516126
+	for &lt;vtkusers@vtk.org&gt;; Thu,  3 Dec 2009 13:45:04 +0000 (UTC)</received><received>from icts-webshield12.unog.ch ([127.0.0.1])
+	by localhost (icts-webshield12.unog.ch [127.0.0.1]) (amavisd-new,
+	port 10024) with ESMTP id dEDtGD57vOr1 for &lt;vtkusers@vtk.org&gt;;
+	Thu,  3 Dec 2009 14:45:03 +0100 (CET)</received><received>from hub01.unog.un.org (icts-btw1.unog.ch [10.18.36.8])
+	by icts-webshield12.unog.ch (Postfix) with ESMTP id C2EB6160FA
+	for &lt;vtkusers@vtk.org&gt;; Thu,  3 Dec 2009 14:45:03 +0100 (CET)</received><mime-version>1.0</mime-version><importance/><x-priority/><sensitivity/><date>Thu, 3 Dec 2009 14:43:23 +0100</date><message-id>OF27046B65.E628C53E-ONC1257681.004B621C-C1257681.004B6222@unog.un.org</message-id><x-mailer>Lotus Domino Web Server Release 7.0.3FP1 February 24, 2008</x-mailer><x-mimetrack>Serialize by Router on UNOG-HUB01/GVA/UNO(Release
+	7.0.2FP1|January 10, 2007) at 12/03/2009 14:43:24</x-mimetrack><x-beenthere>vtkusers@vtk.org</x-beenthere><x-mailman-version>2.1.10b4</x-mailman-version><precedence>list</precedence><list-id>&lt;vtkusers.vtk.org&gt;</list-id><list-unsubscribe>&lt;http://www.vtk.org/mailman/options/vtkusers&gt;,
+	&lt;mailto:vtkusers-request@vtk.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://www.vtk.org/pipermail/vtkusers&gt;</list-archive><list-post>&lt;mailto:vtkusers@vtk.org&gt;</list-post><list-help>&lt;mailto:vtkusers-request@vtk.org?subject=help&gt;</list-help><list-subscribe>&lt;http://www.vtk.org/mailman/listinfo/vtkusers&gt;,
+	&lt;mailto:vtkusers-request@vtk.org?subject=subscribe&gt;</list-subscribe><content-type>multipart/mixed; boundary="===============0603066246=="</content-type><mime-version>1.0</mime-version><sender>vtkusers-bounces@vtk.org</sender><errors-to>vtkusers-bounces@vtk.org</errors-to></headers><normalized-references><normalized-message-id>OF27046B65.E628C53E-ONC1257681.004B621C-C1257681.004B6222@unog.un.org</normalized-message-id></normalized-references><body><para depth="0">
+Greetings,
+
+</para><para depth="0">We are hoping to promote VTK for mainstream use within our organization as
+a platform for information visualization of global issues. Noting the
+recent developments of Titan in the areas of geovis and infovis, we see
+great potential for applications in our typical analysis use cases. Our
+task is to create a set of "provenance" patterns for conventional
+representations such as choropleth map, 3d bubble plot, social network,
+etc. We are currently using VisTrails to create these "recipes" to enable
+our non-technical user-base to select among the examples. This is the idea,
+but here is the problem. It seems that detailed documentation and examples
+for the infovis/geovis packages could benefit from some "real-life" test
+cases. For example, here is the current scenario we are working with:
+
+</para><para depth="0">a.) A world country border geometry provided as shapefile.
+b.) A CSV delimited file with Country ID (matching shapefile) and
+statistical information such as Population, GDP, etc.
+c.) A render of country polygons (based on SHP) where each country polygon
+is colored (choropleth) based on a statistical parameter.
+d.) A symbol marker (such as proportional cube) is placed on map based on
+statistical variable.
+
+</para><para depth="0">We would be very grateful for this community's indulgence to brainstorm and
+elaborate the VTK implementation of such a case. We are hoping your inputs
+can provide some needed guidance (pseudo code) for us to assemble the
+needed VTK logic.
+
+</para><para depth="0">If it would be useful, we would be happy to "give back" this work and
+provide detailed documentation for using VTK for these scenarios. In other
+words, we'd be happy to share what we learn by contributing instructional
+sources (wiki write-ups, etc.) for using VTK/Titan for common information
+visualization purposes.
+
+</para><para depth="0">Thank you kindly for your support and advice.
+
+</para><para depth="0">JB
+</para><para depth="0">_______________________________________________
+Powered by www.kitware.com
+
+</para><para depth="0">Visit other Kitware open-source projects at<br/><url>http://www.kitware.com/opensource/opensource.html</url>
+
+</para><para depth="0">Please keep messages on-topic and check the VTK FAQ at:<br/><url>http://www.vtk.org/Wiki/VTK_FAQ</url>
+
+</para><para depth="0">Follow this link to subscribe/unsubscribe:
+<url>http://www.vtk.org/mailman/listinfo/vtkusers</url>
+</para></body></message>

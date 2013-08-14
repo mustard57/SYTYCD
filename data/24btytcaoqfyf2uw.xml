@@ -1,0 +1,45 @@
+<message message-id="hglonu$nik$2@ger.gmane.org" list="com.ubuntu.lists.ubuntu-users" id="24btytcaoqfyf2uw" type="users" date="2009-12-20T10:00:31-08:00" year="2009-01-01" year-month="2009-12-01" year-month-day="2009-12-20" thread-id="xormvon4akgc6dkc"><headers><envelope-from-line>Sun Dec 20 10:06:05 2009</envelope-from-line><from personal="NoOp" address="glgxg@sbcglobal.net">NoOp &lt;glgxg@sbcglobal.net&gt;</from><to personal="ubuntu-users@lists.ubuntu.com" address="ubuntu-users@lists.ubuntu.com">ubuntu-users@lists.ubuntu.com</to><subject normal="How to reset things to their default, post-installation state?">Re: How to reset things to their default, post-installation state?</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 481
+          for &lt;antony.simon.franklin@a.markmail.org&gt;;
+          Sun, 20 Dec 2009 10:06:05 -0800 (GMT-08:00)</received><received>from chlorine.canonical.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 3072F29081A5
+	for &lt;antony.simon.franklin@a.markmail.org&gt;; Sun, 20 Dec 2009 10:05:42 -0800 (PST)</received><received>from localhost ([127.0.0.1] helo=chlorine.canonical.com)
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;ubuntu-users-bounces@lists.ubuntu.com&gt;)
+	id 1NMQ9j-0002Wd-Ke; Sun, 20 Dec 2009 18:05:23 +0000</received><received>from lo.gmane.org ([80.91.229.12])
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;gluu-ubuntu-users@m.gmane.org&gt;) id 1NMQ9h-0002Vu-Oa
+	for ubuntu-users@lists.ubuntu.com; Sun, 20 Dec 2009 18:05:21 +0000</received><received>from list by lo.gmane.org with local (Exim 4.50) id 1NMQ9V-0004Nn-7K
+	for ubuntu-users@lists.ubuntu.com; Sun, 20 Dec 2009 19:05:09 +0100</received><received>from adsl-69-228-202-248.dsl.pltn13.pacbell.net ([69.228.202.248])
+	by main.gmane.org with esmtp (Gmexim 0.1 (Debian))
+	id 1AlnuQ-0007hv-00
+	for &lt;ubuntu-users@lists.ubuntu.com&gt;; Sun, 20 Dec 2009 19:05:09 +0100</received><received>from glgxg by adsl-69-228-202-248.dsl.pltn13.pacbell.net with local
+	(Gmexim 0.1 (Debian)) id 1AlnuQ-0007hv-00
+	for &lt;ubuntu-users@lists.ubuntu.com&gt;; Sun, 20 Dec 2009 19:05:09 +0100</received><x-injected-via-gmane>http://gmane.org/</x-injected-via-gmane><date>Sun, 20 Dec 2009 10:00:31 -0800</date><lines>18</lines><message-id>hglonu$nik$2@ger.gmane.org</message-id><references>&lt;e2a1d0aa0912191809t4f4842eeg1b7e0fa1d70cdb15@mail.gmail.com&gt;	&lt;hgk3o6$1kt$1@ger.gmane.org&gt;
+	&lt;20091220102025.56f40a7b@pbmiha.malagasy.com&gt;</references><mime-version>1.0</mime-version><x-complaints-to>usenet@ger.gmane.org</x-complaints-to><x-gmane-nntp-posting-host>adsl-69-228-202-248.dsl.pltn13.pacbell.net</x-gmane-nntp-posting-host><user-agent>Mozilla/5.0 (X11; U; Linux i686; en-US;
+	rv:1.9.1.6) Gecko/20091206 Lightning/1.0b1pre SeaMonkey/2.0.1</user-agent><in-reply-to>&lt;20091220102025.56f40a7b@pbmiha.malagasy.com&gt;</in-reply-to><x-beenthere>ubuntu-users@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>"Ubuntu user technical support,
+	not for general discussions" &lt;ubuntu-users@lists.ubuntu.com&gt;</reply-to><list-id>"Ubuntu user technical support,
+	not for general discussions" &lt;ubuntu-users.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-users&gt;,
+	&lt;mailto:ubuntu-users-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://lists.ubuntu.com/archives/ubuntu-users&gt;</list-archive><list-post>&lt;mailto:ubuntu-users@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-users-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-users&gt;,
+	&lt;mailto:ubuntu-users-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>ubuntu-users-bounces@lists.ubuntu.com</sender><errors-to>ubuntu-users-bounces@lists.ubuntu.com</errors-to></headers><normalized-references><normalized-message-id>hglonu$nik$2@ger.gmane.org</normalized-message-id><normalized-in-reply-to>20091220102025.56f40a7b@pbmiha.malagasy.com</normalized-in-reply-to><normalized-reference>e2a1d0aa0912191809t4f4842eeg1b7e0fa1d70cdb15@mail.gmail.com</normalized-reference><normalized-reference>hgk3o6$1kt$1@ger.gmane.org</normalized-reference><normalized-reference>20091220102025.56f40a7b@pbmiha.malagasy.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">On 12/19/2009 11:20 PM, Mihamina Rakotomandimby wrote:
+</para><quote depth="1"><quote depth="2"><quote depth="3"><quotepara depth="3">are different?  Basically, I am looking for something like 
+$ apt-get dist-verify  
+</quotepara></quote><quotepara depth="2">No such command.
+</quotepara></quote><quotepara depth="1">
+Could you please read before answering?
+
+</quotepara><quotepara depth="1">He looks for something that doesnt exist, yes, but if it existed, the
+right name would be "dist-verify". The he explains the features he
+wants.
+
+</quotepara></quote><para depth="0">And while he's waiting for someone to create 'apt-get dist-verify'...?
+
+</para><para depth="0">I knew of no way to achieve what he wanted to do using apt-get or dpkg..
+do you? So instead I offered a possible alternate. Perhaps you could
+offer another solution?
+
+</para><footer type="list-management" depth="0">-- 
+ubuntu-users mailing list
+<email>ubuntu-users@lists.ubuntu.com</email>
+Modify settings or unsubscribe at:<br/><url>https://lists.ubuntu.com/mailman/listinfo/ubuntu-users</url>
+</footer></body></message>

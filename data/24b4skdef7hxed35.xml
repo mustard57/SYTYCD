@@ -1,0 +1,37 @@
+<message message-id="868cbbaa0802250936s2f36dfafuae914979eddce893@mail.gmail.com" list="com.redhat.redhat-list" id="24b4skdef7hxed35" type="general" date="2008-02-25T10:36:03-07:00" year="2008-01-01" year-month="2008-02-01" year-month-day="2008-02-25" thread-id="a5icep2urko5vapg"><headers><envelope-from-line>From sergeyfd@gmail.com Mon Feb 25 12:36:45 2008</envelope-from-line><from personal="Serge Dubrouski" address="sergeyfd@gmail.com">Serge Dubrouski &lt;sergeyfd@gmail.com&gt;</from><to personal="General Red Hat Linux discussion list" address="redhat-list@redhat.com">General Red Hat Linux discussion list &lt;redhat-list@redhat.com&gt;</to><subject normal="Clustering">Re: Clustering</subject><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	m1PHajLJ001234 for &lt;redhat-list@listman.util.phx.redhat.com&gt;;
+	Mon, 25 Feb 2008 12:36:45 -0500</received><received>from mx3.redhat.com (mx3.redhat.com [172.16.48.32])
+	by int-mx1.corp.redhat.com (8.13.1/8.13.1) with ESMTP id m1PHai6q032360
+	for &lt;redhat-list@redhat.com&gt;; Mon, 25 Feb 2008 12:36:44 -0500</received><received>from hu-out-0506.google.com (hu-out-0506.google.com [72.14.214.235])
+	by mx3.redhat.com (8.13.8/8.13.8) with ESMTP id m1PHa4YY006053
+	for &lt;redhat-list@redhat.com&gt;; Mon, 25 Feb 2008 12:36:05 -0500</received><received>by hu-out-0506.google.com with SMTP id 19so2011807hue.21
+	for &lt;redhat-list@redhat.com&gt;; Mon, 25 Feb 2008 09:36:04 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+	bh=HbOyVW+U/TcZSHeV6IergP+PWoLXBzgkDn5z3UR6Wy4=;
+	b=wWxO9zTMe9FvUs/1nvW6/kmxRp33NjfHF9u/AuqZJI+aObKnTJq0jds1eiiYHiRRZyGq2DZcPUTkBIVzhjzfQ8NVpqbOlL/i+4RWgRV0Shf/uw7pOHT3mR2UcHYkW+belOdfNvgJTXb65Xbig/GKRiIf+5zTIjaC3zt1ZsxL/G4=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+	b=L2S34GyPq+Ap3ZLdBoN31cAT8XmntiQ/LWq0azzg+csSyqft7kbnIoYZsNykMEDNw+iY0QqFvvMWUy+cj6CMZ19In3dwOuvF1u1aRCJY3DH48Vw+kjCKkAC6NV9spdREVjYSOG+vSqinoATKO3n1mLX6WHzFEyHut/BIAcJRWS4=</domainkey-signature><received>by 10.67.32.7 with SMTP id k7mr3514099ugj.11.1203960963764;
+	Mon, 25 Feb 2008 09:36:03 -0800 (PST)</received><received>by 10.67.92.14 with HTTP; Mon, 25 Feb 2008 09:36:03 -0800 (PST)</received><message-id>868cbbaa0802250936s2f36dfafuae914979eddce893@mail.gmail.com</message-id><date>Mon, 25 Feb 2008 10:36:03 -0700</date><in-reply-to>&lt;BLU134-W14380A9EA96D81B75817B0D4180@phx.gbl&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=iso-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><content-disposition>inline</content-disposition><references>&lt;BLU134-W14380A9EA96D81B75817B0D4180@phx.gbl&gt;</references><x-redhat-spam-score>0 </x-redhat-spam-score><x-scanned-by>MIMEDefang 2.58 on 172.16.52.254</x-scanned-by><x-scanned-by>MIMEDefang 2.63 on 172.16.48.32</x-scanned-by><x-loop>redhat-list@redhat.com</x-loop><x-beenthere>redhat-list@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>General Red Hat Linux discussion list &lt;redhat-list@redhat.com&gt;</reply-to><list-id>General Red Hat Linux discussion list &lt;redhat-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/redhat-list&gt;</list-archive><list-post>&lt;mailto:redhat-list@redhat.com&gt;</list-post><list-help>&lt;mailto:redhat-list-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><x-list-received-date>Mon, 25 Feb 2008 17:36:45 -0000</x-list-received-date></headers><normalized-references><normalized-message-id>868cbbaa0802250936s2f36dfafuae914979eddce893@mail.gmail.com</normalized-message-id><normalized-in-reply-to>BLU134-W14380A9EA96D81B75817B0D4180@phx.gbl</normalized-in-reply-to><normalized-reference>BLU134-W14380A9EA96D81B75817B0D4180@phx.gbl</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0"><url>http://www.linux-ha.og</url>
+<url>http://www.drbd.org</url>
+
+</para><para depth="0">On Mon, Feb 25, 2008 at 10:33 AM, ammad shah &lt;<email>mammadshah@hotmail.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">
+ i want to practice to make cluster, but i don't have shared storage device. for<br/>this any suggestion to build redhat cluster (failover, load balance, high<br/>performance, ....).
+
+</quotepara><quotepara depth="1"> thanks
+
+</quotepara><quotepara depth="1"> Ammad Shah
+ _________________________________________________________________
+ Helping your favorite cause is as easy as instant messaging. You IM, we give.
+ <url>http://im.live.com/Messenger/IM/Home/?source=text_hotmail_join--</url>
+ redhat-list mailing list
+ unsubscribe mailto:<email>redhat-list-request@redhat.com</email>?subjectunsubscribe
+ <url>https://www.redhat.com/mailman/listinfo/redhat-list</url>
+
+</quotepara></quote><footer type="signature" depth="0" hash="10840422815934705735">-- 
+Serge Dubrouski.
+</footer></body></message>

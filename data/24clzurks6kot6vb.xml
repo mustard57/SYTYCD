@@ -1,0 +1,43 @@
+<message message-id="4e307e0f0809100708j20591317xad32ffda6db1d0aa@mail.gmail.com" list="com.googlegroups.python-cn" id="24clzurks6kot6vb" type="general" date="2008-09-10T22:08:16+08:00" year="2008-01-01" year-month="2008-09-01" year-month-day="2008-09-10" thread-id="ldq6rvsuwc7tnknd"><headers><envelope-from-line>Sat Oct 18 07:44:21 2008</envelope-from-line><from personal="Leo Jay" address="python.leo...@gmail.com">Leo Jay &lt;python.leo...@gmail.com&gt;</from><to personal="python-cn@googlegroups.com" address="python-cn@googlegroups.com">python-cn@googlegroups.com</to><subject normal="[CPyUG:/] 有把pysqlite移植到ARM的吗？">Re: [CPyUG:/] 有把pysqlite移植到ARM的吗？</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 522
+          for &lt;erma.malone.campos@a.markmail.org&gt;;
+          Sat, 18 Oct 2008 07:44:21 -0800 (GMT-08:00)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 268D23B300B9
+	for &lt;erma.malone.campos@a.markmail.org&gt;; Sat, 18 Oct 2008 08:43:58 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (8.13.8/8.13.8) with ESMTP id m9IFiKN5025735
+	for &lt;erma.malone.campos@a.markmail.org&gt;; Sat, 18 Oct 2008 08:44:20 -0700</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id m9IFhvXu025734
+	for erma.malone.campos@a.markmail.org; Sat, 18 Oct 2008 08:43:57 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.python-cn</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>60522a1ce045d184</x-markmail-googlegroups-mid><received>by 10.115.90.11 with SMTP id s11mr146194wal.20.1221055698057;
+        Wed, 10 Sep 2008 07:08:18 -0700 (PDT)</received><received>from ti-out-0910.google.com (ti-out-0910.google.com [209.85.142.188])
+        by mx.google.com with ESMTP id k19si4189110waf.2.2008.09.10.07.08.16;
+        Wed, 10 Sep 2008 07:08:18 -0700 (PDT)</received><received-spf>pass (google.com: domain of python.leo...@gmail.com designates 209.85.142.188 as permitted sender) client-ip=209.85.142.188;</received-spf><authentication-results>mx.google.com; spf=pass (google.com: domain of python.leo...@gmail.com designates 209.85.142.188 as permitted sender) smtp.mail=python.leo...@gmail.com; dkim=pass (test mode) header...@gmail.com</authentication-results><received>by ti-out-0910.google.com with SMTP id u5so1589871tia.10
+        for &lt;python-cn@googlegroups.com&gt;; Wed, 10 Sep 2008 07:08:16 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to
+         :subject:in-reply-to:mime-version:content-type
+         :content-transfer-encoding:content-disposition:references;
+        bh=3KWRf/j+0joh7hI3b7nJbSeE1Ps9CiPYn2eh+9QJXl0=;
+        b=lSS0lmlzoR8SQoJywXeudy5ShXWZ6NY/uYBqGaxcUbVbLJ48uBKOC74+9YuGioJUrF
+         13O0//kr+UUehXdM1abVxF4JvrVsz6/EZu5/g3D1RvdMI9ys126XcEAVa896QAsRwPTJ
+         mbwaYN5El1RSf5Ap1qEsDhM7d11ob0ZeOdx7s=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version
+         :content-type:content-transfer-encoding:content-disposition
+         :references;
+        b=jb+J7IIGSCDgJEvi/yJCFdrpkRNtfSEAtBFIYcFgzubN8dHwXIWugJ4lSAQmyBDc+U
+         zW3vXUA2KSnCMVjjQQA32E+D0s+4HxypTtpxUY6A9kpcWFMTnx2OHOmB8ur2653oNqBo
+         3hjsv59ZSAtwWWxrP+Qh9ogRwQlT/8m2rvorw=</domainkey-signature><received>by 10.110.26.20 with SMTP id 20mr1681602tiz.23.1221055696144;
+        Wed, 10 Sep 2008 07:08:16 -0700 (PDT)</received><received>by 10.110.3.5 with HTTP; Wed, 10 Sep 2008 07:08:16 -0700 (PDT)</received><message-id>4e307e0f0809100708j20591317xad32ffda6db1d0aa@mail.gmail.com</message-id><date>Wed, 10 Sep 2008 22:08:16 +0800</date><in-reply-to>&lt;d4542a2f0809100421s2e4b915bq3f21bd646e412...@mail.gmail.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>base64</content-transfer-encoding><content-disposition>inline</content-disposition><references>&lt;d4542a2f0809100421s2e4b915bq3f21bd646e412...@mail.gmail.com&gt;</references></headers><normalized-references><normalized-message-id>4e307e0f0809100708j20591317xad32ffda6db1d0aa@mail.gmail.com</normalized-message-id><normalized-in-reply-to>d4542a2f0809100421s2e4b915bq3f21bd646e412...@mail.gmail.com</normalized-in-reply-to><normalized-reference>d4542a2f0809100421s2e4b915bq3f21bd646e412...@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">2008/9/10 Border &lt;<email>borderj@gmail.com</email>&gt;:
+</para><quote depth="1"><quotepara depth="1">
+Hi all,
+
+</quotepara><quotepara depth="1">     已经把 sqlite 交叉编译到ARM里面，但不知道怎么把pysqlite 移植到ARM里面的，今天式了好多种方法都不行。
+
+</quotepara><quotepara depth="1">谢谢
+
+</quotepara></quote><para depth="0">你用的是什么版本的python啊？2.5就自带了sqlite的模块，不用自己编译pysqlite了。
+
+</para><footer type="signature" depth="0" hash="8265459099578998133">-- 
+Best Regards,
+Leo Jay
+</footer></body></message>

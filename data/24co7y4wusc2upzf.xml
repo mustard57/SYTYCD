@@ -1,0 +1,73 @@
+<message message-id="1212075098-29819-1-git-send-email-edubezval@gmail.com" list="org.kernel.vger.linux-omap" id="24co7y4wusc2upzf" type="development" date="2008-05-29T11:31:35-04:00" year="2008-01-01" year-month="2008-05-01" year-month-day="2008-05-29" thread-id="24co7y4wusc2upzf"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Eduardo Valentin" address="edubezval@gmail.com">Eduardo Valentin &lt;edubezval@gmail.com&gt;</from><to personal="linux-omap@vger.kernel.org" address="linux-omap@vger.kernel.org">linux-omap@vger.kernel.org</to><cc personal="Eduardo Valentin" address="eduardo.valentin@indt.org.br">Eduardo Valentin &lt;eduardo.valentin@indt.org.br&gt;</cc><subject normal="[PATCH 0/5] Updates on mcbsp driver (take #3)">[PATCH 0/5] Updates on mcbsp driver (take #3)</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.linux.ports.arm.omap</newsgroups><date>Thu, 29 May 2008 11:31:35 -0400</date><lines>59</lines><approved>news@gmane.org</approved><message-id>1212075098-29819-1-git-send-email-edubezval@gmail.com</message-id><nntp-posting-host>lo.gmane.org</nntp-posting-host><x-trace>ger.gmane.org 1212075158 29436 80.91.229.12 (29 May 2008 15:32:38 GMT)</x-trace><x-complaints-to>usenet@ger.gmane.org</x-complaints-to><nntp-posting-date>Thu, 29 May 2008 15:32:38 +0000 (UTC)</nntp-posting-date><original-x-from>linux-omap-owner@vger.kernel.org Thu May 29 17:33:08 2008</original-x-from><return-path>linux-omap-owner@vger.kernel.org</return-path><envelope-to>gplao-linux-omap-open-source-moved1@gmane.org</envelope-to><original-received>from vger.kernel.org ([209.132.176.167])
+	by lo.gmane.org with esmtp (Exim 4.50)
+	id 1K1k6s-00068A-T0
+	for gplao-linux-omap-open-source-moved1@gmane.org; Thu, 29 May 2008 17:32:11 +0200</original-received><original-received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1755426AbYE2PbW (ORCPT
+	&lt;rfc822;gplao-linux-omap-open-source-moved1@m.gmane.org&gt;);
+	Thu, 29 May 2008 11:31:22 -0400</original-received><original-received>(majordomo@vger.kernel.org) by vger.kernel.org id S1755306AbYE2PbW
+	(ORCPT &lt;rfc822;linux-omap-outgoing&gt;);
+	Thu, 29 May 2008 11:31:22 -0400</original-received><original-received>from smtp.nokia.com ([192.100.122.230]:41131 "EHLO
+	mgw-mx03.nokia.com" rhost-flags-OK-OK-OK-OK) by vger.kernel.org
+	with ESMTP id S1754861AbYE2PbV (ORCPT
+	&lt;rfc822;linux-omap@vger.kernel.org&gt;); Thu, 29 May 2008 11:31:21 -0400</original-received><original-received>from esebh107.NOE.Nokia.com (esebh107.ntc.nokia.com [172.21.143.143])
+	by mgw-mx03.nokia.com (Switch-3.2.6/Switch-3.2.6) with ESMTP id m4TFV1Uk003635
+	for &lt;linux-omap@vger.kernel.org&gt;; Thu, 29 May 2008 18:31:19 +0300</original-received><original-received>from esebh102.NOE.Nokia.com ([172.21.138.183]) by esebh107.NOE.Nokia.com with Microsoft SMTPSVC(6.0.3790.3959);
+	 Thu, 29 May 2008 18:31:14 +0300</original-received><original-received>from mgw-int02.ntc.nokia.com ([172.21.143.97]) by esebh102.NOE.Nokia.com over TLS secured channel with Microsoft SMTPSVC(6.0.3790.3959);
+	 Thu, 29 May 2008 18:31:14 +0300</original-received><original-received>from knuth.nokia.com (mzdhcp216154.americas.nokia.com [172.18.216.154])
+	by mgw-int02.ntc.nokia.com (Switch-3.2.5/Switch-3.2.5) with ESMTP id m4TFVBUV029229;
+	Thu, 29 May 2008 18:31:12 +0300</original-received><original-received>by knuth.nokia.com (Postfix, from userid 1001)
+	id 48C3018C363; Thu, 29 May 2008 11:31:38 -0400 (AMT)</original-received><x-mailer>git-send-email 1.5.5.GIT</x-mailer><x-originalarrivaltime>29 May 2008 15:31:14.0746 (UTC) FILETIME=[07F521A0:01C8C1A1]</x-originalarrivaltime><x-nokia-av>Clean</x-nokia-av><original-sender>linux-omap-owner@vger.kernel.org</original-sender><precedence>bulk</precedence><list-id>&lt;linux-omap.vger.kernel.org&gt;</list-id><x-mailing-list>linux-omap@vger.kernel.org</x-mailing-list><xref>news.gmane.org gmane.linux.ports.arm.omap:8597</xref><archived-at>&lt;http://permalink.gmane.org/gmane.linux.ports.arm.omap/8597&gt;</archived-at></headers><normalized-references><normalized-message-id>1212075098-29819-1-git-send-email-edubezval@gmail.com</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">From: Eduardo Valentin &lt;<email>eduardo.valentin@indt.org.br</email>&gt;
+
+</para><para depth="0">Hi Tony,
+
+</para><para depth="0">Here is the updated version of my previous patches.
+As on take #2, DMA and IRQ definitions were left as they are.
+Chandra is going to send his work on top of this series.
+
+</para><para depth="0">This series adds Tony's comments about clock usage on plat-omap/mcbsp.c.
+Now it is done only with usual clk_* functions calls. But a
+fake clock is created under mach-omap[1,2] to enable / disable
+correct clocks when necessary. I also included Tony's patch to fix
+clock definitions for 24xx.
+
+</para><para depth="0">This patch series updates mcbsp driver by transforming it into
+a platform driver. This is a very initial implementation.
+Basically it moves machine specific code to their correct place
+and creates the platform driver necessary structures.
+
+</para><para depth="0">It must be working for previous boards. For omap34xx it should
+work for mcbsp 1 and 2.
+
+</para><para depth="0">In order to do not break other places, I tryied to do not change
+previous API. But future improvements are needed.
+
+</para><para depth="0">Clock definitions for  mcbsp 1 and 2 were also modified to add
+correct support for omap34xx.
+
+</para><para depth="0">Comments are wellcome.
+
+</para><para depth="0">Cheers,
+
+</para><para depth="0">Eduardo Valentin (4):
+  PLAT-OMAP: MCBSP: Tranform into platform driver
+  MACH-OMAP1: MCBSP: Add support for mcbsp on mach-omap1
+  Fix mcbsp clock definition on clock34xx.h
+  MACH-OMAP2: MCBSP: Add support for mcbsp on mach-omap2
+
+</para><para depth="0">Tony Lindgren (1):
+  ARM: OMAP: Fix 24xx mcbsp clocks
+
+</para><para depth="0"> arch/arm/mach-omap1/Makefile      |    2 +
+ arch/arm/mach-omap1/mcbsp.c       |  249 ++++++++++++++
+ arch/arm/mach-omap2/Makefile      |    2 +
+ arch/arm/mach-omap2/clock24xx.h   |   30 ++-
+ arch/arm/mach-omap2/clock34xx.h   |   30 ++-
+ arch/arm/mach-omap2/mcbsp.c       |  190 +++++++++++
+ arch/arm/plat-omap/devices.c      |   45 +++
+ arch/arm/plat-omap/mcbsp.c        |  662 ++++++++++++++-----------------------
+ include/asm-arm/arch-omap/mcbsp.h |   62 ++++-
+ 9 files changed, 841 insertions(+), 431 deletions(-)
+ create mode 100644 arch/arm/mach-omap1/mcbsp.c
+ create mode 100644 arch/arm/mach-omap2/mcbsp.c
+
+</para></body></message>

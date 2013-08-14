@@ -1,0 +1,45 @@
+<message message-id="0DC48307-BA26-4C5B-9DA4-1A6904663967@mac.com" list="org.ruby-lang.ruby-talk" id="24cysshyfdyt3mu5" type="general" date="2006-08-08T08:02:11+09:00" year="2006-01-01" year-month="2006-08-01" year-month-day="2006-08-07" thread-id="jztsfvtgc5yhumpm"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="gwtmp01@mac.com" address="gwtmp01@mac.com">gwtmp01@mac.com</from><subject normal="How to react on nil or wrong object-type as parameter">Re: How to react on nil or wrong object-type as parameter</subject><path>news.gmane.org!not-for-mail</path><newsgroups>gmane.comp.lang.ruby.general</newsgroups><date>Tue, 8 Aug 2006 08:02:11 +0900</date><lines>30</lines><approved>news@gmane.org</approved><message-id>0DC48307-BA26-4C5B-9DA4-1A6904663967@mac.com</message-id><references>&lt;2fe58d3c5902dff2a6d0a2b47548046d@ruby-forum.com&gt; &lt;4jo426F8sfv4U1@individual.net&gt; &lt;d08027839b15f16b3ab0f2e23137568a@ruby-forum.com&gt; &lt;0e1f6e8964613a3826a45ed70fcb1326@ruby-forum.com&gt; &lt;79a2d5ee6d003e2d92afc488684ca990@ruby-forum.com&gt; &lt;3867370ffe2ee941cf3a4981cf080896@ruby-forum.com&gt;</references><reply-to>ruby-talk@ruby-lang.org</reply-to><nntp-posting-host>main.gmane.org</nntp-posting-host><mime-version>1.0 (Apple Message framework v752.2)</mime-version><content-type>text/plain; charset=US-ASCII; delsp=yes; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-trace>sea.gmane.org 1154991777 9782 80.91.229.2 (7 Aug 2006 23:02:57 GMT)</x-trace><x-complaints-to>usenet@sea.gmane.org</x-complaints-to><nntp-posting-date>Mon, 7 Aug 2006 23:02:57 +0000 (UTC)</nntp-posting-date><original-x-from>ruby-talk-admin@ruby-lang.org Tue Aug 08 01:02:56 2006</original-x-from><return-path>ruby-talk-admin@ruby-lang.org</return-path><envelope-to>gclrg-ruby-talk@m.gmane.org</envelope-to><original-received>from beryllium.ruby-lang.org ([210.163.138.100])
+	by ciao.gmane.org with esmtp (Exim 4.43)
+	id 1GAE7T-0004PP-8j
+	for gclrg-ruby-talk@m.gmane.org; Tue, 08 Aug 2006 01:02:48 +0200</original-received><original-received>from beryllium.ruby-lang.org (beryllium.ruby-lang.org [127.0.0.1])
+	by beryllium.ruby-lang.org (Postfix) with ESMTP id 8A52A33F63;
+	Tue,  8 Aug 2006 08:02:21 +0900 (JST)</original-received><original-received>from localhost (beryllium.ruby-lang.org [127.0.0.1])
+	by beryllium.ruby-lang.org (Postfix) with ESMTP id 423D333FF5
+	for &lt;ruby-talk@ruby-lang.org&gt;; Tue,  8 Aug 2006 08:02:11 +0900 (JST)</original-received><original-received>from beryllium.ruby-lang.org ([127.0.0.1])
+	by localhost (beryllium.ruby-lang.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 06604-06 for &lt;ruby-talk@ruby-lang.org&gt;;
+	Tue, 8 Aug 2006 08:02:11 +0900 (JST)</original-received><original-received>from smtp109.sbc.mail.re2.yahoo.com (smtp109.sbc.mail.re2.yahoo.com [68.142.229.96])
+	by beryllium.ruby-lang.org (Postfix) with SMTP id 57B2033F63
+	for &lt;ruby-talk@ruby-lang.org&gt;; Tue,  8 Aug 2006 08:02:10 +0900 (JST)</original-received><original-received>(qmail 97948 invoked from network); 7 Aug 2006 23:02:08 -0000</original-received><original-received>from unknown (HELO ?10.0.1.2?) (wright?gary?r@sbcglobal.net@66.159.136.45 with plain)
+  by smtp109.sbc.mail.re2.yahoo.com with SMTP; 7 Aug 2006 23:02:08 -0000</original-received><delivered-to>ruby-talk@ruby-lang.org</delivered-to><original-posted>Mon, 7 Aug 2006 19:02:06 -0400</original-posted><original-to>ruby-talk@ruby-lang.org (ruby-talk ML)</original-to><in-reply-to>&lt;3867370ffe2ee941cf3a4981cf080896@ruby-forum.com&gt;</in-reply-to><x-ml-name>ruby-talk</x-ml-name><x-mail-count>206892</x-mail-count><x-mlserver>fml [fml 4.0.3 release (20011202/4.0.3)]; post only (only members can post)</x-mlserver><x-ml-info>If you have a question, send e-mail with the body
+	"help" (without quotes) to the address ruby-talk-ctl@ruby-lang.org;
+	help=&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=help&gt;</x-ml-info><x-mailer>Apple Mail (2.752.2)</x-mailer><x-spam-checker-version>SpamAssassin 3.1.3 (2006-06-01) on 
+	beryllium.ruby-lang.org</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-8.5 required=7.0 tests=AWL,BAYES_00,
+	CONTENT_TYPE_PRESENT,NO_REAL_NAME,RCVDFRMLOCALIP,X_MAILER_PRESENT 
+	autolearn=disabled version=3.1.3</x-spam-status><x-original-to>ruby-talk@ruby-lang.org</x-original-to><x-virus-scanned>by amavisd-new-20030616-p10 (Debian) at ruby-lang.org</x-virus-scanned><precedence>bulk</precedence><original-lines>28</original-lines><list-id>ruby-talk.ruby-lang.org</list-id><list-software>fml [fml 4.0.3 release (20011202/4.0.3)]</list-software><list-post>&lt;mailto:ruby-talk@ruby-lang.org&gt;</list-post><list-owner>&lt;mailto:ruby-talk-admin@ruby-lang.org&gt;</list-owner><list-help>&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=help&gt;</list-help><list-unsubscribe>&lt;mailto:ruby-talk-ctl@ruby-lang.org?body=unsubscribe&gt;</list-unsubscribe><xref>news.gmane.org gmane.comp.lang.ruby.general:164409</xref><archived-at>&lt;http://permalink.gmane.org/gmane.comp.lang.ruby.general/164409&gt;</archived-at></headers><normalized-references><normalized-message-id>0DC48307-BA26-4C5B-9DA4-1A6904663967@mac.com</normalized-message-id><normalized-in-reply-to>3867370ffe2ee941cf3a4981cf080896@ruby-forum.com</normalized-in-reply-to><normalized-reference>2fe58d3c5902dff2a6d0a2b47548046d@ruby-forum.com</normalized-reference><normalized-reference>4jo426F8sfv4U1@individual.net</normalized-reference><normalized-reference>d08027839b15f16b3ab0f2e23137568a@ruby-forum.com</normalized-reference><normalized-reference>0e1f6e8964613a3826a45ed70fcb1326@ruby-forum.com</normalized-reference><normalized-reference>79a2d5ee6d003e2d92afc488684ca990@ruby-forum.com</normalized-reference><normalized-reference>3867370ffe2ee941cf3a4981cf080896@ruby-forum.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii; delsp=yes; format=flowed"><para depth="0">
+On Aug 7, 2006, at 5:37 PM, Yochen Gutmann wrote:
+</para><quote depth="1"><quotepara depth="1">Sorry Michael, that I didnt make myself clearer. Yes, it is not  
+intendet
+that such  a non-portfolioed client can be called upon
+handle_client_well. Thus the question is how to aovid this wrong  
+usage.
+Seemingly it cant (or at least only through a vast of checkings)).
+</quotepara></quote><para depth="0">
+There is no way to magically prevent incorrect code from being written.
+You are framing the problem as if you want to detect the incorrect code
+at run time (i.e., when the code is in production) but it is too late
+to do anything about incorrect code at that point.
+
+</para><para depth="0">Presumably you want to detect incorrect code *before* your code is  
+running
+in production.  In a dynamic language you have to do that via a good  
+testing
+methodology since you don't have a compilation step to help you detect
+obviously incorrect code.  Just to be clear, you have to do testing in
+a static/compiled language environment also since not all usage  
+errors can
+be detected via compile-type checks.
+
+</para><para depth="0">Gary Wright
+
+</para></body></message>

@@ -1,0 +1,22 @@
+<message message-id="8c61fad60703301257k4d41a29jbb325d62e86d5371@mail.gmail.com" list="org.openlaszlo.laszlo-dev" id="24ajmgslt6vq72yb" type="development" date="2007-03-30T15:57:27-04:00" year="2007-01-01" year-month="2007-03-01" year-month-day="2007-03-30" thread-id="xc5emmvoai2bizon"><headers><envelope-from-line>From henry.minsky@gmail.com  Fri Mar 30 12:57:27 2007</envelope-from-line><from personal="Henry Minsky" address="henry.minsky@gmail.com">Henry Minsky &lt;henry.minsky@gmail.com&gt;</from><subject normal="[Laszlo-dev] for immediate integration to branches/3.4">[Laszlo-dev] for immediate integration to branches/3.4</subject><date>Fri, 30 Mar 2007 15:57:27 -0400</date><in-reply-to>&lt;alpine.OSX.0.82.0703301151500.483@axe.local&gt;</in-reply-to><references>&lt;alpine.OSX.0.82.0703301151500.483@axe.local&gt;</references><message-id>8c61fad60703301257k4d41a29jbb325d62e86d5371@mail.gmail.com</message-id><content-type>multipart/mixed; 
+	boundary="----=_Part_2144_23822211.1214004776301"</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>8c61fad60703301257k4d41a29jbb325d62e86d5371@mail.gmail.com</normalized-message-id><normalized-in-reply-to>alpine.OSX.0.82.0703301151500.483@axe.local</normalized-in-reply-to><normalized-reference>alpine.OSX.0.82.0703301151500.483@axe.local</normalized-reference></normalized-references><body><para depth="0">I agree.
+
+</para><para depth="0">On 3/30/07, Adam Wolff &lt;adam at laszlosystems.com&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">
+r3795 and r3797 which together fix LPP-3537
+
+</quotepara><quotepara depth="1">This is the fix for the endless loop that can happen with
+datasets on the canvas in LzNode.prototype.makeChild, only in
+debug mode.
+
+</quotepara><quotepara depth="1">Risks are low, and this is stopping our internal QA at the
+moment.
+
+</quotepara><quotefooter type="signature" hash="17464492463014822961" depth="1">Thanks,
+Adam
+
+</quotefooter></quote><footer type="signature" hash="15339561577543691152" depth="0">-- 
+Henry Minsky
+Software Architect
+hminsky at laszlosystems.com
+</footer></body></message>

@@ -1,0 +1,91 @@
+<message message-id="200307261913.h6QJDSjL069329@repoman.freebsd.org" list="org.freebsd.p4-projects" id="24bbjcemu7ttb2le" type="bugs" date="2003-07-26T12:13:34" year="2003-01-01" year-month="2003-07-01" year-month-day="2003-07-26" thread-id="24bbjcemu7ttb2le"><headers><envelope-from-line>From rwatson@FreeBSD.org  Sat Jul 26 12:13:31 2003</envelope-from-line><from personal="Robert Watson" address="rwatson@FreeBSD.org">Robert Watson &lt;rwatson@FreeBSD.org&gt;</from><subject normal="PERFORCE change 35050 for review">PERFORCE change 35050 for review</subject><date>Sat Jul 26 12:13:34 2003</date><message-id>200307261913.h6QJDSjL069329@repoman.freebsd.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>200307261913.h6QJDSjL069329@repoman.freebsd.org</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0"><url>http://perforce.freebsd.org/chv.cgi?CH=35050</url>
+
+</para><para depth="0">Change 35050 by rwatson@rwatson_tislabs on 2003/07/26 12:13:16
+
+</para><para depth="0">	Use the mac_check_vnode_deleteextattr and
+	mac_check_vnode_listextattr checks to test for delete and
+	list permission rather than setextattr and getextattr
+	checks.
+
+</para><para depth="0">	Policy updates to follow.
+
+</para><para depth="0">Affected files ...
+
+</para><para depth="0">.. //depot/projects/trustedbsd/mac/sys/kern/kern_mac.c#392 edit
+.. //depot/projects/trustedbsd/mac/sys/kern/vfs_syscalls.c#106 edit
+
+</para><para depth="0">Differences ...
+
+</para><para depth="0">==== //depot/projects/trustedbsd/mac/sys/kern/kern_mac.c#392 (text+ko) ====
+
+</para><para depth="0">@@ -1663,6 +1663,22 @@
+ }
+
+</para><para depth="0"> int
++mac_check_vnode_deleteextattr(struct ucred *cred, struct vnode *vp,
++    int attrnamespace, const char *name)
++{
++	int error;
++
++	ASSERT_VOP_LOCKED(vp, "mac_check_vnode_deleteextattr");
++
++	if (!mac_enforce_fs)
++		return (0);
++
++	MAC_CHECK(check_vnode_deleteextattr, cred, vp, &amp;vp-&gt;v_label,
++	    attrnamespace, name);
++	return (error);
++}
++
++int
+ mac_check_vnode_exec(struct ucred *cred, struct vnode *vp,
+     struct image_params *imgp)
+ {
+@@ -1727,6 +1743,22 @@
+ }
+
+</para><para depth="0"> int
++mac_check_vnode_listextattr(struct ucred *cred, struct vnode *vp,
++    int attrnamespace)
++{
++	int error;
++
++	ASSERT_VOP_LOCKED(vp, "mac_check_vnode_listextattr");
++
++	if (!mac_enforce_fs)
++		return (0);
++
++	MAC_CHECK(check_vnode_listextattr, cred, vp, &amp;vp-&gt;v_label,
++	    attrnamespace);
++	return (error);
++}
++
++int
+ mac_check_vnode_lookup(struct ucred *cred, struct vnode *dvp,
+     struct componentname *cnp)
+ {
+
+</para><para depth="0">==== //depot/projects/trustedbsd/mac/sys/kern/vfs_syscalls.c#106 (text+ko) ====
+
+</para><para depth="0">@@ -4240,8 +4240,8 @@
+ 	vn_lock(vp, LK_EXCLUSIVE | LK_RETRY, td);
+
+</para><para depth="0"> #ifdef MAC
+-	error = mac_check_vnode_setextattr(td-&gt;td_ucred, vp, attrnamespace,
+-	    attrname, NULL);
++	error = mac_check_vnode_deleteextattr(td-&gt;td_ucred, vp, attrnamespace,
++	    attrname);
+ 	if (error)
+ 		goto done;
+ #endif
+@@ -4387,8 +4387,7 @@
+ 		sizep = &amp;size;
+
+</para><para depth="0"> #ifdef MAC
+-	error = mac_check_vnode_getextattr(td-&gt;td_ucred, vp, attrnamespace,
+-	    "", &amp;auio);
++	error = mac_check_vnode_listextattr(td-&gt;td_ucred, vp, attrnamespace);
+ 	if (error)
+ 		goto done;
+ #endif
+</para></body></message>

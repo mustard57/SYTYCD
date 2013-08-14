@@ -1,0 +1,21 @@
+<message message-id="B5C0BAD6.A47%b_duesmann@gmx.de" list="net.php.lists.php-general" id="24b3krg2aqjixjmm" type="general" date="2000-08-16T21:40:39+02:00" year="2000-01-01" year-month="2000-08-01" year-month-day="2000-08-16" thread-id="z2ado2tgc5yhc2yi"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Bernd Duesmann" address="b_duesmann@gmx.de">Bernd Duesmann &lt;b_duesmann@gmx.de&gt;</from><to personal="php-general@lists.php.net" address="php-general@lists.php.net">php-general@lists.php.net</to><subject normal="[PHP] community software in php?">Re: [PHP] community software in php?</subject><newsgroups>php.general</newsgroups><path>news.php.net</path><xref>news.php.net php.general:12106</xref><return-path>b_duesmann@gmx.de</return-path><mailing-list>contact php-general-help@lists.php.net; run by ezmlm</mailing-list><delivered-to>mailing list php-general@lists.php.net</delivered-to><received>(qmail 23015 invoked from network); 16 Aug 2000 19:40:46 -0000</received><received>from unknown (HELO mout1.silyn-tek.de) (194.25.165.69)
+  by toye.p.sourceforge.net with SMTP; 16 Aug 2000 19:40:46 -0000</received><received>from [192.168.32.34] (helo=mx2.silyn-tek.de)
+	by mout1.silyn-tek.de with esmtp (Exim 3.13 #1)
+	id 13P93N-00052X-00
+	for php-general@lists.php.net; Wed, 16 Aug 2000 21:40:45 +0200</received><received>from p3e9bf894.dip0.t-ipconnect.de ([62.155.248.148] helo=[192.168.110.3])
+	by mx2.silyn-tek.de with esmtp (Exim 3.13 #1)
+	id 13P93I-0005gN-00
+	for php-general@lists.php.net; Wed, 16 Aug 2000 21:40:40 +0200</received><user-agent>Microsoft Outlook Express Macintosh Edition - 5.0 (1513)</user-agent><date>Wed, 16 Aug 2000 21:40:39 +0200</date><message-id>B5C0BAD6.A47%b_duesmann@gmx.de</message-id><in-reply-to>&lt;Pine.GSO.4.21.0008161230360.13365-100000@beatrice.kefta.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset="US-ASCII"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><references>&lt;Pine.GSO.4.21.0008161230360.13365-100000@beatrice.kefta.com&gt;</references></headers><normalized-references><normalized-message-id>B5C0BAD6.A47%b_duesmann@gmx.de</normalized-message-id><normalized-in-reply-to>Pine.GSO.4.21.0008161230360.13365-100000@beatrice.kefta.com</normalized-in-reply-to><normalized-reference>Pine.GSO.4.21.0008161230360.13365-100000@beatrice.kefta.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><greeting depth="0">hi joao,
+</greeting><para depth="0">
+i need a registration-script that is active over the complete side. when a
+user logs in he must have the chance to modify his login and so on. he only
+can write messages when he is logged in and so son. i thing this isnt so
+simple. 8)
+
+</para><para depth="0">bernd
+
+</para><para depth="0">------------------------------------
+our [HOP] learning-diary under:
+<url>http://www.underbasement.de/helmahop/</url>
+
+</para></body></message>

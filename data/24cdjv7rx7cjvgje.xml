@@ -1,0 +1,53 @@
+<message message-id="13975922.161254161866473.JavaMail.haus-jira@codehaus01.managed.contegix.com" list="org.codehaus.grails.scm" id="24cdjv7rx7cjvgje" type="bugs" date="2009-09-28T10:17:36.246055-08:00" year="2009-01-01" year-month="2009-09-01" year-month-day="2009-09-28" thread-id="7w7yv7ahxusgeb5p"><headers><envelope-from-line>Mon Sep 28 10:17:59 2009</envelope-from-line><from personal="Shawn Hartsock (JIRA)" address="jira@codehaus.org">"Shawn Hartsock (JIRA)" &lt;jira@codehaus.org&gt;</from><to personal="scm@grails.codehaus.org" address="scm@grails.codehaus.org">scm@grails.codehaus.org</to><subject normal="[grails-scm] [jira] Updated: (GRAILSPLUGINS-391) AuditLogEvent domain object fails to save on PostgreSQL and Oracle databases">[grails-scm] [jira] Updated: (GRAILSPLUGINS-391) AuditLogEvent domain object fails to save on PostgreSQL and Oracle databases</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 501
+          for &lt;alisa.haley.gates@a.markmail.org&gt;;
+          Mon, 28 Sep 2009 10:17:58 -0800 (GMT-08:00)</received><received>from mail.codehaus.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 95BF329081F4
+	for &lt;alisa.haley.gates@a.markmail.org&gt;; Mon, 28 Sep 2009 11:17:35 -0700 (PDT)</received><received>(qmail 4773 invoked by uid 89); 28 Sep 2009 18:17:50 -0000</received><mailing-list>contact scm-help@grails.codehaus.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;http://xircles.codehaus.org/manage_email&gt;</list-post><list-help>&lt;http://xircles.codehaus.org/manage_email&gt;</list-help><list-unsubscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-unsubscribe><list-subscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-subscribe><list-id>&lt;scm.grails.codehaus.org&gt;</list-id><reply-to>dev@grails.codehaus.org</reply-to><delivered-to>mailing list scm@grails.codehaus.org</delivered-to><received>(qmail 4747 invoked by uid 89); 28 Sep 2009 18:17:45 -0000</received><message-id>13975922.161254161866473.JavaMail.haus-jira@codehaus01.managed.contegix.com</message-id><date>Mon, 28 Sep 2009 13:17:46 -0500 (CDT)</date><in-reply-to>&lt;12208803.1211996721954.JavaMail.haus-jira@codehaus01.managed.contegix.com&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-jira-fingerprint>4e90ceb663894a42f12c0e28abbab431</x-jira-fingerprint></headers><normalized-references><normalized-message-id>13975922.161254161866473.JavaMail.haus-jira@codehaus01.managed.contegix.com</normalized-message-id><normalized-in-reply-to>12208803.1211996721954.JavaMail.haus-jira@codehaus01.managed.contegix.com</normalized-in-reply-to></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+     [<br/><url>http://jira.codehaus.org/browse/GRAILSPLUGINS-391?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url><br/>]
+
+</para><para depth="0">Shawn Hartsock updated GRAILSPLUGINS-391:
+</para><para depth="0">-----------------------------------------
+
+</para><para depth="0">    Affects Version/s:     (was: Grails-AuditLogging 0.5)
+        Fix Version/s: Grails-AuditLogging 0.6
+
+</para><para depth="0">This bug will be rolled into the 0.5 release along with GRAILSPLUGINS-1478
+
+</para><quote depth="1"><quotepara depth="1">AuditLogEvent domain object fails to save on PostgreSQL and Oracle databases
+</quotepara><quotepara depth="1">----------------------------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: GRAILSPLUGINS-391
+                URL: <url>http://jira.codehaus.org/browse/GRAILSPLUGINS-391</url>
+            Project: Grails Plugins
+         Issue Type: Bug
+         Components: Grails-Audit-Logging
+        Environment: PostgreSQL and Oracle
+           Reporter: Mike Hugo
+           Assignee: Shawn Hartsock
+            Fix For: Grails-AuditLogging 0.6
+
+</quotepara><quotepara depth="1">        Attachments: groovySql.patch, pgTest-bug-report-15082008.zip
+
+</quotepara><quotepara depth="1">Attached is a patch that provides a workaround for problems discussed on the<br/>Grails mailing list<br/><url>http://www.nabble.com/Audit-Logging-Plugin-Question-td17430121.html</url> and<br/><url>http://www.nabble.com/how-do-I-encrypt-a-password--td17130128.html#a17170904</url><br/>with the Audit Log plugin.  The plugin successfully creates rows in the Audit<br/>Log table when using the in memory database, but fails silently with at least<br/>two 'real' databases (postgres and oracle).
+Please note that this particular patch will only work with a postgres database.<br/>In particular, the SQL statement used in AuditLogListener.saveAuditLog() uses 
+1) select nextval ('hibernate_sequence') and 
+2) now() 
+which may or may not work depending on your database.
+I don't think this is the ideal solution, but it may help some people get past<br/>the initial issue until a more permanent solution is found.
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="16324229706277820687">-- 
+This message is automatically generated by JIRA.
+-
+If you think it was sent incorrectly contact one of the administrators:<br/><url>http://jira.codehaus.org/secure/Administrators.jspa</url>
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer><footer type="list-management" depth="0">&lt;hr/&gt;
+&lt;p&gt;
+To unsubscribe from this list please visit:
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;a<br/>href="<url>http://xircles.codehaus.org/manage_email</url>"&gt;<url>http://xircles.codehaus.org/manage_email</url>&lt;/a&gt;
+
+</footer></body></message>

@@ -1,0 +1,54 @@
+<message message-id="ca7df3760905260227k46e91afdq224a3f7c080c38a@mail.gmail.com" list="com.redhat.fedora-users-br" id="24ayvh7hk6pmsx7x" type="users" date="2009-05-26T06:27:07-03:00" year="2009-01-01" year-month="2009-05-01" year-month-day="2009-05-26" thread-id="y3wdvxkw4yj4b7j4"><headers><envelope-from-line>Tue May 26 09:30:02 2009</envelope-from-line><from personal="Alejandro Flores" address="alejandrorflores@gmail.com">Alejandro Flores &lt;alejandrorflores@gmail.com&gt;</from><to personal="Lista de discussão voltada para os usuários brasileiros do Fedora" address="fedora-users-br@redhat.com">"Lista de discussão voltada para os usuários brasileiros do Fedora" &lt;fedora-users-br@redhat.com&gt;</to><subject normal="[Fedora-users-br] (F10+dúvida) Trocar data do sistema (coisa louca)">Re: [Fedora-users-br] (F10+dúvida) Trocar data do sistema (coisa louca)</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 570
+          for &lt;arnulfo.mckenzie.melton@a.markmail.org&gt;;
+          Tue, 26 May 2009 01:27:52 -0800 (GMT-08:00)</received><received>from hormel.redhat.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 317DE3B300C9
+	for &lt;arnulfo.mckenzie.melton@a.markmail.org&gt;; Tue, 26 May 2009 02:27:29 -0700 (PDT)</received><received>from listman.util.phx.redhat.com (listman.util.phx.redhat.com [10.8.4.110])
+	by hormel.redhat.com (Postfix) with ESMTP id E39C16194B7;
+	Tue, 26 May 2009 05:27:51 -0400 (EDT)</received><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com
+	[172.16.52.254])
+	by listman.util.phx.redhat.com (8.13.1/8.13.1) with ESMTP id
+	n4Q9Rog5029627 for &lt;fedora-users-br@listman.util.phx.redhat.com&gt;;
+	Tue, 26 May 2009 05:27:50 -0400</received><received>from mx3.redhat.com (mx3.redhat.com [172.16.48.32])
+	by int-mx1.corp.redhat.com (8.13.1/8.13.1) with ESMTP id n4Q9RoJA016250
+	for &lt;fedora-users-br@redhat.com&gt;; Tue, 26 May 2009 05:27:50 -0400</received><received>from mail-qy0-f122.google.com (mail-qy0-f122.google.com
+	[209.85.221.122])
+	by mx3.redhat.com (8.13.8/8.13.8) with ESMTP id n4Q9R7Pi019263
+	for &lt;fedora-users-br@redhat.com&gt;; Tue, 26 May 2009 05:27:11 -0400</received><received>by qyk28 with SMTP id 28so4975543qyk.23
+	for &lt;fedora-users-br@redhat.com&gt;; Tue, 26 May 2009 02:27:07 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:mime-version:received:in-reply-to:references
+	:date:message-id:subject:from:to:content-type
+	:content-transfer-encoding;
+	bh=XwAIdbwIe5eT+L1N5weqOUopiOAnwf0/vRMnWvyA5HE=;
+	b=sR7FljyEZnZHUh4kjbpdqXbhZblT6W21x63x/10GicFlj+/66VCLEpJS227eQiVZVj
+	e6iRsWGQs++0NqCsFx6zA6DBlnmfjO/FEtxVsxEY2D+WtX8NedHz3/rNdx2fyMAPnCEu
+	4HaSCNtNPVBG7Vp8JPc8MpCniu+FZ+h3b/UrU=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+	:content-type:content-transfer-encoding;
+	b=Btp87LTBriUX9HO2yCsTHyuYxc1pegH5remzecy4v2EBRlz8fz5CO6SwczziCtrujm
+	2cwCdHuhS5cCVmAw8HxfDvEEDkbmyeA370rwqwVPErPZvJSoPT3nwoByr4M7Ig8YJcLm
+	FRfjhgKXDdwUudfyszR+L7gMzG9fB1Iw005SA=</domainkey-signature><mime-version>1.0</mime-version><received>by 10.229.97.80 with SMTP id k16mr2253500qcn.17.1243330027271; Tue, 
+	26 May 2009 02:27:07 -0700 (PDT)</received><in-reply-to>&lt;7292f5ce0905240919q49bc59fck686d09ba8c5208dd@mail.gmail.com&gt;</in-reply-to><references>&lt;675384.84709.qm@web45905.mail.sp1.yahoo.com&gt;
+	&lt;4A196C71.9060504@projetofedora.org&gt;
+	&lt;7292f5ce0905240919q49bc59fck686d09ba8c5208dd@mail.gmail.com&gt;</references><date>Tue, 26 May 2009 06:27:07 -0300</date><message-id>ca7df3760905260227k46e91afdq224a3f7c080c38a@mail.gmail.com</message-id><content-type>text/plain; charset=ISO-8859-1</content-type><x-redhat-spam-score>0.001 </x-redhat-spam-score><x-scanned-by>MIMEDefang 2.58 on 172.16.52.254</x-scanned-by><x-scanned-by>MIMEDefang 2.63 on 172.16.48.32</x-scanned-by><x-mime-autoconverted>from quoted-printable to 8bit by
+	listman.util.phx.redhat.com id n4Q9Rog5029627</x-mime-autoconverted><x-loop>fedora-users-br@redhat.com</x-loop><x-beenthere>fedora-users-br@redhat.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>junk</precedence><reply-to>=?iso-8859-1?q?Lista_de_discuss=E3o_voltada_para_os_usu=E1rios_brasileiro?=
+	=?iso-8859-1?q?s_do_Fedora?= &lt;fedora-users-br@redhat.com&gt;</reply-to><list-id>=?iso-8859-1?q?Lista_de_discuss=E3o_voltada_para_os_usu=E1rios_brasileiros_do_Fedora?=
+	&lt;fedora-users-br.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-users-br&gt;,
+	&lt;mailto:fedora-users-br-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://www.redhat.com/archives/fedora-users-br&gt;</list-archive><list-post>&lt;mailto:fedora-users-br@redhat.com&gt;</list-post><list-help>&lt;mailto:fedora-users-br-request@redhat.com?subject=help&gt;</list-help><list-subscribe>&lt;https://www.redhat.com/mailman/listinfo/fedora-users-br&gt;,
+	&lt;mailto:fedora-users-br-request@redhat.com?subject=subscribe&gt;</list-subscribe><sender>fedora-users-br-bounces@redhat.com</sender><errors-to>fedora-users-br-bounces@redhat.com</errors-to><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>ca7df3760905260227k46e91afdq224a3f7c080c38a@mail.gmail.com</normalized-message-id><normalized-in-reply-to>7292f5ce0905240919q49bc59fck686d09ba8c5208dd@mail.gmail.com</normalized-in-reply-to><normalized-reference>675384.84709.qm@web45905.mail.sp1.yahoo.com</normalized-reference><normalized-reference>4A196C71.9060504@projetofedora.org</normalized-reference><normalized-reference>7292f5ce0905240919q49bc59fck686d09ba8c5208dd@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Adilson,
+
+</para><quote depth="1"><quotepara depth="1">Ola Fellipe, mas eh justamente isso que estou fazendo... dai aparece uma
+caixa me pedindo a senha do administrador... eu passo a senha correta, mas
+naum adianta... naum vai....
+</quotepara></quote><para depth="0">
+O sistema está pedindo a sua senha e não a do administrador.
+
+</para><footer type="signature" depth="0" hash="15485479602450094946">Abraço,
+Alejandro Flores
+<url>http://www.triforsec.com.br/</url>
+
+</footer><footer type="list-management" depth="0">--
+Fedora-users-br mailing list
+<email>Fedora-users-br@redhat.com</email>
+<url>https://www.redhat.com/mailman/listinfo/fedora-users-br</url>
+</footer></body></message>

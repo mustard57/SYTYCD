@@ -1,0 +1,17 @@
+<message message-id="46DEE4A1.3010502@motion-twin.com" list="com.motion-twin.lists.haxe" id="24bxsrochvpng3un" type="general" date="2007-09-05T19:17:24" year="2007-01-01" year-month="2007-09-01" year-month-day="2007-09-05" thread-id="rqvnsr3g4d73y3kk"><headers><envelope-from-line>From ncannasse@motion-twin.com  Wed Sep  5 19:17:21 2007</envelope-from-line><from personal="Nicolas Cannasse" address="ncannasse@motion-twin.com">Nicolas Cannasse &lt;ncannasse@motion-twin.com&gt;</from><subject normal="[haXe] SWHX 1.1 Released - wnd.drag doesn't work on windows">[haXe] SWHX 1.1 Released - wnd.drag doesn't work on windows</subject><date>Wed Sep  5 19:17:24 2007</date><in-reply-to>&lt;B0AF10FB-4F19-4C0A-A00F-C6B53FC57C02@toolhouse.com&gt;</in-reply-to><references>&lt;B0AF10FB-4F19-4C0A-A00F-C6B53FC57C02@toolhouse.com&gt;</references><message-id>46DEE4A1.3010502@motion-twin.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>46DEE4A1.3010502@motion-twin.com</normalized-message-id><normalized-in-reply-to>B0AF10FB-4F19-4C0A-A00F-C6B53FC57C02@toolhouse.com</normalized-in-reply-to><normalized-reference>B0AF10FB-4F19-4C0A-A00F-C6B53FC57C02@toolhouse.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Matthew Bergsma a ?crit :
+</para><quote depth="1"><quotepara depth="1">I have also run into the issue Glen mentioned below - It seems in SWHX
+1.1 the Window.drag() method does not work in the PC environment. I've
+tried it in my own app, and the Sampler apps with Plain and Transparent
+windows. I've tried to call it directly from the flash environment, and
+also via a private method in Haxe. (Had to change the function to public
+in window.hx).
+
+</quotepara><quotepara depth="1">It happens with Haxe 1.14 and 1.15.
+
+</quotepara><quotepara depth="1">However, to complicate this bug report, The window.drag() method Does
+work on the Mac just fine.
+</quotepara></quote><para depth="0">
+It's on my TODO list.
+
+</para><para depth="0">Nicolas
+</para></body></message>

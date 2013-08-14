@@ -1,0 +1,39 @@
+<message message-id="20100606235925.0F7682388980@eris.apache.org" list="org.apache.forrest.svn" id="24axvnlmytxjof7w" type="checkins" date="2010-06-06T15:59:23.512991-08:00" year="2010-01-01" year-month="2010-06-01" year-month-day="2010-06-06" thread-id="24axvnlmytxjof7w"><headers><envelope-from-line>Sun Jun 06 15:59:46 2010</envelope-from-line><from personal="gmcdonald@apache.org" address="gmcdonald@apache.org">gmcdonald@apache.org</from><to personal="svn@forrest.apache.org" address="svn@forrest.apache.org">svn@forrest.apache.org</to><subject normal="svn commit: r952027 - /forrest/trunk/plugins/org.apache.forrest.plugin.output.POD/build.xml">svn commit: r952027 - /forrest/trunk/plugins/org.apache.forrest.plugin.output.POD/build.xml</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 623
+          for &lt;deena.ochoa.buckley@a.markmail.org&gt;;
+          Sun, 6 Jun 2010 15:59:46 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 13D732908286
+	for &lt;deena.ochoa.buckley@a.markmail.org&gt;; Sun,  6 Jun 2010 16:59:23 -0700 (PDT)</received><received>(qmail 79592 invoked by uid 500); 6 Jun 2010 23:59:45 -0000</received><mailing-list>contact svn-help@forrest.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:svn-help@forrest.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:svn-unsubscribe@forrest.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:svn@forrest.apache.org&gt;</list-post><reply-to>"Forrest Developers List" &lt;dev@forrest.apache.org&gt;</reply-to><list-id>&lt;svn.forrest.apache.org&gt;</list-id><delivered-to>mailing list svn@forrest.apache.org</delivered-to><received>(qmail 79585 invoked by uid 99); 6 Jun 2010 23:59:45 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sun, 06 Jun 2010 23:59:45 +0000</received><x-asf-spam-status>No, hits=-1839.8 required=10.0
+	tests=ALL_TRUSTED,AWL</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.4] (HELO eris.apache.org) (140.211.11.4)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Sun, 06 Jun 2010 23:59:45 +0000</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id 0F7682388980; Sun,  6 Jun 2010 23:59:25 +0000 (UTC)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Sun, 06 Jun 2010 23:59:24 -0000</date><x-mailer>svnmailer-1.0.8</x-mailer><message-id>20100606235925.0F7682388980@eris.apache.org</message-id></headers><normalized-references><normalized-message-id>20100606235925.0F7682388980@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: gmcdonald
+Date: Sun Jun  6 23:59:24 2010
+New Revision: 952027
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?rev=952027&amp;view=rev</url>
+Log:
+Bump plugin version number and Forrest version number - there have been changes<br/>since 0.8 release
+
+</para><para depth="0">Modified:
+    forrest/trunk/plugins/org.apache.forrest.plugin.output.POD/build.xml
+
+</para><para depth="0">Modified: forrest/trunk/plugins/org.apache.forrest.plugin.output.POD/build.xml
+URL:<br/><url>http://svn.apache.org/viewvc/forrest/trunk/plugins/org.apache.forrest.plugin.output.POD/build.xml?rev=952027&amp;r1=952026&amp;r2=952027&amp;view=diff</url>
+==============================================================================
+--- forrest/trunk/plugins/org.apache.forrest.plugin.output.POD/build.xml<br/>(original)
++++ forrest/trunk/plugins/org.apache.forrest.plugin.output.POD/build.xml Sun Jun<br/>6 23:59:24 2010
+@@ -17,9 +17,9 @@
+ --&gt;
+ &lt;project default="docs" basedir="." name="Forrest plugin build file"&gt;
+   &lt;property name="plugin-name" value="org.apache.forrest.plugin.output.POD"/&gt;
+-  &lt;property name="forrest.version" value="0.8"/&gt;
++  &lt;property name="forrest.version" value="0.9"/&gt;
+   &lt;property name="type" value="output"/&gt;
+-  &lt;property name="plugin-version" value="0.2"/&gt;
++  &lt;property name="plugin-version" value="0.3"/&gt;
+   &lt;property name="description" value="Enable Forrest documents to be output in<br/>Plain Old Documentation (POD) format."/&gt;
+   &lt;property name="author" value="Apache Forrest Project"/&gt;
+   &lt;property name="websiteURL"<br/>value="<url>http://forrest.apache.org/pluginDocs/plugins_0_80/org.apache.forrest.plugin.output.POD/</url>"/&gt;
+
+</para></body></message>

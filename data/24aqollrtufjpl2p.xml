@@ -1,0 +1,253 @@
+<message message-id="E1KFaTg-0005k1-92@lily.knams.wikimedia.org" list="org.wikimedia.lists.mediawiki-cvs" id="24aqollrtufjpl2p" type="checkins" date="2008-07-06T20:04:56Z" year="2008-01-01" year-month="2008-07-01" year-month-day="2008-07-06" thread-id="24aqollrtufjpl2p"><headers><envelope-from-line>From grondin@svn.wikimedia.org  Sun Jul  6 20:04:56 2008</envelope-from-line><from personal="grondin@svn.wikimedia.org" address="grondin at svn.wikimedia.org">"grondin@svn.wikimedia.org" &lt;grondin at svn.wikimedia.org&gt;</from><subject normal="[MediaWiki-CVS] SVN: [37200] trunk/phase3/languages/messages">[MediaWiki-CVS] SVN:  [37200] trunk/phase3/languages/messages</subject><date>Sun, 06 Jul 2008 20:04:56 +0000</date><message-id>E1KFaTg-0005k1-92@lily.knams.wikimedia.org</message-id><content-type>text/plain; charset=us-ascii</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>E1KFaTg-0005k1-92@lily.knams.wikimedia.org</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">Revision: 37200
+Author:   grondin
+Date:     2008-07-06 20:04:56 +0000 (Sun, 06 Jul 2008)
+
+</para><para depth="0">Log Message:
+</para><para depth="0">-----------
+Revert updating
+
+</para><para depth="0">Modified Paths:
+</para><para depth="0">--------------
+    trunk/phase3/languages/messages/MessagesFi.php
+    trunk/phase3/languages/messages/MessagesHu.php
+
+</para><para depth="0">Modified: trunk/phase3/languages/messages/MessagesFi.php
+===================================================================
+--- trunk/phase3/languages/messages/MessagesFi.php	2008-07-06 20:03:21 UTC (rev<br/>37199)
++++ trunk/phase3/languages/messages/MessagesFi.php	2008-07-06 20:04:56 UTC (rev<br/>37200)
+@@ -92,112 +92,88 @@
+ 	'plural'              =&gt; array( 0, "MONIKKO:", "PLURAL:" ),
+ );
+
+</para><para depth="0">-# Mediawiki Core 
+ $specialPageAliases = array(
+-	'DoubleRedirects'         =&gt; array( 'Kaksinkertaiset_ohjaukset',<br/>'Kaksinkertaiset_uudelleenohjaukset' ),
+-	'BrokenRedirects'         =&gt; array( 'Virheelliset_ohjaukset',<br/>'Virheelliset_uudelleenohjaukset' ),
+-	'Disambiguations'         =&gt; array( 'T?smennyssivut' ),
+-	'Userlogin'               =&gt; array( 'Kirjaudu_sis??n' ),
+-	'Userlogout'              =&gt; array( 'Kirjaudu_ulos' ),
+-	'CreateAccount'           =&gt; array( 'Luo_tunnus' ),
+-	'Preferences'             =&gt; array( 'Asetukset' ),
+-	'Watchlist'               =&gt; array( 'Tarkkailulista' ),
+-	'Recentchanges'           =&gt; array( 'Tuoreet_muutokset' ),
+-	'Upload'                  =&gt; array( 'Tallenna', 'Lis??_tiedosto' ),
+-	'Imagelist'               =&gt; array( 'Tiedostoluettelo' ),
+-	'Newimages'               =&gt; array( 'Uudet_tiedostot', 'Uudet_kuvat' ),
+-	'Listusers'               =&gt; array( 'K?ytt?j?t' ),
+-	'Listgrouprights'         =&gt; array( 'K?ytt?j?ryhmien oikeudet' ),
+-	'Statistics'              =&gt; array( 'Tilastot' ),
+-	'Randompage'              =&gt; array( 'Satunnainen_sivu' ),
+-	'Lonelypages'             =&gt; array( 'Yksin?iset_sivut' ),
+-	'Uncategorizedpages'      =&gt; array( 'Luokittelemattomat_sivut' ),
+-	'Uncategorizedcategories' =&gt; array( 'Luokittelemattomat_luokat' ),
+-	'Uncategorizedimages'     =&gt; array( 'Luokittelemattomat_tiedostot' ),
+-	'Uncategorizedtemplates'  =&gt; array( 'Luokittelemattomat_mallineet' ),
+-	'Unusedcategories'        =&gt; array( 'K?ytt?m?tt?m?t_luokat' ),
+-	'Unusedimages'            =&gt; array( 'K?ytt?m?tt?m?t_tiedostot' ),
+-	'Wantedpages'             =&gt; array( 'Halutuimmat_sivut' ),
+-	'Wantedcategories'        =&gt; array( 'Halutuimmat_luokat' ),
+-	'Missingfiles'            =&gt; array( 'Puuttuvat tiedostot' ),
+-	'Mostlinked'              =&gt; array( 'Viitatuimmat_sivut' ),
+-	'Mostlinkedcategories'    =&gt; array( 'Viitatuimmat_luokat' ),
+-	'Mostlinkedtemplates'     =&gt; array( 'Viitatuimmat_mallineet' ),
+-	'Mostcategories'          =&gt; array( 'Luokitelluimmat_sivut' ),
+-	'Mostimages'              =&gt; array( 'Viitatuimmat_tiedostot' ),
+-	'Mostrevisions'           =&gt; array( 'Muokatuimmat_sivut' ),
+-	'Fewestrevisions'         =&gt; array( 'V?hiten_muokatut_sivut' ),
+-	'Shortpages'              =&gt; array( 'Lyhyet_sivut' ),
+-	'Longpages'               =&gt; array( 'Pitk?t_sivut' ),
+-	'Newpages'                =&gt; array( 'Uudet_sivut' ),
+-	'Ancientpages'            =&gt; array( 'Kuolleet_sivut' ),
+-	'Deadendpages'            =&gt; array( 'Linkitt?m?t_sivut' ),
+-	'Protectedpages'          =&gt; array( 'Suojatut_sivut' ),
+-	'Protectedtitles'         =&gt; array( 'Suojatut_sivunimet' ),
+-	'Allpages'                =&gt; array( 'Kaikki_sivut' ),
+-	'Prefixindex'             =&gt; array( 'Etuliiteluettelo' ),
+-	'Ipblocklist'             =&gt; array( 'Muokkausestot' ),
+-	'Specialpages'            =&gt; array( 'Toimintosivut' ),
+-	'Contributions'           =&gt; array( 'Muokkaukset' ),
+-	'Emailuser'               =&gt; array( 'L?het?_s?hk?postia' ),
+-	'Confirmemail'            =&gt; array( 'Varmista_s?hk?postiosoite' ),
+-	'Whatlinkshere'           =&gt; array( 'T?nne_viittaavat_sivut' ),
+-	'Recentchangeslinked'     =&gt; array( 'Linkitetyt_muutokset' ),
+-	'Movepage'                =&gt; array( 'Siirr?_sivu' ),
+-	'Blockme'                 =&gt; array( 'Est?_minut' ),
+-	'Booksources'             =&gt; array( 'Kirjal?hteet' ),
+-	'Categories'              =&gt; array( 'Luokat' ),
+-	'Export'                  =&gt; array( 'Vie_sivuja' ),
+-	'Version'                 =&gt; array( 'Versio' ),
+-	'Allmessages'             =&gt; array( 'J?rjestelm?viestit' ),
+-	'Log'                     =&gt; array( 'Loki', 'Lokit' ),
+-	'Blockip'                 =&gt; array( 'Est?' ),
+-	'Undelete'                =&gt; array( 'Palauta' ),
+-	'Import'                  =&gt; array( 'Tuo_sivuja' ),
+-	'Lockdb'                  =&gt; array( 'Lukitse_tietokanta' ),
+-	'Unlockdb'                =&gt; array( 'Avaa_tietokanta' ),
+-	'Userrights'              =&gt; array( 'K?ytt?oikeudet' ),
+-	'MIMEsearch'              =&gt; array( 'MIME-haku' ),
+-	'FileDuplicateSearch'     =&gt; array( 'Kaksoiskappaleiden_haku' ),
+-	'Unwatchedpages'          =&gt; array( 'Tarkkailemattomat_sivut' ),
+-	'Listredirects'           =&gt; array( 'Ohjaussivut', 'Uudelleenohjaukset' ),
+-	'Revisiondelete'          =&gt; array( 'Poista_muokkaus' ),
+-	'Unusedtemplates'         =&gt; array( 'K?ytt?m?tt?m?t_mallineet' ),
+-	'Randomredirect'          =&gt; array( 'Satunnainen_ohjaus',<br/>'Satunnainen_uudelleenohjaus' ),
+-	'Mypage'                  =&gt; array( 'Oma_sivu' ),
+-	'Mytalk'                  =&gt; array( 'Oma_keskustelu' ),
+-	'Mycontributions'         =&gt; array( 'Omat_muokkaukset' ),
+-	'Listadmins'              =&gt; array( 'Yll?pit?j?t' ),
+-	'Listbots'                =&gt; array( 'Botit' ),
+-	'Popularpages'            =&gt; array( 'Suositut_sivut' ),
+-	'Search'                  =&gt; array( 'Haku' ),
+-	'Resetpass'               =&gt; array( 'Alusta_salasana' ),
+-	'Withoutinterwiki'        =&gt; array( 'Kielilinkitt?m?t_sivut' ),
+-	'MergeHistory'            =&gt; array( 'Liit?_muutoshistoria' ),
+-	'Filepath'                =&gt; array( 'Tiedostopolku' ),
+-	'Invalidateemail'         =&gt; array( 'Hylk?? s?hk?postiosoite' ),
+-	'Blankpage'               =&gt; array( 'Tyhj? sivu' ),
++	'DoubleRedirects'           =&gt; array( 'Kaksinkertaiset_ohjaukset',<br/>'Kaksinkertaiset_uudelleenohjaukset' ),
++	'BrokenRedirects'           =&gt; array( 'Virheelliset_ohjaukset',<br/>'Virheelliset_uudelleenohjaukset' ),
++	'Disambiguations'           =&gt; array( 'T?smennyssivut' ),
++	'Userlogin'                 =&gt; array( 'Kirjaudu_sis??n' ),
++	'Userlogout'                =&gt; array( 'Kirjaudu_ulos' ),
++	'CreateAccount'             =&gt; array( 'Luo_tunnus' ),
++	'Preferences'               =&gt; array( 'Asetukset' ),
++	'Watchlist'                 =&gt; array( 'Tarkkailulista' ),
++	'Recentchanges'             =&gt; array( 'Tuoreet_muutokset' ),
++	'Upload'                    =&gt; array( 'Tallenna', 'Lis??_tiedosto' ),
++	'Imagelist'                 =&gt; array( 'Tiedostoluettelo' ),
++	'Newimages'                 =&gt; array( 'Uudet_tiedostot', 'Uudet_kuvat' ),
++	'Listusers'                 =&gt; array( 'K?ytt?j?t' ),
++	'Statistics'                =&gt; array( 'Tilastot' ),
++	'Randompage'                =&gt; array( 'Satunnainen_sivu' ),
++	'Lonelypages'               =&gt; array( 'Yksin?iset_sivut' ),
++	'Uncategorizedpages'        =&gt; array( 'Luokittelemattomat_sivut' ),
++	'Uncategorizedcategories'   =&gt; array( 'Luokittelemattomat_luokat' ),
++	'Uncategorizedimages'       =&gt; array( 'Luokittelemattomat_tiedostot' ),
++	'Uncategorizedtemplates'    =&gt; array( 'Luokittelemattomat_mallineet' ),
++	'Unusedcategories'          =&gt; array( 'K?ytt?m?tt?m?t_luokat' ),
++	'Unusedimages'              =&gt; array( 'K?ytt?m?tt?m?t_tiedostot' ),
++	'Wantedpages'               =&gt; array( 'Halutuimmat_sivut' ),
++	'Wantedcategories'          =&gt; array( 'Halutuimmat_luokat' ),
++	'Mostlinked'                =&gt; array( 'Viitatuimmat_sivut' ),
++	'Mostlinkedcategories'      =&gt; array( 'Viitatuimmat_luokat' ),
++	'Mostlinkedtemplates'       =&gt; array( 'Viitatuimmat_mallineet' ),
++	'Mostcategories'            =&gt; array( 'Luokitelluimmat_sivut' ),
++	'Mostimages'                =&gt; array( 'Viitatuimmat_tiedostot' ),
++	'Mostrevisions'             =&gt; array( 'Muokatuimmat_sivut' ),
++	'Fewestrevisions'           =&gt; array( 'V?hiten_muokatut_sivut' ),
++	'Shortpages'                =&gt; array( 'Lyhyet_sivut' ),
++	'Longpages'                 =&gt; array( 'Pitk?t_sivut' ),
++	'Newpages'                  =&gt; array( 'Uudet_sivut' ),
++	'Ancientpages'              =&gt; array( 'Kuolleet_sivut' ),
++	'Deadendpages'              =&gt; array( 'Linkitt?m?t_sivut' ),
++	'Protectedpages'            =&gt; array( 'Suojatut_sivut' ),
++	'Protectedtitles'           =&gt; array( 'Suojatut_sivunimet' ),
++	'Allpages'                  =&gt; array( 'Kaikki_sivut' ),
++	'Prefixindex'               =&gt; array( 'Etuliiteluettelo' ),
++	'Ipblocklist'               =&gt; array( 'Muokkausestot' ),
++	'Specialpages'              =&gt; array( 'Toimintosivut' ),
++	'Contributions'             =&gt; array( 'Muokkaukset' ),
++	'Emailuser'                 =&gt; array( 'L?het?_s?hk?postia' ),
++	'Confirmemail'              =&gt; array( 'Varmista_s?hk?postiosoite' ),
++	'Whatlinkshere'             =&gt; array( 'T?nne_viittaavat_sivut' ),
++	'Recentchangeslinked'       =&gt; array( 'Linkitetyt_muutokset' ),
++	'Movepage'                  =&gt; array( 'Siirr?_sivu' ),
++	'Blockme'                   =&gt; array( 'Est?_minut' ),
++	'Booksources'               =&gt; array( 'Kirjal?hteet' ),
++	'Categories'                =&gt; array( 'Luokat' ),
++	'Export'                    =&gt; array( 'Vie_sivuja' ),
++	'Version'                   =&gt; array( 'Versio' ),
++	'Allmessages'               =&gt; array( 'J?rjestelm?viestit' ),
++	'Log'                       =&gt; array( 'Loki', 'Lokit' ),
++	'Blockip'                   =&gt; array( 'Est?' ),
++	'Undelete'                  =&gt; array( 'Palauta' ),
++	'Import'                    =&gt; array( 'Tuo_sivuja' ),
++	'Lockdb'                    =&gt; array( 'Lukitse_tietokanta' ),
++	'Unlockdb'                  =&gt; array( 'Avaa_tietokanta' ),
++	'Userrights'                =&gt; array( 'K?ytt?oikeudet' ),
++	'MIMEsearch'                =&gt; array( 'MIME-haku' ),
++	'FileDuplicateSearch'       =&gt; array( 'Kaksoiskappaleiden_haku' ),
++	'Unwatchedpages'            =&gt; array( 'Tarkkailemattomat_sivut' ),
++	'Listredirects'             =&gt; array( 'Ohjaussivut', 'Uudelleenohjaukset' ),
++	'Revisiondelete'            =&gt; array( 'Poista_muokkaus' ),
++	'Unusedtemplates'           =&gt; array( 'K?ytt?m?tt?m?t_mallineet' ),
++	'Randomredirect'            =&gt; array( 'Satunnainen_ohjaus',<br/>'Satunnainen_uudelleenohjaus' ),
++	'Mypage'                    =&gt; array( 'Oma_sivu' ),
++	'Mytalk'                    =&gt; array( 'Oma_keskustelu' ),
++	'Mycontributions'           =&gt; array( 'Omat_muokkaukset' ),
++	'Listadmins'                =&gt; array( 'Yll?pit?j?t' ),
++	'Listbots'                  =&gt; array( 'Botit' ),
++	'Popularpages'              =&gt; array( 'Suositut_sivut' ),
++	'Search'                    =&gt; array( 'Haku' ),
++	'Resetpass'                 =&gt; array( 'Alusta_salasana' ),
++	'Withoutinterwiki'          =&gt; array( 'Kielilinkitt?m?t_sivut' ),
++	'MergeHistory'              =&gt; array( 'Liit?_muutoshistoria' ),
++	'Filepath'                  =&gt; array( 'Tiedostopolku' ),
+ );
+
+</para><para depth="0">-# Category Tree 
+-$aliases['fi'] = array(
+-	'CategoryTree' =&gt; array( 'Luokkapuu' ),
+-);
+-
+-# Configure 
+-$aliases['fi'] = array(
+-	'Configure'  =&gt; array( 'Wikin asetukset' ),
+-	'Extensions' =&gt; array( 'Laajennukset' ),
+-	'ViewConfig' =&gt; array( 'N?yt? asetukset' ),
+-);
+-
+-# Translate 
+-$aliases['fi'] = array(
+-	'Translate'          =&gt; array( 'K??nn?' ),
+-	'Magic'              =&gt; array( 'Laajennettu k??nt?minen' ),
+-	'TranslationChanges' =&gt; array( 'K??nn?smuutokset' ),
+-);
+-
+ $linkTrail = '/^([a-z??]+)(.*)$/sDu';
+
+</para><para depth="0"> $messages = array(
+
+</para><para depth="0">Modified: trunk/phase3/languages/messages/MessagesHu.php
+===================================================================
+--- trunk/phase3/languages/messages/MessagesHu.php	2008-07-06 20:03:21 UTC (rev<br/>37199)
++++ trunk/phase3/languages/messages/MessagesHu.php	2008-07-06 20:04:56 UTC (rev<br/>37200)
+@@ -59,7 +59,6 @@
+ $fallback8bitEncoding = "iso8859-2";
+ $separatorTransformTable = array(',' =&gt; "\xc2\xa0", '.' =&gt; ',' );
+
+</para><para depth="0">-# Mediawiki Core 
+ $specialPageAliases = array(
+ 	'DoubleRedirects'         =&gt; array( 'Dupla ?tir?ny?t?sok' ),
+ 	'BrokenRedirects'         =&gt; array( 'Nem l?tez? lapra mutat? ?tir?ny?t?sok' ),
+@@ -73,7 +72,7 @@
+ 	'Upload'                  =&gt; array( 'Felt?lt?s' ),
+ 	'Imagelist'               =&gt; array( 'K?plista' ),
+ 	'Newimages'               =&gt; array( '?j k?pek gal?ri?ja' ),
+-	'Listusers'               =&gt; array( 'Szerkeszt?k list?ja', 'Szerkeszt?k',<br/>'Felhaszn?l?k' ),
++	'Listusers'               =&gt; array( 'Szerekszt?k list?ja', 'Szerkeszt?k',<br/>'Felhaszn?l?k' ),
+ 	'Listgrouprights'         =&gt; array( 'Szerkeszt?i csoportok jogai' ),
+ 	'Statistics'              =&gt; array( 'Statisztik?k' ),
+ 	'Randompage'              =&gt; array( 'Lap tal?lomra' ),
+@@ -143,20 +142,8 @@
+ 	'MergeHistory'            =&gt; array( 'Lapt?rt?netek egyes?t?se' ),
+ 	'Filepath'                =&gt; array( 'F?jl el?r?si ?tja' ),
+ 	'Invalidateemail'         =&gt; array( 'E-mail c?m ?rv?nytelen?t?se' ),
+-	'Blankpage'               =&gt; array( '?res lap' ),
+ );
+
+</para><para depth="0">-# Category Tree 
+-$aliases['hu'] = array(
+-	'CategoryTree' =&gt; array( 'Kateg?riafa' ),
+-);
+-
+-# Translate 
+-$aliases['hu'] = array(
+-	'Translate'          =&gt; array( 'Ford?t?s' ),
+-	'TranslationChanges' =&gt; array( 'V?ltoz?sok a ford?t?sokban' ),
+-);
+-
+ $datePreferences = array(
+ 	'ymd',
+ 	'ISO 8601',
+</para></body></message>

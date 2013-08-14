@@ -1,0 +1,33 @@
+<message message-id="20100811135242.5753B21F24@mail01.netbeans.org" list="org.netbeans.platform.issues" id="24angq65uhgnuf3b" no-archive="yes" type="bugs" date="2010-08-11T13:32:26Z" year="2010-01-01" year-month="2010-08-01" year-month-day="2010-08-11" thread-id="24angq65uhgnuf3b"><headers><envelope-from-line>Wed Aug 11 05:52:49 2010</envelope-from-line><from personal="anebuzelsky@netbeans.org" address="anebuzelsky@netbeans.org">anebuzelsky@netbeans.org</from><to personal="issues@platform.netbeans.org" address="issues@platform.netbeans.org">issues@platform.netbeans.org</to><subject normal="[Bug 137829] [69cat] First Qsearch is slow">[Bug 137829] [69cat] First Qsearch is slow</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 565;
+          Wed, 11 Aug 2010 05:52:48 -0800 (GMT-08:00)</received><received>from mailout01.kenai.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id AD2793B300CB;
+	Wed, 11 Aug 2010 06:52:25 -0700 (PDT)</received><received>from mail01.netbeans.org (nbxmlm01z1.network.org [192.9.171.188])
+	by mailout01.kenai.com (Postfix) with ESMTP id A342B14EF7;
+	Wed, 11 Aug 2010 13:52:48 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail01.netbeans.org (Postfix) with ESMTP id 9F02A21F33;
+	Wed, 11 Aug 2010 13:52:47 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail01.netbeans.org ([127.0.0.1])
+	by localhost (nbxmlm01z1.network.org [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id ySC+RBE33jQw; Wed, 11 Aug 2010 13:52:42 +0000 (GMT)</received><received>by mail01.netbeans.org (Postfix, from userid 60005)
+	id 5753B21F24; Wed, 11 Aug 2010 13:52:42 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail01.netbeans.org (Postfix) with ESMTP id E5E2B20649
+	for &lt;issues@platform.netbeans.org&gt;; Wed, 11 Aug 2010 13:32:39 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail01.netbeans.org ([127.0.0.1])
+	by localhost (nbxmlm01z1.network.org [127.0.0.1]) (amavisd-new, port 10025)
+	with ESMTP id YeEAmNceX1on for &lt;issues@platform.netbeans.org&gt;;
+	Wed, 11 Aug 2010 13:32:35 +0000 (GMT)</received><received>from netbeans.org (nbxbz04z1.network.org [192.9.171.205])
+	by mail01.netbeans.org (Postfix) with ESMTP id 15FE22052B
+	for &lt;issues@platform.netbeans.org&gt;; Wed, 11 Aug 2010 13:32:26 +0000 (GMT)</received><x-bugzilla-reason>QAcontact AssignedTo</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>platform</x-bugzilla-product><x-bugzilla-component>Quick Search</x-bugzilla-component><x-bugzilla-keywords>6.9_WAIVER_APPROVED</x-bugzilla-keywords><x-bugzilla-who>anebuzelsky@netbeans.org</x-bugzilla-who><x-bugzilla-status>NEW</x-bugzilla-status><x-bugzilla-priority>P2</x-bugzilla-priority><x-bugzilla-assigned-to>issues@platform.netbeans.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>6.10</x-bugzilla-target-milestone><x-bugzilla-changed-fields>AssignedTo</x-bugzilla-changed-fields><in-reply-to>&lt;bug-137829-495@http.netbeans.org/bugzilla/&gt;</in-reply-to><references>&lt;bug-137829-495@http.netbeans.org/bugzilla/&gt;</references><auto-submitted>auto-generated</auto-submitted><content-type>text/plain; charset="UTF-8"</content-type><mime-version>1.0</mime-version><date>Wed, 11 Aug 2010 13:32:26 +0000</date><reply-to>issues@platform.netbeans.org</reply-to><x-loop>issues@platform.netbeans.org</x-loop><x-sequence>11166</x-sequence><errors-to>issues-owner@platform.netbeans.org</errors-to><precedence>list</precedence><x-no-archive>yes</x-no-archive><list-id>&lt;issues.platform.netbeans.org&gt;</list-id><list-help>&lt;mailto:sympa@platform.netbeans.org?subject=help&gt;</list-help><list-subscribe>&lt;mailto:sympa@platform.netbeans.org?subject=subscribe%20issues&gt;</list-subscribe><list-unsubscribe>&lt;mailto:sympa@platform.netbeans.org?subject=unsubscribe%20issues&gt;</list-unsubscribe><list-post>&lt;mailto:issues@platform.netbeans.org&gt;</list-post><list-owner>&lt;mailto:issues-request@platform.netbeans.org&gt;</list-owner><message-id>20100811135242.5753B21F24@mail01.netbeans.org</message-id></headers><normalized-references><normalized-message-id>20100811135242.5753B21F24@mail01.netbeans.org</normalized-message-id><normalized-in-reply-to>bug-137829-495@http.netbeans.org/bugzilla/</normalized-in-reply-to><normalized-reference>bug-137829-495@http.netbeans.org/bugzilla/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0"><url>http://netbeans.org/bugzilla/show_bug.cgi?id=137829</url>
+
+</para><para depth="0">Antonin Nebuzelsky &lt;<email>anebuzelsky@netbeans.org</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+         AssignedTo|<email>dsimonek@netbeans.org</email>       |<email>issues@platform.netbeans.or</email>
+                   |                            |g
+
+</para><footer type="signature" depth="0" hash="12411425223721511552">-- 
+Configure bugmail: <url>http://netbeans.org/bugzilla/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the QA contact for the bug.
+You are the assignee for the bug.
+</footer></body></message>

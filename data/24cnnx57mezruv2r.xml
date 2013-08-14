@@ -1,0 +1,175 @@
+<message message-id="55890fb30905181939r6213b190rfd0d7a2ea1eae50f@mail.gmail.com" list="org.codehaus.groovy.griffon-user" id="24cnnx57mezruv2r" type="users" date="2009-05-18T18:38:56.878297-08:00" year="2009-01-01" year-month="2009-05-01" year-month-day="2009-05-18" thread-id="akcnysd3xtww67ux"><headers><envelope-from-line>Mon May 18 18:39:19 2009</envelope-from-line><from personal="Andres Almiray" address="aalmiray@gmail.com">Andres Almiray &lt;aalmiray@gmail.com&gt;</from><to personal="dev@griffon.codehaus.org" address="dev@griffon.codehaus.org">dev@griffon.codehaus.org</to><subject normal="[griffon-dev] Griffon 0.1.1 release">Re: [griffon-dev] Griffon 0.1.1 release</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 905
+          for &lt;nanette.santos.sheppard@a.markmail.org&gt;;
+          Mon, 18 May 2009 18:39:19 -0800 (GMT-08:00)</received><received>from mail.codehaus.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id EEE232908275
+	for &lt;nanette.santos.sheppard@a.markmail.org&gt;; Mon, 18 May 2009 19:38:55 -0700 (PDT)</received><received>(qmail 599 invoked by uid 89); 19 May 2009 02:39:10 -0000</received><mailing-list>contact dev-help@griffon.codehaus.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;http://xircles.codehaus.org/manage_email&gt;</list-post><list-help>&lt;http://xircles.codehaus.org/manage_email&gt;</list-help><list-unsubscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-unsubscribe><list-subscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-subscribe><list-id>&lt;dev.griffon.codehaus.org&gt;</list-id><reply-to>dev@griffon.codehaus.org</reply-to><delivered-to>mailing list dev@griffon.codehaus.org</delivered-to><received>(qmail 574 invoked by uid 89); 19 May 2009 02:39:06 -0000</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:received:in-reply-to:references
+         :date:message-id:subject:from:to:content-type;
+        bh=Ve22R0hRRcjkgbn/UNFbfu296jegZsr3kB4PDh2xxCs=;
+        b=mVteyCtte3IVxnWaHdfdd1AtYmlq+5y+pZZTPPf32jdYBkGZNX8TJkd59kMnLVNmJs
+         APrNjDndGr61SuMUADmA2IrB9Q+oZOG/swQecBx5Ua8KEkNMM3gjtbCmVQHqsfqZNAFQ
+         kxcb+ivGbU1s28nwwkv0CajWzpR3m+Yh2xNrI=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+         :content-type;
+        b=ukN6aAElZOcgEV8nMAszQgP233k8LC7OwPBt3iK0teHIUJfWwwtRup+MjqIA45w/2H
+         4P0tOVEjHbQtvR4GrEMYn9IfKy0z+EZERwFrt1uY5w0LuY5FzucCUdcQOB4XrAIwShy7
+         asyxzY7329A3SjlJTJYTEmFKR2QbM7SVM8Hxw=</domainkey-signature><mime-version>1.0</mime-version><in-reply-to>&lt;29cac3430905181904r5f4e406eh2665a270b9ed087a@mail.gmail.com&gt;</in-reply-to><references>&lt;29cac3430905181518j2a2a32f8wc06f9378f09a66fe@mail.gmail.com&gt;
+	 &lt;55890fb30905181522s70ceea0fn353169b60be246b6@mail.gmail.com&gt;
+	 &lt;197b18fc0905181523g42bf807evf13db6c3cce523e8@mail.gmail.com&gt;
+	 &lt;29cac3430905181534t388bd53cyafdd60ae795c0455@mail.gmail.com&gt;
+	 &lt;55890fb30905181835offab600s476f09bd171f4544@mail.gmail.com&gt;
+	 &lt;29cac3430905181904r5f4e406eh2665a270b9ed087a@mail.gmail.com&gt;</references><date>Mon, 18 May 2009 19:39:06 -0700</date><message-id>55890fb30905181939r6213b190rfd0d7a2ea1eae50f@mail.gmail.com</message-id><content-type>multipart/alternative; boundary=000e0cd486348b8bf4046a3ad0b3</content-type></headers><normalized-references><normalized-message-id>55890fb30905181939r6213b190rfd0d7a2ea1eae50f@mail.gmail.com</normalized-message-id><normalized-in-reply-to>29cac3430905181904r5f4e406eh2665a270b9ed087a@mail.gmail.com</normalized-in-reply-to><normalized-reference>29cac3430905181518j2a2a32f8wc06f9378f09a66fe@mail.gmail.com</normalized-reference><normalized-reference>55890fb30905181522s70ceea0fn353169b60be246b6@mail.gmail.com</normalized-reference><normalized-reference>197b18fc0905181523g42bf807evf13db6c3cce523e8@mail.gmail.com</normalized-reference><normalized-reference>29cac3430905181534t388bd53cyafdd60ae795c0455@mail.gmail.com</normalized-reference><normalized-reference>55890fb30905181835offab600s476f09bd171f4544@mail.gmail.com</normalized-reference><normalized-reference>29cac3430905181904r5f4e406eh2665a270b9ed087a@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=000e0cd486348b8bf4046a3ad0b3" type="text/plain; charset=ISO-8859-1"><para depth="0">Found another hiccup calling 'griffon upgrade' on a plugin project (after
+installing 01x-17)
+
+</para><para depth="0">[aalmiray@localhost trunk]$ griffon upgrade
+Welcome to Griffon 0.1.1 - <url>http://griffon.codehaus.org/</url>
+Licensed under Apache Standard License 2.0
+Griffon home is set to: /usr/local/griffon
+
+</para><para depth="0">Base Directory: /usr/dev/
+codehaus.org/griffon/plugins/griffon-jide-builder/trunk
+Running script /usr/local/griffon/scripts/Upgrade.groovy
+Environment set to development
+    [mkdir] Created dir: /usr/dev/
+codehaus.org/griffon/plugins/griffon-jide-builder/trunk/test
+    [mkdir] Created dir: /usr/dev/
+codehaus.org/griffon/plugins/griffon-jide-builder/trunk/test/integration
+    [mkdir] Created dir: /usr/dev/
+codehaus.org/griffon/plugins/griffon-jide-builder/trunk/test/unit
+Found application events script
+NOTE: Your application currently expects griffon version [0.1.0], this
+target will upgrade it to Griffon 0.1.1 ...
+   [delete] Deleting directory
+/home/aalmiray/.griffon/0.1.1/projects/trunk/resources
+Error executing script Upgrade: No signature of method:
+org.apache.tools.ant.Project.replaceProperties() is applicable for argument
+types: (groovy.util.ConfigObject) values: [[:]]
+gant.TargetExecutionException: No signature of method:
+org.apache.tools.ant.Project.replaceProperties() is applicable for argument
+types: (groovy.util.ConfigObject) values: [[:]]
+        at gant.Gant$_dispatch_closure4.doCall(Gant.groovy:313)
+        at gant.Gant.dispatch(Gant.groovy:316)
+        at gant.Gant.this$2$dispatch(Gant.groovy)
+        at gant.Gant.invokeMethod(Gant.groovy)
+        at gant.Gant.processTargets(Gant.groovy:446)
+        at gant.Gant.processTargets(Gant.groovy:430)
+Caused by: groovy.lang.MissingMethodException: No signature of method:
+org.apache.tools.ant.Project.replaceProperties() is applicable for argument
+types: (groovy.util.ConfigObject) values: [[:]]
+        at
+_GriffonClean_groovy$_run_closure3.doCall(_GriffonClean_groovy:51)
+        at _GriffonClean_groovy$_run_closure3.doCall(_GriffonClean_groovy)
+        at
+_GriffonClean_groovy$_run_closure2.doCall(_GriffonClean_groovy:34)
+        at _GriffonClean_groovy$_run_closure2.doCall(_GriffonClean_groovy)
+        at Upgrade$_run_closure1.doCall(Upgrade:69)
+        at Upgrade$_run_closure1.doCall(Upgrade)
+        at gant.Gant$_dispatch_closure4.doCall(Gant.groovy:306)
+        ... 5 more
+
+</para><para depth="0">On Mon, May 18, 2009 at 7:04 PM, Danno Ferrin &lt;<email>danno.ferrin@shemnon.com</email>&gt;wrote:
+
+</para><quote depth="1"><quotepara depth="1">hmm... looks like we need to rethink build.properties then in 0.2, so we
+can override on the command line and get the same value in the build.
+
+</quotepara><quotepara depth="1">bumped the source files, then did a re-spin.
+
+</quotepara><quotepara depth="1"><url>http://bamboo.ci.codehaus.org/browse/GRIFFON-RELEASE01X-17/artifact</url>
+
+</quotepara><quotepara depth="1">On Mon, May 18, 2009 at 7:35 PM, Andres Almiray &lt;<email>aalmiray@gmail.com</email>&gt;wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">got this after running the installer obtained from bamboo
+
+</quotepara><quotepara depth="2">[aalmiray@localhost SwingPad]$ griffon run-app
+Welcome to Griffon 0.1.1-SNAPSHOT - <url>http://griffon.codehaus.org/</url>
+Licensed under Apache Standard License 2.0
+Griffon home is set to: /usr/local/griffon
+
+</quotepara><quotepara depth="2">Base Directory: /tmp/SwingPad
+Running script /usr/local/griffon/scripts/RunApp.groovy
+Environment set to development
+Warning, target causing name overwriting of name default
+Found application events script
+Application expects griffon version [0.1.1], but GRIFFON_HOME is version
+[0.1.1-SNAPSHOT] - use the correct Griffon version or run 'griffon upgrade'
+if this Griffon version is newer than the version your application expects.
+
+</quotepara><quotepara depth="2">looks like the -SNAPSHOT tag is still around
+
+</quotepara><quotepara depth="2">On Mon, May 18, 2009 at 3:34 PM, Danno Ferrin &lt;<email>danno.ferrin@shemnon.com</email>&gt;wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">That's the point of the timing of this release ;)
+
+</quotepara><quotepara depth="3">On Mon, May 18, 2009 at 4:23 PM, Guillaume Laforge &lt;<email>glaforge@gmail.com</email>&gt;wrote:
+
+</quotepara><quote depth="4"><quotepara depth="4">Jim could even announce the release during his talk at GR8Conf ;-)
+
+</quotepara><quotepara depth="4">On Tue, May 19, 2009 at 00:22, Andres Almiray &lt;<email>aalmiray@gmail.com</email>&gt;wrote:
+
+</quotepara><quote depth="5"><quotepara depth="5">great! artifacts are ready, will take them for a spin after work.
+
+</quotepara><quotepara depth="5">On Mon, May 18, 2009 at 3:18 PM, Danno Ferrin &lt;
+<email>danno.ferrin@shemnon.com</email>&gt; wrote:
+
+</quotepara><quote depth="6"><quotepara depth="6">Ok, I think I've come to a conclusion.  0.1.1 will go out ASAP. It may
+be the last release, 0.1.2 will only happen if notable bugs are found.
+
+</quotepara><quotepara depth="6">When addons work after some fashion 0.2 beta will ship (hopefully
+before the JavaOne BOF).
+
+</quotepara><quotepara depth="6">(I've got some work and family stuff going on, otherwise this wold
+have gone out saturday).
+
+</quotepara><quotepara depth="6">So, with that being said, I spun off bamboo.  Would this release (
+<url>http://bamboo.ci.codehaus.org/browse/GRIFFON-RELEASE01X-16</url> ) pass
+muster? Caution, I haven't even had a chance to look at these freshly spun
+bits, so it's not a loaded question.  Once the kiddos are in bead I'll do
+some vetting and such.
+
+</quotepara><quotepara depth="6">------------------------------------------------------
+"But you didn't." - Jim Halpert, The Office S05E23
+
+</quotepara></quote></quote><quotepara depth="4">--
+Guillaume Laforge
+Groovy Project Manager
+Head of Groovy Development at SpringSource
+<url>http://www.springsource.com/g2one</url>
+
+</quotepara><quotepara depth="4">Attend the GR8 Conference, a conference dedicated to Groovy, Grails and
+Griffon
+<url>http://www.gr8conf.org</url>
+
+</quotepara><quotepara depth="4">Read the blog: <url>http://www.gr8conf.org/blog/list</url>
+Follow us on Twitter: <url>http://twitter.com/gr8conf</url>
+
+</quotepara></quote><quotefooter type="noise" depth="3">--
+</quotefooter><quotepara depth="3">------------------------------------------------------
+"But you didn't." - Jim Halpert, The Office S05E23
+
+</quotepara></quote><quotefooter type="noise" depth="2">--
+</quotefooter><quotepara depth="2">-------------------------------------------
+<url>http://jroller.com/aalmiray</url>
+<url>http://www.linkedin/in/aalmiray</url>
+ --
+What goes up, must come down. Ask any system administrator.
+There are 10 types of people in the world: Those who understand binary,
+and those who don't.
+To understand recursion, we must first understand recursion.
+
+</quotepara></quote><quotefooter type="noise" depth="1">--
+</quotefooter><quotepara depth="1">------------------------------------------------------
+"But you didn't." - Jim Halpert, The Office S05E23
+
+</quotepara></quote><footer type="noise" depth="0">-- 
+</footer><para depth="0">-------------------------------------------
+<url>http://jroller.com/aalmiray</url>
+<url>http://www.linkedin/in/aalmiray</url>
+</para><footer type="signature" depth="0" hash="2087981671264978724">--
+What goes up, must come down. Ask any system administrator.
+There are 10 types of people in the world: Those who understand binary, and
+those who don't.
+To understand recursion, we must first understand recursion.
+</footer></body></message>

@@ -1,0 +1,79 @@
+<message message-id="200812042245.mB4MjUDK046164@repoman.freebsd.org" list="org.freebsd.p4-projects" id="24ah4fmyaprhhfo5" type="bugs" date="2008-12-04T14:45:17.217702-08:00" year="2008-01-01" year-month="2008-12-01" year-month-day="2008-12-04" thread-id="24ah4fmyaprhhfo5"><headers><envelope-from-line>Thu Dec 04 14:45:40 2008</envelope-from-line><from personal="Sam Leffler" address="sam@FreeBSD.org">Sam Leffler &lt;sam@FreeBSD.org&gt;</from><to personal="Perforce Change Reviews" address="perforce@freebsd.org">Perforce Change Reviews &lt;perforce@freebsd.org&gt;</to><subject normal="PERFORCE change 154079 for review">PERFORCE change 154079 for review</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 855
+          for &lt;tom.sargent.browning@a.markmail.org&gt;;
+          Thu, 4 Dec 2008 14:45:40 -0800 (GMT-08:00)</received><received>from mx2.freebsd.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id B553E2908088
+	for &lt;tom.sargent.browning@a.markmail.org&gt;; Thu,  4 Dec 2008 14:45:16 -0800 (PST)</received><received>from hub.freebsd.org (hub.freebsd.org [IPv6:2001:4f8:fff6::36])
+	by mx2.freebsd.org (Postfix) with ESMTP id 95CF020005E;
+	Thu,  4 Dec 2008 22:45:38 +0000 (UTC)
+	(envelope-from owner-p4-projects@freebsd.org)</received><received>from hub.freebsd.org (localhost [127.0.0.1])
+	by hub.freebsd.org (Postfix) with ESMTP id 70C0310657F4;
+	Thu,  4 Dec 2008 22:45:37 +0000 (UTC)
+	(envelope-from owner-p4-projects@freebsd.org)</received><delivered-to>p4-projects@freebsd.org</delivered-to><received>by hub.freebsd.org (Postfix, from userid 32767)
+	id 5825A1065677; Thu,  4 Dec 2008 22:45:31 +0000 (UTC)</received><delivered-to>perforce@freebsd.org</delivered-to><received>from mx1.freebsd.org (mx1.freebsd.org [IPv6:2001:4f8:fff6::34])
+	by hub.freebsd.org (Postfix) with ESMTP id 1BA6B1065672
+	for &lt;perforce@freebsd.org&gt;; Thu,  4 Dec 2008 22:45:31 +0000 (UTC)
+	(envelope-from sam@freebsd.org)</received><received>from repoman.freebsd.org (repoman.freebsd.org
+	[IPv6:2001:4f8:fff6::29])
+	by mx1.freebsd.org (Postfix) with ESMTP id 0BE2A8FC1A
+	for &lt;perforce@freebsd.org&gt;; Thu,  4 Dec 2008 22:45:31 +0000 (UTC)
+	(envelope-from sam@freebsd.org)</received><received>from repoman.freebsd.org (localhost [127.0.0.1])
+	by repoman.freebsd.org (8.14.3/8.14.3) with ESMTP id mB4MjU8F046166
+	for &lt;perforce@freebsd.org&gt;; Thu, 4 Dec 2008 22:45:30 GMT
+	(envelope-from sam@freebsd.org)</received><received>(from perforce@localhost)
+	by repoman.freebsd.org (8.14.3/8.14.3/Submit) id mB4MjUDK046164
+	for perforce@freebsd.org; Thu, 4 Dec 2008 22:45:30 GMT
+	(envelope-from sam@freebsd.org)</received><date>Thu, 4 Dec 2008 22:45:30 GMT</date><message-id>200812042245.mB4MjUDK046164@repoman.freebsd.org</message-id><x-authentication-warning>repoman.freebsd.org: perforce set sender to
+	sam@freebsd.org using -f</x-authentication-warning><x-beenthere>p4-projects@freebsd.org</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>p4 projects tree changes &lt;p4-projects.freebsd.org&gt;</list-id><list-unsubscribe>&lt;http://lists.freebsd.org/mailman/listinfo/p4-projects&gt;,
+	&lt;mailto:p4-projects-request@freebsd.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.freebsd.org/pipermail/p4-projects&gt;</list-archive><list-post>&lt;mailto:p4-projects@freebsd.org&gt;</list-post><list-help>&lt;mailto:p4-projects-request@freebsd.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.freebsd.org/mailman/listinfo/p4-projects&gt;,
+	&lt;mailto:p4-projects-request@freebsd.org?subject=subscribe&gt;</list-subscribe><sender>owner-p4-projects@freebsd.org</sender><errors-to>owner-p4-projects@freebsd.org</errors-to></headers><normalized-references><normalized-message-id>200812042245.mB4MjUDK046164@repoman.freebsd.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0"><url>http://perforce.freebsd.org/chv.cgi?CH=154079</url>
+
+</para><para depth="0">Change 154079 by sam@sam_ebb on 2008/12/04 22:44:49
+
+</para><para depth="0">	don't calculate register offsets relative to each other;
+	just use the absolute addresses in the manual
+
+</para><para depth="0">Affected files ...
+
+</para><para depth="0">.. //depot/projects/vap/sys/arm/xscale/ixp425/ixp425reg.h#6 edit
+
+</para><para depth="0">Differences ...
+
+</para><para depth="0">==== //depot/projects/vap/sys/arm/xscale/ixp425/ixp425reg.h#6 (text+ko) ====
+
+</para><para depth="0">@@ -662,23 +662,16 @@
+
+</para><para depth="0"> /*
+  * IXP435/Gateworks Cambria
+- *
+- * Octal status LED latch is in upper 256K of CS3
+- * Optional RS485 Serial port is next lower 256K
+- * Optional GPS Serial port is next lower 256K
+- * next lower 768K is reserved
+- * Compact flash socket 1 is next lower 256K
+- * Compact flash socket 0 is next lower 256K
+  */
+-#define	CAMBRIA_OCTAL_LED_HWBASE (IXP425_EXP_BUS_CS4_HWBASE - 0x40000)
+-#define	CAMBRIA_OCTAL_LED_SIZE	0x40000
+-#define	CAMBRIA_RS485_HWBASE	(CAMBRIA_OCTAL_LED_HWBASE - 0x40000)
++#define	CAMBRIA_GPS_HWBASE	0x53FC0000UL	/* optional GPS Serial Port */
++#define	CAMBRIA_GPS_SIZE	0x40000
++#define	CAMBRIA_RS485_HWBASE	0x53F80000UL	/* optional RS485 Serial Port */
+ #define	CAMBRIA_RS485_SIZE	0x40000
+-#define	CAMBRIA_GPS_HWBASE	(CAMBRIA_RS485_HWBASE - 0x40000)
+-#define	CAMBRIA_GPS_SIZE	0x40000
+-#define	CAMBRIA_CFSEL1_HWBASE	(CAMBRIA_GPS_HWBASE - 4*0x40000)
++#define	CAMBRIA_OCTAL_LED_HWBASE 0x53F40000UL	/* Octal Status LED Latch */
++#define	CAMBRIA_OCTAL_LED_SIZE	0x1000
++#define	CAMBRIA_CFSEL1_HWBASE	0x53E40000UL	/* Compact Flash Socket Sel 0 */
+ #define	CAMBRIA_CFSEL1_SIZE	0x40000
+-#define	CAMBRIA_CFSEL0_HWBASE	(CAMBRIA_CFSEL1_HWBASE - 0x40000)
++#define	CAMBRIA_CFSEL0_HWBASE	0x53E00000UL	/* Compact Flash Socket Sel 1 */
+ #define	CAMBRIA_CFSEL0_SIZE	0x40000
+
+</para><para depth="0"> #define IXP435_USB1_HWBASE	0xcd000000UL	/* USB host controller 1 */
+</para><footer type="list-management" depth="0">_______________________________________________
+<email>p4-projects@freebsd.org</email> mailing list
+<url>http://lists.freebsd.org/mailman/listinfo/p4-projects</url>
+To unsubscribe, send any mail to "<email>p4-projects-unsubscribe@freebsd.org</email>"
+</footer></body></message>

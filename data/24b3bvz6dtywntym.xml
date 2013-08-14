@@ -1,0 +1,55 @@
+<message message-id="780333044.1217411972074.JavaMail.jira@brutus" list="org.apache.lucene.java-dev" id="24b3bvz6dtywntym" type="bugs" date="2008-07-30T02:59:32-07:00" year="2008-01-01" year-month="2008-07-01" year-month-day="2008-07-30" thread-id="bohzup6yhucxon4y"><headers><envelope-from-line>Wed Jul 30 03:00:24 2008</envelope-from-line><from personal="Michael McCandless (JIRA)" address="jira@apache.org">"Michael McCandless (JIRA)" &lt;jira@apache.org&gt;</from><to personal="java-dev@lucene.apache.org" address="java-dev@lucene.apache.org">java-dev@lucene.apache.org</to><subject normal="[jira] Commented: (LUCENE-1340) Make it posible not to include TF information in index">[jira] Commented: (LUCENE-1340) Make it posible not to include TF information in index</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 707
+          for &lt;juliette.rosa.rowe@a.markmail.org&gt;;
+          Wed, 30 Jul 2008 03:00:24 -0700 (PDT)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 19BDB290800A
+	for &lt;juliette.rosa.rowe@a.markmail.org&gt;; Wed, 30 Jul 2008 03:00:24 -0700 (PDT)</received><received>(qmail 5947 invoked by uid 500); 30 Jul 2008 10:00:23 -0000</received><mailing-list>contact java-dev-help@lucene.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:java-dev-help@lucene.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:java-dev-unsubscribe@lucene.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:java-dev@lucene.apache.org&gt;</list-post><list-id>&lt;java-dev.lucene.apache.org&gt;</list-id><reply-to>java-dev@lucene.apache.org</reply-to><delivered-to>mailing list java-dev@lucene.apache.org</delivered-to><received>(qmail 5932 invoked by uid 99); 30 Jul 2008 10:00:22 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 30 Jul 2008 03:00:22 -0700</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.140] (HELO brutus.apache.org) (140.211.11.140)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Wed, 30 Jul 2008 09:59:36 +0000</received><received>from brutus (localhost [127.0.0.1])
+	by brutus.apache.org (Postfix) with ESMTP id 12856234C189
+	for &lt;java-dev@lucene.apache.org&gt;; Wed, 30 Jul 2008 02:59:32 -0700 (PDT)</received><message-id>780333044.1217411972074.JavaMail.jira@brutus</message-id><date>Wed, 30 Jul 2008 02:59:32 -0700 (PDT)</date><in-reply-to>&lt;2069170042.1216420771958.JavaMail.jira@brutus&gt;</in-reply-to><mime-version>1.0</mime-version><content-type>text/plain; charset=utf-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>780333044.1217411972074.JavaMail.jira@brutus</normalized-message-id><normalized-in-reply-to>2069170042.1216420771958.JavaMail.jira@brutus</normalized-in-reply-to></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">
+    [<br/><url>https://issues.apache.org/jira/browse/LUCENE-1340?page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel&amp;focusedCommentId=12618272#action_12618272</url><br/>] 
+
+</para><para depth="0">Michael McCandless commented on LUCENE-1340:
+</para><para depth="0">--------------------------------------------
+
+</para><para depth="0">Sigh, I too missed that we broke back-compatibility.
+
+</para><para depth="0">But I agree: let's mark Fieldable interface as being allowed to change from<br/>release to release (consciously make an exception to back compatibility<br/>requirements).
+
+</para><para depth="0">Let's also transition away from interface for Field, for 3.0   EG we last had<br/>discussions on this, here:
+
+</para><para depth="0">    <url>http://mail-archives.apache.org/mod_mbox/lucene-java-dev/200803.mbox/%3C4<email>5933841-6EBF-4208-B10D-0D3B0BB530FF@mikemccandless.com%3E</email></url>
+
+</para><quote depth="1"><quotepara depth="1">Make it posible not to include TF information in index
+</quotepara><quotepara depth="1">------------------------------------------------------
+
+</quotepara><quotepara depth="1">                Key: LUCENE-1340
+                URL: <url>https://issues.apache.org/jira/browse/LUCENE-1340</url>
+            Project: Lucene - Java
+         Issue Type: New Feature
+         Components: Index
+           Reporter: Eks Dev
+           Priority: Minor
+        Attachments: LUCENE-1340.patch, LUCENE-1340.patch, LUCENE-1340.patch,<br/>LUCENE-1340.patch, LUCENE-1340.patch, LUCENE-1340.patch, LUCENE-1340.patch
+
+</quotepara><quotepara depth="1">  Original Estimate: 24h
+ Remaining Estimate: 24h
+
+</quotepara><quotepara depth="1">Term Frequency is typically not needed  for all fields, some CPU (reading one<br/>VInt less and one X&gt;&gt;&gt;1...) and IO can be spared by making pure boolen fields<br/>possible in Lucene. This topic has already been discussed and accepted as a part<br/>of Flexible Indexing... This issue tries to push things a bit faster forward as<br/>I have some concrete customer demands.
+benefits can be expected for fields that are typical candidates for Filters,<br/>enumerations, user rights, IDs or very short "texts", phone  numbers, zip codes,<br/>names...
+Status: just passed standard test (compatibility), commited for early review, I<br/>have not tried new feature, missing some asserts and one two unit tests
+Complexity: simpler than expected
+can be used via omitTf() (who used omitNorms() will know where to find it :)  
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" hash="12364841950400781264" depth="0">-- 
+This message is automatically generated by JIRA.
+-
+You can reply to this email to add a comment to the issue online.
+
+</footer><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>java-dev-unsubscribe@lucene.apache.org</email>
+For additional commands, e-mail: <email>java-dev-help@lucene.apache.org</email>
+
+</footer></body></message>

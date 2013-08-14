@@ -1,0 +1,56 @@
+<message message-id="006601c566d0$bbd2c3f0$0900a8c0@mindbridge" list="org.apache.tapestry.users" id="24anci3u7czkjahf" type="users" date="2005-06-01T20:38:33+03:00" year="2005-01-01" year-month="2005-06-01" year-month-day="2005-06-01" thread-id="24anci3u7czkjahf"><headers><envelope-from-line>From tapestry-user-return-21305-apmail-jakarta-tapestry-user-archive=jakarta.apache.org@jakarta.apache.org Wed Jun 01 17:38:56 2005</envelope-from-line><from personal="Mind Bridge" address="mindbridgeweb@yahoo.com">Mind Bridge &lt;mindbridgeweb@yahoo.com&gt;</from><to personal="Tapestry users" address="tapestry-user@jakarta.apache.org">Tapestry users &lt;tapestry-user@jakarta.apache.org&gt;</to><subject normal="Changing behavior of contrib:Table's paging links">Re: Changing behavior of contrib:Table's paging links</subject><return-path>tapestry-user-return-21305-apmail-jakarta-tapestry-user-archive=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-tapestry-user-archive@www.apache.org</delivered-to><received>(qmail 56607 invoked from network); 1 Jun 2005 17:38:56 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur.apache.org with SMTP; 1 Jun 2005 17:38:56 -0000</received><received>(qmail 58153 invoked by uid 500); 1 Jun 2005 17:38:50 -0000</received><delivered-to>apmail-jakarta-tapestry-user-archive@jakarta.apache.org</delivered-to><received>(qmail 58116 invoked by uid 500); 1 Jun 2005 17:38:50 -0000</received><mailing-list>contact tapestry-user-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:tapestry-user-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-help>&lt;mailto:tapestry-user-help@jakarta.apache.org&gt;</list-help><list-post>&lt;mailto:tapestry-user@jakarta.apache.org&gt;</list-post><list-id>"Tapestry users" &lt;tapestry-user.jakarta.apache.org&gt;</list-id><reply-to>"Tapestry users" &lt;tapestry-user@jakarta.apache.org&gt;</reply-to><delivered-to>mailing list tapestry-user@jakarta.apache.org</delivered-to><received>(qmail 58094 invoked by uid 99); 1 Jun 2005 17:38:50 -0000</received><x-asf-spam-status>No, hits=1.8 required=10.0
+	tests=DNS_FROM_RFC_ABUSE,DNS_FROM_RFC_POST</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>pass (hermes.apache.org: local policy)</received-spf><received>from smtp103.mail.sc5.yahoo.com (HELO smtp103.mail.sc5.yahoo.com) (66.163.169.222)
+  by apache.org (qpsmtpd/0.28) with SMTP; Wed, 01 Jun 2005 10:38:48 -0700</received><received>(qmail 1261 invoked from network); 1 Jun 2005 17:38:36 -0000</received><domainkey-signature>a=rsa-sha1; q=dns; c=nofws;
+  s=s1024; d=yahoo.com;
+  h=Received:Message-ID:From:To:References:Subject:Date:MIME-Version:Content-Type:Content-Transfer-Encoding:X-Priority:X-MSMail-Priority:X-Mailer:X-MimeOLE;
+  b=5vm4VEQUKL5K0y1vwNg0LSHt5HUJeUHRei0Y+qfrHvgH4mFkk2vh18O4EJG/iluG7+xs9zFdR5orFoe9HpW9eFKi4Ae79taJxxQsdr8jATx9K7PleALqwi5DTiU/lUf7bYnJEFKFoJH6xi66f3FhNjeGWxFg8K5DFQvo3L5bbf0=  ;</domainkey-signature><received>from unknown (HELO mindbridge) (mindbridgeweb@213.240.210.164 with login)
+  by smtp103.mail.sc5.yahoo.com with SMTP; 1 Jun 2005 17:38:35 -0000</received><received>from 127.0.0.1 (AVG SMTP 7.0.322 [267.3.3]); Wed, 01 Jun 2005 20:38:34 +0300</received><message-id>006601c566d0$bbd2c3f0$0900a8c0@mindbridge</message-id><references>&lt;9a5cd270506010828126b31dc@mail.gmail.com&gt;</references><date>Wed, 1 Jun 2005 20:38:33 +0300</date><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-8859-1"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-mailer>Microsoft Outlook Express 6.00.2800.1437</x-mailer><x-mimeole>Produced By Microsoft MimeOLE V6.00.2800.1441</x-mimeole><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>006601c566d0$bbd2c3f0$0900a8c0@mindbridge</normalized-message-id><normalized-reference>9a5cd270506010828126b31dc@mail.gmail.com</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-8859-1&quot;"><greeting depth="0">Hi,
+</greeting><para depth="0">
+Please implement your own version of the TablePages component that does what
+you need (you can use the standard TablePages as a reference, simply change
+its template).
+
+</para><para depth="0">You can then use the lower level Table components (such as TableView)
+instead of Table. I believe there is a similar example in TapestryTables
+towards the end of that tutorial...
+
+</para><para depth="0">For reference, the Table template is:
+
+</para><para depth="0">&lt;span jwcid="tableView"&gt;
+  &lt;span jwcid="condPages"&gt;&lt;span jwcid="tablePages"/&gt;&lt;/span&gt;
+  &lt;table jwcid="tableElement"&gt;
+    &lt;tr&gt;&lt;span jwcid="tableColumns"/&gt;&lt;/tr&gt;
+    &lt;tr jwcid="tableRows"&gt;&lt;td jwcid="tableValues"/&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/span&gt;
+
+</para><para depth="0">You could use something similar instead of Table in your code.
+
+</para><quote depth="1"><quotepara depth="1">----- Original Message ----- 
+From: "Anthony Fox" &lt;<email>anthonyfox@gmail.com</email>&gt;
+To: &lt;<email>tapestry-user@jakarta.apache.org</email>&gt;
+Sent: Wednesday, June 01, 2005 6:28 PM
+Subject: Changing behavior of contrib:Table's paging links
+
+</quotepara><quotepara depth="1">I am interested in changing the behavior of the paging links generated
+by the contrib:Table component.  Specifically, I want the paging links
+at the top of the table to call a javascript method rather than the
+default behavior.  Can the Block component do this?  Are there any
+examples that change the default behavior of the paging links?  I have
+looked at TapestryTables but those examples all have to do with
+changing the behavior of the columns.
+
+</quotepara><quotepara depth="1">Thanks,
+Anthony
+
+</quotepara><quotefooter type="list-management" hash="1220442865909023978" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>tapestry-user-unsubscribe@jakarta.apache.org</email>
+For additional commands, e-mail: <email>tapestry-user-help@jakarta.apache.org</email>
+
+</quotefooter><quotefooter type="list-management" hash="1220442865909023978" depth="1">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>tapestry-user-unsubscribe@jakarta.apache.org</email>
+For additional commands, e-mail: <email>tapestry-user-help@jakarta.apache.org</email>
+
+</quotefooter></quote></body></message>

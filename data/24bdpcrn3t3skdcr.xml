@@ -1,0 +1,82 @@
+<message message-id="Pine.LNX.4.10.10110160950210.29230-100000@lor.jeremie.com" list="org.jabber.jadmin" id="24bdpcrn3t3skdcr" type="general" date="2001-10-16T09:50:38" year="2001-01-01" year-month="2001-10-01" year-month-day="2001-10-16" thread-id="24bdpcrn3t3skdcr"><headers><envelope-from-line>From stpeter@jabber.org  Tue Oct 16 09:50:38 2001</envelope-from-line><from personal="Peter Saint-Andre" address="stpeter@jabber.org">Peter Saint-Andre &lt;stpeter@jabber.org&gt;</from><subject normal="[jadmin] RE: Failed to connect to yahoo using Yahoo Transport">[jadmin] RE: Failed to connect to yahoo using  Yahoo Transport</subject><date>Fri Jul  9 10:46:14 2004</date><in-reply-to>&lt;000001c15625$73f0bca0$2801140a@imacmetit.com&gt;</in-reply-to><message-id>Pine.LNX.4.10.10110160950210.29230-100000@lor.jeremie.com</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>Pine.LNX.4.10.10110160950210.29230-100000@lor.jeremie.com</normalized-message-id><normalized-in-reply-to>000001c15625$73f0bca0$2801140a@imacmetit.com</normalized-in-reply-to></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">never hurts to send along your jabber.xml file :)
+
+</para><para depth="0">Peter
+
+</para><footer type="signature" hash="15823079158539875484" depth="0">--
+Peter Saint-Andre
+email/jabber: <email>stpeter@jabber.org</email>
+blog: <url>http://stpeter.manilasites.com/</url>
+
+</footer><para depth="0">On Tue, 16 Oct 2001, Kausik Saha wrote:
+
+</para><quote depth="1"><quotepara depth="1">Peter,
+
+</quotepara><quotepara depth="1">Yes, the yahoo transport have been installed. At startup the following
+message is displayed
+
+</quotepara><quotepara depth="1"># 20011016T19:57:55: [notice] (yahoo.203.200.177.147): yahoo-transport
+starting
+up...
+
+</quotepara><quotepara depth="1">Should I send the jabber.xml file?
+
+</quotepara><quotefooter type="signature" hash="5119831975532711641" depth="1">Kausik
+
+</quotefooter><quote depth="2"><quotepara depth="2">Date: Mon, 15 Oct 2001 11:33:23 -0500 (CDT)
+From: Peter Saint-Andre &lt;<email>stpeter@jabber.org</email>&gt;
+To: <email>jadmin@jabber.org</email>
+Subject: Re: [jadmin] Failed to connect to yahoo using  Yahoo
+Transport
+Reply-To: <email>jadmin@jabber.org</email>
+
+</quotepara><quotepara depth="2">stupid question here ... do you have the yahoo transport installed
+and running? it's not part of the base server install...
+
+</quotepara><quotefooter type="signature" hash="971418430226958581" depth="2">Peter
+
+</quotefooter><quotefooter type="signature" hash="15823079158539875484" depth="2">--
+Peter Saint-Andre
+email/jabber: <email>stpeter@jabber.org</email>
+blog: <url>http://stpeter.manilasites.com/</url>
+
+</quotefooter><quotepara depth="2">On Mon, 15 Oct 2001, Kausik Saha wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">Hi,
+
+</quotepara><quotepara depth="3">I am a newbie as far as Jabber is concerned and would
+appreciate a little
+help.
+
+</quotepara><quotepara depth="3">I have set up Jabber server 1.4.1 on a host and it runs
+fine as far as local
+communication (read intranet) is concerned.
+I have installed the Yahoo transport on the same host.
+However, when I click
+on 'Yahoo!" in Gateways to activate my Yahoo account, it
+gives the following
+message:
+
+</quotepara><quotepara depth="3">	Jabber Instant Messanger was not able to contact a
+service or agent. It is
+possible that the error or service is not currently
+running. (Error code
+502)
+
+</quotepara><quotepara depth="3">After that, the login screen (to Yahoo) is coming with only
+the Password
+field (instead of the fields User Id and Password)
+
+</quotepara><quotepara depth="3">The host on which the Jabber server is installed has a public IP.
+
+</quotepara><quotepara depth="3">What is it that I am doing wrong?
+
+</quotepara><quotepara depth="3">Regards,
+
+</quotepara><quotepara depth="3">Kausik Saha
+
+</quotepara></quote></quote><quotefooter type="list-management" hash="7953616494026012797" depth="1">_______________________________________________
+jadmin mailing list
+<email>jadmin@jabber.org</email>
+<url>http://mailman.jabber.org/listinfo/jadmin</url>
+
+</quotefooter></quote></body></message>

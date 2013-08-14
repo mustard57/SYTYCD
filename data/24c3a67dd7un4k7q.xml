@@ -1,0 +1,87 @@
+<message message-id="5acaa657-b28a-4575-8478-95938f92487a@x12g2000yqx.googlegroups.com" list="com.googlegroups.google-web-toolkit" id="24c3a67dd7un4k7q" type="general" date="2010-03-19T17:17:17.005988-08:00" year="2010-01-01" year-month="2010-03-01" year-month-day="2010-03-19" thread-id="egtwocgod6bdfarx"><headers><envelope-from-line>Fri Mar 19 17:17:39 2010</envelope-from-line><from personal="kriswpl" address="kriswpl@gmail.com">kriswpl &lt;kriswpl@gmail.com&gt;</from><to personal="Google Web Toolkit" address="google-web-toolkit@googlegroups.com">Google Web Toolkit &lt;google-web-toolkit@googlegroups.com&gt;</to><subject normal="GWT and Acegi">Re: GWT and Acegi</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 27
+          for &lt;edmond.carpenter.porter@a.markmail.org&gt;;
+          Fri, 19 Mar 2010 17:17:39 -0800 (GMT-08:00)</received><received>from mail-yw0-f154.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 7D5583B300B4
+	for &lt;edmond.carpenter.porter@a.markmail.org&gt;; Fri, 19 Mar 2010 18:17:16 -0700 (PDT)</received><received>by ywh26 with SMTP id 26sf4124292ywh.1
+        for &lt;edmond.carpenter.porter@a.markmail.org&gt;; Fri, 19 Mar 2010 18:17:39 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:x-beenthere:received:received:received
+         :received:received-spf:received:mime-version:received:date
+         :in-reply-to:x-ip:references:user-agent:x-http-useragent:message-id
+         :subject:from:to:x-original-authentication-results:x-original-sender
+         :reply-to:precedence:mailing-list:list-id:list-post:list-help
+         :list-archive:x-thread-url:x-message-url:sender:list-subscribe
+         :list-unsubscribe:content-type;
+        bh=igkwpgO77poKFKzxMI4CRvY7dElaov1NIFiuIYjP4uk=;
+        b=y43UJxLUUBwpWmVDCgOmlhONKQ1ReD7iWWmtGkUopNyJj2JHb7ryZZZ66dsJSQ9JRK
+         9FumFfrAVEXbDbIi/UDWUEdMGaf6xDTrbghLESTp4Vyg7CPgjR5apy2wp4PjFtGsstQ3
+         1ZS7QRO59k908GVFLTOBBGcN2CCkTaXZviA7E=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:received-spf:mime-version:date:in-reply-to:x-ip
+         :references:user-agent:x-http-useragent:message-id:subject:from:to
+         :x-original-authentication-results:x-original-sender:reply-to
+         :precedence:mailing-list:list-id:list-post:list-help:list-archive
+         :x-thread-url:x-message-url:sender:list-subscribe:list-unsubscribe
+         :content-type;
+        b=FepNIxsdknnrTApvufCQO/XBg3bJtGBsFy8oEvM/UDCGC+L6OvV+bwto/nYuPu/yr5
+         7lDJLR2tKOMPzKwUjksZdB/MmxU6jMRXWl+T1FoewDLcySSpfN8YBDxqRgqp5XtrHEiO
+         XT3J757fvLqPFHEt+tcMWBkZ3w4SuG8SjUQDQ=</domainkey-signature><received>by 10.91.91.20 with SMTP id t20mr119474agl.32.1269047855732;
+        Fri, 19 Mar 2010 18:17:35 -0700 (PDT)</received><x-beenthere>google-web-toolkit@googlegroups.com</x-beenthere><received>by 10.90.159.11 with SMTP id h11ls54639age.2.p; Fri, 19 Mar 2010 
+	18:17:28 -0700 (PDT)</received><received>by 10.91.7.10 with SMTP id k10mr1264120agi.3.1269047847699;
+        Fri, 19 Mar 2010 18:17:27 -0700 (PDT)</received><received>by 10.91.7.10 with SMTP id k10mr1264119agi.3.1269047847667;
+        Fri, 19 Mar 2010 18:17:27 -0700 (PDT)</received><received>from mail-yw0-f165.google.com (mail-yw0-f165.google.com [209.85.211.165])
+        by gmr-mx.google.com with ESMTP id 18si213736ywh.1.2010.03.19.18.17.27;
+        Fri, 19 Mar 2010 18:17:27 -0700 (PDT)</received><received-spf>pass (google.com: domain of kriswpl@gmail.com designates 209.85.211.165 as permitted sender) client-ip=209.85.211.165;</received-spf><received>by mail-yw0-f165.google.com with SMTP id 37so2470958ywh.2
+        for &lt;google-web-toolkit@googlegroups.com&gt;; Fri, 19 Mar 2010 18:17:27 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.101.18.3 with SMTP id v3mr503561ani.50.1269047847587; Fri, 19 
+	Mar 2010 18:17:27 -0700 (PDT)</received><date>Fri, 19 Mar 2010 18:17:27 -0700 (PDT)</date><in-reply-to>&lt;3ea9415e-30d9-447e-807c-4e9821e775b4@q15g2000yqj.googlegroups.com&gt;</in-reply-to><x-ip>82.160.205.53</x-ip><references>&lt;3ea9415e-30d9-447e-807c-4e9821e775b4@q15g2000yqj.googlegroups.com&gt;</references><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/5.0 (Windows; U; Windows NT 6.0; pl; rv:1.9.1.5) 
+	Gecko/20091102 Firefox/3.5.5,gzip(gfe),gzip(gfe)</x-http-useragent><message-id>5acaa657-b28a-4575-8478-95938f92487a@x12g2000yqx.googlegroups.com</message-id><x-original-authentication-results>gmr-mx.google.com; spf=pass (google.com: 
+	domain of kriswpl@gmail.com designates 209.85.211.165 as permitted sender) 
+	smtp.mail=kriswpl@gmail.com</x-original-authentication-results><x-original-sender>kriswpl@gmail.com</x-original-sender><reply-to>google-web-toolkit@googlegroups.com</reply-to><precedence>list</precedence><mailing-list>list google-web-toolkit@googlegroups.com; contact 
+	google-web-toolkit+owners@googlegroups.com</mailing-list><list-id>&lt;google-web-toolkit.googlegroups.com&gt;</list-id><list-post>&lt;http://groups.google.com/group/google-web-toolkit/post?hl=en_US&gt;, 
+	&lt;mailto:google-web-toolkit@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:google-web-toolkit+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/google-web-toolkit?hl=en_US&gt;</list-archive><x-thread-url>http://groups.google.com/group/google-web-toolkit/t/24a9260f07ad575c</x-thread-url><x-message-url>http://groups.google.com/group/google-web-toolkit/msg/b798310832563555</x-message-url><sender>google-web-toolkit@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/google-web-toolkit/subscribe?hl=en_US&gt;, 
+	&lt;mailto:google-web-toolkit+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/google-web-toolkit/subscribe?hl=en_US&gt;, 
+	&lt;mailto:google-web-toolkit+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>text/plain; charset=ISO-8859-1</content-type></headers><normalized-references><normalized-message-id>5acaa657-b28a-4575-8478-95938f92487a@x12g2000yqx.googlegroups.com</normalized-message-id><normalized-in-reply-to>3ea9415e-30d9-447e-807c-4e9821e775b4@q15g2000yqj.googlegroups.com</normalized-in-reply-to><normalized-reference>3ea9415e-30d9-447e-807c-4e9821e775b4@q15g2000yqj.googlegroups.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><greeting depth="0">Hello,
+</greeting><para depth="0">
+If you don;t know anything about Acegi...
+
+</para><para depth="0">1. Acegi was migrated to Spring Security (http://
+static.springsource.org/spring-security/site/)
+2. It can secure in two ways: a) web tier by url or b) methods in
+classes
+
+</para><para depth="0">I use spring security and I like it, but it took some time to know
+what it is going on in it.
+Even I integrate with gwt by protect url which GWT module starts on -
+for example <url>http://host/gwt-app</url> by adding intercept-url to my spring
+context.
+&lt;security:intercept-url pattern="/gwt-app" access="ROLE_USER" /&gt;
+Only user with this ROLE can go to this.
+
+</para><para depth="0">I use classical spring MVC to login and logout.
+
+</para><para depth="0">I hope it helps a little.
+
+</para><para depth="0">krisw
+
+</para><para depth="0">On 19 Mar, 19:18, Apolo &lt;<email>v.mayor...@gmail.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">Hello,
+I've just started with GWT. I've started a project where it's needed
+an integration with Acegi Security.
+I really had no idea about Acegi and after reading the documentation
+and watch the examples i still don't get how to integrate with GWT.
+
+</quotepara><quotepara depth="1">I've also checkedhttp://code.google.com/p/gwt-ent/wiki/IntegrationGWTWithAcegi
+but this doesn't tells anything to me.
+
+</quotepara><quotepara depth="1">Could anyone help me.
+
+</quotepara><quotepara depth="1">Thanks.
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="list-management" depth="0">-- 
+You received this message because you are subscribed to the Google Groups<br/>"Google Web Toolkit" group.
+To post to this group, send email to <email>google-web-toolkit@googlegroups.com</email>.
+To unsubscribe from this group, send email to<br/>google-web-toolkit+<email>unsubscribe@googlegroups.com</email>.
+For more options, visit this group at<br/><url>http://groups.google.com/group/google-web-toolkit?hl=en</url>.
+
+</footer></body></message>

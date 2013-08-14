@@ -1,0 +1,39 @@
+<message message-id="iz154@open-dm-ds.dev.java.net" list="net.java.dev.open-dm-mi.issues" id="24aop5cypl5rb2ff" no-archive="yes" type="bugs" date="2008-10-31T09:31:50Z" year="2008-01-01" year-month="2008-10-01" year-month-day="2008-10-31" thread-id="24aop5cypl5rb2ff"><headers><envelope-from-line>Fri Oct 31 01:31:51 2008</envelope-from-line><from personal="harig" address="harig@dev.java.net">harig &lt;harig@dev.java.net&gt;</from><to personal="issues@mural.dev.java.net" address="issues@mural.dev.java.net">issues@mural.dev.java.net</to><subject normal="[Issue 154] New - Remove icon in the 'Add table' wizard displays as 'Rem...' in unix">[Issue 154] New - Remove icon in the 'Add table' wizard displays as 'Rem...' in unix</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 767
+          for &lt;savannah.watkins.horn@a.markmail.org&gt;;
+          Fri, 31 Oct 2008 01:31:51 -0800 (GMT-08:00)</received><received>from dev.java.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 785D73B30249
+	for &lt;savannah.watkins.horn@a.markmail.org&gt;; Fri, 31 Oct 2008 02:31:28 -0700 (PDT)</received><received>(qmail 29713 invoked by uid 5000); 31 Oct 2008 09:31:50 -0000</received><mailing-list>contact issues-help@mural.dev.java.net; run by ezmlm</mailing-list><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:issues-help@mural.dev.java.net&gt;</list-help><list-unsubscribe>&lt;mailto:issues-unsubscribe@mural.dev.java.net&gt;</list-unsubscribe><list-post>&lt;mailto:issues@mural.dev.java.net&gt;</list-post><reply-to>issues@mural.dev.java.net</reply-to><delivered-to>mailing list issues@mural.dev.java.net</delivered-to><received>(qmail 29687 invoked by uid 5000); 31 Oct 2008 09:31:50 -0000</received><date>31 Oct 2008 09:31:50 -0000</date><message-id>iz154@open-dm-ds.dev.java.net</message-id><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>iz154@open-dm-ds.dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0"><url>https://open-dm-ds.dev.java.net/issues/show_bug.cgi?id=154</url>
+                 Issue #|154
+                 Summary|Remove icon in the 'Add table' wizard displays as 'Rem
+                        |...' in unix
+               Component|open-dm-ds
+                 Version|current
+                Platform|All
+              OS/Version|Linux
+                     URL|
+                  Status|NEW
+       Status whiteboard|
+                Keywords|
+              Resolution|
+              Issue type|DEFECT
+                Priority|P3
+            Subcomponent|mashup-editor
+             Assigned to|nilesh_apte
+             Reported by|harig
+
+</para><para depth="0">------- Additional comments from <email>harig@dev.java.net</email> Fri Oct 31 09:31:49 +0000<br/>2008 -------
+Remove icon in 'Add table' wizard displays as 'Rem...' in linux whereas the same
+icon labelled as 'Remove'.
+
+</para><para depth="0">Refer the enclosed screenshot.
+
+</para><para depth="0">Build used:
+==========
+installer : 20081030-0704
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>issues-unsubscribe@mural.dev.java.net</email>
+For additional commands, e-mail: <email>issues-help@mural.dev.java.net</email>
+
+</footer></body></message>

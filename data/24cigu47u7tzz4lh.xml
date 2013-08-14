@@ -1,0 +1,46 @@
+<message message-id="3D9CB4061D1EB3408D4A0B910433453C030BCA8A1B@inbmail01.lsi.com" list="org.kernel.vger.kvm" id="24cigu47u7tzz4lh" type="development" date="2009-05-18T03:28:10.853083-08:00" year="2009-01-01" year-month="2009-05-01" year-month-day="2009-05-18" thread-id="lnpwofdczytauoul"><headers><envelope-from-line>Mon May 18 03:28:33 2009</envelope-from-line><from personal="Kumar, Venkat" address="Venkat.Kumar@lsi.com">"Kumar, Venkat" &lt;Venkat.Kumar@lsi.com&gt;</from><to personal="Avi Kivity" address="avi@redhat.com">Avi Kivity &lt;avi@redhat.com&gt;</to><cc personal="kvm@vger.kernel.org" address="kvm@vger.kernel.org">"kvm@vger.kernel.org" &lt;kvm@vger.kernel.org&gt;</cc><subject normal="KVM_HYPERCALL">RE: KVM_HYPERCALL</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 454
+          for &lt;archive.user.62623@a.markmail.org&gt;;
+          Mon, 18 May 2009 03:28:33 -0800 (GMT-08:00)</received><received>from vger.kernel.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 2FFFF3B300B8
+	for &lt;archive.user.62623@a.markmail.org&gt;; Mon, 18 May 2009 04:28:10 -0700 (PDT)</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1753366AbZERL2a (ORCPT
+	&lt;rfc822;archive.user.62623@a.markmail.org&gt;);
+	Mon, 18 May 2009 07:28:30 -0400</received><received>(majordomo@vger.kernel.org) by vger.kernel.org id S1752934AbZERL2a
+	(ORCPT &lt;rfc822;kvm-outgoing&gt;); Mon, 18 May 2009 07:28:30 -0400</received><received>from exprod7og124.obsmtp.com ([64.18.2.26]:39945 "EHLO
+	exprod7og124.obsmtp.com" rhost-flags-OK-OK-OK-OK) by vger.kernel.org
+	with ESMTP id S1752313AbZERL23 convert rfc822-to-8bit (ORCPT
+	&lt;rfc822;kvm@vger.kernel.org&gt;); Mon, 18 May 2009 07:28:29 -0400</received><received>from source ([147.145.40.20]) by exprod7ob124.postini.com ([64.18.6.12]) with SMTP
+	ID DSNKShFGXH76/jxid61n6j6xEy+LuP4dB5w5@postini.com; Mon, 18 May 2009 04:28:31 PDT</received><received>from milmhbs0.lsil.com (mhbs.lsil.com [147.145.1.30])
+	by mail0.lsil.com (8.12.11/8.12.11) with ESMTP id n4IBSNkU001167;
+	Mon, 18 May 2009 04:28:24 -0700 (PDT)</received><received>from inbmail01.lsi.com (inbmail01.in.lsil.com [172.28.140.213])
+	by milmhbs0.lsil.com (8.12.11/8.12.11) with ESMTP id n4IBSLFj011446;
+	Mon, 18 May 2009 04:28:24 -0700</received><received>from inbmail01.lsi.com ([172.28.140.213]) by inbmail01.lsi.com
+ ([172.28.140.213]) with mapi; Mon, 18 May 2009 16:58:19 +0530</received><date>Mon, 18 May 2009 16:58:18 +0530</date><thread-topic>KVM_HYPERCALL</thread-topic><thread-index>AcnXLa0OzXevk/5HS7+RoSVK+kqYjwAfciCA</thread-index><message-id>3D9CB4061D1EB3408D4A0B910433453C030BCA8A1B@inbmail01.lsi.com</message-id><in-reply-to>&lt;4A1072C3.2070808@redhat.com&gt;</in-reply-to><accept-language>en-US</accept-language><content-language>en-US</content-language><x-ms-has-attach/><x-ms-tnef-correlator/><acceptlanguage>en-US</acceptlanguage><content-type>text/plain; charset="us-ascii"</content-type><mime-version>1.0</mime-version><x-scanned-by>MIMEDefang 2.39</x-scanned-by><sender>kvm-owner@vger.kernel.org</sender><precedence>bulk</precedence><list-id>&lt;kvm.vger.kernel.org&gt;</list-id><x-mailing-list>kvm@vger.kernel.org</x-mailing-list><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>3D9CB4061D1EB3408D4A0B910433453C030BCA8A1B@inbmail01.lsi.com</normalized-message-id><normalized-thread-index>AcnXLa0OzXevk/5HS7+RoSVK+kqYjw</normalized-thread-index><normalized-in-reply-to>4A1072C3.2070808@redhat.com</normalized-in-reply-to></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">Hi Avi - Yes the control is not coming to neither " kvm_handle_exit " nor<br/>"handle_vmcall" after the hypercall is made from the guest.
+If I am not wrong, the "KVM_HYPERCALL" instruction is expected to work, isn't<br/>it?
+
+</para><para depth="0">Thx,
+
+</para><para depth="0">Venkat
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Avi Kivity [mailto:<email>avi@redhat.com</email>] 
+Sent: Monday, May 18, 2009 1:56 AM
+To: Kumar, Venkat
+Cc: <email>kvm@vger.kernel.org</email>
+Subject: Re: KVM_HYPERCALL
+
+</quotepara><quotepara depth="1">Kumar, Venkat wrote:
+</quotepara><quote depth="2"><quotepara depth="2">I am making a hypercall "kvm_hypercall0" with number 0 from a Linux guest. But I<br/>don't see the control coming to "handle_vmcall" or even "kvm_handle_exit". What<br/>could be the reason?
+
+</quotepara></quote><quotepara depth="1">No idea.  kvm_handle_exit() is called very frequently, even without 
+hypercalls.  Are you sure you don't see it called?
+
+</quotepara><quotefooter type="signature" depth="1" hash="860487305850450647">-- 
+Do not meddle in the internals of kernels, for they are subtle and quick to<br/>panic.
+
+</quotefooter><quotefooter type="list-management" depth="1">--
+To unsubscribe from this list: send the line "unsubscribe kvm" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+</quotefooter></quote></body></message>

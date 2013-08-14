@@ -1,0 +1,199 @@
+<message message-id="20090804102448.5D72D15E80E8@codehaus01.managed.contegix.com" list="org.codehaus.mod4j.scm" id="24buc4kpn2xnt7sh" type="checkins" date="2009-08-04T02:24:32.562839-08:00" year="2009-01-01" year-month="2009-08-01" year-month-day="2009-08-04" thread-id="24buc4kpn2xnt7sh"><headers><envelope-from-line>Tue Aug 04 02:24:55 2009</envelope-from-line><from personal="johan@codehaus.org" address="johan@codehaus.org">johan@codehaus.org</from><to personal="scm@mod4j.codehaus.org" address="scm@mod4j.codehaus.org">scm@mod4j.codehaus.org</to><subject normal="[mod4j-scm] [mod4j] [2446] branches/mod4j-branch-galileo/src/site/xdoc/developer-guide.xml: Now getting started based on Eclipse Galileo for Java EE developers.">[mod4j-scm] [mod4j] [2446] branches/mod4j-branch-galileo/src/site/xdoc/developer-guide.xml: Now getting started based on Eclipse Galileo for Java EE developers.</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 534
+          for &lt;alex.gilmore.mathis@a.markmail.org&gt;;
+          Tue, 4 Aug 2009 02:24:55 -0800 (GMT-08:00)</received><received>from mail.codehaus.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id B5C7E3B300B8
+	for &lt;alex.gilmore.mathis@a.markmail.org&gt;; Tue,  4 Aug 2009 03:24:31 -0700 (PDT)</received><received>(qmail 7593 invoked by uid 89); 4 Aug 2009 10:24:49 -0000</received><mailing-list>contact scm-help@mod4j.codehaus.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;http://xircles.codehaus.org/manage_email&gt;</list-post><list-help>&lt;http://xircles.codehaus.org/manage_email&gt;</list-help><list-unsubscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-unsubscribe><list-subscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-subscribe><list-id>&lt;scm.mod4j.codehaus.org&gt;</list-id><reply-to>scm@mod4j.codehaus.org</reply-to><delivered-to>mailing list scm@mod4j.codehaus.org</delivered-to><received>(qmail 7584 invoked by uid 89); 4 Aug 2009 10:24:49 -0000</received><mime-version>1.0</mime-version><x-mailer>SVN::Notify 2.46: http://search.cpan.org/dist/SVN-Notify/</x-mailer><content-type>text/html; charset=UTF-8</content-type><message-id>20090804102448.5D72D15E80E8@codehaus01.managed.contegix.com</message-id><date>Tue,  4 Aug 2009 05:24:48 -0500 (CDT)</date><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>20090804102448.5D72D15E80E8@codehaus01.managed.contegix.com</normalized-message-id></normalized-references><body html2text="elinks" type="text/html; charset=utf-8"><para depth="0"> Revision
+         [1]2446
+
+</para><para depth="0"> Author
+         johan
+
+</para><para depth="0"> Date
+         2009-08-04 05:24:48 -0500 (Tue, 04 Aug 2009)
+
+</para><para depth="0">  Log Message
+
+</para><para depth="0">Now getting started based on Eclipse Galileo for Java EE developers. Corrected
+some text.
+
+</para><para depth="0">  Modified Paths
+
+</para><para depth="0">   * [2]branches/mod4j-branch-galileo/src/site/xdoc/developer-guide.xml
+
+</para><para depth="0">  Diff
+
+</para><para depth="0">    Modified: branches/mod4j-branch-galileo/src/site/xdoc/developer-guide.xml
+    (2445 =&gt; 2446)
+
+</para><para depth="0">--- branches/mod4j-branch-galileo/src/site/xdoc/developer-guide.xml     2009-08-04 09:49:37 UTC (rev 2445)
++++ branches/mod4j-branch-galileo/src/site/xdoc/developer-guide.xml     2009-08-04 10:24:48 UTC (rev 2446)
+@@ -19,44 +19,69 @@
+                         Make sure you've installed Java JDK version 5 (1.5.0_15 or higher). You can download one from the
+                         &lt;a href="<url>http://java.sun.com/javase/downloads/index.jsp</url>"&gt;Sun download site&lt;/a&gt;
+                         .
++                        &lt;br/&gt;&lt;br/&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+-                        Install Eclipse 3.5 (Galileo) + TMF Xtext 0.7.1 from the Itemis download site.
+-                        &lt;a
+-                            href="<url>http://xtext.itemis.com/xtext/language=en/23947/downloads</url>"&gt;download site&lt;/a&gt;
+-                        Note that this is the official Galileo release with ANTLR plugins added for use with Xtext..
+-                        &lt;br /&gt;
++                        Install Eclipse 3.5 (Galileo) for Java EE developers. You can download one from the
++                        &lt;a href="<url>http://www.eclipse.org/downloads</url>"&gt;Eclipse download site&lt;/a&gt;
++                        .
++                        &lt;br/&gt;&lt;br/&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+-                        Use the update manager to install the Ecore Tools. These can be found under the update manager tab
+-                        Available Software ==&gt; Galileo ==&gt; Modeling ==&gt; Ecore Tools.
++                        Install, using the Update Manager in Eclipse, at least the following plug-ins into Eclipse:
++                        &lt;table&gt;
++                            &lt;thead&gt;
++                                &lt;tr&gt;
++                                    &lt;th&gt;Eclise plug-in&lt;/th&gt;
++                                    &lt;th&gt;Features to select when installing&lt;/th&gt;
++                                    &lt;th&gt;Update site&lt;/th&gt;
++                                &lt;/tr&gt;
++                            &lt;/thead&gt;
++                            &lt;tr&gt;
++                                &lt;td&gt;Eclipse Xtext and Xpand plug-ins&lt;/td&gt;
++                                &lt;td&gt;
++                                    &lt;b&gt; - Xtext Antlr Support 0.7.1&lt;/b&gt;
++                                    &lt;br /&gt;
++                                    &lt;b&gt; - TMF XTEXT SDK (Incubation) 0.7.1&lt;/b&gt;
++                                    &lt;br /&gt;
++                                    &lt;b&gt; - M2T XPAND SDK (Incubation) 0.7.1&lt;/b&gt;
++                                &lt;/td&gt;
++                                &lt;td&gt;
++                                    &lt;b&gt;
++                                        &lt;code&gt;<url>http://download.itemis.com/updates/releases</url>&lt;/code&gt;
++                                    &lt;/b&gt;
++                                &lt;/td&gt;
++                            &lt;/tr&gt;
++                            &lt;tr&gt;
++                                &lt;td&gt;Eclipse IAM (Integration for Apache Maven), formerly called Q4E&lt;/td&gt;
++                                &lt;td&gt;
++                                    &lt;b&gt;Core, Enabling, Tooling&lt;/b&gt;
++                                &lt;/td&gt;
++                                &lt;td&gt;
++                                    &lt;b&gt;
++                                        &lt;code&gt;<url>http://q4e.googlecode.com/svn/trunk/updatesite-iam</url>&lt;/code&gt;
++                                    &lt;/b&gt;
++                                &lt;/td&gt;
++                            &lt;/tr&gt;
++                            &lt;tr&gt;
++                                &lt;td&gt;Subversion, plug-in for integration with SVN&lt;/td&gt;
++                                &lt;td&gt;
++                                    Select all features
++                                &lt;/td&gt;
++                                &lt;td&gt;
++                                    &lt;b&gt;
++                                        &lt;code&gt;<url>http://subclipse.tigris.org/update_1.6.x</url>&lt;/code&gt;
++                                    &lt;/b&gt;
++                                &lt;/td&gt;
++                            &lt;/tr&gt;
++                        &lt;/table&gt;
++                        &lt;br/&gt;
+                     &lt;/li&gt;
+-                    &lt;li&gt;
+-                        Install, using the Update Manager, at least the following plugins into Eclipse:
+-                        &lt;ul&gt;
+-                            &lt;li&gt;
+-                                Eclipse IAM (Integration for Apache Maven), formerly called Q4E.
+-                                &lt;b&gt;
+-                                    Update site:
+-                                    &lt;code&gt;<url>http://q4e.googlecode.com/svn/trunk/updatesite-iam/</url>
+-                                    &lt;/code&gt;
+-                                    When installing select the following features: Core, Enabling, Tooling.
+-                                &lt;/b&gt;
+-                            &lt;/li&gt;
+-                            &lt;li&gt;
+-                                Subversion, plugin for integration with SVN.
+-                                &lt;b&gt;
+-                                    Update site:
+-                                    &lt;code&gt;<url>http://subclipse.tigris.org/update_1.6.x</url>
+-                                    &lt;/code&gt;
+-                                    When installing select all features.
+-                                &lt;/b&gt;
+-                            &lt;/li&gt;
+-                        &lt;/ul&gt;
+-                    &lt;/li&gt;
+                     &lt;li&gt; Make sure the text file encoding in Eclipse is set to 'UTF-8'. You can verify and set this in the field
+                         'Text file encoding' by navigating to 'Window -&gt; Preferences... -&gt; General -&gt; Workspace'. For Linux
+-                        users UTF-8 is usually the platform encoding, and no change will be necessary. &lt;/li&gt;
++                        users UTF-8 is usually the platform encoding, and no change will be necessary.
++                        &lt;br/&gt;&lt;br/&gt;
++                    &lt;/li&gt;
+                     &lt;li&gt;
+                         Install Apache Maven 2.1.0 or higher. For download and install instructions see the
+                         &lt;a href="<url>http://maven.apache.org</url>"&gt;Apache Maven site&lt;/a&gt;
+@@ -112,9 +137,6 @@
+                         &lt;code&gt;modules/org.mod4j.common&lt;/code&gt;
+                         and
+                         &lt;br /&gt;
+-                        &lt;code&gt;modules/jdom&lt;/code&gt;
+-                        and
+-                        &lt;br /&gt;
+                         &lt;code&gt;modules/org.mod4j.updatesite&lt;/code&gt;
+                         and
+                         &lt;br /&gt;
+@@ -136,7 +158,7 @@
+                         &lt;br /&gt;
+                         &lt;code&gt;org.mod4j.dsl.businessdomain.xtext&lt;/code&gt;
+                         &lt;br /&gt;
+-                        &lt;code&gt;org.mod4j.dsl.businessdomain.xtext.editor&lt;/code&gt;
++                        &lt;code&gt;org.mod4j.dsl.businessdomain.xtext.ui&lt;/code&gt;
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                         If you need to (re)generate the modelcode from a meta model, for instance the BusinessDomani meta model:
+@@ -200,6 +222,7 @@
+             &lt;/subsection&gt;
+             &lt;subsection name="Modeling"&gt;
+                 &lt;ol&gt;
++
+                     &lt;li&gt;
+                         Be sure you start a second Eclipse instance with the right memory settings. Add the following arguments
+                         in the "Arguments" tab, see Run &gt; Run Configurations...
+@@ -212,7 +235,7 @@
+                     &lt;/li&gt;
+                     &lt;li&gt;
+                         To start the second Eclipse instance: Right-click the module
+-                        &lt;code&gt;org.mod4j.dsl.businessdomain.xtext.editor&lt;/code&gt;
++                        &lt;code&gt;org.mod4j.dsl.businessdomain.xtext.ui&lt;/code&gt;
+                         and choose
+                         &lt;q&gt;Run As -&gt; Eclipse Application&lt;/q&gt;
+                         from the context menu.
+@@ -251,7 +274,7 @@
+                         &lt;br /&gt;
+                         &lt;code&gt;RecordShop-service&lt;/code&gt;
+                     &lt;/li&gt;
+-                    &lt;li&gt;In the previous step the Q4E Maven plug-in not always recognizes the source folders correctly. Adjust
++                    &lt;li&gt;In the previous step the IAM Maven plug-in not always recognizes the source folders correctly. Adjust
+                         the source
+                         folders manually if you encounter compilation failures. Right-click on the project to adjust
+                         the "Build
+@@ -293,7 +316,7 @@
+                     &lt;li&gt;
+                         Subscribe yourself to the
+                         &lt;a href="<url>http://xircles.codehaus.org/manage_email/<email>dev@mod4j.codehaus.org</email></url>"&gt;developer mailinglist&lt;/a&gt;
+-                          (<email>dev@mod4j.codehaus.org</email>) and post a short
++                        (<email>dev@mod4j.codehaus.org</email>) and post a short
+                         message to introduce your self to the other developers. So all
+                         developers know who you are and that
+                         there is a new developer active.
+
+</para><para depth="0"> ------------------------------------------------------------------------------
+
+</para><para depth="0"> To unsubscribe from this list please visit:
+
+</para><footer type="list-management" depth="0"> [3]<url>http://xircles.codehaus.org/manage_email</url>
+
+</footer><para depth="0">References
+
+</para><footer type="list-management" depth="0">   Visible links
+   1. <url>http://fisheye.codehaus.org/changelog/mod4j/?cs=2446</url>
+   2. input.html#branchesmod4jbranchgalileosrcsitexdocdeveloperguidexml
+   3. <url>http://xircles.codehaus.org/manage_email</url>
+</footer></body></message>

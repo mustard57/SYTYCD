@@ -1,0 +1,60 @@
+<message message-id="15132199.1231498930491.JavaMail.tomcat@vlanai.xpertnet.biz" list="org.xwiki.notifications" id="24advaow2qvgdhv2" type="checkins" date="2009-01-09T12:02:10+01:00" year="2009-01-01" year-month="2009-01-01" year-month-day="2009-01-09" thread-id="pqiyutd26gj3g5oq"><headers><envelope-from-line>Fri Jan 09 03:02:37 2009</envelope-from-line><from personal="Vincent Massol (JIRA)" address="jira@xwiki.org">"Vincent Massol (JIRA)" &lt;jira@xwiki.org&gt;</from><to personal="notifications@xwiki.org" address="notifications@xwiki.org">notifications@xwiki.org</to><subject normal="[xwiki-notifications] [Issue] Closed: (XWIKI-3085) Add support for line break syntax (\\)">[xwiki-notifications] [Issue] Closed: (XWIKI-3085) Add support for line break syntax (\\)</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 861
+          for &lt;allison.thomas.warner@a.markmail.org&gt;;
+          Fri, 9 Jan 2009 03:02:37 -0800 (GMT-08:00)</received><received>from borabora.xpertnet.biz (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 1E1A03B300B9
+	for &lt;allison.thomas.warner@a.markmail.org&gt;; Fri,  9 Jan 2009 03:02:14 -0800 (PST)</received><received>from localhost (localhost.localdomain [127.0.0.1])
+	by borabora.xpertnet.biz (Postfix) with ESMTP id E00B0660064;
+	Fri,  9 Jan 2009 11:50:44 +0100 (CET)</received><x-virus-scanned>Debian amavisd-new at xpertnet.biz</x-virus-scanned><received>from borabora.xpertnet.biz ([127.0.0.1])
+	by localhost (borabora.xpertnet.biz [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id HpOT5h9h13q8; Fri,  9 Jan 2009 11:50:42 +0100 (CET)</received><received>from borabora.xpertnet.biz (localhost.localdomain [127.0.0.1])
+	by borabora.xpertnet.biz (Postfix) with ESMTP id 89622660082;
+	Fri,  9 Jan 2009 11:50:42 +0100 (CET)</received><x-original-to>notifications@borabora.xpertnet.biz</x-original-to><delivered-to>notifications@borabora.xpertnet.biz</delivered-to><received>from localhost (localhost.localdomain [127.0.0.1])
+	by borabora.xpertnet.biz (Postfix) with ESMTP id 8B4D8660082
+	for &lt;notifications@borabora.xpertnet.biz&gt;;
+	Fri,  9 Jan 2009 11:50:39 +0100 (CET)</received><x-virus-scanned>Debian amavisd-new at xpertnet.biz</x-virus-scanned><received>from borabora.xpertnet.biz ([127.0.0.1])
+	by localhost (borabora.xpertnet.biz [127.0.0.1]) (amavisd-new,
+	port 10024)
+	with LMTP id XV5-qA1XKB3D for &lt;notifications@borabora.xpertnet.biz&gt;;
+	Fri,  9 Jan 2009 11:50:39 +0100 (CET)</received><received>from vlanai.xpertnet.biz (lanai.xpertnet.biz [192.168.1.8])
+	by borabora.xpertnet.biz (Postfix) with ESMTP id 521976600A1
+	for &lt;notifications@xwiki.org&gt;; Fri,  9 Jan 2009 11:50:19 +0100 (CET)</received><message-id>15132199.1231498930491.JavaMail.tomcat@vlanai.xpertnet.biz</message-id><date>Fri, 9 Jan 2009 12:02:10 +0100 (CET)</date><in-reply-to>&lt;2216980.1231417630114.JavaMail.tomcat@vlanai.xpertnet.biz&gt;</in-reply-to><mime-version>1.0</mime-version><x-jira-fingerprint>07eed1ad92566a6fe5ffe1aa4212d060</x-jira-fingerprint><x-beenthere>notifications@xwiki.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>XWiki Notifications &lt;notifications@xwiki.org&gt;</reply-to><list-id>XWiki Notifications &lt;notifications.xwiki.org&gt;</list-id><list-unsubscribe>&lt;http://lists.xwiki.org/mailman/listinfo/notifications&gt;,
+	&lt;mailto:notifications-request@xwiki.org?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.xwiki.org/pipermail/notifications&gt;</list-archive><list-post>&lt;mailto:notifications@xwiki.org&gt;</list-post><list-help>&lt;mailto:notifications-request@xwiki.org?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.xwiki.org/mailman/listinfo/notifications&gt;,
+	&lt;mailto:notifications-request@xwiki.org?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>notifications-bounces@xwiki.org</sender><errors-to>notifications-bounces@xwiki.org</errors-to></headers><normalized-references><normalized-message-id>15132199.1231498930491.JavaMail.tomcat@vlanai.xpertnet.biz</normalized-message-id><normalized-in-reply-to>2216980.1231417630114.JavaMail.tomcat@vlanai.xpertnet.biz</normalized-in-reply-to></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">
+     [<br/><url>http://jira.xwiki.org/jira/browse/XWIKI-3085?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel</url><br/>]
+
+</para><para depth="0">Vincent Massol closed XWIKI-3085.
+</para><para depth="0">---------------------------------
+
+</para><para depth="0">    Resolution: Fixed
+
+</para><para depth="0">Done
+
+</para><quote depth="1"><quotepara depth="1">Add support for line break syntax (\\)
+</quotepara><quotepara depth="1">--------------------------------------
+
+</quotepara><quotepara depth="1">                Key: XWIKI-3085
+                URL: <url>http://jira.xwiki.org/jira/browse/XWIKI-3085</url>
+            Project: XWiki Core
+         Issue Type: Bug
+         Components: Rendering 2.0
+   Affects Versions: 1.7
+           Reporter: Vincent Massol
+           Assignee: Vincent Massol
+            Fix For: 1.7.1, 1.8 M1
+
+</quotepara><quotepara depth="1">* Fix the other renderers which are having bugs in their<br/>onNewLine()/onLineBreak() implementation.
+* Remove the LineBreakBlock since the strategy is for renderers to decide<br/>whether to output a LB or a NL
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="signature" depth="0" hash="17920939806161238980">-- 
+This message is automatically generated by JIRA.
+-
+If you think it was sent incorrectly contact one of the administrators:<br/><url>http://jira.xwiki.org/jira/secure/Administrators.jspa</url>
+-
+For more information on JIRA, see: <url>http://www.atlassian.com/software/jira</url>
+
+</footer><footer type="list-management" depth="0">_______________________________________________
+notifications mailing list
+<email>notifications@xwiki.org</email>
+<url>http://lists.xwiki.org/mailman/listinfo/notifications</url>
+</footer></body></message>

@@ -1,0 +1,23 @@
+<message message-id="1296212102638-2366261.post@n3.nabble.com" list="org.apache.karaf.user" id="24brxluw7hjurggj" type="users" date="2011-01-28T02:55:02-08:00" year="2011-01-01" year-month="2011-01-01" year-month-day="2011-01-28" thread-id="24brxluw7hjurggj"><headers><envelope-from-line>Fri Jan 28 02:55:32 2011</envelope-from-line><from personal="Rice Yeh" address="riceyeh@gmail.com">Rice Yeh &lt;riceyeh@gmail.com&gt;</from><to personal="user@karaf.apache.org" address="user@karaf.apache.org">user@karaf.apache.org</to><subject normal="Why ther are so many services (osgi:ls) but no bundles (osgi:list) ?">Why ther are so many services (osgi:ls) but no bundles (osgi:list) ?</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 319
+          for &lt;amelia.brennan.webb@a.markmail.org&gt;;
+          Fri, 28 Jan 2011 02:55:32 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 177AA3B3020D
+	for &lt;amelia.brennan.webb@a.markmail.org&gt;; Fri, 28 Jan 2011 02:55:09 -0800 (PST)</received><received>(qmail 20508 invoked by uid 500); 28 Jan 2011 10:55:29 -0000</received><mailing-list>contact user-help@karaf.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:user-help@karaf.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:user-unsubscribe@karaf.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:user@karaf.apache.org&gt;</list-post><list-id>&lt;user.karaf.apache.org&gt;</list-id><reply-to>user@karaf.apache.org</reply-to><delivered-to>mailing list user@karaf.apache.org</delivered-to><received>(qmail 20488 invoked by uid 99); 28 Jan 2011 10:55:28 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 28 Jan 2011 10:55:28 +0000</received><x-asf-spam-status>No, hits=2.0 required=5.0
+	tests=FREEMAIL_FROM,SPF_NEUTRAL,T_TO_NO_BRKTS_FREEMAIL,URI_HEX</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>neutral (athena.apache.org: 216.139.236.26 is neither permitted nor denied by domain of riceyeh@gmail.com)</received-spf><received>from [216.139.236.26] (HELO sam.nabble.com) (216.139.236.26)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 28 Jan 2011 10:55:23 +0000</received><received>from ben.nabble.com ([192.168.236.152])
+	by sam.nabble.com with esmtp (Exim 4.69)
+	(envelope-from &lt;riceyeh@gmail.com&gt;)
+	id 1Pilyo-0000xE-UX
+	for user@karaf.apache.org; Fri, 28 Jan 2011 02:55:02 -0800</received><date>Fri, 28 Jan 2011 02:55:02 -0800 (PST)</date><message-id>1296212102638-2366261.post@n3.nabble.com</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>1296212102638-2366261.post@n3.nabble.com</normalized-message-id></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0">
+Hi, 
+  I am wondering why there are so many services (osgi:ls) but no bundles
+(osgi:list) when I start to use Karaf after installing it? There should be
+many bundles providing these services?
+
+</para><para depth="0">Rice
+</para><footer type="list-management" depth="0">-- 
+View this message in context:<br/><url>http://karaf.922171.n3.nabble.com/Why-ther-are-so-many-services-osgi-ls-but-no-bundles-osgi-list-tp2366261p2366261.html</url>
+Sent from the Karaf - User mailing list archive at Nabble.com.
+</footer></body></message>

@@ -1,0 +1,53 @@
+<message message-id="20101215221707.31066.42504.malone@palladium.canonical.com" list="com.ubuntu.lists.ubuntu-bugs" id="24cddnh7eesggd6w" type="bugs" date="2010-12-15T22:17:06Z" year="2010-01-01" year-month="2010-12-01" year-month-day="2010-12-15" thread-id="kls7qxzqyt55srzc"><headers><envelope-from-line>Wed Dec 15 14:26:49 2010</envelope-from-line><from personal="Ingo Schmidt" address="626622@bugs.launchpad.net">Ingo Schmidt &lt;626622@bugs.launchpad.net&gt;</from><to personal="ubuntu-bugs@lists.ubuntu.com" address="ubuntu-bugs@lists.ubuntu.com">ubuntu-bugs@lists.ubuntu.com</to><subject normal="[Bug 626622] Re: daily maverick live cd won't boot with acpi on">[Bug 626622] Re: daily maverick live cd won't boot with acpi on</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 655
+          for &lt;caroline.dejesus.ratliff@a.markmail.org&gt;;
+          Wed, 15 Dec 2010 14:26:49 -0800 (GMT-08:00)</received><received>from chlorine.canonical.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 6C99B3B300BA
+	for &lt;caroline.dejesus.ratliff@a.markmail.org&gt;; Wed, 15 Dec 2010 14:26:26 -0800 (PST)</received><received>from localhost ([127.0.0.1] helo=chlorine.canonical.com)
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;ubuntu-bugs-bounces@lists.ubuntu.com&gt;)
+	id 1PSzo8-0004Tc-QU; Wed, 15 Dec 2010 22:26:48 +0000</received><received>from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;bounces@canonical.com&gt;) id 1PSzo7-0004TX-Cw
+	for ubuntu-bugs@lists.ubuntu.com; Wed, 15 Dec 2010 22:26:47 +0000</received><received>from loganberry.canonical.com ([91.189.90.37])
+	by adelie.canonical.com with esmtp (Exim 4.69 #1 (Debian))
+	id 1PSzo3-00051n-Vm
+	for &lt;ubuntu-bugs@lists.ubuntu.com&gt;; Wed, 15 Dec 2010 22:26:44 +0000</received><received>from loganberry.canonical.com (localhost [127.0.0.1])
+	by loganberry.canonical.com (Postfix) with ESMTP id 792C62E84B2
+	for &lt;ubuntu-bugs@lists.ubuntu.com&gt;;
+	Wed, 15 Dec 2010 22:26:05 +0000 (UTC)</received><mime-version>1.0</mime-version><date>Wed, 15 Dec 2010 22:17:06 -0000</date><x-launchpad-bug>distribution=ubuntu; sourcepackage=linux; component=main;
+	milestone=maverick-updates; status=New; importance=High;
+	assignee=ubuntu-kernel-team; </x-launchpad-bug><x-launchpad-bug>distribution=ubuntu; distroseries=maverick;
+	sourcepackage=linux; component=main; status=New;
+	importance=Undecided; assignee=None; </x-launchpad-bug><x-launchpad-bug-tags>iso-testing kubuntu radeon ubuntu</x-launchpad-bug-tags><x-launchpad-bug-private>no</x-launchpad-bug-private><x-launchpad-bug-security-vulnerability>no</x-launchpad-bug-security-vulnerability><x-launchpad-bug-commenters>0-launchpad-der-ingo-de croncobaurul
+	douwegelling-gmail eric-friedrich84 ferahgo-de jefreeman-mail
+	ldelettre mik-taranto order-regis stephane-ravier</x-launchpad-bug-commenters><x-launchpad-bug-reporter>ZyroBlue (ferahgo-de)</x-launchpad-bug-reporter><x-launchpad-bug-modifier>Ingo Schmidt (0-launchpad-der-ingo-de)</x-launchpad-bug-modifier><references>&lt;20100830062925.19290.14484.malonedeb@soybean.canonical.com&gt;</references><message-id>20101215221707.31066.42504.malone@palladium.canonical.com</message-id><x-launchpad-message-rationale>Subscriber (Ubuntu) @ubuntu-bugs</x-launchpad-message-rationale><precedence>bulk</precedence><x-generated-by>Launchpad (canonical.com); Revision="None";
+	Instance="initZopeless config overlay"</x-generated-by><x-launchpad-hash>f3328808d74e08c2fa0f7e2cea8edd3e0461a319</x-launchpad-hash><x-beenthere>ubuntu-bugs@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><reply-to>Bug 626622 &lt;626622@bugs.launchpad.net&gt;</reply-to><list-id>Ubuntu bug tracker changes - HIGH VOLUME
+	&lt;ubuntu-bugs.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs&gt;,
+	&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:ubuntu-bugs@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs&gt;,
+	&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>ubuntu-bugs-bounces@lists.ubuntu.com</sender><errors-to>ubuntu-bugs-bounces@lists.ubuntu.com</errors-to></headers><normalized-references><normalized-message-id>20101215221707.31066.42504.malone@palladium.canonical.com</normalized-message-id><normalized-reference>20100830062925.19290.14484.malonedeb@soybean.canonical.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">The problem persists with kernel 2.6.35-23. It is very annoying, since
+you need to manually power off the computer and all the ACPI features
+are disabled.
+
+</para><para depth="0">I have tried to play with various options with the acpi kernel parameter
+(e.g. acpi=ht, acpi=noirq) but they all have absolutely no effect to the
+problem.
+
+</para><para depth="0">The only way to boot properly is still acpi=off.
+
+</para><para depth="0">I would add more information, but since the computer freezes at such an
+early stage, I get no chance to capture some log files.
+
+</para><footer type="signature" depth="0" hash="6812847599876463802">-- 
+You received this bug notification because you are a member of Ubuntu
+Bugs, which is subscribed to Ubuntu.
+<url>https://bugs.launchpad.net/bugs/626622</url>
+
+</footer><para depth="0">Title:
+  daily maverick live cd won't boot with acpi on
+
+</para><footer type="list-management" depth="0">-- 
+ubuntu-bugs mailing list
+<email>ubuntu-bugs@lists.ubuntu.com</email>
+<url>https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs</url>
+</footer></body></message>

@@ -1,0 +1,55 @@
+<message message-id="49DC6519.1070401@ibphoenix.com" list="net.sourceforge.lists.firebird-devel" id="24be6rux46jjxp2l" type="development" date="2009-04-08T10:49:29+02:00" year="2009-01-01" year-month="2009-04-01" year-month-day="2009-04-08" thread-id="abira66hcq4wih6u"><headers><envelope-from-line>Wed Apr 08 00:51:42 2009</envelope-from-line><from personal="Dimitry Sibiryakov" address="sd@ibphoenix.com">Dimitry Sibiryakov &lt;sd@ibphoenix.com&gt;</from><to personal="For discussion among Firebird Developers" address="firebird-devel@lists.sourceforge.net">For discussion among Firebird Developers &lt;firebird-devel@lists.sourceforge.net&gt;</to><subject normal="[Firebird-devel] Problems with restore (gbak) on Firebird 2.5 RC1">Re: [Firebird-devel] Problems with restore (gbak) on Firebird 2.5 RC1</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 439
+          for &lt;lawrence.perkins.campbell@a.markmail.org&gt;;
+          Wed, 8 Apr 2009 00:51:42 -0800 (GMT-08:00)</received><received>from lists.sourceforge.net (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 6E65F2908017
+	for &lt;lawrence.perkins.campbell@a.markmail.org&gt;; Wed,  8 Apr 2009 01:51:19 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=sfs-ml-1.v29.ch3.sourceforge.com)
+	by 235xhf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;firebird-devel-bounces@lists.sourceforge.net&gt;)
+	id 1LrTV6-0000Ts-VE; Wed, 08 Apr 2009 08:51:16 +0000</received><received>from sfi-mx-3.v28.ch3.sourceforge.com ([172.29.28.123]
+	helo=mx.sourceforge.net)
+	by 235xhf1.ch3.sourceforge.com with esmtp (Exim 4.69)
+	(envelope-from &lt;sd@ibphoenix.com&gt;) id 1LrTUQ-0000Mg-6F
+	for firebird-devel@lists.sourceforge.net;
+	Wed, 08 Apr 2009 08:50:34 +0000</received><x-acl-warn/><received>from www.ibphoenix.com ([12.197.12.139] helo=mail.ibphoenix.com)
+	by 3b2kzd1.ch3.sourceforge.com with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.69) id 1LrTUH-0000Nt-Co
+	for firebird-devel@lists.sourceforge.net;
+	Wed, 08 Apr 2009 08:50:34 +0000</received><received>from localhost (localhost [127.0.0.1])
+	by mail.ibphoenix.com (Postfix) with ESMTP id 2ACA31A5279
+	for &lt;firebird-devel@lists.sourceforge.net&gt;;
+	Wed,  8 Apr 2009 04:50:24 -0400 (EDT)</received><received>from mail.ibphoenix.com ([127.0.0.1])
+	by localhost (mail.ibphoenix.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 27065-09 for &lt;firebird-devel@lists.sourceforge.net&gt;;
+	Wed,  8 Apr 2009 04:50:17 -0400 (EDT)</received><received>from [192.168.0.103] (89-24-6-33.i4g.tmcz.cz [89.24.6.33])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by mail.ibphoenix.com (Postfix) with ESMTP id 20ED01A5277
+	for &lt;firebird-devel@lists.sourceforge.net&gt;;
+	Wed,  8 Apr 2009 04:49:45 -0400 (EDT)</received><message-id>49DC6519.1070401@ibphoenix.com</message-id><date>Wed, 08 Apr 2009 10:49:29 +0200</date><user-agent>Thunderbird 2.0.0.19 (Windows/20081209)</user-agent><mime-version>1.0</mime-version><references>&lt;20090408093013.36zmyr4i88gcs48c@webmail.df.eu&gt;</references><in-reply-to>&lt;20090408093013.36zmyr4i88gcs48c@webmail.df.eu&gt;</in-reply-to><x-virus-scanned>by amavisd-new at ibphoenix.com</x-virus-scanned><x-spam-score>4.0 (++++)</x-spam-score><x-spam-report>Spam Filtering performed by mx.sourceforge.net.
+	See http://spamassassin.org/tag/ for more details.
+	2.5 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+	[Blocked - see &lt;http://www.spamcop.net/bl.shtml?89.24.6.33&gt;]
+	1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+	[89.24.6.33 listed in psbl.surriel.com]</x-spam-report><x-headers-end>1LrTUH-0000Nt-Co</x-headers-end><x-beenthere>firebird-devel@lists.sourceforge.net</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>For discussion among Firebird Developers
+	&lt;firebird-devel@lists.sourceforge.net&gt;</reply-to><list-id>For discussion among Firebird Developers
+	&lt;firebird-devel.lists.sourceforge.net&gt;</list-id><list-unsubscribe>&lt;https://lists.sourceforge.net/lists/listinfo/firebird-devel&gt;, 
+	&lt;mailto:firebird-devel-request@lists.sourceforge.net?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://sourceforge.net/mailarchive/forum.php?forum_name=firebird-devel&gt;</list-archive><list-post>&lt;mailto:firebird-devel@lists.sourceforge.net&gt;</list-post><list-help>&lt;mailto:firebird-devel-request@lists.sourceforge.net?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.sourceforge.net/lists/listinfo/firebird-devel&gt;, 
+	&lt;mailto:firebird-devel-request@lists.sourceforge.net?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><errors-to>firebird-devel-bounces@lists.sourceforge.net</errors-to></headers><normalized-references><normalized-message-id>49DC6519.1070401@ibphoenix.com</normalized-message-id><normalized-in-reply-to>20090408093013.36zmyr4i88gcs48c@webmail.df.eu</normalized-in-reply-to><normalized-reference>20090408093013.36zmyr4i88gcs48c@webmail.df.eu</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><quote depth="1"><quotepara depth="1">gbak: ERROR:Malformed string
+gbak:Exiting before completion due to errors
+
+</quotepara><quotepara depth="1">The same happens when I use an Interbase 6.5 database file. Any ideas  
+what might be wrong?
+</quotepara></quote><para depth="0">
+   Except you not reading migration guides? Using non-ascii chars in 
+metadata.
+
+</para><para depth="0">   SY, SD.
+
+</para><footer type="list-management" depth="0">------------------------------------------------------------------------------
+This SF.net email is sponsored by:
+High Quality Requirements in a Collaborative Environment.
+Download a free trial of Rational Requirements Composer Now!
+<url>http://p.sf.net/sfu/www-ibm-com</url>
+Firebird-Devel mailing list, web interface at<br/><url>https://lists.sourceforge.net/lists/listinfo/firebird-devel</url>
+</footer></body></message>

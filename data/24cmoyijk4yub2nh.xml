@@ -1,0 +1,74 @@
+<message message-id="AF82FAEBA0C5D61188680008C7910BDE152AC1@neptune.firepond.com" list="org.apache.jakarta.taglibs-user" id="24cmoyijk4yub2nh" type="users" date="2002-10-15T13:58:50-05:00" year="2002-01-01" year-month="2002-10-01" year-month-day="2002-10-15" thread-id="vtc5k6hqukexfykw"><headers><envelope-from-line>From taglibs-user-return-4084-qmlist-jakarta-archive-taglibs-user=jakarta.apache.org@jakarta.apache.org Tue Oct 15 18:58:58 2002</envelope-from-line><from personal="Halvorson, Loren" address="Loren.Halvorson@firepond.com">"Halvorson, Loren" &lt;Loren.Halvorson@firepond.com&gt;</from><to personal="'Tag Libraries Users List'" address="taglibs-user@jakarta.apache.org">'Tag Libraries Users List' &lt;taglibs-user@jakarta.apache.org&gt;</to><subject normal="[dbtags] SOLVED: Strange behavior since switching to Tomcat 4.1.1 2">[dbtags] SOLVED: Strange behavior since switching to Tomcat 4.1.1
+	2</subject><return-path>taglibs-user-return-4084-qmlist-jakarta-archive-taglibs-user=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-taglibs-user-archive@apache.org</delivered-to><received>(qmail 50759 invoked from network); 15 Oct 2002 18:58:57 -0000</received><received>from unknown (HELO nagoya.betaversion.org) (192.18.49.131)
+  by daedalus.apache.org with SMTP; 15 Oct 2002 18:58:57 -0000</received><received>(qmail 9477 invoked by uid 97); 15 Oct 2002 18:59:44 -0000</received><delivered-to>qmlist-jakarta-archive-taglibs-user@jakarta.apache.org</delivered-to><received>(qmail 9452 invoked by uid 97); 15 Oct 2002 18:59:42 -0000</received><mailing-list>contact taglibs-user-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:taglibs-user-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:taglibs-user-subscribe@jakarta.apache.org&gt;</list-subscribe><list-help>&lt;mailto:taglibs-user-help@jakarta.apache.org&gt;</list-help><list-post>&lt;mailto:taglibs-user@jakarta.apache.org&gt;</list-post><list-id>"Tag Libraries Users List" &lt;taglibs-user.jakarta.apache.org&gt;</list-id><reply-to>"Tag Libraries Users List" &lt;taglibs-user@jakarta.apache.org&gt;</reply-to><delivered-to>mailing list taglibs-user@jakarta.apache.org</delivered-to><received>(qmail 9436 invoked by uid 98); 15 Oct 2002 18:59:41 -0000</received><x-antivirus>nagoya (v4218 created Aug 14 2002)</x-antivirus><message-id>AF82FAEBA0C5D61188680008C7910BDE152AC1@neptune.firepond.com</message-id><date>Tue, 15 Oct 2002 13:58:50 -0500</date><mime-version>1.0</mime-version><x-mailer>Internet Mail Service (5.5.2653.19)</x-mailer><content-type>text/plain</content-type><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>AF82FAEBA0C5D61188680008C7910BDE152AC1@neptune.firepond.com</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">OK I think I have a handle on what is wrong with the dbtags.
+
+</para><para depth="0">Almost every tag forgets to call super.release() In their release() method.
+This doesn't cause any problems if your container doesn't recycle tags.
+
+</para><para depth="0">  public void release() {
+    super.release();  &lt;--- this needs to be added
+    _position = -1;
+    _attributeName = null;
+    _name = null;
+    _scope = "page";
+    _tag = null;
+    _metaData = null;
+    _locale = null;
+  }
+
+</para><para depth="0">Can a taglibs committer just rip through and add super.release() to all of
+the tag release methods?  If there is a formal patch procedure I need to go
+through instead, let me know.
+
+</para><para depth="0">Thanks,
+--Loren
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Halvorson, Loren [mailto:<email>Loren.Halvorson@firepond.com</email>] 
+Sent: Tuesday, October 15, 2002 12:05 PM
+To: <email>taglibs-user@jakarta.apache.org</email>
+Subject: [dbtags] Strange behavior since switching to Tomcat 4.1.12
+
+</quotepara><quotepara depth="1">We are seeing some strange behavior from dbtags since we switched to Tomcat
+4.1.12.  I'm pretty sure it's related to the new tag pooling feature of
+Tomcat. I am wondering if anyone else is having problems.
+
+</quotepara><quotepara depth="1">If we have two statements on the same page, where the first one returns
+rows, but the second does not, the second statement tag prints out the
+actual text of it's query instead of nothing.
+
+</quotepara><quotepara depth="1">For example:
+  &lt;sql:statement id="stmt2" conn="conn"&gt;
+    &lt;sql:query&gt;select * from foo/*a query that returns rows*/&lt;/sql:query&gt;
+    &lt;sql:resultSet id="rset2"&gt;
+    &lt;/sql:resultSet&gt;
+  &lt;/sql:statement&gt;
+
+</quotepara><quotepara depth="1">  &lt;sql:statement id="stmt3" conn="conn"&gt;
+    &lt;sql:query&gt;select * from bar /*a query that returns NO
+rows*/&lt;/sql:query&gt;
+    &lt;sql:resultSet id="rset3"&gt;
+    &lt;/sql:resultSet&gt;
+  &lt;/sql:statement&gt;
+Would actually send back to the browser
+
+</quotepara><quotepara depth="1">  "select * from bar /*a query that returns NO rows*/"
+
+</quotepara><quotepara depth="1">Oh I wish we could switch to JSTL (to anticipate the response I know some of
+you are thinking), but we have the requirement of supporting JSP 1.1
+containers too (like WebSphere 4.0).  So let's get busy on that JSP 1.1
+back-port of JSTL.
+
+</quotepara><quotepara depth="1">Thanks
+
+</quotepara><quotefooter type="list-management" hash="1904813369426003857" depth="1">--
+To unsubscribe, e-mail:
+&lt;mailto:<email>taglibs-user-unsubscribe@jakarta.apache.org</email>&gt;
+For additional commands, e-mail:
+&lt;mailto:<email>taglibs-user-help@jakarta.apache.org</email>&gt;
+
+</quotefooter><quotefooter type="list-management" hash="18193997301576670013" depth="1">--
+To unsubscribe, e-mail:   &lt;mailto:<email>taglibs-user-unsubscribe@jakarta.apache.org</email>&gt;
+For additional commands, e-mail: &lt;mailto:<email>taglibs-user-help@jakarta.apache.org</email>&gt;
+
+</quotefooter></quote></body></message>

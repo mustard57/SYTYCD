@@ -1,0 +1,32 @@
+<message message-id="49960162230.20010318123237@spylog.ru" list="com.mysql.lists.mysql" id="24buzgsfkocvhep3" type="general" date="2001-03-18T12:32:37+03:00" year="2001-01-01" year-month="2001-03-01" year-month-day="2001-03-18" thread-id="g7vlqm24d5ouwbap"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="Peter Zaitsev" address="pz@spylog.ru">Peter Zaitsev &lt;pz@spylog.ru&gt;</from><to personal="Andreas Vierengel" address="avierengel@gedif.de">Andreas Vierengel &lt;avierengel@gedif.de&gt;</to><cc personal="Greg Cope" address="greg@rubberplant.freeserve.co.uk">Greg Cope &lt;greg@rubberplant.freeserve.co.uk&gt;</cc><subject normal="Re[2]: Innobase in MySQL">Re[2]: Innobase in MySQL</subject><return-path>pz@spylog.ru</return-path><mailing-list>contact mysql-help@lists.mysql.com; run by ezmlm (http://www.ezmlm.org)</mailing-list><delivered-to>mailing list mysql@lists.mysql.com</delivered-to><received>(qmail 28823 invoked from network); 18 Mar 2001 09:32:00 -0000</received><received>from unknown (HELO skif.spylog.net) (194.67.35.250)
+  by www.mysql.com with SMTP; 18 Mar 2001 09:32:00 -0000</received><received>from mail2.spylog.net (gate-skif-tunnel.local [10.0.1.41])
+	by skif.spylog.net (Postfix) with ESMTP
+	id 5DD614678; Sun, 18 Mar 2001 12:33:34 +0300 (MSK)</received><received>from olymp (unknown [212.16.6.206])
+	by mail2.spylog.net (Postfix) with ESMTP
+	id A3F31ADF3; Sun, 18 Mar 2001 09:33:33 +0000 (/etc/localtime)</received><date>Sun, 18 Mar 2001 12:32:37 +0300</date><x-mailer>The Bat! (v1.49)</x-mailer><reply-to>Peter Zaitsev &lt;pz@spylog.ru&gt;</reply-to><organization>http://www.spylog.ru</organization><x-priority>3 (Normal)</x-priority><message-id>49960162230.20010318123237@spylog.ru</message-id><in-reply-to>&lt;005801c0aef8$021002a0$93b69d3e@defiant.vierengel.de&gt;</in-reply-to><references>&lt;005801c0aef8$021002a0$93b69d3e@defiant.vierengel.de&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>49960162230.20010318123237@spylog.ru</normalized-message-id><normalized-in-reply-to>005801c0aef8$021002a0$93b69d3e@defiant.vierengel.de</normalized-in-reply-to><normalized-reference>005801c0aef8$021002a0$93b69d3e@defiant.vierengel.de</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><greeting depth="0">Hello Andreas,
+</greeting><para depth="0">
+Saturday, March 17, 2001, 6:36:17 PM, you wrote:
+
+</para><para depth="0">AV&gt; I noticed that in 3. and 4. the machine load was constantly at 100% during
+AV&gt; the inserts.
+AV&gt; but during index recreation the load springs wildley between 0 and 100%, so
+AV&gt; the machine is not maxed out in terms of CPU utilization here (in other
+AV&gt; words, the machine is waiting for something to do :-). The same applies to
+AV&gt; 2. when commit() was send.
+
+</para><para depth="0">AV&gt; I tested also 1. and 3. with a myisam-table. Index recreation draws
+AV&gt; constantly 100% load from the machine here, therfore it's faster.
+
+</para><para depth="0">AV&gt; results:
+AV&gt; 5. same as 1. but with myisam type =&gt; 116 seconds
+AV&gt; 6. same as 3. but with myisam type =&gt; 65 seconds + additional 33 seconds for
+AV&gt; index recreation.
+
+</para><para depth="0">Could you tell me what do you mean by index creation ? Did you drop
+all indexes or only secondary index while leaving primary in fact ?
+
+</para><footer type="signature" hash="4228191779775941330" depth="0">-- 
+Best regards,
+ Peter                            mailto:<email>pz@spylog.ru</email>
+
+</footer></body></message>

@@ -1,0 +1,26 @@
+<message message-id="1215607941.343399.4502.nullmailer@svn.kde.org" list="org.kde.kde-commits" id="24br6v7v3adsdewa" type="checkins" date="2008-07-09T12:52:21Z" year="2008-01-01" year-month="2008-07-01" year-month-day="2008-07-09" thread-id="az4qlj5n6kmzl4kr"><headers><envelope-from-line>Wed Jul 09 05:52:28 2008</envelope-from-line><from personal="Kevin Ottens" address="ervin@kde.org">Kevin Ottens &lt;ervin@kde.org&gt;</from><to personal="kde-commits@kde.org" address="kde-commits@kde.org">kde-commits@kde.org</to><subject normal="playground/graphics/dekoroom">playground/graphics/dekoroom</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 624
+          for &lt;juliet.walls.arnold@a.markmail.org&gt;;
+          Wed, 9 Jul 2008 05:52:28 -0700 (PDT)</received><received>from ktown.kde.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 654B52908062
+	for &lt;juliet.walls.arnold@a.markmail.org&gt;; Wed,  9 Jul 2008 05:52:27 -0700 (PDT)</received><received>(qmail 14505 invoked by uid 72); 9 Jul 2008 12:52:50 -0000</received><received>(qmail 14480 invoked from network); 9 Jul 2008 12:52:46 -0000</received><x-spam-checker-version>SpamAssassin 3.2.3 (2007-08-08) on ktown.kde.org</x-spam-checker-version><received>from unknown (HELO office.kde.org) (195.135.221.67)
+	by ktown.kde.org with SMTP; 9 Jul 2008 12:52:46 -0000</received><received>from svn.kde.org (localhost [127.0.0.1])
+	by office.kde.org (Postfix) with SMTP id 601B011
+	for &lt;kde-commits@kde.org&gt;; Wed,  9 Jul 2008 14:52:21 +0200 (CEST)</received><received>(nullmailer pid 4503 invoked by uid 50198);
+	Wed, 09 Jul 2008 12:52:21 -0000</received><x-commit-directories>(0) trunk/playground/graphics/dekoroom</x-commit-directories><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><date>Wed, 09 Jul 2008 12:52:21 +0000</date><message-id>1215607941.343399.4502.nullmailer@svn.kde.org</message-id><x-beenthere>kde-commits@kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><reply-to>kde-commits@kde.org</reply-to><list-id>Notification of KDE commits &lt;kde-commits.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-commits&gt;,
+	&lt;mailto:kde-commits-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-commits@kde.org&gt;</list-post><list-help>&lt;mailto:kde-commits-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-commits&gt;,
+	&lt;mailto:kde-commits-request@kde.org?subject=subscribe&gt;</list-subscribe><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>1215607941.343399.4502.nullmailer@svn.kde.org</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">SVN commit 829936 by ervin:
+
+</para><para depth="0">Allow to build as a submodule of playground/graphics.
+
+</para><para depth="0"> M  +1 -1      CMakeLists.txt  
+
+</para><para depth="0">--- trunk/playground/graphics/dekoroom/CMakeLists.txt #829935:829936
+@@ -1,5 +1,5 @@
+ project(dekoroom)
+-set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
++set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
+
+</para><para depth="0"> find_package(KDE4 REQUIRED)
+ include(KDE4Defaults)
+</para></body></message>

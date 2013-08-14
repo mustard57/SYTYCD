@@ -1,0 +1,225 @@
+<message message-id="20080305130243.28984.qmail@dev.java.net" list="net.java.dev.jersey.commits" id="24bdsbyn67pqvjed" type="checkins" date="2008-03-05T13:02:43Z" year="2008-01-01" year-month="2008-03-01" year-month-day="2008-03-05" thread-id="24bdsbyn67pqvjed"><headers><envelope-from-line>From commits@jersey.dev.java.net Wed Mar 05 05:31:03 2008</envelope-from-line><from personal="japod@dev.java.net" address="japod@dev.java.net">japod@dev.java.net</from><to personal="commits@jersey.dev.java.net" address="commits@jersey.dev.java.net">commits@jersey.dev.java.net</to><subject normal="svn commit: r841 - trunk/jersey/examples/jMakiBackend: . src/java/com/sun/ws/rest/samples/jmaki/beans src/java/com/sun/ws/rest/samples/jmaki/config...">svn commit: r841 - trunk/jersey/examples/jMakiBackend: . src/java/com/sun/ws/rest/samples/jmaki/beans src/java/com/sun/ws/rest/samples/jmaki/config...</subject><return-path>japod@dev.java.net</return-path><mailing-list>contact commits-help@jersey.dev.java.net; run by ezmlm</mailing-list><delivered-to>mailing list commits@jersey.dev.java.net</delivered-to><received>(qmail 28989 invoked by uid 5000); 5 Mar 2008 13:02:43 -0000</received><date>5 Mar 2008 13:02:43 -0000</date><message-id>20080305130243.28984.qmail@dev.java.net</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type></headers><normalized-references><normalized-message-id>20080305130243.28984.qmail@dev.java.net</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: japod
+Date: 2008-03-05 13:02:42+0000
+New Revision: 841
+
+</para><para depth="0">Added:
+   trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/beans/WebResourceList.java
+Modified:
+   trunk/jersey/examples/jMakiBackend/README.html
+   trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/config/JAXBContextResolver.java
+   trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/resources/PrintersResource.java
+
+</para><para depth="0">Log:
+fixed a bug in the readme doc
+adding a bootstrap and a printer list resource
+
+</para><para depth="0">Modified: trunk/jersey/examples/jMakiBackend/README.html
+Url:<br/><url>https://jersey.dev.java.net/source/browse/jersey/trunk/jersey/examples/jMakiBackend/README.html?view=diff&amp;rev=841&amp;p1=trunk/jersey/examples/jMakiBackend/README.html&amp;p2=trunk/jersey/examples/jMakiBackend/README.html&amp;r1=840&amp;r2=841</url>
+==============================================================================
+--- trunk/jersey/examples/jMakiBackend/README.html	(original)
++++ trunk/jersey/examples/jMakiBackend/README.html	2008-03-05 13:02:42+0000
+@@ -67,7 +67,8 @@
+     &lt;p&gt;Run the example as follows:&lt;/p&gt;
+     &lt;blockquote&gt;&lt;pre&gt;cd examples/jMakiBackend
+ ant
+-$AS_HOME/bin/asadmin deploy dist/jMakiBackend&lt;/pre&gt;&lt;/blockquote&gt;
++$AS_HOME/bin/asadmin start-domain
++$AS_HOME/bin/asadmin deploy dist/jMakiBackend.war&lt;/pre&gt;&lt;/blockquote&gt;
+     &lt;p&gt;This deploys the web service using 
+         &lt;a href="<url>http://glassfish.dev.java.net/</url>"&gt;GlassFish V2&lt;/a&gt;
+         application server.
+
+</para><para depth="0">Added:<br/>trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/beans/WebResourceList.java
+Url:<br/><url>https://jersey.dev.java.net/source/browse/jersey/trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/beans/WebResourceList.java?view=auto&amp;rev=841</url>
+==============================================================================
+--- (empty file)
++++<br/>trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/beans/WebResourceList.java<br/>2008-03-05 13:02:42+0000
+@@ -0,0 +1,49 @@
++/*
++ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
++ * 
++ * Copyright 2007 Sun Microsystems, Inc. All rights reserved. 
++ * 
++ * The contents of this file are subject to the terms of the Common Development
++ * and Distribution License("CDDL") (the "License").  You may not use this file
++ * except in compliance with the License. 
++ * 
++ * You can obtain a copy of the License at:
++ *     <url>https://jersey.dev.java.net/license.txt</url>
++ * See the License for the specific language governing permissions and
++ * limitations under the License.
++ *
++ * When distributing the Covered Code, include this CDDL Header Notice in each
++ * file and include the License file at:
++ *     <url>https://jersey.dev.java.net/license.txt</url>
++ * If applicable, add the following below this CDDL Header, with the fields
++ * enclosed by brackets [] replaced by your own identifying information:
++ *     "Portions Copyrighted [year] [name of copyright owner]"
++ */
++package com.sun.ws.rest.samples.jmaki.beans;
++
++import java.util.Collection;
++import javax.xml.bind.annotation.XmlElement;
++import javax.xml.bind.annotation.XmlRootElement;
++
++/**
++ *
++ * @author japod
++ */
++@XmlRootElement
++public class WebResourceList {
++    
++    public static class Item {
++        public String description;
++        public String url;
++        
++        public Item() {}
++        
++        public Item(String description, String url) {
++            this.description = description;
++            this.url = url;
++        }
++    }
++    
++    @XmlElement(name = "resources")
++    public Collection&lt;Item&gt; items;
++}
+
+</para><para depth="0">Modified:<br/>trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/config/JAXBContextResolver.java
+Url:<br/><url>https://jersey.dev.java.net/source/browse/jersey/trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/config/JAXBContextResolver.java?view=diff&amp;rev=841&amp;p1=trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/config/JAXBContextResolver.java&amp;p2=trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/config/JAXBContextResolver.java&amp;r1=840&amp;r2=841</url>
+==============================================================================
+---<br/>trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/config/JAXBContextResolver.java<br/>(original)
++++<br/>trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/config/JAXBContextResolver.java<br/>2008-03-05 13:02:42+0000
+@@ -25,6 +25,7 @@
+ import com.sun.ws.rest.samples.jmaki.beans.Printer;
+ import com.sun.ws.rest.samples.jmaki.beans.PrinterTableModel;
+ import com.sun.ws.rest.samples.jmaki.beans.TreeModel;
++import com.sun.ws.rest.samples.jmaki.beans.WebResourceList;
+ import com.sun.ws.rest.spi.service.ContextResolver;
+ import java.util.HashMap;
+ import java.util.Map;
+@@ -39,13 +40,13 @@
+ public class JAXBContextResolver implements ContextResolver&lt;JAXBContext&gt; {
+
+</para><para depth="0">     private JAXBContext context;
+-    private Class[] types = {Printer.class, PrinterTableModel.class,<br/>TreeModel.class};
++    private Class[] types = {Printer.class, PrinterTableModel.class,<br/>TreeModel.class, WebResourceList.class};
+
+</para><para depth="0">     public JAXBContextResolver() throws Exception {
+         Map&lt;String, Object&gt; props = new HashMap&lt;String, Object&gt;();
+         props.put(JSONJAXBContext.JSON_NOTATION, "MAPPED");
+         props.put(JSONJAXBContext.JSON_ROOT_UNWRAPPING, Boolean.TRUE);
+-        props.put(JSONJAXBContext.JSON_ARRAYS, "[\"rows\", \"cols\",<br/>\"children\"]");
++        props.put(JSONJAXBContext.JSON_ARRAYS, "[\"rows\", \"cols\",<br/>\"children\", \"resources\"]");
+         props.put(JSONJAXBContext.JSON_NON_STRINGS, "[\"expanded\"]");
+         this.context = new JSONJAXBContext(types, props);
+     }
+
+</para><para depth="0">Modified:<br/>trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/resources/PrintersResource.java
+Url:<br/><url>https://jersey.dev.java.net/source/browse/jersey/trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/resources/PrintersResource.java?view=diff&amp;rev=841&amp;p1=trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/resources/PrintersResource.java&amp;p2=trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/resources/PrintersResource.java&amp;r1=840&amp;r2=841</url>
+==============================================================================
+---<br/>trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/resources/PrintersResource.java<br/>(original)
++++<br/>trunk/jersey/examples/jMakiBackend/src/java/com/sun/ws/rest/samples/jmaki/resources/PrintersResource.java<br/>2008-03-05 13:02:42+0000
+@@ -24,7 +24,9 @@
+ import com.sun.ws.rest.samples.jmaki.beans.Printer;
+ import com.sun.ws.rest.samples.jmaki.beans.PrinterTableModel;
+ import com.sun.ws.rest.samples.jmaki.beans.TreeModel;
++import com.sun.ws.rest.samples.jmaki.beans.WebResourceList;
+ import com.sun.ws.rest.spi.resource.Singleton;
++import java.util.Formatter;
+ import java.util.HashMap;
+ import java.util.LinkedList;
+ import java.util.Map;
+@@ -35,6 +37,8 @@
+ import javax.ws.rs.Path;
+ import javax.ws.rs.PathParam;
+ import javax.ws.rs.ProduceMime;
++import javax.ws.rs.core.Context;
++import javax.ws.rs.core.UriInfo;
+
+</para><para depth="0"> /**
+  *
+@@ -45,16 +49,46 @@
+ public class PrintersResource {
+
+</para><para depth="0">     Map&lt;String, Printer&gt; printers;
++    static WebResourceList myResources;
++    @Context
++    UriInfo uriInfo;
+
+</para><para depth="0">-    @Path("/jMakiTable")
+     @GET
++    @ProduceMime({"application/json", "application/xml"})
++    public WebResourceList getMyResources() {
++        if (null == myResources) {
++            myResources = new WebResourceList();
++            myResources.items = new LinkedList&lt;WebResourceList.Item&gt;();
++            myResources.items.add(new WebResourceList.Item(
++                    "list of printers",<br/>uriInfo.getBaseUriBuilder().path(this.getClass()).path("list").build().toString()));
++            myResources.items.add(new WebResourceList.Item(
++                    "jMaki table model",<br/>uriInfo.getBaseUriBuilder().path(this.getClass()).path("jMakiTable").build().toString()));
++            myResources.items.add(new WebResourceList.Item(
++                    "jMaki tree model",<br/>uriInfo.getBaseUriBuilder().path(this.getClass()).path("jMakiTree").build().toString()));
++        }
++        return myResources;
++    }
++    
++    @GET @Path("/list")
++    @ProduceMime({"application/json", "application/xml"})
++    public WebResourceList getListOfPrinters() {
++        WebResourceList result = new WebResourceList();
++        result.items = new LinkedList&lt;WebResourceList.Item&gt;();
++        for (Printer p : getPrinters().values()) {
++            result.items.add(new WebResourceList.Item(
++                    (new Formatter()).format("%s (%s)", p.id,<br/>p.model).toString(), 
++<br/>uriInfo.getBaseUriBuilder().path(this.getClass()).path("ids").path(p.id).build().toString()));
++        }
++        return result;
++    }
++
++    @GET @Path("/jMakiTable")
+     @ProduceMime("application/json")
+     public PrinterTableModel getTable() {
+         return new PrinterTableModel(getPrinters().values());
+     }
+
+</para><para depth="0">-    @Path("/jMakiTree")
+-    @GET
++    @GET @Path("/jMakiTree")
+     @ProduceMime("application/json")
+     public TreeModel getTree() {
+         TreeModel model = new TreeModel();
+@@ -79,25 +113,25 @@
+         return model;
+     }
+
+</para><para depth="0">-    @Path("/ids/{printerid}")
+-    @GET
++    @GET @Path("/ids/{printerid}")
+     @ProduceMime({"application/json", "application/xml"})
+     public Printer getPrinter(
++            
+             @PathParam("printerid") String printerId) {
+         return getPrinters().get(printerId);
+     }
+
+</para><para depth="0">-    @Path("/ids/{printerid}")
+-    @PUT
++    @PUT @Path("/ids/{printerid}")
+     @ConsumeMime({"application/json", "application/xml"})
+     public void putPrinter(
++            
+             @PathParam("printerid") String printerId,  Printer printer) {
+         getPrinters().put(printerId, printer);
+     }
+
+</para><para depth="0">-    @Path("/ids/{printerid}")
+-    @DELETE
++    @DELETE @Path("/ids/{printerid}")
+     public void deletePrinter(
++            
+             @PathParam("printerid") String printerId) {
+         getPrinters().remove(printerId);
+     }
+
+</para></body></message>

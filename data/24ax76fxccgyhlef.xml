@@ -1,0 +1,41 @@
+<message message-id="1B32FF956ABF414C9BCE5E487A1497E704F9CB34@ukmail02.planit.group" list="org.perl.perl5-porters" id="24ax76fxccgyhlef" type="development" date="2009-11-27T06:36:19.009388-08:00" year="2009-01-01" year-month="2009-11-01" year-month-day="2009-11-27" thread-id="rvci6oxjet2blrfp"><headers><envelope-from-line>Fri Nov 27 06:36:41 2009</envelope-from-line><from personal="Steve Hay" address="SteveHay@planit.com">Steve Hay &lt;SteveHay@planit.com&gt;</from><to personal="Nicholas Clark" address="nick@ccl4.org">Nicholas Clark &lt;nick@ccl4.org&gt;</to><cc personal="perl5-porters@perl.org" address="perl5-porters@perl.org">perl5-porters@perl.org</cc><subject normal="POSIX::strftime() and Unicode [was: RE: Smoke [5.11.2] v5.11.2-81-g162177c FAIL(F) MSWin32 WinXP/.Net SP3 (x86/2 cpu)]">RE: POSIX::strftime() and Unicode [was: RE: Smoke [5.11.2] v5.11.2-81-g162177c FAIL(F) MSWin32 WinXP/.Net SP3 (x86/2 cpu)]</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 901
+          for &lt;melinda.copeland.bennett@a.markmail.org&gt;;
+          Fri, 27 Nov 2009 06:36:41 -0800 (GMT-08:00)</received><received>from lists.develooper.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id B531F3B300DE
+	for &lt;melinda.copeland.bennett@a.markmail.org&gt;; Fri, 27 Nov 2009 06:36:18 -0800 (PST)</received><received>(qmail 6364 invoked by uid 514); 27 Nov 2009 14:36:36 -0000</received><mailing-list>contact perl5-porters-help@perl.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:perl5-porters-help@perl.org&gt;</list-help><list-unsubscribe>&lt;mailto:perl5-porters-unsubscribe@perl.org&gt;</list-unsubscribe><list-post>&lt;mailto:perl5-porters@perl.org&gt;</list-post><x-list-archive>&lt;http://nntp.perl.org/group/perl.perl5.porters/153960&gt;</x-list-archive><list-id>&lt;perl5-porters.perl.org&gt;</list-id><delivered-to>mailing list perl5-porters@perl.org</delivered-to><received>(qmail 6343 invoked from network); 27 Nov 2009 14:36:35 -0000</received><delivered-to>perl5-porters@perl.org</delivered-to><x-spam-status>No, hits=-0.0 required=8.0
+	tests=SPF_PASS</x-spam-status><x-spam-check-by>la.mx.develooper.com</x-spam-check-by><x-virus-scanned>by SpamTitan at planit.com</x-virus-scanned><x-mimeole>Produced By Microsoft Exchange V6.5</x-mimeole><content-class>urn:content-classes:message</content-class><mime-version>1.0</mime-version><content-type>text/plain;
+	charset="iso-2022-jp"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><date>Fri, 27 Nov 2009 14:36:26 -0000</date><message-id>1B32FF956ABF414C9BCE5E487A1497E704F9CB34@ukmail02.planit.group</message-id><in-reply-to>&lt;20091127114556.GQ2582@plum.flirble.org&gt;</in-reply-to><x-ms-has-attach/><x-ms-tnef-correlator/><thread-topic>POSIX::strftime() and Unicode [was: RE: Smoke [5.11.2] v5.11.2-81-g162177c FAIL(F) MSWin32 WinXP/.Net SP3 (x86/2 cpu)]</thread-topic><thread-index>AcpvV0NfnHFsqP+rR26sa0+RjXt4LAAFSE8Q</thread-index><references>&lt;UKMAIL02nKS7vzxgLNn0000102d@ukmail02.planit.group&gt; &lt;1B32FF956ABF414C9BCE5E487A1497E704F9C7FA@ukmail02.planit.group&gt; &lt;20091127094110.GO2582@plum.flirble.org&gt; &lt;1B32FF956ABF414C9BCE5E487A1497E704F9C8EF@ukmail02.planit.group&gt; &lt;20091127114556.GQ2582@plum.flirble.org&gt;</references></headers><normalized-references><normalized-message-id>1B32FF956ABF414C9BCE5E487A1497E704F9CB34@ukmail02.planit.group</normalized-message-id><normalized-thread-index>AcpvV0NfnHFsqP+rR26sa0+RjXt4LA</normalized-thread-index><normalized-in-reply-to>20091127114556.GQ2582@plum.flirble.org</normalized-in-reply-to><normalized-reference>UKMAIL02nKS7vzxgLNn0000102d@ukmail02.planit.group</normalized-reference><normalized-reference>1B32FF956ABF414C9BCE5E487A1497E704F9C7FA@ukmail02.planit.group</normalized-reference><normalized-reference>20091127094110.GO2582@plum.flirble.org</normalized-reference><normalized-reference>1B32FF956ABF414C9BCE5E487A1497E704F9C8EF@ukmail02.planit.group</normalized-reference><normalized-reference>20091127114556.GQ2582@plum.flirble.org</normalized-reference></normalized-references><body type="text/plain;&#13;&#10;&#9;charset=&quot;iso-2022-jp&quot;"><para depth="0">Nicholas Clark wrote on 2009-11-27:
+</para><quote depth="1"><quotepara depth="1">On Fri, Nov 27, 2009 at 10:20:12AM -0000, Steve Hay wrote:
+</quotepara><quote depth="2"><quotepara depth="2">I think setlocale() works okay:
+
+</quotepara><quotepara depth="2">C:\gitclients\perl\t&gt;..\perl -MPOSIX -e "print strftime('%#x',
+</quotepara></quote><quotepara depth="1">localtime), qq[\n]; setlocale(LC_TIME, 'C'); print strftime('%#x',
+localtime)"
+</quotepara><quote depth="2"><quotepara depth="2">2009?$BG/11?$B7n27?$BF|
+Friday, November 27, 2009
+
+</quotepara></quote><quotepara depth="1">Strange. Then I don't understand. The test appears to be failing with
+the %d
+failing to be interpolated, but the %Y and %m being handled just fine:
+
+</quotepara><quotepara depth="1">is(strftime("%Y\x{5e74}%m\x{6708}%d\x{65e5}", gmtime($jan_16)),
+   "1970\x{5e74}01\x{6708}16\x{65e5}",
+   "strftime() can handle unicode chars in the format string");
+
+</quotepara><quotepara depth="1">This makes no sense to me.
+
+</quotepara></quote><para depth="0">The 'fmt' argument arriving in POSIX::strftime() (and hence also the 'fmt' in<br/>Perl_my_strftime()) doesn't look right in the debugger:
+
+</para><para depth="0">%Y&lt;Japanese character&gt;I%m&lt;Japanese character&gt;*d&lt;Japanese character&gt;*
+
+</para><para depth="0">Not sure where the I or * characters come from, but the first * character seems<br/>to have eaten up the % of the %d. If I use the format "%Y \x{5e74} %m \x{6708}<br/>%d \x{65e5}" then the debugger shows:
+
+</para><para depth="0">%Y&lt;space&gt;&lt;Japanese character&gt;I&lt;space&gt;%m&lt;space&gt;&lt;Japanese<br/>character&gt;*%d&lt;space&gt;&lt;Japanese character&gt;*
+
+</para><para depth="0">This time the first * character has eaten up the space before the %d, and the<br/>output is
+
+</para><para depth="0">2009 年 11 月 27 日
+
+</para><para depth="0">exactly as it should be.
+</para></body></message>

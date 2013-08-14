@@ -1,0 +1,103 @@
+<message message-id="20110628150639.19960238885D@eris.apache.org" list="org.apache.subversion.commits" id="24bsw3ws2l36cnlq" type="checkins" date="2011-06-28T07:06:38.39127-08:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-28" thread-id="24bsw3ws2l36cnlq"><headers><envelope-from-line>Tue Jun 28 07:07:01 2011</envelope-from-line><from personal="julianfoad@apache.org" address="julianfoad@apache.org">julianfoad@apache.org</from><to personal="commits@subversion.apache.org" address="commits@subversion.apache.org">commits@subversion.apache.org</to><subject normal="svn commit: r1140674 - in /subversion/trunk/subversion: libsvn_client/merge.c svn/switch-cmd.c">svn commit: r1140674 - in /subversion/trunk/subversion: libsvn_client/merge.c svn/switch-cmd.c</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 174
+          for &lt;jenny.atkinson.mueller@a.markmail.org&gt;;
+          Tue, 28 Jun 2011 07:07:01 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 10EBD3B3020D
+	for &lt;jenny.atkinson.mueller@a.markmail.org&gt;; Tue, 28 Jun 2011 08:06:38 -0700 (PDT)</received><received>(qmail 60391 invoked by uid 500); 28 Jun 2011 15:07:00 -0000</received><mailing-list>contact commits-help@subversion.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:commits-help@subversion.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@subversion.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:commits@subversion.apache.org&gt;</list-post><list-id>&lt;commits.subversion.apache.org&gt;</list-id><reply-to>dev@subversion.apache.org</reply-to><delivered-to>mailing list commits@subversion.apache.org</delivered-to><received>(qmail 60384 invoked by uid 99); 28 Jun 2011 15:07:00 -0000</received><received>from athena.apache.org (HELO athena.apache.org) (140.211.11.136)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 28 Jun 2011 15:07:00 +0000</received><x-asf-spam-status>No, hits=-2000.0 required=5.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.4] (HELO eris.apache.org) (140.211.11.4)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Tue, 28 Jun 2011 15:06:59 +0000</received><received>from eris.apache.org (localhost [127.0.0.1])
+	by eris.apache.org (Postfix) with ESMTP id 19960238885D
+	for &lt;commits@subversion.apache.org&gt;; Tue, 28 Jun 2011 15:06:39 +0000 (UTC)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><content-transfer-encoding>7bit</content-transfer-encoding><date>Tue, 28 Jun 2011 15:06:39 -0000</date><x-mailer>svnmailer-1.0.8</x-mailer><message-id>20110628150639.19960238885D@eris.apache.org</message-id></headers><normalized-references><normalized-message-id>20110628150639.19960238885D@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: julianfoad
+Date: Tue Jun 28 15:06:38 2011
+New Revision: 1140674
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?rev=1140674&amp;view=rev</url>
+Log:
+Code simplifications. No functional change.
+
+</para><para depth="0">* subversion/libsvn_client/merge.c
+  (find_unmerged_mergeinfo): Simplify path manipulations by recognizing that
+    'join' followed by 'skip_ancestor' using the same parent is a no-op.
+
+</para><para depth="0">* subversion/svn/switch-cmd.c
+  (svn_cl__switch): Eliminate a variable and some redundant assignments, and
+    hoist common code out of an if-else.
+
+</para><para depth="0">Modified:
+    subversion/trunk/subversion/libsvn_client/merge.c
+    subversion/trunk/subversion/svn/switch-cmd.c
+
+</para><para depth="0">Modified: subversion/trunk/subversion/libsvn_client/merge.c
+URL:<br/><url>http://svn.apache.org/viewvc/subversion/trunk/subversion/libsvn_client/merge.c?rev=1140674&amp;r1=1140673&amp;r2=1140674&amp;view=diff</url>
+==============================================================================
+--- subversion/trunk/subversion/libsvn_client/merge.c (original)
++++ subversion/trunk/subversion/libsvn_client/merge.c Tue Jun 28 15:06:38 2011
+@@ -9874,13 +9874,11 @@ find_unmerged_mergeinfo(svn_mergeinfo_ca
+
+</para><para depth="0">       svn_pool_clear(iterpool);
+
+</para><para depth="0">-      source_path = path + strlen(target_repos_rel_path);
+-      if (source_path[0] == '/')  /* Remove leading '/'. */
+-        source_path++;
+-      source_path = svn_relpath_join(source_repos_rel_path, source_path,
+-                                     iterpool);
+-      source_path_rel_to_session =
+-        svn_relpath_skip_ancestor(source_repos_rel_path, source_path);
++      source_path_rel_to_session = path + strlen(target_repos_rel_path);
++      if (source_path_rel_to_session[0] == '/')  /* Remove leading '/'. */
++        source_path_rel_to_session++;
++      source_path = svn_relpath_join(source_repos_rel_path,
++                                     source_path_rel_to_session, iterpool);
+
+</para><para depth="0">       /* Convert this target path's natural history into mergeinfo. */
+       SVN_ERR(svn_mergeinfo__mergeinfo_from_segments(
+
+</para><para depth="0">Modified: subversion/trunk/subversion/svn/switch-cmd.c
+URL:<br/><url>http://svn.apache.org/viewvc/subversion/trunk/subversion/svn/switch-cmd.c?rev=1140674&amp;r1=1140673&amp;r2=1140674&amp;view=diff</url>
+==============================================================================
+--- subversion/trunk/subversion/svn/switch-cmd.c (original)
++++ subversion/trunk/subversion/svn/switch-cmd.c Tue Jun 28 15:06:38 2011
+@@ -97,8 +97,7 @@ svn_cl__switch(apr_getopt_t *os,
+   svn_cl__opt_state_t *opt_state = ((svn_cl__cmd_baton_t *) baton)-&gt;opt_state;
+   svn_client_ctx_t *ctx = ((svn_cl__cmd_baton_t *) baton)-&gt;ctx;
+   apr_array_header_t *targets;
+-  const char *target = NULL, *switch_url = NULL;
+-  const char *true_path;
++  const char *target, *switch_url;
+   svn_opt_revision_t peg_revision;
+   svn_depth_t depth;
+   svn_boolean_t depth_is_sticky;
+@@ -122,23 +121,15 @@ svn_cl__switch(apr_getopt_t *os,
+   if (targets-&gt;nelts &gt; 2)
+     return svn_error_create(SVN_ERR_CL_ARG_PARSING_ERROR, 0, NULL);
+
+</para><para depth="0">-  /* Get the required SWITCH_URL and the optional TARGET arguments. */
++  /* Get the required SWITCH_URL and its optional PEG_REVISION, and the
++   * optional TARGET argument. */
++  SVN_ERR(svn_opt_parse_path(&amp;peg_revision, &amp;switch_url,
++                             APR_ARRAY_IDX(targets, 0, const char *),
++                             scratch_pool));
+   if (targets-&gt;nelts == 1)
+-    {
+-      switch_url = APR_ARRAY_IDX(targets, 0, const char *);
+-      target = "";
+-    }
++    target = "";
+   else
+-    {
+-      switch_url = APR_ARRAY_IDX(targets, 0, const char *);
+-      target = APR_ARRAY_IDX(targets, 1, const char *);
+-    }
+-
+-  /* Strip peg revision if targets contains an URI. */
+-  SVN_ERR(svn_opt_parse_path(&amp;peg_revision, &amp;true_path, switch_url,
+-                             scratch_pool));
+-  APR_ARRAY_IDX(targets, 0, const char *) = true_path;
+-  switch_url = true_path;
++    target = APR_ARRAY_IDX(targets, 1, const char *);
+
+</para><para depth="0">   /* Validate the switch_url */
+   if (! svn_path_is_url(switch_url))
+
+</para></body></message>

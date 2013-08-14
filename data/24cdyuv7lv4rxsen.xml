@@ -1,0 +1,39 @@
+<message message-id="20081207114151.B67E813028@immanuel.kde.org" list="org.kde.kde-bugs-dist" id="24cdyuv7lv4rxsen" type="bugs" date="2008-12-07T12:41:51+01:00" year="2008-01-01" year-month="2008-12-01" year-month-day="2008-12-07" thread-id="eaxdp7xk5vdwa2c2"><headers><envelope-from-line>Sun Dec 07 03:42:35 2008</envelope-from-line><from personal="Andi Clemens" address="andi.clemens@gmx.net">Andi Clemens &lt;andi.clemens@gmx.net&gt;</from><to personal="kde-bugs-dist@kde.org" address="kde-bugs-dist@kde.org">kde-bugs-dist@kde.org</to><subject normal="[Bug 171480] Visual indicator missing for 100% zoom level">[Bug 171480] Visual indicator missing for 100% zoom level</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 742
+          for &lt;grady.rosario.banks@a.markmail.org&gt;;
+          Sun, 7 Dec 2008 03:42:35 -0800 (GMT-08:00)</received><received>from ktown.kde.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id D43932908088
+	for &lt;grady.rosario.banks@a.markmail.org&gt;; Sun,  7 Dec 2008 03:42:11 -0800 (PST)</received><received>(qmail 691 invoked by uid 72); 7 Dec 2008 11:42:33 -0000</received><received>(qmail 672 invoked from network); 7 Dec 2008 11:42:30 -0000</received><x-spam-checker-version>SpamAssassin 3.2.5 (2008-06-10) on ktown.kde.org</x-spam-checker-version><received>from unknown (HELO immanuel.kde.org) (138.246.255.177)
+	by ktown.kde.org with SMTP; 7 Dec 2008 11:42:28 -0000</received><received>by immanuel.kde.org (Postfix, from userid 1001)
+	id B67E813028; Sun,  7 Dec 2008 12:41:51 +0100 (CET)</received><x-bugzilla-url>http://bugs.kde.org/ </x-bugzilla-url><x-bugzilla-reason>GlobalWatcher</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>digikam</x-bugzilla-product><x-bugzilla-component>Preview</x-bugzilla-component><x-bugzilla-keywords/><x-bugzilla-severity>normal</x-bugzilla-severity><x-bugzilla-who>andi.clemens@gmx.net</x-bugzilla-who><x-bugzilla-status>RESOLVED</x-bugzilla-status><x-bugzilla-priority>NOR</x-bugzilla-priority><x-bugzilla-assigned-to>digikam-devel@kde.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>---</x-bugzilla-target-milestone><x-bugzilla-changed-fields>Status Resolution</x-bugzilla-changed-fields><in-reply-to>&lt;bug-171480-17878@http.bugs.kde.org/&gt;</in-reply-to><references>&lt;bug-171480-17878@http.bugs.kde.org/&gt;</references><content-type>text/plain; charset="UTF-8"</content-type><mime-version>1.0</mime-version><message-id>20081207114151.B67E813028@immanuel.kde.org</message-id><date>Sun,  7 Dec 2008 12:41:51 +0100 (CET)</date><x-beenthere>kde-bugs-dist@kde.org</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><precedence>list</precedence><list-id>"bugs.kde.org mail" &lt;kde-bugs-dist.kde.org&gt;</list-id><list-unsubscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-bugs-dist&gt;,
+	&lt;mailto:kde-bugs-dist-request@kde.org?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:kde-bugs-dist@kde.org&gt;</list-post><list-help>&lt;mailto:kde-bugs-dist-request@kde.org?subject=help&gt;</list-help><list-subscribe>&lt;https://mail.kde.org/mailman/listinfo/kde-bugs-dist&gt;,
+	&lt;mailto:kde-bugs-dist-request@kde.org?subject=subscribe&gt;</list-subscribe></headers><normalized-references><normalized-message-id>20081207114151.B67E813028@immanuel.kde.org</normalized-message-id><normalized-in-reply-to>bug-171480-17878@http.bugs.kde.org/</normalized-in-reply-to><normalized-reference>bug-171480-17878@http.bugs.kde.org/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0"><url>http://bugs.kde.org/show_bug.cgi?id=171480</url>
+
+</para><para depth="0">Andi Clemens andi clemens gmx net changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+             Status|ASSIGNED                    |RESOLVED
+         Resolution|                            |FIXED
+
+</para><para depth="0">--- Comment #3 from Andi Clemens &lt;andi clemens gmx net&gt;  2008-12-07 12:41:51 ---
+SVN commit 893727 by aclemens:
+
+</para><para depth="0">add methods to autoshow / autohide the tooltip of statuszoombar widget
+
+</para><para depth="0">BUG:171480
+
+</para><para depth="0"> M  +2 -1      NEWS  
+ M  +5 -3      digikam/digikamapp.cpp  
+ M  +42 -9     libs/widgets/common/dcursortracker.cpp  
+ M  +27 -12    libs/widgets/common/dcursortracker.h  
+ M  +10 -5     libs/widgets/common/statuszoombar.cpp  
+ M  +1 -0      libs/widgets/common/statuszoombar.h  
+
+</para><para depth="0">WebSVN link: <url>http://websvn.kde.org/?view=rev&amp;revision=893727</url>
+
+</para><footer type="signature" depth="0" hash="13490015196256080977">-- 
+Configure bugmail: <url>http://bugs.kde.org/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are watching all bug changes.
+</footer></body></message>

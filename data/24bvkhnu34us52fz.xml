@@ -1,0 +1,113 @@
+<message message-id="a391d10b-b722-4071-b2e4-c318ad5fcb06@j2g2000yqf.googlegroups.com" list="com.googlegroups.twitter-development-talk" id="24bvkhnu34us52fz" type="development" date="2010-11-01T08:21:06.413713-08:00" year="2010-01-01" year-month="2010-11-01" year-month-day="2010-11-01" thread-id="24bvkhnu34us52fz"><headers><envelope-from-line>Mon Nov 01 08:21:29 2010</envelope-from-line><from personal="plw" address="info@knutsford-software.co.uk">plw &lt;info@knutsford-software.co.uk&gt;</from><to personal="Twitter Development Talk" address="twitter-development-talk@googlegroups.com">Twitter Development Talk &lt;twitter-development-talk@googlegroups.com&gt;</to><subject normal="[twitter-dev] Twitter stopped working">[twitter-dev] Twitter stopped working</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 1007
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Mon, 1 Nov 2010 08:21:29 -0800 (GMT-08:00)</received><received>from mail-yw0-f60.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id EBA683B300B4
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Mon,  1 Nov 2010 09:21:05 -0700 (PDT)</received><received>by ywi6 with SMTP id 6sf7426428ywi.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Mon, 01 Nov 2010 09:21:28 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:x-beenthere:received:mime-version
+         :received:received:date:x-ip:user-agent:x-http-useragent:message-id
+         :subject:from:to:x-original-sender:reply-to:precedence:mailing-list
+         :list-id:list-post:list-help:list-archive:sender:list-subscribe
+         :list-unsubscribe:content-type;
+        bh=D8sX+lqIqxVYrgb7/D5E7FX3Gds2Zgl6FuWyWEyabUc=;
+        b=xdYDm8kyZxS8wjDtVkkCewQfO7fGmRCQP9wj3E0sz9+oN9EORiQ27Ay/6gsjSIza1Y
+         JsVMr+Fk77i9jkkxPUK9IiEeMGqRyPd93LSv3QkhDlxDY6FuOJyRuycLil0on/vNdqHw
+         vze1XWNwVbUHLFwGFrJWh9lGM4ZOzT87Utz/o=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:mime-version:date:x-ip:user-agent:x-http-useragent
+         :message-id:subject:from:to:x-original-sender:reply-to:precedence
+         :mailing-list:list-id:list-post:list-help:list-archive:sender
+         :list-subscribe:list-unsubscribe:content-type;
+        b=n25xX3OStgUfgFRhVkUSiPCeZFhbP6n7XBNYemsrWVK+bPlzl2PdDK74bipYtgyLbr
+         ICq/gvxcwnF0YTg8A4Kp/RmrqYbMn3ZwQUX1ly1AJy8kppzeWhDsedIxGBXz1dX4edVt
+         oPfP6xg4kZ0oOE0NSIMSMr12GcNy3lrtjOfJ4=</domainkey-signature><received>by 10.91.113.9 with SMTP id q9mr664878agm.2.1288628485975;
+        Mon, 01 Nov 2010 09:21:25 -0700 (PDT)</received><x-beenthere>twitter-development-talk@googlegroups.com</x-beenthere><received>by 10.91.149.14 with SMTP id b14ls1079694ago.6.p; Mon, 01 Nov 2010
+ 09:21:17 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.91.43.3 with SMTP id v3mr657427agj.28.1288628477476; Mon, 01
+ Nov 2010 09:21:17 -0700 (PDT)</received><received>by j2g2000yqf.googlegroups.com with HTTP; Mon, 1 Nov 2010 09:21:17
+ -0700 (PDT)</received><date>Mon, 1 Nov 2010 09:21:17 -0700 (PDT)</date><x-ip>84.21.133.6</x-ip><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.10)
+ Gecko/20100914 Firefox/3.6.10 ( .NET CLR 3.5.30729; .NET4.0E),gzip(gfe)</x-http-useragent><message-id>a391d10b-b722-4071-b2e4-c318ad5fcb06@j2g2000yqf.googlegroups.com</message-id><x-original-sender>info@knutsford-software.co.uk</x-original-sender><reply-to>twitter-development-talk@googlegroups.com</reply-to><precedence>list</precedence><mailing-list>list twitter-development-talk@googlegroups.com; contact twitter-development-talk+owners@googlegroups.com</mailing-list><list-id>&lt;twitter-development-talk.googlegroups.com&gt;</list-id><list-post>&lt;http://groups.google.com/group/twitter-development-talk/post?hl=en_US&gt;,
+ &lt;mailto:twitter-development-talk@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:twitter-development-talk+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/twitter-development-talk?hl=en_US&gt;</list-archive><sender>twitter-development-talk@googlegroups.com</sender><list-subscribe>&lt;http://groups.google.com/group/twitter-development-talk/subscribe?hl=en_US&gt;,
+ &lt;mailto:twitter-development-talk+subscribe@googlegroups.com&gt;</list-subscribe><list-unsubscribe>&lt;http://groups.google.com/group/twitter-development-talk/subscribe?hl=en_US&gt;,
+ &lt;mailto:twitter-development-talk+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>text/plain; charset=ISO-8859-1</content-type></headers><normalized-references><normalized-message-id>a391d10b-b722-4071-b2e4-c318ad5fcb06@j2g2000yqf.googlegroups.com</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">At the top of my page I have
+
+</para><para depth="0">include 'lib/EpiCurl.php';
+include 'lib/EpiOAuth.php';
+include 'lib/EpiTwitter.php';
+include 'lib/secret.php';
+
+</para><para depth="0">My code for sending to twitter is
+
+</para><para depth="0">$twitter_message = "Offers update - " . date("g:i a:") . "
+<url>http://www.pub-rooms.co.uk/ask-rooms.php?bookrooms=</url>" . $intid .  " -
+" . $ItemName . " " . $CTown;
+	$twitterObj = new EpiTwitter($consumer_key, $consumer_secret,
+$oauth_token, $oauth_token_secret);
+	$twitter_message = utf8_encode($twitter_message);
+
+</para><para depth="0">	$x = $twitterObj-&gt;post_statusesUpdate(array('status' =&gt;
+$twitter_message));
+	print_r($twitterObj-&gt;post_statusesUpdate(array('status' =&gt;
+$twitter_message)));
+	if ($x-&gt;id) {
+
+</para><para depth="0">	} else {
+		echo "Error Posting Tweet\n";
+		die();
+	}
+
+</para><para depth="0">Instead of posting to twitter I get Error Posting Tweet being echoed
+
+</para><para depth="0">print_r($twitterObj-&gt;post_statusesUpdate(array('status' =&gt;
+$twitter_message))); returns
+
+</para><para depth="0">EpiTwitterJson Object ( [resp:private] =&gt; EpiCurlManager Object
+( [key:private] =&gt; Resource id #20 [epiCurl:private] =&gt; EpiCurl Object
+( [mc:private] =&gt; Resource id #18 [msgs:private] =&gt; [running:private]
+=&gt; [requests:private] =&gt; Array ( [Resource id #19] =&gt; Resource id #19
+[Resource id #20] =&gt; Resource id #20 ) [responses:private] =&gt; Array
+( ) [properties:private] =&gt; Array ( [code] =&gt; 2097154 [time] =&gt;
+3145731 [length] =&gt; 3145743 [type] =&gt; 1048594 ) ) ) )
+
+</para><para depth="0">from phpinfo() I get
+
+</para><para depth="0">PHP Version 5.2.14
+
+</para><para depth="0">System 	Linux mail.hificollective.co.uk 2.6.18-194.8.1.el5 #1 SMP Thu
+Jul 1 19:04:48 EDT 2010 x86_64
+Build Date 	Aug 12 2010 16:04:36
+Configure Command 	'./configure' '--build=x86_64-redhat-linux-gnu' '--
+host=x86_64-redhat-linux-gnu' '--target=x86_64-redhat-linux-gnu' '--
+program-prefix=' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/
+bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share'
+'--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/
+libexec' '--localstatedir=/var' '--sharedstatedir=/usr/com' '--mandir=/
+usr/share/man' '--infodir=/usr/share/info' '--cache-file=../
+config.cache' '--with-libdir=lib64' '--with-config-file-path=/etc' '--
+with-config-file-scan-dir=/etc/php.d' '--disable-debug' '--with-pic'
+'--disable-rpath' '--without-pear' '--with-bz2' '--with-exec-dir=/usr/
+bin' '--with-freetype-dir=/usr' '--with-png-dir=/usr' '--with-xpm-dir=/
+usr' '--enable-gd-native-ttf' '--with-t1lib=/usr' '--without-gdbm' '--
+with-gettext' '--with-gmp' '--with-iconv' '--with-jpeg-dir=/usr' '--
+with-openssl' '--with-pcre-regex' '--with-zlib' '--with-layout=GNU' '--
+enable-exif' '--enable-ftp' '--enable-magic-quotes' '--enable-sockets'
+'--enable-sysvsem' '--enable-sysvshm' '--enable-sysvmsg' '--with-
+kerberos' '--enable-ucd-snmp-hack' '--enable-shmop' '--enable-
+calendar' '--without-mime-magic' '--without-sqlite' '--with-libxml-
+dir=/usr' '--with-xml' '--with-system-tzdata' '--with-apxs2=/usr/sbin/
+apxs' '--without-mysql' '--without-gd' '--disable-dom' '--disable-dba'
+'--without-unixODBC' '--disable-pdo' '--disable-xmlreader' '--disable-
+xmlwriter' '--disable-json' '--without-pspell' '--disable-wddx' '--
+without-curl' '--disable-posix' '--disable-sysvmsg' '--disable-
+sysvshm' '--disable-sysvsem'
+
+</para><para depth="0">It used to work adn I ahve no idea why it has now stopped so can
+someone please point me in the right direction - thanks
+
+</para><footer type="list-management" depth="0">-- 
+Twitter developer documentation and resources: <url>http://dev.twitter.com/doc</url>
+API updates via Twitter: <url>http://twitter.com/twitterapi</url>
+Issues/Enhancements Tracker: <url>http://code.google.com/p/twitter-api/issues/list</url>
+Change your membership to this group:<br/><url>http://groups.google.com/group/twitter-development-talk</url>
+</footer></body></message>

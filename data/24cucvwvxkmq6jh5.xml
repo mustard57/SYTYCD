@@ -1,0 +1,41 @@
+<message message-id="20100408135704.962356BF87@mail02.netbeans.org" list="org.netbeans.text.issues" id="24cucvwvxkmq6jh5" no-archive="yes" type="bugs" date="2010-04-08T05:56:41.2467-08:00" year="2010-01-01" year-month="2010-04-01" year-month-day="2010-04-08" thread-id="nswettmf7shaheml"><headers><envelope-from-line>Thu Apr 08 05:57:04 2010</envelope-from-line><from personal="ehartmann@netbeans.org" address="ehartmann@netbeans.org">ehartmann@netbeans.org</from><to personal="issues@editor.netbeans.org" address="issues@editor.netbeans.org">issues@editor.netbeans.org</to><subject normal="[Bug 176831] [68cat][plugins] Error message on missing deprecated dependencies uses wrong URL">[Bug 176831] [68cat][plugins] Error message on missing deprecated dependencies uses wrong URL</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 235;
+          Thu, 8 Apr 2010 05:57:04 -0800 (GMT-08:00)</received><received>from mailout02.kenai.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id F187029084F5;
+	Thu,  8 Apr 2010 06:56:40 -0700 (PDT)</received><received>from mail02.netbeans.org (nbxmlm01z1.network.org [10.25.120.154])
+	by mailout02.kenai.com (Postfix) with ESMTP id D7FD21CEC4;
+	Thu,  8 Apr 2010 13:57:04 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail02.netbeans.org (Postfix) with ESMTP id C235E6BF8B;
+	Thu,  8 Apr 2010 13:57:04 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail02.netbeans.org ([127.0.0.1]) by localhost (nbxmlm01z1
+	network.org [127.0.0.1]) (amavisd-new, port 10025) with ESMTP
+	id LFz-7HYQKVbb; Thu,  8 Apr 2010 13:57:04 +0000 (GMT)</received><received>by mail02.netbeans.org (Postfix, from userid 60005)
+	id 962356BF87; Thu,  8 Apr 2010 13:57:04 +0000 (GMT)</received><received>from localhost (localhost [127.0.0.1])
+	by mail02.netbeans.org (Postfix) with ESMTP id 728356BF80
+	for &lt;issues@editor.netbeans.org&gt;; Thu,  8 Apr 2010 13:57:02 +0000 (GMT)</received><x-virus-scanned>amavisd-new at network.org</x-virus-scanned><received>from mail02.netbeans.org ([127.0.0.1]) by localhost (nbxmlm01z1
+	network.org [127.0.0.1]) (amavisd-new, port 10025) with ESMTP
+	id VuywAstGQMiX for &lt;issues@editor.netbeans.org&gt;;
+	Thu,  8 Apr 2010 13:56:51 +0000 (GMT)</received><received>from netbeans.org (nbxbz09z1.network.org [10.25.120.210])
+	by mail02.netbeans.org (Postfix) with ESMTP id AF3FA6BF66
+	for &lt;issues@editor.netbeans.org&gt;; Thu,  8 Apr 2010 13:56:51 +0000 (GMT)</received><x-bugzilla-reason>QAcontact AssignedTo</x-bugzilla-reason><x-bugzilla-type>newchanged</x-bugzilla-type><x-bugzilla-watch-reason>None</x-bugzilla-watch-reason><x-bugzilla-product>editor</x-bugzilla-product><x-bugzilla-component>Settings</x-bugzilla-component><x-bugzilla-keywords>NETFIX, SIMPLEFIX</x-bugzilla-keywords><x-bugzilla-who>ehartmann@netbeans.org</x-bugzilla-who><x-bugzilla-status>NEW</x-bugzilla-status><x-bugzilla-priority>P3</x-bugzilla-priority><x-bugzilla-assigned-to>issues@editor.netbeans.org</x-bugzilla-assigned-to><x-bugzilla-target-milestone>6.9</x-bugzilla-target-milestone><x-bugzilla-changed-fields>AssignedTo</x-bugzilla-changed-fields><in-reply-to>&lt;bug-176831-172@http.netbeans.org/bugzilla/&gt;</in-reply-to><references>&lt;bug-176831-172@http.netbeans.org/bugzilla/&gt;</references><auto-submitted>auto-generated</auto-submitted><content-type>text/plain; charset="UTF-8"</content-type><mime-version>1.0</mime-version><date>Thu,  8 Apr 2010 13:56:51 +0000</date><reply-to>issues@editor.netbeans.org</reply-to><x-loop>issues@editor.netbeans.org</x-loop><x-sequence>5373</x-sequence><errors-to>issues-owner@editor.netbeans.org</errors-to><precedence>list</precedence><x-no-archive>yes</x-no-archive><list-id>&lt;issues.editor.netbeans.org&gt;</list-id><list-help>&lt;mailto:sympa@editor.netbeans.org?subject=help&gt;</list-help><list-subscribe>&lt;mailto:sympa@editor.netbeans.org?subject=subscribe%20issues&gt;</list-subscribe><list-unsubscribe>&lt;mailto:sympa@editor.netbeans.org?subject=unsubscribe%20issues&gt;</list-unsubscribe><list-post>&lt;mailto:issues@editor.netbeans.org&gt;</list-post><list-owner>&lt;mailto:issues-request@editor.netbeans.org&gt;</list-owner><message-id>20100408135704.962356BF87@mail02.netbeans.org</message-id></headers><normalized-references><normalized-message-id>20100408135704.962356BF87@mail02.netbeans.org</normalized-message-id><normalized-in-reply-to>bug-176831-172@http.netbeans.org/bugzilla/</normalized-in-reply-to><normalized-reference>bug-176831-172@http.netbeans.org/bugzilla/</normalized-reference></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0"><url>http://netbeans.org/bugzilla/show_bug.cgi?id=176831</url>
+
+</para><para depth="0">ehartmann &lt;<email>ehartmann@netbeans.org</email>&gt; changed:
+
+</para><para depth="0">           What    |Removed                     |Added
+</para><para depth="0">----------------------------------------------------------------------------
+         AssignedTo|<email>ehartmann@netbeans.org</email>      |<email>issues@editor.netbeans.org</email>
+
+</para><para depth="0">--- Comment #6 from ehartmann &lt;<email>ehartmann@netbeans.org</email>&gt;  2010-04-08 13:56:51 ---
+Ooppss again! 
+
+</para><para depth="0">Jirka, you're right the patch apply to #176777
+Bugzilla automatically switch me to next bug.
+I don't know how to delete this patch, can you delete it ?
+
+</para><para depth="0">Really sorry.
+
+</para><footer type="signature" depth="0" hash="12411425223721511552">-- 
+Configure bugmail: <url>http://netbeans.org/bugzilla/userprefs.cgi?tab=email</url>
+------- You are receiving this mail because: -------
+You are the QA contact for the bug.
+You are the assignee for the bug.
+</footer></body></message>

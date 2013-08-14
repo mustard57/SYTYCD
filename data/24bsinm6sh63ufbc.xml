@@ -1,0 +1,47 @@
+<message message-id="20031212000226.19194.qmail@pb1.pair.com" list="net.php.lists.php-general" id="24bsinm6sh63ufbc" type="general" date="2003-12-11T17:02:32-07:00" year="2003-01-01" year-month="2003-12-01" year-month-day="2003-12-11" thread-id="24bsinm6sh63ufbc"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="Steve Turner" address="brightspectrum@hotmail.com">Steve Turner &lt;brightspectrum@hotmail.com&gt;</from><to personal="php-general@lists.php.net" address="php-general@lists.php.net">php-general@lists.php.net</to><subject normal="Session Link Problems">Session Link Problems</subject><newsgroups>php.general</newsgroups><path>news.php.net</path><xref>news.php.net php.general:172539</xref><return-path>brightspectrum@hotmail.com</return-path><mailing-list>contact php-general-help@lists.php.net; run by ezmlm</mailing-list><delivered-to>mailing list php-general@lists.php.net</delivered-to><received>(qmail 19251 invoked by uid 1010); 12 Dec 2003 00:02:26 -0000</received><delivered-to>ezmlm-scan-php-general@lists.php.net</delivered-to><delivered-to>ezmlm-php-general@lists.php.net</delivered-to><received>(qmail 19201 invoked by uid 1007); 12 Dec 2003 00:02:26 -0000</received><message-id>20031212000226.19194.qmail@pb1.pair.com</message-id><date>Thu, 11 Dec 2003 17:02:32 -0700</date><lines>47</lines><x-priority>3</x-priority><x-msmail-priority>Normal</x-msmail-priority><x-newsreader>Microsoft Outlook Express 6.00.2800.1158</x-newsreader><x-mimeole>Produced By Microsoft MimeOLE V6.00.2800.1165</x-mimeole><x-posted-by>24.9.127.75</x-posted-by></headers><normalized-references><normalized-message-id>20031212000226.19194.qmail@pb1.pair.com</normalized-message-id></normalized-references><body type="text/plain"><greeting depth="0">Hi,
+</greeting><para depth="0">    I am having a problem with sessions. On my testing machine my script
+works perfectly. However on the remote server it tries to pass the session
+id in the url even though I am accepting cookies. It is messing up all my
+links since it puts PHPSESSID=6a4626fc1cde0fb228fcb3ebe5587ffd in front of
+my hrefs without an &amp; after. If I click the link then it registers the
+session as a cookie and everything works fine from there on out. Don't
+understand what is happening as everyting used to work fine, and I don't
+think I changed anyting. Don't know how well I described this. Take a look
+if you are confused. The link to the site is
+<url>http://www.designoriginalsbykim.com.</url> Thanks for any help you may be able to
+give.
+
+</para><para depth="0">Steve Turner
+Fort Collins, CO
+<url>http://www.SteveOnWeb.com</url>
+
+</para><para depth="0">The session part of phpinfo() is
+session
+      Session Support  enabled
+      Registered save handlers  files user
+
+</para><para depth="0">      Directive Local Value Master Value
+      session.auto_start Off Off
+      session.bug_compat_42 On On
+      session.bug_compat_warn On On
+      session.cache_expire 180 180
+      session.cache_limiter nocache nocache
+      session.cookie_domain no value no value
+      session.cookie_lifetime 0 0
+      session.cookie_path / /
+      session.cookie_secure Off Off
+      session.entropy_file no value no value
+      session.entropy_length 0 0
+      session.gc_divisor 100 100
+      session.gc_maxlifetime 1440 1440
+      session.gc_probability 1 1
+      session.name PHPSESSID PHPSESSID
+      session.referer_check no value no value
+      session.save_handler files files
+      session.save_path /tmp /tmp
+      session.serialize_handler php php
+      session.use_cookies On On
+      session.use_only_cookies Off Off
+      session.use_trans_sid On On
+
+</para></body></message>

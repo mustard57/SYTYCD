@@ -1,0 +1,134 @@
+<message message-id="20080808153412.28AE244C19A@djangoproject.com.com" list="com.googlegroups.django-updates" id="24cija7denp4q54a" type="general" date="2008-08-08T10:34:08-05:00" year="2008-01-01" year-month="2008-08-01" year-month-day="2008-08-08" thread-id="24cija7denp4q54a"><headers><envelope-from-line>Mon Sep 08 06:36:28 2008</envelope-from-line><from personal="nore...@djangoproject.com" address="nore...@djangoproject.com">nore...@djangoproject.com</from><to personal="django-updates@googlegroups.com" address="django-updates@googlegroups.com">django-updates@googlegroups.com</to><subject normal="[Changeset] r8230 - django/trunk/django/contrib/localflavor/pe">[Changeset] r8230 - django/trunk/django/contrib/localflavor/pe</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 534
+          for &lt;rufus.shaw.craft@a.markmail.org&gt;;
+          Mon, 8 Sep 2008 06:36:28 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id E8C043B300C1
+	for &lt;rufus.shaw.craft@a.markmail.org&gt;; Mon,  8 Sep 2008 06:36:27 -0700 (PDT)</received><received>from crawl-1.a.markmail.int (localhost.localdomain [127.0.0.1])
+	by crawl-1.a.markmail.int (8.13.8/8.13.8) with ESMTP id m88DaRaK011999
+	for &lt;rufus.shaw.craft@a.markmail.org&gt;; Mon, 8 Sep 2008 06:36:27 -0700</received><received>(from crawler@localhost)
+	by crawl-1.a.markmail.int (8.13.8/8.13.8/Submit) id m88DaR4t011997
+	for rufus.shaw.craft@a.markmail.org; Mon, 8 Sep 2008 06:36:27 -0700</received><x-authentication-warning>crawl-1.a.markmail.int: crawler set sender to root@localhost using -r</x-authentication-warning><x-markmail-googlegroups-list>com.googlegroups.django-updates</x-markmail-googlegroups-list><x-markmail-googlegroups-mid>2b77850f5204bfe0</x-markmail-googlegroups-mid><received>by 10.215.101.5 with SMTP id d5mr5189386qam.5.1218209653956;
+        Fri, 08 Aug 2008 08:34:13 -0700 (PDT)</received><received>from djangoproject.com.com ([64.207.133.30])
+        by mx.google.com with ESMTP id 39si2812158yxd.2.2008.08.08.08.34.13;
+        Fri, 08 Aug 2008 08:34:13 -0700 (PDT)</received><received-spf>neutral (google.com: 64.207.133.30 is neither permitted nor denied by best guess record for domain of nore...@djangoproject.com) client-ip=64.207.133.30;</received-spf><authentication-results>mx.google.com; spf=neutral (google.com: 64.207.133.30 is neither permitted nor denied by best guess record for domain of nore...@djangoproject.com) smtp.mail=nore...@djangoproject.com</authentication-results><received>by djangoproject.com.com (Postfix, from userid 33)
+	id 28AE244C19A; Fri,  8 Aug 2008 10:34:08 -0500 (CDT)</received><content-type>text/plain; charset=UTF-8</content-type><message-id>20080808153412.28AE244C19A@djangoproject.com.com</message-id><date>Fri,  8 Aug 2008 10:34:08 -0500 (CDT)</date><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>20080808153412.28AE244C19A@djangoproject.com.com</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Author: mtredinnick
+Date: 2008-08-08 10:34:02 -0500 (Fri, 08 Aug 2008)
+New Revision: 8230
+
+</para><para depth="0">Added:
+   django/trunk/django/contrib/localflavor/pe/pe_region.py
+Removed:
+   django/trunk/django/contrib/localflavor/pe/pe_department.py
+Modified:
+   django/trunk/django/contrib/localflavor/pe/forms.py
+Log:
+Fixed #7575 -- Peru now has regions, not departments (changed at some pointi n
+the last year or so). Thanks andresj and programmerq.
+
+</para><para depth="0">This is backwards incompatible if you're using the Peruvian localflavor.
+
+</para><para depth="0">Modified: django/trunk/django/contrib/localflavor/pe/forms.py
+===================================================================
+--- django/trunk/django/contrib/localflavor/pe/forms.py	2008-08-08 14:24:25 UTC<br/>(rev 8229)
++++ django/trunk/django/contrib/localflavor/pe/forms.py	2008-08-08 15:34:02 UTC<br/>(rev 8230)
+@@ -7,13 +7,13 @@
+ from django.forms.fields import RegexField, CharField, Select, EMPTY_VALUES
+ from django.utils.translation import ugettext_lazy as _
+
+</para><para depth="0">-class PEDepartmentSelect(Select):
++class PERegionSelect(Select):
+     """
+-    A Select widget that uses a list of Peruvian Departments as its choices.
++    A Select widget that uses a list of Peruvian Regions as its choices.
+     """
+     def __init__(self, attrs=None):
+-        from pe_department import DEPARTMENT_CHOICES
+-        super(PEDepartmentSelect, self).__init__(attrs,<br/>choices=DEPARTMENT_CHOICES)
++        from pe_region import REGION_CHOICES
++        super(PERegionSelect, self).__init__(attrs, choices=REGION_CHOICES)
+
+</para><para depth="0"> class PEDNIField(CharField):
+     """
+
+</para><para depth="0">Deleted: django/trunk/django/contrib/localflavor/pe/pe_department.py
+===================================================================
+--- django/trunk/django/contrib/localflavor/pe/pe_department.py	2008-08-08<br/>14:24:25 UTC (rev 8229)
++++ django/trunk/django/contrib/localflavor/pe/pe_department.py	2008-08-08<br/>15:34:02 UTC (rev 8230)
+@@ -1,35 +0,0 @@
+-# -*- coding: utf-8 -*-
+-"""
+-A list of Peru departaments as `choices` in a
+-formfield.
+-
+-This exists in this standalone file so that it's only imported into memory
+-when explicitly needed.
+-"""
+-
+-DEPARTMENT_CHOICES = (
+-    ('AMA', u'Amazonas'),
+-    ('ANC', u'Ancash'),
+-    ('APU', u'Apurímac'),
+-    ('ARE', u'Arequipa'),
+-    ('AYA', u'Ayacucho'),
+-    ('CAJ', u'Cajamarca'),
+-    ('CUS', u'Cusco'),
+-    ('HUV', u'Huancavelica'),
+-    ('HUC', u'Huánuco'),
+-    ('ICA', u'Ica'),
+-    ('JUN', u'Junín'),
+-    ('LAL', u'La Libertad'),
+-    ('LAM', u'Lambayeque'),
+-    ('LIM', u'Lima'),
+-    ('LOR', u'Loreto'),
+-    ('MDD', u'Madre de Dios'),
+-    ('MOQ', u'Moquegua'),
+-    ('PAS', u'Pasco'),
+-    ('PIU', u'Piura'),
+-    ('PUN', u'Puno'),
+-    ('SAM', u'San Martín'),
+-    ('TAC', u'Tacna'),
+-    ('TUM', u'Tumbes'),
+-    ('UCA', u'Ucayali'),
+-)
+
+</para><para depth="0">Copied: django/trunk/django/contrib/localflavor/pe/pe_region.py (from rev 8229,<br/>django/trunk/django/contrib/localflavor/pe/pe_department.py)
+===================================================================
+--- django/trunk/django/contrib/localflavor/pe/pe_region.py<br/>(rev 0)
++++ django/trunk/django/contrib/localflavor/pe/pe_region.py	2008-08-08 15:34:02<br/>UTC (rev 8230)
+@@ -0,0 +1,35 @@
++# -*- coding: utf-8 -*-
++"""
++A list of Peru regions as `choices` in a formfield.
++
++This exists in this standalone file so that it's only imported into memory
++when explicitly needed.
++"""
++
++REGION_CHOICES = (
++    ('AMA', u'Amazonas'),
++    ('ANC', u'Ancash'),
++    ('APU', u'Apurímac'),
++    ('ARE', u'Arequipa'),
++    ('AYA', u'Ayacucho'),
++    ('CAJ', u'Cajamarca'),
++    ('CAL', u'Callao'),
++    ('CUS', u'Cusco'),
++    ('HUV', u'Huancavelica'),
++    ('HUC', u'Huánuco'),
++    ('ICA', u'Ica'),
++    ('JUN', u'Junín'),
++    ('LAL', u'La Libertad'),
++    ('LAM', u'Lambayeque'),
++    ('LIM', u'Lima'),
++    ('LOR', u'Loreto'),
++    ('MDD', u'Madre de Dios'),
++    ('MOQ', u'Moquegua'),
++    ('PAS', u'Pasco'),
++    ('PIU', u'Piura'),
++    ('PUN', u'Puno'),
++    ('SAM', u'San Martín'),
++    ('TAC', u'Tacna'),
++    ('TUM', u'Tumbes'),
++    ('UCA', u'Ucayali'),
++)
+</para></body></message>

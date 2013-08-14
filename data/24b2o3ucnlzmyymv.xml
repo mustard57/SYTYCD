@@ -1,0 +1,10 @@
+<message message-id="E1MKGpD-0000NC-TW@svn.freeswitch.org" list="freeswitch-svn" id="24b2o3ucnlzmyymv" type="checkins" date="2009-06-26T14:11:03-05:00" year="2009-01-01" year-month="2009-06-01" year-month-day="2009-06-26" thread-id="24b2o3ucnlzmyymv"><headers><envelope-from-line>From raulfragoso@freeswitch.org  Fri Jun 26 12:11:03 2009</envelope-from-line><from personal="FreeSWITCH SVN" address="raulfragoso@freeswitch.org">FreeSWITCH SVN &lt;raulfragoso@freeswitch.org&gt;</from><subject normal="[Freeswitch-svn] [commit] r13983 - freeswitch/trunk/contrib/mod/endpoints/mod_khomp/commons/include">[Freeswitch-svn] [commit] r13983 - freeswitch/trunk/contrib/mod/endpoints/mod_khomp/commons/include</subject><date>Fri, 26 Jun 2009 14:11:03 -0500</date><message-id>E1MKGpD-0000NC-TW@svn.freeswitch.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>E1MKGpD-0000NC-TW@svn.freeswitch.org</normalized-message-id></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">Author: raulfragoso
+Date: Fri Jun 26 14:11:03 2009
+New Revision: 13983
+
+</para><para depth="0">Log:
+Moved K3L API includes one level up
+
+</para><para depth="0">Removed:
+   freeswitch/trunk/contrib/mod/endpoints/mod_khomp/commons/include/
+</para></body></message>

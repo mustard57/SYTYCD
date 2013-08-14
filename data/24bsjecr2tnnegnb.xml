@@ -1,0 +1,57 @@
+<message message-id="42E801E3.8020706@FreeBSD.org" list="org.freebsd.freebsd-questions" id="24bsjecr2tnnegnb" type="general" date="2005-07-27T21:50:39" year="2005-01-01" year-month="2005-07-01" year-month-day="2005-07-27" thread-id="ab34nnbln7mkzj46"><headers><envelope-from-line>From marcus@FreeBSD.org  Wed Jul 27 21:50:35 2005</envelope-from-line><from personal="Joe Marcus Clarke" address="marcus@FreeBSD.org">Joe Marcus Clarke &lt;marcus@FreeBSD.org&gt;</from><subject normal="Upgrading GNOME">Upgrading GNOME</subject><date>Wed Jul 27 21:50:39 2005</date><in-reply-to>&lt;1122499467.610.10.camel@localhost&gt;</in-reply-to><references>&lt;1122499467.610.10.camel@localhost&gt;</references><message-id>42E801E3.8020706@FreeBSD.org</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>42E801E3.8020706@FreeBSD.org</normalized-message-id><normalized-in-reply-to>1122499467.610.10.camel@localhost</normalized-in-reply-to><normalized-reference>1122499467.610.10.camel@localhost</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+</para><para depth="0">Frank Jahnke wrote:
+| I am upgrading Gnome from 2.4 to 2.10 with a clean install (I have
+| backups) as part of an upgrade from FreeBSD 5.2.1 to the 6.0 Beta (which
+| is working well, btw).  I would like to preserve various settings from
+| my old system, including bookmarks, passwords, old email, contacts, and
+| various folders.  How do I do so?
+
+</para><para depth="0">You should restore your home directory, then let the applications handle
+their settings migration.
+
+</para><para depth="0">|
+| The upgrade is from Epiphany 1.4 to 2.2; Evolution is from 1.0.6 to
+| 1.6.0.  A simple-minded copying of the old files into their original
+| locations showed that both Epiphany and Evolution did not recognize
+| them.  If there is a page describing the upgrade I'd be happy to follow
+| it if a link is provided.
+
+</para><para depth="0">You should never copy settings files.  Instead, let the applications
+themselves handle migration.  Evolution, for example, will migrate its
+own settings files.  Copying files by hand will only break things.
+
+</para><para depth="0">Note: an upgrade step this large has not been tested by the FreeBSD
+GNOME team.
+
+</para><para depth="0">Joe
+
+</para><para depth="0">|
+| Please copy me on any replies; I don't read both of these groups
+| regularly.
+|
+| Thank you in advance!
+|
+| Frank Jahnke
+|
+| _______________________________________________
+| <email>freebsd-gnome@freebsd.org</email> mailing list
+| <url>http://lists.freebsd.org/mailman/listinfo/freebsd-gnome</url>
+| To unsubscribe, send any mail to "<email>freebsd-gnome-unsubscribe@freebsd.org</email>"
+|
+
+</para><footer type="signature" hash="5809127321718595203" depth="0">- --
+Joe Marcus Clarke
+FreeBSD GNOME Team	::	<email>gnome@FreeBSD.org</email>
+FreeNode / #freebsd-gnome
+<url>http://www.FreeBSD.org/gnome</url>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (Darwin)
+Comment: Using GnuPG with Thunderbird - <url>http://enigmail.mozdev.org</url>
+
+</footer><para depth="0">iD8DBQFC6AHjb2iPiv4Uz4cRAqPoAJ9G4baaP8Q7pNaAiDk3V1w/08wU7QCgkLxo
+GsJelazkcF7zcbUXoq87liY=
+=WSu/
+-----END PGP SIGNATURE-----
+</para></body></message>

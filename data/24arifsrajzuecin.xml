@@ -1,0 +1,41 @@
+<message message-id="20100123022414.6742.78629.malone@wampee.canonical.com" list="com.ubuntu.lists.ubuntu-bugs" id="24arifsrajzuecin" type="bugs" date="2010-01-23T02:24:13Z" year="2010-01-01" year-month="2010-01-01" year-month-day="2010-01-22" thread-id="vgutxkddphrqnyki"><headers><envelope-from-line>Fri Jan 22 18:30:34 2010</envelope-from-line><from personal="Ryan Thompson" address="darwinawdwinner@gmail.com">Ryan Thompson &lt;darwinawdwinner@gmail.com&gt;</from><to personal="ubuntu-bugs@lists.ubuntu.com" address="ubuntu-bugs@lists.ubuntu.com">ubuntu-bugs@lists.ubuntu.com</to><subject normal="[Bug 511447] Re: Cannot satisfy build-dependencies of Mail Notification">[Bug 511447] Re: Cannot satisfy build-dependencies of Mail Notification</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 526
+          for &lt;caroline.dejesus.ratliff@a.markmail.org&gt;;
+          Fri, 22 Jan 2010 18:30:34 -0800 (GMT-08:00)</received><received>from chlorine.canonical.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id CB48169D0220
+	for &lt;caroline.dejesus.ratliff@a.markmail.org&gt;; Fri, 22 Jan 2010 18:30:10 -0800 (PST)</received><received>from localhost ([127.0.0.1] helo=chlorine.canonical.com)
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;ubuntu-bugs-bounces@lists.ubuntu.com&gt;)
+	id 1NYVlg-0008Fq-TV; Sat, 23 Jan 2010 02:30:32 +0000</received><received>from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.69)
+	(envelope-from &lt;bounces@canonical.com&gt;) id 1NYVlg-0008Fc-4t
+	for ubuntu-bugs@lists.ubuntu.com; Sat, 23 Jan 2010 02:30:32 +0000</received><received>from loganberry.canonical.com ([91.189.90.37])
+	by adelie.canonical.com with esmtp (Exim 4.69 #1 (Debian))
+	id 1NYVle-0008Oz-O8
+	for &lt;ubuntu-bugs@lists.ubuntu.com&gt;; Sat, 23 Jan 2010 02:30:31 +0000</received><received>from loganberry.canonical.com (localhost [127.0.0.1])
+	by loganberry.canonical.com (Postfix) with ESMTP id AA7EB2E825A
+	for &lt;ubuntu-bugs@lists.ubuntu.com&gt;;
+	Sat, 23 Jan 2010 02:30:29 +0000 (GMT)</received><mime-version>1.0</mime-version><date>Sat, 23 Jan 2010 02:24:13 -0000</date><x-launchpad-bug>distribution=ubuntu; sourcepackage=mail-notification;
+	component=universe; status=New; importance=Undecided;
+	assignee=None; </x-launchpad-bug><x-launchpad-bug-tags>amd64 apport-bug</x-launchpad-bug-tags><x-launchpad-bug-private>no</x-launchpad-bug-private><x-launchpad-bug-security-vulnerability>no</x-launchpad-bug-security-vulnerability><x-launchpad-bug-commenters>rct86</x-launchpad-bug-commenters><references>&lt;20100123022413.6742.40470.malonedeb@wampee.canonical.com&gt;</references><message-id>20100123022414.6742.78629.malone@wampee.canonical.com</message-id><x-launchpad-message-rationale>Subscriber (Ubuntu) @ubuntu-bugs</x-launchpad-message-rationale><precedence>bulk</precedence><x-generated-by>Launchpad (canonical.com); Revision="None";
+	Instance="initZopeless config overlay"</x-generated-by><x-launchpad-hash>15121e9aa3480e254e5ac88daf590ca9e9154d1d</x-launchpad-hash><x-beenthere>ubuntu-bugs@lists.ubuntu.com</x-beenthere><x-mailman-version>2.1.9</x-mailman-version><reply-to>Bug 511447 &lt;511447@bugs.launchpad.net&gt;</reply-to><list-id>Ubuntu bug tracker changes - HIGH VOLUME
+	&lt;ubuntu-bugs.lists.ubuntu.com&gt;</list-id><list-unsubscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs&gt;,
+	&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:ubuntu-bugs@lists.ubuntu.com&gt;</list-post><list-help>&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=help&gt;</list-help><list-subscribe>&lt;https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs&gt;,
+	&lt;mailto:ubuntu-bugs-request@lists.ubuntu.com?subject=subscribe&gt;</list-subscribe><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>ubuntu-bugs-bounces@lists.ubuntu.com</sender><errors-to>ubuntu-bugs-bounces@lists.ubuntu.com</errors-to></headers><normalized-references><normalized-message-id>20100123022414.6742.78629.malone@wampee.canonical.com</normalized-message-id><normalized-reference>20100123022413.6742.40470.malonedeb@wampee.canonical.com</normalized-reference></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><para depth="0">
+** Attachment added: "Dependencies.txt"
+   <url>http://launchpadlibrarian.net/38290763/Dependencies.txt</url>
+
+</para><para depth="0">** Attachment added: "XsessionErrors.txt"
+   <url>http://launchpadlibrarian.net/38290764/XsessionErrors.txt</url>
+
+</para><footer type="signature" depth="0" hash="5889251460894463633">-- 
+Cannot satisfy build-dependencies of Mail Notification
+<url>https://bugs.launchpad.net/bugs/511447</url>
+You received this bug notification because you are a member of Ubuntu
+Bugs, which is subscribed to Ubuntu.
+
+</footer><footer type="list-management" depth="0">-- 
+ubuntu-bugs mailing list
+<email>ubuntu-bugs@lists.ubuntu.com</email>
+<url>https://lists.ubuntu.com/mailman/listinfo/ubuntu-bugs</url>
+</footer></body></message>

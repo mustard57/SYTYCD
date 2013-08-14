@@ -1,0 +1,105 @@
+<message message-id="BANLkTimxYFb_J=t0LGQzX-aHzs8wAxmVxg@mail.gmail.com" list="com.xensource.lists.xen-users" id="24ccs7nrhsl22mqh" type="users" date="2011-06-29T19:12:34-04:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-29" thread-id="m6yysi57nq6h6s33"><headers><envelope-from-line>Wed Jun 29 15:13:09 2011</envelope-from-line><from personal="Outback Dingo" address="outbackdingo@gmail.com">Outback Dingo &lt;outbackdingo@gmail.com&gt;</from><to personal="Christian Motschke" address="christian@motschke.de">Christian Motschke &lt;christian@motschke.de&gt;</to><cc personal="xen-users@lists.xensource.com" address="xen-users@lists.xensource.com">xen-users@lists.xensource.com</cc><subject normal="[Xen-users] XEN 4.0.1 and Linux 3.0?">Re: [Xen-users] XEN 4.0.1 and Linux 3.0?</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 954
+          for &lt;caleb.gallagher.mcmillan@a.markmail.org&gt;;
+          Wed, 29 Jun 2011 15:13:09 -0800 (GMT-08:00)</received><received>from lists.xensource.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 79DD3290808D
+	for &lt;caleb.gallagher.mcmillan@a.markmail.org&gt;; Wed, 29 Jun 2011 16:12:46 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=lists.colo.xensource.com)
+	by lists.xensource.com with esmtp (Exim 4.43)
+	id 1Qc3wR-0001zK-4r; Wed, 29 Jun 2011 16:13:07 -0700</received><received>from mail-pz0-f43.google.com ([209.85.210.43])
+	by lists.xensource.com with esmtp (Exim 4.43) id 1Qc3vx-0001q4-4p
+	for xen-users@lists.xensource.com; Wed, 29 Jun 2011 16:12:37 -0700</received><received>by pzk1 with SMTP id 1so1400955pzk.30
+	for &lt;xen-users@lists.xensource.com&gt;;
+	Wed, 29 Jun 2011 16:12:34 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+	:cc:content-type;
+	bh=IfPw2BGq4udSwKxZnJwNG1j3Zf7ABRuKe78EhH+Tf94=;
+	b=KfPX7EaZzO81OEFs+uGKt8Xa2mWqh+OcUbz+dANy0sCaDFTQiCGfCa2n6aYlUAOMlr
+	0kkfHeZOeh5QPU6LOvfMtD4H4LYeEIei1cI08uH0kmcKRUiDcGrzK87Lg4YK0TgCC59W
+	WEOcjblnWrB4fDLV0C0vMkJttK5Ys33W5E/EY=</dkim-signature><mime-version>1.0</mime-version><received>by 10.142.226.15 with SMTP id y15mr674252wfg.232.1309389154599; Wed,
+	29 Jun 2011 16:12:34 -0700 (PDT)</received><received>by 10.142.231.20 with HTTP; Wed, 29 Jun 2011 16:12:34 -0700 (PDT)</received><in-reply-to>&lt;802B6192-B30D-4C04-9700-EFF110A54ED4@motschke.de&gt;</in-reply-to><references>&lt;49A64B97-7D4B-4D42-AF59-5BA562510BE3@motschke.de&gt;
+	&lt;4E0B3D92.6040202@icg.tugraz.at&gt;
+	&lt;1E0C7945-18F1-4CDB-8B97-7D27F445450C@motschke.de&gt;
+	&lt;802B6192-B30D-4C04-9700-EFF110A54ED4@motschke.de&gt;</references><date>Wed, 29 Jun 2011 19:12:34 -0400</date><message-id>BANLkTimxYFb_J=t0LGQzX-aHzs8wAxmVxg@mail.gmail.com</message-id><x-beenthere>xen-users@lists.xensource.com</x-beenthere><x-mailman-version>2.1.5</x-mailman-version><precedence>list</precedence><list-id>Xen user discussion &lt;xen-users.lists.xensource.com&gt;</list-id><list-unsubscribe>&lt;http://lists.xensource.com/mailman/listinfo/xen-users&gt;,
+	&lt;mailto:xen-users-request@lists.xensource.com?subject=unsubscribe&gt;</list-unsubscribe><list-post>&lt;mailto:xen-users@lists.xensource.com&gt;</list-post><list-help>&lt;mailto:xen-users-request@lists.xensource.com?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.xensource.com/mailman/listinfo/xen-users&gt;,
+	&lt;mailto:xen-users-request@lists.xensource.com?subject=subscribe&gt;</list-subscribe><content-type>multipart/mixed; boundary="===============0800598447=="</content-type><sender>xen-users-bounces@lists.xensource.com</sender><errors-to>xen-users-bounces@lists.xensource.com</errors-to></headers><normalized-references><normalized-message-id>BANLkTimxYFb_J=t0LGQzX-aHzs8wAxmVxg@mail.gmail.com</normalized-message-id><normalized-in-reply-to>802B6192-B30D-4C04-9700-EFF110A54ED4@motschke.de</normalized-in-reply-to><normalized-reference>49A64B97-7D4B-4D42-AF59-5BA562510BE3@motschke.de</normalized-reference><normalized-reference>4E0B3D92.6040202@icg.tugraz.at</normalized-reference><normalized-reference>1E0C7945-18F1-4CDB-8B97-7D27F445450C@motschke.de</normalized-reference><normalized-reference>802B6192-B30D-4C04-9700-EFF110A54ED4@motschke.de</normalized-reference></normalized-references><body><para depth="0">On Wed, Jun 29, 2011 at 5:55 PM, Christian Motschke
+&lt;<email>christian@motschke.de</email>&gt;wrote:
+
+</para><quote depth="1"><quotepara depth="1">To answer myself. Linux 3.0 works fine with XEN 4.0.1. I compiled the
+kernel again and it now boots. The only difference to older kernel versions
+is, that the screen turns blank when the hypervisor boots the kernel. Don't
+know why. That's why I thought, the kernel does not boot.
+
+</quotepara><quotepara depth="1">Christian
+
+</quotepara></quote><para depth="0">Hey Christian, whats your grub.cfg look like?? Im in about the same place
+right now
+
+</para><quote depth="1"><quotepara depth="1">Am 29.06.2011 um 17:13 schrieb Christian Motschke:
+
+</quotepara><quote depth="2"><quotepara depth="2">In your case it seems, that the kernel at least boots and the system
+</quotepara></quote><quotepara depth="1">hangs after the kernel has booted. On my system the boot process stops
+immediately when the hypervisor tries to boot the linux kernel. Would you
+like to test my kernel? It is a debian package and can be downloaded from
+<url>http://www.motschke.de/debian/packages</url>.
+</quotepara><quote depth="2"><quotepara depth="2">
+Christian
+
+</quotepara><quotepara depth="2">Am 29.06.2011 um 16:58 schrieb Mark Dokter:
+
+</quotepara><quote depth="3"><quotepara depth="3">On 6/29/11 4:23 PM, Christian Motschke wrote:
+</quotepara><quote depth="4"><quotepara depth="4">Hello,
+
+</quotepara></quote><quotepara depth="3">Hi!
+
+</quotepara><quote depth="4"><quotepara depth="4">I compiled a 3.0-rc5 kernel from debian experimental and tried it to
+</quotepara></quote></quote></quote><quotepara depth="1">boot as dom0. After scrubbing RAM the screen goes black and nothing else
+happens anymore. The kernel boots without hypervisor and even as domU
+without problems.
+</quotepara><quote depth="2"><quote depth="3"><quote depth="4"><quotepara depth="4">All other kernels I have tested up to 2.6.39 works flawless with 4.0.1
+</quotepara></quote></quote></quote><quotepara depth="1">(but 2.6.39 lacks blkback, thats why I want to try 3.0). Does Linux 3.0
+needs XEN 4.1 or should it basically run with 4.0.1?
+</quotepara><quote depth="2"><quote depth="3"><quote depth="4"><quotepara depth="4">
+</quotepara></quote><quotepara depth="3">Sorry, that this might not be of help. I just wanted to add, that I have
+the same issues on Ubuntu oneiric with xen 4.1 and stock
+linux-image-3.0-2-{generic/server}
+
+</quotepara><quotepara depth="3">Strangely, *sometimes* the machine boots.
+I have the feeling (no proof), that its the plymouth and radeon drm
+stuff thats failing *sometimes* I get a "disconnecting from plymouth"
+and a console - so not really xen related. I didn't try to boot the
+kernel without hypervisor though.
+
+</quotepara><quotepara depth="3">If the console stays blank, there's also no remote access (tried
+ping/ssh). The only thing the machine responds to in this state is a
+Ctrl-Alt-Del.
+
+</quotepara><quote depth="4"><quotefooter type="signature" depth="4" hash="6609822867763701494">Regards
+Christian
+
+</quotefooter></quote><quotefooter type="signature" depth="3" hash="15062036704596344796">Mark
+</quotefooter><quotefooter type="signature" depth="3" hash="17627330155463774363">--
+Mark Dokter - System Administrator
+Institute for Computergraphics and Vision - <url>http://www.icg.tugraz.at</url>
+Graz University of Technology, Inffeldgasse 16/II, 8010 Graz, Austria
+Phone: +43/316/873-5036, Fax: +43/316/873-5050
+
+</quotefooter><quotefooter type="list-management" depth="3">_______________________________________________
+Xen-users mailing list
+<email>Xen-users@lists.xensource.com</email>
+<url>http://lists.xensource.com/xen-users</url>
+</quotefooter></quote><quotefooter type="noise" depth="2">
+</quotefooter><quotefooter type="list-management" depth="2">_______________________________________________
+Xen-users mailing list
+<email>Xen-users@lists.xensource.com</email>
+<url>http://lists.xensource.com/xen-users</url>
+</quotefooter></quote><quotefooter type="noise" depth="1">
+</quotefooter><quotefooter type="list-management" depth="1">_______________________________________________
+Xen-users mailing list
+<email>Xen-users@lists.xensource.com</email>
+<url>http://lists.xensource.com/xen-users</url>
+
+</quotefooter></quote><footer type="list-management" depth="0">_______________________________________________
+Xen-users mailing list
+<email>Xen-users@lists.xensource.com</email>
+<url>http://lists.xensource.com/xen-users</url>
+</footer></body></message>

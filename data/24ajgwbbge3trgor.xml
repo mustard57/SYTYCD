@@ -1,0 +1,22 @@
+<message message-id="1365243907.1461209138553471.JavaMail.mule-bamboo@mule07.managed.contegix.com" list="org.codehaus.mule.builds" id="24ajgwbbge3trgor" type="development" date="2008-04-25T10:49:13-05:00" year="2008-01-01" year-month="2008-04-01" year-month-day="2008-04-25" thread-id="24ajgwbbge3trgor"><headers><envelope-from-line>Fri Apr 25 08:49:23 2008</envelope-from-line><from personal="Bamboo [DEV]" address="mulebot@mulesource.com">"Bamboo [DEV]" &lt;mulebot@mulesource.com&gt;</from><to personal="builds@mule.codehaus.org" address="builds@mule.codehaus.org">builds@mule.codehaus.org</to><subject normal="[mule-builds] [Bamboo] Mule - Mule 1.4.x build 710 has FAILED (42 tests failed)">[mule-builds] [Bamboo] Mule - Mule 1.4.x build 710 has FAILED (42 tests failed)</subject><received>from mail.codehaus.org ([63.246.7.187])
+          by mail-1.a.markmail.biz (JAMES SMTP Server 2.3.1) with SMTP ID 639
+          for &lt;bart.rivers.fisher@a.markmail.org&gt;;
+          Fri, 25 Apr 2008 08:49:23 -0700 (PDT)</received><received>(qmail 3612 invoked by uid 89); 25 Apr 2008 15:49:19 -0000</received><mailing-list>contact builds-help@mule.codehaus.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-post>&lt;http://xircles.codehaus.org/manage_email&gt;</list-post><list-help>&lt;http://xircles.codehaus.org/manage_email&gt;</list-help><list-unsubscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-unsubscribe><list-subscribe>&lt;http://xircles.codehaus.org/manage_email&gt;</list-subscribe><list-id>&lt;builds.mule.codehaus.org&gt;</list-id><reply-to>builds@mule.codehaus.org</reply-to><delivered-to>mailing list builds@mule.codehaus.org</delivered-to><received>(qmail 3592 invoked by uid 89); 25 Apr 2008 15:49:18 -0000</received><x-virus-scanned>amavisd-new at </x-virus-scanned><x-spam-flag>NO</x-spam-flag><x-spam-score>-3.277</x-spam-score><x-spam-level/><x-spam-status>No, score=-3.277 tagged_above=-10 required=6.6
+	tests=[AWL=-0.678, BAYES_00=-2.599]</x-spam-status><date>Fri, 25 Apr 2008 10:49:13 -0500 (CDT)</date><message-id>1365243907.1461209138553471.JavaMail.mule-bamboo@mule07.managed.contegix.com</message-id><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding></headers><normalized-references><normalized-message-id>1365243907.1461209138553471.JavaMail.mule-bamboo@mule07.managed.contegix.com</normalized-message-id></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">This is a manual build of Mule - Mule 1.4.x.
+
+</para><para depth="0">---------------------------------------------------------------------------------------
+
+</para><para depth="0">The build has 42 failed tests and 1587 successful tests.
+
+</para><para depth="0">Click <url>http://bamboo.mulesource.org/browse/MULE-V14X-710</url> to find out more.
+
+</para><para depth="0">Thanks,
+
+</para><para depth="0">Bamboo
+
+</para><para depth="0">---------------------------------------------------------------------
+To unsubscribe from this list, please visit:
+
+</para><para depth="0">    <url>http://xircles.codehaus.org/manage_email</url>
+
+</para></body></message>

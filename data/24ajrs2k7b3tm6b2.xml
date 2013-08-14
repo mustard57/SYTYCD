@@ -1,0 +1,15 @@
+<message message-id="3F579320.30557E8@acm.org" list="org.perl.beginners" id="24ajrs2k7b3tm6b2" type="users" date="2003-09-04T12:31:44-07:00" year="2003-01-01" year-month="2003-09-01" year-month-day="2003-09-04" thread-id="24ajrs2k7b3tm6b2"><headers><envelope-from-line>From nntpsnarfer@fakefrom.com  Mon Jan  1 12:00:00 1990</envelope-from-line><from personal="John W. Krahn" address="krahnj@acm.org">"John W. Krahn" &lt;krahnj@acm.org&gt;</from><to personal="beginners@perl.org" address="beginners@perl.org">beginners@perl.org</to><subject normal="Ring Bell">Re: Ring Bell</subject><newsgroups>perl.beginners</newsgroups><path>nntp.perl.org</path><xref>nntp.perl.org perl.beginners:52239</xref><return-path>krahnj@acm.org</return-path><mailing-list>contact beginners-help@perl.org; run by ezmlm</mailing-list><delivered-to>mailing list beginners@perl.org</delivered-to><received>(qmail 97073 invoked by uid 1012); 4 Sep 2003 19:32:10 -0000</received><message-id>3F579320.30557E8@acm.org</message-id><date>Thu, 04 Sep 2003 12:31:44 -0700</date><x-mailer>Mozilla 4.79 [en] (X11; U; Linux 2.4.4-4GB i586)</x-mailer><x-accept-language>en</x-accept-language><mime-version>1.0</mime-version><references>&lt;111.2795d6c9.2c88e83e@aol.com&gt;</references><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-posted-by>66.183.115.195</x-posted-by></headers><normalized-references><normalized-message-id>3F579320.30557E8@acm.org</normalized-message-id><normalized-reference>111.2795d6c9.2c88e83e@aol.com</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><para depth="0"><email>Jimstone77@aol.com</email> wrote:
+</para><quote depth="1"><quotepara depth="1">
+Is there any way in PERL to ring a Bell or make some sound in a script. For
+example, to let you know when a task is completed. Any help would be
+appreciated.
+</quotepara></quote><para depth="0">
+print "\a";
+
+</para><para depth="0">John
+-- 
+use Perl;
+program
+fulfillment
+
+</para></body></message>

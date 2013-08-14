@@ -1,0 +1,47 @@
+<message message-id="5.1.1.6.0.20021015101347.028ddcf0@mail.harddata.com" list="com.mysql.lists.myodbc" id="24bufnv4u4ofqppi" type="general" date="2002-10-15T10:14:06-06:00" year="2002-01-01" year-month="2002-10-01" year-month-day="2002-10-15" thread-id="24bufnv4u4ofqppi"><headers><envelope-from-line>From - Mon Nov 09 14:45:13 2007</envelope-from-line><from personal="Mark Lane" address="mark@harddata.com">Mark Lane &lt;mark@harddata.com&gt;</from><to personal="'MyODBC'" address="myodbc@lists.mysql.com">'MyODBC' &lt;myodbc@lists.mysql.com&gt;</to><subject normal="Windows Binaries was RE: SQLTablesPrivileges, SQLGetInfo and OpenOffice">Windows Binaries was RE: SQLTablesPrivileges, SQLGetInfo and OpenOffice</subject><return-path>mark@harddata.com</return-path><mailing-list>contact myodbc-help@lists.mysql.com; run by ezmlm (http://www.ezmlm.org)</mailing-list><delivered-to>mailing list myodbc@lists.mysql.com</delivered-to><received>(qmail 26927 invoked from network); 15 Oct 2002 18:11:35 -0000</received><received>from 198.216-123-194-0.interbaun.com (HELO mail.harddata.com) (216.123.194.198)
+  by www.mysql.com with SMTP; 15 Oct 2002 18:11:35 -0000</received><received>from racer-x.harddata.com (gate.harddata.com [216.123.194.211])
+	by mail.harddata.com (8.11.6/8.11.6) with ESMTP id g9FGEiv15576
+	for &lt;myodbc@lists.mysql.com&gt;; Tue, 15 Oct 2002 10:14:44 -0600</received><message-id>5.1.1.6.0.20021015101347.028ddcf0@mail.harddata.com</message-id><x-sender>mark@mail.harddata.com</x-sender><x-mailer>QUALCOMM Windows Eudora Version 5.1.1</x-mailer><date>Tue, 15 Oct 2002 10:14:06 -0600</date><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"; format=flowed</content-type></headers><normalized-references><normalized-message-id>5.1.1.6.0.20021015101347.028ddcf0@mail.harddata.com</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;; format=flowed"><para depth="0">At 06:04 AM 10/11/02, you wrote:
+</para><quote depth="1"><quotepara depth="1">Hi !!
+
+</quotepara><quote depth="2"><quotepara depth="2">Hi Venu,
+
+</quotepara><quotepara depth="2">thanks very mutch for that fast response and fix.
+</quotepara></quote></quote><para depth="0">
+Venu,
+
+</para><para depth="0">Is there a way I can get the binaries for these changes for Windows? I am 
+in the process of setting up a database in XP with MySQL and StarOffice and 
+ran across the same problem. Currently I do not have a windows compiler to 
+compile this myself
+</para><para depth="0">-- 
+Mark Lane
+Hard Data Ltd.
+mailto:<email>mark@harddata.com</email>
+
+</para><para depth="0">Telephone: 01-780-456-9771
+FAX: 01-780-456-9772
+
+</para><para depth="0">11060 - 166 Avenue
+Edmonton, AB, Canada
+T5X 1Y3
+
+</para><para depth="0"><url>http://www.harddata.com/</url>
+--&gt; Ask me about our Affordable Alpha Systems! &lt;--
+
+</para><para depth="0">-- 
+Mark Lane
+Hard Data Ltd.
+mailto:<email>mark@harddata.com</email>
+
+</para><para depth="0">Telephone: 01-780-456-9771
+FAX: 01-780-456-9772
+
+</para><para depth="0">11060 - 166 Avenue
+Edmonton, AB, Canada
+T5X 1Y3
+
+</para><para depth="0"><url>http://www.harddata.com/</url>
+--&gt; Ask me about our Affordable Alpha Systems! &lt;--
+
+</para></body></message>

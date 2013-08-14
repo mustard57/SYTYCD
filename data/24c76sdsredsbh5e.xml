@@ -1,0 +1,139 @@
+<message message-id="20090203060017.28078.qmail@netbeans.org" list="org.netbeans.nbcvs" id="24c76sdsredsbh5e" no-archive="yes" type="checkins" date="2009-02-02T21:59:56.127731-08:00" year="2009-01-01" year-month="2009-02-01" year-month-day="2009-02-02" thread-id="2jb2g5idenqthqrg"><headers><envelope-from-line>Mon Feb 02 22:00:19 2009</envelope-from-line><from personal="jpirek@netbeans.org" address="jpirek@netbeans.org">jpirek@netbeans.org</from><to personal="cvs@testwww.netbeans.org" address="cvs@testwww.netbeans.org">cvs@testwww.netbeans.org</to><subject normal="CVS update: /testwww/www/community/news/newsletter/">CVS update: /testwww/www/community/news/newsletter/</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 97
+          for &lt;jose.bruce.kline@a.markmail.org&gt;;
+          Mon, 2 Feb 2009 22:00:19 -0800 (GMT-08:00)</received><received>from netbeans.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id CF4BF3B300CB
+	for &lt;jose.bruce.kline@a.markmail.org&gt;; Mon,  2 Feb 2009 21:59:55 -0800 (PST)</received><received>(qmail 28113 invoked by uid 5000); 3 Feb 2009 06:00:18 -0000</received><precedence>bulk</precedence><x-no-archive>yes</x-no-archive><list-help>&lt;mailto:nbcvs-help@netbeans.org&gt;</list-help><list-unsubscribe>&lt;mailto:nbcvs-unsubscribe@netbeans.org&gt;</list-unsubscribe><list-post>&lt;mailto:nbcvs@netbeans.org&gt;</list-post><reply-to>nbdev@netbeans.org</reply-to><delivered-to>mailing list nbcvs@netbeans.org</delivered-to><received>(qmail 28093 invoked by uid 5000); 3 Feb 2009 06:00:18 -0000</received><mailing-list>contact cvs-help@testwww.netbeans.org; run by ezmlm</mailing-list><x-no-archive>yes</x-no-archive><delivered-to>mailing list cvs@testwww.netbeans.org</delivered-to><date>3 Feb 2009 06:00:17 -0000</date><message-id>20090203060017.28078.qmail@netbeans.org</message-id></headers><normalized-references><normalized-message-id>20090203060017.28078.qmail@netbeans.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">User: jpirek  
+Date: 2009/02/02 22:00:17
+
+</para><para depth="0">Modified:
+   testwww/www/community/news/newsletter/latest_zh_CN.html
+
+</para><para depth="0">Log:
+ latest updated
+
+</para><para depth="0">File Changes:
+
+</para><para depth="0">Directory: /testwww/www/community/news/newsletter/
+==================================================
+
+</para><para depth="0">File [changed]: latest_zh_CN.html
+Url:<br/><url>http://testwww.netbeans.org/source/browse/testwww/www/community/news/newsletter/latest_zh_CN.html?r1=1.33&amp;r2=1.34</url>
+Delta lines:  +28 -33
+</para><para depth="0">---------------------
+--- latest_zh_CN.html	21 Jan 2009 01:10:09 -0000	1.33
++++ latest_zh_CN.html	3 Feb 2009 06:00:15 -0000	1.34
+@@ -2,7 +2,7 @@
+ &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+ &lt;html&gt;
+ &lt;head&gt;
+-&lt;title&gt;NetBeans Weekly Newsletter, Issue # 42&lt;/title&gt;
++&lt;title&gt;NetBeans Weekly Newsletter, Issue # 43&lt;/title&gt;
+ &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" &gt;
+ &lt;meta name="keywords" content="NetBeans, IDE, Platform, free, open source,<br/>developer" &gt;
+ &lt;/head&gt;
+@@ -40,67 +40,62 @@
+ &lt;div id="letter"&gt;
+ 	&lt;div id="head"&gt;
+ 		&lt;div id="issue-date" class="bold"&gt;
+-				åå· # 42 - Jan 20, 2009
++				åå· # 43 - Feb 03, 2009
+ 		&lt;/div&gt;
+ 	&lt;/div&gt;
+ 	&lt;div id="content"&gt;
+
+</para><para depth="0"> 				&lt;h1&gt;é¡¹ç®æ°é»&lt;/h1&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a href="<url>http://www.netbeans.info/newsletter/story.php?id=3185</url>"&gt;Portal<br/>Pack 3.0 Betaç°å¨åå¸äº&lt;/a&gt;&lt;/h2&gt;
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3237</url>"&gt;NetBeans<br/>6.5åå¸ç¬¬äºä¸ªè¡¥ä¸&lt;/a&gt;&lt;/h2&gt;
+ 						&lt;p style="margin-left:8px;"&gt;
+-						Portal Pack 3.0<br/>Betaäºè¿å¶æä»¶ç°å¨å¯ä»¥ä¸è½½äºãè¿äºçæ¬å·²ç»è§£å³å¤§çbugï¼å¢å¼ºäºå¯¹Liferay<br/>Portal<br/>Serverå¨tomcatä¸­è¿è¡çç®å½é¨ç½²åè°è¯æ¯æãå¹¶ä¸ï¼ä¸é¢è¿äºæå¡å¨ç°å¨ä¹è¢«æ¯æï¼
+-â¢	Project WebSynergy 
+-â¢	Liferay Portal Server 5.1.x and later 
+-â¢	Sun Java System Portal Server 7.1/7.2 
+-â¢	OpenPortal Portlet Container&lt;/p&gt;
++						NetBeans.orgåå¸äºä¸ä¸ªæ°è¡¥ä¸,è¯¥è¡¥ä¸éå¯¹NetBeans<br/>6.5çæ¬ãè¿ä¸ªè¡¥ä¸ä¿®å¤äºä»¥ä¸æ¨¡åä¸­çbugï¼C/C++ï¼æ°æ®åºï¼ç¼è¾æä»¶ï¼GlassFish<br/>v3ï¼Groovy and Grailsï¼Hibernateæ¯æï¼IDEå¹³å°ï¼Javaï¼Java EEï¼Java<br/>Profilerï¼JBossåºç¨æå¡å¨ï¼Mercurialï¼æ¬å°è®¿é®ï¼NetBeans<br/>6.5ï¼PHPå¹³å°ï¼RESTful<br/>Webæå¡ï¼RoRï¼Subversionï¼UMLï¼å¯è§åç§»å¨è®¾è®¡å¨åWebåºç¨ãè¿ä¸ªè¡¥ä¸ç®åæè±è¯­ï¼æ¥è¯­ï¼ç®ä½ä¸­æï¼å·´è¥¿è¡èçè¯­çæ¬ã
++ä¸ºäºè·åè¯¥è¡¥ä¸ï¼éè¦é¦å
+ 					&lt;/div&gt;
++				&lt;h1&gt;ç¤¾åº&lt;/h1&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3193</url>"&gt;NetBeansèµ¢å¾Developer.comç2009äº§åå¥&lt;/a&gt;&lt;/h2&gt;
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3236</url>"&gt;æååéäººå°NetBeansç®¡çå§åä¼&lt;/a&gt;&lt;/h2&gt;
+ 						&lt;p style="margin-left:8px;"&gt;
+-<br/>NetBeansä»¥å¨Developer.com2009å¹´åº¦å¥äº§åä¸­èµ¢å¾äºä¸ªå¥é¡¹å¼å§äº2009å¹´ï¼NetBeans
+-å¨è¿äºç±»å«ä¸­è·å¾äºæé«çæç¥¨ï¼Java Tool, Open Source Tool,<br/>Development Platform, Development Utilities, and Wireless/Mobile Tool.
+-ä¸ä¸ªå¤§çâThank youâç®ç»NetBeansç¤¾åºåæ¯æè
++<br/>åå°äºéä¸¾NetBeansç®¡çå§åä¼çæ¶åäºãä¸äººçç®¡çå§åä¼ï¼2ä¸ªç¤¾åºæåå1ä¸ªç±Sunå
+ 					&lt;/div&gt;
+ 				&lt;h1&gt;åå®¢&lt;/h1&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3186</url>"&gt;å¨NetBeans<br/>IDEä¸­æ¯æPHPUnit&lt;/a&gt;&lt;/h2&gt;
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3229</url>"&gt;NetBeansä¸­éå¯¹Kohanaæ¡æ¶çä»£ç è¡¥å
+ 						&lt;p style="margin-left:8px;"&gt;
+-						å¨NetBeans IDEä¸­æ¯æPHPUnitå°è¿å®æäºãè¿ä¸ªNetBeans PHP<br/>Teamçåå®¢å±ç¤ºäºç¨æ·å¦ä½å¼å§æµè¯ä»ä»¬çPHPæºç ã&lt;/p&gt;
++						å­¦ä¹ å¦ä½è®©NetBeansçä»£ç è¡¥å
+ 					&lt;/div&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3187</url>"&gt;å¨NetBeans Python<br/>EAä¸­åå»ºPythonæ¸©åº¦è½¬æ¢å¨&lt;/a&gt;&lt;/h2&gt;
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3230</url>"&gt;æ´å¥½ççªå£ç³»ç»<br/>= æ´å¥½çNetBeanså¹³å°åºç¨ç¨åº&lt;/a&gt;&lt;/h2&gt;
+ 						&lt;p style="margin-left:8px;"&gt;
+-						NetBeansææ¯ä½å®¶James Branamå·²ç»å¨NetBeans IDEä¸­å¼åäºEarly<br/>Access<br/>Pythonæ¯æãæè¿å¨Pragueçå¯æµå¯¹ä¸ä¸ªæ°çæç¨æä¾äºçµæï¼å¦ä½æå»ºä¸ä¸ªç®åçè½¬æ¢æ¸©åº¦çPythonåºç¨ç¨åºã&lt;/p&gt;
++						Geertjan<br/>Wielengaæ¥åè¯´æäºä¸ç§å¯ä»¥ä½¿NetBeanså¹³å°ä¸çåºç¨ç¨åºæ¯ä»¥åæ´å çµæ´»åå¼ºå¤§çæ¹æ³ï¼æ¯ä¸ªçªå£å¯ä»¥æå®å
+ 					&lt;/div&gt;
+-				&lt;h1&gt;æ¥ç¨è¡¨&lt;/h1&gt;
++				&lt;h1&gt;ç»ä¹ &lt;/h1&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3192</url>"&gt;æ³¨åç½ç»ç è®¨ä¼ï¼MySQL,<br/>NetBeans &amp; Rails (1æ 27æ¥)&lt;/a&gt;&lt;/h2&gt;
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3231</url>"&gt;ææ¯å°è´´å£«ï¼å¨NetBeansä¸­ç©ºç½çä¸åä½ç¨&lt;/a&gt;&lt;/h2&gt;
+ 						&lt;p style="margin-left:8px;"&gt;
+-						1æ27æ¥å¨äºå¨ä¸ä¸ªå
+-ä¸»é¢ï¼ç¨NetBeans IDEå the JRuby-on-Railså¼ååºäºMySQLçåºç¨ç¨åº
+-æ¶é´ï¼10:00 am PDT, 1:00 pm EDT, 18:00<br/>GMTï¼æ¼ç¤ºå°ä¼è¿è¡45åéç´§æ¥çæ¯æç¤ºç¯èãï¼&lt;/p&gt;
++<br/>æ æ³åºåcvsä¸­å·²ä¿®æ¹æä»¶åææ°çæ¬æä»¶çä¸ååï¼è¿æå¯è½æ¯ä¸ä¸ªç©ºç½çæ¹åãè¿ä¸ªæ¥æºäºHubert<br/>Ikkinkçå¿«éåå¯è§åçæå·§åä½ å±ç¤ºäºå¦ä½å¨NetBeans<br/>IDEä¸­å¯ç¨ç©ºç½ç¹æ§ï¼ä½ å°çå°ç©ºç½çä¸åä½ç¨ã&lt;/p&gt;
+ 					&lt;/div&gt;
+-				&lt;h1&gt;ç»ä¹ &lt;/h1&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3188</url>"&gt;åå»ºãå¯¼å
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3232</url>"&gt;å¨NetBeans<br/>IDEä¸­ç¼åJUnitæµè¯&lt;/a&gt;&lt;/h2&gt;
+ 						&lt;p style="margin-left:8px;"&gt;
+-						å­¦ä¹ å¦ä½å¨NetBeans IDEä¸­é
++						è¿ä¸ªæç¨ä»ç»äºå¨NetBeans IDEä¸­ç¼ååè¿è¡JUnitåå
+ 					&lt;/div&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3189</url>"&gt;è§å±æ­æ¾ï¼å¦ä½å¨NetBeans<br/>IDEä¸­ç»ç»é¡¹ç®&lt;/a&gt;&lt;/h2&gt;
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3233</url>"&gt;å°ä¸ä¸ªå¯åç±»çYUIæ°æ®è¡¨æ ¼æ§ä»¶æ·»å å°NetBeans<br/>Webé¡¹ç®&lt;/a&gt;&lt;/h2&gt;
+ 						&lt;p style="margin-left:8px;"&gt;
+-						åæ¶å·¥ä½å¨NetBeans<br/>IDEå¤ä¸ªé¡¹ç®ä¸­éè¦ä¸ä¸ªæ¹æ³æ¥å½¼æ­¤åæ¢ï¼è¿ä¸ªæ¥èªLukas<br/>Hasikçå¿«éç¤ºæä½ å¦ä½ç»ç»é¡¹ç®å¹¶ä¸è½»æ¾ç§»èµ°ã&lt;/p&gt;
++						è·çNetBeansææ¯ä½å®¶Troy<br/>Giuniperoçæå¯¼ï¼ä»å°åä½ æ¼ç¤ºå¦ä½å°Yahooæ°æ®è¡¨æ ¼æ§ä»¶åPHPæJavaåºç¨éæå¨ä¸èµ·ãNetBeans<br/>IDEå¸¦æ¥çè¿ä¸åè½å°ä½¿ä½ çåºç¨ç¨åºæ´å åå¥½ãæç¨ã&lt;/p&gt;
+ 					&lt;/div&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3190</url>"&gt;ç¨Script.aculo.usåå»ºä¸ä¸ªAjaxç¨åº&lt;/a&gt;&lt;/h2&gt;
+-						&lt;p style="margin-left:8px;"&gt;
+-						è¿ä¸ªæç¨åä½ å±ç¤ºå¦ä½ç¨Script.aculo.us JavaScriptåºå¨NetBeans<br/>IDE 6.5.ä¸­åå»ºä¸ä¸ªAjaxç¨åºã&lt;/p&gt;
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3234</url>"&gt;ä½¿ç¨MMAPIæ¥æ··åMIDIãé³è°åç¤ºèé³é¢&lt;/a&gt;&lt;/h2&gt;
++						&lt;p style="margin-left:8px;"&gt;&lt;img<br/>src='<url>http://www.netbeans.info/appl2/show_image.php?id=2455&amp;column=image&amp;table=story&amp;type=image/jpeg&amp;db=xnetbeans&amp;db_type=pear&amp;id_col=story_id</url>'
++		height='88' width='100' alt='image' style='float:left;<br/>margin-right:5px;margin-bottom:5px;'/&gt;
++						å¨è¿ä¸ªæç¨ä¸­ï¼Vikram<br/>Gopalåä½ å±ç¤ºäºå¦æåæ¶æ··ååæ­æ¾å¤åªä½å
+ 					&lt;/div&gt;
+ 				&lt;div class="item"&gt;
+-				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3191</url>"&gt;é»ç¼ä½ çJavaFXç¼ç¨æè½ï¼å
+-						&lt;p style="margin-left:8px;"&gt;
+-						æ³¨åJavaPassionææ°è¯¾ç¨çç¬¬ä¸è½®å§ï¼15å¨çJavaFXç¼ç¨ï¼å
++				&lt;h2&gt;&lt;a<br/>href="<url>http://www.netbeans.info/newsletter/story.php?id=3235</url>"&gt;å±å¹å¹¿æ­ï¼Wicketæå¯¼&lt;/a&gt;&lt;/h2&gt;
++						&lt;p style="margin-left:8px;"&gt;&lt;img<br/>src='<url>http://www.netbeans.info/appl2/show_image.php?id=2454&amp;column=image&amp;table=story&amp;type=image/jpeg&amp;db=xnetbeans&amp;db_type=pear&amp;id_col=story_id</url>'
++		height='33' width='110' alt='image' style='float:left;<br/>margin-right:5px;margin-bottom:5px;'/&gt;
++<br/>ä½ æ¾å¬è¯´è¿Wicketï¼ä½æ¯ä¸ç¥éè¯¥å¦ä½ä½¿ç¨å®åï¼è¿ä¸ªè§é¢åä½ ä»ç»äºè¿ä¸ªWebæ¡æ¶ï¼åæ¶ä¸éè¦ä½ å
+ 					&lt;/div&gt;
+ 	&lt;div class="edited"&gt;
+ 	åå¸æ¬ææ¶äºéè®¯çæ¯: Will<br/>Zhang&lt;br/&gt;å¦ææ¨ä¸æ³æ¥æ¶æ¶äºéè®¯ï¼ &lt;a<br/>href="<url>http://www.netbeans.org/community/lists/top.html</url>"&gt;è¯·ç±æ­¤éè®¢&lt;/a&gt;
+@@ -112,7 +107,7 @@
+ 	&lt;/div&gt;
+ 	&lt;div id="footer"&gt;
+ 		&lt;div id="footer-text"&gt;
+-				æ¬ææ¶äºéè®¯è¿å¯ä»¥ä»è¿éè®¿é®  &lt;a<br/>href="<url>http://www.netbeans.org/community/news/newsletter/2009-01-20_zh_CN.html</url>"&gt;www.netbeans.org&lt;/a&gt;,
++				æ¬ææ¶äºéè®¯è¿å¯ä»¥ä»è¿éè®¿é®  &lt;a<br/>href="<url>http://www.netbeans.org/community/news/newsletter/2009-02-03_zh_CN.html</url>"&gt;www.netbeans.org&lt;/a&gt;,
+ 				&lt;a<br/>href="<url>http://www.netbeans.org/community/news/newsletter/archive_zh_CN.html</url>"&gt;æ¶äºéè®¯å­æ¡£&lt;/a&gt;
+ 		&lt;/div&gt;
+ 	&lt;/div&gt;
+
+</para></body></message>

@@ -1,0 +1,76 @@
+<message message-id="BANLkTi=xN0YC6wpmafZPz9uTxgyGYXYD7Q@mail.gmail.com" list="at.iem.pd-list" id="24bkuyszrzxyiosj" type="general" date="2011-06-21T16:48:11+02:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-21" thread-id="7kabic6svkecooot"><headers><envelope-from-line>Tue Jun 21 06:52:32 2011</envelope-from-line><from personal="tim vets" address="timvets@gmail.com">tim vets &lt;timvets@gmail.com&gt;</from><to personal="Mathieu Bouchard" address="matju@artengine.ca">Mathieu Bouchard &lt;matju@artengine.ca&gt;</to><cc personal="pd-list" address="pd-list@iem.at">pd-list &lt;pd-list@iem.at&gt;</cc><subject normal="[PD] &quot;image&quot; doesn't work after clearing big patch">Re: [PD] "image" doesn't work after clearing big patch</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 913
+          for &lt;cora.vaughn.whitfield@a.markmail.org&gt;;
+          Tue, 21 Jun 2011 06:52:32 -0800 (GMT-08:00)</received><received>from mail.puredata.info (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id ECB783B300B4
+	for &lt;cora.vaughn.whitfield@a.markmail.org&gt;; Tue, 21 Jun 2011 07:52:08 -0700 (PDT)</received><received>from localhost ([127.0.0.1] helo=mail.puredata.info)
+	by mail.puredata.info with esmtp (Exim 4.69)
+	(envelope-from &lt;pd-list-bounces@iem.at&gt;)
+	id 1QZ2GK-00013e-Es; Tue, 21 Jun 2011 16:49:10 +0200</received><received>from iem.kug.ac.at ([193.170.191.180] helo=mail.iem.at)
+	by mail.puredata.info with esmtp (Exim 4.69)
+	(envelope-from &lt;timvets@gmail.com&gt;) id 1QZ2G4-00013Y-LJ
+	for pd-list@puredata.info; Tue, 21 Jun 2011 16:49:05 +0200</received><received>from mail-qy0-f180.google.com ([209.85.216.180]:50357)
+	by mail.iem.at with esmtps (TLS1.0:RSA_ARCFOUR_MD5:16) (Exim 4.69)
+	(envelope-from &lt;timvets@gmail.com&gt;) id 1QZ2G0-0001yQ-06
+	for pd-list@iem.at; Tue, 21 Jun 2011 16:48:48 +0200</received><received>by qyk30 with SMTP id 30so2408227qyk.11
+	for &lt;pd-list@iem.at&gt;; Tue, 21 Jun 2011 07:48:41 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:mime-version:in-reply-to:references:from:date
+	:message-id:subject:to:cc:content-type;
+	bh=ebiv5hy7yN02t5F3jBeKGr5UAfeZgRehIVq4jJFLrb8=;
+	b=gkOCca+SWp0s5+o9lbHGZS4+oYhTzAivQW5aGylHE4W3NjRD41+kbLiLiMURHUmKQL
+	thWsPApEFfr9nCK3/a3l0IQp77MDkC5HePovsL95IsSkGfgDOjQoCuXQI8XJjCHYQd5I
+	4oIihKiXye/Hf0Y114KUdDQkZu8Lfru0Q658s=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=mime-version:in-reply-to:references:from:date:message-id:subject:to
+	:cc:content-type;
+	b=EWfn9yLtWzfOR+tO9zrnrXq7AeT8U9ttCvap4vFA+tRSgDPVYCmmAqHC96z2fQ3Rh2
+	nirIln0Uve6J2dLqPzjzSOEToiGZrMW+aqVij7E8Zq7OsUw9+SM8DhcyRLNLDnx/Vv+f
+	F9J9BHO1KLNikr2Es0BnWq8GjWXxkng5M3mGM=</domainkey-signature><received>by 10.229.73.32 with SMTP id o32mr5173893qcj.186.1308667721104; Tue,
+	21 Jun 2011 07:48:41 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.229.79.13 with HTTP; Tue, 21 Jun 2011 07:48:11 -0700 (PDT)</received><in-reply-to>&lt;alpine.DEB.2.00.1106210959100.27818@paik.artengine.ca&gt;</in-reply-to><references>&lt;20110621101218.238050@gmx.net&gt;
+	&lt;alpine.DEB.2.00.1106210959100.27818@paik.artengine.ca&gt;</references><date>Tue, 21 Jun 2011 16:48:11 +0200</date><message-id>BANLkTi=xN0YC6wpmafZPz9uTxgyGYXYD7Q@mail.gmail.com</message-id><x-spam-score>-0.5</x-spam-score><x-spam-level>/</x-spam-level><x-spam-tests>AWL=0.458,HTML_MESSAGE=0.001,RCVD_IN_DNSWL_LOW=-1</x-spam-tests><x-spam-score>0.7</x-spam-score><x-spam-level>/</x-spam-level><x-beenthere>pd-list@iem.at</x-beenthere><x-mailman-version>2.1.11</x-mailman-version><precedence>list</precedence><list-id>the PureData - mailinglist &lt;pd-list.iem.at&gt;</list-id><list-unsubscribe>&lt;http://lists.puredata.info/options/pd-list&gt;,
+	&lt;mailto:pd-list-request@iem.at?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;http://lists.puredata.info/pipermail/pd-list&gt;</list-archive><list-post>&lt;mailto:pd-list@iem.at&gt;</list-post><list-help>&lt;mailto:pd-list-request@iem.at?subject=help&gt;</list-help><list-subscribe>&lt;http://lists.puredata.info/listinfo/pd-list&gt;,
+	&lt;mailto:pd-list-request@iem.at?subject=subscribe&gt;</list-subscribe><content-type>multipart/mixed; boundary="===============0529663859=="</content-type><sender>pd-list-bounces@iem.at</sender><errors-to>pd-list-bounces@iem.at</errors-to><x-spam-score>0.7</x-spam-score><x-spam-level>/</x-spam-level></headers><normalized-references><normalized-message-id>BANLkTi=xN0YC6wpmafZPz9uTxgyGYXYD7Q@mail.gmail.com</normalized-message-id><normalized-in-reply-to>alpine.DEB.2.00.1106210959100.27818@paik.artengine.ca</normalized-in-reply-to><normalized-reference>20110621101218.238050@gmx.net</normalized-reference><normalized-reference>alpine.DEB.2.00.1106210959100.27818@paik.artengine.ca</normalized-reference></normalized-references><body><para depth="0">2011/6/21 Mathieu Bouchard &lt;<email>matju@artengine.ca</email>&gt;
+
+</para><quote depth="1"><quotepara depth="1">On Tue, 21 Jun 2011, Mirko Maier wrote:
+
+</quotepara><quotepara depth="1"> i have a patch window with a (big) image, using günther geigers "image"
+</quotepara><quote depth="2"><quotepara depth="2">external (win xp), and with some data structures. using the "clear" message
+for the window a couple of times and then reloading the image (between 10
+and 25 times of clearing and reloading), it doesn't load anymore. does
+anyone know a solution?
+
+</quotepara></quote><quotepara depth="1">[#see] is a (quite different) alternative to [image].
+
+</quotepara><quotepara depth="1">It's in the GridFlow library.
+
+</quotepara><quotepara depth="1">However, for big images, there's a great speedup that is supposed to be
+available in next release. (currently only available through SVN)
+
+</quotepara></quote><para depth="0">Hi Mathieu,
+
+</para><para depth="0">when I try to see the help for #see I get:
+
+</para><para depth="0">swScaler: Exactly one scaler algorithm must be chosen
+pd_gui: pd process exited
+Segmentation fault
+
+</para><para depth="0">pd 0.42.5-extended
+GridFlow 9.13, Copyright (c) 2001-2010 Mathieu Bouchard
+GridFlow was compiled on Dec 18 2010, 18:00:44
+GF: setting stack size to -1
+GridFlow: using MMX optimisations
+Ubuntu 10.10
+
+</para><para depth="0">gr,
+Tim
+
+</para><footer type="noise" depth="0"> ______________________________**______________________________**___________
+</footer><quote depth="1"><quotepara depth="1">| Mathieu Bouchard ---- tél: +1.514.383.3801 ---- Villeray, Montréal, QC
+</quotepara><quotefooter type="list-management" depth="1">_______________________________________________
+<email>Pd-list@iem.at</email> mailing list
+UNSUBSCRIBE and account-management -&gt;
+<url>http://lists.puredata.info/listinfo/pd-list</url>
+
+</quotefooter></quote><footer type="list-management" depth="0">_______________________________________________
+<email>Pd-list@iem.at</email> mailing list
+UNSUBSCRIBE and account-management -&gt;<br/><url>http://lists.puredata.info/listinfo/pd-list</url>
+</footer></body></message>

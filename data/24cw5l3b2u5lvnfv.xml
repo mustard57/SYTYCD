@@ -1,0 +1,28 @@
+<message message-id="199912251617.IAA10821@freefall.freebsd.org" list="org.freebsd.cvs-all" id="24cw5l3b2u5lvnfv" type="checkins" date="1999-12-25T08:17:04-08:00" year="1999-01-01" year-month="1999-12-01" year-month-day="1999-12-25" thread-id="24cw5l3b2u5lvnfv"><headers><envelope-from-line>From owner-cvs-all  Sat Dec 25  8:17: 6 1999</envelope-from-line><from personal="Steve Price" address="steve@FreeBSD.org">Steve Price &lt;steve@FreeBSD.org&gt;</from><to personal="cvs-committers@FreeBSD.org" address="cvs-committers@FreeBSD.org">cvs-committers@FreeBSD.org</to><subject normal="cvs commit: ports/textproc Makefile ports/textproc/hevea Makefile ports/textproc/hevea/files md5 ports/textproc/hevea/pkg COMMENT DESCR PLIST">cvs commit: ports/textproc Makefile ports/textproc/hevea Makefile ports/textproc/hevea/files md5 ports/textproc/hevea/pkg COMMENT DESCR PLIST</subject><delivered-to>cvs-all@freebsd.org</delivered-to><received>from freefall.freebsd.org (freefall.FreeBSD.ORG [204.216.27.21])
+	by hub.freebsd.org (Postfix) with ESMTP
+	id A8B1114C9E; Sat, 25 Dec 1999 08:17:04 -0800 (PST)
+	(envelope-from steve@FreeBSD.org)</received><received>(from steve@localhost)
+	by freefall.freebsd.org (8.9.3/8.9.2) id IAA10821;
+	Sat, 25 Dec 1999 08:17:04 -0800 (PST)
+	(envelope-from steve@FreeBSD.org)</received><message-id>199912251617.IAA10821@freefall.freebsd.org</message-id><date>Sat, 25 Dec 1999 08:17:04 -0800 (PST)</date><sender>owner-cvs-all@FreeBSD.ORG</sender><precedence>bulk</precedence></headers><normalized-references><normalized-message-id>199912251617.IAA10821@freefall.freebsd.org</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">steve       1999/12/25 08:17:04 PST
+
+</para><para depth="0">  Modified files:
+    textproc             Makefile 
+  Added files:
+    textproc/hevea       Makefile 
+    textproc/hevea/files md5 
+    textproc/hevea/pkg   COMMENT DESCR PLIST 
+  Log:
+  hevea version 1.04
+  A utility for converting LaTeX to HTML.
+
+</para><para depth="0">  PR:		15144
+  Submitted by:	Stephen Montgomery-Smith &lt;<email>stephen@math.missouri.edu</email>&gt;
+
+</para><para depth="0">  Revision  Changes    Path
+  1.74      +2 -1      ports/textproc/Makefile
+
+</para><para depth="0">To Unsubscribe: send mail to <email>majordomo@FreeBSD.org</email>
+with "unsubscribe cvs-all" in the body of the message
+
+</para></body></message>

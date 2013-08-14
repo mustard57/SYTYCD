@@ -1,0 +1,53 @@
+<message message-id="20090223105727.AAA9C4405E@linux.local" list="com.mysql.lists.commits" id="24ciwnflyrlmomfp" type="checkins" date="2009-02-23T02:57:16.283564-08:00" year="2009-01-01" year-month="2009-02-01" year-month-day="2009-02-23" thread-id="24ciwnflyrlmomfp"><headers><envelope-from-line>Mon Feb 23 02:57:39 2009</envelope-from-line><from personal="Tomas Ulin" address="tomas.ulin@sun.com">Tomas Ulin &lt;tomas.ulin@sun.com&gt;</from><to personal="commits@lists.mysql.com" address="commits@lists.mysql.com">commits@lists.mysql.com</to><subject normal="bzr push into mysql-5.1-telco-6.2 branch (tomas.ulin:2852 to 2853)">bzr push into mysql-5.1-telco-6.2 branch (tomas.ulin:2852 to 2853) </subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 640
+          for &lt;lucas.randall.hancock@a.markmail.org&gt;;
+          Mon, 23 Feb 2009 02:57:39 -0800 (GMT-08:00)</received><received>from lists.mysql.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with SMTP id 8162C3B300B4
+	for &lt;lucas.randall.hancock@a.markmail.org&gt;; Mon, 23 Feb 2009 02:57:15 -0800 (PST)</received><received>(qmail 6026 invoked by uid 510); 23 Feb 2009 10:57:37 -0000</received><mailing-list>contact commits-help@lists.mysql.com; run by ezmlm</mailing-list><list-id>&lt;commits.mysql.com&gt;</list-id><precedence>bulk</precedence><list-help>&lt;mailto:commits-help@lists.mysql.com&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe-lucas.randall.hancock=a.markmail.org@lists.mysql.com&gt;</list-unsubscribe><list-post>&lt;mailto:commits@lists.mysql.com&gt;</list-post><list-archive>http://lists.mysql.com/commits/67159</list-archive><delivered-to>mailing list commits@lists.mysql.com</delivered-to><received>(qmail 6001 invoked by uid 509); 23 Feb 2009 10:57:37 -0000</received><x-spam-status>No, hits=-1.4 required=5.0
+	tests=ALL_TRUSTED</x-spam-status><x-spam-check-by>lists.mysql.com</x-spam-check-by><received-spf>neutral (lists.mysql.com: local policy)</received-spf><mime-version>1.0</mime-version><content-type>text/plain; charset="us-ascii"</content-type><content-transfer-encoding>7bit</content-transfer-encoding><user-agent>Bazaar (1.12)</user-agent><x-csetkey>tomas.ulin@sun.com-20090223105701-1r0piu2d0zwpsfd3</x-csetkey><x-bzr-action>commit</x-bzr-action><x-bzr-revid>tomas.ulin@sun.com-20090223105701-1r0piu2d0zwpsfd3</x-bzr-revid><x-bzr-revno>2853</x-bzr-revno><message-id>20090223105727.AAA9C4405E@linux.local</message-id><date>Mon, 23 Feb 2009 11:57:27 +0100 (CET)</date><x-cxn-txn>67721407,48823765</x-cxn-txn></headers><normalized-references><normalized-message-id>20090223105727.AAA9C4405E@linux.local</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;us-ascii&quot;"><footer type="signature" depth="0" hash="1529692333891033929"> 2853 Tomas Ulin	2009-02-23
+      remove asserts that make no sense...
+      modified:
+        sql/ha_ndbcluster.cc
+
+</footer><footer type="signature" depth="0" hash="1135591810364393640"> 2852 Tomas Ulin	2009-02-22
+      make test name shorter
+      renamed:
+        mysql-test/suite/rpl_ndb/r/rpl_ndb_mixed_engines_transactions.result =&gt;<br/>mysql-test/suite/rpl_ndb/r/rpl_ndb_mix_eng_trans.result
+        mysql-test/suite/rpl_ndb/t/rpl_ndb_mixed_engines_transactions-master.opt<br/>=&gt; mysql-test/suite/rpl_ndb/t/rpl_ndb_mix_eng_trans-master.opt
+        mysql-test/suite/rpl_ndb/t/rpl_ndb_mixed_engines_transactions-slave.opt<br/>=&gt; mysql-test/suite/rpl_ndb/t/rpl_ndb_mix_eng_trans-slave.opt
+        mysql-test/suite/rpl_ndb/t/rpl_ndb_mixed_engines_transactions.test =&gt;<br/>mysql-test/suite/rpl_ndb/t/rpl_ndb_mix_eng_trans.test
+
+</footer><para depth="0">=== modified file 'sql/ha_ndbcluster.cc'
+--- a/sql/ha_ndbcluster.cc	2009-02-16 08:00:56 +0000
++++ b/sql/ha_ndbcluster.cc	2009-02-23 10:57:01 +0000
+@@ -5476,7 +5476,6 @@ int ha_ndbcluster::create(const char *na
+           strcmp(m_tabname, NDB_SCHEMA_TABLE) == 0))
+     {
+       DBUG_PRINT("info", ("Schema distribution table not setup"));
+-      DBUG_ASSERT(ndb_schema_share);
+       DBUG_RETURN(HA_ERR_NO_CONNECTION);
+     }
+     single_user_mode = NdbDictionary::Table::SingleUserModeReadWrite;
+@@ -6288,7 +6287,6 @@ ha_ndbcluster::delete_table(THD *thd, ha
+   if (!ndb_schema_share)
+   {
+     DBUG_PRINT("info", ("Schema distribution table not setup"));
+-    DBUG_ASSERT(ndb_schema_share);
+     DBUG_RETURN(HA_ERR_NO_CONNECTION);
+   }
+   /* ndb_share reference temporary */
+@@ -7209,7 +7207,6 @@ static void ndbcluster_drop_database(han
+   if (!ndb_schema_share)
+   {
+     DBUG_PRINT("info", ("Schema distribution table not setup"));
+-    DBUG_ASSERT(ndb_schema_share);
+     DBUG_VOID_RETURN;
+   }
+ #endif
+
+</para><footer type="list-management" depth="0">-- 
+MySQL Code Commits Mailing List
+For list archives: <url>http://lists.mysql.com/commits</url>
+To unsubscribe:<br/><url>http://lists.mysql.com/commits?unsub=<email>lucas.randall.hancock@a.markmail.org</email></url>
+
+</footer></body></message>

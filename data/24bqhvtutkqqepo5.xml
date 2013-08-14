@@ -1,0 +1,66 @@
+<message message-id="20080502033649.0C9F723889FF@eris.apache.org" list="org.apache.ofbiz.commits" id="24bqhvtutkqqepo5" type="checkins" date="2008-05-02T03:36:48Z" year="2008-01-01" year-month="2008-05-01" year-month-day="2008-05-01" thread-id="24bqhvtutkqqepo5"><headers><envelope-from-line>Fri May 02 18:23:53 2008</envelope-from-line><from personal="apatel@apache.org" address="apatel@apache.org">apatel@apache.org</from><to personal="commits@ofbiz.apache.org" address="commits@ofbiz.apache.org">commits@ofbiz.apache.org</to><subject normal="svn commit: r652747 - /ofbiz/trunk/applications/humanres/config/HumanResUiLabels.xml">svn commit: r652747 - /ofbiz/trunk/applications/humanres/config/HumanResUiLabels.xml</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 337
+          for &lt;estela.vaughn.flynn@a.markmail.org&gt;;
+          Fri, 2 May 2008 18:23:53 -0700 (PDT)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id E9899290A15A
+	for &lt;estela.vaughn.flynn@a.markmail.org&gt;; Fri,  2 May 2008 18:23:52 -0700 (PDT)</received><received>(qmail 80102 invoked by uid 500); 2 May 2008 03:37:13 -0000</received><mailing-list>contact commits-help@ofbiz.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:commits-help@ofbiz.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:commits-unsubscribe@ofbiz.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:commits@ofbiz.apache.org&gt;</list-post><list-id>&lt;commits.ofbiz.apache.org&gt;</list-id><reply-to>dev@ofbiz.apache.org</reply-to><delivered-to>mailing list commits@ofbiz.apache.org</delivered-to><received>(qmail 80091 invoked by uid 99); 2 May 2008 03:37:13 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 01 May 2008 20:37:13 -0700</received><x-asf-spam-status>No, hits=-2000.0 required=10.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.4] (HELO eris.apache.org) (140.211.11.4)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Fri, 02 May 2008 03:36:28 +0000</received><received>by eris.apache.org (Postfix, from userid 65534)
+	id 0C9F723889FF; Thu,  1 May 2008 20:36:49 -0700 (PDT)</received><content-type>text/plain; charset="utf-8"</content-type><mime-version>1.0</mime-version><date>Fri, 02 May 2008 03:36:48 -0000</date><x-mailer>svnmailer-1.0.8</x-mailer><message-id>20080502033649.0C9F723889FF@eris.apache.org</message-id><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>20080502033649.0C9F723889FF@eris.apache.org</normalized-message-id></normalized-references><body type="text/plain; charset=&quot;utf-8&quot;"><para depth="0">Author: apatel
+Date: Thu May  1 20:36:48 2008
+New Revision: 652747
+
+</para><para depth="0">URL: <url>http://svn.apache.org/viewvc?rev=652747&amp;view=rev</url>
+Log:
+Simplified labels in line with more general pattern.
+
+</para><para depth="0">Modified:
+    ofbiz/trunk/applications/humanres/config/HumanResUiLabels.xml
+
+</para><para depth="0">Modified: ofbiz/trunk/applications/humanres/config/HumanResUiLabels.xml
+URL:<br/><url>http://svn.apache.org/viewvc/ofbiz/trunk/applications/humanres/config/HumanResUiLabels.xml?rev=652747&amp;r1=652746&amp;r2=652747&amp;view=diff</url>
+==============================================================================
+--- ofbiz/trunk/applications/humanres/config/HumanResUiLabels.xml (original)
++++ ofbiz/trunk/applications/humanres/config/HumanResUiLabels.xml Thu May  1<br/>20:36:48 2008
+@@ -378,6 +378,9 @@
+         &lt;value xml:lang="it"&gt;Aggiorna Posizione Impiego&lt;/value&gt;
+         &lt;value<br/>xml:lang="th"&gt;à¹à¸à¹à¹à¸à¸à¸³à¹à¸«à¸à¹à¸à¸à¸à¸±à¸à¸à¸²à¸&lt;/value&gt;
+     &lt;/property&gt;
++    &lt;property key="HumanResEmplPosition"&gt;
++        &lt;value xml:lang="en"&gt;Employee Position&lt;/value&gt;
++    &lt;/property&gt;
+     &lt;property key="HumanResEditEmplPositionFulfillment"&gt;
+         &lt;value xml:lang="en"&gt;Edit Position Fulfillment&lt;/value&gt;
+         &lt;value xml:lang="it"&gt;Aggiorna Posizione Adempimento&lt;/value&gt;
+@@ -388,11 +391,17 @@
+         &lt;value xml:lang="it"&gt;Aggiorna Struttura Stampa Posizione<br/>Impiegati&lt;/value&gt;
+         &lt;value<br/>xml:lang="th"&gt;à¹à¸à¹à¹à¸à¹à¸à¸£à¸à¸ªà¸£à¹à¸²à¸à¸£à¸²à¸¢à¸à¸²à¸à¸à¸³à¹à¸«à¸à¹à¸à¸à¸à¸±à¸à¸à¸²à¸&lt;/value&gt;
+     &lt;/property&gt;
++    &lt;property key="HumanResEmplPositionReportingStruct"&gt;
++        &lt;value xml:lang="en"&gt;Reporting Structure&lt;/value&gt;
++    &lt;/property&gt;
+     &lt;property key="HumanResEditEmplPositionResponsibility"&gt;
+         &lt;value xml:lang="en"&gt;Edit Position Responsibility&lt;/value&gt;
+         &lt;value xml:lang="it"&gt;Aggiorna Posizione ResponsabilitÃ &lt;/value&gt;
+         &lt;value<br/>xml:lang="th"&gt;à¹à¸à¹à¹à¸à¸à¸³à¹à¸«à¸à¹à¸à¸à¸µà¹à¸£à¸±à¸à¸à¸´à¸à¸à¸­à¸&lt;/value&gt;
+     &lt;/property&gt;
++    &lt;property key="HumanResEmplPositionResponsibilities"&gt;
++        &lt;value xml:lang="en"&gt;Responsibilities&lt;/value&gt;
++    &lt;/property&gt;
+     &lt;property key="HumanResEditEmployment"&gt;
+         &lt;value xml:lang="en"&gt;Edit Employment&lt;/value&gt;
+         &lt;value xml:lang="it"&gt;Aggiorna Impiegato&lt;/value&gt;
+@@ -533,6 +542,10 @@
+         &lt;value xml:lang="it"&gt;Lista Impiegato&lt;/value&gt;
+         &lt;value<br/>xml:lang="th"&gt;à¸£à¸²à¸¢à¸à¸²à¸£à¸à¸²à¸£à¸à¹à¸²à¸à¸à¸²à¸&lt;/value&gt;
+     &lt;/property&gt;
++    &lt;property key="HumanResPositionFulfillments"&gt;
++        &lt;value xml:lang="en"&gt;Fulfillments&lt;/value&gt;
++        &lt;value xml:lang="it"&gt;Adempimento&lt;/value&gt;
++    &lt;/property&gt;
+     &lt;property key="HumanResListPartyBenefits"&gt;
+         &lt;value xml:lang="en"&gt;List Party Benefits&lt;/value&gt;
+         &lt;value xml:lang="it"&gt;Lista Benefits Soggetto &lt;/value&gt;
+
+</para></body></message>

@@ -1,0 +1,65 @@
+<message message-id="d41e22ed-ac26-4872-9dd9-92b39cb6e692@k27g2000yqn.googlegroups.com" list="com.googlegroups.sage-devel" id="24cl6phxckavbi35" type="development" date="2011-06-28T02:06:37-07:00" year="2011-01-01" year-month="2011-06-01" year-month-day="2011-06-28" thread-id="7zibyyvmtiqrp65r"><headers><envelope-from-line>Tue Jun 28 01:07:49 2011</envelope-from-line><from personal="Dima Pasechnik" address="dimpase@gmail.com">Dima Pasechnik &lt;dimpase@gmail.com&gt;</from><to personal="sage-devel" address="sage-devel@googlegroups.com">sage-devel &lt;sage-devel@googlegroups.com&gt;</to><subject normal="[sage-devel] Re: Sage Compile Error on LMDE x64">[sage-devel] Re: Sage Compile Error on LMDE x64</subject><received>from srv-117d-be06.markmail.marklogic.com ([172.19.8.66])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 999
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Tue, 28 Jun 2011 01:07:49 -0800 (GMT-08:00)</received><received>from mail-yx0-f188.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-2.public.markmail.int (Postfix) with ESMTP id 392C83B3020D
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 28 Jun 2011 02:07:26 -0700 (PDT)</received><received>by yxd5 with SMTP id 5sf6847043yxd.15
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Tue, 28 Jun 2011 02:07:48 -0700 (PDT)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:x-beenthere:mime-version:date:in-reply-to
+         :references:user-agent:x-http-useragent:message-id:subject:from:to
+         :x-original-sender:reply-to:precedence:mailing-list:list-id
+         :x-google-group-id:list-post:list-help:list-archive:sender
+         :list-unsubscribe:content-type:content-transfer-encoding;
+        bh=uvwocSNFUM0W5NT9UhI7JXMrEenBAAjJMPUAf+oIT+g=;
+        b=nQRW3v54ek26jaBwHt626RXT5alDqYN9xeZ4bwsh34isEyoDjOb0SwLCLkWPYUxjK4
+         d1HCS0OXcskC2tIpyBxPn6cRWyDeoOMyx9Zqju/lTdv+Yi6Iz5cgIzIBntIyfWn93hIJ
+         lPgLpu8y/FHYHpCyKfLoEviovLweN9T0A9w8s=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-beenthere:mime-version:date:in-reply-to:references:user-agent
+         :x-http-useragent:message-id:subject:from:to:x-original-sender
+         :reply-to:precedence:mailing-list:list-id:x-google-group-id
+         :list-post:list-help:list-archive:sender:list-unsubscribe
+         :content-type:content-transfer-encoding;
+        b=A1x28QIT4ENpSn0fW7lqSqQg6lMlpqIOAEjJTsktnLMi7jWBnImMNTfdkmpQBhJeXi
+         r39zLC9Vihma1GTiuQ6zIqRgihFbCCXkvS9r7+u33mUsBxSpZ+cVQPWbIuYS8FcedDkN
+         KUrufPkxh5Ty5U4iiod5UTR6pqJUqAe1Mpa54=</domainkey-signature><received>by 10.101.195.25 with SMTP id x25mr641829anp.36.1309252021756;
+        Tue, 28 Jun 2011 02:07:01 -0700 (PDT)</received><x-beenthere>sage-devel@googlegroups.com</x-beenthere><received>by 10.101.179.39 with SMTP id g39ls1460976anp.4.gmail; Tue, 28 Jun
+ 2011 02:06:57 -0700 (PDT)</received><mime-version>1.0</mime-version><received>by 10.101.86.11 with SMTP id o11mr755360anl.16.1309251997947; Tue,
+ 28 Jun 2011 02:06:37 -0700 (PDT)</received><received>by k27g2000yqn.googlegroups.com with HTTP; Tue, 28 Jun 2011 02:06:37
+ -0700 (PDT)</received><date>Tue, 28 Jun 2011 02:06:37 -0700 (PDT)</date><in-reply-to>&lt;4a59ee4a-bf70-4a76-8643-2f919081fbeb@c20g2000vbv.googlegroups.com&gt;</in-reply-to><references>&lt;1976496.4136.1309033567701.JavaMail.geo-discussion-forums@vbre5&gt;
+ &lt;7f216880-261a-4d1e-af01-bc86a1bd9a2c@gv8g2000vbb.googlegroups.com&gt;
+ &lt;b4ce6d97-606b-4395-b94c-8097202ebf17@28g2000yqu.googlegroups.com&gt;
+ &lt;39c6735f-2b00-4888-aecd-16f8df035a42@q17g2000vby.googlegroups.com&gt;
+ &lt;13fc03f5-2add-4f42-9fb3-09408179820e@a11g2000yqm.googlegroups.com&gt; &lt;4a59ee4a-bf70-4a76-8643-2f919081fbeb@c20g2000vbv.googlegroups.com&gt;</references><user-agent>G2/1.0</user-agent><x-http-useragent>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8)
+ AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.100 Safari/534.30,gzip(gfe)</x-http-useragent><message-id>d41e22ed-ac26-4872-9dd9-92b39cb6e692@k27g2000yqn.googlegroups.com</message-id><x-original-sender>dimpase@gmail.com</x-original-sender><reply-to>sage-devel@googlegroups.com</reply-to><precedence>list</precedence><mailing-list>list sage-devel@googlegroups.com; contact sage-devel+owners@googlegroups.com</mailing-list><list-id>&lt;sage-devel.googlegroups.com&gt;</list-id><x-google-group-id>560892725547</x-google-group-id><list-post>&lt;http://groups.google.com/group/sage-devel/post?hl=en_US&gt;, &lt;mailto:sage-devel@googlegroups.com&gt;</list-post><list-help>&lt;http://groups.google.com/support/?hl=en_US&gt;, &lt;mailto:sage-devel+help@googlegroups.com&gt;</list-help><list-archive>&lt;http://groups.google.com/group/sage-devel?hl=en_US&gt;</list-archive><sender>sage-devel@googlegroups.com</sender><list-unsubscribe>&lt;http://groups.google.com/group/sage-devel/subscribe?hl=en_US&gt;,
+ &lt;mailto:sage-devel+unsubscribe@googlegroups.com&gt;</list-unsubscribe><content-type>text/plain; charset=ISO-8859-1</content-type><content-transfer-encoding>quoted-printable</content-transfer-encoding></headers><normalized-references><normalized-message-id>d41e22ed-ac26-4872-9dd9-92b39cb6e692@k27g2000yqn.googlegroups.com</normalized-message-id><normalized-in-reply-to>4a59ee4a-bf70-4a76-8643-2f919081fbeb@c20g2000vbv.googlegroups.com</normalized-in-reply-to><normalized-reference>1976496.4136.1309033567701.JavaMail.geo-discussion-forums@vbre5</normalized-reference><normalized-reference>7f216880-261a-4d1e-af01-bc86a1bd9a2c@gv8g2000vbb.googlegroups.com</normalized-reference><normalized-reference>b4ce6d97-606b-4395-b94c-8097202ebf17@28g2000yqu.googlegroups.com</normalized-reference><normalized-reference>39c6735f-2b00-4888-aecd-16f8df035a42@q17g2000vby.googlegroups.com</normalized-reference><normalized-reference>13fc03f5-2add-4f42-9fb3-09408179820e@a11g2000yqm.googlegroups.com</normalized-reference><normalized-reference>4a59ee4a-bf70-4a76-8643-2f919081fbeb@c20g2000vbv.googlegroups.com</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">
+   PATH=/home/roman/Software/sage-4.7:/home/roman/Software/sage-4.7/
+local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+</para><para depth="0">Is there any reason for PATH having /usr/local ahead of the standard
+stuff?
+It can potentially happen that you have some stuff in /usr/local/lib
+which interfers
+with things. Indeed,  -L/usr/local/lib is in the gcc call that
+produces non-working crypt
+module, and the only reason for it to be there is, I think, the
+presense of /usr/local in your PATH.
+
+</para><para depth="0">Could you try removing this part from your PATH and re-running?
+
+</para><para depth="0">If this does not help, one should try to see what exactly happens when
+one tries importing crypt.
+Perhaps it is in a log file in SAGE_ROOT/spkg/build/
+
+</para><para depth="0">On Jun 27, 10:56 pm, Roman Sinayev &lt;<email>lqd...@gmail.com</email>&gt; wrote:
+</para><quote depth="1"><quotepara depth="1">The whole log is here:
+
+</quotepara><quotepara depth="1"><url>http://dl.dropbox.com/u/6726175/install.log</url>
+</quotepara></quote><footer type="noise" depth="0">
+</footer><footer type="list-management" depth="0">-- 
+To post to this group, send an email to <email>sage-devel@googlegroups.com</email>
+To unsubscribe from this group, send an email to<br/>sage-devel+<email>unsubscribe@googlegroups.com</email>
+For more options, visit this group at <url>http://groups.google.com/group/sage-devel</url>
+URL: <url>http://www.sagemath.org</url>
+</footer></body></message>

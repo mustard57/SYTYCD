@@ -1,0 +1,47 @@
+<message message-id="3CFE239E.9020901@saepio.com" list="com.redhat.redhat-list" id="24b3sekmoipwtcyk" type="general" date="2002-06-05T10:47:01" year="2002-01-01" year-month="2002-06-01" year-month-day="2002-06-05" thread-id="24b3sekmoipwtcyk"><headers><envelope-from-line>From mail@redhat.com  Wed Jun  5 10:46:11 2002</envelope-from-line><from personal="Matthew Boeckman" address="matthewb@saepio.com">Matthew Boeckman &lt;matthewb@saepio.com&gt;</from><to personal="redhat-list@redhat.com" address="redhat-list@redhat.com">redhat-list@redhat.com</to><subject normal="WAN Monitoring">Re: WAN Monitoring</subject><return-path>mail@redhat.com</return-path><delivered-to>redhat-list@listman.redhat.com</delivered-to><received>from int-mx1.corp.redhat.com (int-mx1.corp.redhat.com [172.16.52.254])
+	by listman.redhat.com (Postfix) with ESMTP id 1D53B3F615
+	for &lt;redhat-list@listman.redhat.com&gt;; Wed,  5 Jun 2002 10:46:11 -0400 (EDT)</received><received>(from mail@localhost)
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) id g55EkAJ07137
+	for redhat-list@listman.redhat.com; Wed, 5 Jun 2002 10:46:10 -0400</received><received>from mx1.redhat.com (mx1.redhat.com [172.16.48.31])
+	by int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g55EkA307133
+	for &lt;redhat-list@redhat.com&gt;; Wed, 5 Jun 2002 10:46:10 -0400</received><received>from velocity.saepio.com ([208.10.117.3])
+	by mx1.redhat.com (8.11.6/8.11.6) with SMTP id g55EcN922423
+	for &lt;redhat-list@redhat.com&gt;; Wed, 5 Jun 2002 10:38:23 -0400</received><received>from saepio.com (leto-ii [10.1.1.100])
+	by velocity.saepio.com (8.11.2/8.9.3) with ESMTP id g55EsPg25642
+	for &lt;redhat-list@redhat.com&gt;; Wed, 5 Jun 2002 09:54:25 -0500</received><message-id>3CFE239E.9020901@saepio.com</message-id><user-agent>Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0rc3) Gecko/20020523</user-agent><x-accept-language>en-us, en</x-accept-language><mime-version>1.0</mime-version><references>&lt;001501c20c9c$d55a6da0$0200a8c0@moose.homelinux.org&gt;</references><content-type>text/plain; charset=iso-8859-1</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-loop>redhat-list@redhat.com</x-loop><sender>redhat-list-admin@redhat.com</sender><errors-to>redhat-list-admin@redhat.com</errors-to><x-beenthere>redhat-list@redhat.com</x-beenthere><x-mailman-version>2.0.1</x-mailman-version><precedence>bulk</precedence><reply-to>redhat-list@redhat.com</reply-to><list-help>&lt;mailto:redhat-list-request@redhat.com?subject=help&gt;</list-help><list-post>&lt;mailto:redhat-list@redhat.com&gt;</list-post><list-subscribe>&lt;https://listman.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=subscribe&gt;</list-subscribe><list-id>General Red Hat Linux discussion list &lt;redhat-list.redhat.com&gt;</list-id><list-unsubscribe>&lt;https://listman.redhat.com/mailman/listinfo/redhat-list&gt;,
+	&lt;mailto:redhat-list-request@redhat.com?subject=unsubscribe&gt;</list-unsubscribe><list-archive>&lt;https://listman.redhat.com/mailman/private/redhat-list/&gt;</list-archive><date>Wed Jun  5 10:47:01 2002</date><x-original-date>Wed, 05 Jun 2002 09:43:42 -0500</x-original-date></headers><normalized-references><normalized-message-id>3CFE239E.9020901@saepio.com</normalized-message-id><normalized-reference>001501c20c9c$d55a6da0$0200a8c0@moose.homelinux.org</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">I can't say enough nice things about Netsaint (www.netsaint.org) which 
+you can use to monitor/page/record latency and a variety of other 
+information, and MRTG 
+(<url>http://people.ee.ethz.ch/~oetiker/webtools/mrtg/</url>), which enables you to 
+GRAPH traffic across router interfaces via SNMP. MRTG is extremely 
+flexible and also allows you to make graphs of darn near anything (CPU, 
+PROC, load, etc on linux boxes, ethernet traffic on switches, Qmail, 
+counterstrike, oracle, the kitchen sink, etc). You might also check out 
+the "MRTG Companion Sites/Links" section of this site for lots of real 
+world scenarios for monitoring networks with MRTG.
+
+</para><para depth="0">In the future, you might try freshmeat.net instead of google. Freshmeat 
+is _the_ place to go for unix applications.
+
+</para><para depth="0">-Matthew
+
+</para><para depth="0">Moose Magin wrote:
+</para><quote depth="1"><quotepara depth="1">Hiya people,
+
+</quotepara><quotepara depth="1">I'm looking for something (anything) that will monitor traffic on a 
+frame relay link between 2 routers. Normally, between these 2 routers, 
+we get pings on this link of 30-60, not a problem. At certain times 
+however, the pings suddenly jump up to between 1000-2000 ms. Not good. 
+Everything goes dreadfully slow across that link. We've stuck a couple 
+of monitoring boxes on each side of the routers, and come up with 
+nothing coming from our internal network that could account for it, so 
+we are assuming it's on the frame relay itself, but we aren't sure. We 
+need something that will help find the source of the problem, so we want 
+something that will monitor and log everything going between the 2 
+interfaces. Did quite a lot of googling, and can't find a thing. Any 
+suggestions?
+
+</quotepara><quotepara depth="1">Thanks,
+Matt.
+</quotepara></quote></body></message>

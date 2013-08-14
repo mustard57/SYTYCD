@@ -1,0 +1,42 @@
+<message message-id="F735BE4028EEBD4297C4B9BE29329D7A04F83AF0@dewdfe25.wdf.sap.corp" list="org.oasis-open.lists.sca-j" id="24cybx7lgxc7st6f" type="general" date="2007-10-04T09:31:09Z" year="2007-01-01" year-month="2007-10-01" year-month-day="2007-10-04" thread-id="t7b5wv6cxm5f7zkd"><headers><envelope-from-line>From ron.barack@sap.com 4 Oct 2007 09:31:09 -0000</envelope-from-line><from personal="Barack, Ron" address="ron.barack@sap.com">"Barack, Ron" &lt;ron.barack@sap.com&gt;</from><to personal="Michael Rowley" address="mrowley@bea.com">Michael Rowley &lt;mrowley@bea.com&gt;</to><subject normal="ISSUE LOGGED: JAVA-5: EJB remove method on EJBHome">ISSUE LOGGED: JAVA-5: EJB remove method on EJBHome</subject><x-spam-checker-version>SpamAssassin 3.2.4 (2008-01-01) on
+	spam-1.dev.markmail.int</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-0.6 required=5.0 tests=BAYES_00,HTML_MESSAGE,
+	HTML_MIME_NO_HTML_TAG,MIME_HTML_ONLY,NO_RECEIVED,NO_RELAYS autolearn=disabled
+	version=3.2.4</x-spam-status><date>4 Oct 2007 09:31:09 -0000</date><in-reply-to>&lt;2E22E42D2E71B845B67F093A02B962DB01107BBF@repbex01.amer.bea.com&gt;</in-reply-to><message-id>F735BE4028EEBD4297C4B9BE29329D7A04F83AF0@dewdfe25.wdf.sap.corp</message-id><mime-version>1.0</mime-version><content-type>text/html; charset=utf8</content-type></headers><normalized-references><normalized-message-id>F735BE4028EEBD4297C4B9BE29329D7A04F83AF0@dewdfe25.wdf.sap.corp</normalized-message-id><normalized-in-reply-to>2E22E42D2E71B845B67F093A02B962DB01107BBF@repbex01.amer.bea.com</normalized-in-reply-to></normalized-references><body html2text="elinks" type="text/html; charset=utf8"><para depth="0"> <url>http://www.osoa.org/jira/browse/JAVA-5</url>
+
+</para><para depth="0"> ------------------------------------------------------------------------------
+
+</para><para depth="0"> Von: Michael Rowley [mailto:<email>mrowley@bea.com</email>]
+ Gesendet: Dienstag, 2. Oktober 2007 22:57
+ An: <email>sca-j@lists.oasis-open.org</email>
+ Cc: Matthew Shinn
+ Betreff: [sca-j] NEW ISSUE: EJB remove method on EJBHome
+
+</para><para depth="0"> TARGET: EJB Session Binding Specification section 2.3.1 (section number from
+ 1.0 version of the spec)
+
+</para><para depth="0"> DESCRIPTION:
+
+</para><para depth="0"> In the discussion of the Ejb 2.x client view in section 2.3.1 it says:
+
+</para><para depth="0"> "When the SCA conversation with a stateful session bean ends, for example as a
+ result of a call to ServiceReference.endSession(), the associated session
+ object will be removed by calling the EJB Home remove() method."
+
+</para><para depth="0"> Shouldn't this really be a call to the remove method on the EJBObject instead
+ of the EJBHome?  The EJBHome interface has the following two remove methods:
+
+</para><para depth="0"> Public void remove(javax.ejb.Handle handle);
+
+</para><para depth="0"> Public void remove(Object primaryKey);
+
+</para><para depth="0"> The second remove method would be illegal to invoke on a session bean home.
+  The first remove method implies a prior call to EJBObject.getHandle().
+  Further, the EJBLocalHome interface only has the remove method that takes the
+ primary key.
+
+</para><para depth="0"> PROPOSAL:
+
+</para><para depth="0"> The remove method on the EJBObject or EJBLocalObject interface should be used
+ to remove the EJB.
+
+</para></body></message>

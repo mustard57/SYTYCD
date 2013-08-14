@@ -1,0 +1,59 @@
+<message message-id="ql0ju1hesplkt6sto96viehbeck3uhkrdv@4ax.com" list="org.kernel.vger.linux-kernel" id="24bzwdp5hexguxxh" type="development" date="2006-02-08T16:39:09+11:00" year="2006-01-01" year-month="2006-02-01" year-month-day="2006-02-07" thread-id="jnmxulr6j5msraj3"><headers><envelope-from-line>From linux-kernel-owner+akpm=40zip.com.au-S1030531AbWBHFjU@vger.kernel.org  Tue Feb  7 21:48:30 2006</envelope-from-line><from personal="Grant Coady" address="gcoady@gmail.com">Grant Coady &lt;gcoady@gmail.com&gt;</from><to personal="Willy Tarreau" address="willy@w.ods.org">Willy Tarreau &lt;willy@w.ods.org&gt;</to><cc personal="Con Kolivas" address="kernel@kolivas.org">Con Kolivas &lt;kernel@kolivas.org&gt;</cc><subject normal="2.6 vs 2.4, ssh terminal slowdown">Re: 2.6 vs 2.4, ssh terminal slowdown</subject><return-path>linux-kernel-owner+akpm=40zip.com.au-S1030531AbWBHFjU@vger.kernel.org</return-path><received>from localhost (bix [127.0.0.1])
+	by localhost.localdomain (8.12.10/8.12.10) with ESMTP id k185mSTS020862
+	for &lt;akpm@localhost&gt;; Tue, 7 Feb 2006 21:48:30 -0800</received><received>from mail-zipworld.pacific.net.au [61.8.0.24]
+	by localhost with POP3 (fetchmail-6.2.0)
+	for akpm@localhost (single-drop); Tue, 07 Feb 2006 21:48:30 -0800 (PST)</received><received>by mangalore (mbox akpm)
+ (with Cubic Circle's cucipop (v1.31 1998/05/13) Wed Feb  8 16:48:53 2006)</received><x-from_>linux-kernel-owner+akpm=40zip.com.au-S1030531AbWBHFjU@vger.kernel.org  Wed Feb  8 16:40:22 2006</x-from_><received>from mailin1.pacific.net.au (mailin1.pacific.net.au [61.8.0.80])
+	by mangalore.zipworld.com.au (8.12.3/8.12.3/Debian-7.1) with ESMTP id k185eMHj011071
+	for &lt;akpm@zipworld.com.au&gt;; Wed, 8 Feb 2006 16:40:22 +1100</received><received>from vger.kernel.org (vger.kernel.org [209.132.176.167])
+	by mailin1.pacific.net.au (8.13.4/8.13.4/Debian-3) with ESMTP id k185eLSt008144
+	for &lt;akpm@zip.com.au&gt;; Wed, 8 Feb 2006 16:40:21 +1100</received><received>(majordomo@vger.kernel.org) by vger.kernel.org via listexpand
+	id S1030531AbWBHFjU (ORCPT &lt;rfc822;akpm@zip.com.au&gt;);
+	Wed, 8 Feb 2006 00:39:20 -0500</received><received>(majordomo@vger.kernel.org) by vger.kernel.org id S1030532AbWBHFjU
+	(ORCPT &lt;rfc822;linux-kernel-outgoing&gt;);
+	Wed, 8 Feb 2006 00:39:20 -0500</received><received>from relay02.mail-hub.dodo.com.au ([202.136.32.45]:16052 "EHLO
+	relay02.mail-hub.dodo.com.au") by vger.kernel.org with ESMTP
+	id S1030531AbWBHFjT (ORCPT &lt;rfc822;linux-kernel@vger.kernel.org&gt;);
+	Wed, 8 Feb 2006 00:39:19 -0500</received><received>from [220.240.117.195] (helo=magpie.squishybuglet.mine.nu)
+	by relay02.mail-hub.dodo.com.au with smtp (Exim 4.34)
+	id 1F6i2n-0006Qp-Jw; Wed, 08 Feb 2006 16:39:10 +1100</received><date>Wed, 08 Feb 2006 16:39:09 +1100</date><organization>http://bugsplatter.mine.nu/</organization><reply-to>gcoady@gmail.com</reply-to><message-id>ql0ju1hesplkt6sto96viehbeck3uhkrdv@4ax.com</message-id><references>&lt;j4kiu1de3tnck2bs7609ckmt89pfoumlbe@4ax.com&gt; &lt;200602081335.18256.kernel@kolivas.org&gt; &lt;24niu1hrom6udfa2km18b8bagad62kjamc@4ax.com&gt; &lt;200602081400.59931.kernel@kolivas.org&gt; &lt;nutiu1dkoldca31ddusfbd2rv41q7q0k3m@4ax.com&gt; &lt;20060208051709.GE11380@w.ods.org&gt;</references><in-reply-to>&lt;20060208051709.GE11380@w.ods.org&gt;</in-reply-to><x-mailer>Forte Agent 2.0/32.652</x-mailer><mime-version>1.0</mime-version><content-type>text/plain; charset=us-ascii</content-type><content-transfer-encoding>7bit</content-transfer-encoding><sender>linux-kernel-owner@vger.kernel.org</sender><precedence>bulk</precedence><x-mailing-list>linux-kernel@vger.kernel.org</x-mailing-list><x-spam-checker-version>SpamAssassin 3.0.2 (2004-11-16) on bix</x-spam-checker-version><x-spam-level/><x-spam-status>No, score=-1.6 required=2.0 tests=AWL,BAYES_00 autolearn=ham 
+	version=3.0.2</x-spam-status><status>RO</status><x-status/><x-keywords/><x-uid>2642</x-uid></headers><normalized-references><normalized-message-id>ql0ju1hesplkt6sto96viehbeck3uhkrdv@4ax.com</normalized-message-id><normalized-in-reply-to>20060208051709.GE11380@w.ods.org</normalized-in-reply-to><normalized-reference>j4kiu1de3tnck2bs7609ckmt89pfoumlbe@4ax.com</normalized-reference><normalized-reference>200602081335.18256.kernel@kolivas.org</normalized-reference><normalized-reference>24niu1hrom6udfa2km18b8bagad62kjamc@4ax.com</normalized-reference><normalized-reference>200602081400.59931.kernel@kolivas.org</normalized-reference><normalized-reference>nutiu1dkoldca31ddusfbd2rv41q7q0k3m@4ax.com</normalized-reference><normalized-reference>20060208051709.GE11380@w.ods.org</normalized-reference></normalized-references><body type="text/plain; charset=us-ascii"><greeting depth="0">Hi Willy,
+</greeting><para depth="0">On Wed, 8 Feb 2006 06:17:09 +0100, Willy Tarreau &lt;<email>willy@w.ods.org</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">Hi Grant,
+
+</quotepara><quotepara depth="1">On Wed, Feb 08, 2006 at 03:51:24PM +1100, Grant Coady wrote:
+</quotepara><quote depth="2"><quotepara depth="2">On Wed, 8 Feb 2006 14:00:59 +1100, Con Kolivas &lt;<email>kernel@kolivas.org</email>&gt; wrote:
+
+</quotepara><quote depth="3"><quotepara depth="3">This is the terminal's fault. xterm et al use an algorithm to determine how 
+fast your machine is and decide whether to jump scroll or smooth scroll. This 
+algorithm is basically broken with the 2.6 scheduler and it decides to mostly 
+smooth scroll.
+</quotepara></quote><quotepara depth="2">
+Strange it does that over localnet to a PuTTY terminal on windoze.
+
+</quotepara><quotepara depth="2">Seems a strange thing to do in the kernel though, presentation 
+buffering / management surely can be done in userspace?
+</quotepara></quote><quotepara depth="1">
+I suspect the sshd on the firewall gets woken up for each line and it
+behaves exactly like an xterm. After having done a lot of "ls -l|cat"
+on 2.6, I'm not surprized at all :-/
+
+</quotepara><quotepara depth="1">A good test would be to strace sshd under 2.4 and 2.6. You could even
+use strace -tt. Probably that you will see something like 1 ms between
+two reads on 2.6 and nearly nothing between them in 2.4.
+</quotepara></quote><para depth="0">
+Yes, it is nearly 1ms per line delay with 2.6, but 2.4 and 2.6 with the 
+trailing '|cat' give similar times, didn't try that notion last time.  
+
+</para><para depth="0">We know now it isn't the network cards, disk I/O, just an oddness in 2.6 ;)
+
+</para><para depth="0">Cheers,
+Grant.
+-
+To unsubscribe from this list: send the line "unsubscribe linux-kernel" in
+the body of a message to <email>majordomo@vger.kernel.org</email>
+More majordomo info at  <url>http://vger.kernel.org/majordomo-info.html</url>
+Please read the FAQ at  <url>http://www.tux.org/lkml/</url>
+
+</para></body></message>

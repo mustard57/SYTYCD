@@ -1,0 +1,46 @@
+<message message-id="421CBEFE.70808@apache.org" list="org.apache.forrest.dev" id="24bmqwcq3ob67ryw" type="development" date="2005-02-23T17:35:58Z" year="2005-01-01" year-month="2005-02-01" year-month-day="2005-02-23" thread-id="zsyblnr2gksb3fgi"><headers><envelope-from-line>From dev-return-15065-apmail-forrest-dev-archive=forrest.apache.org@forrest.apache.org Wed Feb 23 17:36:05 2005</envelope-from-line><from personal="Ross Gardler" address="rgardler@apache.org">Ross Gardler &lt;rgardler@apache.org&gt;</from><to personal="dev@forrest.apache.org" address="dev@forrest.apache.org">dev@forrest.apache.org</to><subject normal="[RT] Per document skinconf (was Re: coloring table cells [from the user list])">Re: [RT] Per document skinconf (was Re: coloring table cells [from
+ the   user list])</subject><return-path>dev-return-15065-apmail-forrest-dev-archive=forrest.apache.org@forrest.apache.org</return-path><delivered-to>apmail-forrest-dev-archive@www.apache.org</delivered-to><received>(qmail 35285 invoked from network); 23 Feb 2005 17:36:04 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur-2.apache.org with SMTP; 23 Feb 2005 17:36:04 -0000</received><received>(qmail 39139 invoked by uid 500); 23 Feb 2005 17:36:02 -0000</received><delivered-to>apmail-forrest-dev-archive@forrest.apache.org</delivered-to><received>(qmail 39102 invoked by uid 500); 23 Feb 2005 17:36:02 -0000</received><mailing-list>contact dev-help@forrest.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@forrest.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@forrest.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@forrest.apache.org&gt;</list-post><reply-to>dev@forrest.apache.org</reply-to><delivered-to>mailing list dev@forrest.apache.org</delivered-to><received>(qmail 39087 invoked by uid 99); 23 Feb 2005 17:36:02 -0000</received><x-asf-spam-status>No, hits=0.0 required=10.0
+	tests=</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>neutral (hermes.apache.org: local policy)</received-spf><received>from ns3.wkwyw.net (HELO ns3.wkwyw.net) (217.199.181.91)
+  by apache.org (qpsmtpd/0.28) with SMTP; Wed, 23 Feb 2005 09:36:02 -0800</received><received>(qmail 22505 invoked from network); 23 Feb 2005 17:36:04 -0000</received><received>from 82-69-78-226.dsl.in-addr.zen.co.uk (HELO ?192.168.0.4?) (82.69.78.226)
+  by ns3.wkwyw.net with SMTP; 23 Feb 2005 17:36:04 -0000</received><received>from 127.0.0.1 (AVG SMTP 7.0.300 [266.3.0]); Wed, 23 Feb 2005 17:35:58 +0000</received><message-id>421CBEFE.70808@apache.org</message-id><date>Wed, 23 Feb 2005 17:35:58 +0000</date><user-agent>Mozilla Thunderbird 1.0 (Windows/20041206)</user-agent><x-accept-language>en-us, en</x-accept-language><mime-version>1.0</mime-version><references>&lt;421C4D94.6070905@uidesign.de&gt; &lt;421C7040.3090901@apache.org&gt; &lt;cvi83s$3lu$1@sea.gmane.org&gt; &lt;421CBE22.3040904@apache.org&gt;</references><in-reply-to>&lt;421CBE22.3040904@apache.org&gt;</in-reply-to><content-type>text/plain; charset=ISO-8859-1; format=flowed</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>421CBEFE.70808@apache.org</normalized-message-id><normalized-in-reply-to>421CBE22.3040904@apache.org</normalized-in-reply-to><normalized-reference>421C4D94.6070905@uidesign.de</normalized-reference><normalized-reference>421C7040.3090901@apache.org</normalized-reference><normalized-reference>cvi83s$3lu$1@sea.gmane.org</normalized-reference><normalized-reference>421CBE22.3040904@apache.org</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1; format=flowed"><para depth="0">Ross Gardler wrote:
+</para><quote depth="1"><quotepara depth="1">Nicola Ken Barozzi wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">Ross Gardler wrote:
+</quotepara></quote></quote><para depth="0">
+...
+
+</para><quote depth="1"><quotepara depth="1">my-project/
+         forrest.xml
+         documentation/
+              status.xml
+--&gt;          content.xml
+--&gt;          content.meta.xml
+               ** all other content
+              FORREST-INF/
+                skinconf.xml
+--&gt;        pdf-output.conf.xml
+                site.xml
+                tabs.xml
+--&gt;        metadata.xml
+</quotepara></quote><para depth="0">
+Blasted email editor inserted tabs so the layout is wrong: this is what 
+I intended:
+
+</para><para depth="0">my-project/
+          forrest.xml
+          documentation/
+               status.xml
+--&gt;           content.xml
+--&gt;           content.meta.xml
+                ** all other content
+               FORREST-INF/
+                 skinconf.xml
+--&gt;             pdf-output.conf.xml
+                 site.xml
+                 tabs.xml
+--&gt;             metadata.xml
+
+</para><para depth="0">Ross
+
+</para></body></message>

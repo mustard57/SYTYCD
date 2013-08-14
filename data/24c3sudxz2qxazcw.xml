@@ -1,0 +1,87 @@
+<message message-id="1591359761.9821300748965470.JavaMail.hudson@aegis" list="org.apache.lucene.java-dev" id="24c3sudxz2qxazcw" type="development" date="2011-03-21T23:09:25Z" year="2011-01-01" year-month="2011-03-01" year-month-day="2011-03-21" thread-id="n6xsc4yog76esm2l"><headers><envelope-from-line>Mon Mar 21 15:09:50 2011</envelope-from-line><from personal="Apache Hudson Server" address="hudson@hudson.apache.org">Apache Hudson Server &lt;hudson@hudson.apache.org&gt;</from><to personal="dev@lucene.apache.org" address="dev@lucene.apache.org">dev@lucene.apache.org</to><subject normal="[HUDSON] Lucene-Solr-tests-only-trunk - Build # 6207 - Still Failing">[HUDSON] Lucene-Solr-tests-only-trunk - Build # 6207 - Still Failing</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 725
+          for &lt;juliette.rosa.rowe@a.markmail.org&gt;;
+          Mon, 21 Mar 2011 15:09:50 -0800 (GMT-08:00)</received><received>from mail.apache.org (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with SMTP id 51F6129081D4
+	for &lt;juliette.rosa.rowe@a.markmail.org&gt;; Mon, 21 Mar 2011 16:09:27 -0700 (PDT)</received><received>(qmail 17240 invoked by uid 500); 21 Mar 2011 23:09:50 -0000</received><mailing-list>contact dev-help@lucene.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:dev-help@lucene.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:dev-unsubscribe@lucene.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:dev@lucene.apache.org&gt;</list-post><list-id>&lt;dev.lucene.apache.org&gt;</list-id><reply-to>dev@lucene.apache.org</reply-to><delivered-to>mailing list dev@lucene.apache.org</delivered-to><received>(qmail 17233 invoked by uid 99); 21 Mar 2011 23:09:49 -0000</received><received>from nike.apache.org (HELO nike.apache.org) (192.87.106.230)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 21 Mar 2011 23:09:49 +0000</received><x-asf-spam-status>No, hits=-2000.0 required=5.0
+	tests=ALL_TRUSTED</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received>from [140.211.11.8] (HELO aegis.apache.org) (140.211.11.8)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Mon, 21 Mar 2011 23:09:46 +0000</received><received>from aegis (localhost [127.0.0.1])
+	by aegis.apache.org (Postfix) with ESMTP id 76A58C0013
+	for &lt;dev@lucene.apache.org&gt;; Mon, 21 Mar 2011 23:09:25 +0000 (UTC)</received><date>Mon, 21 Mar 2011 23:09:25 +0000 (UTC)</date><message-id>1591359761.9821300748965470.JavaMail.hudson@aegis</message-id><in-reply-to>&lt;2041709019.9741300746852295.JavaMail.hudson@aegis&gt;</in-reply-to><references>&lt;2041709019.9741300746852295.JavaMail.hudson@aegis&gt;</references><mime-version>1.0</mime-version><content-type>text/plain; charset=UTF-8</content-type><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked by ClamAV on apache.org</x-virus-checked></headers><normalized-references><normalized-message-id>1591359761.9821300748965470.JavaMail.hudson@aegis</normalized-message-id><normalized-in-reply-to>2041709019.9741300746852295.JavaMail.hudson@aegis</normalized-in-reply-to><normalized-reference>2041709019.9741300746852295.JavaMail.hudson@aegis</normalized-reference></normalized-references><body type="text/plain; charset=utf-8"><para depth="0">Build: <url>https://hudson.apache.org/hudson/job/Lucene-Solr-tests-only-trunk/6207/</url>
+
+</para><para depth="0">2 tests failed.
+FAILED:<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessorTest.testProcessing
+
+</para><para depth="0">Error Message:
+org.apache.uima.analysis_engine.AnalysisEngineProcessException
+
+</para><para depth="0">Stack Trace:
+java.lang.RuntimeException:<br/>org.apache.uima.analysis_engine.AnalysisEngineProcessException
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessor.processAdd(UIMAUpdateRequestProcessor.java:82)
+	at org.apache.solr.handler.XMLLoader.processUpdate(XMLLoader.java:127)
+	at org.apache.solr.handler.XMLLoader.load(XMLLoader.java:77)
+	at<br/>org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:55)
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessorTest.addDoc(UIMAUpdateRequestProcessorTest.java:120)
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessorTest.testProcessing(UIMAUpdateRequestProcessorTest.java:76)
+	at<br/>org.apache.lucene.util.LuceneTestCase$LuceneTestCaseRunner.runChild(LuceneTestCase.java:1214)
+	at<br/>org.apache.lucene.util.LuceneTestCase$LuceneTestCaseRunner.runChild(LuceneTestCase.java:1146)
+Caused by: org.apache.uima.analysis_engine.AnalysisEngineProcessException
+	at<br/>org.apache.uima.alchemy.annotator.AbstractAlchemyAnnotator.process(AbstractAlchemyAnnotator.java:138)
+	at<br/>org.apache.uima.analysis_component.JCasAnnotator_ImplBase.process(JCasAnnotator_ImplBase.java:48)
+	at<br/>org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:377)
+	at<br/>org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:295)
+	at<br/>org.apache.uima.analysis_engine.asb.impl.ASB_impl$AggregateCasIterator.processUntilNextOutputCas(ASB_impl.java:567)
+	at<br/>org.apache.uima.analysis_engine.asb.impl.ASB_impl$AggregateCasIterator.&lt;init&gt;(ASB_impl.java:409)
+	at org.apache.uima.analysis_engine.asb.impl.ASB_impl.process(ASB_impl.java:342)
+	at<br/>org.apache.uima.analysis_engine.impl.AggregateAnalysisEngine_impl.processAndOutputNewCASes(AggregateAnalysisEngine_impl.java:267)
+	at<br/>org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at<br/>org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:280)
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessor.processText(UIMAUpdateRequestProcessor.java:122)
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessor.processAdd(UIMAUpdateRequestProcessor.java:69)
+Caused by: org.apache.uima.alchemy.digester.exception.ResultDigestingException:<br/>org.apache.uima.alchemy.annotator.exception.AlchemyCallFailedException: ERROR
+	at<br/>org.apache.uima.alchemy.annotator.AbstractAlchemyAnnotator.process(AbstractAlchemyAnnotator.java:133)
+Caused by:<br/>org.apache.uima.alchemy.annotator.exception.AlchemyCallFailedException: ERROR
+	at<br/>org.apache.uima.alchemy.annotator.AbstractAlchemyAnnotator.process(AbstractAlchemyAnnotator.java:129)
+
+</para><para depth="0">FAILED:<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessorTest.testTwoUpdates
+
+</para><para depth="0">Error Message:
+org.apache.uima.analysis_engine.AnalysisEngineProcessException
+
+</para><para depth="0">Stack Trace:
+java.lang.RuntimeException:<br/>org.apache.uima.analysis_engine.AnalysisEngineProcessException
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessor.processAdd(UIMAUpdateRequestProcessor.java:82)
+	at org.apache.solr.handler.XMLLoader.processUpdate(XMLLoader.java:127)
+	at org.apache.solr.handler.XMLLoader.load(XMLLoader.java:77)
+	at<br/>org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:55)
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessorTest.addDoc(UIMAUpdateRequestProcessorTest.java:120)
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessorTest.testTwoUpdates(UIMAUpdateRequestProcessorTest.java:94)
+	at<br/>org.apache.lucene.util.LuceneTestCase$LuceneTestCaseRunner.runChild(LuceneTestCase.java:1214)
+	at<br/>org.apache.lucene.util.LuceneTestCase$LuceneTestCaseRunner.runChild(LuceneTestCase.java:1146)
+Caused by: org.apache.uima.analysis_engine.AnalysisEngineProcessException
+	at<br/>org.apache.uima.alchemy.annotator.AbstractAlchemyAnnotator.process(AbstractAlchemyAnnotator.java:138)
+	at<br/>org.apache.uima.analysis_component.JCasAnnotator_ImplBase.process(JCasAnnotator_ImplBase.java:48)
+	at<br/>org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.callAnalysisComponentProcess(PrimitiveAnalysisEngine_impl.java:377)
+	at<br/>org.apache.uima.analysis_engine.impl.PrimitiveAnalysisEngine_impl.processAndOutputNewCASes(PrimitiveAnalysisEngine_impl.java:295)
+	at<br/>org.apache.uima.analysis_engine.asb.impl.ASB_impl$AggregateCasIterator.processUntilNextOutputCas(ASB_impl.java:567)
+	at<br/>org.apache.uima.analysis_engine.asb.impl.ASB_impl$AggregateCasIterator.&lt;init&gt;(ASB_impl.java:409)
+	at org.apache.uima.analysis_engine.asb.impl.ASB_impl.process(ASB_impl.java:342)
+	at<br/>org.apache.uima.analysis_engine.impl.AggregateAnalysisEngine_impl.processAndOutputNewCASes(AggregateAnalysisEngine_impl.java:267)
+	at<br/>org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:267)
+	at<br/>org.apache.uima.analysis_engine.impl.AnalysisEngineImplBase.process(AnalysisEngineImplBase.java:280)
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessor.processText(UIMAUpdateRequestProcessor.java:122)
+	at<br/>org.apache.solr.uima.processor.UIMAUpdateRequestProcessor.processAdd(UIMAUpdateRequestProcessor.java:69)
+Caused by: org.apache.uima.alchemy.digester.exception.ResultDigestingException:<br/>org.apache.uima.alchemy.annotator.exception.AlchemyCallFailedException: ERROR
+	at<br/>org.apache.uima.alchemy.annotator.AbstractAlchemyAnnotator.process(AbstractAlchemyAnnotator.java:133)
+Caused by:<br/>org.apache.uima.alchemy.annotator.exception.AlchemyCallFailedException: ERROR
+	at<br/>org.apache.uima.alchemy.annotator.AbstractAlchemyAnnotator.process(AbstractAlchemyAnnotator.java:129)
+
+</para><para depth="0">Build Log (for compile errors):
+[...truncated 11121 lines...]
+
+</para><footer type="list-management" depth="0">---------------------------------------------------------------------
+To unsubscribe, e-mail: <email>dev-unsubscribe@lucene.apache.org</email>
+For additional commands, e-mail: <email>dev-help@lucene.apache.org</email>
+
+</footer></body></message>

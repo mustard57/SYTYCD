@@ -1,0 +1,75 @@
+<message message-id="D44A54C298394F4E967EC8538B1E00F13D443B@lgchexch002.lgc.com" list="org.apache.ant.dev" id="24bdtecwjpnmk2yq" type="development" date="2002-09-12T14:05:13-05:00" year="2002-01-01" year-month="2002-09-01" year-month-day="2002-09-12" thread-id="24bdtecwjpnmk2yq"><headers><envelope-from-line>From ant-dev-return-37819-qmlist-jakarta-archive-ant-dev=jakarta.apache.org@jakarta.apache.org Thu Sep 12 19:05:18 2002</envelope-from-line><from personal="Dominique Devienne" address="DDevienne@lgc.com">Dominique Devienne &lt;DDevienne@lgc.com&gt;</from><to personal="'Ant Developers List'" address="ant-dev@jakarta.apache.org">'Ant Developers List' &lt;ant-dev@jakarta.apache.org&gt;</to><subject normal="ANT generated deployment script">RE: ANT generated deployment script</subject><return-path>ant-dev-return-37819-qmlist-jakarta-archive-ant-dev=jakarta.apache.org@jakarta.apache.org</return-path><delivered-to>apmail-jakarta-ant-dev-archive@apache.org</delivered-to><received>(qmail 92319 invoked from network); 12 Sep 2002 19:05:17 -0000</received><received>from unknown (HELO nagoya.betaversion.org) (192.18.49.131)
+  by daedalus.apache.org with SMTP; 12 Sep 2002 19:05:17 -0000</received><received>(qmail 17607 invoked by uid 97); 12 Sep 2002 19:05:52 -0000</received><delivered-to>qmlist-jakarta-archive-ant-dev@jakarta.apache.org</delivered-to><received>(qmail 17591 invoked by uid 97); 12 Sep 2002 19:05:52 -0000</received><mailing-list>contact ant-dev-help@jakarta.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-unsubscribe>&lt;mailto:ant-dev-unsubscribe@jakarta.apache.org&gt;</list-unsubscribe><list-subscribe>&lt;mailto:ant-dev-subscribe@jakarta.apache.org&gt;</list-subscribe><list-help>&lt;mailto:ant-dev-help@jakarta.apache.org&gt;</list-help><list-post>&lt;mailto:ant-dev@jakarta.apache.org&gt;</list-post><list-id>"Ant Developers List" &lt;ant-dev.jakarta.apache.org&gt;</list-id><reply-to>"Ant Developers List" &lt;ant-dev@jakarta.apache.org&gt;</reply-to><delivered-to>mailing list ant-dev@jakarta.apache.org</delivered-to><received>(qmail 17579 invoked by uid 98); 12 Sep 2002 19:05:51 -0000</received><x-antivirus>nagoya (v4218 created Aug 14 2002)</x-antivirus><message-id>D44A54C298394F4E967EC8538B1E00F13D443B@lgchexch002.lgc.com</message-id><date>Thu, 12 Sep 2002 14:05:13 -0500</date><mime-version>1.0</mime-version><x-mailer>Internet Mail Service (5.5.2653.19)</x-mailer><content-type>text/plain</content-type><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating><x-spam-rating>daedalus.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>D44A54C298394F4E967EC8538B1E00F13D443B@lgchexch002.lgc.com</normalized-message-id></normalized-references><body type="text/plain"><para depth="0">&lt;copy&gt;
+  &lt;filterchain&gt;
+    ..
+  &lt;/filterchain&gt;
+&lt;/copy&gt;
+
+</para><para depth="0">would be the recommended way to do that I think, we either &lt;replacetokens&gt;
+or &lt;expandproperties&gt; (I would prefer the latter). --DD
+
+</para><quote depth="1"><quotepara depth="1">-----Original Message-----
+From: Ken Wood [mailto:<email>kwood@i2.com</email>] 
+Sent: Thursday, September 12, 2002 2:00 PM
+To: Ant Developers List
+Subject: Re: ANT generated deployment script
+
+</quotepara><quotepara depth="1">You can write to a file with 'echo', but
+that's like filing your build.xml with a bunch of 'println' style
+statements...
+I suspect you want to keep your build specification clear of any
+details like the contents of the file you are generating.
+
+</quotepara><quotepara depth="1">As Everitt suggests, if you can make a template, then you can copy the
+template with &lt;copy&gt; and make replacements with &lt;replace&gt;. The values
+to use for replacement could come from a property file, so that the
+combination
+of a general template, a set of &lt;replace&gt;'s using value from a property
+file gives you the flexibility you need. Or, perhaps something fancier
+could be achieved using the XSLT capability.
+
+</quotepara><quotepara depth="1">"Everitt, Andrew" wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">Jeremy,
+
+</quotepara><quotepara depth="2">I'm not sure about a way to write a new file, however you can modify an
+existing file using the &lt;replace&gt; task to replace tokens within a file.
+
+</quotepara><quotepara depth="2">Cheers,
+Andi
+
+</quotepara><quote depth="3"><quotepara depth="3">-----Original Message-----
+From: Anderson, Jeremy [mailto:<email>jeranderson@amerisourcebergen.com</email>]
+Sent: 12 September 2002 19:32
+To: Ant Developers List
+Subject: ANT generated deployment script
+
+</quotepara><quotepara depth="3">I've looked through the documentation but found nothing.
+
+</quotepara><quotepara depth="3">Does ANT have the ability to write a file?  I'd like ANT to create a new
+deployment script after packaging and then mail package w/script.
+Packaging/mailing are easy, but howto write the deployment script
+(possibly
+from a template?)
+
+</quotepara><quotepara depth="3">Thanks,
+
+</quotepara><quotepara depth="3">j.anderson
+
+</quotepara><quotefooter type="list-management" hash="1035950077296828735" depth="3">--
+To unsubscribe, e-mail:   &lt;mailto:<email>ant-dev-unsubscribe@jakarta.apache.org</email>&gt;
+For additional commands, e-mail: &lt;mailto:<email>ant-dev-help@jakarta.apache.org</email>&gt;
+
+</quotefooter><quotefooter type="list-management" hash="13562113639312494751" depth="3">--
+To unsubscribe, e-mail:   &lt;mailto:<email>ant-dev-unsubscribe@jakarta.apache.org</email>&gt;
+For additional commands, e-mail: &lt;mailto:<email>ant-dev-help@jakarta.apache.org</email>&gt;
+</quotefooter></quote><quotefooter type="list-management" hash="18444543106462142703" depth="2">
+--
+To unsubscribe, e-mail:   &lt;mailto:<email>ant-dev-unsubscribe@jakarta.apache.org</email>&gt;
+For additional commands, e-mail: &lt;mailto:<email>ant-dev-help@jakarta.apache.org</email>&gt;
+
+</quotefooter><quotefooter type="list-management" hash="1035950077296828735" depth="2">--
+To unsubscribe, e-mail:   &lt;mailto:<email>ant-dev-unsubscribe@jakarta.apache.org</email>&gt;
+For additional commands, e-mail: &lt;mailto:<email>ant-dev-help@jakarta.apache.org</email>&gt;
+
+</quotefooter></quote></quote></body></message>

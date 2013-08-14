@@ -1,0 +1,25 @@
+<message message-id="1100633738.3502.3.camel@holzar.ostein.nil" list="org.apache.xmlgraphics.fop-dev" id="24b42yzokuoorglx" type="bugs" date="2004-11-16T20:35:44+01:00" year="2004-01-01" year-month="2004-11-01" year-month-day="2004-11-16" thread-id="24b42yzokuoorglx"><headers><envelope-from-line>From fop-dev-return-25137-apmail-xml-fop-dev-archive=xml.apache.org@xml.apache.org Tue Nov 16 19:36:18 2004</envelope-from-line><from personal="Christian Z." address="sacl@gmx.de">"Christian Z." &lt;sacl@gmx.de&gt;</from><to personal="fop-dev@xml.apache.org" address="fop-dev@xml.apache.org">fop-dev@xml.apache.org</to><subject normal="DO NOT REPLY [Bug 32201] - please, provide a manpage">RE: FW: DO NOT REPLY [Bug 32201]  -    please, provide a manpage</subject><return-path>fop-dev-return-25137-apmail-xml-fop-dev-archive=xml.apache.org@xml.apache.org</return-path><delivered-to>apmail-xml-fop-dev-archive@www.apache.org</delivered-to><received>(qmail 34860 invoked from network); 16 Nov 2004 19:36:18 -0000</received><received>from hermes.apache.org (HELO mail.apache.org) (209.237.227.199)
+  by minotaur-2.apache.org with SMTP; 16 Nov 2004 19:36:18 -0000</received><received>(qmail 63322 invoked by uid 500); 16 Nov 2004 19:36:16 -0000</received><delivered-to>apmail-xml-fop-dev-archive@xml.apache.org</delivered-to><received>(qmail 63302 invoked by uid 500); 16 Nov 2004 19:36:15 -0000</received><mailing-list>contact fop-dev-help@xml.apache.org; run by ezmlm</mailing-list><precedence>bulk</precedence><list-help>&lt;mailto:fop-dev-help@xml.apache.org&gt;</list-help><list-unsubscribe>&lt;mailto:fop-dev-unsubscribe@xml.apache.org&gt;</list-unsubscribe><list-post>&lt;mailto:fop-dev@xml.apache.org&gt;</list-post><reply-to>fop-dev@xml.apache.org</reply-to><delivered-to>mailing list fop-dev@xml.apache.org</delivered-to><received>(qmail 63281 invoked by uid 99); 16 Nov 2004 19:36:15 -0000</received><x-asf-spam-status>No, hits=0.0 required=10.0
+	tests=</x-asf-spam-status><x-spam-check-by>apache.org</x-spam-check-by><received-spf>neutral (hermes.apache.org: 217.160.110.115 is neither permitted nor denied by domain of sacl@gmx.de)</received-spf><received>from [217.160.110.115] (HELO drhuim.de) (217.160.110.115)
+  by apache.org (qpsmtpd/0.28) with ESMTP; Tue, 16 Nov 2004 11:36:11 -0800</received><received>from dialin-145-254-075-235.arcor-ip.net (dialin-145-254-075-235.arcor-ip.net [145.254.75.235])
+	(using TLSv1 with cipher RC4-MD5 (128/128 bits))
+	(No client certificate requested)
+	by drhuim.de (Postfix) with ESMTP id D3278AC002
+	for &lt;fop-dev@xml.apache.org&gt;; Tue, 16 Nov 2004 20:35:55 +0100 (CET)</received><in-reply-to>&lt;CIEIIKAKHEBMGMANDDFOAEHPCPAA.a_l.delmelle@pandora.be&gt;</in-reply-to><references>&lt;CIEIIKAKHEBMGMANDDFOAEHPCPAA.a_l.delmelle@pandora.be&gt;</references><content-type>text/plain</content-type><message-id>1100633738.3502.3.camel@holzar.ostein.nil</message-id><mime-version>1.0</mime-version><x-mailer>Ximian Evolution 1.4.6 </x-mailer><date>Tue, 16 Nov 2004 20:35:44 +0100</date><content-transfer-encoding>7bit</content-transfer-encoding><x-virus-checked>Checked</x-virus-checked><x-spam-rating>minotaur-2.apache.org 1.6.2 0/1000/N</x-spam-rating></headers><normalized-references><normalized-message-id>1100633738.3502.3.camel@holzar.ostein.nil</normalized-message-id><normalized-in-reply-to>CIEIIKAKHEBMGMANDDFOAEHPCPAA.a_l.delmelle@pandora.be</normalized-in-reply-to><normalized-reference>CIEIIKAKHEBMGMANDDFOAEHPCPAA.a_l.delmelle@pandora.be</normalized-reference></normalized-references><body type="text/plain"><para depth="0">
+</para><quote depth="1"><quote depth="2"><quotepara depth="2">Unless Docbook can generate manpages, we would also
+have the problem of needing to maintain two sets of
+documentation (online and manpage) to say the same
+thing.
+</quotepara></quote></quote><para depth="0">
+Though never generated a man page on my own, DocBook seems to do it.
+Have a look at:
+
+</para><para depth="0"><url>http://docbook.org/tdg/en/html/ch02.html#making-refentry</url>
+
+</para><para depth="0"><url>http://linuxwiki.de/ManPage</url> states that you need the "docbook-utils
+(docbook2man)" to generate a man page out of docbook.
+
+</para><footer type="signature" hash="9583794997403448836" depth="0">Regards,
+Christian Z.
+
+</footer></body></message>

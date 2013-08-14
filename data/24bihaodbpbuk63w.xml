@@ -1,0 +1,485 @@
+<message message-id="818767740811071617o68ee959ehea2dacf9dc63c643@mail.gmail.com" list="com.googlegroups.opensocial-and-gadgets-spec" id="24bihaodbpbuk63w" type="general" date="2008-11-07T16:17:16.956411-08:00" year="2008-01-01" year-month="2008-11-01" year-month-day="2008-11-07" thread-id="5cuu34czjx6owry7"><headers><envelope-from-line>Fri Nov 07 16:17:39 2008</envelope-from-line><from personal="Chris Chabot" address="chabotc@google.com">Chris Chabot &lt;chabotc@google.com&gt;</from><to personal="opensocial-and-gadgets-spec@googlegroups.com" address="opensocial-and-gadgets-spec@googlegroups.com">opensocial-and-gadgets-spec@googlegroups.com</to><subject normal="[opensocial-and-gadgets-spec] Re: [0.9 proposal] Versioning applications">[opensocial-and-gadgets-spec] Re: [0.9 proposal] Versioning  applications</subject><received>from srv-117c-be06.markmail.marklogic.com ([172.19.8.46])
+          by mail-1.a.markmail.int (JAMES SMTP Server 2.3.1) with SMTP ID 942
+          for &lt;google.larry.sergey@a.markmail.org&gt;;
+          Fri, 7 Nov 2008 16:17:39 -0800 (GMT-08:00)</received><received>from mail-gx0-f62.google.com (slb-117n.markmail.marklogic.com [172.19.8.33])
+	by mgw-1.public.markmail.int (Postfix) with ESMTP id 289CB2908017
+	for &lt;google.larry.sergey@a.markmail.org&gt;; Fri,  7 Nov 2008 16:17:16 -0800 (PST)</received><received>by gxk22 with SMTP id 22so954120gxk.9
+        for &lt;google.larry.sergey@a.markmail.org&gt;; Fri, 07 Nov 2008 16:17:38 -0800 (PST)</received><dkim-signature>v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :received:received:received-spf:authentication-results:received
+         :dkim-signature:domainkey-signature:received:received:mime-version
+         :content-type:received:in-reply-to:references:date:message-id
+         :subject:from:to:reply-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        bh=D8FrVtJSp5yCBSdZrlcKBK47Ox0dN1hkatdB9+dXibk=;
+        b=AmBTexr69nBRpGj+0hsSRooslIpdfZQNORxbOHdNQzIp1S+92g55A2d4ymoyNsP7bY
+         DNrn6BvzNQIzKoUOpxao7tIs0cnAYiFetEXV+rKF+8ajhFdJ8G1cZcJoF6o7Uwk49ukH
+         luvZ/SwJvyYiL6Uod9q22w3Y2X38JktMI57G0=</dkim-signature><domainkey-signature>a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:received-spf:authentication-results
+         :dkim-signature:domainkey-signature:mime-version:content-type
+         :in-reply-to:references:date:message-id:subject:from:to:reply-to
+         :sender:precedence:x-google-loop:mailing-list:list-id:list-post
+         :list-help:list-unsubscribe:x-beenthere-env:x-beenthere;
+        b=T0m3kZCU4FKe9euNloHPS526iXl4hOaGKIus3oNWKziA2NKytqOABg/UtXVI8A0hp/
+         dShpJXhCgXwWC5JGKuJIwArj3+3zZKWaaJ61Nrr68eSc2+LbkB3W8F1NuoI8CfjThwXZ
+         UgDIm8yt5ITe9C/g82Arv7p/VaBbdGUZaybj0=</domainkey-signature><received>by 10.90.120.19 with SMTP id s19mr321990agc.15.1226103458741;
+        Fri, 07 Nov 2008 16:17:38 -0800 (PST)</received><received>by 10.106.144.6 with SMTP id r6gr3118prd.0;
+	Fri, 07 Nov 2008 16:17:32 -0800 (PST)</received><x-sender>chabotc@google.com</x-sender><x-apparently-to>opensocial-and-gadgets-spec@googlegroups.com</x-apparently-to><received>by 10.114.196.13 with SMTP id t13mr712935waf.16.1226103451992; Fri, 07 Nov 2008 16:17:31 -0800 (PST)</received><received>from smtp-out.google.com ([216.239.45.13]) by mx.google.com with ESMTP id k19si6176938waf.2.2008.11.07.16.17.30; Fri, 07 Nov 2008 16:17:30 -0800 (PST)</received><received-spf>pass (google.com: domain of chabotc@google.com designates 216.239.45.13 as permitted sender) client-ip=216.239.45.13;</received-spf><authentication-results>mx.google.com; spf=pass (google.com: domain of chabotc@google.com designates 216.239.45.13 as permitted sender) smtp.mail=chabotc@google.com; dkim=pass (test mode) header.i=@google.com</authentication-results><received>from zps78.corp.google.com (zps78.corp.google.com [172.25.146.78]) by smtp-out.google.com with ESMTP id mA80HUeq005955 for &lt;opensocial-and-gadgets-spec@googlegroups.com&gt;; Fri, 7 Nov 2008 16:17:30 -0800</received><dkim-signature>v=1; a=rsa-sha1; c=relaxed/relaxed; d=google.com; s=beta; t=1226103450; bh=ONheYGJpLFK1s/KLJucyo2KYttM=; h=DomainKey-Signature:MIME-Version:In-Reply-To:References:Date: Message-ID:Subject:From:To:Content-Type; b=SX/7MqqBqkpnBqqgdxfnZby gFUd8BA9fLw0qoCVdS78jHA4SCeGDnx/+V/sZhwhVOZYh28uMRAdeiHsGxAKW9w==</dkim-signature><domainkey-signature>a=rsa-sha1; s=beta; d=google.com; c=nofws; q=dns; h=mime-version:in-reply-to:references:date:message-id:subject:from:to:content-type; b=ClCHpddkvCDHxjhjdiz8riom+8T9tCJZUt6fOQ2382r2vseVXNsPkhLQkGQ3TSCwG m9wcBwc1+JeBBv9+MsVaA==</domainkey-signature><received>from fg-out-1718.google.com (fgbl27.prod.google.com [10.86.88.27]) by zps78.corp.google.com with ESMTP id mA80HRDT000977 for &lt;opensocial-and-gadgets-spec@googlegroups.com&gt;; Fri, 7 Nov 2008 16:17:28 -0800</received><received>by fg-out-1718.google.com with SMTP id l27so1275757fgb.27 for &lt;opensocial-and-gadgets-spec@googlegroups.com&gt;; Fri, 07 Nov 2008 16:17:27 -0800 (PST)</received><mime-version>1.0</mime-version><content-type>multipart/alternative; boundary="001636c5bec771a80f045b227474"</content-type><received>by 10.187.157.20 with SMTP id j20mr854424fao.28.1226103447463; Fri,  07 Nov 2008 16:17:27 -0800 (PST)</received><in-reply-to>&lt;aa285c160811040917i6a361833h3fba20745594cd11@mail.gmail.com&gt;</in-reply-to><references>&lt;aa285c160810250252pb39998fj67eac6c65631e21b@mail.gmail.com&gt; &lt;E84A84064AE596498143C456FEA53E766074C3@FEGCNMSEXMB02.ffe.foxeg.com&gt; &lt;aa285c160810281129o754e0757td404e000feb69747@mail.gmail.com&gt; &lt;ab5e78ed0810281526g16421cdo6e7a5cf22a0a84ae@mail.gmail.com&gt; &lt;aa285c160810281555p9df245bqfe1b43b46b361377@mail.gmail.com&gt; &lt;75806c12-79bc-4d81-8874-b1efb9346608@w1g2000prk.googlegroups.com&gt; &lt;aa285c160811031019y68e0314er22c463c105f302f9@mail.gmail.com&gt; &lt;aa285c160811032142m246c1e02m6eed5043ab069c8f@mail.gmail.com&gt; &lt;6dac79b90811032307t768807b6k9ff2d86ede08c325@mail.gmail.com&gt; &lt;aa285c160811040917i6a361833h3fba20745594cd11@mail.gmail.com&gt;</references><date>Sat, 8 Nov 2008 01:17:27 +0100</date><message-id>818767740811071617o68ee959ehea2dacf9dc63c643@mail.gmail.com</message-id><reply-to>opensocial-and-gadgets-spec@googlegroups.com</reply-to><sender>opensocial-and-gadgets-spec@googlegroups.com</sender><precedence>bulk</precedence><x-google-loop>groups</x-google-loop><mailing-list>list opensocial-and-gadgets-spec@googlegroups.com;
+	contact opensocial-and-gadgets-spec+owner@googlegroups.com</mailing-list><list-id>&lt;opensocial-and-gadgets-spec.googlegroups.com&gt;</list-id><list-post>&lt;mailto:opensocial-and-gadgets-spec@googlegroups.com&gt;</list-post><list-help>&lt;mailto:opensocial-and-gadgets-spec+help@googlegroups.com&gt;</list-help><list-unsubscribe>&lt;http://googlegroups.com/group/opensocial-and-gadgets-spec/subscribe&gt;,
+	&lt;mailto:opensocial-and-gadgets-spec+unsubscribe@googlegroups.com&gt;</list-unsubscribe><x-beenthere-env>opensocial-and-gadgets-spec@googlegroups.com</x-beenthere-env><x-beenthere>opensocial-and-gadgets-spec@googlegroups.com</x-beenthere></headers><normalized-references><normalized-message-id>818767740811071617o68ee959ehea2dacf9dc63c643@mail.gmail.com</normalized-message-id><normalized-in-reply-to>aa285c160811040917i6a361833h3fba20745594cd11@mail.gmail.com</normalized-in-reply-to><normalized-reference>aa285c160810250252pb39998fj67eac6c65631e21b@mail.gmail.com</normalized-reference><normalized-reference>E84A84064AE596498143C456FEA53E766074C3@FEGCNMSEXMB02.ffe.foxeg.com</normalized-reference><normalized-reference>aa285c160810281129o754e0757td404e000feb69747@mail.gmail.com</normalized-reference><normalized-reference>ab5e78ed0810281526g16421cdo6e7a5cf22a0a84ae@mail.gmail.com</normalized-reference><normalized-reference>aa285c160810281555p9df245bqfe1b43b46b361377@mail.gmail.com</normalized-reference><normalized-reference>75806c12-79bc-4d81-8874-b1efb9346608@w1g2000prk.googlegroups.com</normalized-reference><normalized-reference>aa285c160811031019y68e0314er22c463c105f302f9@mail.gmail.com</normalized-reference><normalized-reference>aa285c160811032142m246c1e02m6eed5043ab069c8f@mail.gmail.com</normalized-reference><normalized-reference>6dac79b90811032307t768807b6k9ff2d86ede08c325@mail.gmail.com</normalized-reference><normalized-reference>aa285c160811040917i6a361833h3fba20745594cd11@mail.gmail.com</normalized-reference></normalized-references><body multipart="multipart/alternative; boundary=&quot;001636c5bec771a80f045b227474&quot;" type="text/plain; charset=UTF-8"><para depth="0">how is the voting looking on this thread?
+
+</para><para depth="0">I'm +1 on the proposal, seems to solve a valid real life need for app
+developers in a nice way
+
+</para><para depth="0">On Tue, Nov 4, 2008 at 6:17 PM, Kevin Brown &lt;<email>etnu@google.com</email>&gt; wrote:
+
+</para><quote depth="1"><quotepara depth="1">On Mon, Nov 3, 2008 at 11:07 PM, Adam Winer &lt;<email>awiner@gmail.com</email>&gt; wrote:
+
+</quotepara><quote depth="2"><quotepara depth="2">On Mon, Nov 3, 2008 at 9:42 PM, Kevin Brown &lt;<email>etnu@google.com</email>&gt; wrote:
+</quotepara><quote depth="3"><quotepara depth="3">On Mon, Nov 3, 2008 at 10:19 AM, Kevin Brown &lt;<email>etnu@google.com</email>&gt; wrote:
+</quotepara><quote depth="4"><quotepara depth="4">
+On Mon, Nov 3, 2008 at 10:06 AM, Scott Seely &lt;<email>sseely@myspace.com</email>&gt;
+</quotepara></quote></quote><quotepara depth="2">wrote:
+</quotepara><quote depth="3"><quote depth="4"><quote depth="5"><quotepara depth="5">
+Kevin-- we need a consolidated view of the proposal. I think we are
+close to consensus, but folks may be having issues mentally rolling up
+the tweaks.
+</quotepara></quote><quotepara depth="4">
+Indeed. I'll get something formal back out to the list within the next
+24
+hours.
+</quotepara></quote><quotepara depth="3">
+As promised:
+
+</quotepara><quotepara depth="3"><url>http://docs.google.com/Doc?id=dgf9q4v4_3pz4h2shq</url>
+</quotepara></quote><quotepara depth="2">
+A few minor comments:
+
+</quotepara><quotepara depth="2">1. In the schema:
+
+</quotepara><quotepara depth="2">       &lt;xs:element name="gadget" minOccurs="1"&gt;
+         &lt;xs:complexType&gt;
+           &lt;xs:attribute name="version" type="xs:string" use="required"/&gt;
+           &lt;xs:element name="label" minOccurs="0" maxOccurs="unbounded"&gt;
+             &lt;xs:simpleType&gt;
+               &lt;xs:restriction base="xs:string"&gt;
+                 &lt;xs:enumeration value="current"/&gt;
+                 &lt;xs:enumeration value="development"/&gt;
+               &lt;/xs:restriction&gt;
+             &lt;/xs:simpleType&gt;
+           &lt;xs:element name="spec" type="xs:anyURI" use="required"/&gt;
+         &lt;/xs:complexType&gt;
+       &lt;/xs:element&gt;
+
+</quotepara><quotepara depth="2"> ... I believe &lt;xs:element&gt; can't be directly embedded in complexType,
+but needs to be in sequence/choice/etc...
+</quotepara></quote><quotepara depth="1">
+Ok.
+
+</quotepara><quote depth="2"><quotepara depth="2">2. The simpleType/restriction/enumeration as you have it here
+restricts the value to only current/development, when I think you're
+saying those are two built-in values, but not the only values.  You
+could do:
+
+</quotepara><quotepara depth="2"> &lt;xs:union&gt;
+   &lt;xs:simpleType&gt;
+       &lt;xs:restriction base="xs:string" minLength="1"&gt;
+   &lt;/xs:simpleType&gt;
+   &lt;xs:simpleType&gt;
+       &lt;xs:restriction base="xs:string"&gt;
+         &lt;xs:enumeration value="current"/&gt;
+         &lt;xs:enumeration value="development"/&gt;
+       &lt;/xs:restriction&gt;
+   &lt;/xs:simpleType&gt;
+ &lt;/xs:union&gt;
+
+</quotepara><quotepara depth="2">... which looks odd, but is IMO the right way to indicate "any
+non-empty string, but here's a couple of built-in values".
+</quotepara></quote><quotepara depth="1">
+Yeah, that sounds like what I want.
+
+</quotepara><quote depth="2"><quotepara depth="2">3. "Containers SHOULD accept any label or version string, but MAY
+optionally restrict allowed characters for security purposes."
+
+</quotepara><quotepara depth="2">Why have any limitations?  SHOULD and MAY here adds potential
+incompatibilities that are avoidable.  If there's going to be
+restrictions in some containers, why not just limit it to XML IDs, or
+some similar production?
+</quotepara></quote><quotepara depth="1">
+I'd prefer no restrictions (to better cater to international sites that
+will want arbitrary unicode characters), but I didn't want to preclude
+security-oriented restrictions. I don't have a strong opinion on this.
+
+</quotepara><quote depth="2"><quote depth="3"><quote depth="4"><quote depth="5"><quotepara depth="5">On Oct 28, 2:55 pm, "Kevin Brown" &lt;<email>e...@google.com</email>&gt; wrote:
+</quotepara><quote depth="6"><quotepara depth="6">On Tue, Oct 28, 2008 at 3:26 PM, John Hjelmstad &lt;<email>fa...@google.com</email>&gt;
+wrote:
+</quotepara><quote depth="7"><quotepara depth="7">It's unclear to me what we're voting on right now. Per the spec
+process
+guidelines
+(<url>http://www.opensocial.org/Technical-Resources/spec-process</url>)&lt;
+<url>http://www.opensocial.org/Technical-Resources/spec-process</url>&gt;:
+I'm not sure what stage we're in on this proposal.
+So I'll split my vote:
++1 on the general concept of adding some labeling/versioning
+manifest
+capability, ie. on the "Topic Ideas" piece of this proposal.
+</quotepara></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quotepara depth="7">-1 for the moment on the proposal as it currently exists, as I
+think
+we
+need to fill in a lot of details, and the proposal is posited
+neither
+as a
+patch nor as something that easily translates to one (whether to
+the
+crufty
+old gadgets spec doc, the new one, the latter being far
+preferred...
+or a
+standalone new document). Since voting has commenced on the thread
+I'll
+assume we're in "Step 3."
+</quotepara></quote><quotepara depth="6">
+Yeah, I agree -- you can't vote on something until it's fully baked.
+That's
+how we wound up making 0.8.1...
+
+</quotepara><quote depth="7"><quotepara depth="7">So, some comments:
+- Big +1 on standardizing exactly which labels are applicable,
+with
+intended semantics. Without that, labels are essentially
+meaningless
+from a
+spec perspective.
+</quotepara></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quotepara depth="7">- What's the purpose of the "version" string, particularly given
+that
+it
+can change at any whim? If it's just another label, I vote for
+removing it
+until we give it meaning.
+</quotepara></quote><quotepara depth="6">
+I may move a label from one version to another, but I never change
+the
+version string (though I might remove it). Labels are dynamic and
+versions
+are static.
+
+</quotepara><quotepara depth="6">This is critical for rolling updates. If I deploy my gadget to a
+container
+that has hundreds of servers, currently the developer is in a bind
+because
+they can't be sure that all servers are going to have the updated
+app
+yet.
+The version string provides a mechanism to ensure that requests are
+always
+routed appropriately, and that version x is always available
+regardless
+of
+labels.
+
+</quotepara><quotepara depth="6">So, on Monday I might publish this:
+
+</quotepara><quotepara depth="6">&lt;gadget version="1.0"&gt;&lt;label&gt;current&lt;/label&gt;...&lt;/gadget&gt;
+&lt;gadget version="2.0"&gt;&lt;label&gt;testing&lt;/label&gt;...&lt;/gadget&gt;
+
+</quotepara><quotepara depth="6">and on Tuesday I might publish this:
+
+</quotepara><quotepara depth="6">&lt;gadget version="2.0"&gt;&lt;label&gt;current&lt;/label&gt;...&lt;/gadget&gt;
+&lt;gadget version="1.0"&gt;...&lt;/gadget&gt;
+
+</quotepara><quotepara depth="6">I want to be sure that when I hit an app server that thinks that
+current is
+1.0, they don't try to render against a gadget server that thinks
+current is
+2.0. The app server needs to be responsible for resolving labels
+into
+versions.
+
+</quotepara><quote depth="7"><quotepara depth="7">- How is rendering modified by the addition of this document type?
+  + How is document type to be determined by a renderer? Substring
+"peek"
+(for &lt;Module&gt; vs. &lt;app&gt;)? Content type? Hybrid? Etc...
+</quotepara></quote><quotepara depth="6">
+I'd prefer a DTD, since that's standard. It can be safely assumed
+that
+the
+lack of a DTD indicates the existing gadget spec.
+
+</quotepara><quote depth="7"><quotepara depth="7">  + Is the applicable label overridable during rendering? Eg.
+     render?url=<url>http://foo.com/app.manifest.xml&amp;label=override</url>
+</quotepara></quote><quotepara depth="6">
+That would be where the version would go, not the label (see above).
+
+</quotepara><quotepara depth="6">&lt;<url>http://foo.com/app.manifest.xml&amp;label=override</url>&gt;
+
+</quotepara><quote depth="7"><quotepara depth="7">  + What happens when a given label is not available? What's the
+defined
+fallback pattern, if any?
+</quotepara></quote><quotepara depth="6">
+The only required label would be "current" -- the other labels
+should
+be
+made to developers via some other mechanism (probably UI) as stated
+in
+the
+first post.
+
+</quotepara><quotepara depth="6">- What are the caching characteristics of these manifests? Is
+caching
+
+</quotepara><quote depth="7"><quotepara depth="7">intended to sync up with their "child" gadgets at all? If not,
+will
+that be
+confusing to developers?
+</quotepara></quote><quotepara depth="6">
+The gadget urls become largely meaningless from a cacheability
+standpoint,
+and the app uses the existing gadget rules (which are, incidentally,
+undefined today) for handling the manifests.
+
+</quotepara><quote depth="7"><quotepara depth="7">- How can developers know (quickly/conveniently), in the
+"no-explicit-label-specified" case, which gadget spec is being
+read?
+Several
+mechanisms are possible: X-&lt;Foo&gt; header, injected comment during
+rendering,
+some other inspection API that a container must provide...
+</quotepara></quote><quotepara depth="6">
+The version would always be used, not the label. There's no reason
+why
+a
+version would ever need to be missing, unless the rendering request
+was
+pointing to a gadget spec directly and not to an app manifest (in
+which
+case
+behavior is unchanged).
+
+</quotepara><quote depth="7"><quotepara depth="7">- Any implications on metadata APIs (to the extent they're
+codified
+in the
+spec)?
+</quotepara></quote><quotepara depth="6">
+They're not codified in the spec (other than an acknowledgement that
+they
+might exist), so there can't be any implications for them. From a
+practical
+standpoint, there wouldn't be any change needed -- the returned
+iframe
+urls
+would just have an extra parameter, and they might optionally
+support
+taking
+a label on input.
+
+</quotepara><quote depth="7"><quotepara depth="7">- I think an experiments framework would be great as well, and
+that
+there's
+potential to dovetail nicely with versioning/labeling. But I agree
+with
+Scott that we should add it later, or at least as a separate but
+complementary proposal. It's substantial enough on its own to
+merit
+considerable discussion on its requirements:
+  + types of experiments to provide (percent, user group,
+targeted...)
+  + how results should be communicated with developers and
+containers
+(dashboard, data APIs, optional)
+  + what happens when a given gadget isn't an opensocial app (ie.
+how
+to
+define experiments in that case)
+</quotepara></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quotepara depth="7">--John
+</quotepara></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quotepara depth="7">On Tue, Oct 28, 2008 at 11:29 AM, Kevin Brown &lt;<email>e...@google.com</email>&gt;
+wrote:
+</quotepara></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quotepara depth="8">On Tue, Oct 28, 2008 at 9:21 AM, Scott Seely &lt;<email>sSe...@myspace.com</email>
+</quotepara></quote></quote></quote></quote></quote><quotefooter type="noise" depth="3">
+</quotefooter><quote depth="4"><quote depth="5"><quote depth="6"><quote depth="7"><quote depth="8"><quotepara depth="8">wrote:
+</quotepara></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9"> Do we really need to have the % thing and the limit item?
+Here's
+how I
+understand the original proposal:
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">1.       We have standard tags for different sets of gadget XML.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">2.       OpenSocial will be enhanced to allow an application to
+query
+the container about available versions.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">3.       The application will be able to display a selection
+mechanism
+to allow the user to pick an available version.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">Given the above 3 items, it seems like an application could
+handle
+the
+beta invites and availability on their own. Some link on the
+page
+might be
+to 'apply for beta' where the user contacts the developer
+server.
+If they
+are accepted, the application can store some appData saying
+"beta
+participant". The developer can then use this mechanism to limit
+the number
+of beta participants without the container intervening.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">We can get the multiple version feature in now and add things
+like
+beta
+participant management in a future version. The original
+proposal
+does not
+block us from enhancing the feature later.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">-1 on the addition to the proposal, because the beta feature can
+be
+easily implemented by app developers.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">+1 on Kevin's original proposal. That would put us at 5 +1s for
+this
+item, assuming that the negation of the additions is OK with the
+list.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quotepara depth="8">I think that might work in general, though my take is that Ram is
+looking
+more for an A/B testing mechanism. It's not clear to me how
+important that
+is without getting more feedback from developers.
+</quotepara></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">*From:* <email>opensocial-and-gadgets-spec@googlegroups.com</email> [mailto:
+<email>opensocial-and-gadgets-spec@googlegroups.com</email>] *On Behalf Of
+*Louis
+Ryan
+*Sent:* Monday, October 27, 2008 8:36 AM
+*To:* <email>opensocial-and-gadgets-spec@googlegroups.com</email>
+*Subject:* [opensocial-and-gadgets-spec] Re: [0.9 proposal]
+Versioning
+applications
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">+1
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">One important need is for experiments rolled out to a given set
+of
+users.
+We could standardize that a beta label for each version can be
+associated
+with
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">- A % of users for whom the beta should be active. Enabled by
+fn(owner
+id) % &lt;pct beta&gt;
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">- A list of userids for whem the beta is enabled. Constrained to
+100?
+userids
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">An open question is whether to select by owner id or viewer id
+here
+but I
+think owner would be more consistent.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">Proxied rendering will provide the ability to do more
+fine-grained
+experiments than this so I'd be reluctant to support more
+complicated
+selector mechanisms.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">On Sun, Oct 26, 2008 at 11:32 PM, Ropu &lt;<email>rovagn...@gmail.com</email>&gt;
+</quotepara></quote></quote></quote></quote></quote></quote></quote><quotepara depth="2">wrote:
+</quotepara><quote depth="3"><quote depth="4"><quote depth="5"><quote depth="6"><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">+1
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">Labels can be 'Alpha', 'Beta', 'Stable'
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">ropu
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">On Mon, Oct 27, 2008 at 2:25 PM, Zhen Wang &lt;<email>wa...@google.com</email>&gt;
+wrote:
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">+1
+I would suggest that we also standardize the labels (e.g.
+"development",
+"stable").
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">On Sat, Oct 25, 2008 at 2:52 AM, Kevin Brown &lt;<email>e...@google.com</email>&gt;
+wrote:
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">I would like to propose a mechanism whereby application authors
+can
+version their code so that experiments and deployment can be
+done
+in a more
+controlled manner.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">Why this is important:
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">Currently, an app's url is unchangeable, making it very
+difficult
+to run
+multiple versions (say, in development environments and
+production
+environments) without changing the url. Since most sites key
+directory
+information (such as ranking) against this url, this is
+especially
+problematic.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">There are an infinite number of ways to achieve this, some more
+disruptive than others.
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">My proposal is that a new document type be created that serves
+as a
+manifest for the existing documents. The form would look
+something
+like this
+(avoiding a full XSD at this stage):
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">&lt;app&gt;
+  &lt;gadget version="2.0"&gt;
+    &lt;label&gt;development&lt;/label&gt;
+    &lt;spec&gt;/specs/2.0/gadget.xml&lt;/spec&gt;
+  &lt;/gadget&gt;
+  &lt;gadget version="1.0"&gt;
+    &lt;label&gt;current&lt;/label&gt;
+    &lt;spec&gt;/specs/1.0/gadget.xml&lt;/spec&gt;
+  &lt;/gadget&gt;
+&lt;/app&gt;
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">Where:
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">- Version is an arbitrary string
+- Spec points to a standard gadget spec file
+- Labels are used to determine which version of a gadget to
+display
+under
+different circumstances (development, production, etc.)
+</quotepara></quote></quote></quote><quotepara depth="6">
+</quotepara><quote depth="7"><quote depth="8"><quote depth="9"><quotepara depth="9">Ideally, containers should provide a mechanism whereby certain
+labels can
+be chosen by users of the gadget in order to try out
+</quotepara></quote></quote></quote></quote></quote></quote></quote><quotepara depth="2">experimental
+</quotepara><quote depth="3"><quote depth="4"><quote depth="5"><quote depth="6"><quotefooter type="noise" depth="6">
+...
+
+</quotefooter><quotepara depth="6">read more »
+</quotepara></quote></quote><quotefooter type="noise" depth="4">
+</quotefooter></quote></quote></quote></quote><footer type="list-management" depth="0">--~--~---------~--~----~------------~-------~--~----~
+You received this message because you are subscribed to the Google Groups<br/>"OpenSocial and Gadgets Specification Discussion" group.
+To post to this group, send email to<br/><email>opensocial-and-gadgets-spec@googlegroups.com</email>
+To unsubscribe from this group, send email to<br/>opensocial-and-gadgets-spec+<email>unsubscribe@googlegroups.com</email>
+For more options, visit this group at<br/><url>http://groups.google.com/group/opensocial-and-gadgets-spec?hl=en</url>
+-~----------~----~----~----~------~----~------~--~---
+
+</footer></body></message>
