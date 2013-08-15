@@ -20,8 +20,17 @@ require 'json'
 require 'RoxyHttp'
 require 'xcc'
 require 'MLClient'
+require 'date'
+require 'ml_rest'
 
-class ExitException < Exception
+class ExitException < Exception; end
+
+class HelpException < Exception
+  attr_reader :command, :message
+  def initialize(command, message = nil)
+    @command = command
+    @message = message
+  end
 end
 
 class DanglingVarsException < Exception
@@ -43,38 +52,30 @@ class ServerConfig < MLClient
     @environment = @properties["environment"]
     @config_file = @properties["ml.config.file"]
 
-    if (!@properties["ml.server"]) then
-      @properties["ml.server"] = @properties["ml.#{@environment}-server"]
-    end
+    @properties["ml.server"] = @properties["ml.#{@environment}-server"] unless @properties["ml.server"]
+
     @hostname = @properties["ml.server"]
     @bootstrap_port_four = @properties["ml.bootstrap-port-four"]
     @bootstrap_port_five = @properties["ml.bootstrap-port-five"]
 
-    super({
+    super(
       :user_name => @properties["ml.user"],
       :password => @properties["ml.password"],
       :logger => options[:logger]
-    })
+    )
 
     @server_version = @properties["ml.server-version"].to_i
 
-    if (@properties["ml.bootstrap-port"])
+    if @properties["ml.bootstrap-port"]
       @bootstrap_port = @properties["ml.bootstrap-port"]
     else
-      if (@server_version == 4) then
+      if @server_version == 4
         @bootstrap_port = @bootstrap_port_four
       else
         @bootstrap_port = @bootstrap_port_five
         @properties["ml.bootstrap-port"] = @bootstrap_port
       end
     end
-
-    logger.debug "config: #{@config_file}"
-    logger.debug "pwd: #{ServerConfig.pwd}"
-    logger.debug "user: #{@ml_username}"
-    logger.debug "password: #{@ml_password}"
-    logger.debug "hostname: #{@hostname}"
-    logger.debug "port: #{@bootstrap_port}"
   end
 
   def self.pwd
@@ -93,47 +94,88 @@ class ServerConfig < MLClient
   end
 
   def self.init
-    # allow the caller to replace roxy with the new app name
     sample_config = File.expand_path("../../sample/ml-config.sample.xml", __FILE__)
     sample_properties = File.expand_path("../../sample/build.sample.properties", __FILE__)
     build_properties = File.expand_path("../../build.properties", __FILE__)
-    force = find_arg(['--force']) != nil ? true : false
-    force_props = find_arg(['--force-properties']) != nil ? true : false
-    force_config = find_arg(['--force-config']) != nil ? true : false
-    if (!force and !force_props and File.exists?(build_properties)) then
-      logger.error "build.properties file found."
-      logger.error "   Use --force to reset all configuration files."
-      logger.error "   Use --force-properties to reset just the properties file.\n"
+    options_dir = File.expand_path("../../../rest-api/config/options", __FILE__)
+    rest_ext_dir = File.expand_path("../../../rest-api/ext", __FILE__)
+    rest_transforms_dir = File.expand_path("../../../rest-api/transforms", __FILE__)
+    options_file = File.expand_path("../../../rest-api/config/options/all.xml", __FILE__)
+    sample_options = File.expand_path("../../sample/all.sample.xml", __FILE__)
+
+    force = find_arg(['--force']).present?
+    force_props = find_arg(['--force-properties']).present?
+    force_config = find_arg(['--force-config']).present?
+    app_type = find_arg(['--app-type'])
+
+    error_msg = []
+    if !force && !force_props && File.exists?(build_properties)
+      error_msg << "build.properties has already been created."
     else
       #create clean properties file
       FileUtils.cp sample_properties, build_properties
 
+      properties_file = File.read(build_properties)
+
+      # replace the appname if one is provided
       name = ARGV.shift
-      if (name)
-        properties_file = open(build_properties).read
-        properties_file.gsub!(/app-name=roxy/, "app-name=#{name}")
-        open(build_properties, 'w') {|f| f.write(properties_file) }
+      properties_file.gsub!(/app-name=roxy/, "app-name=#{name}") if name
+
+      # do app-type customizations
+      properties_file.gsub!(/app-type=mvc/, "app-type=#{app_type}")
+
+      # If this app will use the ML REST API, we need rewrite-resolved-globally to get those URLs to work
+      if ["rest", "hybrid"].include? app_type
+        properties_file.gsub!(/rewrite-resolves-globally=/, "rewrite-resolves-globally=true")
       end
+
+      if app_type == "rest"
+        # rest applications don't use Roxy's MVC structure, so they can use MarkLogic's rewriter and error handler
+        properties_file.gsub!(/url-rewriter=\/roxy\/rewrite.xqy/, "url-rewriter=/MarkLogic/rest-api/rewriter.xqy")
+        properties_file.gsub!(/error-handler=\/roxy\/error.xqy/, "error-handler=/MarkLogic/rest-api/error-handler.xqy")
+      end
+
+      # replace the text =random with a random string
+      o = (33..126).to_a
+      properties_file.gsub!(/=random/) do |match|
+        random = (0...20).map{ o[rand(o.length)].chr }.join
+        "=#{random}"
+      end
+
+      # save the replacements
+      open(build_properties, 'w') {|f| f.write(properties_file) }
     end
 
-    properties = ServerConfig.properties
-    target_config = File.expand_path(properties["ml.config.file"], __FILE__)
-    if (!force and !force_config and File.exists?(target_config)) then
-      logger.error "ml-config.xml file found."
-      logger.error "   Use --force to reset all configuration files."
-      logger.error "   Use --force-config to reset just the configuration file.\n"
+    # If this is a rest or hybrid app, set up some initial options
+    if ["rest", "hybrid"].include? app_type
+      FileUtils.mkdir_p rest_ext_dir
+      FileUtils.mkdir_p rest_transforms_dir
+      FileUtils.mkdir_p options_dir
+      FileUtils.cp sample_options, options_file
+      FileUtils.cp(
+        File.expand_path("../../sample/properties.sample.xml", __FILE__),
+        File.expand_path("../../../rest-api/config/properties.xml", __FILE__))
+    end
+
+    target_config = File.expand_path(ServerConfig.properties["ml.config.file"], __FILE__)
+
+    if !force && !force_config && File.exists?(target_config)
+      error_msg << "ml-config.xml has already been created."
     else
       #create clean marklogic configuration file
       FileUtils.cp sample_config, target_config
     end
+
+    raise HelpException.new("init", error_msg.join("\n")) if error_msg.length > 0
   end
 
   def self.initcpf
     sample_config = File.expand_path("../../sample/pipeline-config.sample.xml", __FILE__)
     target_config = File.expand_path("../../pipeline-config.xml", __FILE__)
 
-    if (File.exists?(target_config)) then
-      logger.error "initcpf has already been run. Use --force to rerun it.\n"
+    force = find_arg(['--force']).present?
+    if !force && File.exists?(target_config)
+      raise HelpException.new("initcpf", "cpf configuration has already been created.")
     else
       FileUtils.cp sample_config, target_config
     end
@@ -172,10 +214,7 @@ class ServerConfig < MLClient
   def self.request_collation
     puts "What is the collation URI (leave blank for the root collation)?"
     collation = gets.chomp
-    if collation == ""
-      collation = "http://marklogic.com/collation/"
-    end
-    collation
+    collation = "http://marklogic.com/collation/" if collation.blank?
   end
 
   def self.request_range_value_positions
@@ -207,9 +246,7 @@ class ServerConfig < MLClient
     uri = gets.chomp
     puts "What is the attribute's localname?"
     localname = gets.chomp
-    if scalar_type == "string" # string
-      collation = request_collation
-    end
+    collation = request_collation if scalar_type == "string"
     positions = request_range_value_positions
     index = "        <range-element-attribute-index>
           <scalar-type>#{scalar_type}</scalar-type>
@@ -236,9 +273,7 @@ class ServerConfig < MLClient
     uri = gets.chomp
     puts "What is the element's localname?"
     localname = gets.chomp
-    if scalar_type == "string" # string
-      collation = request_collation
-    end
+    collation = request_collation if scalar_type == "string" # string
     positions = request_range_value_positions
     index = "        <range-element-index>
           <scalar-type>#{scalar_type}</scalar-type>
@@ -260,25 +295,25 @@ class ServerConfig < MLClient
     r = nil
     if @server_version == 4
       r = execute_query_4 query, properties
-    else
+    elsif @server_version == 5 || @server_version == 6
       r = execute_query_5 query, properties
+    else
+      r = execute_query_7 query, properties
     end
 
-    if (r.code.to_i != 200)
-      raise ExitException.new(r.body)
-    end
+    raise ExitException.new(r.body) unless r.code.to_i == 200
 
     return r
   end
 
   def restart
     group = ARGV.shift
-    if (group)
-      logger.info("Restarting MarkLogic Server group #{group} on #{@hostname}")
+    if group
+      logger.info "Restarting MarkLogic Server group #{group} on #{@hostname}"
     else
-      logger.info("Restarting MarkLogic Server on #{@hostname}")
+      logger.info "Restarting MarkLogic Server on #{@hostname}"
     end
-    setup = File.read(File.expand_path('../xquery/setup.xqy', __FILE__))
+    setup = File.read File.expand_path('../xquery/setup.xqy', __FILE__)
     r = execute_query %Q{#{setup} setup:do-restart("#{group}")}
   end
 
@@ -291,7 +326,7 @@ class ServerConfig < MLClient
     package_version = ARGV.shift if ARGV.length
 
     runme = %Q{cd #{src_dir} && }
-    if (is_windows?) then
+    if is_windows?
       runme << File.expand_path("../depx-0.1/depx.bat", __FILE__)
     else
       runme << File.expand_path("../depx-0.1/depx", __FILE__)
@@ -301,8 +336,7 @@ class ServerConfig < MLClient
     runme << " #{package_version} " if package_version
     logger.debug runme
 
-    output = `#{runme}`
-    logger.info(output)
+    logger.info `#{runme}`
   end
 
   def config
@@ -310,65 +344,63 @@ class ServerConfig < MLClient
   end
 
   def bootstrap
-    if @hostname && @hostname != ""
-      logger.info("Bootstrapping your project into MarkLogic on #{@hostname}...")
-      setup = File.read(File.expand_path('../xquery/setup.xqy', __FILE__))
-      r = execute_query %Q{#{setup} setup:do-setup(#{get_config})}
+    raise ExitException.new("Bootstrap requires the target environment's hostname to be defined") unless @hostname.present?
 
-      logger.debug r.body
+    logger.info "Bootstrapping your project into MarkLogic on #{@hostname}..."
+    setup = File.read(File.expand_path('../xquery/setup.xqy', __FILE__))
+    r = execute_query %Q{#{setup} setup:do-setup(#{get_config})}
 
-      if (r.body.match("<error:error")) then
-        logger.error r.body
-        logger.error "... Bootstrap FAILED"
-        return false
-      else
-        if (r.body.match("(note: restart required)")) then
-          logger.warn("************************************")
-          logger.warn("*** RESTART OF MARKLOGIC IS REQUIRED")
-          logger.warn("************************************")
-        end
-        logger.info("... Bootstrap Complete")
-        return true
-      end
+    logger.debug r.body
+
+    if r.body.match("<error:error")
+      logger.error r.body
+      logger.error "... Bootstrap FAILED"
+      return false
     else
-      raise ExitException.new("Bootstrap requires the target environment's hostname to be defined")
+      if r.body.match("(note: restart required)")
+        logger.warn "************************************"
+        logger.warn "*** RESTART OF MARKLOGIC IS REQUIRED"
+        logger.warn "************************************"
+      end
+      logger.info "... Bootstrap Complete"
+      return true
     end
   end
 
   def wipe
-    logger.info("Wiping MarkLogic setup for your project on #{@hostname}...")
+    logger.info "Wiping MarkLogic setup for your project on #{@hostname}..."
     setup = File.read(File.expand_path('../xquery/setup.xqy', __FILE__))
     r = execute_query %Q{#{setup} setup:do-wipe(#{get_config})}
     logger.debug r.body
 
-    if (r.body.match("<error:error")) then
+    if r.body.match("<error:error")
       logger.error r.body
       logger.error "... Wipe FAILED"
       return false
     else
-      if (r.body.match("(note: restart required)")) then
-        logger.warn("************************************")
-        logger.warn("*** RESTART OF MARKLOGIC IS REQUIRED")
-        logger.warn("************************************")
+      if r.body.match("(note: restart required)")
+        logger.warn "************************************"
+        logger.warn "*** RESTART OF MARKLOGIC IS REQUIRED"
+        logger.warn "************************************"
       end
-      logger.info("... Wipe Complete")
+      logger.info "... Wipe Complete"
       return true
     end
   end
 
   def validate_install
-    logger.info("Validating your project installation into MarkLogic on #{@hostname}...")
+    logger.info "Validating your project installation into MarkLogic on #{@hostname}..."
     setup = File.read(File.expand_path('../xquery/setup.xqy', __FILE__))
     begin
       r = execute_query %Q{#{setup} setup:validate-install(#{get_config})}
       logger.info "code: #{r.code.to_i}"
       logger.info r.body
 
-      if (r.body.match("<error:error")) then
+      if r.body.match("<error:error")
         logger.error r.body
         result = false
       else
-        logger.info("... Validation SUCCESS")
+        logger.info "... Validation SUCCESS"
         result = true
       end
     rescue Net::HTTPFatalError => e
@@ -377,54 +409,46 @@ class ServerConfig < MLClient
       result = false
     end
     result
-
-    # logger.debug r.body
-
-    # if (r.body.match("<error:error") or r.body.match(%Q{"error":})) then
-    #   # logger.error r.body
-    #   logger.error "... Validation FAILED"
-    # else
-    #   logger.info("... Validation SUCCESS")
-    # end
   end
 
   def deploy
     what = ARGV.shift
-    if (what)
-      case what
-        when 'content'
-          deploy_content
-        when 'modules'
-          deploy_modules
-        when 'cpf'
-          deploy_cpf
-        else
-          puts Help.deploy
-      end
-    else
-      puts Help.deploy
+    raise HelpException.new("deploy", "Missing WHAT") unless what
+
+    case what
+      when 'content'
+        deploy_content
+      when 'modules'
+        deploy_modules
+      when 'schemas'
+        deploy_schemas
+      when 'cpf'
+        deploy_cpf
+      else
+        raise HelpException.new("deploy", "Invalid WHAT")
     end
   end
 
+  def load
+    dir = ARGV.shift
+    db = find_arg(['--db']) || @properties['ml.content-db']
+    remove_prefix = find_arg(['--remove-prefix'])
+    remove_prefix = File.expand_path(remove_prefix) if remove_prefix
+    quiet = find_arg(['--quiet'])
+
+    add_prefix = find_arg(['--add-prefix'])
+
+    raise HelpException.new("load", "File or Directory is required!") unless dir
+    count = load_data dir, :remove_prefix => remove_prefix, :add_prefix => add_prefix, :db => db, :quiet => quiet
+    logger.info "\nLoaded #{count} #{pluralize(count, "document", "documents")} from #{dir} to #{xcc.hostname}:#{xcc.port}/#{db} at #{DateTime.now.strftime('%m/%d/%Y %I:%M:%S %P')}\n"
+  end
+
   def load_data(dir, options = {})
-    batch_override = nil
-    if (ARGV[0] && ARGV[0].match("--batch=(yes|no)"))
-      batch_override = ARGV.shift.split("=")[1] == "yes"
-    end
-    batch = (((@environment != "local") && (batch_override != false)) || (batch_override == true))
+    batch_override = find_arg(['--batch'])
+    batch = @environment != "local" && batch_override.blank? || batch_override.to_b
 
     options[:batch_commit] = batch
-    options[:permissions] =
-      [
-        {
-          :capability => Roxy::ContentCapability::EXECUTE,
-          :role => @properties['ml.app-role']
-        },
-        {
-          :capability => Roxy::ContentCapability::READ,
-          :role => @properties['ml.app-role']
-        }
-      ] unless options[:permissions]
+    options[:permissions] = permissions(@properties['ml.app-role'], Roxy::ContentCapability::ER) unless options[:permissions]
     xcc.load_files(File.expand_path(dir), options)
   end
 
@@ -438,21 +462,21 @@ class ServerConfig < MLClient
   #
   def clean
     what = ARGV.shift
-    if (what)
-      case what
-        when 'content'
-          clean_content
-        when 'modules'
-          clean_modules
-        when 'triggers'
-          clean_triggers
-        when 'schemas'
-          clean_schemas
-        when 'cpf'
-          clean_cpf
-      end
-    else
-      puts Help.clean
+    raise HelpException.new("clean", "Missing WHAT") unless what
+
+    case what
+      when 'content'
+        clean_content
+      when 'modules'
+        clean_modules
+      when 'triggers'
+        clean_triggers
+      when 'schemas'
+        clean_schemas
+      when 'cpf'
+        clean_cpf
+      else
+        raise HelpException.new("clean", "Invalid WHAT")
     end
   end
 
@@ -460,15 +484,15 @@ class ServerConfig < MLClient
   # Invokes unit tests for the project
   #
   def test
-    if (@environment == "prod") then
+    if @environment == "prod"
       logger.error "There is no Test database on the Production server"
     else
-      if (find_arg(['--skip-suite-teardown']) != nil)
+      if find_arg(['--skip-suite-teardown']).present?
         suiteTearDown = "&runsuiteteardown=false"
       else
         suiteTearDown = "&runsuiteteardown=true"
       end
-      if (find_arg(['--skip-test-teardown']) != nil)
+      if find_arg(['--skip-test-teardown']).present?
         testTearDown = "&runteardown=false"
       else
         testTearDown = "&runteardown=true"
@@ -476,9 +500,7 @@ class ServerConfig < MLClient
       r = go %Q{http://#{@hostname}:#{@properties["ml.test-port"]}/test/list}, "get"
       suites = []
       r.body.split(">").each do |line|
-        if (line.match("suite path")) then
-          suites << line.gsub(/.*suite path="([^"]+)".*/, '\1').strip
-        end
+        suites << line.gsub(/.*suite path="([^"]+)".*/, '\1').strip if line.match("suite path")
       end
 
       suites.each do |suite|
@@ -505,17 +527,15 @@ class ServerConfig < MLClient
     r = execute_query %Q{xdmp:database-backup-status(#{job})}
     statuses = []
     r.body.split("\n").each do |line|
-      if (line.match("job:status")) then
-        statuses << line.gsub(/.*<job:status>([^<]+)<\/job:status>/, '\1').strip
-      end
+      statuses << line.gsub(/.*<job:status>([^<]+)<\/job:status>/, '\1').strip if line.match("job:status")
     end
 
     completed_count = 0
     failed_count = 0
     statuses.each do |status|
-      if (status == "completed") then
+      if status == "completed"
         completed_count = completed_count + 1
-      elsif (status == "failed") then
+      elsif status == "failed"
         failed_count = failed_count + 1
       end
     end
@@ -526,12 +546,14 @@ class ServerConfig < MLClient
   end
 
   def recordloader
-    properties_file = File.expand_path("../../#{ARGV.shift}", __FILE__)
+    filename = ARGV.shift
+    raise HelpException.new("recordloader", "configfile is required!") unless filename
+    properties_file = File.expand_path("../../#{filename}", __FILE__)
     properties = ServerConfig.load_properties(properties_file, "")
     properties = ServerConfig.substitute_properties(properties, @properties, "")
 
     properties.each do |k, v|
-      logger.info("#{k}=#{v}")
+      logger.debug "#{k}=#{v}"
     end
 
     prop_string = ""
@@ -545,12 +567,14 @@ class ServerConfig < MLClient
   end
 
   def xqsync
-    properties_file = File.expand_path("../../#{ARGV.shift}", __FILE__)
+    filename = ARGV.shift
+    raise HelpException.new("xqsync", "configfile is required!") unless filename
+    properties_file = File.expand_path("../../#{filename}", __FILE__)
     properties = ServerConfig.load_properties(properties_file, "")
     properties = ServerConfig.substitute_properties(properties, @properties, "")
 
     properties.each do |k, v|
-      logger.info("#{k}=#{v}")
+      logger.debug "#{k}=#{v}"
     end
     prop_string = ""
     properties.each do |k,v|
@@ -562,180 +586,241 @@ class ServerConfig < MLClient
     `#{runme}`
   end
 
-private
-  def deploy_modules
-    ignore_us = []
-    ignore_us = ["^#{@properties['ml.xquery-test.dir']}.*$"] if @properties['ml.xquery-test.dir']
-    app_config_file = "#{@properties['ml.xquery.dir']}/app/config/config.xqy"
-    ignore_us << "^#{app_config_file}$"
-    load_data @properties["ml.xquery.dir"], {
-      :add_prefix => "/",
-      :remove_prefix => @properties["ml.xquery.dir"],
-      :db => @properties['ml.modules-db'],
-      :ignore_list => ignore_us
-    }
+  def corb
+    connection_string = %Q{xcc://#{@properties['ml.user']}:#{@properties['ml.password']}@#{@properties['ml.server']}:#{@properties['ml.xcc-port']}/#{@properties['ml.content-db']}}
+    collection_name = find_arg(['--collection']) || '""'
+    xquery_module = find_arg(['--modules'])
+    uris_module = find_arg(['--uris']) || '""'
 
-    if (File.exist?(app_config_file))
-      buffer = File.read(app_config_file)
-      @properties.each do |k, v|
-        buffer.gsub!("@#{k}", v)
+
+    raise HelpException.new("corb", "modules is required") if xquery_module.blank?
+    raise HelpException.new("corb", "uris or collection is required ") if uris_module == '""' && collection_name == '""'
+
+    xquery_module = xquery_module.reverse.chomp("/").reverse
+    uris_module = uris_module.reverse.chomp("/").reverse
+    thread_count = find_arg(['--threads']) || "1"
+    thread_count = thread_count.to_i
+    module_root = find_arg(['--root']) || '"/"'
+    modules_database = @properties['ml.modules-db']
+    install = find_arg(['--install']) == "true"
+
+    matches = Dir.glob(File.expand_path("../java/*xcc*.jar", __FILE__))
+    raise "Missing XCC Jar." if matches.length == 0
+
+    xcc_file = matches[0]
+    runme = %Q{java -cp #{File.expand_path("../java/corb.jar", __FILE__)}#{path_separator}#{xcc_file} com.marklogic.developer.corb.Manager #{connection_string} #{collection_name} #{xquery_module} #{thread_count} #{uris_module} #{module_root} #{modules_database} #{install}}
+    logger.info runme
+    `#{runme}`
+  end
+
+  def credentials
+    logger.info "credentials #{@environment}"
+    # ml will error on invalid environment
+    # ask user for admin username and password
+    puts "What is the admin username?"
+    user = gets.chomp
+    puts "What is the admin password?"
+    # we don't want to install highline
+    # we can't rely on STDIN.noecho with older ruby versions
+    system "stty -echo"
+    password = gets.chomp
+    system "stty echo"
+
+    # Create or update environment properties file
+    filename = "#{@environment}.properties"
+    properties = {}
+    properties_file = File.expand_path("../#{filename}", File.dirname(__FILE__))
+    begin
+      if (File.exists?(properties_file))
+        properties = ServerConfig.load_properties(properties_file, "")
+      else
+        logger.info "#{properties_file} does not yet exist"
+      end
+    rescue => err
+      puts "Exception: #{err}"
+    end
+    properties["user"] = user
+    properties["password"] = password
+    open(properties_file, 'w') {
+      |f|
+      properties.each do |k,v|
+        f.write "#{k}=#{v}\n"
+      end
+    }
+    logger.info "wrote #{properties_file}"
+  end
+
+private
+
+  # Build an array of role/capability objects.
+  def permissions(role, capabilities)
+    if capabilities.is_a?(Array)
+      capabilities.map do |c|
+        {
+          :capability => c,
+          :role => role
+        }
+      end
+    else
+      [
+        {
+          :capability => capabilities,
+          :role => role
+        }
+      ]
+    end
+  end
+
+  def deploy_tests?(target_db)
+    @properties['ml.test-content-db'].present? &&
+    @properties['ml.test-port'].present? &&
+    @environment != "prod" &&
+    @properties['ml.test-modules-db'] == target_db
+  end
+
+  def modules_databases
+    dbs = [@properties['ml.modules-db']]
+    dbs << @properties['ml.test-modules-db'] if @properties['ml.test-modules-db'].present? &&
+                                                @properties['ml.test-modules-db'] != @properties['ml.modules-db']
+    dbs
+  end
+
+  def deploy_modules
+    test_dir = @properties['ml.xquery-test.dir']
+    xquery_dir = @properties['ml.xquery.dir']
+    # modules_db = @properties['ml.modules-db']
+    app_config_file = File.join xquery_dir, "/app/config/config.xqy"
+    test_config_file = File.join test_dir, "/test-config.xqy"
+    load_html_as_xml = @properties['ml.load-html-as-xml']
+
+    modules_databases.each do |dest_db|
+      ignore_us = []
+      ignore_us << "^#{test_dir}.*$" unless test_dir.blank? || deploy_tests?(dest_db)
+      ignore_us << "^#{app_config_file}$"
+      ignore_us << "^#{test_config_file}$"
+
+      total_count = load_data xquery_dir,
+                              :add_prefix => "/",
+                              :remove_prefix => xquery_dir,
+                              :db => dest_db,
+                              :ignore_list => ignore_us,
+                              :load_html_as_xml => load_html_as_xml
+
+      if File.exist? app_config_file
+        buffer = File.read app_config_file
+        @properties.each do |k, v|
+          buffer.gsub!("@#{k}", v)
+        end
+
+        total_count += xcc.load_buffer "/config.xqy",
+                                       buffer,
+                                       :db => dest_db,
+                                       :add_prefix => File.join(@properties["ml.modules-root"], "app/config"),
+                                       :permissions => permissions(@properties['ml.app-role'], Roxy::ContentCapability::ER)
       end
 
-      xcc.load_buffer("/config.xqy", buffer,{
-        :db => @properties['ml.modules-db'],
-        :add_prefix => File.join(@properties["ml.modules-root"], "app/config"),
-        :permissions => [
-          {
-            :capability => Roxy::ContentCapability::EXECUTE,
-            :role => @properties['ml.app-role']
+      if deploy_tests?(dest_db) && File.exist?(test_config_file)
+        buffer = File.read test_config_file
+        @properties.each do |k, v|
+          buffer.gsub!("@#{k}", v)
+        end
+
+        total_count += xcc.load_buffer "/test-config.xqy",
+                                       buffer,
+                                       :db => dest_db,
+                                       :add_prefix => File.join(@properties["ml.modules-root"], "test"),
+                                       :permissions => permissions(@properties['ml.app-role'], Roxy::ContentCapability::EXECUTE)
+      end
+
+      # REST API applications need some files put into a collection.
+      if ['rest', 'hybrid'].include? @properties["ml.app-type"]
+        r = execute_query %Q{
+            xquery version "1.0-ml";
+
+            for $uri in cts:uri-match("/marklogic.rest.*")
+            return xdmp:document-set-collections($uri, "http://marklogic.com/extension/plugin")
           },
-          {
-            :capability => Roxy::ContentCapability::READ,
-            :role => @properties['ml.app-role']
-          }
-        ]
-      })
+          { :db_name => dest_db }
+
+        if (@properties.has_key?('ml.rest-options.dir') && File.exist?(@properties['ml.rest-options.dir']))
+          total_count += load_data @properties['ml.rest-options.dir'],
+              :add_prefix => "/#{@properties['ml.group']}/#{@properties['ml.app-name']}/rest-api",
+              :remove_prefix => @properties['ml.rest-options.dir'],
+              :db => dest_db
+        else
+          logger.error "Could not find REST API options directory: #{@properties['ml.rest-options.dir']}\n";
+        end
+
+      end
+
+      logger.info "\nLoaded #{total_count} #{pluralize(total_count, "document", "documents")} from #{xquery_dir} to #{xcc.hostname}:#{xcc.port}/#{dest_db} at #{DateTime.now.strftime('%m/%d/%Y %I:%M:%S %P')}\n"
     end
-    # only deploy test code if test db is enabled.
-    # don't deploy tests to prod
-    if (@properties['ml.test-content-db'] && @properties['ml.test-content-db'] != "" &&
-        @properties['ml.test-port'] && @properties['ml.test-port'] != "" &&
-        @environment != "prod")
 
-      test_config_file = "#{@properties['ml.xquery-test.dir']}/test-config.xqy"
+    if ['rest', 'hybrid'].include? @properties["ml.app-type"]
+      if (@properties.has_key?('ml.rest-ext.dir') && File.exist?(@properties['ml.rest-ext.dir']))
+        logger.info "\nLoading REST extensions from #{@properties['ml.rest-ext.dir']}\n"
+        mlRest.install_extensions(File.expand_path(@properties['ml.rest-ext.dir']))
+      end
 
-      # if the test-modules-db is different from the app modules db, also load the
-      # app modules into it
-      if (@properties['ml.test-modules-db'] && @properties['ml.test-modules-db'] != "" &&
-          @properties['ml.test-modules-db'] != @properties['ml.modules-db'])
-        load_data @properties["ml.xquery-test.dir"], {
-          :add_prefix => File.join(@properties["ml.modules-root"], "test"),
-          :remove_prefix => @properties["ml.xquery-test.dir"],
-          :db => @properties['ml.test-modules-db'],
-          :ignore_list => ["^#{test_config_file}$"]
-        }
-
-        if (File.exist?(test_config_file))
-          buffer = File.read(test_config_file)
-          @properties.each do |k, v|
-            buffer.gsub!("@#{k}", v)
-          end
-
-          xcc.load_buffer("/test-config.xqy", buffer,{
-            :db => @properties['ml.test-modules-db'],
-            :add_prefix => File.join(@properties["ml.modules-root"], "test"),
-            :permissions => [
-              {
-                :capability => Roxy::ContentCapability::EXECUTE,
-                :role => @properties['ml.app-role']
-              }
-            ]
-          })
-        end
-
-        load_data @properties["ml.xquery.dir"], {
-          :add_prefix => "/",
-          :remove_prefix => @properties["ml.xquery.dir"],
-          :db => @properties['ml.test-modules-db'],
-          :ignore_list => ignore_us
-        }
-
-        if (File.exist?(app_config_file))
-          buffer = File.read(app_config_file)
-          @properties.each do |k, v|
-            buffer.gsub!("@#{k}", v)
-          end
-
-          xcc.load_buffer("/config.xqy", buffer,{
-            :db => @properties['ml.test-modules-db'],
-            :add_prefix => File.join(@properties["ml.modules-root"], "app/config"),
-            :permissions => [
-              {
-                :capability => Roxy::ContentCapability::EXECUTE,
-                :role => @properties['ml.app-role']
-              },
-              {
-                :capability => Roxy::ContentCapability::READ,
-                :role => @properties['ml.app-role']
-              }
-            ]
-          })
-        end
-      else
-        load_data @properties["ml.xquery-test.dir"], {
-          :add_prefix => File.join(@properties["ml.modules-root"], "test"),
-          :remove_prefix => @properties["ml.xquery-test.dir"],
-          :db => @properties['ml.modules-db'],
-          :ignore_list => ["^#{test_config_file}$"]
-        }
-
-        if (File.exist?(test_config_file))
-          buffer = File.read(test_config_file)
-          @properties.each do |k, v|
-            buffer.gsub!("@#{k}", v)
-          end
-
-          xcc.load_buffer("/test-config.xqy", buffer,{
-            :db => @properties['ml.modules-db'],
-            :add_prefix => File.join(@properties["ml.modules-root"], "test"),
-            :permissions => [
-              {
-                :capability => Roxy::ContentCapability::EXECUTE,
-                :role => @properties['ml.app-role']
-              }
-            ]
-          })
-        end
+      if (@properties.has_key?('ml.rest-transforms.dir') && File.exist?(@properties['ml.rest-transforms.dir']))
+        logger.info "\nLoading REST transforms from #{@properties['ml.rest-transforms.dir']}\n"
+        mlRest.install_transforms(File.expand_path(@properties['ml.rest-transforms.dir']))
       end
     end
   end
 
+  def deploy_schemas
+    if @properties.has_key?('ml.schemas-db')
+      schema_db = @properties['ml.schemas-db']
+    else
+      logger.info "\nWarning: app-specific schemas database not defined. Deploying schemas to the Schemas database. The clean and wipe commands will not remove these schemas.\n"
+      schema_db = "Schemas"
+    end
+    total_count = load_data @properties["ml.schemas.dir"],
+      :add_prefix => @properties["ml.schemas-root"],
+      :remove_prefix => @properties["ml.schemas.dir"],
+      :db => schema_db
+    logger.info "\nLoaded #{total_count} #{pluralize(total_count, "schema", "schemas")} from #{@properties["ml.schemas.dir"]} to #{xcc.hostname}:#{xcc.port}/#{schema_db}\n"
+  end
+
   def clean_modules
-    logger.info("Cleaning #{@properties['ml.modules-db']} on #{@hostname}")
+    logger.info "Cleaning #{@properties['ml.modules-db']} on #{@hostname}"
     execute_query %Q{xdmp:forest-clear(xdmp:forest("#{@properties['ml.modules-db']}"))}
-    if (@properties['ml.test-modules-db'] && @properties['ml.test-modules-db'] != @properties['ml.modules-db'])
-      logger.info("Cleaning #{@properties['ml.test-modules-db']} on #{@hostname}")
+
+    if @properties['ml.test-modules-db'].present? && @properties['ml.test-modules-db'] != @properties['ml.modules-db']
+      logger.info "Cleaning #{@properties['ml.test-modules-db']} on #{@hostname}"
       execute_query %Q{xdmp:forest-clear(xdmp:forest("#{@properties['ml.test-modules-db']}"))}
     end
   end
 
   def clean_schemas
-    if (@properties['ml.schemas-db'])
-      logger.info("Cleaning #{@properties['ml.schemas-db']} on #{@hostname}")
+    if @properties['ml.schemas-db']
+      logger.info "Cleaning #{@properties['ml.schemas-db']} on #{@hostname}"
       execute_query %Q{xdmp:forest-clear(xdmp:forest("#{@properties['ml.schemas-db']}"))}
     else
-      logger.error("No schemas db is configured")
+      logger.error "No schemas db is configured"
     end
   end
 
   def clean_triggers
-    if (@properties['ml.triggers-db'])
-      logger.info("Cleaning #{@properties['ml.triggers-db']} on #{@hostname}")
+    if @properties['ml.triggers-db']
+      logger.info "Cleaning #{@properties['ml.triggers-db']} on #{@hostname}"
       execute_query %Q{xdmp:forest-clear(xdmp:forest("#{@properties['ml.triggers-db']}"))}
     else
-      logger.error("No triggers db is configured")
+      logger.error "No triggers db is configured"
     end
   end
 
   def deploy_content
-    load_data @properties["ml.data.dir"], {
-      :remove_prefix => @properties["ml.data.dir"],
-      :db => @properties['ml.content-db'],
-      :permissions => [
-        {
-          :capability => Roxy::ContentCapability::READ,
-          :role => @properties['ml.app-role']
-        },
-        {
-          :capability => Roxy::ContentCapability::UPDATE,
-          :role => @properties['ml.app-role']
-        }
-      ]
-    }
+    count = load_data @properties["ml.data.dir"],
+                      :remove_prefix => @properties["ml.data.dir"],
+                      :db => @properties['ml.content-db'],
+                      :permissions => permissions(@properties['ml.app-role'], Roxy::ContentCapability::RU)
+    logger.info "\nLoaded #{count} #{pluralize(count, "document", "documents")} from #{@properties["ml.data.dir"]} to #{xcc.hostname}:#{xcc.port}/#{@properties['ml.content-db']}\n"
   end
 
   def clean_content
-    logger.info("Cleaning #{@properties['ml.content-db']} on #{@hostname}")
+    logger.info "Cleaning #{@properties['ml.content-db']} on #{@hostname}"
     execute_query %Q{
       for $id in xdmp:database-forests(xdmp:database("#{@properties['ml.content-db']}"))
       return
@@ -744,97 +829,106 @@ private
   end
 
   def deploy_cpf
-    if (!@properties["ml.triggers-db"] || @properties["ml.data.dir"] == "")
-      logger.error("To use CPF, you must define the triggers-db property in your build.properties file")
-    elsif (!File.exist?(File.expand_path("../../pipeline-config.xml", __FILE__)))
-      logger.error("
-Before you can deploy CPF, you must define a configuration. Steps:
-1. Run 'ml initcpf'
-2. Edit deploy/pipeline-config.xml to set up your domain and pipelines
-3. Run 'ml <env> deploy cpf')")
+    if @properties["ml.triggers-db"].blank? || @properties["ml.data.dir"].blank?
+      logger.error "To use CPF, you must define the triggers-db property in your build.properties file"
+    elsif !File.exist?(File.expand_path("../../pipeline-config.xml", __FILE__))
+      logger.error <<-ERR.strip_heredoc
+        Before you can deploy CPF, you must define a configuration. Steps:
+        1. Run 'ml initcpf'
+        2. Edit deploy/pipeline-config.xml to set up your domain and pipelines
+        3. Run 'ml <env> deploy cpf')
+      ERR
     else
-      cpf_config = File.read(File.expand_path("../../pipeline-config.xml", __FILE__))
+      cpf_config = File.read File.expand_path("../../pipeline-config.xml", __FILE__)
       @properties.each do |k, v|
         cpf_config.gsub!("@#{k}", v)
       end
-      cpf_code = File.read(File.expand_path('../xquery/cpf.xqy', __FILE__))
-      r = execute_query %Q{#{cpf_code} cpf:load-from-config(#{cpf_config})}, { :db_name => @properties["ml.content-db"] }
+      cpf_code = File.read File.expand_path('../xquery/cpf.xqy', __FILE__)
+      r = execute_query %Q{#{cpf_code} cpf:load-from-config(#{cpf_config})}, :db_name => @properties["ml.content-db"]
     end
   end
 
   def clean_cpf
-    cpf_code = File.read(File.expand_path('../xquery/cpf.xqy', __FILE__))
-    r = execute_query %Q{#{cpf_code} cpf:clean-cpf()}, { :db_name => @properties["ml.content-db"] }
+    cpf_code = File.read File.expand_path('../xquery/cpf.xqy', __FILE__)
+    r = execute_query %Q{#{cpf_code} cpf:clean-cpf()}, :db_name => @properties["ml.content-db"]
   end
 
   def xcc
-    if (!@xcc)
-      password_prompt
-      @xcc = Roxy::Xcc.new({
+    @xcc ||=
+      begin
+        password_prompt
+        @xcc = Roxy::Xcc.new({
+          :user_name => @ml_username,
+          :password => @ml_password,
+          :xcc_server => @hostname,
+          :xcc_port => @properties["ml.xcc-port"],
+          :logger => logger
+        })
+      end
+  end
+
+  def mlRest
+    if (!@mlRest)
+      @mlRest = Roxy::MLRest.new({
         :user_name => @ml_username,
         :password => @ml_password,
-        :xcc_server => @hostname,
-        :xcc_port => @properties["ml.xcc-port"],
-        :logger => logger
+        :server => @hostname,
+        :port => @properties["ml.app-port"],
+        :logger => @logger
       })
+    else
+      @mlRest
     end
-    @xcc
   end
 
   def get_config
-    if (@config == nil) then
-      @config = build_config @options[:config_file]
-    end
-    @config
+    @config ||= build_config(@options[:config_file])
   end
 
   def execute_query_4(query, properties)
     r = go "http://#{@hostname}:#{@bootstrap_port}/use-cases/eval2.xqy", "post", {}, {
       :queryInput => query
     }
-    return r
   end
 
   def get_any_db_id
     r = go "http://#{@hostname}:#{@bootstrap_port}/manage/LATEST/databases?format=xml", "get"
-    if (r.code.to_i == 200) then
-      dbid = $1 if r.body =~ /.*<idref>([^<]+)<\/idref>.*/
-      return dbid
-    end
-    return nil
+    return nil unless r.code.to_i == 200
+    dbid = $1 if r.body =~ /.*<idref>([^<]+)<\/idref>.*/
   end
 
   def get_db_id(db_name)
     r = go "http://#{@hostname}:#{@bootstrap_port}/manage/LATEST/databases?format=xml", "get"
-    if (r.code.to_i == 200) then
-      use_next_line = false
-      r.body.split("\n").each do |line|
-        if (use_next_line == true) then
-          dbid = $1 if line =~ /.*<idref>([^<]+)<\/idref>.*/
-          return dbid
-        end
-        if (line.match(db_name)) then
-          use_next_line = true
-        end
+    return nil unless r.code.to_i == 200
+
+    use_next_line = false
+    r.body.split("\n").each do |line|
+      if use_next_line == true
+        dbid = $1 if line =~ /.*<idref>([^<]+)<\/idref>.*/
+        return dbid
       end
+
+      use_next_line = true if line.match(db_name)
     end
-    return nil
+
+    nil
   end
 
   def get_sid(app_name)
     r = go "http://#{@hostname}:#{@bootstrap_port}/manage/LATEST/servers?format=xml", "get"
-    if (r.code.to_i == 200) then
-      previous_line = ""
-      r.body.split("\n").each do |line|
-        if (line.match("<nameref>#{app_name}</nameref>")) then
-          dbid = $1 if previous_line =~ /.*<idref>([^<]+)<\/idref>.*/
-          return dbid
-        end
+    return nil unless r.code.to_i == 200
 
-        previous_line = line
+    previous_line = ""
+    r.body.split("\n").each do |line|
+      if line.match "<nameref>#{app_name}</nameref>"
+        dbid = $1 if previous_line =~ /.*<idref>([^<]+)<\/idref>.*/
+        return dbid
       end
+
+      previous_line = line
     end
-    return nil
+
+    nil
   end
 
   def execute_query_5(query, properties = {})
@@ -843,41 +937,76 @@ Before you can deploy CPF, you must define a configuration. Steps:
     # 2. A caller-specified application server
     # 3. An application server that is present by default
     # 4. Any database
-    if (properties[:db_name] != nil) then
+    if properties[:db_name] != nil
       db_id = get_db_id(properties[:db_name])
-    elsif (properties[:app_name] != nil) then
+    elsif properties[:app_name] != nil
       sid = get_sid(properties[:app_name])
     else
       sid = get_sid("Manage")
     end
 
-    if (db_id == nil && sid == nil) then
-      db_id = get_any_db_id
-    end
+    db_id = get_any_db_id if db_id.nil? && sid.nil?
 
-    if (db_id != nil) then
-      logger.debug("using dbid: #{db_id}")
+    if db_id.present?
+      logger.debug "using dbid: #{db_id}"
       r = go "http://#{@hostname}:#{@bootstrap_port}/qconsole/endpoints/eval.xqy", "post", {}, {
         :dbid => db_id,
         :resulttype => "text",
         :q => query
       }
-      logger.debug(r.body)
+      logger.debug r.body
     else
-      logger.debug("using sid: #{sid}")
+      logger.debug "using sid: #{sid}"
       r = go "http://#{@hostname}:#{@bootstrap_port}/qconsole/endpoints/eval.xqy", "post", {}, {
         :sid => sid,
         :resulttype => "text",
         :q => query
       }
-      logger.debug(r.body)
+      logger.debug r.body
     end
 
-    if (r.body.match(/\{"error"/)) then
-      raise ExitException.new(JSON.pretty_generate(JSON.parse(r.body)))
+    raise ExitException.new(JSON.pretty_generate(JSON.parse(r.body))) if r.body.match(/\{"error"/)
+
+    r
+  end
+
+  def execute_query_7(query, properties = {})
+    # We need a context for this query. Here's what we look for, in order of preference:
+    # 1. A caller-specified database
+    # 2. A caller-specified application server
+    # 3. An application server that is present by default
+    # 4. Any database
+    if properties[:db_name] != nil
+      db_id = get_db_id(properties[:db_name])
+    elsif properties[:app_name] != nil
+      sid = get_sid(properties[:app_name])
+    else
+      sid = get_sid("Manage")
     end
 
-    return r
+    db_id = get_any_db_id if db_id.nil? && sid.nil?
+
+    if db_id.present?
+      logger.debug "using dbid: #{db_id}"
+      r = go_7 "http://#{@hostname}:#{@bootstrap_port}/qconsole/endpoints/evaler.xqy", "post", {}, {
+        :dbid => db_id,
+        :action => "eval",
+        :querytype => "xquery"
+      },
+      query
+    else
+      logger.debug "using sid: #{sid}"
+      r = go_7 "http://#{@hostname}:#{@bootstrap_port}/qconsole/endpoints/evaler.xqy", "post", {}, {
+        :sid => sid,
+        :action => "eval",
+        :querytype => "xquery"
+      },
+      query
+    end
+
+    raise ExitException.new(JSON.pretty_generate(JSON.parse(r.body))) if r.body.match(/\{"error"/)
+
+    r
   end
 
   def ServerConfig.substitute_properties(sub_me, with_me, prefix = "")
@@ -885,19 +1014,17 @@ Before you can deploy CPF, you must define a configuration. Steps:
     begin
       needs_rescan = false
       sub_me.each do |k,v|
-        if (v.match(/\$\{basedir\}/)) then
+        if v.match(/\$\{basedir\}/)
           sub_me[k] = File.expand_path(v.sub("${basedir}", ServerConfig.pwd))
         else
           matches = v.scan(/\$\{([^}]+)\}/)
-          if (matches.length > 0) then
+          if matches.length > 0
             var = "#{prefix}#{matches[0][0]}"
             sub = with_me[var]
-            if (sub) then
+            if sub
               new_val = v.sub(/\$\{[^}]+\}/, sub)
               sub_me[k] = new_val
-              if (matches.length > 1)
-                needs_rescan = true
-              end
+              needs_rescan = true if matches.length > 1
             else
               dangling_vars[k] = v
             end
@@ -906,9 +1033,11 @@ Before you can deploy CPF, you must define a configuration. Steps:
       end
     end while (needs_rescan == true)
 
-    if (dangling_vars.length > 0)
-      raise DanglingVarsException.new(dangling_vars)
+    sub_me.each do |k,v|
+      sub_me[k] = v.xquery_safe
     end
+
+    raise DanglingVarsException.new(dangling_vars) if dangling_vars.length > 0
 
     sub_me
   end
@@ -918,9 +1047,9 @@ Before you can deploy CPF, you must define a configuration. Steps:
     File.open(properties_filename, 'r') do |properties_file|
       properties_file.read.each_line do |line|
         line.strip!
-        if ((line[0] != ?#) && (line[0] != ?=) && (line[0] != ""))
+        if (line[0] != ?#) && (line[0] != ?=) && (line[0] != "")
           i = line.index('=')
-          if (i)
+          if i
             key = prefix + line[0..i - 1].strip
             value = line[i + 1..-1].strip
             properties[key] = value
@@ -936,7 +1065,7 @@ Before you can deploy CPF, you must define a configuration. Steps:
     config = File.read(config_file)
 
     # Build the triggers db if it is provided
-    if (@properties['ml.triggers-db'])
+    if @properties['ml.triggers-db'].present?
       config.gsub!("@ml.triggers-db-xml",
       %Q{
       <database>
@@ -964,8 +1093,8 @@ Before you can deploy CPF, you must define a configuration. Steps:
       config.gsub!("@ml.triggers-mapping", "")
     end
 
-    if (@properties['ml.xcc-port'])
-      config.gsub!("@ml.xdbc-server",
+
+    config.gsub!("@ml.xdbc-server",
       %Q{
       <xdbc-server>
         <xdbc-server-name>@ml.app-name-xcc</xdbc-server-name>
@@ -974,11 +1103,21 @@ Before you can deploy CPF, you must define a configuration. Steps:
         <modules name="@ml.modules-db"/>
         <authentication>digest</authentication>
       </xdbc-server>
-      })
-    end
+      }) if @properties['ml.xcc-port'].present?
+
+    config.gsub!("@ml.odbc-server",
+      %Q{
+      <odbc-server>
+        <odbc-server-name>@ml.app-name-odbc</odbc-server-name>
+        <port>@ml.odbc-port</port>
+        <database name="@ml.content-db"/>
+        <modules name="@ml.modules-db"/>
+        <authentication>digest</authentication>
+      </odbc-server>
+      }) if @properties['ml.odbc-port'].present?
 
     # Build the schemas db if it is provided
-    if (@properties['ml.schemas-db'])
+    if @properties['ml.schemas-db'].present?
       config.gsub!("@ml.schemas-db-xml",
       %Q{
       <database>
@@ -1008,9 +1147,9 @@ Before you can deploy CPF, you must define a configuration. Steps:
     end
 
     # Build the test appserver and db if it is provided
-    if (@properties['ml.test-content-db'] && @properties['ml.test-content-db'] != "" &&
-        @properties['ml.test-port'] && @properties['ml.test-port'] != "" &&
-        @environment != "prod")
+    if @properties['ml.test-content-db'].present? &&
+       @properties['ml.test-port'].present? &&
+       @environment != "prod"
       config.gsub!("@ml.test-content-db-xml",
       %Q{
         <database import="@ml.content-db">
@@ -1028,38 +1167,26 @@ Before you can deploy CPF, you must define a configuration. Steps:
         </assignment>
       })
 
-      if (@properties['ml.test-modules-db'] && @properties['ml.test-modules-db'] != "" &&
-          @properties['ml.test-modules-db'] != @properties['ml.app-modules-db'])
-        config.gsub!("@ml.test-appserver",
-        %Q{
-          <http-server>
-            <http-server-name>@ml.app-name-test</http-server-name>
-            <port>@ml.test-port</port>
-            <database name="@ml.test-content-db"/>
-            <modules name="@ml.test-modules-db"/>
-            <root>@ml.modules-root</root>
-            <authentication>@ml.authentication-method</authentication>
-            <default-user name="@ml.default-user"/>
-            <url-rewriter>@ml.url-rewriter</url-rewriter>
-            <error-handler>@ml.error-handler</error-handler>
-          </http-server>
-        })
-      else
-        config.gsub!("@ml.test-appserver",
-        %Q{
-          <http-server>
-            <http-server-name>@ml.app-name-test</http-server-name>
-            <port>@ml.test-port</port>
-            <database name="@ml.test-content-db"/>
-            <modules name="@ml.modules-db"/>
-            <root>@ml.modules-root</root>
-            <authentication>@ml.authentication-method</authentication>
-            <default-user name="@ml.default-user"/>
-            <url-rewriter>@ml.url-rewriter</url-rewriter>
-            <error-handler>@ml.error-handler</error-handler>
-          </http-server>
-        })
+      # The modules database for the test server can be different from the app one
+      test_modules_db = @properties['ml.test-modules-db']
+      if !@properties['ml.test-modules-db'].present?
+        test_modules_db = @properties['ml.app-modules-db']
       end
+      test_auth_method = @properties['ml.authentication-method']
+      if @properties['ml.test-authentication-method'].present?
+        test_auth_method = @properties['ml.test-authentication-method']
+      end
+
+      config.gsub!("@ml.test-appserver",
+      %Q{
+        <http-server import="@ml.app-name">
+          <http-server-name>@ml.app-name-test</http-server-name>
+          <port>@ml.test-port</port>
+          <database name="@ml.test-content-db"/>
+          <modules name="#{test_modules_db}"/>
+          <authentication>#{test_auth_method}</authentication>
+        </http-server>
+      })
 
     else
       config.gsub!("@ml.test-content-db-xml", "")
@@ -1068,8 +1195,8 @@ Before you can deploy CPF, you must define a configuration. Steps:
     end
 
     # Build the test modules db if it is different from the app modules db
-    if (@properties['ml.test-modules-db'] && @properties['ml.test-modules-db'] != "" &&
-        @properties['ml.test-modules-db'] != @properties['ml.app-modules-db'])
+    if @properties['ml.test-modules-db'].present? &&
+       @properties['ml.test-modules-db'] != @properties['ml.app-modules-db']
       config.gsub!("@ml.test-modules-db-xml",
       %Q{
         <database import="@ml.modules-db">
@@ -1090,13 +1217,25 @@ Before you can deploy CPF, you must define a configuration. Steps:
       config.gsub!("@ml.test-modules-db-xml", "")
     end
 
-    if (@properties['ml.forest-data-dir'])
-      config.gsub!("@ml.forest-data-dir-xml",
+
+    config.gsub!("@ml.forest-data-dir-xml",
       %Q{
         <data-directory>@ml.forest-data-dir</data-directory>
-      })
-    end
+      }) if @properties['ml.forest-data-dir'].present?
 
+    if @properties['ml.rewrite-resolves-globally'].present?
+      config.gsub!("@ml.rewrite-resolves-globally",
+        %Q{
+          <rewrite-resolves-globally>#{@properties['ml.rewrite-resolves-globally']}</rewrite-resolves-globally>
+        })
+    elsif ['rest', 'hybrid'].include?(@properties["ml.app-type"])
+      config.gsub!("@ml.rewrite-resolves-globally",
+        %Q{
+          <rewrite-resolves-globally>true</rewrite-resolves-globally>
+        })
+    else
+      config.gsub!("@ml.rewrite-resolves-globally", "")
+    end
     @properties.each do |k, v|
       config.gsub!("@#{k}", v)
     end
@@ -1107,9 +1246,7 @@ Before you can deploy CPF, you must define a configuration. Steps:
   def ServerConfig.properties(prop_file_location = "../..")
     default_properties_file = File.expand_path("#{prop_file_location}/default.properties", __FILE__)
     properties_file = File.expand_path("#{prop_file_location}/build.properties", __FILE__)
-    if !File.exist?(properties_file) then
-      raise ExitException.new("You must run ml init to configure your application.")
-    end
+    raise ExitException.new("You must run ml init to configure your application.") unless File.exist?(properties_file)
 
     properties = ServerConfig.load_properties(default_properties_file, "ml.")
     properties.merge!(ServerConfig.load_properties(properties_file, "ml."))
@@ -1122,10 +1259,10 @@ Before you can deploy CPF, you must define a configuration. Steps:
     properties["environment"] = environment if environment
 
     env_properties_file = File.expand_path("#{prop_file_location}/#{environment}.properties", __FILE__)
-    if (File.exists?(env_properties_file))
-      properties.merge!(ServerConfig.load_properties(env_properties_file, "ml."))
-    end
+
+    properties.merge!(ServerConfig.load_properties(env_properties_file, "ml.")) if File.exists? env_properties_file
 
     properties = ServerConfig.substitute_properties(properties, properties, "ml.")
   end
+
 end

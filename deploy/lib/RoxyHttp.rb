@@ -290,7 +290,6 @@ module Roxy
       @user_name = request_params[:user_name]
       @password = request_params[:password]
 
-      @logger.debug("Opening new #{@protocol.upcase} connection to #@server:#@port")
       @http              = Net::HTTP.new(@server, @port)
       @http.open_timeout = @params[:http_connection_open_timeout]
       @http.read_timeout = @params[:http_connection_read_timeout]
@@ -368,8 +367,18 @@ module Roxy
 
           response = @http.request(request, &block)
           if (response.code.to_i == 401)
+            # TODO: looks like we get this every time. Why not just use digest the first time?
             request.digest_auth(@user_name, @password, response)
             response = @http.request(request, &block)
+            if (response.code.to_i == 302)
+              @logger.debug("bootstrap request redirected: #{response['location']}")
+              new_uri = URI(response['location'])
+              request_params[:protocol] = new_uri.scheme
+              request_params[:server] = new_uri.host
+              request_params[:port] = new_uri.port
+              start(request_params)
+              response = @http.request(request, &block)
+            end
           end
 
           error_reset
@@ -402,6 +411,8 @@ module Roxy
             # We will be retrying the request, so reset the file pointer
             reset_fileptr_offset(request, mypos)
           end
+        rescue Net::HTTPBadResponse => e
+          # Ignoring 'wrong status line: "trueHTTP/1.1 204 Resource Services Updated"' because it's perfectly valid. 
         rescue Exception => e # See comment at bottom for the list of errors seen...
           @http = nil
           # if ctrl+c is pressed - we have to reraise exception to terminate proggy

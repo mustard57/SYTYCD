@@ -17,9 +17,9 @@ xquery version "1.0-ml";
 
 import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
 import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
+import module namespace pki = "http://marklogic.com/xdmp/pki" at "/MarkLogic/pki.xqy";
 
 declare namespace setup = "http://marklogic.com/roxy/setup";
-declare namespace display = "http://marklogic.com/roxy/setup/display";
 declare namespace xdmp="http://marklogic.com/xdmp";
 declare namespace xs="http://www.w3.org/2001/XMLSchema";
 declare namespace db="http://marklogic.com/xdmp/database";
@@ -29,7 +29,6 @@ declare namespace ho="http://marklogic.com/xdmp/hosts";
 declare namespace as="http://marklogic.com/xdmp/assignments";
 declare namespace fs="http://marklogic.com/xdmp/status/forest";
 declare namespace mt="http://marklogic.com/xdmp/mimetypes";
-declare namespace pki="http://marklogic.com/xdmp/pki";
 
 declare option xdmp:mapping "false";
 
@@ -41,11 +40,288 @@ declare variable $default-schemas := xdmp:database("Schemas");
 declare variable $default-security := xdmp:database("Security");
 declare variable $default-user := xdmp:user("nobody");
 
-declare variable $context-path := fn:resolve-uri(".", xdmp:get-request-path());
-
 declare variable $roll-back := map:map();
 
 declare variable $restart-needed as xs:boolean := fn:false();
+
+declare variable $system-users := ("nobody", "infostudio-admin");
+
+declare variable $system-roles as xs:string+ :=
+  setup:read-config-file("security.xml")/sec:security/sec:roles/sec:role/@name;
+
+declare variable $database-settings :=
+  <settings>
+    <setting>enabled</setting>
+    <setting>language</setting>
+    <setting>stemmed-searches</setting>
+    <setting>word-searches</setting>
+    <setting>word-positions</setting>
+    <setting>fast-phrase-searches</setting>
+    <setting>fast-reverse-searches</setting>
+    <setting>fast-case-sensitive-searches</setting>
+    <setting>fast-diacritic-sensitive-searches</setting>
+    <setting>fast-element-word-searches</setting>
+    <setting>element-word-positions</setting>
+    <setting>fast-element-phrase-searches</setting>
+    <setting>element-value-positions</setting>
+    <setting>attribute-value-positions</setting>
+    <setting>field-value-searches</setting>
+    <setting>field-value-positions</setting>
+    <setting>three-character-searches</setting>
+    <setting>three-character-word-positions</setting>
+    <setting>fast-element-character-searches</setting>
+    <setting>trailing-wildcard-searches</setting>
+    <setting>trailing-wildcard-word-positions</setting>
+    <setting>fast-element-trailing-wildcard-searches</setting>
+    <setting>two-character-searches</setting>
+    <setting>one-character-searches</setting>
+    <setting>uri-lexicon</setting>
+    <setting>collection-lexicon</setting>
+    <setting>reindexer-enable</setting>
+    <setting>reindexer-throttle</setting>
+    <setting>reindexer-timestamp</setting>
+    <setting>directory-creation</setting>
+    <setting>maintain-last-modified</setting>
+    <setting>maintain-directory-last-modified</setting>
+    <setting>inherit-permissions</setting>
+    <setting>inherit-collections</setting>
+    <setting>inherit-quality</setting>
+    <setting>in-memory-limit</setting>
+    <setting>in-memory-list-size</setting>
+    <setting>in-memory-tree-size</setting>
+    <setting>in-memory-range-index-size</setting>
+    <setting>in-memory-reverse-index-size</setting>
+    <setting>large-size-threshold</setting>
+    <setting>locking</setting>
+    <setting>journaling</setting>
+    <setting>journal-size</setting>
+    <setting>preallocate-journals</setting>
+    <setting>preload-mapped-data</setting>
+    <setting>preload-replica-mapped-data</setting>
+    <setting>range-index-optimize</setting>
+    <setting>positions-list-max-size</setting>
+    <setting>format-compatibility</setting>
+    <setting>index-detection</setting>
+    <setting>expunge-locks</setting>
+    <setting>tf-normalization</setting>
+    <setting>merge-priority</setting>
+    <setting>merge-max-size</setting>
+    <setting>merge-min-size</setting>
+    <setting>merge-min-ratio</setting>
+    <setting>merge-timestamp</setting>
+    <setting min-version="7.0-0">triple-index</setting>
+    <setting min-version="7.0-0">rebalancer-enable</setting>
+    <setting min-version="7.0-0">rebalancer-throttle</setting>
+    <setting min-version="7.0-0">in-memory-triple-index-size</setting>
+    <setting min-version="7.0-0">journal-count</setting>
+  </settings>;
+
+declare variable $http-server-settings :=
+  <settings>
+    <setting>enabled</setting>
+    <setting>root</setting>
+    <setting>port</setting>
+    <setting value="setup:get-appserver-modules-database($server-config)">modules-database</setting>
+    <setting value="setup:get-appserver-database($server-config)">database</setting>
+    <setting value="setup:get-last-login($server-config)">last-login</setting>
+    <setting>display-last-login</setting>
+    <setting>address</setting>
+    <setting>backlog</setting>
+    <setting>threads</setting>
+    <setting>request-timeout</setting>
+    <setting>keep-alive-timeout</setting>
+    <setting>session-timeout</setting>
+    <setting>max-time-limit</setting>
+    <setting>default-time-limit</setting>
+    <setting>static-expires</setting>
+    <setting>pre-commit-trigger-depth</setting>
+    <setting>pre-commit-trigger-limit</setting>
+    <setting>collation</setting>
+    <setting>authentication</setting>
+    <setting value="setup:get-appserver-default-user($server-config)">default-user</setting>
+    <setting value="setup:get-appserver-privilege($server-config)">privilege2</setting>
+    <setting>concurrent-request-limit</setting>
+    <setting>log-errors</setting>
+    <setting>debug-allow</setting>
+    <setting>profile-allow</setting>
+    <setting>default-xquery-version</setting>
+    <setting>multi-version-concurrency-control</setting>
+    <setting>output-sgml-character-entities</setting>
+    <setting>output-encoding</setting>
+    <setting>output-method</setting>
+    <setting>output-byte-order-mark</setting>
+    <setting>output-cdata-section-namespace-uri</setting>
+    <setting>output-cdata-section-localname</setting>
+    <setting>output-doctype-public</setting>
+    <setting>output-doctype-system</setting>
+    <setting>output-escape-uri-attributes</setting>
+    <setting>output-include-content-type</setting>
+    <setting>output-indent</setting>
+    <setting>output-indent-untyped</setting>
+    <setting>output-media-type</setting>
+    <setting>output-normalization-form</setting>
+    <setting>output-omit-xml-declaration</setting>
+    <setting>output-standalone</setting>
+    <setting>output-undeclare-prefixes</setting>
+    <setting>output-version</setting>
+    <setting>output-include-default-attributes</setting>
+    <setting accept-blank="true">error-handler</setting>
+    <setting accept-blank="true">url-rewriter</setting>
+    <setting min-version="6.0-1">rewrite-resolves-globally</setting>
+    <setting value="setup:get-ssl-certificate-template($server-config)">ssl-certificate-template</setting>
+    <setting>ssl-allow-sslv3</setting>
+    <setting>ssl-allow-tls</setting>
+    <setting>ssl-hostname</setting>
+    <setting>ssl-ciphers</setting>
+    <setting>ssl-require-client-certificate</setting>
+  </settings>
+;
+
+declare variable $xcc-server-settings :=
+  <settings>
+    <setting>enabled</setting>
+    <setting>root</setting>
+    <setting>port</setting>
+    <setting value="setup:get-appserver-modules-database($server-config)">modules-database</setting>
+    <setting value="setup:get-appserver-database($server-config)">database</setting>
+    <setting value="setup:get-last-login($server-config)">last-login</setting>
+    <setting>display-last-login</setting>
+    <setting>address</setting>
+    <setting>backlog</setting>
+    <setting>threads</setting>
+    <setting>request-timeout</setting>
+    <setting>keep-alive-timeout</setting>
+    <setting>session-timeout</setting>
+    <setting>max-time-limit</setting>
+    <setting>default-time-limit</setting>
+    <setting>pre-commit-trigger-depth</setting>
+    <setting>pre-commit-trigger-limit</setting>
+    <setting>collation</setting>
+    <setting>authentication</setting>
+    <setting value="setup:get-appserver-privilege($server-config)">privilege2</setting>
+    <setting>concurrent-request-limit</setting>
+    <setting>log-errors</setting>
+    <setting>debug-allow</setting>
+    <setting>profile-allow</setting>
+    <setting>default-xquery-version</setting>
+    <setting>multi-version-concurrency-control</setting>
+    <setting>output-sgml-character-entities</setting>
+    <setting>output-encoding</setting>
+    <setting>output-method</setting>
+    <setting>output-byte-order-mark</setting>
+    <setting>output-cdata-section-namespace-uri</setting>
+    <setting>output-cdata-section-localname</setting>
+    <setting>output-doctype-public</setting>
+    <setting>output-doctype-system</setting>
+    <setting>output-escape-uri-attributes</setting>
+    <setting>output-include-content-type</setting>
+    <setting>output-indent</setting>
+    <setting>output-indent-untyped</setting>
+    <setting>output-media-type</setting>
+    <setting>output-normalization-form</setting>
+    <setting>output-omit-xml-declaration</setting>
+    <setting>output-standalone</setting>
+    <setting>output-undeclare-prefixes</setting>
+    <setting>output-version</setting>
+    <setting>output-include-default-attributes</setting>
+    <setting>ssl-certificate-template</setting>
+    <setting>ssl-allow-sslv3</setting>
+    <setting>ssl-allow-tls</setting>
+    <setting>ssl-hostname</setting>
+    <setting>ssl-ciphers</setting>
+    <setting>ssl-require-client-certificate</setting>
+    <setting>ssl-client-certificate-authorities</setting>
+  </settings>
+;
+
+declare variable $odbc-server-settings :=
+  <settings>
+    <setting>enabled</setting>
+    <setting>root</setting>
+    <setting>port</setting>
+    <setting value="setup:get-appserver-modules-database($server-config)">modules-database</setting>
+    <setting value="setup:get-appserver-database($server-config)">database</setting>
+    <setting value="setup:get-last-login($server-config)">last-login</setting>
+    <setting>display-last-login</setting>
+    <setting>address</setting>
+    <setting>backlog</setting>
+    <setting>threads</setting>
+    <setting>request-timeout</setting>
+    <setting>keep-alive-timeout</setting>
+    <setting>session-timeout</setting>
+    <setting>max-time-limit</setting>
+    <setting>default-time-limit</setting>
+    <setting>static-expires</setting>
+    <setting>pre-commit-trigger-depth</setting>
+    <setting>pre-commit-trigger-limit</setting>
+    <setting>collation</setting>
+    <setting>authentication</setting>
+    <setting value="setup:get-appserver-privilege($server-config)">privilege2</setting>
+    <setting>concurrent-request-limit</setting>
+    <setting>log-errors</setting>
+    <setting>debug-allow</setting>
+    <setting>profile-allow</setting>
+    <setting>default-xquery-version</setting>
+    <setting>multi-version-concurrency-control</setting>
+    <setting>output-sgml-character-entities</setting>
+    <setting>output-encoding</setting>
+    <setting>output-method</setting>
+    <setting>output-byte-order-mark</setting>
+    <setting>output-cdata-section-namespace-uri</setting>
+    <setting>output-cdata-section-localname</setting>
+    <setting>output-doctype-public</setting>
+    <setting>output-doctype-system</setting>
+    <setting>output-escape-uri-attributes</setting>
+    <setting>output-include-content-type</setting>
+    <setting>output-indent</setting>
+    <setting>output-indent-untyped</setting>
+    <setting>output-media-type</setting>
+    <setting>output-normalization-form</setting>
+    <setting>output-omit-xml-declaration</setting>
+    <setting>output-standalone</setting>
+    <setting>output-undeclare-prefixes</setting>
+    <setting>output-version</setting>
+    <setting>output-include-default-attributes</setting>
+    <setting>ssl-certificate-template</setting>
+    <setting>ssl-allow-sslv3</setting>
+    <setting>ssl-allow-tls</setting>
+    <setting>ssl-hostname</setting>
+    <setting>ssl-ciphers</setting>
+    <setting>ssl-require-client-certificate</setting>
+  </settings>
+;
+
+declare variable $task-server-settings :=
+  <settings>
+    <setting>debug-allow</setting>
+    <setting>debug-threads</setting>
+    <setting>default-time-limit</setting>
+    <setting>log-errors</setting>
+    <setting>max-time-limit</setting>
+    <setting>post-commit-trigger-depth</setting>
+    <setting>pre-commit-trigger-depth</setting>
+    <setting>pre-commit-trigger-limit</setting>
+    <setting>profile-allow</setting>
+    <setting>queue-size</setting>
+    <setting>threads</setting>
+  </settings>;
+
+declare variable $field-settings :=
+  <settings>
+    <setting>fast-case-sensitive-searches</setting>
+    <setting>fast-diacritic-sensitive-searches</setting>
+    <setting>fast-phrase-searches</setting>
+    <setting>one-character-searches</setting>
+    <setting>stemmed-searches</setting>
+    <setting>three-character-searches</setting>
+    <setting>three-character-word-positions</setting>
+    <setting>trailing-wildcard-searches</setting>
+    <setting>trailing-wildcard-word-positions</setting>
+    <setting>two-character-searches</setting>
+    <setting min-version="6.0-1">value-positions</setting>
+    <setting min-version="6.0-1">value-searches</setting>
+    <setting>word-searches</setting>
+  </settings>;
 
 (: A note on naming conventions:
   $admin-config refers to the configuration passed around by the Admin APIs
@@ -57,61 +333,63 @@ declare function setup:add-rollback(
   $value as item()+)
 {
   map:put(
-        $roll-back,
-        $key,
-        (map:get($roll-back, $key), $value))
+    $roll-back,
+    $key,
+    (map:get($roll-back, $key), $value))
 };
 
 declare function setup:get-rollback-config()
 {
-  let $config :=
-    element configuration
+  element configuration
+  {
+    element gr:http-servers
     {
-      element gr:http-servers
-      {
-        map:get($roll-back, "http-servers")
-      },
-      element gr:xdbc-servers
-      {
-        map:get($roll-back, "xdbc-servers")
-      },
-      element db:databases
-      {
-        map:get($roll-back, "databases")
-      },
-      element as:assignments
-      {
-        map:get($roll-back, "assignments")
-      },
-      element mt:mimetypes
-      {
-        map:get($roll-back, "mimetypes")
-      },
-      element sec:amps
-      {
-        map:get($roll-back, "amps")
-      },
-      element sec:users
-      {
-        map:get($roll-back, "users")
-      },
-      element sec:roles
-      {
-        map:get($roll-back, "roles")
-      },
-      element sec:privileges
-      {
-        map:get($roll-back, "privileges")
-      }
+      map:get($roll-back, "http-servers")
+    },
+    element gr:xdbc-servers
+    {
+      map:get($roll-back, "xdbc-servers")
+    },
+    element gr:odbc-servers
+    {
+      map:get($roll-back, "odbc-servers")
+    },
+    element db:databases
+    {
+      map:get($roll-back, "databases")
+    },
+    element as:assignments
+    {
+      map:get($roll-back, "assignments")
+    },
+    element mt:mimetypes
+    {
+      map:get($roll-back, "mimetypes")
+    },
+    element sec:amps
+    {
+      map:get($roll-back, "amps")
+    },
+    element sec:users
+    {
+      map:get($roll-back, "users")
+    },
+    element sec:roles
+    {
+      map:get($roll-back, "roles")
+    },
+    element sec:privileges
+    {
+      map:get($roll-back, "privileges")
     }
-  return
-    $config
+  }
 };
 
 declare function setup:do-setup($import-config as element(configuration)) as item()*
 {
   try
   {
+    setup:create-ssl-certificate-templates($import-config),
     setup:create-privileges($import-config),
     setup:create-roles($import-config),
     setup:create-users($import-config),
@@ -130,6 +408,7 @@ declare function setup:do-setup($import-config as element(configuration)) as ite
   }
   catch($ex)
   {
+    xdmp:log($ex),
     setup:do-wipe(setup:get-rollback-config()),
     $ex
   }
@@ -141,7 +420,8 @@ declare function setup:do-wipe($import-config as element(configuration)) as item
   let $groupid := xdmp:group()
   let $remove-appservers :=
     for $as-name in ($import-config/gr:http-servers/gr:http-server/gr:http-server-name,
-                     $import-config/gr:xdbc-servers/gr:xdbc-server/gr:xdbc-server-name)
+                     $import-config/gr:xdbc-servers/gr:xdbc-server/gr:xdbc-server-name,
+                     $import-config/gr:odbc-servers/gr:odbc-server/gr:odbc-server-name)
     return
       if (admin:appserver-exists($admin-config, $groupid, $as-name)) then
         xdmp:set(
@@ -154,6 +434,26 @@ declare function setup:do-wipe($import-config as element(configuration)) as item
     if (admin:save-configuration-without-restart($admin-config)) then
       xdmp:set($restart-needed, fn:true())
     else (),
+
+  (: remove certificates :)
+  let $certificates := $import-config/pki:certificates
+  where $certificates
+  return
+    xdmp:eval('
+      import module namespace pki = "http://marklogic.com/xdmp/pki" at "/MarkLogic/pki.xqy";
+
+      declare variable $certificates external;
+
+      for $cert-name in $certificates/pki:certificate/pki:name/fn:string()
+      let $cert := pki:get-template-by-name($cert-name)
+      where $cert
+      return pki:delete-template(pki:template-get-id($cert))
+      ',
+      (xs:QName("certificates"), $certificates),
+      <options xmlns="xdmp:eval">
+        <database>{xdmp:security-database()}</database>
+      </options>
+    ),
 
   let $admin-config := admin:get-configuration()
   for $amp in $import-config/sec:amps/sec:amp
@@ -183,7 +483,12 @@ declare function setup:do-wipe($import-config as element(configuration)) as item
         xdmp:rethrow()
     },
 
-  for $db-config in $import-config/db:databases/db:database
+  let $databases :=
+    (
+      $import-config/db:databases/db:database[db:security-database or db:schema-database or db:triggers-database],
+      $import-config/db:databases/db:database[fn:not(db:security-database or db:schema-database or db:triggers-database)]
+    )
+  for $db-config in $databases
   return
     setup:delete-database-and-forests($db-config),
 
@@ -227,7 +532,7 @@ declare function setup:do-wipe($import-config as element(configuration)) as item
   return
     admin:save-configuration($admin-config),
 
-  for $user in $import-config/sec:users/sec:user/sec:user-name
+  for $user in $import-config/sec:users/sec:user/sec:user-name[fn:not(. = $system-users)]
   return
     try
     {
@@ -247,7 +552,7 @@ declare function setup:do-wipe($import-config as element(configuration)) as item
         xdmp:rethrow()
     },
 
-  for $role in $import-config/sec:roles/sec:role/sec:role-name
+  for $role in $import-config/sec:roles/sec:role/sec:role-name[fn:not(. = $system-roles)]
   return
     try
     {
@@ -294,11 +599,6 @@ declare function setup:do-wipe($import-config as element(configuration)) as item
   else ()
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Delete a database and any forests that are attached
- :: to it.
- ::)
-
 declare function setup:delete-database-and-forests($db-config as element(db:database))
 {
   let $db-name := $db-config/db:database-name
@@ -339,9 +639,6 @@ declare function setup:delete-database-and-forests($db-config as element(db:data
         else ()
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Restart the target group.
- ::)
 declare function setup:do-restart($group-name as xs:string?) as item()*
 {
   try
@@ -368,17 +665,11 @@ declare function setup:do-restart($group-name as xs:string?) as item()*
   }
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- ::
- ::)
 declare function setup:find-forest-ids(
   $db-config as element(db:database)) as xs:unsignedLong*
 {
-  let $group-id := xdmp:group()
   let $admin-config := admin:get-configuration()
-  let $hosts := admin:group-get-host-ids($admin-config, $group-id)
-  let $data-directory := $db-config/db:forests/db:data-directory
-  for $host at $i in $hosts
+  for $host in admin:group-get-host-ids($admin-config, xdmp:group())
   for $j in (1 to $db-config/db:forests-per-host)
   let $name :=
     fn:string-join((
@@ -391,10 +682,6 @@ declare function setup:find-forest-ids(
       admin:forest-get-id($admin-config, $name)
     else ()
 };
-
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Creation of mimetypes
- ::)
 
 declare function setup:create-mimetypes($import-config as element(configuration)) as item()*
 {
@@ -437,10 +724,6 @@ declare function setup:validate-mimetypes($import-config as element(configuratio
       setup:validation-fail(fn:concat("Missing mimetype: ", $name))
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Creation of forests
- ::)
-
 declare function setup:create-forests($import-config as element(configuration)) as item()*
 {
   for $db-config in setup:get-databases-from-config($import-config)
@@ -465,9 +748,6 @@ declare function setup:validate-forests($import-config as element(configuration)
       setup:validate-forests-from-config($import-config, $db-config, $database-name)
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- ::
- ::)
 declare function setup:create-forests-from-config(
   $import-config as element(configuration),
   $db-config as element(db:database),
@@ -501,16 +781,13 @@ declare function setup:validate-forests-from-config(
       if ($host-name) then xdmp:host($host-name) else ())
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- ::
- ::)
 declare function setup:create-forests-from-count(
   $db-config as element(db:database),
   $database-name as xs:string,
   $forests-per-host as xs:int) as item()*
 {
   let $data-directory := $db-config/db:forests/db:data-directory
-  for $host at $i in admin:group-get-host-ids(admin:get-configuration(), xdmp:group())
+  for $host in admin:group-get-host-ids(admin:get-configuration(), xdmp:group())
   for $j in (1 to $forests-per-host)
   let $forest-name := fn:string-join(($database-name, xdmp:host-name($host), xs:string($j)), "-")
   return
@@ -526,7 +803,7 @@ declare function setup:validate-forests-from-count(
   $forests-per-host as xs:int)
 {
   let $data-directory := $db-config/db:forests/db:data-directory
-  for $host at $i in admin:group-get-host-ids(admin:get-configuration(), xdmp:group())
+  for $host in admin:group-get-host-ids(admin:get-configuration(), xdmp:group())
   for $j in (1 to $forests-per-host)
   let $forest-name := fn:string-join(($database-name, xdmp:host-name($host), xs:string($j)), "-")
   return
@@ -536,20 +813,14 @@ declare function setup:validate-forests-from-count(
       $host)
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- ::
- ::)
 declare function setup:get-database-forest-configs(
   $import-config as element(configuration),
   $db as xs:string) as element(as:assignment)*
 {
   $import-config/as:assignments/as:assignment[
-    as:forest-name = $import-config/db:databases/db:database[db:database-name = $db]/db:forests/db:forest-id/@name]
+    as:forest-name = fn:data($import-config/db:databases/db:database[db:database-name = $db]/db:forests/db:forest-id/(@name|text()))]
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- ::
- ::)
 declare function setup:create-forest(
   $forest-name as xs:string,
   $data-directory as xs:string?,
@@ -611,10 +882,6 @@ declare function setup:validate-forest(
     setup:validation-fail(fn:concat("Forest missing: ", $forest-name))
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Creation of databases
- ::)
-
 declare function setup:create-databases($import-config as element(configuration)) as item()*
 {
   for $db-config in setup:get-databases-from-config($import-config)
@@ -649,16 +916,11 @@ declare function setup:validate-databases($import-config as element(configuratio
       setup:validation-fail(fn:concat("Missing database: ", $database-name))
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Attaching forests to databases
- ::)
-
 declare function setup:attach-forests($import-config as element(configuration)) as item()*
 {
   for $db-config in setup:get-databases-from-config($import-config)
   let $database-name := setup:get-database-name-from-database-config($db-config)
   let $forests-per-host := $db-config/db:forests-per-host
-  let $forest-config := setup:get-database-forest-configs($import-config, $database-name)
   return
     if (fn:exists($forests-per-host)) then
       setup:attach-forests-by-count($db-config)
@@ -671,7 +933,6 @@ declare function setup:validate-attached-forests($import-config as element(confi
   for $db-config in setup:get-databases-from-config($import-config)
   let $database-name := setup:get-database-name-from-database-config($db-config)
   let $forests-per-host := $db-config/db:forests-per-host
-  let $forest-config := setup:get-database-forest-configs($import-config, $database-name)
   return
     if (fn:exists($forests-per-host)) then
       setup:validate-attached-forests-by-count($db-config)
@@ -686,7 +947,7 @@ declare function setup:attach-forests-by-config(
 {
   for $forest-ref in $db-config/db:forests/db:forest-id
   return
-    setup:attach-database-forest($database-name, $forest-ref/@name)
+    setup:attach-database-forest($database-name, fn:data($forest-ref/(@name|text())))
 };
 
 declare function setup:validate-attached-forests-by-config(
@@ -696,7 +957,7 @@ declare function setup:validate-attached-forests-by-config(
 {
   for $forest-ref in $db-config/db:forests/db:forest-id
   return
-    setup:validate-attached-database-forest($database-name, $forest-ref/@name)
+    setup:validate-attached-database-forest($database-name, fn:data($forest-ref/(@name|text())))
 };
 
 declare function setup:attach-forests-by-count($db-config as element(db:database)) as item()*
@@ -745,20 +1006,13 @@ declare function setup:attach-database-forest(
 };
 
 declare function setup:validate-attached-database-forest(
-  $database-name as xs:string, $forest-name as xs:string)
+  $database-name as xs:string,
+  $forest-name as xs:string)
 {
-  let $db := xdmp:database($database-name)
-  let $forest := xdmp:forest($forest-name)
-  let $admin-config := admin:get-configuration()
-  return
-    if (xdmp:database-forests(xdmp:database($database-name))[$forest-name = xdmp:forest-name(.)]) then ()
-    else
-      setup:validation-fail(fn:concat("Forest not attached to database: ", $forest-name, " => ", $database-name))
+  if (xdmp:database-forests(xdmp:database($database-name))[$forest-name = xdmp:forest-name(.)]) then ()
+  else
+    setup:validation-fail(fn:concat("Forest not attached to database: ", $forest-name, " => ", $database-name))
 };
-
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Applying of database settings
- ::)
 
 declare function setup:apply-database-settings($import-config as element(configuration)) as item()*
 {
@@ -766,53 +1020,17 @@ declare function setup:apply-database-settings($import-config as element(configu
   for $db-config in setup:get-databases-from-config($import-config)
   let $database-name := setup:get-database-name-from-database-config($db-config)
   let $database := xdmp:database($database-name)
-  let $settings :=
-    <settings>
-      <setting>language</setting>
-      <setting>stemmed-searches</setting>
-      <setting>word-searches</setting>
-      <setting>word-positions</setting>
-      <setting>fast-phrase-searches</setting>
-      <setting>fast-reverse-searches</setting>
-      <setting>fast-case-sensitive-searches</setting>
-      <setting>fast-diacritic-sensitive-searches</setting>
-      <setting>fast-element-word-searches</setting>
-      <setting>element-word-positions</setting>
-      <setting>fast-element-phrase-searches</setting>
-      <setting>element-value-positions</setting>
-      <setting>attribute-value-positions</setting>
-      <setting>three-character-searches</setting>
-      <setting>three-character-word-positions</setting>
-      <setting>fast-element-character-searches</setting>
-      <setting>trailing-wildcard-searches</setting>
-      <setting>trailing-wildcard-word-positions</setting>
-      <setting>fast-element-trailing-wildcard-searches</setting>
-      <setting>two-character-searches</setting>
-      <setting>one-character-searches</setting>
-      <setting>uri-lexicon</setting>
-      <setting>collection-lexicon</setting>
-      <setting>reindexer-enable</setting>
-      <setting>reindexer-throttle</setting>
-      <setting>reindexer-timestamp</setting>
-      <setting>directory-creation</setting>
-      <setting>maintain-last-modified</setting>
-      <setting>maintain-directory-last-modified</setting>
-      <setting>inherit-permissions</setting>
-      <setting>inherit-collections</setting>
-      <setting>inherit-quality</setting>
-      <setting>format-compatibility</setting>
-      <setting>index-detection</setting>
-      <setting>expunge-locks</setting>
-      <setting>tf-normalization</setting>
-    </settings>
   let $apply-settings :=
-    for $setting in $settings/*:setting
+    for $setting in $database-settings/*:setting
     let $value := fn:data(xdmp:value(fn:concat("$db-config/db:", $setting)))
+    let $min-version as xs:string? := $setting/@min-version
     where fn:exists($value)
     return
-      xdmp:set(
-        $admin-config,
-        xdmp:value(fn:concat("admin:database-set-", $setting, "($admin-config, $database, $value)")))
+      if (fn:empty($min-version) or setup:at-least-version($min-version)) then
+        xdmp:set(
+          $admin-config,
+          xdmp:value(fn:concat("admin:database-set-", $setting, "($admin-config, $database, $value)")))
+      else ()
   return
   (
     if (admin:save-configuration-without-restart($admin-config)) then
@@ -825,61 +1043,28 @@ declare function setup:apply-database-settings($import-config as element(configu
 
 declare function setup:validate-database-settings($import-config as element(configuration))
 {
-  let $admin-config := admin:get-configuration()
-  for $db-config in setup:get-databases-from-config($import-config)
-  let $database := xdmp:database(setup:get-database-name-from-database-config($db-config))
-  let $settings :=
-    <settings>
-      <setting>language</setting>
-      <setting>stemmed-searches</setting>
-      <setting>word-searches</setting>
-      <setting>word-positions</setting>
-      <setting>fast-phrase-searches</setting>
-      <setting>fast-reverse-searches</setting>
-      <setting>fast-case-sensitive-searches</setting>
-      <setting>fast-diacritic-sensitive-searches</setting>
-      <setting>fast-element-word-searches</setting>
-      <setting>element-word-positions</setting>
-      <setting>fast-element-phrase-searches</setting>
-      <setting>element-value-positions</setting>
-      <setting>attribute-value-positions</setting>
-      <setting>three-character-searches</setting>
-      <setting>three-character-word-positions</setting>
-      <setting>fast-element-character-searches</setting>
-      <setting>trailing-wildcard-searches</setting>
-      <setting>trailing-wildcard-word-positions</setting>
-      <setting>fast-element-trailing-wildcard-searches</setting>
-      <setting>two-character-searches</setting>
-      <setting>one-character-searches</setting>
-      <setting>uri-lexicon</setting>
-      <setting>collection-lexicon</setting>
-      <setting>reindexer-enable</setting>
-      <setting>reindexer-throttle</setting>
-      <setting>reindexer-timestamp</setting>
-      <setting>directory-creation</setting>
-      <setting>maintain-last-modified</setting>
-      <setting>maintain-directory-last-modified</setting>
-      <setting>inherit-permissions</setting>
-      <setting>inherit-collections</setting>
-      <setting>inherit-quality</setting>
-      <setting>format-compatibility</setting>
-      <setting>index-detection</setting>
-      <setting>expunge-locks</setting>
-      <setting>tf-normalization</setting>
-    </settings>
-  for $setting in $settings/*:setting
-  let $expected := fn:data(xdmp:value(fn:concat("$db-config/db:", $setting)))
-  let $actual := xdmp:value(fn:concat("admin:database-get-", $setting, "($admin-config, $database)"))
-  where fn:exists($expected)
-  return
-    if ($expected = $actual) then ()
-    else
-      setup:validation-fail(fn:concat("database ", $setting, " mismatch: ", $expected, " != ", $actual))
+    let $admin-config := admin:get-configuration()
+    for $db-config in setup:get-databases-from-config($import-config)
+    let $database := xdmp:database(setup:get-database-name-from-database-config($db-config))
+    for $setting in $database-settings/*:setting
+    let $expected := fn:data(xdmp:value(fn:concat("$db-config/db:", $setting)))
+    let $actual :=
+      try
+      {
+        xdmp:value(fn:concat("admin:database-get-", $setting, "($admin-config, $database)"))
+      }
+      catch($ex)
+      {
+        if ($ex/error:code = "XDMP-UNDFUN") then ()
+        else
+          xdmp:rethrow()
+      }
+    where fn:exists($expected)
+    return
+      if ($expected = $actual) then ()
+      else
+        setup:validation-fail(fn:concat("database ", $setting, " mismatch: ", $expected, " != ", $actual))
 };
-
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Configuration of databases
- ::)
 
 declare function setup:configure-databases($import-config as element(configuration)) as item()*
 {
@@ -887,199 +1072,39 @@ declare function setup:configure-databases($import-config as element(configurati
   let $database-name := setup:get-database-name-from-database-config($db-config)
   let $database := xdmp:database($database-name)
   let $admin-config := admin:get-configuration()
-  let $admin-config := (: remove-existing-range-path-indexes := :)
-    (: wrap in try catch because this function is new to 6.0 and will fail in older version of ML :)
-    try
-    {
-      xdmp:eval('
-          import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
-          declare variable $database external;
-          declare variable $admin-config external;
-          let $remove-existing-indexes :=
-            for $index in admin:database-get-range-path-indexes($admin-config, $database)
-            return
-              xdmp:set(
-                $admin-config,
-                admin:database-delete-range-path-index($admin-config, $database, $index))
-          return
-            $admin-config
-            (: admin:save-configuration-without-restart($admin-config) :)',
-          (xs:QName("database"), $database,
-           xs:QName("admin-config"), $admin-config))
-    }
-    catch($ex)
-    {
-      if ($ex/error:code = "XDMP-UNDFUN") then $admin-config
-      else
-        xdmp:rethrow()
-    }
 
-  let $admin-config := (: remove-existing-path-namespaces := :)
-    (: wrap in try catch because this function is new to 6.0 and will fail in older version of ML :)
-    try
-    {
-      xdmp:eval('
-          import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
-          declare variable $database external;
-          declare variable $admin-config external;
-          let $remove-existing-indexes :=
-            for $index at $i in admin:database-get-path-namespaces($admin-config, $database)
-            return
-              xdmp:set($admin-config, admin:database-delete-path-namespace($admin-config, $database, $index))
-          return
-            $admin-config (: admin:save-configuration-without-restart($admin-config) :)',
-          (xs:QName("database"), $database,
-           xs:QName("admin-config"), $admin-config))
-    }
-    catch($ex)
-    {
-      xdmp:log($ex),
-      if ($ex/error:code = "XDMP-UNDFUN") then $admin-config
-      else if ($ex/error:code = "ADMIN-PATHNAMESPACEINUSE" and fn:not(setup:at-least-version("6.0-2"))) then
-        fn:error(xs:QName("VERSION_NOT_SUPPORTED"), "Roxy does not support path namespaces for this version of MarkLogic. Use 6.0-2 or later.")
-      else
-        xdmp:rethrow()
-    }
+  let $admin-config := setup:remove-existing-range-path-indexes($admin-config, $database)
+  let $admin-config := setup:remove-existing-path-namespaces($admin-config, $database)
 
   let $admin-config := setup:add-word-lexicons($admin-config, $database, $db-config)
   let $admin-config := setup:add-fragment-roots($admin-config, $database, $db-config)
   let $admin-config := setup:add-fragment-parents($admin-config, $database, $db-config)
-
   let $admin-config := setup:config-word-query($admin-config, $database, $db-config)
-  (:
-    <element-word-query-throughs />
-    <phrase-throughs />
-    <phrase-arounds />
-    <geospatial-element-indexes />
-
-  :)
-
   let $admin-config := setup:set-schema-database($admin-config, $db-config, $database)
-  let $admin-config := setup:set-security-database($admin-config, $db-config, $database)
+  (:
+    Changing the Security database is serious stuff. Roxy doesn't support this
+  :)
+  (:let $admin-config := setup:set-security-database($admin-config, $db-config, $database):)
   let $admin-config := setup:set-triggers-database($admin-config, $db-config, $database)
-
-  (: remove any existing range index (copied from default.xqy) :)
-  let $remove-existing-indexes :=
-    for $index in admin:database-get-range-element-indexes($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-range-element-index($admin-config, $database, $index))
-
   let $admin-config := setup:add-range-element-indexes($admin-config, $database, $db-config)
-
-  (: remove any existing range element attribute index :)
-  let $remove-existing-indexes :=
-    for $index in admin:database-get-range-element-attribute-indexes($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-range-element-attribute-index($admin-config, $database, $index))
-
   let $admin-config := setup:add-range-element-attribute-indexes($admin-config, $database, $db-config)
-
   let $admin-config := setup:add-path-namespaces($admin-config, $database, $db-config)
   let $admin-config := setup:add-range-path-indexes($admin-config, $database, $db-config)
-
-  (: remove any existing geospatial element attribute pair indexes :)
-  let $remove-existing-indexes :=
-    for $index in admin:database-get-geospatial-element-indexes($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-geospatial-element-index($admin-config, $database, $index))
-
   let $admin-config := setup:add-geospatial-element-indexes($admin-config, $database, $db-config)
-
-  (: remove any existing geospatial element attribute pair indexes :)
-  let $remove-existing-indexes :=
-    for $index in admin:database-get-geospatial-element-attribute-pair-indexes($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-geospatial-element-attribute-pair-index($admin-config, $database, $index))
-
   let $admin-config := setup:add-geospatial-element-attribute-pair-indexes($admin-config, $database, $db-config)
-
-  (: remove any existing geospatial element  pair indexes :)
-  let $remove-existing-indexes :=
-    for $index in admin:database-get-geospatial-element-pair-indexes($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-geospatial-element-pair-index($admin-config, $database, $index))
-
   let $admin-config := setup:add-geospatial-element-pair-indexes($admin-config, $database, $db-config)
-
-  (: remove any existing geospatial element  pair indexes :)
-  let $remove-existing-indexes :=
-    for $index in admin:database-get-geospatial-element-child-indexes($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-geospatial-element-child-index($admin-config, $database, $index))
-
   let $admin-config := setup:add-geospatial-element-child-indexes($admin-config, $database, $db-config)
-
-  (: remove any existing field (copied from default.xqy) :)
-  let $remove-existing-fields :=
-    for $field as xs:string in admin:database-get-fields($admin-config, $database)/db:field-name[fn:not(. = "")]
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-field($admin-config, $database, $field))
-
   let $admin-config := setup:add-fields($admin-config, $database, $db-config)
+  let $admin-config := setup:apply-field-settings($admin-config, $database, $db-config)
   let $admin-config := setup:add-field-includes($admin-config, $database, $db-config)
   let $admin-config := setup:add-field-excludes($admin-config, $database, $db-config)
-
-
-  let $remove-existing-indexes :=
-    (: wrap in try catch because this function is new to 5.0 and will fail in older version of ML :)
-    try
-    {
-      xdmp:set(
-        $admin-config,
-        xdmp:eval('
-          import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
-          declare variable $admin-config external;
-          declare variable $database external;
-
-          let $remove-existing-indexes :=
-            for $index in admin:database-get-range-field-indexes($admin-config, $database)
-            return
-              xdmp:set(
-                $admin-config,
-                admin:database-delete-range-field-index($admin-config, $database, $index))
-          return
-            $admin-config',
-          (xs:QName("admin-config"), $admin-config,
-           xs:QName("database"), $database)))
-    }
-    catch($ex)
-    {
-      if ($ex/error:code = "XDMP-UNDFUN") then ()
-      else
-        xdmp:rethrow()
-    }
-
+  let $admin-config := setup:add-field-word-lexicons($admin-config, $database, $db-config)
   let $admin-config := setup:add-range-field-indexes($admin-config, $database, $db-config)
-
-  let $remove-existing-element-word-lexicons :=
-    for $lexicon in admin:database-get-element-word-lexicons($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-element-word-lexicon($admin-config, $database, $lexicon))
   let $admin-config := setup:add-element-word-lexicons($admin-config, $database, $db-config)
-
-  let $remove-existing-element-attribute-word-lexicons :=
-    for $lexicon in admin:database-get-element-attribute-word-lexicons($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-element-attribute-word-lexicon($admin-config, $database, $lexicon))
   let $admin-config := setup:add-element-attribute-word-lexicons($admin-config, $database, $db-config)
+  let $admin-config := setup:add-element-word-query-throughs($admin-config, $database, $db-config)
+  let $admin-config := setup:add-phrase-throughs($admin-config, $database, $db-config)
+  let $admin-config := setup:add-phrase-arounds($admin-config, $database, $db-config)
 
   return
   (
@@ -1090,12 +1115,10 @@ declare function setup:configure-databases($import-config as element(configurati
   )
 };
 
-(: TODO: YOU ARE HERE :)
 declare function setup:validate-databases-indexes($import-config as element(configuration))
 {
   for $db-config in setup:get-databases-from-config($import-config)
-  let $database-name := setup:get-database-name-from-database-config($db-config)
-  let $database := xdmp:database($database-name)
+  let $database := xdmp:database(setup:get-database-name-from-database-config($db-config))
   let $admin-config := admin:get-configuration()
   return
   (
@@ -1104,7 +1127,7 @@ declare function setup:validate-databases-indexes($import-config as element(conf
     setup:validate-fragment-parents($admin-config, $database, $db-config),
     setup:validate-word-query($admin-config, $database, $db-config),
     setup:validate-schema-database($admin-config, $db-config, $database),
-    setup:validate-security-database($admin-config, $db-config, $database),
+    (:setup:validate-security-database($admin-config, $db-config, $database),:)
     setup:validate-triggers-database($admin-config, $db-config, $database),
     setup:validate-range-element-indexes($admin-config, $database, $db-config),
     setup:validate-range-element-attribute-indexes($admin-config, $database, $db-config),
@@ -1113,15 +1136,28 @@ declare function setup:validate-databases-indexes($import-config as element(conf
     setup:validate-geospatial-element-indexes($admin-config, $database, $db-config),
     setup:validate-geospatial-element-attribute-pair-indexes($admin-config, $database, $db-config),
     setup:validate-geospatial-element-pair-indexes($admin-config, $database, $db-config),
-    setup:validate-geospatial-element-child-indexes($admin-config, $database, $db-config)(:,
+    setup:validate-geospatial-element-child-indexes($admin-config, $database, $db-config),
     setup:validate-fields($admin-config, $database, $db-config),
-    setup:validate-field-includes($admin-config, $database, $db-config),
-    setup:validate-field-excludes($admin-config, $database, $db-config),
     setup:validate-range-field-indexes($admin-config, $database, $db-config),
     setup:validate-element-word-lexicons($admin-config, $database, $db-config),
-    setup:validate-element-attribute-word-lexicons($admin-config, $database, $db-config):)
+    setup:validate-element-attribute-word-lexicons($admin-config, $database, $db-config),
+    setup:validate-element-word-query-throughs($admin-config, $database, $db-config),
+    setup:validate-phrase-throughs($admin-config, $database, $db-config),
+    setup:validate-phrase-arounds($admin-config, $database, $db-config)
   )
 
+};
+
+declare function setup:remove-existing-fields(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $field as xs:string in admin:database-get-fields($admin-config, $database)/db:field-name[fn:not(. = "")]
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-field($admin-config, $database, $field)),
+  $admin-config
 };
 
 declare function setup:add-fields(
@@ -1130,7 +1166,7 @@ declare function setup:add-fields(
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-fields-R(
-    $admin-config,
+    setup:remove-existing-fields($admin-config, $database),
     $database,
     for $e in $db-config/db:fields/db:field[db:field-name != ""]
     return
@@ -1148,6 +1184,38 @@ declare function setup:add-fields-R(
       $database,
       fn:subsequence($field-configs, 2))
   else
+    $admin-config
+};
+
+declare function setup:validate-fields($admin-config, $database, $db-config)
+{
+  let $existing := admin:database-get-fields($admin-config, $database)
+  for $expected in $db-config/db:fields/db:field
+  return
+    if ($existing[fn:deep-equal(., $expected)]) then ()
+    else
+      setup:validation-fail(fn:concat("Database mismatched field: ", $expected/db:field-name))
+};
+
+declare function setup:apply-field-settings(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $db-config as element(db:database)) as element(configuration)
+{
+  let $apply-settings :=
+    for $field in $db-config/db:fields/db:field
+    let $field-name as xs:string := $field/db:field-name
+    for $setting in $field-settings/setting
+    let $value := fn:data(xdmp:value(fn:concat("$field/db:", $setting)))
+    let $min-version as xs:string? := $setting/@min-version
+    let $_ := xdmp:log("applying " || $setting || " setting; min-version=" || $min-version || "; apply?=" ||
+      (fn:exists($value) and (fn:empty($min-version) or setup:at-least-version($min-version))))
+    where fn:exists($value) and (fn:empty($min-version) or setup:at-least-version($min-version))
+    return
+      xdmp:set(
+        $admin-config,
+        xdmp:value(fn:concat("admin:database-set-field-", $setting, "($admin-config, $database, $field-name, $value)")))
+  return
     $admin-config
 };
 
@@ -1238,13 +1306,56 @@ declare function setup:add-field-excludes-R(
     $admin-config
 };
 
+declare function setup:add-field-word-lexicons(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $db-config as element(db:database)) as element(configuration)
+{
+  setup:add-field-word-lexicons-R(
+    $admin-config,
+    $database,
+    $db-config/db:fields/db:field[db:field-name != ""])
+};
+
+declare function setup:add-field-word-lexicons-R(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $field-configs as element(db:field)*) as element(configuration)
+{
+  if ($field-configs) then
+    setup:add-field-word-lexicons-R(
+      admin:database-add-field-word-lexicon(
+        $admin-config,
+        $database,
+        $field-configs[1]/db:field-name,
+        for $e in $field-configs[1]/db:word-lexicons/db:word-lexicon
+        return
+          admin:database-word-lexicon($e)),
+      $database,
+      fn:subsequence($field-configs, 2))
+  else
+    $admin-config
+};
+
+declare function setup:remove-existing-range-element-indexes(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $index in admin:database-get-range-element-indexes($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-range-element-index($admin-config, $database, $index)),
+  $admin-config
+};
+
 declare function setup:add-range-element-indexes(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-range-element-indexes-R(
-    $admin-config,
+    setup:remove-existing-range-element-indexes($admin-config, $database),
     $database,
     $db-config/db:range-element-indexes/db:range-element-index)
 };
@@ -1276,13 +1387,25 @@ declare function setup:validate-range-element-indexes(
       setup:validation-fail(fn:concat("Missing range element index: ", $expected/db:localname))
 };
 
+declare function setup:remove-existing-range-element-attribute-indexes(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $index in admin:database-get-range-element-attribute-indexes($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-range-element-attribute-index($admin-config, $database, $index)),
+  $admin-config
+};
+
 declare function setup:add-range-element-attribute-indexes(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-range-element-attribute-indexes-R(
-    $admin-config,
+    setup:remove-existing-range-element-attribute-indexes($admin-config, $database),
     $database,
     $db-config/db:range-element-attribute-indexes/db:range-element-attribute-index)
 };
@@ -1312,6 +1435,36 @@ declare function setup:validate-range-element-attribute-indexes(
     if ($existing[fn:deep-equal(., $expected)]) then ()
     else
       setup:validation-fail(fn:concat("Missing range element attribute index: ", $expected/db:localname))
+};
+
+declare function setup:remove-existing-path-namespaces(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  (: wrap in try catch because this function is new to 6.0 and will fail in older version of ML :)
+  try
+  {
+    xdmp:eval('
+      import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
+      declare variable $database external;
+      declare variable $admin-config external;
+      let $remove-existing-indexes :=
+        for $index at $i in admin:database-get-path-namespaces($admin-config, $database)
+        return
+          xdmp:set($admin-config, admin:database-delete-path-namespace($admin-config, $database, $index))
+      return
+        $admin-config',
+      (xs:QName("database"), $database,
+       xs:QName("admin-config"), $admin-config))
+  }
+  catch($ex)
+  {
+    if ($ex/error:code = "XDMP-UNDFUN") then $admin-config
+    else if ($ex/error:code = "ADMIN-PATHNAMESPACEINUSE" and fn:not(setup:at-least-version("6.0-2"))) then
+      fn:error(xs:QName("VERSION_NOT_SUPPORTED"), "Roxy does not support path namespaces for this version of MarkLogic. Use 6.0-2 or later.")
+    else
+      xdmp:rethrow()
+  }
 };
 
 declare function setup:add-path-namespaces(
@@ -1378,6 +1531,36 @@ declare function setup:validate-path-namespaces(
     if ($existing[fn:deep-equal(., $expected)]) then ()
     else
       setup:validation-fail(fn:concat("Missing path namespace: ", $expected/db:prefix, " => ", $expected/db:namespace-uri))
+};
+
+declare function setup:remove-existing-range-path-indexes(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  (: wrap in try catch because this function is new to 6.0 and will fail in older version of ML :)
+  try
+  {
+    xdmp:eval('
+        import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
+        declare variable $database external;
+        declare variable $admin-config external;
+        let $remove-existing-indexes :=
+          for $index in admin:database-get-range-path-indexes($admin-config, $database)
+          return
+            xdmp:set(
+              $admin-config,
+              admin:database-delete-range-path-index($admin-config, $database, $index))
+        return
+          $admin-config',
+        (xs:QName("database"), $database,
+         xs:QName("admin-config"), $admin-config))
+  }
+  catch($ex)
+  {
+    if ($ex/error:code = "XDMP-UNDFUN") then $admin-config
+    else
+      xdmp:rethrow()
+  }
 };
 
 declare function setup:add-range-path-indexes(
@@ -1462,13 +1645,25 @@ declare function setup:validate-range-path-indexes(
       setup:validation-fail(fn:concat("Missing range path index: ", $expected/db:path-expression))
 };
 
+declare function setup:remove-existing-element-word-lexicons(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $lexicon in admin:database-get-element-word-lexicons($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-element-word-lexicon($admin-config, $database, $lexicon)),
+  $admin-config
+};
+
 declare function setup:add-element-word-lexicons(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-element-word-lexicons-R(
-    $admin-config,
+    setup:remove-existing-element-word-lexicons($admin-config, $database),
     $database,
     $db-config/db:element-word-lexicons/db:element-word-lexicon)
 };
@@ -1487,13 +1682,35 @@ declare function setup:add-element-word-lexicons-R(
     $admin-config
 };
 
+declare function setup:validate-element-word-lexicons($admin-config, $database, $db-config)
+{
+  let $existing := admin:database-get-element-word-lexicons($admin-config, $database)
+  for $expected in $db-config/db:element-word-lexicons/db:element-word-lexicon
+  return
+    if ($existing[fn:deep-equal(., $expected)]) then ()
+    else
+      setup:validation-fail(fn:concat("Database mismatched element word lexicon: ", $expected/db:localname))
+};
+
+declare function setup:remove-existing-element-attribute-word-lexicons(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $lexicon in admin:database-get-element-attribute-word-lexicons($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-element-attribute-word-lexicon($admin-config, $database, $lexicon)),
+  $admin-config
+};
+
 declare function setup:add-element-attribute-word-lexicons(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-element-attribute-word-lexicons-R(
-    $admin-config,
+    setup:remove-existing-element-attribute-word-lexicons($admin-config, $database),
     $database,
     $db-config/db:element-attribute-word-lexicons/db:element-attribute-word-lexicon)
 };
@@ -1512,6 +1729,188 @@ declare function setup:add-element-attribute-word-lexicons-R(
     $admin-config
 };
 
+declare function setup:validate-element-attribute-word-lexicons($admin-config, $database, $db-config)
+{
+  let $existing := admin:database-get-element-attribute-word-lexicons($admin-config, $database)
+  for $expected in $db-config/db:element-attribute-word-lexicons/db:element-attribute-word-lexicon
+  return
+    if ($existing[fn:deep-equal(., $expected)]) then ()
+    else
+      setup:validation-fail(fn:concat("Database mismatched element attribute word lexicon: ", $expected/db:localname))
+};
+
+declare function setup:remove-existing-element-word-query-throughs(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $query-through in admin:database-get-element-word-query-throughs($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-element-word-query-through($admin-config, $database, $query-through)),
+  $admin-config
+};
+
+declare function setup:add-element-word-query-throughs(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $db-config as element(db:database)) as element(configuration)
+{
+  setup:add-element-word-query-throughs-R(
+    setup:remove-existing-element-word-query-throughs($admin-config, $database),
+    $database,
+    $db-config/db:element-word-query-throughs/db:element-word-query-through)
+};
+
+declare function setup:add-element-word-query-throughs-R(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $query-throughs as element(db:element-word-query-through)*) as element(configuration)
+{
+  if ($query-throughs) then
+    setup:add-element-word-query-throughs-R(
+      admin:database-add-element-word-query-through($admin-config, $database, $query-throughs[1]),
+      $database,
+      fn:subsequence($query-throughs, 2))
+  else
+    $admin-config
+};
+
+declare function setup:validate-element-word-query-throughs($admin-config, $database, $db-config)
+{
+  let $existing := admin:database-get-element-word-query-throughs($admin-config, $database)
+  for $expected in $db-config/db:element-word-query-throughs/db:element-word-query-through
+  return
+    if ($existing[fn:deep-equal(., $expected)]) then ()
+    else
+      setup:validation-fail(fn:concat("Database mismatched element word query through: ", $expected/db:localname))
+};
+
+declare function setup:remove-existing-phrase-throughs(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $query-through in admin:database-get-phrase-throughs($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-phrase-through($admin-config, $database, $query-through)),
+  $admin-config
+};
+
+declare function setup:add-phrase-throughs(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $db-config as element(db:database)) as element(configuration)
+{
+  setup:add-phrase-throughs-R(
+    setup:remove-existing-phrase-throughs($admin-config, $database),
+    $database,
+    $db-config/db:phrase-throughs/db:phrase-through)
+};
+
+declare function setup:add-phrase-throughs-R(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $phrase-throughs as element(db:phrase-through)*) as element(configuration)
+{
+  if ($phrase-throughs) then
+    setup:add-phrase-throughs-R(
+      admin:database-add-phrase-through($admin-config, $database, $phrase-throughs[1]),
+      $database,
+      fn:subsequence($phrase-throughs, 2))
+  else
+    $admin-config
+};
+
+declare function setup:validate-phrase-throughs($admin-config, $database, $db-config)
+{
+  let $existing := admin:database-get-phrase-throughs($admin-config, $database)
+  for $expected in $db-config/db:phrase-throughs/db:phrase-through
+  return
+    if ($existing[fn:deep-equal(., $expected)]) then ()
+    else
+      setup:validation-fail(fn:concat("Database mismatched phrase through: ", $expected/db:localname))
+};
+
+declare function setup:remove-existing-phrase-arounds(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $phrase-around in admin:database-get-phrase-arounds($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-phrase-around($admin-config, $database, $phrase-around)),
+  $admin-config
+};
+
+declare function setup:add-phrase-arounds(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $db-config as element(db:database)) as element(configuration)
+{
+  setup:add-phrase-arounds-R(
+    setup:remove-existing-phrase-arounds($admin-config, $database),
+    $database,
+    $db-config/db:phrase-arounds/db:phrase-around)
+};
+
+declare function setup:add-phrase-arounds-R(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong,
+  $phrase-arounds as element(db:phrase-around)*) as element(configuration)
+{
+  if ($phrase-arounds) then
+    setup:add-phrase-arounds-R(
+      admin:database-add-phrase-around($admin-config, $database, $phrase-arounds[1]),
+      $database,
+      fn:subsequence($phrase-arounds, 2))
+  else
+    $admin-config
+};
+
+declare function setup:validate-phrase-arounds($admin-config, $database, $db-config)
+{
+  let $existing := admin:database-get-phrase-arounds($admin-config, $database)
+  for $expected in $db-config/db:phrase-arounds/db:phrase-around
+  return
+    if ($existing[fn:deep-equal(., $expected)]) then ()
+    else
+      setup:validation-fail(fn:concat("Database mismatched phrase around: ", $expected/db:localname))
+};
+
+declare function setup:remove-existing-range-field-indexes(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  (: wrap in try catch because this function is new to 5.0 and will fail in older version of ML :)
+  try
+  {
+    xdmp:eval('
+      import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
+      declare variable $admin-config external;
+      declare variable $database external;
+
+      let $remove-existing-indexes :=
+        for $index in admin:database-get-range-field-indexes($admin-config, $database)
+        return
+          xdmp:set(
+            $admin-config,
+            admin:database-delete-range-field-index($admin-config, $database, $index))
+      return
+        $admin-config',
+      (xs:QName("admin-config"), $admin-config,
+       xs:QName("database"), $database))
+  }
+  catch($ex)
+  {
+    if ($ex/error:code = "XDMP-UNDFUN") then $admin-config
+    else
+      xdmp:rethrow()
+  }
+};
+
 
 declare function setup:add-range-field-indexes(
   $admin-config as element(configuration),
@@ -1519,7 +1918,7 @@ declare function setup:add-range-field-indexes(
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-range-field-indexes-R(
-    $admin-config,
+    setup:remove-existing-range-field-indexes($admin-config, $database),
     $database,
     $db-config/db:range-field-indexes/db:range-field-index)
 };
@@ -1548,6 +1947,47 @@ declare function setup:add-range-field-indexes-R(
     $admin-config
 };
 
+declare function setup:remove-existing-geospatial-element-indexes(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $index in admin:database-get-geospatial-element-indexes($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-geospatial-element-index($admin-config, $database, $index)),
+  $admin-config
+};
+
+declare function setup:validate-range-field-indexes($admin-config, $database, $db-config)
+{
+  try
+  {
+    let $existing :=
+      xdmp:eval('
+        import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
+
+        declare namespace db="http://marklogic.com/xdmp/database";
+
+        declare variable $admin-config external;
+        declare variable $database external;
+
+        admin:database-get-range-field-indexes($admin-config, $database)',
+        (xs:QName("admin-config"), $admin-config,
+         xs:QName("database"), $database))
+    for $expected in $db-config/db:range-field-indexes/db:range-field-index
+    return
+      if ($existing[fn:deep-equal(., $expected)]) then ()
+      else
+        setup:validation-fail(fn:concat("Database mismatched range field index: ", $expected/db:field-name))
+  }
+  catch($ex)
+  {
+    if ($ex/error:code = "XDMP-UNDFUN") then $admin-config
+    else
+      xdmp:rethrow()
+  }
+};
 
 declare function setup:add-geospatial-element-indexes(
   $admin-config as element(configuration),
@@ -1555,7 +1995,7 @@ declare function setup:add-geospatial-element-indexes(
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-geospatial-element-indexes-R(
-    $admin-config,
+    setup:remove-existing-geospatial-element-indexes($admin-config, $database),
     $database,
     $db-config/db:geospatial-element-indexes/db:geospatial-element-index)
 };
@@ -1587,13 +2027,26 @@ declare function setup:validate-geospatial-element-indexes(
       setup:validation-fail(fn:concat("Missing geospatial element index: ", $expected/db:localname))
 };
 
+declare function setup:remove-existing-geospatial-element-attribute-pair-indexes(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $index in admin:database-get-geospatial-element-attribute-pair-indexes($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-geospatial-element-attribute-pair-index($admin-config, $database, $index)),
+  $admin-config
+};
+
+
 declare function setup:add-geospatial-element-attribute-pair-indexes(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-geospatial-element-attribute-pair-indexes-R(
-    $admin-config,
+    setup:remove-existing-geospatial-element-attribute-pair-indexes($admin-config, $database),
     $database,
     $db-config/db:geospatial-element-attribute-pair-indexes/db:geospatial-element-attribute-pair-index)
 };
@@ -1625,13 +2078,25 @@ declare function setup:validate-geospatial-element-attribute-pair-indexes(
       setup:validation-fail(fn:concat("Missing geospatial element attribute pair index: ", $expected/db:localname))
 };
 
+declare function setup:remove-existing-geospatial-element-pair-indexes(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $index in admin:database-get-geospatial-element-pair-indexes($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-geospatial-element-pair-index($admin-config, $database, $index)),
+  $admin-config
+};
+
 declare function setup:add-geospatial-element-pair-indexes(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-geospatial-element-pair-indexes-R(
-    $admin-config,
+    setup:remove-existing-geospatial-element-pair-indexes($admin-config, $database),
     $database,
     $db-config/db:geospatial-element-pair-indexes/db:geospatial-element-pair-index)
 };
@@ -1662,13 +2127,25 @@ declare function setup:validate-geospatial-element-pair-indexes(
       setup:validation-fail(fn:concat("Missing geospatial element pair index: ", $expected/db:localname))
 };
 
+declare function setup:remove-existing-geospatial-element-child-indexes(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $index in admin:database-get-geospatial-element-child-indexes($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-geospatial-element-child-index($admin-config, $database, $index)),
+  $admin-config
+};
+
 declare function setup:add-geospatial-element-child-indexes(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-geospatial-element-child-indexes-R(
-    $admin-config,
+    setup:remove-existing-geospatial-element-child-indexes($admin-config, $database),
     $database,
     $db-config/db:geospatial-element-child-indexes/db:geospatial-element-child-index)
 };
@@ -1700,13 +2177,25 @@ declare function setup:validate-geospatial-element-child-indexes(
       setup:validation-fail(fn:concat("Missing geospatial element child index: ", $expected/db:localname))
 };
 
+declare function setup:remove-existing-word-lexicons(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $lexicon in admin:database-get-word-lexicons($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-word-lexicon($admin-config, $database, $lexicon)),
+  $admin-config
+};
+
 declare function setup:add-word-lexicons(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
   setup:add-word-lexicons-R(
-    $admin-config,
+    setup:remove-existing-word-lexicons($admin-config, $database),
     $database,
     $db-config/db:word-lexicons/db:word-lexicon)
 };
@@ -1718,7 +2207,10 @@ declare function setup:add-word-lexicons-R(
 {
   if ($collations) then
     setup:add-word-lexicons-R(
-      setup:safe-database-add-word-lexicon($admin-config, $database, $collations[1]),
+      admin:database-add-word-lexicon(
+        $admin-config,
+        $database,
+        admin:database-word-lexicon($collations[1])),
       $database,
       fn:subsequence($collations, 2))
   else
@@ -1738,16 +2230,14 @@ declare function setup:validate-word-lexicons(
       setup:validation-fail(fn:concat("Database missing word lexicon: ", $expected))
 };
 
-
-declare function setup:safe-database-add-word-lexicon(
+declare function setup:remove-existing-fragment-roots(
   $admin-config as element(configuration),
-  $database as xs:unsignedLong,
-  $collation as xs:string) as element(configuration)
+  $database as xs:unsignedLong) as element(configuration)
 {
-  admin:database-add-word-lexicon(
-    $admin-config,
-    $database,
-    admin:database-word-lexicon($collation))
+  for $root in admin:database-get-fragment-roots($admin-config, $database)
+  return
+   xdmp:set($admin-config, admin:database-delete-fragment-root($admin-config, $database, $root)),
+  $admin-config
 };
 
 declare function setup:add-fragment-roots(
@@ -1755,13 +2245,8 @@ declare function setup:add-fragment-roots(
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
-  (: remove any existing fragment roots first :)
-  for $root in admin:database-get-fragment-roots($admin-config, $database)
-  return
-   xdmp:set($admin-config, admin:database-delete-fragment-root($admin-config, $database, $root)),
-
   setup:add-fragment-roots-R(
-    $admin-config,
+    setup:remove-existing-fragment-roots($admin-config, $database),
     $database,
     $db-config/db:fragment-roots/db:fragment-root)
 };
@@ -1798,18 +2283,23 @@ declare function setup:validate-fragment-roots(
       setup:validation-fail(fn:concat("Missing fragment root: ", $expected/db:localname))
 };
 
+declare function setup:remove-existing-fragment-parents(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $parent in admin:database-get-fragment-parents($admin-config, $database)
+  return
+    xdmp:set($admin-config, admin:database-delete-fragment-parent($admin-config, $database, $parent)),
+  $admin-config
+};
+
 declare function setup:add-fragment-parents(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
   $db-config as element(db:database)) as element(configuration)
 {
-  (: remove any existing fragment parents first :)
-  for $parent in admin:database-get-fragment-parents($admin-config, $database)
-  return
-   xdmp:set($admin-config, admin:database-delete-fragment-parent($admin-config, $database, $parent)),
-
   setup:add-fragment-parents-R(
-    $admin-config,
+    setup:remove-existing-fragment-parents($admin-config, $database),
     $database,
     $db-config/db:fragment-parents/db:fragment-parent)
 };
@@ -1846,6 +2336,36 @@ declare function setup:validate-fragment-parents(
       setup:validation-fail(fn:concat("Missing fragment root: ", $expected/db:localname))
 };
 
+declare function setup:remove-existing-word-query-included-elements(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $element in admin:database-get-word-query-included-elements($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-word-query-included-element(
+        $admin-config,
+        $database,
+        $element)),
+  $admin-config
+};
+
+declare function setup:remove-existing-word-query-excluded-elements(
+  $admin-config as element(configuration),
+  $database as xs:unsignedLong) as element(configuration)
+{
+  for $element in admin:database-get-word-query-excluded-elements($admin-config, $database)
+  return
+    xdmp:set(
+      $admin-config,
+      admin:database-delete-word-query-excluded-element(
+        $admin-config,
+        $database,
+        $element)),
+  $admin-config
+};
+
 declare function setup:config-word-query(
   $admin-config as element(configuration),
   $database as xs:unsignedLong,
@@ -1854,17 +2374,7 @@ declare function setup:config-word-query(
   let $empty-field := $db-config/db:fields/db:field[db:field-name = ""]
   return
   (
-    (: remove existing word query included elements first :)
-    for $element in admin:database-get-word-query-included-elements($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-word-query-included-element(
-          $admin-config,
-          $database,
-          $element)),
-
-    (: now add the new ones :)
+    xdmp:set($admin-config, setup:remove-existing-word-query-included-elements($admin-config, $database)),
     for $element in $empty-field/db:included-elements/db:included-element
     return
       xdmp:set(
@@ -1874,17 +2384,7 @@ declare function setup:config-word-query(
           $database,
           $element)),
 
-    (: remove existing word query excluded elements first :)
-    for $element in admin:database-get-word-query-excluded-elements($admin-config, $database)
-    return
-      xdmp:set(
-        $admin-config,
-        admin:database-delete-word-query-excluded-element(
-          $admin-config,
-          $database,
-          $element)),
-
-    (: now add the new ones :)
+    xdmp:set($admin-config, setup:remove-existing-word-query-excluded-elements($admin-config, $database)),
     for $element in $empty-field/db:excluded-elements/db:excluded-element
     return
       xdmp:set(
@@ -2138,26 +2638,15 @@ declare function setup:validate-word-query(
   )
 };
 
-(:
-  if the triggers database is 0, set it to 0.
-  if the triggers database is set to an ID of another database in the import,
-  get its new ID and set it to that
-:)
 declare function setup:set-triggers-database(
   $admin-config as element(configuration),
   $db-config as element(db:database),
   $database as xs:unsignedLong) as element(configuration)
 {
-  let $triggers-database-id :=
-    if ($db-config/db:triggers-database/@name) then
-      xdmp:database($db-config/db:triggers-database/@name)
-    else
-      0
-  return
-    admin:database-set-triggers-database(
-      $admin-config,
-      $database,
-      $triggers-database-id)
+  admin:database-set-triggers-database(
+    $admin-config,
+    $database,
+    setup:get-triggers-database($db-config))
 };
 
 declare function setup:validate-triggers-database(
@@ -2166,38 +2655,22 @@ declare function setup:validate-triggers-database(
   $database as xs:unsignedLong)
 {
   let $actual := admin:database-get-triggers-database($admin-config, $database)
-  let $expected :=
-    if ($db-config/db:triggers-database/@name) then
-      xdmp:database($db-config/db:triggers-database/@name)
-    else
-      0
+  let $expected := setup:get-triggers-database($db-config)
   return
     if ($expected = $actual) then ()
     else
       setup:validation-fail(fn:concat("Triggers database mismatch! ", $expected, " != ", $actual))
 };
 
-
-(:
-  if the schema database is 0, set it to 0.
-  if the schema database is set to an ID of another database in the import,
-  get its new ID and set it to that
-:)
 declare function setup:set-schema-database(
   $admin-config as element(configuration),
   $db-config as element(db:database),
   $database as xs:unsignedLong) as element(configuration)
 {
-  let $schema-database-id :=
-    if ($db-config/db:schema-database/@name) then
-      xdmp:database($db-config/db:schema-database/@name)
-    else
-      $default-schemas
-  return
-    admin:database-set-schema-database(
-      $admin-config,
-      $database,
-      $schema-database-id)
+  admin:database-set-schema-database(
+    $admin-config,
+    $database,
+    setup:get-schema-database($db-config))
 };
 
 declare function setup:validate-schema-database(
@@ -2206,37 +2679,22 @@ declare function setup:validate-schema-database(
   $database as xs:unsignedLong)
 {
   let $actual := admin:database-get-schema-database($admin-config, $database)
-  let $expected :=
-    if ($db-config/db:schema-database/@name) then
-      xdmp:database($db-config/db:schema-database/@name)
-    else
-      $default-schemas
+  let $expected := setup:get-schema-database($db-config)
   return
     if ($expected = $actual) then ()
     else
       setup:validation-fail(fn:concat("Schema database mismatch! ", $expected, " != ", $actual))
 };
 
-(:
-  if the security database is 0, set it to 0.
-  if the security database is set to an ID of another database in the import,
-  get its new ID and set it to that
-:)
 declare function setup:set-security-database(
   $admin-config as element(configuration),
   $db-config as element(db:database),
   $database as xs:unsignedLong) as element(configuration)
 {
-  let $security-database-id :=
-    if ($db-config/db:security-database/@name) then
-      xdmp:database($db-config/db:security-database/@name)
-    else
-      $default-security
-  return
-    admin:database-set-security-database(
-      $admin-config,
-      $database,
-      $security-database-id)
+  admin:database-set-security-database(
+    $admin-config,
+    $database,
+    setup:get-security-database($db-config))
 };
 
 declare function setup:validate-security-database(
@@ -2245,43 +2703,61 @@ declare function setup:validate-security-database(
   $database as xs:unsignedLong)
 {
   let $actual := admin:database-get-security-database($admin-config, $database)
-  let $expected :=
-    if ($db-config/db:security-database/@name) then
-      xdmp:database($db-config/db:security-database/@name)
-    else
-      $default-security
+  let $expected := setup:get-security-database($db-config)
   return
     if ($expected = $actual) then ()
     else
       setup:validation-fail(fn:concat("Security database mismatch! ", $expected, " != ", $actual))
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Creation of app servers
- ::)
-
 declare function setup:create-appservers(
   $import-config as element(configuration)) as item()*
 {
-  for $http-config in $import-config//gr:http-servers/gr:http-server
+  for $http-config in setup:get-http-appservers-from-config($import-config)
   return
     setup:create-appserver($http-config),
 
-  for $xdbc-config in $import-config//gr:xdbc-servers/gr:xdbc-server
+  for $xdbc-config in $import-config/gr:xdbc-servers/gr:xdbc-server
   return
-    setup:create-xdbcserver($xdbc-config)
+    setup:create-xdbcserver($xdbc-config),
+
+  for $odbc-config in $import-config/gr:odbc-servers/gr:odbc-server
+  return
+    setup:create-odbcserver($odbc-config)
+};
+
+(: Allow one HTTP app server to import most of its config from another :)
+declare function setup:get-http-appservers-from-config(
+  $import-config as element(configuration)) as element(gr:http-server)*
+{
+  for $server in $import-config/gr:http-servers/gr:http-server
+  return
+    if (fn:exists($server/@import)) then
+      element gr:http-server
+      {
+        $server/*,
+        let $ignore := $server/*/fn:node-name(.)
+        return
+          $import-config/gr:http-servers/gr:http-server[gr:http-server-name eq $server/@import]/*[fn:not(fn:node-name(.) = $ignore)]
+      }
+    else
+      $server
 };
 
 declare function setup:validate-appservers(
   $import-config as element(configuration)) as item()*
 {
-  for $http-config in $import-config//gr:http-servers/gr:http-server
+  for $http-config in setup:get-http-appservers-from-config($import-config)
   return
     setup:validate-appserver($http-config),
 
-  for $xdbc-config in $import-config//gr:xdbc-servers/gr:xdbc-server
+  for $xdbc-config in $import-config/gr:xdbc-servers/gr:xdbc-server
   return
-    setup:validate-xdbcserver($xdbc-config)
+    setup:validate-xdbcserver($xdbc-config),
+
+  for $odbc-config in $import-config/gr:odbc-servers/gr:odbc-server
+  return
+    setup:validate-odbcserver($odbc-config)
 };
 
 declare function setup:create-appserver(
@@ -2292,34 +2768,20 @@ declare function setup:create-appserver(
     if (xdmp:servers()[xdmp:server-name(.) = $server-name]) then
       fn:concat("HTTP Server ", $server-name, " already exists, not recreated..")
     else
-      let $root := $server-config/gr:root[fn:string-length(fn:string(.)) > 0]
-      let $root := if ($root) then $root else "/"
+      let $root := ($server-config/gr:root[fn:string-length(fn:string(.)) > 0], "/")[1]
       let $port := xs:unsignedLong($server-config/gr:port)
-      let $is-webdav := xs:boolean($server-config/gr:webDAV)
-      let $database-id :=
-        if ($server-config/gr:database/@name) then
-          xdmp:database($server-config/gr:database/@name)
-        else
-          0
-      let $modules-id :=
-        if ($server-config/gr:modules/@name eq "filesystem") then
-          0
-        else if ($server-config/gr:modules/@name) then
-          xdmp:database($server-config/gr:modules/@name)
-        else
-          0
-
+      let $database := setup:get-appserver-database($server-config)
       let $admin-config := admin:get-configuration()
       let $admin-config :=
-        if ($is-webdav) then
-          (: Note: database id is stored as modules is for webdav servers :)
+        if (xs:boolean($server-config/gr:webDAV)) then
+          (: Note: database id is stored as modules for webdav servers :)
           admin:webdav-server-create(
             $admin-config,
             $default-group,
             $server-name,
             $root,
             $port,
-            $modules-id)
+            $database)
         else
           admin:http-server-create(
             $admin-config,
@@ -2327,8 +2789,8 @@ declare function setup:create-appserver(
             $server-name,
             $root,
             $port,
-            $modules-id,
-            $database-id)
+            setup:get-appserver-modules-database($server-config),
+            $database)
       return
       (
         if (admin:save-configuration-without-restart($admin-config)) then
@@ -2348,6 +2810,70 @@ declare function setup:validate-appserver(
       setup:validation-fail(fn:concat("Missing HTTP server: ", $server-name))
 };
 
+declare function setup:create-odbcserver(
+  $server-config as element(gr:odbc-server)) as item()*
+{
+  let $server-name as xs:string? := $server-config/gr:odbc-server-name[fn:string-length(fn:string(.)) > 0]
+  return
+    if (xdmp:servers()[xdmp:server-name(.) = $server-name]) then
+      fn:concat("ODBC Server ", $server-name, " already exists, not recreated..")
+    else
+      (: wrap in try catch because this function is new to 6.0 and will fail in older version of ML :)
+      let $admin-config := admin:get-configuration()
+      let $admin-config :=
+        try
+        {
+          xdmp:eval('
+            import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
+            declare variable $admin-config external;
+            declare variable $root external;
+            declare variable $port external;
+            declare variable $content-db external;
+            declare variable $default-group external;
+            declare variable $server-name external;
+            declare variable $modules-db external;
+            admin:odbc-server-create(
+              admin:get-configuration(),
+              $default-group,
+              $server-name,
+              $root,
+              $port,
+              $modules-db,
+              $content-db)',
+            (xs:QName("admin-config"), $admin-config,
+             xs:QName("root"), ($server-config/gr:root[fn:string-length(fn:string(.)) > 0], "/")[1],
+             xs:QName("port"), xs:unsignedLong($server-config/gr:port),
+             xs:QName("content-db"), setup:get-appserver-database($server-config),
+             xs:QName("default-group"), $default-group,
+             xs:QName("server-name"), $server-name,
+             xs:QName("modules-db"), setup:get-appserver-modules-database($server-config)))
+        }
+        catch($ex)
+        {
+          if ($ex/error:code = "XDMP-UNDFUN" and fn:not(setup:at-least-version("6.0-2"))) then
+            fn:error(xs:QName("VERSION_NOT_SUPPORTED"), "Roxy does not support ODBC application servers for this version of MarkLogic. Use 6.0-2 or later.")
+          else
+            xdmp:rethrow()
+        }
+      return
+      (
+        if (admin:save-configuration-without-restart($admin-config)) then
+          xdmp:set($restart-needed, fn:true())
+        else (),
+        fn:concat("ODBC Server ", $server-name, " succesfully created.")
+      )
+};
+
+declare function setup:validate-odbcserver(
+  $server-config as element(gr:http-server)) as item()*
+{
+  let $server-name as xs:string? := $server-config/gr:odbc-server-name[fn:string-length(fn:string(.)) > 0]
+  return
+    if (xdmp:servers()[xdmp:server-name(.) = $server-name]) then ()
+    else
+      setup:validation-fail(fn:concat("Missing ODBC server: ", $server-name))
+};
+
 declare function setup:create-xdbcserver(
   $server-config as element(gr:xdbc-server)) as item()*
 {
@@ -2356,32 +2882,15 @@ declare function setup:create-xdbcserver(
     if (xdmp:servers()[xdmp:server-name(.) = $server-name]) then
       fn:concat("XDBC Server ", $server-name, " already exists, not recreated..")
     else
-      let $root := $server-config/gr:root[fn:string-length(fn:string(.)) > 0]
-      let $root := if ($root) then $root else "/"
-      let $port := xs:unsignedLong($server-config/gr:port)
-      let $database-id :=
-        if ($server-config/gr:database/@name) then
-          xdmp:database($server-config/gr:database/@name)
-        else
-          0
-      let $modules-id :=
-        if ($server-config/gr:modules/@name eq "filesystem") then
-          0
-        else if ($server-config/gr:modules/@name) then
-          xdmp:database($server-config/gr:modules/@name)
-        else
-          0
-
-      let $admin-config := admin:get-configuration()
       let $admin-config :=
         admin:xdbc-server-create(
-          $admin-config,
+          admin:get-configuration(),
           $default-group,
           $server-name,
-          $root,
-          $port,
-          $modules-id,
-          $database-id)
+          ($server-config/gr:root[fn:string-length(fn:string(.)) > 0], "/")[1],
+          xs:unsignedLong($server-config/gr:port),
+          setup:get-appserver-modules-database($server-config),
+          setup:get-appserver-content-database($server-config))
       return
       (
         if (admin:save-configuration-without-restart($admin-config)) then
@@ -2401,20 +2910,20 @@ declare function setup:validate-xdbcserver(
       setup:validation-fail(fn:concat("Missing XDBC server: ", $server-name))
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Configuration of app servers
- ::)
-
 declare function setup:apply-appservers-settings(
   $import-config as element(configuration)) as item()*
 {
-  for $http-config in $import-config//gr:http-servers/gr:http-server
+  for $http-config in setup:get-http-appservers-from-config($import-config)
   return
     setup:configure-http-server($http-config),
 
-  for $xdbc-config in $import-config//gr:xdbc-servers/gr:xdbc-server
+  for $xdbc-config in $import-config/gr:xdbc-servers/gr:xdbc-server
   return
     setup:configure-xdbc-server($xdbc-config),
+
+  for $odbc-config in $import-config/gr:odbc-servers/gr:odbc-server
+  return
+    setup:configure-odbc-server($odbc-config),
 
   for $task-config in $import-config/gr:task-server
   return
@@ -2424,13 +2933,17 @@ declare function setup:apply-appservers-settings(
 declare function setup:validate-appservers-settings(
   $import-config as element(configuration)) as item()*
 {
-  for $http-config in $import-config//gr:http-servers/gr:http-server
+  for $http-config in setup:get-http-appservers-from-config($import-config)
   return
     setup:validate-http-server($http-config),
 
-  for $xdbc-config in $import-config//gr:xdbc-servers/gr:xdbc-server
+  for $xdbc-config in $import-config/gr:xdbc-servers/gr:xdbc-server
   return
     setup:validate-xdbc-server($xdbc-config),
+
+  for $odbc-config in $import-config/gr:odbc-servers/gr:odbc-server
+  return
+    setup:validate-odbc-server($odbc-config),
 
   for $task-config in $import-config/gr:task-server
   return
@@ -2441,125 +2954,10 @@ declare function setup:configure-http-server(
   $server-config as element(gr:http-server)) as item()*
 {
   let $server-name as xs:string? := $server-config/gr:http-server-name[fn:string-length(fn:string(.)) > 0]
-  let $server-id := xdmp:server($server-name)
-  let $admin-config := setup:configure-server($server-config, $server-id)
+  let $admin-config := setup:configure-server($server-config, xdmp:server($server-name), $http-server-settings)
   return
   (
-    if (xdmp:eval('
-    import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
-    import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
-
-    declare namespace gr="http://marklogic.com/xdmp/group";
-    declare namespace err="http://marklogic.com/xdmp/error";
-
-    declare variable $server-config as element() external;
-    declare variable $server-name as xs:string external;
-    declare variable $admin-config as element() external;
-    declare variable $server-id external;
-    declare variable $default-user external;
-
-    let $default-user :=
-      if ($server-config/gr:default-user/@name) then
-        xdmp:user($server-config/gr:default-user/@name)
-      else
-        $default-user
-    let $is-webdav := xs:boolean($server-config/gr:webDAV)
-
-    (: reconnect databases in case the appserver already existed :)
-    let $database-id :=
-      if ($server-config/gr:database/@name) then
-        xdmp:database($server-config/gr:database/@name)
-      else
-        0
-    let $modules-id :=
-      if ($server-config/gr:modules/@name eq "filesystem") then
-        0
-      else if ($server-config/gr:modules/@name) then
-        xdmp:database($server-config/gr:modules/@name)
-      else
-        0
-    let $root := $server-config/gr:root[fn:string-length(fn:string(.)) > 0]
-    let $root := if ($root) then $root else "/"
-
-    let $admin-config :=
-      if ($is-webdav) then
-        admin:appserver-set-database($admin-config, $server-id, $modules-id)
-      else
-        admin:appserver-set-database($admin-config, $server-id, $database-id)
-    let $admin-config :=
-      if ($is-webdav) then
-        $admin-config
-      else
-        admin:appserver-set-modules-database($admin-config, $server-id, $modules-id)
-
-    let $admin-config := admin:appserver-set-root($admin-config, $server-id, $root)
-
-    let $value := $server-config/gr:session-timeout[fn:string-length(fn:string(.)) > 0]
-    let $admin-config :=
-      if ($value) then
-        admin:appserver-set-session-timeout($admin-config, $server-id, $value)
-      else
-        $admin-config
-
-    let $value := $server-config/gr:static-expires[fn:string-length(fn:string(.)) > 0]
-    let $admin-config :=
-      if ($value) then
-        admin:appserver-set-static-expires($admin-config, $server-id, $value)
-      else
-        $admin-config
-
-    let $value := $server-config/gr:rewrite-resolves-globally[fn:string-length(fn:string(.)) > 0]
-    let $admin-config :=
-      if ($value) then
-        xdmp:value("admin:appserver-set-rewrite-resolves-globally($admin-config, $server-id, $value)")
-      else
-        $admin-config
-
-    let $admin-config :=
-      admin:appserver-set-default-user($admin-config, $server-id, $default-user)
-
-    let $admin-config :=
-      if ($is-webdav) then
-        let $value := $server-config/gr:compute-content-length[fn:string-length(fn:string(.)) > 0]
-        return
-          if ($value) then
-            admin:appserver-set-compute-content-length($admin-config, $server-id, $value)
-          else
-            $admin-config
-      else
-        let $value := $server-config/gr:error-handler[fn:string-length(fn:string(.)) > 0]
-        let $admin-config :=
-          if ($value) then
-            admin:appserver-set-error-handler($admin-config, $server-id, $value)
-          else
-            $admin-config
-
-        let $value := $server-config/gr:url-rewriter[fn:string-length(fn:string(.)) > 0]
-        let $admin-config :=
-          if ($value) then
-            admin:appserver-set-url-rewriter($admin-config, $server-id, $value)
-          else
-            $admin-config
-
-        return $admin-config
-
-    (: TODO ?
-    <ssl-certificate-template>0</ssl-certificate-template>
-    <ssl-allow-sslv3>true</ssl-allow-sslv3>
-    <ssl-allow-tls>true</ssl-allow-tls>
-    <ssl-hostname />
-    <ssl-ciphers>ALL:!LOW:@STRENGTH</ssl-ciphers>
-    <ssl-require-client-certificate>true</ssl-require-client-certificate>
-    <ssl-client-certificate-authorities />
-    :)
-
-    return
-      admin:save-configuration-without-restart($admin-config)',
-    (xs:QName("server-config"), $server-config,
-     xs:QName("server-name"), $server-name,
-     xs:QName("admin-config"), $admin-config,
-     xs:QName("server-id"), $server-id,
-     xs:QName("default-user"), $default-user))) then
+    if (admin:save-configuration-without-restart($admin-config)) then
       xdmp:set($restart-needed, fn:true())
     else (),
     fn:concat("HTTP Server ", $server-name, " settings applied succesfully.")
@@ -2569,194 +2967,61 @@ declare function setup:configure-http-server(
 declare function setup:validate-http-server(
   $server-config as element(gr:http-server)) as item()*
 {
-  let $server-name as xs:string? := $server-config/gr:http-server-name[fn:string-length(fn:string(.)) > 0]
-  let $server-id := xdmp:server($server-name)
-  let $admin-config := admin:get-configuration()
-  let $default-user :=
-    if ($server-config/gr:default-user/@name) then
-      xdmp:user($server-config/gr:default-user/@name)
-    else
-      $default-user
-  let $is-webdav := xs:boolean($server-config/gr:webDAV)
-
-  (: reconnect databases in case the appserver already existed :)
-  let $database-id :=
-    if ($server-config/gr:database/@name) then
-      xdmp:database($server-config/gr:database/@name)
-    else
-      0
-  let $modules-id :=
-    if ($server-config/gr:modules/@name eq "filesystem") then
-      0
-    else if ($server-config/gr:modules/@name) then
-      xdmp:database($server-config/gr:modules/@name)
-    else
-      0
-  let $root := $server-config/gr:root[fn:string-length(fn:string(.)) > 0]
-  let $root := if ($root) then $root else "/"
-
-  return
-  (
-    setup:validate-server($server-config, $server-id),
-
-    let $actual := admin:appserver-get-database($admin-config, $server-id)
-    return
-      if ($is-webdav) then
-        if ($modules-id = $actual) then ()
-        else
-          setup:validation-fail(fn:concat("Invalid Appserver database: ", $modules-id, " != ", $actual))
-      else
-      (
-        if ($database-id = $actual) then ()
-        else
-          setup:validation-fail(fn:concat("Invalid Appserver database: ", $database-id, " != ", $actual)),
-
-        let $actual := admin:appserver-get-modules-database($admin-config, $server-id)
-        return
-          if ($actual = $modules-id) then ()
-          else
-            setup:validation-fail(fn:concat("Invalid Appserver modules database: ", $modules-id, " != ", $actual))
-      ),
-
-    let $actual := admin:appserver-get-root($admin-config, $server-id)
-    return
-      if ($root = $actual) then ()
-      else
-        setup:validation-fail(fn:concat("Appserver root mismatch: ", $root, " != ", $actual)),
-
-    let $expected := $server-config/gr:session-timeout[fn:string-length(fn:string(.)) > 0]
-    let $actual := admin:appserver-get-session-timeout($admin-config, $server-id)
-    return
-      if ($expected = $actual) then ()
-      else
-        setup:validation-fail(fn:concat("Appserver session timeout mismatch: ", $expected, " != ", $actual)),
-
-    let $expected := $server-config/gr:static-expires[fn:string-length(fn:string(.)) > 0]
-    let $actual := admin:appserver-get-static-expires($admin-config, $server-id)
-    return
-      if ($expected = $actual) then ()
-      else
-        setup:validation-fail(fn:concat("Appserver static expires mismatch: ", $expected, " != ", $actual)),
-
-    let $actual := admin:appserver-get-default-user($admin-config, $server-id)
-    return
-      if ($default-user = $actual) then ()
-      else
-        setup:validation-fail(fn:concat("Appserver default user mismatch: ", $default-user, " != ", $actual)),
-
-    if ($is-webdav) then
-      let $expected := $server-config/gr:compute-content-length[fn:string-length(fn:string(.)) > 0]
-      let $actual := admin:appserver-get-compute-content-length($admin-config, $server-id)
-      return
-        if ($expected = $actual) then ()
-        else
-          setup:validation-fail(fn:concat("Appserver compute content length mismatch: ", $expected, " != ", $actual))
-    else
-    (
-      let $expected := $server-config/gr:error-handler[fn:string-length(fn:string(.)) > 0]
-      let $actual := admin:appserver-get-error-handler($admin-config, $server-id)
-      return
-        if ($expected = $actual) then ()
-        else
-          setup:validation-fail(fn:concat("Appserver error handler mismatch: ", $expected, " != ", $actual)),
-
-      let $expected := $server-config/gr:url-rewriter[fn:string-length(fn:string(.)) > 0]
-      let $actual := admin:appserver-get-url-rewriter($admin-config, $server-id)
-      return
-        if ($expected = $actual) then ()
-        else
-          setup:validation-fail(fn:concat("Appserver url rewriter mismatch: ", $expected, " != ", $actual))
-    )
-  )
+  setup:validate-server(
+    $server-config,
+    xdmp:server($server-config/gr:http-server-name[fn:string-length(fn:string(.)) > 0]))
 };
 
 declare function setup:configure-xdbc-server(
   $server-config as element(gr:xdbc-server)) as item()*
 {
   let $server-name as xs:string? := $server-config/gr:xdbc-server-name[fn:string-length(fn:string(.)) > 0]
+  let $admin-config := setup:configure-server($server-config, xdmp:server($server-name), $xcc-server-settings)
   return
-    (: reconnect databases in case the appserver already existed :)
-    let $database-id :=
-      if ($server-config/gr:database/@name) then
-        xdmp:database($server-config/gr:database/@name)
-      else
-        0
-    let $modules-id :=
-      if ($server-config/gr:modules/@name eq "filesystem") then
-        0
-      else if ($server-config/gr:modules/@name) then
-        xdmp:database($server-config/gr:modules/@name)
-      else
-        0
-    let $server-id := xdmp:server($server-name)
-    let $admin-config :=
-      admin:appserver-set-modules-database(
-        admin:appserver-set-database(
-          setup:configure-server($server-config, $server-id),
-          $server-id,
-          $database-id),
-        $server-id,
-        $modules-id)
-    return
-    (
-      if (admin:save-configuration-without-restart($admin-config)) then
-        xdmp:set($restart-needed, fn:true())
-      else (),
-      fn:concat("XDBC Server ", $server-name, " settings applied succesfully.")
-    )
+  (
+    if (admin:save-configuration-without-restart($admin-config)) then
+      xdmp:set($restart-needed, fn:true())
+    else (),
+    fn:concat("XDBC Server ", $server-name, " settings applied succesfully.")
+  )
 };
 
 declare function setup:validate-xdbc-server(
   $server-config as element(gr:xdbc-server)) as item()*
 {
-  let $server-id := xdmp:server($server-config/gr:xdbc-server-name[fn:string-length(fn:string(.)) > 0])
-  let $admin-config := admin:get-configuration()
+  setup:validate-server(
+    $server-config,
+    xdmp:server($server-config/gr:xdbc-server-name[fn:string-length(fn:string(.)) > 0]))
+};
+
+declare function setup:configure-odbc-server(
+  $server-config as element(gr:odbc-server)) as item()*
+{
+  let $server-name as xs:string? := $server-config/gr:odbc-server-name[fn:string-length(fn:string(.)) > 0]
+  let $admin-config := setup:configure-server($server-config, xdmp:server($server-name), $odbc-server-settings)
   return
   (
-    setup:validate-server($server-config, $server-id),
-
-    let $expected := ($server-config/gr:database/@name/xdmp:database(.), 0)[1]
-    let $actual := admin:appserver-get-database($admin-config, $server-id)
-    return
-      if ($expected = $actual) then ()
-      else
-        setup:validation-fail(fn:concat("XDBC Server database mismatch: ", $expected, " != ", $actual)),
-
-    let $expected :=
-      if ($server-config/gr:modules/@name eq "filesystem") then
-        0
-      else if ($server-config/gr:modules/@name) then
-        xdmp:database($server-config/gr:modules/@name)
-      else
-        0
-    let $actual := admin:appserver-get-modules-database($admin-config, $server-id)
-    return
-      if ($expected = $actual) then ()
-      else
-        setup:validation-fail(fn:concat("XDBC Server modules database mismatch: ", $expected, " != ", $actual))
+    if (admin:save-configuration-without-restart($admin-config)) then
+      xdmp:set($restart-needed, fn:true())
+    else (),
+    fn:concat("ODBC Server ", $server-name, " settings applied succesfully.")
   )
+};
+
+declare function setup:validate-odbc-server(
+  $server-config as element(gr:odbc-server)) as item()*
+{
+  setup:validate-server(
+    $server-config,
+    xdmp:server($server-config/gr:odbc-server-name[fn:string-length(fn:string(.)) > 0]))
 };
 
 declare function setup:configure-task-server(
   $server-config as element(gr:task-server)) as item()*
 {
   let $admin-config := admin:get-configuration()
-  let $settings :=
-    <settings>
-      <setting>debug-allow</setting>
-      <setting>debug-threads</setting>
-      <setting>default-time-limit</setting>
-      <setting>log-errors</setting>
-      <setting>max-time-limit</setting>
-      <setting>post-commit-trigger-depth</setting>
-      <setting>pre-commit-trigger-depth</setting>
-      <setting>pre-commit-trigger-limit</setting>
-      <setting>profile-allow</setting>
-      <setting>queue-size</setting>
-      <setting>threads</setting>
-    </settings>
   let $apply-settings :=
-    for $setting in $settings/*:setting
+    for $setting in $task-server-settings/*:setting
     let $value := fn:data(xdmp:value(fn:concat("$server-config/gr:", $setting)))
     where fn:exists($value)
     return
@@ -2774,21 +3039,7 @@ declare function setup:validate-task-server(
   $server-config as element(gr:task-server)) as item()*
 {
   let $admin-config := admin:get-configuration()
-  let $settings :=
-    <settings>
-      <setting>debug-allow</setting>
-      <setting>debug-threads</setting>
-      <setting>default-time-limit</setting>
-      <setting>log-errors</setting>
-      <setting>max-time-limit</setting>
-      <setting>post-commit-trigger-depth</setting>
-      <setting>pre-commit-trigger-depth</setting>
-      <setting>pre-commit-trigger-limit</setting>
-      <setting>profile-allow</setting>
-      <setting>queue-size</setting>
-      <setting>threads</setting>
-    </settings>
-  for $setting in $settings/*:setting
+  for $setting in $task-server-settings/*:setting
   let $expected := fn:data(xdmp:value(fn:concat("$server-config/gr:", $setting)))
   let $actual := xdmp:value(fn:concat("admin:taskserver-get-", $setting, "($admin-config, $default-group)"))
   where fn:exists($expected)
@@ -2798,44 +3049,61 @@ declare function setup:validate-task-server(
       setup:validation-fail(fn:concat("Task Server ", $setting, " mismatch: ", $expected, " != ", $actual))
 };
 
+declare function setup:get-appserver-privilege(
+  $server-config as element()) as xs:unsignedLong
+{
+  let $privilege as xs:string? := $server-config/gr:privilege[fn:string-length(fn:string(.)) > 0]/fn:string(.)
+  return
+    if ($privilege = "0") then 0
+    else if ($privilege) then
+      let $id as xs:unsignedLong? := setup:get-privilege-by-name($privilege)/sec:privilege-id
+      return
+        if ($id) then $id
+        else
+          fn:error(
+            xs:QName("INVALID-PRIVILEGE"),
+            fn:concat(
+              "Invalid privilege '",
+              $privilege))
+    else 0
+};
+
+declare function admin:appserver-set-privilege2(
+  $config as element(configuration),
+  $appserver-id as xs:unsignedLong,
+  $value as xs:unsignedLong)
+as element(configuration)
+{
+  if ($value = 0) then $config
+  else
+    admin:appserver-set-privilege($config, $appserver-id, $value)
+};
+
 declare function setup:configure-server(
   $server-config as element(),
-  $server-id as xs:unsignedLong) as element(configuration)
+  $server-id as xs:unsignedLong,
+  $settings as element(settings)) as element(configuration)
 {
   let $admin-config := admin:get-configuration()
-  let $settings :=
-    <settings>
-      <setting value="($server-config/gr:last-login/@name/xdmp:database(.), 0)[1]" path="/@name">last-login</setting>
-      <setting>display-last-login</setting>
-      <setting>backlog</setting>
-      <setting>threads</setting>
-      <setting>request-timeout</setting>
-      <setting>keep-alive-timeout</setting>
-      <setting>max-time-limit</setting>
-      <setting>default-time-limit</setting>
-      <setting>pre-commit-trigger-depth</setting>
-      <setting>pre-commit-trigger-limit</setting>
-      <setting>collation</setting>
-      <setting>authentication</setting>
-      <setting>concurrent-request-limit</setting>
-      <setting>log-errors</setting>
-      <setting>debug-allow</setting>
-      <setting>profile-allow</setting>
-      <setting>default-xquery-version</setting>
-      <setting>output-sgml-character-entities</setting>
-      <setting>output-encoding</setting>
-    </settings>
   let $apply-settings :=
     for $setting in $settings/*:setting
+    let $setting-test :=
+      if ($setting/@accept-blank = "true") then
+        ""
+      else
+        "[fn:string-length(fn:string(.)) > 0]"
     let $value :=
       if ($setting/@value) then
-        fn:data(xdmp:value($setting/@value))
+        xdmp:value($setting/@value)
       else
-        fn:data(xdmp:value(fn:concat("$server-config/gr:", $setting, "[fn:string-length(fn:string(.)) > 0]")))
+        fn:data(xdmp:value(fn:concat("$server-config/gr:", $setting, $setting-test)))
+    let $min-version as xs:string? := $setting/@min-version
     where (fn:exists($value))
     return
-      xdmp:set($admin-config,
-        xdmp:value(fn:concat("admin:appserver-set-", $setting, "($admin-config, $server-id, $value)")))
+      if (fn:empty($min-version) or setup:at-least-version($min-version)) then
+        xdmp:set($admin-config,
+          xdmp:value(fn:concat("admin:appserver-set-", $setting, "($admin-config, $server-id, $value)")))
+      else ()
 
   let $namespaces := $server-config/gr:namespaces/gr:namespace
   let $admin-config :=
@@ -2854,7 +3122,7 @@ declare function setup:configure-server(
               admin:group-namespace($same-prefix/gr:prefix, $same-prefix/gr:namespace-uri)
             else ())
       return
-      (: Then add in any namespace whose prefix isn't already defined :)
+        (: Then add in any namespace whose prefix isn't already defined :)
         admin:appserver-add-namespace(
           $config,
           $server-id,
@@ -2878,35 +3146,14 @@ declare function setup:validate-server(
   let $_ :=
     let $actual := admin:appserver-get-last-login($admin-config, $server-id)
     let $expected :=
-      if ($server-config/gr:last-login/@name) then
-        xdmp:database($server-config/gr:last-login/@name)
+      if (fn:data($server-config/gr:last-login/(@name|text()))) then
+        xdmp:database(fn:data($server-config/gr:last-login/(@name|text())))
       else 0
     return
       if ($actual = $expected) then ()
       else
         setup:validation-fail(fn:concat("Appserver last-login mismatch: ", $expected, " != ", $actual))
-  let $settings :=
-    <settings>
-      <setting>display-last-login</setting>
-      <setting>backlog</setting>
-      <setting>threads</setting>
-      <setting>request-timeout</setting>
-      <setting>keep-alive-timeout</setting>
-      <setting>max-time-limit</setting>
-      <setting>default-time-limit</setting>
-      <setting>pre-commit-trigger-depth</setting>
-      <setting>pre-commit-trigger-limit</setting>
-      <setting>collation</setting>
-      <setting>authentication</setting>
-      <setting>concurrent-request-limit</setting>
-      <setting>log-errors</setting>
-      <setting>debug-allow</setting>
-      <setting>profile-allow</setting>
-      <setting>default-xquery-version</setting>
-      <setting>output-sgml-character-entities</setting>
-      <setting>output-encoding</setting>
-    </settings>
-  for $setting in $settings/*:setting
+  for $setting in $http-server-settings/*:setting
   let $expected := fn:data(xdmp:value(fn:concat("$server-config/gr:", $setting, "[fn:string-length(fn:string(.)) > 0]")))
   let $actual := xdmp:value(fn:concat("admin:appserver-get-", $setting, "($admin-config, $server-id)"))
   where $expected
@@ -2944,7 +3191,7 @@ declare function setup:create-privileges(
             "; action=", $action, "; kind=",
             $kind)
         )
-      else () (: It's a match. No need to mess with it. :)
+      else () (: noop :)
     else
     (
       (: Create this new privilege :)
@@ -2983,7 +3230,7 @@ declare function setup:validate-privileges(
             $privilege-name,
             "; action=", $action, "; kind=",
             $kind))
-      else () (: It's a match. :)
+      else () (: noop :)
     else
       setup:validation-fail(fn:concat("Missing privilege: ", $privilege-name))
 };
@@ -2991,7 +3238,7 @@ declare function setup:validate-privileges(
 declare function setup:create-roles(
   $import-config as element(configuration))
 {
-  for $role in $import-config//sec:roles/sec:role
+  for $role in $import-config/sec:roles/sec:role
   let $role-name as xs:string := $role/sec:role-name
   let $description as xs:string? := $role/sec:description
   let $role-names as xs:string* := $role/sec:role-names/sec:role-name
@@ -3004,91 +3251,9 @@ declare function setup:create-roles(
       <database>{$default-security}</database>
     </options>
   return
-    (: if the role exists, then update it :)
-    if (setup:get-roles(())/sec:role[sec:role-name = $role-name]) then
-    (
-      xdmp:eval(
-        'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
-         declare variable $role-name as xs:string external;
-         declare variable $description as xs:string external;
-         sec:role-set-description($role-name, $description)',
-        (xs:QName("role-name"), $role-name,
-         xs:QName("description"), fn:string($description)),
-        $eval-options),
-      if ($role-names) then
-        xdmp:eval(
-          'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
-           declare variable $role-name as xs:string external;
-           declare variable $role-names as element() external;
-           sec:role-set-roles($role-name, $role-names/*)',
-          (xs:QName("role-name"), $role-name,
-           xs:QName("role-names"), <w>{for $r in $role-names return <w>{$r}</w>}</w>),
-          $eval-options)
-      else (),
-
-      if ($permissions) then
-        xdmp:eval(
-          'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
-           declare variable $role-name as xs:string external;
-           declare variable $permissions as element() external;
-           sec:role-set-default-permissions($role-name, $permissions/*)',
-          (
-            xs:QName("role-name"), $role-name,
-            xs:QName("permissions"),
-            <w>
-            {
-              for $p in $permissions
-              return
-                xdmp:permission($p/sec:role-name, $p/sec:capability)
-            }
-            </w>
-          ),
-          $eval-options)
-      else (),
-
-      if ($collections) then
-        xdmp:eval(
-          'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
-           declare variable $role-name as xs:string external;
-           declare variable $collections as element() external;
-           sec:role-set-default-collections($role-name, $collections/*)',
-          (xs:QName("role-name"), $role-name,
-           xs:QName("collections"), <w>{for $c in $collections return <w>{$c}</w>}</w>),
-          $eval-options)
-      else (),
-
-      for $privilege in $privileges
-      let $priv := setup:get-privilege-by-name($privilege/sec:privilege-name)
-      return
-        xdmp:eval(
-          'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
-           declare variable $action as xs:string external;
-           declare variable $kind as xs:string external;
-           declare variable $role-name as xs:string external;
-           sec:privilege-add-roles($action, $kind, $role-name)',
-          (xs:QName("action"), $priv/sec:action,
-           xs:QName("kind"), $priv/sec:kind,
-           xs:QName("role-name"), $role-name),
-          $eval-options),
-
-      for $amp in $amps
-      return
-        xdmp:eval(
-          'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
-           declare variable $namespace as xs:string external;
-           declare variable $local-name as xs:string external;
-           declare variable $document-uri as xs:string external;
-           declare variable $database as xs:unsignedLong external;
-           declare variable $role-name as xs:string external;
-           sec:amp-add-roles($namespace, $local-name, $document-uri, $database, $role-name)',
-          (xs:QName("namespace"), $amp/sec:namespace,
-           xs:QName("local-name"), $amp/sec:local-name,
-           xs:QName("document-uri"), $amp/sec:document-uri,
-           xs:QName("database"), if ($amp/sec:database-name eq "filesystem") then 0 else xdmp:database($amp/sec:database-name),
-           xs:QName("role-name"), $role-name),
-          $eval-options)
-    )
-    (: role is new. create it :)
+  (
+    (: if the role exists, then don't create it :)
+    if (setup:get-roles(())/sec:role[sec:role-name = $role-name]) then ()
     else
     (
       xdmp:eval(
@@ -3101,18 +3266,114 @@ declare function setup:create-roles(
          xs:QName("description"), fn:string($description),
          xs:QName("collections"), <w>{for $c in $collections return <w>{$c}</w>}</w>),
         $eval-options),
-      setup:add-rollback("roles", $role)
-    )
+        setup:add-rollback("roles", $role)
+    ),
+
+    xdmp:eval(
+      'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
+       declare variable $role-name as xs:string external;
+       declare variable $description as xs:string external;
+       sec:role-set-description($role-name, $description)',
+      (xs:QName("role-name"), $role-name,
+       xs:QName("description"), fn:string($description)),
+      $eval-options),
+    if ($role-names) then
+      xdmp:eval(
+        'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
+         declare variable $role-name as xs:string external;
+         declare variable $role-names as element() external;
+         sec:role-set-roles($role-name, $role-names/*)',
+        (xs:QName("role-name"), $role-name,
+         xs:QName("role-names"), <w>{for $r in $role-names return <w>{$r}</w>}</w>),
+        $eval-options)
+    else (),
+
+    if ($permissions) then
+      xdmp:eval(
+        'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
+         declare variable $role-name as xs:string external;
+         declare variable $permissions as element() external;
+         sec:role-set-default-permissions($role-name, $permissions/*)',
+        (
+          xs:QName("role-name"), $role-name,
+          xs:QName("permissions"),
+          <w>
+          {
+            for $p in $permissions
+            return
+              xdmp:eval('
+                declare variable $p external;
+
+                xdmp:permission($p/sec:role-name, $p/sec:capability)',
+                (xs:QName("p"), $p))
+          }
+          </w>
+        ),
+        $eval-options)
+    else (),
+
+    if ($collections) then
+      xdmp:eval(
+        'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
+         declare variable $role-name as xs:string external;
+         declare variable $collections as element() external;
+         sec:role-set-default-collections($role-name, $collections/*)',
+        (xs:QName("role-name"), $role-name,
+         xs:QName("collections"), <w>{for $c in $collections return <w>{$c}</w>}</w>),
+        $eval-options)
+    else (),
+
+    for $privilege in $privileges
+    let $priv := setup:get-privilege-by-name($privilege/sec:privilege-name)
+    let $validate-privilege :=
+      if ($priv) then ()
+      else
+        fn:error(
+          xs:QName("INVALID-PRIVILEGE"),
+          fn:concat(
+            "Invalid privilege '",
+            $privilege/sec:privilege-name,
+            "' specified for role: ",
+            $role-name))
+    return
+      xdmp:eval(
+        'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
+         declare variable $action as xs:string external;
+         declare variable $kind as xs:string external;
+         declare variable $role-name as xs:string external;
+         sec:privilege-add-roles($action, $kind, $role-name)',
+        (xs:QName("action"), $priv/sec:action,
+         xs:QName("kind"), $priv/sec:kind,
+         xs:QName("role-name"), $role-name),
+        $eval-options),
+
+    for $amp in $amps
+    return
+      xdmp:eval(
+        'import module namespace sec="http://marklogic.com/xdmp/security" at "/MarkLogic/security.xqy";
+         declare variable $namespace as xs:string external;
+         declare variable $local-name as xs:string external;
+         declare variable $document-uri as xs:string external;
+         declare variable $database as xs:unsignedLong external;
+         declare variable $role-name as xs:string external;
+         sec:amp-add-roles($namespace, $local-name, $document-uri, $database, $role-name)',
+        (xs:QName("namespace"), $amp/sec:namespace,
+         xs:QName("local-name"), $amp/sec:local-name,
+         xs:QName("document-uri"), $amp/sec:document-uri,
+         xs:QName("database"), if ($amp/sec:database-name eq "filesystem") then 0 else xdmp:database($amp/sec:database-name),
+         xs:QName("role-name"), $role-name),
+        $eval-options)
+  )
 };
 
 declare function setup:validate-roles(
   $import-config as element(configuration))
 {
-  for $role in $import-config//sec:roles/sec:role
+  for $role in $import-config/sec:roles/sec:role
   let $role-name as xs:string := $role/sec:role-name
   let $description as xs:string? := $role/sec:description
   let $role-names as xs:string* := $role/sec:role-names/sec:role-name
-  let $permissions as element(sec:permission)* := $role/sec:permissions/*
+  let $permissions as element(sec:permission)* := $role/sec:permissions/sec:permission
   let $collections as xs:string* := $role/sec:collections/*
   let $privileges as element(sec:privilege)* := $role/sec:privileges/sec:privilege
   let $amps as element(sec:amp)* := $role/sec:amps/*
@@ -3122,7 +3383,9 @@ declare function setup:validate-roles(
     if ($match) then
       if ($match/sec:role-name != $role-name or
           $match/sec:description != $description or
-          $match/sec:role-names/sec:role-name != $role-names) then
+          $match/sec:role-names/sec:role-name != $role-names or
+          fn:count($match/sec:permissions/sec:permission) != fn:count($permissions) or
+          fn:count($match/sec:privileges/sec:privilege) != fn:count($privileges)) then
         setup:validation-fail(fn:concat("Mismatched role: ", $role-name))
       else ()
     else
@@ -3131,7 +3394,7 @@ declare function setup:validate-roles(
 
 declare function setup:create-users($import-config as element(configuration))
 {
-  for $user in $import-config//sec:users/sec:user
+  for $user in $import-config/sec:users/sec:user
   let $user-name as xs:string := $user/sec:user-name
   let $description as xs:string? := $user/sec:description
   let $password as xs:string := $user/sec:password
@@ -3141,6 +3404,7 @@ declare function setup:create-users($import-config as element(configuration))
   let $eval-options :=
     <options xmlns="xdmp:eval">
       <database>{$default-security}</database>
+      <isolation>different-transaction</isolation>
     </options>
   return
     if (setup:get-users(())/sec:user[sec:user-name = $user-name]) then
@@ -3230,7 +3494,7 @@ declare function setup:create-users($import-config as element(configuration))
 
 declare function setup:validate-users($import-config as element(configuration))
 {
-  for $user in $import-config//sec:users/sec:user
+  for $user in $import-config/sec:users/sec:user
   let $user-name as xs:string := $user/sec:user-name
   let $description as xs:string? := $user/sec:description
   let $password as xs:string := $user/sec:password
@@ -3248,9 +3512,6 @@ declare function setup:validate-users($import-config as element(configuration))
       setup:validation-fail(fn:concat("Missing user: ", $user-name))
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- ::
- ::)
 declare function setup:create-amps($import-config)
 {
   let $existing-amps := setup:get-amps(())
@@ -3294,9 +3555,6 @@ declare function setup:validate-amps($import-config)
       setup:validation-fail(fn:concat("Missing amp: ", $amp/sec:local-name))
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Export configuration to XML
- ::)
 declare function setup:get-configuration(
   $databases as xs:string*,
   $forests as xs:string*,
@@ -3351,12 +3609,30 @@ declare function setup:get-app-servers($names as xs:string*) as element()*
               )
             )
         }
-      </xdbc-servers>
+      </xdbc-servers>,
+
+    let $odbc-servers := $groups/gr:odbc-servers/gr:odbc-server[gr:odbc-server-name = $names]
+    where $odbc-servers
+    return
+      <odbc-servers xsi:schemaLocation="http://marklogic.com/xdmp/group group.xsd"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://marklogic.com/xdmp/group">
+        {
+          for $odbc-server in $odbc-servers
+          return
+            setup:resolve-ids-to-names(
+              setup:strip-default-properties-from-odbc-server(
+                $odbc-server
+              )
+            )
+        }
+      </odbc-servers>
+
   )
 };
 
 declare function setup:get-forests($names as xs:string*) as element(as:assignments) {
-  let $forests := setup:read-config-file("assignments.xml")/as:assignments
+  let $forests :=setup:read-config-file("assignments.xml")/as:assignments
   let $forests := $forests/as:assignment[as:forest-name = $names]
   where $forests
   return
@@ -3393,6 +3669,88 @@ declare function setup:get-databases($names as xs:string*) as element(db:databas
           )
       }
     </databases>
+};
+
+declare function setup:get-appserver-modules-database($server-config as element()) as xs:unsignedLong
+{
+  let $modules as xs:string? := $server-config/gr:modules/(@name|text())
+  return
+    if ($modules eq "filesystem") then 0
+    else if ($modules) then xdmp:database($modules)
+    else 0
+};
+
+declare function setup:get-appserver-content-database($server-config as element()) as xs:unsignedLong
+{
+  let $database as xs:string? := fn:data($server-config/gr:database/(@name|text()))
+  return
+    if ($database) then xdmp:database($database)
+    else 0
+};
+
+declare function setup:get-appserver-database($server-config as element()) as xs:unsignedLong
+{
+  if (xs:boolean($server-config/gr:webDAV)) then
+    setup:get-appserver-modules-database($server-config)
+  else
+    setup:get-appserver-content-database($server-config)
+};
+
+declare function setup:get-last-login($server-config as element()) as xs:unsignedLong
+{
+  let $last-login as xs:string? := $server-config/gr:last-login/(@name|text())
+  return
+    if ($last-login = ("filesystem", "0")) then 0
+    else if ($last-login) then xdmp:database($last-login)
+    else 0
+};
+
+declare function setup:get-triggers-database($db-config as element(db:database)) as xs:unsignedLong
+{
+  let $db-name := fn:data($db-config/db:triggers-database/(@name|text()))
+  return
+    if ($db-name) then xdmp:database($db-name)
+    else 0
+};
+
+declare function setup:get-schema-database($db-config as element(db:database)) as xs:unsignedLong
+{
+  let $db-name := fn:data($db-config/db:schema-database/(@name|text()))
+  return
+    if ($db-name) then xdmp:database($db-name)
+    else $default-schemas
+};
+
+declare function setup:get-security-database($db-config as element(db:database)) as xs:unsignedLong
+{
+  let $db-name := fn:data($db-config/db:security-database/(@name|text()))
+  return
+    if ($db-name) then xdmp:database($db-name)
+    else $default-security
+};
+
+declare function setup:get-appserver-default-user($server-config as element()) as xs:unsignedLong
+{
+  let $user as xs:string? := fn:data($server-config/gr:default-user/(@name|text()))
+  return
+    if ($user) then
+      xdmp:eval('
+        declare variable $username external;
+        xdmp:user($username)',
+        (xs:QName("username"), $user)
+      )
+    else $default-user
+};
+
+declare function setup:get-ssl-certificate-template(
+  $server-config as element())
+as xs:unsignedLong
+{
+  let $v as xs:string? := $server-config/gr:ssl-certificate-template/(@name|text())
+  return (
+    if (not($v)) then 0
+    else pki:template-get-id(pki:get-template-by-name($v))
+  )
 };
 
 declare function setup:get-role-name($id as xs:unsignedLong) as xs:string? {
@@ -3604,16 +3962,12 @@ declare function setup:get-mimetypes($names as xs:string*) as element(mt:mimetyp
     </mimetypes>
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Resolving IDs to names
- ::)
-
 declare function setup:resolve-database-id-to-name($node as element()) as element()?
 {
   if (fn:data($node) ne 0) then
     element {fn:node-name($node)}
     {
-      attribute {xs:QName("name")} { xdmp:database-name(fn:data($node)) }
+      xdmp:database-name(fn:data($node))
     }
   else ()
 };
@@ -3623,7 +3977,7 @@ declare function setup:resolve-forest-id-to-name($node as element()) as element(
   if (fn:data($node) ne 0) then
     element {fn:node-name($node)}
     {
-      attribute {xs:QName("name")} { xdmp:forest-name(fn:data($node)) }
+      xdmp:forest-name(fn:data($node))
     }
   else ()
 };
@@ -3633,7 +3987,7 @@ declare function setup:resolve-host-id-to-name($node as element()) as element()?
   if (fn:data($node) ne 0) then
     element {fn:node-name($node)}
     {
-      attribute {xs:QName("name")} { xdmp:host-name(fn:data($node)) }
+      xdmp:host-name(fn:data($node))
     }
   else ()
 };
@@ -3643,7 +3997,7 @@ declare function setup:resolve-user-id-to-name($node as element()) as element()?
   if (fn:data($node) ne 0) then
     element {fn:node-name($node)}
     {
-      attribute {xs:QName("name")} { setup:user-name(fn:data($node)) }
+      setup:user-name(fn:data($node))
     }
   else ()
 };
@@ -3653,8 +4007,7 @@ declare function setup:resolve-ids-to-names($nodes as item()*) as item()*
   for $node in $nodes
   return
     typeswitch ($node)
-
-    (: App Server specific :)
+      (: App Server specific :)
       case element(gr:modules) return
         setup:resolve-database-id-to-name($node)
 
@@ -3667,7 +4020,7 @@ declare function setup:resolve-ids-to-names($nodes as item()*) as item()*
       case element(gr:default-user) return
         setup:resolve-user-id-to-name($node)
 
-    (: Database specific :)
+      (: Database specific :)
       case element(db:security-database) return
         setup:resolve-database-id-to-name($node)
 
@@ -3680,11 +4033,11 @@ declare function setup:resolve-ids-to-names($nodes as item()*) as item()*
       case element(db:forest-id) return
         setup:resolve-forest-id-to-name($node)
 
-    (: Forest specific :)
+      (: Forest specific :)
       case element(as:host) return
         setup:resolve-host-id-to-name($node)
 
-    (: Default :)
+      (: Default :)
       case element() return
         if ($node/node()) then
           element {fn:node-name($node)}
@@ -3703,10 +4056,6 @@ declare function setup:resolve-ids-to-names($nodes as item()*) as item()*
       default return
         $node
 };
-
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Stripping default properties
- ::)
 
 declare function setup:strip-default-properties-from-http-server(
   $node as element(gr:http-server)) as element(gr:http-server)
@@ -3757,6 +4106,51 @@ declare function setup:strip-default-properties-from-xdbc-server(
   }
 };
 
+declare function setup:strip-default-properties-from-odbc-server(
+  $node as element(gr:odbc-server)) as element(gr:odbc-server)
+{
+  element { fn:node-name($node) }
+  {
+    $node/@*,
+
+    (: Wrapping this in xdmp:eval because it didn't exist until ML6 :)
+    let $default-properties :=
+      try
+      {
+        xdmp:eval('
+          import module namespace admin = "http://marklogic.com/xdmp/admin" at "/MarkLogic/admin.xqy";
+          declare variable $default-group external;
+          declare variable $default-modules external;
+          declare variable $default-database external;
+          admin:odbc-server-create(
+            admin:get-configuration(),
+            $default-group,
+            "default",
+            "/",
+            19999,
+            $default-modules,
+            $default-database)//gr:odbc-servers/gr:odbc-server[gr:odbc-server-name eq "default"]/*
+          ',
+          (xs:QName("default-group"), $default-group,
+           xs:QName("default-modules"), $default-modules,
+           xs:QName("default-database"), $default-database))
+      }
+      catch($ex)
+      {
+        if ($ex/error:code = "XDMP-UNDFUN" and fn:not(setup:at-least-version("6.0-2"))) then
+          (: If we're not using a recent enough version of ML, then the properties are irrelevant. :)
+          ()
+        else
+          xdmp:rethrow()
+      }
+    for $property in $node/*
+    where fn:not($default-properties[fn:deep-equal(., $property)]) and
+          fn:not($property/self::gr:odbc-server-id)
+    return
+      $property
+  }
+};
+
 declare function setup:strip-default-properties-from-database(
   $node as element(db:database)) as element(db:database)
 {
@@ -3799,10 +4193,6 @@ declare function setup:strip-default-properties-from-forest(
   }
 };
 
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Accessing import-config
- ::)
-
 declare function setup:get-databases-from-config(
   $import-config as element(configuration)) as element(db:database)*
 {
@@ -3814,7 +4204,7 @@ declare function setup:get-databases-from-config(
         $db/*,
         let $ignore := $db/*/fn:node-name(.)
         return
-          $import-config//db:databases/db:database[db:database-name eq $db/@import]/*[fn:not(fn:node-name(.) = $ignore)]
+          $import-config/db:databases/db:database[db:database-name eq $db/@import]/*[fn:not(fn:node-name(.) = $ignore)]
       }
     else
       $db
@@ -3836,10 +4226,6 @@ declare function setup:get-forests-per-host-from-database-config(
     else
       xs:positiveInteger("1") (: Default forests per host is 1 :)
 };
-
-(::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
- :: Utility functions
- ::)
 
 declare function setup:at-least-version($target)
 {
@@ -3875,10 +4261,8 @@ declare function setup:read-config-file($filename as xs:string) as document-node
 declare function setup:user-name($user-id as xs:unsignedLong?) as xs:string
 {
   let $user-id :=
-    if ($user-id) then
-      $user-id
-    else
-      fn:data(xdmp:get-request-user())
+    if ($user-id) then $user-id
+    else fn:data(xdmp:get-request-user())
   return
     xdmp:eval(
       'xquery version "1.0-ml";
@@ -3890,463 +4274,6 @@ declare function setup:user-name($user-id as xs:unsignedLong?) as xs:string
       <options xmlns="xdmp:eval">
         <database>{$default-security}</database>
       </options>)
-};
-
-declare function display:template($title, $main-content, $left-content)
-{
-  <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-      <title>Cluster Configurator -- {$title}</title>
-      <style>
-      body {{
-        margin:0;
-        padding:0;
-        border:0;     /* This removes the border around the viewport in old versions of IE */
-        width:100%;
-        background:#fff;
-        min-width:600px;      /* Minimum width of layout - remove line if not required */
-                /* The min-width property does not work in old versions of Internet Explorer */
-        font-size:90%;
-        font-family:  Verdana, Arial, Helvetica, sans-serif;
-      }}
-      a {{
-        color:#369;
-      }}
-      a:hover {{
-        color:#fff;
-        background:#369;
-        text-decoration:none;
-      }}
-      h1, h2, h3 {{
-        margin:.8em 0 .2em 0;
-        padding:0;
-        font-weight: normal;
-      }}
-      p {{
-        margin:.4em 0 .8em 0;
-        padding:0;
-      }}
-      img {{
-        margin:10px 0 5px;
-      }}
-
-      form {{
-        border:0;
-        margin:0;
-        padding:0;
-      }}
-
-      #lefttree ul {{
-        list-style-type:disc;
-        margin-left:0.5em;
-        padding-left:0.5em;
-
-      }}
-
-      #lefttree li {{
-        list-style-type:disc;
-        font-size:8pt;
-        padding-bottom:0.3em;
-      }}
-
-      /* Header styles */
-      #header {{
-        clear:both;
-        float:left;
-        width:100%;
-        background: #1E90FF;
-      }}
-      #header {{
-        border-bottom:1px solid #000;
-      }}
-      #header p,
-      #header h1,
-      #header h2 {{
-        padding:.4em 15px 0 15px;
-        margin:0;
-      }}
-      #header h2 {{
-        font-size:85%;
-      }}
-      #header ul {{
-        font-size:100%;
-        clear:left;
-        float:left;
-        width:100%;
-        list-style:none;
-        margin:10px 0 0 0;
-        padding:0;
-      }}
-      #header ul li {{
-        display:inline;
-        list-style:none;
-        margin:0;
-        padding:0;
-      }}
-      #header ul li a {{
-        display:block;
-        float:left;
-        margin:0 0 0 1px;
-        padding:3px 10px;
-        text-align:center;
-        background:#eee;
-        color:#000;
-        text-decoration:none;
-        position:relative;
-        left:15px;
-        line-height:1.3em;
-      }}
-      #header ul li a:hover {{
-        background:#369;
-        color:#fff;
-      }}
-      #header ul li a.active,
-      #header ul li a.active:hover {{
-        color:#fff;
-        background:#000;
-        font-weight:bold;
-      }}
-      #header ul li a span {{
-        display:block;
-      }}
-
-
-      #buttonbar ul {{
-        clear:left;
-        float:left;
-        width:100%;
-        list-style:none;
-        margin:10px 0 0 0;
-        padding:0;
-      }}
-      #buttonbar ul li {{
-        display:inline;
-        list-style:none;
-        margin:0;
-        padding:0;
-      }}
-      #buttonbar ul li a {{
-        display:block;
-        float:left;
-        margin:0 0 0 1px;
-        padding:3px 10px;
-        text-align:center;
-        background:#ADD8E6;
-        color:#000;
-        text-decoration:none;
-        position:relative;
-        left:15px;
-        line-height:1.3em;
-      }}
-      #buttonbar ul li a:hover {{
-        background:#369;
-        color:#fff;
-      }}
-      #buttonbar ul li a.active,
-      #buttonbar ul li a.active:hover {{
-        color:#fff;
-        background:black;
-        font-weight:bold;
-      }}
-      #buttonbar ul li a span {{
-        display:block;
-      }}
-
-
-      /* 'widths' sub menu */
-      #layoutdims {{
-        clear:both;
-        background:#eee;
-        border-top:4px solid #000;
-        margin:0;
-        padding:6px 15px !important;
-        text-align:right;
-      }}
-      /* column container */
-      .colmask {{
-        position:relative;  /* This fixes the IE7 overflow hidden bug */
-        clear:both;
-        float:left;
-        width:100%;     /* width of whole page */
-        overflow:hidden;    /* This chops off any overhanging divs */
-      }}
-      /* common column settings */
-      .colright,
-      .colmid,
-      .colleft {{
-        float:left;
-        width:100%;
-        position:relative;
-      }}
-      .col1,
-      .col2,
-      .col3 {{
-        float:left;
-        position:relative;
-        padding:0 0 1em 0;
-        overflow:hidden;
-      }}
-      /* 2 Column (left menu) settings */
-      .leftmenu {{
-        background:#fff;    /* right column background colour */
-      }}
-      .leftmenu .colleft {{
-        right:75%;      /* right column width */
-        background:#ADD8E6; /* left column background colour */
-      }}
-      .leftmenu .col1 {{
-        width:71%;      /* right column content width */
-        left:102%;      /* 100% plus left column left padding */
-      }}
-      .leftmenu .col2 {{
-        width:21%;      /* left column content width (column width minus left and right padding) */
-        left:6%;      /* (right column left and right padding) plus (left column left padding) */
-      }}
-
-
-      /* Footer styles */
-      #footer {{
-        clear:both;
-        float:left;
-        width:100%;
-        border-top:1px solid #000;
-      }}
-      #footer p {{
-        padding:10px;
-        margin:0;
-      }}
-
-
-      td, th {{
-        vertical-align: top;
-        padding: 10px;
-      }}
-
-      table#domainsummary
-      {{
-        font-size:80%;
-        border-width:1px 1px 1px 1px;
-        border-style:solid solid solid solid;
-        border-collapse:collapse;
-        border-color:1E90FF;
-      }}
-
-      table#domainsummary th,td
-      {{
-        border-width:1px 1px 1px 1px;
-        border-style:solid solid solid solid;
-        border-collapse:collapse;
-        border-color:1E90FF;
-      }}
-    </style>
-    </head>
-    <body>
-
-    <div id="header">
-      <!-- <p>Text above heading</p> -->
-      <h1>Cluster Configurator</h1>
-      <h2>{$title}</h2>
-      <p></p>
-      <!-- <p id="layoutdims">Right aligned bar</p>-->
-    </div>
-    <div class="colmask leftmenu">
-      <div class="colleft">
-        <div class="col1">
-          <!-- Column 1 start -->
-          {
-            $main-content
-          }
-          <!-- Column 1 end -->
-        </div>
-        <div class="col2">
-          <!-- Column 2 start -->
-          {
-            $left-content
-          }
-          <!-- Column 2 end -->
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <p>&copy; Copyright 2010 Mark Logic Corporation.  All rights reserved.</p>
-    </div>
-    </body>
-  </html>
-};
-
-declare function display:tab-bar($labels, $links, $index)
-{
-  (
-    <span id="buttonbar" xmlns="http://www.w3.org/1999/xhtml">
-      <ul>
-      {
-        for $label at $i in $labels
-        return
-          <li>
-          {
-              element a
-              {
-                if ($i = $index) then
-                  attribute class {"active"}
-                else
-                  (),
-                attribute href {$links[$i]},
-                $label
-              }
-          }
-          </li>
-      }
-      </ul>
-    </span>,
-    <p xmlns="http://www.w3.org/1999/xhtml"><br/>&nbsp;<br/></p>
-  )
-};
-
-declare function display:dropdown($name, $options, $selected, $disabled)
-{
-  element select
-  {
-    attribute id {$name},
-    attribute name {$name},
-
-    if ($disabled) then
-      attribute disabled {"disabled"}
-    else
-      (),
-
-    for $option in $options
-    return
-    element option
-    {
-      attribute value {$option},
-      if ($selected eq $option) then
-        attribute selected {"selected"}
-      else
-        (),
-      $option
-    }
-  }
-};
-
-declare function display:radio($name, $value, $selected)
-{
-  element input
-  {
-    attribute type {"radio"},
-    attribute name {$name},
-    attribute value {$value},
-
-    if ($value eq $selected) then
-      attribute checked {"checked"}
-    else
-      ()
-  }
-};
-
-declare function display:vertical-spacer($n)
-{
-  <p>
-  {
-    for $i in (1 to $n)
-    return ("&nbsp;", <br />)
-  }
-  </p>
-};
-
-declare function display:left-links()
-{
-  <div>
-  &nbsp;<br/>
-  &nbsp;<br/>
-  &nbsp;<br/>
-  <p><a href="export.xqy">Export</a></p>
-  <p><a href="import.xqy">Import</a></p>
-  </div>
-};
-
-declare function display:export-ui()
-{
-  let $databases := xdmp:get-request-field("databases", "")
-  let $forests := xdmp:get-request-field("forests", "")
-  let $servers := xdmp:get-request-field("servers", "")
-  let $user-ids as xs:unsignedLong* :=
-    for $x in xdmp:get-request-field("users", ())
-    return
-      xs:unsignedLong($x)
-  let $role-ids as xs:unsignedLong* :=
-    for $x in xdmp:get-request-field("roles", ())
-    return
-      xs:unsignedLong($x)
-  let $submit := xdmp:get-request-field("submit", "")
-  return
-    if ($submit eq "Export") then
-      let $config := setup:get-configuration($databases, $forests, $servers, $user-ids, $role-ids, ())
-      let $type := xdmp:add-response-header("Content-Type", "text/xml")
-      let $disp := xdmp:add-response-header("Content-Disposition", "attachment; filename=config.xml")
-      return $config
-    else
-      display:template(
-        "Export Configuration",
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          <form method="POST" action="" name="export">
-            <input type="hidden" name="queryInput" value="{xdmp:get-request-field('queryInput')}"/>
-            <table class="foo" width="100%" style="border-width:0px">
-            <tr>
-              <td valign="top" style="border-width:0px">
-                <h3>Databases</h3>
-                {
-                  for $database-id in xdmp:databases()
-                  let $database := xdmp:database-name($database-id)
-                  order by $database
-                  return (<input type="checkbox" name="databases" value="{$database}" />, $database, <br/>)
-                }
-              </td>
-              <td valign="top" style="border-width:0px">
-                <h3>Forests</h3>
-                {
-                  for $forest-id in xdmp:forests()
-                  let $forest := xdmp:forest-name($forest-id)
-                  order by $forest
-                  return (<input type="checkbox" name="forests" value="{$forest}" />, $forest, <br/>)
-                }
-              </td>
-              <td valign="top" style="border-width:0px">
-                <h3>App Servers</h3>
-                {
-                  for $server-id in xdmp:servers()
-                  let $server := xdmp:server-name($server-id)
-                  order by $server
-                  return (<input type="checkbox" name="servers" value="{$server}" />, $server, <br/>)
-                }
-              </td>
-              <td valign="top" style="border-width:0px">
-                <h3>Users</h3>
-                {
-                  for $user in xdmp:eval("/sec:user", (), <options xmlns="xdmp:eval">
-                                                            <database>{xdmp:database("Security")}</database>
-                                                          </options>)
-                  order by $user/sec:user-name
-                  return (<input type="checkbox" name="users" value="{$user/sec:user-id}" />, $user/sec:user-name, <br/>)
-                }
-              </td>
-              <td valign="top" style="border-width:0px">
-                <h3>Roles</h3>
-                {
-                  for $user in xdmp:eval("/sec:role", (), <options xmlns="xdmp:eval">
-                                                            <database>{xdmp:database("Security")}</database>
-                                                          </options>)
-                  order by $user/sec:role-name
-                  return (<input type="checkbox" name="roles" value="{$user/sec:role-id}" />, $user/sec:role-name, <br/>)
-                }
-              </td>
-            </tr>
-            </table>
-
-            <input type="submit" name="submit" value="Export"/>
-          </form>
-        </div>,
-        display:left-links()
-        )
 };
 
 declare function setup:validation-fail($message)
@@ -4378,3 +4305,56 @@ declare function setup:validate-install($import-config as element(configuration)
     $ex
   }
 };
+
+declare function setup:create-ssl-certificate-templates($import-config as element(configuration))
+{
+  xdmp:log(fn:concat("timestamp: ", xdmp:request-timestamp(  ))),
+  for $cert in $import-config/pki:certificates/pki:certificate[fn:exists(pki:name/text())]
+  return
+    if (fn:empty(pki:get-template-by-name($cert/pki:name))) then
+      xdmp:eval(
+        '
+        import module namespace pki = "http://marklogic.com/xdmp/pki" at "/MarkLogic/pki.xqy";
+        declare variable $cert external;
+        pki:insert-template(
+          pki:create-template(
+            $cert/pki:name,
+            "Self-signed certificate",
+            "rsa",
+            <pki:key-options xmlns="ssl:options">
+              <key-length>2048</key-length>
+            </pki:key-options>,
+            <req xmlns="http://marklogic.com/xdmp/x509">
+              <version>0</version>
+              <subject>
+                <countryName>{ $cert/pki:countryName/fn:string() }</countryName>
+                <stateOrProvinceName>{ $cert/pki:stateOrProvinceName/fn:string() }</stateOrProvinceName>
+                <localityName>{ $cert/pki:localityName/fn:string() }</localityName>
+                <organizationName>{ $cert/pki:organizationName/fn:string() }</organizationName>
+                <organizationalUnitName>{ $cert/pki:organizationalUnitName/fn:string() }</organizationalUnitName>
+                <commonName>{ xdmp:hostname() }</commonName>
+                <emailAddress>{ $cert/pki:emailAddress/fn:string() }</emailAddress>
+              </subject>
+              <v3ext>
+                <basicConstraints critical="false">CA:TRUE</basicConstraints>
+                <keyUsage critical="false">Certificate Sign, CRL Sign</keyUsage>
+                <nsCertType critical="false">SSL Server</nsCertType>
+              </v3ext>
+            </req>))',
+        (xs:QName("cert"), $cert),
+        <options xmlns="xdmp:eval">
+          <database>{xdmp:security-database()}</database>
+          <isolation>different-transaction</isolation>
+        </options>
+      )
+    else ()
+
+};
+
+(:
+ : Force update mode. This is so that we can create an SSL certificate template
+ : and then tell an app server to use it.
+ :)
+if ( 1 = 2 )
+then ( xdmp:document-insert("fake.xml", <a/>) ) else (),
+
