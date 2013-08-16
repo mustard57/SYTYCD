@@ -28,6 +28,7 @@
       <default-user name="@ml.default-user"/>
       <url-rewriter>@ml.url-rewriter</url-rewriter>
       <error-handler>@ml.error-handler</error-handler>
+      <rewrite-resolves-globally>@ml.rewrite-resolves-globally</rewrite-resolves-globally>
     </http-server>
     @ml.test-appserver
   </http-servers>
@@ -69,6 +70,20 @@
       <directory-creation>manual</directory-creation>
       <maintain-last-modified>false</maintain-last-modified>
 <!--
+      <fragment-roots>
+        <fragment-root>
+          <namespace-uri>http://www.marklogic.com/ns/sample</namespace-uri>
+          <localname>frag-root</localname>
+        </fragment-root>
+      </fragment-roots>
+      <fragment-parents>
+        <fragment-parent>
+          <namespace-uri>http://www.marklogic.com/ns/sample</namespace-uri>
+          <localname>frag-parents</localname>
+        </fragment-parent>
+      </fragment-parents>
+-->
+<!--
       <fields>
         <field>
           <field-name/>
@@ -101,28 +116,69 @@
           <range-value-positions>false</range-value-positions>
         </range-element-index>
 -->
-      </range-element-indexes>
+</range-element-indexes>
+        
       <range-element-attribute-indexes>
-        <range-element-attribute-index>
-          <scalar-type>string</scalar-type>
-          <parent-namespace-uri></parent-namespace-uri>
-          <parent-localname>message</parent-localname>
-          <namespace-uri/>
-          <localname>list</localname>
-          <collation>http://marklogic.com/collation/codepoint</collation>
-          <range-value-positions>false</range-value-positions>
-        </range-element-attribute-index>
+<!--
+        Sample for:
+          <person name="bob" xmlns="http://marklogic.com/ns/sample"/>
 
         <range-element-attribute-index>
           <scalar-type>string</scalar-type>
-          <parent-namespace-uri></parent-namespace-uri>
-          <parent-localname>from</parent-localname>
+          <parent-namespace-uri>http://marklogic.com/ns/sample</parent-namespace-uri>
+          <parent-localname>person</parent-localname>
           <namespace-uri/>
-          <localname>address</localname>
+          <localname>name</localname>
           <collation>http://marklogic.com/collation/codepoint</collation>
           <range-value-positions>false</range-value-positions>
         </range-element-attribute-index>
+-->
       </range-element-attribute-indexes>
+      <range-field-indexes>
+<!--
+        <range-field-index>
+          <scalar-type>date</scalar-type>
+          <field-name>sample</field-name>
+          <collation/>
+          <range-value-positions>false</range-value-positions>
+        </range-field-index>
+-->
+      </range-field-indexes>
+
+      <path-namespaces>
+<!--
+        <path-namespace>
+          <prefix>sample</prefix>
+          <namespace-uri>http://marklogic.com/ns/sample</namespace-uri>
+        </path-namespace>
+-->
+      </path-namespaces>
+
+      <range-path-indexes>
+<!--
+        <range-path-index>
+          <scalar-type>string</scalar-type>
+          <collation>http://marklogic.com/collation/codepoint</collation>
+          <path-expression>/sample:root/sample:child</path-expression>
+          <range-value-positions>false</range-value-positions>
+          <invalid-values>reject</invalid-values>
+        </range-path-index>
+-->
+      </range-path-indexes>
+
+      <geospatial-element-indexes>
+<!--
+        <geospatial-element-index>
+          <namespace-uri>http://www.marklogic.com/ns/sample</namespace-uri>
+          <localname>geo-element</localname>
+          <coordinate-system>wgs84</coordinate-system>
+          <point-format>point</point-format>
+          <range-value-positions>false</range-value-positions>
+          <invalid-values>reject</invalid-values>
+        </geospatial-element-index>
+-->
+      </geospatial-element-indexes>
+
       <geospatial-element-attribute-pair-indexes>
 <!--
         Sample for:
@@ -160,6 +216,44 @@
         </geospatial-element-pair-index>
 -->
       </geospatial-element-pair-indexes>
+      <geospatial-element-child-indexes>
+<!--
+        Sample for:
+          <geo xmlns="http://marklogic.com/ns/sample">
+            <pos>37.237162,-115.8099747</pos>
+          </geo>
+
+        <geospatial-element-child-index>
+          <parent-namespace-uri>http://marklogic.com/ns/sample</parent-namespace-uri>
+          <parent-localname>geo</parent-localname>
+          <namespace-uri>http://marklogic.com/ns/sample</namespace-uri>
+          <localname>pos</localname>
+          <coordinate-system>wgs84</coordinate-system>
+          <point-format>point</point-format>
+          <range-value-positions>false</range-value-positions>
+        </geospatial-element-child-index>
+-->
+      </geospatial-element-child-indexes>
+      <element-word-lexicons>
+<!--
+        <element-word-lexicon>
+          <namespace-uri>http://www.marklogic.com/ns/sample</namespace-uri>
+          <localname>sample-element</localname>
+          <collation>http://marklogic.com/collation/</collation>
+        </element-word-lexicon>
+-->
+      </element-word-lexicons>
+      <element-attribute-word-lexicons>
+<!--
+        <element-attribute-word-lexicon>
+          <parent-namespace-uri>http://www.marklogic.com/ns/sample</parent-namespace-uri>
+          <parent-localname>sample-element</parent-localname>
+          <namespace-uri/>
+          <localname>sample-attribute</localname>
+          <collation>http://marklogic.com/collation/</collation>
+        </element-attribute-word-lexicon>
+-->
+      </element-attribute-word-lexicons>
     </database>
     <!--Create Application Modules Database-->
     <database>
@@ -188,7 +282,7 @@
       <word-lexicons/>
       <two-character-searches>false</two-character-searches>
       <one-character-searches>false</one-character-searches>
-      <uri-lexicon>false</uri-lexicon>
+      <uri-lexicon>true</uri-lexicon>
       <collection-lexicon>false</collection-lexicon>
       <directory-creation>automatic</directory-creation>
       <maintain-last-modified>false</maintain-last-modified>
@@ -245,7 +339,7 @@
     <user>
       <user-name>@ml.app-name-user</user-name>
       <description>A user for the @ml.app-name application</description>
-      <password>password</password>
+      <password>@ml.appuser-password</password>
       <role-names>
         <role-names>@ml.app-role</role-names>
       </role-names>
@@ -253,4 +347,36 @@
       <collections/>
     </user>
   </users>
+  <amps xmlns="http://marklogic.com/xdmp/security">
+<!--
+  Sample amp. See the Understanding and Using Security Guide section 5.2 for
+  information about amps.
+  http://community.marklogic.com/pubs/5.0/books/security.pdf
+    <amp>
+      <namespace>http://marklogic.com/roxy</namespace>
+      <local-name>sample</local-name>
+      <doc-uri>/app/models/sample.xqy</doc-uri>
+      <db-name>@ml.app-modules-db</db-name>
+      <role-name>a-privileged-role</role-name>
+    </amp>
+-->
+  </amps>
+  <privileges xmlns="http://marklogic.com/xdmp/security">
+<!--
+    Sample execute privilege.
+    <privilege>
+      <privilege-name>my-action</privilege-name>
+      <action>http://marklogic.com/custom/privilege/my-action</action>
+      <kind>execute</kind>
+    </privilege>
+-->
+<!--
+    Sample URI privilege.
+    <privilege>
+      <privilege-name>users-uri</privilege-name>
+      <action>/users/</action>
+      <kind>uri</kind>
+    </privilege>
+-->
+  </privileges>
 </configuration>

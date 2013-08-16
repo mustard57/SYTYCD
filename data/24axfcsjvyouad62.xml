@@ -1,9 +1,0 @@
-<message message-id="20060225235339.GA20190@dot.blorf.net" list="org.samba.lists.rsync" id="24axfcsjvyouad62" type="general" date="2006-02-25T23:54:04" year="2006-01-01" year-month="2006-02-01" year-month-day="2006-02-25" thread-id="sac4kjdnr24nisgx"><headers><envelope-from-line>From wayned@samba.org  Sat Feb 25 23:53:39 2006</envelope-from-line><from personal="Wayne Davison" address="wayned@samba.org">Wayne Davison &lt;wayned@samba.org&gt;</from><subject normal="Why this doesn't work??">Why this doesn't work??</subject><date>Sat Feb 25 23:54:04 2006</date><in-reply-to>&lt;dtqqff$29p$1@sea.gmane.org&gt;</in-reply-to><references>&lt;dto2nd$nrb$1@sea.gmane.org&gt; &lt;1140879591.2856.4.camel@mattlaptop&gt;
-	&lt;dtqqff$29p$1@sea.gmane.org&gt;</references><message-id>20060225235339.GA20190@dot.blorf.net</message-id><content-type>text/plain; charset=iso-8859-1</content-type><mime-version>1.0</mime-version></headers><normalized-references><normalized-message-id>20060225235339.GA20190@dot.blorf.net</normalized-message-id><normalized-in-reply-to>dtqqff$29p$1@sea.gmane.org</normalized-in-reply-to><normalized-reference>dto2nd$nrb$1@sea.gmane.org</normalized-reference><normalized-reference>1140879591.2856.4.camel@mattlaptop</normalized-reference><normalized-reference>dtqqff$29p$1@sea.gmane.org</normalized-reference></normalized-references><body type="text/plain; charset=iso-8859-1"><para depth="0">On Sun, Feb 26, 2006 at 12:49:41AM +0100, Matias Surdi wrote:
-</para><quote depth="1"><quotepara depth="1">I mean, exclude /proc/* but in the destination location have an empty 
-/proc dir.
-</quotepara></quote><para depth="0">
-Your question contains the answer:  --exclude='/proc/*'
-
-</para><para depth="0">..wayne..
-</para></body></message>
