@@ -1,0 +1,115 @@
+/*!
+ * Bootstrap specific css settings for MarkLogic
+ *
+ * 
+ */ 
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+
+/* --- setting for sidebar containing facets --- */
+
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+.nav-header {
+  color:#DD4B39;
+  font-size:14px;
+  font-weight:normal;
+  text-transform:none;
+  margin-top:10px;
+}
+
+.nav-list {
+
+  li {
+
+    a {
+      font-size:12px;
+      line-height:16px;
+      padding-top:1px;
+      padding-bottom:1px;
+      padding-left:0px;
+      
+    }   
+    
+    a:link, a:active, a:hover, a:visited {
+      text-decoration: none; 
+      color:rgb(75,75,75);
+      background-color:transparent;
+      outline:none
+    }     
+  }   /* end li */ 
+} /* end .nav-list */
+
+
+.more-facet-values {
+  display:none;	
+	
+}
+
+
+
+/* Enable use of floated navbar text */
+.navbar-text pull-right {
+  float: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+
+/* ---  settings for search input bar and search button --- */
+#search {
+  margin-top:15px;
+  margin-bottom:10px;
+  
+  #search-button {
+    margin-left:5px; 
+  }
+
+  .searchinput {
+    .searchbar {
+      width:400px;
+      margin-right:10px
+    }
+  }
+}
+
+/* --- settings for result list ---    */
+
+#searchresult {
+ 
+ margin-top:25px;
+ 
+ .result {
+    margin-bottom:10px;
+ }
+ 
+ #pagerlabel {
+   font-size:12px;
+   padding-top:14px;
+ }
+ 
+ #pager {
+   margin-left:39px;
+ }
+
+
+}
+
+
+
+
+
+/* --  overwrite bootstrap classes -- */
+.pagination {
+  margin-top:5px;
+}
+
+
