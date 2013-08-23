@@ -17,7 +17,7 @@ xquery version "1.0-ml";
 
 import module namespace vh = "http://marklogic.com/roxy/view-helper" at "/roxy/lib/view-helper.xqy";
 
-declare variable $mainview as item()* := vh:get("mainview");
+declare variable $view as item()* := vh:get("view");
 declare variable $title as xs:string? := (vh:get('title'), "New Roxy Application")[1];
 declare variable $sidebar as item()* := vh:get("sidebar");
 declare variable $hiddenFormInput as item()* := vh:get("hiddenFormInput");
@@ -71,7 +71,8 @@ xdmp:set-response-content-type("text/html"),
 
   <div class="container">
       <div id="search" class="row">
-        <div class="col-md-3">Hello
+        <div class="col-md-3">
+        &nbsp;
         </div>
         <div class="col-md-9 searchinput">
          <form class="form-inline" role="form">
@@ -86,12 +87,7 @@ xdmp:set-response-content-type("text/html"),
       </div>       
  
       <div id="searchresult" class="row">
-        <div class="col-md-3">
-         {$sidebar}
-        </div>
-        <div class="col-md-9">
-          {$mainview}
-        </div>
+          {$view}
         
       </div> <!-- end of row-fluid --> 
 

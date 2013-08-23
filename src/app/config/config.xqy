@@ -67,6 +67,13 @@ declare variable $c:ROXY-ROUTES :=
  : default application.
  : ***********************************************
  :)
+ 
+ 
+(: URL for the MLSAM servlet container application:) 
+declare variable $MLSAM-URL :=  "http://kojak.demo.marklogic.com:8080/mlsam/mlsql";
+ 
+ 
+ 
 declare variable $c:DEFAULT-PAGE-LENGTH as xs:int := 5;
 
 declare variable $c:SEARCH-OPTIONS :=
