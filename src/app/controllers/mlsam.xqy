@@ -23,7 +23,7 @@ declare option xdmp:mapping "false";
  :)
 declare function c:main() as item()*
 {
-  let $sqlQuery := "select * from player,team where player.team_idteam = team.idteam"
+  let $sqlQuery := "select * from test2.player,test2.team where player.team_idteam = team.idteam"
   return
   ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
   ch:use-view((), "xml"),

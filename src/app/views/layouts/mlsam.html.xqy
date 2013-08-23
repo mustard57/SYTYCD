@@ -56,7 +56,7 @@ xdmp:set-response-content-type("text/html"),
             <span class="icon-bar">&nbsp;</span>
             <span class="icon-bar">&nbsp;</span>
           </button>
-          <a class="navbar-brand" href="/appbuilder/main.html">KoJAk</a>
+          <a class="navbar-brand" href="/mlsam.html">KoJAk</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
