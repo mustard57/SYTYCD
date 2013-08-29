@@ -50,7 +50,7 @@ vh:add-value("sidebar",()),
   </tbody>
  </table>
 <h3>Underlying response:-</h3>
-<emp>
+<pre>
  {$mlsamResponse}
-</emp>
+</pre>
 </div> 

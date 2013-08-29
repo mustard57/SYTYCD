@@ -26,7 +26,7 @@ declare variable $mlsamResponse as element(sql:result)? := vh:get("mlsamResponse
 vh:add-value("hiddenFormInput",()),
 vh:add-value("sidebar",()),
 <div>
-<h2>Showing full index information for test2.player table</h2>
+<h2>Showing available schema on endpoint</h2>
 <table class="table">
  <thead>
    <tr>

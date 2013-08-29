@@ -27,7 +27,7 @@ document config format (JSON or XML namespace same as extension)
 
 {ingest: {
   database: {
-    hostname: "kojak.marklogic.com", port: 8120, username: "myuser", password: "mypass"
+    samurl: "http://kojak.marklogic.com:8080/mlsam/samurl"
   },
   create: {
     graph: "mynamedgraph"
