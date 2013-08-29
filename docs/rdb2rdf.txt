@@ -1,0 +1,53 @@
+This REST Extension supports the following messaging formats:-
+
+
+GET - Fetches database info
+query string supported:-
+ - database (JSON database configuration as per ingest's database node)
+ 
+Generates:-
+
+{information: {
+  tables: [
+    {table: {
+      name: "customers", 
+      columns: [{column: { name: "custnum", type: "xs:integer", required: false, indexed: true, primarykey: false, foreignkey: false}}, /* others */],
+      metrics: {rowcount: 143}
+    }}, // others ...
+  ],
+  relationships: [
+  ]
+}
+}
+
+
+
+POST - Perform ingest of triples to the named graph
+document config format (JSON or XML namespace same as extension)
+
+{ingest: {
+  database: {
+    samurl: "http://kojak.marklogic.com:8080/mlsam/samurl"
+  },
+  create: {
+    graph: "mynamedgraph"
+  },
+  selection: {
+    // Either:
+    mode: "schema", // Creates interdependencies between tables
+    tables: ["customers","policies","address"] // Other RD info required here
+    
+    // Or: 
+    mode: "data",
+    tables: ["customers"], offset: 101, limit: 100
+  }
+}
+}
+
+Returns:
+{success: true
+}
+
+OR
+{success: false, error: "error info here if catchable, otherwise default REST XML error message"
+}

@@ -29,3 +29,60 @@ declare function c:main() as item()*
   ch:use-view((), "xml"),
   ch:use-layout(("mlsam"), "html")
 };
+
+declare function c:describe() as item()*
+{
+  let $sqlQuery := "DESCRIBE test2.player" (: Describes structure of player table :)
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:showfull() as item()*
+{
+  let $sqlQuery := "SHOW FULL TABLES FROM test2" (: Lists whether a view or a table (full) :)
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:showindex() as item()*
+{
+  let $sqlQuery := "SHOW INDEX FROM test2.player" (: Show all indexes fields in player, not just fk/pk :)
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:relationships() as item()*
+{ (: SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name :)
+  let $sqlQuery := "SELECT ke.* FROM information_schema.KEY_COLUMN_USAGE ke WHERE ke.referenced_table_name IS NOT NULL and ke.TABLE_SCHEMA=""test2"" ORDER BY ke.referenced_table_name" (: Show only fk/pk on all tables in schema. Very MySQL specific. :)
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+  
+};
+
+declare function c:listschema() as item()*
+{ (: SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name :)
+  let $sqlQuery := "SELECT DISTINCT ke.TABLE_SCHEMA FROM information_schema.KEY_COLUMN_USAGE ke ORDER BY ke.TABLE_SCHEMA " 
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:rdb2rdf() as item()*
+{
+  ()
+(:
+  ch:add-value("message", "This is a test message."),
+  ch:add-value("title", "This is a test page title"),
+  ch:use-view((), "xml"),
+  ch:use-layout((), "xml")
+:)
+};
