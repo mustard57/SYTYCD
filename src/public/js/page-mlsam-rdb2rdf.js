@@ -1,5 +1,5 @@
 
-$(document).ready(function() {
+document.body.onload = function() {
   var db = new mljs();
   db.logger.setLogLevel("debug");
   
@@ -7,9 +7,10 @@ $(document).ready(function() {
   
   try {
  
-  var wgt = new com.marklogic.widgets.rdb2rdf("rdb2rdf");
+    var wgt = new com.marklogic.widgets.rdb2rdf("rdb2rdf");
+    document.getElementById("rdb2rdf-mlsam").value = "http://kojak.demo.marklogic.com:8080/mlsam/mlsql";
   
   } catch (err) {
     error.show(err.message);
   }
-});
+};
