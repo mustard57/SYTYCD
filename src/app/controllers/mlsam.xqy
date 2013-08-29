@@ -32,7 +32,7 @@ declare function c:main() as item()*
 
 declare function c:describe() as item()*
 {
-  let $sqlQuery := "DESCRIBE test2.player"
+  let $sqlQuery := "DESCRIBE test2.player" (: Describes structure of player table :)
   return
   ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
   ch:use-view((), "xml"),
@@ -41,7 +41,7 @@ declare function c:describe() as item()*
 
 declare function c:showfull() as item()*
 {
-  let $sqlQuery := "SHOW FULL TABLES FROM test2"
+  let $sqlQuery := "SHOW FULL TABLES FROM test2" (: Lists whether a view or a table (full) :)
   return
   ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
   ch:use-view((), "xml"),
@@ -50,7 +50,7 @@ declare function c:showfull() as item()*
 
 declare function c:showindex() as item()*
 {
-  let $sqlQuery := "SHOW INDEX FROM test2.player"
+  let $sqlQuery := "SHOW INDEX FROM test2.player" (: Show all indexes fields in player, not just fk/pk :)
   return
   ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
   ch:use-view((), "xml"),
@@ -59,7 +59,7 @@ declare function c:showindex() as item()*
 
 declare function c:relationships() as item()*
 {
-  let $sqlQuery := "SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name FROM information_schema.KEY_COLUMN_USAGE ke WHERE ke.referenced_table_name IS NOT NULL and ke.TABLE_SCHEMA=""test2"" ORDER BY ke.referenced_table_name"
+  let $sqlQuery := "SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name FROM information_schema.KEY_COLUMN_USAGE ke WHERE ke.referenced_table_name IS NOT NULL and ke.TABLE_SCHEMA=""test2"" ORDER BY ke.referenced_table_name" (: Show only fk/pk on all tables in schema. Very MySQL specific. :)
   return
   ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
   ch:use-view((), "xml"),
