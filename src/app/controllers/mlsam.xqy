@@ -29,3 +29,40 @@ declare function c:main() as item()*
   ch:use-view((), "xml"),
   ch:use-layout(("mlsam"), "html")
 };
+
+declare function c:describe() as item()*
+{
+  let $sqlQuery := "DESCRIBE test2.player"
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:showfull() as item()*
+{
+  let $sqlQuery := "SHOW FULL TABLES FROM test2"
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:showindex() as item()*
+{
+  let $sqlQuery := "SHOW INDEX FROM test2.player"
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:relationships() as item()*
+{
+  let $sqlQuery := "SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name FROM information_schema.KEY_COLUMN_USAGE ke WHERE ke.referenced_table_name IS NOT NULL and ke.TABLE_SCHEMA=""test2"" ORDER BY ke.referenced_table_name"
+  return
+  ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+  
+};
