@@ -43,9 +43,7 @@ Generates:-
 :)
 declare function m:get-schema-info($samurl,$schema) as element(m:schema-info) {
   (: global setup :)
-  let $types := map:map()
-  let $o := map:put($types,"int","xs:integer")
-  let $o := map:put($types,"varchar","xs:string")
+  let $types := m:get-types-map()
   return
   <m:schema-info>  
     {
@@ -82,6 +80,15 @@ declare function m:get-schema-info($samurl,$schema) as element(m:schema-info) {
         </m:relationship>
     }
   </m:schema-info>
+};
+
+declare function m:get-types-map() as map:map {
+  
+  let $types := map:map()
+  let $o := map:put($types,"int","xs:integer")
+  let $o := map:put($types,"varchar","xs:string")
+  let $o := map:put($types,"datetime","xs:dateTime")
+  return $types
 };
 
 (:
@@ -132,6 +139,7 @@ returns:-
 :)
 declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as element(m:ingestresult) {
   (: Perform W3C direct mapping with specified index settings :)
+  let $types := m:get-types-map()
   let $samurl := $config/m:database/m:samurl/text()
   let $schema := $config/m:database/m:schema/text()
   let $graph := $config/m:create/m:graph/text()
@@ -157,24 +165,29 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
   let $o := xdmp:log("FOREIGN KEY COLUMNS:- ")
   let $o := xdmp:log($foreignkeycolumns)
   let $pkcount := fn:count($primarykeycolumns)
+  let $descriptions := sql:execute(fn:concat("DESCRIBE ",$schema,".",$tablename),$samurl, ())/sql:tuple
+  let $l := xdmp:log("DESCRIPTIONS:-")
+  let $l := xdmp:log($descriptions)
   return
     <m:ingestresult>{
       (: MODE = table :)
       (: Perform ingest of a single table. No need to process tables without foreign keys first as the W3C direct mapping is consistent without this. :)
       (: Fetch appropriate data :)
-      let $collist := fn:string-join( $config/m:selection/m:column/text(), ", " )
+      let $collist := fn:concat("`",fn:string-join( $config/m:selection/m:column/text(), "`, `" ),"`")
       let $base := fn:concat("http://marklogic.com/rdb2rdf/" , $schema , "/") (: RDF base: property :)
       
       let $sqldata := fn:concat("SELECT ", $collist, " FROM ",$schema,".",$tablename," ORDER BY ",$collist, " LIMIT ",$config/m:selection/m:offset/text(), ",", $config/m:selection/m:limit/text())
       let $l := xdmp:log($sqldata)
-      let $data := sql:execute($sqldata,$samurl, ())/sql:tuple
+      let $sqlout := sql:execute($sqldata,$samurl, ())
+      let $l := xdmp:log($sqlout)
+      let $data := $sqlout/sql:tuple
       (: Generate our identity (if primary key exists) or temporary id (no primary key) :)
       let $objclass := fn:concat($base , m:rdfescape($tablename))
       let $put := map:put($statsmap,"rowcount",fn:count($data))
       let $triples :=
         for $row at $idx in $data
         let $o := xdmp:log(fn:concat("Row id: ", fn:string($idx)))
-        let $rc := map:put($statsmap,"rowcount",map:get($statsmap,"rowcount") + 1)
+        (:let $rc := map:put($statsmap,"rowcount",map:get($statsmap,"rowcount") + 1):)
         let $subject := 
           if ($pkcount gt 0) then fn:concat(
             $objclass , "/" , fn:concat(
@@ -199,7 +212,27 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
           (: Process each column value :)
           for $col in $row/element()
           let $predicate := fn:concat($objclass , "#" , m:rdfescape($col/fn:local-name(.)))
-          let $object := $col/text() (: TODO format the $object primitive such that the data type is carried through :)
+          
+          let $rawtype := $descriptions[./COLUMN_NAME = $col/fn:local-name(.)]/COLUMN_TYPE/text()
+          let $l := xdmp:log($rawtype)
+          let $basetype := fn:tokenize($rawtype,"\(")[1]
+          let $l := xdmp:log($basetype)
+          let $xmltype := map:get($types,$basetype)
+          let $l := xdmp:log($xmltype)
+          
+          (: format the $object primitive such that the data type is carried through :)
+          let $object :=
+            (:
+            if ($xmltype = "xs:string") then
+              fn:concat($col/text(),"^^xs:string") 
+            else if ($xmltype = "xs:integer") then
+              fn:concat($col/text(),"^^xs:integer")
+            else if ($xmltype = "xs:dateTime") then
+              fn:concat(m:sqlToXmlDatetime($col/text()),"^^xs:dateTime")
+            else
+              $col/text() 
+            :)
+            sem:typed-literal($col/text(),sem:iri($xmltype))
       
           return
             (sem:triple(sem:iri($subject),sem:iri($predicate),$object),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1))
@@ -264,7 +297,12 @@ return
       let $l := xdmp:log($insertresult)
       return (
         (: Commit this to a named graph rather than document so that MarkLogic handles the most performant storage mechanism :)
-        <m:docuri>{$insertresult}</m:docuri>,
+        (
+          for $di in $insertresult
+          return
+            <m:docuri>{$di}</m:docuri>
+        )
+        ,
         <m:statistics>
           <m:triplecount>{map:get($statsmap,"triplecount")}</m:triplecount>
           <m:rowcount>{map:get($statsmap,"rowcount")}</m:rowcount>
@@ -285,4 +323,17 @@ return
 declare function m:rdfescape($str as xs:string) as xs:string {
   (: percent encode as per W3C RDB2RDF spec :)
   xdmp:url-encode($str,fn:true())
+};
+
+declare function m:sqlToXmlDatetime($t as xs:string) as xs:dateTime {
+  let $pieces := fn:tokenize($t, " ")
+  return
+  if (fn:count($pieces) = 2) then (: For 2012-10-13 12:01:03.34 format :)
+    let $timestamp := fn:concat($pieces[1],"T",$pieces[2])
+    return xs:dateTime($timestamp)
+  else (: For 2012 Oct 13 12:01:03.34 format :)
+    let $map := <map><Jan>01</Jan><Feb>02</Feb><Mar>03</Mar><Apr>04</Apr><May>05</May><Jun>06</Jun><Jul>07</Jul><Aug>08</Aug><Sep>09</Sep><Oct>10</Oct><Nov>11</Nov><Dec>12</Dec></map>
+    let $month := $map/*[name()=$pieces[2]]/text()
+    let $timestamp := fn:concat($pieces[4],"-", $month,"-",$pieces[3],"T",$pieces[5])
+    return xs:dateTime($timestamp)
 };
