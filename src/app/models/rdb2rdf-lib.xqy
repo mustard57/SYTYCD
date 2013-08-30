@@ -4,6 +4,8 @@ module namespace m = "http://marklogic.com/roxy/models/rdb2rdf";
 
 import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
 import module namespace sql  = "http://xqdev.com/sql" at "/app/models/sql.xqy";
+       declare namespace my='http://mycompany.com/test';
+declare namespace rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 
 declare function m:list-schema($samurl as xs:string) as element(m:list-schema) {
   <m:list-schema>{
@@ -200,7 +202,7 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
           let $object := $col/text() (: TODO format the $object primitive such that the data type is carried through :)
       
           return
-            (sem:triple(sem:iri($subject),sem:iri($predicate),sem:iri($object)),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1))
+            (sem:triple(sem:iri($subject),sem:iri($predicate),$object),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1))
         ,
           (: add any relationships to tables where we have foreign keys in our table columns :)
           for $reftablename in fn:distinct-values($foreignkeycolumns/REFERENCED_TABLE_NAME/text())
@@ -231,7 +233,33 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
         )
       let $to := xdmp:log("TRIPLES:-")
       let $tripout := xdmp:log($triples)
-      let $insertresult := sem:graph-insert(sem:iri($graph), $triples)
+      let $to := xdmp:log("GRAPH:-")
+      let $tripout := xdmp:log($graph)
+      let $insertresult := sem:graph-insert(sem:iri($graph), $triples) 
+      (: let $insertresult := sem:graph-insert(sem:iri("somegraph"), (sem:triple(sem:iri("somesubject"),sem:iri("somepredicate"),sem:iri("someobject")))) :)
+      (:let $insertresult := sem:rdf-insert($triples (:,(fn:concat("override-graph=",$graph)) :) ):)
+      (: let $insertresult := fn:concat("/manualtriplestore/",xdmp:random(10000000000),".xml") :)
+      (: let $ins := xdmp:document-insert($insertresult,<sem:triples>{$triples}</sem:triples>,xdmp:default-permissions(),(xdmp:default-collections(),$graph))  :)
+      (: let $ins :=
+      
+let $s :=
+      "xquery version '1.0-ml';
+import module namespace sem = ""http://marklogic.com/semantics"" at ""/MarkLogic/semantics.xqy"";
+       declare namespace my='http://mycompany.com/test';
+       declare variable $my:triples as xs:string external;
+       declare variable $my:graph as xs:string external;
+       declare variable $my:docuri as xs:string external;
+       let $p := sem:rdf-parse($my:triples,""ntriple"")
+       let $l := xdmp:log($p)
+       return sem:rdf-insert($p)"
+       (:xdmp:document-insert($my:docuri,<sem:triples>{$my:triples}</sem:triples>,xdmp:default-permissions(),(xdmp:default-collections(),$my:graph)) " :)
+return
+    (: evaluate the query string $s using the variables
+       supplied as the second parameter to xdmp:eval :)
+    xdmp:eval($s, (xs:QName("my:triples"), sem:rdf-serialize($triples,"ntriple"), xs:QName("my:graph"), $graph, xs:QName("my:docuri"), $insertresult), <options xmlns="xdmp:eval"><isolation>different-transaction</isolation><transaction-mode>update</transaction-mode><database>{xdmp:database("consolidation-content")}</database></options>)
+    
+      let $l := xdmp:log($ins)
+      :)
       let $l := xdmp:log("insert result:-")
       let $l := xdmp:log($insertresult)
       return (
