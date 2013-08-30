@@ -35,11 +35,11 @@ document config format (JSON or XML namespace same as extension)
   selection: {
     // Either:
     mode: "schema", // Creates interdependencies between tables
-    tables: ["customers","policies","address"] // Other RD info required here
+    table: ["customers","policies","address"] // Other RD info required here
     
     // Or: 
     mode: "data",
-    tables: ["customers"], offset: 101, limit: 100
+    table: ["customers"], offset: 101, limit: 100
   }
 }
 }
