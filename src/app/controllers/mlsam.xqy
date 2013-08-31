@@ -82,6 +82,8 @@ declare function c:rdb2rdf() as item()*
   ch:use-layout(("mlsam"), "html"))
 };
 
+
+
 declare function c:primarykeys() as item()*
 { (: SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name :)
   (: let $sqlQuery := "SELECT ke.* FROM information_schema.KEY_COLUMN_USAGE ke WHERE ke.TABLE_SCHEMA=""test2""" :)
@@ -90,4 +92,10 @@ declare function c:primarykeys() as item()*
   ch:add-value("mlsamResponse", sql:execute($sqlQuery, $config:MLSAM-URL, ())),
   ch:use-view((), "xml"),
   ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:wizard() as item()*
+{
+  ch:use-view((), "xml"),
+  ch:use-layout(("wizard"), "html")
 };
