@@ -37,6 +37,8 @@ xdmp:set-response-content-type("text/html"),
     <!-- Le styles -->
     <link href="/css/bootstrap-roxy.css" rel="stylesheet"/>
     <link href="/css/mlsam-layout.less" rel="stylesheet/less"/>
+    <link rel="stylesheet" type="text/css" href="/css/widgets.css" />
+    
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -81,7 +83,25 @@ xdmp:set-response-content-type("text/html"),
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+
+
+    <!-- jquery, less and boorstrap js                              -->
     <script src="/js/lib/jquery-1.7.1.min.js" type="text/javascript">&nbsp;</script>
     <script src="/js/lib/less-1.3.0.min.js" type="text/javascript">&nbsp;</script>
-    <script src="/js/lib/bootstrap.js" type="text/javascript">&nbsp;</script>  
+    <script src="/js/lib/bootstrap.js" type="text/javascript">&nbsp;</script>
+
+    <!-- widget related scripts                                     -->
+    <script type="text/javascript" src="/js/mljs.js">&nbsp;</script>
+    <script type="text/javascript" src="/js/mljs-xhr2.js">&nbsp;</script>
+
+    <script type="text/javascript" src="/js/widgets.js">&nbsp;</script>
+    <script type="text/javascript" src="/js/widget-rdb2rdf.js">&nbsp;</script>
+
+    <script type="text/javascript" src="/js/page-mlsam-rdb2rdf.js">&nbsp;</script>
+
+    
+    
+    
+      
 </body></html>

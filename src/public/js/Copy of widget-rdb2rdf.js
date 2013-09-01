@@ -37,17 +37,13 @@ com.marklogic.widgets.rdb2rdf.prototype._refresh = function() {
   var s = "";
   
   // tab bar - feel free to replace with a widget of your choice (preferably not a large library required like jQuery)
-alert('in widget-rdb2dsf.js');
-  
-  s += "<ol class='rdb2rdf-tabs breadcrumb'>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-step-1-tab' class='rdb2rdf-tab-selected active'><span class='label label-primary'>Specify database connection</span></li>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-step-2-tab'>Select Schema</li>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-step-3-tab'>Select tables</li>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-step-4-tab'>Perform import</li>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-complete'>Complete</li>";
-  s += "</ol>";
-  
-  
+  s += "<div class='rdb2rdf-tabs'>";
+  s += "  <span class='rdb2rdf-tab' id='" + this.container + "-step-1-tab' class='rdb2rdf-tab-selected'>Step 1. Specify database connection</span>";
+  s += "  <span class='rdb2rdf-tab' id='" + this.container + "-step-2-tab'>Step 2. Select Schema &gt;&nbsp;&gt;&nbsp;&nbsp;&nbsp;</span>";
+  s += "  <span class='rdb2rdf-tab' id='" + this.container + "-step-3-tab'>Step 3. Select tables &gt;&nbsp;&gt;&nbsp;&nbsp;&nbsp;</span>";
+  s += "  <span class='rdb2rdf-tab' id='" + this.container + "-step-4-tab'>Step 4. Perform import &gt;&nbsp;&gt;&nbsp;&nbsp;&nbsp;</span>";
+  s += "  <span class='rdb2rdf-tab' id='" + this.container + "-complete'>Complete</span>";
+  s += "</div>";
   
   s += "<div class='rdb2rdf-steps'>";
   
