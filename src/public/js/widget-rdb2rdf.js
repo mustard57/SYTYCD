@@ -240,9 +240,6 @@ com.marklogic.widgets.rdb2rdf.prototype._showStep3 = function() {
 
   
   
-  
-  
-  
 };
 
 com.marklogic.widgets.rdb2rdf.prototype._showStep4 = function() {

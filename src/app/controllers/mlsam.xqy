@@ -79,7 +79,7 @@ declare function c:listschema() as item()*
 declare function c:rdb2rdf() as item()*
 {(
   ch:use-view((), "xml"),
-  ch:use-layout(("mlsam"), "html"))
+  ch:use-layout(("wizard-layout"), "html"))
 };
 
 
@@ -94,8 +94,3 @@ declare function c:primarykeys() as item()*
   ch:use-layout(("mlsam"), "html")
 };
 
-declare function c:wizard() as item()*
-{
-  ch:use-view((), "xml"),
-  ch:use-layout(("wizard-layout"), "html")
-};
