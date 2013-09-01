@@ -29,7 +29,7 @@ xdmp:set-response-content-type("text/html"),
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta charset="utf-8" />
-    <title>kojak-mlsam</title>
+    <title>KoJAk-Rdb2Rdf</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content="jojrg"/>
@@ -71,11 +71,18 @@ xdmp:set-response-content-type("text/html"),
     </div>
 
 
-  <div class="container"> 
-    {$view}
+  <div class="container" id="main-area"> 
+    <div class="row" id="wizard-headline">  
+      <div class="col-md-7 col-md-offset-1">
+        <h2>RDBMS to RDF Migration Wizard</h2>
+      </div>
+    </div>
+
+    {$view}     
+     
     <hr/>
       <footer>
-        <p>© MarkLogic 2013</p>
+        <p>© MarkLogic 2013, Yes, we think we can demo :-)</p>
       </footer>
 
   </div><!--/.container-fluid-->

@@ -37,25 +37,39 @@ com.marklogic.widgets.rdb2rdf.prototype._refresh = function() {
   var s = "";
   
   // tab bar - feel free to replace with a widget of your choice (preferably not a large library required like jQuery)
-alert('in widget-rdb2dsf.js');
   
-  s += "<ol class='rdb2rdf-tabs breadcrumb'>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-step-1-tab' class='rdb2rdf-tab-selected active'><span class='label label-primary'>Specify database connection</span></li>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-step-2-tab'>Select Schema</li>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-step-3-tab'>Select tables</li>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-step-4-tab'>Perform import</li>";
-  s += "  <li class='rdb2rdf-tab' id='" + this.container + "-complete'>Complete</li>";
-  s += "</ol>";
+  s += "<div class='row'>";
+  s += "  <div class='col-md-9 col-md-offset-1'>";  
+  s += "    <ol class='rdb2rdf-tabs breadcrumb'>";
+  s += "      <li class='rdb2rdf-tab' id='" + this.container + "-step-1-tab' class='rdb2rdf-tab-selected active'><span class='label label-success'>Specify database connection</span></li>";
+  s += "      <li class='rdb2rdf-tab' id='" + this.container + "-step-2-tab'>Select Schema</li>";
+  s += "      <li class='rdb2rdf-tab' id='" + this.container + "-step-3-tab'>Select tables</li>";
+  s += "      <li class='rdb2rdf-tab' id='" + this.container + "-step-4-tab'>Perform import</li>";
+  s += "      <li class='rdb2rdf-tab' id='" + this.container + "-complete'>Complete</li>";
+  s += "    </ol>";
+  s += "  </div>";
+  s += "</div>";
   
-  
-  
-  s += "<div class='rdb2rdf-steps'>";
+  s += "<div class='rdb2rdf-steps row'>";
   
   // Step panes
-  s += "<div id='" + this.container + "-step-1'>"; // intro / enter SAM URL
-  s += "  <p>Welcome to the MarkLogic RDBMS to RDF import wizard! Please enter a MarkLogic SAM endpoint URL that is connected to your database server.";
-  s += "  <p><b>ML SAM URL:</b> <input size='100' type='text' id='" + this.container + "-mlsam' value='' /></p>";
-  s += "  <p class='rdb2rdf-submit' id='" + this.container + "-step-1-next'>Next...</p>";
+    
+  s += "<div id='" + this.container + "-step-1' class='col-md-9 col-md-offset-1'>"; // intro / enter SAM URL
+  s += " <p class='lead'>Please enter a MarkLogic SAM endpoint URL that is connected to your database server...</p>";
+
+  s += " <form class='form-horizontal' role='form'>";
+  s += "   <div class='form-group'>";
+  s += "     <label for='" + this.container + "-mlsam' class='col-lg-2 control-label'>MarkLogic SAM URL:</label>";
+  s += "     <div class='col-lg-2'>";
+  s += "       <input type='url' class='form-control' id='" + this.container + "-mlsam' placeholder='MarkLogic SAM URL...'>";
+  s += "     </div>";
+  s += "   </div>";
+  s += "   <div class='form-group'>";
+  s += "     <div class='col-lg-offset-2 col-lg-10'>";
+  s += "       <button type='submit' id='" + this.container + "-step-1-next' class='btn btn-primary'>Next &rarr;</button>";
+  s += "     </div>";
+  s += "   </div>";
+  s += " </form>";
   s += "</div>";
   
   s += "<div id='" + this.container + "-step-2' class='hidden'>"; // list and select schema to import
@@ -87,7 +101,7 @@ alert('in widget-rdb2dsf.js');
 };
 
 com.marklogic.widgets.rdb2rdf.prototype._processStep1 = function() {
-  // do nothing now, just show step 2
+  // do nothing now, just show step 2	
   this._showStep2();
 };
 

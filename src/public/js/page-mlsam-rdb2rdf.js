@@ -2,7 +2,6 @@
 document.body.onload = function() {
   var db = new mljs();
   db.logger.setLogLevel("debug");
-  alert('page-mlsam-rdb2rdf.js');
   
   var error = new com.marklogic.widgets.error("errors");
   
