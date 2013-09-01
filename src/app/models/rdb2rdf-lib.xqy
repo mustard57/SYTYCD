@@ -136,6 +136,10 @@ returns:-
 }
 
 
+TODO Support multiple tables (or all when none specified)
+TODO Support newer-than (high than) for primary keys to limit what gets pulled in
+TODO Support ingesting all columns when none specified
+
 :)
 declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as element(m:ingestresult) {
   (: Perform W3C direct mapping with specified index settings :)
@@ -152,6 +156,7 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
   let $sqlpk := fn:concat("SELECT ke.COLUMN_NAME FROM information_schema.KEY_COLUMN_USAGE ke WHERE ke.TABLE_SCHEMA=""" , $schema , """ AND ke.referenced_table_name IS NULL AND ke.table_name=""" , $tablename , """ ")
   let $l := xdmp:log($sqlpk)
   let $set := sql:execute($sqlpk,$samurl, ())
+  let $ex := ($set/sql:meta/sql:exceptions/sql:exception/sql:reason)
   let $l := xdmp:log("SQL OUTPUT:-")
   let $l := xdmp:log($set)
   let $primarykeycolumns := $set/sql:tuple/COLUMN_NAME/text()
@@ -159,8 +164,9 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
   let $sqlfk := fn:concat("SELECT ke.COLUMN_NAME,ke.REFERENCED_COLUMN_NAME,ke.REFERENCED_TABLE_NAME FROM information_schema.KEY_COLUMN_USAGE ke WHERE ke.TABLE_SCHEMA=""" , $schema , """ AND ke.referenced_table_name IS NOT NULL AND ke.table_name=""" , $tablename , """ ")
   let $l := xdmp:log($sqlfk)
   let $set2 := sql:execute($sqlfk,$samurl, ())
-  let $l := xdmp:log("SQL OUTPUT 2:-")
-  let $l := xdmp:log($set2)
+  let $ex := ($ex,$set2/sql:meta/sql:exceptions/sql:exception/sql:reason)
+  (:let $l := xdmp:log("SQL OUTPUT 2:-")
+  let $l := xdmp:log($set2):)
   let $foreignkeycolumns := $set2/sql:tuple (: TODO restrict to only columns we have specified to import, not all fk relationships :)
   let $o := xdmp:log("FOREIGN KEY COLUMNS:- ")
   let $o := xdmp:log($foreignkeycolumns)
@@ -179,6 +185,7 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
       let $sqldata := fn:concat("SELECT ", $collist, " FROM ",$schema,".",$tablename," ORDER BY ",$collist, " LIMIT ",$config/m:selection/m:offset/text(), ",", $config/m:selection/m:limit/text())
       let $l := xdmp:log($sqldata)
       let $sqlout := sql:execute($sqldata,$samurl, ())
+      let $ex := ($ex,$sqlout/sql:meta/sql:exceptions/sql:exception/sql:reason)
       let $l := xdmp:log($sqlout)
       let $data := $sqlout/sql:tuple
       (: Generate our identity (if primary key exists) or temporary id (no primary key) :)
@@ -207,18 +214,18 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
           )
         return (: per row :)
         (
-          (sem:triple(sem:iri($subject), sem:iri("rdf:type"), sem:iri($objclass)),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1),map:put($statsmap,"entitycount",map:get($statsmap,"entitycount") + 1))
+          (sem:triple(sem:iri($subject), sem:iri("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), sem:iri($objclass)),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1),map:put($statsmap,"entitycount",map:get($statsmap,"entitycount") + 1))
         ,
           (: Process each column value :)
           for $col in $row/element()
           let $predicate := fn:concat($objclass , "#" , m:rdfescape($col/fn:local-name(.)))
           
           let $rawtype := $descriptions[./COLUMN_NAME = $col/fn:local-name(.)]/COLUMN_TYPE/text()
-          let $l := xdmp:log($rawtype)
+          (:let $l := xdmp:log($rawtype):)
           let $basetype := fn:tokenize($rawtype,"\(")[1]
-          let $l := xdmp:log($basetype)
+          (:let $l := xdmp:log($basetype):)
           let $xmltype := map:get($types,$basetype)
-          let $l := xdmp:log($xmltype)
+          (:let $l := xdmp:log($xmltype):)
           
           (: format the $object primitive such that the data type is carried through :)
           let $object :=
@@ -264,10 +271,10 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
           return
             (sem:triple(sem:iri($subject),sem:iri($predicate),sem:iri($object)),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1))
         )
-      let $to := xdmp:log("TRIPLES:-")
+      (:let $to := xdmp:log("TRIPLES:-")
       let $tripout := xdmp:log($triples)
       let $to := xdmp:log("GRAPH:-")
-      let $tripout := xdmp:log($graph)
+      let $tripout := xdmp:log($graph):)
       let $insertresult := sem:graph-insert(sem:iri($graph), $triples) 
       (: let $insertresult := sem:graph-insert(sem:iri("somegraph"), (sem:triple(sem:iri("somesubject"),sem:iri("somepredicate"),sem:iri("someobject")))) :)
       (:let $insertresult := sem:rdf-insert($triples (:,(fn:concat("override-graph=",$graph)) :) ):)
@@ -303,6 +310,13 @@ return
             <m:docuri>{$di}</m:docuri>
         )
         ,
+        <m:errors>
+        {
+          for $r in $ex/text()
+          return
+            <m:error>{$r}</m:error>
+        }
+        </m:errors>,
         <m:statistics>
           <m:triplecount>{map:get($statsmap,"triplecount")}</m:triplecount>
           <m:rowcount>{map:get($statsmap,"rowcount")}</m:rowcount>
