@@ -20,10 +20,11 @@ declare option xdmp:mapping "false";
 :)
 
 vh:add-value("rdb2rdfWizard",()),
-<div class="wizard">     
-    <ol class="breadcrumb">
-      <li>Specify database connection</li>
-      <li>Select Schema</li>
-      <li class="active"><span class="label label-primary">Select Tables</span></li>
-    </ol>
+ <div class="wizard">     
+    <div class="container_12">  
+      <div id="errors" class="grid_12"></div>
+    </div>
+    <div class="container_12">  
+      <div id="rdb2rdf" class="grid_12 rdb2rdf">RDB2RDF html here</div>
+    </div>    
 </div>

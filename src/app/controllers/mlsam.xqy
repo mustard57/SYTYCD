@@ -97,5 +97,5 @@ declare function c:primarykeys() as item()*
 declare function c:wizard() as item()*
 {
   ch:use-view((), "xml"),
-  ch:use-layout(("wizard"), "html")
+  ch:use-layout(("wizard-layout"), "html")
 };

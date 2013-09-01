@@ -29,7 +29,7 @@ xdmp:set-response-content-type("text/html"),
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta charset="utf-8" />
-    <title>kojak-mlsam</title>
+    <title>KoJAk-Rdb2Rdf</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content="jojrg"/>
@@ -37,6 +37,8 @@ xdmp:set-response-content-type("text/html"),
     <!-- Le styles -->
     <link href="/css/bootstrap-roxy.css" rel="stylesheet"/>
     <link href="/css/mlsam-layout.less" rel="stylesheet/less"/>
+    <link rel="stylesheet" type="text/css" href="/css/widgets.css" />
+    
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -69,11 +71,18 @@ xdmp:set-response-content-type("text/html"),
     </div>
 
 
-  <div class="container"> 
-    {$view}
+  <div class="container" id="main-area"> 
+    <div class="row" id="wizard-headline">  
+      <div class="col-md-7 col-md-offset-1">
+        <h2>RDBMS to RDF Migration Wizard</h2>
+      </div>
+    </div>
+
+    {$view}     
+     
     <hr/>
       <footer>
-        <p>© MarkLogic 2013</p>
+        <p>© MarkLogic 2013, Yes, we think we can demo :-)</p>
       </footer>
 
   </div><!--/.container-fluid-->
@@ -81,7 +90,25 @@ xdmp:set-response-content-type("text/html"),
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+
+
+    <!-- jquery, less and boorstrap js                              -->
     <script src="/js/lib/jquery-1.7.1.min.js" type="text/javascript">&nbsp;</script>
     <script src="/js/lib/less-1.3.0.min.js" type="text/javascript">&nbsp;</script>
-    <script src="/js/lib/bootstrap.js" type="text/javascript">&nbsp;</script>  
+    <script src="/js/lib/bootstrap.js" type="text/javascript">&nbsp;</script>
+
+    <!-- widget related scripts                                     -->
+    <script type="text/javascript" src="/js/mljs.js">&nbsp;</script>
+    <script type="text/javascript" src="/js/mljs-xhr2.js">&nbsp;</script>
+
+    <script type="text/javascript" src="/js/widgets.js">&nbsp;</script>
+    <script type="text/javascript" src="/js/widget-rdb2rdf.js">&nbsp;</script>
+
+    <script type="text/javascript" src="/js/page-mlsam-rdb2rdf.js">&nbsp;</script>
+
+    
+    
+    
+      
 </body></html>
