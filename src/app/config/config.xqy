@@ -82,6 +82,7 @@ declare variable $c:SEARCH-OPTIONS :=
     <term>
       <term-option>case-insensitive</term-option>
      </term>
+     <!-->
      <constraint name="list">
        <range type="xs:string" collation="http://marklogic.com/collation/codepoint" facet="true">
         <element ns="" name="message"/>
@@ -100,7 +101,7 @@ declare variable $c:SEARCH-OPTIONS :=
         <facet-option>descending</facet-option>
       </range>
      </constraint>
-
+-->
     <return-results>true</return-results>
     <return-query>true</return-query>
   </options>;
