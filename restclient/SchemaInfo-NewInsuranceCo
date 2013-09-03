@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest-client version="3.2.1"><request><http-version>1.1</http-version><http-follow-redirects/><URL>http://kojak.demo.marklogic.com:8040/v1/resources/rdb2rdf?rs:samurl=http%3A%2F%2Fkojak.demo.marklogic.com%3A8080%2Fmlsam%2Fmlsql&amp;rs:schema=NewInsuranceCo</URL><method>GET</method><auth><digest><username>admin</username><password>YWZqamt0</password></digest></auth><headers><header key="Accept" value="application/json"/></headers></request></rest-client>
