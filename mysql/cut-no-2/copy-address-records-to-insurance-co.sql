@@ -62,3 +62,10 @@ delete from CONTRACT
 where CLIENT_ID >= 3000
 and CONTRACT_ID > 3000;
 
+delete from `CAR_POLICY` 
+where not exists
+(
+	select 1 from CONTRACT C
+	where CAR_POLICY.CONTRACT_ID = C.CONTRACT_ID
+)
+
