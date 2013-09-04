@@ -2333,19 +2333,15 @@ mljs.prototype.samSchemaInfo = function(samurl,schema,callback) {
  * @param {JSON} config - The JSON configuration of the database segment to ingest
 {ingest: {
   database: {
-    samurl: "http://kojak.marklogic.com:8080/mlsam/samurl"
+    samurl: "http://kojak.demo.marklogic.com:8080/mlsam/mlsql",
+    schema: "test2"
   },
   create: {
     graph: "mynamedgraph"
   },
   selection: {
-    // Either:
-    mode: "schema", // Creates interdependencies between tables
-    tables: ["customers","policies","address"] // Other RD info required here
-    
-    // Or: 
     mode: "data",
-    tables: ["customers"], offset: 101, limit: 100
+    table: ["customers"], offset: 0, limit: 100, column: ["col1","col2"]
   }
 }
 }
@@ -4544,7 +4540,17 @@ mljs.prototype.semanticcontext.prototype.getFacts = function(subjectIri,reload_o
   var self = this;
   var facts = this._subjectFacts[subjectIri];
   if ((true==reload_opt) || undefined == facts) { 
-    var sparql = "SELECT * WHERE {<" + subjectIri + "> ?predicate ?object .}";
+    var sparql = "SELECT * WHERE {";
+    
+    // check for bnodes
+    if (!(subjectIri.indexOf("_:") == 0)) {
+      sparql += "<";
+    }
+    sparql += subjectIri;
+    if (!(subjectIri.indexOf("_:") == 0)) {
+      sparql += ">";
+    }
+    sparql += " ?predicate ?object .}";
   
     // fetch info and refresh again
     mljs.defaultconnection.sparql(sparql,function(result) {
