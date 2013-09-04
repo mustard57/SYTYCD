@@ -36,6 +36,16 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "nkbcustomer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"}
     ]
   };
+  var jointPredicates = new Array();
+  jointPredicates["nic_client"] = {name: "nic_client", title: "Is New Insurance Co Client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"};
+  jointPredicates["nkb_customer"] = {name: "nkb_customer", title: "Is National Kensington Bank Customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nic:client"};
+  
+  var jointTriples = [
+    {subjectType: "jointcustomer", objectType: "nicclient", predicateArray: ["nic_client"]},
+    {subjectType: "jointcustomer", objectType: "nkbcustomer", predicateArray: ["nkb_customer"]}
+  ];
+  
+  
   var nicClientEntity = {
     name: "nicclient", title: "NIC Client", prefix: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT", iriPattern: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT/CLIENT_ID=#VALUE#",
     rdfTypeIri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT", rdfTypeIriShort: "nic:client", commonNamePredicate: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME",
@@ -48,20 +58,30 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "profession", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PROFESSION", shortiri: "nic:profession"}
     ]
   };
-  var jointPredicates = new Array();
-  jointPredicates["nic_client"] = {name: "nic_client", title: "Is New Insurance Co Client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"};
-  jointPredicates["nkb_customer"] = {name: "nkb_customer", title: "Is National Kensington Bank Customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nic:client"};
+  var nicClientPredicates = new Array();
+  nicClientPredicates["nic_address"] = {name: "nic_address", title: "Has Address", iri:"http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ref-ADDRESS_ID"};
   
-  var jointTriples = [
-    {subjectType: "jointcustomer", objectType: "nicclient", predicateArray: ["nic_client"]},
-    {subjectType: "jointcustomer", objectType: "nkbcustomer", predicateArray: ["nkb_customer"]}
+  var nicClientTriples = [
+    {subjectType: "nicclient", objectType: "nicaddress", predicateArray: ["nic_address"]}
   ];
+
+  var nicAddressEntity = {
+    name: "nicaddress", title: "Address", prefix: "http://marklogic.com/rdb2rdf/NewInsuranceCo/ADDRESS", iriPattern: "http://marklogic.com/rdb2rdf/NewInsuranceCo/ADDRESS/ADDRESS_ID=#VALUE#",
+    rdfTypeIri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/ADDRESS", commonNamePredicate: "http://marklogic.com/rdb2rdf/NewInsuranceCo/ADDRESS/LINE_1",
+    properties: [
+      {name: "line_1", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/ADDRESS/LINE_1"}
+    ]
+  };
+  var nicAddressPredicates = new Array();
+  var nicAddressTriples = new Array();
   
   db.logger.debug("ENTITY: " + JSON.stringify(jointEntity));
   db.logger.debug("PREDICATES: " + JSON.stringify(jointPredicates));
   db.logger.debug("TRIPLES: " + JSON.stringify(jointTriples));
   
   tripleconfig.addMappings("jointcustomer",jointEntity, jointPredicates, jointTriples);
+  tripleconfig.addMappings("nicclient",nicClientEntity, nicClientPredicates, nicClientTriples);
+  //tripleconfig.addMappings("nicaddress",nicAddressEntity, nicAddressPredicates, nicAddressTriples);
   //tripleconfig.addMappings("nicclient",nicClientEntity, ?, ?);
   
   var semctx = new db.semanticcontext();
@@ -81,6 +101,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   var trip = new com.marklogic.widgets.sparqlbar("query");
   semctx.register(trip);
+  trip.refresh(); // shows non-default triple config only if you do this after creation time
   
   
   
@@ -106,5 +127,6 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   } catch (err) {
     error.show(err.message);
+    console.log(error);
   }
 });

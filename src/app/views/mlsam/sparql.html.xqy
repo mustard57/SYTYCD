@@ -19,6 +19,8 @@ declare option xdmp:mapping "false";
   let $stuff := vh:get("stuff")
 :)
 
+vh:add-value("hiddenFormInput",()),
+vh:add-value("sidebar",()),
 <div xmlns="http://www.w3.org/1999/xhtml" class="mlsam sparql">
 
 <link rel="stylesheet" type="text/css" href="/css/widgets.css" />
