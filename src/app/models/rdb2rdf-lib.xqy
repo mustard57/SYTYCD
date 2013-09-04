@@ -310,13 +310,12 @@ return
             <m:docuri>{$di}</m:docuri>
         )
         ,
-        <m:errors>
-        {
+        
           for $r in $ex/text()
           return
             <m:error>{$r}</m:error>
-        }
-        </m:errors>,
+        
+        ,
         <m:statistics>
           <m:triplecount>{map:get($statsmap,"triplecount")}</m:triplecount>
           <m:rowcount>{map:get($statsmap,"rowcount")}</m:rowcount>
