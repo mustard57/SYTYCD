@@ -30,9 +30,9 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
 */
   var jointEntity = {
     name: "jointcustomer", title: "Joint Customer", prefix: "http://www.ourcompany.com/ontology/JointCustomer", iriPattern: "http://www.ourcompany.com/ontology/JointCustomer/#VALUE#",
-    rdfTypeIri: "http://www.ourcompany.com/ontology/JointCustomer", rdfTypeIriShort: "joint:customer", commonNamePredicate: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT",
+    rdfTypeIri: "http://www.ourcompany.com/ontology/JointCustomer", rdfTypeIriShort: "joint:customer", commonNamePredicate: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT",
     properties: [
-      {name: "nicclient", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT", shortiri: "nic:client"},
+      {name: "nicclient", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"},
       {name: "nkbcustomer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"}
     ]
   };
@@ -48,9 +48,21 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "profession", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PROFESSION", shortiri: "nic:profession"}
     ]
   };
-  var validTriples = [];
-  tripleconfig.addMappings("jointcustomer",jointEntity, ?, ?);
-  tripleconfig.addMappings("nicclient",nicClientEntity, ?, ?);
+  var jointPredicates = new Array();
+  jointPredicates["nic_client"] = {name: "nic_client", title: "Is New Insurance Co Client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"};
+  jointPredicates["nkb_customer"] = {name: "nkb_customer", title: "Is National Kensington Bank Customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nic:client"};
+  
+  var jointTriples = [
+    {subjectType: "jointcustomer", objectType: "nicclient", predicateArray: ["nic_client"]},
+    {subjectType: "jointcustomer", objectType: "nkbcustomer", predicateArray: ["nkb_customer"]}
+  ];
+  
+  db.logger.debug("ENTITY: " + JSON.stringify(jointEntity));
+  db.logger.debug("PREDICATES: " + JSON.stringify(jointPredicates));
+  db.logger.debug("TRIPLES: " + JSON.stringify(jointTriples));
+  
+  tripleconfig.addMappings("jointcustomer",jointEntity, jointPredicates, jointTriples);
+  //tripleconfig.addMappings("nicclient",nicClientEntity, ?, ?);
   
   var semctx = new db.semanticcontext();
   semctx.setConfiguration(tripleconfig);
