@@ -73,8 +73,10 @@ xdmp:set-response-content-type("text/html"),
 
   <div class="container" id="main-area"> 
     <div class="row" id="wizard-headline">  
-      <div class="col-md-7 col-md-offset-1">
-        <h2>RDBMS to RDF Migration Wizard</h2>
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <h3>RDBMS to RDF Migration Wizard</h3>
+        </div>
       </div>
     </div>
 
