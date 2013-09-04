@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest-client version="3.2.1"><request><http-version>1.1</http-version><http-follow-redirects/><URL>http://kojak.demo.marklogic.com:8040/v1/resources/rdb2rdf</URL><method>PUT</method><auth><digest><username>admin</username><password>YWZqamt0</password></digest></auth><body><string content-type="application/json" charset="UTF-8">{ingest: {
+  database: {
+    samurl: "http://kojak.demo.marklogic.com:8080/mlsam/mlsql",
+    schema: "NationalKensingtonBank"
+  },
+  create: {
+    graph: "kensington"
+  },
+  selection: {
+    mode: "data",
+    table: ["CUSTOMER"], offset: 0, limit: 3000, column: ["CUSTOMER_ID","ADDRESS_ID","BRANCH_ID","TITLE","FIRST_NAME","INITIAL","SURNAME","HOME_PHONE","MOBILE_PHONE",
+    "EMAIL","MOTHERS_MAIDEN_NAME","DATE_OF_BIRTH","GENDER","NATIONAL-INSURANCE-NO","OCCUPATION"]
+  }
+}}</string></body></request></rest-client>
