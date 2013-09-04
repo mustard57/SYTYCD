@@ -2,13 +2,14 @@
 <rest-client version="3.2.1"><request><http-version>1.1</http-version><http-follow-redirects/><URL>http://kojak.demo.marklogic.com:8040/v1/resources/rdb2rdf</URL><method>PUT</method><auth><digest><username>admin</username><password>YWZqamt0</password></digest></auth><body><string content-type="application/json" charset="UTF-8">{ingest: {
   database: {
     samurl: "http://kojak.demo.marklogic.com:8080/mlsam/mlsql",
-    schema: "NationalKensingtonBank"
+    schema: "NewInsuranceCo"
   },
   create: {
-    graph: "nationalkensingtonbank"
+    graph: "newinsuranceco"
   },
   selection: {
     mode: "data",
-    table: ["ACCOUNT"], offset: 0, limit: 3000, column: ["ACCOUNT_ID","SORT-CODE","ACCOUNT-NUMBER","ACCOUNT-STATUS_ID","ACCOUNT-TYPE_ID","CUSTOMER_ID","BALANCE"]
+    table: ["CLIENT"], offset: 0, limit: 3000, column: ["CLIENT_ID","TITLE","FIRST_NAME","FAMILY_NAME","DOB","PHONE_1","PHONE_2",
+    "EMAIL","M_OR_F","PROFESSION","ADDRESS_ID"]
   }
 }}</string></body></request></rest-client>
