@@ -122,7 +122,7 @@ function ext:put(
         let $config := json:config("custom") 
         let $cx := map:put( $config, "text-value", "label" )
         let $cx := map:put( $config , "camel-case", fn:false() )
-        let $cx := map:put($config, "array-element-names",(xs:QName("m:schema"),xs:QName("m:table"),xs:QName("m:column"),xs:QName("m:relationship"),xs:QName("m:docuri")))
+        let $cx := map:put($config, "array-element-names",(xs:QName("m:schema"),xs:QName("m:table"),xs:QName("m:column"),xs:QName("m:relationship"),xs:QName("m:docuri"),xs:QName("m:error")))
         let $cx := map:put($config, "element-namespace","http://marklogic.com/roxy/models/rdb2rdf")
         let $cx := map:put($config, "element-namespace-prefix","m")
         let $cx := map:put($config, "element-prefix","p")

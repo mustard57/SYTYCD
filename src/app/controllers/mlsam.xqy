@@ -94,3 +94,39 @@ declare function c:primarykeys() as item()*
   ch:use-layout(("mlsam"), "html")
 };
 
+
+declare function c:countsytycd() as item()*
+{ (: SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name :)
+  let $sqlQuery := "SELECT COUNT(CUSTOMER_ID) CNT FROM SYTYCD.CUSTOMER " 
+  let $l := xdmp:log("COUNTSYTYCD")
+  let $mlsamResponse := sql:execute($sqlQuery, $config:MLSAM-URL, ())
+  let $l := xdmp:log($mlsamResponse)
+  return
+  ch:add-value("mlsamResponse", $mlsamResponse),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:countnkb() as item()*
+{ (: SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name :)
+  let $sqlQuery := "SELECT COUNT(CUSTOMER_ID) CNT FROM NationalKensingtonBank.CUSTOMER " 
+  let $l := xdmp:log("COUNTNKB")
+  let $mlsamResponse := sql:execute($sqlQuery, $config:MLSAM-URL, ())
+  let $l := xdmp:log($mlsamResponse)
+  return
+  ch:add-value("mlsamResponse", $mlsamResponse),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
+
+declare function c:countnic() as item()*
+{ (: SELECT ke.referenced_table_name parent, ke.table_name child, ke.constraint_name :)
+  let $sqlQuery := "SELECT COUNT(*) CNT FROM NewInsuranceCo.CLIENT " 
+  let $l := xdmp:log("COUNTNIC")
+  let $mlsamResponse := sql:execute($sqlQuery, $config:MLSAM-URL, ())
+  let $l := xdmp:log($mlsamResponse)
+  return
+  ch:add-value("mlsamResponse", $mlsamResponse),
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html")
+};
