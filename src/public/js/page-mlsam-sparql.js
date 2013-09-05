@@ -75,14 +75,49 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   var nicAddressPredicates = new Array();
   var nicAddressTriples = new Array();
   
+  var nkbCustomerEntity = {
+    name: "nkbcustomer", title: "NKB Customer", prefix: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER", iriPattern: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER/CUSTOMER_ID=#VALUE#",
+    rdfTypeIri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER", commonNamePredicate: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER/SURNAME",
+    properties: [
+      {name: "customer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER/CUSTOMER_ID"},
+      {name: "account_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT_ID"},
+      {name: "account-number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT-NUMBER"},
+      {name: "sort-code", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/SORT-CODE"},
+      {name: "account-status_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT-STATUS_ID"},
+      {name: "account-type_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT-TYPE_ID"},
+      {name: "balance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/BALANCE"},
+    ] 
+  };
+  var nkbCustomerPredicates = new Array();
+  var nkbCustomerTriples = [
+  ];
+  
+  var nkbAccountEntity = {
+    name: "nkbaccount", title: "NKB Account", prefix: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT", iriPattern: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT_ID=#VALUE#",
+    rdfTypeIri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT", commonNamePredicate: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT-NUMBER",
+    properties: [
+      {name: "account_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT_ID"},
+      {name: "account-number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT-NUMBER"},
+      {name: "sort-code", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/SORT-CODE"},
+      {name: "account-status_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT-STATUS_ID"},
+      {name: "account-type_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT-TYPE_ID"},
+      {name: "customer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/CUSTOMER_ID"},
+      {name: "balance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/BALANCE"},
+    ] 
+  };
+  var nkbAccountPredicates = new Array();
+  var nkbAccountTriples = [
+  ];
+  
   db.logger.debug("ENTITY: " + JSON.stringify(jointEntity));
   db.logger.debug("PREDICATES: " + JSON.stringify(jointPredicates));
   db.logger.debug("TRIPLES: " + JSON.stringify(jointTriples));
   
   tripleconfig.addMappings("jointcustomer",jointEntity, jointPredicates, jointTriples);
   tripleconfig.addMappings("nicclient",nicClientEntity, nicClientPredicates, nicClientTriples);
-  //tripleconfig.addMappings("nicaddress",nicAddressEntity, nicAddressPredicates, nicAddressTriples);
-  //tripleconfig.addMappings("nicclient",nicClientEntity, ?, ?);
+  tripleconfig.addMappings("nicaddress",nicAddressEntity, nicAddressPredicates, nicAddressTriples);
+  tripleconfig.addMappings("nkbcustomer",nkbCustomerEntity, nkbCustomerPredicates, nkbCustomerTriples);
+  tripleconfig.addMappings("nkbaccount",nkbAccountEntity, nkbAccountPredicates, nkbAccountTriples);
   
   var semctx = new db.semanticcontext();
   semctx.setConfiguration(tripleconfig);
