@@ -46,7 +46,7 @@ vh:add-value("sidebar",()),
   <div id="triple-content" class="triple-page grid_4">Triple results goes here</div>
   <div id="facts" class="triple-page grid_4">Facts go here</div>
   <div id="allcontent" class="grid_4"><div class="container_4">
-   <div class='mljswidget'><h2 class='title'>Related Documents</h2></div>
+   <div class='mljswidget grid_4'><h2 class='title'>Related Documents</h2></div>
    <div id="search-bar" class="grid_4">Bar</div>
    <div id="search-content" class="search-page grid_4">Search content goes here</div>
   </div></div>

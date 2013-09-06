@@ -333,16 +333,21 @@ com.marklogic.widgets.sparqlbar.prototype._addTerm = function(parentid) {
   
   
   
-  s += "<span class='hidden' id='" + this.container + "-sparqlbar-term-eq-" + tid + "'> equal to </span>"; // TODO conver this in to a drop down too
+  s += "<span class='hidden' id='" + this.container + "-sparqlbar-term-eq-" + tid + "'> equal to </span>"; 
+  
+  s += "<select class='hidden' id='" + this.container + "-sparqlbar-term-oper-" + tid + "'>";
+  
+  // TODO replace the following with things dynamically drawn / shown depending on type
+  
+  s += "<option value='='>equal to</option>";
+  s += "<option value='!='>not equal to</option>";
+  s += "<option value='lt'>less than</option>";
+  s += "<option value='lte'>less than or equal to</option>";
+  s += "<option value='gt'>greater than</option>";
+  s += "<option value='gte'>greater than or equal to</option>";
   
   
-  
-  
-  
-  
-  
-  
-  
+  s += "</select>";
   
   
   
@@ -381,6 +386,9 @@ com.marklogic.widgets.sparqlbar.prototype._addTerm = function(parentid) {
   };
   document.getElementById(this.container + "-sparqlbar-term-value-" + tid).onkeyup = function(el) {
     self._suggest(tid);
+  };
+  document.getElementById(this.container + "-sparqlbar-term-properties-" + tid).onchange = function(el) {
+    self._refreshOperation(tid);
   };
   
   // TODO - term handler
@@ -593,6 +601,8 @@ com.marklogic.widgets.sparqlbar.prototype._updateTerm = function(termid) {
     this._hidden(val,true);
     var val = document.getElementById(this.container + "-sparqlbar-term-eq-" + termid);
     this._hidden(val,true);
+    var val = document.getElementById(this.container + "-sparqlbar-term-oper-" + termid);
+    this._hidden(val,true);
   } else {
     // "="
     // show value, hide relationships
@@ -612,9 +622,37 @@ com.marklogic.widgets.sparqlbar.prototype._updateTerm = function(termid) {
     this._hidden(val,false);
     var val = document.getElementById(this.container + "-sparqlbar-term-prop-" + termid);
     this._hidden(val,false);
-    var val = document.getElementById(this.container + "-sparqlbar-term-eq-" + termid);
-    this._hidden(val,false);
+    
+    this._refreshOperation(termid)
   }
+};
+
+com.marklogic.widgets.sparqlbar.prototype._refreshOperation = function(termid) {
+    // lookup type to determine which operations to show, if any at all
+    var propvalue = document.getElementById(this.container + "-sparqlbar-term-prop-" + termid).value;
+    var parentid = this._parentterms[termid];
+    var parententityname = document.getElementById(this.container + "-sparqlbar-term-what-" + parentid).value;
+    
+    var scfg = this.semanticcontext.getConfiguration();
+    
+    // lookup predicate for property
+    var predinfo = scfg.getEntityPropertyByName(parententityname,propvalue);
+    
+    this.semanticcontext.db.logger.debug("Property Info: propvalue: " + propvalue + ", parentid: " + parentid + ", parententityname: " + parententityname + ", predinfo: " + JSON.stringify(predinfo));
+    
+    if (undefined == predinfo.type) {
+      var val = document.getElementById(this.container + "-sparqlbar-term-eq-" + termid);
+      this._hidden(val,false);
+      var val = document.getElementById(this.container + "-sparqlbar-term-oper-" + termid);
+      this._hidden(val,true);
+    } else {
+      // TODO support things other than just integer types
+      var val = document.getElementById(this.container + "-sparqlbar-term-eq-" + termid);
+      this._hidden(val,true);
+      var val = document.getElementById(this.container + "-sparqlbar-term-oper-" + termid);
+      this._hidden(val,false);
+    }
+  
 };
 
 com.marklogic.widgets.sparqlbar.prototype._buildQuery = function() {
@@ -937,12 +975,18 @@ com.marklogic.widgets.sparqlresults.prototype._provenance = function() {
     
           // process results, showing common information where appropriate
           // title - get name eventually
+          var first = true;
           var bindings = this.results.results.bindings;
           for (var b = 0,max = bindings.length, binding;b < max;b++) {
             binding = this.results.results.bindings[b];
             for (var et = 0, maxent = entities.length, entityValue;et < maxent;et++) {
               entityValue = binding[entities[et]];
-              sparql += "<" + entityValue.value + "> <http://marklogic.com/semantics/ontology/mentioned_in> ?docuri . \n";
+              if (first) {
+                first = false;
+              } else {
+                sparql += " UNION ";
+              }
+              sparql += " {<" + entityValue.value + "> <http://marklogic.com/semantics/ontology/mentioned_in> ?docuri . } \n";
             }
           }
       

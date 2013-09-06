@@ -35,14 +35,14 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "nic_client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"},
       {name: "nkb_customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"},
       {name: "jointname", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"},
-      {name: "mentioned_in", iri: "http://marklogic.com/semantics/ontology/mentioned_in"}
+      {name: "jointmentioned_in", iri: "http://marklogic.com/semantics/ontology/mentioned_in"}
     ]
   };
   var jointPredicates = new Array();
   jointPredicates["nic_client"] = {name: "nic_client", title: "Is New Insurance Co Client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"};
   jointPredicates["nkb_customer"] = {name: "nkb_customer", title: "Is National Kensington Bank Customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"};
   jointPredicates["jointname"] = {name: "jointname", title: "Has Full Name", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"};
-  jointPredicates["mentioned_in"] = {name: "mentioned_in", title: "Mentioned In", iri: "http://marklogic.com/semantics/ontology/mentioned_in"};
+  jointPredicates["jointmentioned_in"] = {name: "jointmentioned_in", title: "Mentioned In", iri: "http://marklogic.com/semantics/ontology/mentioned_in"};
   
   var jointTriples = [
     {subjectType: "jointcustomer", objectType: "nicclient", predicateArray: ["nic_client"]},
@@ -64,7 +64,8 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "nictitle", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#TITLE"},
       {name: "nicaddress_id", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ADDRESS_ID"},
       {name: "phone_1", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_1"},
-      {name: "phone_2", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_2"}
+      {name: "phone_2", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_2"},
+      {name: "nicmentioned_in", iri: "http://marklogic.com/semantics/ontology/mentioned_in"}
     ]
   };
   var nicClientPredicates = new Array();
@@ -80,9 +81,11 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   nicClientPredicates["phone_1"] = {name: "phone_1", title: "Phone 1", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_1"};
   nicClientPredicates["phone_2"] = {name: "phone_2", title: "Phone 2", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_2"};
   nicClientPredicates["nic_address"] = {name: "nic_address", title: "Address", iri:"http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ref-ADDRESS_ID"};
+  nicClientPredicates["nicmentioned_in"] = {name: "nicmentioned_in", title: "Mentioned In", iri: "http://marklogic.com/semantics/ontology/mentioned_in"};
   
   var nicClientTriples = [
-    {subjectType: "nicclient", objectType: "nicaddress", predicateArray: ["nic_address"]}
+    {subjectType: "nicclient", objectType: "nicaddress", predicateArray: ["nic_address"]},
+    {subjectType: "nicclient", objectType: "document", predicateArray: ["mentioned_in"]}
   ];
 
   var nicAddressEntity = {
@@ -164,11 +167,24 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   db.logger.debug("PREDICATES: " + JSON.stringify(jointPredicates));
   db.logger.debug("TRIPLES: " + JSON.stringify(jointTriples));
   
+  
+  var docEntity = {
+    name: "document", title: "MarkLogic Document", prefix: "/docs/", iriPattern: "/docs/#VALUE#",
+    rdfTypeIri: "http://marklogic.com/semantics/ontology/Document", commonNamePredicate: "http://marklogic.com/semantics/ontology/Document",
+    properties: [
+      {name: "docuri", iri: "http://marklogic.com/semantics/ontology/Document"}
+    ] 
+  };
+  var docPredicates = new Array();
+  docPredicates["docuri"] = {name: "docuri", title: "Document", iri: "http://marklogic.com/semantics/ontology/Document"};
+  var docTriples = [];
+  
   tripleconfig.addMappings("jointcustomer",jointEntity, jointPredicates, jointTriples);
   tripleconfig.addMappings("nicclient",nicClientEntity, nicClientPredicates, nicClientTriples);
   tripleconfig.addMappings("nicaddress",nicAddressEntity, nicAddressPredicates, nicAddressTriples);
   tripleconfig.addMappings("nkbcustomer",nkbCustomerEntity, nkbCustomerPredicates, nkbCustomerTriples);
   tripleconfig.addMappings("nkbaccount",nkbAccountEntity, nkbAccountPredicates, nkbAccountTriples);
+  tripleconfig.addMappings("document",docEntity, docPredicates, docTriples);
   
   var semctx = new db.semanticcontext();
   semctx.setConfiguration(tripleconfig);
