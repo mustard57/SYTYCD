@@ -163,7 +163,7 @@ com.marklogic.widgets.searchbar = function(container) {
       "<div class='searchbar-queryrow'>" +
         "<label class='searchbar-label' for='" + container + "-searchinput'>Search: </label>" +
         "<input class='searchbar-query' type='text' id='" + container + "-searchinput' value='' />" +
-        "<input class='searchbar-submit' type='submit' id='" + container + "-submit' value='Search' />" +
+        "<input class='btn btn-primary searchbar-submit' type='submit' id='" + container + "-submit' value='Search' />" +
       "</div><div class='searchbar-errorrow hidden'></div>";
     "</div>";
   mljs.defaultconnection.logger.debug("adding submit click handler");
@@ -232,8 +232,8 @@ com.marklogic.widgets.searchbar.prototype._dosearch = function(self) {
     self.ctx.dosimplequery(q);
   } else if (this._mode == "contributestructured") {
     var qb = new this.ctx.db.query();
-    qb.wordQuery(q);
-    self.ctx.contributeStructuredQuery(this.container,qb.toJson().query[0]);
+    qb.query(qb.term(q));
+    self.ctx.contributeStructuredQuery(this.container,qb.toJson().query);
   }
 };
 
@@ -335,7 +335,7 @@ com.marklogic.widgets.searchfacets.prototype._refresh = function() {
   var more = new Array();
   var extended = new Array();
   
-  var str = "<div class='searchfacets-title'>Browse</div> <div id='" + this.container + "-facetinfo' class='search-facets'> ";
+  var str = "<div class='mljswidget searchfacets'><div class='searchfacets-title'>Browse</div> <div id='" + this.container + "-facetinfo' class='search-facets'> ";
   
   // draw selected facets and deselectors
   var deselectionTodo = new Array();
@@ -420,7 +420,7 @@ com.marklogic.widgets.searchfacets.prototype._refresh = function() {
     }
   }
   
-  str += "</div>";
+  str += "</div></div>";
   
   document.getElementById(this.container).innerHTML = str;
   
@@ -949,26 +949,26 @@ com.marklogic.widgets.searchresults.prototype._refresh = function() {
   if (typeof this.results == "boolean" ) {
     // TODO show/hide refresh image based on value of this.results (true|false)
     if (true == this.results) {
-      document.getElementById(this.container).innerHTML = "<div class='searchresults-inner'>" +
-        "<div class='searchresults-title'>Results</div><div class='searchresults-results'>" + 
+      document.getElementById(this.container).innerHTML = "<div class='mljswidget searchresults-inner'>" +
+        "<h2 class='title searchresults-title'>Results</h2><div class='searchresults-results'>" + 
         com.marklogic.widgets.bits.loading(this.container + "-loading") + "</div></div>";
     } else {
-      document.getElementById(this.container).innerHTML = "<div class='searchresults-inner'>" +
-        "<div class='searchresults-title'>Results</div><div class='searchresults-results'>" + 
+      document.getElementById(this.container).innerHTML = "<div class='mljswidget searchresults-inner'>" +
+        "<h2 class='title searchresults-title'>Results</h2><div class='searchresults-results'>" + 
         com.marklogic.widgets.bits.failure(this.container + "-failure") + "</div></div>";
     }
     return;
   }
   if (null == this.results || undefined == this.results.results || this.results.results.length == 0) {
     document.getElementById(this.container).innerHTML = 
-      "<div class='searchresults-inner'>" +
-        "<div class='searchresults-title'>Results</div><div class='searchresults-results'>No Results</div>" +
+      "<div class='mljswidget searchresults-inner'>" +
+        "<h2 class='title searchresults-title'>Results</h2><div class='searchresults-results'>No Results</div>" +
       "</div>";
   } else {
     mljs.defaultconnection.logger.debug("RESULTS OBJECT: " + JSON.stringify(this.results));
     
     var resStr = 
-      "<div class='searchresults-inner'><div class='searchresults-title'>Results</div><div class='searchresults-results'>";
+      "<div class='mljswidget searchresults-inner'><h2 class='title searchresults-title'>Results</h2><div class='searchresults-results'>";
       
     var uureplace = 1001;
     var replacements = new Array();
@@ -1142,12 +1142,12 @@ com.marklogic.widgets.searchpager = function(container) {
   
   // html
   document.getElementById(container).innerHTML = 
-    "<span class='searchpager-showing' id='" + container + "-searchpager-showing'></span>" +
+    "<div class='mljswidget searchpager'><span class='searchpager-showing' id='" + container + "-searchpager-showing'></span>" +
     "<span class='searchpager-first searchpager-button' id='" + container + "-searchpager-first'><a href='#' id='" + container + "-searchpager-first-a' class='searchpager-link'>&lt;&lt;  </a></span>" +
     "<span class='searchpager-previous searchpager-button' id='" + container + "-searchpager-previous'><a href='#' id='" + container + "-searchpager-previous-a' class='searchpager-link'>&lt;  </a></span>" +
     "<span class='searchpager-page' id='" + container + "-searchpager-page'>-</span>" +
     "<span class='searchpager-next searchpager-button' id='" + container + "-searchpager-next'><a href='#' id='" + container + "-searchpager-next-a' class='searchpager-link'>  &gt;</a></span>" +
-    "<span class='searchpager-last searchpager-button' id='" + container + "-searchpager-last'><a href='#' id='" + container + "-searchpager-last-a' class='searchpager-link'>  &gt;&gt;</a></span>";
+    "<span class='searchpager-last searchpager-button' id='" + container + "-searchpager-last'><a href='#' id='" + container + "-searchpager-last-a' class='searchpager-link'>  &gt;&gt;</a></span></div>";
   var self = this;
   document.getElementById(container + "-searchpager-first-a").onclick = function() {self._first();};
   document.getElementById(container + "-searchpager-previous-a").onclick = function() {self._previous();};
@@ -1335,7 +1335,7 @@ com.marklogic.widgets.searchsort.prototype.setContext = function(context) {
 com.marklogic.widgets.searchsort.prototype._refresh = function() {
   var selid =  this.container + "-searchsort-select";
   var str = 
-    "<span class='searchsort-text'>Sort: </span>" +
+    "<div class='mljswidget searchsort'><span class='searchsort-text'>Sort: </span>" +
     "<select class='searchsort-select' id='" + selid + "'>";
 //      "<option value='relevance'>Relevance</option>" +
   for (var i = 0;i < this.sortOptions.length;i++) {
@@ -1390,7 +1390,7 @@ com.marklogic.widgets.searchsort.prototype._refresh = function() {
     //str += ")";
     str += title;
   }
-  str += "</select>";
+  str += "</select></div>";
   document.getElementById(this.container).innerHTML = str;
   
   // add event handlers
