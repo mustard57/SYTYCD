@@ -32,14 +32,14 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
     name: "jointcustomer", title: "Joint Customer", prefix: "http://www.ourcompany.com/ontology/JointCustomer", iriPattern: "http://www.ourcompany.com/ontology/JointCustomer/#VALUE#",
     rdfTypeIri: "http://www.ourcompany.com/ontology/JointCustomer", rdfTypeIriShort: "joint:customer", commonNamePredicate: "http://www.ourcompany.com/ontology/JointCustomer/name",
     properties: [
-      {name: "nicclient", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"},
-      {name: "nkbcustomer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"},
+      {name: "nic_client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"},
+      {name: "nkb_customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"},
       {name: "jointname", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"}
     ]
   };
   var jointPredicates = new Array();
-  jointPredicates["nicclient"] = {name: "nicclient", title: "Is New Insurance Co Client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"};
-  jointPredicates["nkbcustomer"] = {name: "nkbcustomer", title: "Is National Kensington Bank Customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nic:client"};
+  jointPredicates["nic_client"] = {name: "nic_client", title: "Is New Insurance Co Client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"};
+  jointPredicates["nkb_customer"] = {name: "nkb_customer", title: "Is National Kensington Bank Customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"};
   jointPredicates["jointname"] = {name: "jointname", title: "Has Full Name", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"};
   
   var jointTriples = [
@@ -52,7 +52,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
     name: "nicclient", title: "NIC Client", prefix: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT", iriPattern: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT/CLIENT_ID=#VALUE#",
     rdfTypeIri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT", rdfTypeIriShort: "nic:client", commonNamePredicate: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME",
     properties: [
-      {name: "clientid", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#CLIENT_ID", shortiri: "nic:client_id"},
+      {name: "clientid", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#CLIENT_ID", shortiri: "nic:client_id", type: "xs:integer"},
       {name: "nicfirstname", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FIRST_NAME", shortiri: "nic:firstname"},
       {name: "nicfamilyname", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME", shortiri: "nic:familyname"},
       {name: "nicdob", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#DOB", shortiri: "nic:dob"},
@@ -98,8 +98,8 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
     name: "nkbcustomer", title: "NKB Customer", prefix: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER", iriPattern: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER/CUSTOMER_ID=#VALUE#",
     rdfTypeIri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER", commonNamePredicate: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#SURNAME",
     properties: [
-      {name: "customer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#CUSTOMER_ID"},
-      {name: "account_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ACCOUNT_ID"},
+      {name: "customer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#CUSTOMER_ID", type: "xs:integer"},
+      {name: "account_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ACCOUNT_ID", type: "xs:integer"},
       {name: "title", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#TITLE"},
       {name: "first_name", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#FIRST_NAME"},
       {name: "surname", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#SURNAME"},
@@ -185,6 +185,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   var trip = new com.marklogic.widgets.sparqlbar("query");
   semctx.register(trip);
+  trip.setLang(undefined);
   trip.refresh(); // shows non-default triple config only if you do this after creation time
   
   
@@ -194,6 +195,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   var info = new com.marklogic.widgets.entityfacts("facts");
   semctx.register(info);
+  info.setProvenanceSparqlMentioned();
   //info.addErrorListener(error.updateError);
   tripResults.iriHandler(function(iri) {info.updateEntity(iri)});
   info.iriHandler(function(iri){info.updateEntity(iri)});

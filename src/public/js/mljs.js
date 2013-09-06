@@ -3805,8 +3805,12 @@ mljs.prototype.searchcontext.prototype.dosimplequery = function(q,start) {
   
 };
 
+mljs.prototype.searchcontext.prototype.updateResults = function(msg) {
+  this.resultsPublisher.publish(msg);
+};
+
 mljs.prototype.searchcontext.prototype._persistAndDo = function(callback) {
-  
+  var self = this;
   if ("persist" == this.optionssavemode) {
     //self.db.searchoptions(this.optionsName,function(result) {
       //self.db.logger.debug("RESULT: " + JSON.stringify(result.doc));
@@ -4461,24 +4465,30 @@ mljs.prototype.semanticcontext.prototype.subjectFacts = function(subjectIri) {
   this.getFacts(subjectIri,true);
 };
 
-mljs.prototype.semanticcontext.prototype.subjectContent = function(subjectIri) {
+mljs.prototype.semanticcontext.prototype.subjectContent = function(subjectIri,docSparql_opt) {
   // update the linked searchcontext with a query related to documents that the facts relating to this subjectIri were inferred from
   // TODO sparql query to fetch doc URIs (stored as derivedFrom IRIs)
   // execute sparql for all facts  to do with current entity
   var self = this;
   if (null != this._contentSearchContext) {
-    self._contentSearchContext.updateResults(true);
+    this._contentSearchContext.updateResults(true);
     
-    var sparql = "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" + 
-      "SELECT ?docuri {\n  GRAPH ?graph {\n    ";
-    if (self.reverse) {
-      sparql += "?obj ?pred <" + self.iri + "> .";
+    var sparql = "";
+    if (undefined == docSparql_opt) {
+      sparql += "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\nPREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" + 
+        "SELECT ?docuri {\n  GRAPH ?graph {\n    ";
+      if (self.reverse) {
+        sparql += "?obj ?pred <" + subjectIri + "> .";
+      } else {
+        sparql += "<" + subjectIri + "> ?pred ?obj .";
+      }
+      sparql += "\n  }\n  ?graph <http://marklogic.com/semantics/ontology/derived_from> ?docuri .\n" + 
+        "}";
     } else {
-      sparql += "<" + self.iri + "> ?pred ?obj .";
+      sparql = docSparql_opt; // MUST return ?docuri somehow
     }
+    sparql += " LIMIT 10";
     
-    sparql += "\n  }\n  ?graph <http://marklogic.com/semantics/ontology/derived_from> ?docuri .\n" + 
-      "} LIMIT 10";
     mljs.defaultconnection.sparql(sparql,function(result) {
         if (result.inError) {
           self._contentSearchContext.updateResults(false);

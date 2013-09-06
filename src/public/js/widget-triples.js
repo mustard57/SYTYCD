@@ -148,6 +148,8 @@ com.marklogic.widgets.sparqlbar = function(container) {
   
   this.terms = 0;
   
+  this._lang = "en";
+  
   //this._config = new com.marklogic.semantic.tripleconfig();
   
   this._hierarchy = new Array(); // [{tid: 1, children: [{tid: 2, children:[]}, ...]}, ....]
@@ -158,6 +160,10 @@ com.marklogic.widgets.sparqlbar = function(container) {
   this.errorPublisher = new com.marklogic.events.Publisher();
   
   this.refresh();
+};
+
+com.marklogic.widgets.sparqlbar.prototype.setLang = function(lang) {
+  this._lang = lang;
 };
 
 com.marklogic.widgets.sparqlbar.prototype.setSemanticContext = function(sc) {
@@ -313,7 +319,36 @@ com.marklogic.widgets.sparqlbar.prototype._addTerm = function(parentid) {
   s += "<span class='hidden' id='" + this.container + "-sparqlbar-term-prop-" + tid + "'>with property </span>";
   s += "<select id='" + this.container + "-sparqlbar-term-properties-" + tid + "' class='hidden'>";
   s += "</select>";
-  s += "<span class='hidden' id='" + this.container + "-sparqlbar-term-eq-" + tid + "'> equal to </span>";
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  s += "<span class='hidden' id='" + this.container + "-sparqlbar-term-eq-" + tid + "'> equal to </span>"; // TODO conver this in to a drop down too
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   s += "<input type='text' length='20'  class='sparqlbar-term-value hidden' id='" + this.container + "-sparqlbar-term-value-" + tid  + "'/>";
   
   s += "<span class='sparlbar-term-and hidden' id='" + this.container + "-sparqlbar-term-" + tid + "-and'>; AND</span>";
@@ -628,18 +663,22 @@ com.marklogic.widgets.sparqlbar.prototype._buildTerms = function(what,termArray,
   var scfg = this.semanticcontext.getConfiguration();
   for (var i = 0, max = termArray.length, tjson, twel, termWhat,termType,termRel,termPref,c,propentity,propname,propvalue,propinfo,termTypeObject;i < max;i++) {
     tjson = termArray[i];
+    mljs.defaultconnection.logger.debug("_buildTerms: Got term json: " + JSON.stringify(tjson));
     // TODO support deleted terms (try catch)
     twel = document.getElementById(this.container + "-sparqlbar-term-what-" + tjson.tid);
     if (undefined != twel) {
       termWhat = twel.value;
+      mljs.defaultconnection.logger.debug("_buildTerms: Processing term type: " + termWhat);
       
       if ("*" == termWhat) {
         termType = document.getElementById(this.container + "-sparqlbar-term-relatedtype-" + tjson.tid).value;
         termRel = document.getElementById(this.container + "-sparqlbar-term-relationship-" + tjson.tid).value;
+        mljs.defaultconnection.logger.debug("_buildTerms: termRel: " + termRel + ", termType: " + termType);
         //console.log("termType: " + termType + ", termRel: " + termRel);
         if (undefined != termRel) {
           //var termPred = this._config._predicatesShort[termRel];
           termPred = scfg.getPredicateFromName(termRel);
+          mljs.defaultconnection.logger.debug("_buildTerms: termPred: " + JSON.stringify(termPred));
           if (undefined != termPred) {
             c = counterObject.tc++;
             s += padding + "    ?" + what + " <" + termPred.iri + "> ?" + termType + c + " .\n" ;
@@ -648,6 +687,7 @@ com.marklogic.widgets.sparqlbar.prototype._buildTerms = function(what,termArray,
             
             // TODO process child terms here
             if (tjson.children.length > 0) {
+              mljs.defaultconnection.logger.debug("_buildTerms: Processing term pred children");
               s += this._buildTerms(termType + c,tjson.children,padding + "  ",counterObject);
             }
             
@@ -660,7 +700,19 @@ com.marklogic.widgets.sparqlbar.prototype._buildTerms = function(what,termArray,
         propname = document.getElementById(this.container + "-sparqlbar-term-properties-" + tjson.tid).value;
         propvalue = document.getElementById(this.container + "-sparqlbar-term-value-" + tjson.tid).value;
         propinfo = scfg.getEntityProperty(propentity,propname);
-        s += padding + "    ?" + what + " <" + propinfo.iri + "> '" + propvalue + "'@en .\n"; // TODO support I18N
+        s += padding + "    ?" + what + " <" + propinfo.iri + "> '" + propvalue + "'";
+        var proptype = "xs:string";
+        if (undefined != propinfo.type) {
+          proptype = propinfo.type;
+        }
+        if ("xs:string" == proptype) {
+          if (undefined != this._lang) {
+            s += "@" + this._lang; // TODO support I18N on string properties
+          }
+        } else {
+          s += "^^<" + proptype + ">";
+        } // TODO other types that require specific handling
+        s += " .\n";
       }
     }
     /*
@@ -1036,10 +1088,12 @@ com.marklogic.widgets.entityfacts.prototype._refresh = function() {
     this._summariseInto(link.iri,link.elid);
   }
   
-  if (null != this._contentWidget) {
+  if (this.semanticcontext.hasContentContext()) {
     var self = this;
     var el = document.getElementById(this.container + "-contentlink");
+    mljs.defaultconnection.logger.debug("CONTENTLINK: " + el);
     if (null != el) {
+      mljs.defaultconnection.logger.debug("ADDING CLICK HANDLER TO CONTENTLINK");
       el.onclick = function() {self._provenance();};
     }
   }
@@ -1113,8 +1167,16 @@ com.marklogic.widgets.entityfacts.prototype.removeErrorListener = function(lis) 
   this.errorPublisher.unsubscribe(lis);
 };
 
+com.marklogic.widgets.entityfacts.prototype.setProvenanceSparqlMentioned = function() {
+  this.provenanceSparql = "SELECT ?docuri WHERE {<#IRI#> <http://marklogic.com/semantics/ontology/mentioned_in> ?docuri .}";
+};
 
 com.marklogic.widgets.entityfacts.prototype._provenance = function() {
-  this.semanticcontext.subjectContent(this.facts.subjectIri);
+  mljs.defaultconnection.logger.debug("_provenance called for: " + this.facts.subjectIri);
+  var sparql = this.provenanceSparql;
+  if (undefined != sparql) {
+    sparql = sparql.replace(/#IRI#/, this.iri);
+  }
+  this.semanticcontext.subjectContent(this.iri,sparql);
 };
 
