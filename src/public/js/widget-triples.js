@@ -25,7 +25,7 @@ com.marklogic.widgets = window.com.marklogic.widgets || {};
 com.marklogic.widgets.semantichelper = {};
 
 com.marklogic.widgets.semantichelper.summariseInto = function(ctx,iri,type,elid,iriHandler) {
-  mljs.defaultconnection.logger.debug("semantichelper.summariseInto: IRI: " + iri + ", elid: " + elid);
+  mljs.defaultconnection.logger.debug("semantichelper.summariseInto: IRI: " + iri + ", elid: " + elid + ", ctx: " + ctx + ", type: " + type + ", iriHandler: " + iriHandler);
   
   // load type IRI for entity
   var lookupIri = iri;
@@ -805,10 +805,10 @@ com.marklogic.widgets.sparqlresults.prototype._refresh = function() {
   
   // click handlers
   var sh = com.marklogic.widgets.semantichelper;
-  var scfg = this.semanticcontext.getConfiguration();
+  //var scfg = this.semanticcontext.getConfiguration();
   for (var i = 0, max = irilinks.length,link; i < max;i++) {
     link = irilinks[i];
-    sh.summariseInto(scfg,link.iri,link.type,link.elid,this._iriHandler);
+    sh.summariseInto(this.semanticcontext,link.iri,link.type,link.elid,this._iriHandler);
   }
 };
 
@@ -1035,7 +1035,7 @@ com.marklogic.widgets.entityfacts.prototype._refresh = function() {
 
 com.marklogic.widgets.entityfacts.prototype._summariseInto = function(iri,elid) {
   //this.semanticcontext.getConfiguration().summariseInto(iri,elid,this._iriHandler);
-  com.marklogic.widgets.semantichelper.summariseInto(this.semanticcontext.getConfiguration(),iri,"uri",elid,this._iriHandler);
+  com.marklogic.widgets.semantichelper.summariseInto(this.semanticcontext,iri,"uri",elid,this._iriHandler);
 };
 
 /**
