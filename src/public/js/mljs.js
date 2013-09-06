@@ -233,20 +233,20 @@ function xmlToJsonSearchResults(xml) {
     // check if parent name is 'result'. If so, return content json object with encoded string of all child nodes
     var isResultContent = false;
     if (null != xml.parentNode) {
-      console.log("parentNode is not null");
+      //console.log("parentNode is not null");
       var ourName = xml.parentNode.nodeName;
       var pos = ourName.indexOf(":");
       if (-1 != pos) {
         ourName = ourName.substring(pos + 1);
       }
-      console.log("ourName: " + ourName);
+      //console.log("ourName: " + ourName);
       if ("result"==ourName) {
         isResultContent = true;
       }
     }
       
     if (isResultContent) {
-        console.log("GOT RESULT");
+        //console.log("GOT RESULT");
         /*
         var s = "";
         for (var i = 0; i < xml.childNodes.length; i++) {
@@ -4086,9 +4086,9 @@ com.marklogic.semantic.tripleconfig.prototype.addMappings = function(mapname,ent
     this.validTriples.push(validTriplesArray[i]);
   }
   for (var predname in namedPredicateArray) {
-    console.log("PREDNAME: " + predname);
+    //console.log("PREDNAME: " + predname);
     if ("object" == typeof namedPredicateArray[predname]) { // check this is a JSON object, not a function
-      console.log("ADDING PREDNAME: " + predname);
+      //console.log("ADDING PREDNAME: " + predname);
       this._newPredicates[predname] = namedPredicateArray[predname];
     }
   }

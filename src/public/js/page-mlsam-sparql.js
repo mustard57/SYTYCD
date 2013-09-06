@@ -53,33 +53,31 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
     rdfTypeIri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT", rdfTypeIriShort: "nic:client", commonNamePredicate: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME",
     properties: [
       {name: "clientid", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#CLIENT_ID", shortiri: "nic:client_id"},
-      {name: "title", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#TITLE", shortiri: "nic:title"},
-      {name: "firstname", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FIRST_NAME", shortiri: "nic:firstname"},
-      {name: "familyname", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME", shortiri: "nic:familyname"},
-      {name: "dob", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#DOB", shortiri: "nic:dob"},
+      {name: "nicfirstname", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FIRST_NAME", shortiri: "nic:firstname"},
+      {name: "nicfamilyname", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME", shortiri: "nic:familyname"},
+      {name: "nicdob", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#DOB", shortiri: "nic:dob"},
       {name: "profession", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PROFESSION", shortiri: "nic:profession"},
       {name: "m_or_f", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#M_OR_F"},
-      {name: "email", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#EMAIL"},
-      {name: "title", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#TITLE"},
-      {name: "address_id", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ADDRESS_ID"},
+      {name: "nicemail", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#EMAIL"},
+      {name: "nictitle", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#TITLE"},
+      {name: "nicaddress_id", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ADDRESS_ID"},
       {name: "phone_1", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_1"},
       {name: "phone_2", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_2"}
     ]
   };
   var nicClientPredicates = new Array();
   nicClientPredicates["clientid"] = {name: "clientid", title: "Client ID", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#CLIENT_ID", shortiri: "nic:client_id"};
-  nicClientPredicates["title"] = {name: "title", title: "Title", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#TITLE", shortiri: "nic:title"};
-  nicClientPredicates["firstname"] = {name: "firstname", title: "First Name", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FIRST_NAME", shortiri: "nic:firstname"};
-  nicClientPredicates["familyname"] = {name: "familyname", title: "Family Name", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME", shortiri: "nic:familyname"};
-  nicClientPredicates["dob"] = {name: "dob", title: "Date of Birth", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#DOB", shortiri: "nic:dob"};
+  nicClientPredicates["nicfirstname"] = {name: "nicfirstname", title: "First Name", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FIRST_NAME", shortiri: "nic:firstname"};
+  nicClientPredicates["nicfamilyname"] = {name: "nicfamilyname", title: "Family Name", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME", shortiri: "nic:familyname"};
+  nicClientPredicates["nicdob"] = {name: "nicdob", title: "Date of Birth", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#DOB", shortiri: "nic:dob"};
   nicClientPredicates["profession"] = {name: "profession", title: "Profession", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PROFESSION", shortiri: "nic:profession"};
-  nicClientPredicates["nic_address"] = {name: "nic_address", title: "Address", iri:"http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ref-ADDRESS_ID"};
   nicClientPredicates["m_or_f"] = {name: "m_or_f", title: "Male or Female", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#M_OR_F"};
-  nicClientPredicates["email"] = {name: "email", title: "Email Address", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#EMAIL"};
-  nicClientPredicates["title"] = {name: "title", title: "Title", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#TITLE"};
-  nicClientPredicates["address_id"] = {name: "address_id", title: "Address ID", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ADDRESS_ID"};
+  nicClientPredicates["nicemail"] = {name: "nicemail", title: "Email Address", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#EMAIL"};
+  nicClientPredicates["nictitle"] = {name: "nictitle", title: "Title", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#TITLE"};
+  nicClientPredicates["nicaddress_id"] = {name: "nicaddress_id", title: "Address ID", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ADDRESS_ID"};
   nicClientPredicates["phone_1"] = {name: "phone_1", title: "Phone 1", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_1"};
   nicClientPredicates["phone_2"] = {name: "phone_2", title: "Phone 2", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_2"};
+  nicClientPredicates["nic_address"] = {name: "nic_address", title: "Address", iri:"http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ref-ADDRESS_ID"};
   
   var nicClientTriples = [
     {subjectType: "nicclient", objectType: "nicaddress", predicateArray: ["nic_address"]}
