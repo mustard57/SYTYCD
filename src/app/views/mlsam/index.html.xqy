@@ -6,6 +6,8 @@ declare option xdmp:mapping "false";
 
 
    
+vh:add-value("hiddenFormInput",()),
+vh:add-value("sidebar",()),
 <div class="jumbotron">
     <h1>Banking durch Technik</h1>
     <p class="lead">... acquired by Joerg Enterprises in 2013, National Kensington Bank is a venerable British financial institution dating back to early 2013. It hit the headlines in late 2013 due to it's adoption of a revolutionary new technology.</p>
