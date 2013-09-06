@@ -797,6 +797,8 @@ com.marklogic.widgets.sparqlresults = function(container) {
   
   this._iriHandler = null;
   
+  this._mode = "none";
+  
   //this._config = new com.marklogic.semantic.tripleconfig();
   
   this._refresh();
@@ -836,6 +838,10 @@ com.marklogic.widgets.sparqlresults.prototype._refresh = function() {
     // get list of entities returned in search
     var entities = this.results.head.vars; // E.g. person, organisation - these are the returned variable bindings from the query
     
+    if (this._mode != "none") {
+      s += "<div><a href='#' id='" + this.container + "-loadContent'>Load related content</a></div>";
+    }
+    
     // process results, showing common information where appropriate
       // title - get name eventually
       var bindings = this.results.results.bindings;
@@ -871,6 +877,14 @@ com.marklogic.widgets.sparqlresults.prototype._refresh = function() {
     link = irilinks[i];
     sh.summariseInto(this.semanticcontext,link.iri,link.type,link.elid,this._iriHandler);
   }
+  
+  if (this._mode != "none") {
+    var contentLink = document.getElementById(this.container + "-loadContent");
+    if (null != contentLink) {
+      var self = this;
+      contentLink.onclick = function(e) {self._provenance();e.stopPropagation();return false;};
+    }
+  }
 };
 
 /**
@@ -902,6 +916,53 @@ com.marklogic.widgets.sparqlresults.prototype.removeErrorListener = function(fl)
   this.errorPublisher.unsubscribe(fl);
 };
 
+
+com.marklogic.widgets.sparqlresults.prototype.setProvenanceSparqlMentioned = function() {
+  this._mode = "mentioned";
+};
+
+com.marklogic.widgets.sparqlresults.prototype._provenance = function() {
+  mljs.defaultconnection.logger.debug("sparqlresults._provenance called");
+  var sparql = "";
+  if (undefined != this.results) {
+    
+    if (typeof this.results == "boolean" ) {
+      return;
+    } else {
+      if (undefined != this.results.head && undefined != this.results.head.vars && undefined != this.results.results) {
+        if (this._mode == "mentioned") {
+          sparql = "SELECT ?docuri WHERE {\n";
+          // get list of entities returned in search
+          var entities = this.results.head.vars; // E.g. person, organisation - these are the returned variable bindings from the query
+    
+          // process results, showing common information where appropriate
+          // title - get name eventually
+          var bindings = this.results.results.bindings;
+          for (var b = 0,max = bindings.length, binding;b < max;b++) {
+            binding = this.results.results.bindings[b];
+            for (var et = 0, maxent = entities.length, entityValue;et < maxent;et++) {
+              entityValue = binding[entities[et]];
+              sparql += "<" + entityValue.value + "> <http://marklogic.com/semantics/ontology/mentioned_in> ?docuri . \n";
+            }
+          }
+      
+          sparql += "}";
+        }
+  
+        /*
+        var sparql = this.provenanceSparql;
+        if (undefined != sparql) {
+          sparql = sparql.replace(/#IRI#/, this.iri);
+        }*/
+        this.semanticcontext.subjectContent(null,sparql);
+  
+  
+      } else {
+        return;
+      }
+    }
+  }
+};
 
 
 

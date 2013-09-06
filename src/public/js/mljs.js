@@ -4514,6 +4514,7 @@ mljs.prototype.semanticcontext.prototype.subjectFacts = function(subjectIri) {
   this.getFacts(subjectIri,true);
 };
 
+// NB subjectIri can be null if sparql contains multiple subjectIris
 mljs.prototype.semanticcontext.prototype.subjectContent = function(subjectIri,docSparql_opt) {
   // update the linked searchcontext with a query related to documents that the facts relating to this subjectIri were inferred from
   // TODO sparql query to fetch doc URIs (stored as derivedFrom IRIs)
