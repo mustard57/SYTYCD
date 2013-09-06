@@ -4086,8 +4086,10 @@ com.marklogic.semantic.tripleconfig.prototype.addMappings = function(mapname,ent
     this.validTriples.push(validTriplesArray[i]);
   }
   for (var predname in namedPredicateArray) {
-    if ("object" == typeof this._newPredicates[predname]) {
-      this._newPredicates[predname] = namedPredicateArray;
+    console.log("PREDNAME: " + predname);
+    if ("object" == typeof namedPredicateArray[predname]) { // check this is a JSON object, not a function
+      console.log("ADDING PREDNAME: " + predname);
+      this._newPredicates[predname] = namedPredicateArray[predname];
     }
   }
 };
@@ -4261,6 +4263,9 @@ com.marklogic.semantic.tripleconfig.prototype.getNameProperty = function(entity)
   return null;
 };
 
+/**
+ * Fetch entity info for top level entities (not properties of entities)
+ */
 com.marklogic.semantic.tripleconfig.prototype.getEntityFromIRI = function(iri) {
   for (var cn in this._newentities) {
     var p = this._newentities[cn];

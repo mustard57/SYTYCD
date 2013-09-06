@@ -50,62 +50,71 @@ com.marklogic.widgets.semantichelper.summariseInto = function(ctx,iri,type,elid,
       // TODO publish error
     } else {
       mljs.defaultconnection.logger.debug("semantichelper.summariseInto: TYPERESPONSE: " + JSON.stringify(result.doc));
-      var entityinfo = ctx.getConfiguration().getEntityFromIRI(result.doc.results.bindings[0].rdftype.value); // TODO check for no rdftype
-      var nameprop = ctx.getConfiguration().getNameProperty(entityinfo.name).iri;
-      if (undefined == nameprop) {
-        document.getElementById(elid).innerHTML = lookupIri;
-      } else {
-      // load common name for this type
-      var ns = "SELECT ?name WHERE {";
-  if (useSubjectAngle) {
-    ns += "<";
-  }
-  ns += lookupIri;
-  if (useSubjectAngle) {
-    ns += ">";
-  }
-  ns += " <" + nameprop  + "> ?name . } LIMIT 1";
-      mljs.defaultconnection.logger.debug("NS: " + ns);
+      var firstbinding = result.doc.results.bindings[0];
+      if (undefined != firstbinding) {
+        
+        
+        var entityinfo = ctx.getConfiguration().getEntityFromIRI(firstbinding.rdftype.value); 
+        mljs.defaultconnection.logger.debug("semantichelper.summariseInto: entityInfo: " + JSON.stringify(entityinfo));
+        var nameprop = ctx.getConfiguration().getNameProperty(entityinfo.name).iri;
+        mljs.defaultconnection.logger.debug("semantichelper.summariseInto: nameprop: " + nameprop);
+        if (undefined == nameprop) {
+          document.getElementById(elid).innerHTML = lookupIri;
+        } else {
+          // load common name for this type
+          var ns = "SELECT ?name WHERE {";
+          if (useSubjectAngle) {
+            ns += "<";
+          }
+          ns += lookupIri;
+          if (useSubjectAngle) {
+            ns += ">";
+          }
+          ns += " <" + nameprop  + "> ?name . } LIMIT 1";
+          mljs.defaultconnection.logger.debug("NS: " + ns);
       
-      mljs.defaultconnection.sparql(ns,function(result2) {
-        if (result2.inError) {
-          // TODO publish error
-        } else {
-          if (undefined != result2.doc.results && undefined != result2.doc.results.bindings && result2.doc.results.bindings.length > 0) {
-            var el = document.getElementById(elid);
-            if (undefined != el) {
-          var cn = result2.doc.results.bindings[0].name.value;
-          // display in appropriate element
-          var s = "";
-          if (null != iriHandler) {
-            s += "<a href='#' id='" + elid + "-link'>";
-          }
-          s += cn + " (" + entityinfo.title + ")";
+          mljs.defaultconnection.sparql(ns,function(result2) {
+            if (result2.inError) {
+              // TODO publish error
+            } else {
+              if (undefined != result2.doc.results && undefined != result2.doc.results.bindings && result2.doc.results.bindings.length > 0) {
+                var el = document.getElementById(elid);
+                if (undefined != el) {
+                  var cn = result2.doc.results.bindings[0].name.value;
+                  // display in appropriate element
+                  var s = "";
+                  if (null != iriHandler) {
+                    s += "<a href='#' id='" + elid + "-link'>";
+                  }
+                  s += cn + " (" + entityinfo.title + ")";
           
-          if (null != iriHandler) {
-            s += "</a>";
-          }
-          el.innerHTML = s;
+                  if (null != iriHandler) {
+                    s += "</a>";
+                  }
+                  el.innerHTML = s;
           
-          // add click handler function here to elid-link
-          if (null != iriHandler) {
-            var addClickHandler = function(el,iri) {
-              el.onclick = function(event) {
-                iriHandler(iri);
-              }
+                  // add click handler function here to elid-link
+                  if (null != iriHandler) {
+                    var addClickHandler = function(el,iri) {
+                      el.onclick = function(event) {
+                        iriHandler(iri);
+                      }
+                    }
+                    var el = document.getElementById(elid + "-link");
+                    addClickHandler(el,lookupIri);
+                  }
+                } // end if element is defined
+              } else {
+                mljs.defaultconnection.logger.debug("This query returns no bindings (results): " + ts);
+                mljs.defaultconnection.logger.debug("Result instead: " + JSON.stringify(result2.doc));
+              } // end if bindings undefined / empty
             }
-            var el = document.getElementById(elid + "-link");
-            addClickHandler(el,lookupIri);
-          }
-        } // end if element is defined
-        } else {
-          mljs.defaultconnection.logger.debug("This query returns no bindings (results): " + ts);
-          mljs.defaultconnection.logger.debug("Result instead: " + JSON.stringify(result2.doc));
-        } // end if bindings undefined / empty
-        }
-      });
-    } // end if else nameprop has property map
-    }
+          });
+        } // end if else nameprop has property map
+      } else { 
+        document.getElementById(elid).innerHTML = lookupIri;
+      }
+    }// error if
   });
 };
 
@@ -952,6 +961,7 @@ com.marklogic.widgets.entityfacts.prototype._refresh = function() {
     mljs.defaultconnection.logger.debug("Got type: " + type);
     
     var entityInfo = scfg.getEntityFromIRI(type);
+    mljs.defaultconnection.logger.debug("Got entity info: " + JSON.stringify(entityInfo));
     
     var entityName = entityInfo.name;
     mljs.defaultconnection.logger.debug("Got entity name: " + entityName);
@@ -989,7 +999,9 @@ com.marklogic.widgets.entityfacts.prototype._refresh = function() {
       if (undefined == predicate) {
         predicate = {value: this.facts.predicate};
       }
+      mljs.defaultconnection.logger.debug("OUR PREDICATE: " + JSON.stringify(predicate));
       var pinfo = scfg.getPredicateFromIRI(predicate.value);
+      mljs.defaultconnection.logger.debug("OUR PINFO: " + JSON.stringify(pinfo));
       var obj = binding.object;
       mljs.defaultconnection.logger.debug("OUR OBJECT: " + JSON.stringify(obj));
       mljs.defaultconnection.logger.debug("OUR BINDING: " + JSON.stringify(binding));
