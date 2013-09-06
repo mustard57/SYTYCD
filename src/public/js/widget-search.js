@@ -660,14 +660,15 @@ com.marklogic.widgets.searchresults = function(container) {
         self.ctx.db.logger.debug("match text: " + result.matches[0]["match-text"]);
         self.ctx.db.logger.debug("match text 0: " + result.matches[0]["match-text"][0]);
       }
-      if ("string" == typeof result.content && -1 != result.content.indexOf("<html")) {
+      if ("string" == typeof result.content && -1 != result.content.indexOf("html")) { // TODO replace with XPath as this is very wide ranging - http://www.w3.org/1999/xhtml (escape dots?)
           // Get title from /html/head/title or /html/body/h1[1] or /html/body/h2[1] or /html/body/p[1]
           // don't rely on xml.evaluate() though
-          var titleStart = result.content.indexOf("<title>");
-          var titleEnd = result.content.indexOf("</title>");
-          var bodyStart = result.content.indexOf("<body");
-          var bodyEnd = result.content.indexOf(">",bodyStart + 5);
-          var endBodyStart = result.content.indexOf("</body>",bodyEnd + 1);
+          self.ctx.db.logger.debug("searchresults: defaultProcesor: Got HTML content");
+          var titleStart = result.content.indexOf("title>"); // NB can't do <title because there may be a random namespace name. Replace this with XPATH if supported
+          var titleEnd = result.content.indexOf("title>",titleStart + 6);
+          var bodyStart = result.content.indexOf("body");
+          var bodyEnd = result.content.indexOf(">",bodyStart + 4);
+          var endBodyStart = result.content.indexOf("body",bodyEnd + 1);
           self.ctx.db.logger.debug("titleStart: " + titleStart);
           self.ctx.db.logger.debug("titleEnd: " + titleEnd);
           self.ctx.db.logger.debug("bodyStart: " + bodyStart);
@@ -678,19 +679,16 @@ com.marklogic.widgets.searchresults = function(container) {
           
           var bodyContent = result.content.substring(bodyEnd + 1,endBodyStart);
           self.ctx.db.logger.debug("bodyContent: " + bodyContent);
-          var title = "";
+          var title = result.uri;
           if (-1 != titleStart && -1 != titleEnd) {
-            title = result.content.substring(titleStart + 7,titleEnd);
+            title = result.content.substring(titleStart + 6,titleEnd);
           } else {
             var firstElStart = bodyContent.indexOf("<");
             var firstElEnd = bodyContent.indexOf(">",firstElStart + 1);
             var endFirstElStart = bodyContent.indexOf("</",firstElEnd);
             if (-1 != firstElStart && -1 != firstElEnd && -1 != endFirstElStart) {
               title = bodyContent.substring(firstElEnd + 1,endFirstElStart);
-            } else {
-              // use URI
-              title = result.uri;
-            }
+            } 
           }
           self.ctx.db.logger.debug("title: " + title);
           // render first 4 elements from /html/body/element()[1 to 4]
