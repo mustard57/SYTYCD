@@ -258,6 +258,7 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
       
           return
             (sem:triple(sem:iri($subject),sem:iri($predicate),$object),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1))
+            
         ,
           (: add any relationships to tables where we have foreign keys in our table columns :)
           for $reftablename in fn:distinct-values($foreignkeycolumns/REFERENCED_TABLE_NAME/text())
@@ -285,6 +286,9 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
                 fn:concat($refcolname , "=" , $row/element()[fn:local-name(.) = $colname]/text())))
           return
             (sem:triple(sem:iri($subject),sem:iri($predicate),sem:iri($object)),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1))
+            
+            (: TODO add support for generating the reverse of all RDBMS relationships so we don't have to do inferencing later :)
+            
         )
       (:let $to := xdmp:log("TRIPLES:-")
       let $tripout := xdmp:log($triples)

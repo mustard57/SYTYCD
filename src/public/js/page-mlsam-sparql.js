@@ -120,7 +120,8 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "national_insurance_no", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#NATIONAL-INSURANCE-NO"},
       {name: "gender", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#GENDER"},
       {name: "ref-ADDRESS_ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ADDRESS_ID"},
-      {name: "ref-BRANCH_ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-BRANCH_ID"}
+      {name: "ref-BRANCH_ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-BRANCH_ID"},
+      {name: "ref-ACCOUNT_ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID"}
     ] 
   };
   var nkbCustomerPredicates = new Array();
@@ -142,7 +143,9 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   nkbCustomerPredicates["gender"] = {name: "gender", title: "Gender", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#GENDER"};
   nkbCustomerPredicates["ref-ADDRESS_ID"] = {name: "ref-ADDRESS_ID", title: "Address", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ADDRESS_ID"};
   nkbCustomerPredicates["ref-BRANCH_ID"] = {name: "ref-BRANCH_ID", title: "Branch", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-BRANCH_ID"};
+  nkbCustomerPredicates["has_nkb_account"] = {name: "has_nkb_account", title: "Account", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID"};
   var nkbCustomerTriples = [
+    {subjectType: "nkbcustomer", objectType: "nkbaccount", predicateArray: ["has_nkb_account"]}
   ];
   
   var nkbAccountEntity = {
@@ -155,11 +158,17 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "account-status_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-STATUS_ID"},
       {name: "account-type_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-TYPE_ID"},
       {name: "customer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#CUSTOMER_ID"},
-      {name: "balance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE"}
+      {name: "balance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE", type: "xs:double"}
     ] 
   };
   var nkbAccountPredicates = new Array();
-  nkbAccountPredicates["account-number"] = {name: "account-number", title: "Account Number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER"};
+  nkbAccountPredicates["nkbaccount-number"] = {name: "nkbaccount-number", title: "Account Number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER"};
+  nkbAccountPredicates["nkbbalance"] = {name: "nkbbalance", title: "Balance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE"};
+  nkbAccountPredicates["nkbaccount_id"] = {name: "nkbaccount_id", title: "Account ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT_ID"};
+  nkbAccountPredicates["nkbsort-code"] = {name: "nkbsort-code", title: "Sort Code", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE"};
+  nkbAccountPredicates["nkbaccount-status_id"] = {name: "nkbaccount-status_id", title: "Account Status ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-STATUS_ID"};
+  nkbAccountPredicates["nkbaccount-type_id"] = {name: "nkbaccount-type_id", title: "Account Type ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-TYPE_ID"};
+  nkbAccountPredicates["nkbcustomer_id"] = {name: "nkbcustomer_id", title: "Customer ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#CUSTOMER_ID"};
   var nkbAccountTriples = [
   ];
   

@@ -631,25 +631,31 @@ com.marklogic.widgets.sparqlbar.prototype._refreshOperation = function(termid) {
     // lookup type to determine which operations to show, if any at all
     var propvalue = document.getElementById(this.container + "-sparqlbar-term-prop-" + termid).value;
     var parentid = this._parentterms[termid];
-    var parententityname = document.getElementById(this.container + "-sparqlbar-term-what-" + parentid).value;
+    var parententityname = "";
+    if (undefined == parentid) {
+      // get root top
+      parententityname = document.getElementById(this.container + "-sparqlbar-what").value;
+    } else {
+      parententityname = document.getElementById(this.container + "-sparqlbar-term-what-" + parentid).value;
+    }
     
     var scfg = this.semanticcontext.getConfiguration();
     
     // lookup predicate for property
-    var predinfo = scfg.getEntityPropertyByName(parententityname,propvalue);
+    var predinfo = scfg.getEntityProperty(parententityname,propvalue);
     
     this.semanticcontext.db.logger.debug("Property Info: propvalue: " + propvalue + ", parentid: " + parentid + ", parententityname: " + parententityname + ", predinfo: " + JSON.stringify(predinfo));
     
     if (undefined == predinfo.type) {
       var val = document.getElementById(this.container + "-sparqlbar-term-eq-" + termid);
       this._hidden(val,false);
-      var val = document.getElementById(this.container + "-sparqlbar-term-oper-" + termid);
+      val = document.getElementById(this.container + "-sparqlbar-term-oper-" + termid);
       this._hidden(val,true);
     } else {
       // TODO support things other than just integer types
       var val = document.getElementById(this.container + "-sparqlbar-term-eq-" + termid);
       this._hidden(val,true);
-      var val = document.getElementById(this.container + "-sparqlbar-term-oper-" + termid);
+      val = document.getElementById(this.container + "-sparqlbar-term-oper-" + termid);
       this._hidden(val,false);
     }
   
