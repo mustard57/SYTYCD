@@ -157,6 +157,7 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
   let $l := xdmp:log($sqlpk)
   let $set := sql:execute($sqlpk,$samurl, ())
   let $ex := ($set/sql:meta/sql:exceptions/sql:exception/sql:reason)
+  let $insertresult := ()
   let $l := xdmp:log("SQL OUTPUT:-")
   let $l := xdmp:log($set)
   let $primarykeycolumns := $set/sql:tuple/COLUMN_NAME/text()
@@ -179,19 +180,22 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
       (: MODE = table :)
       (: Perform ingest of a single table. No need to process tables without foreign keys first as the W3C direct mapping is consistent without this. :)
       (: Fetch appropriate data :)
-      let $collist := 
+      let $colnames := 
         if (fn:empty($config/m:selection/m:column)) then
-          fn:concat("`",fn:string-join(
             for $column in sql:execute(fn:concat("DESCRIBE ",$schema,".",$tablename),$samurl, ())/sql:tuple
             (:let $rawtype := $column/COLUMN_TYPE/text()
             let $basetype := fn:tokenize($rawtype,"\(")[1]
             let $xmltype := map:get($types,$basetype):)
             return
               $column/COLUMN_NAME/text()
-          ,"`, `" ),"`")
-        else
-          fn:concat("`",fn:string-join( $config/m:selection/m:column/text(), "`, `" ),"`")
+        else $config/m:selection/m:column/text()
+      let $collist := fn:concat("`",fn:string-join($colnames,"`, `" ),"`")
       let $base := fn:concat("http://marklogic.com/rdb2rdf/" , $schema , "/") (: RDF base: property :)
+      
+      let $dostuff :=
+        if(fn:empty($colnames)) then
+          ()
+        else
       
       let $sqldata := fn:concat("SELECT ", $collist, " FROM ",$schema,".",$tablename," ORDER BY ",$collist, " LIMIT ",$config/m:selection/m:offset/text(), ",", $config/m:selection/m:limit/text())
       let $l := xdmp:log($sqldata)
@@ -313,6 +317,9 @@ return
       :)
       let $l := xdmp:log("insert result:-")
       let $l := xdmp:log($insertresult)
+      
+      return ()
+      
       return (
         (: Commit this to a named graph rather than document so that MarkLogic handles the most performant storage mechanism :)
         (
@@ -325,7 +332,10 @@ return
           for $r in $ex/text()
           return
             <m:error>{$r}</m:error>
-        
+        ,
+          if (fn:empty($colnames)) then
+            <m:error>The specified table has no columns defined. This is recoverable with no further action necessary. Continue as normal.</m:error>
+          else ()
         ,
         <m:statistics>
           <m:triplecount>{map:get($statsmap,"triplecount")}</m:triplecount>

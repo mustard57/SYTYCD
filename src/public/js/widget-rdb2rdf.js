@@ -321,6 +321,14 @@ com.marklogic.widgets.rdb2rdf.prototype._showStep4 = function() {
   
   var self = this;
   
+  
+  
+  
+  var graphName = $("#" + this.container + "-named-graph").val();
+  var samUrl = $("#" + this.container + "-mlsam").val();
+  var schemaName = $("#" + this.container + "-schema-select").val();
+  
+  
   var config =   
   {
     "ingest": {
@@ -340,11 +348,6 @@ com.marklogic.widgets.rdb2rdf.prototype._showStep4 = function() {
 	}
   }; 
   
-  
-  
-  var graphName = $("#" + this.container + "-named-graph").val();
-  var samUrl = $("#" + this.container + "-mlsam").val();
-  var schemaName = $("#" + this.container + "-schema-select").val();
   var tableNameList = [];
   var ulElemSelector = "#" + this.container + "-schema-import-tables";
   var selectId = this.container + "-table-select";  
