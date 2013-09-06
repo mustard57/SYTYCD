@@ -154,6 +154,8 @@ com.marklogic.widgets.searchbar = function(container) {
   
   this.ctx = new mljs.prototype.searchcontext();
   
+  this._mode = "fullquery"; // also 'contributestructured' for contributing simple word queries to search context
+  
   // draw widget within container
   mljs.defaultconnection.logger.debug("adding search bar html");
   document.getElementById(container).innerHTML = 
@@ -213,13 +215,26 @@ com.marklogic.widgets.searchbar.prototype.execute = function() {
   this.ctx.dosimplequery(q);
 };
 
+com.marklogic.widgets.searchbar.prototype.setMode = function(mode) {
+  this._mode = mode;
+};
+
+com.marklogic.widgets.searchbar.prototype.setModeContributeStructured = function() {
+  this._mode = "contributestructured";
+};
+
 com.marklogic.widgets.searchbar.prototype._dosearch = function(self) {
   // get our search input element
   var q = document.getElementById(self.container + "-searchinput").value;
   
   // TODO parse for Sort and Facets values, and update listeners accordingly (user may remove facets/sort by hand)
-  
-  self.ctx.dosimplequery(q);
+  if (this._mode == "fullquery") {
+    self.ctx.dosimplequery(q);
+  } else if (this._mode == "contributestructured") {
+    var qb = new this.ctx.db.query();
+    qb.wordQuery(q);
+    self.ctx.contributeStructuredQuery(this.container,qb.toJson().query[0]);
+  }
 };
 
 com.marklogic.widgets.searchbar.prototype.updateSimpleQuery = function(q) {

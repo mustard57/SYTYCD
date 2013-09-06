@@ -170,6 +170,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   var semctx = new db.semanticcontext();
   semctx.setConfiguration(tripleconfig);
+  semctx.setContentMode("contribute");
   var contentctx = new db.searchcontext();
   semctx.setContentContext(contentctx);
  
@@ -210,6 +211,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   var bar = new com.marklogic.widgets.searchbar("search-bar");
   contentctx.register(bar);
+  bar.setModeContributeStructured();
   
     //var wgt = new com.marklogic.widgets.sparqlbar("sparqlbar");
     //wgt.addErrorListener(error.updateError);
