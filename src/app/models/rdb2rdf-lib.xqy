@@ -179,7 +179,18 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
       (: MODE = table :)
       (: Perform ingest of a single table. No need to process tables without foreign keys first as the W3C direct mapping is consistent without this. :)
       (: Fetch appropriate data :)
-      let $collist := fn:concat("`",fn:string-join( $config/m:selection/m:column/text(), "`, `" ),"`")
+      let $collist := 
+        if (fn:empty($config/m:selection/m:column)) then
+          fn:concat("`",fn:string-join(
+            for $column in sql:execute(fn:concat("DESCRIBE ",$schema,".",$tablename),$samurl, ())/sql:tuple
+            (:let $rawtype := $column/COLUMN_TYPE/text()
+            let $basetype := fn:tokenize($rawtype,"\(")[1]
+            let $xmltype := map:get($types,$basetype):)
+            return
+              $column/COLUMN_NAME/text()
+          ,"`, `" ),"`")
+        else
+          fn:concat("`",fn:string-join( $config/m:selection/m:column/text(), "`, `" ),"`")
       let $base := fn:concat("http://marklogic.com/rdb2rdf/" , $schema , "/") (: RDF base: property :)
       
       let $sqldata := fn:concat("SELECT ", $collist, " FROM ",$schema,".",$tablename," ORDER BY ",$collist, " LIMIT ",$config/m:selection/m:offset/text(), ",", $config/m:selection/m:limit/text())

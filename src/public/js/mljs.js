@@ -4257,6 +4257,7 @@ com.marklogic.semantic.tripleconfig.prototype.getNameProperty = function(entity)
       return this._newentities[entity].properties[i];
     }
   }
+  mljs.defaultconnection.logger.debug("getNameProperty: RETURNING NULL for entity: " + entity);
   return null;
 };
 
@@ -4315,11 +4316,13 @@ com.marklogic.semantic.tripleconfig.prototype.getPredicateFromName = function(na
 };
 
 com.marklogic.semantic.tripleconfig.prototype.getEntityProperty = function(entity, name) {
+  mljs.defaultconnection.logger.debug("getEntityProperty: " + name + " from entity: " + entity);
   for (var i = 0;i < entity.properties.length;i++) {
     if (name == entity.properties[i].name) {
       return entity.properties[i];
     }
   }
+  mljs.defaultconnection.logger.debug("getEntityProperty: RETURNING NULL for " + name + " from entity: " + entity);
   return null;
 };
 

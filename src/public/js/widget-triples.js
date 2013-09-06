@@ -26,7 +26,7 @@ com.marklogic.widgets.semantichelper = {};
 
 com.marklogic.widgets.semantichelper.summariseInto = function(ctx,iri,type,elid,iriHandler) {
   mljs.defaultconnection.logger.debug("semantichelper.summariseInto: IRI: " + iri + ", elid: " + elid);
-  var self = ctx;
+  
   // load type IRI for entity
   var lookupIri = iri;
   var useSubjectAngle = true;
@@ -49,8 +49,9 @@ com.marklogic.widgets.semantichelper.summariseInto = function(ctx,iri,type,elid,
     if (result.inError) {
       // TODO publish error
     } else {
-      var entityinfo = self.getEntityFromIRI(result.doc.results.bindings[0].rdftype.value); // TODO check for no rdftype
-      var nameprop = self.getNameProperty(entityinfo.name).iri;
+      mljs.defaultconnection.logger.debug("semantichelper.summariseInto: TYPERESPONSE: " + JSON.stringify(result.doc));
+      var entityinfo = ctx.getConfiguration().getEntityFromIRI(result.doc.results.bindings[0].rdftype.value); // TODO check for no rdftype
+      var nameprop = ctx.getConfiguration().getNameProperty(entityinfo.name).iri;
       if (undefined == nameprop) {
         document.getElementById(elid).innerHTML = lookupIri;
       } else {
@@ -61,7 +62,7 @@ com.marklogic.widgets.semantichelper.summariseInto = function(ctx,iri,type,elid,
   }
   ns += lookupIri;
   if (useSubjectAngle) {
-    bs += ">";
+    ns += ">";
   }
   ns += " <" + nameprop  + "> ?name . } LIMIT 1";
       mljs.defaultconnection.logger.debug("NS: " + ns);
@@ -994,7 +995,11 @@ com.marklogic.widgets.entityfacts.prototype._refresh = function() {
       mljs.defaultconnection.logger.debug("OUR BINDING: " + JSON.stringify(binding));
       
       if (predicate.value != namepredicate && predicate.value != "http://www.w3.org/1999/02/22-rdf-syntax-ns#type") {
-        s += "<p><b>" + pinfo.title + ":</b> ";
+        var title = predicate.value;
+        if (undefined != pinfo) {
+          title = pinfo.title;
+        }
+        s += "<p><b>" + title + ":</b> ";
         // TODO replace the following entirely
         if (undefined != obj["xml:lang"] /* i.e. is an xml string */ || obj.type != "uri" /* is a value, not a URI */   /*|| null == this._iriHandler*/) {
           // string literal
@@ -1030,7 +1035,7 @@ com.marklogic.widgets.entityfacts.prototype._refresh = function() {
 
 com.marklogic.widgets.entityfacts.prototype._summariseInto = function(iri,elid) {
   //this.semanticcontext.getConfiguration().summariseInto(iri,elid,this._iriHandler);
-  com.marklogic.widgets.semantichelper.summariseInto(this.semanticcontext.getConfiguration(),iri,elid,this._iriHandler);
+  com.marklogic.widgets.semantichelper.summariseInto(this.semanticcontext.getConfiguration(),iri,"uri",elid,this._iriHandler);
 };
 
 /**
