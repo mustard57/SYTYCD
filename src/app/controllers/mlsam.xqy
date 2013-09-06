@@ -136,3 +136,9 @@ declare function c:sparql() as item()*
   ch:use-view((), "xml"),
   ch:use-layout(("mlsam"), "html")
 };
+
+declare function c:index() as item()*
+{(
+  ch:use-view((), "xml"),
+  ch:use-layout(("mlsam"), "html"))
+};
