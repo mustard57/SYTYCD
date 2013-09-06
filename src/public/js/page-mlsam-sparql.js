@@ -152,13 +152,13 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
     name: "nkbaccount", title: "NKB Account", prefix: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT", iriPattern: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT_ID=#VALUE#",
     rdfTypeIri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT", commonNamePredicate: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER",
     properties: [
-      {name: "account_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT_ID"},
-      {name: "account-number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER"},
-      {name: "sort-code", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE"},
-      {name: "account-status_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-STATUS_ID"},
-      {name: "account-type_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-TYPE_ID"},
-      {name: "customer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#CUSTOMER_ID"},
-      {name: "balance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE", type: "xs:double"}
+      {name: "nkbaccount_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT_ID"},
+      {name: "nkbaccount-number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER"},
+      {name: "nkbsort-code", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE"},
+      {name: "nkbaccount-status_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-STATUS_ID"},
+      {name: "nkbaccount-type_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-TYPE_ID"},
+      {name: "nkbcustomer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#CUSTOMER_ID"},
+      {name: "nkbbalance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE", type: "xs:double"}
     ] 
   };
   var nkbAccountPredicates = new Array();
