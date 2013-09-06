@@ -375,7 +375,7 @@ com.marklogic.widgets.rdb2rdf.prototype._showStep4 = function() {
         //self._rdb2RdfDummy(tableNameList[saveCount], function(result) {           
           config.ingest.selection.table = [tableNameList[saveCount]];
           console.log(config);
-    	  mljs.samRdb2Rdf(config,function(result){
+    	  mljs.defaultconnection.samRdb2Rdf(config,function(result){
     	  $("#input-checker-" + saveCount + " span").show();
           saveCount+=1;
           nextSave0();
