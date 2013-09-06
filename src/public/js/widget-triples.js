@@ -952,6 +952,7 @@ com.marklogic.widgets.entityfacts.prototype.updateSubjectFacts = function(factsJ
     
     // list these facts
     this.facts = factsJson;
+    this.iri = this.facts.subject;
     
     // if predicate exists, just update relevant section, otherwise refresh whole widget
     if (undefined == factsJson.predicate) {
