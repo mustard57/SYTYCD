@@ -57,7 +57,13 @@ declare variable $c:ROXY-OPTIONS :=
 declare variable $c:ROXY-ROUTES :=
   <routes xmlns="http://marklogic.com/appservices/rest">
     <request uri="^/my/awesome/route" />
-    <request uri="^/$" endpoint="/mlsam/index.html"/>
+  	      <request uri="^/$" endpoint="/roxy/query-router.xqy">
+  	        <uri-param name="controller">mlsam</uri-param>
+  	        <uri-param name="func">index</uri-param>
+  	        <uri-param name="format">html</uri-param>
+  	        <http method="GET"/>
+  	        <http method="HEAD"/>
+  	      </request>
     <request uri="^/fonts/(.*)" endpoint="/public/fonts/$1"/>    
     {
       $def:ROXY-ROUTES/rest:request

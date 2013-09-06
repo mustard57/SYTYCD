@@ -374,6 +374,7 @@ com.marklogic.widgets.rdb2rdf.prototype._showStep4 = function() {
       } else {
         //self._rdb2RdfDummy(tableNameList[saveCount], function(result) {           
           config.ingest.selection.table = [tableNameList[saveCount]];
+          console.log(config);
     	  mljs.samRdb2Rdf(config,function(result){
     	  $("#input-checker-" + saveCount + " span").show();
           saveCount+=1;
@@ -386,10 +387,6 @@ com.marklogic.widgets.rdb2rdf.prototype._showStep4 = function() {
   nextSave0();
   
   
-	  
-	  
-	  
-  // TODO step 4 display actions
 };
 
 

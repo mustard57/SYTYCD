@@ -3349,14 +3349,15 @@ mljs.prototype.query.prototype.uris = function(constraint_name,uris) {
 };
 
 /**
- * Word query
+ * Term (Word or phrase, anywhere in a document) query
  */
-mljs.prototype.query.prototype.word = function(wordOrPhrase) {
-  return {
-    "word-query": {
+mljs.prototype.query.prototype.term = function(wordOrPhrase) {
+  var tq = {
+    "term-query": {
       "text": [wordOrPhrase]
     }
   };
+  return tq;
 };
 
 // TODO bounding box query
@@ -3471,6 +3472,8 @@ mljs.prototype.searchcontext = function() {
   this.optionsName = mljs.__dogenid();
   this.optionsExists = false;
   this.optionssavemode = "persist"; // persist or dynamic (v7 only)
+  
+  this.structuredContrib = new Array();
   
   this.collection = null;
   this.directory = null;
@@ -3716,6 +3719,7 @@ mljs.prototype.searchcontext.prototype.dostructuredquery = function(q,start) {
   if (0 != start && undefined != start) {
     ourstart = start;
   }
+  this.db.logger.debug("searchcontext.dostructuredquery: " + JSON.stringify(q) + ", ourstart: " + ourstart);
   
   var dos = function() {
    self.db.structuredSearch(q,self.optionsName,function(result) { 
@@ -3748,8 +3752,10 @@ mljs.prototype.searchcontext.prototype.contributeStructuredQuery = function(cont
     }
   }
   // execute structured query
-  var allqueries = { query: {"and-query": terms}}; // TODO replace with query builder
-  this.dostructuredquery(allqueries);
+  var qb = new this.db.query();
+  qb.query(qb.and(terms));
+  //var allqueries = { query: {"and-query": terms}}; // TODO replace with query builder
+  this.dostructuredquery(qb.toJson());
 };
 
 /**
@@ -4546,11 +4552,12 @@ mljs.prototype.semanticcontext.prototype.subjectContent = function(subjectIri,do
       }
       qb.query(qb.uris("uris",uris));
       var queryjson = qb.toJson();
+      mljs.defaultconnection.logger.debug("SEMANTIC CONTENT JSON QUERY: " + JSON.stringify(queryjson));
       
       if (self._contentMode == "full") {
         self._contentSearchContext.dostructuredquery(queryjson,1);
       } else if (self._contentMode == "contribute") {
-        self._contentSearchContext.contributeStructuredQuery("semanticcontext",queryjson.query[0]);
+        self._contentSearchContext.contributeStructuredQuery("semanticcontext",queryjson.query); // only one sub query so don't treat it as an array
       }
       /*
       mljs.defaultconnection.structuredSearch(queryjson,self._options,function(result) {

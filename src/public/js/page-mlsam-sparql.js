@@ -34,13 +34,15 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
     properties: [
       {name: "nic_client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"},
       {name: "nkb_customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"},
-      {name: "jointname", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"}
+      {name: "jointname", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"},
+      {name: "mentioned_in", iri: "http://marklogic.com/semantics/ontology/mentioned_in"}
     ]
   };
   var jointPredicates = new Array();
   jointPredicates["nic_client"] = {name: "nic_client", title: "Is New Insurance Co Client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"};
   jointPredicates["nkb_customer"] = {name: "nkb_customer", title: "Is National Kensington Bank Customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"};
   jointPredicates["jointname"] = {name: "jointname", title: "Has Full Name", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"};
+  jointPredicates["mentioned_in"] = {name: "mentioned_in", title: "Mentioned In", iri: "http://marklogic.com/semantics/ontology/mentioned_in"};
   
   var jointTriples = [
     {subjectType: "jointcustomer", objectType: "nicclient", predicateArray: ["nic_client"]},

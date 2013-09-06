@@ -216,7 +216,7 @@ com.marklogic.widgets.sparqlbar.prototype.updateSuggestions = function(suggestio
  */
 com.marklogic.widgets.sparqlbar.prototype.refresh = function() {
   var s = "";
-  s += "<div id='" + this.container + "-sparqlbar' class='sparqlbar'><div class='sparqlbar-inner'>";
+  s += "<div id='" + this.container + "-sparqlbar' class='mljswidget sparqlbar'><div class='well sparqlbar-inner'>";
   // hidden, moveable suggestions drop down
   s += "  <div id='" + this.container + "-sparqlbar-suggestions' class='sparqlbar-suggestions hidden'><i>None</i></div>";
   // what to retrieve
@@ -248,7 +248,7 @@ com.marklogic.widgets.sparqlbar.prototype.refresh = function() {
   
   s += "<div id='" + this.container + "-sparqlbar-terms' class='sparqlbar-terms'></div>";
   
-  s += "<div><input type='submit' value='Search'  class='sparqlbar-button' id='" + this.container + "-sparqlbar-button'/></div>";
+  s += "<div><input type='submit' value='Search'  class='btn btn-primary sparqlbar-button' id='" + this.container + "-sparqlbar-button'/></div>";
   
   /*
   s += "<div class='sparqlbar-results' id='" + this.container + "-sparqlbar-results'><i>No results</i></div>";
@@ -816,7 +816,7 @@ com.marklogic.widgets.sparqlresults.prototype.iriHandler = function(handler) {
 };
 
 com.marklogic.widgets.sparqlresults.prototype._refresh = function() {
-  var s = "<div id='" + this.container + "-sparqlresults' class='sparqlresults'>";
+  var s = "<div id='" + this.container + "-sparqlresults' class='mljswidget sparqlresults'>";
   s += "<h2 class='sparqlresults-title'>Subject Search Results</h2>";
   
   var irilinks = new Array();
@@ -981,7 +981,7 @@ com.marklogic.widgets.entityfacts.prototype._toggle = function() {
 };
 
 com.marklogic.widgets.entityfacts.prototype._refresh = function() {
-  var s = "<div id='" + this.container + "-entityfacts' class='entityfacts'>";
+  var s = "<div id='" + this.container + "-entityfacts' class='mljswidget entityfacts'>";
   if (this.reverse) {
     s += "<h2 class='entityfacts-title'>Entity Links</h2>";
     s += "<div id='" + this.container + "-entityfacts-facts'>";
@@ -1111,7 +1111,6 @@ com.marklogic.widgets.entityfacts.prototype._summariseInto = function(iri,elid) 
  * @param {string} iri - The IRI of the object to show facts about
  **/
 com.marklogic.widgets.entityfacts.prototype.updateEntity = function(iri) {
-  this.iri = iri;
   this.loading = true;
   this._refresh();
   
