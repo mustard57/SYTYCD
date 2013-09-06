@@ -21,6 +21,10 @@ import module namespace def = "http://marklogic.com/roxy/defaults" at "/roxy/con
 
 declare namespace rest = "http://marklogic.com/appservices/rest";
 
+
+declare variable $DEFAULT-CONTROLLER := "/";
+
+
 (:
  : ***********************************************
  : Overrides for the Default Roxy control options
@@ -53,6 +57,7 @@ declare variable $c:ROXY-OPTIONS :=
 declare variable $c:ROXY-ROUTES :=
   <routes xmlns="http://marklogic.com/appservices/rest">
     <request uri="^/my/awesome/route" />
+    <request uri="^/$" endpoint="/public/index.html"/>
     <request uri="^/fonts/(.*)" endpoint="/public/fonts/$1"/>    
     {
       $def:ROXY-ROUTES/rest:request
