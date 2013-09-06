@@ -278,6 +278,7 @@ com.marklogic.widgets.rdb2rdf.prototype._showStep3 = function() {
   var self = this;
   var mlsamUrl = $("#" + this.container + "-mlsam").val();
   var schemaName = $("#" + this.container + "-schema-select").val();
+  this.schema = schemaName;
   $(".selected-schema").html(schemaName);
   
   mljs.defaultconnection.samSchemaInfo(mlsamUrl,schemaName,function(result) {
@@ -325,44 +326,56 @@ com.marklogic.widgets.rdb2rdf.prototype._showStep4 = function() {
   {
     "ingest": {
 	  "database": {
-	    "samurl": samUrl
+	    "samurl": samUrl,
+	    "schema": this.schema
 	  },
 	  "create": {
 	    "graph": graphName
 	  },
 	  "selection": {
 	    "mode": "data", // Creates interdependencies between tables
-	    "tables": tableNameList, offset: 1, limit: 100
+	    "table": "", offset: 0, limit: 3000
 	  }
 	}
   };  
   
-  /*
+  var self = this;
+  
     var saveCount = 0;
     var nextSave0 = function() {
-      if (saveCount == alloptions.length) {
+      if (saveCount == tableNameList.length) {
         complete0();
       } else {
-        db.saveSearchOptions(alloptions[saveCount],alloptions[saveCount + 1], function(result) { // REPLACE WITH CALL TO RDB2RDF
-          saveCount+=2;
+        config.selection.table = tableNameList[saveCount];
+        db.rdb2rdf(config, function(result) { // REPLACE WITH CALL TO RDB2RDF
+          // TODO show complete image for this table name
+          
+          
+          // increment counter
+          saveCount += 1;
+          
           nextSave0();
         });
       }
     };
   
     var complete0 = function() {
-      log("- Done.");
-      // SHOW 'FINISHED' HERE
+      self._showStep5();
     };
-   */
-  
-	  
-	  
-	  
-  // TODO step 4 display actions
+   
+   nextSave0();
 };
 
 
   
+
+com.marklogic.widgets.rdb2rdf.prototype._showComplete = function() {
+  com.marklogic.widgets.hide(document.getElementById(this.container + "-step-1"),true);
+  com.marklogic.widgets.hide(document.getElementById(this.container + "-step-2"),true);
+  com.marklogic.widgets.hide(document.getElementById(this.container + "-step-3"),true);
+  com.marklogic.widgets.hide(document.getElementById(this.container + "-step-4"),true);
+  com.marklogic.widgets.hide(document.getElementById(this.container + "-complete"),false);
+  
+};
 
 
