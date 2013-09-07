@@ -85,7 +85,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   var nicClientTriples = [
     {subjectType: "nicclient", objectType: "nicaddress", predicateArray: ["nic_address"]},
-    {subjectType: "nicclient", objectType: "document", predicateArray: ["mentioned_in"]}
+    {subjectType: "nicclient", objectType: "document", predicateArray: ["nicmentioned_in"]}
   ];
 
   var nicAddressEntity = {

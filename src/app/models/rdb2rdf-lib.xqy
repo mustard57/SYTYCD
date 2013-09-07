@@ -88,6 +88,7 @@ declare function m:get-types-map() as map:map {
   let $o := map:put($types,"int","xs:integer")
   let $o := map:put($types,"varchar","xs:string")
   let $o := map:put($types,"datetime","xs:dateTime")
+  let $o := map:put($types,"double","xs:double")
   return $types
 };
 
@@ -238,9 +239,9 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
           let $rawtype := $descriptions[./COLUMN_NAME = $col/fn:local-name(.)]/COLUMN_TYPE/text()
           (:let $l := xdmp:log($rawtype):)
           let $basetype := fn:tokenize($rawtype,"\(")[1]
-          (:let $l := xdmp:log($basetype):)
+          let $l := xdmp:log($basetype)
           let $xmltype := map:get($types,$basetype)
-          (:let $l := xdmp:log($xmltype):)
+          let $l := xdmp:log($xmltype)
           
           (: format the $object primitive such that the data type is carried through :)
           let $object :=
@@ -257,7 +258,10 @@ declare function m:rdb2rdf-direct-partial($config as element(m:ingest)) as eleme
             sem:typed-literal($col/text(),sem:iri($xmltype))
       
           return
-            (sem:triple(sem:iri($subject),sem:iri($predicate),$object),map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1))
+            let $setl := sem:triple(sem:iri($subject),sem:iri($predicate),$object)
+            let $l := xdmp:log($setl)
+            return
+            ($setl,map:put($statsmap,"triplecount",map:get($statsmap,"triplecount") + 1))
             
         ,
           (: add any relationships to tables where we have foreign keys in our table columns :)
