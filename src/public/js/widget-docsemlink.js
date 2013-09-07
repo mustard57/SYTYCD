@@ -72,7 +72,7 @@ com.marklogic.widgets.docsemlink.prototype.updateResults = function(results) {
 com.marklogic.widgets.docsemlink.prototype._showSemanticInfo = function() {
   // get content context query
   // use OUR semantic context to find links back to customers
-  var sparql = "SELECT distinct ?jc ?fullname ?nkbcustomer ?nicclient ?nkbaccountbalance WHERE {\n";
+  var sparql = "SELECT distinct ?jc ?fullname ?nicclientid ?nkbcustomerid ?nkbaccountsortcode ?nkbaccountnumber ?nkbaccountbalance WHERE {\n";
   sparql += "  ?jc a <http://www.ourcompany.com/ontology/JointCustomer> .\n"
   sparql += "  ?jc <http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER> ?nkbcustomer .\n"
   sparql += "  ?jc <http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT> ?nicclient .\n"
@@ -89,15 +89,12 @@ com.marklogic.widgets.docsemlink.prototype._showSemanticInfo = function() {
   }
   
   sparql += ")) . \n";
+  sparql += "  ?nicclient <http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#CLIENT_ID> ?nicclientid . \n";
   sparql += "  ?nkbcustomer <http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID> ?nkbaccount .\n";
-  ?nkbcustomer <http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#CUSTOMER_ID> ?nkbcustomerid . 
+  sparql += "  ?nkbcustomer <http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#CUSTOMER_ID> ?nkbcustomerid .\n"; 
   sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE> ?nkbaccountbalance .\n";
-  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE> ?nkbaccountbalance . 
-  sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE> ?nkbaccountbalance .\n";
-  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE> ?nkbaccountsortcode . 
-  sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE> ?nkbaccountbalance .\n";
-  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER> ?nkbaccountnumber . 
-  sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER> ?nkbaccountnumber .\n";
+  sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE> ?nkbaccountsortcode . \n";
+  sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER> ?nkbaccountnumber . \n;"
   sparql += "}";
   
   mljs.defaultconnection.logger.debug("docsemlink._showSemanticInfo: sparql: \n" + sparql);
