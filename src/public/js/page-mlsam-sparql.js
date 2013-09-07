@@ -243,6 +243,15 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
     //var wgt = new com.marklogic.widgets.sparqlbar("sparqlbar");
     //wgt.addErrorListener(error.updateError);
+    
+  var kratu = new com.marklogic.widgets.kratu("kratu");
+  var listSemanticContext = new db.semanticcontext();
+  listSemanticContext.register(kratu);
+  
+  var docsemlink = new com.marklogic.widgets.docsemlink("docsemlink");
+  contentctx.register(docsemlink);
+  listSemanticContext.register(docsemlink);
+  docsemlink.setKratu("kratu");
   
   } catch (err) {
     error.show(err.message);

@@ -33,6 +33,7 @@ vh:add-value("sidebar",()),
 <script type="text/javascript" src="/js/widgets.js"></script>
 <script type="text/javascript" src="/js/widget-search.js"></script>
 <script type="text/javascript" src="/js/widget-triples.js"></script>
+<script type="text/javascript" src="/js/widget-kratu.js"></script>
 
 <script type="text/javascript" src="/js/page-mlsam-sparql.js"></script>
   
@@ -50,5 +51,8 @@ vh:add-value("sidebar",()),
    <div id="search-bar" class="grid_4">Bar</div>
    <div id="search-content" class="search-page grid_4">Search content goes here</div>
   </div></div>
+ </div>
+ <div class="container_12"> 
+   <div id="kratu" class="grid_12 hidden">kratu</div>
  </div>
 </div>
