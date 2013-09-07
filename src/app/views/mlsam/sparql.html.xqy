@@ -58,6 +58,6 @@ vh:add-value("sidebar",()),
   </div></div>
  </div>
  <div class="container_12"> 
-   <div id="kratu" class="grid_12 hidden">kratu</div>
+   <div id="kratu" class="grid_12 hidden"></div>
  </div>
 </div>
