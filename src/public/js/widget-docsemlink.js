@@ -1,3 +1,23 @@
+/*
+Copyright 2012 MarkLogic Corporation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+// global variable definitions
+com = window.com || {};
+com.marklogic = window.com.marklogic || {};
+com.marklogic.widgets = window.com.marklogic.widgets || {};
+
 com.marklogic.widgets.docsemlink = function(container) {
   this.container = container;
   
@@ -5,7 +25,7 @@ com.marklogic.widgets.docsemlink = function(container) {
 };
 
 com.marklogic.widgets.docsemlink.prototype.refresh = function() {
-  var s = "<a href='#' id='" + this.container + "-docsemlink'>View Customer Report</a>";
+  var s = "<a href='#' id='" + this.container + "-docsemlink' class='hidden'>View Customer Report</a>";
   document.getElementById(this.container).innerHTML = s;
   
   var self = this;
@@ -30,28 +50,29 @@ com.marklogic.widgets.docsemlink.prototype.setKratu = function(k) {
 };
 
 com.marklogic.widgets.docsemlink.prototype.updateResults = function(results) {
+  mljs.defaultconnection.logger.debug("docsemlink.updateResults: results: " + JSON.stringify(results) + ", typeof: " + (typeof results));
   // if results, then show link back
   // otherwise, hide us
-  if (false === results || true === results || undefined == results) {
-    com.marklogic.widgets.hide(document.getElementById(this.container),true);
+  if (undefined == results || "boolean" == typeof results) {
+    com.marklogic.widgets.hide(document.getElementById(this.container+"-docsemlink"),true);
   } else {
     this.uris = new Array();
     for (var i = 0, max = results.results.length, res; i < max;i++) {
       res = results.results[i];
       mljs.defaultconnection.logger.debug("docsemlink.updateResults: uri: " + res.uri);
-      if (!uris.contains(res.uri)) {
-        uris.push(res.uri);
+      if (!this.uris.contains(res.uri)) {
+        this.uris.push(res.uri);
       }
     }
     
-    com.marklogic.widgets.hide(document.getElementById(this.container),false);
+    com.marklogic.widgets.hide(document.getElementById(this.container+"-docsemlink"),false);
   }
 };
 
 com.marklogic.widgets.docsemlink.prototype._showSemanticInfo = function() {
   // get content context query
   // use OUR semantic context to find links back to customers
-  var sparql = "SELECT ?jc ?fullname ?nkbcustomer ?nicclient ?nkbaccountbalance WHERE {\n";
+  var sparql = "SELECT distinct ?jc ?fullname ?nkbcustomer ?nicclient ?nkbaccountbalance WHERE {\n";
   sparql += "  ?jc a <http://www.ourcompany.com/ontology/JointCustomer> .\n"
   sparql += "  ?jc <http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER> ?nkbcustomer .\n"
   sparql += "  ?jc <http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT> ?nicclient .\n"
@@ -61,15 +82,22 @@ com.marklogic.widgets.docsemlink.prototype._showSemanticInfo = function() {
   
   // specify URI restrictions
   for (var i = 0, max = this.uris.length;i < max;i++) {
-    sparql += "\"" + this.uris[i] + "\"";
     if (i > 0) {
       sparql += ",";
     }
+    sparql += "<" + this.uris[i] + ">";
   }
   
   sparql += ")) . \n";
   sparql += "  ?nkbcustomer <http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID> ?nkbaccount .\n";
+  ?nkbcustomer <http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#CUSTOMER_ID> ?nkbcustomerid . 
   sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE> ?nkbaccountbalance .\n";
+  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE> ?nkbaccountbalance . 
+  sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE> ?nkbaccountbalance .\n";
+  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE> ?nkbaccountsortcode . 
+  sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE> ?nkbaccountbalance .\n";
+  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER> ?nkbaccountnumber . 
+  sparql += "  ?nkbaccount <http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER> ?nkbaccountnumber .\n";
   sparql += "}";
   
   mljs.defaultconnection.logger.debug("docsemlink._showSemanticInfo: sparql: \n" + sparql);

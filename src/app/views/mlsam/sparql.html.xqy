@@ -24,6 +24,7 @@ vh:add-value("sidebar",()),
 <div xmlns="http://www.w3.org/1999/xhtml" class="mlsam sparql">
 
 <link rel="stylesheet" type="text/css" href="/css/widgets.css" />
+<link rel="stylesheet" type="text/css" href="/css/kratu.css" />
 <link rel="stylesheet" type="text/css" href="/css/page-mlsam-sparql.css" />
 <link rel="stylesheet" type="text/css" href="/css/960/960.css" />
 <script type="text/javascript" src="/js/lib/jquery-1.7.1.min.js"></script>
@@ -31,9 +32,12 @@ vh:add-value("sidebar",()),
 <script type="text/javascript" src="/js/mljs-xhr2.js"></script>
 
 <script type="text/javascript" src="/js/widgets.js"></script>
+<script type="text/javascript" src="/js/kratu.js"></script>
+<script type="text/javascript" src="/js/dataproviders/json.js"></script>
 <script type="text/javascript" src="/js/widget-search.js"></script>
 <script type="text/javascript" src="/js/widget-triples.js"></script>
 <script type="text/javascript" src="/js/widget-kratu.js"></script>
+<script type="text/javascript" src="/js/widget-docsemlink.js"></script>
 
 <script type="text/javascript" src="/js/page-mlsam-sparql.js"></script>
   
@@ -50,6 +54,7 @@ vh:add-value("sidebar",()),
    <div class='mljswidget grid_4'><h2 class='title'>Related Documents</h2></div>
    <div id="search-bar" class="grid_4">Bar</div>
    <div id="search-content" class="search-page grid_4">Search content goes here</div>
+   <div class='mljswidget grid_4' id='docsemlink'>dsl</div>
   </div></div>
  </div>
  <div class="container_12"> 
