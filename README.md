@@ -1,6 +1,6 @@
 # SYTYCD - Team KoJAk
 
-This repository holds the submission to So You Think You Can Demo for Team KoJAk = Ken Tune, Jochen Joerg and Adam Fowler. Please note that Adam Fowler started on 31 Aug 2012 and so qualifies as a Newbie.
+This repository holds the submission to So You Think You Can Demo for Team KoJAk, K=Ken Tune, J=Jochen Joerg and A=Adam Fowler. Please note that Adam Fowler started on 31 Aug 2012 and so qualifies as a Newbie.
 
 ## Scenario
 
@@ -29,6 +29,10 @@ the whole demonstration from start to finish though, with background information
 Triples allow storage of any facts. Tables, rows and columns are just facts about entities. So we represent data as triples with flexibility to spare. It is much easier now to ‘join’ the data  – including the fact that the rdf representation of RDMBS data encodes foreign and primary key relationships making ‘natural’ joins natural in our environment. Inferencing to add facts does not alter the original data or relationships. The mapping we've used is the W3C RDB2RDF Direct Mapping, an open standard released as a recommendation in Sep 2012.
 
 We’ve never had a way of generically pulling data out of an RDBMS and now we do. That on its own is pretty impressive in our view. The ability to join to other RDBMS schema, plus documents and other semantic resources is pretty mind blowing. Add to that the fact that Adam’s MLJS widgets make it a snap. (Adam: Thanks Ken!)
+
+Note that the inferencing step could not make use of Sparql CONSTRUCT syntax because this generations bnodes (subject's without an IRI). This means that it is not possible to say 'Give me all the facts for Subject Y' with no prior knowledge of the subject. (I.e. some uniquely identifying property). This means the 'Entity Facts' widget could not load any Joint Customer's facts. Thus the inferencing step uses Sparql followed by a graph-insert, with a step in XQuery for generating unique Joint Customer names. Note that this is likely to be required in real life for such a situation anyway, as the combined company will want a unique reference creating for the Joint Customer record.
+
+Also note that the REST endpoints (and specifically the W3C Sparql protocol and graph store API) do NOT provide the ability to pass a content search to restrict a sparql query. Hence the combining of semantic and content searches was done in JavaScript. There is no difference practically in doing this in JavaScript that using sem:sparql($mysparql, $myquery) in XQuery - except no REST Extension is required by doing this in JavaScript. Hence doing this in JavaScript for time's sake. This would be a good candidate for a REST endpoint though.
 
 ## Demo Script
 
@@ -84,6 +88,7 @@ In the future potential avenues of extension include:-
 - Other UI additions
  - HighCharts or network node widgets over triple search results
 - Add a query that is mainly a content query, but with some aspects of triples (we did the opposite, concentrating on the triples but including basic document search. As we're all familiar with content search this seemed logical)
+- Create a custom REST extension that allowed a combined structured query to restrict a sparql query, and a further sparql query to fetch related information based on the results of the first combined query. This currently is not possible in a single call in either the REST API or in sem:sparql, and is viewed by Adam Fowler as a restriction that needs addressing (after going through this demo exercise)
 - Add support for generating an ontology description automatically to the rdb2rdf rest extension as an output of the import operation
 - Amalgamate data from document range indexes, sparql result triples, and live data from an external RDBMS (i.e. no import step needed) in to a combined customer view information page (dashboard/explore)
 - Take the start of the ontology we developed for document relationships and extend that for common MarkLogic modelling needs with semantic data (mentioned-in, derived-from, and other relationships/facts about the documents - reviewer, originator, project etc.)
@@ -97,3 +102,77 @@ In addition to the usual MarkLogic open standards, this demo made use of Sparql,
 960.css and bootstrap.css were used to control the layout. Roxy was used as the configuration and deployment mechanism for MarkLogic. Google Kratu was used as a tabular visualisation of triple data (sparql results). MLJS was used for abstracting the REST calls and to provide visualisation widgets. This is licensed, like Roxy, under the Apache 2 license. MySQL was used as the relational database. Tomcat was used to host the MLSAM instance for database communication. MLSAM's sql.xqy extension was used to communicate to MLSAM. ECMAScript 3 (JavaScript) and CSS 2 and 3 were used for the UI.
 
 No proprietary software or platform specific hacks were used for this demonstration, maximising re-usability.
+
+## Running the Demo
+
+Note that the demo is accessible on this server from a web browser: http://kojak.demo.marklogic.com:8040/
+
+## Setting up the demo
+
+You will need to:-
+A. Set up a MySQL relational database
+B. Run the data generation script
+C. Set up MLSAM on Tomcat
+D. Install ML 7 EA 3 (preferably a nightly. We used the 15th Aug nightly)
+E. Run through the import wizard
+F. Import the example documents
+G. Run the inferencing scripts
+H. Perform a Semantic and Content combined search
+
+### A. Set up a MySQL relational database
+
+Ken?
+
+### B. Run the data generation script
+
+Ken?
+
+### C. Set up MLSAM on Tomcat
+
+Jochen?
+
+### D. Install ML 7 EA 3
+
+We tested using an EA nightly build from 15 Aug on CentOS Linux. Follow the standard install instructions. Follow the Roxy instructions next to get a working database.
+
+To get the databases created:-
+
+- Download the zip file from GitHub
+- Unpack in a directory of your choice
+- Edit deploy/build.properties with a text editor
+- Change your local hostname, username and password for your server
+- Save the file
+- Open a command prompt
+- Execute ./ml local bootstrap -v
+- Execute ./ml local deploy modules -v
+- Visit http://yourserver:8000/qconsole
+- Import the Workspace in the root of the GitHub project called workspace.xml
+
+### E. Run through the import wizard
+
+- Run through the import stage as per the demo video
+- Replace the MLSAM URL for the one for your system your created in step C above
+- Select the National Insurance Co Schema
+- Hit import to import all databases
+- Repeat the process for Kensington National Bank
+
+### F. Import the documents
+
+In QConsole, run these named queries:-
+- Insert Document 1
+- Insert Document 2
+- doc 3
+- doc 5
+- doc 6 P
+- doc 7 NP
+
+### G. Run the inferencing scripts
+
+In QConsole, execute in order these queries:-
+- Inferencing Insert
+- NKB Account Inferencing
+- docinferencing
+
+### H. Perform a semantic and content combined search
+
+Run through the final steps in the web interface as per the demo video for the search section.
