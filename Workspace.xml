@@ -1,0 +1,272 @@
+<export><workspace name="Workspace"><query name="Query 1" focus="false" active="false" mode="xquery"></query><query name="list triples" focus="false" active="false" mode="sparql"></query><query name="insert triples" focus="false" active="false" mode="xquery"></query><query name="fetch triple doc" focus="false" active="false" mode="xquery"></query><query name="deltriples" focus="false" active="false" mode="xquery"></query><query name="Insert Document 1" focus="false" active="true" mode="xquery">xquery version "1.0-ml";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+declare namespace nic = "http://newinsurance.com/ns/nic";
+declare namespace h = "http://www.w3.org/1999/xhtml";
+
+xdmp:document-insert("/docs/1.html",
+&lt;h:html&gt;&lt;h:head&gt;&lt;h:title&gt;First doc&lt;/h:title&gt;
+&lt;sem:triples&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT/CLIENT_ID=2011&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://marklogic.com/semantics/ontology/mentioned_in&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;/docs/1.html&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;/docs/1.html&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;http://marklogic.com/semantics/ontology/Document&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+&lt;/sem:triples&gt;
+&lt;/h:head&gt;&lt;h:body&gt;
+ &lt;h:p&gt;Dear Sir, I'm writing to claim for an accident I had when I hit a pedestrian in my car.&lt;/h:p&gt;
+ &lt;h:p&gt;My Client ID is &lt;nic:client-id&gt;2011&lt;/nic:client-id&gt;&lt;/h:p&gt;
+&lt;/h:body&gt;
+&lt;/h:html&gt;,
+xdmp:default-permissions(),(xdmp:default-collections(),"mynamedgraph"))</query><query name="fetch doc subject pedestrian" focus="false" active="false" mode="xquery"></query><query name="Insert Document 2" focus="false" active="true" mode="xquery">xquery version "1.0-ml";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+declare namespace nic = "http://newinsurance.com/ns/nic";
+declare namespace h = "http://www.w3.org/1999/xhtml";
+
+xdmp:document-insert("/docs/2.html",
+&lt;h:html&gt;&lt;h:head&gt;&lt;h:title&gt;Second doc&lt;/h:title&gt;
+&lt;sem:triples&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT/CLIENT_ID=2011&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://marklogic.com/semantics/ontology/mentioned_in&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;/docs/2.html&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;/docs/2.html&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;http://marklogic.com/semantics/ontology/Document&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+&lt;/sem:triples&gt;
+&lt;/h:head&gt;&lt;h:body&gt;
+ &lt;h:p&gt;Dear Sir, I recently reversed in to a fench and wish to make a claim.&lt;/h:p&gt;
+ &lt;h:p&gt;My Client ID is &lt;nic:client-id&gt;2011&lt;/nic:client-id&gt;&lt;/h:p&gt;
+&lt;/h:body&gt;
+&lt;/h:html&gt;,
+xdmp:default-permissions(),(xdmp:default-collections(),"mynamedgraph"))</query><query name="query both" focus="false" active="false" mode="xquery"></query><query name="Inferencing" focus="false" active="false" mode="sparql">CONSTRUCT {
+  _:1 a &lt;http://www.ourcompany.com/ontology/JointCustomer&gt; .
+  _:1 &lt;http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER&gt; ?c1 .
+  _:1 &lt;http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT&gt; ?c2 .
+} WHERE {
+  ?c1 a &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER&gt; .
+  ?c1 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#DATE_OF_BIRTH&gt; ?dob1 .
+  ?c1 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#SURNAME&gt; ?fam1 .
+  ?c1 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#FIRST_NAME&gt; ?first1 .
+  ?c2 a &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT&gt; .
+  ?c2 &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#DOB&gt; ?dob2 .
+  ?c2 &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME&gt; ?fam2 .
+  ?c2 &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FIRST_NAME&gt; ?first2 .
+  FILTER (?dob1 = ?dob2) FILTER ( ?fam1 = ?fam2) FILTER( ?first1 = ?first2  )
+} LIMIT 10</query><query name="Inferencing Insert" focus="false" active="true" mode="xquery">import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+
+let $tripmaps := sem:sparql("SELECT *
+ WHERE {
+  ?c1 a &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER&gt; .
+  ?c1 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#DATE_OF_BIRTH&gt; ?dob1 .
+  ?c1 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#SURNAME&gt; ?fam1 .
+  ?c1 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#TITLE&gt; ?title1 .
+  ?c1 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#FIRST_NAME&gt; ?first1 .
+  ?c2 a &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT&gt; .
+  ?c2 &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#DOB&gt; ?dob2 .
+  ?c2 &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FAMILY_NAME&gt; ?fam2 .
+  ?c2 &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#FIRST_NAME&gt; ?first2 .
+  FILTER (?dob1 = ?dob2) FILTER ( ?fam1 = ?fam2) FILTER( ?first1 = ?first2  )
+}")
+let $semtriples :=
+  for $tripmap in $tripmaps
+  let $rnd := fn:concat("/triples/inferencing/JointCustomer/",xs:string(xdmp:random(1000000000000)))
+  let $fullname := fn:concat(map:get($tripmap,"title1")," ",map:get($tripmap,"first1")," ",map:get($tripmap,"fam1"))
+  return
+  (
+    sem:triple(sem:iri($rnd),sem:iri("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),sem:iri("http://www.ourcompany.com/ontology/JointCustomer")),
+    sem:triple(sem:iri($rnd),sem:iri("http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER"),sem:iri(map:get($tripmap,"c1"))),
+    sem:triple(sem:iri($rnd),sem:iri("http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT"),sem:iri(map:get($tripmap,"c2"))),
+    sem:triple(sem:iri($rnd),sem:iri("http://www.ourcompany.com/ontology/JointCustomer/name"),sem:typed-literal($fullname,sem:iri("xs:string")))
+  )
+return sem:graph-insert(sem:iri("inferencing"),$semtriples)
+</query><query name="Inferencing Query" focus="false" active="false" mode="sparql">SELECT ?s ?kenid ?nicid ?balance WHERE {
+  ?s a &lt;http://www.ourcompany.com/ontology/JointCustomer&gt; .
+  ?s &lt;http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER&gt; ?ken .
+  ?s &lt;http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT&gt; ?nic .
+  
+  ?ken &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#CUSTOMER_ID&gt; ?kenid .
+  ?acc &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ref-CUSTOMER_ID&gt; ?ken .
+  ?acc &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE&gt; ?balance .
+  
+  ?nic &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#CLIENT_ID&gt; ?nicid .
+ 
+}</query><query name="All rdf types" focus="false" active="false" mode="sparql"></query><query name="list unique graphs" focus="false" active="false" mode="sparql"></query><query name="del inferences" focus="false" active="true" mode="xquery">xquery version "1.0-ml";
+for $docuri in fn:collection(("inferencing","inferencing-documents","inferencing-account"))/fn:base-uri(.)
+return xdmp:document-delete($docuri)</query><query name="query bnode" focus="false" active="false" mode="sparql"></query><query name="get facts" focus="false" active="false" mode="sparql"></query><query name="List Joint Customers" focus="false" active="false" mode="sparql"></query><query name="get trips" focus="false" active="false" mode="xquery">xquery version "1.0-ml";
+fn:doc("/triplestore/97a9e7ac8044072a.xml")</query><query name="Query 2" focus="false" active="false" mode="sparql"></query><query name="doc 3" focus="false" active="true" mode="xquery">xquery version "1.0-ml";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+declare namespace nic = "http://newinsurance.com/ns/nic";
+declare namespace h = "http://www.w3.org/1999/xhtml";
+
+xdmp:document-insert("/docs/3.html",
+&lt;h:html&gt;&lt;h:head&gt;&lt;h:title&gt;Third doc&lt;/h:title&gt;
+&lt;sem:triples&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT/CLIENT_ID=2162&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://marklogic.com/semantics/ontology/mentioned_in&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;/docs/3.html&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;/docs/3.html&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;http://marklogic.com/semantics/ontology/Document&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+&lt;/sem:triples&gt;
+&lt;/h:head&gt;&lt;h:body&gt;
+ &lt;h:p&gt;I had a prang a couple of weeks ago on a roundabout with my car and another vehicle.&lt;/h:p&gt;
+ &lt;h:p&gt;My Client ID is &lt;nic:client-id&gt;2162&lt;/nic:client-id&gt;&lt;/h:p&gt;
+&lt;/h:body&gt;
+&lt;/h:html&gt;,
+xdmp:default-permissions(),(xdmp:default-collections(),"mynamedgraph"))</query><query name="NKB Account Inferencing" focus="false" active="true" mode="xquery">import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+
+ sem:graph-insert(sem:iri("inferencing-account"),sem:sparql("
+CONSTRUCT {
+  ?customer &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID&gt; ?account .
+} WHERE {
+  ?customer a &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER&gt; .
+  ?account &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ref-CUSTOMER_ID&gt; ?customer .
+}"))
+</query><query name="solution sparql" focus="false" active="false" mode="sparql">PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt; 
+PREFIX rdfs: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX so: &lt;http://www.schema.org/&gt; 
+SELECT distinct ?jointcustomer WHERE { 
+  ?jointcustomer rdfs:type &lt;http://www.ourcompany.com/ontology/JointCustomer&gt; . 
+  ?jointcustomer &lt;http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER&gt; ?nkbcustomer1 . 
+  ?nkbcustomer1 rdfs:type &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER&gt; . 
+  ?nkbcustomer1 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID&gt; ?nkbaccount2 . 
+  ?nkbaccount2 rdfs:type &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT&gt; . 
+  ?nkbaccount2 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE&gt; ?balance . 
+  #FILTER (?a83400 &lt; "1000"^^&lt;xs:integer&gt; ) .
+  ?jointcustomer &lt;http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT&gt; ?nicclient3 . 
+  ?nicclient3 rdfs:type &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT&gt; . 
+} OFFSET 0 LIMIT 10</query><query name="Query 3" focus="false" active="false" mode="sparql">PREFIX rdfs: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+select * WHERE {
+  ?nkbaccount2 rdfs:type &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT&gt; . 
+  ?nkbaccount2 &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE&gt; ?balance . 
+        FILTER (?balance &lt; "100"^^&lt;xs:double&gt; ) .
+  #?nkbaccount2 ?p ?o .
+} LIMIT 50</query><query name="find balance" focus="false" active="false" mode="xquery">import module namespace search="http://marklogic.com/appservices/search"
+                    at "/MarkLogic/appservices/search/search.xqy";
+search:search("http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE")</query><query name="sem double" focus="false" active="false" mode="xquery">xquery version "1.0-ml";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+
+sem:graph-insert(sem:iri("double-test"),
+sem:triple(sem:iri("doublesubject"),sem:iri("doublepredicate"),sem:unknown("72.31", sem:iri("xs:double")))
+)</query><query name="Query 4" focus="false" active="false" mode="xquery">xquery version "1.0-ml";
+fn:doc("/triplestore/292dd2a45c6a15a8.xml")</query><query name="Query 5" focus="false" active="false" mode="xquery">xquery version "1.0-ml";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+
+
+xdmp:estimate(fn:doc()//sem:triple/sem:object[@datatype = "xs:double"])</query><query name="docinferencing" focus="false" active="true" mode="xquery">
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+
+ sem:graph-insert(sem:iri("inferencing-documents"),sem:sparql(
+"
+CONSTRUCT {
+  ?jc &lt;http://marklogic.com/semantics/ontology/mentioned_in&gt; ?docuri .
+} WHERE {
+  ?jc a &lt;http://www.ourcompany.com/ontology/JointCustomer&gt; .
+  ?jc &lt;http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT&gt; ?c .
+  ?c a &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT&gt; .
+  ?c &lt;http://marklogic.com/semantics/ontology/mentioned_in&gt; ?docuri .
+}
+"
+))</query><query name="Query 6" focus="false" active="false" mode="sparql">select * WHERE {
+  ?jc a &lt;http://www.ourcompany.com/ontology/JointCustomer&gt; .
+  ?jc &lt;http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT&gt; ?c .
+  ?c a &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT&gt; .
+  ?c &lt;http://marklogic.com/semantics/ontology/mentioned_in&gt; ?docuri .
+}</query><query name="final sparql" focus="false" active="false" mode="sparql"></query><query name="Doc 5" focus="false" active="true" mode="xquery">xquery version "1.0-ml";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+declare namespace nic = "http://newinsurance.com/ns/nic";
+declare namespace h = "http://www.w3.org/1999/xhtml";
+
+xdmp:document-insert("/docs/5.html",
+&lt;h:html&gt;&lt;h:head&gt;&lt;h:title&gt;Fifth doc&lt;/h:title&gt;
+&lt;sem:triples&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT/CLIENT_ID=2239&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://marklogic.com/semantics/ontology/mentioned_in&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;/docs/5.html&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;/docs/5.html&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;http://marklogic.com/semantics/ontology/Document&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+&lt;/sem:triples&gt;
+&lt;/h:head&gt;&lt;h:body&gt;
+ &lt;h:p&gt;I am writing to claim for an accident I recently had in my car. A drunk pedestrian on a night out stumbled in to the road from between two parked cars. I had no time to swerve, so hit him.&lt;/h:p&gt;
+ &lt;h:p&gt;My Client ID is &lt;nic:client-id&gt;2239&lt;/nic:client-id&gt;&lt;/h:p&gt;
+&lt;/h:body&gt;
+&lt;/h:html&gt;,
+xdmp:default-permissions(),(xdmp:default-collections(),"mynamedgraph"))</query><query name="Doc 6 P" focus="true" active="true" mode="xquery">xquery version "1.0-ml";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+declare namespace nic = "http://newinsurance.com/ns/nic";
+declare namespace h = "http://www.w3.org/1999/xhtml";
+
+xdmp:document-insert("/docs/6.html",
+&lt;h:html&gt;&lt;h:head&gt;&lt;h:title&gt;Sixth doc&lt;/h:title&gt;
+&lt;sem:triples&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT/CLIENT_ID=2256&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://marklogic.com/semantics/ontology/mentioned_in&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;/docs/6.html&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;/docs/6.html&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;http://marklogic.com/semantics/ontology/Document&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+&lt;/sem:triples&gt;
+&lt;/h:head&gt;&lt;h:body&gt;
+ &lt;h:p&gt;I'm contacting you today about a claim where I hit a pedestrian down a dark lane near my house.&lt;/h:p&gt;
+ &lt;h:p&gt;My Client ID is &lt;nic:client-id&gt;2256&lt;/nic:client-id&gt;&lt;/h:p&gt;
+&lt;/h:body&gt;
+&lt;/h:html&gt;,
+xdmp:default-permissions(),(xdmp:default-collections(),"mynamedgraph"))</query><query name="Doc 7 NP" focus="false" active="true" mode="xquery">xquery version "1.0-ml";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
+declare namespace nic = "http://newinsurance.com/ns/nic";
+declare namespace h = "http://www.w3.org/1999/xhtml";
+
+xdmp:document-insert("/docs/7.html",
+&lt;h:html&gt;&lt;h:head&gt;&lt;h:title&gt;Seventh doc&lt;/h:title&gt;
+&lt;sem:triples&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT/CLIENT_ID=2027&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://marklogic.com/semantics/ontology/mentioned_in&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;/docs/7.html&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+ &lt;sem:triple&gt;
+  &lt;sem:subject&gt;/docs/7.html&lt;/sem:subject&gt;
+  &lt;sem:predicate&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&lt;/sem:predicate&gt;
+  &lt;sem:object&gt;http://marklogic.com/semantics/ontology/Document&lt;/sem:object&gt;
+ &lt;/sem:triple&gt;
+&lt;/sem:triples&gt;
+&lt;/h:head&gt;&lt;h:body&gt;
+ &lt;h:p&gt;I damaged my car recently in my garage.&lt;/h:p&gt;
+ &lt;h:p&gt;My Client ID is &lt;nic:client-id&gt;2027&lt;/nic:client-id&gt;&lt;/h:p&gt;
+&lt;/h:body&gt;
+&lt;/h:html&gt;,
+xdmp:default-permissions(),(xdmp:default-collections(),"mynamedgraph"))</query><query name="download" focus="false" active="false" mode="sparql">SELECT  distinct ?jc ?fullname ?nicclientid ?nkbcustomerid ?nkbaccountsortcode ?nkbaccountnumber ?nkbaccountbalance WHERE { 
+  ?jc a &lt;http://www.ourcompany.com/ontology/JointCustomer&gt; . 
+  ?jc &lt;http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER&gt; ?nkbcustomer . 
+  ?jc &lt;http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT&gt; ?nicclient . 
+  ?jc &lt;http://www.ourcompany.com/ontology/JointCustomer/name&gt; ?fullname . 
+  ?nicclient &lt;http://marklogic.com/semantics/ontology/mentioned_in&gt; ?docuri . 
+  FILTER (?docuri IN ( &lt;/docs/7.html&gt;,&lt;/docs/1.html&gt;,&lt;/docs/2.html&gt;,&lt;/docs/3.html&gt;,&lt;/docs/5.html&gt;,&lt;/docs/6.html&gt;)) . 
+  ?nicclient &lt;http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#CLIENT_ID&gt; ?nicclientid . 
+  ?nkbcustomer &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID&gt; ?nkbaccount . 
+  ?nkbcustomer &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#CUSTOMER_ID&gt; ?nkbcustomerid . 
+  ?nkbaccount &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE&gt; ?nkbaccountbalance . 
+  ?nkbaccount &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE&gt; ?nkbaccountsortcode . 
+  ?nkbaccount &lt;http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER&gt; ?nkbaccountnumber . 
+}</query></workspace></export>
