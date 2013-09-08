@@ -102,7 +102,7 @@ function ext:post(
   let $out := m:rdb2rdf-direct-partial($inxml)
   let $outlog := map:put($context, "output-types", $preftype)
   return
-    (xdmp:set-response-code(200, "OK"),
+    (xdmp:set-response-code(200, "OK"),xdmp:commit(),
       if ("application/xml" = $preftype) then 
         document{$out}
       else 

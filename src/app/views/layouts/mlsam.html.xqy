@@ -29,7 +29,7 @@ xdmp:set-response-content-type("text/html"),
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta charset="utf-8" />
-    <title>kojak-mlsam</title>
+    <title>KoJAk-SYTYCD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content="jojrg"/>
@@ -56,13 +56,13 @@ xdmp:set-response-content-type("text/html"),
             <span class="icon-bar">&nbsp;</span>
             <span class="icon-bar">&nbsp;</span>
           </button>
-          <a class="navbar-brand" href="/mlsam.html">KoJAk</a>
+          <a class="navbar-brand" href="/">KoJAk</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/mlsam/rdb2rdf">Import</a></li>
+            <li><a href="/mlsam/sparql">Search</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -70,31 +70,15 @@ xdmp:set-response-content-type("text/html"),
 
 
   <div class="container">
-      <div id="search" class="row">
-        <div class="col-md-3">
-        &nbsp;
-        </div>
-        <div class="col-md-9 searchinput">
-         <form class="form-inline" role="form">
-           <div class="form-group">
-             <input type="text" class="form-control searchbar" id="searchinput" placeholder="Search..."/>
-           </div>
-           <button type="submit" class="btn btn-primary">Search</button>
-           {$hiddenFormInput}
-         </form>
-        </div>  
-        
-      </div>       
  
       <div id="searchresult" class="row">
           {$view}
         
       </div> <!-- end of row-fluid --> 
 
-      <hr/>
-
+    <hr/>
       <footer>
-        <p>© MarkLogic 2013</p>
+        <p>© MarkLogic 2013, Yes, we think we can demo :-)</p>
       </footer>
 
   </div><!--/.container-fluid-->

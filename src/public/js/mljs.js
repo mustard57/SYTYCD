@@ -3348,6 +3348,18 @@ mljs.prototype.query.prototype.uris = function(constraint_name,uris) {
   }
 };
 
+/**
+ * Term (Word or phrase, anywhere in a document) query
+ */
+mljs.prototype.query.prototype.term = function(wordOrPhrase) {
+  var tq = {
+    "term-query": {
+      "text": [wordOrPhrase]
+    }
+  };
+  return tq;
+};
+
 // TODO bounding box query
 
 // TODO within polygon query
@@ -3461,6 +3473,8 @@ mljs.prototype.searchcontext = function() {
   this.optionsExists = false;
   this.optionssavemode = "persist"; // persist or dynamic (v7 only)
   
+  this.structuredContrib = new Array();
+  
   this.collection = null;
   this.directory = null;
   this.transform = null;
@@ -3551,6 +3565,8 @@ mljs.prototype.searchcontext.prototype.setOptions = function(name,options) {
   this.defaultSort = this._options.options["sort-order"];
   
   this.optionsPublisher.publish(this._options.options);
+  
+  this.structuredContrib = new Array();
   
   // TODO support V7 dynamic query options capability rather than always saving
   
@@ -3703,6 +3719,7 @@ mljs.prototype.searchcontext.prototype.dostructuredquery = function(q,start) {
   if (0 != start && undefined != start) {
     ourstart = start;
   }
+  this.db.logger.debug("searchcontext.dostructuredquery: " + JSON.stringify(q) + ", ourstart: " + ourstart);
   
   var dos = function() {
    self.db.structuredSearch(q,self.optionsName,function(result) { 
@@ -3717,6 +3734,28 @@ mljs.prototype.searchcontext.prototype.dostructuredquery = function(q,start) {
   };
   
   this._persistAndDo(dos);
+};
+
+/**
+ * For situations where many objects are contributing top level structured query terms that need AND-ing together.
+ * 
+ * NOTE: queryTerm needs to be the result of queryBuilder.toJson().query[0] and not the top level query JSON itself - i.e. we need a term, not a full query object.
+ */
+mljs.prototype.searchcontext.prototype.contributeStructuredQuery = function(contributor,queryTerm,start_opt) {
+  this.structuredContrib[contributor] = queryTerm;
+  
+  // build structure query from all terms
+  var terms = new Array();
+  for (var cont in this.structuredContrib) {
+    if ("object" == typeof this.structuredContrib[cont]) {
+      terms.push(this.structuredContrib[cont]);
+    }
+  }
+  // execute structured query
+  var qb = new this.db.query();
+  qb.query(qb.and(terms));
+  //var allqueries = { query: {"and-query": terms}}; // TODO replace with query builder
+  this.dostructuredquery(qb.toJson());
 };
 
 /**
@@ -4371,10 +4410,21 @@ mljs.prototype.semanticcontext = function() {
   this._restrictSearchContext = null; // the searchcontext instance to update with a cts:triples-range-query when our subjectQuery is updated
   this._contentSearchContext = null; // The search context to replace the query for when finding related content to this SPARQL query (where a result IRI is a document URI)
   
+  this._contentMode = "full"; // or "contribute" - whether to executed a structured query (full) or just provide a single term (contribute)
+  
   this._subjectResultsPublisher = new com.marklogic.events.Publisher();
   this._subjectFactsPublisher = new com.marklogic.events.Publisher();
   this._suggestionsPublisher = new com.marklogic.events.Publisher();
+  this._factsPublisher = new com.marklogic.events.Publisher(); // publish facts that can be associated to many subjects - normally for pulling back a result per subject, with many facts per 'row'
   this._errorPublisher = new com.marklogic.events.Publisher();
+};
+
+mljs.prototype.semanticcontext.prototype.setContentMode = function(mode) {
+  this._contentMode = mode;
+};
+
+mljs.prototype.semanticcontext.prototype.getContentMode = function() {
+  return this._contentMode;
 };
 
 mljs.prototype.semanticcontext.prototype.setContentContext = function(ctx) {
@@ -4408,6 +4458,9 @@ mljs.prototype.semanticcontext.prototype.register = function(obj) {
   }
   if (undefined != obj.updateSubjectFacts) {
     this._subjectFactsPublisher.subscribe(function(facts) {obj.updateSubjectFacts(facts)});
+  }
+  if (undefined != obj.updateFacts) {
+    this._factsPublisher.subscribe(function(facts) {obj.updateFacts(facts)});
   }
   if (undefined != obj.updateSuggestions) {
     this._suggestionsPublisher.subscribe(function(suggestions) {obj.updateSuggestions(suggestions)});
@@ -4465,6 +4518,7 @@ mljs.prototype.semanticcontext.prototype.subjectFacts = function(subjectIri) {
   this.getFacts(subjectIri,true);
 };
 
+// NB subjectIri can be null if sparql contains multiple subjectIris
 mljs.prototype.semanticcontext.prototype.subjectContent = function(subjectIri,docSparql_opt) {
   // update the linked searchcontext with a query related to documents that the facts relating to this subjectIri were inferred from
   // TODO sparql query to fetch doc URIs (stored as derivedFrom IRIs)
@@ -4503,9 +4557,13 @@ mljs.prototype.semanticcontext.prototype.subjectContent = function(subjectIri,do
       }
       qb.query(qb.uris("uris",uris));
       var queryjson = qb.toJson();
+      mljs.defaultconnection.logger.debug("SEMANTIC CONTENT JSON QUERY: " + JSON.stringify(queryjson));
       
-      self._contentSearchContext.dostructuredquery(queryjson,1);
-      
+      if (self._contentMode == "full") {
+        self._contentSearchContext.dostructuredquery(queryjson,1);
+      } else if (self._contentMode == "contribute") {
+        self._contentSearchContext.contributeStructuredQuery("semanticcontext",queryjson.query); // only one sub query so don't treat it as an array
+      }
       /*
       mljs.defaultconnection.structuredSearch(queryjson,self._options,function(result) {
         if (result.inError) {
@@ -4623,4 +4681,18 @@ mljs.prototype.semanticcontext.prototype.simpleSuggest = function(rdfTypeIri,pre
       self._suggestionsPublisher.publish({rdfTypeIri: rdfTypeIri, predicate: predicateIri, suggestions: result.doc});
     }
   }); 
+};
+
+// now for generic triple search results
+mljs.prototype.semanticcontext.prototype.queryFacts = function(sparql) {
+  var self = this;
+  mljs.defaultconnection.sparql(sparql,function(result) {
+    mljs.defaultconnection.logger.debug("semanticcontext: _queryFacts: RESPONSE: " + JSON.stringify(result.doc));
+    if (result.inError) {
+      self._errorPublisher.publish(result.error);
+    } else {
+      // pass facts on to listeners
+      self._factsPublisher.publish(result.doc);
+    }
+  });
 };

@@ -34,13 +34,15 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
     properties: [
       {name: "nic_client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"},
       {name: "nkb_customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"},
-      {name: "jointname", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"}
+      {name: "jointname", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"},
+      {name: "jointmentioned_in", iri: "http://marklogic.com/semantics/ontology/mentioned_in"}
     ]
   };
   var jointPredicates = new Array();
   jointPredicates["nic_client"] = {name: "nic_client", title: "Is New Insurance Co Client", iri: "http://www.ourcompany.com/ontology/NewInsuranceCo/CLIENT", shortiri: "nic:client"};
   jointPredicates["nkb_customer"] = {name: "nkb_customer", title: "Is National Kensington Bank Customer", iri: "http://www.ourcompany.com/ontology/NationalKensingtonBank/CUSTOMER", shortiri: "nkb:customer"};
   jointPredicates["jointname"] = {name: "jointname", title: "Has Full Name", iri: "http://www.ourcompany.com/ontology/JointCustomer/name", shortiri: "joint:name"};
+  jointPredicates["jointmentioned_in"] = {name: "jointmentioned_in", title: "Mentioned In", iri: "http://marklogic.com/semantics/ontology/mentioned_in"};
   
   var jointTriples = [
     {subjectType: "jointcustomer", objectType: "nicclient", predicateArray: ["nic_client"]},
@@ -62,7 +64,8 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "nictitle", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#TITLE"},
       {name: "nicaddress_id", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ADDRESS_ID"},
       {name: "phone_1", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_1"},
-      {name: "phone_2", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_2"}
+      {name: "phone_2", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_2"},
+      {name: "nicmentioned_in", iri: "http://marklogic.com/semantics/ontology/mentioned_in"}
     ]
   };
   var nicClientPredicates = new Array();
@@ -78,9 +81,11 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   nicClientPredicates["phone_1"] = {name: "phone_1", title: "Phone 1", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_1"};
   nicClientPredicates["phone_2"] = {name: "phone_2", title: "Phone 2", iri: "http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#PHONE_2"};
   nicClientPredicates["nic_address"] = {name: "nic_address", title: "Address", iri:"http://marklogic.com/rdb2rdf/NewInsuranceCo/CLIENT#ref-ADDRESS_ID"};
+  nicClientPredicates["nicmentioned_in"] = {name: "nicmentioned_in", title: "Mentioned In", iri: "http://marklogic.com/semantics/ontology/mentioned_in"};
   
   var nicClientTriples = [
-    {subjectType: "nicclient", objectType: "nicaddress", predicateArray: ["nic_address"]}
+    {subjectType: "nicclient", objectType: "nicaddress", predicateArray: ["nic_address"]},
+    {subjectType: "nicclient", objectType: "document", predicateArray: ["nicmentioned_in"]}
   ];
 
   var nicAddressEntity = {
@@ -115,7 +120,8 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
       {name: "national_insurance_no", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#NATIONAL-INSURANCE-NO"},
       {name: "gender", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#GENDER"},
       {name: "ref-ADDRESS_ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ADDRESS_ID"},
-      {name: "ref-BRANCH_ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-BRANCH_ID"}
+      {name: "ref-BRANCH_ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-BRANCH_ID"},
+      {name: "ref-ACCOUNT_ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID"}
     ] 
   };
   var nkbCustomerPredicates = new Array();
@@ -137,24 +143,32 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   nkbCustomerPredicates["gender"] = {name: "gender", title: "Gender", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#GENDER"};
   nkbCustomerPredicates["ref-ADDRESS_ID"] = {name: "ref-ADDRESS_ID", title: "Address", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ADDRESS_ID"};
   nkbCustomerPredicates["ref-BRANCH_ID"] = {name: "ref-BRANCH_ID", title: "Branch", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-BRANCH_ID"};
+  nkbCustomerPredicates["has_nkb_account"] = {name: "has_nkb_account", title: "Account", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/CUSTOMER#ref-ACCOUNT_ID"};
   var nkbCustomerTriples = [
+    {subjectType: "nkbcustomer", objectType: "nkbaccount", predicateArray: ["has_nkb_account"]}
   ];
   
   var nkbAccountEntity = {
     name: "nkbaccount", title: "NKB Account", prefix: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT", iriPattern: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT/ACCOUNT_ID=#VALUE#",
     rdfTypeIri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT", commonNamePredicate: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER",
     properties: [
-      {name: "account_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT_ID"},
-      {name: "account-number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER"},
-      {name: "sort-code", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE"},
-      {name: "account-status_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-STATUS_ID"},
-      {name: "account-type_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-TYPE_ID"},
-      {name: "customer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#CUSTOMER_ID"},
-      {name: "balance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE"}
+      {name: "nkbaccount_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT_ID"},
+      {name: "nkbaccount-number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER"},
+      {name: "nkbsort-code", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE"},
+      {name: "nkbaccount-status_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-STATUS_ID"},
+      {name: "nkbaccount-type_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-TYPE_ID"},
+      {name: "nkbcustomer_id", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#CUSTOMER_ID"},
+      {name: "nkbbalance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE", type: "xs:double"}
     ] 
   };
   var nkbAccountPredicates = new Array();
-  nkbAccountPredicates["account-number"] = {name: "account-number", title: "Account Number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER"};
+  nkbAccountPredicates["nkbaccount-number"] = {name: "nkbaccount-number", title: "Account Number", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-NUMBER"};
+  nkbAccountPredicates["nkbbalance"] = {name: "nkbbalance", title: "Balance", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#BALANCE"};
+  nkbAccountPredicates["nkbaccount_id"] = {name: "nkbaccount_id", title: "Account ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT_ID"};
+  nkbAccountPredicates["nkbsort-code"] = {name: "nkbsort-code", title: "Sort Code", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#SORT-CODE"};
+  nkbAccountPredicates["nkbaccount-status_id"] = {name: "nkbaccount-status_id", title: "Account Status ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-STATUS_ID"};
+  nkbAccountPredicates["nkbaccount-type_id"] = {name: "nkbaccount-type_id", title: "Account Type ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#ACCOUNT-TYPE_ID"};
+  nkbAccountPredicates["nkbcustomer_id"] = {name: "nkbcustomer_id", title: "Customer ID", iri: "http://marklogic.com/rdb2rdf/NationalKensingtonBank/ACCOUNT#CUSTOMER_ID"};
   var nkbAccountTriples = [
   ];
   
@@ -162,14 +176,28 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   db.logger.debug("PREDICATES: " + JSON.stringify(jointPredicates));
   db.logger.debug("TRIPLES: " + JSON.stringify(jointTriples));
   
+  
+  var docEntity = {
+    name: "document", title: "MarkLogic Document", prefix: "/docs/", iriPattern: "/docs/#VALUE#",
+    rdfTypeIri: "http://marklogic.com/semantics/ontology/Document", commonNamePredicate: "http://marklogic.com/semantics/ontology/Document",
+    properties: [
+      {name: "docuri", iri: "http://marklogic.com/semantics/ontology/Document"}
+    ] 
+  };
+  var docPredicates = new Array();
+  docPredicates["docuri"] = {name: "docuri", title: "Document", iri: "http://marklogic.com/semantics/ontology/Document"};
+  var docTriples = [];
+  
   tripleconfig.addMappings("jointcustomer",jointEntity, jointPredicates, jointTriples);
   tripleconfig.addMappings("nicclient",nicClientEntity, nicClientPredicates, nicClientTriples);
   tripleconfig.addMappings("nicaddress",nicAddressEntity, nicAddressPredicates, nicAddressTriples);
   tripleconfig.addMappings("nkbcustomer",nkbCustomerEntity, nkbCustomerPredicates, nkbCustomerTriples);
   tripleconfig.addMappings("nkbaccount",nkbAccountEntity, nkbAccountPredicates, nkbAccountTriples);
+  tripleconfig.addMappings("document",docEntity, docPredicates, docTriples);
   
   var semctx = new db.semanticcontext();
   semctx.setConfiguration(tripleconfig);
+  semctx.setContentMode("contribute");
   var contentctx = new db.searchcontext();
   semctx.setContentContext(contentctx);
  
@@ -181,6 +209,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   var tripResults = new com.marklogic.widgets.sparqlresults("triple-content");
   semctx.register(tripResults);
+  tripResults.setProvenanceSparqlMentioned();
   //tripResults.addErrorListener(error.updateError);
   
   var trip = new com.marklogic.widgets.sparqlbar("query");
@@ -210,9 +239,19 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   
   var bar = new com.marklogic.widgets.searchbar("search-bar");
   contentctx.register(bar);
+  bar.setModeContributeStructured();
   
     //var wgt = new com.marklogic.widgets.sparqlbar("sparqlbar");
     //wgt.addErrorListener(error.updateError);
+    
+  var kratu = new com.marklogic.widgets.kratu("kratu");
+  var listSemanticContext = new db.semanticcontext();
+  listSemanticContext.register(kratu);
+  
+  var docsemlink = new com.marklogic.widgets.docsemlink("docsemlink");
+  contentctx.register(docsemlink);
+  listSemanticContext.register(docsemlink);
+  docsemlink.setKratu("kratu");
   
   } catch (err) {
     error.show(err.message);
