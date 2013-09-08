@@ -1,7 +1,7 @@
 SYTYCD
 ======
 
-This repository holds the submission to So You Think You Can Demo for team KoJAk = Ken Tune, Jochen Joerg and Adam Fowler.
+This repository holds the submission to So You Think You Can Demo for Team KoJAk = Ken Tune, Jochen Joerg and Adam Fowler. Please note that Adam Fowler started on 31 Aug 2012 and so qualifies as a Newbie.
 
 ## Scenario
 
@@ -13,6 +13,10 @@ can easily find this answer in just a few minutes.
 ## Elevator pitch
 
 TODO by Adam Fowler on Mon 9th Sep...
+
+## T-shirt sizes
+
+Three US large mens please.
 
 ## Demo video
 
@@ -65,6 +69,7 @@ In the future potential avenues of extension include:-
 - Add support for generating an ontology description automatically to the rdb2rdf rest extension as an output of the import operation
 - Amalgamate data from document range indexes, sparql result triples, and live data from an external RDBMS (i.e. no import needed) in to a combined customer view information page
 - Extend the data generation script to include sample document generation
+- Take the start of the ontology we developed for document relationships and extend that for common MarkLogic modelling needs with semantic data
 
 ## Open Standards
 
