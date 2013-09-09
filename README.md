@@ -121,15 +121,23 @@ H. Perform a Semantic and Content combined search
 
 ### A. Set up a MySQL relational database
 
-Ken?
+Install MySQL as per the instructions on http://www.mysql.com/
 
 ### B. Run the data generation script
 
-Ken?
+To create the MySQL databases run the following scripts, in this order, found in /mysql/setup in the repository
+ 
+national-kensington-bank.schema.sql ( generates bank data )
+new-insurance-co.schema.sql ( generates insurance co data )
+new-insurance-co.extra.sql ( new insurance co policy data for ‘joint’ customers )
+copy-customer-records-to-insurance-co.sql  ( copy selected customer records to new insurance co to create joint customers )
+copy-policy-records-to-insurance-co.sql  ( match policy records to joint customer details and remove any un-necessary records )
 
 ### C. Set up MLSAM on Tomcat
 
-Jochen?
+So I would say:
+1. Download and Install mlsam as described at http://developer.marklogic.com/code/mlsam
+2. Make sure the web.xml is pointing to the proper database. We use the settings and database driver for MySQL.
 
 ### D. Install ML 7 EA 3
 
