@@ -1,0 +1,24 @@
+The purpose of this demo is to show the power of triples.
+
+Triples are a very flexible way of representing information. Usually they're considered in an inferencing context, but we'd like to show you just one way in which triples can be used to solve what might otherwise be a very difficult business problem.
+
+We all know how difficult it can be to 'join' together relational schema. Such an exercise typically takes months. Our demo shows how this can be done virtually instantly using triples. It also shows how this can be linked to MarkLogic's document search capabilities.
+
+So what we're going to do first of all is take a MySQL database and turn it into triples and store it in MarkLogic. Not only are we pulling in the data, but behind the scenes we're also maintaining all the relationship information. Let me quickly show you the schema.
+
+Here's some of the data. Virtually instant right? ( do some showing of the data )
+
+Now comes the cool part. We're going to import a second database ( here's the schema ).
+
+Now these two databases are overlapping datasets. One belongs to a fictitious bank, and the other to a fictitious insurance company. The business scenario is that they've just merged. Imagine that management want to find ways of paying for that merger. One thing they might look to do is operate a two strikes and you're out policy. For example, look for customers with low bank balances and expensive insurance claims - e.g. those involving pedestrians.
+
+What we can do, is look for identical customers ( e.g. same name and DOB ) and new facts to the database basically saying that those two sets of customers are the same. Then we can run some queries against them.
+
+So first we find all the customers with low bank balances. So far, so SQL. However what do we do about 'claims involving pedestrians'. In this example, this is in 'claims letters'. Our demo will join the information about 'joint customers with low bank balances' to letters with the word pedestrian in them. Here's the list.
+
+Now imagine we want to run some fraud analysis. Suppose we get sent a list of people suspected of fraud. If this information is represented as triples, we can quickly import it into our database, and then run a query to see if any of our customers are on that list.
+
+Or suppose we get some Friend of a Friend data. These are graphs of people who know each other. We can run a query to see whether any individuals on that list are already customers of ours. Then we write to those customers offering them a bonus if they introduce a friend.
+
+It's kind of limited only by your imagination ...
+
