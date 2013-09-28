@@ -6,7 +6,7 @@ $(document).ready(function() {
   var error = new com.marklogic.widgets.error("errors");
   
   try {
-  var tripleconfig = new com.marklogic.semantic.tripleconfig();
+  var tripleconfig = db.createTripleConfig();
   /*
   
 com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
@@ -195,10 +195,10 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   tripleconfig.addMappings("nkbaccount",nkbAccountEntity, nkbAccountPredicates, nkbAccountTriples);
   tripleconfig.addMappings("document",docEntity, docPredicates, docTriples);
   
-  var semctx = new db.semanticcontext();
+  var semctx = db.createSemanticContext();
   semctx.setConfiguration(tripleconfig);
   semctx.setContentMode("contribute");
-  var contentctx = new db.searchcontext();
+  var contentctx = db.createSearchContext();
   semctx.setContentContext(contentctx);
  
   var wgt = new com.marklogic.widgets.searchresults("search-content");
@@ -230,7 +230,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   info.iriHandler(function(iri){info.updateEntity(iri)});
   //info.setProvenanceWidget(wgt);
   
-  var ob = new db.options();
+  var ob = db.createOptions();
   ob.defaultCollation("http://marklogic.com/collation/en")
     .collectionConstraint() // default constraint name of 'collection' ;
   var options = ob.toJson();
@@ -245,7 +245,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
     //wgt.addErrorListener(error.updateError);
     
   var kratu = new com.marklogic.widgets.kratu("kratu");
-  var listSemanticContext = new db.semanticcontext();
+  var listSemanticContext = db.createSemanticContext();
   listSemanticContext.register(kratu);
   
   var docsemlink = new com.marklogic.widgets.docsemlink("docsemlink");
