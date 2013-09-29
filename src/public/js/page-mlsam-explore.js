@@ -220,7 +220,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   ob.defaultCollation("http://marklogic.com/collation/en")
     .collectionConstraint() // default constraint name of 'collection' ;
     .rangeConstraint("Title","title","http://www.w3.org/1999/xhtml","xs:string","http://marklogic.com/collation/",true)
-    .rangeConstraint("NIC Client ID","client-id","http://newinsurance.com/ns/nic","xs:string","http://marklogic.com/collation/",true);
+    .rangeConstraint("NICClientID","client-id","http://newinsurance.com/ns/nic","xs:string","http://marklogic.com/collation/",true);
   var options = ob.toJson();
   
   contentctx.setOptions("mljstest-page-search-options",options);

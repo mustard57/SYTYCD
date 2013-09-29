@@ -39,16 +39,8 @@ declare option xdmp:mapping "false";
 <script type="text/javascript" src="/js/widget-explore.js"></script>
 <script type="text/javascript" src="/js/page-mlsam-explore.js"></script>
   
- <div class="container_12">  
-  <div id="errors" class="grid_12"></div>
- </div>
- <div class="container_12">  
-  <div id="triple-content" class="triple-page grid_6">Triple results goes here</div>
- </div>
- <div class="container_12">  
-  <div id="explorer" class="grid_12">Explorer</div>
- </div>
- <div class="container_12"> 
-   <div id="kratu" class="grid_12 hidden"></div>
- </div>
+  <div id="errors" class=""></div>
+  <div id="triple-content" class="triple-page ">Triple results goes here</div>
+  <div id="explorer" class="">Explorer</div>
+  <div id="kratu" class="grid_12 hidden"></div>
 </div>

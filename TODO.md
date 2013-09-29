@@ -1,6 +1,6 @@
 
-- Get boxes displaying with decent gap between rows/columns
-- Validate document facets exist / configured / displaying in graph explorer (title? Customer Number?)
+- DONE Get boxes displaying with decent gap between rows/columns
+- DONE Validate document facets exist / configured / displaying in graph explorer (title? Customer Number?)
 
 - Generation of semantic query from displayed graph (how to merge with original SPARQL? Query base generates a ?mainsubject binding) - use OPTIONAL for all relationships below base query
 

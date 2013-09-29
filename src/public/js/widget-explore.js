@@ -393,12 +393,13 @@ com.marklogic.widgets.graphexplorer.prototype._drawSubjectDetail = function(subj
         if (undefined != pinfo) {
           t = pinfo.title;
         }
-        //if (t == predicate.value) {
-        //  t = this._shortenSubjectIri(predicate.value);
-        //}
+        var ttitle = t;
+        if (ttitle == predicate.value) {
+          ttitle = this._shortenSubjectIri(predicate.value);
+        }
         
         //props += "<b>" + t + ":</b> " + obj.value + "<br/>";
-        propValues[predicate.value] = {value: obj.value, title: t, type: obj.type};
+        propValues[predicate.value] = {value: obj.value, title: ttitle, type: obj.type};
 
         //s += "</p>";
       } else {
