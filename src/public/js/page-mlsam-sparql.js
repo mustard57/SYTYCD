@@ -210,6 +210,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   var tripResults = new com.marklogic.widgets.sparqlresults("triple-content");
   semctx.register(tripResults);
   tripResults.setProvenanceSparqlMentioned();
+  tripResults.explore("/mlsam/explore");
   //tripResults.addErrorListener(error.updateError);
   
   var trip = new com.marklogic.widgets.sparqlbar("query");

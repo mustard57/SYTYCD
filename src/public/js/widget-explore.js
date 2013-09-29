@@ -152,7 +152,7 @@ com.marklogic.widgets.graphexplorer.prototype._init = function() {
   var chartdiv = document.getElementById(this.container).childNodes[0];
   chartdiv.style.overflow = "scroll";
   chartdiv.style.width = "100%";
-  chartdiv.style.height = "500px";
+  chartdiv.style.height = "2050px";
   
   this.chart = chart;
   this.renderer = chart.renderer;
@@ -393,6 +393,9 @@ com.marklogic.widgets.graphexplorer.prototype._drawSubjectDetail = function(subj
         if (undefined != pinfo) {
           t = pinfo.title;
         }
+        //if (t == predicate.value) {
+        //  t = this._shortenSubjectIri(predicate.value);
+        //}
         
         //props += "<b>" + t + ":</b> " + obj.value + "<br/>";
         propValues[predicate.value] = {value: obj.value, title: t, type: obj.type};
@@ -405,8 +408,10 @@ com.marklogic.widgets.graphexplorer.prototype._drawSubjectDetail = function(subj
     }
   
   var predEntity = scfg.getEntityFromIRI(type);
-  if (undefined != predEntity) {
-  type = predEntity.title;
+  var baseType = type;
+  mljs.defaultconnection.logger.debug("***PREDENTITY: " + JSON.stringify(predEntity));
+  if (undefined != predEntity && undefined != predEntity.name) {
+    type = predEntity.title;
     var namepredicate = scfg.getNameProperty(predEntity.name).iri;
     //mljs.defaultconnection.logger.debug("Got name predicate: " + namepredicate);
     if (undefined != namepredicate) {
@@ -418,13 +423,20 @@ com.marklogic.widgets.graphexplorer.prototype._drawSubjectDetail = function(subj
         // leave title as iri
       }
     }
+  } else {
+    type = this._shortenSubjectIri(type);
+  }
+  
+  if (title == subjectIri) {
+    title = this._shortenSubjectIri(subjectIri);
   }
   
   mljs.defaultconnection.logger.debug("Type Processing: " + type);
+  mljs.defaultconnection.logger.debug("Base Type Processing: " + baseType);
   
   var loadingContent = false;
   
-  if ("http://marklogic.com/semantics/ontology/Document" == type) {
+  if ("http://marklogic.com/semantics/ontology/Document" == baseType) {
     var facets = this.facetCache[subjectIri];
     if (null == facets) {
       mljs.defaultconnection.logger.debug("PROCESSING ML DOCUMENT SUBJECT: " + subjectIri);
@@ -526,7 +538,8 @@ com.marklogic.widgets.graphexplorer.prototype._drawSubjectDetail = function(subj
           // load description later
           var propCount = this.propertyCount++;
           var elid = this.container + "-loadname-" + propCount;
-          propShow = "<span id='" + elid + "'>" + "<i>Loading...</i>" + "</span>";
+          //propShow = "<span id='" + elid + "'>" + "<i>Loading...</i>" + "</span>"; // not showing loading as we dont get a callback if there is no further details
+          propShow = "<span id='" + elid + "'>" + this._shortenSubjectIri(prop.value) + "</span>";
           summaries.push(prop.value);
         } else {
           propShow = relname;
@@ -591,6 +604,16 @@ com.marklogic.widgets.graphexplorer.prototype._drawSubjectDetail = function(subj
   
 };
 
+com.marklogic.widgets.graphexplorer.prototype._shortenSubjectIri = function(iri) {
+  var pos = iri.lastIndexOf("#");
+  if (-1 == pos) {
+    pos = iri.lastIndexOf("/");
+    if (-1 == pos) {
+      return iri;
+    }
+  }
+  return iri.substring(pos + 1);
+};
 
 com.marklogic.widgets.graphexplorer.prototype._generateNameLink = function(subjectIri) {
   // NB return null if we don't have enough information yet
@@ -615,20 +638,30 @@ com.marklogic.widgets.graphexplorer.prototype._getSubjectName = function(subject
   }
   
   var type = this._getSubjectPredicate(cache,"http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
+  if (null == type) {
+    mljs.defaultconnection.logger.debug("getSubjectName: type null, returning shortened subject iri");
+    return this._shortenSubjectIri(subjectIri);
+  }
   
   var scfg = this.semanticContext.getConfiguration();
   
   var predEntity = scfg.getEntityFromIRI(type);
-  if (undefined == predEntity) {
-    return subjectIri;
+  if (undefined == predEntity || undefined == predEntity.name) {
+    mljs.defaultconnection.logger.debug("getSubjectName: predEntity null, returning shortened subject iri");
+    return this._shortenSubjectIri(subjectIri);
   }
   var namepredicate = scfg.getNameProperty(predEntity.name).iri;
   if (undefined == namepredicate) {
-    return subjectIri;
+    mljs.defaultconnection.logger.debug("getSubjectName: namepredicate null, returning shortened subject iri");
+    return this._shortenSubjectIri(subjectIri);
   }
   
-  return this._getSubjectPredicate(cache,namepredicate);
-  
+  var pred = this._getSubjectPredicate(cache,namepredicate);
+  if (null == pred) {
+    mljs.defaultconnection.logger.debug("getSubjectName: Cached predicate null, returning shortened subject iri");
+    return this._shortenSubjectIri(subjectIri);
+  }
+  return pred;
 };
 
 com.marklogic.widgets.graphexplorer.prototype._getSubjectPredicate = function(cache,predIri) {

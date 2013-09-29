@@ -219,10 +219,16 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
   var ob = db.createOptions();
   ob.defaultCollation("http://marklogic.com/collation/en")
     .collectionConstraint() // default constraint name of 'collection' ;
+    .rangeConstraint("Title","title","http://www.w3.org/1999/xhtml","xs:string","http://marklogic.com/collation/",true)
+    .rangeConstraint("NIC Client ID","client-id","http://newinsurance.com/ns/nic","xs:string","http://marklogic.com/collation/",true);
   var options = ob.toJson();
   
   contentctx.setOptions("mljstest-page-search-options",options);
   
+  db.saveSearchOptions("mljstest-page-search-options",options, function(result) {
+    // do nothing
+    mljs.defaultconnection.logger.debug("OPTIONS SAVED: mljstest-page-search-options");
+  });
   
   var kratu = new com.marklogic.widgets.kratu("kratu");
   var listSemanticContext = db.createSemanticContext();
@@ -263,6 +269,7 @@ com.marklogic.semantic.tripleconfig.prototype.addMovies = function() {
           }
             
           // draw uri
+          mljs.defaultconnection.logger.debug("LOADINGURI: " + uri);
           explorer.drawSubject(uri,null,1,1);
         }
       }
