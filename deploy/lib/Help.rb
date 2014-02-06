@@ -29,6 +29,7 @@ class Help
 
       Other commands:
        upgrade      Upgrades the Roxy files
+       capture      Capture the source code of an existing App Builder application
 
       All commands can be run with -h for more information.
 
@@ -157,12 +158,15 @@ class Help
       Usage: ml init [application-name] [options]
 
       Optional Parameters:
-        application-name    # The name of your application
+        application-name                  # The name of your application
+      Required option:
+        --server-version=version-number   # Version of target MarkLogic Server
+                                          # Must be 4, 5, 6, or 7
       General options:
-        --force             # Force reset all configuration files
-        --force-properties  # Force reset the properties file. (build.properties)
-        --force-config      # Force reset the configuration file (ml-config.xml)
-        -v, [--verbose]     # Verbose output
+        --force                           # Force reset all configuration files
+        --force-properties                # Force reset the properties file. (build.properties)
+        --force-config                    # Force reset the configuration file (ml-config.xml)
+        -v, [--verbose]                   # Verbose output
 
 
       Initializes your application by creating the necessary config files.
@@ -419,6 +423,31 @@ class Help
 
       branch: (required)
         The name of the Roxy GitHub branch to use for the upgrade.
+    DOC
+  end
+
+  def self.capture
+    <<-DOC.strip_heredoc
+      Usage: ml {env} capture --modules-db=[name of modules database]
+        Captures the source and REST API configuration for an existing
+        Application Builder-based application.
+
+      modules-db: (required)
+        The modules database of the App Builder application.
+    DOC
+  end
+
+  def self.jar
+    <<-DOC.strip_heredoc
+      Usage: ml jar
+
+      General options:
+        -v, [--verbose]                   # Verbose output
+
+      Prerequisites:
+        - You must be running JRuby http://jruby.org/
+        - You must have the warbler gem installed
+          > gem install warbler
     DOC
   end
 

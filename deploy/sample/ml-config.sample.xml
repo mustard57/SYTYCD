@@ -13,7 +13,73 @@
     <log-errors>true</log-errors>
     <debug-allow>true</debug-allow>
     <profile-allow>true</profile-allow>
-    <scheduled-tasks/>
+    <scheduled-tasks>
+      <scheduled-task>
+        <task-path>/some/daily-task.xqy</task-path>
+        <task-root>/</task-root>
+        <task-type>daily</task-type>
+        <task-period>2</task-period>
+        <task-start-time>13:00:00-05:00</task-start-time>
+        <task-database name="@ml.content-db"/>
+        <task-modules name="@ml.app-modules-db"/>
+        <task-user name="@ml.app-name-user"/>
+      </scheduled-task>
+      <scheduled-task>
+        <task-path>/some/hourly-task.xqy</task-path>
+        <task-root>/</task-root>
+        <task-type>hourly</task-type>
+        <task-period>2</task-period>
+        <task-minute>15</task-minute>
+        <task-database name="@ml.content-db"/>
+        <task-modules name="@ml.app-modules-db"/>
+        <task-user name="@ml.app-name-user"/>
+      </scheduled-task>
+      <scheduled-task>
+        <task-path>/some/minutely-task.xqy</task-path>
+        <task-root>/</task-root>
+        <task-type>minutely</task-type>
+        <task-period>3</task-period>
+        <task-database name="@ml.content-db"/>
+        <task-modules name="@ml.app-modules-db"/>
+        <task-user name="@ml.app-name-user"/>
+      </scheduled-task>
+      <scheduled-task>
+        <task-path>/some/monthly-task.xqy</task-path>
+        <task-root>/</task-root>
+        <task-type>monthly</task-type>
+        <task-period>1</task-period>
+        <task-month-day>15</task-month-day>
+        <task-start-time>13:00:00-05:00</task-start-time>
+        <task-database name="@ml.content-db"/>
+        <task-modules name="@ml.app-modules-db"/>
+        <task-user name="@ml.app-name-user"/>
+      </scheduled-task>
+      <scheduled-task>
+        <task-path>/some/once-task.xqy</task-path>
+        <task-root>/</task-root>
+        <task-type>once</task-type>
+        <task-period>1</task-period>
+        <task-start>2019-01-01T13:00:00-05:00</task-start>
+        <task-database name="@ml.content-db"/>
+        <task-modules name="@ml.app-modules-db"/>
+        <task-user name="@ml.app-name-user"/>
+      </scheduled-task>
+      <scheduled-task>
+        <task-path>/some/weekly-task.xqy</task-path>
+        <task-root>/</task-root>
+        <task-type>weekly</task-type>
+        <task-period>1</task-period>
+        <task-days>
+          <task-day>monday</task-day>
+          <task-day>wednesday</task-day>
+          <task-day>friday</task-day>
+        </task-days>
+        <task-start-time>13:00:00-05:00</task-start-time>
+        <task-database name="@ml.content-db"/>
+        <task-modules name="@ml.app-modules-db"/>
+        <task-user name="@ml.app-name-user"/>
+      </scheduled-task>
+    </scheduled-tasks>
   </task-server>
 -->
   <http-servers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://marklogic.com/xdmp/group" xsi:schemaLocation="http://marklogic.com/xdmp/group group.xsd">
@@ -32,6 +98,7 @@
       <!-- <ssl-certificate-template>@ml.ssl-certificate-template</ssl-certificate-template> -->
     </http-server>
     @ml.test-appserver
+    @ml.rest-appserver
   </http-servers>
   <xdbc-servers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://marklogic.com/xdmp/group" xsi:schemaLocation="http://marklogic.com/xdmp/group group.xsd">
     @ml.xdbc-server
@@ -47,6 +114,7 @@
     </assignment>
     @ml.test-content-db-assignment
     @ml.test-modules-db-assignment
+    @ml.rest-modules-db-assignment
     <assignment>
       <forest-name>@ml.modules-db</forest-name>
     </assignment>
@@ -62,6 +130,7 @@
   <databases xmlns="http://marklogic.com/xdmp/database" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://marklogic.com/xdmp/database database.xsd">
     <!--Application Database Configuration-->
     @ml.test-content-db-xml
+    @ml.rest-modules-db-xml
     <database>
       <database-name>@ml.content-db</database-name>
       <forests-per-host>@ml.content-forests-per-host</forests-per-host>
@@ -75,7 +144,6 @@
       <collection-lexicon>true</collection-lexicon>
       <directory-creation>manual</directory-creation>
       <maintain-last-modified>false</maintain-last-modified>
-      <triple-index>true</triple-index>
 <!--
       <fragment-roots>
         <fragment-root>
@@ -95,19 +163,19 @@
         <field>
           <field-name/>
           <include-root>true</include-root>
-          <fast-case-sensitive-searches>false<fast-case-sensitive-searches>
-          <fast-diacritic-sensitive-searches>false<fast-diacritic-sensitive-searches>
-          <fast-phrase-searches>false<fast-phrase-searches>
-          <one-character-searches>false<one-character-searches>
-          <stemmed-searches><stemmed-searches>
-          <three-character-searches>false<three-character-searches>
-          <three-character-word-positions>false<three-character-word-positions>
-          <trailing-wildcard-searches>false<trailing-wildcard-searches>
-          <trailing-wildcard-word-positions>false<trailing-wildcard-word-positions>
-          <two-character-searches>false<two-character-searches>
-          <value-positions>false<value-positions>
-          <value-searches>false<value-searches>
-          <word-searches>false<word-searches>
+          <fast-case-sensitive-searches>false</fast-case-sensitive-searches>
+          <fast-diacritic-sensitive-searches>false</fast-diacritic-sensitive-searches>
+          <fast-phrase-searches>false</fast-phrase-searches>
+          <one-character-searches>false</one-character-searches>
+          <stemmed-searches>basic</stemmed-searches>
+          <three-character-searches>false</three-character-searches>
+          <three-character-word-positions>false</three-character-word-positions>
+          <trailing-wildcard-searches>false</trailing-wildcard-searches>
+          <trailing-wildcard-word-positions>false</trailing-wildcard-word-positions>
+          <two-character-searches>false</two-character-searches>
+          <value-positions>false</value-positions>
+          <value-searches>false</value-searches>
+          <word-searches>false</word-searches>
           <word-lexicons/>
           <included-elements>
             <included-element>

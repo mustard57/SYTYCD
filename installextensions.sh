@@ -2,10 +2,10 @@
 
 # Config params here
 
-export USER="admin"
-export PASS="afjjkt"
-export HOST="kojak.demo.marklogic.com"
-export RESTPORT="8040"
+export USER="ktune"
+export PASS="kTun3"
+export HOST="van-prod3.demo.marklogic.com"
+export RESTPORT="8060"
 
 # Install code - do not modify
 
